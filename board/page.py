@@ -28,7 +28,7 @@ body.board{overflow-x:hidden}
 .board #fx-shader{display:none!important}
 .bd-stage{position:relative;height:100vh;min-height:640px;max-height:1100px;overflow:hidden;isolation:isolate;
   background:radial-gradient(1200px 700px at 50% 55%,rgba(120,90,255,.16),transparent 60%),radial-gradient(800px 500px at 20% 20%,rgba(92,225,255,.10),transparent 60%),#02040a}
-.bd-stage::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;background:radial-gradient(ellipse 75% 65% at 50% 50%,transparent 55%,rgba(2,4,10,.85));}
+.bd-stage::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;background:linear-gradient(180deg,rgba(2,4,10,.35),transparent 14%,transparent 82%,rgba(2,4,10,.9));}
 #bd-canvas{position:absolute;inset:0;z-index:1;cursor:grab}
 .bd-stage.grab #bd-canvas{cursor:grabbing}
 .bd-hud{position:absolute;z-index:5;pointer-events:none}
@@ -178,6 +178,8 @@ def write_board_page(site: Path, *, head_block, topnav, site_footer, site_js, ca
     pub = {k: cfg[k] for k in ("relay", "topic", "pubkey_spki", "pow_prefix", "max_len", "max_nick")}
     pub["base"] = "../"
     write_client_rules(site)
+    import hashlib
+    bjs_v = hashlib.sha1((ROOT / "vendor" / "board.js").read_bytes()).hexdigest()[:10]  # cache-bust the module on every change
     title = f"匿名留言板 · 星际信号站 | {site_name} · {ym}"
     desc = f"{site_name}匿名留言板：无需登录，写下你想说的话，化作星空里的一颗发光信号。交流免费大模型、免费API与AI工具使用心得。"
     ld = [{"@context": "https://schema.org", "@type": "WebPage", "name": "匿名留言板 · 星际信号站", "url": f"{canonical}m/board.html", "inLanguage": "zh-CN", "description": desc,
@@ -252,7 +254,7 @@ def write_board_page(site: Path, *, head_block, topnav, site_footer, site_js, ca
 <div class="bd-toast" id="bd-toast" role="status"></div>
 <script type="application/json" id="board-cfg">{json.dumps(pub, ensure_ascii=False)}</script>
 <script>{site_js}</script>
-<script type="module" src="../vendor/board.js"></script>
+<script type="module" src="../vendor/board.js?v={bjs_v}"></script>
 </body></html>"""
     (site / "m").mkdir(exist_ok=True)
     (site / "m" / "board.html").write_text(page, encoding="utf-8")

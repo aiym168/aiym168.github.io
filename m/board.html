@@ -599,7 +599,7 @@ body.board{overflow-x:hidden}
 .board #fx-shader{display:none!important}
 .bd-stage{position:relative;height:100vh;min-height:640px;max-height:1100px;overflow:hidden;isolation:isolate;
   background:radial-gradient(1200px 700px at 50% 55%,rgba(120,90,255,.16),transparent 60%),radial-gradient(800px 500px at 20% 20%,rgba(92,225,255,.10),transparent 60%),#02040a}
-.bd-stage::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;background:radial-gradient(ellipse 75% 65% at 50% 50%,transparent 55%,rgba(2,4,10,.85));}
+.bd-stage::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;background:linear-gradient(180deg,rgba(2,4,10,.35),transparent 14%,transparent 82%,rgba(2,4,10,.9));}
 #bd-canvas{position:absolute;inset:0;z-index:1;cursor:grab}
 .bd-stage.grab #bd-canvas{cursor:grabbing}
 .bd-hud{position:absolute;z-index:5;pointer-events:none}
@@ -1041,5 +1041,5 @@ body.board{overflow-x:hidden}
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
 })();
 </script>
-<script type="module" src="../vendor/board.js"></script>
+<script type="module" src="../vendor/board.js?v=69e929e652"></script>
 </body></html>
