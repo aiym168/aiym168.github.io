@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T20:32:11+08:00",
-  "generated_at_label": "2026-11-09 20:32 Asia/Shanghai",
+  "generated_at": "2026-11-09T20:51:13+08:00",
+  "generated_at_label": "2026-11-09 20:51 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
     "A": {
@@ -29,8 +29,8 @@
       },
       "runs_total": 2,
       "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
-      "next_run_label": "2026-11-09 20:37 Asia/Shanghai",
-      "age_min": 59
+      "next_run_label": "2026-11-09 21:07 Asia/Shanghai",
+      "age_min": 78
     },
     "B": {
       "engine": "B",
@@ -60,7 +60,7 @@
       "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
       "next_run_label": "2026-11-09 21:25 Asia/Shanghai",
       "last_seen_at": "2026-11-09T19:27:06+08:00",
-      "age_min": 65
+      "age_min": 84
     },
     "watchdog": {
       "schedule": "每 30 分钟（第 23 / 53 分钟）",
@@ -68,20 +68,27 @@
     }
   },
   "counts": {
-    "deals": 186,
-    "github_hot": 30,
-    "hot": 40,
+    "deals": 59,
+    "free_resources": 59,
+    "github_hot": 29,
+    "hot": 25,
+    "today_new": 59,
+    "archived": 6,
     "modules": {
-      "damoxing-mianfei-api": 98,
-      "ai-huiyuan-shiyong": 7,
-      "ai-kaifa-gongju": 13,
-      "mianfei-gpu-yunfuwu": 20,
-      "keji-app-xianmian": 4,
-      "github-hot": 30,
-      "hot-topics": 40
-    }
+      "damoxing-mianfei-api": 16,
+      "ai-huiyuan-shiyong": 4,
+      "ai-kaifa-gongju": 24,
+      "mianfei-gpu-yunfuwu": 6,
+      "keji-app-xianmian": 5,
+      "ai-kecheng-huodong": 2,
+      "qita-keji": 2,
+      "github-hot": 29,
+      "hot-topics": 25
+    },
+    "api_pages": 2,
+    "next_update_label": "21:07 北京时间（约）"
   },
-  "data_updated_label": "2026-11-09 19:31 Asia/Shanghai",
+  "data_updated_label": "2026-11-09 20:51 Asia/Shanghai",
   "sources": {
     "HN": {
       "ok_total": 3,
