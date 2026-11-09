@@ -6,6 +6,7 @@
 <meta name="color-scheme" content="dark" />
 <meta name="theme-color" content="#02040a" />
 <script>try{if(localStorage.getItem('ai168-reduce')==='1')document.documentElement.classList.add('reduce-motion')}catch(e){}</script>
+<script type="importmap">{"imports":{"/vendor/board.js":"/vendor/board.js?v=69e929e652","/vendor/brain-fallback.js":"/vendor/brain-fallback.js?v=1e321da31b","/vendor/brain-hero.js":"/vendor/brain-hero.js?v=0fcdad78e8","/vendor/brain-loader.js":"/vendor/brain-loader.js?v=4d2432416e","/vendor/interact.js":"/vendor/interact.js?v=e74250a0c8","/vendor/octo-audio.js":"/vendor/octo-audio.js?v=1a38d0c1a8","/vendor/octopus.js":"/vendor/octopus.js?v=491c8baa6b","/vendor/site.js":"/vendor/site.js?v=041ae49e51","/vendor/three-addons/CopyShader.js":"/vendor/three-addons/CopyShader.js?v=4a948e9acb","/vendor/three-addons/EffectComposer.js":"/vendor/three-addons/EffectComposer.js?v=caa2ef55ad","/vendor/three-addons/LuminosityHighPassShader.js":"/vendor/three-addons/LuminosityHighPassShader.js?v=03d025cc40","/vendor/three-addons/MaskPass.js":"/vendor/three-addons/MaskPass.js?v=073ba17b3f","/vendor/three-addons/OrbitControls.js":"/vendor/three-addons/OrbitControls.js?v=a1add89030","/vendor/three-addons/OutputPass.js":"/vendor/three-addons/OutputPass.js?v=71ac274f88","/vendor/three-addons/OutputShader.js":"/vendor/three-addons/OutputShader.js?v=e3ec02c31a","/vendor/three-addons/Pass.js":"/vendor/three-addons/Pass.js?v=c0016bcbed","/vendor/three-addons/RenderPass.js":"/vendor/three-addons/RenderPass.js?v=fe2af1847c","/vendor/three-addons/RoomEnvironment.js":"/vendor/three-addons/RoomEnvironment.js?v=ab229d82b5","/vendor/three-addons/ShaderPass.js":"/vendor/three-addons/ShaderPass.js?v=193c868a04","/vendor/three-addons/UnrealBloomPass.js":"/vendor/three-addons/UnrealBloomPass.js?v=2c16639199","/vendor/three.module.min.js":"/vendor/three.module.min.js?v=2992ecd75d"}}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235ce1ff'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2302040a'/%3E%3Crect x='5' y='5' width='22' height='22' rx='6' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%235ef0c0'/%3E%3C/svg%3E" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="renderer" content="webkit" />
@@ -784,6 +785,12 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .octo-snd b{color:var(--text)}
 .octo-snd.on{color:var(--cyan);border-color:var(--cyan);box-shadow:0 0 12px rgba(92,225,255,.35)}
 .octo-controls .btn.on{border-color:var(--cyan);box-shadow:0 0 16px rgba(92,225,255,.3)}
+.octo-snd-cta{position:absolute;left:50%;top:76px;transform:translateX(-50%);z-index:6;font:inherit;font-size:14px;font-weight:600;color:#02121a;background:linear-gradient(100deg,#5ce1ff,#a78bfa);border:0;border-radius:999px;padding:9px 18px;cursor:pointer;box-shadow:0 0 0 0 rgba(92,225,255,.6),0 10px 30px rgba(0,0,0,.4);animation:sndPulse 1.8s ease-out infinite}
+.octo-snd-cta:disabled{background:rgba(40,46,64,.9);color:var(--muted);animation:none;cursor:default}
+@keyframes sndPulse{0%{box-shadow:0 0 0 0 rgba(92,225,255,.55),0 10px 30px rgba(0,0,0,.4)}70%{box-shadow:0 0 0 16px rgba(92,225,255,0),0 10px 30px rgba(0,0,0,.4)}100%{box-shadow:0 0 0 0 rgba(92,225,255,0),0 10px 30px rgba(0,0,0,.4)}}
+.reduce-motion .octo-snd-cta{animation:none}
+.octo-snd.fail,.octo-controls .btn.fail{opacity:.6;cursor:default}
+@media (max-width:760px){.octo-snd-cta{top:64px;font-size:13px;padding:8px 14px}}
 
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"免费 GPU / 云服务","url":"https://aiym168.github.io/c/mianfei-gpu-yunfuwu.html","description":"免费 GPU、云算力、云电脑与开发者云资源，适合训练、推理与实验。"}</script>
@@ -819,7 +826,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 
   </div>
 </header>
-<script src="../vendor/brain-loader.js" defer></script>
+<script src="../vendor/brain-loader.js?v=4d2432416e" defer></script>
 <div class="wrap">
   <section class="section" id="search">
     

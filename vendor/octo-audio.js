@@ -14,7 +14,8 @@ export function createSfx(ctx, opts = {}) {
   const lim = ctx.createDynamicsCompressor();
   lim.threshold.value = -3; lim.knee.value = 0; lim.ratio.value = 20; lim.attack.value = 0.001; lim.release.value = 0.08;
   const input = ctx.createGain();
-  input.connect(comp); comp.connect(lim); lim.connect(master); master.connect(ctx.destination);
+  const analyser = ctx.createAnalyser(); analyser.fftSize = 2048;
+  input.connect(comp); comp.connect(lim); lim.connect(master); master.connect(analyser); analyser.connect(ctx.destination);
   // ---- shared noise + reverb
   const nb = ctx.createBuffer(1, sr * 2, sr); { const d = nb.getChannelData(0); const r = rng(77); for (let i = 0; i < d.length; i++) d[i] = r() * 2 - 1; }
   const ir = ctx.createBuffer(2, Math.floor(sr * 2.4), sr);
@@ -208,7 +209,8 @@ export function createSfx(ctx, opts = {}) {
     setTimeout(() => { old.nodes.forEach((n) => { try { n.stop(); } catch (e) {} }); try { old.dry.disconnect(); } catch (e) {} }, 400);
     newBus();
   }
-  return { ctx, S, play, cancel, startDrone, stopDrone, master };
+  function rms() { const d = new Float32Array(analyser.fftSize); analyser.getFloatTimeDomainData(d); let x = 0; for (let i = 0; i < d.length; i++) x += d[i] * d[i]; return Math.sqrt(x / d.length); }
+  return { ctx, S, play, cancel, startDrone, stopDrone, master, analyser, rms };
 }
 
 /** Render a list of timed events to an AudioBuffer offline. */

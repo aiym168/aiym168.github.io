@@ -253,6 +253,29 @@ def json_ld(obj) -> str:
     return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False, separators=(",", ":")) + "</script>"
 
 
+def vendor_versions() -> dict:
+    """Content-hashed URLs for every vendor JS module, used for cache-busting (import map + script src)."""
+    out = {}
+    vd = SITE / "vendor"
+    for p in sorted(vd.rglob("*.js")):
+        rel = "/" + p.relative_to(SITE).as_posix()
+        out[rel] = rel + "?v=" + hashlib.sha1(p.read_bytes()).hexdigest()[:10]
+    return out
+
+
+VENDOR_V = vendor_versions()
+
+
+def vurl(prefix: str, name: str) -> str:
+    """Versioned relative URL for vendor/<name>."""
+    v = VENDOR_V.get("/vendor/" + name, "")
+    return prefix + "vendor/" + name + (v[v.index("?"):] if "?" in v else "")
+
+
+def import_map() -> str:
+    return '<script type="importmap">' + json.dumps({"imports": VENDOR_V}, separators=(",", ":")) + "</script>"
+
+
 REDUCE_BOOT = ("<script>try{if(localStorage.getItem('ai168-reduce')==='1')document.documentElement.classList.add('reduce-motion')}"
                "catch(e){}</script>")
 
@@ -277,6 +300,7 @@ def head_block(title, description, canonical, og_title=None, pubdate=None, extra
 <meta name="color-scheme" content="dark" />
 <meta name="theme-color" content="#02040a" />
 {REDUCE_BOOT}
+{import_map()}
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235ce1ff'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2302040a'/%3E%3Crect x='5' y='5' width='22' height='22' rx='6' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%235ef0c0'/%3E%3C/svg%3E" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="renderer" content="webkit" />
@@ -336,7 +360,8 @@ def brain_block(vendor_prefix: str = "vendor/", tags=None, nodes: int = 4200) ->
 
 
 def brain_loader_script(vendor_prefix: str = "vendor/") -> str:
-    return f'<script src="{esc(vendor_prefix)}brain-loader.js" defer></script>'
+    _v = VENDOR_V.get("/vendor/brain-loader.js", "")
+    return f'<script src="{esc(vendor_prefix)}brain-loader.js{esc(_v[_v.index("?"):] if "?" in _v else "")}" defer></script>'
 
 
 def topnav(prefix="./"):
@@ -1180,6 +1205,7 @@ def write_octopus_page(date: str) -> str:
     <div class="octo-card" data-octo-card><div class="en" data-card-en></div><h3 data-card-name></h3><p data-card-fn></p><div class="read" data-card-read></div></div>
     {labels}
     <div class="octo-pills">{pills}<button type="button" class="octo-pill all" data-octo-all>全部拆解</button></div>
+    <button type="button" class="octo-snd-cta" data-octo-sound-cta>🔊 点击开启音效</button>
     <div class="octo-cursor" data-octo-cursor aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 2l15 10.5-6.6 1.2 3.8 7.3-2.7 1.4-3.8-7.3L4 20z"/></svg></div>
     <noscript><p class="octo-fallback">需要开启 JavaScript 才能看到 3D 演示。</p></noscript>
     <p class="octo-fallback hidden" data-octo-nogl>你的浏览器没有开启 WebGL，暂时看不到 3D 演示。</p>
@@ -1203,7 +1229,7 @@ def write_octopus_page(date: str) -> str:
 </main>
 {page_scripts()}
 <script type="module">
-import {{ mountOctopus }} from "{prefix}vendor/octopus.js";
+import {{ mountOctopus }} from "{vurl(prefix, "octopus.js")}";
 const st = document.getElementById("octo-stage");
 let ok = false; try {{ const c = document.createElement("canvas"); ok = !!(c.getContext("webgl2") || c.getContext("webgl")); }} catch (e) {{}}
 if (!ok || !mountOctopus(st)) {{ st.classList.add("no-gl"); st.querySelector("[data-octo-nogl]").classList.remove("hidden"); }}
