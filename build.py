@@ -1174,7 +1174,7 @@ def write_octopus_page(date: str) -> str:
     <div class="octo-vignette" aria-hidden="true"></div>
     <svg class="octo-leaders" data-octo-leaders aria-hidden="true"></svg>
     <div class="octo-hud tl"><b class="brand">HYALOS GX-8</b><span>零件 <b data-octo-parts>—</b></span><span>图层 <b data-octo-layer>整机</b></span></div>
-    <div class="octo-hud tr"><span class="rec"><i></i>SIM</span><b data-octo-time>00:00.0</b></div>
+    <div class="octo-hud tr"><button type="button" class="octo-snd" data-octo-sound aria-pressed="false" title="机械变形音效（浏览器需要点击后才能出声）">🔊 声音 <b>关</b></button><span class="rec"><i></i>SIM</span><b data-octo-time>00:00.0</b></div>
     <div class="octo-status"><div class="octo-steps">{steps}</div><div class="octo-stline" data-octo-stage>正在生成零件…</div></div>
     <div class="octo-caption" data-octo-caption><span class="t" data-octo-caption-time>00:00.0</span><b data-octo-caption-title></b><span class="s" data-octo-caption-sub></span></div>
     <div class="octo-card" data-octo-card><div class="en" data-card-en></div><h3 data-card-name></h3><p data-card-fn></p><div class="read" data-card-read></div></div>
@@ -1188,14 +1188,15 @@ def write_octopus_page(date: str) -> str:
     <button type="button" class="btn" data-octo-demo aria-pressed="true">▶ 自动演示</button>
     <button type="button" class="btn" data-octo-explode>拆解</button>
     <button type="button" class="btn" data-octo-xray aria-pressed="false">线框 / 透视：<b>实体</b></button>
+    <button type="button" class="btn" data-octo-sound aria-pressed="false">🔊 声音：<b>关</b></button>
     <button type="button" class="btn ghost" data-octo-reset>重置视角</button>
-    <span class="octo-tip">拖动旋转 · 滚轮或双指缩放 · 点上面的零件按钮单独拆开</span>
+    <span class="octo-tip">拖动旋转 · 滚轮或双指缩放 · 点上面的零件按钮单独拆开 · 音效需点“声音”或“自动演示”后开启</span>
   </div>
   <section class="section octo-info">
     <div class="sec-head"><span class="sec-idx">拆解顺序</span><h2>自动演示约 30 秒</h2>
       <p class="sec-desc">喷射入场 → 5 个零件依次拆开（每个约 1 秒展开、停留运转、0.5 秒合上，各有自己的镜头）→ 330° 转台全机拆解 → 边转边快速重组 → 喷射离场。</p></div>
     <ol class="octo-list">{rows}</ol>
-    <div class="disclaimer-card about"><p>这是一个代码生成的演示作品，“HYALOS GX-8”是虚构的产品名，零件功能和读数都是设定，不对应任何真实产品。手机上会自动减少零件数；开启“减少动态”或系统的减少动态效果时不会自动播放。</p>
+    <div class="disclaimer-card about"><p>这是一个代码生成的演示作品，“HYALOS GX-8”是虚构的产品名，零件功能和读数都是设定，不对应任何真实产品。手机上会自动减少零件数；开启“减少动态”或系统的减少动态效果时不会自动播放。音效全部由浏览器实时合成（Web Audio），没有使用任何录音素材，默认静音。</p>
       <p>本页共 <b data-octo-total>—</b> 个零件（重复的零件用实例化方式绘制，按个计数）。源码在 <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> 的 vendor/octopus.js。</p></div>
   </section>
   {site_footer(prefix, "页面生成于 " + date)}

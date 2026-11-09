@@ -13,6 +13,7 @@ import { EffectComposer } from "./three-addons/EffectComposer.js";
 import { RenderPass } from "./three-addons/RenderPass.js";
 import { UnrealBloomPass } from "./three-addons/UnrealBloomPass.js";
 import { OutputPass } from "./three-addons/OutputPass.js";
+import { createSfx, renderOffline, toWav } from "./octo-audio.js";
 
 // ------------------------------------------------------------------ helpers
 const TAU = Math.PI * 2;
@@ -51,6 +52,25 @@ const PHASES = [
   { t: RE0, name: "快速重组", cap: "快速重组", sub: "零件按相反顺序归位，转台不停。", at: RE0 },
   { t: OUT0, name: "离场", cap: "喷射离场", sub: "机械腕收拢，虹吸管全功率喷射。", at: OUT0 },
 ];
+// sound events on the same timeline (see vendor/octo-audio.js)
+const SFX_EVENTS = (() => {
+  const ev = [{ t: 0, type: "jetIn", args: [2.6] }];
+  BEATS.forEach((B, i) => {
+    ev.push({ t: B - 0.12, type: "blip" });
+    ev.push({ t: B, type: "open", args: [i, OPEN] });
+    if (i === 0) ev.push({ t: B + 0.12, type: "shimmer" });
+    if (i === 2) { ev.push({ t: B, type: "hum", args: [OPEN + HOLD + CLOSE] }); ev.push({ t: B + 0.2, type: "shimmer" }); }
+    if (i === 3) ev.push({ t: B + OPEN, type: "thrust", args: [HOLD] });
+    ev.push({ t: B + OPEN, type: "lock", args: [i] });
+    ev.push({ t: B + OPEN + HOLD, type: "close", args: [i, CLOSE] });
+    ev.push({ t: B + OPEN + HOLD + CLOSE, type: "snap", args: [i] });
+  });
+  ev.push({ t: EXP0 - 0.12, type: "blip" });
+  ev.push({ t: EXP0, type: "explode", args: [EXP1 - EXP0] });
+  ev.push({ t: RE0, type: "reassemble", args: [RE1 - RE0] });
+  ev.push({ t: OUT0, type: "jetAway", args: [OUT1 - OUT0] });
+  return ev.sort((a, b) => a.t - b.t);
+})();
 function beatK(t, B) {
   if (t < B) return 0;
   if (t < B + OPEN) return eio((t - B) / OPEN);
@@ -825,15 +845,46 @@ export function mountOctopus(stage) {
   function toManual() {
     if (mode === "manual") return;
     mode = "manual";
+    if (sfx) sfx.cancel();
     man.prog = S.open.slice(); man.target = [0, 0, 0, 0, 0]; man.expP = S.explode; man.expT = S.explode > 0.5 ? 1 : 0; man.part = -1;
     controls.target.copy(camera.userData.tgt || V(0, 0.25, 0)); controls.enabled = true;
     stage.classList.remove("is-demo"); syncButtons();
   }
   function startDemo() {
+    if (sfx) sfx.cancel(); evIdx = 0; lastDemoT = -1;
     mode = "demo"; demoT = 0; controls.enabled = false; stage.classList.add("is-demo"); syncButtons();
     if (reduced) { demoT = 4.6; }
     kick();
   }
+  // ---------- sound (muted until a user gesture; 减少动态 → no drone, no autoplayed film sound)
+  let sfx = null, soundOn = false, evIdx = 0, lastDemoT = -1;
+  const soundBtns = [...document.querySelectorAll("[data-octo-sound]")];
+  function syncSoundBtns() { soundBtns.forEach((b) => { b.setAttribute("aria-pressed", soundOn ? "true" : "false"); const l = b.querySelector("b"); if (l) l.textContent = soundOn ? "开" : "关"; b.classList.toggle("on", soundOn); }); }
+  function enableSound(on) {
+    if (on) {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) { soundOn = false; syncSoundBtns(); return; }
+      if (!sfx) { try { sfx = createSfx(new AC({ latencyHint: "interactive" })); } catch (e) { sfx = null; return; } }
+      if (sfx.ctx.state === "suspended") sfx.ctx.resume();
+      soundOn = true;
+      if (!reduced) sfx.startDrone();
+      evIdx = SFX_EVENTS.findIndex((e) => e.t >= demoT); if (evIdx < 0) evIdx = SFX_EVENTS.length;
+    } else {
+      soundOn = false;
+      if (sfx) { sfx.cancel(); sfx.stopDrone(); }
+    }
+    try { localStorage.setItem("ai168-octo-sound", soundOn ? "1" : "0"); } catch (e) {}
+    syncSoundBtns();
+  }
+  function sfxNow(type, args = [], delay = 0) { if (sfx && soundOn) sfx.play({ type, args }, sfx.ctx.currentTime + 0.02 + delay); }
+  try {
+    if (localStorage.getItem("ai168-octo-sound") === "1") {
+      const once = () => { document.removeEventListener("pointerdown", once, true); document.removeEventListener("keydown", once, true); if (!soundOn) enableSound(true); };
+      document.addEventListener("pointerdown", once, true); document.addEventListener("keydown", once, true);
+    }
+  } catch (e) {}
+  syncSoundBtns();
+
   function camTween(toPos, toTgt, dur = 1.1) { man.cam = { fromP: camera.position.clone(), fromT: controls.target.clone(), toP: toPos, toT: toTgt, t: 0, dur: reduced ? 0.001 : dur }; }
   function manualShot(i) {
     S.pos.set(0, 0, 0); S.rotX = 0; octo.position.set(0, 0, 0); octo.rotation.set(0, S.turn, 0); octo.updateMatrixWorld(true);
@@ -844,6 +895,11 @@ export function mountOctopus(stage) {
   function selectPart(i) {
     toManual();
     const on = man.target[i] < 0.5;
+    sfxNow("blip");
+    man.target.forEach((v, j) => { if (v > 0.5 && j !== i) { sfxNow("close", [j, CLOSE]); sfxNow("snap", [j], CLOSE); } });
+    if (man.expT > 0.5) sfxNow("reassemble", [1.2]);
+    if (on) { sfxNow("open", [i, OPEN]); sfxNow("lock", [i], OPEN); if (i === 0) sfxNow("shimmer", [], 0.12); if (i === 2) sfxNow("hum", [2.2]); }
+    else { sfxNow("close", [i, CLOSE]); sfxNow("snap", [i], CLOSE); }
     man.target = man.target.map((_, j) => (j === i && on ? 1 : 0));
     man.expT = 0; man.part = on ? i : -1;
     const s = on ? manualShot(i) : shotHero(4);
@@ -853,6 +909,7 @@ export function mountOctopus(stage) {
   function toggleExplode() {
     toManual();
     man.expT = man.expT > 0.5 ? 0 : 1; man.target = [0, 0, 0, 0, 0]; man.part = -1;
+    if (man.expT) sfxNow("explode", [1.4]); else sfxNow("reassemble", [1.2]);
     const s = man.expT ? shotExplode(EXP0 + 3) : shotHero(4);
     camTween(s.pos, s.tgt);
     kick();
@@ -873,11 +930,12 @@ export function mountOctopus(stage) {
     if (btnExplode) btnExplode.textContent = (mode === "manual" ? man.expT > 0.5 : S.explode > 0.5) ? "组装" : "拆解";
   }
   pills.forEach((p, i) => p.addEventListener("click", (ev) => { ev.preventDefault(); selectPart(i); syncButtons(); }));
-  if (pillAll) pillAll.addEventListener("click", (ev) => { ev.preventDefault(); toggleExplode(); syncButtons(); });
+  if (pillAll) pillAll.addEventListener("click", (ev) => { ev.preventDefault(); sfxNow("blip"); toggleExplode(); syncButtons(); });
   if (btnExplode) btnExplode.addEventListener("click", () => { toggleExplode(); syncButtons(); });
-  if (btnDemo) btnDemo.addEventListener("click", () => startDemo());
+  if (btnDemo) btnDemo.addEventListener("click", () => { enableSound(true); startDemo(); });
+  soundBtns.forEach((b) => b.addEventListener("click", (ev) => { ev.preventDefault(); enableSound(!soundOn); }));
   if (btnXray) btnXray.addEventListener("click", () => setXray(!man.xray));
-  if (btnReset) btnReset.addEventListener("click", () => { toManual(); man.target = [0, 0, 0, 0, 0]; man.expT = 0; man.part = -1; const s = shotHero(4); camTween(s.pos, s.tgt); kick(); syncButtons(); });
+  if (btnReset) btnReset.addEventListener("click", () => { toManual(); if (man.expT > 0.5) sfxNow("reassemble", [1.2]); else if (man.target.some((v) => v > 0.5)) { const j = man.target.findIndex((v) => v > 0.5); sfxNow("close", [j, CLOSE]); sfxNow("snap", [j], CLOSE); } man.target = [0, 0, 0, 0, 0]; man.expT = 0; man.part = -1; const s = shotHero(4); camTween(s.pos, s.tgt); kick(); syncButtons(); });
   renderer.domElement.addEventListener("pointerdown", () => { if (mode === "demo") toManual(); });
   renderer.domElement.addEventListener("wheel", () => { if (mode === "demo") toManual(); }, { passive: true });
   controls.addEventListener("change", () => { if (!running) renderOnce(); });
@@ -914,6 +972,14 @@ export function mountOctopus(stage) {
     let info;
     if (mode === "demo") {
       if (!frozen) { demoT += dt; if (demoT >= LOOP) demoT = 0; }
+      if (sfx && soundOn && !frozen && !reduced) {
+        if (demoT < lastDemoT) evIdx = 0;
+        while (evIdx < SFX_EVENTS.length && SFX_EVENTS[evIdx].t <= demoT + 0.12) {
+          const e = SFX_EVENTS[evIdx++];
+          if (e.t >= demoT - 0.06) sfx.play(e, sfx.ctx.currentTime + Math.max(0, e.t - demoT));
+        }
+      }
+      lastDemoT = demoT;
       demoState(demoT);
       applyPose(); octo.updateMatrixWorld(true);
       const s = camAt(demoT);
@@ -951,6 +1017,7 @@ export function mountOctopus(stage) {
   window.addEventListener("ai168:reduce-motion", () => {
     reduced = isReduced();
     if (reduced && mode === "demo") { toManual(); }
+    if (sfx && soundOn) { if (reduced) sfx.stopDrone(); else sfx.startDrone(); }
     kick();
   });
 
@@ -969,6 +1036,13 @@ export function mountOctopus(stage) {
     manual: { selectPart, toggleExplode, setXray },
     settle() { man.prog = man.target.slice(); man.expP = man.expT; if (man.cam) { man.cam.t = man.cam.dur; } step(0.016); return mode; },
     renderer,
+    sfxEvents: SFX_EVENTS,
+    async renderAudio(duration = LOOP) {
+      const buf = await renderOffline(SFX_EVENTS, duration, 48000);
+      const bytes = new Uint8Array(toWav(buf)); let bin = "";
+      for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+      return btoa(bin);
+    },
   };
   return true;
 }
