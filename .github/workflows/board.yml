@@ -1,0 +1,62 @@
+name: Board ingest (匿名留言板审核)
+
+# Anonymous board: pull encrypted posts from the public relay (ntfy.sh, 12h cache),
+# moderate them strictly (board/filter.py) and publish api/board.json.
+# Hide a message: add its id to data/board/hidden.txt, or run this workflow with input "hide".
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      hide:
+        description: "要隐藏的信号编号（如 M-7F3A2C，多个用空格分隔）"
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths:
+      - "data/board/hidden.txt"
+      - "board/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: board-ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: board/requirements.txt
+      - name: Install filter deps
+        run: pip install -q -r board/requirements.txt
+      - name: Ingest + moderate
+        env:
+          BOARD_PRIVATE_KEY: ${{ secrets.BOARD_PRIVATE_KEY }}
+          BOARD_HIDE: ${{ github.event.inputs.hide }}
+        run: python -m board.ingest
+      - name: Commit
+        run: |
+          set -uo pipefail
+          git config user.name "aiym168-board-bot"
+          git config user.email "aiym168-board-bot@users.noreply.github.com"
+          git add data/board api/board.json api/board_receipts.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -q -m "board: ingest $(TZ=Asia/Shanghai date '+%F %H:%M')"
+          for i in 1 2 3 4 5; do
+            if git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main; then echo pushed; exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*7))
+          done
+          echo "push failed"; exit 1

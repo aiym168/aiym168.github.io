@@ -407,6 +407,7 @@ def topnav(prefix="./"):
         f'<a href="{prefix}{esc(href)}" title="{esc(title)}">{esc(NAV_SHORT.get(mid, title))}</a>'
         for mid, title, _, href, _, _ in MODULES
     )
+    links += f'<a href="{prefix}m/board.html" title="匿名留言板 · 星际信号站">留言板</a>'
     links += f'<a href="{prefix}m/status.html" title="更新动态">更新动态</a>'
     links += f'<a class="cta" href="{prefix}m/api.html" title="CLI / API">CLI / API</a>'
     return f"""
@@ -554,14 +555,17 @@ def write_sitemaps(urls):
 Allow: /
 Disallow: /data/
 Disallow: /engine/
+Disallow: /board/
 User-agent: Baiduspider
 Allow: /
 Disallow: /data/
 Disallow: /engine/
+Disallow: /board/
 User-agent: Baiduspider-render
 Allow: /
 Disallow: /data/
 Disallow: /engine/
+Disallow: /board/
 Sitemap: {CANONICAL}sitemap_index.xml
 Sitemap: {CANONICAL}sitemap.xml
 Sitemap: {CANONICAL}sitemap.txt
@@ -1048,6 +1052,25 @@ def write_404():
     )
 
 
+def _board_teaser() -> str:
+    try:
+        from board.page import home_teaser_html
+        return home_teaser_html("")
+    except Exception as e:  # board must never break the main build
+        print("[board] teaser skipped:", e)
+        return ""
+
+
+def _board_page(ym: str):
+    try:
+        from board.page import write_board_page
+        return write_board_page(SITE, head_block=head_block, topnav=topnav, site_footer=site_footer, site_js=SITE_JS,
+                                canonical=CANONICAL, site_name=SITE_NAME, ym=ym, esc=esc)
+    except Exception as e:
+        print("[board] page skipped:", e)
+        return None
+
+
 def build():
     global CFG, SITE_NAME, CANONICAL, META_DESC
     CFG = load_cfg()
@@ -1168,6 +1191,8 @@ def build():
     <div class="module-grid">{''.join(tiles)}</div>
   </section>
 
+  {_board_teaser()}
+
   <section class="section" id="cli-api">
     <div class="sec-head"><span class="sec-idx">02 / DEVELOPER</span>
     <h2>CLI / API</h2>
@@ -1201,7 +1226,10 @@ def build():
 </body></html>"""
     (SITE / "index.html").write_text(page, encoding="utf-8")
 
+    board_path = _board_page(ym)
     url_entries = [("", date, "hourly", "1.0"), ("404.html", date, "yearly", "0.1"), ("m/api.html", date, "weekly", "0.8"), ("m/status.html", date, "hourly", "0.5"), ("feed.xml", date, "hourly", "0.6"), ("api/index.json", date, "hourly", "0.5")]
+    if board_path:
+        url_entries.append((board_path, date, "daily", "0.7"))  # page only; messages are never in the sitemap
     for pth in cat_paths + mod_paths:
         url_entries.append((pth, date, "daily", "0.9"))
     for pth in item_paths:
