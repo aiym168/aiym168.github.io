@@ -2,52 +2,72 @@
  "counts": {
   "archived": 6,
   "deadline_extracted": 5,
-  "drop:empty_summary": 4,
-  "drop:negative_signal": 40,
-  "drop:no_clear_offer": 40,
-  "drop:not_ai": 39,
+  "drop:duplicate": 13,
+  "drop:empty_summary": 6,
+  "drop:negative_signal": 60,
+  "drop:no_clear_offer": 59,
+  "drop:not_ai": 70,
   "drop:too_old_pre2025": 40,
-  "google_news_resolved": 58,
-  "google_news_total": 58,
-  "kept_total": 60,
-  "net:gnews_cache_hit": 58,
-  "raw_total": 223
+  "google_news_resolved": 83,
+  "google_news_total": 83,
+  "kept_total": 69,
+  "net:gnews_cache_hit": 74,
+  "net:gnews_resolved_net": 9,
+  "net:tco_expanded": 2,
+  "new_this_run": 6,
+  "raw_total": 317
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
+  "duplicate": [
+   "dsh-our-free-model：在 dsh 里装上这个插件即可",
+   "ai-engineer-notebooks：适用于 AI 工程师/前沿部署工程师(FDE)技能集的实践、免框架 Cola",
+   "atticus-mac：适用于 Mac 的快速、免费语音助手",
+   "Pulse：了解您还剩下多少 Claude Code、Codex、Cursor",
+   "alphacode：免费的 MIT AI 编码代理",
+   "Awwwards-mcp：免费的开源 MCP 服务器",
+   "Lampline：在您自己的计算机上构建 AI 电话代理",
+   "kokon：在您自己的 GPU 上，通过描述更改来编辑照片",
+   "CalibRaw：适用于 Linux、Android、Windows 和 macOS 的免费开源 RAW 编辑器",
+   "browsentic：代理浏览器 Harness",
+   "openfill：PhotoCraft 和 GIMP 的生成填充、删除对象、生成展开和文本到图像3.通过 ComfyUI",
+   "HaizFlow：免费的 Windows 桌面应用程序"
+  ],
   "empty_summary": [
+   "今天免费 GPU",
+   "@TeachHoopsBBall 分享：免费学习 AI",
    "@TeachHoopsBBall 分享：免费学习 AI",
    "今天免费 GPU...也许免费 PC",
    "今日免费 GPU，是的，全球范围内都有",
    "如何免费获得 Claude 认证：如何免费获得 Claude 认证"
   ],
   "negative_signal": [
-   "给 Hermes 自己的电脑，让它今晚工作",
-   "让 Hermes 在您登录的应用程序中进行真正的工作",
-   "Anthropic 给了我 30,000 美元的 Claude 学分来研究我自己的肿瘤，我自 3 月份以来就写下了我所构",
-   "@EricTopol 分享：一项真实世界随机试验，由 AI 生成患者外行在手术预约前的医疗结果摘要（与对照标准相比，无对",
-   "建立您自己的 Grok Bot + Claude 团队",
-   "让您的网站在 Google 的 AI 概述中被引用",
-   "中国的 DeepSeek 放弃了免费的 Claude Code 竞争对手，并且在本周 14 个最大的 AI 更新中处于领",
-   "中国的 DeepSeek 放弃了免费的 Claude Code 竞争对手，并且在本周 14 个最大的 AI 更新中处于领",
-   "@ALeighMP 分享：在一项随机试验中，使用 AI 的软件开发人员完成任务的时间延长了 19%",
-   "@lennysan 分享：免费 AI 研讨会提醒，我的教育主管 Colin Matthews 将在接下来的几周内与 @C",
-   "我正在与 Mark Cuban 一起为 20,000 人举办免费的 AI Agent 研讨会",
-   "我们开始在 ChatGPT 免费和 Go（新的 8 美元/月选项）级别测试广告"
+   "我的最后一项开源技能 /no-ai-slop 显然触动了 4K GitHub star 的神经",
+   "免费课程：这个 Hermes Agent OS 设置绝对是狂野的",
+   "我将 12 本免费的 MIT AI 教科书喂给了 Claude",
+   "据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来就像是免费的 AI 视频",
+   "当 Grok Bot 耗尽时，让您的机器人团队继续运行",
+   "@ZDNET 分享：我尝试用完全免费的本地 AI 堆栈替换 Claude Code - 进展如何 - ZDNET 我尝试",
+   "像 Artcraft 这样的 AI 驱动的逆向工程正在生产免费的 Photoshop 和 Lightroom 克隆",
+   "今天免费 GPU，是的，全球赠品",
+   "@JulianGoldieSEO 分享：在一个屏幕上查看您的企业运行的每个 AI Agent",
+   "@alex_verem 分享：今晚你的笔记本电脑可以取代你的 AI 订阅",
+   "有关在您离开时继续工作的 AI 代理的免费课程：Herdr 刚刚获得了本机 AI 代理桌面应用程序",
+   "给 Hermes 自己的电脑，让它今晚工作"
   ],
   "no_clear_offer": [
+   "您现在可以免费在本地运行 Claude Code",
+   "ChatGPT Images 2.6 适用于所有 ChatGPT 级别，包括免费",
+   "开始与 Alexandria 一起研究 8,000 多家上市公司",
+   "三星 Galaxy AI Premium 计划揭晓",
+   "加入 HKFP：通过每月/每年捐款解锁 8 项福利",
+   "@dr_cintas 分享：您现在可以将任何网页动画逆向工程到您自己的代码中",
+   "免费 ChatGPT 用户现在可以制作动画 GIF，Google 将其视频模型的价格降低了约 30%",
+   "Anthropic 刚刚向 Claude Max 添加了每月 API 积分，团队计划 Max 5x 每月获得 100 美",
+   "@mdancho84 分享：如果您是一名试图成为 AI 工程师的数据科学家，请停止收集随机教程",
+   "Herdr Desktop：现在是免费的本机应用程序 关闭窗口，您的 AI 编码代理将继续运行 -",
    "独家：以下是三星 Galaxy AI Premium 计划带来的内容以及免费的内容",
-   "在此加入免费的 GPT-6 Astra 速成课程",
-   "AI 工具比 PW 和 Allen 等商业辅导课程更能帮助学生应对考试，因为它们为学生提供 PYQ",
-   "@dwarkesh_sp 分享：我花了 20,000 美元的 API 积分，让不同的 AI 模型在 Blood on t",
-   "我真的厌倦了 GrokBot 的快速使用...将 Obsidian 连接到 GrokBot - 我使用它 3",
-   "@hackinarticles 分享：AI 渗透测试培训计划 预订免费演示 AI 和 LLM 应用程序正在带来新的安全挑",
-   "@BardhylBytyqi 分享：如果您使用 AI 进行设计，请保存此 1. — 最好的 vivicoding 工具 ",
-   "@fkadev 分享：如果 AI 对所有人都是免费且不受限制的，会怎样？",
-   "DeepSeek 的免费、可下载的 AI 模型在黑客攻击方面几乎与 OpenAI 被锁定在受限网络程序后面的模型一样出色",
-   "日期：2026 年 11 月 7 日 排灯节暂停：轻度",
-   "也可与免费 AI 工具配合使用：Mac、Windows 或 Linux 上的 Claude Code",
-   "积分可用于消息 API、Claude Managed Agents 和 Agent SDK"
+   "在此加入免费的 GPT-6 Astra 速成课程"
   ],
   "not_ai": [
    "让我的年长家庭成员摆脱 facebook Ai",
@@ -60,8 +80,8 @@
    "每周转售售价中位数的免费开放 API",
    "Fireside Folio：reMarkable 的免费书籍、漫画和新闻版本",
    "分级或跳过：测量 Pokémon 卡的居中和分级 ROI",
-   "儿童架，您孩子自己的小互联网",
-   "Vivonco：将患者的癌症报告与靶向药物和试验相匹配"
+   "Gitbet：适用于 Linux 的免费 sourcetree 风格 Git 客户端",
+   "告诉天空——根据实时天气数据信息灯笼随风飘移"
   ],
   "too_old_pre2025": [
    "GPT-Neo 是 GPT3 的 #OpenSource 堂兄，几乎可以在 #NLP 中执行任何操作，从情感分析到编写 ",
@@ -78,18 +98,18 @@
    "上周，EleutherAI 发布了 GPT Neo 的两个检查点，GPT Neo 是 OpenAI 的 GPT-3 的“"
   ]
  },
- "generated_at": "2026-11-09T23:49:13+08:00",
- "seconds": 0.2,
+ "generated_at": "2026-11-10T00:01:58+08:00",
+ "seconds": 4.0,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 7,
-   "drop:not_ai": 14,
-   "drop:not_ai_strict": 10,
-   "kept": 9,
+   "drop:negative_signal": 4,
+   "drop:not_ai": 15,
+   "drop:not_ai_strict": 9,
+   "kept": 12,
    "raw": 40
   }
  }
