@@ -714,6 +714,73 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   .octo-teaser{grid-template-columns:1fr}
 }
 
+/* ---------- compact filters (v5) ---------- */
+.filters.compact{padding:14px 16px;margin-bottom:16px}
+.filters.compact .searchbar{margin-bottom:10px}
+.filters.compact .searchbar input{padding:10px 14px}
+.filters.compact .fgroups{gap:8px}
+.filters.compact .fgroup{align-items:center;gap:10px}
+.filters.compact .flabel{width:auto;min-width:64px;padding-top:0;font-size:.82rem;color:var(--muted)}
+.filters.compact .fmod .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent);padding-right:24px}
+.filters.compact .fmod .chips::-webkit-scrollbar{display:none}
+.filters.compact .chip{flex:none;font-size:.82rem;padding:4px 11px}
+.fmore{display:flex;flex-direction:column;gap:8px;padding:10px 0 2px;border-top:1px dashed rgba(140,200,255,.14);margin-top:2px}
+.fmore[hidden]{display:none}
+.filters.compact .fbar{display:flex;align-items:center;gap:10px 14px;flex-wrap:nowrap;margin-top:10px;white-space:nowrap}
+.fmore-btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:.84rem;color:var(--text);background:rgba(92,225,255,.06);border:1px solid rgba(140,200,255,.25);border-radius:999px;padding:5px 12px;cursor:pointer;min-width:0;overflow:hidden}
+.fmore-btn:hover{border-color:var(--cyan)}
+.fmore-btn .fmore-hint{color:var(--dim);font-size:.78rem;overflow:hidden;text-overflow:ellipsis}
+.fmore-btn i{font-style:normal;transition:transform .25s;color:var(--cyan)}
+.fmore-btn[aria-expanded="true"] i{transform:rotate(180deg)}
+.fmore-btn .fmore-n{display:inline-grid;place-items:center;min-width:18px;height:18px;border-radius:9px;background:var(--cyan);color:#02040a;font-size:.72rem}
+.filters.compact .f-count{margin-left:auto;font-size:.85rem;color:var(--muted)}
+.filters.compact .sort{font-size:.85rem;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+.filters.compact .sort select{max-width:150px}
+
+/* ---------- homepage showcase (octopus + board) ---------- */
+.showcase{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:4px 0 22px}
+.show-card{position:relative;display:flex;flex-direction:column;border-radius:22px;overflow:hidden;color:var(--text);background:rgba(8,12,26,.8);border:1px solid rgba(140,200,255,.16);isolation:isolate;transition:transform .5s var(--ease),border-color .4s,box-shadow .5s}
+.show-card::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(130deg,rgba(92,225,255,.7),transparent 35%,transparent 65%,rgba(167,139,250,.7));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.45;transition:opacity .4s;pointer-events:none;z-index:3}
+.show-card:hover{transform:translateY(-4px);color:var(--text);box-shadow:0 30px 70px -30px rgba(92,225,255,.45)}
+.show-card.sc-board:hover{box-shadow:0 30px 70px -30px rgba(167,139,250,.55)}
+.show-card:hover::before{opacity:1}
+.sc-media{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:#02050b}
+.sc-media img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.04);animation:scDrift 18s ease-in-out infinite alternate;transition:transform 1s var(--ease)}
+.sc-board .sc-media img{animation-duration:24s;animation-name:scSpin}
+.show-card:hover .sc-media img{transform:scale(1.1)}
+@keyframes scDrift{from{transform:scale(1.04) translate(0,0)}to{transform:scale(1.12) translate(-2%,-1.5%)}}
+@keyframes scSpin{from{transform:scale(1.08) rotate(-1.5deg)}to{transform:scale(1.16) rotate(1.5deg)}}
+.sc-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(4,7,16,.92));pointer-events:none}
+.sc-scan{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(92,225,255,.12) 50%,transparent);height:40%;transform:translateY(-100%);animation:scScan 5.5s linear infinite;pointer-events:none;mix-blend-mode:screen}
+.sc-board .sc-scan{background:linear-gradient(180deg,transparent,rgba(167,139,250,.14) 50%,transparent);animation-delay:-2.5s}
+@keyframes scScan{to{transform:translateY(260%)}}
+.sc-body{position:relative;z-index:2;display:flex;flex-direction:column;gap:6px;padding:0 22px 20px;margin-top:-58px}
+.sc-kicker{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--cyan)}
+.sc-board .sc-kicker{color:var(--violet)}
+.sc-title{font-family:var(--display);font-size:clamp(20px,2.1vw,26px);line-height:1.2}
+.sc-desc{color:var(--muted);font-size:.92rem;line-height:1.55}
+.sc-cta{margin-top:6px;align-self:flex-start;display:inline-flex;gap:8px;align-items:center;font-weight:600;font-size:.9rem;padding:7px 14px;border-radius:999px;background:rgba(92,225,255,.12);border:1px solid rgba(92,225,255,.45);color:#dff8ff;transition:background .3s,gap .3s}
+.sc-board .sc-cta{background:rgba(167,139,250,.14);border-color:rgba(167,139,250,.5);color:#efe9ff}
+.show-card:hover .sc-cta{gap:12px;background:rgba(92,225,255,.22)}
+.show-card.sc-board:hover .sc-cta{background:rgba(167,139,250,.26)}
+.reduce-motion .sc-media img,.reduce-motion .sc-scan{animation:none!important}
+@media (prefers-reduced-motion: reduce){.sc-media img,.sc-scan{animation:none!important}}
+@media (max-width:760px){
+  .showcase{grid-template-columns:1fr;gap:14px}
+  .sc-body{padding:0 16px 16px;margin-top:-44px}
+  .filters.compact{padding:12px}
+  .filters.compact .fbar{flex-wrap:wrap}
+  .fmore-btn .fmore-hint{display:none}
+  .filters.compact .fmore-btn{flex:1 1 100%;justify-content:center}
+  .filters.compact .f-count{margin-left:0}
+  .filters.compact .sort{margin-left:auto}
+  .filters.compact .fgroup{flex-direction:row!important;align-items:center}
+  .filters.compact .fmod .flabel{display:none}
+  .filters.compact .fmore .fgroup{flex-direction:column!important;align-items:flex-start;gap:4px}
+  .filters.compact .searchbar input{padding:9px 12px}
+  .filters.compact .sort select{max-width:120px}
+}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"@VaibhavSisinty 分享：这周我一直在测试我能找到的所有免费 AI 模型","description":"如果您现在正在构建一些东西，那么这些确实值得您花时间：Space Bunny Alpha 是其中的佼佼者。1M 上下文、多模式、快速且真正擅长编码。","datePublished":"2026-09-26T15:00:00+08:00","dateModified":"2026-11-09T20:31:12+08:00","mainEntityOfPage":"https://aiym168.github.io/item/vaibhavsisinty-ai-cac2d98f93.html","author":{"@type":"Organization","name":"AI大模型免费资源导航"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://aiym168.github.io/"},{"@type":"ListItem","position":2,"name":"其他科技资源","item":"https://aiym168.github.io/c/qita-keji.html"},{"@type":"ListItem","position":3,"name":"@VaibhavSisinty 分享：这周我一直在测试我能找到的所有免费 AI 模型","item":"https://aiym168.github.io/item/vaibhavsisinty-ai-cac2d98f93.html"}]}</script>
@@ -860,6 +927,24 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
       q.addEventListener('input', apply);
       var form = q.form; if (form) form.addEventListener('submit', function(e){ e.preventDefault(); apply(); var s = $('#search'); if (s && s.scrollIntoView) s.scrollIntoView({behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth'}); });
       try { var u = new URLSearchParams(location.search).get('q'); if (u) { q.value = u; } } catch(e) {}
+    }
+    var mb = $('#f-more-btn'), mp = $('#f-more-panel'), mn = $('#f-more-n');
+    function setMore(open, save){
+      if (!mb || !mp) return;
+      mp.hidden = !open; mb.setAttribute('aria-expanded', open ? 'true' : 'false'); fr.classList.toggle('more-open', open);
+      if (save) { try { localStorage.setItem('ai168-more-filters', open ? '1' : '0'); } catch(e) {} }
+    }
+    function moreCount(){
+      if (!mn || !mp) return;
+      var n = $all('[data-f][aria-pressed="true"]', mp).length;
+      mn.textContent = n ? String(n) : ''; mn.classList.toggle('hidden', !n);
+    }
+    if (mb && mp) {
+      var saved = null; try { saved = localStorage.getItem('ai168-more-filters'); } catch(e) {}
+      setMore(saved === '1', false);
+      mb.addEventListener('click', function(){ setMore(mp.hidden, true); });
+      $all('[data-f]', mp).forEach(function(b){ b.addEventListener('click', moreCount); });
+      if (clr) clr.addEventListener('click', moreCount);
     }
     fr.classList.add('js-ready');
     apply();

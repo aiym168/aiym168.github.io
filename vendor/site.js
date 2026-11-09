@@ -104,6 +104,24 @@
       var form = q.form; if (form) form.addEventListener('submit', function(e){ e.preventDefault(); apply(); var s = $('#search'); if (s && s.scrollIntoView) s.scrollIntoView({behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth'}); });
       try { var u = new URLSearchParams(location.search).get('q'); if (u) { q.value = u; } } catch(e) {}
     }
+    var mb = $('#f-more-btn'), mp = $('#f-more-panel'), mn = $('#f-more-n');
+    function setMore(open, save){
+      if (!mb || !mp) return;
+      mp.hidden = !open; mb.setAttribute('aria-expanded', open ? 'true' : 'false'); fr.classList.toggle('more-open', open);
+      if (save) { try { localStorage.setItem('ai168-more-filters', open ? '1' : '0'); } catch(e) {} }
+    }
+    function moreCount(){
+      if (!mn || !mp) return;
+      var n = $all('[data-f][aria-pressed="true"]', mp).length;
+      mn.textContent = n ? String(n) : ''; mn.classList.toggle('hidden', !n);
+    }
+    if (mb && mp) {
+      var saved = null; try { saved = localStorage.getItem('ai168-more-filters'); } catch(e) {}
+      setMore(saved === '1', false);
+      mb.addEventListener('click', function(){ setMore(mp.hidden, true); });
+      $all('[data-f]', mp).forEach(function(b){ b.addEventListener('click', moreCount); });
+      if (clr) clr.addEventListener('click', moreCount);
+    }
     fr.classList.add('js-ready');
     apply();
   }

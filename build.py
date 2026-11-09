@@ -580,34 +580,55 @@ def card_hot(it: dict, prefix: str = "") -> str:
 
 # ============================================================ filters UI
 def filter_panel(items: list[dict], with_module: bool, placeholder: str) -> str:
-    groups = []
-    keys = (["module"] if with_module else []) + ["requires_card", "requires_realname", "china_accessible", "type", "expiry_kind", "status"]
-    for k in keys:
+    """Compact filters: search + 模块 chips always visible; other facets behind a remembered “更多筛选” toggle."""
+    def chips_for(k):
         cnt = Counter(it.get(k) or "unknown" for it in items)
         if k == "module":
-            label = "模块"
             opts = [(mid, NAV_SHORT.get(mid, t)) for mid, t, _d, _h, kind, _c in MODULES if kind == "cat"]
         else:
-            label, names = FACT_LABELS[k]
-            opts = list(names.items())
-        chips = "".join(
+            opts = list(FACT_LABELS[k][1].items())
+        return "".join(
             f'<button type="button" class="chip" data-f="{k}" data-v="{esc(v)}" aria-pressed="false">{esc(n)} <i>{cnt.get(v, 0)}</i></button>'
-            for v, n in opts if cnt.get(v, 0) or v == "unknown"
-        )
-        groups.append(f'<div class="fgroup"><span class="flabel">{esc(label)}</span><div class="chips">{chips}</div></div>')
+            for v, n in opts if cnt.get(v, 0) or v == "unknown")
+    more_keys = ["requires_card", "requires_realname", "china_accessible", "type", "expiry_kind", "status"]
+    more = "".join(
+        f'<div class="fgroup"><span class="flabel">{esc(FACT_LABELS[k][0])}</span><div class="chips">{chips_for(k)}</div></div>'
+        for k in more_keys)
+    module_row = (f'<div class="fgroup fmod"><span class="flabel">模块</span><div class="chips">{chips_for("module")}</div></div>'
+                  if with_module else "")
     return f"""
-<div class="filters" data-filter-root>
+<div class="filters compact" data-filter-root>
   <form class="searchbar" role="search" action="" method="get" onsubmit="return false">
     <label class="sr-only" for="q">搜索</label>
     <input id="q" name="q" type="search" placeholder="{esc(placeholder)}" autocomplete="off" />
     <button type="submit" class="btn primary">搜索</button>
   </form>
-  <div class="fgroups">{''.join(groups)}</div>
-  <div class="fbar"><span id="f-count" class="f-count">共 {len(items)} 条</span>
-    <label class="sort">排序 <select id="f-sort"><option value="default">默认（置顶 + 最新）</option><option value="pub">按发布时间</option><option value="exp">按截止日期（最近在前）</option></select></label>
+  <div class="fgroups">{module_row}
+    <div class="fmore" id="f-more-panel" hidden>{more}</div>
+  </div>
+  <div class="fbar">
+    <button type="button" class="fmore-btn" id="f-more-btn" aria-expanded="false" aria-controls="f-more-panel">更多筛选 <span class="fmore-hint">绑卡 · 实名 · 直连 · 类型 · 有效期 · 状态</span><b class="fmore-n hidden" id="f-more-n"></b><i aria-hidden="true">▾</i></button>
+    <span id="f-count" class="f-count">共 {len(items)} 条</span>
+    <label class="sort">排序 <select id="f-sort"><option value="default">默认（置顶 + 最新）</option><option value="pub">按发布时间</option><option value="exp">按截止日期</option></select></label>
     <button type="button" id="f-clear" class="btn sm hidden">清除筛选</button></div>
   <noscript><p class="note">未启用 JavaScript：下方列出全部条目，可按模块页面浏览；搜索与筛选需要启用 JavaScript。</p></noscript>
 </div>"""
+
+
+def home_showcase(prefix: str = "./") -> str:
+    """Two equal featured cards on the homepage: the octopus demo and the board."""
+    cards = [
+        ("octo", f"{prefix}m/octopus.html", f"{prefix}assets/octopus-poster.jpg", "玻璃机械章鱼 3D 拆解演示截图",
+         "实验室 · 3D 拆解", "机械章鱼 HYALOS GX-8", "完全由代码在浏览器里生成，上千个零件，会自己一件件拆开再组装。", "打开 3D 演示"),
+        ("board", f"{prefix}m/board.html", f"{prefix}assets/board-poster.jpg", "星际信号站留言板星系截图",
+         "匿名留言 · 无需登录", "星际信号站 留言板", "写下想说的话，它会化作一颗信号星，飞进可以拖动旋转的星系。", "进入信号站"),
+    ]
+    html = "".join(f"""<a class="show-card sc-{k}" href="{href}">
+      <span class="sc-media"><img src="{img}" alt="{esc(alt)}" loading="lazy" decoding="async" width="960" height="540" /><span class="sc-scan" aria-hidden="true"></span></span>
+      <span class="sc-body"><span class="sc-kicker"><i class="live-dot"></i>{esc(kick)}</span><b class="sc-title">{esc(title)}</b>
+        <span class="sc-desc">{esc(desc)}</span><span class="sc-cta">{esc(cta)} <i aria-hidden="true">→</i></span></span>
+    </a>""" for k, href, img, alt, kick, title, desc, cta in cards)
+    return f'<div class="showcase" aria-label="本站展示">{html}</div>'
 
 
 # ============================================================ pages
@@ -1294,8 +1315,9 @@ def build():
 <main class="wrap">
   <section class="section" id="search">
     <div class="sec-head"><span class="sec-idx">01 · 找资源</span><h2>搜索与筛选</h2>
-      <p class="sec-desc">按“要不要绑卡、要不要实名、国内能否直连、免费类型、有效期”筛选。标为“未注明”的项，原文没有写清楚。</p></div>
+      <p class="sec-desc">搜索关键词，或按模块筛选；绑卡、实名、直连等条件在“更多筛选”里。标“未注明”的，是原文没写清楚。</p></div>
     {filter_panel(active, True, "搜索：Gemini、DeepSeek、免费 GPU、免绑卡…")}
+    {home_showcase('./')}
     <div class="grid" data-list data-limit="24">{cards}</div>
     <div id="f-empty" class="empty hidden">没有符合条件的条目，试试清除筛选</div>
     <p class="more-row"><button type="button" id="f-more" class="btn hidden">显示全部 {len(active)} 条</button></p>
@@ -1312,9 +1334,6 @@ def build():
     <ol class="latest5">{latest_html}</ol>
   </section>
 
-  {_board_teaser()}
-
-  {octopus_teaser('./')}
 
   <section class="section disclaimer" id="about">
     <div class="sec-head"><span class="sec-idx">04 · 关于与声明</span><h2>关于本站与免责声明</h2></div>

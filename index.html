@@ -713,6 +713,73 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   .octo-teaser{grid-template-columns:1fr}
 }
 
+/* ---------- compact filters (v5) ---------- */
+.filters.compact{padding:14px 16px;margin-bottom:16px}
+.filters.compact .searchbar{margin-bottom:10px}
+.filters.compact .searchbar input{padding:10px 14px}
+.filters.compact .fgroups{gap:8px}
+.filters.compact .fgroup{align-items:center;gap:10px}
+.filters.compact .flabel{width:auto;min-width:64px;padding-top:0;font-size:.82rem;color:var(--muted)}
+.filters.compact .fmod .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent);padding-right:24px}
+.filters.compact .fmod .chips::-webkit-scrollbar{display:none}
+.filters.compact .chip{flex:none;font-size:.82rem;padding:4px 11px}
+.fmore{display:flex;flex-direction:column;gap:8px;padding:10px 0 2px;border-top:1px dashed rgba(140,200,255,.14);margin-top:2px}
+.fmore[hidden]{display:none}
+.filters.compact .fbar{display:flex;align-items:center;gap:10px 14px;flex-wrap:nowrap;margin-top:10px;white-space:nowrap}
+.fmore-btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:.84rem;color:var(--text);background:rgba(92,225,255,.06);border:1px solid rgba(140,200,255,.25);border-radius:999px;padding:5px 12px;cursor:pointer;min-width:0;overflow:hidden}
+.fmore-btn:hover{border-color:var(--cyan)}
+.fmore-btn .fmore-hint{color:var(--dim);font-size:.78rem;overflow:hidden;text-overflow:ellipsis}
+.fmore-btn i{font-style:normal;transition:transform .25s;color:var(--cyan)}
+.fmore-btn[aria-expanded="true"] i{transform:rotate(180deg)}
+.fmore-btn .fmore-n{display:inline-grid;place-items:center;min-width:18px;height:18px;border-radius:9px;background:var(--cyan);color:#02040a;font-size:.72rem}
+.filters.compact .f-count{margin-left:auto;font-size:.85rem;color:var(--muted)}
+.filters.compact .sort{font-size:.85rem;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+.filters.compact .sort select{max-width:150px}
+
+/* ---------- homepage showcase (octopus + board) ---------- */
+.showcase{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:4px 0 22px}
+.show-card{position:relative;display:flex;flex-direction:column;border-radius:22px;overflow:hidden;color:var(--text);background:rgba(8,12,26,.8);border:1px solid rgba(140,200,255,.16);isolation:isolate;transition:transform .5s var(--ease),border-color .4s,box-shadow .5s}
+.show-card::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(130deg,rgba(92,225,255,.7),transparent 35%,transparent 65%,rgba(167,139,250,.7));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.45;transition:opacity .4s;pointer-events:none;z-index:3}
+.show-card:hover{transform:translateY(-4px);color:var(--text);box-shadow:0 30px 70px -30px rgba(92,225,255,.45)}
+.show-card.sc-board:hover{box-shadow:0 30px 70px -30px rgba(167,139,250,.55)}
+.show-card:hover::before{opacity:1}
+.sc-media{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:#02050b}
+.sc-media img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.04);animation:scDrift 18s ease-in-out infinite alternate;transition:transform 1s var(--ease)}
+.sc-board .sc-media img{animation-duration:24s;animation-name:scSpin}
+.show-card:hover .sc-media img{transform:scale(1.1)}
+@keyframes scDrift{from{transform:scale(1.04) translate(0,0)}to{transform:scale(1.12) translate(-2%,-1.5%)}}
+@keyframes scSpin{from{transform:scale(1.08) rotate(-1.5deg)}to{transform:scale(1.16) rotate(1.5deg)}}
+.sc-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(4,7,16,.92));pointer-events:none}
+.sc-scan{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(92,225,255,.12) 50%,transparent);height:40%;transform:translateY(-100%);animation:scScan 5.5s linear infinite;pointer-events:none;mix-blend-mode:screen}
+.sc-board .sc-scan{background:linear-gradient(180deg,transparent,rgba(167,139,250,.14) 50%,transparent);animation-delay:-2.5s}
+@keyframes scScan{to{transform:translateY(260%)}}
+.sc-body{position:relative;z-index:2;display:flex;flex-direction:column;gap:6px;padding:0 22px 20px;margin-top:-58px}
+.sc-kicker{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--cyan)}
+.sc-board .sc-kicker{color:var(--violet)}
+.sc-title{font-family:var(--display);font-size:clamp(20px,2.1vw,26px);line-height:1.2}
+.sc-desc{color:var(--muted);font-size:.92rem;line-height:1.55}
+.sc-cta{margin-top:6px;align-self:flex-start;display:inline-flex;gap:8px;align-items:center;font-weight:600;font-size:.9rem;padding:7px 14px;border-radius:999px;background:rgba(92,225,255,.12);border:1px solid rgba(92,225,255,.45);color:#dff8ff;transition:background .3s,gap .3s}
+.sc-board .sc-cta{background:rgba(167,139,250,.14);border-color:rgba(167,139,250,.5);color:#efe9ff}
+.show-card:hover .sc-cta{gap:12px;background:rgba(92,225,255,.22)}
+.show-card.sc-board:hover .sc-cta{background:rgba(167,139,250,.26)}
+.reduce-motion .sc-media img,.reduce-motion .sc-scan{animation:none!important}
+@media (prefers-reduced-motion: reduce){.sc-media img,.sc-scan{animation:none!important}}
+@media (max-width:760px){
+  .showcase{grid-template-columns:1fr;gap:14px}
+  .sc-body{padding:0 16px 16px;margin-top:-44px}
+  .filters.compact{padding:12px}
+  .filters.compact .fbar{flex-wrap:wrap}
+  .fmore-btn .fmore-hint{display:none}
+  .filters.compact .fmore-btn{flex:1 1 100%;justify-content:center}
+  .filters.compact .f-count{margin-left:0}
+  .filters.compact .sort{margin-left:auto}
+  .filters.compact .fgroup{flex-direction:row!important;align-items:center}
+  .filters.compact .fmod .flabel{display:none}
+  .filters.compact .fmore .fgroup{flex-direction:column!important;align-items:flex-start;gap:4px}
+  .filters.compact .searchbar input{padding:9px 12px}
+  .filters.compact .sort select{max-width:120px}
+}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"AI大模型免费资源导航","url":"https://aiym168.github.io/","description":"AI大模型免费资源导航汇总大模型免费API、免费GPT、Claude免费、DeepSeek免费额度、AI工具免费、免费GPU与GitHub热门项目，每小时更新，标注是否需绑卡、实名与国内直连。","inLanguage":"zh-CN","potentialAction":{"@type":"SearchAction","target":"https://aiym168.github.io/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 </head>
@@ -737,8 +804,8 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
       <div class="stats" aria-label="站点数据">
         <div class="pill"><span>免费资源</span><b>55</b><span>条</span></div>
         <div class="pill"><span>今日新增</span><b>55</b><span>条</span></div>
-        <div class="pill"><span>最后更新</span><b>22:50</b></div>
-        <div class="pill"><span>下次更新约</span><b>23:07</b></div>
+        <div class="pill"><span>最后更新</span><b>23:15</b></div>
+        <div class="pill"><span>下次更新约</span><b>00:07</b></div>
       </div>
       <p class="def-note">免费资源 = 去重后仍在有效期内的资源条目（含置顶与编辑整理条目；不含 GitHub 新热门与最近热议；已过期、或发布超过 30 天且没有未来截止日期的自动收录条目会移入归档）。</p>
     </div>
@@ -755,20 +822,33 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 <main class="wrap">
   <section class="section" id="search">
     <div class="sec-head"><span class="sec-idx">01 · 找资源</span><h2>搜索与筛选</h2>
-      <p class="sec-desc">按“要不要绑卡、要不要实名、国内能否直连、免费类型、有效期”筛选。标为“未注明”的项，原文没有写清楚。</p></div>
+      <p class="sec-desc">搜索关键词，或按模块筛选；绑卡、实名、直连等条件在“更多筛选”里。标“未注明”的，是原文没写清楚。</p></div>
     
-<div class="filters" data-filter-root>
+<div class="filters compact" data-filter-root>
   <form class="searchbar" role="search" action="" method="get" onsubmit="return false">
     <label class="sr-only" for="q">搜索</label>
     <input id="q" name="q" type="search" placeholder="搜索：Gemini、DeepSeek、免费 GPU、免绑卡…" autocomplete="off" />
     <button type="submit" class="btn primary">搜索</button>
   </form>
-  <div class="fgroups"><div class="fgroup"><span class="flabel">模块</span><div class="chips"><button type="button" class="chip" data-f="module" data-v="damoxing-mianfei-api" aria-pressed="false">免费API <i>13</i></button><button type="button" class="chip" data-f="module" data-v="ai-huiyuan-shiyong" aria-pressed="false">会员试用 <i>5</i></button><button type="button" class="chip" data-f="module" data-v="ai-kaifa-gongju" aria-pressed="false">开发工具 <i>21</i></button><button type="button" class="chip" data-f="module" data-v="mianfei-gpu-yunfuwu" aria-pressed="false">免费GPU <i>8</i></button><button type="button" class="chip" data-f="module" data-v="keji-app-xianmian" aria-pressed="false">App限免 <i>5</i></button><button type="button" class="chip" data-f="module" data-v="ai-kecheng-huodong" aria-pressed="false">课程活动 <i>1</i></button><button type="button" class="chip" data-f="module" data-v="qita-keji" aria-pressed="false">其他 <i>2</i></button></div></div><div class="fgroup"><span class="flabel">要不要绑卡</span><div class="chips"><button type="button" class="chip" data-f="requires_card" data-v="no" aria-pressed="false">免绑卡 <i>5</i></button><button type="button" class="chip" data-f="requires_card" data-v="unknown" aria-pressed="false">未注明 <i>50</i></button></div></div><div class="fgroup"><span class="flabel">实名/手机号</span><div class="chips"><button type="button" class="chip" data-f="requires_realname" data-v="no" aria-pressed="false">无需实名 <i>2</i></button><button type="button" class="chip" data-f="requires_realname" data-v="yes" aria-pressed="false">需实名或手机号 <i>6</i></button><button type="button" class="chip" data-f="requires_realname" data-v="unknown" aria-pressed="false">未注明 <i>47</i></button></div></div><div class="fgroup"><span class="flabel">国内能否直连</span><div class="chips"><button type="button" class="chip" data-f="china_accessible" data-v="yes" aria-pressed="false">国内可直连 <i>2</i></button><button type="button" class="chip" data-f="china_accessible" data-v="unknown" aria-pressed="false">未注明 <i>53</i></button></div></div><div class="fgroup"><span class="flabel">免费类型</span><div class="chips"><button type="button" class="chip" data-f="type" data-v="permanent" aria-pressed="false">永久免费 <i>18</i></button><button type="button" class="chip" data-f="type" data-v="trial" aria-pressed="false">试用 <i>5</i></button><button type="button" class="chip" data-f="type" data-v="quota" aria-pressed="false">限额 <i>20</i></button><button type="button" class="chip" data-f="type" data-v="unknown" aria-pressed="false">未注明 <i>12</i></button></div></div><div class="fgroup"><span class="flabel">额度有效期</span><div class="chips"><button type="button" class="chip" data-f="expiry_kind" data-v="deadline" aria-pressed="false">有截止日期 <i>5</i></button><button type="button" class="chip" data-f="expiry_kind" data-v="daily" aria-pressed="false">按日重置 <i>7</i></button><button type="button" class="chip" data-f="expiry_kind" data-v="limited" aria-pressed="false">限期试用 <i>1</i></button><button type="button" class="chip" data-f="expiry_kind" data-v="long" aria-pressed="false">长期有效 <i>1</i></button><button type="button" class="chip" data-f="expiry_kind" data-v="unknown" aria-pressed="false">未注明 <i>41</i></button></div></div><div class="fgroup"><span class="flabel">状态</span><div class="chips"><button type="button" class="chip" data-f="status" data-v="available" aria-pressed="false">可领（已核实） <i>1</i></button><button type="button" class="chip" data-f="status" data-v="expiring" aria-pressed="false">即将过期 <i>2</i></button><button type="button" class="chip" data-f="status" data-v="unverified" aria-pressed="false">未核实 <i>52</i></button></div></div></div>
-  <div class="fbar"><span id="f-count" class="f-count">共 55 条</span>
-    <label class="sort">排序 <select id="f-sort"><option value="default">默认（置顶 + 最新）</option><option value="pub">按发布时间</option><option value="exp">按截止日期（最近在前）</option></select></label>
+  <div class="fgroups"><div class="fgroup fmod"><span class="flabel">模块</span><div class="chips"><button type="button" class="chip" data-f="module" data-v="damoxing-mianfei-api" aria-pressed="false">免费API <i>13</i></button><button type="button" class="chip" data-f="module" data-v="ai-huiyuan-shiyong" aria-pressed="false">会员试用 <i>5</i></button><button type="button" class="chip" data-f="module" data-v="ai-kaifa-gongju" aria-pressed="false">开发工具 <i>21</i></button><button type="button" class="chip" data-f="module" data-v="mianfei-gpu-yunfuwu" aria-pressed="false">免费GPU <i>8</i></button><button type="button" class="chip" data-f="module" data-v="keji-app-xianmian" aria-pressed="false">App限免 <i>5</i></button><button type="button" class="chip" data-f="module" data-v="ai-kecheng-huodong" aria-pressed="false">课程活动 <i>1</i></button><button type="button" class="chip" data-f="module" data-v="qita-keji" aria-pressed="false">其他 <i>2</i></button></div></div>
+    <div class="fmore" id="f-more-panel" hidden><div class="fgroup"><span class="flabel">要不要绑卡</span><div class="chips"><button type="button" class="chip" data-f="requires_card" data-v="no" aria-pressed="false">免绑卡 <i>5</i></button><button type="button" class="chip" data-f="requires_card" data-v="unknown" aria-pressed="false">未注明 <i>50</i></button></div></div><div class="fgroup"><span class="flabel">实名/手机号</span><div class="chips"><button type="button" class="chip" data-f="requires_realname" data-v="no" aria-pressed="false">无需实名 <i>2</i></button><button type="button" class="chip" data-f="requires_realname" data-v="yes" aria-pressed="false">需实名或手机号 <i>6</i></button><button type="button" class="chip" data-f="requires_realname" data-v="unknown" aria-pressed="false">未注明 <i>47</i></button></div></div><div class="fgroup"><span class="flabel">国内能否直连</span><div class="chips"><button type="button" class="chip" data-f="china_accessible" data-v="yes" aria-pressed="false">国内可直连 <i>2</i></button><button type="button" class="chip" data-f="china_accessible" data-v="unknown" aria-pressed="false">未注明 <i>53</i></button></div></div><div class="fgroup"><span class="flabel">免费类型</span><div class="chips"><button type="button" class="chip" data-f="type" data-v="permanent" aria-pressed="false">永久免费 <i>18</i></button><button type="button" class="chip" data-f="type" data-v="trial" aria-pressed="false">试用 <i>5</i></button><button type="button" class="chip" data-f="type" data-v="quota" aria-pressed="false">限额 <i>20</i></button><button type="button" class="chip" data-f="type" data-v="unknown" aria-pressed="false">未注明 <i>12</i></button></div></div><div class="fgroup"><span class="flabel">额度有效期</span><div class="chips"><button type="button" class="chip" data-f="expiry_kind" data-v="deadline" aria-pressed="false">有截止日期 <i>5</i></button><button type="button" class="chip" data-f="expiry_kind" data-v="daily" aria-pressed="false">按日重置 <i>7</i></button><button type="button" class="chip" data-f="expiry_kind" data-v="limited" aria-pressed="false">限期试用 <i>1</i></button><button type="button" class="chip" data-f="expiry_kind" data-v="long" aria-pressed="false">长期有效 <i>1</i></button><button type="button" class="chip" data-f="expiry_kind" data-v="unknown" aria-pressed="false">未注明 <i>41</i></button></div></div><div class="fgroup"><span class="flabel">状态</span><div class="chips"><button type="button" class="chip" data-f="status" data-v="available" aria-pressed="false">可领（已核实） <i>1</i></button><button type="button" class="chip" data-f="status" data-v="expiring" aria-pressed="false">即将过期 <i>2</i></button><button type="button" class="chip" data-f="status" data-v="unverified" aria-pressed="false">未核实 <i>52</i></button></div></div></div>
+  </div>
+  <div class="fbar">
+    <button type="button" class="fmore-btn" id="f-more-btn" aria-expanded="false" aria-controls="f-more-panel">更多筛选 <span class="fmore-hint">绑卡 · 实名 · 直连 · 类型 · 有效期 · 状态</span><b class="fmore-n hidden" id="f-more-n"></b><i aria-hidden="true">▾</i></button>
+    <span id="f-count" class="f-count">共 55 条</span>
+    <label class="sort">排序 <select id="f-sort"><option value="default">默认（置顶 + 最新）</option><option value="pub">按发布时间</option><option value="exp">按截止日期</option></select></label>
     <button type="button" id="f-clear" class="btn sm hidden">清除筛选</button></div>
   <noscript><p class="note">未启用 JavaScript：下方列出全部条目，可按模块页面浏览；搜索与筛选需要启用 JavaScript。</p></noscript>
 </div>
+    <div class="showcase" aria-label="本站展示"><a class="show-card sc-octo" href="./m/octopus.html">
+      <span class="sc-media"><img src="./assets/octopus-poster.jpg" alt="玻璃机械章鱼 3D 拆解演示截图" loading="lazy" decoding="async" width="960" height="540" /><span class="sc-scan" aria-hidden="true"></span></span>
+      <span class="sc-body"><span class="sc-kicker"><i class="live-dot"></i>实验室 · 3D 拆解</span><b class="sc-title">机械章鱼 HYALOS GX-8</b>
+        <span class="sc-desc">完全由代码在浏览器里生成，上千个零件，会自己一件件拆开再组装。</span><span class="sc-cta">打开 3D 演示 <i aria-hidden="true">→</i></span></span>
+    </a><a class="show-card sc-board" href="./m/board.html">
+      <span class="sc-media"><img src="./assets/board-poster.jpg" alt="星际信号站留言板星系截图" loading="lazy" decoding="async" width="960" height="540" /><span class="sc-scan" aria-hidden="true"></span></span>
+      <span class="sc-body"><span class="sc-kicker"><i class="live-dot"></i>匿名留言 · 无需登录</span><b class="sc-title">星际信号站 留言板</b>
+        <span class="sc-desc">写下想说的话，它会化作一颗信号星，飞进可以拖动旋转的星系。</span><span class="sc-cta">进入信号站 <i aria-hidden="true">→</i></span></span>
+    </a></div>
     <div class="grid" data-list data-limit="24">
 <article class="card pin-card" data-id="pinned-simular-box" data-module="mianfei-gpu-yunfuwu" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="quota" data-expiry_kind="daily" data-status="available" data-pub="2026-11-09T19:30:00+08:00" data-exp="" data-text="Simular Box：免费领一台给 AI 用的云端电脑（Linux 云桌面 / 云服务器） Simular 提供的云端 Linux 桌面（box），可作为远程 MCP 服务器接入 Claude、ChatGPT、Claude Code、Codex、Cursor、OpenCode、DeepSeek Harness 等 AI 工具，让 AI 在云端打开浏览器、点击输入、读屏幕、执行命令，不占用你自己的电脑。 打开 box.simular.ai 登录；在电脑上运行 npx @simular-ai/box connect，或在 Claude / ChatGPT / Cursor 中添加 MCP 地址 https://mcp.box.simular.ai/mcp，首次连接时在浏览器授权。 Simular 官网 免费 GPU / 云服务 云服务/GPU/开发者资源 绑卡：未注明 实名：未注明 直连：未注明 限额 按日重置 可领">
   <div class="card-top"><span class="src-ico"><img src="assets/favicons/box.simular.ai.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">Simular 官网</span><span class="pin-badge">📌 置顶 · 编辑推荐</span><span class="st st-ok">可领</span></div>
@@ -1434,54 +1514,6 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
     <ol class="latest5"><li><a href="item/modelatlas-ai-2026-c99a7f8603.html">ModelAtlas：开源 AI 模型目录 (2026)</a><span>大模型 API 免费额度 · 收录 2026-11-09 20:52</span></li><li><a href="item/free-ai-models-ai-llm-api-0df26a063b.html">free-ai-models：每日更新的免费 AI 模型列表（免费 LLM API）</a><span>大模型 API 免费额度 · 收录 2026-11-09 20:52</span></li><li><a href="item/apify-b2b-autopilot-pack-ai-b2b-d45c0b8335.html">apify-b2b-autopilot-pack：适用于 AI 代理的一体化自主 B2B 智能套件</a><span>AI 开发工具与编程助手 · 收录 2026-11-09 20:52</span></li><li><a href="item/qwen-3-8-27b-abliterated-near-ai-clo-bab9a59be6.html">Qwen 3.8 27B Abliterated 已在 NEAR AI Cloud 上上线</a><span>AI 产品会员/试用 · 收录 2026-11-09 20:52</span></li><li><a href="item/gpu-x-6fb7475005.html">立即观看免费 GPU，在 X 上直播</a><span>免费 GPU / 云服务 · 收录 2026-11-09 20:52</span></li></ol>
   </section>
 
-  <style>
-.bd-teaser{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;padding:34px;border-radius:28px;overflow:hidden;isolation:isolate;
-  border:1px solid rgba(167,139,250,.35);background:radial-gradient(600px 300px at 80% 50%,rgba(167,139,250,.22),transparent 70%),radial-gradient(500px 260px at 10% 0%,rgba(92,225,255,.14),transparent 70%),rgba(6,10,24,.7)}
-.bd-teaser::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.9;background-image:radial-gradient(1.5px 1.5px at 12% 22%,#fff,transparent),radial-gradient(1px 1px at 32% 72%,#bff,transparent),radial-gradient(1.5px 1.5px at 58% 18%,#caf,transparent),radial-gradient(1px 1px at 78% 62%,#fff,transparent),radial-gradient(1.5px 1.5px at 90% 30%,#9ff,transparent),radial-gradient(1px 1px at 46% 46%,#fff,transparent);background-size:240px 240px;animation:bdDrift 40s linear infinite}
-@keyframes bdDrift{to{background-position:240px 120px}}
-.bd-teaser h2{margin:8px 0 10px;font:700 clamp(28px,3.4vw,44px)/1.1 var(--display);background:linear-gradient(100deg,#fff,#bfefff 35%,#a78bfa 70%,#ff7ad9);-webkit-background-clip:text;background-clip:text;color:transparent}
-.bd-teaser p{color:var(--muted);margin:0 0 18px}
-.bd-orbit{position:relative;height:240px}
-.bd-orbit .o{position:absolute;left:50%;top:50%;border:1px solid rgba(140,200,255,.18);border-radius:50%;transform:translate(-50%,-50%) rotateX(68deg);animation:bdRot 18s linear infinite}
-.bd-orbit .o1{width:180px;height:180px}.bd-orbit .o2{width:300px;height:300px;animation-duration:30s;border-color:rgba(167,139,250,.2)}.bd-orbit .o3{width:420px;height:420px;animation-duration:46s}
-@keyframes bdRot{to{transform:translate(-50%,-50%) rotateX(68deg) rotateZ(360deg)}}
-.bd-orbit .core{position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px;border-radius:50%;background:radial-gradient(circle,#fff,#a78bfa 45%,transparent 70%);box-shadow:0 0 60px 18px rgba(167,139,250,.45);animation:bdPulse 3s infinite}
-.bd-chip{position:absolute;max-width:240px;padding:8px 12px;border-radius:12px;font-size:12.5px;line-height:1.5;color:#e6eeff;background:rgba(8,12,28,.72);border:1px solid rgba(140,200,255,.25);backdrop-filter:blur(8px);animation:bdFloat 6s ease-in-out infinite;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.bd-chip b{color:var(--cyan);font-weight:600;margin-right:6px}
-.bd-chip:nth-child(1){left:2%;top:12%}.bd-chip:nth-child(2){right:0;top:44%;animation-delay:-2s}.bd-chip:nth-child(3){left:12%;bottom:6%;animation-delay:-4s}
-@keyframes bdFloat{50%{transform:translateY(-10px)}}
-@media (max-width:820px){.bd-teaser{grid-template-columns:1fr;padding:24px}.bd-orbit{height:200px}.bd-chip{max-width:200px}}
-</style>
-<section class="section" id="board">
-  <div class="bd-teaser reveal">
-    <div>
-      <div class="bd-kicker" style="font:500 12px/1 var(--mono);letter-spacing:.3em;color:var(--cyan)">匿名留言 · 星际信号站</div>
-      <h2>匿名留言板 · 星际信号站</h2>
-      <p>无需登录，写下你想说的话，它会化作一束光飞入星空，成为一颗可以被所有人点亮阅读的信号星。</p>
-      <a class="btn primary" href="m/board.html">进入星际信号站 →</a>
-    </div>
-    <div class="bd-orbit" aria-hidden="true">
-      <span class="o o3"></span><span class="o o2"></span><span class="o o1"></span><span class="core"></span>
-      <div id="bd-chips"></div>
-    </div>
-  </div>
-</section>
-<script>
-(function(){var box=document.getElementById('bd-chips');if(!box)return;
-fetch('api/board.json?t='+Math.floor(Date.now()/600000)).then(function(r){return r.json()}).then(function(j){
-var ms=(j.messages||[]).slice(0,3);if(!ms.length){ms=[{nick:'星际旅人',text:'成为第一个发射信号的人吧 ✦'}]}
-ms.forEach(function(m){var c=document.createElement('div');c.className='bd-chip';var b=document.createElement('b');b.textContent=m.nick||'匿名旅人';c.appendChild(b);c.appendChild(document.createTextNode(m.text||''));box.appendChild(c)});
-}).catch(function(){});})();
-</script>
-
-  <section class="section" id="lab">
-    <div class="sec-head"><span class="sec-idx">实验室</span><h2>HYALOS GX-8 · 玻璃机械章鱼</h2>
-      <p class="sec-desc">一只完全由代码在浏览器里生成的 3D 机械章鱼，会自己一件件拆开再组装回去。</p></div>
-    <a class="octo-teaser" href="./m/octopus.html">
-      <span class="ot-img"><img src="./assets/octopus-poster.jpg" alt="玻璃机械章鱼 3D 拆解演示截图" loading="lazy" width="960" height="540" /></span>
-      <span class="ot-body"><b>3D 拆解演示</b><span>玻璃头罩、光学眼、反应核心、喷射管、8 条机械腕，上千个零件，可拖动旋转、逐个拆开。</span><em>打开演示 →</em></span>
-    </a>
-  </section>
 
   <section class="section disclaimer" id="about">
     <div class="sec-head"><span class="sec-idx">04 · 关于与声明</span><h2>关于本站与免责声明</h2></div>
@@ -1496,7 +1528,7 @@ ms.forEach(function(m){var c=document.createElement('div');c.className='bd-chip'
   </section>
   
   <footer>
-  <div><span class="foot-brand">AI大模型免费资源导航</span> · 生成于 2026-11-09 22:50 北京时间<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
+  <div><span class="foot-brand">AI大模型免费资源导航</span> · 生成于 2026-11-09 23:15 北京时间<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
   <div class="foot-links"><a href="./m/api.html">CLI / API</a> · <a href="./m/status.html">更新动态</a> · <a href="./archives/index.html">已归档</a> · <a href="./m/board.html">留言板</a> · <a href="./m/octopus.html">机械章鱼 3D</a> · <a href="./feed.xml">RSS</a> · <a href="./sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>
 </main>
@@ -1605,6 +1637,24 @@ ms.forEach(function(m){var c=document.createElement('div');c.className='bd-chip'
       q.addEventListener('input', apply);
       var form = q.form; if (form) form.addEventListener('submit', function(e){ e.preventDefault(); apply(); var s = $('#search'); if (s && s.scrollIntoView) s.scrollIntoView({behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth'}); });
       try { var u = new URLSearchParams(location.search).get('q'); if (u) { q.value = u; } } catch(e) {}
+    }
+    var mb = $('#f-more-btn'), mp = $('#f-more-panel'), mn = $('#f-more-n');
+    function setMore(open, save){
+      if (!mb || !mp) return;
+      mp.hidden = !open; mb.setAttribute('aria-expanded', open ? 'true' : 'false'); fr.classList.toggle('more-open', open);
+      if (save) { try { localStorage.setItem('ai168-more-filters', open ? '1' : '0'); } catch(e) {} }
+    }
+    function moreCount(){
+      if (!mn || !mp) return;
+      var n = $all('[data-f][aria-pressed="true"]', mp).length;
+      mn.textContent = n ? String(n) : ''; mn.classList.toggle('hidden', !n);
+    }
+    if (mb && mp) {
+      var saved = null; try { saved = localStorage.getItem('ai168-more-filters'); } catch(e) {}
+      setMore(saved === '1', false);
+      mb.addEventListener('click', function(){ setMore(mp.hidden, true); });
+      $all('[data-f]', mp).forEach(function(b){ b.addEventListener('click', moreCount); });
+      if (clr) clr.addEventListener('click', moreCount);
     }
     fr.classList.add('js-ready');
     apply();
