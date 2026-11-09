@@ -81,32 +81,47 @@ def main() -> int:
     payload = {
         "host": HOST,
         "key": key,
+        "keyLocation": f"https://{HOST}/{key}.txt",
         "urlList": batch,
     }
-    # keyLocation only needed when key file is not at host root
-    if not (ROOT / f"{key}.txt").exists():
-        payload["keyLocation"] = f"https://{HOST}/{key}.txt"
-    req = urllib.request.Request(
+    endpoints = [
         ENDPOINT,
-        data=json.dumps(payload).encode("utf-8"),
-        method="POST",
-        headers={"Content-Type": "application/json; charset=utf-8"},
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            code = resp.getcode()
-            body = resp.read().decode("utf-8", "replace")[:300]
-            print(f"[indexnow] ok status={code} n={len(batch)} body={body!r}")
-    except urllib.error.HTTPError as e:
-        detail = ""
+        "https://www.bing.com/indexnow",
+        "https://yandex.com/indexnow",
+    ]
+    ok = False
+    last = ""
+    for ep in endpoints:
+        req = urllib.request.Request(
+            ep,
+            data=json.dumps(payload).encode("utf-8"),
+            method="POST",
+            headers={"Content-Type": "application/json; charset=utf-8", "User-Agent": "aiym168-indexnow/1.0"},
+        )
         try:
-            detail = e.read().decode("utf-8", "replace")[:300]
-        except Exception:
-            pass
-        print(f"[indexnow] http {e.code}: {detail}")
-        return 0
-    except Exception as e:
-        print(f"[indexnow] failed: {type(e).__name__}: {e}")
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                code = resp.getcode()
+                body = resp.read().decode("utf-8", "replace")[:300]
+                print(f"[indexnow] ok ep={ep} status={code} n={len(batch)} body={body!r}")
+                ok = True
+                break
+        except urllib.error.HTTPError as e:
+            detail = ""
+            try:
+                detail = e.read().decode("utf-8", "replace")[:300]
+            except Exception:
+                pass
+            last = f"http {e.code}: {detail}"
+            print(f"[indexnow] {ep} -> {last}")
+            # 202 Accepted is success for first-time key verify on some engines
+            if e.code == 202:
+                ok = True
+                break
+        except Exception as e:
+            last = f"{type(e).__name__}: {e}"
+            print(f"[indexnow] {ep} -> {last}")
+    if not ok:
+        print(f"[indexnow] all endpoints failed; last={last}")
         return 0
     prev.update(batch)
     PUSHED.parent.mkdir(parents=True, exist_ok=True)
