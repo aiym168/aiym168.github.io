@@ -40,6 +40,8 @@ if [ "$FETCH" = "1" ]; then
   timeout 1500 python3 fetch_auto.py || log "[heal] fetch_auto exit $? — continue with previous data"
   # 4b) global deals: official APIs/feeds + re-verify curated offers + dedupe/expire/archive (keeps previous data on failure)
   timeout 900 python3 deals_collect.py || log "[heal] deals_collect exit $? — keep previous deals data"
+  # 4c) LLM API price board: public pricing APIs (keeps previous prices on failure)
+  timeout 300 python3 apiprice_collect.py || log "[heal] apiprice_collect exit $? — keep previous prices"
   timeout 900 python3 prune.py || log "[heal] prune failed — continue"
 fi
 

@@ -94,6 +94,8 @@ def main() -> int:
     dmods = [p for p in ("today", "top", "ai", "crypto", "bank", "cloud", "expiring", "archive") if not (ROOT / "deals" / f"{p}.html").exists()]
     if dmods:
         fail(f"deals module pages missing: {dmods}")
+    if (ROOT / "data" / "apiprices" / "prices.json").exists() and not (ROOT / "deals" / "api-prices.html").exists():
+        fail("deals/api-prices.html missing")
 
     cats = list((ROOT / "c").glob("*.html")) if (ROOT / "c").exists() else []
     if len(cats) < 3:

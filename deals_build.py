@@ -124,6 +124,10 @@ def build_pages(b, now: datetime) -> list[str]:
     n_ver = sum(1 for r in live if r.get("verify_status") == "verified")
     n_off = sum(1 for r in live if r.get("verify_status") == "official")
     n_pend = len(live) - n_ver - n_off
+    try:
+        ap_n = len(json.loads((ROOT / "data" / "apiprices" / "prices.json").read_text(encoding="utf-8")).get("rows") or [])
+    except Exception:
+        ap_n = 0
 
     def fmt(s, t=True):
         return b.fmt_dt(s, t) if s else "未注明"
@@ -222,7 +226,7 @@ def build_pages(b, now: datetime) -> list[str]:
     def mod_nav(prefix, active=None):
         return '<nav class="dl-modnav" aria-label="优惠情报模块">' + "".join(
             f'<a href="{prefix}{fn}" class="{"on" if k == active else ""}"><b>{L}</b>{esc(t)}<i>{len(sel[k])}</i></a>'
-            for k, L, t, _d, fn in MODULES) + "</nav>"
+            for k, L, t, _d, fn in MODULES) + f'<a href="{prefix}api-prices.html"><b>J</b>大模型 API 最低价榜<i>{ap_n}</i></a></nav>'
 
     def page(rel, title, desc, body, prefix, crumbs, stats, ld=None):
         canonical = b.CANONICAL + rel
@@ -305,7 +309,8 @@ def build_pages(b, now: datetime) -> list[str]:
                           f'<div class="pill">状态 <b>{esc(STATE.get(r.get("state"), ("进行中",))[0])}</b></div><div class="pill">核实 <b>{esc(VERIFY.get(r.get("verify_status"), VERIFY["pending"])[0])}</b></div>'))
 
     # ---------- 总览页
-    tiles = "".join(f"""<a class="dl-tile" href="{fn}"><span class="dl-L">{L}</span><span class="dl-tb"><b>{esc(t)}</b><span>{esc(d)}</span></span><span class="dl-n"><b>{len(sel[k])}</b>条</span></a>"""
+    tiles_ap = f"""<a class="dl-tile" href="api-prices.html"><span class="dl-L">J</span><span class="dl-tb"><b>大模型 API 最低价榜</b><span>官方价 vs OpenRouter、DeepInfra、Novita 等第三方，每小时刷新</span></span><span class="dl-n"><b>{ap_n}</b>个模型</span></a>"""
+    tiles = tiles_ap + "".join(f"""<a class="dl-tile" href="{fn}"><span class="dl-L">{L}</span><span class="dl-tb"><b>{esc(t)}</b><span>{esc(d)}</span></span><span class="dl-n"><b>{len(sel[k])}</b>条</span></a>"""
                     for k, L, t, d, fn in MODULES)
     top6 = "\n".join(card(r, "", i + 1) for i, r in enumerate(sel["top"][:6]))
     exp6 = "\n".join(card(r, "") for r in sel["expiring"][:6])
@@ -368,6 +373,11 @@ def home_section(prefix: str = "./") -> str:
     c = d.get("counts") or {}
     tiles = "".join(f'<a class="dl-tile sm" href="{prefix}deals/{fn}"><span class="dl-L">{L}</span><span class="dl-tb"><b>{t}</b></span><span class="dl-n"><b>{c.get(k, 0)}</b>条</span></a>'
                     for k, L, t, _d, fn in MODULES[:8])
+    try:
+        ap_n = len(json.loads((ROOT / "api" / "api-prices.json").read_text(encoding="utf-8")).get("rows") or [])
+        tiles += f'<a class="dl-tile sm" href="{prefix}deals/api-prices.html"><span class="dl-L">J</span><span class="dl-tb"><b>大模型 API 最低价榜</b></span><span class="dl-n"><b>{ap_n}</b>个</span></a>'
+    except Exception:
+        pass
     return f"""<section class="section dl-home" id="deals">
     <div class="sec-head"><span class="sec-idx">NEW · 全球优惠情报中心</span><h2>AI 订阅 · Crypto · 海外银行与 U卡 · 云服务优惠</h2>
       <p class="sec-desc">每小时自动采集、去重、提取截止时间和参与条件、估算价值、过期归档。进行中 {d.get('live', 0)} 条，其中已核实 {d.get('verified', 0)} 条、官方公告 {d.get('official', 0)} 条、待核实 {d.get('pending', 0)} 条。 <a href="{prefix}deals/index.html">进入情报中心 →</a></p></div>

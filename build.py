@@ -382,7 +382,8 @@ def topnav(prefix="./"):
         f'<a href="{prefix}{esc(href)}" title="{esc(title)}">{esc(NAV_SHORT.get(mid, title))}</a>'
         for mid, title, _, href, _, _ in MODULES
     )
-    links = f'<a class="nav-hot" href="{prefix}deals/index.html" title="全球优惠情报中心">优惠情报</a>' + links
+    links = (f'<a class="nav-hot" href="{prefix}deals/index.html" title="全球优惠情报中心">优惠情报</a>'
+             f'<a href="{prefix}deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a>') + links
     links += f'<a href="{prefix}m/board.html" title="匿名留言板 · 星际信号站">留言板</a>'
     links += f'<a href="{prefix}m/status.html" title="更新动态">更新动态</a>'
     return f"""
@@ -400,7 +401,7 @@ def topnav(prefix="./"):
 def site_footer(prefix="./", extra="") -> str:
     return f"""<footer>
   <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
+  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>"""
 
 
@@ -662,12 +663,15 @@ def home_showcase(prefix: str = "./") -> str:
         ("board", f"{prefix}m/board.html", f"{prefix}assets/board-poster.jpg", "星际信号站留言板星系截图",
          "匿名留言 · 无需登录", "星际信号站 留言板", "写下想说的话，它会化作一颗信号星，飞进可以拖动旋转的星系。", "进入信号站"),
     ]
+    if (SITE / "assets" / "apiprice-poster.jpg").exists():
+        cards.insert(0, ("api", f"{prefix}deals/api-prices.html", f"{prefix}assets/apiprice-poster.jpg", "大模型 API 最低价榜截图",
+                         "每小时刷新 · 价格情报", "大模型 API 最低价榜", "GPT、Claude、Gemini、DeepSeek、Qwen、GLM、Kimi 等模型的官方价与第三方最低价对比。", "查看价格榜"))
     html = "".join(f"""<a class="show-card sc-{k}" href="{href}">
       <span class="sc-media"><img src="{img}" alt="{esc(alt)}" loading="lazy" decoding="async" width="960" height="540" /><span class="sc-scan" aria-hidden="true"></span></span>
       <span class="sc-body"><span class="sc-kicker"><i class="live-dot"></i>{esc(kick)}</span><b class="sc-title">{esc(title)}</b>
         <span class="sc-desc">{esc(desc)}</span><span class="sc-cta">{esc(cta)} <i aria-hidden="true">→</i></span></span>
     </a>""" for k, href, img, alt, kick, title, desc, cta in cards)
-    return f'<div class="showcase" aria-label="本站展示">{html}</div>'
+    return f'<div class="showcase{" n3" if len(cards) == 3 else ""}" aria-label="本站展示">{html}</div>'
 
 
 # ============================================================ pages
@@ -1309,6 +1313,15 @@ def build():
         traceback.print_exc()
         print("[deals] pages skipped:", e)
         deal_paths = []
+    try:
+        import apiprice_build
+        ap_path = apiprice_build.build_page(sys.modules[__name__], now)
+        if ap_path:
+            deal_paths.append(ap_path)
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        print("[apiprice] page skipped:", e)
     try:
         deals_home = deals_build.home_section("./")
     except Exception as e:
