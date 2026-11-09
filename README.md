@@ -22,6 +22,15 @@
 5. 在站长平台创建「普通收录」推送 token，添加为仓库 Secret `BAIDU_PUSH_TOKEN`（可选）
 6. **本仓库不会代为提交百度站长**——需你自己的百度账号完成以上步骤
 
+## 全球优惠情报中心（deals/）
+
+入口：https://aiym168.github.io/deals/index.html ，数据接口 `api/deals.json`。
+
+- 采集：`deals_collect.py`（只用标准库，随每小时更新流程运行）——Epic 限免官方接口、币安活动/空投官方公告、KuCoin 活动官方公告、GitHub Changelog 与 OpenAI 官方 RSS（只收优惠类标题）、Doctor of Credit 与 LowEndBox 第三方 RSS（一律「待核实」）。
+- 编辑核实条目：`data/deals/curated.json`。每条写明官方链接和 `verify` 关键文字，程序每 6 小时回访官方页面，文字还在才算「已核实」，否则自动改为「待核实」。只写官方页面上能看到的事实。
+- 自动处理：标题指纹 + 官方链接去重、提取活动期间/截止时间、地区限制与隐藏条件（实名、新用户、名额、自动续费、绑卡）、参与类型（真正免费 / 免费试用 / 需要充值 / 需要交易量 / 需要邀请 / 付费折扣 / 抽奖）、按单人可得价值估值排序、过期自动归档。
+- 页面：`deals_build.py` 生成 9 个模块页（A 今日最新、B 高价值排行、C AI、D Crypto、E 银行与银行卡、F VPS 与云、G 即将截止、H 已结束档案、I 软件与其他）和每条详情页。不要手改 `deals/` 下的页面。
+
 ## 本地
 
 ```bash

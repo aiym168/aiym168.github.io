@@ -760,3 +760,64 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .reduce-motion .octo-snd-cta{animation:none}
 .octo-snd.fail,.octo-controls .btn.fail{opacity:.6;cursor:default}
 @media (max-width:760px){.octo-snd-cta{top:64px;font-size:13px;padding:8px 14px}}
+
+/* ===== 全球优惠情报中心（deals_build.py 生成的页面） ===== */
+.topnav .navlinks a.nav-hot{color:#06121f;background:linear-gradient(100deg,#5ce1ff,#5ef0c0);border-radius:999px;padding:4px 12px;font-weight:600;box-shadow:0 0 18px rgba(92,225,255,.35)}
+.topnav .navlinks a.nav-hot:hover{color:#000;filter:brightness(1.08)}
+.dl-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;position:relative;z-index:2}
+.dl-tile{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:linear-gradient(165deg,rgba(16,26,52,.82),rgba(8,12,26,.82));border:1px solid rgba(140,200,255,.16);color:#e8eeff;text-decoration:none;transition:border-color .25s,box-shadow .25s,transform .25s var(--ease)}
+.dl-tile:hover{border-color:rgba(92,225,255,.55);box-shadow:0 0 26px rgba(92,225,255,.14);transform:translateY(-2px)}
+.dl-L{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-family:var(--mono);font-size:1.15rem;font-weight:600;color:#04101c;background:var(--grad);box-shadow:0 0 18px rgba(92,225,255,.35)}
+.dl-tb{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.dl-tb b{font-size:1rem;color:#fff}
+.dl-tb span{font-size:.82rem;color:#9fb0d4;line-height:1.5}
+.dl-n{flex:none;font-size:.8rem;color:#9fb0d4;text-align:right}
+.dl-n b{display:block;font-family:var(--mono);font-size:1.4rem;color:var(--mint);text-shadow:0 0 14px rgba(94,240,192,.4)}
+.dl-tile.sm{padding:12px 14px}.dl-tile.sm .dl-L{width:32px;height:32px;font-size:.95rem}.dl-tile.sm .dl-n b{font-size:1.15rem}
+.dl-home{margin-top:8px}
+.dl-modnav{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 12px;margin:18px 0 6px;scrollbar-width:thin;position:relative;z-index:2}
+.dl-modnav a{flex:none;display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border-radius:999px;border:1px solid rgba(140,200,255,.2);background:rgba(10,16,34,.8);color:#d5def5;font-size:.86rem;text-decoration:none;white-space:nowrap}
+.dl-modnav a b{font-family:var(--mono);color:var(--cyan)}
+.dl-modnav a i{font-style:normal;font-size:.76rem;color:#8e9bbd}
+.dl-modnav a.on{border-color:var(--cyan);background:rgba(92,225,255,.16);color:#fff}
+.dl-card .card-top{gap:6px}
+.dl-rank{font-family:var(--mono);font-weight:600;color:#04101c;background:var(--grad);border-radius:8px;padding:1px 8px;font-size:.82rem}
+.dl-cat{font-size:.76rem;padding:2px 9px;border-radius:999px;background:rgba(167,139,250,.14);border:1px solid rgba(167,139,250,.4);color:#e2d9ff}
+.dl-cat.c-crypto{background:rgba(255,208,138,.12);border-color:rgba(255,208,138,.45);color:#ffe4b8}
+.dl-cat.c-bank,.dl-cat.c-card{background:rgba(94,240,192,.1);border-color:rgba(94,240,192,.4);color:#c9ffec}
+.dl-cat.c-cloud{background:rgba(92,225,255,.12);border-color:rgba(92,225,255,.4);color:#d4f7ff}
+.dl-ver{font-size:.76rem;padding:2px 9px;border-radius:999px;border:1px solid;white-space:nowrap}
+.dl-ver.v-ok{color:#7dffcf;border-color:rgba(94,240,192,.6);background:rgba(94,240,192,.12)}
+.dl-ver.v-info{color:#bfe9ff;border-color:rgba(92,225,255,.5);background:rgba(92,225,255,.1)}
+.dl-ver.v-warn{color:#ffd08a;border-color:rgba(255,208,138,.6);background:rgba(255,208,138,.1)}
+.dl-kv{display:grid;grid-template-columns:1fr;gap:4px;font-size:.88rem;padding:8px 10px;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid rgba(140,200,255,.1)}
+.dl-kv span{display:flex;gap:10px;align-items:baseline}
+.dl-kv i{flex:none;width:4.6em;font-style:normal;color:#8e9bbd;font-size:.8rem;white-space:nowrap}
+.dl-kv b{font-weight:500;color:#eef3ff;line-height:1.5}
+.dl-kv b.dl-hot{color:#ffc4c9}
+.dl-tags{display:flex;flex-wrap:wrap;gap:6px}
+.dl-tag{font-size:.78rem;padding:2px 9px;border-radius:8px;border:1px solid rgba(160,175,210,.35);color:#d6def3;background:rgba(255,255,255,.03)}
+.dl-tag.t-free{color:#7dffcf;border-color:rgba(94,240,192,.55);background:rgba(94,240,192,.12)}
+.dl-tag.t-trial{color:#bfe9ff;border-color:rgba(92,225,255,.5);background:rgba(92,225,255,.1)}
+.dl-tag.t-deposit,.dl-tag.t-volume{color:#ffd08a;border-color:rgba(255,208,138,.55);background:rgba(255,208,138,.1)}
+.dl-tag.t-invite{color:#ffb8ec;border-color:rgba(255,122,217,.5);background:rgba(255,122,217,.1)}
+.dl-tag.t-paid{color:#ffc4a0;border-color:rgba(255,170,120,.5);background:rgba(255,170,120,.08)}
+.dl-tag.t-lottery{color:#e2d9ff;border-color:rgba(167,139,250,.5);background:rgba(167,139,250,.12)}
+.dl-tag.t-unk{border-style:dashed;color:#98a3c0}
+.dl-more summary{cursor:pointer;color:var(--cyan);font-size:.86rem;list-style:none}
+.dl-more summary::-webkit-details-marker{display:none}
+.dl-more summary::before{content:"▸ "}.dl-more[open] summary::before{content:"▾ "}
+.dl-table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:8px}
+.dl-table th{width:7.5em;text-align:left;vertical-align:top;color:#8e9bbd;font-weight:500;padding:7px 8px 7px 0;border-top:1px solid rgba(140,200,255,.08)}
+.dl-table td{padding:7px 0;border-top:1px solid rgba(140,200,255,.08);color:#e6ecfb;line-height:1.6;word-break:break-word}
+.dl-table ul,.dl-table ol{margin:0;padding-left:1.2em}
+.dl-table small{color:#8e9bbd}
+.dl-src td,.dl-src th{padding-right:12px}
+.dl-nolink{color:#ffd08a;font-size:.84rem}
+.dl-note{margin:0 0 14px;padding:10px 14px;border-radius:12px;background:rgba(255,208,138,.06);border:1px solid rgba(255,208,138,.2);color:#e8dcc4;font-size:.88rem;line-height:1.7;position:relative;z-index:2}
+.dl-legend ul{list-style:none;padding:0;margin:6px 0 14px;display:grid;gap:8px}
+.dl-legend li{display:flex;gap:10px;align-items:baseline;color:#cdd6ee;font-size:.9rem}
+.dl-legend h3{font-size:1rem;margin:4px 0}
+.dl-detail h2{font-size:1.35rem;margin:10px 0}
+.dl-filters .fgroup{margin-bottom:8px}
+@media (max-width:560px){.dl-tiles{grid-template-columns:1fr}.dl-table th{width:5.6em}.dl-kv i{width:4.6em}}

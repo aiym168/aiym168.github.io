@@ -14,7 +14,7 @@ rm -rf .last_good && mkdir -p .last_good
 for p in index.html 404.html feed.xml cli.sh fx.css fx.js robots.txt sitemap.xml sitemap.txt sitemap_index.xml; do
   [ -e "$p" ] && cp -a "$p" .last_good/
 done
-for d in api m c item archives vendor data; do [ -d "$d" ] && cp -a "$d" .last_good/; done
+for d in api m c item archives vendor deals data; do [ -d "$d" ] && cp -a "$d" .last_good/; done
 log "snapshot ready"
 
 if [ "$FETCH" = "1" ]; then
@@ -38,6 +38,8 @@ if [ "$FETCH" = "1" ]; then
   timeout 900 python3 discover.py || log "[heal] discover failed — continue"
   # 4) main sources (per-source health, translator rotation inside)
   timeout 1500 python3 fetch_auto.py || log "[heal] fetch_auto exit $? — continue with previous data"
+  # 4b) global deals: official APIs/feeds + re-verify curated offers + dedupe/expire/archive (keeps previous data on failure)
+  timeout 900 python3 deals_collect.py || log "[heal] deals_collect exit $? — keep previous deals data"
   timeout 900 python3 prune.py || log "[heal] prune failed — continue"
 fi
 
@@ -50,7 +52,7 @@ if [ "$RESULT" = "failed" ] || ! python3 health_check.py; then
   for p in index.html 404.html feed.xml cli.sh fx.css fx.js robots.txt sitemap.xml sitemap.txt sitemap_index.xml; do
     [ -e ".last_good/$p" ] && cp -a ".last_good/$p" ./
   done
-  for d in api m c item archives vendor; do
+  for d in api m c item archives vendor deals; do
     if [ -d ".last_good/$d" ]; then rm -rf "$d"; cp -a ".last_good/$d" ./; fi
   done
   # keep source-health/discovery knowledge, restore content data

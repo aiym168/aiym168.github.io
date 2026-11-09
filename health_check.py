@@ -35,6 +35,8 @@ def main() -> int:
         ROOT / "cli.sh",
         ROOT / "fx.css",
         ROOT / "vendor" / "brain-hero.js",
+        ROOT / "deals" / "index.html",
+        ROOT / "api" / "deals.json",
     ]
     for p in required:
         if not p.exists():
@@ -85,6 +87,13 @@ def main() -> int:
         if prev_n >= 10 and len(items) < 0.6 * prev_n:
             fail(f"items shrank abnormally: {len(items)} < 60% of last good {prev_n}")
         ok(f"shrink guard: {len(items)} vs last good {prev_n}")
+
+    dhtml = (ROOT / "deals" / "index.html").read_text(encoding="utf-8", errors="replace")
+    if "全球优惠情报中心" not in dhtml or "brain-hero" not in dhtml:
+        fail("deals/index.html missing markers")
+    dmods = [p for p in ("today", "top", "ai", "crypto", "bank", "cloud", "expiring", "archive") if not (ROOT / "deals" / f"{p}.html").exists()]
+    if dmods:
+        fail(f"deals module pages missing: {dmods}")
 
     cats = list((ROOT / "c").glob("*.html")) if (ROOT / "c").exists() else []
     if len(cats) < 3:

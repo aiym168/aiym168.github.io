@@ -8,6 +8,7 @@ generated files (index.html, item/, c/, m/, archives/, api/) — change this gen
 from __future__ import annotations
 
 import hashlib
+import sys
 import html
 import json
 import os
@@ -369,6 +370,7 @@ def topnav(prefix="./"):
         f'<a href="{prefix}{esc(href)}" title="{esc(title)}">{esc(NAV_SHORT.get(mid, title))}</a>'
         for mid, title, _, href, _, _ in MODULES
     )
+    links = f'<a class="nav-hot" href="{prefix}deals/index.html" title="全球优惠情报中心">优惠情报</a>' + links
     links += f'<a href="{prefix}m/board.html" title="匿名留言板 · 星际信号站">留言板</a>'
     links += f'<a href="{prefix}m/status.html" title="更新动态">更新动态</a>'
     return f"""
@@ -386,7 +388,7 @@ def topnav(prefix="./"):
 def site_footer(prefix="./", extra="") -> str:
     return f"""<footer>
   <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
+  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>"""
 
 
@@ -1287,6 +1289,19 @@ def build():
     write_api(active, archived, repos, topics, counts, now, report)
     write_api_docs_page(date, counts)
     octo_path = write_octopus_page(date)
+    try:
+        import deals_build
+        deal_paths = deals_build.build_pages(sys.modules[__name__], now)
+    except Exception as e:  # 情报中心出错不能拖垮主站
+        import traceback
+        traceback.print_exc()
+        print("[deals] pages skipped:", e)
+        deal_paths = []
+    try:
+        deals_home = deals_build.home_section("./")
+    except Exception as e:
+        print("[deals] home section skipped:", e)
+        deals_home = ""
 
     # ---- module cards (uniform, server-rendered)
     tiles = []
@@ -1340,6 +1355,7 @@ def build():
 </header>
 {brain_loader_script("vendor/")}
 <main class="wrap">
+  {deals_home}
   <section class="section" id="search">
     <div class="sec-head"><span class="sec-idx">01 · 找资源</span><h2>搜索与筛选</h2>
       <p class="sec-desc">搜索关键词，或按模块筛选；绑卡、实名、直连等条件在“更多筛选”里。标“未注明”的，是原文没写清楚。</p></div>
@@ -1386,6 +1402,8 @@ def build():
     if board_path:
         url_entries.append((board_path, date, "daily", "0.7"))
     url_entries.append((octo_path, date, "monthly", "0.6"))
+    for pth in deal_paths:
+        url_entries.append((pth, date, "hourly" if "/x/" not in pth else "daily", "0.9" if "/x/" not in pth else "0.6"))
     for pth in cat_paths + mod_paths:
         url_entries.append((pth, date, "daily", "0.9"))
     for pth in item_paths:

@@ -13,6 +13,8 @@ on:
     branches: [main]
     paths:
       - "build.py"
+      - "deals_build.py"
+      - "data/deals/curated.json"
       - "status.py"
       - "health_check.py"
       - "seo_config.json"
