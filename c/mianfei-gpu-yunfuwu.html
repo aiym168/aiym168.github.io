@@ -519,6 +519,30 @@ body.page-enter .wrap,body.page-enter .hero-xl{animation:none}
 .disclaimer-card p{margin:0 0 10px;color:#f1e6d4;font-size:1rem;line-height:1.8}
 .about p{color:#d0d9f0;margin:0 0 8px}
 
+
+/* known issues (homepage teaser + status page) */
+.known-issues{margin-top:18px;padding-top:16px;border-top:1px dashed rgba(255,208,138,.28)}
+.known-issues.compact{margin-top:16px}
+.ki-head{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin:0 0 10px}
+.ki-head strong{color:#ffe2b0;font-size:1.05rem}
+.ki-count{font-family:var(--mono);font-size:.78rem;color:#c9b48a}
+.ki-list{list-style:none;margin:0;padding:0}
+.ki-list li{margin:0 0 10px;padding:0}
+.known-issues.compact .ki-list li{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;margin:0 0 8px}
+.ki-row{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.ki-st{display:inline-flex;align-items:center;padding:2px 8px;border-radius:999px;font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;border:1px solid transparent;white-space:nowrap}
+.ki-open{color:#ffd29a;background:rgba(255,180,80,.12);border-color:rgba(255,180,80,.35)}
+.ki-plan{color:#9ad4ff;background:rgba(80,160,255,.12);border-color:rgba(80,160,255,.35)}
+.ki-done{color:#9dffa8;background:rgba(80,220,120,.12);border-color:rgba(80,220,120,.35)}
+.ki-t{color:#f6ecd8;font-size:.95rem}
+.known-issues:not(.compact) .ki-t{font-size:1rem;color:#fff}
+.ki-d{margin:6px 0 0;color:#d8cbb3;font-size:.92rem;line-height:1.7}
+.ki-list time{font-family:var(--mono);font-size:.75rem;color:#a8946e}
+.ki-more{display:inline-block;margin-top:4px;color:#ffe2b0;font-size:.92rem}
+.ki-note{margin:14px 0 0;color:#b7a888;font-size:.88rem;line-height:1.7}
+.disclaimer-card.about > p:last-of-type{margin-bottom:0}
+.disclaimer-card .known-issues{border-top-color:rgba(255,208,138,.28)}
+
 /* detail pages */
 .facts-table{width:100%;border-collapse:collapse;margin:0 0 14px;font-size:.95rem}
 .facts-table th{width:120px;text-align:left;color:#aab6d6;font-weight:500;padding:9px 8px;border-bottom:1px solid rgba(140,200,255,.1);vertical-align:top}

@@ -259,6 +259,9 @@ def render(st: dict) -> str:
              f'<div class="pill">免费资源 <b data-count="{t["free_resources"]}">{t["free_resources"]}</b></div>'
              f'<div class="pill">近 7 天新增 <b data-count="{st["recent_additions"]["last_7_days"]}">{st["recent_additions"]["last_7_days"]}</b></div>')
     canonical = f"{B.CANONICAL}m/status.html"
+    ki_items = B.load_known_issues()
+    ki_open = sum(1 for it in ki_items if it["status"] != "已修复")
+    ki_html = B.render_known_issues(ki_items, compact=False, prefix="../")
     return f"""{B.head_block(f"更新动态 · {B.SITE_NAME}", f"{B.SITE_NAME}更新动态：最近更新时间、下次更新时间、近 7 天新增的大模型免费资源与最新收录条目。", canonical)}
 <body>
 <div class="fx-aurora" aria-hidden="true"></div>
@@ -280,7 +283,11 @@ def render(st: dict) -> str:
   <section class="section"><div class="sec-head"><span class="sec-idx">03 / NEWEST</span><h2>最新收录</h2></div>
     <div class="panel-box"><ol class="ud-list">{items or "<li>暂无</li>"}</ol></div>
   </section>
-  <section class="section"><div class="sec-head"><span class="sec-idx">04 / RECENT</span><h2>最近更新记录</h2></div>
+  <section class="section" id="known-issues-section"><div class="sec-head"><span class="sec-idx">04 / ISSUES</span><h2>已知问题</h2>
+    <p class="sec-desc">目前已知、会影响阅读或领取的问题（{ki_open} 条未关闭）。修复后会标成「已修复」。</p></div>
+    <div class="panel-box">{ki_html or "<p>暂无已知问题。</p>"}</div>
+  </section>
+  <section class="section"><div class="sec-head"><span class="sec-idx">05 / RECENT</span><h2>最近更新记录</h2></div>
     <div class="panel-box" style="overflow:auto"><table class="api-table"><tr><th>时间</th><th>新增</th></tr>{ups}</table></div>
   </section>
   <p class="linkrow">数据接口：<a href="../api/status.json">api/status.json</a></p>

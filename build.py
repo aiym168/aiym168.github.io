@@ -158,6 +158,71 @@ def load_json(path: Path):
         return None
 
 
+
+def load_known_issues() -> list[dict]:
+    """Public known issues from data/known_issues.json (user-facing only)."""
+    raw = load_json(DATA / "known_issues.json") or {}
+    items = raw.get("items") if isinstance(raw, dict) else raw
+    out = []
+    for it in items or []:
+        if not isinstance(it, dict):
+            continue
+        title = (it.get("title") or "").strip()
+        if not title:
+            continue
+        status = (it.get("status") or "处理中").strip()
+        if status not in ("处理中", "已修复", "计划中"):
+            status = "处理中"
+        out.append({
+            "id": (it.get("id") or title)[:48],
+            "title": title,
+            "detail": (it.get("detail") or "").strip(),
+            "status": status,
+            "date": (it.get("date") or "").strip(),
+        })
+    return out
+
+
+def render_known_issues(items: list[dict] | None = None, *, compact: bool = False, prefix: str = "./") -> str:
+    """HTML for known issues. compact=True = homepage teaser; False = full list on status page."""
+    items = items if items is not None else load_known_issues()
+    if not items:
+        return ""
+    st_cls = {"处理中": "open", "计划中": "plan", "已修复": "done"}
+    open_n = sum(1 for it in items if it["status"] != "已修复")
+    if compact:
+        preview = items[:3]
+        lis = "".join(
+            f'<li><span class="ki-st ki-{st_cls.get(it["status"], "open")}">{esc(it["status"])}</span>'
+            f'<span class="ki-t">{esc(it["title"])}</span></li>'
+            for it in preview
+        )
+        more = f'<a class="ki-more" href="{prefix}m/status.html#known-issues">查看全部 {len(items)} 条已知问题 →</a>'
+        return (
+            f'<div class="known-issues compact" id="known-issues-teaser">'
+            f'<div class="ki-head"><strong>已知问题</strong>'
+            f'<span class="ki-count">{open_n} 条处理中 / 计划中</span></div>'
+            f'<ul class="ki-list">{lis}</ul>{more}</div>'
+        )
+    rows = []
+    for it in items:
+        date_html = f'<time>{esc(it["date"])}</time>' if it.get("date") else ""
+        detail_html = f'<p class="ki-d">{esc(it["detail"])}</p>' if it.get("detail") else ""
+        rows.append(
+            f'<li id="ki-{esc(it["id"])}">'
+            f'<div class="ki-row"><span class="ki-st ki-{st_cls.get(it["status"], "open")}">{esc(it["status"])}</span>'
+            f'<strong class="ki-t">{esc(it["title"])}</strong>{date_html}</div>'
+            f'{detail_html}</li>'
+        )
+    lis = "".join(rows)
+    return (
+        f'<div class="known-issues" id="known-issues">'
+        f'<ul class="ki-list">{lis}</ul>'
+        f'<p class="ki-note">以上为目前已知、会影响阅读或领取的问题；修复后会改成「已修复」。发现新问题可在'
+        f'<a href="{prefix}m/board.html">留言板</a>告诉我们。</p></div>'
+    )
+
+
 def ym_label(date_str: str) -> str:
     m = re.match(r"(20\d{2})-(\d{2})", date_str or "")
     if m:
@@ -1167,20 +1232,15 @@ def build():
 
   {_board_teaser()}
 
-  <section class="section disclaimer" id="disclaimer">
-    <div class="disclaimer-card">
-      <h2>免责声明</h2>
+  <section class="section disclaimer" id="about">
+    <div class="sec-head"><span class="sec-idx">04 · 关于与声明</span><h2>关于本站与免责声明</h2></div>
+    <div class="disclaimer-card about">
+      <p>本站是一个开源的个人维护项目：抓取、过滤、翻译与页面生成的代码都公开在 <a href="{REPO_URL}" rel="noopener">GitHub 仓库 aiym168/aiym168.github.io</a>。置顶条目为编辑推荐，非广告、未收费。</p>
       <p>本站信息来自公开网页、社交媒体与开源社区，由程序每小时自动收集、过滤和翻译，可能存在延迟、过期或错误。</p>
       <p>“未核实”表示本站尚未对照官网确认；任何领取、注册、绑卡、实名操作前，请以官方页面的最新规则为准。本站不收取费用、不代领、不索要账号密码或验证码，谨防冒充本站的诈骗。</p>
-      <p>发现过期或错误？点击条目上的“报错 / 已过期”，或在 <a href="m/board.html">留言板</a> 告诉我们。</p>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="sec-head"><span class="sec-idx">04 · 关于</span><h2>关于本站</h2></div>
-    <div class="panel-box about">
-      <p>本站是一个开源的个人维护项目：抓取、过滤、翻译与页面生成的代码都公开在 <a href="{REPO_URL}" rel="noopener">GitHub 仓库 aiym168/aiym168.github.io</a>。置顶条目为编辑推荐，非广告、未收费。</p>
       <p>每条资源会显示来源站点、本站收录时间和核实状态。想用程序读取数据？见页脚的 <a href="m/api.html">CLI / API</a>（JSON 接口无需密钥）。已过期和超过 30 天的条目在 <a href="archives/index.html">归档</a>（{len(archived)} 条）。</p>
+      <p>发现过期或错误？点击条目上的“报错 / 已过期”，或在 <a href="m/board.html">留言板</a> 告诉我们。</p>
+      {render_known_issues(compact=True, prefix="./")}
     </div>
   </section>
   {arch_section}

@@ -519,6 +519,30 @@ body.page-enter .wrap,body.page-enter .hero-xl{animation:none}
 .disclaimer-card p{margin:0 0 10px;color:#f1e6d4;font-size:1rem;line-height:1.8}
 .about p{color:#d0d9f0;margin:0 0 8px}
 
+
+/* known issues (homepage teaser + status page) */
+.known-issues{margin-top:18px;padding-top:16px;border-top:1px dashed rgba(255,208,138,.28)}
+.known-issues.compact{margin-top:16px}
+.ki-head{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin:0 0 10px}
+.ki-head strong{color:#ffe2b0;font-size:1.05rem}
+.ki-count{font-family:var(--mono);font-size:.78rem;color:#c9b48a}
+.ki-list{list-style:none;margin:0;padding:0}
+.ki-list li{margin:0 0 10px;padding:0}
+.known-issues.compact .ki-list li{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;margin:0 0 8px}
+.ki-row{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.ki-st{display:inline-flex;align-items:center;padding:2px 8px;border-radius:999px;font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;border:1px solid transparent;white-space:nowrap}
+.ki-open{color:#ffd29a;background:rgba(255,180,80,.12);border-color:rgba(255,180,80,.35)}
+.ki-plan{color:#9ad4ff;background:rgba(80,160,255,.12);border-color:rgba(80,160,255,.35)}
+.ki-done{color:#9dffa8;background:rgba(80,220,120,.12);border-color:rgba(80,220,120,.35)}
+.ki-t{color:#f6ecd8;font-size:.95rem}
+.known-issues:not(.compact) .ki-t{font-size:1rem;color:#fff}
+.ki-d{margin:6px 0 0;color:#d8cbb3;font-size:.92rem;line-height:1.7}
+.ki-list time{font-family:var(--mono);font-size:.75rem;color:#a8946e}
+.ki-more{display:inline-block;margin-top:4px;color:#ffe2b0;font-size:.92rem}
+.ki-note{margin:14px 0 0;color:#b7a888;font-size:.88rem;line-height:1.7}
+.disclaimer-card.about > p:last-of-type{margin-bottom:0}
+.disclaimer-card .known-issues{border-top-color:rgba(255,208,138,.28)}
+
 /* detail pages */
 .facts-table{width:100%;border-collapse:collapse;margin:0 0 14px;font-size:.95rem}
 .facts-table th{width:120px;text-align:left;color:#aab6d6;font-weight:500;padding:9px 8px;border-bottom:1px solid rgba(140,200,255,.1);vertical-align:top}
@@ -615,8 +639,8 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
       <div class="stats" aria-label="站点数据">
         <div class="pill"><span>免费资源</span><b>55</b><span>条</span></div>
         <div class="pill"><span>今日新增</span><b>55</b><span>条</span></div>
-        <div class="pill"><span>最后更新</span><b>20:56</b></div>
-        <div class="pill"><span>下次更新约</span><b>21:07</b></div>
+        <div class="pill"><span>最后更新</span><b>21:46</b></div>
+        <div class="pill"><span>下次更新约</span><b>22:07</b></div>
       </div>
       <p class="def-note">免费资源 = 去重后仍在有效期内的资源条目（含置顶与编辑整理条目；不含 GitHub 新热门与最近热议；已过期、或发布超过 30 天且没有未来截止日期的自动收录条目会移入归档）。</p>
     </div>
@@ -1352,25 +1376,20 @@ ms.forEach(function(m){var c=document.createElement('div');c.className='bd-chip'
 }).catch(function(){});})();
 </script>
 
-  <section class="section disclaimer" id="disclaimer">
-    <div class="disclaimer-card">
-      <h2>免责声明</h2>
+  <section class="section disclaimer" id="about">
+    <div class="sec-head"><span class="sec-idx">04 · 关于与声明</span><h2>关于本站与免责声明</h2></div>
+    <div class="disclaimer-card about">
+      <p>本站是一个开源的个人维护项目：抓取、过滤、翻译与页面生成的代码都公开在 <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库 aiym168/aiym168.github.io</a>。置顶条目为编辑推荐，非广告、未收费。</p>
       <p>本站信息来自公开网页、社交媒体与开源社区，由程序每小时自动收集、过滤和翻译，可能存在延迟、过期或错误。</p>
       <p>“未核实”表示本站尚未对照官网确认；任何领取、注册、绑卡、实名操作前，请以官方页面的最新规则为准。本站不收取费用、不代领、不索要账号密码或验证码，谨防冒充本站的诈骗。</p>
-      <p>发现过期或错误？点击条目上的“报错 / 已过期”，或在 <a href="m/board.html">留言板</a> 告诉我们。</p>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="sec-head"><span class="sec-idx">04 · 关于</span><h2>关于本站</h2></div>
-    <div class="panel-box about">
-      <p>本站是一个开源的个人维护项目：抓取、过滤、翻译与页面生成的代码都公开在 <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库 aiym168/aiym168.github.io</a>。置顶条目为编辑推荐，非广告、未收费。</p>
       <p>每条资源会显示来源站点、本站收录时间和核实状态。想用程序读取数据？见页脚的 <a href="m/api.html">CLI / API</a>（JSON 接口无需密钥）。已过期和超过 30 天的条目在 <a href="archives/index.html">归档</a>（6 条）。</p>
+      <p>发现过期或错误？点击条目上的“报错 / 已过期”，或在 <a href="m/board.html">留言板</a> 告诉我们。</p>
+      <div class="known-issues compact" id="known-issues-teaser"><div class="ki-head"><strong>已知问题</strong><span class="ki-count">7 条处理中 / 计划中</span></div><ul class="ki-list"><li><span class="ki-st ki-open">处理中</span><span class="ki-t">「今日新增」今天起才开始计数</span></li><li><span class="ki-st ki-open">处理中</span><span class="ki-t">「最近热议」过滤较严，可能漏帖</span></li><li><span class="ki-st ki-open">处理中</span><span class="ki-t">部分条目为自动翻译，可能不准</span></li></ul><a class="ki-more" href="./m/status.html#known-issues">查看全部 7 条已知问题 →</a></div>
     </div>
   </section>
   
   <footer>
-  <div><span class="foot-brand">AI大模型免费资源导航</span> · 生成于 2026-11-09 20:56 北京时间<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
+  <div><span class="foot-brand">AI大模型免费资源导航</span> · 生成于 2026-11-09 21:46 北京时间<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
   <div class="foot-links"><a href="./m/api.html">CLI / API</a> · <a href="./m/status.html">更新动态</a> · <a href="./archives/index.html">已归档</a> · <a href="./m/board.html">留言板</a> · <a href="./feed.xml">RSS</a> · <a href="./sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>
 </main>
