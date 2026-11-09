@@ -4,14 +4,16 @@
   "deadline_extracted": 5,
   "drop:duplicate": 13,
   "drop:empty_summary": 6,
-  "drop:negative_signal": 60,
-  "drop:no_clear_offer": 59,
+  "drop:negative_signal": 62,
+  "drop:no_clear_offer": 58,
   "drop:not_ai": 70,
   "drop:too_old_pre2025": 40,
   "google_news_resolved": 83,
   "google_news_total": 83,
-  "kept_total": 69,
+  "kept_total": 68,
   "net:gnews_cache_hit": 83,
+  "net:tco_failed": 1,
+  "new_this_run": 1,
   "raw_total": 317
  },
  "curation_version": "2026-11-09.c3",
@@ -73,12 +75,12 @@
    "OpenSourceWeek 第 3 天：DeepGEMM 隆重推出 DeepGEMM - 一个 FP8 GEMM 库",
    "OpenSourceWeek 第一天：FlashMLA 很荣幸分享 FlashMLA - 我们用于 Hopper GPU",
    "6) 3D GPU 毛皮模拟",
+   "我制作了34种风格的每个图标，包括圣诞节、卡哇伊和软3D",
    "TimeScroll：Mac 上 Rewind 的开源本地替代品",
    "每周转售售价中位数的免费开放 API",
-   "Fireside Folio：reMarkable 的免费书籍、漫画和新闻版本",
-   "分级或跳过：测量 Pokémon 卡的居中和分级 ROI",
-   "Gitbet：适用于 Linux 的免费 sourcetree 风格 Git 客户端",
-   "告诉天空——根据实时天气数据信息灯笼随风飘移"
+   "有人在这里：找出在您离开时谁使用了您的 Mac",
+   "MeowDisplay 是 iPhone 镜像，但方向相反",
+   "Fireside Folio：reMarkable 的免费书籍、漫画和新闻版本"
   ],
   "too_old_pre2025": [
    "GPT-Neo 是 GPT3 的 #OpenSource 堂兄，几乎可以在 #NLP 中执行任何操作，从情感分析到编写 ",
@@ -95,8 +97,8 @@
    "上周，EleutherAI 发布了 GPT Neo 的两个检查点，GPT Neo 是 OpenAI 的 GPT-3 的“"
   ]
  },
- "generated_at": "2026-11-10T02:16:00+08:00",
- "seconds": 0.2,
+ "generated_at": "2026-11-10T04:01:32+08:00",
+ "seconds": 0.9,
  "side": {
   "github_hot": {
    "kept": 30,
@@ -104,9 +106,9 @@
   },
   "hot_topics": {
    "drop:negative_signal": 4,
-   "drop:not_ai": 15,
-   "drop:not_ai_strict": 9,
-   "kept": 12,
+   "drop:not_ai": 11,
+   "drop:not_ai_strict": 10,
+   "kept": 15,
    "raw": 40
   }
  }
