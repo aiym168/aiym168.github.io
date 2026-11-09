@@ -615,6 +615,104 @@ body.board .bd-stat small,body.board .bd-holo-foot,body.board .bd-id,body.board 
 body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #bd-count{font-size:13px;color:#b3bedb;letter-spacing:.04em}
 @media (max-width:768px){body.board .bd-hud.tl{top:78px;left:14px;right:14px;max-width:none}}
 
+/* ---------- 机械章鱼 · HYALOS GX-8 (m/octopus.html) ---------- */
+.octo-wrap{max-width:1360px}
+.octo-crumbs{margin:18px 0 6px;font-size:13px;color:var(--muted)}
+.octo-head{margin:6px 0 18px}
+.octo-title{margin:6px 0 8px;font-family:var(--display);line-height:1.05;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px}
+.octo-title .kl{font-size:clamp(34px,6vw,68px);letter-spacing:.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.octo-sub{font-size:clamp(17px,2.2vw,24px);color:var(--text);font-weight:500}
+.octo-stage{position:relative;width:100%;aspect-ratio:16/9;min-height:420px;max-height:82vh;border-radius:24px;overflow:hidden;background:#02050b;border:1px solid var(--line);box-shadow:0 30px 90px -30px rgba(92,225,255,.25),0 0 0 1px rgba(167,139,250,.08) inset;isolation:isolate;user-select:none;-webkit-user-select:none}
+.octo-canvas{position:absolute;inset:0;touch-action:none}
+.octo-canvas canvas{display:block;cursor:grab}
+.octo-canvas canvas:active{cursor:grabbing}
+.octo-vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 45%,transparent 55%,rgba(1,3,8,.72) 100%)}
+.octo-leaders{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.octo-leaders .ld{fill:none;stroke:rgba(140,230,255,.85);stroke-width:1.2}
+.octo-leaders .ld.thin{stroke:rgba(200,190,255,.55);stroke-width:1}
+.octo-leaders .dot{fill:#5ce1ff;filter:drop-shadow(0 0 6px #5ce1ff)}
+.octo-leaders .ring{fill:none;stroke:rgba(92,225,255,.5);stroke-width:1}
+.octo-hud{position:absolute;top:14px;display:flex;gap:14px;align-items:center;font-family:var(--mono);font-size:12px;color:var(--muted);pointer-events:none;letter-spacing:.04em}
+.octo-hud.tl{left:16px;flex-wrap:wrap}
+.octo-hud.tr{right:16px}
+.octo-hud b{color:var(--text);font-weight:600}
+.octo-hud .brand{color:var(--cyan);letter-spacing:.12em}
+.octo-hud .rec{display:inline-flex;align-items:center;gap:6px;color:#ff8aa8}
+.octo-hud .rec i{width:7px;height:7px;border-radius:50%;background:#ff5d8a;box-shadow:0 0 8px #ff5d8a;animation:octoBlink 1.2s steps(2) infinite}
+@keyframes octoBlink{50%{opacity:.2}}
+.octo-status{position:absolute;left:16px;right:16px;top:40px;pointer-events:none}
+.octo-steps{display:flex;gap:4px}
+.octo-steps span{flex:1;font-size:10.5px;font-family:var(--mono);color:var(--dim);border-top:2px solid rgba(140,200,255,.14);padding-top:4px;text-align:center;white-space:nowrap;overflow:hidden;transition:color .3s,border-color .3s}
+.octo-steps span.done{color:var(--muted);border-color:rgba(92,225,255,.35)}
+.octo-steps span.on{color:var(--cyan);border-color:var(--cyan);text-shadow:0 0 10px rgba(92,225,255,.6)}
+.octo-stline{margin-top:6px;font-family:var(--mono);font-size:12.5px;color:var(--text);opacity:.92}
+.octo-caption{position:absolute;left:18px;bottom:66px;max-width:min(560px,70%);padding:10px 14px;border-left:2px solid var(--cyan);background:linear-gradient(90deg,rgba(4,10,22,.82),rgba(4,10,22,0));opacity:0;transform:translateY(6px);transition:opacity .35s,transform .35s;pointer-events:none}
+.octo-caption.show{opacity:1;transform:none}
+.octo-caption .t{display:block;font-family:var(--mono);font-size:11.5px;color:var(--cyan)}
+.octo-caption b{display:block;font-size:18px;letter-spacing:.02em}
+.octo-caption .s{display:block;font-size:13px;color:var(--muted);line-height:1.55}
+.octo-card{position:absolute;left:0;top:0;width:236px;padding:12px 14px;border-radius:14px;background:rgba(6,12,26,.78);border:1px solid rgba(92,225,255,.35);box-shadow:0 10px 40px rgba(0,0,0,.45),0 0 24px rgba(92,225,255,.12) inset;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:0;transition:opacity .3s;pointer-events:none;will-change:transform}
+.octo-card.show{opacity:1}
+.octo-card .en{font-family:var(--mono);font-size:10.5px;color:var(--violet);letter-spacing:.14em}
+.octo-card h3{margin:2px 0 4px;font-size:17px}
+.octo-card p{margin:0 0 8px;font-size:12.5px;line-height:1.55;color:var(--muted)}
+.octo-card .read{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.octo-card .read span{display:flex;flex-direction:column;padding:5px 6px;border-radius:8px;background:rgba(92,225,255,.06);border:1px solid rgba(92,225,255,.12)}
+.octo-card .read i{font-style:normal;font-size:10.5px;color:var(--dim)}
+.octo-card .read b{font-family:var(--mono);font-size:12px;color:var(--cyan);white-space:nowrap}
+.octo-label{position:absolute;left:0;top:0;padding:3px 9px;border-radius:999px;font-size:12px;background:rgba(6,12,26,.8);border:1px solid rgba(167,139,250,.45);color:var(--text);opacity:0;transition:opacity .3s;pointer-events:none;white-space:nowrap}
+.octo-label i{font-style:normal;font-family:var(--mono);color:var(--violet);margin-right:5px;font-size:11px}
+.octo-label.show{opacity:1}
+.octo-pills{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:8px;padding:0 12px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+.octo-pills::-webkit-scrollbar{display:none}
+.octo-pill{flex:none;font:inherit;font-size:13px;color:var(--text);padding:7px 14px;border-radius:999px;border:1px solid rgba(140,200,255,.22);background:rgba(6,12,26,.66);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);cursor:pointer;transition:background .25s,border-color .25s,transform .15s,box-shadow .25s}
+.octo-pill i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--cyan);margin-right:6px}
+.octo-pill:hover{border-color:rgba(92,225,255,.6)}
+.octo-pill.is-on{background:rgba(92,225,255,.16);border-color:var(--cyan);box-shadow:0 0 18px rgba(92,225,255,.35)}
+.octo-pill.is-press{transform:scale(.94)}
+.octo-pill.all{border-color:rgba(167,139,250,.45)}
+.octo-pill.all.is-on{background:rgba(167,139,250,.18);border-color:var(--violet);box-shadow:0 0 18px rgba(167,139,250,.35)}
+.octo-cursor{position:absolute;left:0;top:0;width:26px;height:26px;margin:-3px 0 0 -4px;pointer-events:none;opacity:0;transition:opacity .4s;z-index:5;transform-origin:4px 3px}
+.octo-cursor.show{opacity:1}
+.octo-cursor svg{width:100%;height:100%;fill:#fff;stroke:#02040a;stroke-width:1.4;filter:drop-shadow(0 2px 6px rgba(0,0,0,.6))}
+.octo-cursor::after{content:"";position:absolute;left:-10px;top:-12px;width:28px;height:28px;border-radius:50%;border:2px solid var(--cyan);opacity:0;transform:scale(.4)}
+.octo-cursor.click::after{opacity:.9;transform:scale(1.2);transition:transform .25s,opacity .25s}
+.octo-fallback{position:absolute;inset:auto 0 45% 0;text-align:center;color:var(--muted)}
+.octo-stage.no-gl{aspect-ratio:auto;min-height:220px}
+.octo-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0 8px}
+.octo-controls .btn[aria-pressed="true"]{border-color:var(--cyan);box-shadow:0 0 16px rgba(92,225,255,.3)}
+.octo-tip{font-size:12.5px;color:var(--dim)}
+.octo-list{list-style:none;padding:0;margin:0 0 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.octo-list li{padding:12px 14px;border-radius:14px;background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column}
+.octo-list li span{font-size:13px;color:var(--muted)}
+.octo-teaser{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:0;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:var(--card);color:var(--text);transition:border-color .3s,box-shadow .3s,transform .3s}
+.octo-teaser:hover{border-color:rgba(92,225,255,.5);box-shadow:0 20px 60px -20px rgba(92,225,255,.35);transform:translateY(-2px);color:var(--text)}
+.octo-teaser .ot-img{display:block;aspect-ratio:16/9;background:#02050b;overflow:hidden}
+.octo-teaser img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s var(--ease)}
+.octo-teaser:hover img{transform:scale(1.04)}
+.octo-teaser .ot-body{display:flex;flex-direction:column;justify-content:center;gap:8px;padding:22px 24px}
+.octo-teaser .ot-body b{font-size:20px}
+.octo-teaser .ot-body span{color:var(--muted);font-size:14px}
+.octo-teaser .ot-body em{font-style:normal;color:var(--cyan);font-weight:600}
+@media (max-width:760px){
+  .octo-stage{aspect-ratio:4/5;min-height:0;max-height:none;border-radius:18px}
+  .octo-hud{font-size:11px;gap:8px}
+  .octo-hud.tl span:last-child{display:none}
+  .octo-steps span{font-size:0;padding-top:0}
+  .octo-caption{bottom:58px;max-width:88%;padding:8px 10px}
+  .octo-caption b{font-size:15px}
+  .octo-caption .s{font-size:12px}
+  .octo-card{width:150px;padding:8px 9px}
+  .octo-card p{display:none}
+  .octo-card h3{font-size:14px}
+  .octo-card .read{grid-template-columns:1fr 1fr;gap:4px}
+  .octo-card .read span:nth-child(3){display:none}
+  .octo-card .read b{font-size:11px}
+  .octo-pill{font-size:12px;padding:6px 11px}
+  .octo-pills{justify-content:flex-start}
+  .octo-teaser{grid-template-columns:1fr}
+}
+
 </style>
 
 </head>
@@ -643,7 +741,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
       <div class="eyebrow"><i class="live-dot"></i> 更新动态</div>
       <h1 class="hero-title"><span class="kl">更新动态</span></h1>
       <p class="lead">本站每小时自动收录新的大模型免费资源、GitHub 热门项目与 AI 热议。这里是最近的更新记录与最新收录。</p>
-      <div class="stats"><div class="pill live">最近更新 <b>2026-11-09 21:50</b></div><div class="pill">下次更新 <b>2026-11-09 22:07</b></div><div class="pill">免费资源 <b data-count="55">55</b></div><div class="pill">近 7 天新增 <b data-count="203">203</b></div></div>
+      <div class="stats"><div class="pill live">最近更新 <b>2026-11-09 22:50</b></div><div class="pill">下次更新 <b>2026-11-09 23:07</b></div><div class="pill">免费资源 <b data-count="55">55</b></div><div class="pill">近 7 天新增 <b data-count="203">203</b></div></div>
     </div>
     
 <div class="brain-stage" aria-hidden="true">
@@ -676,7 +774,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   <p class="linkrow">数据接口：<a href="../api/status.json">api/status.json</a></p>
   <footer>
   <div><span class="foot-brand">AI大模型免费资源导航</span><br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../archives/index.html">已归档</a> · <a href="../m/board.html">留言板</a> · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
+  <div class="foot-links"><a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../archives/index.html">已归档</a> · <a href="../m/board.html">留言板</a> · <a href="../m/octopus.html">机械章鱼 3D</a> · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>
 </div>
 <style>
