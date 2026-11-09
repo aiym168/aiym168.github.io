@@ -197,7 +197,7 @@ def write_board_page(site: Path, *, head_block, topnav, site_footer, site_js, ca
   <div id="bd-canvas"></div>
   <div id="bd-labels" aria-hidden="true"></div>
   <div class="bd-hud tl">
-    <div class="bd-kicker"><i></i> <span class="bd-k-long">ANONYMOUS SIGNAL STATION</span><span class="bd-k-short">SIGNAL STATION</span> <span style="color:var(--dim)">/</span> <span data-clock>--:--:--</span></div>
+    <div class="bd-kicker"><i></i> <span class="bd-k-long">匿名留言 · 星际信号站</span><span class="bd-k-short">星际信号站</span></div>
     <h1 class="bd-title" data-scramble>星际信号站</h1>
     <p class="bd-sub">匿名留言板 · 无需登录。写下想说的话，它会化作一束光，穿越审核星门，成为星空里的一颗信号星。</p>
     <div class="bd-stats">
@@ -211,11 +211,11 @@ def write_board_page(site: Path, *, head_block, topnav, site_footer, site_js, ca
   <button class="bd-viewbtn" id="bd-view" type="button">≡ 列表视图</button>
   <div id="bd-holo" role="dialog" aria-live="polite">
     <i class="bd-holo-c a"></i><i class="bd-holo-c b"></i><i class="bd-holo-c c"></i><i class="bd-holo-c d"></i>
-    <div class="bd-holo-top"><span id="bd-holo-id">SIGNAL</span><span id="bd-holo-ago"></span></div>
+    <div class="bd-holo-top"><span id="bd-holo-id">信号</span><span id="bd-holo-ago"></span></div>
     <button id="bd-holo-x" type="button" aria-label="关闭">×</button>
     <div class="bd-holo-nick" id="bd-holo-nick"></div>
     <p id="bd-holo-text"></p>
-    <div class="bd-holo-foot"><span id="bd-holo-time"></span><span>ANON · VERIFIED</span></div>
+    <div class="bd-holo-foot"><span id="bd-holo-time"></span><span>匿名 · 已审核</span></div>
   </div>
   <form class="bd-portal" id="bd-portal" onsubmit="return false" autocomplete="off">
     <div class="bd-portal-in">
@@ -232,7 +232,7 @@ def write_board_page(site: Path, *, head_block, topnav, site_footer, site_js, ca
   </form>
 </section>
 <div class="wrap bd-flow" id="bd-flow">
-  <div class="sec-head"><span class="sec-idx">SIGNAL STREAM</span>
+  <div class="sec-head"><span class="sec-idx">信号流</span>
     <h2>信号流</h2>
     <p class="sec-desc">所有已点亮的信号按时间倒序排列，点击卡片可在星图中定位。数据更新于 <span id="bd-updated">--</span>。</p></div>
   <div class="bd-tools"><input id="bd-q" type="search" placeholder="搜索信号 / 代号 / 编号…" /><span>API：<a href="../api/board.json">/api/board.json</a></span></div>
@@ -284,7 +284,7 @@ def home_teaser_html(prefix: str = "") -> str:
 <section class="section" id="board">
   <div class="bd-teaser reveal">
     <div>
-      <div class="bd-kicker" style="font:500 12px/1 var(--mono);letter-spacing:.3em;color:var(--cyan)">ANONYMOUS · SIGNAL STATION</div>
+      <div class="bd-kicker" style="font:500 12px/1 var(--mono);letter-spacing:.3em;color:var(--cyan)">匿名留言 · 星际信号站</div>
       <h2>匿名留言板 · 星际信号站</h2>
       <p>无需登录，写下你想说的话，它会化作一束光飞入星空，成为一颗可以被所有人点亮阅读的信号星。</p>
       <a class="btn primary" href="{prefix}m/board.html">进入星际信号站 →</a>

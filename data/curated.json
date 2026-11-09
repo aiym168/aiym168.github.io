@@ -1,0 +1,598 @@
+{
+  "_note": "编辑整理的免费资源（人工核对），自动抓取流程不会修改此文件；build.py 每次重建都会合并这里的条目。",
+  "items": [
+    {
+      "id": "nvidia-nim-kimi",
+      "category": "大模型 API 免费额度",
+      "title": "NVIDIA NIM：Kimi / DeepSeek / GLM 免信用卡试用",
+      "summary": "登录 build.nvidia.com 即可试用 Kimi K3.1 Pro（2.8T、百万上下文）、DeepSeek V4.1 Flash、GLM 5.3 Flash；免费层约 40 次/分限速，不按 Token 扣费。部分模型网页可预览、API 开放情况以官网为准。",
+      "how": "打开 build.nvidia.com → 登录 → 选择对应模型试用",
+      "deadline": null,
+      "author": "chichu187",
+      "url": "https://x.com/chichu187/status/2119008302432690299",
+      "posted_at": "2026-11-07 18:05 Asia/Shanghai",
+      "engagement": {
+        "likes": 4,
+        "bookmarks": 0,
+        "impressions": 119
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "cloudflare-neurons",
+      "category": "大模型 API 免费额度",
+      "title": "Cloudflare Workers AI：每天 1 万 Neurons",
+      "summary": "Cloudflare 免费计划每天赠送约 1 万 Neurons（UTC 0 点 / 北京时间早 8 点重置），超额不扣费只报错。可跑 Llama、Qwen、Gemma、Mistral 等开源模型，也支持生图与语音转文字。有人换算约等于每天 490 次 Llama 3.1 8B、或 83 次 70B、或约 57 张图。注意：额度账号共享；Kimi/GLM 5/DeepSeek V4 等前沿模型不在免费档，要绑付费方式。",
+      "how": "注册 Cloudflare 免费账号 → 建 API token → 直接调 Workers AI 接口（不用自建服务器）",
+      "deadline": null,
+      "author": "AWG48488",
+      "url": "https://x.com/AWG48488/status/2119415638494204051",
+      "posted_at": "2026-11-08 21:03 Asia/Shanghai",
+      "engagement": {
+        "likes": 1,
+        "bookmarks": 0,
+        "impressions": 86
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "gemini-flash-api",
+      "category": "大模型 API 免费额度",
+      "title": "Gemini 3.5 Flash：每天约 500 次免费 API",
+      "summary": "Google AI Studio 生成 API Key 即可用，免绑信用卡。适合跑自动化脚本、本地 CLI、翻译和小项目测试。注意：免费层数据可能用于模型训练，勿上传敏感代码。",
+      "how": "打开 Google AI Studio → 生成 API Key → 调用 Gemini 3.5 Flash",
+      "deadline": null,
+      "author": "Stargridcompass",
+      "url": "https://x.com/Stargridcompass/status/2119384439457477086",
+      "posted_at": "2026-11-08 19:00 Asia/Shanghai",
+      "engagement": {
+        "likes": 30,
+        "bookmarks": 7,
+        "impressions": 4165
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "aliyun-bailian",
+      "category": "大模型 API 免费额度",
+      "title": "阿里云百炼：新用户每模型约 100 万 Tokens",
+      "summary": "新用户开通百炼可调 70+ 主流大模型，每模型约 100 万 Tokens，总计 7000 万+ Tokens，约 90 天有效；需实名认证，国内直连。",
+      "how": "注册阿里云 → 实名 → 开通百炼控制台领取",
+      "deadline": "新用户限领，有效期约 90 天",
+      "author": "0x_chaoran",
+      "url": "https://x.com/0x_chaoran/status/2119379991226105957",
+      "posted_at": "2026-11-08 18:42 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 15
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "amd-free-models",
+      "category": "大模型 API 免费额度",
+      "title": "AMD 国区：15 个大模型免费调用",
+      "summary": "DeepSeek-V4.1-Flash、GLM-5.3、 Qwen3.8 等约 15 个模型可免费调，支持约 1M 上下文免绑卡，每天 0 点重置额度。登录官网领 rc- Key 后可接入 Cherry Studio。",
+      "how": "登录 AMD 官网 → 领取 API Key → 填入客户端",
+      "deadline": null,
+      "author": "0x_chaoran",
+      "url": "https://x.com/0x_chaoran/status/2119319917963206980",
+      "posted_at": "2026-11-08 14:43 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 11
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "lg-exaone",
+      "category": "大模型 API 免费额度",
+      "title": "LG K-EXAONE 2.5：API 彻底免费开放",
+      "summary": "LG 在英伟达首尔 AI 日宣布 K-EXAONE 2.5 API 对开发者/企业/研究机构免费。宣传约 7500 亿参数、约 51.2 万上下文、兼容 OpenAI 接口；目前主要支持韩语和英语。帖中对比 AutomationBench/BrowseComp 等分数接近或超过 DeepSeek-V4.1-Flash。",
+      "how": "按官方渠道申请 K-EXAONE API Key 后调用",
+      "deadline": null,
+      "author": "Super_Nius",
+      "url": "https://x.com/Super_Nius/status/2119635733048852485",
+      "posted_at": "2026-11-09 11:38 Asia/Shanghai",
+      "engagement": {
+        "likes": 6,
+        "bookmarks": 6,
+        "impressions": 1619
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "perch-ai-pt",
+      "category": "大模型 API 免费额度",
+      "title": "Perch AI：每月约 $20 / 2 万 PT，免绑卡",
+      "summary": "Starter 免费账号每月自动领约 20,000 PT（约合 $20），可用 DeepSeek 等模型；网页/桌面/命令行三端可用。Qwen 3.8 Max 限免至 11 月 21 日凌晨 1 点（吃月度额度，非无限）。",
+      "how": "注册 Perch AI 免费 Starter → 每月自动到账",
+      "deadline": "Qwen 3.8 Max 限免至 2026-11-21 01:00 Asia/Shanghai",
+      "author": "jhl880617",
+      "url": "https://x.com/jhl880617/status/2119618098743451875",
+      "posted_at": "2026-11-09 10:28 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 19
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "iteracompute-qwen",
+      "category": "大模型 API 免费额度",
+      "title": "IteraCompute：Qwen3.8-27B 每月约 3000 万 Token 免费",
+      "summary": "每月约 3000 万 Token 免费额度，Qwen3.8-27B 输入/缓存/输出标价为 0，约 128K 上下文，OpenAI 兼容接口；邮箱验证拿 Key，不用绑卡。额度每月 1 号重置，超额回 429 不自动扣费。帖称推广约到 11 月 24 日，高峰共享算力可能排队。同作者还提到 AMD 开发者计划约 100 美元 MI300X 额度（激活后约 30 天过期）等。",
+      "how": "邮箱验证注册 IteraCompute → 领取 Key → 用 OpenAI 兼容接口调用",
+      "deadline": "推广窗口帖称约至 2026-11-24；以官网为准",
+      "author": "Jonnyhlkw",
+      "url": "https://x.com/Jonnyhlkw/status/2119269427845988819",
+      "posted_at": "2026-11-08 11:23 Asia/Shanghai",
+      "engagement": {
+        "likes": 2,
+        "bookmarks": 0,
+        "impressions": 88
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "domestic-token-pack",
+      "category": "大模型 API 免费额度",
+      "title": "国内平台额度速领：硅基流动 / 百炼 / 千帆 / 方舟",
+      "summary": "帖主实测汇总：硅基流动注册送约 14 元券；阿里云百炼每模型约 100 万 tokens；百度千帆 DeepSeek 每模型约 100 万；火山方舟每模型约 50 万，实名后还可每日再领。",
+      "how": "分别注册各平台并按新用户/实名流程领取",
+      "deadline": null,
+      "author": "jiangxuhe",
+      "url": "https://x.com/jiangxuhe/status/2119159437164425567",
+      "posted_at": "2026-11-08 04:05 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 39
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "token-wool-site",
+      "category": "大模型 API 免费额度",
+      "title": "Token 羊毛聚合站：多平台免费额度一页看",
+      "summary": "卡兹克「Token 羊毛」聚合站：把官网/公众号/X 上的免费 Token 福利收进一页，按每日、每周、每月、新人礼包和限免分组，首页显示今天还能领多少；领过的会变成可升级卡片。另有帖提到豆包每天 200、秒悟 2000 积分、Cloudflare 每天 1 万 Neurons、Qoder 每天 100 Credits、MiniMax 400 积分等卡牌，并标注核实日期与是否要实名。",
+      "how": "打开聚合站按分组领取；以站点当日核实信息与厂商官网为准",
+      "deadline": null,
+      "author": "TianciZhutc",
+      "url": "https://x.com/TianciZhutc/status/2119664524512858243",
+      "posted_at": "2026-11-09 13:32 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 25
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "ling-32-flash",
+      "category": "大模型 API 免费额度",
+      "title": "Ant Ling-3.2-flash：两周免费试用",
+      "summary": "Ling-3.2-flash（560B/25B MoE，支持文本+图像+视频）自 11 月 5 日上线起免费约两周，OpenAI/Anthropic 兼容接口。有帖称注册需 +86 手机号。",
+      "how": "按官方注册并领取试用（注意地区/手机号要求）",
+      "deadline": "约 2026-11-19 截止（帖称 Nov 5–19）",
+      "author": "liro90106788",
+      "url": "https://x.com/liro90106788/status/2119092556835565580",
+      "posted_at": "2026-11-07 23:40 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 12
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "fal-flux3-max",
+      "category": "AI 产品会员/试用",
+      "title": "fal FLUX 3 Max：免费周末只剩最后一天",
+      "summary": "fal FLUX 3 Max 免费周末：新视频模型免费开放生成——免登录每天 3 条，登录 4 条，绑卡验证 5 条；单条最长约 15 秒、720p、带声音。同帖还提到 Google AI Pro 学生免费一年（SheerID，约 12/31 截止、注意到期续费）、Zed Pro 学生一年、OpenAI Codex 学生 $100 积分、Mistral Vibe 学生价、七牛 Conatus 每日免费 Token（至约 11/30）以及 Kaggle 等常驻算力。",
+      "how": "打开 fal 活动页生成；学生福利另走 SheerID/学校邮箱认证",
+      "deadline": "FLUX 3 Max 约至 2026-11-10 04:00 Asia/Shanghai；其余以各活动页为准",
+      "author": "NianEn_Ai",
+      "url": "https://x.com/NianEn_Ai/status/2119609656192516379",
+      "posted_at": "2026-11-09 09:54 Asia/Shanghai",
+      "engagement": {
+        "likes": 3,
+        "bookmarks": 0,
+        "impressions": 57
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "stepaudio-extend",
+      "category": "AI 产品会员/试用",
+      "title": "阶跃 StepAudio / 语音模型限免延期到 11/17",
+      "summary": "阶跃/StepFun 语音相关限免：有帖称官方定价页改口径，适用限免模型延到 11 月 17 日 11:59，12 点起按新价；含实时语音、配音、音频生成、音乐、语音识别，免费套餐需个人实名。另有帖提到 StepAudio 3 有 4 个 preview 模型免费（TTS/ASR 已收费），需登录建 API key。",
+      "how": "登录阶跃/StepFun → 创建 API key → 使用限免模型（以官网定价页为准）",
+      "deadline": "2026-11-17 11:59 Asia/Shanghai",
+      "author": "tutuqi88",
+      "url": "https://x.com/tutuqi88/status/2119665105483059423",
+      "posted_at": "2026-11-09 13:35 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 9
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "hunyuan-hy4",
+      "category": "AI 产品会员/试用",
+      "title": "腾讯混元 Hy4：WorkBuddy/CodeBuddy 限免",
+      "summary": "在 WorkBuddy、CodeBuddy 中选 Hy4 可领每日免费额度；帖称网友反馈几句可能限流，晚上更顺。另提 TokenHub 五折至年底（输入约 3 元/百万 token）。",
+      "how": "打开 WorkBuddy/CodeBuddy → 选择 Hy4 使用每日额度",
+      "deadline": "2026-11-15 23:59 Asia/Shanghai",
+      "author": "FirstInFeed",
+      "url": "https://x.com/FirstInFeed/status/2119258807843139989",
+      "posted_at": "2026-11-08 10:40 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 2
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "zhipu-zcode",
+      "category": "AI 产品会员/试用",
+      "title": "智谱 ZCode：每天晚间领 3 亿 GLM-5.3-Flash",
+      "summary": "智谱 ZCode：每天 19:00 领约 3 亿 GLM-5.3-Flash，但 23:00 至次日 9:00 才能消耗，且限客户端。同帖还提到长亭 MonkeyCode 每天 10 点约 500 亿 token 共享池（高峰可能烧穿）、智谱 AutoClaw 一轮约 5000 万 token（帖称 11/8 截止）、TRAE 每天签到约 150 积分、Qoder 每天 10 点领约 100 Credits。规则变化快，以官方页为准。",
+      "how": "打开智谱 ZCode 客户端 → 19:00 后领取 → 按规定时段使用；其余工具按各自官方入口",
+      "deadline": null,
+      "author": "BonoDJblack",
+      "url": "https://x.com/BonoDJblack/status/2119337260500107572",
+      "posted_at": "2026-11-08 15:52 Asia/Shanghai",
+      "engagement": {
+        "likes": 1,
+        "bookmarks": 0,
+        "impressions": 419
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "qoder-qoduck",
+      "category": "AI 开发工具与编程助手",
+      "title": "Qoder 匿名模型 Qoduck：个人号每日免费额度内 0 倍率消耗",
+      "summary": "Qoder 自 11/7 上线匿名模型 Qoduck：个人号每天有免费额度，额度内消耗倍率可到 0.0×，思考强度拉满也不扣 Credits；免费号也能用，付费号额度更多。帖称目前主要在 Qoder 客户端，IDE 插件和 CLI 可能未开；社区猜测是否 Qwen 新版，官方未盖章。可用 Codex 真实任务做盲测对比。",
+      "how": "打开 Qoder 客户端 → 模型选择器切到 Qoduck → 直接写代码/搭项目",
+      "deadline": "限时活动，结束时间未定",
+      "author": "GeekCatX",
+      "url": "https://x.com/GeekCatX/status/2119680316772405739",
+      "posted_at": "2026-11-09 14:35 Asia/Shanghai",
+      "engagement": {
+        "likes": 1,
+        "bookmarks": 0,
+        "impressions": 339
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "coderabbit",
+      "category": "AI 开发工具与编程助手",
+      "title": "CodeRabbit：开源项目免费 + 私有代码试用",
+      "summary": "CodeRabbit：开源仓库免费使用 AI 代码审查；私有代码提供免费试用。适合 PR 审查、变更说明与安全扫描。",
+      "how": "打开 coderabbit.ai → 连接 GitHub/GitLab 仓库 → OSS 免费启用",
+      "deadline": null,
+      "author": "CryptoSenyo",
+      "url": "https://x.com/CryptoSenyo/status/2119668944420409465",
+      "posted_at": "2026-11-09 13:50 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 8
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "devin-desktop",
+      "category": "AI 开发工具与编程助手",
+      "title": "Devin Desktop（原 Windsurf）：免费计划可用",
+      "summary": "Devin Desktop（原 Windsurf）免费计划：含轻量 Agent 配额、有限模型额度、无限内联编辑与 Tab 补全，日常写代码够用；重活与高级模型仍需加钱。",
+      "how": "注册 Devin Desktop 免费计划后直接使用",
+      "deadline": null,
+      "author": "jhl880617",
+      "url": "https://x.com/jhl880617/status/2119557938222109112",
+      "posted_at": "2026-11-09 06:29 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 42
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "github-student-copilot",
+      "category": "AI 开发工具与编程助手",
+      "title": "GitHub 学生包：Copilot 等开发者权益",
+      "summary": "学生认证后可领 Copilot 免费额度，以及域名一年、云服务额度等。需学校邮箱或学生证，审核有时要几天。",
+      "how": "GitHub Education → 学生认证 → 领取 Student Developer Pack",
+      "deadline": null,
+      "author": "7eddsi",
+      "url": "https://x.com/7eddsi/status/2118890883076517914",
+      "posted_at": "2026-11-07 10:18 Asia/Shanghai",
+      "engagement": {
+        "likes": 1,
+        "bookmarks": 0,
+        "impressions": 92
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "omniroute",
+      "category": "AI 开发工具与编程助手",
+      "title": "OmniRoute：开源免费 AI 网关聚合多平台",
+      "summary": "开源本地网关 OmniRoute：把大量 AI 服务商与免费方案收到一个端点，Claude Code / Cursor / Codex / Copilot / Cline 等可改指到它；限流可自动切路，并带 token 压缩宣传。免费额度来自各家，需自己注册；本地跑、配置与 Key 在本机。注意合规，勿用于绕过付费条款。",
+      "how": "按项目说明安装（如 npm install -g omniroute）并 setup 指向你的 IDE/CLI",
+      "deadline": null,
+      "author": "0xGky",
+      "url": "https://x.com/0xGky/status/2119600861261279410",
+      "posted_at": "2026-11-09 09:20 Asia/Shanghai",
+      "engagement": {
+        "likes": 4,
+        "bookmarks": 0,
+        "impressions": 436
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "awesome-free-llm",
+      "category": "AI 开发工具与编程助手",
+      "title": "awesome-free-llm-apis：免费大模型 API 清单",
+      "summary": "GitHub 高星清单 awesome-free-llm-apis（帖称约 1.26 万星）整理多家免费 LLM API：Gemini（长上下文）、Groq、OpenRouter、Cloudflare Workers AI（每天约 1 万 Neurons）、NVIDIA NIM 以及国内多家平台。核对帖提醒：免注册免 Key 的很少，Claude 基本空白，适合试开源模型和小脚本。",
+      "how": "打开该 GitHub 清单 → 按提供商申请 Key 并注意各自限额/实名要求",
+      "deadline": null,
+      "author": "yxl44",
+      "url": "https://x.com/yxl44/status/2119326478248915137",
+      "posted_at": "2026-11-08 15:09 Asia/Shanghai",
+      "engagement": {
+        "likes": 30,
+        "bookmarks": 8,
+        "impressions": 6910
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "qoder-student",
+      "category": "AI 开发工具与编程助手",
+      "title": "大学生参加 Qoder 高校赛可领一个月会员",
+      "summary": "帖称参加 2026 Qoder 高校创造力大赛即可白嫖一个月会员（以官方活动规则为准）。",
+      "how": "按 Qoder 高校赛官方入口报名",
+      "deadline": "以赛事报名截止为准",
+      "author": "lyuihh",
+      "url": "https://x.com/lyuihh/status/2119409656972132777",
+      "posted_at": "2026-11-08 20:40 Asia/Shanghai",
+      "engagement": {
+        "likes": 8,
+        "bookmarks": 2,
+        "impressions": 966
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "kaggle-gpu",
+      "category": "云服务/GPU/开发者资源",
+      "title": "Kaggle：每周约 30 小时双 T4 免费 GPU",
+      "summary": "Kaggle 免费档常见每周约 30 小时 GPU T4 x2（约 2×16GB / 合计约 32GB 显存）+ 约 20 小时 TPU，单次最长约 12 小时；免绑卡但需手机验证。可配合 Ollama 跑约 30B 级模型，再经 cloudflared 隧道接到 Cursor 等作 Base URL。官方严禁多号刷额度与常驻挖矿；穿透链接勿外发，用完关掉 Notebook。",
+      "how": "Google 登录 Kaggle → Settings 手机验证 → Notebook Accelerator 选 GPU T4 x2 并打开 Internet",
+      "deadline": null,
+      "author": "mingzi206",
+      "url": "https://x.com/mingzi206/status/2119468078165815781",
+      "posted_at": "2026-11-09 00:32 Asia/Shanghai",
+      "engagement": {
+        "likes": 171,
+        "bookmarks": 280,
+        "impressions": 14362
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "google-colab",
+      "category": "云服务/GPU/开发者资源",
+      "title": "Google Colab 免费版：约 16GB T4 GPU",
+      "summary": "Google Colab 免费版可开 NVIDIA T4（约 15–16GB 显存），Google 账号登录浏览器即用，通常免绑卡。额度不公开、看运气；适合临时跑模型/推理。另有开源方案把 Colab T4 暴露为本地 OpenAI 兼容接口（注意账号与安全风险）。",
+      "how": "打开 Google Colab → 运行时改 GPU → 开始写 Notebook",
+      "deadline": null,
+      "author": "KOF97AI",
+      "url": "https://x.com/KOF97AI/status/2119638891808612551",
+      "posted_at": "2026-11-09 11:51 Asia/Shanghai",
+      "engagement": {
+        "likes": 4,
+        "bookmarks": 12,
+        "impressions": 827
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "natbox-trial",
+      "category": "云服务/GPU/开发者资源",
+      "title": "natbox：免费试用 NAT VPS 一个月",
+      "summary": "免费试用档：256MB 内存、0.5 共享核、3GB SSD、5 个转发端口、100GB 流量，含 root SSH 与 IPv6/80。一人一台，名额有限。",
+      "how": "打开 my.natbox.io 免费试用页领取",
+      "deadline": "名额发完即止",
+      "author": "natboxio",
+      "url": "https://x.com/natboxio/status/2119278249570099289",
+      "posted_at": "2026-11-08 11:58 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 90
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "vultr-300",
+      "category": "云服务/GPU/开发者资源",
+      "title": "Vultr 新用户促销额度：优惠码 FLY300VULTR",
+      "summary": "帖称 Vultr 官方优惠页列出新用户最高约 $300 Promotional Credit，优惠码 FLY300VULTR。以官网活动页实时规则为准。",
+      "how": "注册 Vultr → 结账填 FLY300VULTR（核对官网）",
+      "deadline": "以 Vultr 活动页为准",
+      "author": "Leo_zhang2018",
+      "url": "https://x.com/Leo_zhang2018/status/2118934417666428946",
+      "posted_at": "2026-11-07 13:11 Asia/Shanghai",
+      "engagement": {
+        "likes": 4,
+        "bookmarks": 12,
+        "impressions": 2270
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "cloadу-container",
+      "category": "云服务/GPU/开发者资源",
+      "title": "Cloady：免费小容器（现多称仅免费一个月）",
+      "summary": "邮箱注册可领约 0.5 核 / 1G 内存 / 5G 硬盘容器，能跑 Docker。评论区有人称政策改为只免费一个月，也有封号反馈，建议小号先试。",
+      "how": "邮箱注册 Cloady → 领取免费档",
+      "deadline": "政策变动中，可能仅 1 个月",
+      "author": "fanfankp",
+      "url": "https://x.com/fanfankp/status/2119382702088417686",
+      "posted_at": "2026-11-08 18:53 Asia/Shanghai",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 1,
+        "impressions": 45
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "imagesweep",
+      "category": "科技软件/App 限免",
+      "title": "ImageSweep：相册垃圾清理 App 本体限免",
+      "summary": "原价约 ¥28 → 0，按年月/地点快速划选废片，无广告、防误删。",
+      "how": "App Store 搜索 ImageSweep 或打开帖内链接领取",
+      "deadline": "限免随时结束",
+      "author": "linbai489068",
+      "url": "https://x.com/linbai489068/status/2119346247995994265",
+      "posted_at": "2026-11-08 16:28 Asia/Shanghai",
+      "engagement": {
+        "likes": 4,
+        "bookmarks": 3,
+        "impressions": 793
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "movie-sprite",
+      "category": "科技软件/App 限免",
+      "title": "电影精灵：老牌视频剪辑本体 ¥198→0",
+      "summary": "多轨道、画中画、绿幕抠像等功能的 iOS 视频剪辑 App，本体限免入库。",
+      "how": "App Store 打开帖内链接 0 元下载",
+      "deadline": "限免随时结束",
+      "author": "linbai489068",
+      "url": "https://x.com/linbai489068/status/2119271425475498138",
+      "posted_at": "2026-11-08 11:30 Asia/Shanghai",
+      "engagement": {
+        "likes": 7,
+        "bookmarks": 5,
+        "impressions": 2730
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "duo-widget",
+      "category": "科技软件/App 限免",
+      "title": "双人小工具：电量/WiFi/信号组件 ¥28→0",
+      "summary": "约 1.4MB 极简无广桌面/锁屏组件，20 种排版，一眼看状态。",
+      "how": "App Store 打开帖内链接领取",
+      "deadline": "限免随时结束",
+      "author": "linbai489068",
+      "url": "https://x.com/linbai489068/status/2119415280321560746",
+      "posted_at": "2026-11-08 21:02 Asia/Shanghai",
+      "engagement": {
+        "likes": 7,
+        "bookmarks": 12,
+        "impressions": 4438
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "linkjoy",
+      "category": "科技软件/App 限免",
+      "title": "Linkjoy：跨平台书签/离线高亮终身内购限免",
+      "summary": "原价约 ¥128 的终身内购限免，去广告阅读、划线批注、iCloud 多端同步。",
+      "how": "App Store 打开帖内链接 → 领取终身内购",
+      "deadline": "限免随时结束",
+      "author": "linbai489068",
+      "url": "https://x.com/linbai489068/status/2119468075993157818",
+      "posted_at": "2026-11-09 00:32 Asia/Shanghai",
+      "engagement": {
+        "likes": 3,
+        "bookmarks": 3,
+        "impressions": 947
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "stillwell-raw",
+      "category": "科技软件/App 限免",
+      "title": "Stillwell 叠光相机：RAW 相机终身限免",
+      "summary": "原价约 ¥88 终身内购限免；原生 Bayer RAW、星轨与多重曝光等。",
+      "how": "App Store 打开帖内链接领取终身版",
+      "deadline": "限免随时结束",
+      "author": "linbai489068",
+      "url": "https://x.com/linbai489068/status/2119467385514258665",
+      "posted_at": "2026-11-09 00:29 Asia/Shanghai",
+      "engagement": {
+        "likes": 6,
+        "bookmarks": 3,
+        "impressions": 1283
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    },
+    {
+      "id": "app-redeem-codes",
+      "category": "其他科技",
+      "title": "开发者官方兑换码站：领 App 内购 Pro",
+      "summary": "帖介绍专门汇总开发者提供的 Apple 官方兑换码的网站，可永久解锁部分付费内购，不同于普通限免降价站。",
+      "how": "打开帖内网站按 App 领取兑换码",
+      "deadline": "码发完即止",
+      "author": "BlackMelooo",
+      "url": "https://x.com/BlackMelooo/status/2119257219942457547",
+      "posted_at": "2026-11-08 10:34 Asia/Shanghai",
+      "engagement": {
+        "likes": 126,
+        "bookmarks": 172,
+        "impressions": 18078
+      },
+      "source": "编辑整理"
+    },
+    {
+      "id": "cap-recorder",
+      "category": "其他科技",
+      "title": "Cap：开源可自托管录屏工具",
+      "summary": "开源录屏，主体协议 AGPLv3，适合想自己控数据的人；与 FreeLLMAPI 等同批核验清单出现。",
+      "how": "按开源项目说明安装/自托管",
+      "deadline": null,
+      "author": "imocone",
+      "url": "https://x.com/imocone/status/2118971100717592580",
+      "posted_at": "2026-11-07 15:37 Asia/Shanghai",
+      "engagement": {
+        "likes": 1,
+        "bookmarks": 0,
+        "impressions": 40
+      },
+      "translated_by": "free-translate",
+      "source": "编辑整理"
+    }
+  ]
+}

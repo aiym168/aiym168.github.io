@@ -394,7 +394,7 @@ const Holo = (() => {
   function show(m, at, pin) {
     if (cur !== m) {
       cur = m; h.style.setProperty('--h', m.hue ?? 190);
-      $('#bd-holo-id').textContent = m.id ? 'SIGNAL ' + m.id : 'SIGNAL · 审核中';
+      $('#bd-holo-id').textContent = m.id ? '信号 ' + m.id : '信号 · 审核中';
       $('#bd-holo-time').textContent = m.t ? fmtTime(m.t) : '跃迁中'; $('#bd-holo-ago').textContent = m.t ? ago(m.t) : '';
       $('#bd-holo-nick').textContent = m.nick || '匿名旅人';
       const body = $('#bd-holo-text'); body.textContent = ''; clearInterval(typer);

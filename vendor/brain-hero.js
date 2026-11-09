@@ -96,7 +96,9 @@ void main(){
 
 export function mountBrainHero(container, opts = {}) {
   if (!container) return () => {};
-  const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // reduced motion (OS setting or the site's "减少动态" toggle) → render one static frame, no animation loop
+  const isReduced = () => (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) || document.documentElement.classList.contains("reduce-motion");
+  let reduced = isReduced();
   const mobile = Math.min(window.innerWidth, window.innerHeight) < 720;
   const nodesAttr = parseInt(container.getAttribute("data-nodes") || "0", 10);
   const COUNT = opts.count || (mobile ? 1600 : (nodesAttr || 4200));
@@ -104,7 +106,7 @@ export function mountBrainHero(container, opts = {}) {
 
   const probe = document.createElement("canvas");
   const gl = probe.getContext("webgl2") || probe.getContext("webgl");
-  if (!gl || reduced) return null;
+  if (!gl) return null;
   const canvas = document.createElement("canvas");
 
   const scene = new THREE.Scene();
@@ -234,20 +236,17 @@ export function mountBrainHero(container, opts = {}) {
   const ro = new ResizeObserver(resize); ro.observe(container);
 
   const baseTargets = target.map((p) => p.clone());
-  let shock = 0, highlightSide = 0;
+  let shock = 0;
   function triggerShockwave() {
+    if (reduced) return;
     shock = 1;
     for (let i = 0; i < COUNT; i++) {
       const dir = baseTargets[i].clone(); if (dir.lengthSq() < 1e-6) dir.set(0, 1, 0); else dir.normalize();
       target[i].copy(baseTargets[i]).addScaledVector(dir, 0.5 + hash(i * 1.7) * 0.5);
     }
   }
-  function highlightRegion(name) {
-    const map = { "damoxing-mianfei-api": -1, "ai-huiyuan-shiyong": -1, "mianfei-gpu-yunfuwu": 1, "ai-kaifa-gongju": 1, "keji-app-xianmian": 1, "github-hot": 2, "hot-topics": 2 };
-    highlightSide = map[name] || 0;
-  }
   container.addEventListener("click", triggerShockwave);
-  window.__brainAPI = { triggerShockwave, highlightRegion, destroy: null };
+  window.__brainAPI = { triggerShockwave, destroy: null };
 
   let visible = true; let raf = 0;
   const io = new IntersectionObserver((en) => { visible = en[0].isIntersecting; if (visible && !raf) raf = requestAnimationFrame(frame); }, { threshold: 0 });
@@ -256,8 +255,19 @@ export function mountBrainHero(container, opts = {}) {
   document.addEventListener("visibilitychange", onVis);
 
   const t0 = performance.now(); let last = t0;
+  function staticFrame() {
+    const pos = geo.attributes.position.array;
+    for (let i = 0; i < COUNT; i++) { pos[i * 3] = target[i].x; pos[i * 3 + 1] = target[i].y; pos[i * 3 + 2] = target[i].z; }
+    geo.attributes.position.needsUpdate = true;
+    lineMat.opacity = 0.22; pulsePts.visible = false;
+    group.rotation.set(0.12, -0.5, 0);
+    halo.material.opacity = 0.26; halo2.material.opacity = 0.18;
+    uniforms.uTime.value = 0;
+    renderer.render(scene, camera);
+  }
   function frame(now) {
     raf = 0;
+    if (reduced) { staticFrame(); return; }
     if (!visible || document.hidden) return;
     const dt = Math.min(0.1, (now - last) / 1000); last = now;
     const t = (now - t0) / 1000;
@@ -266,11 +276,7 @@ export function mountBrainHero(container, opts = {}) {
     if (shock > 0) { shock = Math.max(0, shock - dt * 0.9); for (let i = 0; i < COUNT; i++) target[i].lerp(baseTargets[i], k * 0.6); }
     const pos = geo.attributes.position.array;
     for (let i = 0; i < COUNT; i++) {
-      let tx = target[i].x, ty = target[i].y, tz = target[i].z;
-      if (highlightSide) {
-        const on = highlightSide === 2 ? true : Math.sign(baseTargets[i].x) === highlightSide;
-        if (on) { const s = 1.04 + Math.sin(t * 6 + phases[i]) * 0.02; tx *= s; ty *= s; tz *= s; }
-      }
+      const tx = target[i].x, ty = target[i].y, tz = target[i].z;
       pos[i * 3] += (tx - pos[i * 3]) * k * 0.55;
       pos[i * 3 + 1] += (ty - pos[i * 3 + 1]) * k * 0.55;
       pos[i * 3 + 2] += (tz - pos[i * 3 + 2]) * k * 0.55;
@@ -305,10 +311,13 @@ export function mountBrainHero(container, opts = {}) {
     raf = requestAnimationFrame(frame);
   }
   raf = requestAnimationFrame(frame);
+  // live toggle from the "减少动态" button
+  const onReduce = () => { const r = isReduced(); if (r === reduced) return; reduced = r; if (!raf) { last = performance.now(); raf = requestAnimationFrame(frame); } };
+  window.addEventListener("ai168:reduce-motion", onReduce);
 
   const destroy = function () {
     cancelAnimationFrame(raf); io.disconnect(); ro.disconnect();
-    window.removeEventListener("pointermove", onMove); document.removeEventListener("visibilitychange", onVis);
+    window.removeEventListener("pointermove", onMove); document.removeEventListener("visibilitychange", onVis); window.removeEventListener("ai168:reduce-motion", onReduce);
     geo.dispose(); lineGeo.dispose(); pulseGeo.dispose(); mat.dispose(); lineMat.dispose(); tex.dispose(); renderer.dispose();
     if (canvas.parentNode) canvas.parentNode.removeChild(canvas);
     window.__brainAPI = null;

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # AI大模型免费资源导航 — curl-friendly CLI (no Node required)
-# Usage: curl -fsSL https://aiym168.github.io/cli.sh | bash -s -- list
+# Usage (download → inspect → run):
+#   curl -fsSLo ai168.sh https://aiym168.github.io/cli.sh && less ai168.sh && bash ai168.sh list
 set -euo pipefail
 BASE="${AI168_API:-https://aiym168.github.io}"
 BASE="${BASE%/}"

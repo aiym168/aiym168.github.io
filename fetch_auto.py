@@ -292,6 +292,16 @@ def _via_libre(text: str) -> str | None:
     return None
 
 
+def _glossary_fix(text: str) -> str:
+    """Fix known machine-translation errors (法学硕士→LLM, 克劳德→Claude …) via glossary.py."""
+    try:
+        import glossary  # type: ignore
+        return glossary.fix(text)
+    except Exception as e:  # never break the fetcher
+        print(f"[warn] glossary: {type(e).__name__}")
+        return text
+
+
 def free_translate(text: str) -> str:
     """Translate to zh-CN via Google gtx → MyMemory → LibreTranslate. Cache hits. Never raises."""
     global TRANSLATE_OK, TRANSLATE_FAIL, _TRANSLATE_DIRTY
@@ -305,7 +315,11 @@ def free_translate(text: str) -> str:
     cache = _load_translate_cache()
     key = _cache_key(text)
     if key in cache and cache[key]:
-        return cache[key]
+        fixed = _glossary_fix(cache[key])
+        if fixed != cache[key]:
+            cache[key] = fixed
+            _TRANSLATE_DIRTY = True
+        return fixed
 
     out = None
     providers = {"google": _via_google, "mymemory": _via_mymemory, "libre": _via_libre}
@@ -325,10 +339,11 @@ def free_translate(text: str) -> str:
 
     if out and out.strip():
         TRANSLATE_OK += 1
-        cache[key] = out.strip()
+        out = _glossary_fix(out.strip())
+        cache[key] = out
         _TRANSLATE_DIRTY = True
         time.sleep(0.45)
-        return out.strip()
+        return out
 
     TRANSLATE_FAIL += 1
     print(f"[warn] translate failed, keep original len={len(text)}")

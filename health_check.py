@@ -73,6 +73,15 @@ def main() -> int:
             prev_n = len(json.loads(lg.read_text(encoding="utf-8")).get("items") or [])
         except Exception:
             prev_n = 0
+        # A deliberate curation change (meta.curation_version bump) may legitimately drop many low-quality items.
+        try:
+            prev_cv = json.loads((ROOT / ".last_good" / "api" / "meta.json").read_text(encoding="utf-8")).get("curation_version")
+        except Exception:
+            prev_cv = None
+        cur_cv = meta.get("curation_version")
+        if cur_cv and cur_cv != prev_cv:
+            ok(f"shrink guard skipped: curation_version {prev_cv} -> {cur_cv} ({len(items)} vs last good {prev_n})")
+            prev_n = 0
         if prev_n >= 10 and len(items) < 0.6 * prev_n:
             fail(f"items shrank abnormally: {len(items)} < 60% of last good {prev_n}")
         ok(f"shrink guard: {len(items)} vs last good {prev_n}")

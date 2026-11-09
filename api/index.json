@@ -2,8 +2,20 @@
   "canonical": "https://aiym168.github.io/",
   "endpoints": [
     {
-      "path": "api/index.json",
-      "desc": "本接口目录"
+      "path": "api/v1/index.json",
+      "desc": "v1 接口目录（推荐）：分页、字段定义、计数"
+    },
+    {
+      "path": "api/v1/schema.json",
+      "desc": "v1 条目 JSON Schema"
+    },
+    {
+      "path": "api/v1/items/page-1.json",
+      "desc": "v1 全部有效资源（每页 50 条）"
+    },
+    {
+      "path": "api/v1/archived.json",
+      "desc": "v1 已归档 / 已过期"
     },
     {
       "path": "api/meta.json",
@@ -11,7 +23,7 @@
     },
     {
       "path": "api/latest.json",
-      "desc": "全部免费资源条目"
+      "desc": "全部有效免费资源（旧版，字段向下兼容）"
     },
     {
       "path": "api/github-hot.json",
@@ -39,11 +51,19 @@
     },
     {
       "path": "api/mianfei-gpu-yunfuwu.json",
-      "desc": "免费GPU / 云服务"
+      "desc": "免费 GPU / 云服务"
     },
     {
       "path": "api/keji-app-xianmian.json",
       "desc": "科技软件 / App 限免"
+    },
+    {
+      "path": "api/ai-kecheng-huodong.json",
+      "desc": "AI 课程 / 活动"
+    },
+    {
+      "path": "api/qita-keji.json",
+      "desc": "其他科技资源"
     },
     {
       "path": "api/github-hot.json",

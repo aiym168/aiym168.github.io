@@ -6,22 +6,29 @@
       "pinned": true,
       "badge": "置顶推荐",
       "title": "Simular Box：免费领一台给 AI 用的云端电脑（Linux 云桌面 / 云服务器）",
-      "summary": "Simular 推出的免费云端 Ubuntu 桌面，自带 Chrome 浏览器和命令行，可作为远程 MCP 服务器接入 Claude、ChatGPT、Claude Code、Codex、Cursor、OpenCode、DeepSeek Harness 等 AI 工具，让 AI 在云端打开网页、点击输入、读屏幕、执行命令，不占用你自己的电脑。",
+      "summary": "Simular 提供的云端 Linux 桌面（box），可作为远程 MCP 服务器接入 Claude、ChatGPT、Claude Code、Codex、Cursor、OpenCode、DeepSeek Harness 等 AI 工具，让 AI 在云端打开浏览器、点击输入、读屏幕、执行命令，不占用你自己的电脑。",
       "features": [
-        "云电脑本身免费：每个账号一台 Linux 云桌面（Ubuntu 24.04），自带 Chrome 和终端",
-        "每天赠送免费积分，用于云电脑内的模型调用（据公开报道为每天 1,000 积分，UTC 零点重置）；用你自己的 AI 来操作则不消耗",
-        "闲置自动休眠，约 1 秒唤醒，文件、程序和登录状态都会保留；支持定时唤醒",
-        "网页实时查看云桌面，需要登录、验证码时可以亲自接管",
-        "Google 或 GitHub 账号登录即可领取，无需绑卡"
+        "官网说明：云电脑本身免费，每个账号一台 Linux 云桌面，自带 Chrome 和常驻终端",
+        "云电脑内的模型调用消耗账号的每日免费额度，额度每天刷新；用完可等次日恢复或在 Billing 充值（官网未公布每日额度的具体数值）",
+        "闲置自动休眠，AI 连接时唤醒，文件和状态会保留",
+        "可在网页实时查看云桌面，需要登录、验证码时可以亲自接管",
+        "首次连接时用 Simular 账号在浏览器授权（OAuth），无需粘贴密钥；不能登录的应用可改用个人 Key"
       ],
-      "how": "打开官网用 Google / GitHub 账号登录领取；在电脑上运行 npx @simular-ai/box connect，或在 Claude / ChatGPT / Cursor 里添加 MCP 地址 https://mcp.box.simular.ai/mcp，首次连接时在浏览器授权即可。",
+      "how": "打开 box.simular.ai 登录；在电脑上运行 npx @simular-ai/box connect，或在 Claude / ChatGPT / Cursor 中添加 MCP 地址 https://mcp.box.simular.ai/mcp，首次连接时在浏览器授权。",
       "url": "https://box.simular.ai/",
       "start_url": "https://box.simular.ai/",
       "category": "云服务/GPU/开发者资源",
       "source": "Simular 官网",
       "author": "Simular",
       "deadline": null,
-      "posted_at": "2026-11-09 19:30 Asia/Shanghai"
+      "posted_at": "2026-11-09 19:30 Asia/Shanghai",
+      "reason": "能让 Claude、Cursor 等 AI 工具直接操作一台免费的云电脑，适合跑浏览器自动化，且不占用本机。",
+      "verified_at": "2026-11-09T20:50:00+08:00",
+      "verified_source": [
+        "https://box.simular.ai/",
+        "https://box.simular.ai/docs/mcp.md"
+      ],
+      "_verified_note": "2026-11-09 对照官网：box 免费、每账号一台、模型调用用每日额度且每日刷新；官网未公布每日额度数值，已删除“据公开报道 1000 积分”的说法。"
     }
   ]
 }

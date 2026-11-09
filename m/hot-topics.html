@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 <meta name="color-scheme" content="dark" />
 <meta name="theme-color" content="#02040a" />
+<script>try{if(localStorage.getItem('ai168-reduce')==='1')document.documentElement.classList.add('reduce-motion')}catch(e){}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235ce1ff'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2302040a'/%3E%3Crect x='5' y='5' width='22' height='22' rx='6' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%235ef0c0'/%3E%3C/svg%3E" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="renderer" content="webkit" />
@@ -13,7 +14,7 @@
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
 <title>最近热议 / 最新AI新闻 | AI大模型免费资源导航 · 2026年11月最新</title>
-<meta name="description" content="AI大模型免费资源导航最新AI新闻与社区热议" />
+<meta name="description" content="Hacker News、V2EX 等社区里与 AI、科技相关的热门讨论（非 AI 话题已过滤），标题已译为中文。" />
 <meta name="keywords" content="AI大模型免费资源,大模型免费API,免费GPT,Claude免费,DeepSeek免费额度,AI工具免费,免费GPU,GitHub热门项目,AI开源项目推荐,最新AI新闻" />
 <meta name="robots" content="index,follow" />
 <meta name="author" content="AI大模型免费资源导航" />
@@ -23,7 +24,7 @@
 <meta property="og:locale" content="zh_CN" />
 <meta property="og:site_name" content="AI大模型免费资源导航" />
 <meta property="og:title" content="最近热议 / 最新AI新闻 | AI大模型免费资源导航 · 2026年11月最新" />
-<meta property="og:description" content="AI大模型免费资源导航最新AI新闻与社区热议" />
+<meta property="og:description" content="Hacker News、V2EX 等社区里与 AI、科技相关的热门讨论（非 AI 话题已过滤），标题已译为中文。" />
 <meta property="og:url" content="https://aiym168.github.io/m/hot-topics.html" />
 
 <style>
@@ -383,953 +384,574 @@ kbd{font-family:var(--mono);font-size:.72rem;padding:2px 6px;border-radius:6px;b
   .ticker-track{animation:none}
 }
 
+/* =====================================================================
+   v3 — calmer, readable, content-first (overrides the v2 rules above)
+   ===================================================================== */
+:root{--text:#f3f6ff;--muted:#b3bedb;--dim:#8c97b5}
+body{font-size:16px;line-height:1.75}
+/* removed motion: grain, scan sweep, page blur-in, headline blur-in, scroll reveals, floating tags */
+.fx-noise{animation:none;opacity:.04}
+.fx-scan{display:none}
+body.page-enter .wrap,body.page-enter .hero-xl{animation:none}
+.hero-title .kl{animation:none;background-size:100% 100%}
+.reveal,.reveal.in{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
+.hud-tag,.brain-caption,.scroll-hint,.ticker{display:none!important}
+.btn.primary::after{display:none}
+.pin-card::before{animation:none}
+.brand-mini .mark{animation:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* nav tools: search + 减少动态 + hamburger */
+.topnav{gap:10px}
+.navlinks{flex:1;min-width:0}
+.navlinks a{color:#d2daf0;font-size:.9rem}
+.nav-tools{display:flex;align-items:center;gap:6px;flex:none}
+.nav-search{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:10px;border:1px solid rgba(140,200,255,.28);color:#eaf6ff;background:rgba(92,225,255,.08);font-size:.9rem;white-space:nowrap}
+.nav-search svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+.nav-search kbd{font-size:.66rem}
+.reduce-btn{font:inherit;font-size:.82rem;color:#cdd6ef;background:transparent;border:1px solid rgba(140,200,255,.2);border-radius:10px;padding:7px 10px;cursor:pointer;white-space:nowrap}
+.reduce-btn b{color:var(--mint);font-weight:600}
+.reduce-btn[aria-pressed="true"]{border-color:rgba(94,240,192,.6);background:rgba(94,240,192,.1)}
+.reduce-btn.link{border:0;padding:0;color:#b6c2e0;font-size:.82rem}
+.nav-toggle{display:none;width:40px;height:38px;border-radius:10px;border:1px solid rgba(140,200,255,.25);background:rgba(255,255,255,.04);cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:4px}
+.nav-toggle span{display:block;width:18px;height:2px;background:#e8f0ff;border-radius:2px}
+
+/* home hero: shows total / today / last update + brain, leaves room for search on first screen */
+.home-hero{min-height:auto;padding:104px 24px 10px}
+.home-hero .hero-xl-inner{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}
+.home-hero .hero-title{font-size:clamp(2.4rem,5vw,4.6rem);margin:16px 0 14px}
+.home-hero .brain-stage{width:min(100%,560px)}
+.lead{color:#cfd8f0;font-size:1.06rem;margin-bottom:18px}
+.pill{color:#c9d3ee;font-size:.92rem;align-items:center}
+.pill b{font-size:1.25rem;text-shadow:none}
+.def-note{font-size:.84rem;color:var(--dim);max-width:640px;margin:12px 0 0;line-height:1.6}
+.hero-xl.compact{padding:104px 24px 10px}
+.hero-xl.compact .brain-stage{width:min(100%,360px)}
+.hero-xl.compact .hero-title{font-size:clamp(1.9rem,3.6vw,3rem)}
+
+/* sections */
+.section{margin:0 0 64px}
+.sec-head{margin-bottom:18px}
+.sec-idx{font-family:var(--sans);letter-spacing:.08em;font-size:.82rem;color:var(--mint)}
+.sec-head h2{font-size:clamp(1.5rem,2.6vw,2rem);margin:6px 0 6px}
+.sec-desc{color:#c3cde8;font-size:.98rem}
+
+/* filters */
+.filters{position:relative;z-index:2;padding:18px;border-radius:18px;background:rgba(10,16,34,.78);border:1px solid rgba(140,200,255,.16);margin-bottom:18px}
+.searchbar{display:flex;gap:10px;margin-bottom:12px}
+.searchbar input{flex:1;min-width:0;font:inherit;font-size:1rem;color:var(--text);background:rgba(2,6,16,.8);border:1px solid rgba(140,200,255,.3);border-radius:12px;padding:12px 14px;outline:none}
+.searchbar input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(92,225,255,.18)}
+.fgroups{display:none;gap:8px 18px;flex-direction:column}
+.filters.js-ready .fgroups{display:flex}
+.fgroup{display:flex;gap:10px;align-items:flex-start}
+.flabel{flex:none;width:96px;font-size:.88rem;color:#aab6d6;padding-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:.86rem;color:#dce4f7;background:rgba(255,255,255,.04);border:1px solid rgba(140,200,255,.22);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip i{font-style:normal;color:var(--dim);margin-left:2px;font-size:.78rem}
+.chip[aria-pressed="true"]{background:rgba(92,225,255,.18);border-color:var(--cyan);color:#fff}
+.chip[aria-pressed="true"] i{color:#e6fbff}
+.fbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:12px;font-size:.9rem;color:#c3cde8}
+.f-count{font-weight:600;color:#fff}
+.sort select{font:inherit;color:var(--text);background:rgba(2,6,16,.8);border:1px solid rgba(140,200,255,.3);border-radius:10px;padding:6px 8px}
+.btn.sm{padding:6px 12px;font-size:.84rem}
+.note{font-size:.88rem;color:var(--muted)}
+.more-row{text-align:center;margin:18px 0 0}
+
+/* cards: uniform, readable */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.card{position:relative;display:flex;flex-direction:column;gap:8px;padding:18px 18px 14px;border-radius:16px;background:rgba(10,16,34,.86);border:1px solid rgba(140,200,255,.14);transform:none!important;backdrop-filter:none}
+.card:hover{border-color:rgba(92,225,255,.45)}
+.card .title{font-size:1.06rem;line-height:1.5;margin:0}
+.card .title a{color:#fff}
+.card .title a:hover{color:var(--cyan)}
+.card .summary{color:#cdd6ee;font-size:.95rem;line-height:1.7;margin:0}
+.card-top{display:flex;align-items:center;gap:8px;font-size:.84rem;color:#b7c2de;flex-wrap:wrap}
+.src-ico{width:22px;height:22px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;background:#fff;overflow:hidden;flex:none}
+.src-ico img{width:18px;height:18px;display:block}
+.src-ico.letter{background:linear-gradient(135deg,#5ce1ff,#a78bfa);color:#05070f;font-weight:800;font-size:.8rem}
+.src-name{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.st{font-size:.76rem;padding:2px 9px;border-radius:999px;border:1px solid;white-space:nowrap}
+.st-ok{color:#7dffcf;border-color:rgba(94,240,192,.5);background:rgba(94,240,192,.1)}
+.st-warn{color:#ffd08a;border-color:rgba(255,208,138,.55);background:rgba(255,208,138,.1)}
+.st-bad{color:#ff9aa2;border-color:rgba(255,120,130,.5);background:rgba(255,120,130,.08)}
+.st-muted{color:#c0c9e2;border-color:rgba(160,175,210,.35)}
+.facts{display:flex;flex-wrap:wrap;gap:6px}
+.fact{font-size:.8rem;padding:2px 9px;border-radius:8px;background:rgba(92,225,255,.1);color:#d8f6ff;border:1px solid rgba(92,225,255,.25)}
+.fact.unk{background:transparent;color:#98a3c0;border:1px dashed rgba(160,175,210,.35)}
+.fact.v-yes,.fact.v-partial{background:rgba(255,208,138,.1);color:#ffe2b0;border-color:rgba(255,208,138,.35)}
+.fact.v-deadline{background:rgba(255,154,162,.1);color:#ffc4c9;border-color:rgba(255,154,162,.35)}
+.facts.big .fact,.facts.big .st{font-size:.88rem;padding:4px 11px}
+.how{font-size:.9rem}
+.trust{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.78rem;color:#9aa6c5}
+.trust .ok{color:#7dffcf}
+.card .linkrow{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:auto;padding-top:10px;font-size:.88rem}
+.linkrow .report{color:#ffc4a0}
+.mod-tag{margin-left:auto;font-size:.76rem;color:var(--dim)}
+.pin-card{display:flex;grid-template-columns:none;padding:18px 18px 14px;border-radius:16px;box-shadow:0 0 0 1px rgba(94,240,192,.35),0 0 30px rgba(94,240,192,.08);background:rgba(10,20,30,.9)}
+.pin-card::after{display:none}
+.pin-badge{font-size:.76rem;color:#05140f;background:var(--mint);border-radius:999px;padding:2px 9px;font-weight:700;white-space:nowrap}
+.pin-reason{margin:0;font-size:.88rem;color:#cdeee3}
+.pin-note{display:inline-block;font-size:.76rem;color:#9fe9cf;border:1px solid rgba(94,240,192,.35);border-radius:6px;padding:0 6px;margin-left:4px}
+
+/* module cards (uniform) */
+.module-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.module-card{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:16px 18px;border-radius:16px;background:rgba(10,16,34,.86);border:1px solid rgba(140,200,255,.14);color:var(--text)}
+.module-card:hover{border-color:rgba(92,225,255,.5);color:var(--text)}
+.mc-ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(92,225,255,.1);color:var(--cyan)}
+.mc-ico svg{width:24px;height:24px}
+.mc-body{min-width:0;display:flex;flex-direction:column;gap:2px}
+.mc-body h3{margin:0;font-size:1.02rem;color:#fff}
+.mc-desc{font-size:.84rem;color:#aeb9d6}
+.mc-latest{font-size:.8rem;color:#8fdcf0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mc-count{text-align:right;font-size:.8rem;color:var(--muted)}
+.mc-count b{display:block;font-family:var(--mono);font-size:1.5rem;color:#fff;font-weight:500}
+
+/* latest 5 */
+.latest5{margin:0;padding:0;list-style:none;counter-reset:l}
+.latest5 li{counter-increment:l;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;padding:12px 0 12px 40px;position:relative;border-bottom:1px solid rgba(140,200,255,.1)}
+.latest5 li::before{content:counter(l);position:absolute;left:4px;top:12px;width:24px;height:24px;border-radius:8px;background:rgba(92,225,255,.12);color:var(--cyan);font-family:var(--mono);font-size:.8rem;display:flex;align-items:center;justify-content:center}
+.latest5 a{color:#fff;font-size:1rem}
+.latest5 span{font-size:.8rem;color:var(--dim)}
+
+/* big standalone disclaimer */
+.disclaimer-card{padding:28px 30px;border-radius:20px;background:linear-gradient(160deg,rgba(40,24,10,.6),rgba(18,12,30,.7));border:1px solid rgba(255,208,138,.4)}
+.disclaimer-card h2{margin:0 0 12px;font-size:1.5rem;color:#ffe2b0}
+.disclaimer-card p{margin:0 0 10px;color:#f1e6d4;font-size:1rem;line-height:1.8}
+.about p{color:#d0d9f0;margin:0 0 8px}
+
+/* detail pages */
+.facts-table{width:100%;border-collapse:collapse;margin:0 0 14px;font-size:.95rem}
+.facts-table th{width:120px;text-align:left;color:#aab6d6;font-weight:500;padding:9px 8px;border-bottom:1px solid rgba(140,200,255,.1);vertical-align:top}
+.facts-table td{padding:9px 8px;border-bottom:1px solid rgba(140,200,255,.1);color:#eef2ff}
+.facts-table td.unk{color:#98a3c0}
+ul.plain{margin:0;padding-left:1.1rem}
+ul.plain li{margin:6px 0}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 4px}
+.pin-feats{margin:0 0 12px;padding-left:1.1rem;color:#d0d9f0}
+
+/* quick search overlay */
+#quick-search{position:fixed;inset:0;z-index:10050;background:rgba(0,0,0,.6);display:none;align-items:flex-start;justify-content:center;padding-top:10vh}
+#quick-search.open{display:flex}
+.qs-box{width:min(640px,94vw);background:#0a1020;border:1px solid var(--line2);border-radius:16px;overflow:hidden}
+#qs-input{width:100%;border:0;outline:0;padding:16px 18px;font:inherit;font-size:1rem;background:transparent;color:var(--text);border-bottom:1px solid var(--line)}
+.qs-results{max-height:55vh;overflow:auto}
+.qs-item{display:block;padding:10px 18px;border-bottom:1px solid rgba(120,200,255,.08);color:var(--text)}
+.qs-item b{display:block;font-weight:600}
+.qs-item small{color:var(--dim)}
+.qs-empty,.qs-foot{padding:14px 18px;color:var(--muted);font-size:.86rem}
+footer{font-size:.86rem;color:#9ba7c7}
+footer a{color:#c2cce6}
+.foot-links{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
+
+/* reduce motion: OS setting or persistent toggle */
+html.reduce-motion *,html.reduce-motion *::before,html.reduce-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html.reduce-motion #fx-shader{opacity:.7}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ≤1080 */
+@media (max-width:1080px){.nav-search kbd{display:none}}
+/* hamburger + single column ≤768px */
+@media (max-width:768px){
+  .topnav{flex-wrap:wrap;top:8px;width:calc(100% - 16px);padding:8px 8px 8px 12px}
+  .brand-mini .txt{display:inline;font-size:.92rem}
+  .navlinks{display:none;order:3;flex-basis:100%;flex-direction:column;gap:2px;-webkit-mask-image:none;mask-image:none;padding:6px 0 4px}
+  .topnav.open .navlinks{display:flex}
+  .navlinks a{font-size:1rem;padding:10px 12px}
+  .nav-toggle{display:inline-flex}
+  .nav-tools .reduce-btn{display:none}
+  .nav-search span{display:none}
+  .home-hero,.hero-xl.compact{padding:84px 16px 6px}
+  .hero-xl-inner,.home-hero .hero-xl-inner{grid-template-columns:1fr;position:relative}
+  /* brain stays visible as a decorative backdrop behind the hero text; it never pushes search down */
+  .brain-stage,.home-hero .brain-stage,.hero-xl.compact .brain-stage{position:absolute;order:0;right:-70px;top:-30px;width:250px;opacity:.55;z-index:0;pointer-events:none}
+  .hero-xl .hero-copy{z-index:3}
+  .home-hero .hero-title{font-size:clamp(2rem,9vw,2.6rem);margin:12px 0 10px}
+  .hero-xl.compact .hero-title{font-size:1.8rem}
+  .lead{font-size:.98rem;margin-bottom:12px}
+  .home-hero .lead{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .stats{gap:6px}
+  .pill{padding:7px 10px;font-size:.82rem}.pill b{font-size:1.05rem}
+  .def-note{font-size:.78rem}
+  .wrap{padding:16px 14px 40px}
+  .section{margin-bottom:44px}
+  .grid,.module-list{grid-template-columns:1fr}
+  .filters{padding:12px}
+  .fgroup{flex-direction:column;gap:4px}
+  .flabel{width:auto;padding:0}
+  .fgroups{gap:10px}
+  .card{padding:14px}
+  .disclaimer-card{padding:20px}
+  .facts-table th{width:92px}
+  body.detail .wrap,body.archive .wrap,body.api-page .wrap,body.notfound .wrap{padding-top:84px}
+}
+
+/* board page (星际信号站) — contrast & size fixes, keeps the galaxy design */
+body.board .bd-kicker{letter-spacing:.16em;font-size:13px}
+body.board .bd-stat small,body.board .bd-holo-foot,body.board .bd-id,body.board .bd-card time{font-size:12px;letter-spacing:.06em;color:#b3bedb}
+body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #bd-count{font-size:13px;color:#b3bedb;letter-spacing:.04em}
+@media (max-width:768px){body.board .bd-hud.tl{top:78px;left:14px;right:14px;max-width:none}}
 
 </style>
 
 </head>
 
-<body>
-<div class="fx-aurora" aria-hidden="true"></div>
-<div class="fx-grid" aria-hidden="true"></div>
-<div class="fx-noise" aria-hidden="true"></div>
-<div class="fx-scan" aria-hidden="true"></div>
-<div class="fx-spot" aria-hidden="true"></div>
-<canvas id="fx-particles" aria-hidden="true"></canvas>
+<body class="module" data-base="../">
 
 <header class="topnav">
   <a class="brand-mini" href="../"><span class="mark"></span><span class="txt">AI大模型免费资源导航</span></a>
-  <nav class="navlinks" aria-label="模块导航"><a href="../c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="../c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="../c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="../c/mianfei-gpu-yunfuwu.html" title="免费GPU / 云服务">免费GPU</a><a href="../c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="../m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="../m/hot-topics.html" title="最近热议">热议</a><a href="../m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="../m/status.html" title="更新动态">更新动态</a><a class="cta" href="../m/api.html" title="CLI / API">CLI / API</a></nav>
+  <nav class="navlinks" id="navlinks" aria-label="模块导航"><a href="../c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="../c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="../c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="../c/mianfei-gpu-yunfuwu.html" title="免费 GPU / 云服务">免费GPU</a><a href="../c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="../c/ai-kecheng-huodong.html" title="AI 课程 / 活动">课程活动</a><a href="../c/qita-keji.html" title="其他科技资源">其他</a><a href="../m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="../m/hot-topics.html" title="最近热议">热议</a><a href="../m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="../m/status.html" title="更新动态">更新动态</a></nav>
+  <div class="nav-tools">
+    <a class="nav-search" href="../#search" data-search-open aria-label="搜索免费资源"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>搜索</span><kbd>Ctrl K</kbd></a>
+    <button type="button" class="reduce-btn" data-reduce-toggle aria-pressed="false" title="关闭背景与大脑动画（会记住你的选择）">减少动态 <b>关</b></button>
+    <button type="button" class="nav-toggle" aria-controls="navlinks" aria-expanded="false" aria-label="打开菜单"><span></span><span></span><span></span></button>
+  </div>
 </header>
 <header class="hero-xl compact hero-brain">
   <div class="hero-xl-inner">
     <div class="hero-copy">
       <div class="crumbs"><a href="../">首页</a> › 最近热议</div>
-      <div class="eyebrow"><i class="live-dot"></i> PULSE <span class="sep">/</span> <span data-clock>--:--:--</span></div>
+      <div class="eyebrow"><i class="live-dot"></i> 最近热议</div>
       <h1 class="hero-title"><span class="kl">最近热议</span></h1>
-      <p class="lead">Hacker News / V2EX / X 等渠道的 AI 与科技热议，标题与摘要已译为中文。</p>
-      <div class="stats"><div class="pill">话题 <b data-count="40">40</b></div><div class="pill">更新 <b>2026-11-09</b></div><div class="pill live">下次更新 <b data-next>--:--</b></div></div>
+      <p class="lead">Hacker News、V2EX 等社区里与 AI、科技相关的热门讨论（非 AI 话题已过滤），标题已译为中文。</p>
+      <div class="stats"><div class="pill">话题 <b>25</b></div><div class="pill">更新 <b>2026-11-09</b></div></div>
     </div>
     
 <div class="brain-stage" aria-hidden="true">
   <span class="ring r3"></span><span class="ring r1"></span><span class="ring r2"></span>
   <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
-  <span class="hud-tag a">热议<b>40</b></span><span class="hud-tag b">HN</span><span class="hud-tag c">V2EX</span><span class="hud-tag d">X</span>
-  <div id="brain-hero" data-vendor="../vendor/" data-nodes="2800"></div>
-  <span class="brain-caption">Neural Graph · WebGL · Live</span>
+  <div id="brain-hero" data-vendor="../vendor/" data-nodes="2600"></div>
 </div>
 
   </div>
 </header>
 <script src="../vendor/brain-loader.js" defer></script>
 <div class="wrap">
-  <div class="toolbar"><input id="q" type="search" placeholder="搜索热议…" autocomplete="off" /></div>
-  <div class="grid">
-<article class="card" data-text="高盛(Goldman Sachs)正在从其银行家和交易员手中撤出Claude Code 高盛(Goldman Sachs)正在从其银行家和交易员手中撤出Claude Code">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">高盛(Goldman Sachs)正在从其银行家和交易员手中撤出Claude Code</h3>
+  <section class="section" id="search">
+    <div class="filters" data-filter-root>
+      <form class="searchbar" role="search" onsubmit="return false"><label class="sr-only" for="q">搜索</label><input id="q" type="search" placeholder="搜索最近热议…" autocomplete="off" /><button type="submit" class="btn primary">搜索</button></form>
+      <div class="fbar"><span id="f-count" class="f-count">共 25 条</span></div>
+    </div>
+    <div class="grid" data-list>
+<article class="card" data-id="hnhot-50415628" data-text="高盛(Goldman Sachs)正在从其银行家和交易员手中撤出 Claude Code ">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/thestateofai.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">Hacker News</span></div>
+  <h3 class="title"><a href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers" target="_blank" rel="noopener noreferrer">高盛(Goldman Sachs)正在从其银行家和交易员手中撤出 Claude Code</a></h3>
   
-  <p class="summary">高盛(Goldman Sachs)正在从其银行家和交易员手中撤出Claude Code</p>
-  
-  <div class="meta">热度：点数 791 · 评论 418</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers" target="_blank" rel="noopener noreferrer">https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers</a></div>
 </article>
 
-<article class="card" data-text="再见， Claude ，你好Pi 再见， Claude ，你好Pi">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">再见， Claude ，你好Pi</h3>
+<article class="card" data-id="hnhot-50410107" data-text="再见，Claude，你好 Pi ">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/caleb.software.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">Hacker News</span></div>
+  <h3 class="title"><a href="https://caleb.software/posts/claude-to-pi.html" target="_blank" rel="noopener noreferrer">再见，Claude，你好 Pi</a></h3>
   
-  <p class="summary">再见， Claude ，你好Pi</p>
-  
-  <div class="meta">热度：点数 773 · 评论 474</div>
-  <div class="linkrow"><a class="fulllink" href="https://caleb.software/posts/claude-to-pi.html" target="_blank" rel="noopener noreferrer">https://caleb.software/posts/claude-to-pi.html</a></div>
 </article>
 
-<article class="card" data-text="英伟达首席执行官Jensen Huang致员工关于婚外情的信 英伟达首席执行官Jensen Huang致员工关于婚外情的信">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">英伟达首席执行官Jensen Huang致员工关于婚外情的信</h3>
+<article class="card" data-id="hnhot-50418016" data-text="NVIDIA 首席执行官 Jensen Huang 致员工关于婚外情的信 ">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/nvidianews.nvidia.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">Hacker News</span></div>
+  <h3 class="title"><a href="https://nvidianews.nvidia.com/news/a-message-to-our-company" target="_blank" rel="noopener noreferrer">NVIDIA 首席执行官 Jensen Huang 致员工关于婚外情的信</a></h3>
   
-  <p class="summary">英伟达首席执行官Jensen Huang致员工关于婚外情的信</p>
-  
-  <div class="meta">热度：点数 707 · 评论 784</div>
-  <div class="linkrow"><a class="fulllink" href="https://nvidianews.nvidia.com/news/a-message-to-our-company" target="_blank" rel="noopener noreferrer">https://nvidianews.nvidia.com/news/a-message-to-our-company</a></div>
 </article>
 
-<article class="card" data-text="KetchUp –使用Rust和WebGPU构建的开源SketchUp替代方案 KetchUp –使用Rust和WebGPU构建的开源SketchUp替代方案">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">KetchUp –使用Rust和WebGPU构建的开源SketchUp替代方案</h3>
+<article class="card" data-id="hnhot-50418176" data-text="KetchUp –使用 Rust 和 WebGPU 构建的开源 SketchUp 替代方案 ">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">K</span><span class="src-name">Hacker News</span></div>
+  <h3 class="title"><a href="https://ketchup3d.github.io/app/" target="_blank" rel="noopener noreferrer">KetchUp –使用 Rust 和 WebGPU 构建的开源 SketchUp 替代方案</a></h3>
   
-  <p class="summary">KetchUp –使用Rust和WebGPU构建的开源SketchUp替代方案</p>
-  
-  <div class="meta">热度：点数 532 · 评论 151</div>
-  <div class="linkrow"><a class="fulllink" href="https://ketchup3d.github.io/app/" target="_blank" rel="noopener noreferrer">https://ketchup3d.github.io/app/</a></div>
 </article>
 
-<article class="card" data-text="Llama-modchip ： 284B DeepSeek ， 64GB内存，无GPU Llama-modchip ： 284B DeepSeek ， 64GB内存，无GPU">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">Llama-modchip ： 284B DeepSeek ， 64GB内存，无GPU</h3>
+<article class="card" data-id="hnhot-50411961" data-text="Llama-modchip：284B DeepSeek，64GB 内存，无 GPU ">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">Hacker News</span></div>
+  <h3 class="title"><a href="https://github.com/synchopate/llama-modchip" target="_blank" rel="noopener noreferrer">Llama-modchip：284B DeepSeek，64GB 内存，无 GPU</a></h3>
   
-  <p class="summary">Llama-modchip ： 284B DeepSeek ， 64GB内存，无GPU</p>
-  
-  <div class="meta">热度：点数 430 · 评论 193</div>
-  <div class="linkrow"><a class="fulllink" href="https://github.com/synchopate/llama-modchip" target="_blank" rel="noopener noreferrer">https://github.com/synchopate/llama-modchip</a></div>
 </article>
 
-<article class="card" data-text="Outlook.com正在拒绝来自没有DMARC的域的电子邮件 Outlook.com正在拒绝来自没有DMARC的域的电子邮件">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">Outlook.com正在拒绝来自没有DMARC的域的电子邮件</h3>
+<article class="card" data-id="hnhot-50418975" data-text="我不相信 AI 泡沫的存在 ">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">M</span><span class="src-name">Hacker News</span></div>
+  <h3 class="title"><a href="https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists" target="_blank" rel="noopener noreferrer">我不相信 AI 泡沫的存在</a></h3>
   
-  <p class="summary">Outlook.com正在拒绝来自没有DMARC的域的电子邮件</p>
-  
-  <div class="meta">热度：点数 422 · 评论 299</div>
-  <div class="linkrow"><a class="fulllink" href="https://mailroute.net/blog/outlook-rejecting-email-without-dmarc" target="_blank" rel="noopener noreferrer">https://mailroute.net/blog/outlook-rejecting-email-without-dmarc</a></div>
 </article>
 
-<article class="card" data-text="我不相信AI泡沫的存在 我不相信AI泡沫的存在">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">我不相信AI泡沫的存在</h3>
+<article class="card" data-id="hnhot-50416363" data-text="我如何对抗 AI Brain Fry ">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/sergeykuhne.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">Hacker News</span></div>
+  <h3 class="title"><a href="https://sergeykuhne.com/blog/fighting-ai-brain-fry" target="_blank" rel="noopener noreferrer">我如何对抗 AI Brain Fry</a></h3>
   
-  <p class="summary">我不相信AI泡沫的存在</p>
-  
-  <div class="meta">热度：点数 325 · 评论 552</div>
-  <div class="linkrow"><a class="fulllink" href="https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists" target="_blank" rel="noopener noreferrer">https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists</a></div>
 </article>
 
-<article class="card" data-text="我如何对抗AI Brain Fry 我如何对抗AI Brain Fry">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">我如何对抗AI Brain Fry</h3>
+<article class="card" data-id="hnhot-50420857" data-text="对 GPUI 的批判 ">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">B</span><span class="src-name">Hacker News</span></div>
+  <h3 class="title"><a href="https://blog.zortax.de/posts/a-critique-of-gpui" target="_blank" rel="noopener noreferrer">对 GPUI 的批判</a></h3>
   
-  <p class="summary">我如何对抗AI Brain Fry</p>
-  
-  <div class="meta">热度：点数 266 · 评论 176</div>
-  <div class="linkrow"><a class="fulllink" href="https://sergeykuhne.com/blog/fighting-ai-brain-fry" target="_blank" rel="noopener noreferrer">https://sergeykuhne.com/blog/fighting-ai-brain-fry</a></div>
 </article>
 
-<article class="card" data-text="[中转站] 小众中转站推广，特色分组 opus-4.6，进来领鸡蛋 10$ 站点： https://minitoken.cc/
-充值比例 1:1
-
-主营模型
-claude-opus-4-6
-claude-sonnet-4-6
-gpt-6-astra
-gpt-6.1-sol
-
-
-留下用户名送 5$,加入 qq 群留下用户名送 5$，一共 10$ 有效期一个月
-点击链接加入群聊： https://qm.qq.com/q/P2hDQlEPus">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">[中转站] 小众中转站推广，特色分组 opus-4.6，进来领鸡蛋 10$</h3>
-  
-  <p class="summary">站点： https://minitoken.cc/
-充值比例 1:1
-
-主营模型
-claude-opus-4-6
-claude-sonnet-4-6
-gpt-6-astra
-gpt-6.1-sol
-
-
-留下用户名送 5$,加入 qq 群留下用户名送 5$，一共 10$ 有效期一个月
-点击链接加入群聊： https://qm.qq.com/q/P2hDQlEPus</p>
-  
-  <div class="meta">热度：回复 125</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255439" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255439</a></div>
+<article class="card" data-id="v2hot-1255534" data-text="初级古法前端说：前端比后端难多了。我这个后端老登沉默了 最近和一个前端同时入职一家公司。（公司不提供 AI 和报销 AI） 公司要求独立开发一个项目，不能使用现成的成熟产品，只能基于最基础的框架从零开发，这是领导的硬性规定。项目最初安排 2 个后端 + 1 个前端，没有测试，没有产品，没有运维，后来领导把一个后端名额调到市场的岗位，最终变成：后端：我，10 多年经验老登。前端：一位据他介绍说有 3 年经验的同事。项目采用前后端分离，原本分工是后端负责 API、服务器运维，前端负责项目前台和后台管理页面。后来工作分配逐渐变了 我目前已经比较依赖 AI 编程，后端接口、业务逻辑基本都是 AI 辅助">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255534" target="_blank" rel="noopener noreferrer">初级古法前端说：前端比后端难多了。我这个后端老登沉默了</a></h3>
+  <p class="summary">最近和一个前端同时入职一家公司。（公司不提供 AI 和报销 AI） 公司要求独立开发一个项目，不能使用现成的成熟产品，只能基于最基础的框架从零开发，这是领导的硬性规定。项目最初安排 2 个后端 + 1 个前端，没有测试，没有产品，没有运维，后来领导把一个后端名额调到市场的岗位，最终变成：后端：我，10 多年经验老登。前端：一位据他介绍说有 3 年经验的同事。项目采用前后端分离，原本分工是后端负责 API、服务器运维，前端负责项目前台和后台管理页面。后来工作分配逐渐变了 我目前已经比较依赖 AI 编程，后端接口、业务逻辑基本都是 AI 辅助</p>
 </article>
 
-<article class="card" data-text="对GPUI的批判 对GPUI的批判">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">对GPUI的批判</h3>
+<article class="card" data-id="hnhot-50421155" data-text="Show HN：Flide：使类似 Jev 的决策模型速度提高 9.5 倍 ">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">Hacker News</span></div>
+  <h3 class="title"><a href="https://github.com/OmniJev/Flide" target="_blank" rel="noopener noreferrer">Show HN：Flide：使类似 Jev 的决策模型速度提高 9.5 倍</a></h3>
   
-  <p class="summary">对GPUI的批判</p>
-  
-  <div class="meta">热度：点数 113 · 评论 72</div>
-  <div class="linkrow"><a class="fulllink" href="https://blog.zortax.de/posts/a-critique-of-gpui" target="_blank" rel="noopener noreferrer">https://blog.zortax.de/posts/a-critique-of-gpui</a></div>
 </article>
 
-<article class="card" data-text="下一代概念建模：快速、并行的粗到细文本生成 下一代概念建模：快速、并行的粗到细文本生成">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">下一代概念建模：快速、并行的粗到细文本生成</h3>
+<article class="card" data-id="hnhot-50422628" data-text="ChatGPT Desktop 将您的 SSH 代理转发到远程计算机 ">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/news.ycombinator.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">Hacker News</span></div>
+  <h3 class="title"><a href="https://news.ycombinator.com/item?id=50422628" target="_blank" rel="noopener noreferrer">ChatGPT Desktop 将您的 SSH 代理转发到远程计算机</a></h3>
   
-  <p class="summary">下一代概念建模：快速、并行的粗到细文本生成</p>
-  
-  <div class="meta">热度：点数 101 · 评论 13</div>
-  <div class="linkrow"><a class="fulllink" href="https://arxiv.org/abs/2610.14162" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2610.14162</a></div>
 </article>
 
-<article class="card" data-text="初级古法前端说：前端比后端难多了。我这个后端老登沉默了 最近和一个前端同时入职一家公司。（公司不提供 AI 和报销 AI ）
-
-公司要求独立开发一个项目，不能使用现成的成熟产品，只能基于最基础的框架从零开发，这是领导的硬性规定。
-
-项目最初安排 2 个后端 + 1 个前端，没有测试，没有产品，没有运维，后来领导把一个后端名额调到市场的岗位，最终变成：
-
-后端：我，10 多年经验老登。
-
-前端：一位据他介绍说有 3 年经验的同事。
-
-项目采用前后端分离，原本分工是后端负责 API 、服务器运维，前端负责项目前台和后台管理页面。
-
-后来工作分配逐渐变了
-
-我目前已经比较依赖 AI 编程，后端接口、业务逻辑基本都是 AI 辅助">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">初级古法前端说：前端比后端难多了。我这个后端老登沉默了</h3>
-  
-  <p class="summary">最近和一个前端同时入职一家公司。（公司不提供 AI 和报销 AI ）
-
-公司要求独立开发一个项目，不能使用现成的成熟产品，只能基于最基础的框架从零开发，这是领导的硬性规定。
-
-项目最初安排 2 个后端 + 1 个前端，没有测试，没有产品，没有运维，后来领导把一个后端名额调到市场的岗位，最终变成：
-
-后端：我，10 多年经验老登。
-
-前端：一位据他介绍说有 3 年经验的同事。
-
-项目采用前后端分离，原本分工是后端负责 API 、服务器运维，前端负责项目前台和后台管理页面。
-
-后来工作分配逐渐变了
-
-我目前已经比较依赖 AI 编程，后端接口、业务逻辑基本都是 AI 辅助</p>
-  
-  <div class="meta">热度：回复 57</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255534" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255534</a></div>
-</article>
-
-<article class="card" data-text="Show HN：Flide：使类似 Jev 的决策模型速度提高 9.5 倍 Show HN：Flide：使类似 Jev 的决策模型速度提高 9.5 倍">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">Show HN：Flide：使类似 Jev 的决策模型速度提高 9.5 倍</h3>
-  
-  <p class="summary">Show HN：Flide：使类似 Jev 的决策模型速度提高 9.5 倍</p>
-  
-  <div class="meta">热度：点数 41 · 评论 10</div>
-  <div class="linkrow"><a class="fulllink" href="https://github.com/OmniJev/Flide" target="_blank" rel="noopener noreferrer">https://github.com/OmniJev/Flide</a></div>
-</article>
-
-<article class="card" data-text="ChatGPT Desktop 将您的 SSH 代理转发到远程计算机 ChatGPT Desktop 将您的 SSH 代理转发到远程计算机">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title">ChatGPT Desktop 将您的 SSH 代理转发到远程计算机</h3>
-  
-  <p class="summary">ChatGPT Desktop 将您的 SSH 代理转发到远程计算机</p>
-  
-  <div class="meta">热度：点数 40 · 评论 10</div>
-  <div class="linkrow"><a class="fulllink" href="https://news.ycombinator.com/item?id=50422628" target="_blank" rel="noopener noreferrer">https://news.ycombinator.com/item?id=50422628</a></div>
-</article>
-
-<article class="card" data-text="一直以为是上火，结果是过敏 从小到大吃一些水果的时候，嘴皮就会发干发烫，小时候还出现过一次严重的嘴皮开裂流血。一直以来都以为是吃了热性的水果导致上火了，就很少去碰那些水果。
-
-结果最近吃了点水果又出了类似状况，用 ai review 了一下症状，怀疑是过敏。于是去医院检查发现真的是过敏性皮炎 :(
-
-后来医生开了他克莫司抹了一天，困扰了十多年的&quot;上火&quot;问题就解决了
-
-https://i.imgur.com/7tgCbLP.png">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">一直以为是上火，结果是过敏</h3>
-  
-  <p class="summary">从小到大吃一些水果的时候，嘴皮就会发干发烫，小时候还出现过一次严重的嘴皮开裂流血。一直以来都以为是吃了热性的水果导致上火了，就很少去碰那些水果。
-
-结果最近吃了点水果又出了类似状况，用 ai review 了一下症状，怀疑是过敏。于是去医院检查发现真的是过敏性皮炎 :(
-
-后来医生开了他克莫司抹了一天，困扰了十多年的&quot;上火&quot;问题就解决了
-
-https://i.imgur.com/7tgCbLP.png</p>
-  
-  <div class="meta">热度：回复 14</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255622" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255622</a></div>
-</article>
-
-<article class="card" data-text="t3code\herdr\cindy 等等多 agent 聚合工具，推荐用哪个？ 或者大家有其他的推荐？">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">t3code\herdr\cindy 等等多 agent 聚合工具，推荐用哪个？</h3>
-  
+<article class="card" data-id="v2hot-1255612" data-text="t3code\herdr\cindy 等等多 agent 聚合工具，推荐用哪个？ 或者大家有其他的推荐？">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255612" target="_blank" rel="noopener noreferrer">t3code\herdr\cindy 等等多 agent 聚合工具，推荐用哪个？</a></h3>
   <p class="summary">或者大家有其他的推荐？</p>
-  
-  <div class="meta">热度：回复 9</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255612" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255612</a></div>
 </article>
 
-<article class="card" data-text="👍 DSH 的统计面板确实好用。 👍 DSH 的统计面板确实好用。
-
-以前排查 Token 消耗和耗时全靠猜，现在冷启动时 450K+ 上下文、4% 的惨淡缓存命中率，以及后续命中率飙升到 99.9% 后的性能反差，在面板里一目了然。
-
-CodeX 、Claude 好好学学 😒
-
-![]( https://pbs.twimg.com/media/HWrBHdIbwAASnM9?format=jpg&amp;name=4096x4096)">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">👍 DSH 的统计面板确实好用。</h3>
-  
-  <p class="summary">👍 DSH 的统计面板确实好用。
-
-以前排查 Token 消耗和耗时全靠猜，现在冷启动时 450K+ 上下文、4% 的惨淡缓存命中率，以及后续命中率飙升到 99.9% 后的性能反差，在面板里一目了然。
-
-CodeX 、Claude 好好学学 😒
-
-![]( https://pbs.twimg.com/media/HWrBHdIbwAASnM9?format=jpg&amp;name=4096x4096)</p>
-  
-  <div class="meta">热度：回复 6</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255623" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255623</a></div>
+<article class="card" data-id="v2hot-1255623" data-text="DSH 的统计面板确实好用。 DSH 的统计面板确实好用。以前排查 Token 消耗和耗时全靠猜，现在冷启动时 450K+ 上下文、4% 的惨淡缓存命中率，以及后续命中率飙升到 99.9% 后的性能反差，在面板里一目了然。CodeX、Claude 好好学学 ![](">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255623" target="_blank" rel="noopener noreferrer">DSH 的统计面板确实好用。</a></h3>
+  <p class="summary">DSH 的统计面板确实好用。以前排查 Token 消耗和耗时全靠猜，现在冷启动时 450K+ 上下文、4% 的惨淡缓存命中率，以及后续命中率飙升到 99.9% 后的性能反差，在面板里一目了然。CodeX、Claude 好好学学 ![](</p>
 </article>
 
-<article class="card" data-text="找国产 GPU 算力卡渠道，沐曦，平头哥，海光 沐曦 c600
-平头哥 真武 m890
-海光 bw1100
-
-方案三选一，要两台 8 卡，看价格、交付速度综合考量
-据我了解现在应该是这三个方案是最新的了吧？如果有更高性能等级的也可以～
-
-手里有资源，或者可以牵线的大佬，请 PM ～～">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">找国产 GPU 算力卡渠道，沐曦，平头哥，海光</h3>
-  
-  <p class="summary">沐曦 c600
-平头哥 真武 m890
-海光 bw1100
-
-方案三选一，要两台 8 卡，看价格、交付速度综合考量
-据我了解现在应该是这三个方案是最新的了吧？如果有更高性能等级的也可以～
-
-手里有资源，或者可以牵线的大佬，请 PM ～～</p>
-  
-  <div class="meta">热度：回复 4</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255626" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255626</a></div>
+<article class="card" data-id="v2hot-1255626" data-text="找国产 GPU 算力卡渠道，沐曦，平头哥，海光 沐曦 c600 平头哥 真武 m890 海光 bw1100 方案三选一，要两台 8 卡，看价格、交付速度综合考量 据我了解现在应该是这三个方案是最新的了吧？如果有更高性能等级的也可以～ 手里有资源，或者可以牵线的大佬，请 PM ～～">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255626" target="_blank" rel="noopener noreferrer">找国产 GPU 算力卡渠道，沐曦，平头哥，海光</a></h3>
+  <p class="summary">沐曦 c600 平头哥 真武 m890 海光 bw1100 方案三选一，要两台 8 卡，看价格、交付速度综合考量 据我了解现在应该是这三个方案是最新的了吧？如果有更高性能等级的也可以～ 手里有资源，或者可以牵线的大佬，请 PM ～～</p>
 </article>
 
-<article class="card" data-text="卖日本家宽独立 ip， vnc mac 远程桌面系统，主要面向想用 ai 的客户，有搞头么？ 只提供空机器，保证独立干净日本家宽 ip">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">卖日本家宽独立 ip， vnc mac 远程桌面系统，主要面向想用 ai 的客户，有搞头么？</h3>
-  
-  <p class="summary">只提供空机器，保证独立干净日本家宽 ip</p>
-  
-  <div class="meta">热度：回复 3</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255657" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255657</a></div>
+<article class="card" data-id="v2hot-1255630" data-text="[香港招聘] AI Agent 開發工程師 | 港币 25K-35K/月 # AI Agent 開發工程師 港币 25K-35K/月 學士 | 3-5 年 | 需有香港工作許可 5 天/週, 固定坐班 工作地点：旺角 # 職位描述 ## 崗位簡介 我們正在搭建智能化招聘 AI 體系，聚焦招聘全場景數智化升級。本崗位核心負責招聘場景專屬 AI Agent 的設計、開發、調優與落地迭代，圍繞簡歷解析、人崗匹配、智能對話、面試輔助、招聘數據分析等招聘核心場景，打造高可用、高智能化的 AI Agent 工具與自動化流程，助力招聘效率與精準度全面提升，是公司智能化招聘體系的核心技術崗位。## 主要職責">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255630" target="_blank" rel="noopener noreferrer">[香港招聘] AI Agent 開發工程師 | 港币 25K-35K/月</a></h3>
+  <p class="summary"># AI Agent 開發工程師 港币 25K-35K/月 學士 | 3-5 年 | 需有香港工作許可 5 天/週, 固定坐班 工作地点：旺角 # 職位描述 ## 崗位簡介 我們正在搭建智能化招聘 AI 體系，聚焦招聘全場景數智化升級。本崗位核心負責招聘場景專屬 AI Agent 的設計、開發、調優與落地迭代，圍繞簡歷解析、人崗匹配、智能對話、面試輔助、招聘數據分析等招聘核心場景，打造高可用、高智能化的 AI Agent 工具與自動化流程，助力招聘效率與精準度全面提升，是公司智能化招聘體系的核心技術崗位。## 主要職責</p>
 </article>
 
-<article class="card" data-text="[香港招聘] AI Agent 開發工程師 | 港币 25K-35K/月 # AI Agent 開發工程師
-
-港币 25K-35K/月
-
-學士  |  3-5 年  |  需有香港工作許可
-
-5 天/週, 固定坐班
-
-工作地点：旺角
-
-
-# 職位描述
-
-## 崗位簡介
-
-我們正在搭建智能化招聘 AI 體系，聚焦招聘全場景數智化升級。本崗位核心負責招聘場景專屬 AI Agent 的設計、開發、調優與落地迭代，圍繞簡歷解析、人崗匹配、智能對話、面試輔助、招聘數據分析等招聘核心場景，打造高可用、高智能化的 AI Agent 工具與自動化流程，助力招聘效率與精準度全面提升，是公司智能化招聘體系的核心技術崗位。
-
-## 主要職責
-
-負責招">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">[香港招聘] AI Agent 開發工程師 | 港币 25K-35K/月</h3>
-  
-  <p class="summary"># AI Agent 開發工程師
-
-港币 25K-35K/月
-
-學士  |  3-5 年  |  需有香港工作許可
-
-5 天/週, 固定坐班
-
-工作地点：旺角
-
-
-# 職位描述
-
-## 崗位簡介
-
-我們正在搭建智能化招聘 AI 體系，聚焦招聘全場景數智化升級。本崗位核心負責招聘場景專屬 AI Agent 的設計、開發、調優與落地迭代，圍繞簡歷解析、人崗匹配、智能對話、面試輔助、招聘數據分析等招聘核心場景，打造高可用、高智能化的 AI Agent 工具與自動化流程，助力招聘效率與精準度全面提升，是公司智能化招聘體系的核心技術崗位。
-
-## 主要職責
-
-負責招</p>
-  
-  <div class="meta">热度：回复 3</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255630" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255630</a></div>
+<article class="card" data-id="v2hot-1255650" data-text="大佬们，把一个项目完全交给 ai 一般是怎么做的啊？自己完全不看，每次让 ai 扫一遍代码，然后再修改，感觉有点小贵了呢[旺柴] 如题。最近整了两个小 app 项目，代码量都在 1w 左右。目前工作流：说需求给 codex，他自己随意玩，我只看最终效果。目前发现问题：1. 最近在尝试其他 agent，随便让他们新增或者优化下功能。2. 总感觉他们每次都要扫一编仓库了，有点慢，token 消耗也有点大。3. 代码量目前就这么一丢丢，我感觉我的钱包已经崩不住了。想请教各位大佬：1. AI 完全托管项目，有啥工作流技巧可以分享分享吗？2. 如何健康的可持续迭代，确保：质量、速度、成本比较合理。">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255650" target="_blank" rel="noopener noreferrer">大佬们，把一个项目完全交给 ai 一般是怎么做的啊？自己完全不看，每次让 ai 扫一遍代码，然后再修改，感觉有点小贵了呢[旺柴]</a></h3>
+  <p class="summary">如题。最近整了两个小 app 项目，代码量都在 1w 左右。目前工作流：说需求给 codex，他自己随意玩，我只看最终效果。目前发现问题：1. 最近在尝试其他 agent，随便让他们新增或者优化下功能。2. 总感觉他们每次都要扫一编仓库了，有点慢，token 消耗也有点大。3. 代码量目前就这么一丢丢，我感觉我的钱包已经崩不住了。想请教各位大佬：1. AI 完全托管项目，有啥工作流技巧可以分享分享吗？2. 如何健康的可持续迭代，确保：质量、速度、成本比较合理。</p>
 </article>
 
-<article class="card" data-text="看到整顿职场的嘉豪 也分享一个现实遇见的网络人 不知道怎么形容，就先简称网络人。
-
-吃饭的时间看见的，一开始是它一个人在耍手机，就很不对劲，他看的应该那种 ai 讲故事短视频那种，边看边评价，评价词全是网络流行词（说的巨大声）类似“我草，还有高手！！”这种日常说出来无比中二的话。
-
-一会应该是他妈来了，饭菜也上来，他也不吃饭，还耍手机这会应该是看直播，完全带入主播视角，嘴里一直说“牛逼，这个人太阴了”，反正就是跟他自己在直播一样。他妈一直说他让他赶紧吃饭，他真的想活在直播世界一样，没有任何回馈（说实话他妈也是够宠的，要是我妈早就打耳刮子扇过来了）。过了很长时间他终于跟他妈交流，大致就夸他看的主播打游戏有多牛逼巴拉巴拉的。
-
-我也">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">看到整顿职场的嘉豪 也分享一个现实遇见的网络人</h3>
-  
-  <p class="summary">不知道怎么形容，就先简称网络人。
-
-吃饭的时间看见的，一开始是它一个人在耍手机，就很不对劲，他看的应该那种 ai 讲故事短视频那种，边看边评价，评价词全是网络流行词（说的巨大声）类似“我草，还有高手！！”这种日常说出来无比中二的话。
-
-一会应该是他妈来了，饭菜也上来，他也不吃饭，还耍手机这会应该是看直播，完全带入主播视角，嘴里一直说“牛逼，这个人太阴了”，反正就是跟他自己在直播一样。他妈一直说他让他赶紧吃饭，他真的想活在直播世界一样，没有任何回馈（说实话他妈也是够宠的，要是我妈早就打耳刮子扇过来了）。过了很长时间他终于跟他妈交流，大致就夸他看的主播打游戏有多牛逼巴拉巴拉的。
-
-我也</p>
-  
-  <div class="meta">热度：回复 2</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255645" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255645</a></div>
-</article>
-
-<article class="card" data-text="WebDavy：把 WebDAV 云盘接入浏览器的 Chrome 扩展 分享一个自己做的 Chrome 扩展，免费、无广告。
-
-## 功能
-
-- 支持 Nextcloud 、坚果云、群晖、ownCloud 等 WebDAV 服务
-- 多账户管理、文件预览、上传下载
-- 侧边栏集成、目录书签、后台常驻
-- 配置导入导出
-
-## 链接
-
-- Chrome 商店： https://chromewebstore.google.com/detail/webdavy/inaeglkgfmnkncalphgpkendfjndjmid
-- 产品主页： https://holatiger.com/webdavy
-
-欢迎试用，有问题和建议随时反馈。">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">WebDavy：把 WebDAV 云盘接入浏览器的 Chrome 扩展</h3>
-  
-  <p class="summary">分享一个自己做的 Chrome 扩展，免费、无广告。
-
-## 功能
-
-- 支持 Nextcloud 、坚果云、群晖、ownCloud 等 WebDAV 服务
-- 多账户管理、文件预览、上传下载
-- 侧边栏集成、目录书签、后台常驻
-- 配置导入导出
-
-## 链接
-
-- Chrome 商店： https://chromewebstore.google.com/detail/webdavy/inaeglkgfmnkncalphgpkendfjndjmid
-- 产品主页： https://holatiger.com/webdavy
-
-欢迎试用，有问题和建议随时反馈。</p>
-  
-  <div class="meta">热度：回复 1</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255655" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255655</a></div>
-</article>
-
-<article class="card" data-text="大佬们，把一个项目完全交给 ai 一般是怎么做的啊？自己完全不看，每次让 ai 扫一遍代码，然后再修改，感觉有点小贵了呢[旺柴] 如题。
-最近整了两个小 app 项目，代码量都在 1w 左右。
-目前工作流：说需求给 codex ，他自己随意玩，我只看最终效果。
-目前发现问题：
-1. 最近在尝试其他 agent ，随便让他们新增或者优化下功能。
-2. 总感觉他们每次都要扫一编仓库了，有点慢，token 消耗也有点大。
-3. 代码量目前就这么一丢丢，我感觉我的钱包已经崩不住了。
-想请教各位大佬：
-1. AI 完全托管项目，有啥工作流技巧可以分享分享吗？
-2. 如何健康的可持续迭代，确保：质量、速度、成本比较合理。">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">大佬们，把一个项目完全交给 ai 一般是怎么做的啊？自己完全不看，每次让 ai 扫一遍代码，然后再修改，感觉有点小贵了呢[旺柴]</h3>
-  
-  <p class="summary">如题。
-最近整了两个小 app 项目，代码量都在 1w 左右。
-目前工作流：说需求给 codex ，他自己随意玩，我只看最终效果。
-目前发现问题：
-1. 最近在尝试其他 agent ，随便让他们新增或者优化下功能。
-2. 总感觉他们每次都要扫一编仓库了，有点慢，token 消耗也有点大。
-3. 代码量目前就这么一丢丢，我感觉我的钱包已经崩不住了。
-想请教各位大佬：
-1. AI 完全托管项目，有啥工作流技巧可以分享分享吗？
-2. 如何健康的可持续迭代，确保：质量、速度、成本比较合理。</p>
-  
-  <div class="meta">热度：回复 1</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255650" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255650</a></div>
-</article>
-
-<article class="card" data-text="vibe coding 时代，前后端分离还有必要吗? 如同前端的 VUE 框架，组件拆分的思想是为了方便复用和可观测，但是 AI 时代这个特性反而会影响 AI 阅读和理解程序，是不是未来前后端分离会越来越没有必要了？直接让 AI 从前端到后端一步到位会不会错误概率更小?">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">vibe coding 时代，前后端分离还有必要吗?</h3>
-  
+<article class="card" data-id="v2hot-1255614" data-text="vibe coding 时代，前后端分离还有必要吗? 如同前端的 VUE 框架，组件拆分的思想是为了方便复用和可观测，但是 AI 时代这个特性反而会影响 AI 阅读和理解程序，是不是未来前后端分离会越来越没有必要了？直接让 AI 从前端到后端一步到位会不会错误概率更小?">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255614" target="_blank" rel="noopener noreferrer">vibe coding 时代，前后端分离还有必要吗?</a></h3>
   <p class="summary">如同前端的 VUE 框架，组件拆分的思想是为了方便复用和可观测，但是 AI 时代这个特性反而会影响 AI 阅读和理解程序，是不是未来前后端分离会越来越没有必要了？直接让 AI 从前端到后端一步到位会不会错误概率更小?</p>
-  
-  <div class="meta">热度：回复 1</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255614" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255614</a></div>
 </article>
 
-<article class="card" data-text="为了和邻居拼山姆，我用 AI 做了个小程序 看到了太多食品安全相关的新闻，后来开通了山姆会员，买下来感觉还不错
-
-
-不管是我平时买的 17.9 元的鲜牛奶、21.8 元 30 枚的鸡蛋，还是水果和零食，都挺满意
-
-
-不过分量确实大，我这边下单还要凑满 99 元才包邮
-
-
-后来加入小区山姆拼单群，可以和群里的伙伴拼单、凑包邮。但随之而来的问题是：
-
-
-每次发完消息，群里就不断有人回复、 @我
-
-
-下单前，要翻聊天记录，确认大家买什么，还有哪些没拼满
-
-
-买完之后，要算每个人付多少钱、包装费和运费怎么分，最后还得提醒大家来取货……
-
-
-有一天，我突然想到，是不是可以用 Workbuddy 手搓一个小">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">为了和邻居拼山姆，我用 AI 做了个小程序</h3>
-  
-  <p class="summary">看到了太多食品安全相关的新闻，后来开通了山姆会员，买下来感觉还不错
-
-
-不管是我平时买的 17.9 元的鲜牛奶、21.8 元 30 枚的鸡蛋，还是水果和零食，都挺满意
-
-
-不过分量确实大，我这边下单还要凑满 99 元才包邮
-
-
-后来加入小区山姆拼单群，可以和群里的伙伴拼单、凑包邮。但随之而来的问题是：
-
-
-每次发完消息，群里就不断有人回复、 @我
-
-
-下单前，要翻聊天记录，确认大家买什么，还有哪些没拼满
-
-
-买完之后，要算每个人付多少钱、包装费和运费怎么分，最后还得提醒大家来取货……
-
-
-有一天，我突然想到，是不是可以用 Workbuddy 手搓一个小</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255659" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255659</a></div>
+<article class="card" data-id="v2hot-1255659" data-text="为了和邻居拼山姆，我用 AI 做了个小程序 看到了太多食品安全相关的新闻，后来开通了山姆会员，买下来感觉还不错 不管是我平时买的 17.9 元的鲜牛奶、21.8 元 30 枚的鸡蛋，还是水果和零食，都挺满意 不过分量确实大，我这边下单还要凑满 99 元才包邮 后来加入小区山姆拼单群，可以和群里的伙伴拼单、凑包邮。但随之而来的问题是：每次发完消息，群里就不断有人回复、@我 下单前，要翻聊天记录，确认大家买什么，还有哪些没拼满 买完之后，要算每个人付多少钱、包装费和运费怎么分，最后还得提醒大家来取货…… 有一天，我突然想到，是不是可以用 Workbuddy 手搓一个小">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255659" target="_blank" rel="noopener noreferrer">为了和邻居拼山姆，我用 AI 做了个小程序</a></h3>
+  <p class="summary">看到了太多食品安全相关的新闻，后来开通了山姆会员，买下来感觉还不错 不管是我平时买的 17.9 元的鲜牛奶、21.8 元 30 枚的鸡蛋，还是水果和零食，都挺满意 不过分量确实大，我这边下单还要凑满 99 元才包邮 后来加入小区山姆拼单群，可以和群里的伙伴拼单、凑包邮。但随之而来的问题是：每次发完消息，群里就不断有人回复、@我 下单前，要翻聊天记录，确认大家买什么，还有哪些没拼满 买完之后，要算每个人付多少钱、包装费和运费怎么分，最后还得提醒大家来取货…… 有一天，我突然想到，是不是可以用 Workbuddy 手搓一个小</p>
 </article>
 
-<article class="card" data-text="火山的 agent plan 半价 240/年值得吗 RT ，火山的 agent plan 半价 240/年值得吗，开了个 40 的 code plan 两轮对话没了，半价的 agentplan 额度怎么样，值得吗。
-另外 agent plan 能生成图像语音吗，20 的额度能生成多少语音呀">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">火山的 agent plan 半价 240/年值得吗</h3>
-  
-  <p class="summary">RT ，火山的 agent plan 半价 240/年值得吗，开了个 40 的 code plan 两轮对话没了，半价的 agentplan 额度怎么样，值得吗。
-另外 agent plan 能生成图像语音吗，20 的额度能生成多少语音呀</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255654" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255654</a></div>
+<article class="card" data-id="v2hot-1255654" data-text="火山的 agent plan 半价 240/年值得吗 RT，火山的 agent plan 半价 240/年值得吗，开了个 40 的 code plan 两轮对话没了，半价的 agentplan 额度怎么样，值得吗。另外 agent plan 能生成图像语音吗，20 的额度能生成多少语音呀">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255654" target="_blank" rel="noopener noreferrer">火山的 agent plan 半价 240/年值得吗</a></h3>
+  <p class="summary">RT，火山的 agent plan 半价 240/年值得吗，开了个 40 的 code plan 两轮对话没了，半价的 agentplan 额度怎么样，值得吗。另外 agent plan 能生成图像语音吗，20 的额度能生成多少语音呀</p>
 </article>
 
-<article class="card" data-text="RelayBases · 专注 GPT、Claude 满血体验的 API 中继服务商，自建稳定号池，注册送 $10 体验额度。 v 友们好，RelayBases 又回来搞活动了 👋
-
-上次推广还是半年前，这半年来没跑路、没断供、没降智，老用户都懂。
-
-简单说下优势：
-
-主营 GPT 、Claude ，自建号池，满血保真，欢迎打假
-充值 1:1 倍率，充多少是多少，不玩花活
-可对公，可开票
-响应快、稳定性高
-
-注册完贴 ID ，送$10 额度
-
-欢迎体验👏🏻
-
-https://relaybases.com/">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">RelayBases · 专注 GPT、Claude 满血体验的 API 中继服务商，自建稳定号池，注册送 $10 体验额度。</h3>
-  
-  <p class="summary">v 友们好，RelayBases 又回来搞活动了 👋
-
-上次推广还是半年前，这半年来没跑路、没断供、没降智，老用户都懂。
-
-简单说下优势：
-
-主营 GPT 、Claude ，自建号池，满血保真，欢迎打假
-充值 1:1 倍率，充多少是多少，不玩花活
-可对公，可开票
-响应快、稳定性高
-
-注册完贴 ID ，送$10 额度
-
-欢迎体验👏🏻
-
-https://relaybases.com/</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255653" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255653</a></div>
+<article class="card" data-id="v2hot-1255653" data-text="RelayBases · 专注 GPT、Claude 满血体验的 API 中继服务商，自建稳定号池，注册送 $10 体验额度。 v 友们好，RelayBases 又回来搞活动了 上次推广还是半年前，这半年来没跑路、没断供、没降智，老用户都懂。简单说下优势：主营 GPT、Claude，自建号池，满血保真，欢迎打假 充值 1:1 倍率，充多少是多少，不玩花活 可对公，可开票 响应快、稳定性高 注册完贴 ID，送$10 额度 欢迎体验">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255653" target="_blank" rel="noopener noreferrer">RelayBases · 专注 GPT、Claude 满血体验的 API 中继服务商，自建稳定号池，注册送 $10 体验额度。</a></h3>
+  <p class="summary">v 友们好，RelayBases 又回来搞活动了 上次推广还是半年前，这半年来没跑路、没断供、没降智，老用户都懂。简单说下优势：主营 GPT、Claude，自建号池，满血保真，欢迎打假 充值 1:1 倍率，充多少是多少，不玩花活 可对公，可开票 响应快、稳定性高 注册完贴 ID，送$10 额度 欢迎体验</p>
 </article>
 
-<article class="card" data-text="gpt-6.1-sol 开始降智 有没有感觉从上周开始 `gpt-6.1-sol` 就开始降智了，不是界面写得很丑，就是写了一堆 Bug，让他改还改一半错一半，有时自动测试都不知道有没有好好看的，明显是错的，也没看出来。
-是不是因为 `6.2-sol` 快来了，得给他预热了">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">gpt-6.1-sol 开始降智</h3>
-  
-  <p class="summary">有没有感觉从上周开始 `gpt-6.1-sol` 就开始降智了，不是界面写得很丑，就是写了一堆 Bug，让他改还改一半错一半，有时自动测试都不知道有没有好好看的，明显是错的，也没看出来。
-是不是因为 `6.2-sol` 快来了，得给他预热了</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255652" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255652</a></div>
+<article class="card" data-id="v2hot-1255649" data-text="让你的 Agent，能联系别人的 Agent AI 已经能做很多事，但还没法联系人。因为它没有接口。要见的人散在别人的平台、微信群聊里、线下活动里，两边不通。所以这次我们把连连 AI 做成了 CLI。装完，你的 agent 里就多一个能发需求、找人、跟进洽谈的东西。用起来大概是这样。你在终端里说一句「帮我找个做过硬件供应链的合伙人，我这边有算法和场景」，它不会反问采访你十个问题，而是自己去把需求草稿拉出来，缺什么标什么，然后问你发不发。你说发，就直接能去匹配相应的人的 agent 给你。过一会儿候选人回来了，带推荐理由和公开资料，你挑一个让它发起洽谈。谈的过程里它遇到拿不准的，会停下来问你要一句准话，不会">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255649" target="_blank" rel="noopener noreferrer">让你的 Agent，能联系别人的 Agent</a></h3>
+  <p class="summary">AI 已经能做很多事，但还没法联系人。因为它没有接口。要见的人散在别人的平台、微信群聊里、线下活动里，两边不通。所以这次我们把连连 AI 做成了 CLI。装完，你的 agent 里就多一个能发需求、找人、跟进洽谈的东西。用起来大概是这样。你在终端里说一句「帮我找个做过硬件供应链的合伙人，我这边有算法和场景」，它不会反问采访你十个问题，而是自己去把需求草稿拉出来，缺什么标什么，然后问你发不发。你说发，就直接能去匹配相应的人的 agent 给你。过一会儿候选人回来了，带推荐理由和公开资料，你挑一个让它发起洽谈。谈的过程里它遇到拿不准的，会停下来问你要一句准话，不会</p>
 </article>
 
-<article class="card" data-text="让你的 Agent，能联系别人的 Agent AI 已经能做很多事，但还没法联系人。
-
-因为它没有接口。要见的人散在别人的平台、微信群聊里、线下活动里，两边不通。
-
-所以这次我们把连连 AI 做成了 CLI 。装完，你的 agent 里就多一个能发需求、找人、跟进洽谈的东西。
-
-用起来大概是这样。你在终端里说一句「帮我找个做过硬件供应链的合伙人，我这边有算法和场景」，它不会反问采访你十个问题，而是自己去把需求草稿拉出来，缺什么标什么，然后问你发不发。你说发，就直接能去匹配相应的人的 agent 给你。
-
-过一会儿候选人回来了，带推荐理由和公开资料，你挑一个让它发起洽谈。谈的过程里它遇到拿不准的，会停下来问你要一句准话，不会">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">让你的 Agent，能联系别人的 Agent</h3>
-  
-  <p class="summary">AI 已经能做很多事，但还没法联系人。
-
-因为它没有接口。要见的人散在别人的平台、微信群聊里、线下活动里，两边不通。
-
-所以这次我们把连连 AI 做成了 CLI 。装完，你的 agent 里就多一个能发需求、找人、跟进洽谈的东西。
-
-用起来大概是这样。你在终端里说一句「帮我找个做过硬件供应链的合伙人，我这边有算法和场景」，它不会反问采访你十个问题，而是自己去把需求草稿拉出来，缺什么标什么，然后问你发不发。你说发，就直接能去匹配相应的人的 agent 给你。
-
-过一会儿候选人回来了，带推荐理由和公开资料，你挑一个让它发起洽谈。谈的过程里它遇到拿不准的，会停下来问你要一句准话，不会</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255649" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255649</a></div>
+<article class="card" data-id="v2hot-1255644" data-text="满血中转站，稳定号池不降智 | 企业接入 AI，一套 API 打通多模型、智能路由与用量管理，支持 Claude、GPT、Gemini、DeepSeek、grok 等主流模型，欢迎老板和企业团队前来试吃！ 如果你同时在使用 Claude、GPT、Gemini 等模型，可能遇到过这些问题：每个平台都要单独注册和充值、接口格式不一致、切换模型需要反复修改配置。Midalo 主要解决的就是这些问题：通过一个 API Key 调用多种模型，并兼容多种常用协议，减少重复接入工作。站点注册地址：（一定要用这个地址注册，不然看不到注册 ID，防止后面领不到鸡蛋） 本站主打平价，计费透明 留下注册 ID 送 2 体验金，加入 QQ 群送 3 体验金，合计 5$，足够完整测试一整天 Midalo API 官方 QQ 群：10">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255644" target="_blank" rel="noopener noreferrer">满血中转站，稳定号池不降智 | 企业接入 AI，一套 API 打通多模型、智能路由与用量管理，支持 Claude、GPT、Gemini、DeepSeek、grok 等主流模型，欢迎老板和企业团队前来试吃！</a></h3>
+  <p class="summary">如果你同时在使用 Claude、GPT、Gemini 等模型，可能遇到过这些问题：每个平台都要单独注册和充值、接口格式不一致、切换模型需要反复修改配置。Midalo 主要解决的就是这些问题：通过一个 API Key 调用多种模型，并兼容多种常用协议，减少重复接入工作。站点注册地址：（一定要用这个地址注册，不然看不到注册 ID，防止后面领不到鸡蛋） 本站主打平价，计费透明 留下注册 ID 送 2 体验金，加入 QQ 群送 3 体验金，合计 5$，足够完整测试一整天 Midalo API 官方 QQ 群：10</p>
 </article>
 
-<article class="card" data-text="TinyPass：本地密码生成器 Chrome 扩展，批量生成、纯本地运行 分享一个自己做的 Chrome 扩展，免费、无广告。
-
-## 功能
-
-- 一键批量生成高强度密码
-- 可读模式、自定义长度与字符集
-- 纯本地运行，密码不经过任何服务器
-- 历史记录管理 + 回收站防误删
-
-## 链接
-
-- Chrome 商店： https://chromewebstore.google.com/detail/tinypass/jjfmaihmmbclkonnkkipbplhklepopne
-- 产品主页： https://holatiger.com/tinypass
-
-欢迎试用，有问题和建议随时反馈。">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">TinyPass：本地密码生成器 Chrome 扩展，批量生成、纯本地运行</h3>
-  
-  <p class="summary">分享一个自己做的 Chrome 扩展，免费、无广告。
-
-## 功能
-
-- 一键批量生成高强度密码
-- 可读模式、自定义长度与字符集
-- 纯本地运行，密码不经过任何服务器
-- 历史记录管理 + 回收站防误删
-
-## 链接
-
-- Chrome 商店： https://chromewebstore.google.com/detail/tinypass/jjfmaihmmbclkonnkkipbplhklepopne
-- 产品主页： https://holatiger.com/tinypass
-
-欢迎试用，有问题和建议随时反馈。</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255646" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255646</a></div>
+<article class="card" data-id="v2hot-1255641" data-text="claude 网页端也开始封号? 今天就中午正常问了几个问题 平时也这样用今天就这样了?">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255641" target="_blank" rel="noopener noreferrer">claude 网页端也开始封号?</a></h3>
+  <p class="summary">今天就中午正常问了几个问题 平时也这样用今天就这样了?</p>
 </article>
 
-<article class="card" data-text="满血中转站，稳定号池不降智 | 企业接入 AI，一套 API 打通多模型、智能路由与用量管理，支持 Claude、GPT、Gemini、DeepSeek、grok 等主流模型，欢迎老板和企业团队前来试吃！ 如果你同时在使用 Claude、GPT、Gemini 等模型，可能遇到过这些问题：每个平台都要单独注册和充值、接口格式不一致、切换模型需要反复修改配置。
-
-Midalo 主要解决的就是这些问题：通过一个 API Key 调用多种模型，并兼容多种常用协议，减少重复接入工作。
-
-- 站点注册地址： https://agent.midalo.ai/ （一定要用这个地址注册，不然看不到注册 ID，防止后面领不到鸡蛋）
-- 本站主打平价，计费透明
-- 留下注册 ID 送 2 体验金，加入 QQ 群送 3 体验金，合计 5$，足够完整测试一整天
-- Midalo API 官方 QQ 群：10">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">满血中转站，稳定号池不降智 | 企业接入 AI，一套 API 打通多模型、智能路由与用量管理，支持 Claude、GPT、Gemini、DeepSeek、grok 等主流模型，欢迎老板和企业团队前来试吃！</h3>
-  
-  <p class="summary">如果你同时在使用 Claude、GPT、Gemini 等模型，可能遇到过这些问题：每个平台都要单独注册和充值、接口格式不一致、切换模型需要反复修改配置。
-
-Midalo 主要解决的就是这些问题：通过一个 API Key 调用多种模型，并兼容多种常用协议，减少重复接入工作。
-
-- 站点注册地址： https://agent.midalo.ai/ （一定要用这个地址注册，不然看不到注册 ID，防止后面领不到鸡蛋）
-- 本站主打平价，计费透明
-- 留下注册 ID 送 2 体验金，加入 QQ 群送 3 体验金，合计 5$，足够完整测试一整天
-- Midalo API 官方 QQ 群：10</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255644" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255644</a></div>
+<article class="card" data-id="v2hot-1255627" data-text="做了个生成说唱歌曲的 Web 工具 RapSongGen，聊下开发过程和目前还存在的问题 最近上线了一个专门做说唱音乐生成的 Web 小工具 RapSongGen（目前是英文界面）。趁着基础流程跑通，来分享下我实际做了什么、现在出歌的效果到底怎么样，以及还有哪些没解决好的地方。为什么做这个 现在通用的 AI 音乐生成工具其实不少，但如果你只想做一首说唱，直接用通用工具往往得自己研究怎么在提示词里塞各种风格标签和描述。当时做这个项目的想法很简单：把说唱生成里最常调的曲风、人声偏好和 BPM 拆成直观的页面选项，省去每次拼凑复杂提示词的麻烦，让手里有一段词或者一个主题的人，能直接选好偏好出歌。怎么用（一个具体的使用场景） 拿我自己平时测试最常用的场景">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255627" target="_blank" rel="noopener noreferrer">做了个生成说唱歌曲的 Web 工具 RapSongGen，聊下开发过程和目前还存在的问题</a></h3>
+  <p class="summary">最近上线了一个专门做说唱音乐生成的 Web 小工具 RapSongGen（目前是英文界面）。趁着基础流程跑通，来分享下我实际做了什么、现在出歌的效果到底怎么样，以及还有哪些没解决好的地方。为什么做这个 现在通用的 AI 音乐生成工具其实不少，但如果你只想做一首说唱，直接用通用工具往往得自己研究怎么在提示词里塞各种风格标签和描述。当时做这个项目的想法很简单：把说唱生成里最常调的曲风、人声偏好和 BPM 拆成直观的页面选项，省去每次拼凑复杂提示词的麻烦，让手里有一段词或者一个主题的人，能直接选好偏好出歌。怎么用（一个具体的使用场景） 拿我自己平时测试最常用的场景</p>
 </article>
 
-<article class="card" data-text="[中转站免费领鸡蛋了] 站点：upupkey.com
-
-GPT 、Claude 和国产模型都有，号池和线路由我们自己维护。 个人开发、日常调用、团队项目都可以使用，有大用量需求也欢迎联系管理员对接。
-
-这次给佬友准备了 $3 平台调用额度，不用先充值，可以先拿自己的实际任务试一试。
-
-Claude Max 满血 2 折，OpenAI 2 折起
-
-Claude Max 满血，低至 2 折。
-OpenAI 系列，2 折起。
-国产模型也有，具体型号和价格可在站内查看。
-不同模型、分组的价格有所区别，不是所有模型统一一个折扣，具体价格及实际扣费以站内显示为准。
-
-按美元计费，支持支付宝，不用买月卡">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">[中转站免费领鸡蛋了]</h3>
-  
-  <p class="summary">站点：upupkey.com
-
-GPT 、Claude 和国产模型都有，号池和线路由我们自己维护。 个人开发、日常调用、团队项目都可以使用，有大用量需求也欢迎联系管理员对接。
-
-这次给佬友准备了 $3 平台调用额度，不用先充值，可以先拿自己的实际任务试一试。
-
-Claude Max 满血 2 折，OpenAI 2 折起
-
-Claude Max 满血，低至 2 折。
-OpenAI 系列，2 折起。
-国产模型也有，具体型号和价格可在站内查看。
-不同模型、分组的价格有所区别，不是所有模型统一一个折扣，具体价格及实际扣费以站内显示为准。
-
-按美元计费，支持支付宝，不用买月卡</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255642" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255642</a></div>
-</article>
-
-<article class="card" data-text="claude 网页端也开始封号? 今天就中午正常问了几个问题
-
-平时也这样用今天就这样了?
-
-https://i.imgur.com/Jviz9IK.png
-
-https://i.imgur.com/oDWL6xM.png">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">claude 网页端也开始封号?</h3>
-  
-  <p class="summary">今天就中午正常问了几个问题
-
-平时也这样用今天就这样了?
-
-https://i.imgur.com/Jviz9IK.png
-
-https://i.imgur.com/oDWL6xM.png</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255641" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255641</a></div>
-</article>
-
-<article class="card" data-text="两个自研 Chrome 扩展分享： TinyPass 本地密码生成器 + WebDavy 浏览器里的 WebDAV 云盘 做了两个 Chrome 扩展，免费、无广告，分享给大家。
-
-**TinyPass —— 本地密码生成器**
-
-- 一键批量生成高强度密码
-- 可读模式、自定义长度与字符集
-- 纯本地运行，密码不经过任何服务器
-- 历史记录管理 + 回收站防误删
-
-安装： https://chromewebstore.google.com/detail/tinypass/jjfmaihmmbclkonnkkipbplhklepopne
-
-**WebDavy —— 把 WebDAV 云盘接入浏览器**
-
-- 支持 Nextcloud 、坚果云、群晖、ownCloud 等
-- 多账户管理">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">两个自研 Chrome 扩展分享： TinyPass 本地密码生成器 + WebDavy 浏览器里的 WebDAV 云盘</h3>
-  
-  <p class="summary">做了两个 Chrome 扩展，免费、无广告，分享给大家。
-
-**TinyPass —— 本地密码生成器**
-
-- 一键批量生成高强度密码
-- 可读模式、自定义长度与字符集
-- 纯本地运行，密码不经过任何服务器
-- 历史记录管理 + 回收站防误删
-
-安装： https://chromewebstore.google.com/detail/tinypass/jjfmaihmmbclkonnkkipbplhklepopne
-
-**WebDavy —— 把 WebDAV 云盘接入浏览器**
-
-- 支持 Nextcloud 、坚果云、群晖、ownCloud 等
-- 多账户管理</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255634" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255634</a></div>
-</article>
-
-<article class="card" data-text="做了个 TikTok / YouTube 评论查看和 CSV 导出工具，想听听大家怎么处理评论数据 最近做了一个评论查看和导出工具：[Comment Viewer]( https://commentviewer.net/)。
-
-## 它能做什么
-
-- 粘贴 TikTok 、Instagram 或 YouTube 的公开视频链接
-- 查看公开评论、回复和楼中楼
-- 将评论导出为 CSV / Excel
-- 不需要注册或登录
-
-## 为什么做这个
-
-我平时做内容调研时，经常需要整理视频评论。逐条翻评论区比较费时间，复制到表格也很麻烦，所以做了这个工具，把查看、搜索和导出放到一个页面里。
-
-现在三个平台共用一个输入框，贴入视频链接就能开始读取公开评论。
-
-## 想听听">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">做了个 TikTok / YouTube 评论查看和 CSV 导出工具，想听听大家怎么处理评论数据</h3>
-  
-  <p class="summary">最近做了一个评论查看和导出工具：[Comment Viewer]( https://commentviewer.net/)。
-
-## 它能做什么
-
-- 粘贴 TikTok 、Instagram 或 YouTube 的公开视频链接
-- 查看公开评论、回复和楼中楼
-- 将评论导出为 CSV / Excel
-- 不需要注册或登录
-
-## 为什么做这个
-
-我平时做内容调研时，经常需要整理视频评论。逐条翻评论区比较费时间，复制到表格也很麻烦，所以做了这个工具，把查看、搜索和导出放到一个页面里。
-
-现在三个平台共用一个输入框，贴入视频链接就能开始读取公开评论。
-
-## 想听听</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255632" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255632</a></div>
-</article>
-
-<article class="card" data-text="做了个生成说唱歌曲的 Web 工具 RapSongGen，聊下开发过程和目前还存在的问题 最近上线了一个专门做说唱音乐生成的 Web 小工具 RapSongGen（目前是英文界面）。趁着基础流程跑通，来分享下我实际做了什么、现在出歌的效果到底怎么样，以及还有哪些没解决好的地方。
-
-为什么做这个
-
-现在通用的 AI 音乐生成工具其实不少，但如果你只想做一首说唱，直接用通用工具往往得自己研究怎么在提示词里塞各种风格标签和描述。
-
-当时做这个项目的想法很简单：把说唱生成里最常调的曲风、人声偏好和 BPM 拆成直观的页面选项，省去每次拼凑复杂提示词的麻烦，让手里有一段词或者一个主题的人，能直接选好偏好出歌。
-
-怎么用（一个具体的使用场景）
-
-拿我自己平时测试最常用的场景">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">做了个生成说唱歌曲的 Web 工具 RapSongGen，聊下开发过程和目前还存在的问题</h3>
-  
-  <p class="summary">最近上线了一个专门做说唱音乐生成的 Web 小工具 RapSongGen（目前是英文界面）。趁着基础流程跑通，来分享下我实际做了什么、现在出歌的效果到底怎么样，以及还有哪些没解决好的地方。
-
-为什么做这个
-
-现在通用的 AI 音乐生成工具其实不少，但如果你只想做一首说唱，直接用通用工具往往得自己研究怎么在提示词里塞各种风格标签和描述。
-
-当时做这个项目的想法很简单：把说唱生成里最常调的曲风、人声偏好和 BPM 拆成直观的页面选项，省去每次拼凑复杂提示词的麻烦，让手里有一段词或者一个主题的人，能直接选好偏好出歌。
-
-怎么用（一个具体的使用场景）
-
-拿我自己平时测试最常用的场景</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255627" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255627</a></div>
-</article>
-
-<article class="card" data-text="2026 年 11 月 Dynadot 域名优惠第一波， COM 优惠限时不限量 2026 年 11 月 Dynadot 域名优惠信息速递，请各位查收！
-
-# 黑五即将来临，更多优惠预计将在 10 天后释出，并准时在黑五为所有用户提供年度域名优惠，敬请期待！
-&gt; 关于各注册商优惠差异的说明：
-&gt; 每一家注册商的市场策略各具特色，因此很难进行简单的横向对比。
-&gt; 我们的优惠政策初衷是简单与透明：不限制单一用户的优惠注册与转入的数量，也不做域名费用拆分。
-&gt; 您可以根据具自身需求灵活评估，选出对您最划算的方案。感谢您的理解与支持。
-
-
-# .COM 域名优惠
-
-**63 注册[.COM]( https://www.dynadot.com/zh/domain">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">2026 年 11 月 Dynadot 域名优惠第一波， COM 优惠限时不限量</h3>
-  
-  <p class="summary">2026 年 11 月 Dynadot 域名优惠信息速递，请各位查收！
-
-# 黑五即将来临，更多优惠预计将在 10 天后释出，并准时在黑五为所有用户提供年度域名优惠，敬请期待！
-&gt; 关于各注册商优惠差异的说明：
-&gt; 每一家注册商的市场策略各具特色，因此很难进行简单的横向对比。
-&gt; 我们的优惠政策初衷是简单与透明：不限制单一用户的优惠注册与转入的数量，也不做域名费用拆分。
-&gt; 您可以根据具自身需求灵活评估，选出对您最划算的方案。感谢您的理解与支持。
-
-
-# .COM 域名优惠
-
-**63 注册[.COM]( https://www.dynadot.com/zh/domain</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255625" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255625</a></div>
-</article>
-
-<article class="card" data-text="Anthropic 给 Claude 的 agent 记忆加了个睡觉整理的功能，有人用过吗 刷到 Anthropic 前几天发的一篇讲 agent 记忆的文章，Managed Agents 里还开了个 Dreams API ，目前是 research preview 。
-
-大概意思是在两次会话之间，让模型回头翻之前的记录，把记错的笔记改掉，重复的合并掉。文章里举了个例子，Claude 玩宝可梦的时候把宝可梦中心的位置记错了，一直卡在月见山出不去，整理完笔记以后才走出来。
-
-他们还发现，在提示词里规定模型只记失败经验，记忆带来的提升反而变小了，还不如让它自己判断该记什么。
-
-你们做 agent 记忆的时候会回头再整理一遍吗，有没有被它记错的东西坑过">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">Anthropic 给 Claude 的 agent 记忆加了个睡觉整理的功能，有人用过吗</h3>
-  
-  <p class="summary">刷到 Anthropic 前几天发的一篇讲 agent 记忆的文章，Managed Agents 里还开了个 Dreams API ，目前是 research preview 。
-
-大概意思是在两次会话之间，让模型回头翻之前的记录，把记错的笔记改掉，重复的合并掉。文章里举了个例子，Claude 玩宝可梦的时候把宝可梦中心的位置记错了，一直卡在月见山出不去，整理完笔记以后才走出来。
-
-他们还发现，在提示词里规定模型只记失败经验，记忆带来的提升反而变小了，还不如让它自己判断该记什么。
-
-你们做 agent 记忆的时候会回头再整理一遍吗，有没有被它记错的东西坑过</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255621" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255621</a></div>
-</article>
-
-<article class="card" data-text="类似这种卡牌对战游戏有人感兴趣吗？一直想做一款没有废将、主要靠排兵布阵和阵容搭配的卡牌游戏，周末两天在家搓了个 对战 Demo， 大家对这种玩法有没有兴趣？ 体验地址 https://shanhai-liezhen.pages.dev/">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">类似这种卡牌对战游戏有人感兴趣吗？一直想做一款没有废将、主要靠排兵布阵和阵容搭配的卡牌游戏，周末两天在家搓了个 对战 Demo， 大家对这种玩法有没有兴趣？</h3>
-  
-  <p class="summary">体验地址 https://shanhai-liezhen.pages.dev/</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255620" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255620</a></div>
-</article>
-
-<article class="card" data-text="大疆的 neo3 无人机啥时候发啊 社交媒体上刷到说 10 月发布延迟了，因为政策要审核
-问了 gpt 预测也是说 70%的概率 11 月发
-
-等的急死了，有没有内部消息？🐶
-我肯定不买 neo2 的，看到一些泄漏消息升级还挺大的：
-≈193g + 1/1.1 英寸 + 约 25 分钟续航 + Neo 式自动跟随">
-  <div class="badgerow"><span class="badge">最近热议</span><span class="src-tag">来源 V2EX</span></div>
-  <h3 class="title">大疆的 neo3 无人机啥时候发啊</h3>
-  
-  <p class="summary">社交媒体上刷到说 10 月发布延迟了，因为政策要审核
-问了 gpt 预测也是说 70%的概率 11 月发
-
-等的急死了，有没有内部消息？🐶
-我肯定不买 neo2 的，看到一些泄漏消息升级还挺大的：
-≈193g + 1/1.1 英寸 + 约 25 分钟续航 + Neo 式自动跟随</p>
-  
-  <div class="meta">热度：回复 0</div>
-  <div class="linkrow"><a class="fulllink" href="https://www.v2ex.com/t/1255618" target="_blank" rel="noopener noreferrer">https://www.v2ex.com/t/1255618</a></div>
+<article class="card" data-id="v2hot-1255621" data-text="Anthropic 给 Claude 的 agent 记忆加了个睡觉整理的功能，有人用过吗 刷到 Anthropic 前几天发的一篇讲 agent 记忆的文章，Managed Agents 里还开了个 Dreams API，目前是 research preview。大概意思是在两次会话之间，让模型回头翻之前的记录，把记错的笔记改掉，重复的合并掉。文章里举了个例子，Claude 玩宝可梦的时候把宝可梦中心的位置记错了，一直卡在月见山出不去，整理完笔记以后才走出来。他们还发现，在提示词里规定模型只记失败经验，记忆带来的提升反而变小了，还不如让它自己判断该记什么。你们做 agent 记忆的时候会回头再整理一遍吗，有没有被它记错的东西坑过">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255621" target="_blank" rel="noopener noreferrer">Anthropic 给 Claude 的 agent 记忆加了个睡觉整理的功能，有人用过吗</a></h3>
+  <p class="summary">刷到 Anthropic 前几天发的一篇讲 agent 记忆的文章，Managed Agents 里还开了个 Dreams API，目前是 research preview。大概意思是在两次会话之间，让模型回头翻之前的记录，把记错的笔记改掉，重复的合并掉。文章里举了个例子，Claude 玩宝可梦的时候把宝可梦中心的位置记错了，一直卡在月见山出不去，整理完笔记以后才走出来。他们还发现，在提示词里规定模型只记失败经验，记忆带来的提升反而变小了，还不如让它自己判断该记什么。你们做 agent 记忆的时候会回头再整理一遍吗，有没有被它记错的东西坑过</p>
 </article></div>
-  <div id="empty" class="empty hidden">没有匹配条目</div>
+    <div id="f-empty" class="empty hidden">没有匹配条目</div>
+  </section>
   <footer>
-  <div><span class="foot-brand">AI大模型免费资源导航</span><br/>每小时自动更新</div>
-  <div><a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">网站地图</a> · <kbd>Ctrl</kbd>+<kbd>K</kbd> 搜索</div>
+  <div><span class="foot-brand">AI大模型免费资源导航</span><br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
+  <div class="foot-links"><a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../archives/index.html">已归档</a> · <a href="../m/board.html">留言板</a> · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>
 </div>
-<script>
+<script>/* AI大模型免费资源导航 · site.js (v3): nav, 减少动态 toggle, search + filters + sort, quick search over /api/latest.json. */
 (function(){
-  const q=document.getElementById('q'); if(!q) return;
-  const cards=[...document.querySelectorAll('.card')];
-  const empty=document.getElementById('empty');
-  q.addEventListener('input',()=>{
-    const t=(q.value||'').trim().toLowerCase();
-    let n=0;
-    cards.forEach(c=>{
-      const ok=!t||(c.getAttribute('data-text')||'').toLowerCase().includes(t);
-      c.classList.toggle('hidden',!ok); if(ok) n++;
+  var root = document.documentElement;
+  var KEY = 'ai168-reduce';
+  function $(s, el){ return (el||document).querySelector(s); }
+  function $all(s, el){ return Array.prototype.slice.call((el||document).querySelectorAll(s)); }
+  var brand = document.querySelector('.brand-mini');
+  var base = (document.body && document.body.getAttribute('data-base')) || (brand && brand.getAttribute('href')) || './';
+  if (base.slice(-1) !== '/') base += '/';
+
+  /* ---------- 减少动态 (persistent) ---------- */
+  function setReduce(on){
+    root.classList.toggle('reduce-motion', on);
+    try { localStorage.setItem(KEY, on ? '1' : '0'); } catch(e) {}
+    $all('[data-reduce-toggle]').forEach(function(b){ b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.querySelector('b') && (b.querySelector('b').textContent = on ? '开' : '关'); });
+    try { window.dispatchEvent(new Event('ai168:reduce-motion')); } catch(e) {}
+  }
+  $all('[data-reduce-toggle]').forEach(function(b){
+    b.addEventListener('click', function(){ setReduce(!root.classList.contains('reduce-motion')); });
+  });
+  setReduce(root.classList.contains('reduce-motion'));
+
+  /* ---------- hamburger nav (≤768px) ---------- */
+  var nav = $('.topnav'), tog = $('.nav-toggle');
+  if (nav && tog) {
+    tog.addEventListener('click', function(){
+      var open = !nav.classList.contains('open');
+      nav.classList.toggle('open', open); tog.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    if(empty) empty.classList.toggle('hidden', n>0 || !cards.length);
+    $all('.navlinks a', nav).forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); tog.setAttribute('aria-expanded','false'); }); });
+  }
+
+  /* ---------- filters / search / sort (home + module pages) ---------- */
+  var fr = $('[data-filter-root]');
+  var q = $('#q');
+  function initFilters(){
+    if (!fr) return;
+    var list = $('[data-list]', fr) || $('[data-list]');
+    if (!list) return;
+    var cards = $all('.card[data-id]', list);
+    var order = cards.slice();
+    var active = {};
+    var countEl = $('#f-count'), emptyEl = $('#f-empty'), moreBtn = $('#f-more');
+    var limit = parseInt(list.getAttribute('data-limit') || '0', 10), expanded = !limit;
+    var sortSel = $('#f-sort');
+    function matches(c, t){
+      for (var k in active) {
+        if (!active[k] || !active[k].length) continue;
+        var v = c.getAttribute('data-' + k) || '';
+        if (active[k].indexOf(v) < 0) return false;
+      }
+      if (t) {
+        var hay = (c.getAttribute('data-text') || '').toLowerCase();
+        var parts = t.split(/\s+/);
+        for (var i = 0; i < parts.length; i++) if (parts[i] && hay.indexOf(parts[i]) < 0) return false;
+      }
+      return true;
+    }
+    function sortCards(){
+      var mode = sortSel ? sortSel.value : 'default';
+      var arr = order.slice();
+      if (mode === 'pub') arr.sort(function(a,b){ return (b.getAttribute('data-pub')||'').localeCompare(a.getAttribute('data-pub')||''); });
+      if (mode === 'exp') arr.sort(function(a,b){
+        var x = a.getAttribute('data-exp') || '9999', y = b.getAttribute('data-exp') || '9999'; return x.localeCompare(y); });
+      arr.forEach(function(c){ list.appendChild(c); });
+      return arr;
+    }
+    function apply(){
+      var t = (q && q.value || '').trim().toLowerCase();
+      var arr = sortCards(), shown = 0, visible = 0;
+      var filtering = !!t || Object.keys(active).some(function(k){ return active[k] && active[k].length; });
+      arr.forEach(function(c){
+        var ok = matches(c, t);
+        if (ok) shown++;
+        var hideByLimit = ok && !expanded && !filtering && shown > limit;
+        c.classList.toggle('hidden', !ok || hideByLimit);
+        if (ok && !hideByLimit) visible++;
+      });
+      if (countEl) countEl.textContent = filtering ? ('筛选结果 ' + shown + ' / ' + cards.length + ' 条') : ('共 ' + cards.length + ' 条');
+      if (emptyEl) emptyEl.classList.toggle('hidden', shown > 0);
+      if (moreBtn) moreBtn.classList.toggle('hidden', expanded || filtering || shown <= limit);
+      var clr = $('#f-clear'); if (clr) clr.classList.toggle('hidden', !filtering);
+    }
+    $all('[data-f]', fr).forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var k = btn.getAttribute('data-f'), v = btn.getAttribute('data-v');
+        var arr = active[k] || (active[k] = []);
+        var i = arr.indexOf(v);
+        if (i >= 0) arr.splice(i, 1); else arr.push(v);
+        btn.setAttribute('aria-pressed', i >= 0 ? 'false' : 'true');
+        apply();
+      });
+    });
+    var clr = $('#f-clear');
+    if (clr) clr.addEventListener('click', function(){
+      active = {}; if (q) q.value = '';
+      $all('[data-f]', fr).forEach(function(b){ b.setAttribute('aria-pressed','false'); });
+      apply();
+    });
+    if (moreBtn) moreBtn.addEventListener('click', function(){ expanded = true; apply(); });
+    if (sortSel) sortSel.addEventListener('change', apply);
+    if (q) {
+      q.addEventListener('input', apply);
+      var form = q.form; if (form) form.addEventListener('submit', function(e){ e.preventDefault(); apply(); var s = $('#search'); if (s && s.scrollIntoView) s.scrollIntoView({behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth'}); });
+      try { var u = new URLSearchParams(location.search).get('q'); if (u) { q.value = u; } } catch(e) {}
+    }
+    fr.classList.add('js-ready');
+    apply();
+  }
+  initFilters();
+
+  /* ---------- quick search overlay (pages without a list): reads /api/latest.json ---------- */
+  var box = null, data = null;
+  function openQuick(){
+    if (!box) {
+      box = document.createElement('div'); box.id = 'quick-search'; box.setAttribute('role','dialog'); box.setAttribute('aria-label','搜索免费资源');
+      box.innerHTML = '<div class="qs-box"><input id="qs-input" type="search" placeholder="搜索免费资源：如 Gemini、免费 GPU、免绑卡…" autocomplete="off"/><div id="qs-results" class="qs-results"><div class="qs-empty">正在载入数据…</div></div><div class="qs-foot">数据来自 <code>api/latest.json</code> · Esc 关闭</div></div>';
+      document.body.appendChild(box);
+      box.addEventListener('click', function(e){ if (e.target === box) closeQuick(); });
+      var inp = $('#qs-input', box), res = $('#qs-results', box);
+      function render(){
+        if (!data) return;
+        var t = (inp.value || '').trim().toLowerCase();
+        var rows = data.filter(function(it){ var h = (it.title + ' ' + it.summary + ' ' + (it.module_name||'') + ' ' + (it.source||'')).toLowerCase(); return !t || t.split(/\s+/).every(function(p){ return h.indexOf(p) >= 0; }); }).slice(0, 30);
+        res.innerHTML = rows.length ? rows.map(function(it){
+          var a = document.createElement('a'); a.className = 'qs-item'; a.href = base + (it.path || '');
+          a.innerHTML = '<b></b><small></small>'; a.firstChild.textContent = it.title; a.lastChild.textContent = (it.module_name || '') + ' · ' + (it.status_label || '');
+          return a.outerHTML; }).join('') : '<div class="qs-empty">没有匹配的条目</div>';
+      }
+      inp.addEventListener('input', render);
+      fetch(base + 'api/latest.json', {cache: 'no-cache'}).then(function(r){ return r.json(); }).then(function(j){ data = j.items || []; render(); })
+        .catch(function(){ res.innerHTML = '<div class="qs-empty">数据载入失败，请返回首页搜索</div>'; });
+    }
+    box.classList.add('open'); setTimeout(function(){ var i = $('#qs-input'); i && i.focus(); }, 30);
+  }
+  function closeQuick(){ if (box) box.classList.remove('open'); }
+  function openSearch(e){
+    if (q && fr) { if (e) e.preventDefault(); q.focus(); if (q.scrollIntoView) q.scrollIntoView({block:'center', behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth'}); return; }
+    if (e) e.preventDefault(); openQuick();
+  }
+  $all('[data-search-open]').forEach(function(b){ b.addEventListener('click', openSearch); });
+  document.addEventListener('keydown', function(e){
+    if ((e.ctrlKey || e.metaKey) && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); openSearch(); }
+    else if (e.key === '/' && !/input|textarea|select/i.test((document.activeElement||{}).tagName||'')) { e.preventDefault(); openSearch(); }
+    else if (e.key === 'Escape') closeQuick();
+  });
+
+  /* ---------- copy buttons ---------- */
+  $all('.copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var t = btn.getAttribute('data-copy') || '';
+      (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function(){ btn.textContent = '已复制'; setTimeout(function(){ btn.textContent = '复制'; }, 1200); }, function(){ btn.textContent = '请手动复制'; });
+    });
   });
 })();
 
+/* AI大模型免费资源导航 · fx.js (v3) — calm background only.
+   Removed in v3: count-up numbers, headline blur-in, scroll-blur reveals, per-second clock/countdown, parallax, tilt.
+   Motion respects prefers-reduced-motion and the persistent "减少动态" toggle (html.reduce-motion). */
 (function(){
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var root = document.documentElement;
-  root.style.colorScheme = 'dark';
   root.classList.add('js');
-  try { document.body.classList.add('page-enter'); } catch(e) {}
   var mobile = Math.min(window.innerWidth, window.innerHeight) < 720;
+  function isReduced(){ return root.classList.contains('reduce-motion') || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); }
 
   /* ---------- GLSL shader background (raw WebGL, no deps) ---------- */
   (function shaderBg(){
@@ -1377,275 +999,18 @@ https://i.imgur.com/oDWL6xM.png</p>
       gl.uniform2f(uR, cv.width, cv.height); gl.uniform1f(uT, (now-t0)/1000 + 20.0); gl.uniform2f(uM, smx, smy); gl.uniform1f(uS, sc);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
     }
-    if (reduced) { draw(performance.now()); return; }
+    draw(performance.now());
     (function loop(now){
       requestAnimationFrame(loop);
-      if (document.hidden || now - last < 33) return; last = now; draw(now);
+      if (isReduced() || document.hidden || now - last < 40) return; last = now; draw(now);
     })(performance.now());
     cv.classList.add('on');
   })();
 
-  /* ---------- pointer spotlight vars ---------- */
-  window.addEventListener('pointermove', function(e){
-    root.style.setProperty('--spot-x', e.clientX + 'px');
-    root.style.setProperty('--spot-y', e.clientY + 'px');
-  }, {passive:true});
-
-  function bindGlow(el, tilt){
-    el.addEventListener('pointermove', function(e){
-      var r = el.getBoundingClientRect();
-      var x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
-      el.style.setProperty('--mx', (x*100)+'%'); el.style.setProperty('--my', (y*100)+'%');
-      if (tilt && !reduced) el.style.transform = 'perspective(1000px) rotateX(' + ((0.5-y)*5) + 'deg) rotateY(' + ((x-0.5)*6) + 'deg) translateY(-3px)';
-    });
-    el.addEventListener('pointerleave', function(){ el.style.transform = ''; });
-  }
-  Array.prototype.forEach.call(document.querySelectorAll('.module-tile, .pin-card'), function(el){ bindGlow(el, true); });
-  Array.prototype.forEach.call(document.querySelectorAll('.card, .panel-box, .term-block'), function(el){ bindGlow(el, false); });
-
-  /* ---------- nav shrink on scroll + parallax ---------- */
+  /* ---------- nav: solid background after scrolling ---------- */
   var nav = document.querySelector('.topnav');
-  var par = Array.prototype.slice.call(document.querySelectorAll('[data-parallax]'));
-  var ticking = false;
-  function onScroll(){
-    ticking = false;
-    var y = window.scrollY || 0;
-    if (nav) nav.classList.toggle('scrolled', y > 24);
-    if (!reduced) par.forEach(function(el){
-      var f = parseFloat(el.getAttribute('data-parallax')) || 0.2;
-      el.style.transform = 'translate3d(0,' + (y*f).toFixed(1) + 'px,0)';
-      if (el.hasAttribute('data-fade')) el.style.opacity = String(Math.max(0, 1 - y/ (innerHeight*0.9)));
-    });
-  }
-  window.addEventListener('scroll', function(){ if (!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
-  onScroll();
-
-  /* ---------- count up when visible ---------- */
-  function animateCount(el, target){
-    var t0 = performance.now(), dur = 1400;
-    function frame(t){
-      var p = Math.min(1, (t - t0)/dur), e = 1 - Math.pow(1-p, 4);
-      el.textContent = String(Math.round(target * e));
-      if (p < 1) requestAnimationFrame(frame);
-    }
-    requestAnimationFrame(frame);
-  }
-  var counters = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
-  if (!reduced && 'IntersectionObserver' in window) {
-    var cio = new IntersectionObserver(function(en){ en.forEach(function(e){ if (e.isIntersecting){ animateCount(e.target, parseInt(e.target.getAttribute('data-count')||'0',10)); cio.unobserve(e.target);} }); }, {threshold:.3});
-    counters.forEach(function(el){ cio.observe(el); });
-  }
-
-  /* ---------- live clock + countdown to next hourly build (:07 Beijing) ---------- */
-  var clocks = document.querySelectorAll('[data-clock]'), nexts = document.querySelectorAll('[data-next]');
-  function pad(n){ return (n<10?'0':'') + n; }
-  function tick(){
-    var now = new Date(), bj = new Date(now.getTime() + (now.getTimezoneOffset() + 480) * 60000);
-    var s = pad(bj.getHours()) + ':' + pad(bj.getMinutes()) + ':' + pad(bj.getSeconds());
-    Array.prototype.forEach.call(clocks, function(el){ el.textContent = s; });
-    var m = bj.getMinutes(), sec = bj.getSeconds();
-    var left = ((7 - m + 60) % 60) * 60 - sec; if (left <= 0) left += 3600;
-    var txt = pad(Math.floor(left/60)) + ':' + pad(left%60);
-    Array.prototype.forEach.call(nexts, function(el){ el.textContent = txt; });
-  }
-  if (clocks.length || nexts.length) { tick(); setInterval(tick, 1000); }
-
-  /* ---------- scroll reveal with stagger ---------- */
-  var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal, .card, .module-tile, .panel-box, .section > h2, .sec-head, .pin-card, .term-block'));
-  reveals.forEach(function(el){
-    el.classList.add('reveal');
-    var sib = el.parentNode ? Array.prototype.indexOf.call(el.parentNode.children, el) : 0;
-    el.style.setProperty('--d', Math.min(sib, 8) * 70 + 'ms');
-  });
-  if (!reduced && 'IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-    }, {threshold: 0.08, rootMargin: '0px 0px -6% 0px'});
-    reveals.forEach(function(el){ io.observe(el); });
-  } else {
-    reveals.forEach(function(el){ el.classList.add('in'); });
-  }
-})();
-
-(function(){
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var touch = matchMedia('(hover: none), (pointer: coarse)').matches;
-  var desktop = !touch;
-
-  /* toast */
-  var toast = document.createElement('div');
-  toast.id = 'fx-toast';
-  toast.setAttribute('role','status');
-  document.body.appendChild(toast);
-  function showToast(msg){
-    toast.textContent = msg;
-    toast.classList.add('show');
-    clearTimeout(showToast._t);
-    showToast._t = setTimeout(function(){ toast.classList.remove('show'); }, 1800);
-  }
-
-  /* scroll progress + back to top */
-  var bar = document.createElement('div'); bar.id = 'scroll-progress'; document.body.appendChild(bar);
-  var topOrb = document.createElement('button');
-  topOrb.id = 'back-top'; topOrb.type='button'; topOrb.setAttribute('aria-label','回到顶部'); topOrb.innerHTML='↑';
-  document.body.appendChild(topOrb);
-  topOrb.addEventListener('click', function(){ window.scrollTo({top:0, behavior: reduced?'auto':'smooth'}); });
-  function onScroll(){
-    var h = document.documentElement;
-    var max = h.scrollHeight - h.clientHeight;
-    var p = max>0 ? (h.scrollTop/max) : 0;
-    bar.style.transform = 'scaleX(' + p + ')';
-    topOrb.classList.toggle('show', h.scrollTop > 480);
-  }
+  function onScroll(){ if (nav) nav.classList.toggle('scrolled', (window.scrollY||0) > 24); }
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
-
-  /* custom cursor + trail (desktop) */
-  if (desktop && !reduced) {
-    document.documentElement.classList.add('has-cursor');
-    var cur = document.createElement('div'); cur.id='cursor-dot'; document.body.appendChild(cur);
-    var trail = [];
-    for (var i=0;i<5;i++){ var t=document.createElement('div'); t.className='cursor-trail'; document.body.appendChild(t); trail.push(t); }
-    var mx=0,my=0, pts=trail.map(function(){return {x:0,y:0};});
-    window.addEventListener('pointermove', function(e){ mx=e.clientX; my=e.clientY; cur.style.transform='translate('+mx+'px,'+my+'px)'; }, {passive:true});
-    (function loop(){
-      var x=mx,y=my;
-      for (var i=0;i<pts.length;i++){
-        pts[i].x += (x - pts[i].x) * (0.35 - i*0.03);
-        pts[i].y += (y - pts[i].y) * (0.35 - i*0.03);
-        trail[i].style.transform='translate('+pts[i].x+'px,'+pts[i].y+'px) scale('+(1-i*0.08)+')';
-        x=pts[i].x; y=pts[i].y;
-      }
-      requestAnimationFrame(loop);
-    })();
-  }
-
-  /* magnetic tiles/buttons */
-  if (desktop && !reduced) {
-    var mags = document.querySelectorAll('.module-tile, .btn, .topnav a, #back-top');
-    Array.prototype.forEach.call(mags, function(el){
-      el.addEventListener('pointermove', function(e){
-        var r=el.getBoundingClientRect();
-        var dx=(e.clientX-(r.left+r.width/2))/r.width;
-        var dy=(e.clientY-(r.top+r.height/2))/r.height;
-        el.style.translate = (dx*12)+'px '+(dy*10)+'px';
-      });
-      el.addEventListener('pointerleave', function(){ el.style.translate=''; });
-    });
-  }
-
-  /* module tile <-> brain region */
-  Array.prototype.forEach.call(document.querySelectorAll('.module-tile'), function(el){
-    el.addEventListener('pointerenter', function(){
-      var href=(el.getAttribute('href')||'');
-      var id=href.split('/').pop().replace('.html','');
-      if (window.__brainAPI && window.__brainAPI.highlightRegion) window.__brainAPI.highlightRegion(id);
-    });
-    el.addEventListener('pointerleave', function(){
-      if (window.__brainAPI && window.__brainAPI.highlightRegion) window.__brainAPI.highlightRegion('');
-    });
-  });
-
-  /* card ripple + copy link */
-  document.addEventListener('click', function(e){
-    var card = e.target.closest && e.target.closest('.card, .module-tile');
-    if (card && !reduced) {
-      var r=card.getBoundingClientRect();
-      var rip=document.createElement('span'); rip.className='ripple';
-      rip.style.left=(e.clientX-r.left)+'px'; rip.style.top=(e.clientY-r.top)+'px';
-      card.appendChild(rip); setTimeout(function(){ rip.remove(); }, 700);
-    }
-    var copyBtn = e.target.closest && e.target.closest('[data-copy-link]');
-    if (copyBtn) {
-      e.preventDefault();
-      var url = copyBtn.getAttribute('data-copy-link') || location.href;
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(url).then(function(){ showToast('链接已复制'); }).catch(function(){ showToast('复制失败'); });
-      } else {
-        showToast('请手动复制链接');
-      }
-    }
-  });
-
-  /* text scramble on headings */
-  function scramble(el){
-    if (reduced || el.dataset.scrambled) return;
-    el.dataset.scrambled='1';
-    var final = el.textContent;
-    var chars = 'アイウエオカキクケコABCDEF0123456789#$%';
-    var i=0;
-    var t=setInterval(function(){
-      el.textContent = final.split('').map(function(ch, idx){
-        if (idx < i) return final[idx];
-        if (/\s/.test(ch)) return ch;
-        return chars[Math.floor(Math.random()*chars.length)];
-      }).join('');
-      i += 1;
-      if (i > final.length) { el.textContent=final; clearInterval(t); }
-    }, 28);
-  }
-  if ('IntersectionObserver' in window) {
-    var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if(en.isIntersecting){ scramble(en.target); io.unobserve(en.target);} });
-    }, {threshold:0.4});
-    document.querySelectorAll('h1.hero-title, .hero h1, .section h2').forEach(function(h){ if (!h.closest('[data-kinetic]') && !h.hasAttribute('data-kinetic') && !h.querySelector('*')) io.observe(h); });
-  }
-
-  /* Cmd/Ctrl+K command palette */
-  var items = [];
-  document.querySelectorAll('.card').forEach(function(card){
-    var title = (card.querySelector('.title')||{}).textContent||'';
-    var link = card.querySelector('a[href]');
-    var href = link ? link.getAttribute('href') : '';
-    var text = card.getAttribute('data-text')||title;
-    items.push({title:title.trim(), href:href, text:text});
-  });
-  document.querySelectorAll('.module-tile').forEach(function(tile){
-    items.push({title:(tile.querySelector('h2')||{}).textContent||'模块', href:tile.getAttribute('href')||'', text:tile.textContent||''});
-  });
-  var pal=document.createElement('div'); pal.id='cmd-palette'; pal.innerHTML='<div class="cmd-box"><input id="cmd-input" placeholder="搜索资源 / 模块…（Esc 关闭）" /><div id="cmd-results"></div></div>';
-  document.body.appendChild(pal);
-  var input=pal.querySelector('#cmd-input');
-  var results=pal.querySelector('#cmd-results');
-  function render(q){
-    q=(q||'').trim().toLowerCase();
-    var hits=items.filter(function(it){ return !q || (it.text+it.title).toLowerCase().indexOf(q)>=0; }).slice(0,12);
-    results.innerHTML = hits.map(function(it){
-      return '<a class="cmd-item" href="'+it.href+'"><strong>'+it.title.replace(/</g,'&lt;')+'</strong></a>';
-    }).join('') || '<div class="cmd-empty">无结果</div>';
-  }
-  function openPal(){ pal.classList.add('open'); input.value=''; render(''); setTimeout(function(){ input.focus(); }, 10); }
-  function closePal(){ pal.classList.remove('open'); }
-  window.addEventListener('keydown', function(e){
-    if ((e.metaKey||e.ctrlKey) && e.key.toLowerCase()==='k'){ e.preventDefault(); openPal(); }
-    if (e.key==='Escape') closePal();
-  });
-  pal.addEventListener('click', function(e){ if(e.target===pal) closePal(); });
-  input.addEventListener('input', function(){ render(input.value); });
-
-  /* easter egg ai168 */
-  var buf='';
-  window.addEventListener('keypress', function(e){
-    if (e.target && /input|textarea/i.test(e.target.tagName)) return;
-    buf=(buf+e.key).slice(-5).toLowerCase();
-    if (buf==='ai168'){
-      buf='';
-      showToast('AI168 粒子爆发');
-      if (window.__brainAPI && window.__brainAPI.triggerShockwave) window.__brainAPI.triggerShockwave();
-      document.body.classList.add('egg-burst');
-      setTimeout(function(){ document.body.classList.remove('egg-burst'); }, 1200);
-      // burst dots
-      if (!reduced){
-        for (var i=0;i<24;i++){
-          var d=document.createElement('div'); d.className='burst-dot';
-          d.style.left=(50+Math.cos(i)*10)+'%'; d.style.top=(40+Math.sin(i)*8)+'%';
-          d.style.setProperty('--dx', (Math.cos(i/24*Math.PI*2)*120)+'px');
-          d.style.setProperty('--dy', (Math.sin(i/24*Math.PI*2)*90)+'px');
-          document.body.appendChild(d);
-          setTimeout((function(el){ return function(){ el.remove(); }; })(d), 900);
-        }
-      }
-    }
-  });
 })();
 </script>
 </body></html>

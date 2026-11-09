@@ -1,10 +1,11 @@
+/* AI大模型免费资源导航 · fx.js (v3) — calm background only.
+   Removed in v3: count-up numbers, headline blur-in, scroll-blur reveals, per-second clock/countdown, parallax, tilt.
+   Motion respects prefers-reduced-motion and the persistent "减少动态" toggle (html.reduce-motion). */
 (function(){
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var root = document.documentElement;
-  root.style.colorScheme = 'dark';
   root.classList.add('js');
-  try { document.body.classList.add('page-enter'); } catch(e) {}
   var mobile = Math.min(window.innerWidth, window.innerHeight) < 720;
+  function isReduced(){ return root.classList.contains('reduce-motion') || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); }
 
   /* ---------- GLSL shader background (raw WebGL, no deps) ---------- */
   (function shaderBg(){
@@ -52,92 +53,16 @@
       gl.uniform2f(uR, cv.width, cv.height); gl.uniform1f(uT, (now-t0)/1000 + 20.0); gl.uniform2f(uM, smx, smy); gl.uniform1f(uS, sc);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
     }
-    if (reduced) { draw(performance.now()); return; }
+    draw(performance.now());
     (function loop(now){
       requestAnimationFrame(loop);
-      if (document.hidden || now - last < 33) return; last = now; draw(now);
+      if (isReduced() || document.hidden || now - last < 40) return; last = now; draw(now);
     })(performance.now());
     cv.classList.add('on');
   })();
 
-  /* ---------- pointer spotlight vars ---------- */
-  window.addEventListener('pointermove', function(e){
-    root.style.setProperty('--spot-x', e.clientX + 'px');
-    root.style.setProperty('--spot-y', e.clientY + 'px');
-  }, {passive:true});
-
-  function bindGlow(el, tilt){
-    el.addEventListener('pointermove', function(e){
-      var r = el.getBoundingClientRect();
-      var x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
-      el.style.setProperty('--mx', (x*100)+'%'); el.style.setProperty('--my', (y*100)+'%');
-      if (tilt && !reduced) el.style.transform = 'perspective(1000px) rotateX(' + ((0.5-y)*5) + 'deg) rotateY(' + ((x-0.5)*6) + 'deg) translateY(-3px)';
-    });
-    el.addEventListener('pointerleave', function(){ el.style.transform = ''; });
-  }
-  Array.prototype.forEach.call(document.querySelectorAll('.module-tile, .pin-card'), function(el){ bindGlow(el, true); });
-  Array.prototype.forEach.call(document.querySelectorAll('.card, .panel-box, .term-block'), function(el){ bindGlow(el, false); });
-
-  /* ---------- nav shrink on scroll + parallax ---------- */
+  /* ---------- nav: solid background after scrolling ---------- */
   var nav = document.querySelector('.topnav');
-  var par = Array.prototype.slice.call(document.querySelectorAll('[data-parallax]'));
-  var ticking = false;
-  function onScroll(){
-    ticking = false;
-    var y = window.scrollY || 0;
-    if (nav) nav.classList.toggle('scrolled', y > 24);
-    if (!reduced) par.forEach(function(el){
-      var f = parseFloat(el.getAttribute('data-parallax')) || 0.2;
-      el.style.transform = 'translate3d(0,' + (y*f).toFixed(1) + 'px,0)';
-      if (el.hasAttribute('data-fade')) el.style.opacity = String(Math.max(0, 1 - y/ (innerHeight*0.9)));
-    });
-  }
-  window.addEventListener('scroll', function(){ if (!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
-  onScroll();
-
-  /* ---------- count up when visible ---------- */
-  function animateCount(el, target){
-    var t0 = performance.now(), dur = 1400;
-    function frame(t){
-      var p = Math.min(1, (t - t0)/dur), e = 1 - Math.pow(1-p, 4);
-      el.textContent = String(Math.round(target * e));
-      if (p < 1) requestAnimationFrame(frame);
-    }
-    requestAnimationFrame(frame);
-  }
-  var counters = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
-  if (!reduced && 'IntersectionObserver' in window) {
-    var cio = new IntersectionObserver(function(en){ en.forEach(function(e){ if (e.isIntersecting){ animateCount(e.target, parseInt(e.target.getAttribute('data-count')||'0',10)); cio.unobserve(e.target);} }); }, {threshold:.3});
-    counters.forEach(function(el){ cio.observe(el); });
-  }
-
-  /* ---------- live clock + countdown to next hourly build (:07 Beijing) ---------- */
-  var clocks = document.querySelectorAll('[data-clock]'), nexts = document.querySelectorAll('[data-next]');
-  function pad(n){ return (n<10?'0':'') + n; }
-  function tick(){
-    var now = new Date(), bj = new Date(now.getTime() + (now.getTimezoneOffset() + 480) * 60000);
-    var s = pad(bj.getHours()) + ':' + pad(bj.getMinutes()) + ':' + pad(bj.getSeconds());
-    Array.prototype.forEach.call(clocks, function(el){ el.textContent = s; });
-    var m = bj.getMinutes(), sec = bj.getSeconds();
-    var left = ((7 - m + 60) % 60) * 60 - sec; if (left <= 0) left += 3600;
-    var txt = pad(Math.floor(left/60)) + ':' + pad(left%60);
-    Array.prototype.forEach.call(nexts, function(el){ el.textContent = txt; });
-  }
-  if (clocks.length || nexts.length) { tick(); setInterval(tick, 1000); }
-
-  /* ---------- scroll reveal with stagger ---------- */
-  var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal, .card, .module-tile, .panel-box, .section > h2, .sec-head, .pin-card, .term-block'));
-  reveals.forEach(function(el){
-    el.classList.add('reveal');
-    var sib = el.parentNode ? Array.prototype.indexOf.call(el.parentNode.children, el) : 0;
-    el.style.setProperty('--d', Math.min(sib, 8) * 70 + 'ms');
-  });
-  if (!reduced && 'IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-    }, {threshold: 0.08, rootMargin: '0px 0px -6% 0px'});
-    reveals.forEach(function(el){ io.observe(el); });
-  } else {
-    reveals.forEach(function(el){ el.classList.add('in'); });
-  }
+  function onScroll(){ if (nav) nav.classList.toggle('scrolled', (window.scrollY||0) > 24); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
 })();

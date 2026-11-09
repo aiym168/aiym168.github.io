@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 <meta name="color-scheme" content="dark" />
 <meta name="theme-color" content="#02040a" />
+<script>try{if(localStorage.getItem('ai168-reduce')==='1')document.documentElement.classList.add('reduce-motion')}catch(e){}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235ce1ff'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2302040a'/%3E%3Crect x='5' y='5' width='22' height='22' rx='6' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%235ef0c0'/%3E%3C/svg%3E" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="renderer" content="webkit" />
@@ -12,8 +13,8 @@
 <meta name="applicable-device" content="pc,mobile" />
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
-<title>科技软件/App 限免 | AI大模型免费资源导航 · 2026年11月最新</title>
-<meta name="description" content="科技软件与 App 限免、开源替代精选，强调 AI / 开发相关。" />
+<title>科技软件 / App 限免 | AI大模型免费资源导航 · 2026年11月最新</title>
+<meta name="description" content="科技软件与 App 的限时免费、终身内购限免。" />
 <meta name="keywords" content="AI大模型免费资源,大模型免费API,免费GPT,Claude免费,DeepSeek免费额度,AI工具免费,免费GPU,GitHub热门项目,AI开源项目推荐,最新AI新闻" />
 <meta name="robots" content="index,follow" />
 <meta name="author" content="AI大模型免费资源导航" />
@@ -22,8 +23,8 @@
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="zh_CN" />
 <meta property="og:site_name" content="AI大模型免费资源导航" />
-<meta property="og:title" content="科技软件/App 限免 | AI大模型免费资源导航 · 2026年11月最新" />
-<meta property="og:description" content="科技软件与 App 限免、开源替代精选，强调 AI / 开发相关。" />
+<meta property="og:title" content="科技软件 / App 限免 | AI大模型免费资源导航 · 2026年11月最新" />
+<meta property="og:description" content="科技软件与 App 的限时免费、终身内购限免。" />
 <meta property="og:url" content="https://aiym168.github.io/c/keji-app-xianmian.html" />
 
 <style>
@@ -383,120 +384,489 @@ kbd{font-family:var(--mono);font-size:.72rem;padding:2px 6px;border-radius:6px;b
   .ticker-track{animation:none}
 }
 
+/* =====================================================================
+   v3 — calmer, readable, content-first (overrides the v2 rules above)
+   ===================================================================== */
+:root{--text:#f3f6ff;--muted:#b3bedb;--dim:#8c97b5}
+body{font-size:16px;line-height:1.75}
+/* removed motion: grain, scan sweep, page blur-in, headline blur-in, scroll reveals, floating tags */
+.fx-noise{animation:none;opacity:.04}
+.fx-scan{display:none}
+body.page-enter .wrap,body.page-enter .hero-xl{animation:none}
+.hero-title .kl{animation:none;background-size:100% 100%}
+.reveal,.reveal.in{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
+.hud-tag,.brain-caption,.scroll-hint,.ticker{display:none!important}
+.btn.primary::after{display:none}
+.pin-card::before{animation:none}
+.brand-mini .mark{animation:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* nav tools: search + 减少动态 + hamburger */
+.topnav{gap:10px}
+.navlinks{flex:1;min-width:0}
+.navlinks a{color:#d2daf0;font-size:.9rem}
+.nav-tools{display:flex;align-items:center;gap:6px;flex:none}
+.nav-search{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:10px;border:1px solid rgba(140,200,255,.28);color:#eaf6ff;background:rgba(92,225,255,.08);font-size:.9rem;white-space:nowrap}
+.nav-search svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+.nav-search kbd{font-size:.66rem}
+.reduce-btn{font:inherit;font-size:.82rem;color:#cdd6ef;background:transparent;border:1px solid rgba(140,200,255,.2);border-radius:10px;padding:7px 10px;cursor:pointer;white-space:nowrap}
+.reduce-btn b{color:var(--mint);font-weight:600}
+.reduce-btn[aria-pressed="true"]{border-color:rgba(94,240,192,.6);background:rgba(94,240,192,.1)}
+.reduce-btn.link{border:0;padding:0;color:#b6c2e0;font-size:.82rem}
+.nav-toggle{display:none;width:40px;height:38px;border-radius:10px;border:1px solid rgba(140,200,255,.25);background:rgba(255,255,255,.04);cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:4px}
+.nav-toggle span{display:block;width:18px;height:2px;background:#e8f0ff;border-radius:2px}
+
+/* home hero: shows total / today / last update + brain, leaves room for search on first screen */
+.home-hero{min-height:auto;padding:104px 24px 10px}
+.home-hero .hero-xl-inner{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}
+.home-hero .hero-title{font-size:clamp(2.4rem,5vw,4.6rem);margin:16px 0 14px}
+.home-hero .brain-stage{width:min(100%,560px)}
+.lead{color:#cfd8f0;font-size:1.06rem;margin-bottom:18px}
+.pill{color:#c9d3ee;font-size:.92rem;align-items:center}
+.pill b{font-size:1.25rem;text-shadow:none}
+.def-note{font-size:.84rem;color:var(--dim);max-width:640px;margin:12px 0 0;line-height:1.6}
+.hero-xl.compact{padding:104px 24px 10px}
+.hero-xl.compact .brain-stage{width:min(100%,360px)}
+.hero-xl.compact .hero-title{font-size:clamp(1.9rem,3.6vw,3rem)}
+
+/* sections */
+.section{margin:0 0 64px}
+.sec-head{margin-bottom:18px}
+.sec-idx{font-family:var(--sans);letter-spacing:.08em;font-size:.82rem;color:var(--mint)}
+.sec-head h2{font-size:clamp(1.5rem,2.6vw,2rem);margin:6px 0 6px}
+.sec-desc{color:#c3cde8;font-size:.98rem}
+
+/* filters */
+.filters{position:relative;z-index:2;padding:18px;border-radius:18px;background:rgba(10,16,34,.78);border:1px solid rgba(140,200,255,.16);margin-bottom:18px}
+.searchbar{display:flex;gap:10px;margin-bottom:12px}
+.searchbar input{flex:1;min-width:0;font:inherit;font-size:1rem;color:var(--text);background:rgba(2,6,16,.8);border:1px solid rgba(140,200,255,.3);border-radius:12px;padding:12px 14px;outline:none}
+.searchbar input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(92,225,255,.18)}
+.fgroups{display:none;gap:8px 18px;flex-direction:column}
+.filters.js-ready .fgroups{display:flex}
+.fgroup{display:flex;gap:10px;align-items:flex-start}
+.flabel{flex:none;width:96px;font-size:.88rem;color:#aab6d6;padding-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:.86rem;color:#dce4f7;background:rgba(255,255,255,.04);border:1px solid rgba(140,200,255,.22);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip i{font-style:normal;color:var(--dim);margin-left:2px;font-size:.78rem}
+.chip[aria-pressed="true"]{background:rgba(92,225,255,.18);border-color:var(--cyan);color:#fff}
+.chip[aria-pressed="true"] i{color:#e6fbff}
+.fbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:12px;font-size:.9rem;color:#c3cde8}
+.f-count{font-weight:600;color:#fff}
+.sort select{font:inherit;color:var(--text);background:rgba(2,6,16,.8);border:1px solid rgba(140,200,255,.3);border-radius:10px;padding:6px 8px}
+.btn.sm{padding:6px 12px;font-size:.84rem}
+.note{font-size:.88rem;color:var(--muted)}
+.more-row{text-align:center;margin:18px 0 0}
+
+/* cards: uniform, readable */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.card{position:relative;display:flex;flex-direction:column;gap:8px;padding:18px 18px 14px;border-radius:16px;background:rgba(10,16,34,.86);border:1px solid rgba(140,200,255,.14);transform:none!important;backdrop-filter:none}
+.card:hover{border-color:rgba(92,225,255,.45)}
+.card .title{font-size:1.06rem;line-height:1.5;margin:0}
+.card .title a{color:#fff}
+.card .title a:hover{color:var(--cyan)}
+.card .summary{color:#cdd6ee;font-size:.95rem;line-height:1.7;margin:0}
+.card-top{display:flex;align-items:center;gap:8px;font-size:.84rem;color:#b7c2de;flex-wrap:wrap}
+.src-ico{width:22px;height:22px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;background:#fff;overflow:hidden;flex:none}
+.src-ico img{width:18px;height:18px;display:block}
+.src-ico.letter{background:linear-gradient(135deg,#5ce1ff,#a78bfa);color:#05070f;font-weight:800;font-size:.8rem}
+.src-name{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.st{font-size:.76rem;padding:2px 9px;border-radius:999px;border:1px solid;white-space:nowrap}
+.st-ok{color:#7dffcf;border-color:rgba(94,240,192,.5);background:rgba(94,240,192,.1)}
+.st-warn{color:#ffd08a;border-color:rgba(255,208,138,.55);background:rgba(255,208,138,.1)}
+.st-bad{color:#ff9aa2;border-color:rgba(255,120,130,.5);background:rgba(255,120,130,.08)}
+.st-muted{color:#c0c9e2;border-color:rgba(160,175,210,.35)}
+.facts{display:flex;flex-wrap:wrap;gap:6px}
+.fact{font-size:.8rem;padding:2px 9px;border-radius:8px;background:rgba(92,225,255,.1);color:#d8f6ff;border:1px solid rgba(92,225,255,.25)}
+.fact.unk{background:transparent;color:#98a3c0;border:1px dashed rgba(160,175,210,.35)}
+.fact.v-yes,.fact.v-partial{background:rgba(255,208,138,.1);color:#ffe2b0;border-color:rgba(255,208,138,.35)}
+.fact.v-deadline{background:rgba(255,154,162,.1);color:#ffc4c9;border-color:rgba(255,154,162,.35)}
+.facts.big .fact,.facts.big .st{font-size:.88rem;padding:4px 11px}
+.how{font-size:.9rem}
+.trust{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.78rem;color:#9aa6c5}
+.trust .ok{color:#7dffcf}
+.card .linkrow{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:auto;padding-top:10px;font-size:.88rem}
+.linkrow .report{color:#ffc4a0}
+.mod-tag{margin-left:auto;font-size:.76rem;color:var(--dim)}
+.pin-card{display:flex;grid-template-columns:none;padding:18px 18px 14px;border-radius:16px;box-shadow:0 0 0 1px rgba(94,240,192,.35),0 0 30px rgba(94,240,192,.08);background:rgba(10,20,30,.9)}
+.pin-card::after{display:none}
+.pin-badge{font-size:.76rem;color:#05140f;background:var(--mint);border-radius:999px;padding:2px 9px;font-weight:700;white-space:nowrap}
+.pin-reason{margin:0;font-size:.88rem;color:#cdeee3}
+.pin-note{display:inline-block;font-size:.76rem;color:#9fe9cf;border:1px solid rgba(94,240,192,.35);border-radius:6px;padding:0 6px;margin-left:4px}
+
+/* module cards (uniform) */
+.module-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.module-card{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:16px 18px;border-radius:16px;background:rgba(10,16,34,.86);border:1px solid rgba(140,200,255,.14);color:var(--text)}
+.module-card:hover{border-color:rgba(92,225,255,.5);color:var(--text)}
+.mc-ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(92,225,255,.1);color:var(--cyan)}
+.mc-ico svg{width:24px;height:24px}
+.mc-body{min-width:0;display:flex;flex-direction:column;gap:2px}
+.mc-body h3{margin:0;font-size:1.02rem;color:#fff}
+.mc-desc{font-size:.84rem;color:#aeb9d6}
+.mc-latest{font-size:.8rem;color:#8fdcf0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mc-count{text-align:right;font-size:.8rem;color:var(--muted)}
+.mc-count b{display:block;font-family:var(--mono);font-size:1.5rem;color:#fff;font-weight:500}
+
+/* latest 5 */
+.latest5{margin:0;padding:0;list-style:none;counter-reset:l}
+.latest5 li{counter-increment:l;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;padding:12px 0 12px 40px;position:relative;border-bottom:1px solid rgba(140,200,255,.1)}
+.latest5 li::before{content:counter(l);position:absolute;left:4px;top:12px;width:24px;height:24px;border-radius:8px;background:rgba(92,225,255,.12);color:var(--cyan);font-family:var(--mono);font-size:.8rem;display:flex;align-items:center;justify-content:center}
+.latest5 a{color:#fff;font-size:1rem}
+.latest5 span{font-size:.8rem;color:var(--dim)}
+
+/* big standalone disclaimer */
+.disclaimer-card{padding:28px 30px;border-radius:20px;background:linear-gradient(160deg,rgba(40,24,10,.6),rgba(18,12,30,.7));border:1px solid rgba(255,208,138,.4)}
+.disclaimer-card h2{margin:0 0 12px;font-size:1.5rem;color:#ffe2b0}
+.disclaimer-card p{margin:0 0 10px;color:#f1e6d4;font-size:1rem;line-height:1.8}
+.about p{color:#d0d9f0;margin:0 0 8px}
+
+/* detail pages */
+.facts-table{width:100%;border-collapse:collapse;margin:0 0 14px;font-size:.95rem}
+.facts-table th{width:120px;text-align:left;color:#aab6d6;font-weight:500;padding:9px 8px;border-bottom:1px solid rgba(140,200,255,.1);vertical-align:top}
+.facts-table td{padding:9px 8px;border-bottom:1px solid rgba(140,200,255,.1);color:#eef2ff}
+.facts-table td.unk{color:#98a3c0}
+ul.plain{margin:0;padding-left:1.1rem}
+ul.plain li{margin:6px 0}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 4px}
+.pin-feats{margin:0 0 12px;padding-left:1.1rem;color:#d0d9f0}
+
+/* quick search overlay */
+#quick-search{position:fixed;inset:0;z-index:10050;background:rgba(0,0,0,.6);display:none;align-items:flex-start;justify-content:center;padding-top:10vh}
+#quick-search.open{display:flex}
+.qs-box{width:min(640px,94vw);background:#0a1020;border:1px solid var(--line2);border-radius:16px;overflow:hidden}
+#qs-input{width:100%;border:0;outline:0;padding:16px 18px;font:inherit;font-size:1rem;background:transparent;color:var(--text);border-bottom:1px solid var(--line)}
+.qs-results{max-height:55vh;overflow:auto}
+.qs-item{display:block;padding:10px 18px;border-bottom:1px solid rgba(120,200,255,.08);color:var(--text)}
+.qs-item b{display:block;font-weight:600}
+.qs-item small{color:var(--dim)}
+.qs-empty,.qs-foot{padding:14px 18px;color:var(--muted);font-size:.86rem}
+footer{font-size:.86rem;color:#9ba7c7}
+footer a{color:#c2cce6}
+.foot-links{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
+
+/* reduce motion: OS setting or persistent toggle */
+html.reduce-motion *,html.reduce-motion *::before,html.reduce-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html.reduce-motion #fx-shader{opacity:.7}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ≤1080 */
+@media (max-width:1080px){.nav-search kbd{display:none}}
+/* hamburger + single column ≤768px */
+@media (max-width:768px){
+  .topnav{flex-wrap:wrap;top:8px;width:calc(100% - 16px);padding:8px 8px 8px 12px}
+  .brand-mini .txt{display:inline;font-size:.92rem}
+  .navlinks{display:none;order:3;flex-basis:100%;flex-direction:column;gap:2px;-webkit-mask-image:none;mask-image:none;padding:6px 0 4px}
+  .topnav.open .navlinks{display:flex}
+  .navlinks a{font-size:1rem;padding:10px 12px}
+  .nav-toggle{display:inline-flex}
+  .nav-tools .reduce-btn{display:none}
+  .nav-search span{display:none}
+  .home-hero,.hero-xl.compact{padding:84px 16px 6px}
+  .hero-xl-inner,.home-hero .hero-xl-inner{grid-template-columns:1fr;position:relative}
+  /* brain stays visible as a decorative backdrop behind the hero text; it never pushes search down */
+  .brain-stage,.home-hero .brain-stage,.hero-xl.compact .brain-stage{position:absolute;order:0;right:-70px;top:-30px;width:250px;opacity:.55;z-index:0;pointer-events:none}
+  .hero-xl .hero-copy{z-index:3}
+  .home-hero .hero-title{font-size:clamp(2rem,9vw,2.6rem);margin:12px 0 10px}
+  .hero-xl.compact .hero-title{font-size:1.8rem}
+  .lead{font-size:.98rem;margin-bottom:12px}
+  .home-hero .lead{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .stats{gap:6px}
+  .pill{padding:7px 10px;font-size:.82rem}.pill b{font-size:1.05rem}
+  .def-note{font-size:.78rem}
+  .wrap{padding:16px 14px 40px}
+  .section{margin-bottom:44px}
+  .grid,.module-list{grid-template-columns:1fr}
+  .filters{padding:12px}
+  .fgroup{flex-direction:column;gap:4px}
+  .flabel{width:auto;padding:0}
+  .fgroups{gap:10px}
+  .card{padding:14px}
+  .disclaimer-card{padding:20px}
+  .facts-table th{width:92px}
+  body.detail .wrap,body.archive .wrap,body.api-page .wrap,body.notfound .wrap{padding-top:84px}
+}
+
+/* board page (星际信号站) — contrast & size fixes, keeps the galaxy design */
+body.board .bd-kicker{letter-spacing:.16em;font-size:13px}
+body.board .bd-stat small,body.board .bd-holo-foot,body.board .bd-id,body.board .bd-card time{font-size:12px;letter-spacing:.06em;color:#b3bedb}
+body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #bd-count{font-size:13px;color:#b3bedb;letter-spacing:.04em}
+@media (max-width:768px){body.board .bd-hud.tl{top:78px;left:14px;right:14px;max-width:none}}
 
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"科技软件/App 限免 | AI大模型免费资源导航 · 2026年11月最新","url":"https://aiym168.github.io/c/keji-app-xianmian.html","description":"科技软件与 App 限免、开源替代精选，强调 AI / 开发相关。"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://aiym168.github.io/item/keji-app-xianmian-ae704a9101.html","name":"免费人工智能讲座坎帕拉维多利亚大学很高兴地宣布免费人工智能 (AI) 讲座向全球开放"},{"@type":"ListItem","position":2,"url":"https://aiym168.github.io/item/3d-compell-306664e2f8.html","name":"🚨 3D 手机、游戏和应用程序的文本提示 - 移动应用程序和游戏的文本提示 - 免费后端和身份验证 - 构建 compell"},{"@type":"ListItem","position":3,"url":"https://aiym168.github.io/item/top-k-loss-free-balancing-7336077c05.html","name":"具体来说，在做出top-K路由决策之前，Loss-Free Balancing会首先对路由应用专家明智的偏见。"},{"@type":"ListItem","position":4,"url":"https://aiym168.github.io/item/github-agentlas-ai-agentlas-os-0e157a0d5e.html","name":"GitHub 开源：agentlas-ai/Agentlas-OS"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"科技软件 / App 限免","url":"https://aiym168.github.io/c/keji-app-xianmian.html","description":"科技软件与 App 的限时免费、终身内购限免。"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://aiym168.github.io/item/linkjoy-6e91c0e737.html","name":"Linkjoy：跨平台书签/离线高亮终身内购限免"},{"@type":"ListItem","position":2,"url":"https://aiym168.github.io/item/stillwell-raw-b8a17d0e1f.html","name":"Stillwell 叠光相机：RAW 相机终身限免"},{"@type":"ListItem","position":3,"url":"https://aiym168.github.io/item/wifi-28-0-9a74251dfe.html","name":"双人小工具：电量/WiFi/信号组件 ¥28→0"},{"@type":"ListItem","position":4,"url":"https://aiym168.github.io/item/imagesweep-app-6d908e09b8.html","name":"ImageSweep：相册垃圾清理 App 本体限免"},{"@type":"ListItem","position":5,"url":"https://aiym168.github.io/item/198-0-dc82582d81.html","name":"电影精灵：老牌视频剪辑本体 ¥198→0"}]}</script>
 </head>
 
-<body>
-<div class="fx-aurora" aria-hidden="true"></div>
-<div class="fx-grid" aria-hidden="true"></div>
-<div class="fx-noise" aria-hidden="true"></div>
-<div class="fx-scan" aria-hidden="true"></div>
-<div class="fx-spot" aria-hidden="true"></div>
-<canvas id="fx-particles" aria-hidden="true"></canvas>
+<body class="module" data-base="../">
 
 <header class="topnav">
   <a class="brand-mini" href="../"><span class="mark"></span><span class="txt">AI大模型免费资源导航</span></a>
-  <nav class="navlinks" aria-label="模块导航"><a href="../c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="../c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="../c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="../c/mianfei-gpu-yunfuwu.html" title="免费GPU / 云服务">免费GPU</a><a href="../c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="../m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="../m/hot-topics.html" title="最近热议">热议</a><a href="../m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="../m/status.html" title="更新动态">更新动态</a><a class="cta" href="../m/api.html" title="CLI / API">CLI / API</a></nav>
+  <nav class="navlinks" id="navlinks" aria-label="模块导航"><a href="../c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="../c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="../c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="../c/mianfei-gpu-yunfuwu.html" title="免费 GPU / 云服务">免费GPU</a><a href="../c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="../c/ai-kecheng-huodong.html" title="AI 课程 / 活动">课程活动</a><a href="../c/qita-keji.html" title="其他科技资源">其他</a><a href="../m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="../m/hot-topics.html" title="最近热议">热议</a><a href="../m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="../m/status.html" title="更新动态">更新动态</a></nav>
+  <div class="nav-tools">
+    <a class="nav-search" href="../#search" data-search-open aria-label="搜索免费资源"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>搜索</span><kbd>Ctrl K</kbd></a>
+    <button type="button" class="reduce-btn" data-reduce-toggle aria-pressed="false" title="关闭背景与大脑动画（会记住你的选择）">减少动态 <b>关</b></button>
+    <button type="button" class="nav-toggle" aria-controls="navlinks" aria-expanded="false" aria-label="打开菜单"><span></span><span></span><span></span></button>
+  </div>
 </header>
 <header class="hero-xl compact hero-brain">
   <div class="hero-xl-inner">
     <div class="hero-copy">
-      <div class="crumbs"><a href="../">首页</a> › 科技软件/App 限免</div>
-      <div class="eyebrow"><i class="live-dot"></i> MODULE <span class="sep">/</span> <span data-clock>--:--:--</span></div>
-      <h1 class="hero-title"><span class="kl">科技软件/App 限免</span></h1>
-      <p class="lead">科技软件与 App 限免、开源替代精选，强调 AI / 开发相关。</p>
-      <div class="stats"><div class="pill">条目 <b data-count="4">4</b></div><div class="pill">更新 <b>2026-11-09</b></div><div class="pill live">下次更新 <b data-next>--:--</b></div></div>
+      <div class="crumbs"><a href="../">首页</a> › 科技软件 / App 限免</div>
+      <div class="eyebrow"><i class="live-dot"></i> 模块</div>
+      <h1 class="hero-title"><span class="kl">科技软件 / App 限免</span></h1>
+      <p class="lead">科技软件与 App 的限时免费、终身内购限免。</p>
+      <div class="stats"><div class="pill">本模块 <b>5</b> 条</div><div class="pill">更新 <b>2026-11-09</b></div></div>
     </div>
     
 <div class="brain-stage" aria-hidden="true">
   <span class="ring r3"></span><span class="ring r1"></span><span class="ring r2"></span>
   <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
-  <span class="hud-tag a">科技软件/App<b>4</b></span><span class="hud-tag b">免费</span><span class="hud-tag c">实时</span><span class="hud-tag d">中文</span>
-  <div id="brain-hero" data-vendor="../vendor/" data-nodes="2800"></div>
-  <span class="brain-caption">Neural Graph · WebGL · Live</span>
+  <div id="brain-hero" data-vendor="../vendor/" data-nodes="2600"></div>
 </div>
 
   </div>
 </header>
 <script src="../vendor/brain-loader.js" defer></script>
 <div class="wrap">
-  <div class="toolbar"><input id="q" type="search" placeholder="在本模块内搜索…" autocomplete="off" /></div>
-  <div class="grid">
-<article class="card" data-text="免费人工智能讲座坎帕拉维多利亚大学很高兴地宣布免费人工智能 (AI) 讲座向全球开放 免费人工智能讲座坎帕拉维多利亚大学很高兴地宣布在假期期间向学习者开放免费人工智能 (AI) 讲座。 👥 谁可以申请？ •四年级（S4）学生 •六年级（S6）学生 •任何持有证书的人 - X
-免费人工智能讲座坎帕拉维多利亚大学很高兴地宣布在假期期间向学习者开放免费人工智能 (AI) 讲座。 👥 谁可以申请？ •四年级 (S4) 学生 •六年级 (S6) 学生 •任何持有证书的人 X 打开来源链接按页面说明领取/试用；参与前自行核实。 news https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wSmh5T0NhZjhhUkxKOG5UdDdBN3FsOWVCZjY4YXZsWExGcHNmVUFsNVNWUl9oWE9xV3ZmOURZeFM3ZklyQTdjYlpZU1BCUnZfelBXMlVDVU8xRXdHLXhv?oc=5 科技软件/App 限免 X">
-  <div class="badgerow"><span class="badge">科技软件/App 限免</span><span class="src-tag">来源 X</span></div>
-  <h3 class="title"><a href="../item/keji-app-xianmian-ae704a9101.html">免费人工智能讲座坎帕拉维多利亚大学很高兴地宣布免费人工智能 (AI) 讲座向全球开放</a></h3>
+  <section class="section" id="search">
+    
+<div class="filters" data-filter-root>
+  <form class="searchbar" role="search" action="" method="get" onsubmit="return false">
+    <label class="sr-only" for="q">搜索</label>
+    <input id="q" name="q" type="search" placeholder="在本模块内搜索…" autocomplete="off" />
+    <button type="submit" class="btn primary">搜索</button>
+  </form>
+  <div class="fgroups"><div class="fgroup"><span class="flabel">要不要绑卡</span><div class="chips"><button type="button" class="chip" data-f="requires_card" data-v="unknown" aria-pressed="false">未注明 <i>5</i></button></div></div><div class="fgroup"><span class="flabel">实名/手机号</span><div class="chips"><button type="button" class="chip" data-f="requires_realname" data-v="unknown" aria-pressed="false">未注明 <i>5</i></button></div></div><div class="fgroup"><span class="flabel">国内能否直连</span><div class="chips"><button type="button" class="chip" data-f="china_accessible" data-v="unknown" aria-pressed="false">未注明 <i>5</i></button></div></div><div class="fgroup"><span class="flabel">免费类型</span><div class="chips"><button type="button" class="chip" data-f="type" data-v="unknown" aria-pressed="false">未注明 <i>5</i></button></div></div><div class="fgroup"><span class="flabel">额度有效期</span><div class="chips"><button type="button" class="chip" data-f="expiry_kind" data-v="unknown" aria-pressed="false">未注明 <i>5</i></button></div></div><div class="fgroup"><span class="flabel">状态</span><div class="chips"><button type="button" class="chip" data-f="status" data-v="unverified" aria-pressed="false">未核实 <i>5</i></button></div></div></div>
+  <div class="fbar"><span id="f-count" class="f-count">共 5 条</span>
+    <label class="sort">排序 <select id="f-sort"><option value="default">默认（置顶 + 最新）</option><option value="pub">按发布时间</option><option value="exp">按截止日期（最近在前）</option></select></label>
+    <button type="button" id="f-clear" class="btn sm hidden">清除筛选</button></div>
+  <noscript><p class="note">未启用 JavaScript：下方列出全部条目，可按模块页面浏览；搜索与筛选需要启用 JavaScript。</p></noscript>
+</div>
+    <div class="grid" data-list>
+<article class="card" data-id="linkjoy" data-module="keji-app-xianmian" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="unknown" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T00:32:00+08:00" data-exp="" data-text="Linkjoy：跨平台书签/离线高亮终身内购限免 原价约 ¥128 的终身内购限免，去广告阅读、划线批注、iCloud 多端同步。 App Store 打开帖内链接 → 领取终身内购 X 科技软件 / App 限免 科技软件/App 限免 绑卡：未注明 实名：未注明 直连：未注明 类型：未注明 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @linbai489068</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/linkjoy-6e91c0e737.html">Linkjoy：跨平台书签/离线高亮终身内购限免</a></h3>
   
-  <p class="summary">免费人工智能讲座坎帕拉维多利亚大学很高兴地宣布在假期期间向学习者开放免费人工智能 (AI) 讲座。 👥 谁可以申请？ •四年级（S4）学生 •六年级（S6）学生 •任何持有证书的人 - X
-免费人工智能讲座坎帕拉维多利亚大学很高兴地宣布在假期期间向学习者开放免费人工智能 (AI) 讲座。 👥 谁可以申请？ •四年级 (S4) 学生 •六年级 (S6) 学生 •任何持有证书的人 X</p>
-  
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@news · Tue, 06 Jan 2026 08:00:00 GMT</div>
-  <div class="linkrow"><a href="../item/keji-app-xianmian-ae704a9101.html">详情与领取方法</a> · <a class="fulllink" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wSmh5T0NhZjhhUkxKOG5UdDdBN3FsOWVCZjY4YXZsWExGcHNmVUFsNVNWUl9oWE9xV3ZmOURZeFM3ZklyQTdjYlpZU1BCUnZfelBXMlVDVU8xRXdHLXhv?oc=5" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/keji-app-xianmian-ae704a9101.html">复制链接</a></div>
+  <p class="summary">原价约 ¥128 的终身内购限免，去广告阅读、划线批注、iCloud 多端同步。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact unk" title="免费类型">类型：未注明</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  <div class="how"><strong>怎么领：</strong>App Store 打开帖内链接 → 领取终身内购</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/linkjoy-6e91c0e737.html">详情</a><a href="https://x.com/linbai489068/status/2119468075993157818" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+Linkjoy%EF%BC%9A%E8%B7%A8%E5%B9%B3%E5%8F%B0%E4%B9%A6%E7%AD%BE%2F%E7%A6%BB%E7%BA%BF%E9%AB%98%E4%BA%AE%E7%BB%88%E8%BA%AB%E5%86%85%E8%B4%AD%E9%99%90%E5%85%8D&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9ALinkjoy%EF%BC%9A%E8%B7%A8%E5%B9%B3%E5%8F%B0%E4%B9%A6%E7%AD%BE%2F%E7%A6%BB%E7%BA%BF%E9%AB%98%E4%BA%AE%E7%BB%88%E8%BA%AB%E5%86%85%E8%B4%AD%E9%99%90%E5%85%8D%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Flinkjoy-6e91c0e737.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2Flinbai489068%2Fstatus%2F2119468075993157818%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Alinkjoy%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">科技软件 / App 限免</span></div>
 </article>
 
-<article class="card" data-text="🚨 3D 手机、游戏和应用程序的文本提示 - 移动应用程序和游戏的文本提示 - 免费后端和身份验证 - 构建 compell 🚨 3D 手机、游戏和应用程序的文本提示 - 移动应用程序和游戏的文本提示 - 免费后端和身份验证 - 构建引人注目的 3D 体验 在 Abacus AI 代理上建立您的公司 - X
-🚨 3D 手机、游戏和应用程序的文本提示 - 移动应用程序和游戏的文本提示 - 免费后端和身份验证 - 打造引人入胜的 3D 体验 在 Abacus AI 代理上建立您的公司    X 打开来源链接按页面说明领取/试用；参与前自行核实。 news https://news.google.com/rss/articles/CBMiXkFVX3lxTE9XWFpIdVVZMEdzXzRRZ25LdllNWXNadEZ4SEpHNnpzeDNZeEh1cW9EOE9LUW1xV0RtMjdFZW5zZ2NFQmFkRzFCcTM2dzBmYVlsV3JxbHNJdUgzRTd1Smc?oc=5 科技软件/App 限免 X">
-  <div class="badgerow"><span class="badge">科技软件/App 限免</span><span class="src-tag">来源 X</span></div>
-  <h3 class="title"><a href="../item/3d-compell-306664e2f8.html">🚨 3D 手机、游戏和应用程序的文本提示 - 移动应用程序和游戏的文本提示 - 免费后端和身份验证 - 构建 compell</a></h3>
+<article class="card" data-id="stillwell-raw" data-module="keji-app-xianmian" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="unknown" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T00:29:00+08:00" data-exp="" data-text="Stillwell 叠光相机：RAW 相机终身限免 原价约 ¥88 终身内购限免；原生 Bayer RAW、星轨与多重曝光等。 App Store 打开帖内链接领取终身版 X 科技软件 / App 限免 科技软件/App 限免 绑卡：未注明 实名：未注明 直连：未注明 类型：未注明 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @linbai489068</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/stillwell-raw-b8a17d0e1f.html">Stillwell 叠光相机：RAW 相机终身限免</a></h3>
   
-  <p class="summary">🚨 3D 手机、游戏和应用程序的文本提示 - 移动应用程序和游戏的文本提示 - 免费后端和身份验证 - 构建引人注目的 3D 体验 在 Abacus AI 代理上建立您的公司 - X
-🚨 3D 手机、游戏和应用程序的文本提示 - 移动应用程序和游戏的文本提示 - 免费后端和身份验证 - 打造引人入胜的 3D 体验 在 Abacus AI 代理上建立您的公司    X</p>
-  
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@news · Sat, 07 Nov 2026 01:29:08 GMT</div>
-  <div class="linkrow"><a href="../item/3d-compell-306664e2f8.html">详情与领取方法</a> · <a class="fulllink" href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE9XWFpIdVVZMEdzXzRRZ25LdllNWXNadEZ4SEpHNnpzeDNZeEh1cW9EOE9LUW1xV0RtMjdFZW5zZ2NFQmFkRzFCcTM2dzBmYVlsV3JxbHNJdUgzRTd1Smc?oc=5" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/3d-compell-306664e2f8.html">复制链接</a></div>
+  <p class="summary">原价约 ¥88 终身内购限免；原生 Bayer RAW、星轨与多重曝光等。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact unk" title="免费类型">类型：未注明</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  <div class="how"><strong>怎么领：</strong>App Store 打开帖内链接领取终身版</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/stillwell-raw-b8a17d0e1f.html">详情</a><a href="https://x.com/linbai489068/status/2119467385514258665" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+Stillwell+%E5%8F%A0%E5%85%89%E7%9B%B8%E6%9C%BA%EF%BC%9ARAW+%E7%9B%B8%E6%9C%BA%E7%BB%88%E8%BA%AB%E9%99%90%E5%85%8D&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9AStillwell+%E5%8F%A0%E5%85%89%E7%9B%B8%E6%9C%BA%EF%BC%9ARAW+%E7%9B%B8%E6%9C%BA%E7%BB%88%E8%BA%AB%E9%99%90%E5%85%8D%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fstillwell-raw-b8a17d0e1f.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2Flinbai489068%2Fstatus%2F2119467385514258665%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Astillwell-raw%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">科技软件 / App 限免</span></div>
 </article>
 
-<article class="card" data-text="具体来说，在做出top-K路由决策之前，Loss-Free Balancing会首先对路由应用专家明智的偏见。 具体来说，在做出top-K路由决策之前，Loss-Free Balancing会首先对每个专家的路由分数应用专家明智的偏差。通过根据最近的负载动态更新每个专家的偏差，无损平衡可以始终保持平衡 https://t.co/3GFKP36VOq 打开来源链接按页面说明领取/试用；参与前自行核实。 deepseek_ai https://x.com/deepseek_ai/status/1829141054022377569 科技软件/App 限免 X">
-  <div class="badgerow"><span class="badge">科技软件/App 限免</span><span class="src-tag">来源 X</span></div>
-  <h3 class="title"><a href="../item/top-k-loss-free-balancing-7336077c05.html">具体来说，在做出top-K路由决策之前，Loss-Free Balancing会首先对路由应用专家明智的偏见。</a></h3>
+<article class="card" data-id="duo-widget" data-module="keji-app-xianmian" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="unknown" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-08T21:02:00+08:00" data-exp="" data-text="双人小工具：电量/WiFi/信号组件 ¥28→0 约 1.4MB 极简无广桌面/锁屏组件，20 种排版，一眼看状态。 App Store 打开帖内链接领取 X 科技软件 / App 限免 科技软件/App 限免 绑卡：未注明 实名：未注明 直连：未注明 类型：未注明 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @linbai489068</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/wifi-28-0-9a74251dfe.html">双人小工具：电量/WiFi/信号组件 ¥28→0</a></h3>
   
-  <p class="summary">具体来说，在做出top-K路由决策之前，Loss-Free Balancing会首先对每个专家的路由分数应用专家明智的偏差。通过根据最近的负载动态更新每个专家的偏差，无损平衡可以始终保持平衡 https://t.co/3GFKP36VOq</p>
-  
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@deepseek_ai · Thu Aug 29 12:56:25 +0000 2024</div>
-  <div class="linkrow"><a href="../item/top-k-loss-free-balancing-7336077c05.html">详情与领取方法</a> · <a class="fulllink" href="https://x.com/deepseek_ai/status/1829141054022377569" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/top-k-loss-free-balancing-7336077c05.html">复制链接</a></div>
+  <p class="summary">约 1.4MB 极简无广桌面/锁屏组件，20 种排版，一眼看状态。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact unk" title="免费类型">类型：未注明</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  <div class="how"><strong>怎么领：</strong>App Store 打开帖内链接领取</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-08</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/wifi-28-0-9a74251dfe.html">详情</a><a href="https://x.com/linbai489068/status/2119415280321560746" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+%E5%8F%8C%E4%BA%BA%E5%B0%8F%E5%B7%A5%E5%85%B7%EF%BC%9A%E7%94%B5%E9%87%8F%2FWiFi%2F%E4%BF%A1%E5%8F%B7%E7%BB%84%E4%BB%B6+%C2%A528%E2%86%920&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9A%E5%8F%8C%E4%BA%BA%E5%B0%8F%E5%B7%A5%E5%85%B7%EF%BC%9A%E7%94%B5%E9%87%8F%2FWiFi%2F%E4%BF%A1%E5%8F%B7%E7%BB%84%E4%BB%B6+%C2%A528%E2%86%920%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fwifi-28-0-9a74251dfe.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2Flinbai489068%2Fstatus%2F2119415280321560746%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Aduo-widget%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">科技软件 / App 限免</span></div>
 </article>
 
-<article class="card" data-text="GitHub 开源：agentlas-ai/Agentlas-OS 桌面人工智能代理为每项任务聘请专家，在您的真实应用中工作数周，并从您的手机接受订单。免费， Apache-2.0。 打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。 agentlas-ai https://github.com/agentlas-ai/Agentlas-OS 科技软件/App 限免 GitHub 自动发现">
-  <div class="badgerow"><span class="badge">科技软件/App 限免</span><span class="src-tag">来源 GitHub 自动发现</span></div>
-  <h3 class="title"><a href="../item/github-agentlas-ai-agentlas-os-0e157a0d5e.html">GitHub 开源：agentlas-ai/Agentlas-OS</a></h3>
+<article class="card" data-id="imagesweep" data-module="keji-app-xianmian" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="unknown" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-08T16:28:00+08:00" data-exp="" data-text="ImageSweep：相册垃圾清理 App 本体限免 原价约 ¥28 → 0，按年月/地点快速划选废片，无广告、防误删。 App Store 搜索 ImageSweep 或打开帖内链接领取 X 科技软件 / App 限免 科技软件/App 限免 绑卡：未注明 实名：未注明 直连：未注明 类型：未注明 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @linbai489068</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/imagesweep-app-6d908e09b8.html">ImageSweep：相册垃圾清理 App 本体限免</a></h3>
   
-  <p class="summary">桌面人工智能代理为每项任务聘请专家，在您的真实应用中工作数周，并从您的手机接受订单。免费， Apache-2.0。</p>
+  <p class="summary">原价约 ¥28 → 0，按年月/地点快速划选废片，无广告、防误删。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact unk" title="免费类型">类型：未注明</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  <div class="how"><strong>怎么领：</strong>App Store 搜索 ImageSweep 或打开帖内链接领取</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-08</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/imagesweep-app-6d908e09b8.html">详情</a><a href="https://x.com/linbai489068/status/2119346247995994265" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+ImageSweep%EF%BC%9A%E7%9B%B8%E5%86%8C%E5%9E%83%E5%9C%BE%E6%B8%85%E7%90%86+App+%E6%9C%AC%E4%BD%93%E9%99%90%E5%85%8D&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9AImageSweep%EF%BC%9A%E7%9B%B8%E5%86%8C%E5%9E%83%E5%9C%BE%E6%B8%85%E7%90%86+App+%E6%9C%AC%E4%BD%93%E9%99%90%E5%85%8D%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fimagesweep-app-6d908e09b8.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2Flinbai489068%2Fstatus%2F2119346247995994265%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Aimagesweep%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">科技软件 / App 限免</span></div>
+</article>
+
+<article class="card" data-id="movie-sprite" data-module="keji-app-xianmian" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="unknown" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-08T11:30:00+08:00" data-exp="" data-text="电影精灵：老牌视频剪辑本体 ¥198→0 多轨道、画中画、绿幕抠像等功能的 iOS 视频剪辑 App，本体限免入库。 App Store 打开帖内链接 0 元下载 X 科技软件 / App 限免 科技软件/App 限免 绑卡：未注明 实名：未注明 直连：未注明 类型：未注明 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @linbai489068</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/198-0-dc82582d81.html">电影精灵：老牌视频剪辑本体 ¥198→0</a></h3>
   
-  <div class="how"><strong>怎么领：</strong>打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。</div><div class="meta author">@agentlas-ai · 2026-11-09 16:41 Asia/Shanghai</div>
-  <div class="linkrow"><a href="../item/github-agentlas-ai-agentlas-os-0e157a0d5e.html">详情与领取方法</a> · <a class="fulllink" href="https://github.com/agentlas-ai/Agentlas-OS" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/github-agentlas-ai-agentlas-os-0e157a0d5e.html">复制链接</a></div>
+  <p class="summary">多轨道、画中画、绿幕抠像等功能的 iOS 视频剪辑 App，本体限免入库。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact unk" title="免费类型">类型：未注明</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  <div class="how"><strong>怎么领：</strong>App Store 打开帖内链接 0 元下载</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-08</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/198-0-dc82582d81.html">详情</a><a href="https://x.com/linbai489068/status/2119271425475498138" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+%E7%94%B5%E5%BD%B1%E7%B2%BE%E7%81%B5%EF%BC%9A%E8%80%81%E7%89%8C%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91%E6%9C%AC%E4%BD%93+%C2%A5198%E2%86%920&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9A%E7%94%B5%E5%BD%B1%E7%B2%BE%E7%81%B5%EF%BC%9A%E8%80%81%E7%89%8C%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91%E6%9C%AC%E4%BD%93+%C2%A5198%E2%86%920%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2F198-0-dc82582d81.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2Flinbai489068%2Fstatus%2F2119271425475498138%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Amovie-sprite%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">科技软件 / App 限免</span></div>
 </article></div>
-  <div id="empty" class="empty hidden">没有匹配条目</div>
+    <div id="f-empty" class="empty hidden">没有符合条件的条目，试试清除筛选</div>
+  </section>
   <footer>
-  <div><span class="foot-brand">AI大模型免费资源导航</span> · 科技软件/App 限免<br/>每小时自动更新</div>
-  <div><a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">网站地图</a> · <kbd>Ctrl</kbd>+<kbd>K</kbd> 搜索</div>
+  <div><span class="foot-brand">AI大模型免费资源导航</span> · 科技软件 / App 限免<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
+  <div class="foot-links"><a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../archives/index.html">已归档</a> · <a href="../m/board.html">留言板</a> · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>
 </div>
-<script>
+<script>/* AI大模型免费资源导航 · site.js (v3): nav, 减少动态 toggle, search + filters + sort, quick search over /api/latest.json. */
 (function(){
-  const q=document.getElementById('q'); if(!q) return;
-  const cards=[...document.querySelectorAll('.card')];
-  const empty=document.getElementById('empty');
-  q.addEventListener('input',()=>{
-    const t=(q.value||'').trim().toLowerCase();
-    let n=0;
-    cards.forEach(c=>{
-      const ok=!t||(c.getAttribute('data-text')||'').toLowerCase().includes(t);
-      c.classList.toggle('hidden',!ok); if(ok) n++;
+  var root = document.documentElement;
+  var KEY = 'ai168-reduce';
+  function $(s, el){ return (el||document).querySelector(s); }
+  function $all(s, el){ return Array.prototype.slice.call((el||document).querySelectorAll(s)); }
+  var brand = document.querySelector('.brand-mini');
+  var base = (document.body && document.body.getAttribute('data-base')) || (brand && brand.getAttribute('href')) || './';
+  if (base.slice(-1) !== '/') base += '/';
+
+  /* ---------- 减少动态 (persistent) ---------- */
+  function setReduce(on){
+    root.classList.toggle('reduce-motion', on);
+    try { localStorage.setItem(KEY, on ? '1' : '0'); } catch(e) {}
+    $all('[data-reduce-toggle]').forEach(function(b){ b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.querySelector('b') && (b.querySelector('b').textContent = on ? '开' : '关'); });
+    try { window.dispatchEvent(new Event('ai168:reduce-motion')); } catch(e) {}
+  }
+  $all('[data-reduce-toggle]').forEach(function(b){
+    b.addEventListener('click', function(){ setReduce(!root.classList.contains('reduce-motion')); });
+  });
+  setReduce(root.classList.contains('reduce-motion'));
+
+  /* ---------- hamburger nav (≤768px) ---------- */
+  var nav = $('.topnav'), tog = $('.nav-toggle');
+  if (nav && tog) {
+    tog.addEventListener('click', function(){
+      var open = !nav.classList.contains('open');
+      nav.classList.toggle('open', open); tog.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    if(empty) empty.classList.toggle('hidden', n>0 || !cards.length);
+    $all('.navlinks a', nav).forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); tog.setAttribute('aria-expanded','false'); }); });
+  }
+
+  /* ---------- filters / search / sort (home + module pages) ---------- */
+  var fr = $('[data-filter-root]');
+  var q = $('#q');
+  function initFilters(){
+    if (!fr) return;
+    var list = $('[data-list]', fr) || $('[data-list]');
+    if (!list) return;
+    var cards = $all('.card[data-id]', list);
+    var order = cards.slice();
+    var active = {};
+    var countEl = $('#f-count'), emptyEl = $('#f-empty'), moreBtn = $('#f-more');
+    var limit = parseInt(list.getAttribute('data-limit') || '0', 10), expanded = !limit;
+    var sortSel = $('#f-sort');
+    function matches(c, t){
+      for (var k in active) {
+        if (!active[k] || !active[k].length) continue;
+        var v = c.getAttribute('data-' + k) || '';
+        if (active[k].indexOf(v) < 0) return false;
+      }
+      if (t) {
+        var hay = (c.getAttribute('data-text') || '').toLowerCase();
+        var parts = t.split(/\s+/);
+        for (var i = 0; i < parts.length; i++) if (parts[i] && hay.indexOf(parts[i]) < 0) return false;
+      }
+      return true;
+    }
+    function sortCards(){
+      var mode = sortSel ? sortSel.value : 'default';
+      var arr = order.slice();
+      if (mode === 'pub') arr.sort(function(a,b){ return (b.getAttribute('data-pub')||'').localeCompare(a.getAttribute('data-pub')||''); });
+      if (mode === 'exp') arr.sort(function(a,b){
+        var x = a.getAttribute('data-exp') || '9999', y = b.getAttribute('data-exp') || '9999'; return x.localeCompare(y); });
+      arr.forEach(function(c){ list.appendChild(c); });
+      return arr;
+    }
+    function apply(){
+      var t = (q && q.value || '').trim().toLowerCase();
+      var arr = sortCards(), shown = 0, visible = 0;
+      var filtering = !!t || Object.keys(active).some(function(k){ return active[k] && active[k].length; });
+      arr.forEach(function(c){
+        var ok = matches(c, t);
+        if (ok) shown++;
+        var hideByLimit = ok && !expanded && !filtering && shown > limit;
+        c.classList.toggle('hidden', !ok || hideByLimit);
+        if (ok && !hideByLimit) visible++;
+      });
+      if (countEl) countEl.textContent = filtering ? ('筛选结果 ' + shown + ' / ' + cards.length + ' 条') : ('共 ' + cards.length + ' 条');
+      if (emptyEl) emptyEl.classList.toggle('hidden', shown > 0);
+      if (moreBtn) moreBtn.classList.toggle('hidden', expanded || filtering || shown <= limit);
+      var clr = $('#f-clear'); if (clr) clr.classList.toggle('hidden', !filtering);
+    }
+    $all('[data-f]', fr).forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var k = btn.getAttribute('data-f'), v = btn.getAttribute('data-v');
+        var arr = active[k] || (active[k] = []);
+        var i = arr.indexOf(v);
+        if (i >= 0) arr.splice(i, 1); else arr.push(v);
+        btn.setAttribute('aria-pressed', i >= 0 ? 'false' : 'true');
+        apply();
+      });
+    });
+    var clr = $('#f-clear');
+    if (clr) clr.addEventListener('click', function(){
+      active = {}; if (q) q.value = '';
+      $all('[data-f]', fr).forEach(function(b){ b.setAttribute('aria-pressed','false'); });
+      apply();
+    });
+    if (moreBtn) moreBtn.addEventListener('click', function(){ expanded = true; apply(); });
+    if (sortSel) sortSel.addEventListener('change', apply);
+    if (q) {
+      q.addEventListener('input', apply);
+      var form = q.form; if (form) form.addEventListener('submit', function(e){ e.preventDefault(); apply(); var s = $('#search'); if (s && s.scrollIntoView) s.scrollIntoView({behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth'}); });
+      try { var u = new URLSearchParams(location.search).get('q'); if (u) { q.value = u; } } catch(e) {}
+    }
+    fr.classList.add('js-ready');
+    apply();
+  }
+  initFilters();
+
+  /* ---------- quick search overlay (pages without a list): reads /api/latest.json ---------- */
+  var box = null, data = null;
+  function openQuick(){
+    if (!box) {
+      box = document.createElement('div'); box.id = 'quick-search'; box.setAttribute('role','dialog'); box.setAttribute('aria-label','搜索免费资源');
+      box.innerHTML = '<div class="qs-box"><input id="qs-input" type="search" placeholder="搜索免费资源：如 Gemini、免费 GPU、免绑卡…" autocomplete="off"/><div id="qs-results" class="qs-results"><div class="qs-empty">正在载入数据…</div></div><div class="qs-foot">数据来自 <code>api/latest.json</code> · Esc 关闭</div></div>';
+      document.body.appendChild(box);
+      box.addEventListener('click', function(e){ if (e.target === box) closeQuick(); });
+      var inp = $('#qs-input', box), res = $('#qs-results', box);
+      function render(){
+        if (!data) return;
+        var t = (inp.value || '').trim().toLowerCase();
+        var rows = data.filter(function(it){ var h = (it.title + ' ' + it.summary + ' ' + (it.module_name||'') + ' ' + (it.source||'')).toLowerCase(); return !t || t.split(/\s+/).every(function(p){ return h.indexOf(p) >= 0; }); }).slice(0, 30);
+        res.innerHTML = rows.length ? rows.map(function(it){
+          var a = document.createElement('a'); a.className = 'qs-item'; a.href = base + (it.path || '');
+          a.innerHTML = '<b></b><small></small>'; a.firstChild.textContent = it.title; a.lastChild.textContent = (it.module_name || '') + ' · ' + (it.status_label || '');
+          return a.outerHTML; }).join('') : '<div class="qs-empty">没有匹配的条目</div>';
+      }
+      inp.addEventListener('input', render);
+      fetch(base + 'api/latest.json', {cache: 'no-cache'}).then(function(r){ return r.json(); }).then(function(j){ data = j.items || []; render(); })
+        .catch(function(){ res.innerHTML = '<div class="qs-empty">数据载入失败，请返回首页搜索</div>'; });
+    }
+    box.classList.add('open'); setTimeout(function(){ var i = $('#qs-input'); i && i.focus(); }, 30);
+  }
+  function closeQuick(){ if (box) box.classList.remove('open'); }
+  function openSearch(e){
+    if (q && fr) { if (e) e.preventDefault(); q.focus(); if (q.scrollIntoView) q.scrollIntoView({block:'center', behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth'}); return; }
+    if (e) e.preventDefault(); openQuick();
+  }
+  $all('[data-search-open]').forEach(function(b){ b.addEventListener('click', openSearch); });
+  document.addEventListener('keydown', function(e){
+    if ((e.ctrlKey || e.metaKey) && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); openSearch(); }
+    else if (e.key === '/' && !/input|textarea|select/i.test((document.activeElement||{}).tagName||'')) { e.preventDefault(); openSearch(); }
+    else if (e.key === 'Escape') closeQuick();
+  });
+
+  /* ---------- copy buttons ---------- */
+  $all('.copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var t = btn.getAttribute('data-copy') || '';
+      (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function(){ btn.textContent = '已复制'; setTimeout(function(){ btn.textContent = '复制'; }, 1200); }, function(){ btn.textContent = '请手动复制'; });
+    });
   });
 })();
 
+/* AI大模型免费资源导航 · fx.js (v3) — calm background only.
+   Removed in v3: count-up numbers, headline blur-in, scroll-blur reveals, per-second clock/countdown, parallax, tilt.
+   Motion respects prefers-reduced-motion and the persistent "减少动态" toggle (html.reduce-motion). */
 (function(){
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var root = document.documentElement;
-  root.style.colorScheme = 'dark';
   root.classList.add('js');
-  try { document.body.classList.add('page-enter'); } catch(e) {}
   var mobile = Math.min(window.innerWidth, window.innerHeight) < 720;
+  function isReduced(){ return root.classList.contains('reduce-motion') || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); }
 
   /* ---------- GLSL shader background (raw WebGL, no deps) ---------- */
   (function shaderBg(){
@@ -544,275 +914,18 @@ kbd{font-family:var(--mono);font-size:.72rem;padding:2px 6px;border-radius:6px;b
       gl.uniform2f(uR, cv.width, cv.height); gl.uniform1f(uT, (now-t0)/1000 + 20.0); gl.uniform2f(uM, smx, smy); gl.uniform1f(uS, sc);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
     }
-    if (reduced) { draw(performance.now()); return; }
+    draw(performance.now());
     (function loop(now){
       requestAnimationFrame(loop);
-      if (document.hidden || now - last < 33) return; last = now; draw(now);
+      if (isReduced() || document.hidden || now - last < 40) return; last = now; draw(now);
     })(performance.now());
     cv.classList.add('on');
   })();
 
-  /* ---------- pointer spotlight vars ---------- */
-  window.addEventListener('pointermove', function(e){
-    root.style.setProperty('--spot-x', e.clientX + 'px');
-    root.style.setProperty('--spot-y', e.clientY + 'px');
-  }, {passive:true});
-
-  function bindGlow(el, tilt){
-    el.addEventListener('pointermove', function(e){
-      var r = el.getBoundingClientRect();
-      var x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
-      el.style.setProperty('--mx', (x*100)+'%'); el.style.setProperty('--my', (y*100)+'%');
-      if (tilt && !reduced) el.style.transform = 'perspective(1000px) rotateX(' + ((0.5-y)*5) + 'deg) rotateY(' + ((x-0.5)*6) + 'deg) translateY(-3px)';
-    });
-    el.addEventListener('pointerleave', function(){ el.style.transform = ''; });
-  }
-  Array.prototype.forEach.call(document.querySelectorAll('.module-tile, .pin-card'), function(el){ bindGlow(el, true); });
-  Array.prototype.forEach.call(document.querySelectorAll('.card, .panel-box, .term-block'), function(el){ bindGlow(el, false); });
-
-  /* ---------- nav shrink on scroll + parallax ---------- */
+  /* ---------- nav: solid background after scrolling ---------- */
   var nav = document.querySelector('.topnav');
-  var par = Array.prototype.slice.call(document.querySelectorAll('[data-parallax]'));
-  var ticking = false;
-  function onScroll(){
-    ticking = false;
-    var y = window.scrollY || 0;
-    if (nav) nav.classList.toggle('scrolled', y > 24);
-    if (!reduced) par.forEach(function(el){
-      var f = parseFloat(el.getAttribute('data-parallax')) || 0.2;
-      el.style.transform = 'translate3d(0,' + (y*f).toFixed(1) + 'px,0)';
-      if (el.hasAttribute('data-fade')) el.style.opacity = String(Math.max(0, 1 - y/ (innerHeight*0.9)));
-    });
-  }
-  window.addEventListener('scroll', function(){ if (!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
-  onScroll();
-
-  /* ---------- count up when visible ---------- */
-  function animateCount(el, target){
-    var t0 = performance.now(), dur = 1400;
-    function frame(t){
-      var p = Math.min(1, (t - t0)/dur), e = 1 - Math.pow(1-p, 4);
-      el.textContent = String(Math.round(target * e));
-      if (p < 1) requestAnimationFrame(frame);
-    }
-    requestAnimationFrame(frame);
-  }
-  var counters = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
-  if (!reduced && 'IntersectionObserver' in window) {
-    var cio = new IntersectionObserver(function(en){ en.forEach(function(e){ if (e.isIntersecting){ animateCount(e.target, parseInt(e.target.getAttribute('data-count')||'0',10)); cio.unobserve(e.target);} }); }, {threshold:.3});
-    counters.forEach(function(el){ cio.observe(el); });
-  }
-
-  /* ---------- live clock + countdown to next hourly build (:07 Beijing) ---------- */
-  var clocks = document.querySelectorAll('[data-clock]'), nexts = document.querySelectorAll('[data-next]');
-  function pad(n){ return (n<10?'0':'') + n; }
-  function tick(){
-    var now = new Date(), bj = new Date(now.getTime() + (now.getTimezoneOffset() + 480) * 60000);
-    var s = pad(bj.getHours()) + ':' + pad(bj.getMinutes()) + ':' + pad(bj.getSeconds());
-    Array.prototype.forEach.call(clocks, function(el){ el.textContent = s; });
-    var m = bj.getMinutes(), sec = bj.getSeconds();
-    var left = ((7 - m + 60) % 60) * 60 - sec; if (left <= 0) left += 3600;
-    var txt = pad(Math.floor(left/60)) + ':' + pad(left%60);
-    Array.prototype.forEach.call(nexts, function(el){ el.textContent = txt; });
-  }
-  if (clocks.length || nexts.length) { tick(); setInterval(tick, 1000); }
-
-  /* ---------- scroll reveal with stagger ---------- */
-  var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal, .card, .module-tile, .panel-box, .section > h2, .sec-head, .pin-card, .term-block'));
-  reveals.forEach(function(el){
-    el.classList.add('reveal');
-    var sib = el.parentNode ? Array.prototype.indexOf.call(el.parentNode.children, el) : 0;
-    el.style.setProperty('--d', Math.min(sib, 8) * 70 + 'ms');
-  });
-  if (!reduced && 'IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-    }, {threshold: 0.08, rootMargin: '0px 0px -6% 0px'});
-    reveals.forEach(function(el){ io.observe(el); });
-  } else {
-    reveals.forEach(function(el){ el.classList.add('in'); });
-  }
-})();
-
-(function(){
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var touch = matchMedia('(hover: none), (pointer: coarse)').matches;
-  var desktop = !touch;
-
-  /* toast */
-  var toast = document.createElement('div');
-  toast.id = 'fx-toast';
-  toast.setAttribute('role','status');
-  document.body.appendChild(toast);
-  function showToast(msg){
-    toast.textContent = msg;
-    toast.classList.add('show');
-    clearTimeout(showToast._t);
-    showToast._t = setTimeout(function(){ toast.classList.remove('show'); }, 1800);
-  }
-
-  /* scroll progress + back to top */
-  var bar = document.createElement('div'); bar.id = 'scroll-progress'; document.body.appendChild(bar);
-  var topOrb = document.createElement('button');
-  topOrb.id = 'back-top'; topOrb.type='button'; topOrb.setAttribute('aria-label','回到顶部'); topOrb.innerHTML='↑';
-  document.body.appendChild(topOrb);
-  topOrb.addEventListener('click', function(){ window.scrollTo({top:0, behavior: reduced?'auto':'smooth'}); });
-  function onScroll(){
-    var h = document.documentElement;
-    var max = h.scrollHeight - h.clientHeight;
-    var p = max>0 ? (h.scrollTop/max) : 0;
-    bar.style.transform = 'scaleX(' + p + ')';
-    topOrb.classList.toggle('show', h.scrollTop > 480);
-  }
+  function onScroll(){ if (nav) nav.classList.toggle('scrolled', (window.scrollY||0) > 24); }
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
-
-  /* custom cursor + trail (desktop) */
-  if (desktop && !reduced) {
-    document.documentElement.classList.add('has-cursor');
-    var cur = document.createElement('div'); cur.id='cursor-dot'; document.body.appendChild(cur);
-    var trail = [];
-    for (var i=0;i<5;i++){ var t=document.createElement('div'); t.className='cursor-trail'; document.body.appendChild(t); trail.push(t); }
-    var mx=0,my=0, pts=trail.map(function(){return {x:0,y:0};});
-    window.addEventListener('pointermove', function(e){ mx=e.clientX; my=e.clientY; cur.style.transform='translate('+mx+'px,'+my+'px)'; }, {passive:true});
-    (function loop(){
-      var x=mx,y=my;
-      for (var i=0;i<pts.length;i++){
-        pts[i].x += (x - pts[i].x) * (0.35 - i*0.03);
-        pts[i].y += (y - pts[i].y) * (0.35 - i*0.03);
-        trail[i].style.transform='translate('+pts[i].x+'px,'+pts[i].y+'px) scale('+(1-i*0.08)+')';
-        x=pts[i].x; y=pts[i].y;
-      }
-      requestAnimationFrame(loop);
-    })();
-  }
-
-  /* magnetic tiles/buttons */
-  if (desktop && !reduced) {
-    var mags = document.querySelectorAll('.module-tile, .btn, .topnav a, #back-top');
-    Array.prototype.forEach.call(mags, function(el){
-      el.addEventListener('pointermove', function(e){
-        var r=el.getBoundingClientRect();
-        var dx=(e.clientX-(r.left+r.width/2))/r.width;
-        var dy=(e.clientY-(r.top+r.height/2))/r.height;
-        el.style.translate = (dx*12)+'px '+(dy*10)+'px';
-      });
-      el.addEventListener('pointerleave', function(){ el.style.translate=''; });
-    });
-  }
-
-  /* module tile <-> brain region */
-  Array.prototype.forEach.call(document.querySelectorAll('.module-tile'), function(el){
-    el.addEventListener('pointerenter', function(){
-      var href=(el.getAttribute('href')||'');
-      var id=href.split('/').pop().replace('.html','');
-      if (window.__brainAPI && window.__brainAPI.highlightRegion) window.__brainAPI.highlightRegion(id);
-    });
-    el.addEventListener('pointerleave', function(){
-      if (window.__brainAPI && window.__brainAPI.highlightRegion) window.__brainAPI.highlightRegion('');
-    });
-  });
-
-  /* card ripple + copy link */
-  document.addEventListener('click', function(e){
-    var card = e.target.closest && e.target.closest('.card, .module-tile');
-    if (card && !reduced) {
-      var r=card.getBoundingClientRect();
-      var rip=document.createElement('span'); rip.className='ripple';
-      rip.style.left=(e.clientX-r.left)+'px'; rip.style.top=(e.clientY-r.top)+'px';
-      card.appendChild(rip); setTimeout(function(){ rip.remove(); }, 700);
-    }
-    var copyBtn = e.target.closest && e.target.closest('[data-copy-link]');
-    if (copyBtn) {
-      e.preventDefault();
-      var url = copyBtn.getAttribute('data-copy-link') || location.href;
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(url).then(function(){ showToast('链接已复制'); }).catch(function(){ showToast('复制失败'); });
-      } else {
-        showToast('请手动复制链接');
-      }
-    }
-  });
-
-  /* text scramble on headings */
-  function scramble(el){
-    if (reduced || el.dataset.scrambled) return;
-    el.dataset.scrambled='1';
-    var final = el.textContent;
-    var chars = 'アイウエオカキクケコABCDEF0123456789#$%';
-    var i=0;
-    var t=setInterval(function(){
-      el.textContent = final.split('').map(function(ch, idx){
-        if (idx < i) return final[idx];
-        if (/\s/.test(ch)) return ch;
-        return chars[Math.floor(Math.random()*chars.length)];
-      }).join('');
-      i += 1;
-      if (i > final.length) { el.textContent=final; clearInterval(t); }
-    }, 28);
-  }
-  if ('IntersectionObserver' in window) {
-    var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if(en.isIntersecting){ scramble(en.target); io.unobserve(en.target);} });
-    }, {threshold:0.4});
-    document.querySelectorAll('h1.hero-title, .hero h1, .section h2').forEach(function(h){ if (!h.closest('[data-kinetic]') && !h.hasAttribute('data-kinetic') && !h.querySelector('*')) io.observe(h); });
-  }
-
-  /* Cmd/Ctrl+K command palette */
-  var items = [];
-  document.querySelectorAll('.card').forEach(function(card){
-    var title = (card.querySelector('.title')||{}).textContent||'';
-    var link = card.querySelector('a[href]');
-    var href = link ? link.getAttribute('href') : '';
-    var text = card.getAttribute('data-text')||title;
-    items.push({title:title.trim(), href:href, text:text});
-  });
-  document.querySelectorAll('.module-tile').forEach(function(tile){
-    items.push({title:(tile.querySelector('h2')||{}).textContent||'模块', href:tile.getAttribute('href')||'', text:tile.textContent||''});
-  });
-  var pal=document.createElement('div'); pal.id='cmd-palette'; pal.innerHTML='<div class="cmd-box"><input id="cmd-input" placeholder="搜索资源 / 模块…（Esc 关闭）" /><div id="cmd-results"></div></div>';
-  document.body.appendChild(pal);
-  var input=pal.querySelector('#cmd-input');
-  var results=pal.querySelector('#cmd-results');
-  function render(q){
-    q=(q||'').trim().toLowerCase();
-    var hits=items.filter(function(it){ return !q || (it.text+it.title).toLowerCase().indexOf(q)>=0; }).slice(0,12);
-    results.innerHTML = hits.map(function(it){
-      return '<a class="cmd-item" href="'+it.href+'"><strong>'+it.title.replace(/</g,'&lt;')+'</strong></a>';
-    }).join('') || '<div class="cmd-empty">无结果</div>';
-  }
-  function openPal(){ pal.classList.add('open'); input.value=''; render(''); setTimeout(function(){ input.focus(); }, 10); }
-  function closePal(){ pal.classList.remove('open'); }
-  window.addEventListener('keydown', function(e){
-    if ((e.metaKey||e.ctrlKey) && e.key.toLowerCase()==='k'){ e.preventDefault(); openPal(); }
-    if (e.key==='Escape') closePal();
-  });
-  pal.addEventListener('click', function(e){ if(e.target===pal) closePal(); });
-  input.addEventListener('input', function(){ render(input.value); });
-
-  /* easter egg ai168 */
-  var buf='';
-  window.addEventListener('keypress', function(e){
-    if (e.target && /input|textarea/i.test(e.target.tagName)) return;
-    buf=(buf+e.key).slice(-5).toLowerCase();
-    if (buf==='ai168'){
-      buf='';
-      showToast('AI168 粒子爆发');
-      if (window.__brainAPI && window.__brainAPI.triggerShockwave) window.__brainAPI.triggerShockwave();
-      document.body.classList.add('egg-burst');
-      setTimeout(function(){ document.body.classList.remove('egg-burst'); }, 1200);
-      // burst dots
-      if (!reduced){
-        for (var i=0;i<24;i++){
-          var d=document.createElement('div'); d.className='burst-dot';
-          d.style.left=(50+Math.cos(i)*10)+'%'; d.style.top=(40+Math.sin(i)*8)+'%';
-          d.style.setProperty('--dx', (Math.cos(i/24*Math.PI*2)*120)+'px');
-          d.style.setProperty('--dy', (Math.sin(i/24*Math.PI*2)*90)+'px');
-          document.body.appendChild(d);
-          setTimeout((function(el){ return function(){ el.remove(); }; })(d), 900);
-        }
-      }
-    }
-  });
 })();
 </script>
 </body></html>

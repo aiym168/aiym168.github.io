@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiym168.github.io/api/v1/schema.json",
+  "title": "AI大模型免费资源导航 · 资源条目 (v1)",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "summary",
+    "url",
+    "source",
+    "module",
+    "type",
+    "requires_card",
+    "requires_realname",
+    "china_accessible",
+    "expires_at",
+    "verified_at",
+    "fetched_at",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "稳定 ID"
+    },
+    "title": {
+      "type": "string",
+      "description": "中文标题：谁提供了什么"
+    },
+    "summary": {
+      "type": "string",
+      "description": "1–2 句摘要，不重复标题"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "原文 / 官网链接（Google News 跳转已解析为原始链接）"
+    },
+    "source": {
+      "type": "string",
+      "description": "来源站点（X / GitHub / Hacker News / 官网域名…）"
+    },
+    "module": {
+      "type": "string",
+      "enum": [
+        "damoxing-mianfei-api",
+        "ai-huiyuan-shiyong",
+        "ai-kaifa-gongju",
+        "mianfei-gpu-yunfuwu",
+        "keji-app-xianmian",
+        "ai-kecheng-huodong",
+        "qita-keji"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "permanent",
+        "trial",
+        "quota",
+        "unknown"
+      ],
+      "description": "permanent=永久免费 trial=试用 quota=限额"
+    },
+    "requires_card": {
+      "type": "string",
+      "enum": [
+        "no",
+        "yes",
+        "partial",
+        "unknown"
+      ]
+    },
+    "requires_realname": {
+      "type": "string",
+      "enum": [
+        "no",
+        "yes",
+        "partial",
+        "unknown"
+      ],
+      "description": "是否需要实名或手机号"
+    },
+    "china_accessible": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ],
+      "description": "国内能否直连"
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "截止时间（北京时间 ISO 8601），未注明为 null"
+    },
+    "verified_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "编辑对照官网核实的时间，未核实为 null"
+    },
+    "fetched_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "本站首次收录时间"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "available",
+        "expiring",
+        "expired",
+        "unverified",
+        "archived"
+      ],
+      "description": "available=可领(已核实) expiring=7 天内截止 expired=已过期 unverified=未核实 archived=已归档"
+    },
+    "module_name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "status_label": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "expiry_kind": {
+      "type": "string",
+      "enum": [
+        "deadline",
+        "daily",
+        "periodic",
+        "limited",
+        "long",
+        "unknown"
+      ],
+      "description": "deadline=有截止日期 daily=按日重置 periodic=按周/月发放 limited=限期试用 long=长期有效"
+    },
+    "time_limited": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "how": {
+      "type": "string",
+      "description": "原文中的具体领取步骤；没有则为空字符串"
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "原文中出现的外部链接（t.co 已展开）"
+    },
+    "source_domain": {
+      "type": "string"
+    },
+    "pinned": {
+      "type": "boolean"
+    },
+    "path": {
+      "type": "string",
+      "description": "站内详情页路径"
+    }
+  },
+  "x-definitions": {
+    "free_resources": "免费资源 = 去重后仍在有效期内的资源条目（含置顶与编辑整理条目；不含 GitHub 新热门与最近热议；已过期、或发布超过 30 天且没有未来截止日期的自动收录条目会移入归档）。",
+    "modules": "七个资源模块的条数之和 = 免费资源总数；GitHub 新热门、最近热议单独计数。",
+    "today_new": "今日新增 = 今天（北京时间）首次被本站收录、且仍有效的条目数。",
+    "unknown": "枚举字段无法从原文确定时一律为 \"unknown\"（页面显示为“未注明”），本站不做猜测；时间字段缺失时为 null。",
+    "verified_at": "verified_at 仅在编辑对照官网核实后填写，否则为 null（页面显示“未核实”）。"
+  }
+}

@@ -75,7 +75,9 @@
         g.addColorStop(0,'rgba(92,225,255,.95)'); g.addColorStop(1,'rgba(92,225,255,0)');
         ctx.fillStyle=g; ctx.beginPath(); ctx.arc(proj[i].x,proj[i].y,3.2,0,Math.PI*2); ctx.fill();
       }
-      requestAnimationFrame(frame);
+      var red=(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)||document.documentElement.classList.contains('reduce-motion');
+      if(!red) requestAnimationFrame(frame);
+      else window.addEventListener('ai168:reduce-motion',function(){requestAnimationFrame(frame);},{once:true});
     }
     requestAnimationFrame(frame);
   };

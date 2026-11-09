@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 <meta name="color-scheme" content="dark" />
 <meta name="theme-color" content="#02040a" />
+<script>try{if(localStorage.getItem('ai168-reduce')==='1')document.documentElement.classList.add('reduce-motion')}catch(e){}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235ce1ff'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2302040a'/%3E%3Crect x='5' y='5' width='22' height='22' rx='6' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%235ef0c0'/%3E%3C/svg%3E" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="renderer" content="webkit" />
@@ -13,7 +14,7 @@
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
 <title>AI 开发工具与编程助手 | AI大模型免费资源导航 · 2026年11月最新</title>
-<meta name="description" content="面向开发者的 AI 编程助手、Agent 与代码工具导航，适合关注 AI开源项目推荐与效率提升。" />
+<meta name="description" content="面向开发者的免费 AI 编程助手、Agent、MCP 服务器与开源 AI 工具。" />
 <meta name="keywords" content="AI大模型免费资源,大模型免费API,免费GPT,Claude免费,DeepSeek免费额度,AI工具免费,免费GPU,GitHub热门项目,AI开源项目推荐,最新AI新闻" />
 <meta name="robots" content="index,follow" />
 <meta name="author" content="AI大模型免费资源导航" />
@@ -23,7 +24,7 @@
 <meta property="og:locale" content="zh_CN" />
 <meta property="og:site_name" content="AI大模型免费资源导航" />
 <meta property="og:title" content="AI 开发工具与编程助手 | AI大模型免费资源导航 · 2026年11月最新" />
-<meta property="og:description" content="面向开发者的 AI 编程助手、Agent 与代码工具导航，适合关注 AI开源项目推荐与效率提升。" />
+<meta property="og:description" content="面向开发者的免费 AI 编程助手、Agent、MCP 服务器与开源 AI 工具。" />
 <meta property="og:url" content="https://aiym168.github.io/c/ai-kaifa-gongju.html" />
 
 <style>
@@ -383,232 +384,698 @@ kbd{font-family:var(--mono);font-size:.72rem;padding:2px 6px;border-radius:6px;b
   .ticker-track{animation:none}
 }
 
+/* =====================================================================
+   v3 — calmer, readable, content-first (overrides the v2 rules above)
+   ===================================================================== */
+:root{--text:#f3f6ff;--muted:#b3bedb;--dim:#8c97b5}
+body{font-size:16px;line-height:1.75}
+/* removed motion: grain, scan sweep, page blur-in, headline blur-in, scroll reveals, floating tags */
+.fx-noise{animation:none;opacity:.04}
+.fx-scan{display:none}
+body.page-enter .wrap,body.page-enter .hero-xl{animation:none}
+.hero-title .kl{animation:none;background-size:100% 100%}
+.reveal,.reveal.in{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
+.hud-tag,.brain-caption,.scroll-hint,.ticker{display:none!important}
+.btn.primary::after{display:none}
+.pin-card::before{animation:none}
+.brand-mini .mark{animation:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* nav tools: search + 减少动态 + hamburger */
+.topnav{gap:10px}
+.navlinks{flex:1;min-width:0}
+.navlinks a{color:#d2daf0;font-size:.9rem}
+.nav-tools{display:flex;align-items:center;gap:6px;flex:none}
+.nav-search{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:10px;border:1px solid rgba(140,200,255,.28);color:#eaf6ff;background:rgba(92,225,255,.08);font-size:.9rem;white-space:nowrap}
+.nav-search svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+.nav-search kbd{font-size:.66rem}
+.reduce-btn{font:inherit;font-size:.82rem;color:#cdd6ef;background:transparent;border:1px solid rgba(140,200,255,.2);border-radius:10px;padding:7px 10px;cursor:pointer;white-space:nowrap}
+.reduce-btn b{color:var(--mint);font-weight:600}
+.reduce-btn[aria-pressed="true"]{border-color:rgba(94,240,192,.6);background:rgba(94,240,192,.1)}
+.reduce-btn.link{border:0;padding:0;color:#b6c2e0;font-size:.82rem}
+.nav-toggle{display:none;width:40px;height:38px;border-radius:10px;border:1px solid rgba(140,200,255,.25);background:rgba(255,255,255,.04);cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:4px}
+.nav-toggle span{display:block;width:18px;height:2px;background:#e8f0ff;border-radius:2px}
+
+/* home hero: shows total / today / last update + brain, leaves room for search on first screen */
+.home-hero{min-height:auto;padding:104px 24px 10px}
+.home-hero .hero-xl-inner{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}
+.home-hero .hero-title{font-size:clamp(2.4rem,5vw,4.6rem);margin:16px 0 14px}
+.home-hero .brain-stage{width:min(100%,560px)}
+.lead{color:#cfd8f0;font-size:1.06rem;margin-bottom:18px}
+.pill{color:#c9d3ee;font-size:.92rem;align-items:center}
+.pill b{font-size:1.25rem;text-shadow:none}
+.def-note{font-size:.84rem;color:var(--dim);max-width:640px;margin:12px 0 0;line-height:1.6}
+.hero-xl.compact{padding:104px 24px 10px}
+.hero-xl.compact .brain-stage{width:min(100%,360px)}
+.hero-xl.compact .hero-title{font-size:clamp(1.9rem,3.6vw,3rem)}
+
+/* sections */
+.section{margin:0 0 64px}
+.sec-head{margin-bottom:18px}
+.sec-idx{font-family:var(--sans);letter-spacing:.08em;font-size:.82rem;color:var(--mint)}
+.sec-head h2{font-size:clamp(1.5rem,2.6vw,2rem);margin:6px 0 6px}
+.sec-desc{color:#c3cde8;font-size:.98rem}
+
+/* filters */
+.filters{position:relative;z-index:2;padding:18px;border-radius:18px;background:rgba(10,16,34,.78);border:1px solid rgba(140,200,255,.16);margin-bottom:18px}
+.searchbar{display:flex;gap:10px;margin-bottom:12px}
+.searchbar input{flex:1;min-width:0;font:inherit;font-size:1rem;color:var(--text);background:rgba(2,6,16,.8);border:1px solid rgba(140,200,255,.3);border-radius:12px;padding:12px 14px;outline:none}
+.searchbar input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(92,225,255,.18)}
+.fgroups{display:none;gap:8px 18px;flex-direction:column}
+.filters.js-ready .fgroups{display:flex}
+.fgroup{display:flex;gap:10px;align-items:flex-start}
+.flabel{flex:none;width:96px;font-size:.88rem;color:#aab6d6;padding-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:.86rem;color:#dce4f7;background:rgba(255,255,255,.04);border:1px solid rgba(140,200,255,.22);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip i{font-style:normal;color:var(--dim);margin-left:2px;font-size:.78rem}
+.chip[aria-pressed="true"]{background:rgba(92,225,255,.18);border-color:var(--cyan);color:#fff}
+.chip[aria-pressed="true"] i{color:#e6fbff}
+.fbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:12px;font-size:.9rem;color:#c3cde8}
+.f-count{font-weight:600;color:#fff}
+.sort select{font:inherit;color:var(--text);background:rgba(2,6,16,.8);border:1px solid rgba(140,200,255,.3);border-radius:10px;padding:6px 8px}
+.btn.sm{padding:6px 12px;font-size:.84rem}
+.note{font-size:.88rem;color:var(--muted)}
+.more-row{text-align:center;margin:18px 0 0}
+
+/* cards: uniform, readable */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.card{position:relative;display:flex;flex-direction:column;gap:8px;padding:18px 18px 14px;border-radius:16px;background:rgba(10,16,34,.86);border:1px solid rgba(140,200,255,.14);transform:none!important;backdrop-filter:none}
+.card:hover{border-color:rgba(92,225,255,.45)}
+.card .title{font-size:1.06rem;line-height:1.5;margin:0}
+.card .title a{color:#fff}
+.card .title a:hover{color:var(--cyan)}
+.card .summary{color:#cdd6ee;font-size:.95rem;line-height:1.7;margin:0}
+.card-top{display:flex;align-items:center;gap:8px;font-size:.84rem;color:#b7c2de;flex-wrap:wrap}
+.src-ico{width:22px;height:22px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;background:#fff;overflow:hidden;flex:none}
+.src-ico img{width:18px;height:18px;display:block}
+.src-ico.letter{background:linear-gradient(135deg,#5ce1ff,#a78bfa);color:#05070f;font-weight:800;font-size:.8rem}
+.src-name{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.st{font-size:.76rem;padding:2px 9px;border-radius:999px;border:1px solid;white-space:nowrap}
+.st-ok{color:#7dffcf;border-color:rgba(94,240,192,.5);background:rgba(94,240,192,.1)}
+.st-warn{color:#ffd08a;border-color:rgba(255,208,138,.55);background:rgba(255,208,138,.1)}
+.st-bad{color:#ff9aa2;border-color:rgba(255,120,130,.5);background:rgba(255,120,130,.08)}
+.st-muted{color:#c0c9e2;border-color:rgba(160,175,210,.35)}
+.facts{display:flex;flex-wrap:wrap;gap:6px}
+.fact{font-size:.8rem;padding:2px 9px;border-radius:8px;background:rgba(92,225,255,.1);color:#d8f6ff;border:1px solid rgba(92,225,255,.25)}
+.fact.unk{background:transparent;color:#98a3c0;border:1px dashed rgba(160,175,210,.35)}
+.fact.v-yes,.fact.v-partial{background:rgba(255,208,138,.1);color:#ffe2b0;border-color:rgba(255,208,138,.35)}
+.fact.v-deadline{background:rgba(255,154,162,.1);color:#ffc4c9;border-color:rgba(255,154,162,.35)}
+.facts.big .fact,.facts.big .st{font-size:.88rem;padding:4px 11px}
+.how{font-size:.9rem}
+.trust{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.78rem;color:#9aa6c5}
+.trust .ok{color:#7dffcf}
+.card .linkrow{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:auto;padding-top:10px;font-size:.88rem}
+.linkrow .report{color:#ffc4a0}
+.mod-tag{margin-left:auto;font-size:.76rem;color:var(--dim)}
+.pin-card{display:flex;grid-template-columns:none;padding:18px 18px 14px;border-radius:16px;box-shadow:0 0 0 1px rgba(94,240,192,.35),0 0 30px rgba(94,240,192,.08);background:rgba(10,20,30,.9)}
+.pin-card::after{display:none}
+.pin-badge{font-size:.76rem;color:#05140f;background:var(--mint);border-radius:999px;padding:2px 9px;font-weight:700;white-space:nowrap}
+.pin-reason{margin:0;font-size:.88rem;color:#cdeee3}
+.pin-note{display:inline-block;font-size:.76rem;color:#9fe9cf;border:1px solid rgba(94,240,192,.35);border-radius:6px;padding:0 6px;margin-left:4px}
+
+/* module cards (uniform) */
+.module-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.module-card{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:16px 18px;border-radius:16px;background:rgba(10,16,34,.86);border:1px solid rgba(140,200,255,.14);color:var(--text)}
+.module-card:hover{border-color:rgba(92,225,255,.5);color:var(--text)}
+.mc-ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(92,225,255,.1);color:var(--cyan)}
+.mc-ico svg{width:24px;height:24px}
+.mc-body{min-width:0;display:flex;flex-direction:column;gap:2px}
+.mc-body h3{margin:0;font-size:1.02rem;color:#fff}
+.mc-desc{font-size:.84rem;color:#aeb9d6}
+.mc-latest{font-size:.8rem;color:#8fdcf0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mc-count{text-align:right;font-size:.8rem;color:var(--muted)}
+.mc-count b{display:block;font-family:var(--mono);font-size:1.5rem;color:#fff;font-weight:500}
+
+/* latest 5 */
+.latest5{margin:0;padding:0;list-style:none;counter-reset:l}
+.latest5 li{counter-increment:l;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;padding:12px 0 12px 40px;position:relative;border-bottom:1px solid rgba(140,200,255,.1)}
+.latest5 li::before{content:counter(l);position:absolute;left:4px;top:12px;width:24px;height:24px;border-radius:8px;background:rgba(92,225,255,.12);color:var(--cyan);font-family:var(--mono);font-size:.8rem;display:flex;align-items:center;justify-content:center}
+.latest5 a{color:#fff;font-size:1rem}
+.latest5 span{font-size:.8rem;color:var(--dim)}
+
+/* big standalone disclaimer */
+.disclaimer-card{padding:28px 30px;border-radius:20px;background:linear-gradient(160deg,rgba(40,24,10,.6),rgba(18,12,30,.7));border:1px solid rgba(255,208,138,.4)}
+.disclaimer-card h2{margin:0 0 12px;font-size:1.5rem;color:#ffe2b0}
+.disclaimer-card p{margin:0 0 10px;color:#f1e6d4;font-size:1rem;line-height:1.8}
+.about p{color:#d0d9f0;margin:0 0 8px}
+
+/* detail pages */
+.facts-table{width:100%;border-collapse:collapse;margin:0 0 14px;font-size:.95rem}
+.facts-table th{width:120px;text-align:left;color:#aab6d6;font-weight:500;padding:9px 8px;border-bottom:1px solid rgba(140,200,255,.1);vertical-align:top}
+.facts-table td{padding:9px 8px;border-bottom:1px solid rgba(140,200,255,.1);color:#eef2ff}
+.facts-table td.unk{color:#98a3c0}
+ul.plain{margin:0;padding-left:1.1rem}
+ul.plain li{margin:6px 0}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 4px}
+.pin-feats{margin:0 0 12px;padding-left:1.1rem;color:#d0d9f0}
+
+/* quick search overlay */
+#quick-search{position:fixed;inset:0;z-index:10050;background:rgba(0,0,0,.6);display:none;align-items:flex-start;justify-content:center;padding-top:10vh}
+#quick-search.open{display:flex}
+.qs-box{width:min(640px,94vw);background:#0a1020;border:1px solid var(--line2);border-radius:16px;overflow:hidden}
+#qs-input{width:100%;border:0;outline:0;padding:16px 18px;font:inherit;font-size:1rem;background:transparent;color:var(--text);border-bottom:1px solid var(--line)}
+.qs-results{max-height:55vh;overflow:auto}
+.qs-item{display:block;padding:10px 18px;border-bottom:1px solid rgba(120,200,255,.08);color:var(--text)}
+.qs-item b{display:block;font-weight:600}
+.qs-item small{color:var(--dim)}
+.qs-empty,.qs-foot{padding:14px 18px;color:var(--muted);font-size:.86rem}
+footer{font-size:.86rem;color:#9ba7c7}
+footer a{color:#c2cce6}
+.foot-links{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
+
+/* reduce motion: OS setting or persistent toggle */
+html.reduce-motion *,html.reduce-motion *::before,html.reduce-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html.reduce-motion #fx-shader{opacity:.7}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ≤1080 */
+@media (max-width:1080px){.nav-search kbd{display:none}}
+/* hamburger + single column ≤768px */
+@media (max-width:768px){
+  .topnav{flex-wrap:wrap;top:8px;width:calc(100% - 16px);padding:8px 8px 8px 12px}
+  .brand-mini .txt{display:inline;font-size:.92rem}
+  .navlinks{display:none;order:3;flex-basis:100%;flex-direction:column;gap:2px;-webkit-mask-image:none;mask-image:none;padding:6px 0 4px}
+  .topnav.open .navlinks{display:flex}
+  .navlinks a{font-size:1rem;padding:10px 12px}
+  .nav-toggle{display:inline-flex}
+  .nav-tools .reduce-btn{display:none}
+  .nav-search span{display:none}
+  .home-hero,.hero-xl.compact{padding:84px 16px 6px}
+  .hero-xl-inner,.home-hero .hero-xl-inner{grid-template-columns:1fr;position:relative}
+  /* brain stays visible as a decorative backdrop behind the hero text; it never pushes search down */
+  .brain-stage,.home-hero .brain-stage,.hero-xl.compact .brain-stage{position:absolute;order:0;right:-70px;top:-30px;width:250px;opacity:.55;z-index:0;pointer-events:none}
+  .hero-xl .hero-copy{z-index:3}
+  .home-hero .hero-title{font-size:clamp(2rem,9vw,2.6rem);margin:12px 0 10px}
+  .hero-xl.compact .hero-title{font-size:1.8rem}
+  .lead{font-size:.98rem;margin-bottom:12px}
+  .home-hero .lead{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .stats{gap:6px}
+  .pill{padding:7px 10px;font-size:.82rem}.pill b{font-size:1.05rem}
+  .def-note{font-size:.78rem}
+  .wrap{padding:16px 14px 40px}
+  .section{margin-bottom:44px}
+  .grid,.module-list{grid-template-columns:1fr}
+  .filters{padding:12px}
+  .fgroup{flex-direction:column;gap:4px}
+  .flabel{width:auto;padding:0}
+  .fgroups{gap:10px}
+  .card{padding:14px}
+  .disclaimer-card{padding:20px}
+  .facts-table th{width:92px}
+  body.detail .wrap,body.archive .wrap,body.api-page .wrap,body.notfound .wrap{padding-top:84px}
+}
+
+/* board page (星际信号站) — contrast & size fixes, keeps the galaxy design */
+body.board .bd-kicker{letter-spacing:.16em;font-size:13px}
+body.board .bd-stat small,body.board .bd-holo-foot,body.board .bd-id,body.board .bd-card time{font-size:12px;letter-spacing:.06em;color:#b3bedb}
+body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #bd-count{font-size:13px;color:#b3bedb;letter-spacing:.04em}
+@media (max-width:768px){body.board .bd-hud.tl{top:78px;left:14px;right:14px;max-width:none}}
 
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"AI 开发工具与编程助手 | AI大模型免费资源导航 · 2026年11月最新","url":"https://aiym168.github.io/c/ai-kaifa-gongju.html","description":"面向开发者的 AI 编程助手、Agent 与代码工具导航，适合关注 AI开源项目推荐与效率提升。"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://aiym168.github.io/item/ai-kaifa-gongju-7e0904ca55.html","name":"免费人工智能研讨会提醒！我的教育主管科林·马修斯将在接下来的几周内举办一系列免费研讨会"},{"@type":"ListItem","position":2,"url":"https://aiym168.github.io/item/wandb-transformers-6dafd75f1b.html","name":"您现在可以通过无缝 @wandb 集成可视化 Transformers 训练性能。比较超参数，出"},{"@type":"ListItem","position":3,"url":"https://aiym168.github.io/item/pollenrobotics-a9152f0fec.html","name":"非常高兴地宣布我们正在收购@pollenrobotics，将开源机器人推向世界！ 🤖"},{"@type":"ListItem","position":4,"url":"https://aiym168.github.io/item/gemini-4-argon-3d-b4342dbc95.html","name":"Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。"},{"@type":"ListItem","position":5,"url":"https://aiym168.github.io/item/2027-1-2-700-6d1bae6102.html","name":"中大将于2027年1月起为黄大仙区2,700名长者提供免费人工智能视网膜认知障碍症筛查。"},{"@type":"ListItem","position":6,"url":"https://aiym168.github.io/item/netflix-1800-9fce0d4901.html","name":"据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来像是一场免费的人工智能大战"},{"@type":"ListItem","position":7,"url":"https://aiym168.github.io/item/gpu-https-t-co-lwhixsy342-twitch-htt-3d5a8d88eb.html","name":"今天免费 GPU！是的，全球赠品。踢：https://t.co/LWHIXsy342 Twitch：https://t.co/z4tUk9sXiH - X"},{"@type":"ListItem","position":8,"url":"https://aiym168.github.io/item/show-hn-timescroll-mac-rewind-e39299beef.html","name":"Show HN：TimeScroll – Mac 上 Rewind 的开源本地替代品"},{"@type":"ListItem","position":9,"url":"https://aiym168.github.io/item/show-hn-fireside-folio-remarkable-3cb7fb09f2.html","name":"Show HN：Fireside Folio – reMarkable 的免费书籍、漫画和新闻版本"},{"@type":"ListItem","position":10,"url":"https://aiym168.github.io/item/hn-pok-mon-roi-9eb8ec7172.html","name":"显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI"},{"@type":"ListItem","position":11,"url":"https://aiym168.github.io/item/show-hn-7cf24d3f98.html","name":"Show HN：儿童架，您孩子自己的小互联网"},{"@type":"ListItem","position":12,"url":"https://aiym168.github.io/item/show-hn-ai-gude-ai-29ac53938e.html","name":"Show HN：AI Gude – 我的每日播客提要，通过 AI 复活"},{"@type":"ListItem","position":13,"url":"https://aiym168.github.io/item/github-machhonghai-haizflow-8ef44bcdd5.html","name":"GitHub 开源：MachHongHai/HaizFlow"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"AI 开发工具与编程助手","url":"https://aiym168.github.io/c/ai-kaifa-gongju.html","description":"面向开发者的免费 AI 编程助手、Agent、MCP 服务器与开源 AI 工具。"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://aiym168.github.io/item/qoder-qoduck-0-1b7e30fba3.html","name":"Qoder 匿名模型 Qoduck：个人号每日免费额度内 0 倍率消耗"},{"@type":"ListItem","position":2,"url":"https://aiym168.github.io/item/coderabbit-f6e98c2d5b.html","name":"CodeRabbit：开源项目免费 + 私有代码试用"},{"@type":"ListItem","position":3,"url":"https://aiym168.github.io/item/omniroute-ai-d2f877fced.html","name":"OmniRoute：开源免费 AI 网关聚合多平台"},{"@type":"ListItem","position":4,"url":"https://aiym168.github.io/item/devin-desktop-windsurf-fa42abc9c7.html","name":"Devin Desktop（原 Windsurf）：免费计划可用"},{"@type":"ListItem","position":5,"url":"https://aiym168.github.io/item/qoder-e294c6b594.html","name":"大学生参加 Qoder 高校赛可领一个月会员"},{"@type":"ListItem","position":6,"url":"https://aiym168.github.io/item/awesome-free-llm-apis-api-819c65ac29.html","name":"awesome-free-llm-apis：免费大模型 API 清单"},{"@type":"ListItem","position":7,"url":"https://aiym168.github.io/item/github-copilot-5b23f710b1.html","name":"GitHub 学生包：Copilot 等开发者权益"},{"@type":"ListItem","position":8,"url":"https://aiym168.github.io/item/odootool-odoo-ai-erp-e15a285960.html","name":"OdooTool：Odoo 社区的 AI 代理自动化（免费 ERP）"},{"@type":"ListItem","position":9,"url":"https://aiym168.github.io/item/ai-api-pricing-data-llm-ai-api-json-5692c58a4d.html","name":"ai-api-pricing-data：LLM 和 AI API 定价数据为 JSON、CSV 和免费静态 API"},{"@type":"ListItem","position":10,"url":"https://aiym168.github.io/item/hotpulse-ai-dec8955ff6.html","name":"hotpulse：自托管 AI 新闻雷达"},{"@type":"ListItem","position":11,"url":"https://aiym168.github.io/item/pycognition-652314d2fd.html","name":"pycognition：框架具有“技能结晶”（或“工具综合”）机制"},{"@type":"ListItem","position":12,"url":"https://aiym168.github.io/item/lampline-ai-2b453a5ab0.html","name":"Lampline：在您自己的计算机上构建 AI 电话代理"},{"@type":"ListItem","position":13,"url":"https://aiym168.github.io/item/pulse-claude-code-codex-cursor-e85dae97e6.html","name":"Pulse：了解您还剩下多少 Claude Code、Codex、Cursor"},{"@type":"ListItem","position":14,"url":"https://aiym168.github.io/item/dsh-our-free-model-dsh-5aa2e266f7.html","name":"dsh-our-free-model：在 dsh 里装上这个插件即可"},{"@type":"ListItem","position":15,"url":"https://aiym168.github.io/item/calibraw-linux-android-windows-macos-5b884326c0.html","name":"CalibRaw：适用于 Linux、Android、Windows 和 macOS 的免费开源 RAW 编辑器"},{"@type":"ListItem","position":16,"url":"https://aiym168.github.io/item/promptreel-73717dadae.html","name":"PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑"},{"@type":"ListItem","position":17,"url":"https://aiym168.github.io/item/openfill-photocraft-gimp-3-comfyui-077a2eadb3.html","name":"openfill：PhotoCraft 和 GIMP 的生成填充、删除对象、生成展开和文本到图像3.通过 ComfyUI"},{"@type":"ListItem","position":18,"url":"https://aiym168.github.io/item/alphacode-mit-ai-5b67926959.html","name":"alphacode：免费的 MIT AI 编码代理"},{"@type":"ListItem","position":19,"url":"https://aiym168.github.io/item/awwwards-mcp-mcp-3d830a83b9.html","name":"Awwwards-mcp：免费的开源 MCP 服务器"},{"@type":"ListItem","position":20,"url":"https://aiym168.github.io/item/atticus-mac-mac-51133b9398.html","name":"atticus-mac：适用于 Mac 的快速、免费语音助手"},{"@type":"ListItem","position":21,"url":"https://aiym168.github.io/item/haizflow-windows-29ad47bb7f.html","name":"HaizFlow：免费的 Windows 桌面应用程序"},{"@type":"ListItem","position":22,"url":"https://aiym168.github.io/item/ai-engineer-notebooks-ai-fde-colab-6e2eb397b4.html","name":"ai-engineer-notebooks：适用于 AI 工程师/前沿部署工程师(FDE)技能集的实践、免框架 Colab 笔记本"},{"@type":"ListItem","position":23,"url":"https://aiym168.github.io/item/browsentic-harness-21b902c5e6.html","name":"browsentic：代理浏览器 Harness"},{"@type":"ListItem","position":24,"url":"https://aiym168.github.io/item/kokon-gpu-0e3f0bdb85.html","name":"kokon：在您自己的 GPU 上，通过描述更改来编辑照片"}]}</script>
 </head>
 
-<body>
-<div class="fx-aurora" aria-hidden="true"></div>
-<div class="fx-grid" aria-hidden="true"></div>
-<div class="fx-noise" aria-hidden="true"></div>
-<div class="fx-scan" aria-hidden="true"></div>
-<div class="fx-spot" aria-hidden="true"></div>
-<canvas id="fx-particles" aria-hidden="true"></canvas>
+<body class="module" data-base="../">
 
 <header class="topnav">
   <a class="brand-mini" href="../"><span class="mark"></span><span class="txt">AI大模型免费资源导航</span></a>
-  <nav class="navlinks" aria-label="模块导航"><a href="../c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="../c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="../c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="../c/mianfei-gpu-yunfuwu.html" title="免费GPU / 云服务">免费GPU</a><a href="../c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="../m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="../m/hot-topics.html" title="最近热议">热议</a><a href="../m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="../m/status.html" title="更新动态">更新动态</a><a class="cta" href="../m/api.html" title="CLI / API">CLI / API</a></nav>
+  <nav class="navlinks" id="navlinks" aria-label="模块导航"><a href="../c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="../c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="../c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="../c/mianfei-gpu-yunfuwu.html" title="免费 GPU / 云服务">免费GPU</a><a href="../c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="../c/ai-kecheng-huodong.html" title="AI 课程 / 活动">课程活动</a><a href="../c/qita-keji.html" title="其他科技资源">其他</a><a href="../m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="../m/hot-topics.html" title="最近热议">热议</a><a href="../m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="../m/status.html" title="更新动态">更新动态</a></nav>
+  <div class="nav-tools">
+    <a class="nav-search" href="../#search" data-search-open aria-label="搜索免费资源"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>搜索</span><kbd>Ctrl K</kbd></a>
+    <button type="button" class="reduce-btn" data-reduce-toggle aria-pressed="false" title="关闭背景与大脑动画（会记住你的选择）">减少动态 <b>关</b></button>
+    <button type="button" class="nav-toggle" aria-controls="navlinks" aria-expanded="false" aria-label="打开菜单"><span></span><span></span><span></span></button>
+  </div>
 </header>
 <header class="hero-xl compact hero-brain">
   <div class="hero-xl-inner">
     <div class="hero-copy">
       <div class="crumbs"><a href="../">首页</a> › AI 开发工具与编程助手</div>
-      <div class="eyebrow"><i class="live-dot"></i> MODULE <span class="sep">/</span> <span data-clock>--:--:--</span></div>
+      <div class="eyebrow"><i class="live-dot"></i> 模块</div>
       <h1 class="hero-title"><span class="kl">AI 开发工具与编程助手</span></h1>
-      <p class="lead">面向开发者的 AI 编程助手、Agent 与代码工具导航，适合关注 AI开源项目推荐与效率提升。</p>
-      <div class="stats"><div class="pill">条目 <b data-count="13">13</b></div><div class="pill">更新 <b>2026-11-09</b></div><div class="pill live">下次更新 <b data-next>--:--</b></div></div>
+      <p class="lead">面向开发者的免费 AI 编程助手、Agent、MCP 服务器与开源 AI 工具。</p>
+      <div class="stats"><div class="pill">本模块 <b>24</b> 条</div><div class="pill">更新 <b>2026-11-09</b></div></div>
     </div>
     
 <div class="brain-stage" aria-hidden="true">
   <span class="ring r3"></span><span class="ring r1"></span><span class="ring r2"></span>
   <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
-  <span class="hud-tag a">AI<b>13</b></span><span class="hud-tag b">免费</span><span class="hud-tag c">实时</span><span class="hud-tag d">中文</span>
-  <div id="brain-hero" data-vendor="../vendor/" data-nodes="2800"></div>
-  <span class="brain-caption">Neural Graph · WebGL · Live</span>
+  <div id="brain-hero" data-vendor="../vendor/" data-nodes="2600"></div>
 </div>
 
   </div>
 </header>
 <script src="../vendor/brain-loader.js" defer></script>
 <div class="wrap">
-  <div class="toolbar"><input id="q" type="search" placeholder="在本模块内搜索…" autocomplete="off" /></div>
-  <div class="grid">
-<article class="card" data-text="免费人工智能研讨会提醒！我的教育主管科林·马修斯将在接下来的几周内举办一系列免费研讨会 免费人工智能研讨会提醒！我的教育主管 Colin Matthews 将在接下来的几周内与 @Cursor_ai、@Replit、@Posthog、@Supabase 的人员合作举办一系列免费研讨会，教您如何使用日常流行的人工智能工具 - X
-免费人工智能研讨会提醒！我的教育主管 Colin Matthews 将在接下来的几周内与 @Cursor_ai、@Replit、@Posthog、@Supabase 的人员合作举办一系列免费研讨会，教您如何在日常使用流行的 AI 工具 X 打开来源链接按页面说明领取/试用；参与前自行核实。 news https://news.google.com/rss/articles/CBMiXkFVX3lxTE9DZWhuaEhsYlN5V21TR3lrTHE2RGF4WlFfUUVIU3pyMVhBZFQ4blJ0bHJzZnRMeTdHclB1ajA3R25vMjNfcXg1bjdaNzBOWi1pNTcxdW0yTWp5SS1RZnc?oc=5 AI 开发工具与编程助手 X">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 X</span></div>
-  <h3 class="title"><a href="../item/ai-kaifa-gongju-7e0904ca55.html">免费人工智能研讨会提醒！我的教育主管科林·马修斯将在接下来的几周内举办一系列免费研讨会</a></h3>
+  <section class="section" id="search">
+    
+<div class="filters" data-filter-root>
+  <form class="searchbar" role="search" action="" method="get" onsubmit="return false">
+    <label class="sr-only" for="q">搜索</label>
+    <input id="q" name="q" type="search" placeholder="在本模块内搜索…" autocomplete="off" />
+    <button type="submit" class="btn primary">搜索</button>
+  </form>
+  <div class="fgroups"><div class="fgroup"><span class="flabel">要不要绑卡</span><div class="chips"><button type="button" class="chip" data-f="requires_card" data-v="unknown" aria-pressed="false">未注明 <i>24</i></button></div></div><div class="fgroup"><span class="flabel">实名/手机号</span><div class="chips"><button type="button" class="chip" data-f="requires_realname" data-v="no" aria-pressed="false">无需实名 <i>2</i></button><button type="button" class="chip" data-f="requires_realname" data-v="unknown" aria-pressed="false">未注明 <i>22</i></button></div></div><div class="fgroup"><span class="flabel">国内能否直连</span><div class="chips"><button type="button" class="chip" data-f="china_accessible" data-v="unknown" aria-pressed="false">未注明 <i>24</i></button></div></div><div class="fgroup"><span class="flabel">免费类型</span><div class="chips"><button type="button" class="chip" data-f="type" data-v="permanent" aria-pressed="false">永久免费 <i>17</i></button><button type="button" class="chip" data-f="type" data-v="trial" aria-pressed="false">试用 <i>1</i></button><button type="button" class="chip" data-f="type" data-v="quota" aria-pressed="false">限额 <i>5</i></button><button type="button" class="chip" data-f="type" data-v="unknown" aria-pressed="false">未注明 <i>1</i></button></div></div><div class="fgroup"><span class="flabel">额度有效期</span><div class="chips"><button type="button" class="chip" data-f="expiry_kind" data-v="daily" aria-pressed="false">按日重置 <i>1</i></button><button type="button" class="chip" data-f="expiry_kind" data-v="unknown" aria-pressed="false">未注明 <i>23</i></button></div></div><div class="fgroup"><span class="flabel">状态</span><div class="chips"><button type="button" class="chip" data-f="status" data-v="unverified" aria-pressed="false">未核实 <i>24</i></button></div></div></div>
+  <div class="fbar"><span id="f-count" class="f-count">共 24 条</span>
+    <label class="sort">排序 <select id="f-sort"><option value="default">默认（置顶 + 最新）</option><option value="pub">按发布时间</option><option value="exp">按截止日期（最近在前）</option></select></label>
+    <button type="button" id="f-clear" class="btn sm hidden">清除筛选</button></div>
+  <noscript><p class="note">未启用 JavaScript：下方列出全部条目，可按模块页面浏览；搜索与筛选需要启用 JavaScript。</p></noscript>
+</div>
+    <div class="grid" data-list>
+<article class="card" data-id="qoder-qoduck" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="quota" data-expiry_kind="daily" data-status="unverified" data-pub="2026-11-09T14:35:00+08:00" data-exp="" data-text="Qoder 匿名模型 Qoduck：个人号每日免费额度内 0 倍率消耗 Qoder 自 11/7 上线匿名模型 Qoduck：个人号每天有免费额度，额度内消耗倍率可到 0.0×，思考强度拉满也不扣 Credits；免费号也能用，付费号额度更多。帖称目前主要在 Qoder 客户端，IDE 插件和 CLI 可能未开；社区猜测是否 Qwen 新版，官方未盖章。可用 Codex 真实任务做盲测对比。 打开 Qoder 客户端 → 模型选择器切到 Qoduck → 直接写代码/搭项目 X AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 限额 按日重置 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @GeekCatX</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/qoder-qoduck-0-1b7e30fba3.html">Qoder 匿名模型 Qoduck：个人号每日免费额度内 0 倍率消耗</a></h3>
   
-  <p class="summary">免费人工智能研讨会提醒！我的教育主管 Colin Matthews 将在接下来的几周内与 @Cursor_ai、@Replit、@Posthog、@Supabase 的人员合作举办一系列免费研讨会，教您如何使用日常流行的人工智能工具 - X
-免费人工智能研讨会提醒！我的教育主管 Colin Matthews 将在接下来的几周内与 @Cursor_ai、@Replit、@Posthog、@Supabase 的人员合作举办一系列免费研讨会，教您如何在日常使用流行的 AI 工具 X</p>
-  
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@news · Thu, 06 Aug 2026 07:00:00 GMT</div>
-  <div class="linkrow"><a href="../item/ai-kaifa-gongju-7e0904ca55.html">详情与领取方法</a> · <a class="fulllink" href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE9DZWhuaEhsYlN5V21TR3lrTHE2RGF4WlFfUUVIU3pyMVhBZFQ4blJ0bHJzZnRMeTdHclB1ajA3R25vMjNfcXg1bjdaNzBOWi1pNTcxdW0yTWp5SS1RZnc?oc=5" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/ai-kaifa-gongju-7e0904ca55.html">复制链接</a></div>
+  <p class="summary">Qoder 自 11/7 上线匿名模型 Qoduck：个人号每天有免费额度，额度内消耗倍率可到 0.0×，思考强度拉满也不扣 Credits；免费号也能用，付费号额度更多。帖称目前主要在 Qoder 客户端，IDE 插件和 CLI 可能未开；社区猜测是否 Qwen 新版，官方未盖章。可用 Codex 真实任务做盲测对比。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-quota" title="免费类型">限额</span><span class="fact" title="额度有效期">按日重置</span></div>
+  <div class="how"><strong>怎么领：</strong>打开 Qoder 客户端 → 模型选择器切到 Qoduck → 直接写代码/搭项目</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/qoder-qoduck-0-1b7e30fba3.html">详情</a><a href="https://x.com/GeekCatX/status/2119680316772405739" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+Qoder+%E5%8C%BF%E5%90%8D%E6%A8%A1%E5%9E%8B+Qoduck%EF%BC%9A%E4%B8%AA%E4%BA%BA%E5%8F%B7%E6%AF%8F%E6%97%A5%E5%85%8D%E8%B4%B9%E9%A2%9D%E5%BA%A6%E5%86%85+0+%E5%80%8D%E7%8E%87%E6%B6%88%E8%80%97&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9AQoder+%E5%8C%BF%E5%90%8D%E6%A8%A1%E5%9E%8B+Qoduck%EF%BC%9A%E4%B8%AA%E4%BA%BA%E5%8F%B7%E6%AF%8F%E6%97%A5%E5%85%8D%E8%B4%B9%E9%A2%9D%E5%BA%A6%E5%86%85+0+%E5%80%8D%E7%8E%87%E6%B6%88%E8%80%97%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fqoder-qoduck-0-1b7e30fba3.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2FGeekCatX%2Fstatus%2F2119680316772405739%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Aqoder-qoduck%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="您现在可以通过无缝 @wandb 集成可视化 Transformers 训练性能。比较超参数，出 您现在可以通过无缝 @wandb 集成可视化 Transformers 训练性能。比较模型中的超参数、输出指标和系统统计信息（例如 GPU 利用率）！
-
-分步指南：https://t.co/ko5wBR3PST
-
-Colab：https://t.co/2nE9uA43L3 https://t.co/zGPx3WXtx3 打开来源链接按页面说明领取/试用；参与前自行核实。 huggingface https://x.com/huggingface/status/1260585145402380291 AI 开发工具与编程助手 X">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 X</span></div>
-  <h3 class="title"><a href="../item/wandb-transformers-6dafd75f1b.html">您现在可以通过无缝 @wandb 集成可视化 Transformers 训练性能。比较超参数，出</a></h3>
+<article class="card" data-id="coderabbit" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="trial" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T13:50:00+08:00" data-exp="" data-text="CodeRabbit：开源项目免费 + 私有代码试用 CodeRabbit：开源仓库免费使用 AI 代码审查；私有代码提供免费试用。适合 PR 审查、变更说明与安全扫描。 打开 coderabbit.ai → 连接 GitHub/GitLab 仓库 → OSS 免费启用 X AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 试用 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @CryptoSenyo</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/coderabbit-f6e98c2d5b.html">CodeRabbit：开源项目免费 + 私有代码试用</a></h3>
   
-  <p class="summary">您现在可以通过无缝 @wandb 集成可视化 Transformers 训练性能。比较模型中的超参数、输出指标和系统统计信息（例如 GPU 利用率）！
-
-分步指南：https://t.co/ko5wBR3PST
-
-Colab：https://t.co/2nE9uA43L3 https://t.co/zGPx3WXtx3</p>
-  
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@huggingface · Wed May 13 14:58:13 +0000 2020</div>
-  <div class="linkrow"><a href="../item/wandb-transformers-6dafd75f1b.html">详情与领取方法</a> · <a class="fulllink" href="https://x.com/huggingface/status/1260585145402380291" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/wandb-transformers-6dafd75f1b.html">复制链接</a></div>
+  <p class="summary">CodeRabbit：开源仓库免费使用 AI 代码审查；私有代码提供免费试用。适合 PR 审查、变更说明与安全扫描。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-trial" title="免费类型">试用</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  <div class="how"><strong>怎么领：</strong>打开 coderabbit.ai → 连接 GitHub/GitLab 仓库 → OSS 免费启用</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/coderabbit-f6e98c2d5b.html">详情</a><a href="https://x.com/CryptoSenyo/status/2119668944420409465" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+CodeRabbit%EF%BC%9A%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E5%85%8D%E8%B4%B9+%2B+%E7%A7%81%E6%9C%89%E4%BB%A3%E7%A0%81%E8%AF%95%E7%94%A8&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9ACodeRabbit%EF%BC%9A%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E5%85%8D%E8%B4%B9+%2B+%E7%A7%81%E6%9C%89%E4%BB%A3%E7%A0%81%E8%AF%95%E7%94%A8%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fcoderabbit-f6e98c2d5b.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2FCryptoSenyo%2Fstatus%2F2119668944420409465%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Acoderabbit%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="非常高兴地宣布我们正在收购@pollenrobotics，将开源机器人推向世界！ 🤖 非常高兴地宣布我们正在收购@pollenrobotics，将开源机器人推向世界！ 🤖
-
-自从 @RemiCadene 从 Tesla 加入我们以来，借助 @LeRobotHF 和 Hugging Face Hub，我们已经成为使用最广泛的开放式机器人软件平台。现在，我们是 https://t.co/9PVLP2Nq1H 打开来源链接按页面说明领取/试用；参与前自行核实。 huggingface https://x.com/huggingface/status/1911785683376648232 AI 开发工具与编程助手 X">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 X</span></div>
-  <h3 class="title"><a href="../item/pollenrobotics-a9152f0fec.html">非常高兴地宣布我们正在收购@pollenrobotics，将开源机器人推向世界！ 🤖</a></h3>
+<article class="card" data-id="omniroute" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="quota" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T09:20:00+08:00" data-exp="" data-text="OmniRoute：开源免费 AI 网关聚合多平台 开源本地网关 OmniRoute：把大量 AI 服务商与免费方案收到一个端点，Claude Code / Cursor / Codex / Copilot / Cline 等可改指到它；限流可自动切路，并带 token 压缩宣传。免费额度来自各家，需自己注册；本地跑、配置与 Key 在本机。注意合规，勿用于绕过付费条款。 按项目说明安装（如 npm install -g omniroute）并 setup 指向你的 IDE/CLI X AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 限额 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @0xGky</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/omniroute-ai-d2f877fced.html">OmniRoute：开源免费 AI 网关聚合多平台</a></h3>
   
-  <p class="summary">非常高兴地宣布我们正在收购@pollenrobotics，将开源机器人推向世界！ 🤖
-
-自从 @RemiCadene 从 Tesla 加入我们以来，借助 @LeRobotHF 和 Hugging Face Hub，我们已经成为使用最广泛的开放式机器人软件平台。现在，我们是 https://t.co/9PVLP2Nq1H</p>
-  
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@huggingface · Mon Apr 14 14:16:40 +0000 2025</div>
-  <div class="linkrow"><a href="../item/pollenrobotics-a9152f0fec.html">详情与领取方法</a> · <a class="fulllink" href="https://x.com/huggingface/status/1911785683376648232" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/pollenrobotics-a9152f0fec.html">复制链接</a></div>
+  <p class="summary">开源本地网关 OmniRoute：把大量 AI 服务商与免费方案收到一个端点，Claude Code / Cursor / Codex / Copilot / Cline 等可改指到它；限流可自动切路，并带 token 压缩宣传。免费额度来自各家，需自己注册；本地跑、配置与 Key 在本机。注意合规，勿用于绕过付费条款。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-quota" title="免费类型">限额</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  <div class="how"><strong>怎么领：</strong>按项目说明安装（如 npm install -g omniroute）并 setup 指向你的 IDE/CLI</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/omniroute-ai-d2f877fced.html">详情</a><a href="https://x.com/0xGky/status/2119600861261279410" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+OmniRoute%EF%BC%9A%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9+AI+%E7%BD%91%E5%85%B3%E8%81%9A%E5%90%88%E5%A4%9A%E5%B9%B3%E5%8F%B0&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9AOmniRoute%EF%BC%9A%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9+AI+%E7%BD%91%E5%85%B3%E8%81%9A%E5%90%88%E5%A4%9A%E5%B9%B3%E5%8F%B0%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fomniroute-ai-d2f877fced.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2F0xGky%2Fstatus%2F2119600861261279410%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Aomniroute%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。 Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。
-
-切换不同的运动层、隔离肌肉或放大跳动的心脏。 https://t.co/60nfQ0QVkl 打开来源链接按页面说明领取/试用；参与前自行核实。 GoogleDeepMind https://x.com/GoogleDeepMind/status/2112974723659247896 AI 开发工具与编程助手 X">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 X</span></div>
-  <h3 class="title"><a href="../item/gemini-4-argon-3d-b4342dbc95.html">Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。</a></h3>
+<article class="card" data-id="devin-desktop" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="quota" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T06:29:00+08:00" data-exp="" data-text="Devin Desktop（原 Windsurf）：免费计划可用 Devin Desktop（原 Windsurf）免费计划：含轻量 Agent 配额、有限模型额度、无限内联编辑与 Tab 补全，日常写代码够用；重活与高级模型仍需加钱。 注册 Devin Desktop 免费计划后直接使用 X AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 限额 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @jhl880617</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/devin-desktop-windsurf-fa42abc9c7.html">Devin Desktop（原 Windsurf）：免费计划可用</a></h3>
   
-  <p class="summary">Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。
-
-切换不同的运动层、隔离肌肉或放大跳动的心脏。 https://t.co/60nfQ0QVkl</p>
-  
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@GoogleDeepMind · Wed Oct 21 18:30:05 +0000 2026</div>
-  <div class="linkrow"><a href="../item/gemini-4-argon-3d-b4342dbc95.html">详情与领取方法</a> · <a class="fulllink" href="https://x.com/GoogleDeepMind/status/2112974723659247896" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/gemini-4-argon-3d-b4342dbc95.html">复制链接</a></div>
+  <p class="summary">Devin Desktop（原 Windsurf）免费计划：含轻量 Agent 配额、有限模型额度、无限内联编辑与 Tab 补全，日常写代码够用；重活与高级模型仍需加钱。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-quota" title="免费类型">限额</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  <div class="how"><strong>怎么领：</strong>注册 Devin Desktop 免费计划后直接使用</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/devin-desktop-windsurf-fa42abc9c7.html">详情</a><a href="https://x.com/jhl880617/status/2119557938222109112" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+Devin+Desktop%EF%BC%88%E5%8E%9F+Windsurf%EF%BC%89%EF%BC%9A%E5%85%8D%E8%B4%B9%E8%AE%A1%E5%88%92%E5%8F%AF%E7%94%A8&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9ADevin+Desktop%EF%BC%88%E5%8E%9F+Windsurf%EF%BC%89%EF%BC%9A%E5%85%8D%E8%B4%B9%E8%AE%A1%E5%88%92%E5%8F%AF%E7%94%A8%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fdevin-desktop-windsurf-fa42abc9c7.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2Fjhl880617%2Fstatus%2F2119557938222109112%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adevin-desktop%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="中大将于2027年1月起为黄大仙区2,700名长者提供免费人工智能视网膜认知障碍症筛查。 中大将于2027年1月起为黄大仙区2,700名长者提供免费的人工智能视网膜认知障碍症筛查。在试验中，831名认知正常的参与者中，有21%的风险较高。 https://t.co/r5BCW039NN #AI #Dementia #Healthcare - X
-中大将于2027年1月起为黄大仙区2,700名长者提供免费的人工智能视网膜认知障碍症筛查。在试验中，831名认知正常的参与者中，有21%的风险较高。 https://t.co/r5BCW039NN #AI #Dementia #Healthcare X 打开来源链接按页面说明领取/试用；参与前自行核实。 news https://news.google.com/rss/articles/CBMiYkFVX3lxTE5tc1hnM0FzeGZiRkRmU1BsTE9SZk8ybEdXUmtzVjgycmNkM2FQUzFHZE5XN01Od2w4TTF1aU04cDZZbFpGbXpvR2xoYWhyTHVBMHE5NmNXRG1QeE16MGNaMDln?oc=5 AI 开发工具与编程助手 X">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 X</span></div>
-  <h3 class="title"><a href="../item/2027-1-2-700-6d1bae6102.html">中大将于2027年1月起为黄大仙区2,700名长者提供免费人工智能视网膜认知障碍症筛查。</a></h3>
+<article class="card" data-id="qoder-student" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="unknown" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-08T20:40:00+08:00" data-exp="" data-text="大学生参加 Qoder 高校赛可领一个月会员 帖称参加 2026 Qoder 高校创造力大赛即可白嫖一个月会员（以官方活动规则为准）。 按 Qoder 高校赛官方入口报名 X AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 类型：未注明 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @lyuihh</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/qoder-e294c6b594.html">大学生参加 Qoder 高校赛可领一个月会员</a></h3>
   
-  <p class="summary">中大将于2027年1月起为黄大仙区2,700名长者提供免费的人工智能视网膜认知障碍症筛查。在试验中，831名认知正常的参与者中，有21%的风险较高。 https://t.co/r5BCW039NN #AI #Dementia #Healthcare - X
-中大将于2027年1月起为黄大仙区2,700名长者提供免费的人工智能视网膜认知障碍症筛查。在试验中，831名认知正常的参与者中，有21%的风险较高。 https://t.co/r5BCW039NN #AI #Dementia #Healthcare X</p>
-  
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@news · Sun, 08 Nov 2026 13:38:57 GMT</div>
-  <div class="linkrow"><a href="../item/2027-1-2-700-6d1bae6102.html">详情与领取方法</a> · <a class="fulllink" href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE5tc1hnM0FzeGZiRkRmU1BsTE9SZk8ybEdXUmtzVjgycmNkM2FQUzFHZE5XN01Od2w4TTF1aU04cDZZbFpGbXpvR2xoYWhyTHVBMHE5NmNXRG1QeE16MGNaMDln?oc=5" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/2027-1-2-700-6d1bae6102.html">复制链接</a></div>
+  <p class="summary">帖称参加 2026 Qoder 高校创造力大赛即可白嫖一个月会员（以官方活动规则为准）。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact unk" title="免费类型">类型：未注明</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  <div class="how"><strong>怎么领：</strong>按 Qoder 高校赛官方入口报名</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-08</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/qoder-e294c6b594.html">详情</a><a href="https://x.com/lyuihh/status/2119409656972132777" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%8F%82%E5%8A%A0+Qoder+%E9%AB%98%E6%A0%A1%E8%B5%9B%E5%8F%AF%E9%A2%86%E4%B8%80%E4%B8%AA%E6%9C%88%E4%BC%9A%E5%91%98&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9A%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%8F%82%E5%8A%A0+Qoder+%E9%AB%98%E6%A0%A1%E8%B5%9B%E5%8F%AF%E9%A2%86%E4%B8%80%E4%B8%AA%E6%9C%88%E4%BC%9A%E5%91%98%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fqoder-e294c6b594.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2Flyuihh%2Fstatus%2F2119409656972132777%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Aqoder-student%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来像是一场免费的人工智能大战 据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来就像是免费的人工智能视频。你没有想象到。你的脑袋里有一个专门为假人手臂打造的警报器，从你还是婴儿的时候起它就一直响着 - X
-据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来就像是免费的人工智能视频。你没有想象到。你的脑袋里有一个专门为假人手臂打造的警报器，从你还是婴儿的时候起它就一直响着 X 打开来源链接按页面说明领取/试用；参与前自行核实。 news https://news.google.com/rss/articles/CBMiYkFVX3lxTE1rOVpWODg2emhOLXRsd2RveFU2QmlZM1RnbWFGRWNqWDFjRGlyUnlmLUZoR1FVaEdFczJoR01NY3VrZXVIeDN0YkRHbVNLVkg3czZkQTZQQXExQU90a2ctNkNB?oc=5 AI 开发工具与编程助手 X">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 X</span></div>
-  <h3 class="title"><a href="../item/netflix-1800-9fce0d4901.html">据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来像是一场免费的人工智能大战</a></h3>
+<article class="card" data-id="awesome-free-llm" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="no" data-china_accessible="unknown" data-type="quota" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-08T15:09:00+08:00" data-exp="" data-text="awesome-free-llm-apis：免费大模型 API 清单 GitHub 高星清单 awesome-free-llm-apis（帖称约 1.26 万星）整理多家免费 LLM API：Gemini（长上下文）、Groq、OpenRouter、Cloudflare Workers AI（每天约 1 万 Neurons）、NVIDIA NIM 以及国内多家平台。核对帖提醒：免注册免 Key 的很少，Claude 基本空白，适合试开源模型和小脚本。 打开该 GitHub 清单 → 按提供商申请 Key 并注意各自限额/实名要求 X AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 无需实名 直连：未注明 限额 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @yxl44</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/awesome-free-llm-apis-api-819c65ac29.html">awesome-free-llm-apis：免费大模型 API 清单</a></h3>
   
-  <p class="summary">据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来就像是免费的人工智能视频。你没有想象到。你的脑袋里有一个专门为假人手臂打造的警报器，从你还是婴儿的时候起它就一直响着 - X
-据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来就像是免费的人工智能视频。你没有想象到。你的脑袋里有一个专门为假人手臂打造的警报器，从你还是婴儿的时候起它就一直响着 X</p>
-  
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@news · Sat, 07 Nov 2026 11:40:00 GMT</div>
-  <div class="linkrow"><a href="../item/netflix-1800-9fce0d4901.html">详情与领取方法</a> · <a class="fulllink" href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1rOVpWODg2emhOLXRsd2RveFU2QmlZM1RnbWFGRWNqWDFjRGlyUnlmLUZoR1FVaEdFczJoR01NY3VrZXVIeDN0YkRHbVNLVkg3czZkQTZQQXExQU90a2ctNkNB?oc=5" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/netflix-1800-9fce0d4901.html">复制链接</a></div>
+  <p class="summary">GitHub 高星清单 awesome-free-llm-apis（帖称约 1.26 万星）整理多家免费 LLM API：Gemini（长上下文）、Groq、OpenRouter、Cloudflare Workers AI（每天约 1 万 Neurons）、NVIDIA NIM 以及国内多家平台。核对帖提醒：免注册免 Key 的很少，Claude 基本空白，适合试开源模型和小脚本。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact v-no" title="实名/手机号">无需实名</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-quota" title="免费类型">限额</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  <div class="how"><strong>怎么领：</strong>打开该 GitHub 清单 → 按提供商申请 Key 并注意各自限额/实名要求</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-08</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/awesome-free-llm-apis-api-819c65ac29.html">详情</a><a href="https://x.com/yxl44/status/2119326478248915137" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+awesome-free-llm-apis%EF%BC%9A%E5%85%8D%E8%B4%B9%E5%A4%A7%E6%A8%A1%E5%9E%8B+API+%E6%B8%85%E5%8D%95&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9Aawesome-free-llm-apis%EF%BC%9A%E5%85%8D%E8%B4%B9%E5%A4%A7%E6%A8%A1%E5%9E%8B+API+%E6%B8%85%E5%8D%95%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fawesome-free-llm-apis-api-819c65ac29.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2Fyxl44%2Fstatus%2F2119326478248915137%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Aawesome-free-llm%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="今天免费 GPU！是的，全球赠品。踢：https://t.co/LWHIXsy342 Twitch：https://t.co/z4tUk9sXiH - X 今天免费 GPU！是的，全球赠品。踢：https://t.co/LWHIXsy342 Twitch：https://t.co/z4tUk9sXiH - X
-今天免费 GPU！是的，全球赠品。踢：https://t.co/LWHIXsy342 Twitch：https://t.co/z4tUk9sXiH    X 打开来源链接按页面说明领取/试用；参与前自行核实。 news https://news.google.com/rss/articles/CBMiXkFVX3lxTE8xSTZYaFRxdU9sVWN4ZTJWUUE3bG9Wb0Q0czBQb1F1dW5iM2t6NVc4VHdRNmFaZHh4S1FtcVVULWUxNV9sbGRPazdWNlVwNzJJelRmN0JXTjA0dFZtbXc?oc=5 AI 开发工具与编程助手 X">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 X</span></div>
-  <h3 class="title"><a href="../item/gpu-https-t-co-lwhixsy342-twitch-htt-3d5a8d88eb.html">今天免费 GPU！是的，全球赠品。踢：https://t.co/LWHIXsy342 Twitch：https://t.co/z4tUk9sXiH - X</a></h3>
+<article class="card" data-id="github-student-copilot" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="quota" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-07T10:18:00+08:00" data-exp="" data-text="GitHub 学生包：Copilot 等开发者权益 学生认证后可领 Copilot 免费额度，以及域名一年、云服务额度等。需学校邮箱或学生证，审核有时要几天。 GitHub Education → 学生认证 → 领取 Student Developer Pack X AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 限额 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X · @7eddsi</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/github-copilot-5b23f710b1.html">GitHub 学生包：Copilot 等开发者权益</a></h3>
   
-  <p class="summary">今天免费 GPU！是的，全球赠品。踢：https://t.co/LWHIXsy342 Twitch：https://t.co/z4tUk9sXiH - X
-今天免费 GPU！是的，全球赠品。踢：https://t.co/LWHIXsy342 Twitch：https://t.co/z4tUk9sXiH    X</p>
-  
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@news · Tue, 03 Nov 2026 14:00:56 GMT</div>
-  <div class="linkrow"><a href="../item/gpu-https-t-co-lwhixsy342-twitch-htt-3d5a8d88eb.html">详情与领取方法</a> · <a class="fulllink" href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE8xSTZYaFRxdU9sVWN4ZTJWUUE3bG9Wb0Q0czBQb1F1dW5iM2t6NVc4VHdRNmFaZHh4S1FtcVVULWUxNV9sbGRPazdWNlVwNzJJelRmN0JXTjA0dFZtbXc?oc=5" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/gpu-https-t-co-lwhixsy342-twitch-htt-3d5a8d88eb.html">复制链接</a></div>
+  <p class="summary">学生认证后可领 Copilot 免费额度，以及域名一年、云服务额度等。需学校邮箱或学生证，审核有时要几天。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-quota" title="免费类型">限额</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  <div class="how"><strong>怎么领：</strong>GitHub Education → 学生认证 → 领取 Student Developer Pack</div>
+  <div class="trust"><span>来源 X</span><span>发布 2026-11-07</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/github-copilot-5b23f710b1.html">详情</a><a href="https://x.com/7eddsi/status/2118890883076517914" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+GitHub+%E5%AD%A6%E7%94%9F%E5%8C%85%EF%BC%9ACopilot+%E7%AD%89%E5%BC%80%E5%8F%91%E8%80%85%E6%9D%83%E7%9B%8A&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9AGitHub+%E5%AD%A6%E7%94%9F%E5%8C%85%EF%BC%9ACopilot+%E7%AD%89%E5%BC%80%E5%8F%91%E8%80%85%E6%9D%83%E7%9B%8A%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fgithub-copilot-5b23f710b1.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fx.com%2F7eddsi%2Fstatus%2F2118890883076517914%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Agithub-student-copilot%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="Show HN：TimeScroll – Mac 上 Rewind 的开源本地替代品 Show HN：TimeScroll – Mac 上 Rewind 的开源本地替代品 Hi HN，我自 2025 年 9 月以来一直在构建 TimeScroll。这是一款在后台记录屏幕的 Mac 应用程序，因此您可以向后滚动一天或搜索您所看到的任何内容。它是本地的且开源的。网站上介绍了主要功能，因此我将尽力减少这篇文章中的重复内容。&lt;p&gt;我的构建动机是（1）倒带关闭以及缺乏精致和直接的替代方案； (2) 大多数像这样的应用程序（实际上包括倒带）都是超级 CPU 和存储密集型的，以至于对电池寿命产生明显影响。&lt;p&gt;我发现了“标准”捕获方式的一些问题，并在本文中重点修复了这些问题 打开来源链接按页面说明领取/试用；参与前自行核实。 XInTheDark https://github.com/XInTheDark/TimeScrollApp AI 开发工具与编程助手 Hacker News">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title"><a href="../item/show-hn-timescroll-mac-rewind-e39299beef.html">Show HN：TimeScroll – Mac 上 Rewind 的开源本地替代品</a></h3>
+<article class="card" data-id="ghdeal-graphene-lab-odootool" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T19:27:00+08:00" data-exp="" data-text="OdooTool：Odoo 社区的 AI 代理自动化（免费 ERP） 单脚本安装程序，用于设置 Odoo + PostgreSQL + AgentBridge，然后让 LLM 通过 JSON-2 API 读取和写入 Odoo 数据。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/odootool-odoo-ai-erp-e15a285960.html">OdooTool：Odoo 社区的 AI 代理自动化（免费 ERP）</a></h3>
   
-  <p class="summary">Show HN：TimeScroll – Mac 上 Rewind 的开源本地替代品 Hi HN，我自 2025 年 9 月以来一直在构建 TimeScroll。这是一款在后台记录屏幕的 Mac 应用程序，因此您可以向后滚动一天或搜索您所看到的任何内容。它是本地的且开源的。网站上介绍了主要功能，因此我将尽力减少这篇文章中的重复内容。&lt;p&gt;我的构建动机是（1）倒带关闭以及缺乏精致和直接的替代方案； (2) 大多数像这样的应用程序（实际上包括倒带）都是超级 CPU 和存储密集型的，以至于对电池寿命产生明显影响。&lt;p&gt;我发现了“标准”捕获方式的一些问题，并在本文中重点修复了这些问题</p>
+  <p class="summary">单脚本安装程序，用于设置 Odoo + PostgreSQL + AgentBridge，然后让 LLM 通过 JSON-2 API 读取和写入 Odoo 数据。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
   
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@XInTheDark · 2026-11-09 19:19 Asia/Shanghai</div>
-  <div class="linkrow"><a href="../item/show-hn-timescroll-mac-rewind-e39299beef.html">详情与领取方法</a> · <a class="fulllink" href="https://github.com/XInTheDark/TimeScrollApp" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/show-hn-timescroll-mac-rewind-e39299beef.html">复制链接</a></div>
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/odootool-odoo-ai-erp-e15a285960.html">详情</a><a href="https://github.com/Graphene-Lab/OdooTool" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+OdooTool%EF%BC%9AOdoo+%E7%A4%BE%E5%8C%BA%E7%9A%84+AI+%E4%BB%A3%E7%90%86%E8%87%AA%E5%8A%A8%E5%8C%96%EF%BC%88%E5%85%8D%E8%B4%B9+ERP%EF%BC%89&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9AOdooTool%EF%BC%9AOdoo+%E7%A4%BE%E5%8C%BA%E7%9A%84+AI+%E4%BB%A3%E7%90%86%E8%87%AA%E5%8A%A8%E5%8C%96%EF%BC%88%E5%85%8D%E8%B4%B9+ERP%EF%BC%89%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fodootool-odoo-ai-erp-e15a285960.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2FGraphene-Lab%2FOdooTool%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Aghdeal-graphene-lab-odootool%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="Show HN：Fireside Folio – reMarkable 的免费书籍、漫画和新闻版本 Show HN：Fireside Folio – reMarkable 的免费书籍、漫画和新闻版本 我拥有一台 reMarkable 2，除了我自己的 PDF 之外，我还想在上面阅读更多内容，因此我构建了一个免费的网络应用程序。您将平板电脑与官方一次性代码连接一次，然后：&lt;p&gt;- 发送 79,000 多本公共领域书籍中的任何一本（首先是标准电子书，加上古腾堡计划、Wikisource 和 OpenStax 教科书）。&lt;p&gt;- 获取漫画（带有悬停文本的 xkcd 卷、Pepper&amp;Carrot、1931 年之前的漫画）以及 1930 年及更早的 33,000 多期杂志，重新渲染为电子墨水。&lt;p&gt;- 获取益智书（具有独特解决方案的数独、迷宫、逻辑图）以用笔解决。&lt;p&gt;- 订阅 160 多个博客和新闻网站；它每天早上或每六个小时生成一个 EPUB 版本，并将您完成的版本移至垃圾箱。&lt;p&gt;每种类型都会落地 打开来源链接按页面说明领取/试用；参与前自行核实。 hashfunction https://firesidefolio.com/ AI 开发工具与编程助手 Hacker News">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title"><a href="../item/show-hn-fireside-folio-remarkable-3cb7fb09f2.html">Show HN：Fireside Folio – reMarkable 的免费书籍、漫画和新闻版本</a></h3>
+<article class="card" data-id="ghdeal-aicostbudget-ai-api-pricing-data" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T18:47:00+08:00" data-exp="" data-text="ai-api-pricing-data：LLM 和 AI API 定价数据为 JSON、CSV 和免费静态 API OpenAI、Claude、Gemini、Grok、DeepSeek、Mistral、Qwen、Kimi 等的输入、输出、缓存和批量价格。每个价格都有来源链接和日期，有历史。npm 包 + MCP 服务器。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/ai-api-pricing-data-llm-ai-api-json-5692c58a4d.html">ai-api-pricing-data：LLM 和 AI API 定价数据为 JSON、CSV 和免费静态 API</a></h3>
   
-  <p class="summary">Show HN：Fireside Folio – reMarkable 的免费书籍、漫画和新闻版本 我拥有一台 reMarkable 2，除了我自己的 PDF 之外，我还想在上面阅读更多内容，因此我构建了一个免费的网络应用程序。您将平板电脑与官方一次性代码连接一次，然后：&lt;p&gt;- 发送 79,000 多本公共领域书籍中的任何一本（首先是标准电子书，加上古腾堡计划、Wikisource 和 OpenStax 教科书）。&lt;p&gt;- 获取漫画（带有悬停文本的 xkcd 卷、Pepper&amp;Carrot、1931 年之前的漫画）以及 1930 年及更早的 33,000 多期杂志，重新渲染为电子墨水。&lt;p&gt;- 获取益智书（具有独特解决方案的数独、迷宫、逻辑图）以用笔解决。&lt;p&gt;- 订阅 160 多个博客和新闻网站；它每天早上或每六个小时生成一个 EPUB 版本，并将您完成的版本移至垃圾箱。&lt;p&gt;每种类型都会落地</p>
+  <p class="summary">OpenAI、Claude、Gemini、Grok、DeepSeek、Mistral、Qwen、Kimi 等的输入、输出、缓存和批量价格。每个价格都有来源链接和日期，有历史。npm 包 + MCP 服务器。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
   
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@hashfunction · 2026-11-09 05:39 Asia/Shanghai</div>
-  <div class="linkrow"><a href="../item/show-hn-fireside-folio-remarkable-3cb7fb09f2.html">详情与领取方法</a> · <a class="fulllink" href="https://firesidefolio.com/" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/show-hn-fireside-folio-remarkable-3cb7fb09f2.html">复制链接</a></div>
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/ai-api-pricing-data-llm-ai-api-json-5692c58a4d.html">详情</a><a href="https://github.com/aicostbudget/ai-api-pricing-data" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+ai-api-pricing-data%EF%BC%9ALLM+%E5%92%8C+AI+API+%E5%AE%9A%E4%BB%B7%E6%95%B0%E6%8D%AE%E4%B8%BA+JSON%E3%80%81CSV+%E5%92%8C%E5%85%8D%E8%B4%B9%E9%9D%99%E6%80%81+API&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9Aai-api-pricing-data%EF%BC%9ALLM+%E5%92%8C+AI+API+%E5%AE%9A%E4%BB%B7%E6%95%B0%E6%8D%AE%E4%B8%BA+JSON%E3%80%81CSV+%E5%92%8C%E5%85%8D%E8%B4%B9%E9%9D%99%E6%80%81+API%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fai-api-pricing-data-llm-ai-api-json-5692c58a4d.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2Faicostbudget%2Fai-api-pricing-data%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Aghdeal-aicostbudget-ai-api-pricing-data%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI 显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI Hi HN。神奇宝贝卡牌是我的爱好之一，一次又一次出现的问题是一张原始卡牌是否值得支付 PSA 40 美元或更多的费用来评级，或者你是否应该卖掉它。诚实的答案通常是“跳过”，但大多数预评分工具都会给您一个自信的评分，而不需要数学。&lt;p&gt;评分或跳过会拍摄正面和背面的照片，并执行三件事：&lt;p&gt;- 以 OpenCV 为中心的测量。它找到卡片，校正透视，测量每个边界并绘制所测量的内容。如果它不能信任读数，它会说“未测量”而不是猜测。在 20 个综合测试面上，平均误差约为 0.5 个中心点。这是合成的，不是真实的扫描。
-- 询问愿景莫 打开来源链接按页面说明领取/试用；参与前自行核实。 nateparkerdev https://github.com/0x4rch/gradeorskip AI 开发工具与编程助手 Hacker News">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title"><a href="../item/hn-pok-mon-roi-9eb8ec7172.html">显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI</a></h3>
+<article class="card" data-id="ghdeal-hamza01055-hotpulse" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T18:24:00+08:00" data-exp="" data-text="hotpulse：自托管 AI 新闻雷达 收集来源，通过免费的本地 LLM (Ollama) 对故事进行评分，将其分组为事件，按来源热度排名，并发布多语言每日简报、RSS、API 和 MCP。包括奖学金和工作截止日期跟踪器。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/hotpulse-ai-dec8955ff6.html">hotpulse：自托管 AI 新闻雷达</a></h3>
   
-  <p class="summary">显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI Hi HN。神奇宝贝卡牌是我的爱好之一，一次又一次出现的问题是一张原始卡牌是否值得支付 PSA 40 美元或更多的费用来评级，或者你是否应该卖掉它。诚实的答案通常是“跳过”，但大多数预评分工具都会给您一个自信的评分，而不需要数学。&lt;p&gt;评分或跳过会拍摄正面和背面的照片，并执行三件事：&lt;p&gt;- 以 OpenCV 为中心的测量。它找到卡片，校正透视，测量每个边界并绘制所测量的内容。如果它不能信任读数，它会说“未测量”而不是猜测。在 20 个综合测试面上，平均误差约为 0.5 个中心点。这是合成的，不是真实的扫描。
-- 询问愿景莫</p>
+  <p class="summary">收集来源，通过免费的本地 LLM (Ollama) 对故事进行评分，将其分组为事件，按来源热度排名，并发布多语言每日简报、RSS、API 和 MCP。包括奖学金和工作截止日期跟踪器。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
   
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@nateparkerdev · 2026-11-08 21:03 Asia/Shanghai</div>
-  <div class="linkrow"><a href="../item/hn-pok-mon-roi-9eb8ec7172.html">详情与领取方法</a> · <a class="fulllink" href="https://github.com/0x4rch/gradeorskip" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/hn-pok-mon-roi-9eb8ec7172.html">复制链接</a></div>
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/hotpulse-ai-dec8955ff6.html">详情</a><a href="https://github.com/hamza01055/hotpulse" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+hotpulse%EF%BC%9A%E8%87%AA%E6%89%98%E7%AE%A1+AI+%E6%96%B0%E9%97%BB%E9%9B%B7%E8%BE%BE&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9Ahotpulse%EF%BC%9A%E8%87%AA%E6%89%98%E7%AE%A1+AI+%E6%96%B0%E9%97%BB%E9%9B%B7%E8%BE%BE%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fhotpulse-ai-dec8955ff6.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2Fhamza01055%2Fhotpulse%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Aghdeal-hamza01055-hotpulse%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="Show HN：儿童架，您孩子自己的小互联网 Show HN：Kids Shelf，你孩子们自己的小互联网 大家好，我制作了这个服务器，用于为我们（年幼的）孩子建立一个本地网络页面来托管视频并管理视频观看时间，而无需让他们在主 YouTube 上放松，以及所有随机的脑力消耗和参与度提升优化（这里没有自动播放下一个视频）。&lt;p&gt;- 麻省理工学院许可，任何地方都没有跟踪脚本，用它做任何你想做的事，我没有兴趣将其商业化&lt;p&gt;- 每天给他们“视频分钟津贴”，并且为我们强制执行（我们每个人有 10 分钟的时间，他们一起观看，然后会滚动，所以有些日子他们什么都不看，其他时候他们看一个小时）。&lt;p&gt;- 科学/教育视频可以设置为半价或免费&lt;p&gt;- 包括内置的 yt-dlp，管理屏幕会获取 YouTube URL 和 打开来源链接按页面说明领取/试用；参与前自行核实。 ericd https://kidsshelf.org/ AI 开发工具与编程助手 Hacker News">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title"><a href="../item/show-hn-7cf24d3f98.html">Show HN：儿童架，您孩子自己的小互联网</a></h3>
+<article class="card" data-id="ghdeal-masteruaki-pycognition" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T18:21:00+08:00" data-exp="" data-text="pycognition：框架具有“技能结晶”（或“工具综合”）机制 其中系统 2（通过 API 访问的 LLM）不仅解决复杂问题，而且自动生成、测试和编译确定性 Python 脚本 - 有效地将解决方案转换到系统 1，以便将来即时、免费执行。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/pycognition-652314d2fd.html">pycognition：框架具有“技能结晶”（或“工具综合”）机制</a></h3>
   
-  <p class="summary">Show HN：Kids Shelf，你孩子们自己的小互联网 大家好，我制作了这个服务器，用于为我们（年幼的）孩子建立一个本地网络页面来托管视频并管理视频观看时间，而无需让他们在主 YouTube 上放松，以及所有随机的脑力消耗和参与度提升优化（这里没有自动播放下一个视频）。&lt;p&gt;- 麻省理工学院许可，任何地方都没有跟踪脚本，用它做任何你想做的事，我没有兴趣将其商业化&lt;p&gt;- 每天给他们“视频分钟津贴”，并且为我们强制执行（我们每个人有 10 分钟的时间，他们一起观看，然后会滚动，所以有些日子他们什么都不看，其他时候他们看一个小时）。&lt;p&gt;- 科学/教育视频可以设置为半价或免费&lt;p&gt;- 包括内置的 yt-dlp，管理屏幕会获取 YouTube URL 和</p>
+  <p class="summary">其中系统 2（通过 API 访问的 LLM）不仅解决复杂问题，而且自动生成、测试和编译确定性 Python 脚本 - 有效地将解决方案转换到系统 1，以便将来即时、免费执行。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
   
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@ericd · 2026-11-05 23:35 Asia/Shanghai</div>
-  <div class="linkrow"><a href="../item/show-hn-7cf24d3f98.html">详情与领取方法</a> · <a class="fulllink" href="https://kidsshelf.org/" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/show-hn-7cf24d3f98.html">复制链接</a></div>
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/pycognition-652314d2fd.html">详情</a><a href="https://github.com/MasterUaKi/pycognition" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+pycognition%EF%BC%9A%E6%A1%86%E6%9E%B6%E5%85%B7%E6%9C%89%E2%80%9C%E6%8A%80%E8%83%BD%E7%BB%93%E6%99%B6%E2%80%9D%EF%BC%88%E6%88%96%E2%80%9C%E5%B7%A5%E5%85%B7%E7%BB%BC%E5%90%88%E2%80%9D%EF%BC%89%E6%9C%BA%E5%88%B6&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9Apycognition%EF%BC%9A%E6%A1%86%E6%9E%B6%E5%85%B7%E6%9C%89%E2%80%9C%E6%8A%80%E8%83%BD%E7%BB%93%E6%99%B6%E2%80%9D%EF%BC%88%E6%88%96%E2%80%9C%E5%B7%A5%E5%85%B7%E7%BB%BC%E5%90%88%E2%80%9D%EF%BC%89%E6%9C%BA%E5%88%B6%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fpycognition-652314d2fd.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2FMasterUaKi%2Fpycognition%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Aghdeal-masteruaki-pycognition%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="Show HN：AI Gude – 我的每日播客提要，通过 AI 复活 Show HN：AI Gude – 我的每日播客，通过 AI Hi HN 恢复。 AI Gude 将您关注的新闻转化为由 AI 编写和阅读的简短早间播客。它是开源的，您可以自己托管。 “Ei Gude”在黑森语中是早上好的意思。&lt;p&gt;一些背景：我大约一年半前开始这样做，但再也没有回去过，因为我成为了一名父亲，我的空闲时间消失了。人工智能改变了这一点。正是游戏规则的改变者最终启动了该项目。我现在每天都会听自己的剧集，所以这对我很有用。不过，我仍处于起步阶段。&lt;p&gt;我想要的是：想法和反馈，以及对良好 TTS 模型的建议。我今天使用 Gemini 的 TTS，想知道还有什么值得尝试的十分钟剧集，最好是德语和英语良好的，托管的或自助的 打开来源链接按页面说明领取/试用；参与前自行核实。 alex0ptr https://github.com/alex0ptr/aigude AI 开发工具与编程助手 Hacker News">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 Hacker News</span></div>
-  <h3 class="title"><a href="../item/show-hn-ai-gude-ai-29ac53938e.html">Show HN：AI Gude – 我的每日播客提要，通过 AI 复活</a></h3>
+<article class="card" data-id="disc-c4rohan-lampline" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T15:04:00+08:00" data-exp="" data-text="Lampline：在您自己的计算机上构建 AI 电话代理 并使用 AI 呼叫者测试每项更改。开源，无需 API 密钥即可免费运行，每次通话使用自己的密钥只需几美分。导入 Dialogflow CX。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/lampline-ai-2b453a5ab0.html">Lampline：在您自己的计算机上构建 AI 电话代理</a></h3>
   
-  <p class="summary">Show HN：AI Gude – 我的每日播客，通过 AI Hi HN 恢复。 AI Gude 将您关注的新闻转化为由 AI 编写和阅读的简短早间播客。它是开源的，您可以自己托管。 “Ei Gude”在黑森语中是早上好的意思。&lt;p&gt;一些背景：我大约一年半前开始这样做，但再也没有回去过，因为我成为了一名父亲，我的空闲时间消失了。人工智能改变了这一点。正是游戏规则的改变者最终启动了该项目。我现在每天都会听自己的剧集，所以这对我很有用。不过，我仍处于起步阶段。&lt;p&gt;我想要的是：想法和反馈，以及对良好 TTS 模型的建议。我今天使用 Gemini 的 TTS，想知道还有什么值得尝试的十分钟剧集，最好是德语和英语良好的，托管的或自助的</p>
+  <p class="summary">并使用 AI 呼叫者测试每项更改。开源，无需 API 密钥即可免费运行，每次通话使用自己的密钥只需几美分。导入 Dialogflow CX。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
   
-  <div class="how"><strong>怎么领：</strong>打开来源链接按页面说明领取/试用；参与前自行核实。</div><div class="meta author">@alex0ptr · 2026-11-04 22:57 Asia/Shanghai</div>
-  <div class="linkrow"><a href="../item/show-hn-ai-gude-ai-29ac53938e.html">详情与领取方法</a> · <a class="fulllink" href="https://github.com/alex0ptr/aigude" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/show-hn-ai-gude-ai-29ac53938e.html">复制链接</a></div>
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/lampline-ai-2b453a5ab0.html">详情</a><a href="https://github.com/C4rohan/Lampline" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+Lampline%EF%BC%9A%E5%9C%A8%E6%82%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8A%E6%9E%84%E5%BB%BA+AI+%E7%94%B5%E8%AF%9D%E4%BB%A3%E7%90%86&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9ALampline%EF%BC%9A%E5%9C%A8%E6%82%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8A%E6%9E%84%E5%BB%BA+AI+%E7%94%B5%E8%AF%9D%E4%BB%A3%E7%90%86%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Flampline-ai-2b453a5ab0.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2FC4rohan%2FLampline%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-c4rohan-lampline%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article>
 
-<article class="card" data-text="GitHub 开源：MachHongHai/HaizFlow 免费的Windows桌面应用程序，用于AI视频翻译、字幕和配音，具有本地CPU/GPU模型、语音克隆、批处理和视频下载。 打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。 MachHongHai https://github.com/MachHongHai/HaizFlow AI 开发工具与编程助手 GitHub 自动发现">
-  <div class="badgerow"><span class="badge">AI 开发工具与编程助手</span><span class="src-tag">来源 GitHub 自动发现</span></div>
-  <h3 class="title"><a href="../item/github-machhonghai-haizflow-8ef44bcdd5.html">GitHub 开源：MachHongHai/HaizFlow</a></h3>
+<article class="card" data-id="disc-qunqin24-pulse" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T11:26:00+08:00" data-exp="" data-text="Pulse：了解您还剩下多少 Claude Code、Codex、Cursor 了解您还剩下多少 Claude Code、Codex、Cursor、Copilot 和70多种其他 AI 编码工具--屏幕边缘有一个免费的开源 macOS 监视器。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/pulse-claude-code-codex-cursor-e85dae97e6.html">Pulse：了解您还剩下多少 Claude Code、Codex、Cursor</a></h3>
   
-  <p class="summary">免费的Windows桌面应用程序，用于AI视频翻译、字幕和配音，具有本地CPU/GPU模型、语音克隆、批处理和视频下载。</p>
+  <p class="summary">了解您还剩下多少 Claude Code、Codex、Cursor、Copilot 和70多种其他 AI 编码工具--屏幕边缘有一个免费的开源 macOS 监视器。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
   
-  <div class="how"><strong>怎么领：</strong>打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。</div><div class="meta author">@MachHongHai · 2026-11-07 21:05 Asia/Shanghai</div>
-  <div class="linkrow"><a href="../item/github-machhonghai-haizflow-8ef44bcdd5.html">详情与领取方法</a> · <a class="fulllink" href="https://github.com/MachHongHai/HaizFlow" target="_blank" rel="noopener noreferrer">来源链接</a> · <a href="#" class="copy-link" data-copy-link="https://aiym168.github.io/item/github-machhonghai-haizflow-8ef44bcdd5.html">复制链接</a></div>
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/pulse-claude-code-codex-cursor-e85dae97e6.html">详情</a><a href="https://github.com/qunqin24/Pulse" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+Pulse%EF%BC%9A%E4%BA%86%E8%A7%A3%E6%82%A8%E8%BF%98%E5%89%A9%E4%B8%8B%E5%A4%9A%E5%B0%91+Claude+Code%E3%80%81Codex%E3%80%81Cursor&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9APulse%EF%BC%9A%E4%BA%86%E8%A7%A3%E6%82%A8%E8%BF%98%E5%89%A9%E4%B8%8B%E5%A4%9A%E5%B0%91+Claude+Code%E3%80%81Codex%E3%80%81Cursor%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fpulse-claude-code-codex-cursor-e85dae97e6.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2Fqunqin24%2FPulse%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-qunqin24-pulse%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
+</article>
+
+<article class="card" data-id="disc-ebony-vinyl-dsh-our-free-model" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="no" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T11:18:00+08:00" data-exp="" data-text="dsh-our-free-model：在 dsh 里装上这个插件即可 无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 无需实名 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/dsh-our-free-model-dsh-5aa2e266f7.html">dsh-our-free-model：在 dsh 里装上这个插件即可</a></h3>
+  
+  <p class="summary">无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact v-no" title="实名/手机号">无需实名</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/dsh-our-free-model-dsh-5aa2e266f7.html">详情</a><a href="https://github.com/Ebony-Vinyl/dsh-our-free-model" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+dsh-our-free-model%EF%BC%9A%E5%9C%A8+dsh+%E9%87%8C%E8%A3%85%E4%B8%8A%E8%BF%99%E4%B8%AA%E6%8F%92%E4%BB%B6%E5%8D%B3%E5%8F%AF&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9Adsh-our-free-model%EF%BC%9A%E5%9C%A8+dsh+%E9%87%8C%E8%A3%85%E4%B8%8A%E8%BF%99%E4%B8%AA%E6%8F%92%E4%BB%B6%E5%8D%B3%E5%8F%AF%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fdsh-our-free-model-dsh-5aa2e266f7.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2FEbony-Vinyl%2Fdsh-our-free-model%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-ebony-vinyl-dsh-our-free-model%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
+</article>
+
+<article class="card" data-id="disc-duecki1-calibraw" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T10:17:00+08:00" data-exp="" data-text="CalibRaw：适用于 Linux、Android、Windows 和 macOS 的免费开源 RAW 编辑器 GPU 加速、无损、带掩码、HDR 合并和本地 AI。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/calibraw-linux-android-windows-macos-5b884326c0.html">CalibRaw：适用于 Linux、Android、Windows 和 macOS 的免费开源 RAW 编辑器</a></h3>
+  
+  <p class="summary">GPU 加速、无损、带掩码、HDR 合并和本地 AI。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/calibraw-linux-android-windows-macos-5b884326c0.html">详情</a><a href="https://github.com/Duecki1/CalibRaw" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+CalibRaw%EF%BC%9A%E9%80%82%E7%94%A8%E4%BA%8E+Linux%E3%80%81Android%E3%80%81Windows+%E5%92%8C+macOS+%E7%9A%84%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90+RAW+%E7%BC%96%E8%BE%91%E5%99%A8&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9ACalibRaw%EF%BC%9A%E9%80%82%E7%94%A8%E4%BA%8E+Linux%E3%80%81Android%E3%80%81Windows+%E5%92%8C+macOS+%E7%9A%84%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90+RAW+%E7%BC%96%E8%BE%91%E5%99%A8%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fcalibraw-linux-android-windows-macos-5b884326c0.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2FDuecki1%2FCalibRaw%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-duecki1-calibraw%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
+</article>
+
+<article class="card" data-id="disc-silverdugongenhance-promptreel" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T02:35:00+08:00" data-exp="" data-text="PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑 使用 Wan 2.2将本地 AI 文本转换为视频：键入场景，选择宽屏、垂直或正方形，获取 MP4。无积分、无订阅、无队列。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/promptreel-73717dadae.html">PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑</a></h3>
+  
+  <p class="summary">使用 Wan 2.2将本地 AI 文本转换为视频：键入场景，选择宽屏、垂直或正方形，获取 MP4。无积分、无订阅、无队列。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/promptreel-73717dadae.html">详情</a><a href="https://github.com/silverdugongenhance/PromptReel" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+PromptReel%EF%BC%9A%E5%85%8D%E8%B4%B9%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%EF%BC%8C%E5%8F%AF%E5%9C%A8%E6%82%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E5%B0%86%E6%96%87%E6%9C%AC%E6%8F%90%E7%A4%BA%E8%BD%AC%E6%8D%A2%E4%B8%BA%E7%AE%80%E7%9F%AD%E7%9A%84%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9APromptReel%EF%BC%9A%E5%85%8D%E8%B4%B9%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%EF%BC%8C%E5%8F%AF%E5%9C%A8%E6%82%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E5%B0%86%E6%96%87%E6%9C%AC%E6%8F%90%E7%A4%BA%E8%BD%AC%E6%8D%A2%E4%B8%BA%E7%AE%80%E7%9F%AD%E7%9A%84%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fpromptreel-73717dadae.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2Fsilverdugongenhance%2FPromptReel%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-silverdugongenhance-promptreel%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
+</article>
+
+<article class="card" data-id="disc-beckettharriman-openfill" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-09T01:38:00+08:00" data-exp="" data-text="openfill：PhotoCraft 和 GIMP 的生成填充、删除对象、生成展开和文本到图像3.通过 ComfyUI PhotoCraft 和 GIMP 的生成填充、删除对象、生成展开和文本到图像3.通过 ComfyUI 在您自己的显卡上免费提供本地服务。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/openfill-photocraft-gimp-3-comfyui-077a2eadb3.html">openfill：PhotoCraft 和 GIMP 的生成填充、删除对象、生成展开和文本到图像3.通过 ComfyUI</a></h3>
+  
+  <p class="summary">PhotoCraft 和 GIMP 的生成填充、删除对象、生成展开和文本到图像3.通过 ComfyUI 在您自己的显卡上免费提供本地服务。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-09</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/openfill-photocraft-gimp-3-comfyui-077a2eadb3.html">详情</a><a href="https://github.com/beckettharriman/openfill" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+openfill%EF%BC%9APhotoCraft+%E5%92%8C+GIMP+%E7%9A%84%E7%94%9F%E6%88%90%E5%A1%AB%E5%85%85%E3%80%81%E5%88%A0%E9%99%A4%E5%AF%B9%E8%B1%A1%E3%80%81%E7%94%9F%E6%88%90%E5%B1%95%E5%BC%80%E5%92%8C%E6%96%87%E6%9C%AC%E5%88%B0%E5%9B%BE%E5%83%8F3.%E9%80%9A%E8%BF%87+ComfyUI&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9Aopenfill%EF%BC%9APhotoCraft+%E5%92%8C+GIMP+%E7%9A%84%E7%94%9F%E6%88%90%E5%A1%AB%E5%85%85%E3%80%81%E5%88%A0%E9%99%A4%E5%AF%B9%E8%B1%A1%E3%80%81%E7%94%9F%E6%88%90%E5%B1%95%E5%BC%80%E5%92%8C%E6%96%87%E6%9C%AC%E5%88%B0%E5%9B%BE%E5%83%8F3.%E9%80%9A%E8%BF%87+ComfyUI%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fopenfill-photocraft-gimp-3-comfyui-077a2eadb3.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2Fbeckettharriman%2Fopenfill%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-beckettharriman-openfill%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
+</article>
+
+<article class="card" data-id="disc-dragonked2-alphacode" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-08T23:57:00+08:00" data-exp="" data-text="alphacode：免费的 MIT AI 编码代理 无需 API 密钥。内置免费型号，或带来 Claude、GPT、Gemini、DeepSeek、Ollama +50等。Swarm 模式，40多种工具，浏览器和桌面自动化，内置 Rust。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/alphacode-mit-ai-5b67926959.html">alphacode：免费的 MIT AI 编码代理</a></h3>
+  
+  <p class="summary">无需 API 密钥。内置免费型号，或带来 Claude、GPT、Gemini、DeepSeek、Ollama +50等。Swarm 模式，40多种工具，浏览器和桌面自动化，内置 Rust。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-08</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/alphacode-mit-ai-5b67926959.html">详情</a><a href="https://github.com/dragonked2/alphacode" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+alphacode%EF%BC%9A%E5%85%8D%E8%B4%B9%E7%9A%84+MIT+AI+%E7%BC%96%E7%A0%81%E4%BB%A3%E7%90%86&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9Aalphacode%EF%BC%9A%E5%85%8D%E8%B4%B9%E7%9A%84+MIT+AI+%E7%BC%96%E7%A0%81%E4%BB%A3%E7%90%86%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Falphacode-mit-ai-5b67926959.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2Fdragonked2%2Falphacode%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-dragonked2-alphacode%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
+</article>
+
+<article class="card" data-id="disc-insane0777-awwwards-mcp" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-08T18:28:00+08:00" data-exp="" data-text="Awwwards-mcp：免费的开源 MCP 服务器 为 AI 编码代理（Claude Code、Codex、Cursor、OpenCode、ZCode……）提供屡获殊荣的网站设计灵感--使用真实屏幕截图搜索、提取设计 DNA、捕获和记录实时网站。Mobbin 替代方案。无 API 密钥。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/awwwards-mcp-mcp-3d830a83b9.html">Awwwards-mcp：免费的开源 MCP 服务器</a></h3>
+  
+  <p class="summary">为 AI 编码代理（Claude Code、Codex、Cursor、OpenCode、ZCode……）提供屡获殊荣的网站设计灵感--使用真实屏幕截图搜索、提取设计 DNA、捕获和记录实时网站。Mobbin 替代方案。无 API 密钥。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-08</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/awwwards-mcp-mcp-3d830a83b9.html">详情</a><a href="https://github.com/INSANE0777/Awwwards-mcp" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+Awwwards-mcp%EF%BC%9A%E5%85%8D%E8%B4%B9%E7%9A%84%E5%BC%80%E6%BA%90+MCP+%E6%9C%8D%E5%8A%A1%E5%99%A8&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9AAwwwards-mcp%EF%BC%9A%E5%85%8D%E8%B4%B9%E7%9A%84%E5%BC%80%E6%BA%90+MCP+%E6%9C%8D%E5%8A%A1%E5%99%A8%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fawwwards-mcp-mcp-3d830a83b9.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2FINSANE0777%2FAwwwards-mcp%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-insane0777-awwwards-mcp%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
+</article>
+
+<article class="card" data-id="disc-saarthurr-atticus-mac" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-08T05:07:00+08:00" data-exp="" data-text="atticus-mac：适用于 Mac 的快速、免费语音助手 无 API 密钥：在您的 Claude Pro 或 Max 套餐上运行。为大型作业发送后台代理，记住您并学习您的快捷方式。按住“Space and talk” （空间和谈话）。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/atticus-mac-mac-51133b9398.html">atticus-mac：适用于 Mac 的快速、免费语音助手</a></h3>
+  
+  <p class="summary">无 API 密钥：在您的 Claude Pro 或 Max 套餐上运行。为大型作业发送后台代理，记住您并学习您的快捷方式。按住“Space and talk” （空间和谈话）。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-08</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/atticus-mac-mac-51133b9398.html">详情</a><a href="https://github.com/SaarthurR/atticus-mac" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+atticus-mac%EF%BC%9A%E9%80%82%E7%94%A8%E4%BA%8E+Mac+%E7%9A%84%E5%BF%AB%E9%80%9F%E3%80%81%E5%85%8D%E8%B4%B9%E8%AF%AD%E9%9F%B3%E5%8A%A9%E6%89%8B&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9Aatticus-mac%EF%BC%9A%E9%80%82%E7%94%A8%E4%BA%8E+Mac+%E7%9A%84%E5%BF%AB%E9%80%9F%E3%80%81%E5%85%8D%E8%B4%B9%E8%AF%AD%E9%9F%B3%E5%8A%A9%E6%89%8B%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fatticus-mac-mac-51133b9398.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2FSaarthurR%2Fatticus-mac%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-saarthurr-atticus-mac%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
+</article>
+
+<article class="card" data-id="disc-machhonghai-haizflow" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-07T21:05:00+08:00" data-exp="" data-text="HaizFlow：免费的 Windows 桌面应用程序 用于 AI 视频翻译、字幕和配音，具有本地 CPU/GPU 模型、语音克隆、批处理和视频下载。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/haizflow-windows-29ad47bb7f.html">HaizFlow：免费的 Windows 桌面应用程序</a></h3>
+  
+  <p class="summary">用于 AI 视频翻译、字幕和配音，具有本地 CPU/GPU 模型、语音克隆、批处理和视频下载。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-07</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/haizflow-windows-29ad47bb7f.html">详情</a><a href="https://github.com/MachHongHai/HaizFlow" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+HaizFlow%EF%BC%9A%E5%85%8D%E8%B4%B9%E7%9A%84+Windows+%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9AHaizFlow%EF%BC%9A%E5%85%8D%E8%B4%B9%E7%9A%84+Windows+%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fhaizflow-windows-29ad47bb7f.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2FMachHongHai%2FHaizFlow%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-machhonghai-haizflow%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
+</article>
+
+<article class="card" data-id="disc-calmrocks-ai-engineer-notebooks" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-07T10:10:00+08:00" data-exp="" data-text="ai-engineer-notebooks：适用于 AI 工程师/前沿部署工程师(FDE)技能集的实践、免框架 Colab 笔记本 模型 API、结构化输出、工具调用、RAG、EVALS 即脊椎、代理（从头开始循环、工具设计、护栏、MCP、技能）、微调与 LoRA、提示注入/安全、LLMOps 和客户工艺。在免费的 Groq API 上运行。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/ai-engineer-notebooks-ai-fde-colab-6e2eb397b4.html">ai-engineer-notebooks：适用于 AI 工程师/前沿部署工程师(FDE)技能集的实践、免框架 Colab 笔记本</a></h3>
+  
+  <p class="summary">模型 API、结构化输出、工具调用、RAG、EVALS 即脊椎、代理（从头开始循环、工具设计、护栏、MCP、技能）、微调与 LoRA、提示注入/安全、LLMOps 和客户工艺。在免费的 Groq API 上运行。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-07</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/ai-engineer-notebooks-ai-fde-colab-6e2eb397b4.html">详情</a><a href="https://github.com/calmrocks/ai-engineer-notebooks" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+ai-engineer-notebooks%EF%BC%9A%E9%80%82%E7%94%A8%E4%BA%8E+AI+%E5%B7%A5%E7%A8%8B%E5%B8%88%2F%E5%89%8D%E6%B2%BF%E9%83%A8%E7%BD%B2%E5%B7%A5%E7%A8%8B%E5%B8%88%28FDE%29%E6%8A%80%E8%83%BD%E9%9B%86%E7%9A%84%E5%AE%9E%E8%B7%B5%E3%80%81%E5%85%8D%E6%A1%86%E6%9E%B6+Cola&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9Aai-engineer-notebooks%EF%BC%9A%E9%80%82%E7%94%A8%E4%BA%8E+AI+%E5%B7%A5%E7%A8%8B%E5%B8%88%2F%E5%89%8D%E6%B2%BF%E9%83%A8%E7%BD%B2%E5%B7%A5%E7%A8%8B%E5%B8%88%28FDE%29%E6%8A%80%E8%83%BD%E9%9B%86%E7%9A%84%E5%AE%9E%E8%B7%B5%E3%80%81%E5%85%8D%E6%A1%86%E6%9E%B6+Colab+%E7%AC%94%E8%AE%B0%E6%9C%AC%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fai-engineer-notebooks-ai-fde-colab-6e2eb397b4.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2Fcalmrocks%2Fai-engineer-notebooks%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-calmrocks-ai-engineer-notebooks%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
+</article>
+
+<article class="card" data-id="disc-imshaikot-browsentic" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-06T20:32:00+08:00" data-exp="" data-text="browsentic：代理浏览器 Harness 您自己登录的 Chrome、Edge、Arc、Brave 甚至 Firefox 中的 AI 侧面板和 ORB，由您已经使用的代理/订阅（Claude Code、Codex、Antigravity）运行。免费，开源，无 API 密钥。也是一台 MCP 服务器。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/browsentic-harness-21b902c5e6.html">browsentic：代理浏览器 Harness</a></h3>
+  
+  <p class="summary">您自己登录的 Chrome、Edge、Arc、Brave 甚至 Firefox 中的 AI 侧面板和 ORB，由您已经使用的代理/订阅（Claude Code、Codex、Antigravity）运行。免费，开源，无 API 密钥。也是一台 MCP 服务器。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-06</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/browsentic-harness-21b902c5e6.html">详情</a><a href="https://github.com/imshaikot/browsentic" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+browsentic%EF%BC%9A%E4%BB%A3%E7%90%86%E6%B5%8F%E8%A7%88%E5%99%A8+Harness&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9Abrowsentic%EF%BC%9A%E4%BB%A3%E7%90%86%E6%B5%8F%E8%A7%88%E5%99%A8+Harness%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fbrowsentic-harness-21b902c5e6.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2Fimshaikot%2Fbrowsentic%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-imshaikot-browsentic%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
+</article>
+
+<article class="card" data-id="disc-gabrielelozupone-kokon" data-module="ai-kaifa-gongju" data-requires_card="unknown" data-requires_realname="unknown" data-china_accessible="unknown" data-type="permanent" data-expiry_kind="unknown" data-status="unverified" data-pub="2026-11-06T08:06:00+08:00" data-exp="" data-text="kokon：在您自己的 GPU 上，通过描述更改来编辑照片 Nano Banana 和 ChatGPT 图像编辑的免费开源替代方案：照片保留在您的计算机上，没有每日限制。一个适用于 Windows、Mac 和 Linux 的安装程序可以设置最佳的开放模型（Qwen-Image 2.1）。AI 代理的 MCP 服务器。 GitHub AI 开发工具与编程助手 AI 开发工具与编程助手 绑卡：未注明 实名：未注明 直连：未注明 永久免费 未注明 未核实">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">GitHub</span><span class="st st-muted">未核实</span></div>
+  <h3 class="title"><a href="../item/kokon-gpu-0e3f0bdb85.html">kokon：在您自己的 GPU 上，通过描述更改来编辑照片</a></h3>
+  
+  <p class="summary">Nano Banana 和 ChatGPT 图像编辑的免费开源替代方案：照片保留在您的计算机上，没有每日限制。一个适用于 Windows、Mac 和 Linux 的安装程序可以设置最佳的开放模型（Qwen-Image 2.1）。AI 代理的 MCP 服务器。</p>
+  <div class="facts"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span></div>
+  
+  <div class="trust"><span>来源 GitHub</span><span>发布 2026-11-06</span><span>收录 2026-11-09 20:31</span><span class="">未核实</span></div>
+  <div class="linkrow"><a href="../item/kokon-gpu-0e3f0bdb85.html">详情</a><a href="https://github.com/GabrieleLozupone/kokon" target="_blank" rel="noopener noreferrer">原文 ↗</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E6%8A%A5%E9%94%99%5D+kokon%EF%BC%9A%E5%9C%A8%E6%82%A8%E8%87%AA%E5%B7%B1%E7%9A%84+GPU+%E4%B8%8A%EF%BC%8C%E9%80%9A%E8%BF%87%E6%8F%8F%E8%BF%B0%E6%9B%B4%E6%94%B9%E6%9D%A5%E7%BC%96%E8%BE%91%E7%85%A7%E7%89%87&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9Akokon%EF%BC%9A%E5%9C%A8%E6%82%A8%E8%87%AA%E5%B7%B1%E7%9A%84+GPU+%E4%B8%8A%EF%BC%8C%E9%80%9A%E8%BF%87%E6%8F%8F%E8%BF%B0%E6%9B%B4%E6%94%B9%E6%9D%A5%E7%BC%96%E8%BE%91%E7%85%A7%E7%89%87%0A%E7%AB%99%E5%86%85%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fitem%2Fkokon-gpu-0e3f0bdb85.html%0A%E6%9D%A5%E6%BA%90%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps%3A%2F%2Fgithub.com%2FGabrieleLozupone%2Fkokon%0A%E6%9D%A1%E7%9B%AE+ID%EF%BC%9Adisc-gabrielelozupone-kokon%0A%0A%E9%97%AE%E9%A2%98%E7%B1%BB%E5%9E%8B%EF%BC%88%E4%BF%9D%E7%95%99%E4%B8%80%E9%A1%B9%EF%BC%89%EF%BC%9A%E5%B7%B2%E8%BF%87%E6%9C%9F+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E4%B8%8D%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90+%2F+%E5%85%B6%E4%BB%96%0A%E8%AF%B4%E6%98%8E%EF%BC%9A%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">AI 开发工具与编程助手</span></div>
 </article></div>
-  <div id="empty" class="empty hidden">没有匹配条目</div>
+    <div id="f-empty" class="empty hidden">没有符合条件的条目，试试清除筛选</div>
+  </section>
   <footer>
-  <div><span class="foot-brand">AI大模型免费资源导航</span> · AI 开发工具与编程助手<br/>每小时自动更新</div>
-  <div><a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">网站地图</a> · <kbd>Ctrl</kbd>+<kbd>K</kbd> 搜索</div>
+  <div><span class="foot-brand">AI大模型免费资源导航</span> · AI 开发工具与编程助手<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
+  <div class="foot-links"><a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../archives/index.html">已归档</a> · <a href="../m/board.html">留言板</a> · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>
 </div>
-<script>
+<script>/* AI大模型免费资源导航 · site.js (v3): nav, 减少动态 toggle, search + filters + sort, quick search over /api/latest.json. */
 (function(){
-  const q=document.getElementById('q'); if(!q) return;
-  const cards=[...document.querySelectorAll('.card')];
-  const empty=document.getElementById('empty');
-  q.addEventListener('input',()=>{
-    const t=(q.value||'').trim().toLowerCase();
-    let n=0;
-    cards.forEach(c=>{
-      const ok=!t||(c.getAttribute('data-text')||'').toLowerCase().includes(t);
-      c.classList.toggle('hidden',!ok); if(ok) n++;
+  var root = document.documentElement;
+  var KEY = 'ai168-reduce';
+  function $(s, el){ return (el||document).querySelector(s); }
+  function $all(s, el){ return Array.prototype.slice.call((el||document).querySelectorAll(s)); }
+  var brand = document.querySelector('.brand-mini');
+  var base = (document.body && document.body.getAttribute('data-base')) || (brand && brand.getAttribute('href')) || './';
+  if (base.slice(-1) !== '/') base += '/';
+
+  /* ---------- 减少动态 (persistent) ---------- */
+  function setReduce(on){
+    root.classList.toggle('reduce-motion', on);
+    try { localStorage.setItem(KEY, on ? '1' : '0'); } catch(e) {}
+    $all('[data-reduce-toggle]').forEach(function(b){ b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.querySelector('b') && (b.querySelector('b').textContent = on ? '开' : '关'); });
+    try { window.dispatchEvent(new Event('ai168:reduce-motion')); } catch(e) {}
+  }
+  $all('[data-reduce-toggle]').forEach(function(b){
+    b.addEventListener('click', function(){ setReduce(!root.classList.contains('reduce-motion')); });
+  });
+  setReduce(root.classList.contains('reduce-motion'));
+
+  /* ---------- hamburger nav (≤768px) ---------- */
+  var nav = $('.topnav'), tog = $('.nav-toggle');
+  if (nav && tog) {
+    tog.addEventListener('click', function(){
+      var open = !nav.classList.contains('open');
+      nav.classList.toggle('open', open); tog.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    if(empty) empty.classList.toggle('hidden', n>0 || !cards.length);
+    $all('.navlinks a', nav).forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); tog.setAttribute('aria-expanded','false'); }); });
+  }
+
+  /* ---------- filters / search / sort (home + module pages) ---------- */
+  var fr = $('[data-filter-root]');
+  var q = $('#q');
+  function initFilters(){
+    if (!fr) return;
+    var list = $('[data-list]', fr) || $('[data-list]');
+    if (!list) return;
+    var cards = $all('.card[data-id]', list);
+    var order = cards.slice();
+    var active = {};
+    var countEl = $('#f-count'), emptyEl = $('#f-empty'), moreBtn = $('#f-more');
+    var limit = parseInt(list.getAttribute('data-limit') || '0', 10), expanded = !limit;
+    var sortSel = $('#f-sort');
+    function matches(c, t){
+      for (var k in active) {
+        if (!active[k] || !active[k].length) continue;
+        var v = c.getAttribute('data-' + k) || '';
+        if (active[k].indexOf(v) < 0) return false;
+      }
+      if (t) {
+        var hay = (c.getAttribute('data-text') || '').toLowerCase();
+        var parts = t.split(/\s+/);
+        for (var i = 0; i < parts.length; i++) if (parts[i] && hay.indexOf(parts[i]) < 0) return false;
+      }
+      return true;
+    }
+    function sortCards(){
+      var mode = sortSel ? sortSel.value : 'default';
+      var arr = order.slice();
+      if (mode === 'pub') arr.sort(function(a,b){ return (b.getAttribute('data-pub')||'').localeCompare(a.getAttribute('data-pub')||''); });
+      if (mode === 'exp') arr.sort(function(a,b){
+        var x = a.getAttribute('data-exp') || '9999', y = b.getAttribute('data-exp') || '9999'; return x.localeCompare(y); });
+      arr.forEach(function(c){ list.appendChild(c); });
+      return arr;
+    }
+    function apply(){
+      var t = (q && q.value || '').trim().toLowerCase();
+      var arr = sortCards(), shown = 0, visible = 0;
+      var filtering = !!t || Object.keys(active).some(function(k){ return active[k] && active[k].length; });
+      arr.forEach(function(c){
+        var ok = matches(c, t);
+        if (ok) shown++;
+        var hideByLimit = ok && !expanded && !filtering && shown > limit;
+        c.classList.toggle('hidden', !ok || hideByLimit);
+        if (ok && !hideByLimit) visible++;
+      });
+      if (countEl) countEl.textContent = filtering ? ('筛选结果 ' + shown + ' / ' + cards.length + ' 条') : ('共 ' + cards.length + ' 条');
+      if (emptyEl) emptyEl.classList.toggle('hidden', shown > 0);
+      if (moreBtn) moreBtn.classList.toggle('hidden', expanded || filtering || shown <= limit);
+      var clr = $('#f-clear'); if (clr) clr.classList.toggle('hidden', !filtering);
+    }
+    $all('[data-f]', fr).forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var k = btn.getAttribute('data-f'), v = btn.getAttribute('data-v');
+        var arr = active[k] || (active[k] = []);
+        var i = arr.indexOf(v);
+        if (i >= 0) arr.splice(i, 1); else arr.push(v);
+        btn.setAttribute('aria-pressed', i >= 0 ? 'false' : 'true');
+        apply();
+      });
+    });
+    var clr = $('#f-clear');
+    if (clr) clr.addEventListener('click', function(){
+      active = {}; if (q) q.value = '';
+      $all('[data-f]', fr).forEach(function(b){ b.setAttribute('aria-pressed','false'); });
+      apply();
+    });
+    if (moreBtn) moreBtn.addEventListener('click', function(){ expanded = true; apply(); });
+    if (sortSel) sortSel.addEventListener('change', apply);
+    if (q) {
+      q.addEventListener('input', apply);
+      var form = q.form; if (form) form.addEventListener('submit', function(e){ e.preventDefault(); apply(); var s = $('#search'); if (s && s.scrollIntoView) s.scrollIntoView({behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth'}); });
+      try { var u = new URLSearchParams(location.search).get('q'); if (u) { q.value = u; } } catch(e) {}
+    }
+    fr.classList.add('js-ready');
+    apply();
+  }
+  initFilters();
+
+  /* ---------- quick search overlay (pages without a list): reads /api/latest.json ---------- */
+  var box = null, data = null;
+  function openQuick(){
+    if (!box) {
+      box = document.createElement('div'); box.id = 'quick-search'; box.setAttribute('role','dialog'); box.setAttribute('aria-label','搜索免费资源');
+      box.innerHTML = '<div class="qs-box"><input id="qs-input" type="search" placeholder="搜索免费资源：如 Gemini、免费 GPU、免绑卡…" autocomplete="off"/><div id="qs-results" class="qs-results"><div class="qs-empty">正在载入数据…</div></div><div class="qs-foot">数据来自 <code>api/latest.json</code> · Esc 关闭</div></div>';
+      document.body.appendChild(box);
+      box.addEventListener('click', function(e){ if (e.target === box) closeQuick(); });
+      var inp = $('#qs-input', box), res = $('#qs-results', box);
+      function render(){
+        if (!data) return;
+        var t = (inp.value || '').trim().toLowerCase();
+        var rows = data.filter(function(it){ var h = (it.title + ' ' + it.summary + ' ' + (it.module_name||'') + ' ' + (it.source||'')).toLowerCase(); return !t || t.split(/\s+/).every(function(p){ return h.indexOf(p) >= 0; }); }).slice(0, 30);
+        res.innerHTML = rows.length ? rows.map(function(it){
+          var a = document.createElement('a'); a.className = 'qs-item'; a.href = base + (it.path || '');
+          a.innerHTML = '<b></b><small></small>'; a.firstChild.textContent = it.title; a.lastChild.textContent = (it.module_name || '') + ' · ' + (it.status_label || '');
+          return a.outerHTML; }).join('') : '<div class="qs-empty">没有匹配的条目</div>';
+      }
+      inp.addEventListener('input', render);
+      fetch(base + 'api/latest.json', {cache: 'no-cache'}).then(function(r){ return r.json(); }).then(function(j){ data = j.items || []; render(); })
+        .catch(function(){ res.innerHTML = '<div class="qs-empty">数据载入失败，请返回首页搜索</div>'; });
+    }
+    box.classList.add('open'); setTimeout(function(){ var i = $('#qs-input'); i && i.focus(); }, 30);
+  }
+  function closeQuick(){ if (box) box.classList.remove('open'); }
+  function openSearch(e){
+    if (q && fr) { if (e) e.preventDefault(); q.focus(); if (q.scrollIntoView) q.scrollIntoView({block:'center', behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth'}); return; }
+    if (e) e.preventDefault(); openQuick();
+  }
+  $all('[data-search-open]').forEach(function(b){ b.addEventListener('click', openSearch); });
+  document.addEventListener('keydown', function(e){
+    if ((e.ctrlKey || e.metaKey) && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); openSearch(); }
+    else if (e.key === '/' && !/input|textarea|select/i.test((document.activeElement||{}).tagName||'')) { e.preventDefault(); openSearch(); }
+    else if (e.key === 'Escape') closeQuick();
+  });
+
+  /* ---------- copy buttons ---------- */
+  $all('.copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var t = btn.getAttribute('data-copy') || '';
+      (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function(){ btn.textContent = '已复制'; setTimeout(function(){ btn.textContent = '复制'; }, 1200); }, function(){ btn.textContent = '请手动复制'; });
+    });
   });
 })();
 
+/* AI大模型免费资源导航 · fx.js (v3) — calm background only.
+   Removed in v3: count-up numbers, headline blur-in, scroll-blur reveals, per-second clock/countdown, parallax, tilt.
+   Motion respects prefers-reduced-motion and the persistent "减少动态" toggle (html.reduce-motion). */
 (function(){
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var root = document.documentElement;
-  root.style.colorScheme = 'dark';
   root.classList.add('js');
-  try { document.body.classList.add('page-enter'); } catch(e) {}
   var mobile = Math.min(window.innerWidth, window.innerHeight) < 720;
+  function isReduced(){ return root.classList.contains('reduce-motion') || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); }
 
   /* ---------- GLSL shader background (raw WebGL, no deps) ---------- */
   (function shaderBg(){
@@ -656,275 +1123,18 @@ Colab：https://t.co/2nE9uA43L3 https://t.co/zGPx3WXtx3</p>
       gl.uniform2f(uR, cv.width, cv.height); gl.uniform1f(uT, (now-t0)/1000 + 20.0); gl.uniform2f(uM, smx, smy); gl.uniform1f(uS, sc);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
     }
-    if (reduced) { draw(performance.now()); return; }
+    draw(performance.now());
     (function loop(now){
       requestAnimationFrame(loop);
-      if (document.hidden || now - last < 33) return; last = now; draw(now);
+      if (isReduced() || document.hidden || now - last < 40) return; last = now; draw(now);
     })(performance.now());
     cv.classList.add('on');
   })();
 
-  /* ---------- pointer spotlight vars ---------- */
-  window.addEventListener('pointermove', function(e){
-    root.style.setProperty('--spot-x', e.clientX + 'px');
-    root.style.setProperty('--spot-y', e.clientY + 'px');
-  }, {passive:true});
-
-  function bindGlow(el, tilt){
-    el.addEventListener('pointermove', function(e){
-      var r = el.getBoundingClientRect();
-      var x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
-      el.style.setProperty('--mx', (x*100)+'%'); el.style.setProperty('--my', (y*100)+'%');
-      if (tilt && !reduced) el.style.transform = 'perspective(1000px) rotateX(' + ((0.5-y)*5) + 'deg) rotateY(' + ((x-0.5)*6) + 'deg) translateY(-3px)';
-    });
-    el.addEventListener('pointerleave', function(){ el.style.transform = ''; });
-  }
-  Array.prototype.forEach.call(document.querySelectorAll('.module-tile, .pin-card'), function(el){ bindGlow(el, true); });
-  Array.prototype.forEach.call(document.querySelectorAll('.card, .panel-box, .term-block'), function(el){ bindGlow(el, false); });
-
-  /* ---------- nav shrink on scroll + parallax ---------- */
+  /* ---------- nav: solid background after scrolling ---------- */
   var nav = document.querySelector('.topnav');
-  var par = Array.prototype.slice.call(document.querySelectorAll('[data-parallax]'));
-  var ticking = false;
-  function onScroll(){
-    ticking = false;
-    var y = window.scrollY || 0;
-    if (nav) nav.classList.toggle('scrolled', y > 24);
-    if (!reduced) par.forEach(function(el){
-      var f = parseFloat(el.getAttribute('data-parallax')) || 0.2;
-      el.style.transform = 'translate3d(0,' + (y*f).toFixed(1) + 'px,0)';
-      if (el.hasAttribute('data-fade')) el.style.opacity = String(Math.max(0, 1 - y/ (innerHeight*0.9)));
-    });
-  }
-  window.addEventListener('scroll', function(){ if (!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
-  onScroll();
-
-  /* ---------- count up when visible ---------- */
-  function animateCount(el, target){
-    var t0 = performance.now(), dur = 1400;
-    function frame(t){
-      var p = Math.min(1, (t - t0)/dur), e = 1 - Math.pow(1-p, 4);
-      el.textContent = String(Math.round(target * e));
-      if (p < 1) requestAnimationFrame(frame);
-    }
-    requestAnimationFrame(frame);
-  }
-  var counters = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
-  if (!reduced && 'IntersectionObserver' in window) {
-    var cio = new IntersectionObserver(function(en){ en.forEach(function(e){ if (e.isIntersecting){ animateCount(e.target, parseInt(e.target.getAttribute('data-count')||'0',10)); cio.unobserve(e.target);} }); }, {threshold:.3});
-    counters.forEach(function(el){ cio.observe(el); });
-  }
-
-  /* ---------- live clock + countdown to next hourly build (:07 Beijing) ---------- */
-  var clocks = document.querySelectorAll('[data-clock]'), nexts = document.querySelectorAll('[data-next]');
-  function pad(n){ return (n<10?'0':'') + n; }
-  function tick(){
-    var now = new Date(), bj = new Date(now.getTime() + (now.getTimezoneOffset() + 480) * 60000);
-    var s = pad(bj.getHours()) + ':' + pad(bj.getMinutes()) + ':' + pad(bj.getSeconds());
-    Array.prototype.forEach.call(clocks, function(el){ el.textContent = s; });
-    var m = bj.getMinutes(), sec = bj.getSeconds();
-    var left = ((7 - m + 60) % 60) * 60 - sec; if (left <= 0) left += 3600;
-    var txt = pad(Math.floor(left/60)) + ':' + pad(left%60);
-    Array.prototype.forEach.call(nexts, function(el){ el.textContent = txt; });
-  }
-  if (clocks.length || nexts.length) { tick(); setInterval(tick, 1000); }
-
-  /* ---------- scroll reveal with stagger ---------- */
-  var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal, .card, .module-tile, .panel-box, .section > h2, .sec-head, .pin-card, .term-block'));
-  reveals.forEach(function(el){
-    el.classList.add('reveal');
-    var sib = el.parentNode ? Array.prototype.indexOf.call(el.parentNode.children, el) : 0;
-    el.style.setProperty('--d', Math.min(sib, 8) * 70 + 'ms');
-  });
-  if (!reduced && 'IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-    }, {threshold: 0.08, rootMargin: '0px 0px -6% 0px'});
-    reveals.forEach(function(el){ io.observe(el); });
-  } else {
-    reveals.forEach(function(el){ el.classList.add('in'); });
-  }
-})();
-
-(function(){
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var touch = matchMedia('(hover: none), (pointer: coarse)').matches;
-  var desktop = !touch;
-
-  /* toast */
-  var toast = document.createElement('div');
-  toast.id = 'fx-toast';
-  toast.setAttribute('role','status');
-  document.body.appendChild(toast);
-  function showToast(msg){
-    toast.textContent = msg;
-    toast.classList.add('show');
-    clearTimeout(showToast._t);
-    showToast._t = setTimeout(function(){ toast.classList.remove('show'); }, 1800);
-  }
-
-  /* scroll progress + back to top */
-  var bar = document.createElement('div'); bar.id = 'scroll-progress'; document.body.appendChild(bar);
-  var topOrb = document.createElement('button');
-  topOrb.id = 'back-top'; topOrb.type='button'; topOrb.setAttribute('aria-label','回到顶部'); topOrb.innerHTML='↑';
-  document.body.appendChild(topOrb);
-  topOrb.addEventListener('click', function(){ window.scrollTo({top:0, behavior: reduced?'auto':'smooth'}); });
-  function onScroll(){
-    var h = document.documentElement;
-    var max = h.scrollHeight - h.clientHeight;
-    var p = max>0 ? (h.scrollTop/max) : 0;
-    bar.style.transform = 'scaleX(' + p + ')';
-    topOrb.classList.toggle('show', h.scrollTop > 480);
-  }
+  function onScroll(){ if (nav) nav.classList.toggle('scrolled', (window.scrollY||0) > 24); }
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
-
-  /* custom cursor + trail (desktop) */
-  if (desktop && !reduced) {
-    document.documentElement.classList.add('has-cursor');
-    var cur = document.createElement('div'); cur.id='cursor-dot'; document.body.appendChild(cur);
-    var trail = [];
-    for (var i=0;i<5;i++){ var t=document.createElement('div'); t.className='cursor-trail'; document.body.appendChild(t); trail.push(t); }
-    var mx=0,my=0, pts=trail.map(function(){return {x:0,y:0};});
-    window.addEventListener('pointermove', function(e){ mx=e.clientX; my=e.clientY; cur.style.transform='translate('+mx+'px,'+my+'px)'; }, {passive:true});
-    (function loop(){
-      var x=mx,y=my;
-      for (var i=0;i<pts.length;i++){
-        pts[i].x += (x - pts[i].x) * (0.35 - i*0.03);
-        pts[i].y += (y - pts[i].y) * (0.35 - i*0.03);
-        trail[i].style.transform='translate('+pts[i].x+'px,'+pts[i].y+'px) scale('+(1-i*0.08)+')';
-        x=pts[i].x; y=pts[i].y;
-      }
-      requestAnimationFrame(loop);
-    })();
-  }
-
-  /* magnetic tiles/buttons */
-  if (desktop && !reduced) {
-    var mags = document.querySelectorAll('.module-tile, .btn, .topnav a, #back-top');
-    Array.prototype.forEach.call(mags, function(el){
-      el.addEventListener('pointermove', function(e){
-        var r=el.getBoundingClientRect();
-        var dx=(e.clientX-(r.left+r.width/2))/r.width;
-        var dy=(e.clientY-(r.top+r.height/2))/r.height;
-        el.style.translate = (dx*12)+'px '+(dy*10)+'px';
-      });
-      el.addEventListener('pointerleave', function(){ el.style.translate=''; });
-    });
-  }
-
-  /* module tile <-> brain region */
-  Array.prototype.forEach.call(document.querySelectorAll('.module-tile'), function(el){
-    el.addEventListener('pointerenter', function(){
-      var href=(el.getAttribute('href')||'');
-      var id=href.split('/').pop().replace('.html','');
-      if (window.__brainAPI && window.__brainAPI.highlightRegion) window.__brainAPI.highlightRegion(id);
-    });
-    el.addEventListener('pointerleave', function(){
-      if (window.__brainAPI && window.__brainAPI.highlightRegion) window.__brainAPI.highlightRegion('');
-    });
-  });
-
-  /* card ripple + copy link */
-  document.addEventListener('click', function(e){
-    var card = e.target.closest && e.target.closest('.card, .module-tile');
-    if (card && !reduced) {
-      var r=card.getBoundingClientRect();
-      var rip=document.createElement('span'); rip.className='ripple';
-      rip.style.left=(e.clientX-r.left)+'px'; rip.style.top=(e.clientY-r.top)+'px';
-      card.appendChild(rip); setTimeout(function(){ rip.remove(); }, 700);
-    }
-    var copyBtn = e.target.closest && e.target.closest('[data-copy-link]');
-    if (copyBtn) {
-      e.preventDefault();
-      var url = copyBtn.getAttribute('data-copy-link') || location.href;
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(url).then(function(){ showToast('链接已复制'); }).catch(function(){ showToast('复制失败'); });
-      } else {
-        showToast('请手动复制链接');
-      }
-    }
-  });
-
-  /* text scramble on headings */
-  function scramble(el){
-    if (reduced || el.dataset.scrambled) return;
-    el.dataset.scrambled='1';
-    var final = el.textContent;
-    var chars = 'アイウエオカキクケコABCDEF0123456789#$%';
-    var i=0;
-    var t=setInterval(function(){
-      el.textContent = final.split('').map(function(ch, idx){
-        if (idx < i) return final[idx];
-        if (/\s/.test(ch)) return ch;
-        return chars[Math.floor(Math.random()*chars.length)];
-      }).join('');
-      i += 1;
-      if (i > final.length) { el.textContent=final; clearInterval(t); }
-    }, 28);
-  }
-  if ('IntersectionObserver' in window) {
-    var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if(en.isIntersecting){ scramble(en.target); io.unobserve(en.target);} });
-    }, {threshold:0.4});
-    document.querySelectorAll('h1.hero-title, .hero h1, .section h2').forEach(function(h){ if (!h.closest('[data-kinetic]') && !h.hasAttribute('data-kinetic') && !h.querySelector('*')) io.observe(h); });
-  }
-
-  /* Cmd/Ctrl+K command palette */
-  var items = [];
-  document.querySelectorAll('.card').forEach(function(card){
-    var title = (card.querySelector('.title')||{}).textContent||'';
-    var link = card.querySelector('a[href]');
-    var href = link ? link.getAttribute('href') : '';
-    var text = card.getAttribute('data-text')||title;
-    items.push({title:title.trim(), href:href, text:text});
-  });
-  document.querySelectorAll('.module-tile').forEach(function(tile){
-    items.push({title:(tile.querySelector('h2')||{}).textContent||'模块', href:tile.getAttribute('href')||'', text:tile.textContent||''});
-  });
-  var pal=document.createElement('div'); pal.id='cmd-palette'; pal.innerHTML='<div class="cmd-box"><input id="cmd-input" placeholder="搜索资源 / 模块…（Esc 关闭）" /><div id="cmd-results"></div></div>';
-  document.body.appendChild(pal);
-  var input=pal.querySelector('#cmd-input');
-  var results=pal.querySelector('#cmd-results');
-  function render(q){
-    q=(q||'').trim().toLowerCase();
-    var hits=items.filter(function(it){ return !q || (it.text+it.title).toLowerCase().indexOf(q)>=0; }).slice(0,12);
-    results.innerHTML = hits.map(function(it){
-      return '<a class="cmd-item" href="'+it.href+'"><strong>'+it.title.replace(/</g,'&lt;')+'</strong></a>';
-    }).join('') || '<div class="cmd-empty">无结果</div>';
-  }
-  function openPal(){ pal.classList.add('open'); input.value=''; render(''); setTimeout(function(){ input.focus(); }, 10); }
-  function closePal(){ pal.classList.remove('open'); }
-  window.addEventListener('keydown', function(e){
-    if ((e.metaKey||e.ctrlKey) && e.key.toLowerCase()==='k'){ e.preventDefault(); openPal(); }
-    if (e.key==='Escape') closePal();
-  });
-  pal.addEventListener('click', function(e){ if(e.target===pal) closePal(); });
-  input.addEventListener('input', function(){ render(input.value); });
-
-  /* easter egg ai168 */
-  var buf='';
-  window.addEventListener('keypress', function(e){
-    if (e.target && /input|textarea/i.test(e.target.tagName)) return;
-    buf=(buf+e.key).slice(-5).toLowerCase();
-    if (buf==='ai168'){
-      buf='';
-      showToast('AI168 粒子爆发');
-      if (window.__brainAPI && window.__brainAPI.triggerShockwave) window.__brainAPI.triggerShockwave();
-      document.body.classList.add('egg-burst');
-      setTimeout(function(){ document.body.classList.remove('egg-burst'); }, 1200);
-      // burst dots
-      if (!reduced){
-        for (var i=0;i<24;i++){
-          var d=document.createElement('div'); d.className='burst-dot';
-          d.style.left=(50+Math.cos(i)*10)+'%'; d.style.top=(40+Math.sin(i)*8)+'%';
-          d.style.setProperty('--dx', (Math.cos(i/24*Math.PI*2)*120)+'px');
-          d.style.setProperty('--dy', (Math.sin(i/24*Math.PI*2)*90)+'px');
-          document.body.appendChild(d);
-          setTimeout((function(el){ return function(){ el.remove(); }; })(d), 900);
-        }
-      }
-    }
-  });
 })();
 </script>
 </body></html>

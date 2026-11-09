@@ -1,47 +1,29 @@
+/* Loads the decorative WebGL brain. Reduced motion (OS or the "减少动态" toggle) → static frame, not removal. */
 (function(){
   function ready(fn){
     if(document.readyState==='complete') fn();
     else window.addEventListener('load', fn, {once:true});
   }
+  function fallback(el, base){
+    var f=document.createElement('script');
+    f.src=base+'brain-fallback.js';
+    f.onload=function(){ if(window.mountBrainFallback) window.mountBrainFallback(el); };
+    document.head.appendChild(f);
+  }
   function boot(){
     var el=document.getElementById('brain-hero');
     if(!el) return;
-    var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var base=el.getAttribute('data-vendor')||'vendor/';
     var start=function(){
-      var canvasTest=document.createElement('canvas');
-      var gl=canvasTest.getContext('webgl')||canvasTest.getContext('experimental-webgl');
-      if(!gl || reduced){
-        var s=document.createElement('script');
-        s.src=(document.querySelector('meta[name="asset-base"]')||{}).content||'';
-        // resolve relative vendor path from data attribute
-        var base=el.getAttribute('data-vendor')||'vendor/';
-        var f=document.createElement('script');
-        f.src=base+'brain-fallback.js';
-        f.onload=function(){ if(window.mountBrainFallback) window.mountBrainFallback(el); };
-        document.head.appendChild(f);
-        return;
-      }
-      var base=el.getAttribute('data-vendor')||'vendor/';
+      var probe=document.createElement('canvas');
+      var gl=probe.getContext('webgl')||probe.getContext('experimental-webgl');
+      if(!gl){ fallback(el, base); return; }
       import(new URL(base+'brain-hero.js', document.baseURI).href).then(function(mod){
-        if(mod&&mod.mountBrainHero){
-          var destroy=mod.mountBrainHero(el);
-          if(!destroy){
-            // fallback
-            var f=document.createElement('script');
-            f.src=base+'brain-fallback.js';
-            f.onload=function(){ if(window.mountBrainFallback) window.mountBrainFallback(el); };
-            document.head.appendChild(f);
-          }
-        }
-      }).catch(function(){
-        var f=document.createElement('script');
-        f.src=base+'brain-fallback.js';
-        f.onload=function(){ if(window.mountBrainFallback) window.mountBrainFallback(el); };
-        document.head.appendChild(f);
-      });
+        if(!(mod&&mod.mountBrainHero&&mod.mountBrainHero(el))) fallback(el, base);
+      }).catch(function(){ fallback(el, base); });
     };
-    if('requestIdleCallback' in window) requestIdleCallback(start, {timeout:700});
-    else setTimeout(start, 200);
+    if('requestIdleCallback' in window) requestIdleCallback(start, {timeout:900});
+    else setTimeout(start, 250);
   }
   ready(boot);
 })();
