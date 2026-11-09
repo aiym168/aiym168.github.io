@@ -1,9 +1,28 @@
 {
   "date": "2026-11-10",
-  "updated_at": "2026-11-10T04:25+08:00",
-  "updated_at_label": "2026-11-10 04:25 Asia/Shanghai",
+  "updated_at": "2026-11-10T05:40+08:00",
+  "updated_at_label": "2026-11-10 05:40 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50432130",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "显示 HN：ApiClay –将网站、Google 表格或数据库转换为付费 API",
+      "summary": "Show HN: ApiClay –将网站、Google Sheet 或数据库转换为付费 API Hi HN，我是一名逆向工程师，我反复看到同样的问题：人们需要数据，但从“我需要这个”到“我的应用程序、代理或工作流程可以使用它”的路径很混乱。<p>Vibe 编码人员希望在几分钟内完成工作端点。开发人员需要干净的文档、可预测的 JSON 以及毫不意外的集成工作。企业希望丰富列表、监控更改并安全地公开",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "apiclay",
+      "url": "https://apiclay.com",
+      "posted_at": "2026-11-10 05:06 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: ApiClay – Turn a Website, Google Sheet or Database into a Paid API",
+      "original_summary": "Show HN: ApiClay – Turn a Website, Google Sheet or Database into a Paid API Hi HN, I’m a reverse engineer, and I’ve seen the same problem repeatedly: people need data, but the path from “I need this” to “my app, agent, or workflow can use it” is messy.<p>Vibe coders want a working endpoint in minutes. Developers want clean docs, predictable JSON, and no surprise integration work. Businesses want to enrich lists, monitor changes, and safely expose internal data. AI agents need APIs they can discover and call reliably. Sometimes, the API simply doesn&#x27;t exist.<p>ApiClay makes that whole loop easier.<p>You can search a catalogue of APIs and datasets, inspect them in a playground, and copy ready-to-run JavaScript, Python, or cURL snippets into your app. Each API has its own reference, pric",
+      "translated_by": "free-translate"
+    },
     {
       "id": "hn-50429564",
       "source": "Hacker News",
@@ -263,7 +282,7 @@
       "url": "https://someonewashere.app/",
       "posted_at": "2026-11-10 02:50 Asia/Shanghai",
       "engagement": {
-        "points": 8,
+        "points": 19,
         "comments": 6
       },
       "original_title": "Show HN: Someone Was Here – Find out who used your Mac while you were away",
@@ -282,8 +301,8 @@
       "url": "https://meowdisplay.app/",
       "posted_at": "2026-11-10 02:39 Asia/Shanghai",
       "engagement": {
-        "points": 36,
-        "comments": 14
+        "points": 52,
+        "comments": 19
       },
       "original_title": "Show HN: MeowDisplay Is iPhone Mirroring, but in Reverse",
       "original_summary": "Show HN: MeowDisplay Is iPhone Mirroring, but in Reverse Hey HN and Cats, thank you for checking this out!<p>Github:\n<a href=\"https:&#x2F;&#x2F;github.com&#x2F;raiseCatError&#x2F;meowdisplay\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;raiseCatError&#x2F;meowdisplay</a><p>EDIT 2: I should&#x27;ve mentioned that MeowDisplay started as a fork of OpenDisplay: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;peetzweg&#x2F;opendisplay\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;peetzweg&#x2F;opendisplay</a>\nwhich provided the foundational screen capture, virtual display, encoding and iPhone&#x2F;iPad receivers. I&#x27;ve since taken it in a more phone-first direction, with work on the interaction, streaming and security layers. I&#x27;ve credited OpenDisplay and its developer Philip in the",
@@ -302,7 +321,7 @@
       "posted_at": "2026-11-09 22:59 Asia/Shanghai",
       "engagement": {
         "points": 6,
-        "comments": 6
+        "comments": 7
       },
       "original_title": "Show HN: Thrum – run Claude Code, Codex and other coding agents as one team",
       "original_summary": "Show HN: Thrum – run Claude Code, Codex and other coding agents as one team Hi HN, I&#x27;m Leon. I built Thrum which runs the coding agents you already use and gives them functionality to work as a team.<p>It started as an open source project late last year but then in May I went crazy and added a ton of features. I was using it every day to build itself and to do everything else I needed to do with agents. As I found limitations in what agents can do, I added features to the product.<p>The basic features were all there in a month or so and then I wrapped it all in the GUI.  By this time the agents had sent over 200,000 messages and the whole thing fell over and I then had to spend 3 weeks fixing all of the cludge the agents had built and optimizing everyting.  That got the performance to",
@@ -328,6 +347,25 @@
       "translated_by": "free-translate"
     },
     {
+      "id": "hn-50417858",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "使用 Python 制作的文件共享平台 – 未使用 vibe 编码 – 自 2025 年起",
+      "summary": "用 Python 制作的文件共享平台 – 不是 vivi 编码 – 自 2025 年起 https://github.com/Merkoba/Harambe<p>2025 年左右我在这方面投入了大量精力。我没有使用 AI。它完全是手工编码的。我认为我在功能上和美学上都做得很好。它支持不同类型的文件，并且有多种查找帖子的方式。唯一需要注意的是，每个帖子必须只有 1 个文件。例如，没有图片库。如果上传多个图像，则会创建一个 zip 文件，或者如果您想通过“神奇”系统将它们转换为 gif，它会为您提供帮助。您可以自由使用它，或者与我合作。我再次公开了这个回购协议。我自己托管它，并将其用作我的主要文件上传和共享网站。我做了一些海豚动作",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "madprops",
+      "url": "https://news.ycombinator.com/item?id=50417858",
+      "posted_at": "2026-11-09 06:04 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "File sharing platform made in Python – Not vibe coded – Since 2025",
+      "original_summary": "File sharing platform made in Python – Not vibe coded – Since 2025 https:&#x2F;&#x2F;github.com&#x2F;Merkoba&#x2F;Harambe<p>I worked heavily on this around 2025. I wasn&#x27;t using AI. It&#x27;s completely hand-coded. I think I did good job at it, functionally, and aesthetically. It supports different types of files, and there are various ways to find posts. The only caveat is that every post must have exactly 1 file. There are no image galleries for instance. If multiple images are uploaded a zip file is created, or it offers you if you want to turn them into a gif through the &quot;magic&quot; system. You are free to use this, or collaborate with me on it. I made this repo public again. I host it myself and I use it as my main file upload and sharing site. I made some Dolphin actions to",
+      "translated_by": "free-translate"
+    },
+    {
       "id": "hn-50417585",
       "source": "Hacker News",
       "category": "AI 开发工具与编程助手",
@@ -344,101 +382,6 @@
       },
       "original_title": "Show HN: Fireside Folio – free books, comics and news editions for reMarkable",
       "original_summary": "Show HN: Fireside Folio – free books, comics and news editions for reMarkable I own a reMarkable 2 and wanted more to read on it than my own PDFs, so I built a free web app. You connect your tablet once with the official one-time code, then:<p>- Send any of 79,000+ public-domain books (Standard Ebooks first, plus Project Gutenberg, Wikisource and OpenStax textbooks).<p>- Get comics (xkcd volumes with the hover text, Pepper&amp;Carrot, pre-1931 strips) and 33,000+ magazine issues from 1930 and earlier, re-rendered for e-ink.<p>- Get puzzle books (sudoku with unique solutions, mazes, nonograms) to solve with the pen.<p>- Subscribe to 160+ blogs and news sites; it builds one EPUB edition every morning or every six hours, and moves editions you&#x27;ve finished to the trash.<p>Each kind lands",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50413970",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "显示 HN：重新计算–电子表格，其中单元格可以是 Claude Code 或 Codex 终端",
-      "summary": "Show HN: Recalc – 电子表格，其中单元格可以是 Claude Code 或 Codex 终端 我构建这个是因为它在构建评估/基准时对我很有用，并且我决定将其免费提供给其他人。目标非常简单，可以轻松地在侧面的面板中使用主要的 claude 代码/codex 会话，同时允许每个单元也成为运行 claude/codex 的终端会话，并且如果需要，可以在实际的终端窗口中继续会话。他们都可以使用网格上的单元、命名单元或有效地将应用程序粘合在一起的 MCP 服务器来相互通信。我还发现它对于管理相关但不同的会话中的上下文很有用。<p>我使用 recalc 运行的真正基准测试是在我的启动内部进行的，因此可以演示一些功能",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "sshah03",
-      "url": "https://github.com/sshah03/recalc",
-      "posted_at": "2026-11-08 23:12 Asia/Shanghai",
-      "engagement": {
-        "points": 11,
-        "comments": 1
-      },
-      "original_title": "Show HN: Recalc – Spreadsheet where cells can be Claude Code or Codex terminals",
-      "original_summary": "Show HN: Recalc – Spreadsheet where cells can be Claude Code or Codex terminals I built this because it was useful for me when building evals&#x2F;benchmarks, and I decided to put it up for free for others. The goal was quite simple, make it easy to use a lead claude code &#x2F; codex session in a panel on the side, while allowing every cell to also be a terminal session running claude&#x2F;codex, and make it possible to continue a session in an actual terminal window if I needed to. They can all talk to each other using cells on the grid, named cells, or the MCP server that effectively glues the app together. I also found it useful for managing context within related but disparate sessions.<p>My real benchmark runs with recalc are internal to my startup, so to demonstrate some of the func",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50412914",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI",
-      "summary": "显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI Hi HN。神奇宝贝卡牌是我的爱好之一，一次又一次出现的问题是一张原始卡牌是否值得支付 PSA 40 美元或更多的费用来评级，或者你是否应该卖掉它。诚实的答案通常是“跳过”，但大多数预评分工具都会给您一个自信的评分，而不需要数学。<p>评分或跳过会拍摄正面和背面的照片，并执行三件事：<p>- 以 OpenCV 为中心的测量。它找到卡片，校正透视，测量每个边界并绘制所测量的内容。如果它不能信任读数，它会说“未测量”而不是猜测。在 20 个综合测试面上，平均误差约为 0.5 个中心点。这是合成的，不是真实的扫描。\n- 询问愿景莫",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "nateparkerdev",
-      "url": "https://github.com/0x4rch/gradeorskip",
-      "posted_at": "2026-11-08 21:03 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Grade or Skip – measure a Pokémon card's centering and grading ROI",
-      "original_summary": "Show HN: Grade or Skip – measure a Pokémon card's centering and grading ROI Hi HN. Pokémon cards are one of my hobbies, and the question that comes up over and over is whether a raw card is worth paying PSA $40 or more to grade, or whether you should just sell it. The honest answer is usually &quot;skip&quot;, but most pre-grading tools give you one confident grade and no math.<p>Grade or Skip takes a photo of the front and back and does three things:<p>- Measures centering with OpenCV. It finds the card, corrects perspective, measures each border and draws what it measured. If it can&#x27;t trust a read, it says &quot;not measured&quot; instead of guessing. On 20 synthetic test sides the mean error is about 0.5 points of centering. That&#x27;s synthetic, not real scans.\n- Asks a vision mo",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50403588",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Show HN：为您的代理提供一台它可以控制的 Mac",
-      "summary": "向您的代理展示一台可以控制的 Mac Hello hello！<p>我正在构建 Offstage Cloud，这是按秒计费的临时 macOS 沙箱。<p>您可以将其用于 CI（例如 GitHub Actions）、使用 Xcode 进行构建，或者让您的代理控制 GUI — 在应用程序和 iOS 模拟器中单击、键入并截取屏幕截图。<p>免费试用！<p>将其粘贴到您的代理中以开始使用：<p>阅读 <a href=\"https://api.offstage.cloud/SKILL.md\" rel=\"nofollow\">https://api.offstage.cloud/SKILL.md</a> 并按照它设置后台云，以便您可以在真正的 Mac 上运行构建、测试和命令。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "viraatdas",
-      "url": "https://offstage.cloud/",
-      "posted_at": "2026-11-07 19:27 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Give your agent a Mac it can control",
-      "original_summary": "Show HN: Give your agent a Mac it can control Hello hello!<p>I&#x27;m building Offstage Cloud which are ephemeral macOS sandboxes billed by second.<p>You can use it for CI (eg GitHub Actions), build with Xcode, or let your agent control the GUI—click, type and take screenshots in apps and the iOS Simulator.<p>Try it for free!<p>Paste this into your agent to get started:<p>Read <a href=\"https:&#x2F;&#x2F;api.offstage.cloud&#x2F;SKILL.md\" rel=\"nofollow\">https:&#x2F;&#x2F;api.offstage.cloud&#x2F;SKILL.md</a> and follow it to set up offstage cloud, so you can run builds, tests and commands on a real Mac.",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50397561",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Show HN：告诉天空——根据实时天气数据信息灯笼随风飘移",
-      "summary": "Show HN：告诉天空 – 消息灯笼根据实时天气数据随风飘移 我创建了一个网络/移动应用程序，可让您在灯笼上写下故事/秘密/鼓励/等等。然后，您可以放开它，它就会使用 NOAA 公共风预报的实时风数据漂浮在世界地图上。然后，当它们漂浮在头顶上并添加到消息链中时，其他用户可以在定时窗口中捕获它们。然后他们释放它们以继续。<p>这只是我尝试的一件有趣的事情 - 有点像瓶子里的消息，但在天空中。我觉得这听起来是一个很酷的主意，在玩过之后，我真的很喜欢它，但很好奇其他人是否也认为它很酷或者只是看起来很蹩脚。哈哈<p>如果你愿意去看看，你可以在没有任何 si 的情况下观看灯笼",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "andycodeman",
-      "url": "https://tellthesky.com",
-      "posted_at": "2026-11-07 03:59 Asia/Shanghai",
-      "engagement": {
-        "points": 6,
-        "comments": 0
-      },
-      "original_title": "Show HN: Tell the Sky – message lanterns drift on winds from live weather data",
-      "original_summary": "Show HN: Tell the Sky – message lanterns drift on winds from live weather data I created a web&#x2F;mobile app that lets you write a story&#x2F;secret&#x2F;encouragement&#x2F;etc... on a lantern. You can then let it go and it will float over a world map using live wind data from NOAA&#x27;s public wind forecast. Other users can then catch them in a timed window as they float by overhead and add on to the message chain. Then they release them to continue on.<p>It&#x27;s just a fun thing I was trying - kind of like a message in a bottle but in the sky. I thought it sounded like a cool idea and after playing with it, I really like it but was curious if other people also thought it was cool or just seemed lame. lol<p>If you&#x27;d be willing to check it out you can view lanterns without any si",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50424621",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Show HN：我在免费 VPS 上运行 19 个生产 API",
-      "summary": "Show HN：我在免费 VPS 上运行 19 个生产 API",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "hhelll",
-      "url": "https://github.com/hhellll/dev-utility-APIs",
-      "posted_at": "2026-11-09 20:22 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: I run 19 production APIs on a free-tier VPS",
-      "original_summary": "Show HN: I run 19 production APIs on a free-tier VPS",
       "translated_by": "free-translate"
     },
     {
@@ -461,41 +404,60 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "hn-50411013",
+      "id": "hn-50413970",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
-      "title": "显示 HN：SEC 基础知识 – 免费金融 API",
-      "summary": "显示 HN：SEC 基础知识 – 免费金融 API",
+      "title": "显示 HN：重新计算–电子表格，其中单元格可以是 Claude Code 或 Codex 终端",
+      "summary": "Show HN: Recalc – 电子表格，其中单元格可以是 Claude Code 或 Codex 终端 我构建这个是因为它在构建评估/基准时对我很有用，并且我决定将其免费提供给其他人。目标非常简单，可以轻松地在侧面的面板中使用主要的 claude 代码/codex 会话，同时允许每个单元也成为运行 claude/codex 的终端会话，并且如果需要，可以在实际的终端窗口中继续会话。他们都可以使用网格上的单元、命名单元或有效地将应用程序粘合在一起的 MCP 服务器来相互通信。我还发现它对于管理相关但不同的会话中的上下文很有用。<p>我使用 recalc 运行的真正基准测试是在我的启动内部进行的，因此可以演示一些功能",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "chartwidgets",
-      "url": "https://www.quotelinks.com/api/sec-fundamentals/",
-      "posted_at": "2026-11-08 14:51 Asia/Shanghai",
+      "author": "sshah03",
+      "url": "https://github.com/sshah03/recalc",
+      "posted_at": "2026-11-08 23:12 Asia/Shanghai",
+      "engagement": {
+        "points": 19,
+        "comments": 2
+      },
+      "original_title": "Show HN: Recalc – Spreadsheet where cells can be Claude Code or Codex terminals",
+      "original_summary": "Show HN: Recalc – Spreadsheet where cells can be Claude Code or Codex terminals I built this because it was useful for me when building evals&#x2F;benchmarks, and I decided to put it up for free for others. The goal was quite simple, make it easy to use a lead claude code &#x2F; codex session in a panel on the side, while allowing every cell to also be a terminal session running claude&#x2F;codex, and make it possible to continue a session in an actual terminal window if I needed to. They can all talk to each other using cells on the grid, named cells, or the MCP server that effectively glues the app together. I also found it useful for managing context within related but disparate sessions.<p>My real benchmark runs with recalc are internal to my startup, so to demonstrate some of the func",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50424621",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Show HN：我在免费 VPS 上运行 19 个生产 API",
+      "summary": "Show HN：我在免费 VPS 上运行 19 个生产 API",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "hhelll",
+      "url": "https://github.com/hhellll/dev-utility-APIs",
+      "posted_at": "2026-11-09 20:22 Asia/Shanghai",
       "engagement": {
         "points": 1,
         "comments": 0
       },
-      "original_title": "Show HN: SEC Fundamentals – free financial API",
-      "original_summary": "Show HN: SEC Fundamentals – free financial API",
+      "original_title": "Show HN: I run 19 production APIs on a free-tier VPS",
+      "original_summary": "Show HN: I run 19 production APIs on a free-tier VPS",
       "translated_by": "free-translate"
     },
     {
-      "id": "hn-50410429",
+      "id": "hn-50423113",
       "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Show HN：Reges Code – 在本地模型上运行的免费 AI 代码编辑器",
-      "summary": "Show HN：Reges Code – 在本地模型上运行的免费 AI 代码编辑器",
+      "category": "云服务/GPU/开发者资源",
+      "title": "显示 HN：软件职称家谱",
+      "summary": "显示 HN：软件职称家谱 我一直想看到的东西，现在通过 AI 成为可能：计算/软件职称的家谱。<p>希望人们看起来很有趣。它收集的一些历史细节对我来说非常有趣，例如“计算机”节点（1880-1940 年代）中有关 ENIAC 的内容。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "nonerthy",
-      "url": "https://regescode.com/",
-      "posted_at": "2026-11-08 12:32 Asia/Shanghai",
+      "author": "zwischenzug",
+      "url": "https://ianmiell.github.io/sw-job-title-family-tree/",
+      "posted_at": "2026-11-09 17:17 Asia/Shanghai",
       "engagement": {
-        "points": 2,
+        "points": 1,
         "comments": 0
       },
-      "original_title": "Show HN: Reges Code – a free AI code editor that runs on local models",
-      "original_summary": "Show HN: Reges Code – a free AI code editor that runs on local models",
+      "original_title": "Show HN: Software Job Title Family Tree",
+      "original_summary": "Show HN: Software Job Title Family Tree Something I&#x27;ve always wanted to see, now made possible by AI: a family tree of computing &#x2F; software job titles.<p>Hopefully it&#x27;s fun for people to look at. Some of the historical detail it gathered was very interesting to me, eg the stuff about ENIAC in the &#x27;Computer&#x27; node (1880-1940s).",
       "translated_by": "free-translate"
     },
     {
@@ -535,21 +497,39 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-precis1onz-tokenation",
+      "id": "ghdeal-sagarbiswas-multihat-penetration-testing-roadmap",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "精确/标记",
-      "summary": "precis1onz/tokenation Daily-updated free LLM API list — top AA-scored picks, free tokens to burn. Evergreen + limited-time lists, every entry verified against official pages. 日更免费 LLM API 羊毛清单｜AA 指数高分精选，token 自由无脑蹬！常态免费+限时羊毛双清单，条目逐条对官方页核实。",
+      "title": "SagarBiswas-MultiHAT/渗透测试路线图",
+      "summary": "SagarBiswas-MultiHAT/渗透测试路线图🎯一个为期60周的结构化渗透测试课程，包含500多个免费的 TryHackMe 实验室、OWASP 十大深度潜水、工具掌握指南和认证路线图。从零到专业 pentester 的三条学习路径。2026版；包括 AI/LLM、云和 API 安全。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "precis1onz",
-      "url": "https://github.com/precis1onz/tokenation",
-      "posted_at": "2026-11-10 04:06 Asia/Shanghai",
+      "author": "SagarBiswas-MultiHAT",
+      "url": "https://github.com/SagarBiswas-MultiHAT/penetration-testing-roadmap",
+      "posted_at": "2026-11-10 05:35 Asia/Shanghai",
       "engagement": {
-        "stars": 47
+        "stars": 89
       },
-      "original_title": "precis1onz/tokenation",
-      "original_summary": "precis1onz/tokenation Daily-updated free LLM API list — top AA-scored picks, free tokens to burn. Evergreen + limited-time lists, every entry verified against official pages. 日更免费 LLM API 羊毛清单｜AA 指数高分精选，token 自由无脑蹬！常态免费+限时羊毛双清单，条目逐条对官方页核实。",
+      "original_title": "SagarBiswas-MultiHAT/penetration-testing-roadmap",
+      "original_summary": "SagarBiswas-MultiHAT/penetration-testing-roadmap 🎯 A structured 60-week penetration testing curriculum with 500+ free TryHackMe labs, OWASP Top 10 deep dives, tool mastery guides, and certification roadmaps. Three learning paths from zero to professional pentester. 2026 Edition; includes AI/LLM, Cloud & API security.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-jslavender-trader-goblins",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "jsLavender/trader-goblins",
+      "summary": "jsLavender/trader-goblinsAI 投资研究数据平台：时间点/无泄漏设计，多源集成（市场数据，SEC EDGAR，经纪 API，LLM），以及不欺骗自己的诚实研究。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "jsLavender",
+      "url": "https://github.com/jsLavender/trader-goblins",
+      "posted_at": "2026-11-10 05:31 Asia/Shanghai",
+      "engagement": {
+        "stars": 1
+      },
+      "original_title": "jsLavender/trader-goblins",
+      "original_summary": "jsLavender/trader-goblins An AI investment-research data platform: point-in-time/leak-free design, multi-source integration (market data, SEC EDGAR, brokerage API, LLM), and an honest study in not fooling yourself.",
       "translated_by": "free-translate"
     },
     {
@@ -562,7 +542,7 @@
       "deadline": null,
       "author": "Arsh624",
       "url": "https://github.com/Arsh624/llm4jobs-v2",
-      "posted_at": "2026-11-10 04:01 Asia/Shanghai",
+      "posted_at": "2026-11-10 05:31 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
@@ -571,21 +551,93 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-robhunterclaude-free-llm-api-index",
+      "id": "ghdeal-alirezasafaei-dev-awesome-free-llm-apis-ir",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "robhunterclaude/free-llm-api-index",
-      "summary": "robhunterclaude/free-llm-api-index AI 和 LLM API 的免费会员等级—每行都注明日期，源自供应商自己的页面，并显示其替换的条款。根据目录 https://agentdeals.dev 生成。",
+      "title": "alirezasafaei-dev/awesome-free-llm-apis-ir",
+      "summary": "alirezasafaei-dev/awesome-free-llm-apis-ir 波斯语优先，具有配额、OpenAI 兼容性、官方来源和伊朗访问证据的免费 LLM API 的机器可读目录。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "robhunterclaude",
-      "url": "https://github.com/robhunterclaude/free-llm-api-index",
-      "posted_at": "2026-11-10 03:59 Asia/Shanghai",
+      "author": "alirezasafaei-dev",
+      "url": "https://github.com/alirezasafaei-dev/awesome-free-llm-apis-ir",
+      "posted_at": "2026-11-10 05:25 Asia/Shanghai",
+      "engagement": {
+        "stars": 15
+      },
+      "original_title": "alirezasafaei-dev/awesome-free-llm-apis-ir",
+      "original_summary": "alirezasafaei-dev/awesome-free-llm-apis-ir Persian-first, machine-readable directory of free LLM APIs with quotas, OpenAI compatibility, official sources, and Iran-access evidence.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-ashok-kallara-semantic-daily",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "ashok-kallara/semantic-daily",
+      "summary": "ashok-kallara/semantic-daily 100%免费代理新闻聚合器，可从 Native API （Reddit、Bluesky、GitHub、RSS、HackerNews、YouTube 和 Exa.ai）中发现趋势 AI 和技术内容—通过 OpenRouter 使用多代理 LLM 管道进行重复数据删除和分类，并将精选的每日摘要直接发送到您的 Telegram 或作为 Web 仪表板。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ashok-kallara",
+      "url": "https://github.com/ashok-kallara/semantic-daily",
+      "posted_at": "2026-11-10 05:24 Asia/Shanghai",
+      "engagement": {
+        "stars": 1
+      },
+      "original_title": "ashok-kallara/semantic-daily",
+      "original_summary": "ashok-kallara/semantic-daily A 100% free agentic news aggregator that discovers trending AI & technology content from Native APIs (Reddit, Bluesky, GitHub, RSS, HackerNews, YouTube, and Exa.ai) — deduplicates, categorizes using a multi-agent LLM pipeline over OpenRouter, and delivers a curated daily digest directly to your Telegram or as a Web Dashboard.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-andrewavery7-promptspend",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "AndrewAvery7/promptspend",
+      "summary": "AndrewAvery7/promptspend LLM 定价显示其工作：每个价格都有其来源和最后一次确认的日期，每天早上对供应商进行重新检查。网络计算器、iPhone 和 Android 应用程序、MCP 服务器、VS Code 扩展和免费无钥匙 API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "AndrewAvery7",
+      "url": "https://github.com/AndrewAvery7/promptspend",
+      "posted_at": "2026-11-10 05:17 Asia/Shanghai",
+      "engagement": {
+        "stars": 1
+      },
+      "original_title": "AndrewAvery7/promptspend",
+      "original_summary": "AndrewAvery7/promptspend LLM pricing that shows its work: every price carries its source and the date it was last confirmed, re-checked against the vendors every morning. A web calculator, iPhone and Android apps, an MCP server, a VS Code extension and a free keyless API.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-c00lpeace-free-llm-tracker",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "c00lpeace/free-llm-tracker",
+      "summary": "c00lpeace/free-llm-tracker Hermes Agent 的免费 LLM API 提供商跟踪基线（定期自动更新）",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "c00lpeace",
+      "url": "https://github.com/c00lpeace/free-llm-tracker",
+      "posted_at": "2026-11-10 05:09 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
-      "original_title": "robhunterclaude/free-llm-api-index",
-      "original_summary": "robhunterclaude/free-llm-api-index Free tiers for AI and LLM APIs — every row dated, sourced to the vendor's own page, and showing the terms it replaced. Generated from the catalogue at https://agentdeals.dev.",
+      "original_title": "c00lpeace/free-llm-tracker",
+      "original_summary": "c00lpeace/free-llm-tracker Hermes Agent용 무료 LLM API 제공자 추적 기준선 (정기 자동 갱신)",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-roabraham-ashley",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "roabraham/ashley",
+      "summary": "roabraham/ashley Ashley 是一体化的一键式本地 AI 助手。它将 llama.cpp LLM 推理引擎、Symfony/PHP Web 聊天机器人界面、基于 CEF 的 Web 客户端（PHP 桌面）和服务管理器（用 Free Pascal 编写）捆绑到一个包中-运行时不需要互联网连接或云 API 密钥。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "roabraham",
+      "url": "https://github.com/roabraham/ashley",
+      "posted_at": "2026-11-10 04:27 Asia/Shanghai",
+      "engagement": {
+        "stars": 7
+      },
+      "original_title": "roabraham/ashley",
+      "original_summary": "roabraham/ashley Ashley is an all-in-one, single-click local AI assistant. It bundles an llama.cpp LLM inference engine, a Symfony/PHP web chatbot interface, a CEF-based web client (PHP Desktop), and a service manager (written in Free Pascal) into one package - no Internet connection or cloud API key required at runtime.",
       "translated_by": "free-translate"
     },
     {
@@ -625,60 +677,6 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-parag-pawar2004-cinemind",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "帕拉格-帕瓦尔2004/cinemind",
-      "summary": "Parag-Pawar2004/cinemind 仅使用免费 API 为好莱坞、宝莱坞、托莱坞、K-drama 和 C-drama 提供多代理、LLM 增强推荐",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Parag-Pawar2004",
-      "url": "https://github.com/Parag-Pawar2004/cinemind",
-      "posted_at": "2026-11-10 02:54 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "Parag-Pawar2004/cinemind",
-      "original_summary": "Parag-Pawar2004/cinemind Multi-agent, LLM-augmented recommender for Hollywood, Bollywood, Tollywood, K-drama and C-drama using only free APIs",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-rogergongas8-token-counter",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "rogergongas8/Token 计数器",
-      "summary": "rogergongas8/token-counter 基于浏览器的免费令牌计数器和 LLM API 成本计算器",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "rogergongas8",
-      "url": "https://github.com/rogergongas8/token-counter",
-      "posted_at": "2026-11-10 02:46 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "rogergongas8/token-counter",
-      "original_summary": "rogergongas8/token-counter Free browser-based token counter and LLM API cost calculator",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-chenggma-llm-judge-audit",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "成格玛/LLM-法官-审计",
-      "summary": "chenggma/llm-judge-audit LLM-as-judge 的预注册审核：与人类黄金标签的协议、位置/长度/自我偏好偏好、校准和预算最佳混合评估政策。完全在免费 API 会员等级上运行。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "chenggma",
-      "url": "https://github.com/chenggma/llm-judge-audit",
-      "posted_at": "2026-11-10 02:46 Asia/Shanghai",
-      "engagement": {
-        "stars": 2
-      },
-      "original_title": "chenggma/llm-judge-audit",
-      "original_summary": "chenggma/llm-judge-audit Pre-registered audit of LLM-as-judge: agreement with human gold labels, position/length/self-preference bias, calibration, and a budget-optimal mixed evaluation policy. Runs entirely on free API tiers.",
-      "translated_by": "free-translate"
-    },
-    {
       "id": "ghdeal-mvalentsev-awesome-free-ai-coding",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
@@ -706,9 +704,9 @@
       "deadline": null,
       "author": "mnfst",
       "url": "https://github.com/mnfst/awesome-free-llm-apis",
-      "posted_at": "2026-11-10 04:25 Asia/Shanghai",
+      "posted_at": "2026-11-10 05:37 Asia/Shanghai",
       "engagement": {
-        "stars": 12755
+        "stars": 12762
       },
       "original_title": "mnfst/awesome-free-llm-apis",
       "original_summary": "mnfst/awesome-free-llm-apis List of Permanent Free LLM API  (API Keys)",
@@ -724,9 +722,9 @@
       "deadline": null,
       "author": "open-free-llm-api",
       "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
-      "posted_at": "2026-11-10 04:18 Asia/Shanghai",
+      "posted_at": "2026-11-10 05:14 Asia/Shanghai",
       "engagement": {
-        "stars": 5461
+        "stars": 5463
       },
       "original_title": "open-free-llm-api/awesome-freellm-apis",
       "original_summary": "open-free-llm-api/awesome-freellm-apis 134+ free LLM APIs & AI API keys from 40+ providers. Google Gemini, NVIDIA NIM, Groq, OpenRouter & more. One-click setup for Claude Code, Cursor and Codex.",

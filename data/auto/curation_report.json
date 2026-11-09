@@ -5,14 +5,18 @@
   "drop:duplicate": 13,
   "drop:empty_summary": 7,
   "drop:negative_signal": 63,
-  "drop:no_clear_offer": 64,
-  "drop:not_ai": 72,
+  "drop:no_clear_offer": 72,
+  "drop:not_ai": 67,
   "drop:too_old_pre2025": 40,
-  "google_news_resolved": 93,
-  "google_news_total": 93,
-  "kept_total": 68,
+  "google_news_resolved": 102,
+  "google_news_total": 102,
+  "kept_total": 74,
   "net:gnews_cache_hit": 93,
-  "raw_total": 327
+  "net:gnews_resolved_net": 9,
+  "net:tco_expanded": 8,
+  "net:tco_failed": 1,
+  "new_this_run": 7,
+  "raw_total": 336
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -40,6 +44,7 @@
    "如何免费获得 Claude 认证：如何免费获得 Claude 认证"
   ],
   "negative_signal": [
+   "@pillitterip 分享：希格斯菲尔德开放了72小时的免费试用版，其 MCP 连接器在 Claude 内拥有无限型",
    "一项由初级保健医生使用 LLM 转诊给专科医生的随机试验（与无 AI 相比）大大改善了工作流程",
    "@JulianGoldieSEO 分享：在做出重大决策之前，管理自己的 AI 会议室",
    "今天，我们将发布@ honeyflowai，这是您在金融市场上的个人 AI",
@@ -50,22 +55,21 @@
    "当 Grok Bot 耗尽时，让您的机器人团队继续运行",
    "@ZDNET 分享：我尝试用完全免费的本地 AI 堆栈替换 Claude Code - 进展如何 - ZDNET 我尝试",
    "像 Artcraft 这样的 AI 驱动的逆向工程正在生产免费的 Photoshop 和 Lightroom 克隆",
-   "今天免费 GPU，是的，全球赠品",
-   "@JulianGoldieSEO 分享：在一个屏幕上查看您的企业运行的每个 AI Agent"
+   "今天免费 GPU，是的，全球赠品"
   ],
   "no_clear_offer": [
+   "寓言5.2现已在@ adamdotnew 中推出",
+   "Claude Fable 5.2为付费订阅者提供免费限额重置：一到三个，具体取决于您为 Claude 付费的时间",
+   "检查您的 claude 使用情况，所有帐户都可以免费重置寓言",
+   "也可与免费 AI 工具配合使用：Mac、Windows 或 Linux 上的 Claude Code",
+   "Nuance Labs 推出了 Emma，这是一个免费的 AI 角色，用户可以在其新的 Nuplex 模型上进行视频聊天",
+   "Drex Max v1.1在 Decision Index @ ArtificialAnlys 上排名第一，即将公开发行",
    "@trq212 分享：现在，您每月可通过最高套餐（$ 100或与您的套餐相匹配的200）获得 Claude API 点数",
    "MOONSHOT 刚刚克隆了 CLAUDE 代码并使其免费，它被称为 Kimi Code CLI",
    "@sairahul1 分享：免费的 AI 动作设计师/动画师希望他们有一个 API 免费的 AI 动作设计师/动画师希望",
    "REA （reverse engineer anything） -由中国学生 F * CKED",
    "@andersonbcdefg 分享：向刚刚从一个为期14天的无声无电话内观度假胜地回来的人类朋友解释说，他的净资产已经",
-   "您现在可以免费在本地运行 Claude Code",
-   "ChatGPT Images 2.6 适用于所有 ChatGPT 级别，包括免费",
-   "开始与 Alexandria 一起研究 8,000 多家上市公司",
-   "三星 Galaxy AI Premium 计划揭晓",
-   "加入 HKFP：通过每月/每年捐款解锁 8 项福利",
-   "@dr_cintas 分享：您现在可以将任何网页动画逆向工程到您自己的代码中",
-   "免费 ChatGPT 用户现在可以制作动画 GIF，Google 将其视频模型的价格降低了约 30%"
+   "您现在可以免费在本地运行 Claude Code"
   ],
   "not_ai": [
    "让我的年长家庭成员摆脱 facebook Ai",
@@ -96,18 +100,18 @@
    "上周，EleutherAI 发布了 GPT Neo 的两个检查点，GPT Neo 是 OpenAI 的 GPT-3 的“"
   ]
  },
- "generated_at": "2026-11-10T04:26:11+08:00",
- "seconds": 0.3,
+ "generated_at": "2026-11-10T05:40:46+08:00",
+ "seconds": 5.6,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
+   "drop:negative_signal": 3,
    "drop:not_ai": 12,
-   "drop:not_ai_strict": 11,
-   "kept": 13,
+   "drop:not_ai_strict": 10,
+   "kept": 15,
    "raw": 40
   }
  }
