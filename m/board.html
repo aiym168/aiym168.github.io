@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="dark" />
 <meta name="theme-color" content="#02040a" />
 <script>try{if(localStorage.getItem('ai168-reduce')==='1')document.documentElement.classList.add('reduce-motion')}catch(e){}</script>
-<script type="importmap">{"imports":{"/vendor/board.js":"/vendor/board.js?v=69e929e652","/vendor/brain-fallback.js":"/vendor/brain-fallback.js?v=1e321da31b","/vendor/brain-hero.js":"/vendor/brain-hero.js?v=0fcdad78e8","/vendor/brain-loader.js":"/vendor/brain-loader.js?v=4d2432416e","/vendor/interact.js":"/vendor/interact.js?v=e74250a0c8","/vendor/octo-audio.js":"/vendor/octo-audio.js?v=1a38d0c1a8","/vendor/octopus.js":"/vendor/octopus.js?v=491c8baa6b","/vendor/site.js":"/vendor/site.js?v=041ae49e51","/vendor/three-addons/CopyShader.js":"/vendor/three-addons/CopyShader.js?v=4a948e9acb","/vendor/three-addons/EffectComposer.js":"/vendor/three-addons/EffectComposer.js?v=caa2ef55ad","/vendor/three-addons/LuminosityHighPassShader.js":"/vendor/three-addons/LuminosityHighPassShader.js?v=03d025cc40","/vendor/three-addons/MaskPass.js":"/vendor/three-addons/MaskPass.js?v=073ba17b3f","/vendor/three-addons/OrbitControls.js":"/vendor/three-addons/OrbitControls.js?v=a1add89030","/vendor/three-addons/OutputPass.js":"/vendor/three-addons/OutputPass.js?v=71ac274f88","/vendor/three-addons/OutputShader.js":"/vendor/three-addons/OutputShader.js?v=e3ec02c31a","/vendor/three-addons/Pass.js":"/vendor/three-addons/Pass.js?v=c0016bcbed","/vendor/three-addons/RenderPass.js":"/vendor/three-addons/RenderPass.js?v=fe2af1847c","/vendor/three-addons/RoomEnvironment.js":"/vendor/three-addons/RoomEnvironment.js?v=ab229d82b5","/vendor/three-addons/ShaderPass.js":"/vendor/three-addons/ShaderPass.js?v=193c868a04","/vendor/three-addons/UnrealBloomPass.js":"/vendor/three-addons/UnrealBloomPass.js?v=2c16639199","/vendor/three.module.min.js":"/vendor/three.module.min.js?v=2992ecd75d"}}</script>
+<script type="importmap">{"imports":{"/vendor/board-audio.js":"/vendor/board-audio.js?v=d35abe6e43","/vendor/board.js":"/vendor/board.js?v=4469fcd079","/vendor/brain-fallback.js":"/vendor/brain-fallback.js?v=1e321da31b","/vendor/brain-hero.js":"/vendor/brain-hero.js?v=0fcdad78e8","/vendor/brain-loader.js":"/vendor/brain-loader.js?v=4d2432416e","/vendor/interact.js":"/vendor/interact.js?v=e74250a0c8","/vendor/octo-audio.js":"/vendor/octo-audio.js?v=1a38d0c1a8","/vendor/octopus.js":"/vendor/octopus.js?v=dc934449b5","/vendor/site-audio.js":"/vendor/site-audio.js?v=8bd8ce73e4","/vendor/site.js":"/vendor/site.js?v=041ae49e51","/vendor/three-addons/CopyShader.js":"/vendor/three-addons/CopyShader.js?v=4a948e9acb","/vendor/three-addons/EffectComposer.js":"/vendor/three-addons/EffectComposer.js?v=caa2ef55ad","/vendor/three-addons/LuminosityHighPassShader.js":"/vendor/three-addons/LuminosityHighPassShader.js?v=03d025cc40","/vendor/three-addons/MaskPass.js":"/vendor/three-addons/MaskPass.js?v=073ba17b3f","/vendor/three-addons/OrbitControls.js":"/vendor/three-addons/OrbitControls.js?v=a1add89030","/vendor/three-addons/OutputPass.js":"/vendor/three-addons/OutputPass.js?v=71ac274f88","/vendor/three-addons/OutputShader.js":"/vendor/three-addons/OutputShader.js?v=e3ec02c31a","/vendor/three-addons/Pass.js":"/vendor/three-addons/Pass.js?v=c0016bcbed","/vendor/three-addons/RenderPass.js":"/vendor/three-addons/RenderPass.js?v=fe2af1847c","/vendor/three-addons/RoomEnvironment.js":"/vendor/three-addons/RoomEnvironment.js?v=ab229d82b5","/vendor/three-addons/ShaderPass.js":"/vendor/three-addons/ShaderPass.js?v=193c868a04","/vendor/three-addons/UnrealBloomPass.js":"/vendor/three-addons/UnrealBloomPass.js?v=2c16639199","/vendor/three.module.min.js":"/vendor/three.module.min.js?v=2992ecd75d"}}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235ce1ff'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2302040a'/%3E%3Crect x='5' y='5' width='22' height='22' rx='6' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%235ef0c0'/%3E%3C/svg%3E" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="renderer" content="webkit" />
@@ -831,6 +831,14 @@ body.board{overflow-x:hidden}
 .bd-mine-row.ok .bd-mine-s{color:var(--mint)} .bd-mine-row.rej .bd-mine-s{color:#ff8fa8}
 .bd-viewbtn{position:absolute;z-index:6;right:clamp(16px,3vw,40px);bottom:28px;font:500 12px/1 var(--mono);letter-spacing:.14em;color:#cfe9ff;background:rgba(8,12,28,.6);border:1px solid var(--line2);padding:10px 14px;border-radius:999px;cursor:pointer;backdrop-filter:blur(10px)}
 .bd-viewbtn:hover{border-color:var(--cyan);box-shadow:0 0 18px rgba(92,225,255,.35)}
+.bd-sndbtn{right:calc(clamp(16px,3vw,40px) + 132px)}
+.bd-sndbtn b{font-weight:600;color:var(--cyan)} .bd-sndbtn[aria-pressed="false"] b{color:#8a93b8} .bd-sndbtn.fail b{color:#ff8fa8}
+.bd-snd-cta{position:absolute;z-index:7;left:50%;top:88px;transform:translateX(-50%);font:500 13px/1 var(--mono);letter-spacing:.08em;color:#eaf7ff;background:rgba(10,18,40,.72);border:1px solid var(--cyan);padding:11px 18px;border-radius:999px;cursor:pointer;backdrop-filter:blur(10px);animation:bdSndPulse 1.8s ease-in-out infinite}
+.bd-snd-cta.hidden{display:none}
+.bd-snd-cta:disabled{border-color:#ff8fa8;color:#ffc2cf;animation:none;cursor:default}
+@keyframes bdSndPulse{0%,100%{box-shadow:0 0 0 0 rgba(92,225,255,.45)}50%{box-shadow:0 0 0 10px rgba(92,225,255,0),0 0 24px rgba(92,225,255,.35)}}
+.reduce-motion .bd-snd-cta{animation:none}
+@media (prefers-reduced-motion:reduce){.bd-snd-cta{animation:none}}
 #bd-labels{position:absolute;inset:0;z-index:4;pointer-events:none;overflow:hidden}
 .bd-label{--h:190;position:absolute;left:0;top:0;font:500 11px/1 var(--mono);letter-spacing:.06em;color:hsl(var(--h),95%,80%);white-space:nowrap;padding:4px 8px;border-radius:999px;
   background:rgba(4,8,20,.55);border:1px solid hsla(var(--h),95%,70%,.35);transition:opacity .3s;will-change:transform;text-shadow:0 0 8px hsla(var(--h),95%,60%,.8)}
@@ -929,6 +937,8 @@ body.board{overflow-x:hidden}
   .bd-stat{min-width:0;padding:6px 10px}.bd-stat b{font-size:17px}
   .bd-hud.tr{display:none}
   .bd-viewbtn{bottom:auto;top:auto;right:16px;padding:8px 12px;font-size:11px;bottom:calc(12px + var(--portal-h,150px) + 10px)}
+  .bd-sndbtn{right:128px}
+  .bd-snd-cta{top:auto;bottom:calc(12px + var(--portal-h,150px) + 56px)}
   .bd-k-long{display:none}.bd-k-short{display:inline}
   .bd-portal{bottom:12px;border-radius:22px}
   .bd-portal-in{padding:10px 10px 10px;border-radius:20px}
@@ -972,6 +982,8 @@ body.board{overflow-x:hidden}
   </div>
   <div class="bd-hud tr"><div id="bd-mine"><h3>我的信号</h3><div id="bd-mine-list"></div></div></div>
   <button class="bd-viewbtn" id="bd-view" type="button">≡ 列表视图</button>
+  <button class="bd-viewbtn bd-sndbtn" type="button" data-snd-toggle aria-pressed="false" title="点击开启音效">🔊 声音 <b>开</b></button>
+  <button class="bd-snd-cta hidden" type="button" data-snd-cta>🔊 点击开启音效</button>
   <div id="bd-holo" role="dialog" aria-live="polite">
     <i class="bd-holo-c a"></i><i class="bd-holo-c b"></i><i class="bd-holo-c c"></i><i class="bd-holo-c d"></i>
     <div class="bd-holo-top"><span id="bd-holo-id">信号</span><span id="bd-holo-ago"></span></div>
@@ -1260,5 +1272,5 @@ body.board{overflow-x:hidden}
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
 })();
 </script>
-<script type="module" src="../vendor/board.js?v=69e929e652"></script>
+<script type="module" src="../vendor/board.js?v=4469fcd079"></script>
 </body></html>

@@ -59,6 +59,14 @@ body.board{overflow-x:hidden}
 .bd-mine-row.ok .bd-mine-s{color:var(--mint)} .bd-mine-row.rej .bd-mine-s{color:#ff8fa8}
 .bd-viewbtn{position:absolute;z-index:6;right:clamp(16px,3vw,40px);bottom:28px;font:500 12px/1 var(--mono);letter-spacing:.14em;color:#cfe9ff;background:rgba(8,12,28,.6);border:1px solid var(--line2);padding:10px 14px;border-radius:999px;cursor:pointer;backdrop-filter:blur(10px)}
 .bd-viewbtn:hover{border-color:var(--cyan);box-shadow:0 0 18px rgba(92,225,255,.35)}
+.bd-sndbtn{right:calc(clamp(16px,3vw,40px) + 132px)}
+.bd-sndbtn b{font-weight:600;color:var(--cyan)} .bd-sndbtn[aria-pressed="false"] b{color:#8a93b8} .bd-sndbtn.fail b{color:#ff8fa8}
+.bd-snd-cta{position:absolute;z-index:7;left:50%;top:88px;transform:translateX(-50%);font:500 13px/1 var(--mono);letter-spacing:.08em;color:#eaf7ff;background:rgba(10,18,40,.72);border:1px solid var(--cyan);padding:11px 18px;border-radius:999px;cursor:pointer;backdrop-filter:blur(10px);animation:bdSndPulse 1.8s ease-in-out infinite}
+.bd-snd-cta.hidden{display:none}
+.bd-snd-cta:disabled{border-color:#ff8fa8;color:#ffc2cf;animation:none;cursor:default}
+@keyframes bdSndPulse{0%,100%{box-shadow:0 0 0 0 rgba(92,225,255,.45)}50%{box-shadow:0 0 0 10px rgba(92,225,255,0),0 0 24px rgba(92,225,255,.35)}}
+.reduce-motion .bd-snd-cta{animation:none}
+@media (prefers-reduced-motion:reduce){.bd-snd-cta{animation:none}}
 #bd-labels{position:absolute;inset:0;z-index:4;pointer-events:none;overflow:hidden}
 .bd-label{--h:190;position:absolute;left:0;top:0;font:500 11px/1 var(--mono);letter-spacing:.06em;color:hsl(var(--h),95%,80%);white-space:nowrap;padding:4px 8px;border-radius:999px;
   background:rgba(4,8,20,.55);border:1px solid hsla(var(--h),95%,70%,.35);transition:opacity .3s;will-change:transform;text-shadow:0 0 8px hsla(var(--h),95%,60%,.8)}
@@ -157,6 +165,8 @@ body.board{overflow-x:hidden}
   .bd-stat{min-width:0;padding:6px 10px}.bd-stat b{font-size:17px}
   .bd-hud.tr{display:none}
   .bd-viewbtn{bottom:auto;top:auto;right:16px;padding:8px 12px;font-size:11px;bottom:calc(12px + var(--portal-h,150px) + 10px)}
+  .bd-sndbtn{right:128px}
+  .bd-snd-cta{top:auto;bottom:calc(12px + var(--portal-h,150px) + 56px)}
   .bd-k-long{display:none}.bd-k-short{display:inline}
   .bd-portal{bottom:12px;border-radius:22px}
   .bd-portal-in{padding:10px 10px 10px;border-radius:20px}
@@ -211,6 +221,8 @@ def write_board_page(site: Path, *, head_block, topnav, site_footer, site_js, ca
   </div>
   <div class="bd-hud tr"><div id="bd-mine"><h3>我的信号</h3><div id="bd-mine-list"></div></div></div>
   <button class="bd-viewbtn" id="bd-view" type="button">≡ 列表视图</button>
+  <button class="bd-viewbtn bd-sndbtn" type="button" data-snd-toggle aria-pressed="false" title="点击开启音效">🔊 声音 <b>开</b></button>
+  <button class="bd-snd-cta hidden" type="button" data-snd-cta>🔊 点击开启音效</button>
   <div id="bd-holo" role="dialog" aria-live="polite">
     <i class="bd-holo-c a"></i><i class="bd-holo-c b"></i><i class="bd-holo-c c"></i><i class="bd-holo-c d"></i>
     <div class="bd-holo-top"><span id="bd-holo-id">信号</span><span id="bd-holo-ago"></span></div>

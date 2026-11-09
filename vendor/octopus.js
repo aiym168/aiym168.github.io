@@ -14,6 +14,7 @@ import { RenderPass } from "./three-addons/RenderPass.js";
 import { UnrealBloomPass } from "./three-addons/UnrealBloomPass.js";
 import { OutputPass } from "./three-addons/OutputPass.js";
 import { createSfx, renderOffline, toWav } from "./octo-audio.js";
+import { createSoundSwitch } from "./site-audio.js";
 
 // ------------------------------------------------------------------ helpers
 const TAU = Math.PI * 2;
@@ -856,81 +857,22 @@ export function mountOctopus(stage) {
     if (reduced) { demoT = 4.6; }
     kick();
   }
-  // ---------- sound: muted until a user gesture; unlocked synchronously inside the gesture (iOS-safe)
-  let sfx = null, soundOn = false, soundFail = false, evIdx = 0, lastDemoT = -1, silentEl = null;
-  const soundBtns = [...document.querySelectorAll("[data-octo-sound]")];
-  const soundCta = stage.querySelector("[data-octo-sound-cta]");
-  const prefKey = "ai168-octo-sound";
-  const userMuted = () => { try { return localStorage.getItem(prefKey) === "0"; } catch (e) { return false; } };
-  const audioLive = () => !!(sfx && sfx.ctx.state === "running");
-  function syncSoundBtns() {
-    const live = soundOn && audioLive();
-    soundBtns.forEach((b) => {
-      b.setAttribute("aria-pressed", soundOn ? "true" : "false"); b.classList.toggle("on", live); b.classList.toggle("fail", soundFail);
-      const l = b.querySelector("b"); if (l) l.textContent = soundFail ? "不支持" : live ? "开" : soundOn ? "待开启" : "关";
-      b.title = soundFail ? "此浏览器不支持音效" : live ? "点击静音" : soundOn ? "点一下页面任意位置即可出声" : "点击开启机械变形音效";
-    });
-    if (soundCta) { soundCta.classList.toggle("hidden", !soundFail && (live || !soundOn)); soundCta.textContent = soundFail ? "此浏览器不支持音效" : "🔊 点击开启音效"; soundCta.disabled = soundFail; }
-    stage.classList.toggle("snd-on", live);
-  }
-  function silentWav() { // 0.1 s of silence, 8 kHz mono, as a data URI
-    const n = 800, b = new Uint8Array(44 + n), v = new DataView(b.buffer), w = (o, t) => { for (let i = 0; i < t.length; i++) b[o + i] = t.charCodeAt(i); };
-    w(0, "RIFF"); v.setUint32(4, 36 + n, true); w(8, "WAVE"); w(12, "fmt "); v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
-    v.setUint32(24, 8000, true); v.setUint32(28, 8000, true); v.setUint16(32, 1, true); v.setUint16(34, 8, true); w(36, "data"); v.setUint32(40, n, true); b.fill(128, 44);
-    let bin = ""; b.forEach((x) => (bin += String.fromCharCode(x))); return "data:audio/wav;base64," + btoa(bin);
-  }
-  // must run synchronously inside a user gesture handler
-  function unlockAudio() {
-    if (soundFail) return false;
-    try {
-      if (navigator.audioSession) { try { navigator.audioSession.type = "playback"; } catch (e) {} }
-      if (!silentEl) { silentEl = new Audio(silentWav()); silentEl.loop = true; silentEl.preload = "auto"; silentEl.setAttribute("playsinline", ""); silentEl.volume = 0.01; }
-      const pp = silentEl.play(); if (pp && pp.catch) pp.catch(() => {});
-      if (!sfx) {
-        const AC = window.AudioContext || window.webkitAudioContext;
-        if (!AC) throw new Error("Web Audio API unavailable");
-        let ctx; try { ctx = new AC({ latencyHint: "interactive" }); } catch (e) { ctx = new AC(); }
-        sfx = createSfx(ctx);
-        ctx.addEventListener("statechange", () => {
-          if (ctx.state === "running") { evIdx = SFX_EVENTS.findIndex((e) => e.t >= demoT); if (evIdx < 0) evIdx = SFX_EVENTS.length; }
-          syncSoundBtns();
-        });
-      }
-      if (sfx.ctx.state !== "running") { const r = sfx.ctx.resume(); if (r && r.catch) r.catch(() => {}); }
-      // a 1-sample buffer started in the gesture finishes the unlock on older iOS
-      const bs = sfx.ctx.createBufferSource(); bs.buffer = sfx.ctx.createBuffer(1, 1, 22050); bs.connect(sfx.ctx.destination); bs.start(0);
-      return true;
-    } catch (e) {
-      console.warn("[octopus] 音效不可用：", e && e.message ? e.message : e);
-      soundFail = true; soundOn = false; syncSoundBtns(); return false;
-    }
-  }
-  function enableSound(on, save = true) {
-    if (on) {
-      if (!unlockAudio()) return;
-      soundOn = true;
-      if (!reduced) sfx.startDrone();
-      evIdx = SFX_EVENTS.findIndex((e) => e.t >= demoT); if (evIdx < 0) evIdx = SFX_EVENTS.length;
-    } else {
-      soundOn = false;
-      if (sfx) { sfx.cancel(); sfx.stopDrone(); }
-      if (silentEl) silentEl.pause();
-    }
-    if (save) { try { if (soundOn) localStorage.removeItem(prefKey); else localStorage.setItem(prefKey, "0"); } catch (e) {} } // only an explicit mute is remembered
-    syncSoundBtns();
-  }
-  function sfxNow(type, args = [], delay = 0) { if (sfx && soundOn) sfx.play({ type, args }, sfx.ctx.currentTime + 0.02 + delay); }
-  // default ON: every early gesture anywhere on the page resumes the context until it runs
-  const gestureUnlock = () => { if (soundOn && !soundFail && !audioLive()) unlockAudio(); };
-  ["pointerdown", "touchstart", "touchend", "mousedown", "keydown", "click", "wheel"].forEach((t) => document.addEventListener(t, gestureUnlock, { capture: true, passive: true }));
-  document.addEventListener("visibilitychange", () => {
-    if (!sfx) return;
-    if (document.hidden) { if (sfx.ctx.state === "running") sfx.ctx.suspend().catch(() => {}); }
-    else if (soundOn) sfx.ctx.resume().catch(() => {});
+  // ---------- sound (default ON; shared unlock in vendor/site-audio.js). 减少动态 → no drone / no autoplayed film sound
+  let sfx = null, soundOn = false, evIdx = 0, lastDemoT = -1;
+  const resyncSfx = () => { evIdx = SFX_EVENTS.findIndex((e) => e.t >= demoT); if (evIdx < 0) evIdx = SFX_EVENTS.length; };
+  const snd = createSoundSwitch({
+    storageKey: "ai168-octo-sound",
+    buttons: [...document.querySelectorAll("[data-octo-sound]")],
+    cta: stage.querySelector("[data-octo-sound-cta]"),
+    root: stage,
+    createEngine: (ctx) => (sfx = createSfx(ctx)),
+    onOn: (e) => { soundOn = true; if (!reduced) e.startDrone(); resyncSfx(); },
+    onOff: (e) => { soundOn = false; e.cancel(); e.stopDrone(); },
+    onRunning: () => resyncSfx(),
   });
-  if (soundCta) soundCta.addEventListener("click", (ev) => { ev.preventDefault(); ev.stopPropagation(); enableSound(true); });
-  if (!userMuted()) enableSound(true, false); // try right away; browsers that block autoplay keep it suspended until a gesture
-  syncSoundBtns();
+  soundOn = snd.on;
+  function enableSound(on) { if (on) snd.enable(); else snd.disable(); soundOn = snd.on; }
+  function sfxNow(type, args = [], delay = 0) { if (sfx && soundOn) sfx.play({ type, args }, sfx.ctx.currentTime + 0.02 + delay); }
 
   function camTween(toPos, toTgt, dur = 1.1) { man.cam = { fromP: camera.position.clone(), fromT: controls.target.clone(), toP: toPos, toT: toTgt, t: 0, dur: reduced ? 0.001 : dur }; }
   function manualShot(i) {
@@ -980,7 +922,6 @@ export function mountOctopus(stage) {
   if (pillAll) pillAll.addEventListener("click", (ev) => { ev.preventDefault(); sfxNow("blip"); toggleExplode(); syncButtons(); });
   if (btnExplode) btnExplode.addEventListener("click", () => { toggleExplode(); syncButtons(); });
   if (btnDemo) btnDemo.addEventListener("click", () => { enableSound(true); startDemo(); });
-  soundBtns.forEach((b) => b.addEventListener("click", (ev) => { ev.preventDefault(); if (soundOn && !audioLive()) enableSound(true); else enableSound(!soundOn); }));
   if (btnXray) btnXray.addEventListener("click", () => setXray(!man.xray));
   if (btnReset) btnReset.addEventListener("click", () => { toManual(); if (man.expT > 0.5) sfxNow("reassemble", [1.2]); else if (man.target.some((v) => v > 0.5)) { const j = man.target.findIndex((v) => v > 0.5); sfxNow("close", [j, CLOSE]); sfxNow("snap", [j], CLOSE); } man.target = [0, 0, 0, 0, 0]; man.expT = 0; man.part = -1; const s = shotHero(4); camTween(s.pos, s.tgt); kick(); syncButtons(); });
   renderer.domElement.addEventListener("pointerdown", () => { if (mode === "demo") toManual(); });
@@ -1084,7 +1025,7 @@ export function mountOctopus(stage) {
     settle() { man.prog = man.target.slice(); man.expP = man.expT; if (man.cam) { man.cam.t = man.cam.dur; } step(0.016); return mode; },
     renderer,
     sfxEvents: SFX_EVENTS,
-    audio: { state: () => (sfx ? sfx.ctx.state : "none"), on: () => soundOn, fail: () => soundFail, rms: () => (sfx ? sfx.rms() : 0) },
+    audio: { state: () => snd.state(), on: () => snd.on, fail: () => snd.fail, rms: () => (sfx ? sfx.rms() : 0) },
     async renderAudio(duration = LOOP) {
       const buf = await renderOffline(SFX_EVENTS, duration, 48000);
       const bytes = new Uint8Array(toWav(buf)); let bin = "";

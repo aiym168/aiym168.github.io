@@ -2,6 +2,8 @@
    Messages are glowing stars in a 3D galaxy. Posting = encrypted envelope → public relay
    → GitHub Actions moderation (strict, server-side) → api/board.json. */
 import * as THREE from './three.module.min.js';
+import { createSoundSwitch, isReducedMotion } from './site-audio.js';
+import { createBoardAudio } from './board-audio.js';
 
 const $ = (s, r = document) => r.querySelector(s);
 const CFG = JSON.parse($('#board-cfg').textContent);
@@ -19,7 +21,21 @@ function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.
 function fmtTime(t) { const d = new Date(t * 1000); const p = n => String(n).padStart(2, '0'); return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`; }
 function ago(t) { const s = Date.now() / 1000 - t; if (s < 90) return '刚刚'; if (s < 3600) return Math.floor(s / 60) + ' 分钟前'; if (s < 86400) return Math.floor(s / 3600) + ' 小时前'; return Math.floor(s / 86400) + ' 天前'; }
 function hashNum(str) { let h = 2166136261; for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); } return (h >>> 0) / 4294967295; }
-function toast(msg, kind = '') { const t = $('#bd-toast'); t.textContent = msg; t.className = 'bd-toast show ' + kind; clearTimeout(toast._t); toast._t = setTimeout(() => t.className = 'bd-toast', 4200); }
+/* deep-space soundscape (default on; unlocks on first gesture; explicit mute remembered) */
+let SND = null;
+function sfx(fn, ...a) { const e = SND && SND.on && SND.live() && SND.engine; if (e) { try { e[fn](...a); } catch (x) {} } }
+function initSound() {
+  SND = createSoundSwitch({
+    storageKey: 'ai168-board-sound',
+    buttons: [...document.querySelectorAll('[data-snd-toggle]')],
+    cta: $('[data-snd-cta]'),
+    createEngine: (ctx) => createBoardAudio(ctx),
+    onOn: (e) => { if (!isReducedMotion()) e.startBed(); },
+    onOff: (e) => { e.stopBed(); e.drag(0); },
+  });
+  new MutationObserver(() => { const e = SND.engine; if (!e) return; if (isReducedMotion()) e.stopBed(); else if (SND.on) e.startBed(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+}
+function toast(msg, kind = '') { if (kind === 'err') sfx('error'); const t = $('#bd-toast'); t.textContent = msg; t.className = 'bd-toast show ' + kind; clearTimeout(toast._t); toast._t = setTimeout(() => t.className = 'bd-toast', 4200); }
 
 /* sync SHA-256 (for proof-of-work; WebCrypto is async and too slow per hash) */
 const K = new Uint32Array([0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2]);
@@ -134,7 +150,7 @@ function card(m, pending) {
   head.append(el('i', 'bd-dot'), el('b', '', m.nick || '匿名旅人'), el('span', 'bd-id', m.id || '审核中'), el('time', '', m.t ? fmtTime(m.t) : ''));
   const p = el('p', '', m.text);   // textContent only — never innerHTML (XSS-safe)
   c.append(head, p);
-  c.addEventListener('click', () => { if (m.id) { Galaxy.focus(m.id); document.getElementById('bd-stage').scrollIntoView({ behavior: 'smooth' }); } });
+  c.addEventListener('click', () => { sfx('sparkle', true); if (m.id) { Galaxy.focus(m.id); document.getElementById('bd-stage').scrollIntoView({ behavior: 'smooth' }); } });
   return c;
 }
 function renderList() {
@@ -410,18 +426,18 @@ const Galaxy = (() => {
     cv.addEventListener('pointerdown', (e) => { dragging = true; lastX = e.clientX; lastY = e.clientY; cv.setPointerCapture(e.pointerId); stage.classList.add('grab'); downAt = [e.clientX, e.clientY]; });
     cv.addEventListener('pointermove', (e) => {
       const r = cv.getBoundingClientRect(); ptr.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1); lastPtr = [e.clientX - r.left, e.clientY - r.top];
-      if (dragging) { const dx = e.clientX - lastX, dy = e.clientY - lastY; vY = dx * 0.00042; vX = dy * 0.00032; rotY += dx * 0.005; rotX = Math.max(-0.9, Math.min(1.25, rotX + dy * 0.004)); lastX = e.clientX; lastY = e.clientY; }
+      if (dragging) { const dx = e.clientX - lastX, dy = e.clientY - lastY; const nt = performance.now(), dtm = Math.max(8, nt - (lastMoveT || nt - 16)); lastMoveT = nt; sfx('drag', Math.hypot(dx, dy) / dtm, Math.sign(dx)); clearTimeout(dragQuiet); dragQuiet = setTimeout(() => sfx('drag', 0), 90); vY = dx * 0.00042; vX = dy * 0.00032; rotY += dx * 0.005; rotX = Math.max(-0.9, Math.min(1.25, rotX + dy * 0.004)); lastX = e.clientX; lastY = e.clientY; }
     });
-    const up = (e) => { dragging = false; stage.classList.remove('grab'); if (downAt && Math.hypot(e.clientX - downAt[0], e.clientY - downAt[1]) < 6) clickAt(); downAt = null; };
+    const up = (e) => { dragging = false; sfx('drag', 0); lastMoveT = 0; stage.classList.remove('grab'); if (downAt && Math.hypot(e.clientX - downAt[0], e.clientY - downAt[1]) < 6) clickAt(); downAt = null; };
     cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', () => { dragging = false; });
     cv.addEventListener('pointerleave', () => { ptr.set(-9, -9); });
     cv.addEventListener('wheel', (e) => { e.preventDefault(); zoomT = Math.max(14, Math.min(80, zoomT + e.deltaY * 0.03)); }, { passive: false });
     let pinch = 0; cv.addEventListener('touchmove', (e) => { if (e.touches.length === 2) { const d = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY); if (pinch) zoomT = Math.max(14, Math.min(80, zoomT - (d - pinch) * 0.08)); pinch = d; } }, { passive: true });
     cv.addEventListener('touchend', () => pinch = 0);
   }
-  let downAt = null, lastPtr = [0, 0];
+  let downAt = null, lastPtr = [0, 0], lastMoveT = 0, dragQuiet = 0, lastSpark = 0;
   function clickAt() {
-    if (hovered) { pinned = hovered; Holo.show(hovered.userData.m, lastPtr, true); burst(hovered); }
+    if (hovered) { pinned = hovered; Holo.show(hovered.userData.m, lastPtr, true); burst(hovered); sfx('sparkle', true); }
     else { pinned = null; Holo.hide(); }
   }
   function focus(id) { const s = orbs.get(id); if (!s) return; pinned = s; hovered = s; const p = s.position; rotY = -Math.atan2(p.z, p.x) + Math.PI / 2; rotX = 0.2; zoomT = 22; setTimeout(() => { const sp = screenOf(s); Holo.show(s.userData.m, sp, true); burst(s); }, 650); }
@@ -462,7 +478,7 @@ const Galaxy = (() => {
       if (d < Math.pow(u.base * 0.42, 2) && near < bestD) { best = s; bestD = near; }
     });
     bursts.forEach((x, i) => { x.t += dt / 900; x.b.scale.setScalar(1 + x.t * 9); x.b.material.opacity = 1 - x.t; if (x.t >= 1) { orbGroup.remove(x.b); bursts.splice(i, 1); } });
-    if (best !== hovered && !dragging) { hovered = best; renderer.domElement.style.cursor = best ? 'pointer' : 'grab'; if (best && !pinned) Holo.show(best.userData.m, lastPtr, false); else if (!best && !pinned) Holo.hide(); }
+    if (best !== hovered && !dragging) { hovered = best; if (best && t - lastSpark > 140) { lastSpark = t; sfx('sparkle', false); } renderer.domElement.style.cursor = best ? 'pointer' : 'grab'; if (best && !pinned) Holo.show(best.userData.m, lastPtr, false); else if (!best && !pinned) Holo.hide(); }
     if (pinned && pinned.parent) { Holo.place(screenOf(pinned)); }
     updateLabels();
     // pulse travelling along constellation
@@ -491,7 +507,7 @@ const Galaxy = (() => {
   }
   function launch(onArrive) {
     if (!ok) { onArrive && onArrive(); return; }
-    warp = 1;
+    warp = 1; sfx('warpSweep');
     const r = renderer.domElement.getBoundingClientRect(), comp = $('#bd-portal').getBoundingClientRect();
     const sx = ((comp.left + comp.width / 2 - r.left) / r.width) * 2 - 1, sy = -((comp.top + 20 - r.top) / r.height) * 2 + 1;
     const from = new THREE.Vector3(sx, Math.max(-0.95, sy), 0.5).unproject(camera);
@@ -551,7 +567,7 @@ function initComposer() {
     if (err) { toast(err, 'err'); portal.classList.remove('shake'); void portal.offsetWidth; portal.classList.add('shake'); return; }
     const last = +localStorage.getItem(LS_LAST) || 0; if (Date.now() - last < 45000) { toast('发射冷却中，请 ' + Math.ceil((45000 - (Date.now() - last)) / 1000) + ' 秒后再试。', 'err'); return; }
     if (Date.now() - T0 < 3000) { toast('先感受一下星空，3 秒后再发射吧。', 'err'); return; }
-    busy = true; portal.classList.add('charging'); btn.disabled = true; $('#bd-send-t').textContent = '校准坐标';
+    busy = true; sfx('charge', 1.6); portal.classList.add('charging'); btn.disabled = true; $('#bd-send-t').textContent = '校准坐标';
     try {
       const cid = hex(12), t1 = Date.now();
       const payload = { v: 1, cid, nick: nk, text, t0: T0, t1, fp: await fingerprint(), hp: '' };
@@ -565,7 +581,7 @@ function initComposer() {
       if (nick.value.trim()) localStorage.setItem(LS_NICK, nk);
       const l = mine(); l.push({ cid, text, nick: nk, t: Math.floor(t1 / 1000), s: 'pending' }); saveMine(l);
       portal.classList.add('launch');
-      Galaxy.launch(() => { Galaxy.sync(); });
+      Galaxy.launch(() => { Galaxy.sync(); }); sfx('chime');
       ta.value = ''; ta.dispatchEvent(new Event('input'));
       renderMine();
       toast('信号已发射 ✦ 正在穿越审核星门，通过后约 10–30 分钟出现在星空。', 'ok');
@@ -587,14 +603,15 @@ function scramble(node) {
 
 /* ---------------- boot ---------------- */
 function boot() {
-  initComposer(); renderMine();
+  initSound(); initComposer(); renderMine();
   document.querySelectorAll('[data-scramble]').forEach(scramble);
   $('#bd-q').addEventListener('input', renderList);
   const can3d = !reduced && (() => { try { const c = document.createElement('canvas'); return !!(c.getContext('webgl2') || c.getContext('webgl')); } catch { return false; } })();
   if (!can3d || !Galaxy.init()) document.body.classList.add('bd-flat');
   $('#bd-view').addEventListener('click', () => { document.getElementById('bd-flow').scrollIntoView({ behavior: 'smooth' }); });
   loadBoard();
-  window.__board = { focus: (id) => Galaxy.focus(id || (MESSAGES[0] && MESSAGES[0].id)) };
+  window.__board = { focus: (id) => Galaxy.focus(id || (MESSAGES[0] && MESSAGES[0].id)),
+    audio: { state: () => SND.state(), on: () => SND.on, fail: () => SND.fail, rms: () => (SND.engine ? SND.engine.rms() : 0), sfx, renderBed: async (secs = 30) => { const { renderBed } = await import('./board-audio.js'); const b = await renderBed(secs); return [Array.from(b.getChannelData(0)), Array.from(b.getChannelData(1))]; } } };
   setInterval(pollReceipts, 45000); setTimeout(pollReceipts, 4000);
   setInterval(loadBoard, 5 * 60000);
 }
