@@ -281,7 +281,7 @@ REDUCE_BOOT = ("<script>try{if(localStorage.getItem('ai168-reduce')==='1')docume
                "catch(e){}</script>")
 
 
-def head_block(title, description, canonical, og_title=None, pubdate=None, extra_ld=None):
+def head_block(title, description, canonical, og_title=None, pubdate=None, extra_ld=None, og_image=None):
     og_title = og_title or title
     verify = (CFG.get("baidu_site_verification") or "").strip()
     verify_meta = (
@@ -292,6 +292,11 @@ def head_block(title, description, canonical, og_title=None, pubdate=None, extra
     if pubdate:
         pub_meta = (f'<meta property="og:article:published_time" content="{esc(pubdate)}" />\n'
                     f'<meta name="pubdate" content="{esc(pubdate)}" />')
+    img = (og_image or "").strip() or f"{CANONICAL}assets/og-card.jpg"
+    if img.startswith("/"):
+        img = CANONICAL.rstrip("/") + img
+    elif not img.startswith("http"):
+        img = CANONICAL + img.lstrip("./")
     ld_html = "\n".join(json_ld(x) for x in (extra_ld or []))
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -322,6 +327,13 @@ def head_block(title, description, canonical, og_title=None, pubdate=None, extra
 <meta property="og:title" content="{esc(og_title)}" />
 <meta property="og:description" content="{esc(description)}" />
 <meta property="og:url" content="{esc(canonical)}" />
+<meta property="og:image" content="{esc(img)}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{esc(og_title)}" />
+<meta name="twitter:description" content="{esc(description)}" />
+<meta name="twitter:image" content="{esc(img)}" />
 {pub_meta}
 <style>
 {CSS}
@@ -1187,7 +1199,7 @@ def write_octopus_page(date: str) -> str:
     rows = "".join(f'<li><b>0{i + 1} · {esc(n)}</b><span>{esc(v)}</span></li>' for i, (n, v) in enumerate(OCTO_PARTS))
     crumbs = f'<a href="{prefix}">首页</a> / 实验室 / 机械章鱼'
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "url": canonical, "description": desc, "inLanguage": "zh-CN"}
-    page = f"""{head_block(title + " · " + SITE_NAME, desc, canonical, title, extra_ld=[ld])}
+    page = f"""{head_block(title + " · " + SITE_NAME, desc, canonical, title, extra_ld=[ld], og_image=CANONICAL + "assets/octopus-poster.jpg")}
 {page_shell_start(prefix, "octo-page")}
 <main class="wrap octo-wrap">
   <div class="crumbs octo-crumbs">{crumbs}</div>

@@ -65,6 +65,7 @@ fi
 RUN_RESULT="$RESULT" python3 status.py || log "status page failed"
 python3 heartbeat.py || true
 [ "$ENGINE" = "A" ] && { python3 baidu_push.py || true; }
+python3 indexnow_push.py || true
 rm -rf .last_good __pycache__
 log "result=$RESULT"
 echo "$RESULT" > /tmp/pipeline_result_$ENGINE

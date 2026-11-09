@@ -197,7 +197,7 @@ def write_board_page(site: Path, *, head_block, topnav, site_footer, site_js, ca
           {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {"@type": "ListItem", "position": 1, "name": "首页", "item": canonical},
               {"@type": "ListItem", "position": 2, "name": "匿名留言板", "item": f"{canonical}m/board.html"}]}]
-    head = head_block(title, desc, f"{canonical}m/board.html", extra_ld=ld)
+    head = head_block(title, desc, f"{canonical}m/board.html", extra_ld=ld, og_image=f"{canonical}assets/board-poster.jpg")
     head = head.replace("</head>", f"<style>{BOARD_CSS}</style>\n</head>")
     page = f"""{head}
 <body class="board">
