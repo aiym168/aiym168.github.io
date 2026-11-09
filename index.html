@@ -395,7 +395,7 @@ kbd{font-family:var(--mono);font-size:.72rem;padding:2px 6px;border-radius:6px;b
 
 <header class="topnav">
   <a class="brand-mini" href="./"><span class="mark"></span><span class="txt">AI大模型免费资源导航</span></a>
-  <nav class="navlinks" aria-label="模块导航"><a href="./c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="./c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="./c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="./c/mianfei-gpu-yunfuwu.html" title="免费GPU / 云服务">免费GPU</a><a href="./c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="./m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="./m/hot-topics.html" title="最近热议">热议</a><a href="./m/status.html" title="更新动态">更新动态</a><a class="cta" href="./m/api.html" title="CLI / API">CLI / API</a></nav>
+  <nav class="navlinks" aria-label="模块导航"><a href="./c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="./c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="./c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="./c/mianfei-gpu-yunfuwu.html" title="免费GPU / 云服务">免费GPU</a><a href="./c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="./m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="./m/hot-topics.html" title="最近热议">热议</a><a href="./m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="./m/status.html" title="更新动态">更新动态</a><a class="cta" href="./m/api.html" title="CLI / API">CLI / API</a></nav>
 </header>
 <header class="hero-xl hero-brain">
   <div class="hero-xl-inner">
@@ -495,6 +495,46 @@ kbd{font-family:var(--mono);font-size:.72rem;padding:2px 6px;border-radius:6px;b
 </a></div>
   </section>
 
+  <style>
+.bd-teaser{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;padding:34px;border-radius:28px;overflow:hidden;isolation:isolate;
+  border:1px solid rgba(167,139,250,.35);background:radial-gradient(600px 300px at 80% 50%,rgba(167,139,250,.22),transparent 70%),radial-gradient(500px 260px at 10% 0%,rgba(92,225,255,.14),transparent 70%),rgba(6,10,24,.7)}
+.bd-teaser::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.9;background-image:radial-gradient(1.5px 1.5px at 12% 22%,#fff,transparent),radial-gradient(1px 1px at 32% 72%,#bff,transparent),radial-gradient(1.5px 1.5px at 58% 18%,#caf,transparent),radial-gradient(1px 1px at 78% 62%,#fff,transparent),radial-gradient(1.5px 1.5px at 90% 30%,#9ff,transparent),radial-gradient(1px 1px at 46% 46%,#fff,transparent);background-size:240px 240px;animation:bdDrift 40s linear infinite}
+@keyframes bdDrift{to{background-position:240px 120px}}
+.bd-teaser h2{margin:8px 0 10px;font:700 clamp(28px,3.4vw,44px)/1.1 var(--display);background:linear-gradient(100deg,#fff,#bfefff 35%,#a78bfa 70%,#ff7ad9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.bd-teaser p{color:var(--muted);margin:0 0 18px}
+.bd-orbit{position:relative;height:240px}
+.bd-orbit .o{position:absolute;left:50%;top:50%;border:1px solid rgba(140,200,255,.18);border-radius:50%;transform:translate(-50%,-50%) rotateX(68deg);animation:bdRot 18s linear infinite}
+.bd-orbit .o1{width:180px;height:180px}.bd-orbit .o2{width:300px;height:300px;animation-duration:30s;border-color:rgba(167,139,250,.2)}.bd-orbit .o3{width:420px;height:420px;animation-duration:46s}
+@keyframes bdRot{to{transform:translate(-50%,-50%) rotateX(68deg) rotateZ(360deg)}}
+.bd-orbit .core{position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px;border-radius:50%;background:radial-gradient(circle,#fff,#a78bfa 45%,transparent 70%);box-shadow:0 0 60px 18px rgba(167,139,250,.45);animation:bdPulse 3s infinite}
+.bd-chip{position:absolute;max-width:240px;padding:8px 12px;border-radius:12px;font-size:12.5px;line-height:1.5;color:#e6eeff;background:rgba(8,12,28,.72);border:1px solid rgba(140,200,255,.25);backdrop-filter:blur(8px);animation:bdFloat 6s ease-in-out infinite;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bd-chip b{color:var(--cyan);font-weight:600;margin-right:6px}
+.bd-chip:nth-child(1){left:2%;top:12%}.bd-chip:nth-child(2){right:0;top:44%;animation-delay:-2s}.bd-chip:nth-child(3){left:12%;bottom:6%;animation-delay:-4s}
+@keyframes bdFloat{50%{transform:translateY(-10px)}}
+@media (max-width:820px){.bd-teaser{grid-template-columns:1fr;padding:24px}.bd-orbit{height:200px}.bd-chip{max-width:200px}}
+</style>
+<section class="section" id="board">
+  <div class="bd-teaser reveal">
+    <div>
+      <div class="bd-kicker" style="font:500 12px/1 var(--mono);letter-spacing:.3em;color:var(--cyan)">ANONYMOUS · SIGNAL STATION</div>
+      <h2>匿名留言板 · 星际信号站</h2>
+      <p>无需登录，写下你想说的话，它会化作一束光飞入星空，成为一颗可以被所有人点亮阅读的信号星。</p>
+      <a class="btn primary" href="m/board.html">进入星际信号站 →</a>
+    </div>
+    <div class="bd-orbit" aria-hidden="true">
+      <span class="o o3"></span><span class="o o2"></span><span class="o o1"></span><span class="core"></span>
+      <div id="bd-chips"></div>
+    </div>
+  </div>
+</section>
+<script>
+(function(){var box=document.getElementById('bd-chips');if(!box)return;
+fetch('api/board.json?t='+Math.floor(Date.now()/600000)).then(function(r){return r.json()}).then(function(j){
+var ms=(j.messages||[]).slice(0,3);if(!ms.length){ms=[{nick:'星际旅人',text:'成为第一个发射信号的人吧 ✦'}]}
+ms.forEach(function(m){var c=document.createElement('div');c.className='bd-chip';var b=document.createElement('b');b.textContent=m.nick||'匿名旅人';c.appendChild(b);c.appendChild(document.createTextNode(m.text||''));box.appendChild(c)});
+}).catch(function(){});})();
+</script>
+
   <section class="section" id="cli-api">
     <div class="sec-head"><span class="sec-idx">02 / DEVELOPER</span>
     <h2>CLI / API</h2>
@@ -523,7 +563,7 @@ kbd{font-family:var(--mono);font-size:.72rem;padding:2px 6px;border-radius:6px;b
     <p class="sec-desc" style="margin:0">信息来自公开网页与社区，自动整理，可能过期或不准确。参与前请自行核实官网规则，谨防诈骗。</p>
   </div>
   <footer>
-  <div><span class="foot-brand">AI大模型免费资源导航</span> · 生成于 2026-11-09 20:06 Asia/Shanghai<br/>每小时自动更新</div>
+  <div><span class="foot-brand">AI大模型免费资源导航</span> · 生成于 2026-11-09 20:31 Asia/Shanghai<br/>每小时自动更新</div>
   <div><a href="./m/api.html">CLI / API</a> · <a href="./m/status.html">更新动态</a> · <a href="./feed.xml">RSS</a> · <a href="./sitemap.xml">网站地图</a> · <kbd>Ctrl</kbd>+<kbd>K</kbd> 搜索</div>
 </footer>
 </div>
