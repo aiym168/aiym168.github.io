@@ -891,10 +891,19 @@ def curate_side(items: list[dict], kind: str) -> tuple[list[dict], Counter]:
         if not AI_RX.search(text):
             rep["drop:not_ai"] += 1
             continue
-        if kind == "hot" and NEG.search(text) and not re.search(r"Claude|GPT|Gemini|DeepSeek|LLM|模型|Agent|AI", title):
+        if kind == "hot" and (NEG.search(text) or re.search(r"中转|中继|号池|招聘|满血", title)):
             rep["drop:negative_signal"] += 1
             continue
-        u = norm_url(it.get("url") or "")
+        url = it.get("url") or ""
+        if "news.google.com" in url:
+            url = resolve_gnews(url) or ""
+            if not url:
+                rep["drop:unresolved_redirect"] += 1
+                continue
+        if kind == "hot" and not AI_STRICT.search(title + " " + (it.get("original_title") or "")):
+            rep["drop:not_ai_strict"] += 1
+            continue
+        u = norm_url(url)
         fp = _fp(title)[:28]
         if not u or u in seen or fp in seen:
             rep["drop:duplicate"] += 1
@@ -911,9 +920,9 @@ def curate_side(items: list[dict], kind: str) -> tuple[list[dict], Counter]:
             "id": it.get("id") or "",
             "title": title,
             "summary": summary,
-            "url": it.get("url") or "",
+            "url": url,
             "source": it.get("source") or ("GitHub" if kind == "github" else ""),
-            "source_domain": domain(it.get("url") or ""),
+            "source_domain": domain(url),
         }
         if kind == "github":
             rec.update(name=it.get("name") or "", stars=it.get("stars"), language=it.get("language") or "",
