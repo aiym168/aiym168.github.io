@@ -361,7 +361,7 @@ def topnav(prefix="./"):
 def site_footer(prefix="./", extra="") -> str:
     return f"""<footer>
   <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
+  <div class="foot-links"><a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>"""
 
 
@@ -1121,6 +1121,87 @@ def _board_page(ym: str):
         return None
 
 
+# ============================================================ 机械章鱼 3D 拆解演示（页面由此生成，脚本在 vendor/octopus.js）
+OCTO_PARTS = [("玻璃头罩", "抬起并翻转"), ("光学眼", "镜组分离"), ("反应核心", "升出机体"), ("虹吸喷射管", "伸缩展开"), ("机械腕", "链节展开")]
+OCTO_STEPS = ["入场", "头罩", "光学眼", "核心", "喷射管", "机械腕", "全拆解", "重组", "离场"]
+
+
+def write_octopus_page(date: str) -> str:
+    """/m/octopus.html — procedural three.js teardown simulator (no model files)."""
+    prefix = "../"
+    canonical = CANONICAL + "m/octopus.html"
+    title = "HYALOS GX-8 玻璃机械章鱼 · 3D 拆解演示"
+    desc = "一只完全由代码在浏览器里实时生成的玻璃机械章鱼：玻璃头罩、光学眼、反应核心、虹吸喷射管和 8 条机械腕，可自动演示拆解，也可拖动旋转、逐个拆开零件。"
+    pills = "".join(f'<button type="button" class="octo-pill" data-octo-part="{i}"><i>0{i + 1}</i>{esc(n)}</button>'
+                    for i, (n, _v) in enumerate(OCTO_PARTS))
+    steps = "".join(f'<span data-octo-step="{i}">{esc(n)}</span>' for i, n in enumerate(OCTO_STEPS))
+    labels = "".join(f'<div class="octo-label" data-octo-label="{i}"><i>0{i + 1}</i>{esc(n)}</div>' for i, (n, _v) in enumerate(OCTO_PARTS))
+    rows = "".join(f'<li><b>0{i + 1} · {esc(n)}</b><span>{esc(v)}</span></li>' for i, (n, v) in enumerate(OCTO_PARTS))
+    crumbs = f'<a href="{prefix}">首页</a> / 实验室 / 机械章鱼'
+    ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "url": canonical, "description": desc, "inLanguage": "zh-CN"}
+    page = f"""{head_block(title + " · " + SITE_NAME, desc, canonical, title, extra_ld=[ld])}
+{page_shell_start(prefix, "octo-page")}
+<main class="wrap octo-wrap">
+  <div class="crumbs octo-crumbs">{crumbs}</div>
+  <header class="octo-head">
+    <div class="eyebrow"><i class="live-dot"></i> 实验室 · 浏览器实时生成</div>
+    <h1 class="octo-title"><span class="kl">HYALOS GX-8</span><span class="octo-sub">玻璃机械章鱼 · 3D 拆解演示</span></h1>
+    <p class="lead">没有导入任何 3D 模型文件：玻璃头罩、齿轮、舵机、反应核心、吸盘和 8 条机械腕，全部是页面打开时由代码在你的浏览器里现场生成的。</p>
+  </header>
+  <section class="octo-stage is-demo" id="octo-stage" aria-label="机械章鱼 3D 演示">
+    <div class="octo-canvas" data-octo-canvas></div>
+    <div class="octo-vignette" aria-hidden="true"></div>
+    <svg class="octo-leaders" data-octo-leaders aria-hidden="true"></svg>
+    <div class="octo-hud tl"><b class="brand">HYALOS GX-8</b><span>零件 <b data-octo-parts>—</b></span><span>图层 <b data-octo-layer>整机</b></span></div>
+    <div class="octo-hud tr"><span class="rec"><i></i>SIM</span><b data-octo-time>00:00.0</b></div>
+    <div class="octo-status"><div class="octo-steps">{steps}</div><div class="octo-stline" data-octo-stage>正在生成零件…</div></div>
+    <div class="octo-caption" data-octo-caption><span class="t" data-octo-caption-time>00:00.0</span><b data-octo-caption-title></b><span class="s" data-octo-caption-sub></span></div>
+    <div class="octo-card" data-octo-card><div class="en" data-card-en></div><h3 data-card-name></h3><p data-card-fn></p><div class="read" data-card-read></div></div>
+    {labels}
+    <div class="octo-pills">{pills}<button type="button" class="octo-pill all" data-octo-all>全部拆解</button></div>
+    <div class="octo-cursor" data-octo-cursor aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 2l15 10.5-6.6 1.2 3.8 7.3-2.7 1.4-3.8-7.3L4 20z"/></svg></div>
+    <noscript><p class="octo-fallback">需要开启 JavaScript 才能看到 3D 演示。</p></noscript>
+    <p class="octo-fallback hidden" data-octo-nogl>你的浏览器没有开启 WebGL，暂时看不到 3D 演示。</p>
+  </section>
+  <div class="octo-controls" role="toolbar" aria-label="演示控制">
+    <button type="button" class="btn" data-octo-demo aria-pressed="true">▶ 自动演示</button>
+    <button type="button" class="btn" data-octo-explode>拆解</button>
+    <button type="button" class="btn" data-octo-xray aria-pressed="false">线框 / 透视：<b>实体</b></button>
+    <button type="button" class="btn ghost" data-octo-reset>重置视角</button>
+    <span class="octo-tip">拖动旋转 · 滚轮或双指缩放 · 点上面的零件按钮单独拆开</span>
+  </div>
+  <section class="section octo-info">
+    <div class="sec-head"><span class="sec-idx">拆解顺序</span><h2>自动演示约 30 秒</h2>
+      <p class="sec-desc">喷射入场 → 5 个零件依次拆开（每个约 1 秒展开、停留运转、0.5 秒合上，各有自己的镜头）→ 330° 转台全机拆解 → 边转边快速重组 → 喷射离场。</p></div>
+    <ol class="octo-list">{rows}</ol>
+    <div class="disclaimer-card about"><p>这是一个代码生成的演示作品，“HYALOS GX-8”是虚构的产品名，零件功能和读数都是设定，不对应任何真实产品。手机上会自动减少零件数；开启“减少动态”或系统的减少动态效果时不会自动播放。</p>
+      <p>本页共 <b data-octo-total>—</b> 个零件（重复的零件用实例化方式绘制，按个计数）。源码在 <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> 的 vendor/octopus.js。</p></div>
+  </section>
+  {site_footer(prefix, "页面生成于 " + date)}
+</main>
+{page_scripts()}
+<script type="module">
+import {{ mountOctopus }} from "{prefix}vendor/octopus.js";
+const st = document.getElementById("octo-stage");
+let ok = false; try {{ const c = document.createElement("canvas"); ok = !!(c.getContext("webgl2") || c.getContext("webgl")); }} catch (e) {{}}
+if (!ok || !mountOctopus(st)) {{ st.classList.add("no-gl"); st.querySelector("[data-octo-nogl]").classList.remove("hidden"); }}
+</script>
+</body></html>"""
+    (SITE / "m" / "octopus.html").write_text(page, encoding="utf-8")
+    return "m/octopus.html"
+
+
+def octopus_teaser(prefix: str = "./") -> str:
+    return f"""<section class="section" id="lab">
+    <div class="sec-head"><span class="sec-idx">实验室</span><h2>HYALOS GX-8 · 玻璃机械章鱼</h2>
+      <p class="sec-desc">一只完全由代码在浏览器里生成的 3D 机械章鱼，会自己一件件拆开再组装回去。</p></div>
+    <a class="octo-teaser" href="{prefix}m/octopus.html">
+      <span class="ot-img"><img src="{prefix}assets/octopus-poster.jpg" alt="玻璃机械章鱼 3D 拆解演示截图" loading="lazy" width="960" height="540" /></span>
+      <span class="ot-body"><b>3D 拆解演示</b><span>玻璃头罩、光学眼、反应核心、喷射管、8 条机械腕，上千个零件，可拖动旋转、逐个拆开。</span><em>打开演示 →</em></span>
+    </a>
+  </section>"""
+
+
 # ============================================================ homepage + build
 def next_update(now: datetime) -> datetime:
     n = now.replace(minute=7, second=0, microsecond=0)
@@ -1157,6 +1238,7 @@ def build():
     write_404()
     write_api(active, archived, repos, topics, counts, now, report)
     write_api_docs_page(date, counts)
+    octo_path = write_octopus_page(date)
 
     # ---- module cards (uniform, server-rendered)
     tiles = []
@@ -1232,6 +1314,8 @@ def build():
 
   {_board_teaser()}
 
+  {octopus_teaser('./')}
+
   <section class="section disclaimer" id="about">
     <div class="sec-head"><span class="sec-idx">04 · 关于与声明</span><h2>关于本站与免责声明</h2></div>
     <div class="disclaimer-card about">
@@ -1255,6 +1339,7 @@ def build():
                    ("m/status.html", date, "hourly", "0.5"), ("feed.xml", date, "hourly", "0.6"), ("api/index.json", date, "hourly", "0.5")]
     if board_path:
         url_entries.append((board_path, date, "daily", "0.7"))
+    url_entries.append((octo_path, date, "monthly", "0.6"))
     for pth in cat_paths + mod_paths:
         url_entries.append((pth, date, "daily", "0.9"))
     for pth in item_paths:
