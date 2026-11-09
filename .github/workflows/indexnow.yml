@@ -1,0 +1,30 @@
+name: IndexNow ping
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "sitemap.txt"
+      - "sitemap.xml"
+      - "indexnow_push.py"
+      - ".github/workflows/indexnow.yml"
+      - "cPVql59NwdhOJ5dmXGgRmGuf59RJXt9g.txt"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: true
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Submit IndexNow
+        run: python3 indexnow_push.py

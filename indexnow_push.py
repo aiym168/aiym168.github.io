@@ -81,9 +81,11 @@ def main() -> int:
     payload = {
         "host": HOST,
         "key": key,
-        "keyLocation": f"https://{HOST}/{key}.txt",
         "urlList": batch,
     }
+    # keyLocation only needed when key file is not at host root
+    if not (ROOT / f"{key}.txt").exists():
+        payload["keyLocation"] = f"https://{HOST}/{key}.txt"
     req = urllib.request.Request(
         ENDPOINT,
         data=json.dumps(payload).encode("utf-8"),
