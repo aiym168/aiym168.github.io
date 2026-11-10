@@ -31,7 +31,7 @@ main() {
   [ $ok = 1 ] || exit 4
   cp -f data/radio/episodes.json /tmp/radio_eps.json
   python3 radio_build.py || { echo "[radio] page build failed"; exit 5; }
-  git add data/radio radio
+  git add data/radio radio api/radio.json
   git diff --cached --quiet && { echo "[radio] nothing to commit"; exit 0; }
   MSG="AI 羊毛电台 $(date '+%m-%d') $([ $ED = am ] && echo 早报 || echo 晚报)"
   git commit -q -m "$MSG"
@@ -40,7 +40,7 @@ main() {
     echo "[radio] push rejected — resync (try $i)"
     sync || continue
     cp -f /tmp/radio_eps.json data/radio/episodes.json
-    python3 radio_build.py && git add data/radio radio && git commit -q -m "$MSG" || true
+    python3 radio_build.py && git add data/radio radio api/radio.json && git commit -q -m "$MSG" || true
     sleep $((i*5))
   done
   echo "[radio] push failed"; return 1
