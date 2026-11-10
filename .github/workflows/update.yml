@@ -1,6 +1,7 @@
 name: Auto update site
 
-# Engine A (GitHub Actions). Engine B = Simular server (engine/engine_b.sh).
+# Runs everything in GitHub Actions: collect → translate → filter → build → link-check → IndexNow/sitemap → self-heal.
+# An optional backup server job (engine/engine_b.sh) may also push; the site does not depend on it.
 # Watchdog (.github/workflows/watchdog.yml) re-enables / re-dispatches this if it stops.
 on:
   schedule:
@@ -24,6 +25,10 @@ on:
       - "seo_config.json"
       - "fx.css"
       - "fx.js"
+      - "news_collect.py"
+      - "news_build.py"
+      - "data/news/sources.json"
+      - "data/ai_tools.json"
       - "vendor/**"
       - "cli/**"
       - "cli.sh"

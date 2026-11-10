@@ -68,13 +68,15 @@ def main() -> int:
         f"https://{HOST}/deals/index.html",
         f"https://{HOST}/m/octopus.html",
         f"https://{HOST}/m/board.html",
+        f"https://{HOST}/news/index.html",
     ]
     fresh = [u for u in urls if u not in prev]
+    fresh.sort(key=lambda u: (0 if "/news/a/" in u else 1 if "/news/" in u else 2))  # 新闻条目先推
     batch = []
     for u in priority + fresh:
         if u not in batch:
             batch.append(u)
-        if len(batch) >= 100:
+        if len(batch) >= 500:
             break
     if not batch:
         batch = priority[:4]

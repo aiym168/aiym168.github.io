@@ -27,37 +27,74 @@ STATUS = ROOT / "data" / "news" / "collect_status.json"
 TZ = ZoneInfo("Asia/Shanghai")
 UA = "Mozilla/5.0 (compatible; aiym168-news/1.0; +https://aiym168.github.io/)"
 KEEP_DAYS = 10
-CAP = {"ai": 160, "gossip": 80, "tech": 200}
-MAX_NEW_TRANSLATE = 36  # 每次最多新翻译多少条英文（控制免费翻译接口的压力）
+CAP_DEFAULT = 150
+CAP = {"ai": 220, "gossip": 80, "huawei": 150}
+MAX_NEW_TRANSLATE = 120  # 每次最多新翻译多少条英文（每条 2 次请求；免费接口有缓存，失败自动换下一个）
+PER_SOURCE_NEW = 8       # 每个来源每次最多新收几条，保证各来源轮流上新
 
-# (key, 名称, 首页, feed, 默认频道, 语言, 是否需要 AI 关键词才收)
-SOURCES = [
-    ("techcrunch-ai", "TechCrunch", "https://techcrunch.com/", "https://techcrunch.com/category/artificial-intelligence/feed/", "ai", "en", False),
-    ("verge-ai", "The Verge", "https://www.theverge.com/", "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "ai", "en", False),
-    ("openai", "OpenAI", "https://openai.com/news/", "https://openai.com/news/rss.xml", "ai", "en", False),
-    ("deepmind", "Google DeepMind", "https://deepmind.google/discover/blog/", "https://deepmind.google/blog/rss.xml", "ai", "en", False),
-    ("google-ai", "Google AI", "https://blog.google/technology/ai/", "https://blog.google/technology/ai/rss/", "ai", "en", False),
-    ("huggingface", "Hugging Face", "https://huggingface.co/blog", "https://huggingface.co/blog/feed.xml", "ai", "en", False),
-    ("decoder", "The Decoder", "https://the-decoder.com/", "https://the-decoder.com/feed/", "ai", "en", False),
-    ("mittr-ai", "MIT Technology Review", "https://www.technologyreview.com/", "https://www.technologyreview.com/topic/artificial-intelligence/feed", "ai", "en", False),
-    ("wired-ai", "WIRED", "https://www.wired.com/tag/ai/", "https://www.wired.com/feed/tag/ai/latest/rss", "ai", "en", False),
-    ("qbitai", "量子位", "https://www.qbitai.com/", "https://www.qbitai.com/feed", "ai", "zh", False),
-    ("simonw", "Simon Willison", "https://simonwillison.net/", "https://simonwillison.net/atom/everything/", "gossip", "en", True),
-    ("hn", "Hacker News", "https://news.ycombinator.com/", "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=60", "tech", "en", False),
-    ("ithome", "IT之家", "https://www.ithome.com/", "https://www.ithome.com/rss/", "tech", "zh", False),
-    ("sspai", "少数派", "https://sspai.com/", "https://sspai.com/feed", "tech", "zh", False),
-    ("geekpark", "极客公园", "https://www.geekpark.net/", "https://www.geekpark.net/rss", "tech", "zh", False),
-    ("ifanr", "爱范儿", "https://www.ifanr.com/", "https://www.ifanr.com/feed", "tech", "zh", False),
-    ("infoq", "InfoQ 中文", "https://www.infoq.cn/", "https://www.infoq.cn/feed", "tech", "zh", False),
-    ("oschina", "开源中国", "https://www.oschina.net/news", "https://www.oschina.net/news/rss", "tech", "zh", False),
-    ("verge", "The Verge", "https://www.theverge.com/", "https://www.theverge.com/rss/index.xml", "tech", "en", False),
-    ("ars", "Ars Technica", "https://arstechnica.com/", "https://feeds.arstechnica.com/arstechnica/technology-lab", "tech", "en", False),
-    ("engadget", "Engadget", "https://www.engadget.com/", "https://www.engadget.com/rss.xml", "tech", "en", False),
-]
+REG = ROOT / "data" / "news" / "sources.json"  # 来源白名单（数据文件）；disabled=true 的来源不抓
+
+
+def load_sources() -> list[tuple]:
+    try:
+        L = json.loads(REG.read_text(encoding="utf-8")).get("sources") or []
+    except Exception as e:
+        print("[news] sources.json unreadable:", e)
+        L = []
+    KIND.update({x["key"]: x.get("kind", "") for x in L})
+    return [(x["key"], x["name"], x["home"], x["feed"], x["channel"], x.get("lang", "en"), bool(x.get("need_ai")))
+            for x in L if x.get("feed") and not x.get("disabled")]
+
+
+KIND: dict[str, str] = {}
+CIVITAI_BAD = re.compile(r"uncensor|abliterat|heretic|jailbreak|erotic|roleplay|\brp\b|gguf-nsfw|babe|mature|waifu|hentai|pony|bikini|lingerie|nsfw|nude|sexy|girl|woman|women|female|lady|body|breast|ass\b|thicc|milf|lewd|ecchi|feet|美女|少女|女|熟|性|裸|色", re.I)
+HF_PIPE = {"text-to-video": "aivideo", "image-to-video": "aivideo", "video-to-video": "aivideo", "text-to-image": "comfyui", "image-to-image": "comfyui"}
+HF_ZH = {"text-generation": "文本生成", "text-to-image": "文生图", "image-to-image": "图生图", "text-to-video": "文生视频", "image-to-video": "图生视频",
+         "text-to-speech": "语音合成", "automatic-speech-recognition": "语音识别", "image-text-to-text": "多模态", "feature-extraction": "向量"}
+
+
+def special_rows(kind: str, raw: bytes, ch0: str) -> list[dict]:
+    """JSON sources → rows with ready-made Chinese titles (tpl=True: title not translated, summary may be)."""
+    d = json.loads(raw)
+    rows = []
+    if kind == "civitai":
+        for m in d.get("items") or []:
+            lvl = m.get("nsfwLevel") or 0
+            name = (m.get("name") or "").strip()
+            tags = " ".join(m.get("tags") or [])
+            if m.get("nsfw") or lvl > 1 or not name or CIVITAI_BAD.search(name + " " + tags) or blocked(name, tags):
+                continue  # 严格：只要 PG 级（nsfwLevel ≤ 1）
+            v = (m.get("modelVersions") or [{}])[0]
+            st = m.get("stats") or {}
+            typ = {"Workflows": "工作流", "Checkpoint": "大模型", "LORA": "LoRA", "TextualInversion": "Embedding", "Controlnet": "ControlNet"}.get(m.get("type"), m.get("type") or "模型")
+            rows.append({"title": f"Civitai 本周热门{typ}：{name}", "link": f"https://civitai.com/models/{m.get('id')}",
+                         "desc": f"本周下载 {st.get('downloadCount', 0)} 次，基础模型 {v.get('baseModel') or '未注明'}。适用于 ComfyUI / Stable Diffusion 工作流，下载前请看作者的使用许可。",
+                         "date": v.get("publishedAt") or v.get("createdAt"), "tpl": True})
+    elif kind == "hf":
+        for m in d if isinstance(d, list) else []:
+            mid = m.get("id") or m.get("modelId")
+            if not mid or blocked(mid) or CIVITAI_BAD.search(mid):
+                continue
+            pt = m.get("pipeline_tag") or ""
+            rows.append({"title": f"Hugging Face 热门{HF_ZH.get(pt, '')}模型：{mid}", "link": f"https://huggingface.co/{mid}",
+                         "desc": f"Hugging Face 趋势榜上的{HF_ZH.get(pt, pt or '')}模型，{m.get('likes', 0)} 个点赞、{m.get('downloads', 0)} 次下载。",
+                         "date": m.get("createdAt") or m.get("lastModified"), "tpl": True, "ch": HF_PIPE.get(pt, "ai")})
+    elif kind == "ghsearch":
+        lab = {"comfyui": "ComfyUI 节点/工作流", "aivideo": "AI 视频生成", "aigc": "AIGC"}.get(ch0, "开源")
+        for r in d.get("items") or []:
+            fn, desc = r.get("full_name") or "", r.get("description") or ""
+            if not fn or blocked(fn, desc) or CIVITAI_BAD.search(fn):
+                continue
+            rows.append({"title": f"{lab}开源项目：{fn}（★{r.get('stargazers_count', 0)}）", "link": r.get("html_url") or "",
+                         "desc": desc, "date": r.get("pushed_at") or r.get("created_at"), "tpl": True})
+    return rows
+
+
+SOURCES = load_sources()
 SRC = {s[0]: s for s in SOURCES}
 
 # ---- content filter (when unsure, drop) -------------------------------------------------------
-BLOCK_ZH = """色情 黄色 低俗 裸 露点 性感 性爱 性交 性侵 性骚扰 强奸 猥亵 嫖 卖淫 约炮 情色 成人片 成人内容 艳照 不雅 走光 床照 偷拍 乳房 胸部 臀 内衣 比基尼 OnlyFans 擦边
+BLOCK_ZH = """监管 网信办 广电总局 国家广电 色情 黄色 低俗 裸 露点 性感 性爱 性交 性侵 性骚扰 强奸 猥亵 嫖 卖淫 约炮 情色 成人片 成人内容 艳照 不雅 走光 床照 偷拍 乳房 胸部 臀 内衣 比基尼 OnlyFans 擦边
 政治 政府 政党 党委 党员 共产党 中央 国务院 总书记 主席 总理 部长 人大 政协 外交 大使 领导人 官员 落马 纪委 反腐 双规 选举 大选 投票 公投 总统 议会 国会 议员 白宫 克里姆林
 台湾 台独 两岸 香港 澳门 新疆 西藏 藏独 疆独 维吾尔 法轮 六四 天安门 民主 人权 抗议 示威 游行 罢工 暴乱 镇压 审查 翻墙 制裁 禁令 出口管制 实体清单 关税 贸易战
 军方 军事 军队 解放军 国防 武器 导弹 核武 战争 战机 航母 空袭 冲突 袭击 恐怖 恐袭 爆炸 枪击 杀人 凶杀 命案 死亡 身亡 遇难 自杀 跳楼 尸体 血腥 斩首
@@ -72,11 +109,12 @@ tariff|sanction|export control|entity list|trade war|war|wars|military|army|navy
 israel|gaza|hamas|palestin|iran|ukrain|russia|kremlin|north korea|nato|terror|bomb|shooting|shooter|gun|guns|killed|murder|suicide|self-harm|death|dies|dead|
 religio|church|islam|muslim|christian|jewish|gambl|casino|betting|lottery|drug|drugs|cocaine|meth|fentanyl|cannabis|marijuana|scam|fraud|launder|
 protest|riot|abortion|lgbt|transgender|racis|nazi|extremis|police|arrest|prison|jail|covid|vaccine|pandemic|
-stock tip|pump and dump|memecoin|spy|spies|espionage|affair|mistress|cheating on|beijing|china|chinese|sovereign|national security|govcloud|geopolit|chip ban"""
+stock tip|pump and dump|memecoin|sexual|erotic|nsfw|hentai|weapons|warfare|soldier|soldiers|troops|spy|spies|espionage|affair|mistress|cheating on|beijing|china|chinese|sovereign|national security|govcloud|geopolit|chip ban"""
 BZH = [w for w in BLOCK_ZH.split() if w]
-BEN = re.compile(r"\b(?:" + BLOCK_EN.replace("\n", "") + r")", re.I)
+STEMS = {"politic", "prostitut", "palestin", "ukrain", "religio", "gambl", "racis", "extremis", "terror", "launder", "harass", "molest", "erotic", "porno", "nazi"}
+BEN = re.compile(r"\b(?:" + "|".join((w + r"\w*") if w in STEMS else (w + r"\b") for w in BLOCK_EN.replace("\n", "").split("|") if w) + ")", re.I)
 AI_KW = re.compile(r"\b(ai|a\.i\.|llm|llms|gpt|chatgpt|openai|claude|anthropic|gemini|deepmind|llama|mistral|deepseek|qwen|copilot|agent|agents|neural|machine learning|"
-                   r"diffusion|transformer|hugging ?face|nvidia|cursor|midjourney|sora|perplexity|grok|xai)\b|人工智能|大模型|智能体|机器学习|生成式|AIGC|算力", re.I)
+                   r"diffusion|transformer|hugging ?face|nvidia|cursor|midjourney|sora|perplexity|grok|xai)\b|(?<![A-Za-z])(?-i:AI)(?![A-Za-z])|人工智能|大模型|智能体|机器学习|生成式|AIGC|算力", re.I)
 GOSSIP_KW = re.compile(r"\b(ceo|founder|co-founder|hire[sd]?|poach(es|ed)?|joins|leaves|quits|departs|resigns?|rumou?rs?|leak(ed|s)?|reportedly|drama|feud|beef|spat|"
                        r"viral|meme|prank|jokes?|funny|weird|bizarre|easter egg|secret|tweet(ed)?|salary|pay package|interview|podcast|admits|slams|mocks|roast)\b|"
                        r"离职|跳槽|挖角|加盟|出走|传闻|爆料|曝光|网友|整活|彩蛋|吐槽|回应|开撕|年薪|身价|内部信|八卦|花边|趣闻|名场面", re.I)
@@ -95,7 +133,7 @@ def blocked(*texts) -> str | None:
 
 
 # ---- fetch / parse ---------------------------------------------------------------------------
-def get(url: str, timeout: int = 20) -> bytes:
+def get(url: str, timeout: int = 15) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/rss+xml,application/atom+xml,application/xml,application/json;q=0.9,*/*;q=0.5"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read(3_000_000)
@@ -169,15 +207,36 @@ def parse_feed(raw: bytes) -> list[dict]:
 def fetch_source(s):
     key, name, home, url, ch, lang, need_ai = s
     try:
-        raw = get(url)
+        kind = KIND.get(key, "")
+        if kind == "ghsearch":
+            url = url.replace("{D7}", (datetime.now(TZ) - timedelta(days=7)).strftime("%Y-%m-%d"))
+            import os
+            tok = os.environ.get("GITHUB_TOKEN", "")
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/vnd.github+json", **({"Authorization": "Bearer " + tok} if tok else {})})
+            with urllib.request.urlopen(req, timeout=15) as r:
+                raw = r.read(3_000_000)
+        else:
+            raw = get(url)
+        if kind and kind != "gnews":
+            return key, special_rows(kind, raw, ch)[:30], ""
         if key == "hn":
             hits = json.loads(raw).get("hits") or []
             rows = [{"title": h.get("title") or "", "link": h.get("url") or f"https://news.ycombinator.com/item?id={h.get('objectID')}",
                      "desc": "", "date": h.get("created_at"), "hn": f"https://news.ycombinator.com/item?id={h.get('objectID')}"}
                     for h in hits if (h.get("points") or 0) >= 80]
+        elif "v2ex.com/api/" in url:
+            rows = [{"title": t.get("title") or "", "link": t.get("url") or "", "desc": t.get("content") or "",
+                     "date": datetime.fromtimestamp(t.get("created") or 0, timezone.utc).isoformat()} for t in json.loads(raw)]
         else:
             rows = parse_feed(raw)
-        return key, rows[:40], ""
+        if kind == "gnews":  # 新闻聚合：标题末尾是 " - 媒体名"，拆出来当来源
+            for r in rows:
+                m = re.match(r"^(.*\S)\s+[-–]\s+([^-–]{1,40})$", r.get("title") or "")
+                if m:
+                    r["title"], r["src"] = m.group(1), m.group(2).strip()
+                r["desc"] = ""
+            rows = [r for r in rows if r.get("src") not in ("YouTube", "Bilibili", "哔哩哔哩", "抖音")]
+        return key, rows[:30], ""
     except Exception as e:
         return key, [], f"{type(e).__name__}: {str(e)[:120]}"
 
@@ -219,6 +278,52 @@ def nid(u: str) -> str:
     return hashlib.sha1(norm_url(u).encode()).hexdigest()[:12]
 
 
+HUAWEI_KW = re.compile(r"华为|Huawei|鸿蒙|HarmonyOS|麒麟\s?\d|麒麟芯片|问界|鸿蒙智行|智界|享界|尊界|尚界|昇腾|Ascend\s?\d|华为云|余承东|盘古大模型|仓颉|Pura\s?\d+|Mate\s?\d+|Mate\s?X\d|nova\s?\d+", re.I)
+COMFY_KW = re.compile(r"ComfyUI|\bcomfy\b", re.I)
+VIDEO_KW = re.compile(r"\bSora\b|\bKling\b|可灵|即梦|Jimeng|\bRunway\b|\bVidu\b|Hailuo|海螺视频|海螺 ?AI|\bVeo ?\d|\bPika\b|Dream Machine|Seedance|\bWan ?2|万相|视频生成|文生视频|图生视频|video generat|text-to-video|image-to-video|AI 视频|AI视频", re.I)
+DRAMA_KW = re.compile(r"漫剧|动态漫|AI ?短剧|AI ?漫画|AI ?动画|AI ?微短剧|AI ?comic|AI ?anime|AI-generated (short )?(drama|series|anime)", re.I)
+TUTOR_KW = re.compile(r"教程|手把手|上手|入门|指南|实战|实操|保姆级|\btutorial|\bhow to\b|\bhow-to\b|\bguide\b|step-by-step|cookbook", re.I)
+
+
+def route(ch: str, title: str, summ: str) -> str:
+    """Topic channels win over the source's default channel (most specific first)."""
+    t = title or ""
+    if COMFY_KW.search(t):
+        return "comfyui"
+    if VIDEO_KW.search(t):
+        return "aivideo"
+    if DRAMA_KW.search(t):
+        return "aidrama"
+    if HUAWEI_KW.search(t):
+        return "huawei"  # 华为相关一律进华为频道（制裁/地缘等已在过滤里丢掉）
+    if TUTOR_KW.search(t) and AI_KW.search(t + " " + (summ or "")):
+        return "aigc"
+    return ch
+
+
+def gn_ok(ch: str, title: str) -> bool:
+    kw = {"aidrama": DRAMA_KW, "aivideo": VIDEO_KW, "comfyui": COMFY_KW, "huawei": HUAWEI_KW}.get(ch)
+    return bool((kw and kw.search(title)) or (ch in ("aigc", "aidrama", "aivideo") and AI_KW.search(title) and (ch != "aidrama" or re.search(r"剧|漫|动画|动漫", title))))
+
+
+CH_KEYS = ("comfyui", "aivideo", "aidrama", "aigc", "huawei", "ai", "gossip", "mobile", "chip", "internet", "software", "game", "auto", "space", "science", "dev", "launch")
+AI_MOVE = {"internet", "software", "dev", "mobile", "launch"}  # 这些综合来源里明显是 AI 的条目归到 AI 新闻
+
+
+def tkey(t: str) -> str:
+    return re.sub(r"[\W_]+", "", (t or "").lower())[:40]
+
+
+def heal():
+    try:
+        import selfheal
+        selfheal.load().setdefault("news", {})
+        return selfheal
+    except Exception as e:
+        print("[news] selfheal unavailable:", e)
+        return None
+
+
 def main() -> int:
     now = datetime.now(TZ)
     try:
@@ -226,9 +331,19 @@ def main() -> int:
     except Exception:
         db = {"items": []}
     old = {x["id"]: x for x in db.get("items") or []}
-    status = {"run_at": now.isoformat(timespec="seconds"), "sources": {}, "dropped": {}, "new": 0}
-    with ThreadPoolExecutor(8) as ex:
-        res = list(ex.map(fetch_source, SOURCES))
+    for x in old.values():  # 旧频道迁移：tech → internet
+        if x.get("channel") not in CH_KEYS:
+            x["channel"] = "internet"
+    status = {"run_at": now.isoformat(timespec="seconds"), "sources": {}, "skipped": [], "dropped": {}, "new": 0}
+    sh = heal()
+    todo = []
+    for src in SOURCES:
+        if sh and sh.should_skip(src[0], "news"):
+            status["skipped"].append(src[0])
+        else:
+            todo.append(src)
+    with ThreadPoolExecutor(16) as ex:
+        res = list(ex.map(fetch_source, todo))
     try:
         sys.path.insert(0, str(ROOT))
         import fetch_auto  # free_translate + cache
@@ -236,43 +351,69 @@ def main() -> int:
     except Exception as e:
         print("[news] translator unavailable:", e)
         fetch_auto, tr = None, None
-    n_tr = 0
-    seen_titles = {re.sub(r"\W+", "", (x.get("title_orig") or x.get("title") or "").lower())[:60] for x in old.values()}
+    seen = set()
+    for x in old.values():
+        seen.add(tkey(x.get("title_orig") or x.get("title"))); seen.add(tkey(x.get("title")))
+    # pass 1: filter + classify (no network); pass 2: translate round-robin across sources
+    queue: dict[str, list] = {}
     for key, rows, err in res:
         _, name, home, _u, ch0, lang, need_ai = SRC[key]
-        st = {"ok": not err, "error": err, "rows": len(rows), "new": 0, "blocked": 0}
+        st = {"ok": not err and bool(rows), "error": err or ("" if rows else "empty feed"), "rows": len(rows), "new": 0, "blocked": 0}
+        status["sources"][key] = st
+        if sh:
+            sh.record(key, st["ok"], len(rows), st["error"], kind="news")
         for r in rows:
             title = clean(r.get("title") or "")
             link = norm_url(r.get("link") or "")
             if not title or not link.startswith("http"):
                 continue
-            i = nid(link)
-            tkey = re.sub(r"\W+", "", title.lower())[:60]
-            if i in old or tkey in seen_titles:
+            i, k = nid(link), tkey(title)
+            if i in old or k in seen:
                 continue
             pub = pdate(r.get("date")) or now
+            if r.get("tpl") and pub < now - timedelta(days=KEEP_DAYS):
+                pub = now  # 趋势榜条目：上榜时间即收录时间
             if pub < now - timedelta(days=KEEP_DAYS) or pub > now + timedelta(hours=2):
                 continue
             summ = summary_of(r.get("desc") or "", lang)
             why = blocked(title, summ, link)
+            if not why and lang == "zh" and OFFTOPIC.search(title):
+                why = "(非科技)"
             if why:
                 st["blocked"] += 1; status["dropped"][why] = status["dropped"].get(why, 0) + 1
                 continue
-            if lang == "zh" and OFFTOPIC.search(title):
-                st["blocked"] += 1; status["dropped"]["(非科技)"] = status["dropped"].get("(非科技)", 0) + 1
-                continue
             is_ai = bool(AI_KW.search(title + " " + summ))
+            if KIND.get(key) == "gnews" and not gn_ok(ch0, title):
+                continue  # 聚合来源：标题里必须有本频道关键词，否则不收
             if need_ai and not is_ai:
                 continue
-            ch = "ai" if (ch0 == "tech" and is_ai) else ch0
+            ch = "ai" if (ch0 in AI_MOVE and AI_KW.search(title)) else ch0
             if ch == "ai" and GOSSIP_KW.search(title):
                 ch = "gossip"
-            if key == "simonw" and not GOSSIP_KW.search(title):
+            if ch == "gossip" and not GOSSIP_KW.search(title):
                 ch = "ai"
-            if lang == "en":
+            ch = r.get("ch") or route(ch, title, summ)
+            seen.add(k)
+            queue.setdefault(key, []).append((i, ch, title, summ, link, pub, r, lang))
+    n_tr = 0
+    order = [k for k in queue]
+    rnd = 0
+    while order and rnd < 30:
+        for key in list(order):
+            q = queue[key]
+            if rnd >= len(q) or rnd >= (30 if KIND.get(key) else PER_SOURCE_NEW):
+                order.remove(key); continue
+            i, ch, title, summ, link, pub, r, lang = q[rnd]
+            _, name, home, *_r = SRC[key]
+            if r.get("tpl"):
+                tz = title
+                sz = summ if (not summ or re.search(r"[\u4e00-\u9fff]", summ)) else (tr(summ[:300]) if tr and n_tr < MAX_NEW_TRANSLATE else "")
+                if summ and not re.search(r"[\u4e00-\u9fff]", summ):
+                    n_tr += 1
+            elif lang == "en":
                 if not tr or n_tr >= MAX_NEW_TRANSLATE:
-                    continue  # 下次再译，不发未翻译的英文
-                tz = tr(title); sz = tr(summ) if summ else ""
+                    continue  # 留到下次，不发未翻译的英文
+                tz = tr(title); sz = tr(summ[:300]) if summ else ""
                 n_tr += 1
                 if not tz or tz.strip() == title:
                     continue
@@ -280,15 +421,22 @@ def main() -> int:
                 tz, sz = title, summ
             why = blocked(tz, sz)  # 译文再过一遍
             if why:
-                st["blocked"] += 1; status["dropped"][why] = status["dropped"].get(why, 0) + 1
+                status["sources"][key]["blocked"] += 1; status["dropped"][why] = status["dropped"].get(why, 0) + 1
                 continue
-            old[i] = {"id": i, "channel": ch, "title": re.sub(r"\s+", " ", tz).strip()[:120], "title_orig": title if lang == "en" else "",
-                      "summary": (sz or "").strip()[:400], "summary_orig": summ if lang == "en" else "", "url": link, "hn": r.get("hn") or "",
-                      "source": name, "source_key": key, "source_home": home, "lang": lang,
+            zk = tkey(tz)[:20]
+            if any(tkey(y.get("title"))[:20] == zk for y in old.values()):
+                continue  # 不同来源的同一条新闻（中文标题相同）
+            old[i] = {"id": i, "channel": ch, "title": re.sub(r"\s+", " ", tz).strip()[:120], "title_orig": title if (lang == "en" and not r.get("tpl")) else "",
+                      "summary": (sz or "").strip()[:400], "summary_orig": summ if (lang != "zh" and not re.search(r"[\u4e00-\u9fff]", summ or "")) else "", "url": link, "hn": r.get("hn") or "",
+                      "source": r.get("src") or name, "source_key": key, "source_home": home, "lang": lang,
                       "published_at": pub.isoformat(timespec="seconds"), "fetched_at": now.isoformat(timespec="seconds")}
-            seen_titles.add(tkey)
-            st["new"] += 1; status["new"] += 1
-        status["sources"][key] = st
+            status["sources"][key]["new"] += 1; status["new"] += 1
+        rnd += 1
+    if fetch_auto:
+        try:
+            fetch_auto.save_translate_cache()
+        except Exception:
+            pass
     need = [x for x in old.values() if x.get("lang") == "zh" and not x.get("summary") and not x.get("_md")][:25]
     if need:
         with ThreadPoolExecutor(6) as ex:
@@ -297,19 +445,15 @@ def main() -> int:
             x["_md"] = 1
             if dsc and not blocked(dsc) and dsc[:20] not in x["title"]:
                 x["summary"] = dsc
-    if fetch_auto:
-        try:
-            fetch_auto.save_translate_cache()
-        except Exception:
-            pass
     keep, cutoff = [], now - timedelta(days=KEEP_DAYS)
-    for x in old.values():  # re-filter old items too: the blocklist may have grown
+    for x in old.values():  # re-filter stored items too: the blocklist may have grown
         if blocked(x.get("title"), x.get("summary"), x.get("title_orig"), x.get("summary_orig")):
             continue
         if x.get("lang") == "zh" and OFFTOPIC.search(x.get("title") or ""):
             continue
         if x["channel"] == "gossip" and not GOSSIP_KW.search(x.get("title_orig") or x.get("title") or ""):
             x["channel"] = "ai"
+        x["channel"] = route(x["channel"], (x.get("title_orig") or "") + " " + (x.get("title") or ""), "")
         if (pdate(x.get("published_at")) or now) < cutoff:
             continue
         keep.append(x)
@@ -317,18 +461,24 @@ def main() -> int:
     out, cnt = [], {}
     for x in keep:
         c = x["channel"]
-        if cnt.get(c, 0) >= CAP.get(c, 100):
+        if cnt.get(c, 0) >= CAP.get(c, CAP_DEFAULT):
             continue
         cnt[c] = cnt.get(c, 0) + 1
         out.append(x)
+    if sh:
+        try:
+            sh.save()
+        except Exception:
+            pass
+    ok = sum(1 for v in status["sources"].values() if v["ok"])
+    status.update({"sources_total": len(SOURCES), "sources_ok": ok, "translated": n_tr, "counts": cnt})
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
     if not out and db.get("items"):
         print("[news] nothing collected — keeping previous data")
         return 0
-    OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({"updated_at": now.isoformat(timespec="seconds"), "counts": cnt, "items": out}, ensure_ascii=False, indent=1), encoding="utf-8")
-    STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
-    ok = sum(1 for v in status["sources"].values() if v["ok"])
-    print(f"[news] sources ok {ok}/{len(SOURCES)} new={status['new']} translated={n_tr} counts={cnt} dropped={sum(status['dropped'].values())}")
+    print(f"[news] sources ok {ok}/{len(todo)} (skipped {len(status['skipped'])}) new={status['new']} translated={n_tr} total={len(out)} counts={cnt} dropped={sum(status['dropped'].values())}")
     return 0
 
 

@@ -961,6 +961,19 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .nw-s{font-size:.85rem;line-height:1.6;color:var(--muted,#9aaccc)}
 .nw-ch{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.72rem;font-weight:700;letter-spacing:.04em}
 .nw-ai{color:#04131a;background:var(--cyan)}.nw-gossip{color:#1a1204;background:var(--warn)}.nw-tech{color:#03140d;background:var(--mint)}
+.nw-aivideo,.nw-comfyui,.nw-aidrama,.nw-aigc{color:#0a0b0c;background:#c8ff2e}
+.nw-huawei{color:#fff;background:#c7000b}
+.nw-mobile,.nw-chip,.nw-internet,.nw-software,.nw-dev,.nw-game,.nw-auto,.nw-space,.nw-science,.nw-launch{color:#03140d;background:var(--mint)}
+.nw-grp{display:inline-flex;align-items:center;min-height:44px;padding:0 4px 0 10px;font-size:.72rem;font-weight:700;letter-spacing:.12em;color:#c8ff2e;font-family:var(--mono)}
+.nw-tabs a{min-height:44px}.nw-tabs a.nw-x{border-color:#2a2e33;background:#0a0b0c;color:#c8ff2e}
+.nw-hot{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 18px;padding:12px 14px;border-radius:16px;background:#0a0b0c;border:1px solid #2a2e33}
+.nw-hot>b{font-size:.8rem;letter-spacing:.14em;color:#c8ff2e;margin-right:4px}
+.nw-hot a,.nw-cloud a,.nw-tags a{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid #2a2e33;background:#111315;color:#e9ecef;font-size:.88rem;font-weight:600}
+.nw-hot a i,.nw-cloud a i{font-style:normal;font-family:var(--mono);font-size:.72rem;color:#8a929b}
+.nw-hot a:hover,.nw-cloud a:hover,.nw-tags a:hover{border-color:#c8ff2e;color:#c8ff2e}.nw-hot a.more{color:#c8ff2e}
+.nw-cloud{display:flex;flex-wrap:wrap;gap:8px}.nw-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}.nw-tags a{color:#c8ff2e}
+.nw-gh{margin:26px 0 12px;font-size:1.3rem;color:#fff;border-left:4px solid #c8ff2e;padding-left:12px}
+.nw-row a{min-height:44px}.nw-col .go,.nw-hcol .go{min-height:44px;display:inline-flex;align-items:center}
 .nw-note{margin:18px 0;font-size:.82rem;color:var(--muted,#8ea0bf)}
 .nw-art h1{font-size:clamp(1.5rem,3.4vw,2.3rem);line-height:1.3}
 .nw-when{font-size:.85rem;color:var(--muted,#8ea0bf);margin:6px 0 12px}
@@ -991,6 +1004,28 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .at-chip.more{border-color:rgba(92,225,255,.4)}.at-chip.more b{color:var(--cyan)}
 .at-chip.wan{background:#0a0b0c;border-color:#2a2e33}.at-chip.wan b{color:#c8ff2e}.at-chip.wan:hover{border-color:#c8ff2e}
 @media (max-width:1020px){.nw-cols,.nw-hcols{grid-template-columns:1fr}.at-chips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.nw-tabs{gap:6px}.nw-tabs a{padding:0 12px;font-size:.86rem}.nw-grp{flex-basis:100%;min-height:24px;padding:6px 0 0}
+ .nw-t{font-size:1rem;overflow-wrap:anywhere}.nw-s{font-size:.9rem}.nw-art h1{font-size:1.45rem;overflow-wrap:anywhere}.nw-hot{padding:10px}
+ .at-grid{grid-template-columns:1fr}.at-chips{grid-template-columns:1fr 1fr}.nw-hcol{padding:16px}.nw-meta{font-size:.8rem}
+ .nw-orig,.nw-orig p{overflow-wrap:anywhere}}
+
+/* ---- mobile tap targets ≥44px (all host-1 pages; ≤760px or touch) ---- */
+@media (max-width:760px),(pointer:coarse){
+ .topnav .brand-mini,.nav-search,.nav-toggle{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center}
+ .foot-links a,.foot-links .reduce-btn{display:inline-flex;align-items:center;min-height:44px;padding:0 6px}
+ .share-row button,.share-row a{min-height:44px;min-width:44px;padding-left:12px;padding-right:12px}
+ .linkrow a,.linkrow .report{display:inline-flex;align-items:center;min-height:44px}
+ .chips .chip,.fmore-btn,.arch,.ki-more{min-height:44px;display:inline-flex;align-items:center}
+ .card .title a{display:inline-block;min-height:44px;padding:4px 0}
+ .nw-hcol h3 a,.nw-col h2 a{display:inline-flex;align-items:center;min-height:44px}
+ .crumbs a{display:inline-flex;align-items:center;min-height:44px}
+ body{-webkit-text-size-adjust:100%}
+}
+@media (max-width:640px){
+ .nw-tabs{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin-left:-4px;margin-right:-4px;padding:0 4px 4px;-webkit-mask:linear-gradient(90deg,#000 88%,transparent)}
+ .nw-tabs::-webkit-scrollbar{display:none}.nw-tabs a{flex:0 0 auto;white-space:nowrap}.nw-grp{flex:0 0 auto;flex-basis:auto;min-height:44px;padding:0 2px 0 8px}
+ .nw-hot{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.nw-hot::-webkit-scrollbar{display:none}.nw-hot a,.nw-hot>b{flex:0 0 auto;white-space:nowrap}
+}
 
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"免费 AI 工具箱","url":"https://aiym168.github.io/aitools/index.html","itemListElement":[{"@type":"ListItem","position":1,"name":"DeepSeek","url":"https://chat.deepseek.com/"},{"@type":"ListItem","position":2,"name":"Kimi","url":"https://www.kimi.com/"},{"@type":"ListItem","position":3,"name":"豆包","url":"https://www.doubao.com/"},{"@type":"ListItem","position":4,"name":"通义千问","url":"https://www.qianwen.com/"},{"@type":"ListItem","position":5,"name":"腾讯元宝","url":"https://yuanbao.tencent.com/"},{"@type":"ListItem","position":6,"name":"智谱清言","url":"https://chatglm.cn/"},{"@type":"ListItem","position":7,"name":"文心一言","url":"https://yiyan.baidu.com/"},{"@type":"ListItem","position":8,"name":"ChatGPT","url":"https://chatgpt.com/"},{"@type":"ListItem","position":9,"name":"Claude","url":"https://claude.ai/"},{"@type":"ListItem","position":10,"name":"Gemini","url":"https://gemini.google.com/"},{"@type":"ListItem","position":11,"name":"Microsoft Copilot","url":"https://copilot.microsoft.com/"},{"@type":"ListItem","position":12,"name":"Grok","url":"https://grok.com/"},{"@type":"ListItem","position":13,"name":"秘塔 AI 搜索","url":"https://metaso.cn/"},{"@type":"ListItem","position":14,"name":"Perplexity","url":"https://www.perplexity.ai/"},{"@type":"ListItem","position":15,"name":"纳米 AI 搜索","url":"https://www.n.cn/"},{"@type":"ListItem","position":16,"name":"即梦 AI","url":"https://jimeng.jianying.com/"},{"@type":"ListItem","position":17,"name":"通义万相","url":"https://tongyi.aliyun.com/wanxiang/"},{"@type":"ListItem","position":18,"name":"LiblibAI","url":"https://www.liblib.art/"},{"@type":"ListItem","position":19,"name":"Microsoft Designer","url":"https://designer.microsoft.com/"},{"@type":"ListItem","position":20,"name":"Ideogram","url":"https://ideogram.ai/"},{"@type":"ListItem","position":21,"name":"可灵 AI","url":"https://klingai.kuaishou.com/"},{"@type":"ListItem","position":22,"name":"海螺 AI","url":"https://hailuoai.com/"},{"@type":"ListItem","position":23,"name":"Vidu","url":"https://www.vidu.cn/"},{"@type":"ListItem","position":24,"name":"Suno","url":"https://suno.com/"},{"@type":"ListItem","position":25,"name":"海绵音乐","url":"https://www.haimian.com/"},{"@type":"ListItem","position":26,"name":"ElevenLabs","url":"https://elevenlabs.io/"},{"@type":"ListItem","position":27,"name":"GitHub Copilot","url":"https://github.com/features/copilot"},{"@type":"ListItem","position":28,"name":"Trae","url":"https://www.trae.cn/"},{"@type":"ListItem","position":29,"name":"通义灵码","url":"https://lingma.aliyun.com/"},{"@type":"ListItem","position":30,"name":"Gamma","url":"https://gamma.app/"},{"@type":"ListItem","position":31,"name":"WPS AI","url":"https://ai.wps.cn/"},{"@type":"ListItem","position":32,"name":"Napkin","url":"https://www.napkin.ai/"},{"@type":"ListItem","position":33,"name":"沉浸式翻译","url":"https://immersivetranslate.com/"},{"@type":"ListItem","position":34,"name":"DeepL","url":"https://www.deepl.com/translator"},{"@type":"ListItem","position":35,"name":"NotebookLM","url":"https://notebooklm.google.com/"}]}</script>

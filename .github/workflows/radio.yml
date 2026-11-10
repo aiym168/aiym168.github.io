@@ -1,0 +1,91 @@
+name: AI 羊毛电台（每天两期）
+
+# 08:45 / 20:45 北京时间：写稿 → 本地 TTS（sherpa-onnx + Kokoro，CPU）→ MP3 → release 附件 → 生成 radio/ 页面。
+# 全部在 GitHub Actions 里完成，不依赖任何服务器；模型文件用 actions/cache 缓存。
+on:
+  schedule:
+    - cron: "45 0 * * *"
+    - cron: "45 12 * * *"
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: "am / pm（留空按时间）"
+        required: false
+        default: ""
+      force:
+        description: "已发布也重做"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radio
+  cancel-in-progress: false
+
+jobs:
+  radio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      TZ: Asia/Shanghai
+      RADIO_MODEL_DIR: ${{ github.workspace }}/.radio-model/kokoro-multi-lang-v1_1
+      RADIO_THREADS: "4"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Decide edition / skip if already published
+        id: ed
+        run: |
+          ED="${{ github.event.inputs.edition }}"; [ -z "$ED" ] && { [ "$(date +%H)" -lt 14 ] && ED=am || ED=pm; }
+          echo "ed=$ED" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event.inputs.force }}" != "true" ] && python3 -c "import json,sys;d=json.load(open('data/radio/episodes.json'));sys.exit(0 if any(e['id']=='$(date +%Y%m%d)-$ED' for e in d.get('episodes',[])) else 1)" 2>/dev/null; then
+            echo "skip=1" >> "$GITHUB_OUTPUT"; echo "already published"; fi
+      - name: Cache TTS model
+        if: steps.ed.outputs.skip != '1'
+        uses: actions/cache@v4
+        with:
+          path: .radio-model
+          key: kokoro-multi-lang-v1_1
+      - name: Install TTS
+        if: steps.ed.outputs.skip != '1'
+        run: |
+          pip install -q sherpa-onnx numpy lameenc
+          command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
+          if [ ! -f "$RADIO_MODEL_DIR/model.onnx" ]; then
+            mkdir -p .radio-model && cd .radio-model
+            curl -sSfL --retry 3 -o m.tar.bz2 https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_1.tar.bz2
+            tar xjf m.tar.bz2 && rm m.tar.bz2
+          fi
+          ls "$RADIO_MODEL_DIR"
+      - name: Make episode
+        if: steps.ed.outputs.skip != '1'
+        env:
+          GH_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
+          RADIO_EDITION: ${{ steps.ed.outputs.ed }}
+        run: |
+          for i in 1 2 3; do timeout 1800 python3 engine/radio_make.py && break; echo "try $i failed"; sleep $((i*30)); [ $i = 3 ] && exit 1; done
+          cp -f data/radio/episodes.json /tmp/radio_eps.json
+          python3 radio_build.py
+      - name: Commit
+        if: steps.ed.outputs.skip != '1'
+        run: |
+          git config user.name "laohe-bot"; git config user.email "9499758-wq@users.noreply.github.com"
+          git add data/radio radio api/radio.json
+          git diff --cached --quiet && { echo "nothing"; exit 0; }
+          MSG="AI 羊毛电台 $(date '+%m-%d') $([ ${{ steps.ed.outputs.ed }} = am ] && echo 早报 || echo 晚报)"
+          git commit -q -m "$MSG"
+          for i in 1 2 3 4 5; do
+            git push -q origin HEAD:main && exit 0
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp -f /tmp/radio_eps.json data/radio/episodes.json
+            python3 radio_build.py && git add data/radio radio api/radio.json && git commit -q -m "$MSG" || true
+            sleep $((i*5))
+          done
+          exit 1

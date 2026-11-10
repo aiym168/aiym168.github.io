@@ -962,6 +962,19 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .nw-s{font-size:.85rem;line-height:1.6;color:var(--muted,#9aaccc)}
 .nw-ch{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.72rem;font-weight:700;letter-spacing:.04em}
 .nw-ai{color:#04131a;background:var(--cyan)}.nw-gossip{color:#1a1204;background:var(--warn)}.nw-tech{color:#03140d;background:var(--mint)}
+.nw-aivideo,.nw-comfyui,.nw-aidrama,.nw-aigc{color:#0a0b0c;background:#c8ff2e}
+.nw-huawei{color:#fff;background:#c7000b}
+.nw-mobile,.nw-chip,.nw-internet,.nw-software,.nw-dev,.nw-game,.nw-auto,.nw-space,.nw-science,.nw-launch{color:#03140d;background:var(--mint)}
+.nw-grp{display:inline-flex;align-items:center;min-height:44px;padding:0 4px 0 10px;font-size:.72rem;font-weight:700;letter-spacing:.12em;color:#c8ff2e;font-family:var(--mono)}
+.nw-tabs a{min-height:44px}.nw-tabs a.nw-x{border-color:#2a2e33;background:#0a0b0c;color:#c8ff2e}
+.nw-hot{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 18px;padding:12px 14px;border-radius:16px;background:#0a0b0c;border:1px solid #2a2e33}
+.nw-hot>b{font-size:.8rem;letter-spacing:.14em;color:#c8ff2e;margin-right:4px}
+.nw-hot a,.nw-cloud a,.nw-tags a{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid #2a2e33;background:#111315;color:#e9ecef;font-size:.88rem;font-weight:600}
+.nw-hot a i,.nw-cloud a i{font-style:normal;font-family:var(--mono);font-size:.72rem;color:#8a929b}
+.nw-hot a:hover,.nw-cloud a:hover,.nw-tags a:hover{border-color:#c8ff2e;color:#c8ff2e}.nw-hot a.more{color:#c8ff2e}
+.nw-cloud{display:flex;flex-wrap:wrap;gap:8px}.nw-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}.nw-tags a{color:#c8ff2e}
+.nw-gh{margin:26px 0 12px;font-size:1.3rem;color:#fff;border-left:4px solid #c8ff2e;padding-left:12px}
+.nw-row a{min-height:44px}.nw-col .go,.nw-hcol .go{min-height:44px;display:inline-flex;align-items:center}
 .nw-note{margin:18px 0;font-size:.82rem;color:var(--muted,#8ea0bf)}
 .nw-art h1{font-size:clamp(1.5rem,3.4vw,2.3rem);line-height:1.3}
 .nw-when{font-size:.85rem;color:var(--muted,#8ea0bf);margin:6px 0 12px}
@@ -992,6 +1005,28 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .at-chip.more{border-color:rgba(92,225,255,.4)}.at-chip.more b{color:var(--cyan)}
 .at-chip.wan{background:#0a0b0c;border-color:#2a2e33}.at-chip.wan b{color:#c8ff2e}.at-chip.wan:hover{border-color:#c8ff2e}
 @media (max-width:1020px){.nw-cols,.nw-hcols{grid-template-columns:1fr}.at-chips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.nw-tabs{gap:6px}.nw-tabs a{padding:0 12px;font-size:.86rem}.nw-grp{flex-basis:100%;min-height:24px;padding:6px 0 0}
+ .nw-t{font-size:1rem;overflow-wrap:anywhere}.nw-s{font-size:.9rem}.nw-art h1{font-size:1.45rem;overflow-wrap:anywhere}.nw-hot{padding:10px}
+ .at-grid{grid-template-columns:1fr}.at-chips{grid-template-columns:1fr 1fr}.nw-hcol{padding:16px}.nw-meta{font-size:.8rem}
+ .nw-orig,.nw-orig p{overflow-wrap:anywhere}}
+
+/* ---- mobile tap targets ≥44px (all host-1 pages; ≤760px or touch) ---- */
+@media (max-width:760px),(pointer:coarse){
+ .topnav .brand-mini,.nav-search,.nav-toggle{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center}
+ .foot-links a,.foot-links .reduce-btn{display:inline-flex;align-items:center;min-height:44px;padding:0 6px}
+ .share-row button,.share-row a{min-height:44px;min-width:44px;padding-left:12px;padding-right:12px}
+ .linkrow a,.linkrow .report{display:inline-flex;align-items:center;min-height:44px}
+ .chips .chip,.fmore-btn,.arch,.ki-more{min-height:44px;display:inline-flex;align-items:center}
+ .card .title a{display:inline-block;min-height:44px;padding:4px 0}
+ .nw-hcol h3 a,.nw-col h2 a{display:inline-flex;align-items:center;min-height:44px}
+ .crumbs a{display:inline-flex;align-items:center;min-height:44px}
+ body{-webkit-text-size-adjust:100%}
+}
+@media (max-width:640px){
+ .nw-tabs{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin-left:-4px;margin-right:-4px;padding:0 4px 4px;-webkit-mask:linear-gradient(90deg,#000 88%,transparent)}
+ .nw-tabs::-webkit-scrollbar{display:none}.nw-tabs a{flex:0 0 auto;white-space:nowrap}.nw-grp{flex:0 0 auto;flex-basis:auto;min-height:44px;padding:0 2px 0 8px}
+ .nw-hot{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.nw-hot::-webkit-scrollbar{display:none}.nw-hot a,.nw-hot>b{flex:0 0 auto;white-space:nowrap}
+}
 
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Claude 学院现已上线","description":"无论您是正在了解 AI 是什么，还是已经每天使用 Claude，总有一条道路适合您。课程和教程免费向任何人开放，网址为。","datePublished":"2026-08-20T15:00:00+08:00","dateModified":"2026-11-09T20:31:12+08:00","mainEntityOfPage":"https://aiym168.github.io/item/claude-eccb0b0076.html","author":{"@type":"Organization","name":"AI大模型免费资源导航"}}</script>

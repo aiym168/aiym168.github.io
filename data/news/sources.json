@@ -1,0 +1,1440 @@
+{
+ "note": "新闻来源白名单。news_collect.py 读这里；连续失败的来源会被自动暂停并按 1h→24h 退避重试（记录在 data/sources_health.json 的 news 段和 data/news/collect_status.json）。加来源只需在这里加一行。",
+ "sources": [
+  {
+   "key": "techcrunch-ai",
+   "name": "TechCrunch AI",
+   "home": "https://techcrunch.com/",
+   "feed": "https://techcrunch.com/category/artificial-intelligence/feed/",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "verge-ai",
+   "name": "The Verge AI",
+   "home": "https://www.theverge.com/",
+   "feed": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "openai",
+   "name": "OpenAI",
+   "home": "https://openai.com/",
+   "feed": "https://openai.com/news/rss.xml",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "deepmind",
+   "name": "Google DeepMind",
+   "home": "https://deepmind.google/",
+   "feed": "https://deepmind.google/blog/rss.xml",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "google-ai",
+   "name": "Google AI",
+   "home": "https://blog.google/",
+   "feed": "https://blog.google/technology/ai/rss/",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "huggingface",
+   "name": "Hugging Face",
+   "home": "https://huggingface.co/",
+   "feed": "https://huggingface.co/blog/feed.xml",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "decoder",
+   "name": "The Decoder",
+   "home": "https://the-decoder.com/",
+   "feed": "https://the-decoder.com/feed/",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "mittr-ai",
+   "name": "MIT Technology Review",
+   "home": "https://www.technologyreview.com/",
+   "feed": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "wired-ai",
+   "name": "WIRED AI",
+   "home": "https://www.wired.com/",
+   "feed": "https://www.wired.com/feed/tag/ai/latest/rss",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "qbitai",
+   "name": "量子位",
+   "home": "https://www.qbitai.com/",
+   "feed": "https://www.qbitai.com/feed",
+   "channel": "ai",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "marktechpost-com-feed",
+   "name": "MarkTechPost",
+   "home": "https://www.marktechpost.com/",
+   "feed": "https://www.marktechpost.com/feed/",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "bair-berkeley-edu-blog-feed-xml",
+   "name": "伯克利 BAIR",
+   "home": "https://bair.berkeley.edu/",
+   "feed": "https://bair.berkeley.edu/blog/feed.xml",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "aws-amazon-com-blogs-machine-learning-feed",
+   "name": "AWS 机器学习博客",
+   "home": "https://aws.amazon.com/",
+   "feed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "blogs-nvidia-com-feed",
+   "name": "NVIDIA 博客",
+   "home": "https://blogs.nvidia.com/",
+   "feed": "https://blogs.nvidia.com/feed/",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "syncedreview-com-feed",
+   "name": "Synced",
+   "home": "https://syncedreview.com/",
+   "feed": "https://syncedreview.com/feed/",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "news-mit-edu-topic-mitartificial-intellige",
+   "name": "MIT News AI",
+   "home": "https://news.mit.edu/",
+   "feed": "https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "machinelearning-apple-com-rss-xml",
+   "name": "Apple 机器学习研究",
+   "home": "https://machinelearning.apple.com/",
+   "feed": "https://machinelearning.apple.com/rss.xml",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "microsoft-com-en-us-research-feed",
+   "name": "微软研究院",
+   "home": "https://www.microsoft.com/",
+   "feed": "https://www.microsoft.com/en-us/research/feed/",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "simonw",
+   "name": "Simon Willison",
+   "home": "https://simonwillison.net/",
+   "feed": "https://simonwillison.net/atom/everything/",
+   "channel": "gossip",
+   "lang": "en",
+   "need_ai": true
+  },
+  {
+   "key": "lilianweng-github-io-index-xml",
+   "name": "Lilian Weng",
+   "home": "https://lilianweng.github.io/",
+   "feed": "https://lilianweng.github.io/index.xml",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "thegradient-pub-rss",
+   "name": "The Gradient",
+   "home": "https://thegradient.pub/",
+   "feed": "https://thegradient.pub/rss/",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "latent-space-feed",
+   "name": "Latent Space",
+   "home": "https://www.latent.space/",
+   "feed": "https://www.latent.space/feed",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "jack-clark-net-feed",
+   "name": "Import AI",
+   "home": "https://jack-clark.net/",
+   "feed": "https://jack-clark.net/feed/",
+   "channel": "ai",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "gsmarena-com-rss-news-reviews-php3",
+   "name": "GSMArena",
+   "home": "https://www.gsmarena.com/",
+   "feed": "https://www.gsmarena.com/rss-news-reviews.php3",
+   "channel": "mobile",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "androidauthority-com-feed",
+   "name": "Android Authority",
+   "home": "https://www.androidauthority.com/",
+   "feed": "https://www.androidauthority.com/feed/",
+   "channel": "mobile",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "9to5mac-com-feed",
+   "name": "9to5Mac",
+   "home": "https://9to5mac.com/",
+   "feed": "https://9to5mac.com/feed/",
+   "channel": "mobile",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "9to5google-com-feed",
+   "name": "9to5Google",
+   "home": "https://9to5google.com/",
+   "feed": "https://9to5google.com/feed/",
+   "channel": "mobile",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "macrumors-com-macrumors-xml",
+   "name": "MacRumors",
+   "home": "https://www.macrumors.com/",
+   "feed": "https://www.macrumors.com/macrumors.xml",
+   "channel": "mobile",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "androidpolice-com-feed",
+   "name": "Android Police",
+   "home": "https://www.androidpolice.com/",
+   "feed": "https://www.androidpolice.com/feed/",
+   "channel": "mobile",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "xda-developers-com-feed",
+   "name": "XDA",
+   "home": "https://www.xda-developers.com/",
+   "feed": "https://www.xda-developers.com/feed/",
+   "channel": "mobile",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "ifanr",
+   "name": "爱范儿",
+   "home": "https://www.ifanr.com/",
+   "feed": "https://www.ifanr.com/feed",
+   "channel": "mobile",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "appinn-com-feed",
+   "name": "小众软件",
+   "home": "https://www.appinn.com/",
+   "feed": "https://www.appinn.com/feed/",
+   "channel": "mobile",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "rss-mydrivers-com-rss-aspx",
+   "name": "快科技",
+   "home": "https://rss.mydrivers.com/",
+   "feed": "https://rss.mydrivers.com/rss.aspx",
+   "channel": "mobile",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "engadget",
+   "name": "Engadget",
+   "home": "https://www.engadget.com/",
+   "feed": "https://www.engadget.com/rss.xml",
+   "channel": "mobile",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "digitaltrends-com-feed",
+   "name": "Digital Trends",
+   "home": "https://www.digitaltrends.com/",
+   "feed": "https://www.digitaltrends.com/feed/",
+   "channel": "mobile",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "notebookcheck-net-news-152-100-html-type-rss",
+   "name": "Notebookcheck",
+   "home": "https://www.notebookcheck.net/",
+   "feed": "https://www.notebookcheck.net/News.152.100.html?&type=rss",
+   "channel": "mobile",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "semiengineering-com-feed",
+   "name": "Semiconductor Engineering",
+   "home": "https://semiengineering.com/",
+   "feed": "https://semiengineering.com/feed/",
+   "channel": "chip",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "eetimes-com-feed",
+   "name": "EE Times",
+   "home": "https://www.eetimes.com/",
+   "feed": "https://www.eetimes.com/feed/",
+   "channel": "chip",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "semiwiki-com-feed",
+   "name": "SemiWiki",
+   "home": "https://www.semiwiki.com/",
+   "feed": "https://www.semiwiki.com/feed/",
+   "channel": "chip",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "wccftech-com-feed",
+   "name": "Wccftech",
+   "home": "https://wccftech.com/",
+   "feed": "https://wccftech.com/feed/",
+   "channel": "chip",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "servethehome-com-feed",
+   "name": "ServeTheHome",
+   "home": "https://www.servethehome.com/",
+   "feed": "https://www.servethehome.com/feed/",
+   "channel": "chip",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "techpowerup-com-rss-news",
+   "name": "TechPowerUp",
+   "home": "https://www.techpowerup.com/",
+   "feed": "https://www.techpowerup.com/rss/news",
+   "channel": "chip",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "semiconductor-today-com-rss-news-xml",
+   "name": "Semiconductor Today",
+   "home": "https://www.semiconductor-today.com/",
+   "feed": "https://www.semiconductor-today.com/rss/news.xml",
+   "channel": "chip",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "ithome",
+   "name": "IT之家",
+   "home": "https://www.ithome.com/",
+   "feed": "https://www.ithome.com/rss/",
+   "channel": "internet",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "sspai",
+   "name": "少数派",
+   "home": "https://sspai.com/",
+   "feed": "https://sspai.com/feed",
+   "channel": "internet",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "geekpark",
+   "name": "极客公园",
+   "home": "https://www.geekpark.net/",
+   "feed": "https://www.geekpark.net/rss",
+   "channel": "internet",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "tmtpost-com-rss-xml",
+   "name": "钛媒体",
+   "home": "https://www.tmtpost.com/",
+   "feed": "https://www.tmtpost.com/rss.xml",
+   "channel": "internet",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "cnbeta-com-tw-backend-php",
+   "name": "cnBeta",
+   "home": "https://www.cnbeta.com.tw/",
+   "feed": "https://www.cnbeta.com.tw/backend.php",
+   "channel": "internet",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "leiphone-com-feed",
+   "name": "雷峰网",
+   "home": "https://www.leiphone.com/",
+   "feed": "https://www.leiphone.com/feed",
+   "channel": "internet",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "199it-com-feed",
+   "name": "199IT",
+   "home": "https://www.199it.com/",
+   "feed": "https://www.199it.com/feed",
+   "channel": "internet",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "36kr-com-feed-newsflash",
+   "name": "36氪快讯",
+   "home": "https://www.36kr.com/",
+   "feed": "https://www.36kr.com/feed-newsflash",
+   "channel": "internet",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "woshipm-com-feed",
+   "name": "人人都是产品经理",
+   "home": "https://www.woshipm.com/",
+   "feed": "https://www.woshipm.com/feed",
+   "channel": "internet",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "ars",
+   "name": "Ars Technica",
+   "home": "https://feeds.arstechnica.com/",
+   "feed": "https://feeds.arstechnica.com/arstechnica/index",
+   "channel": "internet",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "verge",
+   "name": "The Verge",
+   "home": "https://www.theverge.com/",
+   "feed": "https://www.theverge.com/rss/index.xml",
+   "channel": "internet",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "techcrunch-com-feed",
+   "name": "TechCrunch",
+   "home": "https://techcrunch.com/",
+   "feed": "https://techcrunch.com/feed/",
+   "channel": "internet",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "wired-com-feed-category-business-latest",
+   "name": "WIRED 商业",
+   "home": "https://www.wired.com/",
+   "feed": "https://www.wired.com/feed/category/business/latest/rss",
+   "channel": "internet",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "zdnet-com-news-rss-xml",
+   "name": "ZDNET",
+   "home": "https://www.zdnet.com/",
+   "feed": "https://www.zdnet.com/news/rss.xml",
+   "channel": "internet",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "cnet-com-rss-news",
+   "name": "CNET",
+   "home": "https://www.cnet.com/",
+   "feed": "https://www.cnet.com/rss/news/",
+   "channel": "internet",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "fastcompany-com-technology-rss",
+   "name": "Fast Company",
+   "home": "https://www.fastcompany.com/",
+   "feed": "https://www.fastcompany.com/technology/rss",
+   "channel": "internet",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "theregister-com-headlines-atom",
+   "name": "The Register",
+   "home": "https://www.theregister.com/",
+   "feed": "https://www.theregister.com/headlines.atom",
+   "channel": "internet",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "mashable-com-feeds-rss-tech",
+   "name": "Mashable",
+   "home": "https://mashable.com/",
+   "feed": "https://mashable.com/feeds/rss/tech",
+   "channel": "internet",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "oschina",
+   "name": "开源中国",
+   "home": "https://www.oschina.net/",
+   "feed": "https://www.oschina.net/news/rss",
+   "channel": "software",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "github-blog-feed",
+   "name": "GitHub Blog",
+   "home": "https://github.blog/",
+   "feed": "https://github.blog/feed/",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "linuxcompatible-org-news-rss",
+   "name": "LinuxCompatible",
+   "home": "https://www.linuxcompatible.org/",
+   "feed": "https://www.linuxcompatible.org/news/rss",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "lwn-net-headlines-rss",
+   "name": "LWN",
+   "home": "https://lwn.net/",
+   "feed": "https://lwn.net/headlines/rss",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "phoronix-com-rss-php",
+   "name": "Phoronix",
+   "home": "https://www.phoronix.com/",
+   "feed": "https://www.phoronix.com/rss.php",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "omgubuntu-co-uk-feed",
+   "name": "OMG! Ubuntu",
+   "home": "https://www.omgubuntu.co.uk/",
+   "feed": "https://www.omgubuntu.co.uk/feed",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "itsfoss-com-rss",
+   "name": "It's FOSS",
+   "home": "https://itsfoss.com/",
+   "feed": "https://itsfoss.com/rss/",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "bleepingcomputer-com-feed",
+   "name": "BleepingComputer",
+   "home": "https://www.bleepingcomputer.com/",
+   "feed": "https://www.bleepingcomputer.com/feed/",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "blog-mozilla-org-en-feed",
+   "name": "Mozilla",
+   "home": "https://blog.mozilla.org/",
+   "feed": "https://blog.mozilla.org/en/feed/",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "blog-chromium-org-feeds-posts-default",
+   "name": "Chromium Blog",
+   "home": "https://blog.chromium.org/",
+   "feed": "https://blog.chromium.org/feeds/posts/default",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "ghacks-net-feed",
+   "name": "gHacks",
+   "home": "https://www.ghacks.net/",
+   "feed": "https://www.ghacks.net/feed/",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "neowin-net-news-rss",
+   "name": "Neowin",
+   "home": "https://www.neowin.net/",
+   "feed": "https://www.neowin.net/news/rss/",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "howtogeek-com-feed",
+   "name": "How-To Geek",
+   "home": "https://www.howtogeek.com/",
+   "feed": "https://www.howtogeek.com/feed/",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "mshibanami-github-io-githubtrendingrss-daily-all",
+   "name": "GitHub Trending",
+   "home": "https://mshibanami.github.io/",
+   "feed": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "landiannews-com-feed",
+   "name": "蓝点网",
+   "home": "https://www.landiannews.com/",
+   "feed": "https://www.landiannews.com/feed",
+   "channel": "software",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "gamespot-com-feeds-news",
+   "name": "GameSpot",
+   "home": "https://www.gamespot.com/",
+   "feed": "https://www.gamespot.com/feeds/news/",
+   "channel": "game",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "eurogamer-net-feed",
+   "name": "Eurogamer",
+   "home": "https://www.eurogamer.net/",
+   "feed": "https://www.eurogamer.net/feed",
+   "channel": "game",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "pcgamer-com-rss",
+   "name": "PC Gamer",
+   "home": "https://www.pcgamer.com/",
+   "feed": "https://www.pcgamer.com/rss/",
+   "channel": "game",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "rockpapershotgun-com-feed",
+   "name": "Rock Paper Shotgun",
+   "home": "https://www.rockpapershotgun.com/",
+   "feed": "https://www.rockpapershotgun.com/feed",
+   "channel": "game",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "kotaku-com-rss",
+   "name": "Kotaku",
+   "home": "https://kotaku.com/",
+   "feed": "https://kotaku.com/rss",
+   "channel": "game",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "gcores-com-rss",
+   "name": "机核",
+   "home": "https://www.gcores.com/",
+   "feed": "https://www.gcores.com/rss",
+   "channel": "game",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "yystv-cn-rss-feed",
+   "name": "游研社",
+   "home": "https://www.yystv.cn/",
+   "feed": "https://www.yystv.cn/rss/feed",
+   "channel": "game",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "electrek-co-feed",
+   "name": "Electrek",
+   "home": "https://electrek.co/",
+   "feed": "https://electrek.co/feed/",
+   "channel": "auto",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "teslarati-com-feed",
+   "name": "Teslarati",
+   "home": "https://www.teslarati.com/",
+   "feed": "https://www.teslarati.com/feed/",
+   "channel": "auto",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "cleantechnica-com-feed",
+   "name": "CleanTechnica",
+   "home": "https://cleantechnica.com/",
+   "feed": "https://cleantechnica.com/feed/",
+   "channel": "auto",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "cnevpost-com-feed",
+   "name": "CnEVPost",
+   "home": "https://www.cnevpost.com/",
+   "feed": "https://www.cnevpost.com/feed/",
+   "channel": "auto",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "thedrive-com-feed",
+   "name": "The Drive",
+   "home": "https://www.thedrive.com/",
+   "feed": "https://www.thedrive.com/feed",
+   "channel": "auto",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "spacenews-com-feed",
+   "name": "SpaceNews",
+   "home": "https://spacenews.com/",
+   "feed": "https://spacenews.com/feed/",
+   "channel": "space",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "nasa-gov-news-release-feed",
+   "name": "NASA",
+   "home": "https://www.nasa.gov/",
+   "feed": "https://www.nasa.gov/news-release/feed/",
+   "channel": "space",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "nasaspaceflight-com-feed",
+   "name": "NASASpaceflight",
+   "home": "https://www.nasaspaceflight.com/",
+   "feed": "https://www.nasaspaceflight.com/feed/",
+   "channel": "space",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "spaceflightnow-com-feed",
+   "name": "Spaceflight Now",
+   "home": "https://spaceflightnow.com/",
+   "feed": "https://spaceflightnow.com/feed/",
+   "channel": "space",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "universetoday-com-feed",
+   "name": "Universe Today",
+   "home": "https://www.universetoday.com/",
+   "feed": "https://www.universetoday.com/feed/",
+   "channel": "space",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "planetary-org-rss-articles",
+   "name": "行星学会",
+   "home": "https://www.planetary.org/",
+   "feed": "https://www.planetary.org/rss/articles",
+   "channel": "space",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "sciencedaily-com-rss-top-technology-xml",
+   "name": "ScienceDaily 科技",
+   "home": "https://www.sciencedaily.com/",
+   "feed": "https://www.sciencedaily.com/rss/top/technology.xml",
+   "channel": "science",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "sciencedaily-com-rss-top-science-xml",
+   "name": "ScienceDaily 科学",
+   "home": "https://www.sciencedaily.com/",
+   "feed": "https://www.sciencedaily.com/rss/top/science.xml",
+   "channel": "science",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "phys-org-rss-feed",
+   "name": "Phys.org",
+   "home": "https://phys.org/",
+   "feed": "https://phys.org/rss-feed/",
+   "channel": "science",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "newscientist-com-feed-home",
+   "name": "New Scientist",
+   "home": "https://www.newscientist.com/",
+   "feed": "https://www.newscientist.com/feed/home/",
+   "channel": "science",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "quantamagazine-org-feed",
+   "name": "Quanta",
+   "home": "https://www.quantamagazine.org/",
+   "feed": "https://www.quantamagazine.org/feed/",
+   "channel": "science",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "sciencenews-org-feed",
+   "name": "Science News",
+   "home": "https://www.sciencenews.org/",
+   "feed": "https://www.sciencenews.org/feed",
+   "channel": "science",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "nature-com-nature-rss",
+   "name": "Nature",
+   "home": "https://www.nature.com/",
+   "feed": "https://www.nature.com/nature.rss",
+   "channel": "science",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "scitechdaily-com-feed",
+   "name": "SciTechDaily",
+   "home": "https://scitechdaily.com/",
+   "feed": "https://scitechdaily.com/feed/",
+   "channel": "science",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "scientificamerican-com-platform-syndication-rss",
+   "name": "Scientific American",
+   "home": "https://www.scientificamerican.com/",
+   "feed": "https://www.scientificamerican.com/platform/syndication/rss/",
+   "channel": "science",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "news-mit-edu-rss-research",
+   "name": "MIT News 研究",
+   "home": "https://news.mit.edu/",
+   "feed": "https://news.mit.edu/rss/research",
+   "channel": "science",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "spectrum-ieee-org-feeds-feed-rss",
+   "name": "IEEE Spectrum",
+   "home": "https://spectrum.ieee.org/",
+   "feed": "https://spectrum.ieee.org/feeds/feed.rss",
+   "channel": "science",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "infoq",
+   "name": "InfoQ 中文",
+   "home": "https://www.infoq.cn/",
+   "feed": "https://www.infoq.cn/feed",
+   "channel": "dev",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "hn",
+   "name": "Hacker News",
+   "home": "https://hn.algolia.com/",
+   "feed": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=60",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "v2ex-com-api-topics-hot-json",
+   "name": "V2EX 热门",
+   "home": "https://www.v2ex.com/",
+   "feed": "https://www.v2ex.com/api/topics/hot.json",
+   "channel": "dev",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "dev-to-feed",
+   "name": "DEV",
+   "home": "https://dev.to/",
+   "feed": "https://dev.to/feed",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "stackoverflow-blog-feed",
+   "name": "Stack Overflow Blog",
+   "home": "https://stackoverflow.blog/",
+   "feed": "https://stackoverflow.blog/feed/",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "infoq-com-feed",
+   "name": "InfoQ",
+   "home": "https://www.infoq.com/",
+   "feed": "https://www.infoq.com/feed/",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "martinfowler-com-feed-atom",
+   "name": "Martin Fowler",
+   "home": "https://martinfowler.com/",
+   "feed": "https://martinfowler.com/feed.atom",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "blog-cloudflare-com-rss",
+   "name": "Cloudflare 博客",
+   "home": "https://blog.cloudflare.com/",
+   "feed": "https://blog.cloudflare.com/rss/",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "netflixtechblog-com-feed",
+   "name": "Netflix 技术博客",
+   "home": "https://netflixtechblog.com/",
+   "feed": "https://netflixtechblog.com/feed",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "engineering-fb-com-feed",
+   "name": "Meta 工程博客",
+   "home": "https://engineering.fb.com/",
+   "feed": "https://engineering.fb.com/feed/",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "tech-meituan-com-feed",
+   "name": "美团技术团队",
+   "home": "https://tech.meituan.com/",
+   "feed": "https://tech.meituan.com/feed/",
+   "channel": "dev",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "ruanyifeng-com-blog-atom-xml",
+   "name": "阮一峰的网络日志",
+   "home": "https://www.ruanyifeng.com/",
+   "feed": "https://www.ruanyifeng.com/blog/atom.xml",
+   "channel": "dev",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "blog-rust-lang-org-feed-xml",
+   "name": "Rust 博客",
+   "home": "https://blog.rust-lang.org/",
+   "feed": "https://blog.rust-lang.org/feed.xml",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "go-dev-blog-feed-atom",
+   "name": "Go 博客",
+   "home": "https://go.dev/",
+   "feed": "https://go.dev/blog/feed.atom",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "devblogs-microsoft-com-feed",
+   "name": "微软开发者博客",
+   "home": "https://devblogs.microsoft.com/",
+   "feed": "https://devblogs.microsoft.com/feed/",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "lobste-rs-rss",
+   "name": "Lobsters",
+   "home": "https://lobste.rs/",
+   "feed": "https://lobste.rs/rss",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "thenewstack-io-feed",
+   "name": "The New Stack",
+   "home": "https://www.thenewstack.io/",
+   "feed": "https://www.thenewstack.io/feed",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "blog-jetbrains-com-feed",
+   "name": "JetBrains 博客",
+   "home": "https://blog.jetbrains.com/",
+   "feed": "https://blog.jetbrains.com/feed/",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "kubernetes-io-feed-xml",
+   "name": "Kubernetes 博客",
+   "home": "https://kubernetes.io/",
+   "feed": "https://kubernetes.io/feed.xml",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "docker-com-blog-feed",
+   "name": "Docker 博客",
+   "home": "https://www.docker.com/",
+   "feed": "https://www.docker.com/blog/feed/",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "nodejs-org-en-feed-blog-xml",
+   "name": "Node.js 博客",
+   "home": "https://nodejs.org/",
+   "feed": "https://nodejs.org/en/feed/blog.xml",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "react-dev-rss-xml",
+   "name": "React 博客",
+   "home": "https://react.dev/",
+   "feed": "https://react.dev/rss.xml",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "blog-python-org-feeds-posts-default",
+   "name": "Python 博客",
+   "home": "https://blog.python.org/",
+   "feed": "https://blog.python.org/feeds/posts/default",
+   "channel": "dev",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "producthunt-com-feed",
+   "name": "Product Hunt",
+   "home": "https://www.producthunt.com/",
+   "feed": "https://www.producthunt.com/feed",
+   "channel": "launch",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "hnrss-org-show",
+   "name": "Show HN",
+   "home": "https://hnrss.org/",
+   "feed": "https://hnrss.org/show",
+   "channel": "launch",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "hnrss-org-launches",
+   "name": "Launch HN",
+   "home": "https://hnrss.org/",
+   "feed": "https://hnrss.org/launches",
+   "channel": "launch",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "rsshub-rssforever-com-github-trending-daily-any",
+   "name": "GitHub Trending",
+   "home": "https://rsshub.rssforever.com/",
+   "feed": "https://rsshub.rssforever.com/github/trending/daily/any",
+   "channel": "software",
+   "lang": "en",
+   "need_ai": false
+  },
+  {
+   "key": "huawei-newsroom",
+   "name": "华为官方新闻",
+   "home": "https://www.huawei.com/cn/news",
+   "feed": "https://www.huawei.com/cn/rss-feeds/huawei-updates/rss",
+   "channel": "huawei",
+   "lang": "zh",
+   "need_ai": false
+  },
+  {
+   "key": "comfyui-releases",
+   "name": "ComfyUI 发布",
+   "home": "https://github.com/Comfy-Org/ComfyUI",
+   "feed": "https://github.com/Comfy-Org/ComfyUI/releases.atom",
+   "channel": "comfyui",
+   "lang": "en"
+  },
+  {
+   "key": "comfyui-manager",
+   "name": "ComfyUI-Manager 发布",
+   "home": "https://github.com/Comfy-Org/ComfyUI-Manager",
+   "feed": "https://github.com/Comfy-Org/ComfyUI-Manager/releases.atom",
+   "channel": "comfyui",
+   "lang": "en"
+  },
+  {
+   "key": "comfyui-blog",
+   "name": "ComfyUI 官方博客",
+   "home": "https://blog.comfy.org/",
+   "feed": "https://blog.comfy.org/feed",
+   "channel": "comfyui",
+   "lang": "en"
+  },
+  {
+   "key": "civitai-workflows",
+   "name": "Civitai 热门工作流",
+   "home": "https://civitai.com/",
+   "feed": "https://civitai.com/api/v1/models?sort=Most%20Downloaded&period=Week&nsfw=false&limit=40&types=Workflows",
+   "channel": "comfyui",
+   "lang": "tpl",
+   "kind": "civitai"
+  },
+  {
+   "key": "civitai-models",
+   "name": "Civitai 热门模型",
+   "home": "https://civitai.com/",
+   "feed": "https://civitai.com/api/v1/models?sort=Most%20Downloaded&period=Week&nsfw=false&limit=60",
+   "channel": "comfyui",
+   "lang": "tpl",
+   "kind": "civitai"
+  },
+  {
+   "key": "hf-trending",
+   "name": "Hugging Face 热门模型",
+   "home": "https://huggingface.co/models",
+   "feed": "https://huggingface.co/api/models?sort=trendingScore&limit=40",
+   "channel": "ai",
+   "lang": "tpl",
+   "kind": "hf"
+  },
+  {
+   "key": "gh-comfyui",
+   "name": "GitHub ComfyUI 热门项目",
+   "home": "https://github.com/topics/comfyui",
+   "feed": "https://api.github.com/search/repositories?q=topic:comfyui+pushed:>{D7}&sort=stars&order=desc&per_page=30",
+   "channel": "comfyui",
+   "lang": "tpl",
+   "kind": "ghsearch"
+  },
+  {
+   "key": "gh-aivideo",
+   "name": "GitHub AI 视频生成项目",
+   "home": "https://github.com/topics/video-generation",
+   "feed": "https://api.github.com/search/repositories?q=topic:video-generation+pushed:>{D7}&sort=stars&order=desc&per_page=20",
+   "channel": "aivideo",
+   "lang": "tpl",
+   "kind": "ghsearch"
+  },
+  {
+   "key": "gh-aigc",
+   "name": "GitHub AIGC 热门项目",
+   "home": "https://github.com/topics/aigc",
+   "feed": "https://api.github.com/search/repositories?q=topic:aigc+pushed:>{D7}&sort=stars&order=desc&per_page=20",
+   "channel": "aigc",
+   "lang": "tpl",
+   "kind": "ghsearch"
+  },
+  {
+   "key": "gn-aidrama",
+   "name": "新闻聚合 · AI漫剧",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=AI%E6%BC%AB%E5%89%A7+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "aidrama",
+   "lang": "zh",
+   "need_ai": true,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-aiduanju",
+   "name": "新闻聚合 · AI短剧",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=AI%E7%9F%AD%E5%89%A7+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "aidrama",
+   "lang": "zh",
+   "need_ai": true,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-aianime",
+   "name": "新闻聚合 · AI动画短片",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=AI%E5%8A%A8%E7%94%BB%E7%9F%AD%E7%89%87+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "aidrama",
+   "lang": "zh",
+   "need_ai": true,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-aimanhua",
+   "name": "新闻聚合 · AI漫画",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=AI%E6%BC%AB%E7%94%BB+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "aidrama",
+   "lang": "zh",
+   "need_ai": true,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-aivideo",
+   "name": "新闻聚合 · AI视频生成",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=AI%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "aivideo",
+   "lang": "zh",
+   "need_ai": false,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-kling",
+   "name": "新闻聚合 · 可灵",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=%E5%8F%AF%E7%81%B5%20OR%20%E5%8D%B3%E6%A2%A6%20OR%20Vidu%20OR%20%E6%B5%B7%E8%9E%BA%E8%A7%86%E9%A2%91+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "aivideo",
+   "lang": "zh",
+   "need_ai": false,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-sora",
+   "name": "新闻聚合 · Sora",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=Sora%20OR%20Veo%20OR%20Runway%20AI%E8%A7%86%E9%A2%91+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "aivideo",
+   "lang": "zh",
+   "need_ai": false,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-aivideo-en",
+   "name": "新闻聚合 · AI video generator",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=AI%20video%20generator+when:7d&hl=en-US&gl=US&ceid=US:en",
+   "channel": "aivideo",
+   "lang": "en",
+   "need_ai": false,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-comfyui",
+   "name": "新闻聚合 · ComfyUI",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=ComfyUI+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "comfyui",
+   "lang": "zh",
+   "need_ai": false,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-comfyui-en",
+   "name": "新闻聚合 · ComfyUI",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=ComfyUI+when:7d&hl=en-US&gl=US&ceid=US:en",
+   "channel": "comfyui",
+   "lang": "en",
+   "need_ai": false,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-aigc-tut",
+   "name": "新闻聚合 · AIGC 教程",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=AIGC%20%E6%95%99%E7%A8%8B+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "aigc",
+   "lang": "zh",
+   "need_ai": true,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-aipaint-tut",
+   "name": "新闻聚合 · AI绘画 教程",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=AI%E7%BB%98%E7%94%BB%20%E6%95%99%E7%A8%8B+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "aigc",
+   "lang": "zh",
+   "need_ai": true,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-llm-tut",
+   "name": "新闻聚合 · 大模型 入门教程",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=%E5%A4%A7%E6%A8%A1%E5%9E%8B%20%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "aigc",
+   "lang": "zh",
+   "need_ai": true,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-harmony",
+   "name": "新闻聚合 · 华为 鸿蒙",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=%E5%8D%8E%E4%B8%BA%20%E9%B8%BF%E8%92%99+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "huawei",
+   "lang": "zh",
+   "need_ai": false,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-huawei-phone",
+   "name": "新闻聚合 · 华为 Mate",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=%E5%8D%8E%E4%B8%BA%20Mate%20OR%20Pura%20OR%20nova+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "huawei",
+   "lang": "zh",
+   "need_ai": false,
+   "kind": "gnews"
+  },
+  {
+   "key": "gn-ascend",
+   "name": "新闻聚合 · 昇腾",
+   "home": "https://news.google.com/",
+   "feed": "https://news.google.com/rss/search?q=%E6%98%87%E8%85%BE%20OR%20%E5%8D%8E%E4%B8%BA%E4%BA%91%20OR%20%E9%B8%BF%E8%92%99%E6%99%BA%E8%A1%8C+when:7d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+   "channel": "huawei",
+   "lang": "zh",
+   "need_ai": false,
+   "kind": "gnews"
+  }
+ ]
+}

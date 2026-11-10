@@ -3,15 +3,14 @@ name: Watchdog (self-heal)
 # Every 30 min:
 #  1. re-enable disabled workflows, re-dispatch the main update if it failed or
 #     has not succeeded for > 90 min, record incidents in issue "[看门狗] 自动更新故障记录"
-#  2. server guard: for each Simular server (engines B and C): if it is failed / asleep,
-#     or its engine has no heartbeat for > 2h, wake it and re-assert its hourly wake schedule
+#  2. (optional) backup-server guard — only runs when its secrets exist; the site never depends on it
 on:
   schedule:
     - cron: "23,53 * * * *"
   workflow_dispatch:
     inputs:
       force_wake:
-        description: "强制唤醒两台 Simular 服务器"
+        description: "强制唤醒备用服务器（可选）"
         type: boolean
         default: false
 
@@ -27,6 +26,8 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-latest
+    env:
+      HAS_BOX_KEY: ${{ secrets.SIMULAR_BOX_KEY != '' }}
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -46,7 +47,9 @@ jobs:
           GH_TOKEN_ALT: ${{ secrets.GITHUB_TOKEN }}
         run: python3 engine/gh_watch.py heal --who "GitHub 看门狗" | tee /tmp/watch.json
 
-      - name: Server guard (both Simular servers)
+      - name: Optional backup-server guard
+        if: ${{ env.HAS_BOX_KEY == 'true' }}
+        continue-on-error: true
         env:
           SIMULAR_BOX_KEY: ${{ secrets.SIMULAR_BOX_KEY }}
           SIMULAR_KEY_2: ${{ secrets.SIMULAR_KEY_2 }}

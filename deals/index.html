@@ -961,6 +961,19 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .nw-s{font-size:.85rem;line-height:1.6;color:var(--muted,#9aaccc)}
 .nw-ch{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.72rem;font-weight:700;letter-spacing:.04em}
 .nw-ai{color:#04131a;background:var(--cyan)}.nw-gossip{color:#1a1204;background:var(--warn)}.nw-tech{color:#03140d;background:var(--mint)}
+.nw-aivideo,.nw-comfyui,.nw-aidrama,.nw-aigc{color:#0a0b0c;background:#c8ff2e}
+.nw-huawei{color:#fff;background:#c7000b}
+.nw-mobile,.nw-chip,.nw-internet,.nw-software,.nw-dev,.nw-game,.nw-auto,.nw-space,.nw-science,.nw-launch{color:#03140d;background:var(--mint)}
+.nw-grp{display:inline-flex;align-items:center;min-height:44px;padding:0 4px 0 10px;font-size:.72rem;font-weight:700;letter-spacing:.12em;color:#c8ff2e;font-family:var(--mono)}
+.nw-tabs a{min-height:44px}.nw-tabs a.nw-x{border-color:#2a2e33;background:#0a0b0c;color:#c8ff2e}
+.nw-hot{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 18px;padding:12px 14px;border-radius:16px;background:#0a0b0c;border:1px solid #2a2e33}
+.nw-hot>b{font-size:.8rem;letter-spacing:.14em;color:#c8ff2e;margin-right:4px}
+.nw-hot a,.nw-cloud a,.nw-tags a{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:999px;border:1px solid #2a2e33;background:#111315;color:#e9ecef;font-size:.88rem;font-weight:600}
+.nw-hot a i,.nw-cloud a i{font-style:normal;font-family:var(--mono);font-size:.72rem;color:#8a929b}
+.nw-hot a:hover,.nw-cloud a:hover,.nw-tags a:hover{border-color:#c8ff2e;color:#c8ff2e}.nw-hot a.more{color:#c8ff2e}
+.nw-cloud{display:flex;flex-wrap:wrap;gap:8px}.nw-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}.nw-tags a{color:#c8ff2e}
+.nw-gh{margin:26px 0 12px;font-size:1.3rem;color:#fff;border-left:4px solid #c8ff2e;padding-left:12px}
+.nw-row a{min-height:44px}.nw-col .go,.nw-hcol .go{min-height:44px;display:inline-flex;align-items:center}
 .nw-note{margin:18px 0;font-size:.82rem;color:var(--muted,#8ea0bf)}
 .nw-art h1{font-size:clamp(1.5rem,3.4vw,2.3rem);line-height:1.3}
 .nw-when{font-size:.85rem;color:var(--muted,#8ea0bf);margin:6px 0 12px}
@@ -991,6 +1004,28 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .at-chip.more{border-color:rgba(92,225,255,.4)}.at-chip.more b{color:var(--cyan)}
 .at-chip.wan{background:#0a0b0c;border-color:#2a2e33}.at-chip.wan b{color:#c8ff2e}.at-chip.wan:hover{border-color:#c8ff2e}
 @media (max-width:1020px){.nw-cols,.nw-hcols{grid-template-columns:1fr}.at-chips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.nw-tabs{gap:6px}.nw-tabs a{padding:0 12px;font-size:.86rem}.nw-grp{flex-basis:100%;min-height:24px;padding:6px 0 0}
+ .nw-t{font-size:1rem;overflow-wrap:anywhere}.nw-s{font-size:.9rem}.nw-art h1{font-size:1.45rem;overflow-wrap:anywhere}.nw-hot{padding:10px}
+ .at-grid{grid-template-columns:1fr}.at-chips{grid-template-columns:1fr 1fr}.nw-hcol{padding:16px}.nw-meta{font-size:.8rem}
+ .nw-orig,.nw-orig p{overflow-wrap:anywhere}}
+
+/* ---- mobile tap targets ≥44px (all host-1 pages; ≤760px or touch) ---- */
+@media (max-width:760px),(pointer:coarse){
+ .topnav .brand-mini,.nav-search,.nav-toggle{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center}
+ .foot-links a,.foot-links .reduce-btn{display:inline-flex;align-items:center;min-height:44px;padding:0 6px}
+ .share-row button,.share-row a{min-height:44px;min-width:44px;padding-left:12px;padding-right:12px}
+ .linkrow a,.linkrow .report{display:inline-flex;align-items:center;min-height:44px}
+ .chips .chip,.fmore-btn,.arch,.ki-more{min-height:44px;display:inline-flex;align-items:center}
+ .card .title a{display:inline-block;min-height:44px;padding:4px 0}
+ .nw-hcol h3 a,.nw-col h2 a{display:inline-flex;align-items:center;min-height:44px}
+ .crumbs a{display:inline-flex;align-items:center;min-height:44px}
+ body{-webkit-text-size-adjust:100%}
+}
+@media (max-width:640px){
+ .nw-tabs{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin-left:-4px;margin-right:-4px;padding:0 4px 4px;-webkit-mask:linear-gradient(90deg,#000 88%,transparent)}
+ .nw-tabs::-webkit-scrollbar{display:none}.nw-tabs a{flex:0 0 auto;white-space:nowrap}.nw-grp{flex:0 0 auto;flex-basis:auto;min-height:44px;padding:0 2px 0 8px}
+ .nw-hot{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.nw-hot::-webkit-scrollbar{display:none}.nw-hot a,.nw-hot>b{flex:0 0 auto;white-space:nowrap}
+}
 
 </style>
 
@@ -1097,7 +1132,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   <div class="card-top"><span class="dl-cat c-crypto">Crypto</span><span class="dl-ver v-info" title="程序从 KuCoin 官方公告自动提取，以公告原文为准；标题为机器翻译">官方公告</span><span class="st st-warn">即将截止</span></div>
   <h3 class="title"><a href="x/kc-93dc72c96c.html">Kor Protocol (KOR) 上币活动 — 1,800,000 KOR 奖励</a></h3>
   <p class="summary">Kor Protocol (KOR) 上币活动 — 1,800,000 KOR 奖励（详见 KuCoin 官方公告）</p>
-  <div class="dl-kv"><span><i>实际价值</i><b>公告提到 600 USD（具体个人所得见条款）</b></span><span><i>地区</i><b>未注明（待核实）</b></span><span><i>截止</i><b class="dl-hot">还剩 21 小时 · 2026-11-11</b></span></div>
+  <div class="dl-kv"><span><i>实际价值</i><b>公告提到 600 USD（具体个人所得见条款）</b></span><span><i>地区</i><b>未注明（待核实）</b></span><span><i>截止</i><b class="dl-hot">还剩 20 小时 · 2026-11-11</b></span></div>
   <div class="dl-tags"><span class="dl-tag t-volume" title="需要完成一定交易量">需要交易量</span><span class="dl-tag t-invite" title="需要邀请他人或使用推荐码">需要邀请</span><span class="dl-tag t-lottery" title="奖励随机，不保证拿到最高额">抽奖/随机</span></div>
   <details class="dl-more"><summary>完整信息（12 项）</summary><table class="dl-table"><tr><th>活动名称</th><td>Kor Protocol (KOR) 上币活动 — 1,800,000 KOR 奖励</td></tr><tr><th>所属类别</th><td>Crypto · <span class="dl-tag t-volume" title="需要完成一定交易量">需要交易量</span><span class="dl-tag t-invite" title="需要邀请他人或使用推荐码">需要邀请</span><span class="dl-tag t-lottery" title="奖励随机，不保证拿到最高额">抽奖/随机</span></td></tr><tr><th>优惠内容</th><td>Kor Protocol (KOR) 上币活动 — 1,800,000 KOR 奖励（详见 KuCoin 官方公告）</td></tr><tr><th>实际价值</th><td>公告提到 600 USD（具体个人所得见条款）</td></tr><tr><th>参与条件</th><td><ul><li>需完成实名 / 身份认证（KYC）</li><li>仅限新用户 / 首次参与</li><li>名额有限，先到先得</li></ul></td></tr><tr><th>适用国家或地区</th><td>未注明（待核实）</td></tr><tr><th>开始及截止时间</th><td>2026-11-04 22:00 至 2026-11-11 22:00<br><small>Campaign Period: From 14:00 on November 4, 2026, to 14:00 on November 11, 2026 (UTC) Click &quot;Join Now&quot; to participate! On</small></td></tr><tr><th>参与步骤</th><td><ol><li>打开 KuCoin 官方公告阅读完整条款</li><li>按公告点击 Join Now 报名（如需要）</li><li>完成交易/任务后按公告发放奖励</li></ol></td></tr><tr><th>官方活动链接</th><td><a class="" href="https://www.kucoin.com/announcement/en-kor-protocol-kor-listing-campaign-1800000-kor-giveaway" target="_blank" rel="noopener noreferrer nofollow">官方活动页 ↗</a></td></tr><tr><th>信息来源</th><td><a class="" href="https://www.kucoin.com/announcement/en-kor-protocol-kor-listing-campaign-1800000-kor-giveaway" target="_blank" rel="noopener noreferrer nofollow">KuCoin 官方公告 ↗</a></td></tr><tr><th>最后验证时间</th><td>2026-11-10 01:42（官方公告）<br><small>程序从 KuCoin 官方公告自动提取，以公告原文为准；标题为机器翻译</small></td></tr><tr><th>风险提示</th><td><ul><li>加密资产价格波动大，奖励可能是代币券或锁仓资产</li><li>交易所服务在部分国家/地区（含中国大陆）受限，参与前确认当地法规</li><li>谨防冒充官方的钓鱼链接，只从官方页面进入</li></ul></td></tr></table></details>
   <div class="linkrow"><a class="dl-go" href="https://www.kucoin.com/announcement/en-kor-protocol-kor-listing-campaign-1800000-kor-giveaway" target="_blank" rel="noopener noreferrer nofollow">官方活动页 ↗</a><a href="x/kc-93dc72c96c.html">详情</a><a class="report" href="https://github.com/aiym168/aiym168.github.io/issues/new?title=%5B%E4%BC%98%E6%83%A0%E6%8A%A5%E9%94%99%5D+Kor+Protocol+%28KOR%29+%E4%B8%8A%E5%B8%81%E6%B4%BB%E5%8A%A8+%E2%80%94+1%2C800%2C000+KOR+%E5%A5%96%E5%8A%B1&amp;body=%E6%9D%A1%E7%9B%AE%EF%BC%9AKor+Protocol+%28KOR%29+%E4%B8%8A%E5%B8%81%E6%B4%BB%E5%8A%A8+%E2%80%94+1%2C800%2C000+KOR+%E5%A5%96%E5%8A%B1%0A%E9%A1%B5%E9%9D%A2%EF%BC%9Ahttps%3A%2F%2Faiym168.github.io%2Fdeals%2Fx%2Fkc-93dc72c96c.html%0A%E9%97%AE%E9%A2%98%EF%BC%9A%E5%B7%B2%E7%BB%93%E6%9D%9F+%2F+%E4%BF%A1%E6%81%AF%E6%9C%89%E8%AF%AF+%2F+%E9%93%BE%E6%8E%A5%E5%A4%B1%E6%95%88+%2F+%E5%85%B6%E4%BB%96%0A&amp;labels=%E6%8A%A5%E9%94%99" target="_blank" rel="noopener">报错</a><span class="mod-tag">核实 2026-11-10 01:42</span></div>

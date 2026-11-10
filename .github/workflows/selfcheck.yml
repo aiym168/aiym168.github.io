@@ -1,0 +1,45 @@
+name: Weekly self-check（来源体检 + 全站构建）
+
+# 每周一 04:00 北京时间：探测 data/news/sources.json 里每个来源；连续两周失败的自动停用（disabled），
+# 恢复的自动启用；然后完整构建一次全站确认能出页面。失败会让本工作流变红，看门狗会再派发主更新。
+on:
+  schedule:
+    - cron: "0 20 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-site
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe sources, auto-disable dead / re-enable recovered
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 engine/selfcheck.py
+      - name: Full build (no fetch) must succeed
+        run: |
+          python3 build.py
+          test -s index.html && test -s news/index.html && test -s sitemap.xml
+      - name: Commit
+        run: |
+          git config user.name "laohe-bot"; git config user.email "9499758-wq@users.noreply.github.com"
+          rm -rf __pycache__ .last_good
+          git add -A data/news/sources.json data/news/selfcheck.json
+          git diff --cached --quiet && { echo "no change"; exit 0; }
+          git commit -q -m "每周来源体检 $(TZ=Asia/Shanghai date '+%F')"
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && exit 0; git rebase --abort 2>/dev/null; sleep $((i*7)); done
+          exit 1
