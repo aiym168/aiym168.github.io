@@ -60,7 +60,7 @@ def build_page(b, now: datetime) -> str | None:
       <p class="lv-msg" id="lv-msg">正在连接信号站…</p>
       <p><a class="btn primary" id="lv-go" href="{esc(U[0] + '/' if U else '#')}" rel="noopener">进入信号站 ↗</a>
          <a class="btn" href="../radio/index.html">收听往期电台</a>
-         <a class="btn" href="{esc((d.get("domain") or "https://aiym168.github.io/signal/").rstrip("/") + "/daka/")}">🗺️ 打卡中国：点亮足迹地图 · 好友抢答 · 排行榜</a></p>
+         <a class="btn" href="https://aiym168.github.io/daka/">🗺️ 打卡中国（daka.is-my.app）：点亮足迹地图 · 好友抢答 · 排行榜</a></p>
       {f'<p>好记的固定域名：<a href="{esc(d["domain"])}"><code>{esc(d["domain"])}</code></a>（页面常驻，自动连接直播后端）</p>' if d.get("domain") else ''}
       <ul class="lv-urls" id="lv-urls">{''.join(f'<li><code>{esc(u)}</code> <span data-u="{esc(u)}">检测中</span></li>' for u in U) or '<li>信号站地址还未登记。</li>'}</ul>
       <p class="lv-note">信号站上有什么：① 24 小时直播流（台呼 → 整点快讯 → 最新一期早报/晚报 → 往期），所有人听到的是同一路信号；② 实时字幕和本段提到的链接；③ 大模型 API 网关雷达：每 5 分钟请求一次各家公开接口地址，记录能否连通和响应时间，保留 24 小时。雷达只说明接口地址能连通，不代表模型推理一定正常。数据接口：<a href="../api/live.json">api/live.json</a></p>
