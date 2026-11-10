@@ -922,6 +922,26 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 
 .ap-tog{white-space:nowrap}
 
+/* ---------- freshness: today block, link-check badges, share row */
+.today-new .today-list{list-style:none;margin:0;padding:0;border-top:1px solid rgba(140,200,255,.18)}
+.today-list li{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding:10px 2px;border-bottom:1px solid rgba(140,200,255,.12)}
+.today-list li a{display:flex;gap:12px;align-items:baseline;min-width:0;color:var(--text)}
+.today-list li a:hover .td-t{color:var(--cyan)}
+.today-list .td-time{flex:none;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.today-list .td-t{font-weight:600;line-height:1.45}
+.today-list .td-m{flex:none;display:inline-flex;gap:8px;align-items:center;font-size:12px;color:var(--muted)}
+.today-list .td-empty{color:var(--muted)}
+.lc-sum{font-size:.88rem;color:var(--muted);margin:0 0 10px}.lc-sum b{color:var(--text)}
+.td-more{font-size:.85rem;color:var(--muted);margin-top:8px}
+.trust .upd{color:var(--text)}
+.lc.ok{color:#5ef0c0}.lc.warn{color:#f5c26b}.lc.bad{color:#ff8a8a}
+.share-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px;font-size:12px}
+.share-row .share-lab{color:var(--muted);margin-right:2px}
+.share-row button{font:inherit;font-size:12px;color:var(--text);background:transparent;border:1px solid rgba(140,200,255,.25);border-radius:6px;padding:3px 9px;cursor:pointer}
+.share-row button:hover{border-color:var(--cyan);color:var(--cyan)}
+.share-row button.done{border-color:#5ef0c0;color:#5ef0c0}
+@media (max-width:760px){.today-list li{flex-direction:column;gap:4px}.today-list .td-m{padding-left:46px}}
+
 </style>
 
 </head>
@@ -1042,7 +1062,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   </section>
   <footer>
   <div><span class="foot-brand">AI大模型免费资源导航</span><br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="../deals/index.html">全球优惠情报</a> · <a href="../deals/api-prices.html">API 最低价榜</a> · <a href="../radio/index.html">AI 羊毛电台</a> · <a href="../live/">AI 羊毛信号站（直播）</a> · <a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../archives/index.html">已归档</a> · <a href="../m/board.html">留言板</a> · <a href="../m/octopus.html">机械章鱼 3D</a> · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
+  <div class="foot-links"><a href="../deals/index.html">全球优惠情报</a> · <a href="../deals/api-prices.html">API 最低价榜</a> · <a href="../radio/index.html">AI 羊毛电台</a> · <a href="../live/">AI 羊毛信号站（直播）</a> · <a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../archives/index.html">已归档</a> · <a href="../m/board.html">留言板</a> · <a href="../m/octopus.html">机械章鱼 3D</a> · <a href="../feed.xml">RSS</a> · <a href="../feed.atom">Atom</a> · <a href="../digest/today.txt">今日速递</a> · <a href="../sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>
 </div>
 <script>/* AI大模型免费资源导航 · site.js (v3): nav, 减少动态 toggle, search + filters + sort, quick search over /api/latest.json. */
@@ -1360,6 +1380,37 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   var nav = document.querySelector('.topnav');
   function onScroll(){ if (nav) nav.classList.toggle('scrolled', (window.scrollY||0) > 24); }
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+})();
+
+/* ---------- share buttons on cards and item pages: X / 微信 / 小红书 / link (text is built from the card itself) */
+(function(){
+  function txt(root, sel){ var e = root.querySelector(sel); return e ? e.textContent.replace(/\s+/g, ' ').trim() : ''; }
+  function cut(s, n){ return s.length > n ? s.slice(0, n - 1) + '…' : s; }
+  function copy(btn, t, okLabel){
+    var old = btn.dataset.label || btn.textContent; btn.dataset.label = old;
+    function done(){ btn.textContent = okLabel || '已复制'; btn.classList.add('done'); setTimeout(function(){ btn.textContent = old; btn.classList.remove('done'); }, 1600); }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(done, function(){ window.prompt('复制下面的文字：', t); });
+    else window.prompt('复制下面的文字：', t);
+  }
+  document.addEventListener('click', function(ev){
+    var btn = ev.target.closest && ev.target.closest('[data-share]'); if (!btn) return;
+    var root = btn.closest('[data-share-url]'); if (!root) return;
+    ev.preventDefault();
+    var url = root.getAttribute('data-share-url'), title = txt(root, '[data-s-title]'), sum = txt(root, '[data-s-sum]'),
+        st = txt(root, '[data-s-st]'), mod = txt(root, '[data-s-mod]'), how = txt(root, '[data-s-how]');
+    var kind = btn.getAttribute('data-share');
+    if (kind === 'x') {
+      var t = cut(title, 70) + (st ? '｜' + st : '') + '\n' + cut(sum, 60);
+      window.open('https://x.com/intent/post?text=' + encodeURIComponent(t) + '&url=' + encodeURIComponent(url), '_blank', 'noopener');
+    } else if (kind === 'wx') {
+      copy(btn, '【AI 羊毛】' + title + '\n' + cut(sum, 120) + (how ? '\n怎么领：' + cut(how, 80) : '') + (st ? '\n状态：' + st : '') + '\n详情：' + url);
+    } else if (kind === 'xhs') {
+      copy(btn, cut(title, 20) + '\n\n' + cut(sum, 150) + (how ? '\n\n怎么领：' + cut(how, 100) : '') + (st ? '\n状态：' + st + '（以官网为准）' : '') +
+        '\n\n详情搜「AI大模型免费资源导航」\n\n#AI羊毛 #免费AI #大模型' + (mod ? ' #' + mod.replace(/[\s/·]+/g, '') : ''));
+    } else {
+      copy(btn, url, '链接已复制');
+    }
+  });
 })();
 </script>
 </body></html>

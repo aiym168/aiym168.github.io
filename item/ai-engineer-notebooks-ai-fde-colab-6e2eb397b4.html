@@ -923,6 +923,26 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 
 .ap-tog{white-space:nowrap}
 
+/* ---------- freshness: today block, link-check badges, share row */
+.today-new .today-list{list-style:none;margin:0;padding:0;border-top:1px solid rgba(140,200,255,.18)}
+.today-list li{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding:10px 2px;border-bottom:1px solid rgba(140,200,255,.12)}
+.today-list li a{display:flex;gap:12px;align-items:baseline;min-width:0;color:var(--text)}
+.today-list li a:hover .td-t{color:var(--cyan)}
+.today-list .td-time{flex:none;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.today-list .td-t{font-weight:600;line-height:1.45}
+.today-list .td-m{flex:none;display:inline-flex;gap:8px;align-items:center;font-size:12px;color:var(--muted)}
+.today-list .td-empty{color:var(--muted)}
+.lc-sum{font-size:.88rem;color:var(--muted);margin:0 0 10px}.lc-sum b{color:var(--text)}
+.td-more{font-size:.85rem;color:var(--muted);margin-top:8px}
+.trust .upd{color:var(--text)}
+.lc.ok{color:#5ef0c0}.lc.warn{color:#f5c26b}.lc.bad{color:#ff8a8a}
+.share-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px;font-size:12px}
+.share-row .share-lab{color:var(--muted);margin-right:2px}
+.share-row button{font:inherit;font-size:12px;color:var(--text);background:transparent;border:1px solid rgba(140,200,255,.25);border-radius:6px;padding:3px 9px;cursor:pointer}
+.share-row button:hover{border-color:var(--cyan);color:var(--cyan)}
+.share-row button.done{border-color:#5ef0c0;color:#5ef0c0}
+@media (max-width:760px){.today-list li{flex-direction:column;gap:4px}.today-list .td-m{padding-left:46px}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ai-engineer-notebooks：适用于 AI 工程师/前沿部署工程师(FDE)技能集的实践、免框架 Colab 笔记本","description":"模型 API、结构化输出、工具调用、RAG、EVALS 即脊椎、代理（从头开始循环、工具设计、护栏、MCP、技能）、微调与 LoRA、提示注入/安全、LLMOps 和客户工艺。在免费的 Groq API 上运行。","datePublished":"2026-11-07T10:10:00+08:00","dateModified":"2026-11-09T20:31:12+08:00","mainEntityOfPage":"https://aiym168.github.io/item/ai-engineer-notebooks-ai-fde-colab-6e2eb397b4.html","author":{"@type":"Organization","name":"AI大模型免费资源导航"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://aiym168.github.io/"},{"@type":"ListItem","position":2,"name":"AI 开发工具与编程助手","item":"https://aiym168.github.io/c/ai-kaifa-gongju.html"},{"@type":"ListItem","position":3,"name":"ai-engineer-notebooks：适用于 AI 工程师/前沿部署工程师(FDE)技能集的实践、免框架 Colab 笔记本","item":"https://aiym168.github.io/item/ai-engineer-notebooks-ai-fde-colab-6e2eb397b4.html"}]}</script>
@@ -943,17 +963,18 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
     <button type="button" class="nav-toggle" aria-controls="navlinks" aria-expanded="false" aria-label="打开菜单"><span></span><span></span><span></span></button>
   </div>
 </header>
-<div class="wrap">
-  <div class="crumbs"><a href="../">首页</a> › <a href="../c/ai-kaifa-gongju.html">AI 开发工具与编程助手</a> › 详情</div>
+<div class="wrap" data-share-url="https://aiym168.github.io/item/ai-engineer-notebooks-ai-fde-colab-6e2eb397b4.html">
+  <div class="crumbs"><a href="../">首页</a> › <a href="../c/ai-kaifa-gongju.html" data-s-mod>AI 开发工具与编程助手</a> › 详情</div>
   <header class="hero">
     <div class="eyebrow"><i class="live-dot"></i> AI 开发工具与编程助手</div>
-    <h1>ai-engineer-notebooks：适用于 AI 工程师/前沿部署工程师(FDE)技能集的实践、免框架 Colab 笔记本</h1>
-    <p class="lead">模型 API、结构化输出、工具调用、RAG、EVALS 即脊椎、代理（从头开始循环、工具设计、护栏、MCP、技能）、微调与 LoRA、提示注入/安全、LLMOps 和客户工艺。在免费的 Groq API 上运行。</p>
-    <div class="facts big"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span><span class="st st-muted">未核实</span></div>
+    <h1 data-s-title>ai-engineer-notebooks：适用于 AI 工程师/前沿部署工程师(FDE)技能集的实践、免框架 Colab 笔记本</h1>
+    <p class="lead" data-s-sum>模型 API、结构化输出、工具调用、RAG、EVALS 即脊椎、代理（从头开始循环、工具设计、护栏、MCP、技能）、微调与 LoRA、提示注入/安全、LLMOps 和客户工艺。在免费的 Groq API 上运行。</p>
+    <div class="facts big"><span class="fact unk" title="要不要绑卡">绑卡：未注明</span><span class="fact unk" title="实名/手机号">实名：未注明</span><span class="fact unk" title="国内能否直连">直连：未注明</span><span class="fact v-permanent" title="免费类型">永久免费</span><span class="fact unk" title="额度有效期">有效期：未注明</span><span class="st st-muted" data-s-st>未核实</span></div>
+    <div class="share-row" aria-label="分享"><span class="share-lab">分享</span><button type="button" data-share="x">X</button><button type="button" data-share="wx">复制微信文案</button><button type="button" data-share="xhs">复制小红书文案</button><button type="button" data-share="link">复制链接</button></div>
   </header>
   <section class="panel-box">
     <h2>关键信息</h2>
-    <table class="facts-table"><tr><th>要不要绑卡</th><td class="unk">未注明</td></tr><tr><th>实名/手机号</th><td class="unk">未注明</td></tr><tr><th>国内能否直连</th><td class="unk">未注明</td></tr><tr><th>免费类型</th><td class="">永久免费</td></tr><tr><th>额度有效期</th><td>未注明</td></tr><tr><th>截止时间</th><td>未注明</td></tr><tr><th>状态</th><td>未核实</td></tr><tr><th>来源</th><td>GitHub · @calmrocks</td></tr><tr><th>发布时间</th><td>2026-11-07 10:10 北京时间</td></tr><tr><th>本站收录</th><td>2026-11-09 20:31 北京时间</td></tr><tr><th>核实情况</th><td>未核实：信息来自公开帖子/网页，本站尚未对照官网核实</td></tr></table>
+    <table class="facts-table"><tr><th>要不要绑卡</th><td class="unk">未注明</td></tr><tr><th>实名/手机号</th><td class="unk">未注明</td></tr><tr><th>国内能否直连</th><td class="unk">未注明</td></tr><tr><th>免费类型</th><td class="">永久免费</td></tr><tr><th>额度有效期</th><td>未注明</td></tr><tr><th>截止时间</th><td>未注明</td></tr><tr><th>状态</th><td>未核实</td></tr><tr><th>来源</th><td>GitHub · @calmrocks</td></tr><tr><th>发布时间</th><td>2026-11-07 10:10 北京时间</td></tr><tr><th>本站收录</th><td>2026-11-09 20:31 北京时间</td></tr><tr><th>核实情况</th><td>未核实：信息来自公开帖子/网页，本站尚未对照官网核实</td></tr><tr><th>更新于</th><td>2026-11-09 20:31 北京时间</td></tr><tr><th>链接检查</th><td class="lc ok">链接已验证 2026-11-10 23:17（本站程序每小时自动检查打开情况）</td></tr></table>
     
     <p class="note">原文没有写明具体领取步骤，请打开原文或官网查看。</p>
     <p class="actions"><a class="btn primary" href="https://github.com/calmrocks/ai-engineer-notebooks" target="_blank" rel="noopener noreferrer">打开原文 ↗</a>
@@ -965,7 +986,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   <section class="panel-box"><h2>同模块推荐</h2><ul class="plain"><li><a href="../item/qoder-qoduck-0-1b7e30fba3.html">Qoder 匿名模型 Qoduck：个人号每日免费额度内 0 倍率消耗</a></li><li><a href="../item/coderabbit-f6e98c2d5b.html">CodeRabbit：开源项目免费 + 私有代码试用</a></li><li><a href="../item/omniroute-ai-d2f877fced.html">OmniRoute：开源免费 AI 网关聚合多平台</a></li><li><a href="../item/devin-desktop-windsurf-fa42abc9c7.html">Devin Desktop（原 Windsurf）：免费计划可用</a></li><li><a href="../item/qoder-e294c6b594.html">大学生参加 Qoder 高校赛可领一个月会员</a></li><li><a href="../item/awesome-free-llm-apis-api-819c65ac29.html">awesome-free-llm-apis：免费大模型 API 清单</a></li></ul></section>
   <footer>
   <div><span class="foot-brand">AI大模型免费资源导航</span><br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="../deals/index.html">全球优惠情报</a> · <a href="../deals/api-prices.html">API 最低价榜</a> · <a href="../radio/index.html">AI 羊毛电台</a> · <a href="../live/">AI 羊毛信号站（直播）</a> · <a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../archives/index.html">已归档</a> · <a href="../m/board.html">留言板</a> · <a href="../m/octopus.html">机械章鱼 3D</a> · <a href="../feed.xml">RSS</a> · <a href="../sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
+  <div class="foot-links"><a href="../deals/index.html">全球优惠情报</a> · <a href="../deals/api-prices.html">API 最低价榜</a> · <a href="../radio/index.html">AI 羊毛电台</a> · <a href="../live/">AI 羊毛信号站（直播）</a> · <a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../archives/index.html">已归档</a> · <a href="../m/board.html">留言板</a> · <a href="../m/octopus.html">机械章鱼 3D</a> · <a href="../feed.xml">RSS</a> · <a href="../feed.atom">Atom</a> · <a href="../digest/today.txt">今日速递</a> · <a href="../sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>
 </div>
 <script>/* AI大模型免费资源导航 · site.js (v3): nav, 减少动态 toggle, search + filters + sort, quick search over /api/latest.json. */
@@ -1283,6 +1304,37 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   var nav = document.querySelector('.topnav');
   function onScroll(){ if (nav) nav.classList.toggle('scrolled', (window.scrollY||0) > 24); }
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+})();
+
+/* ---------- share buttons on cards and item pages: X / 微信 / 小红书 / link (text is built from the card itself) */
+(function(){
+  function txt(root, sel){ var e = root.querySelector(sel); return e ? e.textContent.replace(/\s+/g, ' ').trim() : ''; }
+  function cut(s, n){ return s.length > n ? s.slice(0, n - 1) + '…' : s; }
+  function copy(btn, t, okLabel){
+    var old = btn.dataset.label || btn.textContent; btn.dataset.label = old;
+    function done(){ btn.textContent = okLabel || '已复制'; btn.classList.add('done'); setTimeout(function(){ btn.textContent = old; btn.classList.remove('done'); }, 1600); }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(done, function(){ window.prompt('复制下面的文字：', t); });
+    else window.prompt('复制下面的文字：', t);
+  }
+  document.addEventListener('click', function(ev){
+    var btn = ev.target.closest && ev.target.closest('[data-share]'); if (!btn) return;
+    var root = btn.closest('[data-share-url]'); if (!root) return;
+    ev.preventDefault();
+    var url = root.getAttribute('data-share-url'), title = txt(root, '[data-s-title]'), sum = txt(root, '[data-s-sum]'),
+        st = txt(root, '[data-s-st]'), mod = txt(root, '[data-s-mod]'), how = txt(root, '[data-s-how]');
+    var kind = btn.getAttribute('data-share');
+    if (kind === 'x') {
+      var t = cut(title, 70) + (st ? '｜' + st : '') + '\n' + cut(sum, 60);
+      window.open('https://x.com/intent/post?text=' + encodeURIComponent(t) + '&url=' + encodeURIComponent(url), '_blank', 'noopener');
+    } else if (kind === 'wx') {
+      copy(btn, '【AI 羊毛】' + title + '\n' + cut(sum, 120) + (how ? '\n怎么领：' + cut(how, 80) : '') + (st ? '\n状态：' + st : '') + '\n详情：' + url);
+    } else if (kind === 'xhs') {
+      copy(btn, cut(title, 20) + '\n\n' + cut(sum, 150) + (how ? '\n\n怎么领：' + cut(how, 100) : '') + (st ? '\n状态：' + st + '（以官网为准）' : '') +
+        '\n\n详情搜「AI大模型免费资源导航」\n\n#AI羊毛 #免费AI #大模型' + (mod ? ' #' + mod.replace(/[\s/·]+/g, '') : ''));
+    } else {
+      copy(btn, url, '链接已复制');
+    }
+  });
 })();
 </script>
 </body></html>
