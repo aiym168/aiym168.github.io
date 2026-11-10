@@ -43,13 +43,14 @@ def build_page(b, now: datetime) -> str | None:
     canonical = f"{b.CANONICAL}{REL}"
     (ROOT / "api").mkdir(exist_ok=True)
     (ROOT / "api" / "live.json").write_text(json.dumps({
-        "page": f"{b.CANONICAL}live/", "urls": U, "updated_at": d.get("updated_at"), "checked_at": d.get("checked_at"),
+        "page": f"{b.CANONICAL}live/", "domain": d.get("domain"), "front": d.get("domain") or "https://aiym168.github.io/signal/", "urls": U, "updated_at": d.get("updated_at"), "checked_at": d.get("checked_at"),
         "stream": [u + "/stream.mp3" for u in U], "radar": [u + "/api/radar.json" for u in U],
     }, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     stats = (f'<div class="pill live">状态 <b id="lv-state">检测中…</b></div>'
              f'<div class="pill">直播 <b>24 小时</b></div>'
              f'<div class="pill">网关雷达 <b>每 5 分钟</b></div>'
-             f'<div class="pill">地址更新 <b>{esc((d.get("updated_at") or "—")[:16].replace("T", " "))}</b></div>')
+             f'<div class="pill">地址更新 <b>{esc((d.get("updated_at") or "—")[:16].replace("T", " "))}</b></div>'
+             + (f'<div class="pill">好记域名 <b><a href="{esc(d["domain"])}">{esc(d["domain"].split("//")[-1].rstrip("/"))}</a></b></div>' if d.get("domain") else ""))
     html = f"""{b.head_block(f"AI 羊毛信号站 · 24 小时 AI 羊毛直播 + 大模型 API 网关雷达 | {b.SITE_NAME}", "AI 羊毛信号站：独立运行的直播站，24 小时滚动播报 AI 免费资源与全球优惠，整点快讯，并每 5 分钟实测十几家大模型 API 网关的连通性和延迟。这里是它的固定入口。", canonical)}
 {b.page_shell_start("../", "module live")}
 {b.mod_hero("SIGNAL STATION", "AI 羊毛信号站", "一个独立运行的直播站：24 小时不停播的 AI 羊毛电台、整点快讯，和实时的大模型 API 网关雷达。它跑在一台单独的服务器上，公网地址可能变化，这个页面永远指向它当前的地址。", stats, '<a href="../">首页</a> › AI 羊毛信号站', "../vendor/")}
@@ -59,6 +60,7 @@ def build_page(b, now: datetime) -> str | None:
       <p class="lv-msg" id="lv-msg">正在连接信号站…</p>
       <p><a class="btn primary" id="lv-go" href="{esc(U[0] + '/' if U else '#')}" rel="noopener">进入信号站 ↗</a>
          <a class="btn" href="../radio/index.html">收听往期电台</a></p>
+      {f'<p>好记的固定域名：<a href="{esc(d["domain"])}"><code>{esc(d["domain"])}</code></a>（页面常驻，自动连接直播后端）</p>' if d.get("domain") else ''}
       <ul class="lv-urls" id="lv-urls">{''.join(f'<li><code>{esc(u)}</code> <span data-u="{esc(u)}">检测中</span></li>' for u in U) or '<li>信号站地址还未登记。</li>'}</ul>
       <p class="lv-note">信号站上有什么：① 24 小时直播流（台呼 → 整点快讯 → 最新一期早报/晚报 → 往期），所有人听到的是同一路信号；② 实时字幕和本段提到的链接；③ 大模型 API 网关雷达：每 5 分钟请求一次各家公开接口地址，记录能否连通和响应时间，保留 24 小时。雷达只说明接口地址能连通，不代表模型推理一定正常。数据接口：<a href="../api/live.json">api/live.json</a></p>
     </div>
