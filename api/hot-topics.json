@@ -3,7 +3,7 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 18,
+  "count": 15,
   "items": [
     {
       "id": "hnhot-50429068",
@@ -20,17 +20,10 @@
       "source": "Hacker News"
     },
     {
-      "id": "hnhot-50429024",
-      "title": "Muse Ember：我们最小、最高效的模型",
+      "id": "hnhot-50437106",
+      "title": "烟花 AI 安全漏洞影响 Notion 及其客户",
       "summary": "",
-      "url": "https://research.meta.ai/blog/muse-ember",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50435660",
-      "title": "随着 AI 信贷压力上升，CoreWeave 债券收益率突破 16%",
-      "summary": "",
-      "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
       "source": "Hacker News"
     },
     {
@@ -48,6 +41,13 @@
       "source": "V2EX"
     },
     {
+      "id": "v2hot-1255953",
+      "title": "你对 AI 说的最多的一句话是什么？",
+      "summary": "对 AI 是的话：1. 按照你的建议实现 2. 评估一下，确保能理解需求（功能）",
+      "url": "https://www.v2ex.com/t/1255953",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1255920",
       "title": "AI 能画电路图了吗？",
       "summary": "有没有用 AI 成功搞出来硬件产品的兄弟？",
@@ -55,10 +55,24 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1255953",
-      "title": "你对 AI 说的最多的一句话是什么？",
-      "summary": "对 AI 是的话：1. 按照你的建议实现 2. 评估一下，确保能理解需求（功能）",
-      "url": "https://www.v2ex.com/t/1255953",
+      "id": "v2hot-1255954",
+      "title": "NUS 给教职工提供了 Claude for Education 订阅——Max 2.5x 似乎在路上了？",
+      "summary": "今天收到学校邮件，NUS 的教职工现在可以付费购买教育版本 Claude 订阅了。虽然学校此前已经提供了 Claude 系列模型的网页端聚合，但是只有网页端接入，并不能使用 API 或者 Claude Code 一类。这次提供的则是直接使用 Claude 官方渠道的账户。使用体验应该和直接官网购买 Claude 一样了，但是使用量不太一样：标准计划：SGD 280 / 年（个人版 Pro 是 SGD 300 / 年）；*至高* 2.5 倍于个人版 Pro 用量 按照我的理解，这个就是传闻中的 Max 2.5x 计划，当然实际消费者版本定价应该就",
+      "url": "https://www.v2ex.com/t/1255954",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1255959",
+      "title": "有没有大佬用的 Linux 桌面端的 Codex，咨询下 Dots 能否直连 Linux？",
+      "summary": "我自己有一台 Ubuntu Server 22.4，目前只能让 Dots 通过 Mac 中转 然后 ssh 访问我的 Ubuntu。这样就得保证我的 Mac 一直在线。我希望我的 Dots 能直连我的 Mac （目前设备列表看不到 Ubuntu，因为我用的 codex cli） ![]( 而 OpenAI 官方目前只支持 Ubuntu 24.04 和 26.04 的桌面版，但我不确定的是升级到这个版本的桌面端，就能让 Dots 直连了吗？## 有没有大佬用的 Linux 桌面端的 Co",
+      "url": "https://www.v2ex.com/t/1255959",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1255949",
+      "title": "天才程序员陨落，活了 11 天的 Claude 封号了",
+      "summary": "热乎的，刚刚还在写代码，然后 Claude 桌面版 直接退出了。[![Snipaste-2026-11-10-05-31-35.png]( [![Snipaste-2026-11-10-05-31-49.png](",
+      "url": "https://www.v2ex.com/t/1255949",
       "source": "V2EX"
     },
     {
@@ -76,38 +90,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1255912",
-      "title": "我们开源了一个光学仿真系统，配合智能体可以通过自然语言描述需求，快速搭建光路和光学模块，并导出图纸与 BOM。",
-      "summary": "github: 官方网址：支持多种光学元件共 3,273 款，也允许自定义光学器件: 透镜，滤光片，滤光片，波片，反射镜，分束镜，棱镜，窗口片，偏振片等 用法：直接在电脑上把链接丢给 Agent，告诉它：**用这个工具给我设计一个 xx 光路&光学模块，然后导出图纸和 BOM。** Agent 可以是任意智能体，例如 Codex，ClaudeCode、WorkBuddy、DeepseekHarness 等。下面是",
-      "url": "https://www.v2ex.com/t/1255912",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1255954",
-      "title": "NUS 给教职工提供了 Claude for Education 订阅——Max 2.5x 似乎在路上了？",
-      "summary": "今天收到学校邮件，NUS 的教职工现在可以付费购买教育版本 Claude 订阅了。虽然学校此前已经提供了 Claude 系列模型的网页端聚合，但是只有网页端接入，并不能使用 API 或者 Claude Code 一类。这次提供的则是直接使用 Claude 官方渠道的账户。使用体验应该和直接官网购买 Claude 一样了，但是使用量不太一样：标准计划：SGD 280 / 年（个人版 Pro 是 SGD 300 / 年）；*至高* 2.5 倍于个人版 Pro 用量 按照我的理解，这个就是传闻中的 Max 2.5x 计划，当然实际消费者版本定价应该就",
-      "url": "https://www.v2ex.com/t/1255954",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1255949",
-      "title": "天才程序员陨落，活了 11 天的 Claude 封号了",
-      "summary": "热乎的，刚刚还在写代码，然后 Claude 桌面版 直接退出了。[![Snipaste-2026-11-10-05-31-35.png]( [![Snipaste-2026-11-10-05-31-49.png](",
-      "url": "https://www.v2ex.com/t/1255949",
-      "source": "V2EX"
-    },
-    {
       "id": "v2hot-1255935",
       "title": "自己攒了个 AI 说唱站，从 topic 到词、歌、视频都能走",
       "summary": "最近做了个小站，Rapvio。起因很具体：想上传照片，制作自己的 rap video，把自己和朋友放进一段说唱视频里。做出来之后发现，很多人其实连歌词都还没有；也有人词写好了，只想要一首歌，不想要视频。所以现在拆成了几条可以随时停下的路径。不会编曲、不会录音、不会剪片子，也能从一句话走到一首歌，或者一条 10~15 秒的竖屏片段。视频模型试了 MiniMax、Seedance、Wan、Kling 几档，都能出，目前 minimax h3 性价比是最高的，画面风格上第一版做了八种 look （生日、battle、宠物、圣诞之类），单人双人都能生",
       "url": "https://www.v2ex.com/t/1255935",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1255911",
-      "title": "SpringBoot 后端开发工程师（AI 应用方向），高级 Java 工程师",
-      "summary": "远程 SpringBoot 后端开发工程师（AI 应用方向） 薪资：20-30K 岗位职责 1. 负责公司 AI 产品、业务系统、后台服务的后端开发与迭代维护，基于 SpringBoot/SpringCloud 搭建稳定、高性能、可扩展的后端服务架构，保障系统高可用、高并发运行。2. 独立完成业务需求拆解、接口设计、数据库设计、核心代码开发、单元测试与性能优化，输出规范的接口文档、设计文档，支撑前端、算法、产品团队高效协作。3. 负责大模型后端服务开发与集成，对接主流 LLM 大模型 API，实现对话管理、上下文维护、流式响应、限流熔断、异常重试、日志溯源等 AI 核心服务能",
-      "url": "https://www.v2ex.com/t/1255911",
       "source": "V2EX"
     },
     {
@@ -122,13 +108,6 @@
       "title": "目前 B2B + AI 卡组中最常见的差距：没有证据表明客户为 AI 支付的费用高于他们为软件支付的费用。",
       "summary": "目前 B2B + AI 卡组中最常见的差距：没有证据表明客户为 AI 支付的费用高于其替换的软件。这是投资者想要的第一件事。SaaStr AI 将在缺失时对其进行标记。免费",
       "url": "https://x.com/jasonlk/status/2119870638630506720",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-4525532283",
-      "title": "有关我们所有 AI Agent 的更多信息，请访问：获取 AI 销售代理的免费指南，请访问",
-      "summary": "",
-      "url": "https://x.com/jasonlk/status/2120086705302593853",
       "source": "X"
     }
   ]
