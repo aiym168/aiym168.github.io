@@ -1,25 +1,761 @@
 {
- "updated_at": "2026-11-11T03:25:44+08:00",
+ "updated_at": "2026-11-11T04:46:31+08:00",
  "counts": {
-  "mobile": 150,
-  "ai": 220,
-  "science": 53,
-  "chip": 67,
-  "software": 115,
-  "dev": 68,
-  "game": 72,
-  "space": 35,
+  "auto": 46,
   "internet": 150,
-  "auto": 42,
-  "launch": 13,
-  "huawei": 99,
-  "aigc": 27,
-  "aivideo": 75,
+  "science": 57,
+  "ai": 220,
+  "dev": 72,
+  "mobile": 150,
+  "software": 124,
+  "game": 77,
+  "chip": 74,
+  "space": 37,
+  "aigc": 28,
+  "launch": 15,
+  "huawei": 100,
+  "aivideo": 77,
   "comfyui": 42,
-  "aidrama": 57,
+  "aidrama": 58,
   "gossip": 11
  },
  "items": [
+  {
+   "id": "47e327d18a48",
+   "channel": "auto",
+   "title": "特斯拉 Cybertruck 经历了一年多来最好的一个月。它仍然会消失",
+   "title_orig": "Tesla Cybertruck had its best month in over a year. It’s still going away",
+   "summary": "新的电动汽车价格在10月份小幅上涨，但买家支付的价格仍低于一年前。根据 Cox Automotive 品牌 Kelley Blue Book 的数据，美国新电动汽车的平均交易价格为56,220 $，比9月份上涨1%，比2025年10月份下跌2.7%。更多……",
+   "summary_orig": "New EV prices edged up in October, but buyers still paid less than they did a year ago. The average transaction price for a new EV in the US was $56,220, up 1% from September and down 2.7% from October 2025, according to Kelley Blue Book, a Cox Automotive brand. more…",
+   "url": "https://electrek.co/2026/11/10/tesla-cybertruck-had-its-best-month-in-over-a-year-its-still-going-away/",
+   "hn": "",
+   "source": "Electrek",
+   "source_key": "electrek-co-feed",
+   "source_home": "https://electrek.co/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:45:45+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "455384a3a496",
+   "channel": "internet",
+   "title": "X-energy 获得绿灯，建造其第一座小型模块化核反应堆",
+   "title_orig": "X-energy gets green light to build its first small modular nuclear reactors",
+   "summary": "X-energy 获得了美国核管理委员会的建设许可，在德克萨斯州建造四座反应堆。",
+   "summary_orig": "X-energy received a construction permit from the U.S. Nuclear Regulatory Commission to build four reactors in Texas.",
+   "url": "https://techcrunch.com/2026/11/10/x-energy-gets-green-light-to-build-its-first-small-modular-nuclear-reactors/",
+   "hn": "",
+   "source": "TechCrunch",
+   "source_key": "techcrunch-com-feed",
+   "source_home": "https://techcrunch.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:43:55+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "70c56a2a0aba",
+   "channel": "science",
+   "title": "韦伯备受争议的“小红点”可能终于有了一个解释",
+   "title_orig": "Webb's controversial 'little red dots' may finally have an explanation",
+   "summary": "天文学家可能已经解决了美国宇航局詹姆斯韦伯太空望远镜（JWST）发现的最大谜团之一，使用复杂的模拟表明，被称为“小红点” （LRD）的神秘物体可能是第一个超大质量黑洞的诞生地。",
+   "summary_orig": "Astronomers may have solved one of the biggest mysteries uncovered by NASA's James Webb Space Telescope (JWST), using sophisticated simulations to show that enigmatic objects known as \"little red dots\" (LRDs) are likely the birthplaces of the first supermassive black holes.",
+   "url": "https://phys.org/news/2026-11-webb-controversial-red-dots-explanation.html",
+   "hn": "",
+   "source": "Phys.org",
+   "source_key": "phys-org-rss-feed",
+   "source_home": "https://phys.org/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:40:05+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "a8f6a426ee16",
+   "channel": "ai",
+   "title": "为了阻止代理的逆向工程，开发人员建议让他们失明",
+   "title_orig": "To thwart reverse engineering by agents, dev proposes blinding them",
+   "summary": "用锋利的棍子戳 AI",
+   "summary_orig": "A poke in the AI with a sharp stick",
+   "url": "https://www.theregister.com/ai-and-ml/2026/11/10/to-thwart-reverse-engineering-by-agents-dev-proposes-blinding-them/5308897",
+   "hn": "",
+   "source": "The Register",
+   "source_key": "theregister-com-headlines-atom",
+   "source_home": "https://www.theregister.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:35:11+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "9c42d7dd98cf",
+   "channel": "dev",
+   "title": "为什么 create-next-app 还不够：脚手架按产品类型，而不是堆栈",
+   "title_orig": "Why create-next-app Isn't Enough: Scaffolding by Product Type, Not Stack",
+   "summary": "在上一篇文章中，我说我一直在重建同一个应用程序。在编写任何代码之前，我想回答一个公平的问题：用于此的工具是否已经存在？他们做到了，他们很好。这是我发现的。两个系列的工具今天开始一个项目通常意味着从两个家庭中挑选一个",
+   "summary_orig": "In the last article, I said I keep rebuilding the same app. Before writing any code, I wanted to answer a fair question: don't tools for this already exist? They do, and they're good. So here's what I found. Two families of tools Starting a project today usually means picking from one of two families. Family 1: Scaffolders.",
+   "url": "https://dev.to/theyclonedbjorn/why-create-next-app-isnt-enough-scaffolding-by-product-type-not-stack-18mi",
+   "hn": "",
+   "source": "DEV",
+   "source_key": "dev-to-feed",
+   "source_home": "https://dev.to/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:35:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "111369193022",
+   "channel": "auto",
+   "title": "Husky Liners Weatherbeater 脚垫：美国制造，激光贴合，比你想象的更便宜",
+   "title_orig": "Husky Liners Weatherbeater Floor Mats: American-Made, Laser-Fit, and Cheaper Than You’d Think",
+   "summary": "Husky Liners 是特定于车辆的，在美国制造，有终身保修，起价为$ 69.99。",
+   "summary_orig": "Husky Liners are vehicle-specific, made in the USA, backed by a lifetime warranty, and starting at $69.99.",
+   "url": "https://www.thedrive.com/news/husky-liners-weatherbeater-floor-mats-american-made-laser-fit-and-cheaper-than-youd-think",
+   "hn": "",
+   "source": "The Drive",
+   "source_key": "thedrive-com-feed",
+   "source_home": "https://www.thedrive.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:34:11+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "2bff9d6d409a",
+   "channel": "mobile",
+   "title": "Apple TV 4K：新的 Siri Remote 功能需要 iPhone 17或更高版本",
+   "title_orig": "Apple TV 4K: New Siri Remote feature requires iPhone 17 or later",
+   "summary": "新款 Apple TV 4K 的价格可能是其前代产品的两倍，但它不仅提供了功能更强大的处理器和 Wi-Fi 7，而且还提供了改进的 Siri 遥控器，具有令人兴奋的新功能。但是，需要使用现代 iPhone 才能使用遥控器的新功能。",
+   "summary_orig": "The new Apple TV 4K may be twice as expensive as its predecessor, but it offers not only a significantly more powerful processor and Wi-Fi 7, but also an improved Siri Remote with an exciting new feature. However, a modern iPhone is required to use the remote's new feature.",
+   "url": "https://www.notebookcheck.net/Apple-TV-4K-New-Siri-Remote-feature-requires-iPhone-17-or-later.1447252.0.html",
+   "hn": "",
+   "source": "Notebookcheck",
+   "source_key": "notebookcheck-net-news-152-100-html-type-rss",
+   "source_home": "https://www.notebookcheck.net/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:33:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "2e1dac37b891",
+   "channel": "internet",
+   "title": "Brand Finance：2026年印度尼西亚品牌100强",
+   "title_orig": "",
+   "summary": "Brand Finance发布了“2026年印度尼西亚品牌100强”。2026年，印度尼西亚最具价值的100个品牌总价值为448亿美元，较上年下降了16%。尽管有所下滑，但印尼各行业的领先品牌仍处于有利位置，能够充分利用数字化、基础设施投资和产业转型的机遇，支持印尼下一阶段的经济发展。",
+   "summary_orig": "",
+   "url": "http://www.199it.com/archives/1846945.html",
+   "hn": "",
+   "source": "199IT",
+   "source_key": "199it-com-feed",
+   "source_home": "https://www.199it.com/",
+   "lang": "zh",
+   "published_at": "2026-11-11T04:30:30+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "0acca3a25b58",
+   "channel": "mobile",
+   "title": "ESP32正在取代我家实验室的 Raspberry Pis，用于简单的工作，运行成本要低得多",
+   "title_orig": "The ESP32 is replacing Raspberry Pis in my home lab for simple jobs, and it costs far less to run",
+   "summary": "我完全登上了 SBC 列车，我不会下车。",
+   "summary_orig": "I'm fully aboard the SBC train, and I'm not hopping off.",
+   "url": "https://www.xda-developers.com/the-esp32-is-replacing-raspberry-pis-in-my-home-lab-for-simple-jobs-and-it-costs-far-less-to-run/",
+   "hn": "",
+   "source": "XDA",
+   "source_key": "xda-developers-com-feed",
+   "source_home": "https://www.xda-developers.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:30:20+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "f21f82273430",
+   "channel": "software",
+   "title": "Ryobi、Milwaukee 和 DeWalt 再次享受 Home Depot 的免费电池和工具优惠",
+   "title_orig": "Home Depot’s free battery and tool deals are back for Ryobi, Milwaukee, and DeWalt",
+   "summary": "提前度假 BOGO 优惠无处不在。",
+   "summary_orig": "Early holiday BOGO deals everywhere.",
+   "url": "https://www.howtogeek.com/home-depot-free-battery-tool-deals-are-back-dewalt-ryobi-milwaukee/",
+   "hn": "",
+   "source": "How-To Geek",
+   "source_key": "howtogeek-com-feed",
+   "source_home": "https://www.howtogeek.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:30:15+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "23cb89e4b003",
+   "channel": "auto",
+   "title": "挪威的电动扫雪机起作用了。尽管如此，瑞典还是添加了氢气。",
+   "title_orig": "Norway’s Electric Snowplow Worked. Sweden Added Hydrogen Anyway.",
+   "summary": "挪威斯堪尼亚人已经犁过山路。瑞典的新型燃料电池续航里程扩展器为电池卡车增加了油箱和加油设备，需要一个商业案例。",
+   "summary_orig": "A Norwegian Scania has already plowed mountain roads. Sweden's new fuel-cell range extender adds tanks and fueling equipment to a battery truck and needs a business case.",
+   "url": "https://cleantechnica.com/2026/11/10/norway-electric-snowplow-sweden-hydrogen-range-extender/",
+   "hn": "",
+   "source": "CleanTechnica",
+   "source_key": "cleantechnica-com-feed",
+   "source_home": "https://cleantechnica.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:27:29+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "8890bfdf0ac1",
+   "channel": "mobile",
+   "title": "10款免费 iPhone Duo 应用，值得下载",
+   "title_orig": "10 Free iPhone Duo Apps Worth Downloading",
+   "summary": "到目前为止，我们已经完成了两轮 iPhone Duo 应用程序选择，现在我们又回到了您可以免费获得的一些最佳 Duo 应用程序的概述。MacRumors 视频摄影师 Dan Barbera 演示了他对值得一看的应用程序的建议。订阅 MacRumors YouTube 频道以观看更多视频。",
+   "summary_orig": "We've done two rounds of iPhone Duo app picks so far, and now we're back with an overview of some of the best Duo apps you can get for free. MacRumors videographer Dan Barbera demos his suggestions for apps worth checking out. Subscribe to the MacRumors YouTube channel for more videos.",
+   "url": "https://www.macrumors.com/2026/11/10/free-iphone-duo-apps/",
+   "hn": "",
+   "source": "MacRumors",
+   "source_key": "macrumors-com-macrumors-xml",
+   "source_home": "https://www.macrumors.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:27:07+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "91744807551f",
+   "channel": "game",
+   "title": "GTA 6后空翻现在看起来不错，但故事可能还有更多",
+   "title_orig": "GTA 6 Backflips Look Good Now, But There Could Be More To The Story",
+   "summary": "新的《侠盗猎车手6》预告片于今天11月10日首次亮相，视频显示一名赛车手正在进行后空翻。动画看起来很流畅。这是值得注意的，因为8月份首次亮相的 Extended Look 预告片显示 Jason 正在进行后空翻，在线用户很快就将其",
+   "summary_orig": "A new Grand Theft Auto 6 trailer debuted today, November 10, and the video showed off a race car driver doing a backflip. The animation looks smoooth . That's notable because the Extended Look trailer that debuted back in August showed Jason doing a backflip and people online quickly roasted it for looking ... off. Other said it looked totally fine.",
+   "url": "https://www.gamespot.com/articles/gta-6-backflips-look-good-now-but-there-could-be-more-to-the-story/",
+   "hn": "",
+   "source": "GameSpot",
+   "source_key": "gamespot-com-feeds-news",
+   "source_home": "https://www.gamespot.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:26:18+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "7f83dc4eb21c",
+   "channel": "science",
+   "title": "隐藏的癌症杀伤机制可能会改变免疫治疗的未来",
+   "title_orig": "A Hidden Cancer-Killing Mechanism Could Change the Future of Immunotherapy",
+   "summary": "一种名为穿孔素的免疫蛋白可以在实验室实验中将铁转化为癌细胞，这为更有效的免疫治疗提供了可能的途径。免疫系统可以通过在其外膜上打孔并发送杀死癌细胞的酶来攻击癌细胞。",
+   "summary_orig": "An immune protein called perforin can turn iron against cancer cells in laboratory experiments, suggesting a possible route to more effective immunotherapy. The immune system can attack cancer cells by punching holes in their outer membranes and sending in enzymes that kill them.",
+   "url": "https://scitechdaily.com/a-hidden-cancer-killing-mechanism-could-change-the-future-of-immunotherapy/",
+   "hn": "",
+   "source": "SciTechDaily",
+   "source_key": "scitechdaily-com-feed",
+   "source_home": "https://scitechdaily.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:24:53+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "12f3b55c9ce6",
+   "channel": "chip",
+   "title": "(PR)微星推出采用 AMD EPYC 9006系列服务器 CPU 的新一代数据中心基础设施",
+   "title_orig": "(PR) MSI Advances Next-Gen Data Center Infrastructure with AMD EPYC 9006 Series Server CPUs",
+   "summary": "随着智能 AI 推动对计算密度、内存带宽和数据移动的新需求，微星正在利用由 AMD EPYC 9006系列 SP7服务器 CPU 驱动的服务器平台推进下一代数据中心基础设施。",
+   "summary_orig": "As agentic AI drives new demands for compute density, memory bandwidth, and data movement, MSI is advancing next-generation data center infrastructure with server platforms powered by AMD EPYC 9006 Series SP7 Server CPUs.",
+   "url": "https://www.techpowerup.com/354667/msi-advances-next-gen-data-center-infrastructure-with-amd-epyc-9006-series-server-cpus",
+   "hn": "",
+   "source": "TechPowerUp",
+   "source_key": "techpowerup-com-rss-news",
+   "source_home": "https://www.techpowerup.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:18:08+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "11f91b3f8239",
+   "channel": "ai",
+   "title": "OpenAI 将 ChatGPT 转变为业务目录，其中包含处理客户问题的 AI Agent",
+   "title_orig": "OpenAI turns ChatGPT into a business directory with AI agents that handle customer questions",
+   "summary": "OpenAI 正在将 ChatGPT 作为一个商业平台开放：通过一个新的商业中心，公司可以声明他们的个人资料，添加产品数据，并跟踪用户与他们的互动方式。“业务代理”允许符合条件的美国电子商务提供商直接在 ChatGPT 内与客户交谈。",
+   "summary_orig": "OpenAI is opening up ChatGPT as a business platform: through a new Business Hub, companies can claim their profile, add product data, and track how users interact with them. \"Business Agents\" let eligible US e-commerce providers talk to customers directly inside ChatGPT.",
+   "url": "https://the-decoder.com/openai-turns-chatgpt-into-a-business-directory-with-ai-agents-that-handle-customer-questions/",
+   "hn": "",
+   "source": "The Decoder",
+   "source_key": "decoder",
+   "source_home": "https://the-decoder.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:17:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "e6a544411150",
+   "channel": "mobile",
+   "title": "三星正在为其 Galaxy Wearable 应用程序做好准备，以迎接其智能眼镜的首次亮相",
+   "title_orig": "Samsung is getting its Galaxy Wearable app ready for its smart glasses debut",
+   "summary": "随着三星准备 Galaxy Wearable 应用程序，“智能眼镜”公开演示即将开始。",
+   "summary_orig": "\"Intelligent Eyewear\" public demos are getting started as Samsung preps Galaxy Wearable app.",
+   "url": "https://www.androidauthority.com/samsung-prepares-wearable-app-for-smart-glasses-3733581/",
+   "hn": "",
+   "source": "Android Authority",
+   "source_key": "androidauthority-com-feed",
+   "source_home": "https://www.androidauthority.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:16:22+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "d02def065653",
+   "channel": "mobile",
+   "title": "我等 Boox Picco 等了很久，没有失望",
+   "title_orig": "I’ve waited a long time for the Boox Picco, and I’m not disappointed",
+   "summary": "Boox Picco 的价格约为100 $，为您提供最便携的电子阅读器体验之一。您通过令人耳目一新的简单用户界面添加了类似 MagSafe 的功能，无论您身在何处，都能以令人愉悦的方式进行阅读。更多……",
+   "summary_orig": "At around $100, the Boox Picco offers one of the most portable e-reader experiences you can get. You add MagSafe-like capability with a refreshingly simple UI, and you have a delightful way to read, literally wherever you are. more…",
+   "url": "https://9to5google.com/2026/11/10/adorably-tiny-boox-picco-e-reader-does-not-disappoint/",
+   "hn": "",
+   "source": "9to5Google",
+   "source_key": "9to5google-com-feed",
+   "source_home": "https://9to5google.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:15:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "cf9cd63b8903",
+   "channel": "mobile",
+   "title": "苹果发布新的 AirPods 固件",
+   "title_orig": "Apple Releases New AirPods Firmware",
+   "summary": "苹果今天发布了 AirPods Pro 2、AirPods Pro 3、AirPods 4、AirPods 5 和 AirPods Max 2 的新固件。该固件的内部版本号为 9B47，高于 9A348/9A350。苹果过去几周一直在对新固件进行 Beta 测试，但尚未提供有关其中内容的详细信息",
+   "summary_orig": "Apple today released new firmware for the AirPods Pro 2, AirPods Pro 3 , AirPods 4, AirPods 5 , and AirPods Max 2 . The firmware has a build number of 9B47, up from 9A348/9A350. Apple has been beta testing the new firmware for the last several weeks, but hasn't yet offered details on what's included in the software.",
+   "url": "https://www.macrumors.com/2026/11/10/apple-releases-airpods-firmware-9b47/",
+   "hn": "",
+   "source": "MacRumors",
+   "source_key": "macrumors-com-macrumors-xml",
+   "source_home": "https://www.macrumors.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:11:26+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "20a0e6f03c50",
+   "channel": "mobile",
+   "title": "苹果刚刚发布了新的 AirPods Pro 3固件等",
+   "title_orig": "Apple just released new AirPods Pro 3 firmware and more",
+   "summary": "苹果今天将为部分 AirPods 机型推出全新固件，包括 AirPods Pro 3。以下是有关如何更新的详细信息。更多...",
+   "summary_orig": "Apple is rolling out brand new firmware for select AirPods models today, including AirPods Pro 3. Here are the details on how to update. more…",
+   "url": "https://9to5mac.com/2026/11/10/apple-just-released-new-airpods-pro-3-firmware-airpods-5-more/",
+   "hn": "",
+   "source": "9to5Mac",
+   "source_key": "9to5mac-com-feed",
+   "source_home": "https://9to5mac.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:06:19+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "1b9619ecc4ba",
+   "channel": "ai",
+   "title": "为代理商设计— Zeno Rocha，重新发送",
+   "title_orig": "Designing for Agents — Zeno Rocha, Resend",
+   "summary": "应答引擎优化(AEO)的结束和客服代表体验的起点在哪里？在重新发送中，从帮助 Claude Code 选择电子邮件 API 的文档到用于发送的工具。",
+   "summary_orig": "Where does answer engine optimization (AEO) end and agent experience begin? Inside Resend, from the docs that help Claude Code pick an email API to the tools it uses to send.",
+   "url": "https://latent.space/p/resend/",
+   "hn": "",
+   "source": "Latent Space",
+   "source_key": "latent-space-feed",
+   "source_home": "https://www.latent.space/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:05:17+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "9814f0299437",
+   "channel": "software",
+   "title": "Microsoft 发布 Windows 10 KB5131096扩展安全更新",
+   "title_orig": "Microsoft releases Windows 10 KB5131096 extended security update",
+   "summary": "Microsoft 发布了 Windows 10 KB5131096扩展安全更新，其中包括本月的2026年11月补丁周二修复以及一些错误修复和更改。[...]",
+   "summary_orig": "Microsoft released the Windows 10 KB5131096 extended security update, which includes this month's November 2026 Patch Tuesday fixes and a few bug fixes and changes. [...]",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/",
+   "hn": "",
+   "source": "BleepingComputer",
+   "source_key": "bleepingcomputer-com-feed",
+   "source_home": "https://www.bleepingcomputer.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:04:36+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "0d053ca2c00b",
+   "channel": "ai",
+   "title": "Spotify 的 AI DJ 获得了新的声音和停止喋喋不休的选项",
+   "title_orig": "Spotify's AI DJ gets new voices and an option to stop the chatter",
+   "summary": "Spotify 的 AI DJ 自2023年以来一直存在，该公司今年早些时候将其扩展到更多语言和市场。该公司表示，80 ％的听众“一周又一周”回到该功能，今天它增加了更广泛的英语和西班牙语语音选择，以及关闭 MOS 的选项",
+   "summary_orig": "Spotify's AI DJ has been around since 2023, and the company expanded it to more languages and markets earlier this year. The company says 80% of listeners come back to the feature \"week after week\", and today it's adding a wider choice of voices in English and Spanish, plus an option to turn off most of the commentary between songs.",
+   "url": "https://www.gsmarena.com/spotifys_ai_dj_gets_new_voices_and_an_option_to_stop_the_chatter-news-75425.php",
+   "hn": "",
+   "source": "GSMArena",
+   "source_key": "gsmarena-com-rss-news-reviews-php3",
+   "source_home": "https://www.gsmarena.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:03:03+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "639c38ab5f87",
+   "channel": "software",
+   "title": "《The Outer Worlds 2》将于下个月推出由两部分组成的故事扩展包",
+   "title_orig": "The Outer Worlds 2 is kicking off a two-part story expansion next month",
+   "summary": "黑曜石娱乐公司发布了《保证副作用》，这是一款《外层空间2》的故事 DLC，带来了新的区域、缺陷、特权等。",
+   "summary_orig": "Obsidian Entertainment has revealed Side Effects Guaranteed, a story DLC for The Outer Worlds 2 bringing a new region, flaws, perks, and more.",
+   "url": "https://www.neowin.net/news/the-outer-worlds-2-is-kicking-off-a-two-part-story-expansion-next-month/",
+   "hn": "",
+   "source": "Neowin",
+   "source_key": "neowin-net-news-rss",
+   "source_home": "https://www.neowin.net/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:02:02+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "8058051f3fea",
+   "channel": "mobile",
+   "title": "Windows 11 11 月补丁星期二：微软测试统一应用程序更新",
+   "title_orig": "Windows 11 November Patch Tuesday: Microsoft tests unified app updates",
+   "summary": "Windows 11 的 KB5132061 更新现已推出，它终于可以让你修剪文件资源管理器右键菜单了。微软也在重新考虑应用程序更新弹出窗口。",
+   "summary_orig": "Windows 11’s KB5132061 update is rolling out now, and it finally lets you trim the File Explorer right-click menu. Microsoft is also rethinking app update pop-ups.",
+   "url": "https://www.notebookcheck.net/Windows-11-November-Patch-Tuesday-Microsoft-tests-unified-app-updates.1446690.0.html",
+   "hn": "",
+   "source": "Notebookcheck",
+   "source_key": "notebookcheck-net-news-152-100-html-type-rss",
+   "source_home": "https://www.notebookcheck.net/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:02:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "ece2dc32322e",
+   "channel": "ai",
+   "title": "Anthropic 希望 Claude 成为整个企业应用程序堆栈的前端",
+   "title_orig": "Anthropic wants Claude to be the front end for your entire enterprise app stack",
+   "summary": "Anthropic 正在扩展 Claude 直接在企业应用程序中工作的能力；它现在可以打开完整的软件界面，检索信息，",
+   "summary_orig": "Anthropic is expanding Claude’s ability to work directly inside enterprise applications; it can now open full software interfaces, retrieve information,",
+   "url": "https://thenewstack.io/claude-enterprise-apps-connectors/",
+   "hn": "",
+   "source": "The New Stack",
+   "source_key": "thenewstack-io-feed",
+   "source_home": "https://www.thenewstack.io/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:00:58+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "871ed24e424d",
+   "channel": "chip",
+   "title": "对 ChipAgents 的 Solaiman Rahim 的 CXO 访谈",
+   "title_orig": "CXO Interview with Solaiman Rahim of ChipAgents",
+   "summary": "Solaiman Rahim 博士是一位多学科技术高管，在推动系统、半导体、高性能计算和 AI 交叉领域的芯片自动化领域创新方面拥有超过25年的经验。作为 ChipAgents 的首席产品官，他负责 Agen 的扩展",
+   "summary_orig": "Dr. Solaiman Rahim is a multidisciplinary technology executive with over 25 years of experience driving innovation in the chip automation space at the intersection of systems, semiconductors, high-performance computing, and AI. As Chief Product Officer at ChipAgents, he leads the scaling of the Agentic and Native AI platform… Read More",
+   "url": "https://semiwiki.com/eda/chipagents-ai/375937-cxo-interview-with-solaiman-rahim-of-chipagents/",
+   "hn": "",
+   "source": "SemiWiki",
+   "source_key": "semiwiki-com-feed",
+   "source_home": "https://www.semiwiki.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:00:32+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "a1685cb5a457",
+   "channel": "mobile",
+   "title": "我最喜欢的 Android TV Jellyfin 客户端之一通过最新更新变得更好了",
+   "title_orig": "One of my favorite Jellyfin clients for Android TV just got even better with its latest update",
+   "summary": "Wholphin 是一款简单且可定制的客户端，并且针对 Android TV 进行了改进。",
+   "summary_orig": "Wholphin is a straightforward and customizable client, and it's improved for Android TV.",
+   "url": "https://www.xda-developers.com/one-of-my-favorite-jellyfin-clients-for-android-tv-just-got-even-better-with-its-latest-update/",
+   "hn": "",
+   "source": "XDA",
+   "source_key": "xda-developers-com-feed",
+   "source_home": "https://www.xda-developers.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:00:21+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "30bfb14715d4",
+   "channel": "chip",
+   "title": "萨斯喀彻温省的半导体实力正在连接各个部分",
+   "title_orig": "Saskatchewan’s Semiconductor Strength Is Connecting the Pieces",
+   "summary": "萨斯喀彻温省汇集了 AI 基础设施、量子研究、芯片设计人才和先进材料专业知识，以扩大其在加拿大技术生态系统中的作用。",
+   "summary_orig": "Saskatchewan brings together AI infrastructure, quantum research, chip design talent, and advanced materials expertise to expand its role in Canada’s technology ecosystem.",
+   "url": "https://www.eetimes.com/saskatchewans-semiconductor-strength-is-connecting-the-pieces/",
+   "hn": "",
+   "source": "EE Times",
+   "source_key": "eetimes-com-feed",
+   "source_home": "https://www.eetimes.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:00:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "f21a9f56d7e7",
+   "channel": "science",
+   "title": "纠正量子计算机错误可能比预期的要复杂",
+   "title_orig": "Correcting quantum computer errors may be more complicated than expected",
+   "summary": "纠正量子计算机错误是使设备实用的关键，但某些类型的错误及其可能带来的复杂性可能比我们想象的更有可能发生",
+   "summary_orig": "Correcting quantum computer errors is key for making the devices practical, but some types of errors, and the complications they could introduce, may be more likely to occur than we had thought",
+   "url": "https://www.newscientist.com/article/2598161-correcting-quantum-computer-errors-may-be-more-complicated-than-expected/",
+   "hn": "",
+   "source": "New Scientist",
+   "source_key": "newscientist-com-feed-home",
+   "source_home": "https://www.newscientist.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:00:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "24756c3d55a8",
+   "channel": "mobile",
+   "title": "Android 17 QPR2 11 月更新推出，修复了 33 个 Pixel",
+   "title_orig": "Android 17 QPR2 November update rolling out with 33 Pixel fixes",
+   "summary": "Android 17 QPR2 提前一个月推出，并提供 2026 年 11 月功能删除和安全补丁。此更新适用于 Pixel 6a、7、7 Pro、7a、平板电脑、Fold、8、8 Pro、8a、9、9 Pro、9 Pro XL、9 Pro Fold、9a、10、10 Pro、10 Pro XL、10a、11、11 Pro、11 Pro XL 和 11 Pro Fold。",
+   "summary_orig": "Android 17 QPR2 is rolling out a month early with the November 2026 Feature Drop and security patch. The update is available for the Pixel 6a, 7, 7 Pro, 7a, Tablet, Fold, 8, 8 Pro, 8a, 9, 9 Pro, 9 Pro XL, 9 Pro Fold, 9a, 10, 10 Pro, 10 Pro XL, 10a, 11, 11 Pro, 11 Pro XL, and 11 Pro Fold.",
+   "url": "https://9to5google.com/2026/11/10/android-17-qpr2-november-pixel-update/",
+   "hn": "",
+   "source": "9to5Google",
+   "source_key": "9to5google-com-feed",
+   "source_home": "https://9to5google.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T04:00:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "cb5eb06d19a7",
+   "channel": "game",
+   "title": "在 GTA 6之前，随着对 genAI PC 端口的担忧加剧，Take-Two 的首席执行官表示，他们正在加强对盗版的“技术防御”和“合法活动”",
+   "title_orig": "Ahead of GTA 6 and as concerns over genAI PC ports grow, Take-Two's CEO says they're revving up their \"technical defences\" and \"legal activites\" over piracy",
+   "summary": "现在对 AI 和游戏来说有点困难，对吧？显然，这是一个糟糕的时刻，因为它感染了从游戏开发到改装社区，再到重制一款非常受欢迎的游戏的原生 PC 端口，因为害怕某家公司发现我的生活和结局",
+   "summary_orig": "It's a bit of a time for AI and games at the moment, 'ey? A bad time, obviously, as it's infecting everything from game development , to the modding community , to native PC ports of a remake of a very popular game that I won't link to for fear of a certain company finding out where I live and ending me there and then.",
+   "url": "https://www.rockpapershotgun.com/ahead-of-gta-6-and-as-concerns-over-genai-pc-ports-grow-take-twos-ceo-says-theyre-revving-up-their-technical-defences-and-legal-activites-over-piracy",
+   "hn": "",
+   "source": "Rock Paper Shotgun",
+   "source_key": "rockpapershotgun-com-feed",
+   "source_home": "https://www.rockpapershotgun.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:59:40+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "9a5bae24e02d",
+   "channel": "ai",
+   "title": "所有7位 Anthropic 创始人都将在首次公开募股中兑现约$ 2.5亿",
+   "title_orig": "All 7 Anthropic founders will each cash out about $250M in IPO",
+   "summary": "七位联合创始人中的每一位都计划在 IPO 中出售完全相同数量的股票，这将使他们在价格区间的中点获得约2.5亿美元的现金，同时让集团控制公司。",
+   "summary_orig": "Each of the seven co-founders plans to sell exactly the same number of shares in the IPO, which would bring each of them about $250 million in cash at the midpoint of the price range while leaving the group in control of the company.",
+   "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+   "hn": "",
+   "source": "TechCrunch AI",
+   "source_key": "techcrunch-ai",
+   "source_home": "https://techcrunch.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:57:52+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "cb47d166565f",
+   "channel": "mobile",
+   "title": "Google 11 月 Pixel 更新包含数十个错误修复，您现在就可以获取",
+   "title_orig": "Google’s November Pixel update packs dozens of bug fixes, and you can get it now",
+   "summary": "如果您实在等不及了，请侧载 Google 的 OTA 下载之一。",
+   "summary_orig": "Sideload one of Google's OTA downloads if you just can't wait a moment longer.",
+   "url": "https://www.androidauthority.com/november-2026-pixel-update-3733597/",
+   "hn": "",
+   "source": "Android Authority",
+   "source_key": "androidauthority-com-feed",
+   "source_home": "https://www.androidauthority.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:57:37+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "e0dee2e6e771",
+   "channel": "mobile",
+   "title": "Apple TV 分享了即将推出的《史努比》和《Fraggle Rock》假日特辑的预告片",
+   "title_orig": "Apple TV shares trailers for upcoming Snoopy and Fraggle Rock holiday specials",
+   "summary": "随着假期的临近，Apple TV 分享了两部即将推出的以《史努比》和《Fraggles》为主角的特别节目的预告片。观察下面的他们。更多的…",
+   "summary_orig": "With the holidays fast approaching, Apple TV has shared trailers for two upcoming specials featuring Snoopy and the Fraggles. Watch them below. more…",
+   "url": "https://9to5mac.com/2026/11/10/apple-tv-shares-trailers-for-upcoming-snoopy-and-fraggle-rock-holiday-specials/",
+   "hn": "",
+   "source": "9to5Mac",
+   "source_key": "9to5mac-com-feed",
+   "source_home": "https://9to5mac.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:57:28+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "e8262c374686",
+   "channel": "game",
+   "title": "《未知9：觉醒》被轰炸2年后，万代南梦宫（Bandai Namco）关闭了制作工作室",
+   "title_orig": "2 years after Unknown 9: Awakening bombed, Bandai Namco is closing the studio that made it",
+   "summary": "Reflector Entertainment 在前期制作中推出了一款新游戏，但万代认为不值得花时间或金钱去追求。",
+   "summary_orig": "Reflector Entertainment had a new game in pre-production, but Bandai decided it wasn't worth the time or money to pursue.",
+   "url": "https://www.pcgamer.com/gaming-industry/2-years-after-unknown-9-awakening-bombed-bandai-namco-is-closing-the-studio-that-made-it/",
+   "hn": "",
+   "source": "PC Gamer",
+   "source_key": "pcgamer-com-rss",
+   "source_home": "https://www.pcgamer.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:55:36+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "bedaf83d2bd2",
+   "channel": "space",
+   "title": "太空自动化装配是未来，NOM4D 正在为您指明方向",
+   "title_orig": "Automated Assembly in Space is the Future and NOM4D is Showing the Way",
+   "summary": "在太空中建造大型结构的能力正在成熟。国际空间站、和平号和天宫是从预先建造的模块在太空中建造的，但一个名为 NOM4D 的新计划正在将太空建设提升到一个新的水平。它最近表明，一个简单的机器人可以在太空中创建桁架状结构，",
+   "summary_orig": "The ability to build large structures in space is maturing. The ISS, Mir, and Tiangong were built in space from pre-constructed modules, but a new program called NOM4D is taking space construction to the next level. It recently showed that a simple robot can create truss-like structures in space from premade components. Is the sky the limit for NOM4D?",
+   "url": "https://www.universetoday.com/articles/automated-assembly-in-space-is-the-future-and-nom4d-is-showing-the-way",
+   "hn": "",
+   "source": "Universe Today",
+   "source_key": "universetoday-com-feed",
+   "source_home": "https://www.universetoday.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:52:32+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "1d91f0a8693f",
+   "channel": "aigc",
+   "title": "Google Pixel Watch 通过11月份的 Pixel Drop 获得分步锻炼指导",
+   "title_orig": "Google Pixel Watch gets step-by-step workout guidance with the November Pixel Drop",
+   "summary": "在过去的几个月里，谷歌一直在对其健康和健身生态系统进行相当多的改进。该公司已经拥有由 Gemini 支持的 Google Health Coach，它可以根据您的目标、恢复和日常生活制定个性化的锻炼计划。",
+   "summary_orig": "Google has been making quite a few improvements to its health and fitness ecosystem over the past few months. The company already has its Gemini-powered Google Health Coach, which can create personalized workout plans based on your goals, recovery, and daily routine.",
+   "url": "https://www.digitaltrends.com/wearables/pixel-watch-step-by-step-workout-guidance/",
+   "hn": "",
+   "source": "Digital Trends",
+   "source_key": "digitaltrends-com-feed",
+   "source_home": "https://www.digitaltrends.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:49:15+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "2c91002de035",
+   "channel": "ai",
+   "title": "Anthropic 将 Claude 变成了一个完整的工作空间，包含插件、电子表格、白板以及即将推出的会议笔记",
+   "title_orig": "Anthropic turns Claude into a full workspace with Plugins, spreadsheets, whiteboards, and soon Meeting notes",
+   "summary": "Anthropic 正在通过表格、白板和交互式连接器扩展 Claude，让 Adob​​e 和 Atlassian 等合作伙伴将他们的应用程序直接嵌入到 Claude 中。Anthropic 表示，可以加入通话和做笔记的 Claude Meetings 即将推出。",
+   "summary_orig": "Anthropic is expanding Claude with Sheets, Whiteboards, and Interactive Connectors, letting partners like Adobe and Atlassian embed their apps directly inside Claude. Anthropic says Claude Meetings, which can join calls and take notes, is coming soon.",
+   "url": "https://the-decoder.com/anthropic-turns-claude-into-a-full-workspace-with-plugins-spreadsheets-whiteboards-and-soon-meeting-notes/",
+   "hn": "",
+   "source": "The Decoder",
+   "source_key": "decoder",
+   "source_home": "https://the-decoder.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:48:40+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "e3fdc9e925ac",
+   "channel": "auto",
+   "title": "埃隆·马斯克（Elon Musk）表示，特斯拉 Cybercab 的未来“对任何有眼睛和大脑的人来说都是显而易见的",
+   "title_orig": "Elon Musk says Tesla Cybercab future is ‘obvious to anyone with eyes and a brain’",
+   "summary": "埃隆·马斯克（Elon Musk）表示，特斯拉 Cybercab 将在允许运营的“大部分客运里程”中运行，这一点“对于任何有眼睛和大脑的人来说都是显而易见的。“马斯克利用这一点加倍了公司砍掉最受欢迎的 Cybertruck 的决定，因为其生产空间将",
+   "summary_orig": "Elon Musk said the Tesla Cybercab will perform “a majority of all passenger miles” where it is allowed to operate and that point is “obvious to anyone with eyes and a brain.” Musk used the point to double down on the company’s decision to ax the cult-favorite Cybertruck, as its production space will be removed […]",
+   "url": "https://www.teslarati.com/elon-musk-says-tesla-cybercab-future-obvious-to-anyone-with-eyes-and-a-brain/",
+   "hn": "",
+   "source": "Teslarati",
+   "source_key": "teslarati-com-feed",
+   "source_home": "https://www.teslarati.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:48:26+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "36152269e462",
+   "channel": "chip",
+   "title": "据报道 Nintendo Switch 2 越狱已修复固件 23.5.0",
+   "title_orig": "Nintendo Switch 2 Jailbreak Reportedly Patched With Firmware 23.5.0",
+   "summary": "任天堂最新的 Switch 2 系统更新版本 23.5.0 似乎关闭了 ns2jb，这是该游戏机的第一个纯软件越狱。Dataminer OatmealDome 表示越狱所依赖的操作系统漏洞现已修补，从现在开始转储和修改游戏将不再可能。",
+   "summary_orig": "Nintendo's latest Switch 2 system update, version 23.5.0, seems to have shut down ns2jb, the console's first software-only jailbreak . Dataminer OatmealDome says the OS exploit the jailbreak relied on is now patched, and that dumping and modding games won't be possible from here on.",
+   "url": "https://www.techpowerup.com/354664/nintendo-switch-2-jailbreak-reportedly-patched-with-firmware-23-5-0",
+   "hn": "",
+   "source": "TechPowerUp",
+   "source_key": "techpowerup-com-rss-news",
+   "source_home": "https://www.techpowerup.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:47:37+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "ae52412b94e5",
+   "channel": "launch",
+   "title": "显示 HN：BuildBakery，通过 YAML 配方为 iOS、Android、桌面进行云构建",
+   "title_orig": "Show HN: BuildBakery, cloud builds for iOS, Android, desktop from a YAML recipe",
+   "summary": "文章网址：https://buildbakery.com/ 评论网址：https://news.ycombinator.com/item?id=50445318 积分：1 # 评论：0",
+   "summary_orig": "Article URL: https://buildbakery.com/ Comments URL: https://news.ycombinator.com/item?id=50445318 Points: 1 # Comments: 0",
+   "url": "https://buildbakery.com/",
+   "hn": "",
+   "source": "Show HN",
+   "source_key": "hnrss-org-show",
+   "source_home": "https://hnrss.org/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:45:13+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "24b4e9fbdd82",
+   "channel": "internet",
+   "title": "X 想要加入剪辑经济。它将向创作者和快船支付费用。",
+   "title_orig": "X wants in on the clipping economy. Its going to pay creators and clippers.",
+   "summary": "X 的新视频剪辑工具允许用户在应用程序中共享摘录，为原始创作者发放积分，并让两个帐户都能赚钱。",
+   "summary_orig": "X's new video clipping tool lets users share excerpts in the app, credits the original creator, and lets both accounts make money.",
+   "url": "https://mashable.com/tech/x-clipping-videos-creator-payouts",
+   "hn": "",
+   "source": "Mashable",
+   "source_key": "mashable-com-feeds-rss-tech",
+   "source_home": "https://mashable.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:42:05+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "0e4a97de0033",
+   "channel": "internet",
+   "title": "Google Fi 增加了对第二个5G 网络的支持，但不会说是哪一个",
+   "title_orig": "Google Fi adds support for a second 5G network, won't say which one",
+   "summary": "Fi 一直支持 T-Mobile，但新的？谷歌不会说。",
+   "summary_orig": "Fi has always supported T-Mobile, but the new one? Google won't say.",
+   "url": "https://arstechnica.com/google/2026/11/google-fi-adds-support-for-a-second-5g-network-wont-say-which-one/",
+   "hn": "",
+   "source": "Ars Technica",
+   "source_key": "ars",
+   "source_home": "https://feeds.arstechnica.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:35:59+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "266e9898d1c2",
+   "channel": "mobile",
+   "title": "有史以来最畅销的游戏机已有25年以上的历史",
+   "title_orig": "The best-selling game console of all time is over 25 years old",
+   "summary": "索尼在其13年的运行中出货了超过1.6亿台 PlayStation 2。",
+   "summary_orig": "Sony shipped over 160 million PlayStation 2 units over its 13-year run.",
+   "url": "https://www.engadget.com/2307802/the-best-selling-game-console-of-all-time-is-over-25-years-old/",
+   "hn": "",
+   "source": "Engadget",
+   "source_key": "engadget",
+   "source_home": "https://www.engadget.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:30:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
+   "id": "5bf7b09760da",
+   "channel": "internet",
+   "title": "美国司法部起诉 Lyft 涉嫌拒绝为残疾人提供乘车服务",
+   "title_orig": "DOJ sues Lyft for allegedly denying rides to people with disabilities",
+   "summary": "司法部已对 Lyft 提起诉讼，指控该公司歧视在其平台上寻找乘车服务的残疾乘客。",
+   "summary_orig": "The Justice Department has filed a lawsuit against Lyft , accusing the company of discriminating against passengers with disabilities who seek rides on its platform.",
+   "url": "https://www.fastcompany.com/91639627/lyft-lawsuit-disability-discrimination?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
+   "hn": "",
+   "source": "Fast Company",
+   "source_key": "fastcompany-com-technology-rss",
+   "source_home": "https://www.fastcompany.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:30:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
   {
    "id": "6513b43c4697",
    "channel": "mobile",
@@ -51,6 +787,22 @@
    "lang": "en",
    "published_at": "2026-11-11T03:23:34+08:00",
    "fetched_at": "2026-11-11T03:25:44+08:00"
+  },
+  {
+   "id": "0c075ce89994",
+   "channel": "space",
+   "title": "NASA 邀请媒体和公众参与旅行者1号一日游活动",
+   "title_orig": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities",
+   "summary": "美国宇航局的旅行者1号于近50年前的1977年发射，将于11月18日星期三从地球出发旅行一天，距离地球超过160亿英里（259亿公里）。旅行者1号是最遥远的人造物体，来自地球的任何光线都需要24小时才能到达太空舱",
+   "summary_orig": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth, which is more than 16 billion miles (25.9 billion kilometers). Voyager 1 is the most distant human-made object, and any light from Earth would take 24 hours to reach the spacecraft. NASA will highlight […]",
+   "url": "https://www.nasa.gov/news-release/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities/",
+   "hn": "",
+   "source": "NASA",
+   "source_key": "nasa-gov-news-release-feed",
+   "source_home": "https://www.nasa.gov/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:22:45+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "c7d3e4837672",
@@ -117,6 +869,22 @@
    "fetched_at": "2026-11-11T03:25:44+08:00"
   },
   {
+   "id": "92b64cc410d0",
+   "channel": "internet",
+   "title": "Starlink Mini 2 增加了可更换电池",
+   "title_orig": "Starlink Mini 2 adds a swappable battery",
+   "summary": "SpaceX 宣布推出新版一体式卫星互联网终端，将碟形天线、Wi-Fi 路由器和电池集成到一个笔记本电脑大小的设备中。据 X 上分享 Starlink Mini 2 订购邀请截图的一些用户称，这道菜的售价为 99 美元",
+   "summary_orig": "SpaceX announced a new version of its all-in-one satellite internet terminal that integrates a dish, Wi-Fi router, and now a battery into a single device about the size of a laptop. According to some users on X who shared screenshots of invitations to order Starlink Mini 2, the dish is priced at $999, which includes […]",
+   "url": "https://www.theverge.com/tech/1031028/spacex-starlink-mini-2-satellite-internet-terminal-hot-swap-battery",
+   "hn": "",
+   "source": "The Verge",
+   "source_key": "verge",
+   "source_home": "https://www.theverge.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:19:12+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "b26952ee22f2",
    "channel": "mobile",
    "title": "Starlink 推出坚固耐用的 Mini 2 天线，附加 50 美元电池",
@@ -147,6 +915,22 @@
    "lang": "en",
    "published_at": "2026-11-11T03:15:32+08:00",
    "fetched_at": "2026-11-11T03:25:44+08:00"
+  },
+  {
+   "id": "dea12dbd7609",
+   "channel": "internet",
+   "title": "您应该立即下载 iOS 27.2.1，以获得一些安全修复",
+   "title_orig": "You Should Download iOS 27.2.1 Now for a Handful of Security Fixes",
+   "summary": "苹果表示，该更新修复了可能暴露敏感数据的问题。",
+   "summary_orig": "Apple said the update fixes issues that could expose sensitive data.",
+   "url": "https://www.cnet.com/tech/services-and-software/ios-27-2-1-bug-security-fixes/",
+   "hn": "",
+   "source": "CNET",
+   "source_key": "cnet-com-rss-news",
+   "source_home": "https://www.cnet.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:15:20+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "674e6d828c53",
@@ -403,6 +1187,22 @@
    "lang": "en",
    "published_at": "2026-11-11T03:00:27+08:00",
    "fetched_at": "2026-11-11T03:01:18+08:00"
+  },
+  {
+   "id": "b40010d3be3b",
+   "channel": "internet",
+   "title": "Pixel 手机将在 11 月 Pixel Drop 中获得新的图标样式、创建我的小部件等",
+   "title_orig": "Pixel phones getting new icon styles, Create My Widget, and more in November Pixel Drop",
+   "summary": "使用扩展的自定义图标和 AI 生成的小部件来美化您的主屏幕。",
+   "summary_orig": "Spruce up your home screen with expanded custom icons and AI-generated widgets.",
+   "url": "https://arstechnica.com/gadgets/2026/11/november-pixel-drop-brings-gemini-intelligence-to-pixel-10-family/",
+   "hn": "",
+   "source": "Ars Technica",
+   "source_key": "ars",
+   "source_home": "https://feeds.arstechnica.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T03:00:26+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "009d25c96203",
@@ -1639,6 +2439,22 @@
    "fetched_at": "2026-11-11T03:07:53+08:00"
   },
   {
+   "id": "430937dab405",
+   "channel": "ai",
+   "title": "Google 的 Gemini 4 Carbon 现已上市，专为您最艰巨的任务而打造",
+   "title_orig": "Google’s Gemini 4 Carbon is now available, and it’s built for your toughest tasks",
+   "summary": "谷歌的 Gemini 4 Carbon 现已向开发者、企业和 Ultra 订阅者开放，以与 Argon 相同的价格带来更强大的编码、研究和安全技能。",
+   "summary_orig": "Google’s Gemini 4 Carbon is now available to developers, businesses, and Ultra subscribers, bringing stronger coding, research, and security skills at the same price as Argon.",
+   "url": "https://www.digitaltrends.com/computing/google-gemini-4-carbon-is-now-available-for-complex-ai-tasks/",
+   "hn": "",
+   "source": "Digital Trends",
+   "source_key": "digitaltrends-com-feed",
+   "source_home": "https://www.digitaltrends.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T01:41:28+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "6a505debb098",
    "channel": "mobile",
    "title": "这款 65 英寸 4K 144Hz Hi-QLED Fire 电视立减 45%，现仅需 548 美元",
@@ -1830,6 +2646,22 @@
    "lang": "en",
    "published_at": "2026-11-11T01:30:00+08:00",
    "fetched_at": "2026-11-11T03:07:53+08:00"
+  },
+  {
+   "id": "664a58f048be",
+   "channel": "ai",
+   "title": "Anthropic 与 Claude Sheets 对抗 Google 和 Microsoft",
+   "title_orig": "Anthropic takes on Google and Microsoft with Claude Sheets",
+   "summary": "该公司还有一个新的白板应用程序。",
+   "summary_orig": "The company also has a new whiteboard app.",
+   "url": "https://www.engadget.com/2312177/anthropic-takes-on-google-and-microsoft-with-claude-sheets/",
+   "hn": "",
+   "source": "Engadget",
+   "source_key": "engadget",
+   "source_home": "https://www.engadget.com/",
+   "lang": "en",
+   "published_at": "2026-11-11T01:30:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "ac4f23d81247",
@@ -3239,6 +4071,22 @@
    "lang": "en",
    "published_at": "2026-11-11T00:50:01+08:00",
    "fetched_at": "2026-11-11T00:50:31+08:00"
+  },
+  {
+   "id": "4228e98950e0",
+   "channel": "dev",
+   "title": "奇怪的许可证和新的开源",
+   "title_orig": "Weird licenses and the new open source",
+   "summary": "评论",
+   "summary_orig": "Comments",
+   "url": "https://dustri.org/b/weird-licenses-and-the-new-open-source.html",
+   "hn": "",
+   "source": "Lobsters",
+   "source_key": "lobste-rs-rss",
+   "source_home": "https://lobste.rs/",
+   "lang": "en",
+   "published_at": "2026-11-11T00:49:51+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "5a582b988cfe",
@@ -9865,6 +10713,22 @@
    "fetched_at": "2026-11-11T01:06:38+08:00"
   },
   {
+   "id": "041b7add8a26",
+   "channel": "chip",
+   "title": "AMD RDNA 5 GPU 支持在 Linux 上提供超过12,600行的 GFX13驱动程序代码",
+   "title_orig": "AMD RDNA 5 GPU Support Arrives In Linux With Over 12,600 Lines Of GFX13 Driver Code",
+   "summary": "AMD 的下一代图形架构朝着硬件就绪又迈进了一步，最初的 Linux 内核补丁现在支持两个 GFX13目标。AMD 已经为其即将推出的 GFX13图形架构提交了大量新的 Linux 内核补丁，",
+   "summary_orig": "AMD's next-generation graphics architecture takes another step toward hardware readiness, with two GFX13 targets now supported by initial Linux kernel patches. AMD has submitted a substantial new batch of Linux kernel patches for its upcoming GFX13 graphics architecture, widely expected to power its next-generation RDNA 5 GPUs.",
+   "url": "https://wccftech.com/amd-rdna-5-gpu-support-arrives-in-linux-with-over-12600-lines-of-gfx13-driver-code/",
+   "hn": "",
+   "source": "Wccftech",
+   "source_key": "wccftech-com-feed",
+   "source_home": "https://wccftech.com/",
+   "lang": "en",
+   "published_at": "2026-11-10T19:34:55+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "15fd90c9ba13",
    "channel": "gossip",
    "title": "Apple @ Work 播客：Osaurus 希望贵公司的 AI 运行在 Mac 上，而不是在云端",
@@ -9898,6 +10762,22 @@
    "_md": 1
   },
   {
+   "id": "524bf79f9317",
+   "channel": "game",
+   "title": "任天堂 Switch 玩家将很快能够赠送数字游戏，有点像",
+   "title_orig": "Nintendo Switch Players Will Soon Be Able To Gift Digital Games, Kinda",
+   "summary": "该功能将于下周通过最新的系统固件推出，尽管存在一些限制",
+   "summary_orig": "The feature launches next week via the latest system firmware, although there are some limitations",
+   "url": "https://kotaku.com/nintendo-switch-2-gift-digital-games-family-group-mario-kart-donkey-2000755212",
+   "hn": "",
+   "source": "Kotaku",
+   "source_key": "kotaku-com-rss",
+   "source_home": "https://kotaku.com/",
+   "lang": "en",
+   "published_at": "2026-11-10T19:30:50+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "fc2ac3f1c0e8",
    "channel": "ai",
    "title": "硅谷疯炒 AI 自我进化，李飞飞、Jeff Dean 齐泼冷水：无限加速不可信",
@@ -9913,6 +10793,22 @@
    "published_at": "2026-11-10T19:28:43+08:00",
    "fetched_at": "2026-11-10T23:49:34+08:00",
    "_md": 1
+  },
+  {
+   "id": "96a7f184a0c1",
+   "channel": "chip",
+   "title": "AMD Radeon 驱动程序错误在短短 16 个月内就严重破坏了 SSD 的健康状况，其寿命缩短了 14%；回滚到以前的版本是唯一可用的选项",
+   "title_orig": "AMD Radeon Driver Bug Brutalized An SSD’s Health In Just 16 Months, With Its Lifespan Reduced By 14%; Rolling Back To Previous Version The Only Option Available",
+   "summary": "M.2 NVMe SSD 是耐用组件，可承受数 TB 的写入和读取数据，这意味着您在数年内无需担心损坏或硬件故障。",
+   "summary_orig": "M.2 NVMe SSDs are durable components and are marketed to withstand terabytes and terabytes of written and read data, meaning that you won’t have to worry about corruption or hardware failure for several years.",
+   "url": "https://wccftech.com/amd-radeon-driver-bug-degrades-ssd-health-atieclxx-excessive-writes/",
+   "hn": "",
+   "source": "Wccftech",
+   "source_key": "wccftech-com-feed",
+   "source_home": "https://wccftech.com/",
+   "lang": "en",
+   "published_at": "2026-11-10T19:28:13+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "0c89d2cafcdd",
@@ -10254,6 +11150,22 @@
    "fetched_at": "2026-11-11T00:33:26+08:00"
   },
   {
+   "id": "a30269397cdb",
+   "channel": "software",
+   "title": "openSUSE Tumbleweed 过渡到 Agama 安装程序",
+   "title_orig": "openSUSE Tumbleweed Transitioning To Agama Installer",
+   "summary": "随着 openSUSE Leap 利用 SUSE 工程师开发的现代 Agama 安装程序，滚动发布的 openSUSE Tumbleweed 现在正准备在替换 YaST 安装程序时进行同样的过渡......",
+   "summary_orig": "With openSUSE Leap making use of the modern Agama installer developed by SUSE engineers, the rolling-release openSUSE Tumbleweed is now preparing to make the same transitioning in replacing the YaST Installer...",
+   "url": "https://www.phoronix.com/news/openSUSE-Tumbleweed-Goes-Agama",
+   "hn": "",
+   "source": "Phoronix",
+   "source_key": "phoronix-com-rss-php",
+   "source_home": "https://www.phoronix.com/",
+   "lang": "en",
+   "published_at": "2026-11-10T18:53:06+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "eb5579fe0ab4",
    "channel": "internet",
    "title": "千问办公 2.0 发布：个人效率之外，还有组织效率这道题",
@@ -10449,6 +11361,22 @@
    "lang": "tpl",
    "published_at": "2026-11-10T18:29:45+08:00",
    "fetched_at": "2026-11-11T01:01:54+08:00"
+  },
+  {
+   "id": "593498d54f69",
+   "channel": "ai",
+   "title": "AI 的使用会产生脆弱的代码库",
+   "title_orig": "AI usage generates a fragile codebase",
+   "summary": "",
+   "summary_orig": "",
+   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+   "hn": "https://news.ycombinator.com/item?id=50438318",
+   "source": "Hacker News",
+   "source_key": "hn",
+   "source_home": "https://hn.algolia.com/",
+   "lang": "en",
+   "published_at": "2026-11-10T18:25:58+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "8d035c6c60c1",
@@ -10887,6 +11815,22 @@
    "fetched_at": "2026-11-11T03:25:44+08:00"
   },
   {
+   "id": "75124989aefc",
+   "channel": "game",
+   "title": "Switch 2和 Switch 游戏机更新到版本23.5.0，任天堂悄悄重新推出 eShop 礼品",
+   "title_orig": "Switch 2 and Switch consoles updated to version 23.5.0 as Nintendo quietly re-introduces eShop gifting",
+   "summary": "任天堂刚刚推出了对所有 Switch 和 Switch 2游戏机的新更新，使两者的固件都达到了23.5.0版本。新更新的标题更改是对即将推出的更新的支持和兼容性，该更新将允许任天堂帐户家庭组成员赠送游戏",
+   "summary_orig": "Nintendo has just pushed out a new update to all Switch and Switch 2 consoles, bringing the firmware on both up to version 23.5.0. The headline change with the new update is support and compatibility for an upcoming update that will allow members of a Nintendo Account family group to gift games to one another.",
+   "url": "https://www.eurogamer.net/switch-2-and-switch-consoles-updated-to-version-2350-as-nintendo-quietly-re-introduces-eshop-gifting",
+   "hn": "",
+   "source": "Eurogamer",
+   "source_key": "eurogamer-net-feed",
+   "source_home": "https://www.eurogamer.net/",
+   "lang": "en",
+   "published_at": "2026-11-10T17:22:50+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "86f4c55ed648",
    "channel": "aivideo",
    "title": "快手将推出AI互动玩法平台Yoola，探索内容创作与商业化新机会_公司新闻_财经",
@@ -10968,39 +11912,6 @@
    "fetched_at": "2026-11-11T00:44:29+08:00"
   },
   {
-   "id": "7f5e8db26bf1",
-   "channel": "internet",
-   "title": "Airbnb 借助 Chronon 将推荐延迟从两天缩短至秒级",
-   "title_orig": "",
-   "summary": "Airbnb 为开源特征平台 Chronon 新增推送模式与近实时模型转换能力，可在房客产生行为后数秒内更新序列推荐嵌入向量。",
-   "summary_orig": "",
-   "url": "https://www.infoq.cn/article/yuRNB72KsEbjGYSkV7FY",
-   "hn": "",
-   "source": "InfoQ 中文",
-   "source_key": "infoq",
-   "source_home": "https://www.infoq.cn/",
-   "lang": "zh",
-   "published_at": "2026-11-10T17:11:00+08:00",
-   "fetched_at": "2026-11-10T23:49:34+08:00",
-   "_md": 1
-  },
-  {
-   "id": "da65b1dd8efd",
-   "channel": "internet",
-   "title": "英国与挪威拟建立联通两国的海底数据电缆",
-   "title_orig": "",
-   "summary": "在关键基础设施面临日益增多的外国威胁之际，英国与挪威拟议中的数字走廊项目正在开展可行性研究。英国已表示支持在设得兰群岛与挪威之间铺设一条新的海底数据电缆，称这一项目将有助于增强国家韧性，应对外国势力对关键基础设施日益增长的威胁。",
-   "summary_orig": "",
-   "url": "https://www.cnbeta.com.tw/articles/tech/1585776.htm",
-   "hn": "",
-   "source": "cnBeta",
-   "source_key": "cnbeta-com-tw-backend-php",
-   "source_home": "https://www.cnbeta.com.tw/",
-   "lang": "zh",
-   "published_at": "2026-11-10T17:06:19+08:00",
-   "fetched_at": "2026-11-11T00:50:31+08:00"
-  },
-  {
    "id": "deb973cf67a6",
    "channel": "aidrama",
    "title": "AI短剧火到海外 千亿赛道凭“新”突围",
@@ -11018,22 +11929,6 @@
    "_md": 1
   },
   {
-   "id": "1484bc2b220d",
-   "channel": "internet",
-   "title": "皇后区公共图书馆遭勒索软件攻击 电子借贷暂停",
-   "title_orig": "Queens Public library under ransomware attack e-borrowing suspended",
-   "summary": "",
-   "summary_orig": "",
-   "url": "https://connect.queenslibrary.org/",
-   "hn": "https://news.ycombinator.com/item?id=50437790",
-   "source": "Hacker News",
-   "source_key": "hn",
-   "source_home": "https://news.ycombinator.com/",
-   "lang": "en",
-   "published_at": "2026-11-10T17:04:39+08:00",
-   "fetched_at": "2026-11-10T23:59:45+08:00"
-  },
-  {
    "id": "7b2f619447d0",
    "channel": "game",
    "title": "不要被《Horses of Hoofprint Bay》的手绘艺术所迷惑，这款马厩管理游戏具有吉莉·库珀小说中的所有戏剧性",
@@ -11048,38 +11943,6 @@
    "lang": "en",
    "published_at": "2026-11-10T17:02:00+08:00",
    "fetched_at": "2026-11-11T03:25:44+08:00"
-  },
-  {
-   "id": "1dcc14fccab9",
-   "channel": "internet",
-   "title": "Rian Johnson 的新相机应用程序显示了 iPhone 照片中缺少的内容",
-   "title_orig": "Rian Johnson’s new camera app shows what’s missing from iPhone photos",
-   "summary": "上周，iPhone App Store 上出现了意想不到的热门：没有免费试用或订阅的$ 12.99相机应用程序。",
-   "summary_orig": "Last week saw an unexpected hit on the iPhone App Store: a $12.99 camera app without a free trial or a subscription.",
-   "url": "https://www.fastcompany.com/91634457/rian-johnson-chromagraph-new-camera-app-iphone-photos?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
-   "hn": "",
-   "source": "Fast Company",
-   "source_key": "fastcompany-com-technology-rss",
-   "source_home": "https://www.fastcompany.com/",
-   "lang": "en",
-   "published_at": "2026-11-10T17:00:00+08:00",
-   "fetched_at": "2026-11-11T00:50:31+08:00"
-  },
-  {
-   "id": "7c7c45beea17",
-   "channel": "internet",
-   "title": "全球芯片热潮持续 台积电10月销售额大幅攀升",
-   "title_orig": "",
-   "summary": "这家全球最大晶圆代工厂周二公布，10 月营收达到 5868.9 亿新台币（折合 178.8 亿美元），同比增长 59.7%，环比上月上涨 14.7%。各大科技企业持续在人工智能领域大举投入，先进半导体需求火热，令台积电从中受益。",
-   "summary_orig": "",
-   "url": "https://www.cnbeta.com.tw/articles/tech/1585774.htm",
-   "hn": "",
-   "source": "cnBeta",
-   "source_key": "cnbeta-com-tw-backend-php",
-   "source_home": "https://www.cnbeta.com.tw/",
-   "lang": "zh",
-   "published_at": "2026-11-10T16:56:31+08:00",
-   "fetched_at": "2026-11-11T00:50:31+08:00"
   },
   {
    "id": "7e1f9b33c691",
@@ -11112,22 +11975,6 @@
    "lang": "en",
    "published_at": "2026-11-10T16:45:30+08:00",
    "fetched_at": "2026-11-11T00:44:29+08:00"
-  },
-  {
-   "id": "72bb052ab41d",
-   "channel": "internet",
-   "title": "社区速递 165 | 透明工牌与派友十月购物清单",
-   "title_orig": "",
-   "summary": "除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光，因此我们决定重启Matrix周报，并在此基础上添加更多社区内容、作者投稿新玩意呈现给大家。上周社区速递 ...",
-   "summary_orig": "",
-   "url": "https://sspai.com/post/118861",
-   "hn": "",
-   "source": "少数派",
-   "source_key": "sspai",
-   "source_home": "https://sspai.com/",
-   "lang": "zh",
-   "published_at": "2026-11-10T16:44:26+08:00",
-   "fetched_at": "2026-11-10T23:49:34+08:00"
   },
   {
    "id": "a958a26ec576",
@@ -11240,38 +12087,6 @@
    "lang": "en",
    "published_at": "2026-11-10T16:22:00+08:00",
    "fetched_at": "2026-11-11T01:01:54+08:00"
-  },
-  {
-   "id": "9927fc1790f0",
-   "channel": "internet",
-   "title": "规模化分享我 Vibe-Coding 的提示词",
-   "title_orig": "",
-   "summary": "今年 Vibe-Coding 了大几十个产品后，结论很直接：分享产品没意义，不如分享 Prompt。于是一个客户端加一个小程序被搓了出来，把与 Agent 的聊天记录整理成可分享页面，还接上小程序刚开放的虚拟支付，全程两天。 Demo is Cheap，Show Me the Prompt! 现在的…",
-   "summary_orig": "",
-   "url": "https://www.woshipm.com/ai/6491716.html",
-   "hn": "",
-   "source": "人人都是产品经理",
-   "source_key": "woshipm-com-feed",
-   "source_home": "https://www.woshipm.com/",
-   "lang": "zh",
-   "published_at": "2026-11-10T16:20:19+08:00",
-   "fetched_at": "2026-11-11T00:33:26+08:00"
-  },
-  {
-   "id": "1bd9f6894ffc",
-   "channel": "internet",
-   "title": "Seedream 5.5 全量上线，多轮编辑能力里程碑级别，海量案例分享！",
-   "title_orig": "",
-   "summary": "阿真用即梦实测 Seedream 5.5：同一张图连编 20 轮仍能保持一致，还能直出透明 PNG、把图层拆开改文字。她把多轮编辑、小字排版、真实光影逐项和 GPT Image 2.6 对比，也点出复杂海报的小字依然会出错。 图片模型领域的角逐向来激烈，这不，这一轮轮到 Seedream 5.5 出…",
-   "summary_orig": "",
-   "url": "https://www.woshipm.com/ai/6491698.html",
-   "hn": "",
-   "source": "人人都是产品经理",
-   "source_key": "woshipm-com-feed",
-   "source_home": "https://www.woshipm.com/",
-   "lang": "zh",
-   "published_at": "2026-11-10T16:17:05+08:00",
-   "fetched_at": "2026-11-11T00:33:26+08:00"
   },
   {
    "id": "ecc3feddde7d",
@@ -11869,6 +12684,22 @@
    "fetched_at": "2026-11-11T01:01:54+08:00"
   },
   {
+   "id": "3e9a535e98eb",
+   "channel": "aidrama",
+   "title": "快聊财经事丨从河北人领衔打造的《持械入宋》，看懂AI 短剧的生意逻辑_河北频道",
+   "title_orig": "",
+   "summary": "",
+   "summary_orig": "",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5LS3I4ZGFmS2owNTNPS1pVLTd5bUhUMmVfZHlYT3N2S1BQU2l5OVZWUk1TY3UzRFF3OS1WeWNfM3U0SW5ldUU2MTd0d3l2OHNoTTFoN3M5WndLalFwMjZDZ1dMUllCQQ?oc=5",
+   "hn": "",
+   "source": "河北新闻",
+   "source_key": "gn-aiduanju",
+   "source_home": "https://news.google.com/",
+   "lang": "zh",
+   "published_at": "2026-11-10T15:17:34+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "87a4c77be7dd",
    "channel": "mobile",
    "title": "爆料者称 vivo 12000mAh 电池已量产",
@@ -11997,6 +12828,22 @@
    "lang": "zh",
    "published_at": "2026-11-10T15:00:00+08:00",
    "fetched_at": "2026-11-11T00:33:26+08:00"
+  },
+  {
+   "id": "8397ca518896",
+   "channel": "software",
+   "title": "从路透社到 Linux Magazine：openKylin 3.0 收获全球关注",
+   "title_orig": "",
+   "summary": "openKylin 3.0 正式发布两个月来，这个来自中国的智能操作系统开源根社区正在被越来越多的国际技术媒体和全球开发者看见。 从路透社到 It's FOSS：国际媒体的多层关注 发布当月，路透社（Reuters）刊发 openKylin 3.0 相关报道《openKylin 3.0 Deepen…",
+   "summary_orig": "",
+   "url": "https://www.oschina.net/news/503505",
+   "hn": "",
+   "source": "开源中国",
+   "source_key": "oschina",
+   "source_home": "https://www.oschina.net/",
+   "lang": "zh",
+   "published_at": "2026-11-10T14:54:42+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "3fce787759df",
@@ -12908,6 +13755,22 @@
    "fetched_at": "2026-11-11T01:01:54+08:00"
   },
   {
+   "id": "a926424b4a04",
+   "channel": "launch",
+   "title": "多佛初创公司职位",
+   "title_orig": "Dover Startup Jobs",
+   "summary": "伟大的初创公司与优秀的候选人相遇的地方关联",
+   "summary_orig": "Where great startups meet great candidates Discussion | Link",
+   "url": "https://www.producthunt.com/products/dover",
+   "hn": "",
+   "source": "Product Hunt",
+   "source_key": "producthunt-com-feed",
+   "source_home": "https://www.producthunt.com/",
+   "lang": "en",
+   "published_at": "2026-11-10T10:53:06+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "b5622b31f462",
    "channel": "dev",
    "title": "外企外包也许是大龄失业人员的最好归宿",
@@ -13459,22 +14322,6 @@
    "fetched_at": "2026-11-11T01:06:38+08:00"
   },
   {
-   "id": "810197f77d52",
-   "channel": "mobile",
-   "title": "宣布 GSMArena 2026年终奖决赛入围名单",
-   "title_orig": "Announcing the finalists for the GSMArena 2026 End-of-Year Awards",
-   "summary": "2026年为我们带来了一些令人难以置信的智能手机、平板电脑和其他小工具，我们想表彰其中的佼佼者--这是 GSMArena 2026年年终奖提名者。有13个类别，获奖者将在未来几天内确定。我们的专家审核员团队已经测试了",
-   "summary_orig": "2026 brought us some incredible smartphones, tablets and other gadgets and we wanted to recognize the best of them – here are the GSMArena 2026 End-of-Year Awards Nominees. There are thirteen categories and the winners will be decided in the coming days. Our team of expert reviewers has tested over 200 devices over the past twelve months.",
-   "url": "https://www.gsmarena.com/announcing_the_nominees_for_the_gsmarena_2026_endofyear_awards-news-75263.php",
-   "hn": "",
-   "source": "GSMArena",
-   "source_key": "gsmarena-com-rss-news-reviews-php3",
-   "source_home": "https://www.gsmarena.com/",
-   "lang": "en",
-   "published_at": "2026-11-10T08:31:02+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
-  },
-  {
    "id": "8d28cfa5555a",
    "channel": "ai",
    "title": "大卫·埃里森说，AI 可能是“现代历史上最大的创意解锁”",
@@ -13605,6 +14452,22 @@
    "fetched_at": "2026-11-11T01:10:50+08:00"
   },
   {
+   "id": "17f71397914d",
+   "channel": "dev",
+   "title": "Python 3.16.0 alpha 2 现已推出",
+   "title_orig": "Python 3.16.0 alpha 2 is now available",
+   "summary": "Python 3.16 的第二个开发者预览版已准备好进行测试。",
+   "summary_orig": "The second developer preview of Python 3.16 is ready for testing.",
+   "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
+   "hn": "",
+   "source": "Python 博客",
+   "source_key": "blog-python-org-feeds-posts-default",
+   "source_home": "https://blog.python.org/",
+   "lang": "en",
+   "published_at": "2026-11-10T08:00:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "9ce674fb2981",
    "channel": "software",
    "title": "Firefox 160发布版带来新的浮动“迷你窗口”模式",
@@ -13669,38 +14532,6 @@
    "fetched_at": "2026-11-11T00:50:31+08:00"
   },
   {
-   "id": "8ac9611b15f2",
-   "channel": "mobile",
-   "title": "以下是 Apple 在 iOS 27.2.1 和 macOS 27.2.1 中修复的内容",
-   "title_orig": "Here's What Apple Fixed in iOS 27.2.1 and macOS 27.2.1",
-   "summary": "Apple 今天发布的 iOS 27.2.1、iPadOS 27.2.1 和 macOS 27.2.1 更新修复了一些安全漏洞。实施安全修复后，最好尽快更新。",
-   "summary_orig": "The iOS 27.2.1 , iPadOS 27.2.1, and macOS 27.2.1 updates Apple released today fix a handful of security vulnerabilities. With the security fixes implemented, it's a good idea to update as soon as you can.",
-   "url": "https://www.macrumors.com/2026/11/09/ios-27-2-1-security-fixes/",
-   "hn": "",
-   "source": "MacRumors",
-   "source_key": "macrumors-com-macrumors-xml",
-   "source_home": "https://www.macrumors.com/",
-   "lang": "en",
-   "published_at": "2026-11-10T07:07:03+08:00",
-   "fetched_at": "2026-11-11T01:10:50+08:00"
-  },
-  {
-   "id": "556cc014f989",
-   "channel": "mobile",
-   "title": "三星 Galaxy Watch8 现已收到基于 Wear OS 7 的 One UI 9 Watch 更新",
-   "title_orig": "Samsung Galaxy Watch8 is now receiving the update to One UI 9 Watch based on Wear OS 7",
-   "summary": "谷歌于 5 月份推出了 Wear OS 7，然后于 6 月份将其推广到 Pixel 手表上。与此同时，三星一直在开发自己的 One UI 9 Watch，它基于 Wear OS 7，并于 8 月底开始针对 Galaxy Watch8 进行测试计划。",
-   "summary_orig": "Google unveiled Wear OS 7 in May, and then proceeded to roll it out to its Pixel Watches in June. Meanwhile, Samsung has been working on its own One UI 9 Watch, which is based on Wear OS 7, commencing a beta program for the Galaxy Watch8 in late August.",
-   "url": "https://www.gsmarena.com/samsung_galaxy_watch8_is_now_receiving_the_update_to_one_ui_9_watch_based_on_wear_os_7-news-75410.php",
-   "hn": "",
-   "source": "GSMArena",
-   "source_key": "gsmarena-com-rss-news-reviews-php3",
-   "source_home": "https://www.gsmarena.com/",
-   "lang": "en",
-   "published_at": "2026-11-10T07:01:02+08:00",
-   "fetched_at": "2026-11-11T01:06:38+08:00"
-  },
-  {
    "id": "fef7b89473f0",
    "channel": "ai",
    "title": "刚刚，Claude Fable 5.2 登顶世界第一，一夜斩杀 Opus 5.5",
@@ -13731,22 +14562,6 @@
    "lang": "en",
    "published_at": "2026-11-10T06:37:05+08:00",
    "fetched_at": "2026-11-11T00:33:26+08:00"
-  },
-  {
-   "id": "a2cb6578d8bc",
-   "channel": "mobile",
-   "title": "Webex 获得 iPhone Duo 支持",
-   "title_orig": "Webex Gets iPhone Duo Support",
-   "summary": "流行的视频会议应用程序 Webex 今天进行了更新，支持 Apple 的 iPhone Duo。Webex 可以打开或关闭、纵向或横向模式工作，甚至可以在笔记本电脑或帐篷位置工作。打开时，“iPhone Duo”会显示更多会议参与者，保持共享内容可见，并提供对 w",
-   "summary_orig": "Popular video meeting app Webex was today updated with support for Apple's iPhone Duo . Webex works open or closed, in portrait or landscape mode, and even in a laptop or tent position. When open, the ‌iPhone Duo‌ shows more meeting participants, keeps shared content visible, and gives access to a whiteboard.",
-   "url": "https://www.macrumors.com/2026/11/09/webex-gets-iphone-duo-support/",
-   "hn": "",
-   "source": "MacRumors",
-   "source_key": "macrumors-com-macrumors-xml",
-   "source_home": "https://www.macrumors.com/",
-   "lang": "en",
-   "published_at": "2026-11-10T06:31:20+08:00",
-   "fetched_at": "2026-11-11T01:10:50+08:00"
   },
   {
    "id": "2efbd66871b2",
@@ -13846,22 +14661,6 @@
    "fetched_at": "2026-11-11T03:07:53+08:00"
   },
   {
-   "id": "02cb77c12929",
-   "channel": "mobile",
-   "title": "Anker 推出带自动跟踪灯的 Eufy 安全摄像头",
-   "title_orig": "Anker Launches Eufy Security Cam With Auto-Tracking Light",
-   "summary": "Anker 今天推出了 Eufy TrackLight Cam S1，据称这是世界上第一款带有自动跟踪灯的户外安全摄像头，可主动阻止入侵者。TrackLight Cam S1 在使用 Anker HomeBase 时与 Apple Home 兼容，因此可以与其他智能家居设备一起使用",
-   "summary_orig": "Anker today launched the Eufy TrackLight Cam S1 , which it says is the world's first outdoor security camera with an auto-tracking light for actively deterring intruders. The TrackLight Cam S1 is compatible with Apple Home when using the Anker HomeBase, so it can be used alongside other smart home devices in a HomeKit setup.",
-   "url": "https://www.macrumors.com/2026/11/09/anker-auto-tracking-security-camera/",
-   "hn": "",
-   "source": "MacRumors",
-   "source_key": "macrumors-com-macrumors-xml",
-   "source_home": "https://www.macrumors.com/",
-   "lang": "en",
-   "published_at": "2026-11-10T05:47:29+08:00",
-   "fetched_at": "2026-11-11T03:25:44+08:00"
-  },
-  {
    "id": "f21c70b8de89",
    "channel": "space",
    "title": "使用振动和 AI，未来的机器人任务可以自主处理埋藏的岩石",
@@ -13892,22 +14691,6 @@
    "lang": "en",
    "published_at": "2026-11-10T05:37:58+08:00",
    "fetched_at": "2026-11-11T00:33:26+08:00"
-  },
-  {
-   "id": "5e77e59fa11f",
-   "channel": "mobile",
-   "title": "小米18 Pro Max 正在审核中",
-   "title_orig": "Xiaomi 18 Pro Max in for review",
-   "summary": "我们获得了最新的小米18专业版，从小米18专业版 Max 开始，我们将两者都拆箱。这是我们官方 TikTok 上的拆箱视频。全球单元附带 USB 电缆和透明外壳。我们是 Velvet Red 型号，配备12GB RAM 和256GB 存储空间。",
-   "summary_orig": "We got our hands on the latest Xiaomi 18 Pros, and we're unboxing both, starting with the Xiaomi 18 Pro Max. Here's the video unboxing over at our official TikTok. The global unit ships with a USB cable and a transparent case. Ours is the Velvet Red model with 12GB of RAM and 256GB of storage. The provided case is a quality product.",
-   "url": "https://www.gsmarena.com/xiaomi_18_pro_max_in_for_review-news-75411.php",
-   "hn": "",
-   "source": "GSMArena",
-   "source_key": "gsmarena-com-rss-news-reviews-php3",
-   "source_home": "https://www.gsmarena.com/",
-   "lang": "en",
-   "published_at": "2026-11-10T05:31:02+08:00",
-   "fetched_at": "2026-11-11T01:10:50+08:00"
   },
   {
    "id": "c7c5f959ede7",
@@ -13990,22 +14773,6 @@
    "fetched_at": "2026-11-11T00:50:31+08:00"
   },
   {
-   "id": "9db8f8278384",
-   "channel": "mobile",
-   "title": "macOS 27.2.1 修复了命令行工具中的 eMudhra 证书缺陷",
-   "title_orig": "macOS 27.2.1 Fixes eMudhra Certificate Flaw in Command-Line Tools",
-   "summary": "Apple 今天发布的 macOS Golden Gate 27.2.1 更新解决了 eMudhra 证书漏洞，Apple 建议用户更新到最新软件。对于运行 macOS 26 或 macOS 15 的 Mac，Apple 发布了 macOS 26.7.3 和 macOS 15.8.3。",
-   "summary_orig": "The macOS Golden Gate 27.2.1 update Apple released today addresses the eMudhra certificate vulnerability, and Apple recommends users update to the latest software. For Macs that run macOS 26 or macOS 15, Apple has released macOS 26.7.3 and macOS 15.8.3.",
-   "url": "https://www.macrumors.com/2026/11/09/macos-27-2-1-emudhra-fix/",
-   "hn": "",
-   "source": "MacRumors",
-   "source_key": "macrumors-com-macrumors-xml",
-   "source_home": "https://www.macrumors.com/",
-   "lang": "en",
-   "published_at": "2026-11-10T04:26:44+08:00",
-   "fetched_at": "2026-11-11T03:25:44+08:00"
-  },
-  {
    "id": "a739dfdfb1e4",
    "channel": "ai",
    "title": "使用 Amazon Bedrock 托管知识库进行单次和代理检索",
@@ -14068,22 +14835,6 @@
    "lang": "en",
    "published_at": "2026-11-10T04:04:37+08:00",
    "fetched_at": "2026-11-11T00:44:29+08:00"
-  },
-  {
-   "id": "8d15c4a7f49b",
-   "channel": "mobile",
-   "title": "三星与 Nina Chuba 合作制作限量版 Galaxy Buds4 Pro",
-   "title_orig": "Samsung made limited edition Galaxy Buds4 Pro with Nina Chuba",
-   "summary": "三星早在二月份就与 Galaxy S26 系列智能手机一起推出了 Galaxy Buds4 Pro，现在该公司又推出了与流行歌星 Nina Chuba 合作的新特别版。该版本仅限量 2,000 台。",
-   "summary_orig": "Samsung launched the Galaxy Buds4 Pro back in February alongside the Galaxy S26 series smartphones, and now the company is coming out with a new special edition made in collaboration with pop star Nina Chuba. This version will be limited to just 2,000 units.",
-   "url": "https://www.gsmarena.com/samsung_made_limited_edition_galaxy_buds4_pro_with_nina_chuba-news-75409.php",
-   "hn": "",
-   "source": "GSMArena",
-   "source_key": "gsmarena-com-rss-news-reviews-php3",
-   "source_home": "https://www.gsmarena.com/",
-   "lang": "en",
-   "published_at": "2026-11-10T04:02:02+08:00",
-   "fetched_at": "2026-11-11T01:10:50+08:00"
   },
   {
    "id": "fb16adb92f7d",
@@ -14457,22 +15208,6 @@
    "lang": "en",
    "published_at": "2026-11-10T02:36:47+08:00",
    "fetched_at": "2026-11-11T00:44:29+08:00"
-  },
-  {
-   "id": "d0dda3483fc6",
-   "channel": "mobile",
-   "title": "谷歌 Pixel 11 Pro XL 与 Pixel 10 Pro XL",
-   "title_orig": "Google Pixel 11 Pro XL vs. Pixel 10 Pro XL",
-   "summary": "购物季即将来临，如果您正在考虑购买新 Pixel，那么有一个有趣的选择可供选择。最新的 Google Pixel 11 Pro XL 现在售价约为 1,100 欧元，而去年的 Google Pixel 10 Pro XL 售价约为 900 欧元。",
-   "summary_orig": "The shopping season is upon us, and if you're considering a new Pixel, there's an interesting choice to make. The latest Google Pixel 11 Pro XL can now be found for around €1,100, while last year's Google Pixel 10 Pro XL is available for roughly €900.",
-   "url": "https://www.gsmarena.com/pixel_11_pro_xl_vs_pixel_10_pro_xl_battery_camera_price_compared-news-75356.php",
-   "hn": "",
-   "source": "GSMArena",
-   "source_key": "gsmarena-com-rss-news-reviews-php3",
-   "source_home": "https://www.gsmarena.com/",
-   "lang": "en",
-   "published_at": "2026-11-10T02:31:02+08:00",
-   "fetched_at": "2026-11-11T03:01:18+08:00"
   },
   {
    "id": "774c67974f58",
@@ -14943,22 +15678,6 @@
    "_md": 1
   },
   {
-   "id": "3911703f39f2",
-   "channel": "mobile",
-   "title": "首发6秒4K超清长实况！OPPO Reno17系列新品发布会",
-   "title_orig": "",
-   "summary": "OPPO Reno17系列新品发布会11月16日19:00开启直播，重磅首发6秒4K超清长实况，突破传统实况时长限制，完整留住动态画面与原声，轻松定格舞台、聚会、日常高光。 全系搭载潜望长焦，全焦段4K影像拉满，搭配全新潮流配色，颜值与影像同步升级。直播间同步揭晓Reno17、Reno17 Pro完…",
-   "summary_orig": "",
-   "url": "https://news.mydrivers.com/1/1164/1164330.htm",
-   "hn": "",
-   "source": "快科技",
-   "source_key": "rss-mydrivers-com-rss-aspx",
-   "source_home": "https://rss.mydrivers.com/",
-   "lang": "zh",
-   "published_at": "2026-11-10T00:55:59+08:00",
-   "fetched_at": "2026-11-11T00:33:26+08:00"
-  },
-  {
    "id": "e188dcc610ac",
    "channel": "ai",
    "title": "迪士尼押注 Adob​​e 的 Firefly 为其娱乐帝国创建品牌安全的 AI 模型",
@@ -15231,22 +15950,6 @@
    "published_at": "2026-11-09T23:48:02+08:00",
    "fetched_at": "2026-11-11T01:01:54+08:00",
    "_md": 1
-  },
-  {
-   "id": "ff69ebef949a",
-   "channel": "mobile",
-   "title": "iPhone 18 和 18e 配备相同尺寸的屏幕和电池",
-   "title_orig": "iPhone 18 and 18e to feature same sized screens and batteries",
-   "summary": "iPhone 18 预计将于本月晚些时候进入生产阶段，我们已经知道它将进行电池升级，但现在我们有一些具体的数字需要关注。根据 Fix Focus Digital 的新微博帖子，18（代号 Taycan）将配备 4,430 mAh 电池。",
-   "summary_orig": "The iPhone 18 is expected to enter its production phase later this month and we already knew that it would get a battery upgrade but we now have some specific numbers to look at. According to a new Weibo post from Fixed Focus Digital, the 18 (codenamed Taycan) is getting a 4,430 mAh cell.",
-   "url": "https://www.gsmarena.com/iphone_18_and_18e_to_feature_same_sized_screens_and_batteries__-news-75403.php",
-   "hn": "",
-   "source": "GSMArena",
-   "source_key": "gsmarena-com-rss-news-reviews-php3",
-   "source_home": "https://www.gsmarena.com/",
-   "lang": "en",
-   "published_at": "2026-11-09T23:48:01+08:00",
-   "fetched_at": "2026-11-11T03:07:53+08:00"
   },
   {
    "id": "386613527d7b",
@@ -15977,6 +16680,22 @@
    "fetched_at": "2026-11-10T23:51:49+08:00"
   },
   {
+   "id": "bb1adff0d5e0",
+   "channel": "software",
+   "title": "Roundcube 在1.7.6和1.6.21中发布了17个安全修复程序",
+   "title_orig": "Roundcube Releases 17 Security Fixes in 1.7.6 and 1.6.21",
+   "summary": "Roundcube 同时发布了两个安全更新：主线的1.7.6和其长期支持分支机构的1.6.21，每个都修复了最近披露的17个漏洞。修补程序包括开放重定向、IMAP 命令注入、标头和筛选脚本注入、SSRF、CSRF 绕过、失控的 CPU 拒绝服务",
+   "summary_orig": "Roundcube shipped two security updates at once: 1.7.6 for the mainline and 1.6.21 for its long-term-support branch, each fixing 17 recently disclosed flaws. The patches cover open redirects, IMAP command injection, header and Sieve script injection, SSRF, CSRF bypasses, a runaway-CPU denial-of-service, and an Image ...",
+   "url": "https://www.linuxcompatible.org/story/roundcube-releases-17-security-fixes-in-176-and-1621/",
+   "hn": "",
+   "source": "LinuxCompatible",
+   "source_key": "linuxcompatible-org-news-rss",
+   "source_home": "https://www.linuxcompatible.org/",
+   "lang": "en",
+   "published_at": "2026-11-09T20:31:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "3b5cc4a1d553",
    "channel": "aidrama",
    "title": "市场主线：市场再现普涨反弹 机器人、AI漫剧持续活跃",
@@ -16156,6 +16875,22 @@
    "lang": "en",
    "published_at": "2026-11-09T19:00:00+08:00",
    "fetched_at": "2026-11-11T01:10:50+08:00"
+  },
+  {
+   "id": "c8522432facd",
+   "channel": "dev",
+   "title": "AWS 推出 TorchNeuron，无需修改即可在 AWS Trainium 上运行 PyTorch 模型",
+   "title_orig": "AWS Launches TorchNeuron to Run PyTorch Models on AWS Trainium Without Modifications",
+   "summary": "在最近举行的 2026 年北美 PyTorch 大会上，亚马逊推出了 TorchNeuron，这是一个原生 PyTorch 后端，使开发人员能够在 AWS Trainium AI 芯片上运行现有的 PyTorch 代码，而几乎无需修改代码。塞尔吉奥·德·西蒙尼",
+   "summary_orig": "At the recent PyTorch Conference North America 2026, Amazon introduced TorchNeuron, a native PyTorch backend that enables developers to run existing PyTorch code on AWS Trainium AI chips with virtually no code modifications. By Sergio De Simone",
+   "url": "https://www.infoq.com/news/2026/11/aws-torchneuron-trainium-pytorch/",
+   "hn": "",
+   "source": "InfoQ",
+   "source_key": "infoq-com-feed",
+   "source_home": "https://www.infoq.com/",
+   "lang": "en",
+   "published_at": "2026-11-09T19:00:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "2d3fb56eafb0",
@@ -16440,38 +17175,6 @@
    "fetched_at": "2026-11-11T01:01:54+08:00"
   },
   {
-   "id": "f1d843bd5a3a",
-   "channel": "ai",
-   "title": "谁家 AI 这么听劝？Seedream 5.5 爆改 iPhone Duo 界面，精准到像素级",
-   "title_orig": "",
-   "summary": "AI 版 PS 的时代来了",
-   "summary_orig": "",
-   "url": "https://www.ifanr.com/1688514",
-   "hn": "",
-   "source": "爱范儿",
-   "source_key": "ifanr",
-   "source_home": "https://www.ifanr.com/",
-   "lang": "zh",
-   "published_at": "2026-11-09T17:19:02+08:00",
-   "fetched_at": "2026-11-10T23:49:34+08:00"
-  },
-  {
-   "id": "4b5a604d1d4b",
-   "channel": "mobile",
-   "title": "双 11 大促！150+ 款正版软件低至 6 折，AdGuard、Typora、PixPin、思源笔记、Mole 等…",
-   "title_orig": "",
-   "summary": "一年一度的正版软件双 11 大促来了！今年的「双 11 软件狂欢节」共有超过 150 款商品参与，到手低至 6 折。 挑一些值得买的推荐给大家： AdGuard AdGuard 是一款非常",
-   "summary_orig": "",
-   "url": "https://www.appinn.com/lizhi-261111/",
-   "hn": "",
-   "source": "小众软件",
-   "source_key": "appinn-com-feed",
-   "source_home": "https://www.appinn.com/",
-   "lang": "zh",
-   "published_at": "2026-11-09T17:15:14+08:00",
-   "fetched_at": "2026-11-11T00:33:26+08:00"
-  },
-  {
    "id": "ec44f293b3c3",
    "channel": "auto",
    "title": "比亚迪新能源汽车产量突破1900万辆 方成宝太9开放预订",
@@ -16520,38 +17223,6 @@
    "fetched_at": "2026-11-11T01:06:38+08:00"
   },
   {
-   "id": "dc44ac647ef6",
-   "channel": "ai",
-   "title": "千星达成！开源终端 uniTerm v1.12 发布：Docker 多租户部署、本地服务、终端录制与批量执行齐上线",
-   "title_orig": "",
-   "summary": "uniTerm 是一款轻量级一站式开源终端软件。整合终端、文件传输、远程桌面、数据库客户端、容器等 5 大类协议于一身，覆盖 32 种协议，安装包不到 20 MB；内置可自主执行的 AI Agent，能规划并执行多轮 Shell 命令。 v1.12 最重要的几项更新：Docker Web 多租户部署…",
-   "summary_orig": "",
-   "url": "https://www.oschina.net/news/503487",
-   "hn": "",
-   "source": "开源中国",
-   "source_key": "oschina",
-   "source_home": "https://www.oschina.net/news",
-   "lang": "zh",
-   "published_at": "2026-11-09T17:04:39+08:00",
-   "fetched_at": "2026-11-10T23:49:34+08:00"
-  },
-  {
-   "id": "9f9ca353bfa1",
-   "channel": "mobile",
-   "title": "Hookshot – 《塞尔达传说：时之笛》重制版已能在 PC 原生运行，无需模拟器",
-   "title_orig": "",
-   "summary": "继《塞尔达传说：王国之泪》之后，又一款塞尔达游戏可以在 Windows 电脑上原生运行了！ 这次是2026年11月5日刚刚发售的 Switch 2 重制版《塞尔达传说：时之笛》，已经可以在 PC 上原",
-   "summary_orig": "",
-   "url": "https://www.appinn.com/hookshot/",
-   "hn": "",
-   "source": "小众软件",
-   "source_key": "appinn-com-feed",
-   "source_home": "https://www.appinn.com/",
-   "lang": "zh",
-   "published_at": "2026-11-09T16:51:49+08:00",
-   "fetched_at": "2026-11-11T00:33:26+08:00"
-  },
-  {
    "id": "0c10333060f6",
    "channel": "software",
    "title": "能力再扩充！deepin Skills 上架应用商店，小 U 同学直接调用",
@@ -16583,54 +17254,6 @@
    "published_at": "2026-11-09T16:40:51+08:00",
    "fetched_at": "2026-11-11T01:10:50+08:00",
    "_md": 1
-  },
-  {
-   "id": "168596724871",
-   "channel": "ai",
-   "title": "🔥 优化及缺陷修复：开源 AI 无代码平台 NocoBase",
-   "title_orig": "",
-   "summary": "汇总一周产品更新日志，最新发布可前往我们的博客查看。 NocoBase 目前更新包括三个分支： main、next 和 develop。** main： 截至目前最稳定的版本，推荐安装此版本。 next： 包含即将发布的新功能，经过初步测试的版本，可能存在部分已知或未知问题。主要面向测试用户，用于收…",
-   "summary_orig": "",
-   "url": "https://www.oschina.net/news/503485",
-   "hn": "",
-   "source": "开源中国",
-   "source_key": "oschina",
-   "source_home": "https://www.oschina.net/news",
-   "lang": "zh",
-   "published_at": "2026-11-09T16:24:02+08:00",
-   "fetched_at": "2026-11-10T23:49:34+08:00"
-  },
-  {
-   "id": "e11b12d044c6",
-   "channel": "ai",
-   "title": "Reason Machines 开源 Aspen，这是一个为 AI 代理构建的 Git 服务器",
-   "title_orig": "Reason Machines Open-Sources Aspen, a Git Server Built for AI Agents",
-   "summary": "Reason Machines 开源了 Aspen，这是一个用于 AI 代理的自托管 Git 服务器。它遵循 OpenAI 的 Pando 设计，在该公司自己的测试中，在一台 8 核服务器上持续每秒 567 次推送。",
-   "summary_orig": "Reason Machines has open-sourced Aspen, a self-hosted Git server for AI agents. It follows OpenAI’s Pando design and sustained 567 pushes per second on one 8-core server in the company’s own test.",
-   "url": "https://www.marktechpost.com/2026/11/09/reason-machines-aspen-open-source-git-server-ai-agents/",
-   "hn": "",
-   "source": "MarkTechPost",
-   "source_key": "marktechpost-com-feed",
-   "source_home": "https://www.marktechpost.com/",
-   "lang": "en",
-   "published_at": "2026-11-09T16:20:20+08:00",
-   "fetched_at": "2026-11-11T00:50:31+08:00"
-  },
-  {
-   "id": "cf53675c1a75",
-   "channel": "ai",
-   "title": "洛蒂·艾",
-   "title_orig": "Lottie AI",
-   "summary": "文本提示中的可编辑矢量动画 讨论 |关联",
-   "summary_orig": "Editable vector animations from a text prompt Discussion | Link",
-   "url": "https://www.producthunt.com/products/lottiefiles",
-   "hn": "",
-   "source": "Product Hunt",
-   "source_key": "producthunt-com-feed",
-   "source_home": "https://www.producthunt.com/",
-   "lang": "en",
-   "published_at": "2026-11-09T16:16:41+08:00",
-   "fetched_at": "2026-11-11T00:33:26+08:00"
   },
   {
    "id": "f1f7949d758b",
@@ -16698,22 +17321,6 @@
    "fetched_at": "2026-11-11T03:25:44+08:00"
   },
   {
-   "id": "57a8ba0d5522",
-   "channel": "ai",
-   "title": "NVIDIA 在 MSIT-NVIDIAAI 初创企业合作伙伴论坛上宣布对韩国初创企业的新计划投资",
-   "title_orig": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
-   "summary": "韩国科学和信息通信技术部与 NVIDIA 在 COEX 举办了 MSIT-NVIDIAAI 初创企业合作论坛。科学和信息通信技术部和 NVIDIA 的代表会见了20多家韩国初创公司，涉及基础模型、物理 AI、AI 基础设施和 AI 半导体。",
-   "summary_orig": "Korea’s Ministry of Science and ICT and NVIDIA hosted the MSIT-NVIDIA AI Startup Partnership Forum at COEX. Representatives from the Ministry of Science and ICT and NVIDIA met with over 20 Korean startups across foundation models, physical AI, AI infrastructure and AI semiconductors.",
-   "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
-   "hn": "",
-   "source": "NVIDIA 博客",
-   "source_key": "blogs-nvidia-com-feed",
-   "source_home": "https://blogs.nvidia.com/",
-   "lang": "en",
-   "published_at": "2026-11-09T16:00:53+08:00",
-   "fetched_at": "2026-11-11T00:44:29+08:00"
-  },
-  {
    "id": "210827fbf53b",
    "channel": "software",
    "title": "印度AI公司高调发布自研Alpie Seed模型 结果被发现其实就是基于Qwen3.5微调",
@@ -16728,38 +17335,6 @@
    "lang": "zh",
    "published_at": "2026-11-09T16:00:26+08:00",
    "fetched_at": "2026-11-11T00:44:29+08:00"
-  },
-  {
-   "id": "23b94c697622",
-   "channel": "ai",
-   "title": "CodeRabbit 可扩展代理软件开发并出货量增加20倍",
-   "title_orig": "CodeRabbit scales agentic software development and ships 20x more",
-   "summary": "CodeRabbit 使用 OpenAI 模型来管理和信任 AI 生成的代码，Codex 使用相同的工程团队出货20倍的软件。",
-   "summary_orig": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
-   "url": "https://openai.com/index/coderabbit-codex-daybreak",
-   "hn": "",
-   "source": "OpenAI",
-   "source_key": "openai",
-   "source_home": "https://openai.com/news/",
-   "lang": "en",
-   "published_at": "2026-11-09T16:00:00+08:00",
-   "fetched_at": "2026-11-10T23:49:34+08:00"
-  },
-  {
-   "id": "932fe34bad72",
-   "channel": "ai",
-   "title": "Kuken Industries 在几分钟内搜索70年的图纸",
-   "title_orig": "Kuken Industries searches 70 years of drawings in minutes",
-   "summary": "Kuken Industries 使用 OpenAI API 搜索70年的冷却塔图纸。工程师可以在4.5分钟内找到图纸进行维修，而将近一个小时。",
-   "summary_orig": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
-   "url": "https://openai.com/index/kuken",
-   "hn": "",
-   "source": "OpenAI",
-   "source_key": "openai",
-   "source_home": "https://openai.com/news/",
-   "lang": "en",
-   "published_at": "2026-11-09T16:00:00+08:00",
-   "fetched_at": "2026-11-10T23:49:34+08:00"
   },
   {
    "id": "c61092094ef3",
@@ -16811,22 +17386,6 @@
    "fetched_at": "2026-11-11T00:44:29+08:00"
   },
   {
-   "id": "288844aa1b89",
-   "channel": "ai",
-   "title": "皮尔法伯集团与晶泰科技达成AI驱动药物发现合作，将在肿瘤领域联合开展多个研发项目",
-   "title_orig": "",
-   "summary": "雷峰网消息，2026年11月6日，皮尔法伯集团与晶泰科技（2228.HK）宣布达成一项合作协议。双方将在肿瘤领域联合开展多个研发项目，共同发现新型临床候选药物，并有望拓展至皮肤病、罕见病等领域。 根据协议，晶泰科技将依托其一体化的“AI+机器人”核心能力，针对未披露的靶点从头设计并交付新型小分子治疗…",
-   "summary_orig": "",
-   "url": "https://www.leiphone.com/category/shengwuyiyao/HMCKdmWiZA0bT07Q.html",
-   "hn": "",
-   "source": "雷峰网",
-   "source_key": "leiphone-com-feed",
-   "source_home": "https://www.leiphone.com/",
-   "lang": "zh",
-   "published_at": "2026-11-09T15:28:00+08:00",
-   "fetched_at": "2026-11-11T01:10:50+08:00"
-  },
-  {
    "id": "a8a2580969f3",
    "channel": "aigc",
    "title": "大模型为何能跑进手机？GGUF 量化把数十GB 压缩进内存|datawhalechina|llama.cpp|GGUF|大模型_新浪新闻",
@@ -16858,22 +17417,6 @@
    "lang": "en",
    "published_at": "2026-11-09T15:22:16+08:00",
    "fetched_at": "2026-11-11T03:01:18+08:00"
-  },
-  {
-   "id": "b9d4d88d02fc",
-   "channel": "ai",
-   "title": "Vue 可视化 AI 表单设计器 FcDesigner v3.6 版本发布，支持导出 SQL 功能!",
-   "title_orig": "",
-   "summary": "FcDesigner 是基于 Vue 的低代码可视化 AI 表单设计器。用自然语言描述业务即可生成表单结构，也可以拖拽组件并导出 JSON，再由渲染器还原成可交互表单，适合政务、OA、ERP、电商和流程审批。 源码地址: Github | Gitee | 文档 | 在线演示 核心功能 内置表单多语言…",
-   "summary_orig": "",
-   "url": "https://www.oschina.net/news/503482",
-   "hn": "",
-   "source": "开源中国",
-   "source_key": "oschina",
-   "source_home": "https://www.oschina.net/news",
-   "lang": "zh",
-   "published_at": "2026-11-09T15:01:16+08:00",
-   "fetched_at": "2026-11-10T23:49:34+08:00"
   },
   {
    "id": "6538c8622893",
@@ -17022,6 +17565,22 @@
    "lang": "zh",
    "published_at": "2026-11-09T13:44:37+08:00",
    "fetched_at": "2026-11-11T01:01:54+08:00"
+  },
+  {
+   "id": "fc383dadec43",
+   "channel": "huawei",
+   "title": "华为支持的 Maextro 可能会推出专注于 SUV 的新子品牌",
+   "title_orig": "Huawei-backed Maextro may launch new sub-brand focused on SUVs",
+   "summary": "子品牌和玛莎拉蒂合作是单独的项目，子品牌的细节尚未最终确定。有关详细信息，请访问 CnEVPost (cnev.co)。",
+   "summary_orig": "The sub-brand and the Maserati collaboration are separate projects, with details of the sub-brand yet to be finalized. For details, please visit CnEVPost (cnev.co).",
+   "url": "https://cnevpost.com/2026/11/09/maextro-may-launch-sub-brand-suvs/",
+   "hn": "",
+   "source": "CnEVPost",
+   "source_key": "cnevpost-com-feed",
+   "source_home": "https://www.cnevpost.com/",
+   "lang": "en",
+   "published_at": "2026-11-09T13:06:50+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "b3703a742647",
@@ -17551,6 +18110,22 @@
    "fetched_at": "2026-11-11T00:50:31+08:00"
   },
   {
+   "id": "1a7e43159476",
+   "channel": "software",
+   "title": "Mullvad 关闭其公共加密 DNS 服务：立即切换到 Quad9或其他解析器",
+   "title_orig": "Mullvad shuts down its public encrypted DNS service: switch to Quad9 or another resolver now",
+   "summary": "Mullvad 的免费公共加密 DNS 服务、DNS over HTTPS 和 DNS over TLS 解析器。感谢您成为 Ghacks 的读者。",
+   "summary_orig": "Mullvad's free public encrypted DNS service, the DNS over HTTPS and DNS over TLS resolvers at dns. Thank you for being a Ghacks reader.",
+   "url": "https://www.ghacks.net/2026/11/08/mullvad-dns-shutdown-quad9/",
+   "hn": "",
+   "source": "gHacks",
+   "source_key": "ghacks-net-feed",
+   "source_home": "https://www.ghacks.net/",
+   "lang": "en",
+   "published_at": "2026-11-08T23:40:38+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "d6cfcce93527",
    "channel": "auto",
    "title": "SpaceX 将利用 Flight 15 进行星舰双捕获尝试",
@@ -17651,6 +18226,22 @@
    "_md": 1
   },
   {
+   "id": "bffd31619951",
+   "channel": "aivideo",
+   "title": "创造AI时代的「好莱坞时刻」，Utopai重新颠覆AI影视的估值逻辑",
+   "title_orig": "",
+   "summary": "",
+   "summary_orig": "",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5RUFBuMVRtcmZ5R2ZfQmRoN3dsMEFzOTBJa2lpeEpwWkJhWE9idTJOenpiM3UyT3F0Qkh6YWV5c0dsa29KVkpUNDE5VG5leERsMXZGX3pTRFZfRjNfSGJocFlBTWdiNmpOcWc?oc=5",
+   "hn": "",
+   "source": "风闻",
+   "source_key": "gn-sora",
+   "source_home": "https://news.google.com/",
+   "lang": "zh",
+   "published_at": "2026-11-08T21:25:42+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "b3c47f1220f3",
    "channel": "software",
    "title": "KnowForge 2026.0.10：从知识库，开始长出一点“社区”了",
@@ -17714,6 +18305,22 @@
    "lang": "en",
    "published_at": "2026-11-08T20:07:17+08:00",
    "fetched_at": "2026-11-11T01:10:50+08:00"
+  },
+  {
+   "id": "a88a1a41390f",
+   "channel": "science",
+   "title": "橡果-而不是鹿-可以预测莱姆病传播的蜱虫的增加",
+   "title_orig": "Acorns—not deer—can predict a rise in Lyme-spreading ticks",
+   "summary": "尽管鹿在蜱繁殖中起着至关重要的作用，但寻找橡子数字可以提前近两年预测莱姆病的繁荣",
+   "summary_orig": "Despite deer’s essential role in tick reproduction, looking to acorn numbers instead can forecast Lyme disease booms almost two years in advance",
+   "url": "https://www.scientificamerican.com/article/acorns-not-deer-can-predict-a-rise-in-lyme-spreading-ticks/",
+   "hn": "",
+   "source": "Scientific American",
+   "source_key": "scientificamerican-com-platform-syndication-rss",
+   "source_home": "https://www.scientificamerican.com/",
+   "lang": "en",
+   "published_at": "2026-11-08T20:00:00+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "a0228a979aa8",
@@ -18567,7 +19174,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-07T03:47:07+08:00",
-   "fetched_at": "2026-11-11T01:10:50+08:00"
+   "fetched_at": "2026-11-11T01:10:50+08:00",
+   "_md": 1
   },
   {
    "id": "5b82e36c02c0",
@@ -18618,6 +19226,22 @@
    "fetched_at": "2026-11-11T03:25:44+08:00"
   },
   {
+   "id": "ad684061ac43",
+   "channel": "software",
+   "title": "七个稳定的内核，修复了三个 Xen 漏洞",
+   "title_orig": "Seven stable kernels with fixes for three Xen vulnerabilities",
+   "summary": "紧随前两个稳定内核之后，Greg Kroah-Hartman 宣布发布7.3.3、6.18.62、6.12.116、6.6.162、6.1.192、5.15.225和5.10.274稳定内核。每个漏洞仅包含 Xen 安全部门今天宣布的三个免使用后漏洞的修复",
+   "summary_orig": "Hot on the heels of the previous two stable kernels , Greg Kroah-Hartman has announced the release of the 7.3.3 , 6.18.62 , 6.12.116 , 6.6.162 , 6.1.192 , 5.15.225 , and 5.10.274 stable kernels. Each one only contains fixes for three use-after-free vulnerabilities announced today by the Xen security team.",
+   "url": "https://lwn.net/Articles/1105902/",
+   "hn": "",
+   "source": "LWN",
+   "source_key": "lwn-net-headlines-rss",
+   "source_home": "https://lwn.net/",
+   "lang": "en",
+   "published_at": "2026-11-07T02:48:34+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "fc6dfb9997af",
    "channel": "software",
    "title": "全局菜单扩展将应用程序菜单放在 GNOME 的顶部面板中",
@@ -18664,7 +19288,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-07T00:25:02+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "104fd2d17c53",
@@ -18856,7 +19481,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T21:45:50+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "5de14a79a8cc",
@@ -18905,7 +19531,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T20:50:43+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "0903e883d957",
@@ -19035,7 +19662,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T18:16:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "b38ea85201ca",
@@ -19051,7 +19679,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T18:01:05+08:00",
-   "fetched_at": "2026-11-11T01:10:50+08:00"
+   "fetched_at": "2026-11-11T01:10:50+08:00",
+   "_md": 1
   },
   {
    "id": "a6b565925046",
@@ -19067,7 +19696,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T17:34:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "4e2ce8a481a9",
@@ -19083,7 +19713,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T17:08:45+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "1dc927800ecf",
@@ -19132,7 +19763,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T14:46:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "191bc94c75eb",
@@ -19165,7 +19797,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T13:10:47+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "73d60418285c",
@@ -19197,7 +19830,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T10:30:56+08:00",
-   "fetched_at": "2026-11-11T01:10:50+08:00"
+   "fetched_at": "2026-11-11T01:10:50+08:00",
+   "_md": 1
   },
   {
    "id": "bda34231a4d5",
@@ -19213,7 +19847,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T10:20:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "c694b2a64f62",
@@ -19229,7 +19864,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T10:16:21+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "c0daed182c17",
@@ -19261,7 +19897,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T08:59:19+08:00",
-   "fetched_at": "2026-11-11T01:10:50+08:00"
+   "fetched_at": "2026-11-11T01:10:50+08:00",
+   "_md": 1
   },
   {
    "id": "bcc34128c249",
@@ -19277,7 +19914,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T08:27:18+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "9322a2fab31a",
@@ -19309,7 +19947,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T07:15:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "c05ddc05266d",
@@ -19485,7 +20124,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T03:41:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "7ed1c40ec230",
@@ -19517,7 +20157,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-06T02:18:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "e8cf84880038",
@@ -19758,7 +20399,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-05T20:31:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "7d0ceef5a4f2",
@@ -19806,7 +20448,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-05T18:35:36+08:00",
-   "fetched_at": "2026-11-11T01:10:50+08:00"
+   "fetched_at": "2026-11-11T01:10:50+08:00",
+   "_md": 1
   },
   {
    "id": "b3eeb0f6d0e2",
@@ -19822,7 +20465,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-05T17:39:29+08:00",
-   "fetched_at": "2026-11-11T01:06:38+08:00"
+   "fetched_at": "2026-11-11T01:06:38+08:00",
+   "_md": 1
   },
   {
    "id": "da09583d5bac",
@@ -19871,7 +20515,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-05T16:15:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "41fb66a3157f",
@@ -19887,7 +20532,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-05T16:07:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "0d6233b78fad",
@@ -19903,7 +20549,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-05T16:00:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "4a492f517c58",
@@ -19935,7 +20582,8 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-05T15:14:00+08:00",
-   "fetched_at": "2026-11-11T01:01:54+08:00"
+   "fetched_at": "2026-11-11T01:01:54+08:00",
+   "_md": 1
   },
   {
    "id": "e6fe6371801c",
@@ -20244,6 +20892,22 @@
    "fetched_at": "2026-11-11T01:10:50+08:00"
   },
   {
+   "id": "2d11f2f64905",
+   "channel": "chip",
+   "title": "Eulitha 增加了 AI 数据中心激光器光刻系统的交付量",
+   "title_orig": "Eulitha ramps up deliveries of lithography systems for AI data-center lasers",
+   "summary": "瑞士乌伦洛斯的 Eulitha AG（为纳米技术、光子学和光电市场提供光刻设备和服务）已向铸造厂提供了多种自动化工具，用于生产用于 AI 数据的磷化铟 (InP) 分布式反馈 (DFB) 激光器",
+   "summary_orig": "Eulitha AG of Würenlos, Switzerland (which provides lithography equipment and services for the nanotechnology, photonics and optoelectronic markets) has delivered multiple automated tools to foundries for the production of indium phosphide (InP) distributed feedback (DFB) lasers to be used in AI data centers.",
+   "url": "https://www.semiconductor-today.com/news_items/2026/nov/eulitha-041126.shtml",
+   "hn": "",
+   "source": "Semiconductor Today",
+   "source_key": "semiconductor-today-com-rss-news-xml",
+   "source_home": "https://www.semiconductor-today.com/",
+   "lang": "en",
+   "published_at": "2026-11-05T03:41:43+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "4cac934c464b",
    "channel": "aivideo",
    "title": "2026 年如何使用免费的 AI 视频生成器创建专业视频",
@@ -20518,6 +21182,22 @@
    "fetched_at": "2026-11-11T03:01:18+08:00"
   },
   {
+   "id": "d9fbdecd3aad",
+   "channel": "aivideo",
+   "title": "AI 视频生成器{PPQ}",
+   "title_orig": "‍‍‍AI video generator {PPQ}",
+   "summary": "",
+   "summary_orig": "",
+   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNOGJMNzNDX01MNVlxN3lRcVVlb2NUTzVoWkZTeExzQ21TeDFyRVFHdDNMTFZ6RXh1M3ZEejFHNEdmY1dXdkkyZXVmRnlOVWgzVmFST3pLemVqUmNQS2F5cUV0TzB3bjdJNW9hM01BeVBOSU5KUnJMUGJOSl95NzhfSFdQa0NlZk02eGtLTmtILUF0dTcwMXBNVm1DMDk4ZTNLLV9aM2xseW9QbTAxR193dGY3b3hYZm5sWjI3dWpmTVQ3WnFJUldsSjV5cm1UR2xlTm9PQW5hbUpveTRibG9hZU54TFQ4V3FuZmZCOW1GWmdkMnBrRE0wcEZNWkJTeHJweXcyV1ZvZEFIdFBv?oc=5",
+   "hn": "",
+   "source": "Law.com",
+   "source_key": "gn-aivideo-en",
+   "source_home": "https://news.google.com/",
+   "lang": "en",
+   "published_at": "2026-11-04T13:27:18+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
+  },
+  {
    "id": "a18234610a07",
    "channel": "science",
    "title": "麻省理工学院领导的团队获得资金开发用于早期疾病检测的可穿戴监视器",
@@ -20756,6 +21436,22 @@
    "lang": "en",
    "published_at": "2026-11-04T03:00:02+08:00",
    "fetched_at": "2026-11-11T03:01:18+08:00"
+  },
+  {
+   "id": "1de5f126b47c",
+   "channel": "software",
+   "title": "Canonical 为 Launchpad 添加了 FIDO2硬件密钥支持",
+   "title_orig": "Canonical adds FIDO2 hardware key support to Launchpad",
+   "summary": "使用 Launchpad 的开发人员现在可以使用 USB FIDO2安全密钥来限制 API 访问，如果没有它，任何被盗的登录信息都将毫无用处。众所周知，Launchpad 是 Canonical 构建 Ubuntu 软件包、托管代码、PPA 以及最终在用户系统上运行的许多其他内容的地方。",
+   "summary_orig": "Developers who use Launchpad can now use a USB FIDO2 security key to restrict API access, which makes any stolen login details useless without it. Launchpad is, as I’m sure you know, where Canonical builds Ubuntu’s package, hosts code, PPAs and many other things that end up on a users’ system.",
+   "url": "https://www.omgubuntu.co.uk/2026/11/launchpad-fido2-hardware-tokens",
+   "hn": "",
+   "source": "OMG! Ubuntu",
+   "source_key": "omgubuntu-co-uk-feed",
+   "source_home": "https://www.omgubuntu.co.uk/",
+   "lang": "en",
+   "published_at": "2026-11-04T01:05:51+08:00",
+   "fetched_at": "2026-11-11T04:46:31+08:00"
   },
   {
    "id": "245ac76cbcd3",

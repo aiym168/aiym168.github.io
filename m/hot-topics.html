@@ -1053,7 +1053,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
       <div class="eyebrow"><i class="live-dot"></i> 最近热议</div>
       <h1 class="hero-title"><span class="kl">最近热议</span></h1>
       <p class="lead">Hacker News、V2EX 等社区里与 AI、科技相关的热门讨论（非 AI 话题已过滤），标题已译为中文。</p>
-      <div class="stats"><div class="pill">话题 <b>18</b></div><div class="pill">更新 <b>2026-11-11</b></div></div>
+      <div class="stats"><div class="pill">话题 <b>20</b></div><div class="pill">更新 <b>2026-11-11</b></div></div>
     </div>
     
 <div class="brain-stage" aria-hidden="true">
@@ -1069,12 +1069,18 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   <section class="section" id="search">
     <div class="filters" data-filter-root>
       <form class="searchbar" role="search" onsubmit="return false"><label class="sr-only" for="q">搜索</label><input id="q" type="search" placeholder="搜索最近热议…" autocomplete="off" /><button type="submit" class="btn primary">搜索</button></form>
-      <div class="fbar"><span id="f-count" class="f-count">共 18 条</span></div>
+      <div class="fbar"><span id="f-count" class="f-count">共 20 条</span></div>
     </div>
     <div class="grid" data-list>
 <article class="card" data-id="hnhot-50438318" data-text="AI 的使用会产生脆弱的代码库 ">
   <div class="card-top"><span class="src-ico letter" aria-hidden="true">E</span><span class="src-name">Hacker News</span></div>
   <h3 class="title"><a href="https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/" target="_blank" rel="noopener noreferrer">AI 的使用会产生脆弱的代码库</a></h3>
+  
+</article>
+
+<article class="card" data-id="hnhot-50443812" data-text="Show HN：让您的编码代理脱离~ 2019 JavaScript，进入现代网络图元 ">
+  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/github.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">Hacker News</span></div>
+  <h3 class="title"><a href="https://github.com/GoogleChrome/modern-web-guidance" target="_blank" rel="noopener noreferrer">Show HN：让您的编码代理脱离~ 2019 JavaScript，进入现代网络图元</a></h3>
   
 </article>
 
@@ -1090,16 +1096,22 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   <p class="summary">邮件正文就下面一行：你好：你的付款方式出现问题，此订阅项目可能会无法续期。为避免服务中断，请更新付款信息。附了一个链接需要去更新支付信息，我试了自己的招行 Visa 卡不能添加，礼品卡的方式不能订阅 GPT 了？</p>
 </article>
 
+<article class="card" data-id="v2hot-1256010" data-text="写了一个可以清理 claude code 和 codex 会话存储的工具: cc-clean 一键使用: ``` npx cc-clean@latest ``` 背景大概就是，我同时在用 Claude 和 Codex，用久了以后，session 会话实在太多了。而我的磁盘又不太够用，一直在疯狂挪东西，又不敢删。然后自己仔细研究过它们的底层设计，发现有些冗余字段其实是可以清理的。就是在不影响 resume 的前提下，尽可能保留会话，把里面多余的字段移除掉。其中占用很大的一块，就是会话里的图片。比如你给它发一张图，告诉它要改哪里，这张图就会以 Base64 编码的形式存在聊天记录里，有时还会反复出现很多次。但这些图片，基本上在当次会话结束以后就不会">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1256010" target="_blank" rel="noopener noreferrer">写了一个可以清理 claude code 和 codex 会话存储的工具: cc-clean</a></h3>
+  <p class="summary">一键使用: ``` npx cc-clean@latest ``` 背景大概就是，我同时在用 Claude 和 Codex，用久了以后，session 会话实在太多了。而我的磁盘又不太够用，一直在疯狂挪东西，又不敢删。然后自己仔细研究过它们的底层设计，发现有些冗余字段其实是可以清理的。就是在不影响 resume 的前提下，尽可能保留会话，把里面多余的字段移除掉。其中占用很大的一块，就是会话里的图片。比如你给它发一张图，告诉它要改哪里，这张图就会以 Base64 编码的形式存在聊天记录里，有时还会反复出现很多次。但这些图片，基本上在当次会话结束以后就不会</p>
+</article>
+
 <article class="card" data-id="v2hot-1255985" data-text="AI 做游戏美术资源到底行不行？ 1. 生成单图合成图集 2. agent-sprite-forge 视频转图集 3. gpt-image-2.6-sunburst 做 GIF 这三种方案都试过做不出理想的俯视视角动作游戏素材 各位的经验怎么样能交流一下吗？">
   <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
   <h3 class="title"><a href="https://www.v2ex.com/t/1255985" target="_blank" rel="noopener noreferrer">AI 做游戏美术资源到底行不行？</a></h3>
   <p class="summary">1. 生成单图合成图集 2. agent-sprite-forge 视频转图集 3. gpt-image-2.6-sunburst 做 GIF 这三种方案都试过做不出理想的俯视视角动作游戏素材 各位的经验怎么样能交流一下吗？</p>
 </article>
 
-<article class="card" data-id="v2hot-1256010" data-text="写了一个可以清理 claude code 和 codex 会话存储的工具: cc-clean 一键使用: ``` npx cc-clean@latest ``` 背景大概就是，我同时在用 Claude 和 Codex，用久了以后，session 会话实在太多了。而我的磁盘又不太够用，一直在疯狂挪东西，又不敢删。然后自己仔细研究过它们的底层设计，发现有些冗余字段其实是可以清理的。就是在不影响 resume 的前提下，尽可能保留会话，把里面多余的字段移除掉。其中占用很大的一块，就是会话里的图片。比如你给它发一张图，告诉它要改哪里，这张图就会以 Base64 编码的形式存在聊天记录里，有时还会反复出现很多次。但这些图片，基本上在当次会话结束以后就不会">
+<article class="card" data-id="v2hot-1256011" data-text="GROK 是否有故障了？聊天记录全没，新对话会上隐私锁无法查看 ">
   <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
-  <h3 class="title"><a href="https://www.v2ex.com/t/1256010" target="_blank" rel="noopener noreferrer">写了一个可以清理 claude code 和 codex 会话存储的工具: cc-clean</a></h3>
-  <p class="summary">一键使用: ``` npx cc-clean@latest ``` 背景大概就是，我同时在用 Claude 和 Codex，用久了以后，session 会话实在太多了。而我的磁盘又不太够用，一直在疯狂挪东西，又不敢删。然后自己仔细研究过它们的底层设计，发现有些冗余字段其实是可以清理的。就是在不影响 resume 的前提下，尽可能保留会话，把里面多余的字段移除掉。其中占用很大的一块，就是会话里的图片。比如你给它发一张图，告诉它要改哪里，这张图就会以 Base64 编码的形式存在聊天记录里，有时还会反复出现很多次。但这些图片，基本上在当次会话结束以后就不会</p>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1256011" target="_blank" rel="noopener noreferrer">GROK 是否有故障了？聊天记录全没，新对话会上隐私锁无法查看</a></h3>
+  
 </article>
 
 <article class="card" data-id="v2hot-1256000" data-text="写了个 Claude Code skill：每天自动抓 AI 编程资讯出推文草稿，我确认后才发到 在做一个 API 中转（origincoder.com）。在推特上发了三个月内容，每天要找素材、写文案、核对链接，很耗时间，所以把这套流程写成了一个 Claude Code skill，叫 `x-daily-post`。先说清楚它是什么、不是什么：**它不是自动发推机器人。** 它只负责「抓取 + 出草稿」，发不发由我在对话里明确说了才算。1. **抓取**：先抓 Hacker News 和官方博客 / Releases 的 RSS （免费），最后才调一次 X 搜索做补充。2. **去重**：按来源链接对照已发历史去重，前几天出现过的">

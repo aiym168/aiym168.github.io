@@ -1,12 +1,19 @@
 {
-  "updated_at_label": "2026-11-11 03:28 Asia/Shanghai",
-  "count": 18,
+  "updated_at_label": "2026-11-11 04:49 Asia/Shanghai",
+  "count": 20,
   "items": [
     {
       "id": "hnhot-50438318",
       "title": "AI 的使用会产生脆弱的代码库",
       "summary": "",
       "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "hnhot-50443812",
+      "title": "Show HN：让您的编码代理脱离~ 2019 JavaScript，进入现代网络图元",
+      "summary": "",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
       "source": "Hacker News"
     },
     {
@@ -24,6 +31,13 @@
       "source": "V2EX"
     },
     {
+      "id": "v2hot-1256010",
+      "title": "写了一个可以清理 claude code 和 codex 会话存储的工具: cc-clean",
+      "summary": "一键使用: ``` npx cc-clean@latest ``` 背景大概就是，我同时在用 Claude 和 Codex，用久了以后，session 会话实在太多了。而我的磁盘又不太够用，一直在疯狂挪东西，又不敢删。然后自己仔细研究过它们的底层设计，发现有些冗余字段其实是可以清理的。就是在不影响 resume 的前提下，尽可能保留会话，把里面多余的字段移除掉。其中占用很大的一块，就是会话里的图片。比如你给它发一张图，告诉它要改哪里，这张图就会以 Base64 编码的形式存在聊天记录里，有时还会反复出现很多次。但这些图片，基本上在当次会话结束以后就不会",
+      "url": "https://www.v2ex.com/t/1256010",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1255985",
       "title": "AI 做游戏美术资源到底行不行？",
       "summary": "1. 生成单图合成图集 2. agent-sprite-forge 视频转图集 3. gpt-image-2.6-sunburst 做 GIF 这三种方案都试过做不出理想的俯视视角动作游戏素材 各位的经验怎么样能交流一下吗？",
@@ -31,10 +45,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1256010",
-      "title": "写了一个可以清理 claude code 和 codex 会话存储的工具: cc-clean",
-      "summary": "一键使用: ``` npx cc-clean@latest ``` 背景大概就是，我同时在用 Claude 和 Codex，用久了以后，session 会话实在太多了。而我的磁盘又不太够用，一直在疯狂挪东西，又不敢删。然后自己仔细研究过它们的底层设计，发现有些冗余字段其实是可以清理的。就是在不影响 resume 的前提下，尽可能保留会话，把里面多余的字段移除掉。其中占用很大的一块，就是会话里的图片。比如你给它发一张图，告诉它要改哪里，这张图就会以 Base64 编码的形式存在聊天记录里，有时还会反复出现很多次。但这些图片，基本上在当次会话结束以后就不会",
-      "url": "https://www.v2ex.com/t/1256010",
+      "id": "v2hot-1256011",
+      "title": "GROK 是否有故障了？聊天记录全没，新对话会上隐私锁无法查看",
+      "summary": "",
+      "url": "https://www.v2ex.com/t/1256011",
       "source": "V2EX"
     },
     {
