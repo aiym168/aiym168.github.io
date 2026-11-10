@@ -1,0 +1,8 @@
+{
+  "enabled": false,
+  "_help": "推广链接 / 邀请码配置。enabled 改成 true 才生效；by_id 按条目 id 匹配，by_domain 按官网域名匹配。url 留空只显示邀请码；填了 url 的链接会自动加 rel=\"sponsored nofollow\"。说明见 /workspace/seo/MONETIZE.md。",
+  "by_id": {},
+  "by_domain": {
+    "_example.com": {"url": "", "code": "", "note": "示例：把 _example.com 改成平台域名，如 siliconflow.cn"}
+  }
+}

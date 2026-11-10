@@ -142,8 +142,8 @@ CFG = load_cfg()
 SITE_NAME = CFG["site_name"]
 CANONICAL = CFG["canonical"]
 META_DESC = (
-    f"{SITE_NAME}汇总大模型免费API、免费GPT、Claude免费、DeepSeek免费额度、"
-    f"AI工具免费、免费GPU与GitHub热门项目，每小时更新，标注是否需绑卡、实名与国内直连。"
+    "免费AI资源每小时更新：大模型免费API、免费Token、免费GPU、AI工具免费额度和AI羊毛，"
+    "逐条标注是否绑卡、实名、国内能否直连。"
 )
 
 
@@ -385,7 +385,8 @@ def topnav(prefix="./"):
     links = (f'<a class="nav-hot" href="{prefix}deals/index.html" title="全球优惠情报中心">优惠情报</a>'
              f'<a href="{prefix}deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a>'
              f'<a href="{prefix}radio/index.html" title="AI 羊毛电台 · 每天三分钟听完">电台</a>'
-             f'<a class="nav-wan" href="https://wan.is-my.app/" title="玩点啥：今日热榜、你画我猜、打字背单词、在线工具">玩点啥</a>') + links
+             f'<a class="nav-wan" href="https://wan.is-my.app/" title="玩点啥：今日热榜、你画我猜、打字背单词、在线工具">玩点啥</a>'
+             f'<a href="https://wan.is-my.app/gongju/" title="免费在线工具大全：图片压缩、PDF合并、二维码、房贷个税计算器">免费工具</a>') + links
     links += f'<a href="{prefix}m/board.html" title="匿名留言板 · 星际信号站">留言板</a>'
     links += f'<a href="{prefix}m/status.html" title="更新动态">更新动态</a>'
     return f"""
@@ -407,7 +408,8 @@ def topnav(prefix="./"):
 def site_footer(prefix="./", extra="") -> str:
     return f"""<footer>
   <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}radio/index.html">AI 羊毛电台</a> · <a href="{prefix}live/">AI 羊毛信号站（直播）</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}feed.atom">Atom</a> · <a href="{prefix}digest/today.txt">今日速递</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
+  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}radio/index.html">AI 羊毛电台</a> · <a href="{prefix}live/">AI 羊毛信号站（直播）</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}feed.atom">Atom</a> · <a href="{prefix}digest/today.txt">今日速递</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a></div>
+  <div class="foot-links">免费在线工具：<a href="https://wan.is-my.app/gongju/">免费在线工具大全</a> · <a href="https://wan.is-my.app/image-compress/">图片压缩</a> · <a href="https://wan.is-my.app/pdf-merge/">PDF 合并</a> · <a href="https://wan.is-my.app/id-photo/">证件照换底色</a> · <a href="https://wan.is-my.app/qrcode/">二维码生成器</a> · <a href="https://wan.is-my.app/fangdai/">房贷计算器</a> · <a href="https://wan.is-my.app/geshui/">个税计算器</a> · <a href="https://wan.is-my.app/fanjian/">繁简转换</a> · <a href="https://wan.is-my.app/json/">JSON 格式化</a> · <a href="https://hot.is-my.app/">今日热榜</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>"""
 
 
@@ -632,6 +634,36 @@ def card_text(it: dict) -> str:
     return " ".join(str(b) for b in bits if b)
 
 
+def _load_aff() -> dict:
+    """affiliate.json: optional referral links / invite codes. Empty = plain links everywhere (default)."""
+    try:
+        return json.loads((Path(__file__).resolve().parent / "affiliate.json").read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+AFF = _load_aff()
+
+
+def aff_link(it: dict):
+    """Returns (url, rel, invite_code). Matches by item id first, then by the link's domain."""
+    go = it.get("start_url") or it.get("url") or ""
+    rel = "noopener noreferrer"
+    if not AFF.get("enabled"):
+        return go, rel, ""
+    from urllib.parse import urlparse
+    host = (urlparse(go).hostname or "").lower()
+    e = (AFF.get("by_id") or {}).get(str(it.get("id"))) or next(
+        (v for k, v in (AFF.get("by_domain") or {}).items() if host == k or host.endswith("." + k)), None)
+    if not e:
+        return go, rel, ""
+    return (e.get("url") or go), ("sponsored nofollow noopener noreferrer" if e.get("url") else rel), (e.get("code") or "")
+
+
+def aff_note(code: str) -> str:
+    return f' <span class="aff-code" title="填写邀请码通常双方都有额外奖励">邀请码 <b>{esc(code)}</b></span>' if code else ""
+
+
 def card_deal(it: dict, prefix: str = "") -> str:
     st = it.get("status") or "unverified"
     path = prefix + it["_path"]
@@ -646,7 +678,7 @@ def card_deal(it: dict, prefix: str = "") -> str:
         f'data-{k}="{esc(it.get(k) or "unknown")}"'
         for k in ("module", "requires_card", "requires_realname", "china_accessible", "type", "expiry_kind", "status")
     )
-    go = it.get("start_url") or it.get("url")
+    go, go_rel, go_code = aff_link(it)
     return f"""
 <article class="card{' pin-card' if pin else ''}" id="i-{esc(it['_slug'])}" data-id="{esc(it['id'])}" data-share-url="{esc(CANONICAL + it['_path'])}" {attrs} data-pub="{esc(it.get('published_at') or '')}" data-exp="{esc(it.get('expires_at') or '')}" data-text="{esc(card_text(it))}">
   <div class="card-top">{src_avatar(it, prefix)}<span class="src-name">{esc(it.get('source') or '')}{(' · @' + esc(it['author'])) if it.get('author') and it.get('source') == 'X' else ''}</span>{badge}<span class="st st-{STATUS_CLASS.get(st, 'muted')}" data-s-st>{esc(STATUS_LABEL.get(st, '未核实'))}</span></div>
@@ -656,7 +688,7 @@ def card_deal(it: dict, prefix: str = "") -> str:
   <div class="facts">{fact_badges(it)}</div>
   {how}
   <div class="trust">{trust_line(it)}</div>
-  <div class="linkrow"><a href="{esc(path)}">详情</a><a href="{esc(go)}" target="_blank" rel="noopener noreferrer">{'官网' if pin else '原文'} ↗</a><a class="report" href="{esc(issue_link(it))}" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag" data-s-mod>{esc(it.get('module_name') or '')}</span></div>
+  <div class="linkrow"><a href="{esc(path)}">详情</a><a href="{esc(go)}" target="_blank" rel="{go_rel}">{'官网' if pin else '原文'} ↗</a>{aff_note(go_code)}<a class="report" href="{esc(issue_link(it))}" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag" data-s-mod>{esc(it.get('module_name') or '')}</span></div>
   {SHARE_ROW}
 </article>"""
 
@@ -786,7 +818,7 @@ def write_item_pages(items: list[dict], all_for_related: list[dict]) -> list[str
                 {"@type": "ListItem", "position": 3, "name": t, "item": canonical},
             ]},
         ]
-        go = it.get("start_url") or it.get("url")
+        go, go_rel, go_code = aff_link(it)
         page = f"""{head_block(page_title, desc, canonical, t, pubdate=it.get('published_at'), extra_ld=ld)}
 {page_shell_start("../", "detail")}
 <div class="wrap" data-share-url="{esc(canonical)}">
@@ -803,7 +835,7 @@ def write_item_pages(items: list[dict], all_for_related: list[dict]) -> list[str
     <table class="facts-table">{''.join(rows)}</table>
     {f'<ul class="pin-feats">{feats}</ul>' if feats else ''}
     {f'<div class="how"><strong>怎么领：</strong><span data-s-how>{esc(it["how"])}</span></div>' if it.get('how') else '<p class="note">原文没有写明具体领取步骤，请打开原文或官网查看。</p>'}
-    <p class="actions"><a class="btn primary" href="{esc(go)}" target="_blank" rel="noopener noreferrer">{'打开官网' if it.get('pinned') else '打开原文'} ↗</a>
+    <p class="actions"><a class="btn primary" href="{esc(go)}" target="_blank" rel="{go_rel}">{'打开官网' if it.get('pinned') else '打开原文'} ↗</a>{aff_note(go_code)}
     <a class="btn" href="../{esc(mhref)}">同模块更多</a>
     <a class="btn" href="{esc(issue_link(it))}" target="_blank" rel="noopener">报错 / 已过期</a></p>
     {f'<h3>原文中的链接</h3><ul class="plain">{links}</ul>' if links else ''}
@@ -1465,7 +1497,18 @@ def build():
     website_ld = {"@context": "https://schema.org", "@type": "WebSite", "name": SITE_NAME, "url": CANONICAL, "description": META_DESC,
                   "inLanguage": "zh-CN", "potentialAction": {"@type": "SearchAction", "target": f"{CANONICAL}?q={{search_term_string}}",
                                                              "query-input": "required name=search_term_string"}}
-    page = f"""{head_block(f"{SITE_NAME} · {ym} · 大模型免费API / 免费GPU / AI工具免费", META_DESC, CANONICAL, SITE_NAME + " · " + ym, extra_ld=[website_ld])}
+    home_faq = [
+        ("这个网站是免费的吗？", "完全免费。AI大模型免费资源导航不收费、不用注册，收录的也都是免费或有免费额度的 AI 资源；置顶条目为编辑推荐，非广告、未收费。"),
+        ("哪里能找到免费的大模型 API？", "看「大模型免费API」栏目：DeepSeek、通义千问、智谱、Kimi、Gemini 等平台的免费额度和新人赠送 Token 都在这里，每条标注是否需要绑卡和实名。"),
+        ("有免费的 GPU 和 AI 工具吗？", "有。免费 GPU 算力、AI 工具免费试用、免费课程分别在对应栏目，每小时自动更新，过期的会自动归档。"),
+        ("国内能直接用吗？", "每条都标注了「国内能否直连」，看不到明确说明的会写“未注明”，不替你猜。"),
+        ("还有其他免费工具吗？", "有，姊妹站「玩点啥」提供 30 多个免费在线工具（图片压缩、PDF 合并、证件照换底色、二维码、房贷个税计算器），地址 wan.is-my.app/gongju/。"),
+    ]
+    faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in home_faq]}
+    faq_section = ('<section class="section" id="faq"><div class="sec-head"><span class="sec-idx">常见问题</span><h2>免费 AI 资源常见问题</h2></div><div class="panel-box">'
+                   + "".join(f"<h3>{esc(q)}</h3><p>{esc(a)}</p>" for q, a in home_faq) + "</div></section>")
+    page = f"""{head_block(f"免费AI资源导航 - 大模型免费API、免费GPU、AI羊毛", META_DESC, CANONICAL, SITE_NAME + " · " + ym, extra_ld=[website_ld, faq_ld])}
 {page_shell_start("./", "home")}
 <header class="hero-xl hero-brain home-hero">
   <div class="hero-xl-inner">
@@ -1523,6 +1566,7 @@ def build():
     </div>
   </section>
   {arch_section}
+  {faq_section}
   {site_footer("./", "生成于 " + now.strftime("%Y-%m-%d %H:%M") + " 北京时间")}
 </main>
 {page_scripts()}
