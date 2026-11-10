@@ -3,31 +3,31 @@
   "canonical": "https://aiym168.github.io/",
   "version": "3.0.0",
   "curation_version": "2026-11-09.c3",
-  "updated_at_label": "2026-11-11 01:17 Asia/Shanghai",
-  "generated_at_label": "2026-11-11 01:17 Asia/Shanghai",
-  "generated_at": "2026-11-11T01:17:01+08:00",
-  "next_update_label": "02:07 北京时间（约）",
+  "updated_at_label": "2026-11-11 03:05 Asia/Shanghai",
+  "generated_at_label": "2026-11-11 03:05 Asia/Shanghai",
+  "generated_at": "2026-11-11T03:05:44+08:00",
+  "next_update_label": "03:07 北京时间（约）",
   "date": "2026-11-11",
   "counts": {
-    "deals": 96,
-    "free_resources": 96,
+    "deals": 95,
+    "free_resources": 95,
     "github_hot": 30,
-    "hot": 15,
-    "today_new": 5,
+    "hot": 18,
+    "today_new": 3,
     "archived": 8,
     "modules": {
-      "damoxing-mianfei-api": 22,
+      "damoxing-mianfei-api": 24,
       "ai-huiyuan-shiyong": 6,
-      "ai-kaifa-gongju": 47,
+      "ai-kaifa-gongju": 44,
       "mianfei-gpu-yunfuwu": 8,
       "keji-app-xianmian": 5,
       "ai-kecheng-huodong": 5,
       "qita-keji": 3,
       "github-hot": 30,
-      "hot-topics": 15
+      "hot-topics": 18
     },
     "api_pages": 2,
-    "next_update_label": "02:07 北京时间（约）"
+    "next_update_label": "03:07 北京时间（约）"
   },
   "definitions": {
     "free_resources": "免费资源 = 去重后仍在有效期内的资源条目（含置顶与编辑整理条目；不含 GitHub 新热门与最近热议；已过期、或发布超过 30 天且没有未来截止日期的自动收录条目会移入归档）。",
@@ -39,17 +39,21 @@
   "curation": {
     "archived": 8,
     "deadline_extracted": 5,
-    "drop:duplicate": 48,
+    "drop:duplicate": 47,
     "drop:empty_summary": 9,
-    "drop:negative_signal": 76,
-    "drop:no_clear_offer": 106,
-    "drop:not_ai": 126,
+    "drop:negative_signal": 81,
+    "drop:no_clear_offer": 112,
+    "drop:not_ai": 128,
     "drop:too_old_pre2025": 44,
-    "google_news_resolved": 141,
-    "google_news_total": 141,
-    "kept_total": 103,
+    "google_news_resolved": 152,
+    "google_news_total": 152,
+    "kept_total": 102,
     "net:gnews_cache_hit": 141,
-    "raw_total": 512
+    "net:gnews_resolved_net": 11,
+    "net:tco_expanded": 2,
+    "net:tco_failed": 1,
+    "new_this_run": 3,
+    "raw_total": 523
   },
   "cli": {
     "download_inspect_run": [

@@ -3,56 +3,21 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 15,
-  "generated_at": "2026-11-11T01:17:01+08:00",
+  "count": 18,
+  "generated_at": "2026-11-11T03:05:44+08:00",
   "items": [
     {
-      "id": "hnhot-50429068",
-      "title": "Claude Fable 5.2和 Mythos 5.2",
+      "id": "hnhot-50438318",
+      "title": "AI 的使用会产生脆弱的代码库",
       "summary": "",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
       "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50437106",
-      "title": "烟花 AI 安全漏洞影响 Notion 及其客户",
-      "summary": "",
-      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50442303",
-      "title": "Gemini 4 Carbon 现已上市",
-      "summary": "",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-      "source": "Hacker News"
-    },
-    {
-      "id": "v2hot-1255953",
-      "title": "你对 AI 说的最多的一句话是什么？",
-      "summary": "对 AI 是的话：1. 按照你的建议实现 2. 评估一下，确保能理解需求（功能）",
-      "url": "https://www.v2ex.com/t/1255953",
-      "source": "V2EX"
     },
     {
       "id": "v2hot-1255967",
       "title": "有什么便宜的 Agent/Coding/Token Plan 推荐吗",
       "summary": "目前正在使用 9.9 元的火山方舟 Agent Plan，据说第三个月起价格会变成大概 40 元/月。我每个月模型 API 使用量不高，除了按量计费有什么高性价比的 Agent/Coding/Token Plan 推荐吗？",
       "url": "https://www.v2ex.com/t/1255967",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1255954",
-      "title": "NUS 给教职工提供了 Claude for Education 订阅——Max 2.5x 似乎在路上了？",
-      "summary": "今天收到学校邮件，NUS 的教职工现在可以付费购买教育版本 Claude 订阅了。虽然学校此前已经提供了 Claude 系列模型的网页端聚合，但是只有网页端接入，并不能使用 API 或者 Claude Code 一类。这次提供的则是直接使用 Claude 官方渠道的账户。使用体验应该和直接官网购买 Claude 一样了，但是使用量不太一样：标准计划：SGD 280 / 年（个人版 Pro 是 SGD 300 / 年）；*至高* 2.5 倍于个人版 Pro 用量 按照我的理解，这个就是传闻中的 Max 2.5x 计划，当然实际消费者版本定价应该就",
-      "url": "https://www.v2ex.com/t/1255954",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1255959",
-      "title": "有没有大佬用的 Linux 桌面端的 Codex，咨询下 Dots 能否直连 Linux？",
-      "summary": "我自己有一台 Ubuntu Server 22.4，目前只能让 Dots 通过 Mac 中转 然后 ssh 访问我的 Ubuntu。这样就得保证我的 Mac 一直在线。我希望我的 Dots 能直连我的 Mac （目前设备列表看不到 Ubuntu，因为我用的 codex cli） ![]( 而 OpenAI 官方目前只支持 Ubuntu 24.04 和 26.04 的桌面版，但我不确定的是升级到这个版本的桌面端，就能让 Dots 直连了吗？## 有没有大佬用的 Linux 桌面端的 Co",
-      "url": "https://www.v2ex.com/t/1255959",
       "source": "V2EX"
     },
     {
@@ -63,17 +28,24 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1255949",
-      "title": "天才程序员陨落，活了 11 天的 Claude 封号了",
-      "summary": "热乎的，刚刚还在写代码，然后 Claude 桌面版 直接退出了。[![Snipaste-2026-11-10-05-31-35.png]( [![Snipaste-2026-11-10-05-31-49.png](",
-      "url": "https://www.v2ex.com/t/1255949",
-      "source": "V2EX"
-    },
-    {
       "id": "v2hot-1255985",
       "title": "AI 做游戏美术资源到底行不行？",
       "summary": "1. 生成单图合成图集 2. agent-sprite-forge 视频转图集 3. gpt-image-2.6-sunburst 做 GIF 这三种方案都试过做不出理想的俯视视角动作游戏素材 各位的经验怎么样能交流一下吗？",
       "url": "https://www.v2ex.com/t/1255985",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256010",
+      "title": "写了一个可以清理 claude code 和 codex 会话存储的工具: cc-clean",
+      "summary": "一键使用: ``` npx cc-clean@latest ``` 背景大概就是，我同时在用 Claude 和 Codex，用久了以后，session 会话实在太多了。而我的磁盘又不太够用，一直在疯狂挪东西，又不敢删。然后自己仔细研究过它们的底层设计，发现有些冗余字段其实是可以清理的。就是在不影响 resume 的前提下，尽可能保留会话，把里面多余的字段移除掉。其中占用很大的一块，就是会话里的图片。比如你给它发一张图，告诉它要改哪里，这张图就会以 Base64 编码的形式存在聊天记录里，有时还会反复出现很多次。但这些图片，基本上在当次会话结束以后就不会",
+      "url": "https://www.v2ex.com/t/1256010",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256000",
+      "title": "写了个 Claude Code skill：每天自动抓 AI 编程资讯出推文草稿，我确认后才发到",
+      "summary": "在做一个 API 中转（origincoder.com）。在推特上发了三个月内容，每天要找素材、写文案、核对链接，很耗时间，所以把这套流程写成了一个 Claude Code skill，叫 `x-daily-post`。先说清楚它是什么、不是什么：**它不是自动发推机器人。** 它只负责「抓取 + 出草稿」，发不发由我在对话里明确说了才算。1. **抓取**：先抓 Hacker News 和官方博客 / Releases 的 RSS （免费），最后才调一次 X 搜索做补充。2. **去重**：按来源链接对照已发历史去重，前几天出现过的",
+      "url": "https://www.v2ex.com/t/1256000",
       "source": "V2EX"
     },
     {
@@ -105,10 +77,59 @@
       "source": "V2EX"
     },
     {
-      "id": "xhot-xrss-3450792597",
-      "title": "只是说..你不需要 AI 来拥有一个免费的 vtuber 模型",
-      "summary": "",
-      "url": "https://x.com/vtubernook/status/2119946647992205424",
+      "id": "xhot-xrss-6027003949",
+      "title": "我在达特茅斯的同事开发了一个非常酷的工具，用于进行 AI 验证的家庭作业。它叫做",
+      "summary": "我在达特茅斯的同事开发了一个非常酷的工具，用于进行 AI 验证的家庭作业。它被称为 — 学生们配对并互相进行现场视频辩论。你可以获得一份成绩单，如果你愿意的话，可以使用 AI 作为法官。1/",
+      "url": "https://x.com/paulnovosad/status/2120155142674620590",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-5572154862",
+      "title": "Meshy 现在拥有自己的街机。我们使用 Meshy、Claude 和 GPT 在 3 天内制作了 18 款游戏。雪球工作坊从 ju",
+      "summary": "Meshy 现在拥有自己的街机。我们使用 Meshy、Claude 和 GPT 在 3 天内制作了 18 款游戏。Snow Globe Workshop 从仅有 1 个提示到可在 44 分钟内玩，共获得 592 个积分。这里的每个游戏都是用 Meshy 构建的，你的游戏也可能是下一个。立即玩",
+      "url": "https://x.com/MeshyAI/status/2120188939822833818",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-7215795111",
+      "title": "AI 渗透测试培训计划|预订免费演示 AI 和 LLM 应用程序正在带来新的安全挑战",
+      "summary": "AI 渗透测试培训计划|预订免费演示 AI 和 LLM 应用程序正在带来新的安全挑战。你知道如何测试它们吗？您将学到什么：LLM 架构和安全性 快速注入和数据提取 OWAS",
+      "url": "https://x.com/hackinarticles/status/2120175815812121030",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-6932246612",
+      "title": "一平衡。约 150 个模型。在游标中工作。Hostinger Credits 现在涵盖 AI Builder、Reach、Hostinger Agent 和 GPU Hosti",
+      "summary": "一平衡。约 150 个模型。在游标中工作。Hostinger Credits 现在涵盖 AI Builder、Reach、Hostinger Agent 和 GPU 托管，并通过 AI Router 购买您自己的工具。了解更多 了解更多",
+      "url": "https://x.com/Hostinger/status/2120215197667283001",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-5591090630",
+      "title": "Oracle 和 OpenAI 正在联手帮助初创公司构建产品和运营业务。从 OCI 免费创建开始",
+      "summary": "Oracle 和 OpenAI 正在联手帮助初创公司构建产品和运营业务。从 OCI 免费积分和 ChatGPT Business Premium 开始。然后使用 NetSuite QuickStart 管理财务、创建内部应用程序并跟踪 AI 支出",
+      "url": "https://x.com/evandro_dba/status/2120166188873363617",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-5351795593",
+      "title": "Nuance Labs 推出了 Emma，这是一个免费的 AI 角色，用户可以在其新的 Nuplex 模型上进行视频聊天。Emma c",
+      "summary": "Nuance Labs 推出了 Emma，这是一个免费的 AI 角色，用户可以在其新的 Nuplex 模型上进行视频聊天。Emma 可以同时倾听和说话，在有人说话时点头、微笑和改变自己的外表，就像视频中的真人一样 c",
+      "url": "https://x.com/testingcatalog/status/2119888903742320882",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-2744558136",
+      "title": "为 Grok Bot 模式命名一次，每个后续都会保留在该模式中。免费课程：Grok Bot 的新定制",
+      "summary": "为 Grok Bot 模式命名一次，每个后续都会保留在该模式中。免费课程：Grok Bot 的新自定义代理模式 Grok Bot 个人代理操作系统",
+      "url": "https://x.com/JulianGoldieSEO/status/2120134292919742866",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-6517091038",
+      "title": "在周中之前阻止您的 Grok 机器人燃烧每周限制。免费课程：新 Grok Bot Teams Upda",
+      "summary": "在周中之前阻止您的 Grok 机器人燃烧每周限制。免费课程：新的 Grok Bot Teams 更新太疯狂了！Grok 超级机器人太疯狂了！",
+      "url": "https://x.com/JulianGoldieSEO/status/2120056061524934982",
       "source": "X"
     }
   ]

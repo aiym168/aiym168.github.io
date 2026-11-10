@@ -2,24 +2,27 @@
  "counts": {
   "archived": 8,
   "deadline_extracted": 5,
-  "drop:duplicate": 48,
+  "drop:duplicate": 47,
   "drop:empty_summary": 9,
-  "drop:negative_signal": 76,
-  "drop:no_clear_offer": 106,
-  "drop:not_ai": 126,
+  "drop:negative_signal": 81,
+  "drop:no_clear_offer": 112,
+  "drop:not_ai": 128,
   "drop:too_old_pre2025": 44,
-  "google_news_resolved": 141,
-  "google_news_total": 141,
-  "kept_total": 103,
+  "google_news_resolved": 152,
+  "google_news_total": 152,
+  "kept_total": 102,
   "net:gnews_cache_hit": 141,
-  "raw_total": 512
+  "net:gnews_resolved_net": 11,
+  "net:tco_expanded": 2,
+  "net:tco_failed": 1,
+  "new_this_run": 3,
+  "raw_total": 523
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "Simstim：Mac 上的本地呼叫转录为.md 文件",
    "我开发了 AI Drake Video 生成器：用一张照片生成派对场景短视频",
-   "RelayRouter 中转自荐，主打低倍率、多模型接入，支持 GPT、Claude、Gemini 等",
    "awesome-free-ai-coding：合法免费的 LLM API 和编码代理",
    "awesome-freellm-apis：来自 40 多个提供商的 134 多个免费 LLM API 和 AI API ",
    "awesome-free-ai-apis：经过验证的免费 AI API、LLM 推理端点",
@@ -28,7 +31,8 @@
    "figwright：免费的双向 Figma MCP 服务器",
    "claudemy：Claudemy，Udemy 和 Coursera 的开源替代品",
    "claude-content-skills：免费的、复制粘贴的 Claude 技能可以运行您的内容增长工厂 - 将创意 ",
-   "unbagrnd：Unbagrnd - 适用于 Windows、macOS、Linux 和 Android 的免费"
+   "unbagrnd：Unbagrnd - 适用于 Windows、macOS、Linux 和 Android 的免费",
+   "OmniCopilot：GitHub Copilot 聊天中包含 1200 多个 AI 模型 - 免费且永久免费"
   ],
   "empty_summary": [
    "我开源了 Ember，它在大约一分钟内部署到 @Cloudflare 的免费层，可与 Slack 兼容的有效负载配合使用",
@@ -42,6 +46,9 @@
    "如何免费获得 Claude 认证：如何免费获得 Claude 认证"
   ],
   "negative_signal": [
+   "在周中之前阻止您的 Grok 机器人燃烧每周限制",
+   "为 Grok Bot 模式命名一次，每个后续都会保留在该模式中",
+   "如何使用 Claude Fable 5.2 进行 SEO 效果如此之好，感觉不合法 FABLE 5.2 昨天发布",
    "在笔记本电脑上运行自己的 JARVIS，离线",
    "将 Day-One Page 工作交给您自己的 SEO 主管",
    "免费课程：这个新的 Claude Agentic 操作系统改变了一切",
@@ -50,26 +57,24 @@
    "Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化",
    "5 个步骤在几分钟内建立免费的 Claude Code SEO 技能 只需 5 个步骤即可在几分钟内建立免费的 Clau",
    "@martinvars 分享：北加州凯撒医疗机构对 AI 编写的超声心动图报告进行了一项随机试验，该试验今天在芝加哥举行",
-   "@mcwilsonky 分享：客户正在询问 AI 该雇用谁",
-   "@higgsfield 分享：开始您的72小时免费希格斯菲尔德 MCP 试用，无限制访问所有顶级视频，图像和音频模型",
-   "@pillitterip 分享：希格斯菲尔德开放了72小时的免费试用版，其 MCP 连接器在 Claude 内拥有无限型",
-   "一项由初级保健医生使用 LLM 转诊给专科医生的随机试验（与无 AI 相比）大大改善了工作流程"
+   "@mcwilsonky 分享：客户正在询问 AI 该雇用谁"
   ],
   "no_clear_offer": [
+   "Nuance Labs 推出了 Emma，这是一个免费的 AI 角色，用户可以在其新的 Nuplex 模型上进行视频聊天",
+   "Neocloud 不断增加的债务以及大多数 CSP 的负自由现金流导致资本市场开始担心无休止的高水平 AI 投资",
+   "@Hostinger 分享：一平衡，约 150 个模型",
+   "@hackinarticles 分享：AI 渗透测试培训计划 预订免费演示 AI 和 LLM 应用程序正在带来新的安全挑",
+   "Meshy 现在拥有自己的街机",
+   "@paulnovosad 分享：我在达特茅斯的同事开发了一个非常酷的工具，用于进行 AI 验证的家庭作业",
    "@vtubernook 分享：只是说..你不需要 AI 来拥有一个免费的 vtuber 模型",
    "有关我们所有 AI Agent 的更多信息，请访问：获取 AI 销售代理的免费指南，请访问",
    "目前 B2B + AI 卡组中最常见的差距：没有证据表明客户为 AI 支付的费用高于其替换的软件",
    "微软申请了一项专利，让 PC 游戏玩家通过与 AI 公司分享未使用的 GPU 能力来赚钱",
    "认识 ZONOS3-Mini：具有语音克隆和单词级控制的开源文本转语音",
-   "我们要求 Claude Fable 5.2 完成达芬奇的飞行器",
-   "@ClaudeDevs 分享：《神鬼寓言 5.2》也提供快速模式",
-   "这可能是有史以来最大的 AI 黑客马拉松：* >6,300 名注册者 * 运行两周（11 月 14 日至 30 日）",
-   "我们的 Frontier Red Team 博客上的新内容：使用 Claude 大规模正式验证软件",
-   "@OpenAI 分享：完整运行花费了 1,213,430 美元的 API 积分，每个不同的本地权限升级漏洞大约需要 1,",
-   "@OpenAI 分享：在这个狭窄的防御者窗口中，我们的目标是将 Daybreak 的访问范围扩大到各种规模的组织、独立研",
-   "@CiscoNetAcad 分享：AI 学习现已推出，我们最新的课程向您展示如何使用 AI 来理解、记住和应用您所学到的"
+   "我们要求 Claude Fable 5.2 完成达芬奇的飞行器"
   ],
   "not_ai": [
+   "@aakashgupta 分享：从理论上讲，从尼泊尔这个机场起飞的飞机无法起飞",
    "给 Hermes 一个你可以真正阅读的记忆",
    "Inkling 2 Small 可在 @opencode 上获取，限时免费",
    "ForTy 2020 地图和 2017-2025 年时间序列发布于 @ScientificData",
@@ -80,8 +85,7 @@
    "OpenSourceWeek 第 4 天：优化并行策略 DualPipe - 一种双向管道并行算法",
    "OpenSourceWeek 第 3 天：DeepGEMM 隆重推出 DeepGEMM - 一个 FP8 GEMM 库",
    "OpenSourceWeek 第一天：FlashMLA 很荣幸分享 FlashMLA - 我们用于 Hopper GPU",
-   "6) 3D GPU 毛皮模拟",
-   "AppTraction –适用于 Apple App Store Connect 的本地 Mac 应用程序"
+   "6) 3D GPU 毛皮模拟"
   ],
   "too_old_pre2025": [
    "🤗2021 年我们将加大对 @tensorflow 的投资！",
@@ -98,15 +102,15 @@
    "今天，我们很高兴宣布与 @awscloud 建立新的合作伙伴关系！ 🔥"
   ]
  },
- "generated_at": "2026-11-11T01:17:01+08:00",
+ "generated_at": "2026-11-11T03:05:44+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-11T01:17:01+08:00",
+  "checked_at": "2026-11-11T03:05:44+08:00",
   "counts": {
    "ok": 96
   },
   "hidden": 0
  },
- "seconds": 0.2,
+ "seconds": 4.9,
  "side": {
   "github_hot": {
    "kept": 30,
@@ -114,10 +118,10 @@
   },
   "hot_topics": {
    "drop:negative_signal": 6,
-   "drop:not_ai": 7,
-   "drop:not_ai_strict": 3,
-   "kept": 15,
-   "raw": 31
+   "drop:not_ai": 9,
+   "drop:not_ai_strict": 5,
+   "kept": 18,
+   "raw": 38
   }
  }
 }
