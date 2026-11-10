@@ -4,17 +4,19 @@
   "deadline_extracted": 5,
   "drop:duplicate": 13,
   "drop:empty_summary": 9,
-  "drop:negative_signal": 71,
-  "drop:no_clear_offer": 95,
-  "drop:not_ai": 85,
+  "drop:negative_signal": 70,
+  "drop:no_clear_offer": 97,
+  "drop:not_ai": 84,
   "drop:too_old_pre2025": 44,
-  "google_news_resolved": 140,
-  "google_news_total": 140,
-  "kept_total": 96,
+  "google_news_resolved": 141,
+  "google_news_total": 141,
+  "kept_total": 97,
   "net:gnews_cache_hit": 140,
+  "net:gnews_resolved_net": 1,
+  "net:tco_expanded": 1,
   "net:tco_failed": 1,
   "new_this_run": 8,
-  "raw_total": 413
+  "raw_total": 414
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -58,6 +60,7 @@
    "一项由初级保健医生使用 LLM 转诊给专科医生的随机试验（与无 AI 相比）大大改善了工作流程"
   ],
   "no_clear_offer": [
+   "@vtubernook 分享：只是说..你不需要 AI 来拥有一个免费的 vtuber 模型",
    "有关我们所有 AI Agent 的更多信息，请访问：获取 AI 销售代理的免费指南，请访问",
    "目前 B2B + AI 卡组中最常见的差距：没有证据表明客户为 AI 支付的费用高于其替换的软件",
    "微软申请了一项专利，让 PC 游戏玩家通过与 AI 公司分享未使用的 GPU 能力来赚钱",
@@ -68,8 +71,7 @@
    "我们的 Frontier Red Team 博客上的新内容：使用 Claude 大规模正式验证软件",
    "@OpenAI 分享：完整运行花费了 1,213,430 美元的 API 积分，每个不同的本地权限升级漏洞大约需要 1,",
    "@OpenAI 分享：在这个狭窄的防御者窗口中，我们的目标是将 Daybreak 的访问范围扩大到各种规模的组织、独立研",
-   "@CiscoNetAcad 分享：AI 学习现已推出，我们最新的课程向您展示如何使用 AI 来理解、记住和应用您所学到的",
-   "@ZackShutt 分享：微软获得了一项专利，可以将游戏电脑的闲置 GPU 出租给 AI 公司"
+   "@CiscoNetAcad 分享：AI 学习现已推出，我们最新的课程向您展示如何使用 AI 来理解、记住和应用您所学到的"
   ],
   "not_ai": [
    "给 Hermes 一个你可以真正阅读的记忆",
@@ -100,19 +102,19 @@
    "今天，我们很高兴宣布与 @awscloud 建立新的合作伙伴关系！ 🔥"
   ]
  },
- "generated_at": "2026-11-10T23:00:55+08:00",
- "seconds": 0.4,
+ "generated_at": "2026-11-10T23:01:13+08:00",
+ "seconds": 0.8,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 7,
-   "drop:not_ai": 10,
-   "drop:not_ai_strict": 4,
-   "kept": 15,
-   "raw": 36
+   "drop:negative_signal": 6,
+   "drop:not_ai": 8,
+   "drop:not_ai_strict": 3,
+   "kept": 12,
+   "raw": 29
   }
  }
 }
