@@ -188,6 +188,55 @@ def build_script(now: datetime, edition: str) -> dict:
     return {"segments": segs}
 
 
+CUR = {"HKD": "港币", "USD": "美元", "CNY": "人民币", "RMB": "人民币", "EUR": "欧元", "GBP": "英镑", "JPY": "日元", "SGD": "新加坡元", "USDT": "U S D T", "USDC": "U S D C"}
+
+
+def tts_norm(text: str, lex: set[str]) -> str:
+    """Only for the voice: keep the displayed transcript untouched."""
+    t = re.sub(r"(\d+(?:\.\d+)?)\s*%", r"百分之\1", text)
+    t = re.sub(r"[（）()\[\]—–]", "，", t)
+    t = re.sub(r"，\s*，", "，", t)
+
+    def word(m):
+        w = m.group(0)
+        if w in CUR:
+            return CUR[w]
+        if w.lower() in lex:
+            return w
+        parts = re.findall(r"[A-Z]+(?=[A-Z][a-z])|[A-Z]?[a-z]+|[A-Z]+|\d+", w)
+        out = []
+        for p_ in parts:
+            if p_.isdigit() or p_.lower() in lex and not (p_.isupper() and len(p_) <= 5):
+                out.append(p_); continue
+            if p_.isupper() or len(p_) <= 3:
+                out.append(" ".join(p_)); continue
+            # greedy split into dictionary words (e.g. roundtable -> round table), else spell it
+            q, seg, ok = p_.lower(), [], True
+            while q:
+                for k in range(len(q), 1, -1):
+                    if q[:k] in lex:
+                        seg.append(q[:k]); q = q[k:]; break
+                else:
+                    ok = False; break
+            out.append(" ".join(seg) if ok else " ".join(p_))
+        return " " + " ".join(out) + " "
+    t = re.sub(r"[A-Za-z][A-Za-z0-9]*", word, t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def load_lex(d: Path) -> set[str]:
+    out = set()
+    try:
+        with open(d / "lexicon-us-en.txt", encoding="utf-8") as f:
+            for line in f:
+                w = line.split(" ", 1)[0].strip()
+                if w:
+                    out.add(w.lower())
+    except Exception:
+        pass
+    return out
+
+
 def synth(segs: list[dict], out_mp3: Path) -> float:
     import numpy as np
     import sherpa_onnx
@@ -202,6 +251,7 @@ def synth(segs: list[dict], out_mp3: Path) -> float:
             num_threads=int(os.environ.get("RADIO_THREADS", "2")), provider="cpu"),
         rule_fsts=fsts, max_num_sentences=1)
     tts = sherpa_onnx.OfflineTts(cfg)
+    lexset = load_lex(d)
     sid = int(os.environ.get("RADIO_SID", "3"))
     speed = float(os.environ.get("RADIO_SPEED", "1.05"))
     pcs, t = [], 0.0
@@ -209,7 +259,7 @@ def synth(segs: list[dict], out_mp3: Path) -> float:
     lead = np.zeros(int(SR * 0.3), dtype=np.float32)
     pcs.append(lead); t += len(lead) / SR
     for s in segs:
-        a = tts.generate(s["text"], sid=sid, speed=speed)
+        a = tts.generate(tts_norm(s["text"], lexset), sid=sid, speed=speed)
         x = np.asarray(a.samples, dtype=np.float32)
         s["start"] = round(t, 2)
         pcs.append(x); t += len(x) / SR
