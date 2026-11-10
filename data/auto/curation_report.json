@@ -3,18 +3,20 @@
   "archived": 8,
   "deadline_extracted": 5,
   "drop:duplicate": 13,
-  "drop:empty_summary": 8,
-  "drop:negative_signal": 66,
-  "drop:no_clear_offer": 88,
-  "drop:not_ai": 70,
-  "drop:too_old_pre2025": 40,
-  "google_news_resolved": 124,
-  "google_news_total": 124,
-  "kept_total": 73,
+  "drop:empty_summary": 9,
+  "drop:negative_signal": 70,
+  "drop:no_clear_offer": 94,
+  "drop:not_ai": 72,
+  "drop:too_old_pre2025": 44,
+  "google_news_resolved": 132,
+  "google_news_total": 132,
+  "kept_total": 74,
   "net:gnews_cache_hit": 124,
+  "net:gnews_resolved_net": 8,
+  "net:tco_expanded": 4,
   "net:tco_failed": 1,
-  "new_this_run": 3,
-  "raw_total": 358
+  "new_this_run": 4,
+  "raw_total": 376
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -33,6 +35,7 @@
    "HaizFlow：免费的 Windows 桌面应用程序"
   ],
   "empty_summary": [
+   "我开源了 Ember，它在大约一分钟内部署到 @Cloudflare 的免费层，可与 Slack 兼容的有效负载配合使用",
    "# AI # IA # MATHEMATIQUES 印度政府免费在线课程：8个学习 AI、数学",
    "@appleinsider 分享：随着苹果扩大面向学生和企业的教育计划，土耳其即将推出免费编码课程和 AI 制造培训",
    "今天免费 GPU",
@@ -43,6 +46,10 @@
    "如何免费获得 Claude 认证：如何免费获得 Claude 认证"
   ],
   "negative_signal": [
+   "免费课程：这个新的 Claude Agentic 操作系统改变了一切",
+   "@higgsfield_ai 分享：开始您的72小时免费希格斯菲尔德 MCP 试用，无限制访问所有顶级视频，图像和音频模",
+   "在 Google 的 AI 答案中引用您的业务",
+   "Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化",
    "5 个步骤在几分钟内建立免费的 Claude Code SEO 技能 只需 5 个步骤即可在几分钟内建立免费的 Clau",
    "@martinvars 分享：北加州凯撒医疗机构对 AI 编写的超声心动图报告进行了一项随机试验，该试验今天在芝加哥举行",
    "@mcwilsonky 分享：客户正在询问 AI 该雇用谁",
@@ -50,27 +57,25 @@
    "@pillitterip 分享：希格斯菲尔德开放了72小时的免费试用版，其 MCP 连接器在 Claude 内拥有无限型",
    "一项由初级保健医生使用 LLM 转诊给专科医生的随机试验（与无 AI 相比）大大改善了工作流程",
    "@JulianGoldieSEO 分享：在做出重大决策之前，管理自己的 AI 会议室",
-   "今天，我们将发布@ honeyflowai，这是您在金融市场上的个人 AI",
-   "我的最后一项开源技能 /no-ai-slop 显然触动了 4K GitHub star 的神经",
-   "免费课程：这个 Hermes Agent OS 设置绝对是狂野的",
-   "我将 12 本免费的 MIT AI 教科书喂给了 Claude",
-   "据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来就像是免费的 AI 视频"
+   "今天，我们将发布@ honeyflowai，这是您在金融市场上的个人 AI"
   ],
   "no_clear_offer": [
+   "我们要求 Claude Fable 5.2 完成达芬奇的飞行器",
+   "@ClaudeDevs 分享：《神鬼寓言 5.2》也提供快速模式",
+   "这可能是有史以来最大的 AI 黑客马拉松：* >6,300 名注册者 * 运行两周（11 月 14 日至 30 日）",
+   "我们的 Frontier Red Team 博客上的新内容：使用 Claude 大规模正式验证软件",
+   "@OpenAI 分享：完整运行花费了 1,213,430 美元的 API 积分，每个不同的本地权限升级漏洞大约需要 1,",
+   "@OpenAI 分享：在这个狭窄的防御者窗口中，我们的目标是将 Daybreak 的访问范围扩大到各种规模的组织、独立研",
    "@CiscoNetAcad 分享：AI 学习现已推出，我们最新的课程向您展示如何使用 AI 来理解、记住和应用您所学到的",
    "@ZackShutt 分享：微软获得了一项专利，可以将游戏电脑的闲置 GPU 出租给 AI 公司",
    "我要求 Muse 测试一个新的免费 AI 模型...它创建了一个 Modal 帐户，开始在 API 后面部署模型",
    "免费 ChatGPT 用户现在可以制作动画 GIF，Google 将其视频模型的价格降低了约 30%",
    "ICYMI：Claude Fable 5.2包括高达50%的 Claude 订阅，直至11月16日",
-   "请点击以下链接，在 CLI 中领取旅行基金或 RUN/CLAIM 旅行基金",
-   "@claudeai 分享：我们很高兴看到这么多创始人加入 Claude Startups 计划",
-   "我们将为 Max 和 Team 套餐推出每月 Claude Platform API 点数：Max 5x：$ 100 M",
-   "@omarsar0 分享：对人类没有任何反对，他们可以自由决定他们想要什么样的模特",
-   "@ClaudeDevs 分享：云会话已正式推出，超出研究预览范围",
-   "每月 API 积分现在适用于 Max 和 Team 套餐：$ 100适用于 Max 5x 套餐",
-   "@AndroidAuth 分享：一份新的报告揭示了三星传闻中的 Galaxy AI Premium 订阅可能是什么样子"
+   "请点击以下链接，在 CLI 中领取旅行基金或 RUN/CLAIM 旅行基金"
   ],
   "not_ai": [
+   "Inkling 2 Small 可在 @opencode 上获取，限时免费",
+   "ForTy 2020 地图和 2017-2025 年时间序列发布于 @ScientificData",
    "@lydiahallie 分享：神鬼寓言5.2来了，我注意到它在验证结果方面非常彻底，远远超过 5.1",
    "X 现在支持 iOS 和 Android 上的剪辑",
    "让我的年长家庭成员摆脱 facebook Ai",
@@ -80,11 +85,13 @@
    "OpenSourceWeek 第一天：FlashMLA 很荣幸分享 FlashMLA - 我们用于 Hopper GPU",
    "6) 3D GPU 毛皮模拟",
    "我制作了34种风格的每个图标，包括 Christmas、Kawaii 和 Soft 3D",
-   "TimeScroll：Mac 上 Rewind 的开源本地替代品",
-   "每周转售售价中位数的免费开放 API",
-   "Brick Atlas：在一张可缩放的画布上探索1000多个乐高套装"
+   "TimeScroll：Mac 上 Rewind 的开源本地替代品"
   ],
   "too_old_pre2025": [
+   "🤗2021 年我们将加大对 @tensorflow 的投资！",
+   "在 Hugging Face，我们致力于帮助您轻松构建和服务您自己的 LLM 🧑‍💻👨‍💻👩‍💻",
+   "开源",
+   "感谢@srush_nlp，我们现在有了一个利用 Transformer 的 NER 训练模块示例。300线以下的公司",
    "GPT-Neo 是 GPT3 的 #OpenSource 堂兄，几乎可以在 #NLP 中执行任何操作，从情感分析到编写 ",
    "开源社区很棒🤗",
    "📣 召集所有游戏开发者和人工智能爱好者！🎮",
@@ -92,15 +99,11 @@
    "想要不带 GPU 的快速变形金刚模型吗？！ 🧐",
    "您现在可以通过无缝 @wandb 集成可视化 Transformers 训练性能。比较超参数，出",
    "在单个 GPU 上微调*30 亿*参数模型？",
-   "今天，我们很高兴宣布与 @awscloud 建立新的合作伙伴关系！ 🔥",
-   "Hugging Faceから日本へのお知らせです！",
-   "变形金刚中的第一个 RNN！ 🤯",
-   "上周@MetaAI公开发布了巨大的LM，参数高达☄️30B。开源的伟大胜利🎉",
-   "上周，EleutherAI 发布了 GPT Neo 的两个检查点，GPT Neo 是 OpenAI 的 GPT-3 的“"
+   "今天，我们很高兴宣布与 @awscloud 建立新的合作伙伴关系！ 🔥"
   ]
  },
- "generated_at": "2026-11-10T12:25:59+08:00",
- "seconds": 0.3,
+ "generated_at": "2026-11-10T12:26:55+08:00",
+ "seconds": 3.7,
  "side": {
   "github_hot": {
    "kept": 30,
@@ -108,10 +111,10 @@
   },
   "hot_topics": {
    "drop:negative_signal": 5,
-   "drop:not_ai": 9,
-   "drop:not_ai_strict": 5,
-   "kept": 15,
-   "raw": 34
+   "drop:not_ai": 12,
+   "drop:not_ai_strict": 8,
+   "kept": 14,
+   "raw": 39
   }
  }
 }
