@@ -2,33 +2,34 @@
  "counts": {
   "archived": 8,
   "deadline_extracted": 5,
-  "drop:duplicate": 13,
+  "drop:duplicate": 48,
   "drop:empty_summary": 9,
-  "drop:negative_signal": 70,
-  "drop:no_clear_offer": 97,
-  "drop:not_ai": 84,
+  "drop:negative_signal": 76,
+  "drop:no_clear_offer": 106,
+  "drop:not_ai": 126,
   "drop:too_old_pre2025": 44,
   "google_news_resolved": 141,
   "google_news_total": 141,
-  "kept_total": 97,
+  "kept_total": 103,
   "net:gnews_cache_hit": 141,
-  "raw_total": 414
+  "new_this_run": 5,
+  "raw_total": 512
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
-   "dsh-our-free-model：在 dsh 里装上这个插件即可",
-   "ai-engineer-notebooks：适用于 AI 工程师/前沿部署工程师(FDE)技能集的实践、免框架 Cola",
-   "atticus-mac：适用于 Mac 的快速、免费语音助手",
-   "Pulse：了解您还剩下多少 Claude Code、Codex、Cursor",
-   "alphacode：免费的 MIT AI 编码代理",
-   "Awwwards-mcp：免费的开源 MCP 服务器",
-   "Lampline：在您自己的计算机上构建 AI 电话代理",
-   "kokon：在您自己的 GPU 上，通过描述更改来编辑照片",
-   "CalibRaw：适用于 Linux、Android、Windows 和 macOS 的免费开源 RAW 编辑器",
-   "browsentic：代理浏览器 Harness",
-   "openfill：PhotoCraft 和 GIMP 的生成填充、删除对象、生成展开和文本到图像3.通过 ComfyUI",
-   "HaizFlow：免费的 Windows 桌面应用程序"
+   "Simstim：Mac 上的本地呼叫转录为.md 文件",
+   "我开发了 AI Drake Video 生成器：用一张照片生成派对场景短视频",
+   "RelayRouter 中转自荐，主打低倍率、多模型接入，支持 GPT、Claude、Gemini 等",
+   "awesome-free-ai-coding：合法免费的 LLM API 和编码代理",
+   "awesome-freellm-apis：来自 40 多个提供商的 134 多个免费 LLM API 和 AI API ",
+   "awesome-free-ai-apis：经过验证的免费 AI API、LLM 推理端点",
+   "genoffice：免费的开源 AI Office 套件",
+   "ovis：Ovis（以前称为 herdr Web UI）",
+   "figwright：免费的双向 Figma MCP 服务器",
+   "claudemy：Claudemy，Udemy 和 Coursera 的开源替代品",
+   "claude-content-skills：免费的、复制粘贴的 Claude 技能可以运行您的内容增长工厂 - 将创意 ",
+   "unbagrnd：Unbagrnd - 适用于 Windows、macOS、Linux 和 Android 的免费"
   ],
   "empty_summary": [
    "我开源了 Ember，它在大约一分钟内部署到 @Cloudflare 的免费层，可与 Slack 兼容的有效负载配合使用",
@@ -98,16 +99,15 @@
    "今天，我们很高兴宣布与 @awscloud 建立新的合作伙伴关系！ 🔥"
   ]
  },
- "generated_at": "2026-11-11T00:01:44+08:00",
+ "generated_at": "2026-11-11T00:37:56+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-11T00:01:44+08:00",
+  "checked_at": "2026-11-11T00:37:56+08:00",
   "counts": {
-   "ok": 86,
-   "unsure": 4
+   "ok": 90
   },
   "hidden": 0
  },
- "seconds": 0.3,
+ "seconds": 0.4,
  "side": {
   "github_hot": {
    "kept": 30,
@@ -115,10 +115,10 @@
   },
   "hot_topics": {
    "drop:negative_signal": 6,
-   "drop:not_ai": 8,
+   "drop:not_ai": 7,
    "drop:not_ai_strict": 3,
-   "kept": 12,
-   "raw": 29
+   "kept": 15,
+   "raw": 31
   }
  }
 }

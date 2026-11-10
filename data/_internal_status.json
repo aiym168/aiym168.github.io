@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-11-11T00:01:45+08:00",
-  "generated_at_label": "2026-11-11 00:01 Asia/Shanghai",
+  "generated_at": "2026-11-11T00:37:58+08:00",
+  "generated_at_label": "2026-11-11 00:37 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
     "A": {
       "engine": "A",
       "name": "GitHub Actions 云端引擎",
-      "mode": "workflow_dispatch",
+      "mode": "scheduled",
       "result": "ok",
-      "last_run_at": "2026-11-10T23:01:14+08:00",
-      "last_run_label": "2026-11-10 23:01 Asia/Shanghai",
-      "last_success_label": "2026-11-10 23:01 Asia/Shanghai",
-      "run_url": "https://github.com/aiym168/aiym168.github.io/actions/runs/42839700321",
+      "last_run_at": "2026-11-11T00:37:58+08:00",
+      "last_run_label": "2026-11-11 00:37 Asia/Shanghai",
+      "last_success_label": "2026-11-11 00:37 Asia/Shanghai",
+      "run_url": "https://github.com/aiym168/aiym168.github.io/actions/runs/42856107657",
       "host": "github-actions",
       "counts": {
-        "deals": 90,
-        "free_resources": 90,
+        "deals": 96,
+        "free_resources": 96,
         "github_hot": 30,
-        "hot": 12,
-        "today_new": 31,
+        "hot": 15,
+        "today_new": 5,
         "archived": 8,
         "modules": {
-          "damoxing-mianfei-api": 21,
+          "damoxing-mianfei-api": 22,
           "ai-huiyuan-shiyong": 6,
-          "ai-kaifa-gongju": 42,
+          "ai-kaifa-gongju": 47,
           "mianfei-gpu-yunfuwu": 8,
           "keji-app-xianmian": 5,
           "ai-kecheng-huodong": 5,
           "qita-keji": 3,
           "github-hot": 30,
-          "hot-topics": 12
+          "hot-topics": 15
         },
         "api_pages": 2,
-        "next_update_label": "23:07 北京时间（约）"
+        "next_update_label": "01:07 北京时间（约）"
       },
-      "runs_total": 17,
+      "runs_total": 18,
       "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
-      "next_run_label": "2026-11-11 00:07 Asia/Shanghai",
-      "age_min": 60
+      "next_run_label": "2026-11-11 01:07 Asia/Shanghai",
+      "age_min": 0
     },
     "B": {
       "engine": "B",
@@ -71,12 +71,12 @@
         "next_update_label": "11:07 北京时间（约）"
       },
       "runs_total": 6,
-      "standby_seen_label": "2026-11-10 23:25 Asia/Shanghai",
-      "standby_seen_at": "2026-11-10T23:25:41+08:00",
+      "standby_seen_label": "2026-11-11 00:25 Asia/Shanghai",
+      "standby_seen_at": "2026-11-11T00:25:11+08:00",
       "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
-      "next_run_label": "2026-11-11 00:25 Asia/Shanghai",
-      "last_seen_at": "2026-11-10T23:25:41+08:00",
-      "age_min": 36
+      "next_run_label": "2026-11-11 01:25 Asia/Shanghai",
+      "last_seen_at": "2026-11-11T00:25:11+08:00",
+      "age_min": 12
     },
     "C": {
       "engine": "C",
@@ -113,70 +113,70 @@
       "schedule": "第二台服务器已不参与本站更新：运行独立的直播站，并在每天 08:30 / 20:30 生成羊毛电台",
       "next_run_label": "2026-11-11 00:55 Asia/Shanghai",
       "last_seen_at": "2026-11-10T13:10:18+08:00",
-      "age_min": 651
+      "age_min": 687
     },
     "watchdog": {
       "schedule": "每 30 分钟（第 23 / 53 分钟）",
-      "next_run_label": "2026-11-11 00:23 Asia/Shanghai"
+      "next_run_label": "2026-11-11 00:53 Asia/Shanghai"
     }
   },
   "counts": {
-    "deals": 90,
-    "free_resources": 90,
+    "deals": 96,
+    "free_resources": 96,
     "github_hot": 30,
-    "hot": 12,
-    "today_new": 0,
+    "hot": 15,
+    "today_new": 5,
     "archived": 8,
     "modules": {
-      "damoxing-mianfei-api": 21,
+      "damoxing-mianfei-api": 22,
       "ai-huiyuan-shiyong": 6,
-      "ai-kaifa-gongju": 42,
+      "ai-kaifa-gongju": 47,
       "mianfei-gpu-yunfuwu": 8,
       "keji-app-xianmian": 5,
       "ai-kecheng-huodong": 5,
       "qita-keji": 3,
       "github-hot": 30,
-      "hot-topics": 12
+      "hot-topics": 15
     },
     "api_pages": 2,
-    "next_update_label": "00:07 北京时间（约）"
+    "next_update_label": "01:07 北京时间（约）"
   },
-  "data_updated_label": "2026-11-11 00:01 Asia/Shanghai",
+  "data_updated_label": "2026-11-11 00:37 Asia/Shanghai",
   "sources": {
     "HN": {
-      "ok_total": 20,
+      "ok_total": 21,
       "fail_total": 0,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-10T22:59:44+08:00",
-      "last_run_label": "2026-11-10 22:59 Asia/Shanghai",
-      "last_count": 37,
-      "last_ok": "2026-11-10T22:59:44+08:00",
-      "last_ok_label": "2026-11-10 22:59 Asia/Shanghai",
+      "last_run": "2026-11-11T00:36:01+08:00",
+      "last_run_label": "2026-11-11 00:36 Asia/Shanghai",
+      "last_count": 40,
+      "last_ok": "2026-11-11T00:36:01+08:00",
+      "last_ok_label": "2026-11-11 00:36 Asia/Shanghai",
       "state": "healthy"
     },
     "V2EX": {
-      "ok_total": 20,
+      "ok_total": 21,
       "fail_total": 0,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-10T22:59:46+08:00",
-      "last_run_label": "2026-11-10 22:59 Asia/Shanghai",
+      "last_run": "2026-11-11T00:36:02+08:00",
+      "last_run_label": "2026-11-11 00:36 Asia/Shanghai",
       "last_count": 4,
-      "last_ok": "2026-11-10T22:59:46+08:00",
-      "last_ok_label": "2026-11-10 22:59 Asia/Shanghai",
+      "last_ok": "2026-11-11T00:36:02+08:00",
+      "last_ok_label": "2026-11-11 00:36 Asia/Shanghai",
       "state": "healthy"
     },
     "GitHub": {
-      "ok_total": 20,
+      "ok_total": 21,
       "fail_total": 0,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-10T22:59:51+08:00",
-      "last_run_label": "2026-11-10 22:59 Asia/Shanghai",
-      "last_count": 21,
-      "last_ok": "2026-11-10T22:59:51+08:00",
-      "last_ok_label": "2026-11-10 22:59 Asia/Shanghai",
+      "last_run": "2026-11-11T00:36:08+08:00",
+      "last_run_label": "2026-11-11 00:36 Asia/Shanghai",
+      "last_count": 20,
+      "last_ok": "2026-11-11T00:36:08+08:00",
+      "last_ok_label": "2026-11-11 00:36 Asia/Shanghai",
       "state": "healthy"
     },
     "DEV.to": {
@@ -206,27 +206,27 @@
       "skip_until_label": "2026-11-11 04:26 Asia/Shanghai"
     },
     "GitHubHot": {
-      "ok_total": 20,
+      "ok_total": 21,
       "fail_total": 0,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-10T23:00:35+08:00",
-      "last_run_label": "2026-11-10 23:00 Asia/Shanghai",
+      "last_run": "2026-11-11T00:36:32+08:00",
+      "last_run_label": "2026-11-11 00:36 Asia/Shanghai",
       "last_count": 30,
-      "last_ok": "2026-11-10T23:00:35+08:00",
-      "last_ok_label": "2026-11-10 23:00 Asia/Shanghai",
+      "last_ok": "2026-11-11T00:36:32+08:00",
+      "last_ok_label": "2026-11-11 00:36 Asia/Shanghai",
       "state": "healthy"
     },
     "HotTopics": {
-      "ok_total": 20,
+      "ok_total": 21,
       "fail_total": 0,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-10T23:00:43+08:00",
-      "last_run_label": "2026-11-10 23:00 Asia/Shanghai",
-      "last_count": 29,
-      "last_ok": "2026-11-10T23:00:43+08:00",
-      "last_ok_label": "2026-11-10 23:00 Asia/Shanghai",
+      "last_run": "2026-11-11T00:36:35+08:00",
+      "last_run_label": "2026-11-11 00:36 Asia/Shanghai",
+      "last_count": 31,
+      "last_ok": "2026-11-11T00:36:35+08:00",
+      "last_ok_label": "2026-11-11 00:36 Asia/Shanghai",
       "state": "healthy"
     },
     "X": {
@@ -257,14 +257,14 @@
   },
   "translators": {
     "google": {
-      "ok_total": 133,
+      "ok_total": 149,
       "fail_total": 30,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-10T23:00:26+08:00",
-      "last_run_label": "2026-11-10 23:00 Asia/Shanghai",
-      "last_ok": "2026-11-10T23:00:26+08:00",
-      "last_ok_label": "2026-11-10 23:00 Asia/Shanghai",
+      "last_run": "2026-11-11T00:36:34+08:00",
+      "last_run_label": "2026-11-11 00:36 Asia/Shanghai",
+      "last_ok": "2026-11-11T00:36:34+08:00",
+      "last_ok_label": "2026-11-11 00:36 Asia/Shanghai",
       "state": "healthy",
       "last_error": "no result"
     },
@@ -330,7 +330,7 @@
     "primary_route": "google-news-rss",
     "kept": 1
   },
-  "heartbeat_label": "2026-11-10 00:02:02 Asia/Shanghai",
+  "heartbeat_label": "2026-11-11 00:01:45 Asia/Shanghai",
   "server": {
     "box_id": "已隐藏",
     "checked_at_label": "2026-11-10 19:53 Asia/Shanghai",
