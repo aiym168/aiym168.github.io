@@ -390,6 +390,10 @@ def topnav(prefix="./"):
 <header class="topnav">
   <a class="brand-mini" href="{prefix}"><span class="mark"></span><span class="txt">{esc(SITE_NAME)}</span></a>
   <nav class="navlinks" id="navlinks" aria-label="模块导航">{links}</nav>
+  <div class="nav-more" hidden>
+    <button type="button" class="nav-more-btn" aria-expanded="false" aria-controls="nav-more-menu">更多 <i aria-hidden="true">▾</i></button>
+    <div class="nav-more-menu" id="nav-more-menu" hidden role="menu"></div>
+  </div>
   <div class="nav-tools">
     <a class="nav-search" href="{prefix}#search" data-search-open aria-label="搜索免费资源"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>搜索</span><kbd>Ctrl K</kbd></a>
     <button type="button" class="reduce-btn" data-reduce-toggle aria-pressed="false" title="关闭背景与大脑动画（会记住你的选择）">减少动态 <b>关</b></button>
@@ -663,15 +667,12 @@ def home_showcase(prefix: str = "./") -> str:
         ("board", f"{prefix}m/board.html", f"{prefix}assets/board-poster.jpg", "星际信号站留言板星系截图",
          "匿名留言 · 无需登录", "星际信号站 留言板", "写下想说的话，它会化作一颗信号星，飞进可以拖动旋转的星系。", "进入信号站"),
     ]
-    if (SITE / "assets" / "apiprice-poster.jpg").exists():
-        cards.insert(0, ("api", f"{prefix}deals/api-prices.html", f"{prefix}assets/apiprice-poster.jpg", "大模型 API 最低价榜截图",
-                         "每小时刷新 · 价格情报", "大模型 API 最低价榜", "GPT、Claude、Gemini、DeepSeek、Qwen、GLM、Kimi 等模型的官方价与第三方最低价对比。", "查看价格榜"))
     html = "".join(f"""<a class="show-card sc-{k}" href="{href}">
       <span class="sc-media"><img src="{img}" alt="{esc(alt)}" loading="lazy" decoding="async" width="960" height="540" /><span class="sc-scan" aria-hidden="true"></span></span>
       <span class="sc-body"><span class="sc-kicker"><i class="live-dot"></i>{esc(kick)}</span><b class="sc-title">{esc(title)}</b>
         <span class="sc-desc">{esc(desc)}</span><span class="sc-cta">{esc(cta)} <i aria-hidden="true">→</i></span></span>
     </a>""" for k, href, img, alt, kick, title, desc, cta in cards)
-    return f'<div class="showcase{" n3" if len(cards) == 3 else ""}" aria-label="本站展示">{html}</div>'
+    return f'<div class="showcase" aria-label="本站展示">{html}</div>'
 
 
 # ============================================================ pages
