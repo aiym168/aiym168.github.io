@@ -1,28 +1,22 @@
 {
   "box_id": "cb-e2…",
-  "checked_at_ms": 1794311695665,
-  "checked_at_label": "2026-11-10 19:54 Asia/Shanghai",
-  "actions": [
-    "Ensure(wake) op=started"
-  ],
+  "checked_at_ms": 1794340324330,
+  "checked_at_label": "2026-11-11 03:52 Asia/Shanghai",
+  "actions": [],
   "ok": true,
-  "state_before": "BOX_STATE_HIBERNATED",
+  "state_before": "BOX_STATE_RUNNING",
   "failure_reason": "",
   "engine_b_age_min": null,
-  "wake_reasons": [
-    "服务器状态为「休眠」",
-    "信号站连不上（所有登记地址都无响应）"
-  ],
-  "failure_reason_after": "",
+  "wake_reasons": [],
   "state_after": "BOX_STATE_RUNNING",
   "state_after_zh": "运行中",
   "image": "sbxdesk:v14",
-  "last_saved_label": "2026-11-10 19:12 Asia/Shanghai",
+  "last_saved_label": "2026-11-11 02:09 Asia/Shanghai",
   "wake_schedule": {
     "cron": "0 * * * *",
     "tz": "Asia/Shanghai",
     "awake_for_s": 3600,
-    "next_label": "2026-11-10 20:00 Asia/Shanghai",
+    "next_label": "2026-11-11 04:00 Asia/Shanghai",
     "last_wake_label": "2026-11-10 15:59 Asia/Shanghai"
   }
 }
