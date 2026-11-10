@@ -883,3 +883,23 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .sponsor-slot .sp-lab{font-size:.72rem;margin-right:8px;color:#8e9bbd;border:1px solid rgba(140,200,255,.25);border-radius:6px;padding:0 6px}
 
 .ap-tog{white-space:nowrap}
+
+/* ---------- freshness: today block, link-check badges, share row */
+.today-new .today-list{list-style:none;margin:0;padding:0;border-top:1px solid rgba(140,200,255,.18)}
+.today-list li{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding:10px 2px;border-bottom:1px solid rgba(140,200,255,.12)}
+.today-list li a{display:flex;gap:12px;align-items:baseline;min-width:0;color:var(--text)}
+.today-list li a:hover .td-t{color:var(--cyan)}
+.today-list .td-time{flex:none;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.today-list .td-t{font-weight:600;line-height:1.45}
+.today-list .td-m{flex:none;display:inline-flex;gap:8px;align-items:center;font-size:12px;color:var(--muted)}
+.today-list .td-empty{color:var(--muted)}
+.lc-sum{font-size:.88rem;color:var(--muted);margin:0 0 10px}.lc-sum b{color:var(--text)}
+.td-more{font-size:.85rem;color:var(--muted);margin-top:8px}
+.trust .upd{color:var(--text)}
+.lc.ok{color:#5ef0c0}.lc.warn{color:#f5c26b}.lc.bad{color:#ff8a8a}
+.share-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px;font-size:12px}
+.share-row .share-lab{color:var(--muted);margin-right:2px}
+.share-row button{font:inherit;font-size:12px;color:var(--text);background:transparent;border:1px solid rgba(140,200,255,.25);border-radius:6px;padding:3px 9px;cursor:pointer}
+.share-row button:hover{border-color:var(--cyan);color:var(--cyan)}
+.share-row button.done{border-color:#5ef0c0;color:#5ef0c0}
+@media (max-width:760px){.today-list li{flex-direction:column;gap:4px}.today-list .td-m{padding-left:46px}}

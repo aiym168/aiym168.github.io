@@ -66,3 +66,34 @@
   function onScroll(){ if (nav) nav.classList.toggle('scrolled', (window.scrollY||0) > 24); }
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
 })();
+
+/* ---------- share buttons on cards and item pages: X / 微信 / 小红书 / link (text is built from the card itself) */
+(function(){
+  function txt(root, sel){ var e = root.querySelector(sel); return e ? e.textContent.replace(/\s+/g, ' ').trim() : ''; }
+  function cut(s, n){ return s.length > n ? s.slice(0, n - 1) + '…' : s; }
+  function copy(btn, t, okLabel){
+    var old = btn.dataset.label || btn.textContent; btn.dataset.label = old;
+    function done(){ btn.textContent = okLabel || '已复制'; btn.classList.add('done'); setTimeout(function(){ btn.textContent = old; btn.classList.remove('done'); }, 1600); }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(done, function(){ window.prompt('复制下面的文字：', t); });
+    else window.prompt('复制下面的文字：', t);
+  }
+  document.addEventListener('click', function(ev){
+    var btn = ev.target.closest && ev.target.closest('[data-share]'); if (!btn) return;
+    var root = btn.closest('[data-share-url]'); if (!root) return;
+    ev.preventDefault();
+    var url = root.getAttribute('data-share-url'), title = txt(root, '[data-s-title]'), sum = txt(root, '[data-s-sum]'),
+        st = txt(root, '[data-s-st]'), mod = txt(root, '[data-s-mod]'), how = txt(root, '[data-s-how]');
+    var kind = btn.getAttribute('data-share');
+    if (kind === 'x') {
+      var t = cut(title, 70) + (st ? '｜' + st : '') + '\n' + cut(sum, 60);
+      window.open('https://x.com/intent/post?text=' + encodeURIComponent(t) + '&url=' + encodeURIComponent(url), '_blank', 'noopener');
+    } else if (kind === 'wx') {
+      copy(btn, '【AI 羊毛】' + title + '\n' + cut(sum, 120) + (how ? '\n怎么领：' + cut(how, 80) : '') + (st ? '\n状态：' + st : '') + '\n详情：' + url);
+    } else if (kind === 'xhs') {
+      copy(btn, cut(title, 20) + '\n\n' + cut(sum, 150) + (how ? '\n\n怎么领：' + cut(how, 100) : '') + (st ? '\n状态：' + st + '（以官网为准）' : '') +
+        '\n\n详情搜「AI大模型免费资源导航」\n\n#AI羊毛 #免费AI #大模型' + (mod ? ' #' + mod.replace(/[\s/·]+/g, '') : ''));
+    } else {
+      copy(btn, url, '链接已复制');
+    }
+  });
+})();

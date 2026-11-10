@@ -407,7 +407,7 @@ def topnav(prefix="./"):
 def site_footer(prefix="./", extra="") -> str:
     return f"""<footer>
   <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}radio/index.html">AI 羊毛电台</a> · <a href="{prefix}live/">AI 羊毛信号站（直播）</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
+  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}radio/index.html">AI 羊毛电台</a> · <a href="{prefix}live/">AI 羊毛信号站（直播）</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}feed.atom">Atom</a> · <a href="{prefix}digest/today.txt">今日速递</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>"""
 
 
@@ -505,12 +505,33 @@ def sort_key_default(it: dict):
     return (grp, -ts)
 
 
+LINKCHECK = {"counts": {}, "checked_at": None, "hidden": [], "total": 0, "unreliable_run": False}
+
+
+def load_linkcheck() -> dict:
+    """Results of linkcheck.py (run just before this build). Missing file = nothing checked yet."""
+    d = load_json(AUTO / "linkcheck.json") if (AUTO / "linkcheck.json").exists() else None
+    return d if isinstance(d, dict) else {}
+
+
 def collect(now: datetime):
     pins = load_pinned(now)
     res = curate.curate(pins)
     items = res["items"]
     for it in pins + items:
         finalize(it)
+    lc = load_linkcheck()
+    lc_items = lc.get("items") or {}
+    hidden = []
+    for it in pins + items:
+        it["_lc"] = lc_items.get(it.get("id")) or {}
+        if it["_lc"].get("verdict") == "gone" and not it.get("pinned") and it["status"] not in ("archived", "expired"):
+            it["status"] = "archived"
+            it["status_label"] = STATUS_LABEL.get("archived", "已归档")
+            it["archive_reason"] = "链接失效：连续两次检查都打不开，已自动下架"
+            hidden.append({"id": it.get("id"), "title": it.get("title"), "url": it["_lc"].get("url"), "code": it["_lc"].get("code")})
+    LINKCHECK.update({"counts": lc.get("counts") or {}, "checked_at": lc.get("checked_at"), "hidden": hidden,
+                      "total": lc.get("total") or 0, "unreliable_run": bool(lc.get("unreliable_run"))})
     active = [it for it in pins + items if it["status"] not in ("archived", "expired")]
     active.sort(key=sort_key_default)
     archived = [it for it in items if it["status"] in ("archived", "expired")]
@@ -523,6 +544,7 @@ def collect(now: datetime):
         r["favicon"] = curate.favicon(r.get("source_domain") or "")
     report = res["report"]
     report["side"] = {"github_hot": dict(rep_g), "hot_topics": dict(rep_h)}
+    report["linkcheck"] = {"counts": LINKCHECK["counts"], "hidden": len(hidden), "checked_at": LINKCHECK["checked_at"]}
     curate.save(AUTO / "curation_report.json", report)
     return active, archived, repos, topics, res["days"], report
 
@@ -559,11 +581,46 @@ def fact_badges(it: dict) -> str:
     return "".join(out)
 
 
+def updated_at(it: dict) -> str | None:
+    """Latest moment the listing was refreshed: editor check, crawl, or publication."""
+    c = [x for x in (it.get("verified_at"), it.get("fetched_at"), it.get("published_at")) if x]
+    c = [(curate.parse_dt(x), x) for x in c]
+    c = [x for x in c if x[0]]
+    return max(c)[1] if c else None
+
+
+def link_state(it: dict) -> tuple[str, str]:
+    """-> (css class, label) for the automatic link check."""
+    lc = it.get("_lc") or {}
+    v = lc.get("verdict")
+    if v == "ok":
+        return "ok", f'链接已验证 {fmt_dt(lc.get("checked_at"))}'
+    if v == "recheck":
+        return "warn", "链接待复查（上次没打开）"
+    if v == "gone":
+        return "bad", "链接失效"
+    if lc.get("checked_at"):
+        return "", f'链接检查 {fmt_dt(lc.get("checked_at"))}：对方限制访问，未能确认'
+    return "", "链接尚未检查"
+
+
 def trust_line(it: dict) -> str:
     ver = f'已核实 {fmt_dt(it["verified_at"], False)}' if it.get("verified_at") else "未核实"
     pub = fmt_dt(it.get("published_at"), False) if it.get("published_at") else "未知"
-    return (f'<span>来源 {esc(it.get("source") or "未知")}</span><span>发布 {esc(pub)}</span>'
-            f'<span>收录 {esc(fmt_dt(it.get("fetched_at")))}</span><span class="{"ok" if it.get("verified_at") else ""}">{esc(ver)}</span>')
+    up = updated_at(it)
+    lcls, ltxt = link_state(it)
+    return (f'<span class="upd">更新于 {esc(fmt_dt(up)) if up else "未知"}</span>'
+            f'<span>来源 {esc(it.get("source") or "未知")}</span><span>发布 {esc(pub)}</span>'
+            f'<span>收录 {esc(fmt_dt(it.get("fetched_at")))}</span><span class="{"ok" if it.get("verified_at") else ""}">{esc(ver)}</span>'
+            f'<span class="lc {lcls}">{esc(ltxt)}</span>')
+
+
+SHARE_ROW = ('<div class="share-row" aria-label="分享">'
+             '<span class="share-lab">分享</span>'
+             '<button type="button" data-share="x">X</button>'
+             '<button type="button" data-share="wx">复制微信文案</button>'
+             '<button type="button" data-share="xhs">复制小红书文案</button>'
+             '<button type="button" data-share="link">复制链接</button></div>')
 
 
 def card_text(it: dict) -> str:
@@ -584,22 +641,23 @@ def card_deal(it: dict, prefix: str = "") -> str:
     if pin:
         reason = (f'<p class="pin-reason"><b>推荐理由：</b>{esc(it.get("reason") or "")}'
                   f' <span class="pin-note">非广告，未收费</span></p>')
-    how = f'<div class="how"><strong>怎么领：</strong>{esc(it["how"])}</div>' if it.get("how") else ""
+    how = f'<div class="how"><strong>怎么领：</strong><span data-s-how>{esc(it["how"])}</span></div>' if it.get("how") else ""
     attrs = " ".join(
         f'data-{k}="{esc(it.get(k) or "unknown")}"'
         for k in ("module", "requires_card", "requires_realname", "china_accessible", "type", "expiry_kind", "status")
     )
     go = it.get("start_url") or it.get("url")
     return f"""
-<article class="card{' pin-card' if pin else ''}" data-id="{esc(it['id'])}" {attrs} data-pub="{esc(it.get('published_at') or '')}" data-exp="{esc(it.get('expires_at') or '')}" data-text="{esc(card_text(it))}">
-  <div class="card-top">{src_avatar(it, prefix)}<span class="src-name">{esc(it.get('source') or '')}{(' · @' + esc(it['author'])) if it.get('author') and it.get('source') == 'X' else ''}</span>{badge}<span class="st st-{STATUS_CLASS.get(st, 'muted')}">{esc(STATUS_LABEL.get(st, '未核实'))}</span></div>
-  <h3 class="title"><a href="{esc(path)}">{esc(it['title'])}</a></h3>
+<article class="card{' pin-card' if pin else ''}" id="i-{esc(it['_slug'])}" data-id="{esc(it['id'])}" data-share-url="{esc(CANONICAL + it['_path'])}" {attrs} data-pub="{esc(it.get('published_at') or '')}" data-exp="{esc(it.get('expires_at') or '')}" data-text="{esc(card_text(it))}">
+  <div class="card-top">{src_avatar(it, prefix)}<span class="src-name">{esc(it.get('source') or '')}{(' · @' + esc(it['author'])) if it.get('author') and it.get('source') == 'X' else ''}</span>{badge}<span class="st st-{STATUS_CLASS.get(st, 'muted')}" data-s-st>{esc(STATUS_LABEL.get(st, '未核实'))}</span></div>
+  <h3 class="title"><a href="{esc(path)}" data-s-title>{esc(it['title'])}</a></h3>
   {reason}
-  <p class="summary">{esc(it.get('summary') or '')}</p>
+  <p class="summary" data-s-sum>{esc(it.get('summary') or '')}</p>
   <div class="facts">{fact_badges(it)}</div>
   {how}
   <div class="trust">{trust_line(it)}</div>
-  <div class="linkrow"><a href="{esc(path)}">详情</a><a href="{esc(go)}" target="_blank" rel="noopener noreferrer">{'官网' if pin else '原文'} ↗</a><a class="report" href="{esc(issue_link(it))}" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag">{esc(it.get('module_name') or '')}</span></div>
+  <div class="linkrow"><a href="{esc(path)}">详情</a><a href="{esc(go)}" target="_blank" rel="noopener noreferrer">{'官网' if pin else '原文'} ↗</a><a class="report" href="{esc(issue_link(it))}" target="_blank" rel="noopener">报错 / 已过期</a><span class="mod-tag" data-s-mod>{esc(it.get('module_name') or '')}</span></div>
+  {SHARE_ROW}
 </article>"""
 
 
@@ -711,6 +769,10 @@ def write_item_pages(items: list[dict], all_for_related: list[dict]) -> list[str
         rows.append(f"<tr><th>本站收录</th><td>{esc(fmt_dt(it.get('fetched_at')))} 北京时间</td></tr>")
         ver = (f"已核实（{fmt_dt(it['verified_at'])} 北京时间，对照官网）" if it.get("verified_at") else "未核实：信息来自公开帖子/网页，本站尚未对照官网核实")
         rows.append(f"<tr><th>核实情况</th><td>{esc(ver)}</td></tr>")
+        up = updated_at(it)
+        rows.append(f"<tr><th>更新于</th><td>{esc(fmt_dt(up)) + ' 北京时间' if up else '未知'}</td></tr>")
+        lcls, ltxt = link_state(it)
+        rows.append(f"<tr><th>链接检查</th><td class=\"lc {lcls}\">{esc(ltxt)}（本站程序每小时自动检查打开情况）</td></tr>")
         feats = "".join(f"<li>{esc(f)}</li>" for f in it.get("features") or [])
         links = "".join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener noreferrer">{esc(u)}</a></li>' for u in it.get("links") or [])
         vs = "".join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener noreferrer">{esc(u)}</a></li>' for u in it.get("verified_source") or [])
@@ -727,19 +789,20 @@ def write_item_pages(items: list[dict], all_for_related: list[dict]) -> list[str
         go = it.get("start_url") or it.get("url")
         page = f"""{head_block(page_title, desc, canonical, t, pubdate=it.get('published_at'), extra_ld=ld)}
 {page_shell_start("../", "detail")}
-<div class="wrap">
-  <div class="crumbs"><a href="../">首页</a> › <a href="../{esc(mhref)}">{esc(it['module_name'])}</a> › 详情</div>
+<div class="wrap" data-share-url="{esc(canonical)}">
+  <div class="crumbs"><a href="../">首页</a> › <a href="../{esc(mhref)}" data-s-mod>{esc(it['module_name'])}</a> › 详情</div>
   <header class="hero">
     <div class="eyebrow"><i class="live-dot"></i> {esc(it['module_name'])}</div>
-    <h1>{esc(t)}</h1>
-    <p class="lead">{esc(it.get('summary') or '')}</p>
-    <div class="facts big">{fact_badges(it)}<span class="st st-{STATUS_CLASS.get(it['status'], 'muted')}">{esc(it['status_label'])}</span></div>
+    <h1 data-s-title>{esc(t)}</h1>
+    <p class="lead" data-s-sum>{esc(it.get('summary') or '')}</p>
+    <div class="facts big">{fact_badges(it)}<span class="st st-{STATUS_CLASS.get(it['status'], 'muted')}" data-s-st>{esc(it['status_label'])}</span></div>
+    {SHARE_ROW}
   </header>
   <section class="panel-box">
     <h2>关键信息</h2>
     <table class="facts-table">{''.join(rows)}</table>
     {f'<ul class="pin-feats">{feats}</ul>' if feats else ''}
-    {f'<div class="how"><strong>怎么领：</strong>{esc(it["how"])}</div>' if it.get('how') else '<p class="note">原文没有写明具体领取步骤，请打开原文或官网查看。</p>'}
+    {f'<div class="how"><strong>怎么领：</strong><span data-s-how>{esc(it["how"])}</span></div>' if it.get('how') else '<p class="note">原文没有写明具体领取步骤，请打开原文或官网查看。</p>'}
     <p class="actions"><a class="btn primary" href="{esc(go)}" target="_blank" rel="noopener noreferrer">{'打开官网' if it.get('pinned') else '打开原文'} ↗</a>
     <a class="btn" href="../{esc(mhref)}">同模块更多</a>
     <a class="btn" href="{esc(issue_link(it))}" target="_blank" rel="noopener">报错 / 已过期</a></p>
@@ -1056,6 +1119,9 @@ def write_api(active, archived, repos, topics, counts, now, report) -> None:
         {"path": "api/github-hot.json", "desc": "GitHub 新热门"},
         {"path": "api/hot.json", "desc": "最近热议"},
         {"path": "feed.xml", "desc": "RSS 订阅"},
+        {"path": "feed.atom", "desc": "Atom 订阅（含更新时间）"},
+        {"path": "api/digest.json", "desc": "今日速递文案（X / 微信 / 小红书草稿）"},
+        {"path": "api/linkcheck.json", "desc": "链接自动检查结果与下架记录"},
     ] + [{"path": f"api/{mid}.json", "desc": title} for mid, title, *_ in MODULES]})
 
     def x(s: str) -> str:
@@ -1296,6 +1362,18 @@ def build():
     active, archived, repos, topics, days, report = collect(now)
     today = now.date()
     today_new = sum(1 for it in active if (curate.parse_dt(it.get("fetched_at")) or now).astimezone(TZ).date() == today)
+    try:
+        import freshness
+        today_html = freshness.today_section(sys.modules[__name__], active, now)
+        freshness.write_atom(sys.modules[__name__], active, now)
+        freshness.write_linkcheck_report(sys.modules[__name__], now)
+        dg = freshness.write_digest(sys.modules[__name__], active, now)
+        print(f"[fresh] today={dg['today_new']} digest x={dg['x_single_len']}/280 linkcheck={LINKCHECK['counts']} hidden={len(LINKCHECK['hidden'])}")
+    except Exception as e:  # 新鲜度模块出错不能拖垮主站
+        import traceback
+        traceback.print_exc()
+        print("[fresh] skipped:", e)
+        today_html = ""
     mod_counts = {mid: sum(1 for it in active if it["module"] == mid) for mid, *_r in MODULES if _r[3] == "cat"}
     mod_counts["github-hot"] = len(repos)
     mod_counts["hot-topics"] = len(topics)
@@ -1397,7 +1475,7 @@ def build():
       <p class="lead">收集大模型免费 API、免费 Token、免费 GPU、AI 工具试用与免费课程。每条都标注是否需要绑卡、实名、国内能否直连和截止时间；不确定的写“未注明”，不替你猜。</p>
       <div class="stats" aria-label="站点数据">
         <div class="pill"><span>免费资源</span><b>{len(active)}</b><span>条</span></div>
-        <div class="pill"><span>今日新增</span><b>{today_new}</b><span>条</span></div>
+        <a class="pill" href="#today"><span>今日新增</span><b>{today_new}</b><span>条</span></a>
         <div class="pill"><span>最后更新</span><b>{esc(upd)}</b></div>
         <div class="pill"><span>下次更新约</span><b>{esc(nxt.strftime('%H:%M'))}</b></div>
       </div>
@@ -1408,6 +1486,7 @@ def build():
 </header>
 {brain_loader_script("vendor/")}
 <main class="wrap">
+  {today_html}
   {deals_home}
   {radio_home}
   <section class="section" id="search">

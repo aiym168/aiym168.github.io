@@ -44,6 +44,8 @@ if [ "$FETCH" = "1" ]; then
   timeout 300 python3 apiprice_collect.py || log "[heal] apiprice_collect exit $? — keep previous prices"
   timeout 900 python3 prune.py || log "[heal] prune failed — continue"
 fi
+# 4d) link check: open every listed link; dead twice in a row = hidden by build.py (never blocks the build)
+timeout 300 python3 linkcheck.py || log "[heal] linkcheck failed — continue"
 
 # 5) build
 RESULT=ok
