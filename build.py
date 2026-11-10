@@ -384,7 +384,8 @@ def topnav(prefix="./"):
     )
     links = (f'<a class="nav-hot" href="{prefix}deals/index.html" title="全球优惠情报中心">优惠情报</a>'
              f'<a href="{prefix}deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a>'
-             f'<a href="{prefix}radio/index.html" title="AI 羊毛电台 · 每天三分钟听完">电台</a>') + links
+             f'<a href="{prefix}radio/index.html" title="AI 羊毛电台 · 每天三分钟听完">电台</a>'
+             f'<a class="nav-wan" href="https://wan.is-my.app/" title="玩点啥：今日热榜、你画我猜、打字背单词、在线工具">玩点啥</a>') + links
     links += f'<a href="{prefix}m/board.html" title="匿名留言板 · 星际信号站">留言板</a>'
     links += f'<a href="{prefix}m/status.html" title="更新动态">更新动态</a>'
     return f"""
@@ -673,7 +674,15 @@ def home_showcase(prefix: str = "./") -> str:
       <span class="sc-body"><span class="sc-kicker"><i class="live-dot"></i>{esc(kick)}</span><b class="sc-title">{esc(title)}</b>
         <span class="sc-desc">{esc(desc)}</span><span class="sc-cta">{esc(cta)} <i aria-hidden="true">→</i></span></span>
     </a>""" for k, href, img, alt, kick, title, desc, cta in cards)
-    return f'<div class="showcase" aria-label="本站展示">{html}</div>'
+    wan = """<a class="wan-banner" href="https://wan.is-my.app/" aria-label="玩点啥：今日热榜、你画我猜、打字背单词、在线工具箱">
+      <span class="wb-glow" aria-hidden="true"></span>
+      <span class="wb-mark" aria-hidden="true">玩</span>
+      <span class="wb-body"><span class="wb-kicker"><i class="live-dot"></i>新站上线 · 免费 · 免登录</span>
+        <b class="wb-title">玩点啥？今天上网玩什么，这一页就够了</b>
+        <span class="wb-chips"><span>🔥 今日热榜</span><span>🎨 你画我猜</span><span>⌨️ 打字背单词</span><span>🧰 在线工具箱</span><span>🐟 摸鱼首页</span></span></span>
+      <span class="wb-cta">去玩一下 <i aria-hidden="true">→</i></span>
+    </a>"""
+    return f'<div class="showcase" aria-label="本站展示">{wan}{html}</div>'
 
 
 # ============================================================ pages
