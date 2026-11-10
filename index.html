@@ -784,26 +784,22 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .sc-board .sc-cta{background:rgba(167,139,250,.14);border-color:rgba(167,139,250,.5);color:#efe9ff}
 .show-card:hover .sc-cta{gap:12px;background:rgba(92,225,255,.22)}
 .show-card.sc-board:hover .sc-cta{background:rgba(167,139,250,.26)}
-/* 玩点啥 entry (spans both showcase columns) */
-.wan-banner{grid-column:1/-1;position:relative;display:flex;align-items:center;gap:20px;padding:20px 24px;border-radius:22px;overflow:hidden;isolation:isolate;color:var(--text);
-  background:linear-gradient(120deg,rgba(139,92,246,.28),rgba(236,72,153,.2) 45%,rgba(34,211,238,.16));border:1px solid rgba(236,72,153,.35);transition:transform .5s var(--ease),box-shadow .5s,border-color .4s}
-.wan-banner:hover{transform:translateY(-3px);color:var(--text);border-color:rgba(236,72,153,.7);box-shadow:0 30px 70px -30px rgba(236,72,153,.6)}
-.wb-glow{position:absolute;inset:-40%;z-index:-1;background:conic-gradient(from 0deg,transparent,rgba(139,92,246,.35),transparent 30%,rgba(236,72,153,.3),transparent 60%,rgba(34,211,238,.28),transparent);animation:wbSpin 14s linear infinite;filter:blur(30px);opacity:.7}
-@keyframes wbSpin{to{transform:rotate(360deg)}}
-.wb-mark{flex:none;width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-size:32px;font-weight:900;color:#fff;background:linear-gradient(135deg,#8b5cf6,#ec4899);box-shadow:0 12px 34px -8px rgba(236,72,153,.8),inset 0 1px 0 rgba(255,255,255,.35)}
+/* 玩点啥 entry (spans both showcase columns): flat paper card, ink type, one vermilion accent */
+.wan-banner{grid-column:1/-1;position:relative;display:flex;align-items:center;gap:22px;padding:20px 24px;border-radius:4px;color:#141414;background:#f5f1e8;border:1px solid #141414;box-shadow:inset 0 0 0 4px #f5f1e8,inset 0 0 0 5px #141414;transition:transform .3s}
+.wan-banner:hover{transform:translateY(-2px);color:#141414}
+.wb-mark{flex:none;width:62px;height:62px;display:grid;place-items:center;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",STSong,SimSun,serif;font-size:38px;font-weight:900;color:#f5f1e8;background:#d9381e;transform:rotate(-4deg)}
 .wb-body{display:flex;flex-direction:column;gap:6px;min-width:0}
-.wb-kicker{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:#f9a8d4}
-.wb-title{font-family:var(--display);font-size:clamp(18px,2.1vw,25px);line-height:1.25}
-.wb-chips{display:flex;flex-wrap:wrap;gap:6px}.wb-chips span{font-size:12.5px;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
-.wb-cta{margin-left:auto;flex:none;display:inline-flex;gap:8px;align-items:center;font-weight:700;padding:10px 18px;border-radius:999px;background:linear-gradient(135deg,#8b5cf6,#ec4899);color:#fff;transition:gap .3s}
-.wan-banner:hover .wb-cta{gap:12px}
-.navlinks a.nav-wan{color:#f9a8d4}
-.reduce-motion .wb-glow{animation:none!important}
+.wb-kicker{font-size:12px;font-weight:700;letter-spacing:.16em;color:#d9381e}
+.wb-title{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",STSong,SimSun,serif;font-weight:900;font-size:clamp(19px,2.1vw,26px);line-height:1.25;color:#141414}
+.wb-chips{display:flex;flex-wrap:wrap;gap:0}.wb-chips span{font-size:13px;color:#5b5750;padding:0 10px;border-left:1px solid #cfc7b6}.wb-chips span:first-child{padding-left:0;border-left:0}
+.wb-cta{margin-left:auto;flex:none;display:inline-flex;gap:8px;align-items:center;font-weight:700;padding:10px 18px;background:#141414;color:#f5f1e8;transition:background .2s,gap .3s}
+.wan-banner:hover .wb-cta{background:#d9381e;gap:12px}
+.topnav .navlinks a.nav-wan{color:#f5f1e8}.topnav .navlinks a.nav-wan::before{content:"";display:inline-block;width:7px;height:7px;background:#d9381e;margin-right:6px;vertical-align:.12em}
 .reduce-motion .sc-media img,.reduce-motion .sc-scan{animation:none!important}
 @media (prefers-reduced-motion: reduce){.sc-media img,.sc-scan{animation:none!important}}
 @media (max-width:760px){
   .showcase{grid-template-columns:1fr;gap:14px}
-  .wan-banner{flex-wrap:wrap;gap:14px;padding:16px}.wb-mark{width:48px;height:48px;font-size:24px;border-radius:14px}.wb-body{flex:1 1 calc(100% - 64px)}.wb-cta{margin-left:0;width:100%;justify-content:center}
+  .wan-banner{flex-wrap:wrap;gap:14px;padding:16px}.wb-mark{width:48px;height:48px;font-size:28px}.wb-body{flex:1 1 calc(100% - 64px)}.wb-cta{margin-left:0;width:100%;justify-content:center}
   .sc-body{padding:0 16px 16px;margin-top:-44px}
   .filters.compact{padding:12px}
   .filters.compact .fbar{flex-wrap:wrap}
@@ -954,8 +950,8 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
       <div class="stats" aria-label="站点数据">
         <div class="pill"><span>免费资源</span><b>90</b><span>条</span></div>
         <div class="pill"><span>今日新增</span><b>31</b><span>条</span></div>
-        <div class="pill"><span>最后更新</span><b>23:01</b></div>
-        <div class="pill"><span>下次更新约</span><b>23:07</b></div>
+        <div class="pill"><span>最后更新</span><b>23:09</b></div>
+        <div class="pill"><span>下次更新约</span><b>00:07</b></div>
       </div>
       <p class="def-note">免费资源 = 去重后仍在有效期内的资源条目（含置顶与编辑整理条目；不含 GitHub 新热门与最近热议；已过期、或发布超过 30 天且没有未来截止日期的自动收录条目会移入归档）。</p>
     </div>
@@ -1020,12 +1016,11 @@ html.reduce-motion .rd-eq i{animation:none;height:60%}
   <noscript><p class="note">未启用 JavaScript：下方列出全部条目，可按模块页面浏览；搜索与筛选需要启用 JavaScript。</p></noscript>
 </div>
     <div class="showcase" aria-label="本站展示"><a class="wan-banner" href="https://wan.is-my.app/" aria-label="玩点啥：今日热榜、你画我猜、打字背单词、在线工具箱">
-      <span class="wb-glow" aria-hidden="true"></span>
       <span class="wb-mark" aria-hidden="true">玩</span>
-      <span class="wb-body"><span class="wb-kicker"><i class="live-dot"></i>新站上线 · 免费 · 免登录</span>
+      <span class="wb-body"><span class="wb-kicker">新栏目 · 免费 · 免登录</span>
         <b class="wb-title">玩点啥？今天上网玩什么，这一页就够了</b>
-        <span class="wb-chips"><span>🔥 今日热榜</span><span>🎨 你画我猜</span><span>⌨️ 打字背单词</span><span>🧰 在线工具箱</span><span>🐟 摸鱼首页</span></span></span>
-      <span class="wb-cta">去玩一下 <i aria-hidden="true">→</i></span>
+        <span class="wb-chips"><span>今日热榜</span><span>你画我猜</span><span>打字背单词</span><span>在线工具箱</span><span>摸鱼首页</span></span></span>
+      <span class="wb-cta">去看看 <i aria-hidden="true">→</i></span>
     </a><a class="show-card sc-octo" href="./m/octopus.html">
       <span class="sc-media"><img src="./assets/octopus-poster.jpg" alt="玻璃机械章鱼 3D 拆解演示截图" loading="lazy" decoding="async" width="960" height="540" /><span class="sc-scan" aria-hidden="true"></span></span>
       <span class="sc-body"><span class="sc-kicker"><i class="live-dot"></i>实验室 · 3D 拆解</span><b class="sc-title">机械章鱼 HYALOS GX-8</b>
@@ -2099,7 +2094,7 @@ html.reduce-motion .rd-eq i{animation:none;height:60%}
   </section>
   <section class="section" id="archives"><div class="sec-head"><span class="sec-idx">按日归档</span><h2>每日收录</h2></div><div class="panel-box"><a class="arch" href="archives/2026-11-10.html">2026-11-10</a><a class="arch" href="archives/2026-11-09.html">2026-11-09</a></div></section>
   <footer>
-  <div><span class="foot-brand">AI大模型免费资源导航</span> · 生成于 2026-11-10 23:01 北京时间<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
+  <div><span class="foot-brand">AI大模型免费资源导航</span> · 生成于 2026-11-10 23:09 北京时间<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
   <div class="foot-links"><a href="./deals/index.html">全球优惠情报</a> · <a href="./deals/api-prices.html">API 最低价榜</a> · <a href="./radio/index.html">AI 羊毛电台</a> · <a href="./live/">AI 羊毛信号站（直播）</a> · <a href="./m/api.html">CLI / API</a> · <a href="./m/status.html">更新动态</a> · <a href="./archives/index.html">已归档</a> · <a href="./m/board.html">留言板</a> · <a href="./m/octopus.html">机械章鱼 3D</a> · <a href="./feed.xml">RSS</a> · <a href="./sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>
 </main>

@@ -784,26 +784,22 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .sc-board .sc-cta{background:rgba(167,139,250,.14);border-color:rgba(167,139,250,.5);color:#efe9ff}
 .show-card:hover .sc-cta{gap:12px;background:rgba(92,225,255,.22)}
 .show-card.sc-board:hover .sc-cta{background:rgba(167,139,250,.26)}
-/* 玩点啥 entry (spans both showcase columns) */
-.wan-banner{grid-column:1/-1;position:relative;display:flex;align-items:center;gap:20px;padding:20px 24px;border-radius:22px;overflow:hidden;isolation:isolate;color:var(--text);
-  background:linear-gradient(120deg,rgba(139,92,246,.28),rgba(236,72,153,.2) 45%,rgba(34,211,238,.16));border:1px solid rgba(236,72,153,.35);transition:transform .5s var(--ease),box-shadow .5s,border-color .4s}
-.wan-banner:hover{transform:translateY(-3px);color:var(--text);border-color:rgba(236,72,153,.7);box-shadow:0 30px 70px -30px rgba(236,72,153,.6)}
-.wb-glow{position:absolute;inset:-40%;z-index:-1;background:conic-gradient(from 0deg,transparent,rgba(139,92,246,.35),transparent 30%,rgba(236,72,153,.3),transparent 60%,rgba(34,211,238,.28),transparent);animation:wbSpin 14s linear infinite;filter:blur(30px);opacity:.7}
-@keyframes wbSpin{to{transform:rotate(360deg)}}
-.wb-mark{flex:none;width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-size:32px;font-weight:900;color:#fff;background:linear-gradient(135deg,#8b5cf6,#ec4899);box-shadow:0 12px 34px -8px rgba(236,72,153,.8),inset 0 1px 0 rgba(255,255,255,.35)}
+/* 玩点啥 entry (spans both showcase columns): flat paper card, ink type, one vermilion accent */
+.wan-banner{grid-column:1/-1;position:relative;display:flex;align-items:center;gap:22px;padding:20px 24px;border-radius:4px;color:#141414;background:#f5f1e8;border:1px solid #141414;box-shadow:inset 0 0 0 4px #f5f1e8,inset 0 0 0 5px #141414;transition:transform .3s}
+.wan-banner:hover{transform:translateY(-2px);color:#141414}
+.wb-mark{flex:none;width:62px;height:62px;display:grid;place-items:center;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",STSong,SimSun,serif;font-size:38px;font-weight:900;color:#f5f1e8;background:#d9381e;transform:rotate(-4deg)}
 .wb-body{display:flex;flex-direction:column;gap:6px;min-width:0}
-.wb-kicker{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:#f9a8d4}
-.wb-title{font-family:var(--display);font-size:clamp(18px,2.1vw,25px);line-height:1.25}
-.wb-chips{display:flex;flex-wrap:wrap;gap:6px}.wb-chips span{font-size:12.5px;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
-.wb-cta{margin-left:auto;flex:none;display:inline-flex;gap:8px;align-items:center;font-weight:700;padding:10px 18px;border-radius:999px;background:linear-gradient(135deg,#8b5cf6,#ec4899);color:#fff;transition:gap .3s}
-.wan-banner:hover .wb-cta{gap:12px}
-.navlinks a.nav-wan{color:#f9a8d4}
-.reduce-motion .wb-glow{animation:none!important}
+.wb-kicker{font-size:12px;font-weight:700;letter-spacing:.16em;color:#d9381e}
+.wb-title{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",STSong,SimSun,serif;font-weight:900;font-size:clamp(19px,2.1vw,26px);line-height:1.25;color:#141414}
+.wb-chips{display:flex;flex-wrap:wrap;gap:0}.wb-chips span{font-size:13px;color:#5b5750;padding:0 10px;border-left:1px solid #cfc7b6}.wb-chips span:first-child{padding-left:0;border-left:0}
+.wb-cta{margin-left:auto;flex:none;display:inline-flex;gap:8px;align-items:center;font-weight:700;padding:10px 18px;background:#141414;color:#f5f1e8;transition:background .2s,gap .3s}
+.wan-banner:hover .wb-cta{background:#d9381e;gap:12px}
+.topnav .navlinks a.nav-wan{color:#f5f1e8}.topnav .navlinks a.nav-wan::before{content:"";display:inline-block;width:7px;height:7px;background:#d9381e;margin-right:6px;vertical-align:.12em}
 .reduce-motion .sc-media img,.reduce-motion .sc-scan{animation:none!important}
 @media (prefers-reduced-motion: reduce){.sc-media img,.sc-scan{animation:none!important}}
 @media (max-width:760px){
   .showcase{grid-template-columns:1fr;gap:14px}
-  .wan-banner{flex-wrap:wrap;gap:14px;padding:16px}.wb-mark{width:48px;height:48px;font-size:24px;border-radius:14px}.wb-body{flex:1 1 calc(100% - 64px)}.wb-cta{margin-left:0;width:100%;justify-content:center}
+  .wan-banner{flex-wrap:wrap;gap:14px;padding:16px}.wb-mark{width:48px;height:48px;font-size:28px}.wb-body{flex:1 1 calc(100% - 64px)}.wb-cta{margin-left:0;width:100%;justify-content:center}
   .sc-body{padding:0 16px 16px;margin-top:-44px}
   .filters.compact{padding:12px}
   .filters.compact .fbar{flex-wrap:wrap}
@@ -958,7 +954,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
       <div class="eyebrow"><i class="live-dot"></i> 更新动态</div>
       <h1 class="hero-title"><span class="kl">更新动态</span></h1>
       <p class="lead">本站每小时自动收录新的大模型免费资源、GitHub 热门项目与 AI 热议。这里是最近的更新记录与最新收录。</p>
-      <div class="stats"><div class="pill live">最近更新 <b>2026-11-10 23:01</b></div><div class="pill">下次更新 <b>2026-11-10 23:07</b></div><div class="pill">免费资源 <b data-count="90">90</b></div><div class="pill">近 7 天新增 <b data-count="278">278</b></div></div>
+      <div class="stats"><div class="pill live">最近更新 <b>2026-11-10 23:09</b></div><div class="pill">下次更新 <b>2026-11-11 00:07</b></div><div class="pill">免费资源 <b data-count="90">90</b></div><div class="pill">近 7 天新增 <b data-count="278">278</b></div></div>
     </div>
     
 <div class="brain-stage" aria-hidden="true">
