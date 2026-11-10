@@ -784,10 +784,26 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .sc-board .sc-cta{background:rgba(167,139,250,.14);border-color:rgba(167,139,250,.5);color:#efe9ff}
 .show-card:hover .sc-cta{gap:12px;background:rgba(92,225,255,.22)}
 .show-card.sc-board:hover .sc-cta{background:rgba(167,139,250,.26)}
+/* 玩点啥 entry (spans both showcase columns) */
+.wan-banner{grid-column:1/-1;position:relative;display:flex;align-items:center;gap:20px;padding:20px 24px;border-radius:22px;overflow:hidden;isolation:isolate;color:var(--text);
+  background:linear-gradient(120deg,rgba(139,92,246,.28),rgba(236,72,153,.2) 45%,rgba(34,211,238,.16));border:1px solid rgba(236,72,153,.35);transition:transform .5s var(--ease),box-shadow .5s,border-color .4s}
+.wan-banner:hover{transform:translateY(-3px);color:var(--text);border-color:rgba(236,72,153,.7);box-shadow:0 30px 70px -30px rgba(236,72,153,.6)}
+.wb-glow{position:absolute;inset:-40%;z-index:-1;background:conic-gradient(from 0deg,transparent,rgba(139,92,246,.35),transparent 30%,rgba(236,72,153,.3),transparent 60%,rgba(34,211,238,.28),transparent);animation:wbSpin 14s linear infinite;filter:blur(30px);opacity:.7}
+@keyframes wbSpin{to{transform:rotate(360deg)}}
+.wb-mark{flex:none;width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-size:32px;font-weight:900;color:#fff;background:linear-gradient(135deg,#8b5cf6,#ec4899);box-shadow:0 12px 34px -8px rgba(236,72,153,.8),inset 0 1px 0 rgba(255,255,255,.35)}
+.wb-body{display:flex;flex-direction:column;gap:6px;min-width:0}
+.wb-kicker{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:#f9a8d4}
+.wb-title{font-family:var(--display);font-size:clamp(18px,2.1vw,25px);line-height:1.25}
+.wb-chips{display:flex;flex-wrap:wrap;gap:6px}.wb-chips span{font-size:12.5px;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
+.wb-cta{margin-left:auto;flex:none;display:inline-flex;gap:8px;align-items:center;font-weight:700;padding:10px 18px;border-radius:999px;background:linear-gradient(135deg,#8b5cf6,#ec4899);color:#fff;transition:gap .3s}
+.wan-banner:hover .wb-cta{gap:12px}
+.navlinks a.nav-wan{color:#f9a8d4}
+.reduce-motion .wb-glow{animation:none!important}
 .reduce-motion .sc-media img,.reduce-motion .sc-scan{animation:none!important}
 @media (prefers-reduced-motion: reduce){.sc-media img,.sc-scan{animation:none!important}}
 @media (max-width:760px){
   .showcase{grid-template-columns:1fr;gap:14px}
+  .wan-banner{flex-wrap:wrap;gap:14px;padding:16px}.wb-mark{width:48px;height:48px;font-size:24px;border-radius:14px}.wb-body{flex:1 1 calc(100% - 64px)}.wb-cta{margin-left:0;width:100%;justify-content:center}
   .sc-body{padding:0 16px 16px;margin-top:-44px}
   .filters.compact{padding:12px}
   .filters.compact .fbar{flex-wrap:wrap}
@@ -919,7 +935,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 
 <header class="topnav">
   <a class="brand-mini" href="../"><span class="mark"></span><span class="txt">AI大模型免费资源导航</span></a>
-  <nav class="navlinks" id="navlinks" aria-label="模块导航"><a class="nav-hot" href="../deals/index.html" title="全球优惠情报中心">优惠情报</a><a href="../deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a><a href="../radio/index.html" title="AI 羊毛电台 · 每天三分钟听完">电台</a><a href="../c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="../c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="../c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="../c/mianfei-gpu-yunfuwu.html" title="免费 GPU / 云服务">免费GPU</a><a href="../c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="../c/ai-kecheng-huodong.html" title="AI 课程 / 活动">课程活动</a><a href="../c/qita-keji.html" title="其他科技资源">其他</a><a href="../m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="../m/hot-topics.html" title="最近热议">热议</a><a href="../m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="../m/status.html" title="更新动态">更新动态</a></nav>
+  <nav class="navlinks" id="navlinks" aria-label="模块导航"><a class="nav-hot" href="../deals/index.html" title="全球优惠情报中心">优惠情报</a><a href="../deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a><a href="../radio/index.html" title="AI 羊毛电台 · 每天三分钟听完">电台</a><a class="nav-wan" href="https://wan.is-my.app/" title="玩点啥：今日热榜、你画我猜、打字背单词、在线工具">玩点啥</a><a href="../c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="../c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="../c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="../c/mianfei-gpu-yunfuwu.html" title="免费 GPU / 云服务">免费GPU</a><a href="../c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="../c/ai-kecheng-huodong.html" title="AI 课程 / 活动">课程活动</a><a href="../c/qita-keji.html" title="其他科技资源">其他</a><a href="../m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="../m/hot-topics.html" title="最近热议">热议</a><a href="../m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="../m/status.html" title="更新动态">更新动态</a></nav>
   <div class="nav-more" hidden>
     <button type="button" class="nav-more-btn" aria-expanded="false" aria-controls="nav-more-menu">更多 <i aria-hidden="true">▾</i></button>
     <div class="nav-more-menu" id="nav-more-menu" hidden role="menu"></div>
