@@ -129,7 +129,11 @@ def build_page(b, now: datetime) -> str | None:
     <div class="rd-eps" id="rd-eps"></div>
   </section>
   <section class="section">
-    <div class="sec-head"><span class="sec-idx">03 / SUBSCRIBE</span><h2>订阅</h2></div>
+    <div class="sec-head"><span class="sec-idx">03 / LIVE</span><h2>想一直开着听？</h2></div>
+    <p class="panel-box rd-sub" style="margin-bottom:22px"><b>AI 羊毛信号站</b>：24 小时不停播的直播版，整点快讯 + 早晚报轮播，附实时字幕和大模型 API 网关雷达。<a class="btn" href="../live/">进入信号站 ↗</a></p>
+  </section>
+  <section class="section">
+    <div class="sec-head"><span class="sec-idx">04 / SUBSCRIBE</span><h2>订阅</h2></div>
     <div class="panel-box rd-sub">
       <p>把这个地址加到任意支持 RSS 的播客 App（小宇宙以外的大多数播客客户端、Apple 播客「通过 URL 关注」、Pocket Casts、AntennaPod 等）：</p>
       <p><code id="rd-feed">{esc(b.CANONICAL)}radio/feed.xml</code> <button type="button" class="btn" id="rd-copy">复制订阅地址</button></p>

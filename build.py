@@ -406,7 +406,7 @@ def topnav(prefix="./"):
 def site_footer(prefix="./", extra="") -> str:
     return f"""<footer>
   <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}radio/index.html">AI 羊毛电台</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
+  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}radio/index.html">AI 羊毛电台</a> · <a href="{prefix}live/">AI 羊毛信号站（直播）</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>"""
 
 
@@ -1335,6 +1335,13 @@ def build():
         traceback.print_exc()
         print("[radio] skipped:", e)
         radio_home = ""
+    try:
+        import live_build
+        lv_path = live_build.build_page(sys.modules[__name__], now)
+        if lv_path:
+            deal_paths.append(lv_path)
+    except Exception as e:  # 信号站入口出错不能拖垮主站
+        print("[live] skipped:", e)
     try:
         deals_home = deals_build.home_section("./")
     except Exception as e:

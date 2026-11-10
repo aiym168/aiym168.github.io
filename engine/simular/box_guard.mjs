@@ -1,5 +1,5 @@
 // Box guard: keep Engine B's Simular cloud box alive (runs inside the GitHub watchdog).
-// env: SIMULAR_BOX_KEY (secret, never printed), BOX_ID, FORCE_WAKE=1, ENGINE_B_AGE_MIN
+// env: SIMULAR_BOX_KEY (secret, never printed), BOX_ID, FORCE_WAKE=1, ENGINE_B_AGE_MIN, SITE_DOWN (text: the box's own site is unreachable)
 // Writes JSON result to stdout (last line) and to $OUT (default data/box_state.json).
 import grpc from '@grpc/grpc-js'
 import loader from '@grpc/proto-loader'
@@ -34,6 +34,7 @@ try {
   if (process.env.FORCE_WAKE === '1') reasons.push('手动强制唤醒')
   if (box.state !== 'BOX_STATE_RUNNING' && box.state !== 'BOX_STATE_STARTING') reasons.push(`服务器状态为「${ZH[box.state] || box.state}」`)
   if (bAge !== null && bAge > STALE_B_MIN) reasons.push(`引擎 B 已 ${bAge} 分钟无心跳（阈值 ${STALE_B_MIN}）`)
+  if (process.env.SITE_DOWN) reasons.push(`信号站连不上（${process.env.SITE_DOWN}）`)
   out.wake_reasons = reasons
   if (reasons.length) {
     const r = await call('Ensure', { box_id: BOX_ID })

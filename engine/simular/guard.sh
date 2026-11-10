@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
 # Keeps both Simular servers awake (runs inside the GitHub watchdog every 30 min).
 #   server 1: secret SIMULAR_BOX_KEY  box cb-6ad4209d8372  heartbeat data/engine_b.json  state data/box_state.json
-#   server 2: secret SIMULAR_KEY_2    box cb-e24d45c9724d  heartbeat data/engine_c.json  state data/box_state_2.json
-# Each: wake if not running / heartbeat > 2h / forced, re-assert hourly wake schedule, log incidents.
+#   server 2: secret SIMULAR_KEY_2    box cb-e24d45c9724d  site check api/live.json -> /healthz  state data/box_state_2.json
+# Each: wake if not running / heartbeat > 2h (server 1) / its site unreachable (server 2) / forced,
+# re-assert hourly wake schedule, log incidents.
 set -uo pipefail
 (cd engine/simular && npm i --silent --no-audit --no-fund)
 COMMIT=0; ADD=""; SUMMARY=""
-one() { # label key boxid statefile agekey
-  local label="$1" key="$2" box="$3" st="$4" agek="$5"
+one() { # label key boxid statefile agekey [site-down-text]
+  local label="$1" key="$2" box="$3" st="$4" agek="$5" down="${6:-}"
   if [ -z "$key" ]; then echo "[$label] no key secret — skip"; return 0; fi
   echo "::add-mask::$key"
   cp -f "$st" /tmp/box_prev.json 2>/dev/null || echo '{}' > /tmp/box_prev.json
   local age; age=$(python3 -c "import json;d=json.load(open('/tmp/watch.json'));a=(d.get('$agek') or {}).get('age_min');print('' if a is None else a)" 2>/dev/null)
   if [ -n "$age" ]; then export ENGINE_B_AGE_MIN="$age"; else unset ENGINE_B_AGE_MIN; fi
-  SIMULAR_BOX_KEY="$key" BOX_ID="$box" OUT="$st" node engine/simular/box_guard.mjs | tee /tmp/box.json
+  SITE_DOWN="$down" SIMULAR_BOX_KEY="$key" BOX_ID="$box" OUT="$st" node engine/simular/box_guard.mjs | tee /tmp/box.json
   LABEL="$label" python3 - <<'PY'
 import json, subprocess, os
 cur = json.load(open("/tmp/box.json"))
@@ -36,7 +37,16 @@ PY
   SUMMARY="$SUMMARY\n### $label\n\`\`\`json\n$(cat /tmp/box.json)\n\`\`\`"
 }
 one "服务器 1" "${SIMULAR_BOX_KEY:-}" "cb-6ad4209d8372" data/box_state.json engine_b
-one "服务器 2" "${SIMULAR_KEY_2:-}" "cb-e24d45c9724d" data/box_state_2.json engine_c
+# server 2 runs the signal station: reachable if any registered address answers /healthz
+SITE2=""; URLS=$(python3 -c "import json;print(' '.join(json.load(open('api/live.json')).get('urls') or []))" 2>/dev/null)
+if [ -n "$URLS" ]; then
+  SITE2="所有登记地址都无响应"
+  for u in $URLS; do
+    for t in 1 2; do curl -sf -m 15 "$u/healthz" >/dev/null && { SITE2=""; break 2; }; sleep 5; done
+  done
+  echo "[site] station: ${SITE2:-ok}"
+fi
+one "服务器 2" "${SIMULAR_KEY_2:-}" "cb-e24d45c9724d" data/box_state_2.json - "$SITE2"
 if [ "$COMMIT" = "1" ]; then
   git config user.name "laohe-bot"; git config user.email "9499758-wq@users.noreply.github.com"
   STATUS_MARK=0 python3 status.py || true

@@ -2,7 +2,7 @@
 # Idempotent installer for a server engine on a Simular box. Safe to re-run (also run at login/boot).
 # Identity comes from ~/.engine.conf (not in the repo):
 #   ENGINE_ID=B ENGINE_MINUTE=25            first server (default when the file is missing)
-#   ENGINE_ID=C ENGINE_MINUTE=55 RADIO=1    second server, also produces the audio briefing
+#   ENGINE_ID=C SITE_ENGINE=0 RADIO=1 STATION=1   second server: no site updates, runs its own station site + audio briefing
 set -uo pipefail
 U="${SUDO_USER:-$(id -un)}"; H="$(getent passwd "$U" | cut -d: -f6)"
 E="$H/engine"
@@ -56,6 +56,10 @@ AccuracySec=20s
 WantedBy=timers.target
 UNIT
 TIMERS="engine-$eid.timer engine-$eid-resume.timer"
+if [ "${SITE_ENGINE:-1}" = "0" ]; then
+  sudo -n systemctl disable --now "engine-$eid.timer" "engine-$eid-resume.timer" >/dev/null 2>&1 || true
+  TIMERS=""
+fi
 if [ "${RADIO:-0}" = "1" ]; then
   sudo -n tee /etc/systemd/system/radio.service >/dev/null <<UNIT
 [Unit]
@@ -82,7 +86,8 @@ WantedBy=timers.target
 UNIT
   TIMERS="$TIMERS radio.timer"
 fi
-sudo -n systemctl daemon-reload && sudo -n systemctl enable --now $TIMERS
+if [ "${STATION:-0}" = "1" ] && [ -x "$H/station/install.sh" ]; then bash "$H/station/install.sh" || true; fi
+sudo -n systemctl daemon-reload && { [ -z "$TIMERS" ] || sudo -n systemctl enable --now $TIMERS; }
 
 # 2) cron (secondary, same minute; the lock file prevents double runs) + @reboot
 if ! command -v crontab >/dev/null 2>&1; then
@@ -92,8 +97,8 @@ if command -v crontab >/dev/null 2>&1; then
   sudo -n systemctl enable --now cron >/dev/null 2>&1 || true
   ( crontab -l 2>/dev/null | grep -v -E 'engine/engine_b.sh|engine/radio_run.sh|^CRON_TZ' ; \
     echo "CRON_TZ=Asia/Shanghai"; \
-    echo "$MIN * * * * $E/engine/engine_b.sh >/dev/null 2>&1"; \
-    echo "@reboot sleep 240 && $E/engine/engine_b.sh >/dev/null 2>&1"; \
+    [ "${SITE_ENGINE:-1}" = "1" ] && echo "$MIN * * * * $E/engine/engine_b.sh >/dev/null 2>&1"; \
+    [ "${SITE_ENGINE:-1}" = "1" ] && echo "@reboot sleep 240 && $E/engine/engine_b.sh >/dev/null 2>&1"; \
     [ "${RADIO:-0}" = "1" ] && echo "33 8,20 * * * $E/engine/radio_run.sh >/dev/null 2>&1" ) | awk '!seen[$0]++' | crontab -
 fi
 

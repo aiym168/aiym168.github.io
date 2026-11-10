@@ -126,7 +126,7 @@ def build_status(now: datetime) -> dict:
             },
             "C": {
                 **c,
-                "schedule": "第二台服务器每小时第 55 分钟检查；网站超过 75 分钟没更新才接管；另每天 08:30 / 20:30 生成羊毛电台",
+                "schedule": "第二台服务器已不参与本站更新：运行独立的直播站，并在每天 08:30 / 20:30 生成羊毛电台",
                 "next_run_label": lbl(next_minute(now, (55,))),
                 "last_seen_at": c_seen,
                 "age_min": age_min(c_seen, now),
