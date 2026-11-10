@@ -5,14 +5,18 @@
   "drop:duplicate": 47,
   "drop:empty_summary": 9,
   "drop:negative_signal": 81,
-  "drop:no_clear_offer": 112,
-  "drop:not_ai": 127,
+  "drop:no_clear_offer": 123,
+  "drop:not_ai": 131,
   "drop:too_old_pre2025": 44,
-  "google_news_resolved": 152,
-  "google_news_total": 152,
-  "kept_total": 103,
+  "google_news_resolved": 168,
+  "google_news_total": 168,
+  "kept_total": 104,
   "net:gnews_cache_hit": 152,
-  "raw_total": 523
+  "net:gnews_resolved_net": 16,
+  "net:tco_expanded": 7,
+  "net:tco_failed": 2,
+  "new_this_run": 2,
+  "raw_total": 539
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -42,6 +46,7 @@
    "如何免费获得 Claude 认证：如何免费获得 Claude 认证"
   ],
   "negative_signal": [
+   "@higgsfield 分享：开始您的72小时免费希格斯菲尔德 MCP 试用，无限制访问所有顶级视频，图像和音频模型",
    "在周中之前阻止您的 Grok 机器人燃烧每周限制",
    "为 Grok Bot 模式命名一次，每个后续都会保留在该模式中",
    "如何使用 Claude Fable 5.2 进行 SEO 效果如此之好，感觉不合法 FABLE 5.2 昨天发布",
@@ -52,22 +57,21 @@
    "在 Google 的 AI 答案中引用您的业务",
    "Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化",
    "5 个步骤在几分钟内建立免费的 Claude Code SEO 技能 只需 5 个步骤即可在几分钟内建立免费的 Clau",
-   "@martinvars 分享：北加州凯撒医疗机构对 AI 编写的超声心动图报告进行了一项随机试验，该试验今天在芝加哥举行",
-   "@mcwilsonky 分享：客户正在询问 AI 该雇用谁"
+   "@martinvars 分享：北加州凯撒医疗机构对 AI 编写的超声心动图报告进行了一项随机试验，该试验今天在芝加哥举行"
   ],
   "no_clear_offer": [
-   "Nuance Labs 推出了 Emma，这是一个免费的 AI 角色，用户可以在其新的 Nuplex 模型上进行视频聊天",
-   "Neocloud 不断增加的债务以及大多数 CSP 的负自由现金流导致资本市场开始担心无休止的高水平 AI 投资",
-   "@Hostinger 分享：一平衡，约 150 个模型",
-   "@hackinarticles 分享：AI 渗透测试培训计划 预订免费演示 AI 和 LLM 应用程序正在带来新的安全挑",
-   "Meshy 现在拥有自己的街机",
-   "@paulnovosad 分享：我在达特茅斯的同事开发了一个非常酷的工具，用于进行 AI 验证的家庭作业",
-   "@vtubernook 分享：只是说..你不需要 AI 来拥有一个免费的 vtuber 模型",
-   "有关我们所有 AI Agent 的更多信息，请访问：获取 AI 销售代理的免费指南，请访问",
-   "目前 B2B + AI 卡组中最常见的差距：没有证据表明客户为 AI 支付的费用高于其替换的软件",
-   "微软申请了一项专利，让 PC 游戏玩家通过与 AI 公司分享未使用的 GPU 能力来赚钱",
-   "认识 ZONOS3-Mini：具有语音克隆和单词级控制的开源文本转语音",
-   "我们要求 Claude Fable 5.2 完成达芬奇的飞行器"
+   "@Jason 分享：微软不再是捆绑者——他们现在是捆绑者",
+   "Ollama 让您可以轻松地在本地免费运行 AI 模型 使用 Ollama 在您的 PC 上运行 DeepSeek",
+   "@youdotcom 现已在 Composio Instant 上上线，未来 6 个月免费",
+   "新闻：Galaxy AI Premium 即将推出",
+   "@malpani 分享：在花费数千美元参加额外课程之前，为什么不看看您的孩子是否能够按照自己的节奏学习，并获得支持",
+   "@malpani 分享：父母在辅导上花费巨资，因为他们担心孩子会落后",
+   "@GlobAICommunity 分享：全球 AI 大会2027世界巡演正在进行中",
+   "生物学刚刚迎来 HBM 时刻",
+   "@malpani 分享：辅导课程通常可以卖出更多的教学时间",
+   "我要求 Muse 测试一个新的免费 AI 模型...它创建了一个 Modal 帐户，开始在 API 后面部署模型",
+   "AI 网关的新增功能：Kimi K3.1 Pro、GPT-6.1 Terra、MiniMax M3.1 Flash",
+   "Claude Mythos 5.2 现已在 Devin 的托管安全扫描中提供"
   ],
   "not_ai": [
    "@aakashgupta 分享：从理论上讲，从尼泊尔这个机场起飞的飞机无法起飞",
@@ -98,15 +102,15 @@
    "今天，我们很高兴宣布与 @awscloud 建立新的合作伙伴关系！ 🔥"
   ]
  },
- "generated_at": "2026-11-11T04:49:41+08:00",
+ "generated_at": "2026-11-11T06:01:34+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-11T04:49:41+08:00",
+  "checked_at": "2026-11-11T06:01:34+08:00",
   "counts": {
-   "ok": 95
+   "ok": 96
   },
   "hidden": 0
  },
- "seconds": 0.4,
+ "seconds": 8.9,
  "side": {
   "github_hot": {
    "kept": 30,
@@ -114,10 +118,10 @@
   },
   "hot_topics": {
    "drop:negative_signal": 6,
-   "drop:not_ai": 8,
+   "drop:not_ai": 7,
    "drop:not_ai_strict": 5,
-   "kept": 20,
-   "raw": 39
+   "kept": 22,
+   "raw": 40
   }
  }
 }
