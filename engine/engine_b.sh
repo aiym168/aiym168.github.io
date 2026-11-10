@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# Engine B — runs on the Simular cloud server (cron/systemd, hourly at :25).
+# Server engine — runs on a Simular cloud server (cron/systemd, hourly).
+# Same script on every server; ~/.engine.conf (outside the repo) picks the identity:
+#   ENGINE_ID=B  ENGINE_MINUTE=25   (first server, default)
+#   ENGINE_ID=C  ENGINE_MINUTE=55   (second server: third line of defence, only takes over
+#                                    when neither GitHub nor the first server has updated the site)
 # 1. mutual watchdog: re-enable / re-dispatch GitHub engine A if needed
 # 2. if the live site is stale (> STALE_MIN) or FORCE=1: run the full pipeline and push
 #    otherwise: standby, refresh its "seen" marker every few hours
@@ -8,6 +12,8 @@ set -uo pipefail
 # run from a private copy: the repo checkout (and this file) is reset during the run
 if [ -z "${ENGINE_B_COPY:-}" ]; then cp -f "$0" /tmp/engine_b_run.sh; ENGINE_B_COPY=1 exec bash /tmp/engine_b_run.sh "$@"; fi
 E="$HOME/engine"
+[ -r "$HOME/.engine.conf" ] && . "$HOME/.engine.conf"
+EID="${ENGINE_ID:-B}"; eid="$(printf '%s' "$EID" | tr 'A-Z' 'a-z')"
 # cron/systemd start with a bare env: load the box's network proxy + CA settings
 for f in /etc/profile.d/cocoonbox-proxy.sh /etc/profile.d/cocoonbox-mise.sh; do [ -r "$f" ] && . "$f" 2>/dev/null; done
 if [ -z "${https_proxy:-}" ] && (exec 3<>/dev/tcp/127.0.0.1/3128) 2>/dev/null; then
@@ -16,19 +22,22 @@ fi
 export no_proxy="${no_proxy:-localhost,127.0.0.1,::1}" SSL_CERT_FILE="${SSL_CERT_FILE:-/etc/ssl/certs/ca-certificates.crt}" REQUESTS_CA_BUNDLE="${REQUESTS_CA_BUNDLE:-/etc/ssl/certs/ca-certificates.crt}"
 LOGDIR="$E/logs"; mkdir -p "$LOGDIR"
 STALE_MIN="${STALE_MIN:-90}"
+# second server: take over only if the live site is older than this (both others missed a slot)
+C_LIVE_STALE_MIN="${C_LIVE_STALE_MIN:-75}"
+C_PEER_STALE_MIN="${C_PEER_STALE_MIN:-150}"
 SEEN_EVERY_MIN="${SEEN_EVERY_MIN:-55}"
 REPO="aiym168/aiym168.github.io"
-LOG="$LOGDIR/engine_b-$(TZ=Asia/Shanghai date +%F).log"
-find "$LOGDIR" -name 'engine_b-*.log' -mtime +7 -delete 2>/dev/null || true
+LOG="$LOGDIR/engine_${eid}-$(TZ=Asia/Shanghai date +%F).log"
+find "$LOGDIR" -name 'engine_*-*.log' -mtime +7 -delete 2>/dev/null || true
 [ -f "$LOG" ] && [ "$(stat -c %s "$LOG")" -gt 5000000 ] && mv -f "$LOG" "$LOG.1"
 exec 9>"$E/.lock"
-if ! flock -n 9; then echo "[engine-b] another run holds the lock — exit"; exit 0; fi
+if ! flock -n 9; then echo "[engine-$eid] another run holds the lock — exit"; exit 0; fi
 main() {
 export TZ=Asia/Shanghai
-echo "===== [engine-b] start $(date '+%F %T %Z') force=${FORCE:-0} ====="
+echo "===== [engine-$eid] start $(date '+%F %T %Z') force=${FORCE:-0} ====="
 
 T="$(cat "$HOME/.gh_pages_token" 2>/dev/null)"
-[ -z "$T" ] && { echo "[engine-b] no token file"; exit 2; }
+[ -z "$T" ] && { echo "[engine-$eid] no token file"; exit 2; }
 export GH_TOKEN="$T" GITHUB_TOKEN="$T"
 cd "$E" || exit 2
 git remote set-url origin "https://x-access-token:${T}@github.com/${REPO}.git"
@@ -42,65 +51,71 @@ sync_main(){
 }
 push_retry(){ # $1 = commit message ; $2 = rerun cmd on conflict
   for i in 1 2 3 4 5; do
-    if git push -q origin HEAD:main; then echo "[engine-b] pushed (try $i)"; return 0; fi
-    echo "[engine-b] push rejected — pull --rebase (try $i)"
+    if git push -q origin HEAD:main; then echo "[engine-$eid] pushed (try $i)"; return 0; fi
+    echo "[engine-$eid] push rejected — pull --rebase (try $i)"
     git fetch -q origin main
     if ! git pull -q --rebase -X ours origin main; then
       git rebase --abort 2>/dev/null || true
       sync_main || return 1
       eval "$2"
       git add -A; git reset -q HEAD -- .last_good __pycache__ 2>/dev/null || true
-      git diff --cached --quiet && { echo "[engine-b] nothing left after resync"; return 0; }
+      git diff --cached --quiet && { echo "[engine-$eid] nothing left after resync"; return 0; }
       git commit -q -m "$1 (resynced)"
     fi
     sleep $((i*5))
   done; return 1
 }
 
-sync_main || { echo "[engine-b] git sync failed"; exit 3; }
+sync_main || { echo "[engine-$eid] git sync failed"; exit 3; }
 
 # --- mutual watchdog (also re-enables / re-dispatches engine A) ---
-W="$(python3 engine/gh_watch.py heal --who '服务器引擎 B' 2>>"$LOG")"
-read -r LIVE_AGE A_AGE ACTIONS <<<"$(printf '%s' "$W" | python3 -c '
+W="$(python3 engine/gh_watch.py heal --who "服务器引擎 $EID" 2>>"$LOG")"
+read -r LIVE_AGE A_AGE ACTIONS B_AGE <<<"$(printf '%s' "$W" | python3 -c '
 import json,sys
 try: d=json.load(sys.stdin)
 except Exception: d={}
-la=d.get("live_age_min"); aa=(d.get("last_success") or {}).get("age_min")
-print(la if la is not None else 99999, aa if aa is not None else 99999, len(d.get("actions") or []))')"
-echo "[engine-b] live_age=${LIVE_AGE}min engineA_last_success=${A_AGE}min watchdog_actions=${ACTIONS}"
+la=d.get("live_age_min"); aa=(d.get("last_success") or {}).get("age_min"); ba=(d.get("engine_b") or {}).get("age_min")
+print(la if la is not None else 99999, aa if aa is not None else 99999, len(d.get("actions") or []), ba if ba is not None else 99999)')"
+echo "[engine-$eid] live_age=${LIVE_AGE}min engineA_last_success=${A_AGE}min peerB_seen=${B_AGE}min watchdog_actions=${ACTIONS}"
 
 MODE=standby
 if [ "${FORCE:-0}" = "1" ]; then MODE=forced
-elif [ "$LIVE_AGE" -gt "$STALE_MIN" ] || [ "$A_AGE" -gt "$STALE_MIN" ]; then MODE=takeover; fi
-echo "[engine-b] mode=$MODE"
+elif [ "$EID" = "B" ]; then
+  if [ "$LIVE_AGE" -gt "$STALE_MIN" ] || [ "$A_AGE" -gt "$STALE_MIN" ]; then MODE=takeover; fi
+else
+  # third line: only when the live site itself is stale, or both other engines look dead
+  if [ "$LIVE_AGE" -gt "$C_LIVE_STALE_MIN" ]; then MODE=takeover
+  elif [ "$A_AGE" -gt "$STALE_MIN" ] && [ "$B_AGE" -gt "$C_PEER_STALE_MIN" ]; then MODE=takeover; fi
+fi
+echo "[engine-$eid] mode=$MODE"
 
 if [ "$MODE" = "standby" ]; then
-  SEEN_AGE=$(python3 -c '
+  SEEN_AGE=$(EIDL=$eid python3 -c '
 import json,datetime
 try:
-  d=json.load(open("data/engine_b.json")); s=max(filter(None,[d.get("last_run_at"),d.get("standby_seen_at")]))
+  import os; d=json.load(open("data/engine_"+os.environ["EIDL"]+".json")); s=max(filter(None,[d.get("last_run_at"),d.get("standby_seen_at")]))
   print(int((datetime.datetime.now(datetime.timezone.utc)-datetime.datetime.fromisoformat(s)).total_seconds()//60))
 except Exception: print(99999)')
-  if [ "$SEEN_AGE" -lt "$SEEN_EVERY_MIN" ]; then echo "[engine-b] standby, marker fresh (${SEEN_AGE}min) — no commit"; exit 0; fi
-  ENGINE=B ENGINE_SEEN_ONLY=1 python3 status.py
-  git add data/engine_b.json api/status.json m/status.html
+  if [ "$SEEN_AGE" -lt "$SEEN_EVERY_MIN" ]; then echo "[engine-$eid] standby, marker fresh (${SEEN_AGE}min) — no commit"; exit 0; fi
+  ENGINE=$EID ENGINE_SEEN_ONLY=1 python3 status.py
+  git add data/engine_$eid.json api/status.json m/status.html
   git diff --cached --quiet && exit 0
   git commit -q -m "update $(date "+%F %H:%M")"
-  push_retry "update" "ENGINE=B ENGINE_SEEN_ONLY=1 python3 status.py"
+  push_retry "update" "ENGINE=$EID ENGINE_SEEN_ONLY=1 python3 status.py"
   exit $?
 fi
 
-RUN_CMD="ENGINE=B ENGINE_MODE=$MODE RUN_URL='https://github.com/${REPO}/commits/main' FORCE_X=\${FORCE_X:-0} timeout 2700 bash engine/pipeline.sh"
+RUN_CMD="ENGINE=$EID ENGINE_MODE=$MODE RUN_URL='https://github.com/${REPO}/commits/main' FORCE_X=\${FORCE_X:-0} timeout 2700 bash engine/pipeline.sh"
 eval "$RUN_CMD"; rc=$?
-echo "[engine-b] pipeline rc=$rc"
+echo "[engine-$eid] pipeline rc=$rc"
 rm -rf .last_good __pycache__
 git add -A; git reset -q HEAD -- .last_good __pycache__ logs .lock 2>/dev/null || true
-if git diff --cached --quiet; then echo "[engine-b] no changes"; exit 0; fi
+if git diff --cached --quiet; then echo "[engine-$eid] no changes"; exit 0; fi
 MSG="auto update $(date "+%F %H:%M")"
 git commit -q -m "$MSG"
-push_retry "$MSG" "ENGINE=B ENGINE_MODE=$MODE FETCH=0 bash engine/pipeline.sh"
+push_retry "$MSG" "ENGINE=$EID ENGINE_MODE=$MODE FETCH=0 bash engine/pipeline.sh"
 rc=$?
-echo "===== [engine-b] end $(date '+%F %T %Z') rc=$rc ====="
+echo "===== [engine-$eid] end $(date '+%F %T %Z') rc=$rc ====="
 exit $rc
 }
 

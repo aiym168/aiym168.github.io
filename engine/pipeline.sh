@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Shared self-healing pipeline used by BOTH engines:
 #   Engine A = GitHub Actions (.github/workflows/update.yml)
-#   Engine B = Simular cloud server (engine/engine_b.sh)
+#   Engine B / C = Simular cloud servers (engine/engine_b.sh)
 # env: ENGINE=A|B  ENGINE_MODE=scheduled|takeover|forced|dispatch|push
 #      FETCH=1 (0 = build only)  FORCE_X=1  RUN_URL=...
 set -uo pipefail
@@ -14,7 +14,7 @@ rm -rf .last_good && mkdir -p .last_good
 for p in index.html 404.html feed.xml cli.sh fx.css fx.js robots.txt sitemap.xml sitemap.txt sitemap_index.xml; do
   [ -e "$p" ] && cp -a "$p" .last_good/
 done
-for d in api m c item archives vendor deals data; do [ -d "$d" ] && cp -a "$d" .last_good/; done
+for d in api m c item archives vendor deals radio data; do [ -d "$d" ] && cp -a "$d" .last_good/; done
 log "snapshot ready"
 
 if [ "$FETCH" = "1" ]; then
@@ -54,7 +54,7 @@ if [ "$RESULT" = "failed" ] || ! python3 health_check.py; then
   for p in index.html 404.html feed.xml cli.sh fx.css fx.js robots.txt sitemap.xml sitemap.txt sitemap_index.xml; do
     [ -e ".last_good/$p" ] && cp -a ".last_good/$p" ./
   done
-  for d in api m c item archives vendor deals; do
+  for d in api m c item archives vendor deals radio; do
     if [ -d ".last_good/$d" ]; then rm -rf "$d"; cp -a ".last_good/$d" ./; fi
   done
   # keep source-health/discovery knowledge, restore content data

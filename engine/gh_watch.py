@@ -3,7 +3,7 @@
 
 Used by:
   * .github/workflows/watchdog.yml (Engine A side, every 30 min)
-  * engine/engine_b.sh on the Simular server (Engine B side, hourly)
+  * engine/engine_b.sh on the Simular servers (Engine B / C side, hourly)
 
 Commands:
   check              print JSON: workflow states, last success age, live data age, engine B age
@@ -144,6 +144,9 @@ def check() -> dict:
     b = raw_main("data/engine_b.json")
     seen = max(filter(None, [b.get("last_run_at"), b.get("standby_seen_at")]), default=None)
     out["engine_b"] = {"last_seen": seen, "age_min": mins_since(seen), "mode": b.get("mode"), "result": b.get("result")}
+    c = raw_main("data/engine_c.json")
+    seen_c = max(filter(None, [c.get("last_run_at"), c.get("standby_seen_at")]), default=None)
+    out["engine_c"] = {"last_seen": seen_c, "age_min": mins_since(seen_c), "mode": c.get("mode"), "result": c.get("result")}
     return out
 
 

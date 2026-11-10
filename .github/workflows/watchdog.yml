@@ -3,15 +3,15 @@ name: Watchdog (self-heal)
 # Every 30 min:
 #  1. re-enable disabled workflows, re-dispatch the main update if it failed or
 #     has not succeeded for > 90 min, record incidents in issue "[看门狗] 自动更新故障记录"
-#  2. box guard: if the Simular server (Engine B) is failed / asleep, or Engine B
-#     has no heartbeat for > 2h, wake it and re-assert its hourly wake schedule
+#  2. server guard: for each Simular server (engines B and C): if it is failed / asleep,
+#     or its engine has no heartbeat for > 2h, wake it and re-assert its hourly wake schedule
 on:
   schedule:
     - cron: "23,53 * * * *"
   workflow_dispatch:
     inputs:
       force_wake:
-        description: "强制唤醒 Simular 服务器"
+        description: "强制唤醒两台 Simular 服务器"
         type: boolean
         default: false
 
@@ -46,48 +46,11 @@ jobs:
           GH_TOKEN_ALT: ${{ secrets.GITHUB_TOKEN }}
         run: python3 engine/gh_watch.py heal --who "GitHub 看门狗" | tee /tmp/watch.json
 
-      - name: Box guard (Simular server / engine B)
+      - name: Server guard (both Simular servers)
         env:
           SIMULAR_BOX_KEY: ${{ secrets.SIMULAR_BOX_KEY }}
+          SIMULAR_KEY_2: ${{ secrets.SIMULAR_KEY_2 }}
           FORCE_WAKE: ${{ inputs.force_wake && '1' || '0' }}
           GH_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
           GH_TOKEN_ALT: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          set -uo pipefail
-          [ -n "$SIMULAR_BOX_KEY" ] && echo "::add-mask::$SIMULAR_BOX_KEY"
-          if [ -z "$SIMULAR_BOX_KEY" ]; then echo "no SIMULAR_BOX_KEY secret — skip"; exit 0; fi
-          cp -f data/box_state.json /tmp/box_prev.json 2>/dev/null || echo '{}' > /tmp/box_prev.json
-          export ENGINE_B_AGE_MIN=$(python3 -c "import json;d=json.load(open('/tmp/watch.json'));a=(d.get('engine_b') or {}).get('age_min');print('' if a is None else a)")
-          [ -z "$ENGINE_B_AGE_MIN" ] && unset ENGINE_B_AGE_MIN
-          (cd engine/simular && npm i --silent --no-audit --no-fund)
-          node engine/simular/box_guard.mjs | tee /tmp/box.json
-          python3 - <<'PY'
-          import json, subprocess, os
-          cur = json.load(open("/tmp/box.json".strip()))
-          prev = json.load(open("/tmp/box_prev.json"))
-          woke = bool(cur.get("actions")) or bool(cur.get("wake_reasons"))
-          changed = cur.get("state_after") != prev.get("state_after") or cur.get("error") != prev.get("error")
-          old = (cur.get("checked_at_ms", 0) - int(prev.get("checked_at_ms") or 0)) > 3 * 3600 * 1000
-          if woke or cur.get("error"):
-              why = "；".join(cur.get("wake_reasons") or []) or (cur.get("error") or "调度修复")
-              detail = (f"唤醒前状态：{cur.get('state_before')}\n\n唤醒后状态：{cur.get('state_after')}（{cur.get('state_after_zh')}）\n\n"
-                        f"引擎 B 心跳：{cur.get('engine_b_age_min')} 分钟前\n\n动作：{', '.join(cur.get('actions') or []) or '-'}\n\n"
-                        f"定时唤醒：{json.dumps(cur.get('wake_schedule'), ensure_ascii=False)}\n\n"
-                        f"运行记录：{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}")
-              subprocess.run(["python3", "engine/gh_watch.py", "incident", f"GitHub 看门狗唤醒服务器：{why}", detail])
-          open("/tmp/box_commit", "w").write("1" if (woke or changed or old) else "0")
-          print("commit box_state:", woke or changed or old)
-          PY
-          if [ "$(cat /tmp/box_commit)" = "1" ]; then
-            git config user.name "laohe-bot"; git config user.email "9499758-wq@users.noreply.github.com"
-            STATUS_MARK=0 python3 status.py || true
-            git add data/box_state.json api/status.json m/status.html
-            git diff --cached --quiet && exit 0
-            git commit -q -m "box guard: $(python3 -c "import json;d=json.load(open('/tmp/box.json'));print(d.get('state_after_zh') or d.get('error'))") $(TZ=Asia/Shanghai date '+%F %H:%M')"
-            for i in 1 2 3 4 5; do
-              git push -q origin HEAD:main && break
-              git fetch -q origin main && git rebase -q origin/main || { git rebase --abort; git reset -q --soft origin/main; git commit -q -m "box guard (merged)"; }
-              sleep $((i*4))
-            done
-          fi
-          { echo "## 服务器守护"; echo '```json'; cat /tmp/box.json; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+        run: bash engine/simular/guard.sh

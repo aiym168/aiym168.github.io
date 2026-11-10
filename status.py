@@ -2,7 +2,7 @@
 """Write run marker, update log, public /api/status.json + /m/status.html (更新动态) and data/_internal_status.json.
 
 env:
-  ENGINE=A|B          which engine ran (marker data/engine_a.json / engine_b.json)
+  ENGINE=A|B|C        which engine ran (marker data/engine_a.json / engine_b.json / engine_c.json)
   ENGINE_MODE=...     scheduled / takeover / forced / dispatch
   RUN_RESULT=ok|rolled_back|failed
   RUN_URL=...         link to the run (Actions URL or box log)
@@ -59,7 +59,7 @@ def next_minute(now: datetime, minutes: tuple[int, ...]) -> datetime:
 
 def write_marker(now: datetime) -> None:
     eng = (os.environ.get("ENGINE") or "").upper()
-    if eng not in ("A", "B") or os.environ.get("STATUS_MARK", "1") == "0":
+    if eng not in ("A", "B", "C") or os.environ.get("STATUS_MARK", "1") == "0":
         return
     meta = j(ROOT / "api" / "meta.json")
     path = DATA / f"engine_{eng.lower()}.json"
@@ -67,7 +67,7 @@ def write_marker(now: datetime) -> None:
     result = os.environ.get("RUN_RESULT", "ok")
     marker = {
         "engine": eng,
-        "name": "GitHub Actions 云端引擎" if eng == "A" else "Simular 云服务器引擎",
+        "name": {"A": "GitHub Actions 云端引擎", "B": "Simular 云服务器引擎", "C": "Simular 云服务器引擎（二）"}[eng],
         "mode": os.environ.get("ENGINE_MODE", "scheduled"),
         "result": result,
         "last_run_at": now.isoformat(timespec="seconds"),
@@ -96,7 +96,8 @@ def age_min(iso: str | None, now: datetime) -> int | None:
 
 
 def build_status(now: datetime) -> dict:
-    a, b = j(DATA / "engine_a.json"), j(DATA / "engine_b.json")
+    a, b, c = j(DATA / "engine_a.json"), j(DATA / "engine_b.json"), j(DATA / "engine_c.json")
+    c_seen = max(filter(None, [c.get("last_run_at"), c.get("standby_seen_at")]), default=None)
     meta = j(ROOT / "api" / "meta.json")
     health = j(DATA / "sources_health.json")
     disc = j(DATA / "auto" / "discovered.json")
@@ -122,6 +123,13 @@ def build_status(now: datetime) -> dict:
                 "next_run_label": lbl(next_minute(now, (25,))),
                 "last_seen_at": b_seen,
                 "age_min": age_min(b_seen, now),
+            },
+            "C": {
+                **c,
+                "schedule": "第二台服务器每小时第 55 分钟检查；网站超过 75 分钟没更新才接管；另每天 08:30 / 20:30 生成羊毛电台",
+                "next_run_label": lbl(next_minute(now, (55,))),
+                "last_seen_at": c_seen,
+                "age_min": age_min(c_seen, now),
             },
             "watchdog": {
                 "schedule": "每 30 分钟（第 23 / 53 分钟）",
@@ -150,6 +158,7 @@ def build_status(now: datetime) -> dict:
         },
         "heartbeat_label": hb.get("updated_at_label"),
         "server": _server(j(DATA / "box_state.json")),
+        "server2": _server(j(DATA / "box_state_2.json")),
     }
 
 

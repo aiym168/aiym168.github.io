@@ -383,7 +383,8 @@ def topnav(prefix="./"):
         for mid, title, _, href, _, _ in MODULES
     )
     links = (f'<a class="nav-hot" href="{prefix}deals/index.html" title="全球优惠情报中心">优惠情报</a>'
-             f'<a href="{prefix}deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a>') + links
+             f'<a href="{prefix}deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a>'
+             f'<a href="{prefix}radio/index.html" title="AI 羊毛电台 · 每天三分钟听完">电台</a>') + links
     links += f'<a href="{prefix}m/board.html" title="匿名留言板 · 星际信号站">留言板</a>'
     links += f'<a href="{prefix}m/status.html" title="更新动态">更新动态</a>'
     return f"""
@@ -405,7 +406,7 @@ def topnav(prefix="./"):
 def site_footer(prefix="./", extra="") -> str:
     return f"""<footer>
   <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
+  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}radio/index.html">AI 羊毛电台</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>"""
 
 
@@ -1324,6 +1325,17 @@ def build():
         traceback.print_exc()
         print("[apiprice] page skipped:", e)
     try:
+        import radio_build
+        rd_path = radio_build.build_page(sys.modules[__name__], now)
+        if rd_path:
+            deal_paths.append(rd_path)
+        radio_home = radio_build.home_section("./")
+    except Exception as e:  # 电台出错不能拖垮主站
+        import traceback
+        traceback.print_exc()
+        print("[radio] skipped:", e)
+        radio_home = ""
+    try:
         deals_home = deals_build.home_section("./")
     except Exception as e:
         print("[deals] home section skipped:", e)
@@ -1382,6 +1394,7 @@ def build():
 {brain_loader_script("vendor/")}
 <main class="wrap">
   {deals_home}
+  {radio_home}
   <section class="section" id="search">
     <div class="sec-head"><span class="sec-idx">01 · 找资源</span><h2>搜索与筛选</h2>
       <p class="sec-desc">搜索关键词，或按模块筛选；绑卡、实名、直连等条件在“更多筛选”里。标“未注明”的，是原文没写清楚。</p></div>
