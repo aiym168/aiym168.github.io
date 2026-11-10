@@ -3,15 +3,8 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 14,
+  "count": 18,
   "items": [
-    {
-      "id": "xhot-x-2113390212911083894",
-      "title": "我们的 Frontier Red Team 博客上的新内容：使用 Claude 大规模正式验证软件。",
-      "summary": "我们的 Frontier Red Team 博客上的新内容：使用 Claude 大规模正式验证软件。形式验证可以证明代码不存在某些错误，但从历史上看，它仅适用于小型代码库（或需要大量专家时间）。借助 AI 模型，",
-      "url": "https://x.com/AnthropicAI/status/2113390212911083894",
-      "source": "X"
-    },
     {
       "id": "hnhot-50429426",
       "title": "Google Gemini 将个人云端硬盘文件和电子邮件路由到人工注释器",
@@ -55,17 +48,17 @@
       "source": "Hacker News"
     },
     {
+      "id": "hnhot-50435660",
+      "title": "随着 AI 信贷压力上升，CoreWeave 债券收益率突破 16%",
+      "summary": "",
+      "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+      "source": "Hacker News"
+    },
+    {
       "id": "v2hot-1255567",
       "title": "说说最近在折腾 Claude 上继续浪费的钱吧",
       "summary": "之前说过，Claude 连续被封了几个自己的老号。一直在尝试折腾 [在自己的电脑上，使用 Claude Code desktop 开发] 折腾了几天，除了浪费点钱之外，没有任何收获 分享一下吧 主要是购买了已经过 kyc 的账号。包括过 kyc 是印尼区、美区的 id 也包括 Outlook、Gmail 等邮箱 包括新号、老号（通过我自己看邮箱里面 Claude 注册邮件） 使用不同的梯子（没错，之前说梯子 300 一个月，被 V 站老哥喷惨了，经过评论区指导，我也尝试购买了一些所谓的美国家宽） ## 结果 总共大概投入 7",
       "url": "https://www.v2ex.com/t/1255567",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1255810",
-      "title": "提供一些关于美区 App Store 订阅 Claude 的信息",
-      "summary": "提供一些关于美区 App Store 订阅 Claude 的信息：目前看起来 anthropic 在后端会对 app store 执行订阅的 appleid 和 claude 账号做永久关联，也就是说：如果你的 claude 账号被封了，那么即使再换一个邮箱注册一个新的 claude 账号，这个美区 apple 账号也没法再执行订阅了，因为从 anthropic 后端看，这个美区 apple 账号已经和被封的账号关联过。在 iOS claude app 内 upgrade 时，会弹窗报错：“organization in receipt is not connected to acco",
-      "url": "https://www.v2ex.com/t/1255810",
       "source": "V2EX"
     },
     {
@@ -76,10 +69,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1255834",
-      "title": "美区 App Store 订阅 Claude",
-      "summary": "1.订阅一次 Claude，即终身于 Claude 绑定 2.现在订阅第一次，扣钱，不到帐，不弹 KYC 可以申请退款 3.第二次换号订阅，直接弹 KYC",
-      "url": "https://www.v2ex.com/t/1255834",
+      "id": "v2hot-1255866",
+      "title": "claude 封号会退钱吗",
+      "summary": "准备用谷歌商店充个号试试，但是好像说是被封了以后不退款？风险有点太高了吧",
+      "url": "https://www.v2ex.com/t/1255866",
       "source": "V2EX"
     },
     {
@@ -90,6 +83,13 @@
       "source": "V2EX"
     },
     {
+      "id": "v2hot-1255834",
+      "title": "美区 App Store 订阅 Claude",
+      "summary": "1.订阅一次 Claude，即终身于 Claude 绑定 2.现在订阅第一次，扣钱，不到帐，不弹 KYC 可以申请退款 3.第二次换号订阅，直接弹 KYC",
+      "url": "https://www.v2ex.com/t/1255834",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1255827",
       "title": "产品和技术方案用 Claude 还是 GPT 模型呢？",
       "summary": "个人感觉 Claude 可能更清晰一些，但是 GPT 也能想到，只是提一下。不知道大家有没有什么推荐的",
@@ -97,10 +97,38 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1255823",
-      "title": "翻出一张老 GBA 烧录卡，用 Codex 折腾了个网页烧录工具",
-      "summary": "最近翻出了吃灰很久的 Game Boy Micro 和一张 elink2 烧录卡。这卡是 2010 年买的，容量 1Gb （128MB），想往里面换几个游戏，却发现原来的配套软件是 Windows 程序，我手头又只有 Mac。不想为了烧个游戏装虚拟机，就让 Codex 帮忙分析原版软件，研究它和卡带的 USB 通信。先做出了一个 macOS 原型，后来又试着用 WebUSB 搬到了浏览器里。现在可以在网页上查看游戏列表、新增或替换游戏，还能自定义卡带菜单里的名字。![elink2 初始化界面](",
-      "url": "https://www.v2ex.com/t/1255823",
+      "id": "v2hot-1255869",
+      "title": "上个月还有人羡慕嵌入式不怕 AI",
+      "summary": "现在嵌入式工程师也在看核弹爆炸吧。OA 现在盯上了这一块儿。coding 没啥可卷的了，硬件设计是下一个领域。后面应该会正式把硬件设计当成核心能力来推。刚刷到的",
+      "url": "https://www.v2ex.com/t/1255869",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1255862",
+      "title": "开源了 PadNote：在平板手写笔记中和 AI 交流，也能把笔记交给电脑 Agent",
+      "summary": "大家好，我在做 PadNote，一个开源的平板笔记项目。做这个项目的起点很简单：学习或处理问题时，我们经常一边写字、画图、圈出疑问，一边切到聊天窗口向 AI 解释上下文。我想试试能不能让手写、绘图、PDF 批注和 AI 交流留在同一份笔记里。目前可以在平板上手写和批注 PDF，自行配置模型服务，围绕笔记内容提问，并把有用的文字结果放回纸面。笔记也可以导出分享。电脑助手提供了把笔记和任务交给已配对电脑 Agent 的入口，连接和体验仍在持续完善。仓库里有使用说明和安装方式：我是项目作者，",
+      "url": "https://www.v2ex.com/t/1255862",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1255859",
+      "title": "节约 80%token，用 myco 让重活交给云端 Claude，糙活交给本地 Deepseek",
+      "summary": "现在为了防封，只能用的云端的 Claude。Claude 很强，但是很多活儿，感觉其实用不到 Claude，Deepseek 也可以胜任的。而 Deepseek 跑在我本地的电脑上。包括很多工具 Skill 和权限都在本地的机器上。有没办法让云端 Claude 可以派活给本地的 agent 呢。于是我做了 myco：[ 他不仅仅支持 claude.ai 上面的 agent 去调用你本地的 agent。也支持直接 shell 操作你的电脑",
+      "url": "https://www.v2ex.com/t/1255859",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1255857",
+      "title": "Claude 的这个 401 报错是什么情况",
+      "summary": "Remote managed settings failed to load (authentication rejected (401)) · no remote policy applied 目前没影响使用。之前没遇到过，不清楚是不是版本更新引入的，不清楚意味着什么，请指教。",
+      "url": "https://www.v2ex.com/t/1255857",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1255856",
+      "title": "1110 GPT 代充价格优惠，Codex 美国实卡接码 3/次（代充可送)",
+      "summary": "> **正规卡充** ｜ **一卡一充** ｜ **支持同卡续费** | 订阅等级 | 埃及区 | 菲律宾区 | | :--- | :---: | :---: | | **ChatGPT Plus** | - | **¥115** | | **ChatGPT Pro 100** | **¥635** | | **ChatGPT Pro 200** | - | **¥1050** | | **ChatGPT Pro 500** | **¥3100** | [自助下单]( 微信咨询：_ZX",
+      "url": "https://www.v2ex.com/t/1255856",
       "source": "V2EX"
     }
   ]
