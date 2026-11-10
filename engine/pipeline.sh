@@ -14,7 +14,7 @@ rm -rf .last_good && mkdir -p .last_good
 for p in index.html 404.html feed.xml cli.sh fx.css fx.js robots.txt sitemap.xml sitemap.txt sitemap_index.xml; do
   [ -e "$p" ] && cp -a "$p" .last_good/
 done
-for d in api m c item archives vendor deals radio live data; do [ -d "$d" ] && cp -a "$d" .last_good/; done
+for d in api m c item archives vendor deals radio live news aitools data; do [ -d "$d" ] && cp -a "$d" .last_good/; done
 log "snapshot ready"
 
 if [ "$FETCH" = "1" ]; then
@@ -43,6 +43,8 @@ if [ "$FETCH" = "1" ]; then
   # 4c) LLM API price board: public pricing APIs (keeps previous prices on failure)
   timeout 300 python3 apiprice_collect.py || log "[heal] apiprice_collect exit $? — keep previous prices"
   timeout 900 python3 prune.py || log "[heal] prune failed — continue"
+  # 4e) AI 新闻 / 花边 / 科技新闻: allowlisted public RSS + sensitive-content filter (keeps previous data on failure)
+  timeout 600 python3 news_collect.py || log "[heal] news_collect exit $? — keep previous news"
 fi
 # 4d) link check: open every listed link; dead twice in a row = hidden by build.py (never blocks the build)
 timeout 300 python3 linkcheck.py || log "[heal] linkcheck failed — continue"
@@ -56,7 +58,7 @@ if [ "$RESULT" = "failed" ] || ! python3 health_check.py; then
   for p in index.html 404.html feed.xml cli.sh fx.css fx.js robots.txt sitemap.xml sitemap.txt sitemap_index.xml; do
     [ -e ".last_good/$p" ] && cp -a ".last_good/$p" ./
   done
-  for d in api m c item archives vendor deals radio live; do
+  for d in api m c item archives vendor deals radio live news aitools; do
     if [ -d ".last_good/$d" ]; then rm -rf "$d"; cp -a ".last_good/$d" ./; fi
   done
   # keep source-health/discovery knowledge, restore content data

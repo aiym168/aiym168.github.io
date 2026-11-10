@@ -385,7 +385,9 @@ def topnav(prefix="./"):
     links = (f'<a class="nav-hot" href="{prefix}deals/index.html" title="全球优惠情报中心">优惠情报</a>'
              f'<a href="{prefix}deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a>'
              f'<a href="{prefix}radio/index.html" title="AI 羊毛电台 · 每天三分钟听完">电台</a>'
-             f'<a class="nav-wan" href="https://wan.is-my.app/" title="玩点啥：今日热榜、你画我猜、打字背单词、在线工具">玩点啥</a>'
+             f'<a href="{prefix}news/index.html" title="AI 新闻 · AI 花边 · 科技新闻，每小时更新">AI新闻</a>'
+             f'<a href="{prefix}aitools/index.html" title="免费 AI 工具箱">AI工具箱</a>'
+             f'<a class="nav-wan" href="https://wan.is-my.app/" title="工具站大全：免费在线工具、今日热榜、小游戏">工具站大全</a>'
              f'<a href="https://wan.is-my.app/gongju/" title="免费在线工具大全：图片压缩、PDF合并、二维码、房贷个税计算器">免费工具</a>') + links
     links += f'<a href="{prefix}m/board.html" title="匿名留言板 · 星际信号站">留言板</a>'
     links += f'<a href="{prefix}m/status.html" title="更新动态">更新动态</a>'
@@ -408,7 +410,7 @@ def topnav(prefix="./"):
 def site_footer(prefix="./", extra="") -> str:
     return f"""<footer>
   <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}radio/index.html">AI 羊毛电台</a> · <a href="{prefix}live/">AI 羊毛信号站（直播）</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}feed.atom">Atom</a> · <a href="{prefix}digest/today.txt">今日速递</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a></div>
+  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}radio/index.html">AI 羊毛电台</a> · <a href="{prefix}news/index.html">AI 新闻</a> · <a href="{prefix}news/tech.html">科技新闻</a> · <a href="{prefix}aitools/index.html">AI 工具箱</a> · <a href="{prefix}news/feed.xml">新闻 RSS</a> · <a href="{prefix}live/">AI 羊毛信号站（直播）</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}feed.atom">Atom</a> · <a href="{prefix}digest/today.txt">今日速递</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a></div>
   <div class="foot-links">免费在线工具：<a href="https://wan.is-my.app/gongju/">免费在线工具大全</a> · <a href="https://wan.is-my.app/image-compress/">图片压缩</a> · <a href="https://wan.is-my.app/pdf-merge/">PDF 合并</a> · <a href="https://wan.is-my.app/id-photo/">证件照换底色</a> · <a href="https://wan.is-my.app/qrcode/">二维码生成器</a> · <a href="https://wan.is-my.app/fangdai/">房贷计算器</a> · <a href="https://wan.is-my.app/geshui/">个税计算器</a> · <a href="https://wan.is-my.app/fanjian/">繁简转换</a> · <a href="https://wan.is-my.app/json/">JSON 格式化</a> · <a href="https://hot.is-my.app/">今日热榜</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>"""
 
@@ -764,12 +766,13 @@ def home_showcase(prefix: str = "./") -> str:
       <span class="sc-body"><span class="sc-kicker"><i class="live-dot"></i>{esc(kick)}</span><b class="sc-title">{esc(title)}</b>
         <span class="sc-desc">{esc(desc)}</span><span class="sc-cta">{esc(cta)} <i aria-hidden="true">→</i></span></span>
     </a>""" for k, href, img, alt, kick, title, desc, cta in cards)
-    wan = """<a class="wan-banner" href="https://wan.is-my.app/" aria-label="玩点啥：今日热榜、你画我猜、打字背单词、在线工具箱">
-      <span class="wb-mark" aria-hidden="true">玩</span>
-      <span class="wb-body"><span class="wb-kicker">新栏目 · 免费 · 免登录</span>
-        <b class="wb-title">玩点啥？今天上网玩什么，这一页就够了</b>
-        <span class="wb-chips"><span>今日热榜</span><span>你画我猜</span><span>打字背单词</span><span>在线工具箱</span><span>摸鱼首页</span></span></span>
-      <span class="wb-cta">去看看 <i aria-hidden="true">→</i></span>
+    wan = """<a class="wan-banner" href="https://wan.is-my.app/" aria-label="工具站大全：别处要付费的在线工具，这里全部免费">
+      <span class="wb-grid" aria-hidden="true"></span>
+      <span class="wb-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5.4 5.4l-8.4 8.4a2.1 2.1 0 0 1-3-3l8.4-8.4a4 4 0 0 0-2.4-2.4z"/><path d="M14.7 6.3 17 4l3 3-2.3 2.3"/></svg></span>
+      <span class="wb-body"><span class="wb-kicker">姊妹站 · 工具站大全 · 免费 · 免登录</span>
+        <b class="wb-title">别处要付费的工具，<em>这里全部免费</em></b>
+        <span class="wb-chips"><span>图片压缩</span><span>PDF 合并</span><span>证件照换底色</span><span>二维码</span><span>房贷个税</span><span>今日热榜</span></span></span>
+      <span class="wb-cta">免费用 <i aria-hidden="true">→</i></span>
     </a>"""
     return f'<div class="showcase" aria-label="本站展示">{wan}{html}</div>'
 
@@ -1460,6 +1463,15 @@ def build():
             deal_paths.append(lv_path)
     except Exception as e:  # 信号站入口出错不能拖垮主站
         print("[live] skipped:", e)
+    try:  # AI 新闻 / 花边 / 科技新闻 + AI 工具箱（出错不能拖垮主站）
+        import news_build
+        deal_paths += news_build.build_pages(sys.modules[__name__], now)
+        news_home = news_build.home_section(sys.modules[__name__], "./")
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        print("[news] skipped:", e)
+        news_home = ""
     try:
         deals_home = deals_build.home_section("./")
     except Exception as e:
@@ -1502,7 +1514,7 @@ def build():
         ("哪里能找到免费的大模型 API？", "看「大模型免费API」栏目：DeepSeek、通义千问、智谱、Kimi、Gemini 等平台的免费额度和新人赠送 Token 都在这里，每条标注是否需要绑卡和实名。"),
         ("有免费的 GPU 和 AI 工具吗？", "有。免费 GPU 算力、AI 工具免费试用、免费课程分别在对应栏目，每小时自动更新，过期的会自动归档。"),
         ("国内能直接用吗？", "每条都标注了「国内能否直连」，看不到明确说明的会写“未注明”，不替你猜。"),
-        ("还有其他免费工具吗？", "有，姊妹站「玩点啥」提供 30 多个免费在线工具（图片压缩、PDF 合并、证件照换底色、二维码、房贷个税计算器），地址 wan.is-my.app/gongju/。"),
+        ("还有其他免费工具吗？", "有，姊妹站「工具站大全」提供 30 多个免费在线工具（图片压缩、PDF 合并、证件照换底色、二维码、房贷个税计算器），地址 wan.is-my.app/gongju/。"),
     ]
     faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in home_faq]}
@@ -1531,6 +1543,7 @@ def build():
 <main class="wrap">
   {today_html}
   {deals_home}
+  {news_home}
   {radio_home}
   <section class="section" id="search">
     <div class="sec-head"><span class="sec-idx">01 · 找资源</span><h2>搜索与筛选</h2>
@@ -1580,7 +1593,8 @@ def build():
         url_entries.append((board_path, date, "daily", "0.7"))
     url_entries.append((octo_path, date, "monthly", "0.6"))
     for pth in deal_paths:
-        url_entries.append((pth, date, "hourly" if "/x/" not in pth else "daily", "0.9" if "/x/" not in pth else "0.6"))
+        deep = "/x/" in pth or pth.startswith("news/a/")
+        url_entries.append((pth, date, "daily" if deep else "hourly", "0.6" if deep else "0.9"))
     for pth in cat_paths + mod_paths:
         url_entries.append((pth, date, "daily", "0.9"))
     for pth in item_paths:

@@ -784,22 +784,24 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .sc-board .sc-cta{background:rgba(167,139,250,.14);border-color:rgba(167,139,250,.5);color:#efe9ff}
 .show-card:hover .sc-cta{gap:12px;background:rgba(92,225,255,.22)}
 .show-card.sc-board:hover .sc-cta{background:rgba(167,139,250,.26)}
-/* 玩点啥 entry (spans both showcase columns): flat paper card, ink type, one vermilion accent */
-.wan-banner{grid-column:1/-1;position:relative;display:flex;align-items:center;gap:22px;padding:20px 24px;border-radius:4px;color:#141414;background:#f5f1e8;border:1px solid #141414;box-shadow:inset 0 0 0 4px #f5f1e8,inset 0 0 0 5px #141414;transition:transform .3s}
-.wan-banner:hover{transform:translateY(-2px);color:#141414}
-.wb-mark{flex:none;width:62px;height:62px;display:grid;place-items:center;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",STSong,SimSun,serif;font-size:38px;font-weight:900;color:#f5f1e8;background:#d9381e;transform:rotate(-4deg)}
-.wb-body{display:flex;flex-direction:column;gap:6px;min-width:0}
-.wb-kicker{font-size:12px;font-weight:700;letter-spacing:.16em;color:#d9381e}
-.wb-title{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",STSong,SimSun,serif;font-weight:900;font-size:clamp(19px,2.1vw,26px);line-height:1.25;color:#141414}
-.wb-chips{display:flex;flex-wrap:wrap;gap:0}.wb-chips span{font-size:13px;color:#5b5750;padding:0 10px;border-left:1px solid #cfc7b6}.wb-chips span:first-child{padding-left:0;border-left:0}
-.wb-cta{margin-left:auto;flex:none;display:inline-flex;gap:8px;align-items:center;font-weight:700;padding:10px 18px;background:#141414;color:#f5f1e8;transition:background .2s,gap .3s}
-.wan-banner:hover .wb-cta{background:#d9381e;gap:12px}
-.topnav .navlinks a.nav-wan{color:#f5f1e8}.topnav .navlinks a.nav-wan::before{content:"";display:inline-block;width:7px;height:7px;background:#d9381e;margin-right:6px;vertical-align:.12em}
+/* 工具站大全 entry (spans both showcase columns): graphite card, one lime accent */
+.wan-banner{grid-column:1/-1;position:relative;overflow:hidden;display:flex;align-items:center;gap:22px;padding:22px 26px;border-radius:16px;color:#f2f3ee;background:#0a0b0c;border:1px solid #2a2e33;transition:transform .3s,border-color .3s}
+.wan-banner:hover{transform:translateY(-2px);border-color:#c8ff2e;color:#f2f3ee}
+.wb-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#1b1e21 1px,transparent 1px),linear-gradient(90deg,#1b1e21 1px,transparent 1px);background-size:34px 34px;-webkit-mask-image:linear-gradient(90deg,transparent 30%,#000);mask-image:linear-gradient(90deg,transparent 30%,#000);opacity:.9}
+.wan-banner>*:not(.wb-grid){position:relative}
+.wb-mark{flex:none;width:60px;height:60px;border-radius:14px;display:grid;place-items:center;color:#0a0b0c;background:#c8ff2e;box-shadow:0 0 0 6px rgba(200,255,46,.08),0 0 40px rgba(200,255,46,.18)}
+.wb-body{display:flex;flex-direction:column;gap:7px;min-width:0}
+.wb-kicker{font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;color:#c8ff2e}
+.wb-title{font-weight:900;font-size:clamp(20px,2.3vw,28px);line-height:1.22;color:#f2f3ee;letter-spacing:.01em}.wb-title em{font-style:normal;color:#c8ff2e}
+.wb-chips{display:flex;flex-wrap:wrap;gap:6px}.wb-chips span{font-size:12.5px;color:#b4b9b2;padding:3px 9px;border:1px solid #2a2e33;border-radius:7px;background:#121416}
+.wb-cta{margin-left:auto;flex:none;display:inline-flex;gap:8px;align-items:center;font-weight:800;padding:11px 20px;border-radius:11px;background:#c8ff2e;color:#0a0b0c;transition:gap .3s,box-shadow .3s}
+.wan-banner:hover .wb-cta{gap:12px;box-shadow:0 0 24px rgba(200,255,46,.35)}
+.topnav .navlinks a.nav-wan{color:#c8ff2e}.topnav .navlinks a.nav-wan::before{content:"";display:inline-block;width:7px;height:7px;border-radius:2px;background:#c8ff2e;margin-right:6px;vertical-align:.12em}
 .reduce-motion .sc-media img,.reduce-motion .sc-scan{animation:none!important}
 @media (prefers-reduced-motion: reduce){.sc-media img,.sc-scan{animation:none!important}}
 @media (max-width:760px){
   .showcase{grid-template-columns:1fr;gap:14px}
-  .wan-banner{flex-wrap:wrap;gap:14px;padding:16px}.wb-mark{width:48px;height:48px;font-size:28px}.wb-body{flex:1 1 calc(100% - 64px)}.wb-cta{margin-left:0;width:100%;justify-content:center}
+  .wan-banner{flex-wrap:wrap;gap:14px;padding:16px}.wb-mark{width:48px;height:48px}.wb-body{flex:1 1 calc(100% - 64px)}.wb-cta{margin-left:0;width:100%;justify-content:center}
   .sc-body{padding:0 16px 16px;margin-top:-44px}
   .filters.compact{padding:12px}
   .filters.compact .fbar{flex-wrap:wrap}
@@ -942,16 +944,64 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .share-row button.done{border-color:#5ef0c0;color:#5ef0c0}
 @media (max-width:760px){.today-list li{flex-direction:column;gap:4px}.today-list .td-m{padding-left:46px}}
 
+/* ---- AI 新闻 / 花边 / 科技新闻 (.nw-) + AI 工具箱 (.at-) — generated by news_build.py ---- */
+.nw-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.nw-tabs a{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;border:1px solid rgba(140,200,255,.18);background:rgba(10,16,32,.6);color:var(--text);font-size:.9rem;font-weight:600}
+.nw-tabs a i{font-style:normal;font-family:var(--mono);font-size:.75rem;color:var(--muted,#8ea0bf)}
+.nw-tabs a.on,.nw-tabs a:hover{border-color:var(--cyan);color:#fff;background:rgba(92,225,255,.12)}
+.nw-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.nw-col h2{font-size:1.15rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}.nw-col h2 a{color:#fff}.nw-col h2 small{font-size:.78rem;font-weight:400;color:var(--muted,#8ea0bf)}
+.nw-col .go,.nw-hcol .go{display:inline-block;margin-top:10px;font-size:.85rem;font-weight:600;color:var(--cyan)}
+.nw-list{list-style:none;margin:0;padding:0}
+.nw-row{border-top:1px solid rgba(140,200,255,.08)}.nw-row:first-child{border-top:0}
+.nw-row a{display:flex;flex-direction:column;gap:4px;padding:12px 2px;color:var(--text)}
+.nw-row a:hover .nw-t{color:var(--cyan)}
+.nw-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:.76rem;color:var(--muted,#8ea0bf)}
+.nw-t{font-weight:600;line-height:1.5;color:#eef4ff;transition:color .2s}
+.nw-s{font-size:.85rem;line-height:1.6;color:var(--muted,#9aaccc)}
+.nw-ch{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.72rem;font-weight:700;letter-spacing:.04em}
+.nw-ai{color:#04131a;background:var(--cyan)}.nw-gossip{color:#1a1204;background:var(--warn)}.nw-tech{color:#03140d;background:var(--mint)}
+.nw-note{margin:18px 0;font-size:.82rem;color:var(--muted,#8ea0bf)}
+.nw-art h1{font-size:clamp(1.5rem,3.4vw,2.3rem);line-height:1.3}
+.nw-when{font-size:.85rem;color:var(--muted,#8ea0bf);margin:6px 0 12px}
+.nw-orig{margin:8px 0 14px;padding:10px 14px;border-radius:12px;border:1px solid rgba(140,200,255,.12);background:rgba(8,12,26,.5);font-size:.88rem;color:var(--muted,#9aaccc)}
+.nw-orig summary{cursor:pointer;color:var(--text)}.nw-orig p{margin:8px 0 0}
+.nw-hcols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.nw-hcol{padding:20px;border-radius:20px;background:linear-gradient(165deg,rgba(14,22,44,.66),rgba(8,12,26,.66));border:1px solid rgba(140,200,255,.1)}
+.nw-hcol h3{display:flex;flex-direction:column;gap:6px;margin:0 0 8px}.nw-hcol h3 small{font-size:.78rem;font-weight:400;color:var(--muted,#8ea0bf)}
+.nw-hcol .nw-ch{font-size:.9rem;padding:4px 10px}
+.nw-hlist{list-style:none;margin:0;padding:0;counter-reset:n}
+.nw-hlist li{counter-increment:n;border-top:1px solid rgba(140,200,255,.08)}.nw-hlist li:first-child{border-top:0}
+.nw-hlist a{position:relative;display:flex;flex-direction:column;gap:3px;padding:10px 0 10px 28px;color:var(--text)}
+.nw-hlist a::before{content:counter(n,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:var(--mono);font-size:.7rem;color:var(--cyan)}
+.nw-hlist a:hover .nw-t{color:var(--cyan)}.nw-hlist .nw-t{font-size:.92rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.at-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.at-card{display:flex;flex-direction:column;gap:8px;padding:16px;border-radius:16px;border:1px solid rgba(140,200,255,.12);background:rgba(8,12,26,.55);color:var(--text);transition:border-color .2s,transform .2s}
+.at-card:hover{border-color:var(--cyan);transform:translateY(-2px)}
+.at-h{display:flex;flex-wrap:wrap;align-items:center;gap:8px}.at-h b{font-size:1.02rem;color:#fff}
+.at-free{font-style:normal;font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:6px;color:#03140d;background:var(--mint)}
+.at-d{font-size:.86rem;line-height:1.6;color:var(--muted,#9aaccc)}
+.at-f{margin-top:auto;display:flex;justify-content:space-between;gap:8px;font-size:.74rem;font-family:var(--mono);color:var(--muted,#7f90b0)}
+.at-cn{font-family:inherit}.at-cn.y{color:var(--mint)}
+.at-more{margin:0 0 18px}
+.at-chips{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.at-chip{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;border:1px solid rgba(140,200,255,.12);background:rgba(8,12,26,.55);color:var(--text)}
+.at-chip b{color:#fff;font-size:.98rem}.at-chip span{font-size:.76rem;color:var(--muted,#8ea0bf)}
+.at-chip:hover{border-color:var(--cyan)}
+.at-chip.more{border-color:rgba(92,225,255,.4)}.at-chip.more b{color:var(--cyan)}
+.at-chip.wan{background:#0a0b0c;border-color:#2a2e33}.at-chip.wan b{color:#c8ff2e}.at-chip.wan:hover{border-color:#c8ff2e}
+@media (max-width:1020px){.nw-cols,.nw-hcols{grid-template-columns:1fr}.at-chips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"AI大模型免费资源导航","url":"https://aiym168.github.io/","description":"免费AI资源每小时更新：大模型免费API、免费Token、免费GPU、AI工具免费额度和AI羊毛，逐条标注是否绑卡、实名、国内能否直连。","inLanguage":"zh-CN","potentialAction":{"@type":"SearchAction","target":"https://aiym168.github.io/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"这个网站是免费的吗？","acceptedAnswer":{"@type":"Answer","text":"完全免费。AI大模型免费资源导航不收费、不用注册，收录的也都是免费或有免费额度的 AI 资源；置顶条目为编辑推荐，非广告、未收费。"}},{"@type":"Question","name":"哪里能找到免费的大模型 API？","acceptedAnswer":{"@type":"Answer","text":"看「大模型免费API」栏目：DeepSeek、通义千问、智谱、Kimi、Gemini 等平台的免费额度和新人赠送 Token 都在这里，每条标注是否需要绑卡和实名。"}},{"@type":"Question","name":"有免费的 GPU 和 AI 工具吗？","acceptedAnswer":{"@type":"Answer","text":"有。免费 GPU 算力、AI 工具免费试用、免费课程分别在对应栏目，每小时自动更新，过期的会自动归档。"}},{"@type":"Question","name":"国内能直接用吗？","acceptedAnswer":{"@type":"Answer","text":"每条都标注了「国内能否直连」，看不到明确说明的会写“未注明”，不替你猜。"}},{"@type":"Question","name":"还有其他免费工具吗？","acceptedAnswer":{"@type":"Answer","text":"有，姊妹站「玩点啥」提供 30 多个免费在线工具（图片压缩、PDF 合并、证件照换底色、二维码、房贷个税计算器），地址 wan.is-my.app/gongju/。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"这个网站是免费的吗？","acceptedAnswer":{"@type":"Answer","text":"完全免费。AI大模型免费资源导航不收费、不用注册，收录的也都是免费或有免费额度的 AI 资源；置顶条目为编辑推荐，非广告、未收费。"}},{"@type":"Question","name":"哪里能找到免费的大模型 API？","acceptedAnswer":{"@type":"Answer","text":"看「大模型免费API」栏目：DeepSeek、通义千问、智谱、Kimi、Gemini 等平台的免费额度和新人赠送 Token 都在这里，每条标注是否需要绑卡和实名。"}},{"@type":"Question","name":"有免费的 GPU 和 AI 工具吗？","acceptedAnswer":{"@type":"Answer","text":"有。免费 GPU 算力、AI 工具免费试用、免费课程分别在对应栏目，每小时自动更新，过期的会自动归档。"}},{"@type":"Question","name":"国内能直接用吗？","acceptedAnswer":{"@type":"Answer","text":"每条都标注了「国内能否直连」，看不到明确说明的会写“未注明”，不替你猜。"}},{"@type":"Question","name":"还有其他免费工具吗？","acceptedAnswer":{"@type":"Answer","text":"有，姊妹站「工具站大全」提供 30 多个免费在线工具（图片压缩、PDF 合并、证件照换底色、二维码、房贷个税计算器），地址 wan.is-my.app/gongju/。"}}]}</script>
 </head>
 
 <body class="home" data-base="./">
 
 <header class="topnav">
   <a class="brand-mini" href="./"><span class="mark"></span><span class="txt">AI大模型免费资源导航</span></a>
-  <nav class="navlinks" id="navlinks" aria-label="模块导航"><a class="nav-hot" href="./deals/index.html" title="全球优惠情报中心">优惠情报</a><a href="./deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a><a href="./radio/index.html" title="AI 羊毛电台 · 每天三分钟听完">电台</a><a class="nav-wan" href="https://wan.is-my.app/" title="玩点啥：今日热榜、你画我猜、打字背单词、在线工具">玩点啥</a><a href="https://wan.is-my.app/gongju/" title="免费在线工具大全：图片压缩、PDF合并、二维码、房贷个税计算器">免费工具</a><a href="./c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="./c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="./c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="./c/mianfei-gpu-yunfuwu.html" title="免费 GPU / 云服务">免费GPU</a><a href="./c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="./c/ai-kecheng-huodong.html" title="AI 课程 / 活动">课程活动</a><a href="./c/qita-keji.html" title="其他科技资源">其他</a><a href="./m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="./m/hot-topics.html" title="最近热议">热议</a><a href="./m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="./m/status.html" title="更新动态">更新动态</a></nav>
+  <nav class="navlinks" id="navlinks" aria-label="模块导航"><a class="nav-hot" href="./deals/index.html" title="全球优惠情报中心">优惠情报</a><a href="./deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a><a href="./radio/index.html" title="AI 羊毛电台 · 每天三分钟听完">电台</a><a href="./news/index.html" title="AI 新闻 · AI 花边 · 科技新闻，每小时更新">AI新闻</a><a href="./aitools/index.html" title="免费 AI 工具箱">AI工具箱</a><a class="nav-wan" href="https://wan.is-my.app/" title="工具站大全：免费在线工具、今日热榜、小游戏">工具站大全</a><a href="https://wan.is-my.app/gongju/" title="免费在线工具大全：图片压缩、PDF合并、二维码、房贷个税计算器">免费工具</a><a href="./c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="./c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="./c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="./c/mianfei-gpu-yunfuwu.html" title="免费 GPU / 云服务">免费GPU</a><a href="./c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="./c/ai-kecheng-huodong.html" title="AI 课程 / 活动">课程活动</a><a href="./c/qita-keji.html" title="其他科技资源">其他</a><a href="./m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="./m/hot-topics.html" title="最近热议">热议</a><a href="./m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="./m/status.html" title="更新动态">更新动态</a></nav>
   <div class="nav-more" hidden>
     <button type="button" class="nav-more-btn" aria-expanded="false" aria-controls="nav-more-menu">更多 <i aria-hidden="true">▾</i></button>
     <div class="nav-more-menu" id="nav-more-menu" hidden role="menu"></div>
@@ -970,8 +1020,8 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
       <p class="lead">收集大模型免费 API、免费 Token、免费 GPU、AI 工具试用与免费课程。每条都标注是否需要绑卡、实名、国内能否直连和截止时间；不确定的写“未注明”，不替你猜。</p>
       <div class="stats" aria-label="站点数据">
         <div class="pill"><span>免费资源</span><b>90</b><span>条</span></div>
-        <a class="pill" href="#today"><span>今日新增</span><b>31</b><span>条</span></a>
-        <div class="pill"><span>最后更新</span><b>23:19</b></div>
+        <a class="pill" href="#today"><span>今日新增</span><b>0</b><span>条</span></a>
+        <div class="pill"><span>最后更新</span><b>00:01</b></div>
         <div class="pill"><span>下次更新约</span><b>00:07</b></div>
       </div>
       <p class="def-note">免费资源 = 去重后仍在有效期内的资源条目（含置顶与编辑整理条目；不含 GitHub 新热门与最近热议；已过期、或发布超过 30 天且没有未来截止日期的自动收录条目会移入归档）。</p>
@@ -988,15 +1038,25 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 <script src="vendor/brain-loader.js?v=4d2432416e" defer></script>
 <main class="wrap">
   <section class="section today-new" id="today">
-    <div class="sec-head"><span class="sec-idx">今日新增 · 11 月 10 日</span><h2>今天新收录 31 条</h2>
+    <div class="sec-head"><span class="sec-idx">今日新增 · 11 月 11 日</span><h2>今天新收录 0 条</h2>
       <p class="sec-desc">每条都写明收录时间、更新时间和链接检查结果；也可以用 <a href="feed.xml">RSS</a> / <a href="feed.atom">Atom</a> 订阅，或看 <a href="digest/today.txt">今日速递文字版</a>。</p></div>
     <p class="lc-sum">链接自动检查（2026-11-10 23:19）：<b>90</b> 条能正常打开 · <b>0</b> 条待复查 · <b>0</b> 条失效已下架</p>
-    <ol class="today-list"><li><a href="item/ai-drake-video-cc71949acf.html"><span class="td-time">23:01</span><span class="td-t">我开发了 AI Drake Video 生成器：用一张照片生成派对场景短视频</span></a><span class="td-m"><span class="st st-muted">未核实</span>大模型 API 免费额度</span></li><li><a href="item/ai-api-gateway-free-tier-ja-ai-api-o-99a16ab7c8.html"><span class="td-time">23:01</span><span class="td-t">ai-api-gateway-free-tier-ja：AI API 网关/中继，一个 OpenAI 兼容密钥背后有307个模型</span></a><span class="td-m"><span class="st st-muted">未核实</span>AI 开发工具与编程助手</span></li><li><a href="item/llm-api-gateway-free-tier-ja-ai-api-18b95855aa.html"><span class="td-time">23:01</span><span class="td-t">llm-api-gateway-free-tier-ja：AI API 网关/中继，一个 OpenAI 兼容密钥背后有307个模型</span></a><span class="td-m"><span class="st st-muted">未核实</span>AI 开发工具与编程助手</span></li><li><a href="item/ai-gateway-free-tier-ai-api-openai-3-5a2a8a1d49.html"><span class="td-time">23:01</span><span class="td-t">ai-gateway-free-tier：AI API 网关/中继，一个 OpenAI 兼容密钥背后有307个模型</span></a><span class="td-m"><span class="st st-muted">未核实</span>AI 开发工具与编程助手</span></li><li><a href="item/api-proxy-free-tier-ai-api-openai-30-b97d47a9eb.html"><span class="td-time">23:01</span><span class="td-t">api-proxy-free-tier：AI API 网关/中继，一个 OpenAI 兼容密钥背后有 307 个模型</span></a><span class="td-m"><span class="st st-muted">未核实</span>AI 开发工具与编程助手</span></li><li><a href="item/image-api-gateway-free-tier-cn-ai-ap-530b151e11.html"><span class="td-time">23:01</span><span class="td-t">image-api-gateway-free-tier-cn：AI API 网关/中继，一个 OpenAI 兼容密钥背后有 307 个模型</span></a><span class="td-m"><span class="st st-muted">未核实</span>AI 开发工具与编程助手</span></li><li><a href="item/api-aggregator-free-tier-ai-api-open-d88b4467e9.html"><span class="td-time">23:01</span><span class="td-t">api-aggregator-free-tier：AI API 网关/中继，一个 OpenAI 兼容密钥背后有 307 个模型</span></a><span class="td-m"><span class="st st-muted">未核实</span>AI 开发工具与编程助手</span></li><li><a href="item/ai-api-gateway-free-tier-ai-api-open-5c9eb0a746.html"><span class="td-time">23:01</span><span class="td-t">ai-api-gateway-free-tier：AI API 网关/中继，一个 OpenAI 兼容密钥背后有 307 个模型</span></a><span class="td-m"><span class="st st-muted">未核实</span>AI 开发工具与编程助手</span></li><li><a href="item/simstim-mac-md-7baeb36228.html"><span class="td-time">21:24</span><span class="td-t">Simstim：Mac 上的本地呼叫转录为.md 文件</span></a><span class="td-m"><span class="st st-muted">未核实</span>AI 课程 / 活动</span></li><li><a href="item/relayrouter-gpt-claude-gemini-5c23484072.html"><span class="td-time">21:24</span><span class="td-t">RelayRouter 中转自荐，主打低倍率、多模型接入，支持 GPT、Claude、Gemini 等</span></a><span class="td-m"><span class="st st-muted">未核实</span>大模型 API 免费额度</span></li><li><a href="item/al-grigor-1-000-nebius-production-ai-59535b5fa8.html"><span class="td-time">19:55</span><span class="td-t">@Al_Grigor 分享：超过1,000人已经注册了我们与 Nebius 的免费课程“Production AI Agents for</span></a><span class="td-m"><span class="st st-muted">未核实</span>AI 课程 / 活动</span></li><li><a href="item/ovis-ovis-herdr-web-ui-bded8b574f.html"><span class="td-time">15:45</span><span class="td-t">ovis：Ovis（以前称为 herdr Web UI）</span></a><span class="td-m"><span class="st st-muted">未核实</span>AI 开发工具与编程助手</span></li></ol><p class="td-more">今天共新增 31 条，下面列表按“最新”排序可以看全部。</p>
+    <ol class="today-list"><li class="td-empty">今天还没有新收录，程序每小时会再找一遍。</li></ol>
   </section>
   <section class="section dl-home" id="deals">
     <div class="sec-head"><span class="sec-idx">NEW · 全球优惠情报中心</span><h2>AI 订阅 · Crypto · 海外银行与 U卡 · 云服务优惠</h2>
       <p class="sec-desc">每小时自动采集、去重、提取截止时间和参与条件、估算价值、过期归档。进行中 58 条，其中已核实 17 条、官方公告 18 条、待核实 23 条。 <a href="./deals/index.html">进入情报中心 →</a></p></div>
     <div class="dl-tiles"><a class="dl-tile sm" href="./deals/today.html"><span class="dl-L">A</span><span class="dl-tb"><b>今日最新优惠</b></span><span class="dl-n"><b>58</b>条</span></a><a class="dl-tile sm" href="./deals/top.html"><span class="dl-L">B</span><span class="dl-tb"><b>高价值优惠排行榜</b></span><span class="dl-n"><b>28</b>条</span></a><a class="dl-tile sm" href="./deals/ai.html"><span class="dl-L">C</span><span class="dl-tb"><b>AI 工具免费与折扣专区</b></span><span class="dl-n"><b>4</b>条</span></a><a class="dl-tile sm" href="./deals/crypto.html"><span class="dl-L">D</span><span class="dl-tb"><b>Crypto 空投与积分专区</b></span><span class="dl-n"><b>15</b>条</span></a><a class="dl-tile sm" href="./deals/bank.html"><span class="dl-L">E</span><span class="dl-tb"><b>海外银行与银行卡优惠</b></span><span class="dl-n"><b>17</b>条</span></a><a class="dl-tile sm" href="./deals/cloud.html"><span class="dl-L">F</span><span class="dl-tb"><b>VPS 及云服务专区</b></span><span class="dl-n"><b>12</b>条</span></a><a class="dl-tile sm" href="./deals/expiring.html"><span class="dl-L">G</span><span class="dl-tb"><b>即将截止的活动</b></span><span class="dl-n"><b>4</b>条</span></a><a class="dl-tile sm" href="./deals/archive.html"><span class="dl-L">H</span><span class="dl-tb"><b>已结束活动档案</b></span><span class="dl-n"><b>30</b>条</span></a><a class="dl-tile sm" href="./deals/api-prices.html"><span class="dl-L">J</span><span class="dl-tb"><b>大模型 API 最低价榜</b></span><span class="dl-n"><b>44</b>个</span></a></div>
+  </section>
+  <section class="section nw-home" id="news">
+    <div class="sec-head"><span class="sec-idx">AI 新闻 · 每小时更新</span><h2>AI 新闻 · AI 花边 · 科技新闻</h2>
+      <p class="sec-desc">从 20 多个公开来源自动收集并整理成中文摘要，每条都有来源和原文链接，已过滤低俗、时政等敏感内容。 <a href="./news/index.html">进入 AI 新闻 →</a></p></div>
+    <div class="nw-hcols"><div class="nw-hcol"><h3><a href="./news/ai.html"><b class="nw-ch nw-ai">AI 新闻</b></a><small>大模型、AI 产品与 AI 公司的最新动态</small></h3><ol class="nw-hlist"><li><a href="./news/a/b6333863cae2.html"><span class="nw-t">给 AI 腾内存？Discord 抛弃Electron，省70%内存还秒开：Windows应用该跟进了</span><span class="nw-meta"><span>InfoQ 中文</span><time datetime="2026-11-11T00:04:53+08:00">刚刚</time></span></a></li><li><a href="./news/a/5ef445c1e85d.html"><span class="nw-t">谷歌通过两款新的专用芯片扩大了其 AI 硬件产品组合</span><span class="nw-meta"><span>TechCrunch</span><time datetime="2026-11-10T23:54:08+08:00">7 分钟前</time></span></a></li><li><a href="./news/a/ac49fd0d8c26.html"><span class="nw-t">面向 AI Native 的数据库技术演进 | 腾讯云数据库 DBTalk</span><span class="nw-meta"><span>InfoQ 中文</span><time datetime="2026-11-10T23:53:17+08:00">8 分钟前</time></span></a></li><li><a href="./news/a/05045298619b.html"><span class="nw-t">Meta 的 AI 代理 Muse 登陆 Apple Watch 和 Android Wear OS</span><span class="nw-meta"><span>TechCrunch</span><time datetime="2026-11-10T23:29:30+08:00">31 分钟前</time></span></a></li><li><a href="./news/a/3685f9ddaa54.html"><span class="nw-t">成本仅1/3！Meta 新模型 Muse Ember 硬刚 Claude Haiku 5.5</span><span class="nw-meta"><span>InfoQ 中文</span><time datetime="2026-11-10T23:22:09+08:00">39 分钟前</time></span></a></li></ol><a class="go" href="./news/ai.html">更多AI 新闻 →</a></div><div class="nw-hcol"><h3><a href="./news/gossip.html"><b class="nw-ch nw-gossip">AI 花边</b></a><small>AI 圈的人事变动、网友热议、离职跳槽与趣闻</small></h3><ol class="nw-hlist"><li><a href="./news/a/618d8820e099.html"><span class="nw-t">西门子 CEO 博乐仁：AI 不会取代人类，会用 AI 的人却能取代不会用 AI 的人</span><span class="nw-meta"><span>IT之家</span><time datetime="2026-11-10T22:09:16+08:00">1 小时前</time></span></a></li><li><a href="./news/a/5cd056a31d5d.html"><span class="nw-t">用 Cyanogen 挑战谷歌 Android 后，联合创始人瞄准 WindowsAI 时代</span><span class="nw-meta"><span>TechCrunch</span><time datetime="2026-11-10T22:00:00+08:00">2 小时前</time></span></a></li><li><a href="./news/a/79e64b185268.html"><span class="nw-t">Fable 5.2首批实测来了！网友：Opus突然不香了</span><span class="nw-meta"><span>量子位</span><time datetime="2026-11-10T15:03:43+08:00">8 小时前</time></span></a></li><li><a href="./news/a/98071e4b97d9.html"><span class="nw-t">据报道，Anthropic 计划推进 IPO 计划</span><span class="nw-meta"><span>TechCrunch</span><time datetime="2026-11-10T09:27:12+08:00">14 小时前</time></span></a></li><li><a href="./news/a/2fe3da380d62.html"><span class="nw-t">Codex 游戏掌机突然开卖，网友却在催更 GPT-6.2</span><span class="nw-meta"><span>爱范儿</span><time datetime="2026-11-10T09:19:39+08:00">14 小时前</time></span></a></li></ol><a class="go" href="./news/gossip.html">更多AI 花边 →</a></div><div class="nw-hcol"><h3><a href="./news/tech.html"><b class="nw-ch nw-tech">科技新闻</b></a><small>手机、电脑、游戏、开发者与互联网的最新科技新闻</small></h3><ol class="nw-hlist"><li><a href="./news/a/794d97b26e55.html"><span class="nw-t">Chrome 想终结“去邮箱复制验证码”，但隐私真的更好了吗？</span><span class="nw-meta"><span>InfoQ 中文</span><time datetime="2026-11-11T01:00:00+08:00">刚刚</time></span></a></li><li><a href="./news/a/8627c0b229cc.html"><span class="nw-t">奥迪上汽战略合作 CEO 舒睿泽：未来三年将推出三款新车</span><span class="nw-meta"><span>IT之家</span><time datetime="2026-11-10T23:34:55+08:00">26 分钟前</time></span></a></li><li><a href="./news/a/5930b430edba.html"><span class="nw-t">MiniMax 开源 H3-Image 生图模型，10 秒就能生成一张 4K 图像</span><span class="nw-meta"><span>IT之家</span><time datetime="2026-11-10T23:25:52+08:00">35 分钟前</time></span></a></li><li><a href="./news/a/228bd9850e39.html"><span class="nw-t">Cloudflare KV Instant：读取 p99 仅 1.62 毫秒，写入一次却要 0.1 美元</span><span class="nw-meta"><span>InfoQ 中文</span><time datetime="2026-11-10T23:00:00+08:00">1 小时前</time></span></a></li><li><a href="./news/a/57e4678f56e2.html"><span class="nw-t">QQ 鸿蒙版 App 获 9.2.83 邀测升级，新增支持查看历史头像等功能</span><span class="nw-meta"><span>IT之家</span><time datetime="2026-11-10T22:56:46+08:00">1 小时前</time></span></a></li></ol><a class="go" href="./news/tech.html">更多科技新闻 →</a></div></div>
+  </section>
+  <section class="section at-home" id="aitools">
+    <div class="sec-head"><span class="sec-idx">AI 工具箱 · 免费</span><h2>不花钱也能用的 AI 工具</h2>
+      <p class="sec-desc">对话、搜索、绘画、视频、写歌、编程、PPT，35 个有免费版的 AI 工具，标明免费到什么程度。 <a href="./aitools/index.html">打开 AI 工具箱 →</a> · 图片、PDF、计算器等更多免费工具见 <a href="https://wan.is-my.app/">工具站大全</a></p></div>
+    <div class="at-chips"><a class="at-chip" href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer nofollow"><b>DeepSeek</b><span>网页和 App 免费使用</span></a><a class="at-chip" href="https://www.kimi.com/" target="_blank" rel="noopener noreferrer nofollow"><b>Kimi</b><span>基础功能免费</span></a><a class="at-chip" href="https://www.doubao.com/" target="_blank" rel="noopener noreferrer nofollow"><b>豆包</b><span>免费使用</span></a><a class="at-chip" href="https://metaso.cn/" target="_blank" rel="noopener noreferrer nofollow"><b>秘塔 AI 搜索</b><span>免费使用</span></a><a class="at-chip" href="https://jimeng.jianying.com/" target="_blank" rel="noopener noreferrer nofollow"><b>即梦 AI</b><span>每天送免费积分</span></a><a class="at-chip" href="https://klingai.kuaishou.com/" target="_blank" rel="noopener noreferrer nofollow"><b>可灵 AI</b><span>每天送免费积分</span></a><a class="at-chip" href="https://suno.com/" target="_blank" rel="noopener noreferrer nofollow"><b>Suno</b><span>每天送免费额度</span></a><a class="at-chip" href="https://immersivetranslate.com/" target="_blank" rel="noopener noreferrer nofollow"><b>沉浸式翻译</b><span>基础功能免费</span></a><a class="at-chip more" href="./aitools/index.html"><b>全部 35 个 →</b><span>AI 工具箱</span></a><a class="at-chip wan" href="https://wan.is-my.app/"><b>工具站大全 ↗</b><span>别处要付费的，这里免费</span></a></div>
   </section>
   <section class="section rd-home" id="radio">
     <a class="rd-card" href="./radio/index.html#20261110-pm">
@@ -1042,12 +1102,13 @@ html.reduce-motion .rd-eq i{animation:none;height:60%}
     <button type="button" id="f-clear" class="btn sm hidden">清除筛选</button></div>
   <noscript><p class="note">未启用 JavaScript：下方列出全部条目，可按模块页面浏览；搜索与筛选需要启用 JavaScript。</p></noscript>
 </div>
-    <div class="showcase" aria-label="本站展示"><a class="wan-banner" href="https://wan.is-my.app/" aria-label="玩点啥：今日热榜、你画我猜、打字背单词、在线工具箱">
-      <span class="wb-mark" aria-hidden="true">玩</span>
-      <span class="wb-body"><span class="wb-kicker">新栏目 · 免费 · 免登录</span>
-        <b class="wb-title">玩点啥？今天上网玩什么，这一页就够了</b>
-        <span class="wb-chips"><span>今日热榜</span><span>你画我猜</span><span>打字背单词</span><span>在线工具箱</span><span>摸鱼首页</span></span></span>
-      <span class="wb-cta">去看看 <i aria-hidden="true">→</i></span>
+    <div class="showcase" aria-label="本站展示"><a class="wan-banner" href="https://wan.is-my.app/" aria-label="工具站大全：别处要付费的在线工具，这里全部免费">
+      <span class="wb-grid" aria-hidden="true"></span>
+      <span class="wb-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5.4 5.4l-8.4 8.4a2.1 2.1 0 0 1-3-3l8.4-8.4a4 4 0 0 0-2.4-2.4z"/><path d="M14.7 6.3 17 4l3 3-2.3 2.3"/></svg></span>
+      <span class="wb-body"><span class="wb-kicker">姊妹站 · 工具站大全 · 免费 · 免登录</span>
+        <b class="wb-title">别处要付费的工具，<em>这里全部免费</em></b>
+        <span class="wb-chips"><span>图片压缩</span><span>PDF 合并</span><span>证件照换底色</span><span>二维码</span><span>房贷个税</span><span>今日热榜</span></span></span>
+      <span class="wb-cta">免费用 <i aria-hidden="true">→</i></span>
     </a><a class="show-card sc-octo" href="./m/octopus.html">
       <span class="sc-media"><img src="./assets/octopus-poster.jpg" alt="玻璃机械章鱼 3D 拆解演示截图" loading="lazy" decoding="async" width="960" height="540" /><span class="sc-scan" aria-hidden="true"></span></span>
       <span class="sc-body"><span class="sc-kicker"><i class="live-dot"></i>实验室 · 3D 拆解</span><b class="sc-title">机械章鱼 HYALOS GX-8</b>
@@ -2210,10 +2271,10 @@ html.reduce-motion .rd-eq i{animation:none;height:60%}
     </div>
   </section>
   <section class="section" id="archives"><div class="sec-head"><span class="sec-idx">按日归档</span><h2>每日收录</h2></div><div class="panel-box"><a class="arch" href="archives/2026-11-10.html">2026-11-10</a><a class="arch" href="archives/2026-11-09.html">2026-11-09</a></div></section>
-  <section class="section" id="faq"><div class="sec-head"><span class="sec-idx">常见问题</span><h2>免费 AI 资源常见问题</h2></div><div class="panel-box"><h3>这个网站是免费的吗？</h3><p>完全免费。AI大模型免费资源导航不收费、不用注册，收录的也都是免费或有免费额度的 AI 资源；置顶条目为编辑推荐，非广告、未收费。</p><h3>哪里能找到免费的大模型 API？</h3><p>看「大模型免费API」栏目：DeepSeek、通义千问、智谱、Kimi、Gemini 等平台的免费额度和新人赠送 Token 都在这里，每条标注是否需要绑卡和实名。</p><h3>有免费的 GPU 和 AI 工具吗？</h3><p>有。免费 GPU 算力、AI 工具免费试用、免费课程分别在对应栏目，每小时自动更新，过期的会自动归档。</p><h3>国内能直接用吗？</h3><p>每条都标注了「国内能否直连」，看不到明确说明的会写“未注明”，不替你猜。</p><h3>还有其他免费工具吗？</h3><p>有，姊妹站「玩点啥」提供 30 多个免费在线工具（图片压缩、PDF 合并、证件照换底色、二维码、房贷个税计算器），地址 wan.is-my.app/gongju/。</p></div></section>
+  <section class="section" id="faq"><div class="sec-head"><span class="sec-idx">常见问题</span><h2>免费 AI 资源常见问题</h2></div><div class="panel-box"><h3>这个网站是免费的吗？</h3><p>完全免费。AI大模型免费资源导航不收费、不用注册，收录的也都是免费或有免费额度的 AI 资源；置顶条目为编辑推荐，非广告、未收费。</p><h3>哪里能找到免费的大模型 API？</h3><p>看「大模型免费API」栏目：DeepSeek、通义千问、智谱、Kimi、Gemini 等平台的免费额度和新人赠送 Token 都在这里，每条标注是否需要绑卡和实名。</p><h3>有免费的 GPU 和 AI 工具吗？</h3><p>有。免费 GPU 算力、AI 工具免费试用、免费课程分别在对应栏目，每小时自动更新，过期的会自动归档。</p><h3>国内能直接用吗？</h3><p>每条都标注了「国内能否直连」，看不到明确说明的会写“未注明”，不替你猜。</p><h3>还有其他免费工具吗？</h3><p>有，姊妹站「工具站大全」提供 30 多个免费在线工具（图片压缩、PDF 合并、证件照换底色、二维码、房贷个税计算器），地址 wan.is-my.app/gongju/。</p></div></section>
   <footer>
-  <div><span class="foot-brand">AI大模型免费资源导航</span> · 生成于 2026-11-10 23:19 北京时间<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="./deals/index.html">全球优惠情报</a> · <a href="./deals/api-prices.html">API 最低价榜</a> · <a href="./radio/index.html">AI 羊毛电台</a> · <a href="./live/">AI 羊毛信号站（直播）</a> · <a href="./m/api.html">CLI / API</a> · <a href="./m/status.html">更新动态</a> · <a href="./archives/index.html">已归档</a> · <a href="./m/board.html">留言板</a> · <a href="./m/octopus.html">机械章鱼 3D</a> · <a href="./feed.xml">RSS</a> · <a href="./feed.atom">Atom</a> · <a href="./digest/today.txt">今日速递</a> · <a href="./sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a></div>
+  <div><span class="foot-brand">AI大模型免费资源导航</span> · 生成于 2026-11-11 00:01 北京时间<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
+  <div class="foot-links"><a href="./deals/index.html">全球优惠情报</a> · <a href="./deals/api-prices.html">API 最低价榜</a> · <a href="./radio/index.html">AI 羊毛电台</a> · <a href="./news/index.html">AI 新闻</a> · <a href="./news/tech.html">科技新闻</a> · <a href="./aitools/index.html">AI 工具箱</a> · <a href="./news/feed.xml">新闻 RSS</a> · <a href="./live/">AI 羊毛信号站（直播）</a> · <a href="./m/api.html">CLI / API</a> · <a href="./m/status.html">更新动态</a> · <a href="./archives/index.html">已归档</a> · <a href="./m/board.html">留言板</a> · <a href="./m/octopus.html">机械章鱼 3D</a> · <a href="./feed.xml">RSS</a> · <a href="./feed.atom">Atom</a> · <a href="./digest/today.txt">今日速递</a> · <a href="./sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a></div>
   <div class="foot-links">免费在线工具：<a href="https://wan.is-my.app/gongju/">免费在线工具大全</a> · <a href="https://wan.is-my.app/image-compress/">图片压缩</a> · <a href="https://wan.is-my.app/pdf-merge/">PDF 合并</a> · <a href="https://wan.is-my.app/id-photo/">证件照换底色</a> · <a href="https://wan.is-my.app/qrcode/">二维码生成器</a> · <a href="https://wan.is-my.app/fangdai/">房贷计算器</a> · <a href="https://wan.is-my.app/geshui/">个税计算器</a> · <a href="https://wan.is-my.app/fanjian/">繁简转换</a> · <a href="https://wan.is-my.app/json/">JSON 格式化</a> · <a href="https://hot.is-my.app/">今日热榜</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>
 </main>

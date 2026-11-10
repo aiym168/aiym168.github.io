@@ -784,22 +784,24 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .sc-board .sc-cta{background:rgba(167,139,250,.14);border-color:rgba(167,139,250,.5);color:#efe9ff}
 .show-card:hover .sc-cta{gap:12px;background:rgba(92,225,255,.22)}
 .show-card.sc-board:hover .sc-cta{background:rgba(167,139,250,.26)}
-/* 玩点啥 entry (spans both showcase columns): flat paper card, ink type, one vermilion accent */
-.wan-banner{grid-column:1/-1;position:relative;display:flex;align-items:center;gap:22px;padding:20px 24px;border-radius:4px;color:#141414;background:#f5f1e8;border:1px solid #141414;box-shadow:inset 0 0 0 4px #f5f1e8,inset 0 0 0 5px #141414;transition:transform .3s}
-.wan-banner:hover{transform:translateY(-2px);color:#141414}
-.wb-mark{flex:none;width:62px;height:62px;display:grid;place-items:center;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",STSong,SimSun,serif;font-size:38px;font-weight:900;color:#f5f1e8;background:#d9381e;transform:rotate(-4deg)}
-.wb-body{display:flex;flex-direction:column;gap:6px;min-width:0}
-.wb-kicker{font-size:12px;font-weight:700;letter-spacing:.16em;color:#d9381e}
-.wb-title{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",STSong,SimSun,serif;font-weight:900;font-size:clamp(19px,2.1vw,26px);line-height:1.25;color:#141414}
-.wb-chips{display:flex;flex-wrap:wrap;gap:0}.wb-chips span{font-size:13px;color:#5b5750;padding:0 10px;border-left:1px solid #cfc7b6}.wb-chips span:first-child{padding-left:0;border-left:0}
-.wb-cta{margin-left:auto;flex:none;display:inline-flex;gap:8px;align-items:center;font-weight:700;padding:10px 18px;background:#141414;color:#f5f1e8;transition:background .2s,gap .3s}
-.wan-banner:hover .wb-cta{background:#d9381e;gap:12px}
-.topnav .navlinks a.nav-wan{color:#f5f1e8}.topnav .navlinks a.nav-wan::before{content:"";display:inline-block;width:7px;height:7px;background:#d9381e;margin-right:6px;vertical-align:.12em}
+/* 工具站大全 entry (spans both showcase columns): graphite card, one lime accent */
+.wan-banner{grid-column:1/-1;position:relative;overflow:hidden;display:flex;align-items:center;gap:22px;padding:22px 26px;border-radius:16px;color:#f2f3ee;background:#0a0b0c;border:1px solid #2a2e33;transition:transform .3s,border-color .3s}
+.wan-banner:hover{transform:translateY(-2px);border-color:#c8ff2e;color:#f2f3ee}
+.wb-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#1b1e21 1px,transparent 1px),linear-gradient(90deg,#1b1e21 1px,transparent 1px);background-size:34px 34px;-webkit-mask-image:linear-gradient(90deg,transparent 30%,#000);mask-image:linear-gradient(90deg,transparent 30%,#000);opacity:.9}
+.wan-banner>*:not(.wb-grid){position:relative}
+.wb-mark{flex:none;width:60px;height:60px;border-radius:14px;display:grid;place-items:center;color:#0a0b0c;background:#c8ff2e;box-shadow:0 0 0 6px rgba(200,255,46,.08),0 0 40px rgba(200,255,46,.18)}
+.wb-body{display:flex;flex-direction:column;gap:7px;min-width:0}
+.wb-kicker{font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;color:#c8ff2e}
+.wb-title{font-weight:900;font-size:clamp(20px,2.3vw,28px);line-height:1.22;color:#f2f3ee;letter-spacing:.01em}.wb-title em{font-style:normal;color:#c8ff2e}
+.wb-chips{display:flex;flex-wrap:wrap;gap:6px}.wb-chips span{font-size:12.5px;color:#b4b9b2;padding:3px 9px;border:1px solid #2a2e33;border-radius:7px;background:#121416}
+.wb-cta{margin-left:auto;flex:none;display:inline-flex;gap:8px;align-items:center;font-weight:800;padding:11px 20px;border-radius:11px;background:#c8ff2e;color:#0a0b0c;transition:gap .3s,box-shadow .3s}
+.wan-banner:hover .wb-cta{gap:12px;box-shadow:0 0 24px rgba(200,255,46,.35)}
+.topnav .navlinks a.nav-wan{color:#c8ff2e}.topnav .navlinks a.nav-wan::before{content:"";display:inline-block;width:7px;height:7px;border-radius:2px;background:#c8ff2e;margin-right:6px;vertical-align:.12em}
 .reduce-motion .sc-media img,.reduce-motion .sc-scan{animation:none!important}
 @media (prefers-reduced-motion: reduce){.sc-media img,.sc-scan{animation:none!important}}
 @media (max-width:760px){
   .showcase{grid-template-columns:1fr;gap:14px}
-  .wan-banner{flex-wrap:wrap;gap:14px;padding:16px}.wb-mark{width:48px;height:48px;font-size:28px}.wb-body{flex:1 1 calc(100% - 64px)}.wb-cta{margin-left:0;width:100%;justify-content:center}
+  .wan-banner{flex-wrap:wrap;gap:14px;padding:16px}.wb-mark{width:48px;height:48px}.wb-body{flex:1 1 calc(100% - 64px)}.wb-cta{margin-left:0;width:100%;justify-content:center}
   .sc-body{padding:0 16px 16px;margin-top:-44px}
   .filters.compact{padding:12px}
   .filters.compact .fbar{flex-wrap:wrap}
@@ -942,6 +944,54 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .share-row button.done{border-color:#5ef0c0;color:#5ef0c0}
 @media (max-width:760px){.today-list li{flex-direction:column;gap:4px}.today-list .td-m{padding-left:46px}}
 
+/* ---- AI 新闻 / 花边 / 科技新闻 (.nw-) + AI 工具箱 (.at-) — generated by news_build.py ---- */
+.nw-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.nw-tabs a{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;border:1px solid rgba(140,200,255,.18);background:rgba(10,16,32,.6);color:var(--text);font-size:.9rem;font-weight:600}
+.nw-tabs a i{font-style:normal;font-family:var(--mono);font-size:.75rem;color:var(--muted,#8ea0bf)}
+.nw-tabs a.on,.nw-tabs a:hover{border-color:var(--cyan);color:#fff;background:rgba(92,225,255,.12)}
+.nw-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.nw-col h2{font-size:1.15rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}.nw-col h2 a{color:#fff}.nw-col h2 small{font-size:.78rem;font-weight:400;color:var(--muted,#8ea0bf)}
+.nw-col .go,.nw-hcol .go{display:inline-block;margin-top:10px;font-size:.85rem;font-weight:600;color:var(--cyan)}
+.nw-list{list-style:none;margin:0;padding:0}
+.nw-row{border-top:1px solid rgba(140,200,255,.08)}.nw-row:first-child{border-top:0}
+.nw-row a{display:flex;flex-direction:column;gap:4px;padding:12px 2px;color:var(--text)}
+.nw-row a:hover .nw-t{color:var(--cyan)}
+.nw-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:.76rem;color:var(--muted,#8ea0bf)}
+.nw-t{font-weight:600;line-height:1.5;color:#eef4ff;transition:color .2s}
+.nw-s{font-size:.85rem;line-height:1.6;color:var(--muted,#9aaccc)}
+.nw-ch{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.72rem;font-weight:700;letter-spacing:.04em}
+.nw-ai{color:#04131a;background:var(--cyan)}.nw-gossip{color:#1a1204;background:var(--warn)}.nw-tech{color:#03140d;background:var(--mint)}
+.nw-note{margin:18px 0;font-size:.82rem;color:var(--muted,#8ea0bf)}
+.nw-art h1{font-size:clamp(1.5rem,3.4vw,2.3rem);line-height:1.3}
+.nw-when{font-size:.85rem;color:var(--muted,#8ea0bf);margin:6px 0 12px}
+.nw-orig{margin:8px 0 14px;padding:10px 14px;border-radius:12px;border:1px solid rgba(140,200,255,.12);background:rgba(8,12,26,.5);font-size:.88rem;color:var(--muted,#9aaccc)}
+.nw-orig summary{cursor:pointer;color:var(--text)}.nw-orig p{margin:8px 0 0}
+.nw-hcols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.nw-hcol{padding:20px;border-radius:20px;background:linear-gradient(165deg,rgba(14,22,44,.66),rgba(8,12,26,.66));border:1px solid rgba(140,200,255,.1)}
+.nw-hcol h3{display:flex;flex-direction:column;gap:6px;margin:0 0 8px}.nw-hcol h3 small{font-size:.78rem;font-weight:400;color:var(--muted,#8ea0bf)}
+.nw-hcol .nw-ch{font-size:.9rem;padding:4px 10px}
+.nw-hlist{list-style:none;margin:0;padding:0;counter-reset:n}
+.nw-hlist li{counter-increment:n;border-top:1px solid rgba(140,200,255,.08)}.nw-hlist li:first-child{border-top:0}
+.nw-hlist a{position:relative;display:flex;flex-direction:column;gap:3px;padding:10px 0 10px 28px;color:var(--text)}
+.nw-hlist a::before{content:counter(n,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:var(--mono);font-size:.7rem;color:var(--cyan)}
+.nw-hlist a:hover .nw-t{color:var(--cyan)}.nw-hlist .nw-t{font-size:.92rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.at-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.at-card{display:flex;flex-direction:column;gap:8px;padding:16px;border-radius:16px;border:1px solid rgba(140,200,255,.12);background:rgba(8,12,26,.55);color:var(--text);transition:border-color .2s,transform .2s}
+.at-card:hover{border-color:var(--cyan);transform:translateY(-2px)}
+.at-h{display:flex;flex-wrap:wrap;align-items:center;gap:8px}.at-h b{font-size:1.02rem;color:#fff}
+.at-free{font-style:normal;font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:6px;color:#03140d;background:var(--mint)}
+.at-d{font-size:.86rem;line-height:1.6;color:var(--muted,#9aaccc)}
+.at-f{margin-top:auto;display:flex;justify-content:space-between;gap:8px;font-size:.74rem;font-family:var(--mono);color:var(--muted,#7f90b0)}
+.at-cn{font-family:inherit}.at-cn.y{color:var(--mint)}
+.at-more{margin:0 0 18px}
+.at-chips{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.at-chip{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;border:1px solid rgba(140,200,255,.12);background:rgba(8,12,26,.55);color:var(--text)}
+.at-chip b{color:#fff;font-size:.98rem}.at-chip span{font-size:.76rem;color:var(--muted,#8ea0bf)}
+.at-chip:hover{border-color:var(--cyan)}
+.at-chip.more{border-color:rgba(92,225,255,.4)}.at-chip.more b{color:var(--cyan)}
+.at-chip.wan{background:#0a0b0c;border-color:#2a2e33}.at-chip.wan b{color:#c8ff2e}.at-chip.wan:hover{border-color:#c8ff2e}
+@media (max-width:1020px){.nw-cols,.nw-hcols{grid-template-columns:1fr}.at-chips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"HYALOS GX-8 玻璃机械章鱼 · 3D 拆解演示","url":"https://aiym168.github.io/m/octopus.html","description":"一只完全由代码在浏览器里实时生成的玻璃机械章鱼：玻璃头罩、光学眼、反应核心、虹吸喷射管和 8 条机械腕，可自动演示拆解，也可拖动旋转、逐个拆开零件。","inLanguage":"zh-CN"}</script>
 </head>
@@ -950,7 +1000,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 
 <header class="topnav">
   <a class="brand-mini" href="../"><span class="mark"></span><span class="txt">AI大模型免费资源导航</span></a>
-  <nav class="navlinks" id="navlinks" aria-label="模块导航"><a class="nav-hot" href="../deals/index.html" title="全球优惠情报中心">优惠情报</a><a href="../deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a><a href="../radio/index.html" title="AI 羊毛电台 · 每天三分钟听完">电台</a><a class="nav-wan" href="https://wan.is-my.app/" title="玩点啥：今日热榜、你画我猜、打字背单词、在线工具">玩点啥</a><a href="https://wan.is-my.app/gongju/" title="免费在线工具大全：图片压缩、PDF合并、二维码、房贷个税计算器">免费工具</a><a href="../c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="../c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="../c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="../c/mianfei-gpu-yunfuwu.html" title="免费 GPU / 云服务">免费GPU</a><a href="../c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="../c/ai-kecheng-huodong.html" title="AI 课程 / 活动">课程活动</a><a href="../c/qita-keji.html" title="其他科技资源">其他</a><a href="../m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="../m/hot-topics.html" title="最近热议">热议</a><a href="../m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="../m/status.html" title="更新动态">更新动态</a></nav>
+  <nav class="navlinks" id="navlinks" aria-label="模块导航"><a class="nav-hot" href="../deals/index.html" title="全球优惠情报中心">优惠情报</a><a href="../deals/api-prices.html" title="大模型 API 最低价榜">API最低价</a><a href="../radio/index.html" title="AI 羊毛电台 · 每天三分钟听完">电台</a><a href="../news/index.html" title="AI 新闻 · AI 花边 · 科技新闻，每小时更新">AI新闻</a><a href="../aitools/index.html" title="免费 AI 工具箱">AI工具箱</a><a class="nav-wan" href="https://wan.is-my.app/" title="工具站大全：免费在线工具、今日热榜、小游戏">工具站大全</a><a href="https://wan.is-my.app/gongju/" title="免费在线工具大全：图片压缩、PDF合并、二维码、房贷个税计算器">免费工具</a><a href="../c/damoxing-mianfei-api.html" title="大模型 API 免费额度">免费API</a><a href="../c/ai-huiyuan-shiyong.html" title="AI 产品会员/试用">会员试用</a><a href="../c/ai-kaifa-gongju.html" title="AI 开发工具与编程助手">开发工具</a><a href="../c/mianfei-gpu-yunfuwu.html" title="免费 GPU / 云服务">免费GPU</a><a href="../c/keji-app-xianmian.html" title="科技软件 / App 限免">App限免</a><a href="../c/ai-kecheng-huodong.html" title="AI 课程 / 活动">课程活动</a><a href="../c/qita-keji.html" title="其他科技资源">其他</a><a href="../m/github-hot.html" title="GitHub 新热门">GitHub热门</a><a href="../m/hot-topics.html" title="最近热议">热议</a><a href="../m/board.html" title="匿名留言板 · 星际信号站">留言板</a><a href="../m/status.html" title="更新动态">更新动态</a></nav>
   <div class="nav-more" hidden>
     <button type="button" class="nav-more-btn" aria-expanded="false" aria-controls="nav-more-menu">更多 <i aria-hidden="true">▾</i></button>
     <div class="nav-more-menu" id="nav-more-menu" hidden role="menu"></div>
@@ -1000,8 +1050,8 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
       <p>本页共 <b data-octo-total>—</b> 个零件（重复的零件用实例化方式绘制，按个计数）。源码在 <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a> 的 vendor/octopus.js。</p></div>
   </section>
   <footer>
-  <div><span class="foot-brand">AI大模型免费资源导航</span> · 页面生成于 2026-11-10<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="../deals/index.html">全球优惠情报</a> · <a href="../deals/api-prices.html">API 最低价榜</a> · <a href="../radio/index.html">AI 羊毛电台</a> · <a href="../live/">AI 羊毛信号站（直播）</a> · <a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../archives/index.html">已归档</a> · <a href="../m/board.html">留言板</a> · <a href="../m/octopus.html">机械章鱼 3D</a> · <a href="../feed.xml">RSS</a> · <a href="../feed.atom">Atom</a> · <a href="../digest/today.txt">今日速递</a> · <a href="../sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a></div>
+  <div><span class="foot-brand">AI大模型免费资源导航</span> · 页面生成于 2026-11-11<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
+  <div class="foot-links"><a href="../deals/index.html">全球优惠情报</a> · <a href="../deals/api-prices.html">API 最低价榜</a> · <a href="../radio/index.html">AI 羊毛电台</a> · <a href="../news/index.html">AI 新闻</a> · <a href="../news/tech.html">科技新闻</a> · <a href="../aitools/index.html">AI 工具箱</a> · <a href="../news/feed.xml">新闻 RSS</a> · <a href="../live/">AI 羊毛信号站（直播）</a> · <a href="../m/api.html">CLI / API</a> · <a href="../m/status.html">更新动态</a> · <a href="../archives/index.html">已归档</a> · <a href="../m/board.html">留言板</a> · <a href="../m/octopus.html">机械章鱼 3D</a> · <a href="../feed.xml">RSS</a> · <a href="../feed.atom">Atom</a> · <a href="../digest/today.txt">今日速递</a> · <a href="../sitemap.xml">网站地图</a> · <a href="https://github.com/aiym168/aiym168.github.io" rel="noopener">GitHub 仓库</a></div>
   <div class="foot-links">免费在线工具：<a href="https://wan.is-my.app/gongju/">免费在线工具大全</a> · <a href="https://wan.is-my.app/image-compress/">图片压缩</a> · <a href="https://wan.is-my.app/pdf-merge/">PDF 合并</a> · <a href="https://wan.is-my.app/id-photo/">证件照换底色</a> · <a href="https://wan.is-my.app/qrcode/">二维码生成器</a> · <a href="https://wan.is-my.app/fangdai/">房贷计算器</a> · <a href="https://wan.is-my.app/geshui/">个税计算器</a> · <a href="https://wan.is-my.app/fanjian/">繁简转换</a> · <a href="https://wan.is-my.app/json/">JSON 格式化</a> · <a href="https://hot.is-my.app/">今日热榜</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>
 </main>
