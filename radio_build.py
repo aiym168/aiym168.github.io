@@ -28,6 +28,11 @@ def mmss(s) -> str:
     return f"{s // 60}:{s % 60:02d}"
 
 
+def local(e: dict) -> str:
+    """Same-origin copy (added to the Pages artifact by pages-deploy.yml); release URL is the fallback."""
+    return "audio/" + e["audio_url"].rsplit("/", 1)[-1]
+
+
 def ep_text(e: dict) -> str:
     return "\n".join(s.get("text", "") for s in e.get("segments") or [])
 
@@ -77,7 +82,7 @@ def build_page(b, now: datetime) -> str | None:
         "episodes": [{k: e.get(k) for k in ("id", "date", "edition", "title", "duration_s", "audio_url", "created_at")} | {"transcript": ep_text(e)} for e in eps[:30]],
     }, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
-    data = [{"id": e["id"], "title": e.get("title"), "date": e.get("date"), "dur": e.get("duration_s"), "url": e["audio_url"],
+    data = [{"id": e["id"], "title": e.get("title"), "date": e.get("date"), "dur": e.get("duration_s"), "url": local(e), "alt": e["audio_url"],
              "segs": [{"k": s.get("kind"), "t": s.get("text"), "a": s.get("start", 0), "b": s.get("end", 0),
                        "l": [{"t": x.get("title"), "u": x.get("url"), "p": x.get("path")} for x in (s.get("links") or [])]}
                       for s in e.get("segments") or []]} for e in eps[:30]]
@@ -144,7 +149,7 @@ def build_page(b, now: datetime) -> str | None:
   function f(s){{s=Math.max(0,Math.round(s||0));return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}}
   function esc(s){{return String(s==null?'':s).replace(/[&<>"]/g,function(c){{return {{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c];}});}}
   function load(ep, play){{
-    cur=ep; curSeg=-1; A.src=ep.url; ttl.textContent=ep.title; tm.textContent='0:00 / '+f(ep.dur);
+    cur=ep; curSeg=-1; A.dataset.alt=ep.alt||''; A.src=ep.url; ttl.textContent=ep.title; tm.textContent='0:00 / '+f(ep.dur);
     tr.innerHTML=ep.segs.map(function(s,i){{
       var ls=(s.l||[]).map(function(x){{return (x.p?'<a href="../'+esc(x.p)+'">站内详情</a>':'')+(x.u?' <a href="'+esc(x.u)+'" target="_blank" rel="noopener nofollow">官方 / 来源 ↗</a>':'');}}).join(' · ');
       return '<li data-i="'+i+'" class="rd-seg k-'+esc(s.k)+'"><span class="rd-ts">'+f(s.a)+'</span><p>'+esc(s.t)+'</p>'+(ls?'<div class="rd-links">'+ls+'</div>':'')+'</li>';}}).join('');
@@ -157,6 +162,7 @@ def build_page(b, now: datetime) -> str | None:
   document.getElementById('rd-eps').addEventListener('click',function(e){{var b=e.target.closest('.rd-ep'); if(!b) return; var ep=D.find(function(x){{return x.id===b.dataset.id;}}); if(ep){{history.replaceState(null,'','#'+ep.id); load(ep,true); P.scrollIntoView({{behavior:'smooth',block:'center'}});}}}});
   var start=D.find(function(x){{return '#'+x.id===location.hash;}})||D[0]; load(start,false);
   document.getElementById('rd-play').addEventListener('click',function(){{A.paused?A.play().catch(function(){{}}):A.pause();}});
+  A.addEventListener('error',function(){{ if(A.dataset.alt&&A.src.indexOf(A.dataset.alt)<0){{ var t=A.currentTime; A.src=A.dataset.alt; A.dataset.alt=''; A.play().catch(function(){{}}); }} }});
   A.addEventListener('play',function(){{P.classList.add('playing');ico.setAttribute('d','M7 5h4v14H7zM13 5h4v14h-4z');}});
   A.addEventListener('pause',function(){{P.classList.remove('playing');ico.setAttribute('d','M8 5v14l11-7z');}});
   A.addEventListener('ended',function(){{var i=D.indexOf(cur); if(i>=0&&i+1<D.length){{}}}});
@@ -230,7 +236,7 @@ def write_feed(b, eps: list[dict], now: datetime) -> None:
     <guid isPermaLink="false">aiym168-radio-{x(e["id"])}</guid>
     <pubDate>{pub}</pubDate>
     <description><![CDATA[<p>{notes.replace("]]>", "")}</p><ul>{links}</ul><p>领取前请以官方页面为准。</p>]]></description>
-    <enclosure url="{x(e["audio_url"])}" length="{int(e.get("bytes") or 0)}" type="audio/mpeg"/>
+    <enclosure url="{x(site + "radio/" + local(e))}" length="{int(e.get("bytes") or 0)}" type="audio/mpeg"/>
     <itunes:duration>{int(round(float(e.get("duration_s") or 0)))}</itunes:duration>
     <itunes:explicit>false</itunes:explicit>
   </item>""")

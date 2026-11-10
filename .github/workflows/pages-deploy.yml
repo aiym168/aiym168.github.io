@@ -25,6 +25,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Add radio audio (release assets -> radio/audio, same-origin playback)
+        run: |
+          mkdir -p radio/audio
+          python3 - <<'PY' || true
+          import json, os, subprocess
+          try:
+              eps = json.load(open("data/radio/episodes.json")).get("episodes") or []
+          except Exception:
+              eps = []
+          for e in eps[:30]:
+              u = e.get("audio_url") or ""
+              n = os.path.basename(u)
+              if n.endswith(".mp3"):
+                  subprocess.run(["curl", "-sSfL", "--retry", "3", "-o", f"radio/audio/{n}", u])
+          print("radio audio files:", len(os.listdir("radio/audio")))
+          PY
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
