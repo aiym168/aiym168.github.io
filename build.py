@@ -675,12 +675,11 @@ def home_showcase(prefix: str = "./") -> str:
         <span class="sc-desc">{esc(desc)}</span><span class="sc-cta">{esc(cta)} <i aria-hidden="true">→</i></span></span>
     </a>""" for k, href, img, alt, kick, title, desc, cta in cards)
     wan = """<a class="wan-banner" href="https://wan.is-my.app/" aria-label="玩点啥：今日热榜、你画我猜、打字背单词、在线工具箱">
-      <span class="wb-glow" aria-hidden="true"></span>
       <span class="wb-mark" aria-hidden="true">玩</span>
-      <span class="wb-body"><span class="wb-kicker"><i class="live-dot"></i>新站上线 · 免费 · 免登录</span>
+      <span class="wb-body"><span class="wb-kicker">新栏目 · 免费 · 免登录</span>
         <b class="wb-title">玩点啥？今天上网玩什么，这一页就够了</b>
-        <span class="wb-chips"><span>🔥 今日热榜</span><span>🎨 你画我猜</span><span>⌨️ 打字背单词</span><span>🧰 在线工具箱</span><span>🐟 摸鱼首页</span></span></span>
-      <span class="wb-cta">去玩一下 <i aria-hidden="true">→</i></span>
+        <span class="wb-chips"><span>今日热榜</span><span>你画我猜</span><span>打字背单词</span><span>在线工具箱</span><span>摸鱼首页</span></span></span>
+      <span class="wb-cta">去看看 <i aria-hidden="true">→</i></span>
     </a>"""
     return f'<div class="showcase" aria-label="本站展示">{wan}{html}</div>'
 
