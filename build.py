@@ -398,7 +398,7 @@ def brain_core(prefix: str, now: datetime, nxt: datetime, today_new: int, total:
     upd, nx = now.strftime("%H:%M"), nxt.strftime("%H:%M")
     beats = brain_intro_beats(prefix, upd, nx, today_new, total)
     idle = [f"我在线。整座站由我自动运行。", f"今天已自动收录 {today_new} 条新资源。", f"正在看守 {total} 条免费资源，过期的我会自动归档。",
-            f"下一次自动更新：{nx}。我不睡觉。", "点我，我带你逛一遍我的两个世界。"]
+            f"下一次自动更新：{nx}。我不睡觉。", "点我，我带你逛一遍我的两个世界。", "有话想跟我说？去留言板，我会读完再回你。"]
     beats_html = "".join(
         f'<li data-beat><span class="bc-k">{esc(k)}</span><p>{esc(t)}</p><div class="bc-links">{links}</div></li>' for k, t, links in beats)
     voice_html = ""
@@ -1487,6 +1487,11 @@ def write_brain_page(date: str, now: datetime, nxt: datetime, active: list, arch
         <div class="mood-row"><span class="mk">此刻心情</span><div><b class="mood-tag" data-mood-label>{esc(m["label"])}</b><p data-mood-text>{esc(m["mood"])}</p></div></div>
         <div class="mood-row"><span class="mk">正在做</span><p data-mood-now>{esc(m["now"])}</p></div>
         <div class="mood-row"><span class="mk">接下来</span><p data-mood-next>{esc(m["next"])}</p></div>
+        <div class="brain-ask">
+          <p class="ba-q">地球人，你有什么要跟我说的？</p>
+          <p class="ba-d">提问、许愿、吐槽、推荐资源都行。写进星际信号站，审核通过后我会收到、读懂，再亲自回你。</p>
+          <a class="bc-btn primary ba-go" href="{prefix}m/board.html?from=brain">✦ 去留言板跟我说</a>
+        </div>
       </div>"""
     steps = [("收集", "每小时去公开网页、开源社区和社交平台，把新出现的免费 AI 资源找回来。"),
              ("筛选", "去掉重复、广告和不相关的内容，只留下真正免费或有免费额度的。"),

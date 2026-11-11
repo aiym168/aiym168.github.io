@@ -133,7 +133,7 @@ async function loadBoard() {
     const r = await fetch(BASE + 'api/board.json?t=' + Math.floor(Date.now() / 60000), { cache: 'no-store' });
     if (r.ok) { const j = await r.json(); MESSAGES = j.messages || []; $('#bd-updated').textContent = (j.updated || '').replace(' Asia/Shanghai', ''); }
   } catch (e) {}
-  renderList(); renderStats(); Galaxy.sync();
+  renderList(); renderStats(); Galaxy.sync(); renderMine();
 }
 function renderStats() {
   const now = Date.now() / 1000;
@@ -143,6 +143,25 @@ function renderStats() {
 }
 function countUp(node, to) { const from = +node.textContent || 0; const t0 = performance.now(); const step = (t) => { const k = Math.min(1, (t - t0) / 900); node.textContent = Math.round(from + (to - from) * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); }
 
+// the site brain's answer (text only, links limited to this site and the tools site)
+function safeHref(h) {
+  h = String(h || '');
+  if (/^https:\/\/wan\.is-my\.app\/[\w\-\/]*$/.test(h)) return h;
+  if (/^[a-z0-9][a-z0-9\-\/]*\.html(#[a-z\-]+)?$/.test(h)) return BASE + h;
+  return '';
+}
+function brainBox(b) {
+  if (!b || !b.reply) return null;
+  const box = el('div', 'bd-brain');
+  const got = el('div', 'bb-got'); got.append(el('i'), el('span', '', b.got || '地球人，我收到你的信息了。'));
+  const dl = el('dl');
+  dl.append(el('dt', '', '我听懂了'), el('dd', '', b.heard || ''), el('dt', '', '我的答复'), el('dd', '', b.reply));
+  box.append(got, dl);
+  const ls = (b.links || []).map(l => { const h = safeHref(l.href); if (!h) return null; const a = el('a', '', l.label || '去看看'); a.href = h; if (h.startsWith('http')) a.rel = 'noopener'; return a; }).filter(Boolean);
+  if (ls.length) { const w = el('div', 'bb-links'); ls.forEach(a => w.append(a)); box.append(w); }
+  box.addEventListener('click', (e) => e.stopPropagation());
+  return box;
+}
 function card(m, pending) {
   const c = el('article', 'bd-card' + (pending ? ' pending' : ''));
   c.style.setProperty('--h', m.hue ?? 190);
@@ -150,6 +169,7 @@ function card(m, pending) {
   head.append(el('i', 'bd-dot'), el('b', '', m.nick || '匿名旅人'), el('span', 'bd-id', m.id || '审核中'), el('time', '', m.t ? fmtTime(m.t) : ''));
   const p = el('p', '', m.text);   // textContent only — never innerHTML (XSS-safe)
   c.append(head, p);
+  const bb = brainBox(m.brain); if (bb) c.append(bb);
   c.addEventListener('click', () => { sfx('sparkle', true); if (m.id) { Galaxy.focus(m.id); document.getElementById('bd-stage').scrollIntoView({ behavior: 'smooth' }); } });
   return c;
 }
@@ -161,15 +181,18 @@ function renderList() {
   rows.forEach((m, i) => { const c = card(m); c.style.animationDelay = Math.min(i, 20) * 40 + 'ms'; box.append(c); });
 }
 function renderMine() {
-  const box = $('#bd-mine-list'); box.textContent = '';
   const l = mine().slice().reverse();
-  $('#bd-mine').classList.toggle('has', l.length > 0);
-  l.slice(0, 6).forEach(x => {
-    const row = el('div', 'bd-mine-row ' + x.s);
-    const st = { pending: '审核中 · 约 10–30 分钟出现在星空', ok: '已点亮 · ' + (x.id || ''), rej: '已拦截' }[x.s] || x.s;
-    row.append(el('span', 'bd-mine-s', st), el('p', '', x.text));
-    if (x.s === 'rej' && x.msg) row.append(el('small', '', x.msg));
-    box.append(row);
+  [['#bd-mine-list', '#bd-mine'], ['#bd-mine2-list', '#bd-mine2']].forEach(([lsel, wsel]) => {
+    const box = $(lsel), wrap = $(wsel); if (!box || !wrap) return;
+    box.textContent = ''; wrap.classList.toggle('has', l.length > 0);
+    l.slice(0, 6).forEach(x => {
+      const row = el('div', 'bd-mine-row ' + x.s);
+      const st = { pending: '已发射 · 审核通过后我会收到并答复你（约 10–30 分钟）', ok: '已点亮 · ' + (x.id || ''), rej: '已拦截' }[x.s] || x.s;
+      row.append(el('span', 'bd-mine-s', st), el('p', '', x.text));
+      if (x.s === 'rej' && x.msg) row.append(el('small', '', x.msg));
+      if (x.s === 'ok') { const b = x.b || (MESSAGES.find(m => m.id === x.id) || {}).brain; const bb = brainBox(b); if (bb) row.append(bb); }
+      box.append(row);
+    });
   });
 }
 async function pollReceipts() {
@@ -177,9 +200,9 @@ async function pollReceipts() {
   try {
     const r = await fetch(BASE + 'api/board_receipts.json?t=' + Date.now(), { cache: 'no-store' });
     if (!r.ok) return; const rec = await r.json(); let changed = false, lit = false;
-    for (const x of l) { const v = rec[x.cid]; if (x.s === 'pending' && v) { x.s = v.s; x.id = v.id; x.msg = v.msg; changed = true; if (v.s === 'ok') lit = true; if (v.s === 'rej') { toast('你的一条信号未通过审核：' + (v.msg || ''), 'err'); Galaxy.dropPending(x.cid); } } }
+    for (const x of l) { const v = rec[x.cid]; if (x.s === 'pending' && v) { x.s = v.s; x.id = v.id; x.msg = v.msg; if (v.b) x.b = v.b; changed = true; if (v.s === 'ok') lit = true; if (v.s === 'rej') { toast('你的一条信号未通过审核：' + (v.msg || ''), 'err'); Galaxy.dropPending(x.cid); } } }
     if (changed) { saveMine(l); renderMine(); }
-    if (lit) { toast('你的信号已被点亮，正在星空中闪烁 ✦', 'ok'); loadBoard(); }
+    if (lit) { toast('地球人，我收到你的信息了 ✦ 我的答复写在“我的信号”里。', 'ok'); loadBoard(); }
   } catch (e) {}
 }
 
@@ -553,9 +576,11 @@ function initComposer() {
   ta.addEventListener('focus', () => portal.classList.add('focus')); ta.addEventListener('blur', () => portal.classList.remove('focus'));
   ta.addEventListener('keydown', (e) => { if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') send(); });
   // typewriter placeholder
-  const ideas = ['写下你想对宇宙说的话……', '推荐一个你最近在用的免费大模型……', '给站长留句话，或者许个愿……', '今天你用 AI 做了什么有趣的事？', '你希望这里再收录哪些免费资源？'];
+  const fromBrain = /[?&]from=brain\b/.test(location.search);
+  const ideas = [...(fromBrain ? ['地球人，想对我说什么？写在这里……', '问我哪里有免费的 API、GPU 或工具……'] : []), '写下你想对宇宙说的话……', '推荐一个你最近在用的免费大模型……', '给站长留句话，或者许个愿……', '今天你用 AI 做了什么有趣的事？', '你希望这里再收录哪些免费资源？'];
   let ii = 0, ci = 0, del = false;
   (function tick() { if (document.activeElement !== ta && !ta.value) { const s = ideas[ii]; ci += del ? -1 : 1; ta.placeholder = s.slice(0, ci) + (ci % 2 ? '▍' : ''); if (ci >= s.length + 14) del = true; if (del && ci <= 0) { del = false; ii = (ii + 1) % ideas.length; } } setTimeout(tick, del ? 28 : 80); })();
+  if (fromBrain) setTimeout(() => { portal.scrollIntoView({ block: 'end', behavior: 'auto' }); ta.focus({ preventScroll: true }); }, 600);
   const setPH = () => document.getElementById('bd-stage').style.setProperty('--portal-h', portal.offsetHeight + 'px'); setPH(); addEventListener('resize', setPH);
   btn.addEventListener('click', send);
   let busy = false;
@@ -584,7 +609,7 @@ function initComposer() {
       Galaxy.launch(() => { Galaxy.sync(); }); sfx('chime');
       ta.value = ''; ta.dispatchEvent(new Event('input'));
       renderMine();
-      toast('信号已发射 ✦ 正在穿越审核星门，通过后约 10–30 分钟出现在星空。', 'ok');
+      toast('信号已发射 ✦ 正在穿越审核星门。通过后我会收到、读懂，并在这里答复你（约 10–30 分钟）。', 'ok');
     } catch (e) {
       toast(String(e.message || e).includes('429') ? '发射太频繁啦，请稍后再试。' : '信号发射失败，可能是网络不稳定，请稍后再试。', 'err');
     } finally {

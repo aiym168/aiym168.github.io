@@ -57,6 +57,21 @@ body.board{overflow-x:hidden}
 .bd-mine-row small{color:#ffb3c7;font-size:12px}
 .bd-mine-s{font:500 11px/1.4 var(--mono);color:var(--warn)}
 .bd-mine-row.ok .bd-mine-s{color:var(--mint)} .bd-mine-row.rej .bd-mine-s{color:#ff8fa8}
+/* the site brain's answer: 收到 / 听懂了 / 答复 */
+.bd-brain{margin-top:10px;padding:10px 12px;border-radius:12px;border:1px solid rgba(94,240,192,.28);background:linear-gradient(160deg,rgba(94,240,192,.10),rgba(6,14,28,.6));font-size:13.5px;line-height:1.7;color:#dff6ee;cursor:auto}
+.bd-brain .bb-got{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--mint);margin-bottom:4px}
+.bd-brain .bb-got i{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 10px var(--mint);flex:none}
+.bd-brain dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 10px}
+.bd-brain dt{font:500 11.5px/1.9 var(--mono);color:#8fd9c3;white-space:nowrap}
+.bd-brain dd{margin:0;color:#eaf6ff}
+.bd-brain .bb-links{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.bd-brain .bb-links a{display:inline-flex;align-items:center;min-height:32px;padding:0 12px;border-radius:999px;border:1px solid rgba(92,225,255,.35);color:#bff3ff;font-size:12.5px;background:rgba(92,225,255,.06)}
+.bd-mine-row .bd-brain{font-size:12.5px;padding:8px 10px}
+#bd-mine{max-height:calc(100vh - 140px);overflow:auto}
+.bd-mine2{display:none;margin:0 0 18px;border:1px solid var(--line2);background:rgba(8,12,28,.62);border-radius:16px;padding:12px 14px}
+.bd-mine2 h3{margin:0 0 8px;font:600 12px/1.4 var(--mono);letter-spacing:.16em;color:var(--cyan)}
+.bd-mine2 .bd-mine-row p{-webkit-line-clamp:4;font-size:14px}
+.bd-mine2 .bd-mine-s{font-size:12px}
 .bd-viewbtn{position:absolute;z-index:6;right:clamp(16px,3vw,40px);bottom:28px;font:500 12px/1 var(--mono);letter-spacing:.14em;color:#cfe9ff;background:rgba(8,12,28,.6);border:1px solid var(--line2);padding:10px 14px;border-radius:999px;cursor:pointer;backdrop-filter:blur(10px)}
 .bd-viewbtn:hover{border-color:var(--cyan);box-shadow:0 0 18px rgba(92,225,255,.35)}
 .bd-sndbtn{right:calc(clamp(16px,3vw,40px) + 132px)}
@@ -164,6 +179,7 @@ body.board{overflow-x:hidden}
   .bd-sub{font-size:13.5px;margin-bottom:12px}
   .bd-stat{min-width:0;padding:6px 10px}.bd-stat b{font-size:17px}
   .bd-hud.tr{display:none}
+  .bd-mine2.has{display:block}
   .bd-viewbtn{bottom:auto;top:auto;right:16px;padding:8px 12px;font-size:11px;bottom:calc(12px + var(--portal-h,150px) + 10px)}
   .bd-sndbtn{right:128px}
   .bd-snd-cta{top:auto;bottom:calc(12px + var(--portal-h,150px) + 56px)}
@@ -249,13 +265,14 @@ def write_board_page(site: Path, *, head_block, topnav, site_footer, site_js, ca
   <div class="sec-head"><span class="sec-idx">信号流</span>
     <h2>信号流</h2>
     <p class="sec-desc">所有已点亮的信号按时间倒序排列，点击卡片可在星图中定位。数据更新于 <span id="bd-updated">--</span>。</p></div>
+  <div class="bd-mine2" id="bd-mine2"><h3>我的信号 · 大脑的答复</h3><div id="bd-mine2-list"></div></div>
   <div class="bd-tools"><input id="bd-q" type="search" placeholder="搜索信号 / 代号 / 编号…" /><span>API：<a href="../api/board.json">/api/board.json</a></span></div>
   <div id="bd-list"><div class="bd-empty">正在接收星际信号……</div></div>
   <div class="panel-box bd-rulebox"><h2>留言须知</h2>
     <ul>
       <li>完全匿名，无需注册或登录；代号可留空，系统会随机分配一个星际代号。</li>
       <li>每条最多 {int(cfg['max_len'])} 字；同一设备每 10 分钟最多 3 条、每天最多 12 条。</li>
-      <li>信号先加密传输，经服务器自动审核后点亮，通常 10–30 分钟内出现在星空。</li>
+      <li>信号先加密传输，经服务器自动审核后点亮，通常 10–30 分钟内出现在星空；点亮的同时，站点大脑会读完你的话并回复你，答复显示在“我的信号”和信号卡片上。</li>
       <li>请文明友善：涉政、辱骂、色情、赌博、毒品、诈骗、广告、网址和联系方式都会被自动拦截。</li>
       <li>发现不良信息？记下信号编号（如 M-7F3A2C），站长会将其移除。</li>
     </ul>

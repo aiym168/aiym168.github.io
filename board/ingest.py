@@ -25,6 +25,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from board.filter import check_post, REASONS, DEPS_OK  # noqa: E402
+from board.reply import brain_reply  # noqa: E402
+
+STAFF_NICK = "信号站站务"
 
 CFG = json.loads((ROOT / "board" / "config.json").read_text(encoding="utf-8"))
 DATA = ROOT / "data" / "board"
@@ -136,7 +139,8 @@ def publish(store):
         "count": len(vis),
         "messages": [
             {"id": m["id"], "nick": m["nick"], "text": m["text"], "t": m["t"],
-             "time": datetime.fromtimestamp(m["t"], TZ).strftime("%Y-%m-%d %H:%M"), "hue": m.get("hue", 190)}
+             "time": datetime.fromtimestamp(m["t"], TZ).strftime("%Y-%m-%d %H:%M"), "hue": m.get("hue", 190),
+             **({"brain": m["brain"]} if m.get("brain") else {})}
             for m in vis
         ],
     }
@@ -227,11 +231,25 @@ def main():
         fplog[fp] = hist
         mid = msg_id(cid, t)
         hue = int(hashlib.md5(cid.encode()).hexdigest()[:4], 16) % 360
-        store.append({"id": mid, "nick": nick or "匿名旅人", "text": text, "t": t, "hue": hue})
-        receipts[cid] = {"s": "ok", "id": mid, "t": t}
+        rec = {"id": mid, "nick": nick or "匿名旅人", "text": text, "t": t, "hue": hue}
+        try:  # the site brain reads it and answers (never blocks acceptance)
+            rec["brain"] = brain_reply(text, rec["nick"], mid)
+        except Exception as e:
+            print("[board] reply skipped:", e)
+        store.append(rec)
+        receipts[cid] = {"s": "ok", "id": mid, "t": t, **({"b": rec["brain"]} if rec.get("brain") else {})}
         day_count += 1
         stats["ok"] += 1
         changed = True
+
+    # older approved messages that have no answer yet: let the brain answer them too
+    if DEPS_OK:
+        for m in store:
+            if not m.get("brain") and m.get("nick") != STAFF_NICK:
+                try:
+                    m["brain"] = brain_reply(m["text"], m["nick"], m["id"])
+                except Exception as e:
+                    print("[board] reply skipped:", e)
 
     # housekeeping
     state["cids"] = seen_list[-3000:]
