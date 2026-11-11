@@ -246,7 +246,13 @@ export function mountBrainHero(container, opts = {}) {
     }
   }
   container.addEventListener("click", triggerShockwave);
-  window.__brainAPI = { triggerShockwave, destroy: null };
+  // "talking" = the brain is speaking to the visitor: faster, stronger heartbeat
+  let talking = 0, talkTarget = 0;
+  const setTalking = (on) => { talkTarget = on ? 1 : 0; };
+  window.__brainAPI = { triggerShockwave, setTalking, destroy: null };
+  // heartbeat: "lub-dub" double pulse; period shortens while talking
+  let beatPhase = 0;
+  const beatShape = (u) => Math.exp(-Math.pow((u - 0.08) / 0.045, 2)) + 0.6 * Math.exp(-Math.pow((u - 0.28) / 0.05, 2));
 
   let visible = true; let raf = 0;
   const io = new IntersectionObserver((en) => { visible = en[0].isIntersecting; if (visible && !raf) raf = requestAnimationFrame(frame); }, { threshold: 0 });
@@ -305,8 +311,14 @@ export function mountBrainHero(container, opts = {}) {
     group.rotation.y = -0.5 + t * 0.16 + smx * 0.6;
     group.rotation.x = 0.12 + smy * 0.3 + Math.sin(t * 0.4) * 0.04;
     group.rotation.z = smx * 0.06;
-    halo.material.opacity = 0.26 + 0.08 * Math.sin(t * 1.3);
-    halo2.material.opacity = 0.18 + 0.08 * Math.sin(t * 0.9 + 1);
+    talking += (talkTarget - talking) * Math.min(1, dt * 3);
+    beatPhase = (beatPhase + dt / (1.15 - 0.4 * talking)) % 1;
+    const beat = beatShape(beatPhase);
+    group.scale.setScalar(1 + beat * (0.022 + 0.02 * talking));
+    halo.material.opacity = 0.24 + 0.06 * Math.sin(t * 1.3) + beat * (0.16 + 0.12 * talking);
+    halo2.material.opacity = 0.16 + 0.06 * Math.sin(t * 0.9 + 1) + beat * (0.1 + 0.1 * talking);
+    lineMat.opacity += beat * 0.1 * assembled;
+    container.style.setProperty("--beat", beat.toFixed(3));
     renderer.render(scene, camera);
     raf = requestAnimationFrame(frame);
   }

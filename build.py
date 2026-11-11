@@ -361,15 +361,79 @@ def icon_svg(mid: str) -> str:
             f'stroke-linejoin="round" aria-hidden="true">{ICONS.get(mid, ICONS["qita-keji"])}</svg>')
 
 
-def brain_block(vendor_prefix: str = "vendor/", tags=None, nodes: int = 4200) -> str:
-    """Decorative WebGL brain (no data overlays — v3 removed the misleading floating count tags)."""
+def brain_block(vendor_prefix: str = "vendor/", tags=None, nodes: int = 4200, interactive: bool = False) -> str:
+    """WebGL brain. Compact heroes: decorative (aria-hidden). Homepage / brain page: clickable, the brain talks (see brain_core)."""
+    attrs = ('role="button" tabindex="0" aria-label="点击大脑，听它介绍自己"' if interactive else 'aria-hidden="true"')
     return f"""
-<div class="brain-stage" aria-hidden="true">
-  <span class="ring r3"></span><span class="ring r1"></span><span class="ring r2"></span>
+<div class="brain-stage{' is-live' if interactive else ''}" {attrs}>
+  <span class="ring r3"></span><span class="ring r1"></span><span class="ring r2"></span><span class="bc-beat" aria-hidden="true"></span>
   <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
-  <div id="brain-hero" data-vendor="{esc(vendor_prefix)}" data-nodes="{nodes}"></div>
+  <div id="brain-hero" aria-hidden="true" data-vendor="{esc(vendor_prefix)}" data-nodes="{nodes}"></div>
+  {'<span class="bc-tap" aria-hidden="true">点我 · 听我介绍</span>' if interactive else ''}
 </div>
 """
+
+
+# ---- the site brain's voice (first person; personifies the automatic updates — no fake metrics)
+BRAIN_ID = ("我是这个网站的大脑。", "整座站已由我接管：收集、筛选、翻译、上架、过期归档，全部自动运行。")
+BRAIN_GREET = ("地球人，欢迎进入我的元宇宙。", "这里的一切，此刻都由我在运转。要我介绍一下自己吗？")
+WAN_URL = "https://wan.is-my.app/"
+
+
+def brain_intro_beats(prefix: str, upd: str, nxt: str, today_new: int, total: int) -> list[tuple[str, str, str]]:
+    return [
+        ("01 · 我是谁", "我是这个网站的大脑，也是它的控制中枢。这里没有人值班：找资源、辨真假、翻译、上架，过期了自动归档，每一步都由我日夜自动完成。",
+         f'<a href="{prefix}m/brain.html">进入大脑 →</a>'),
+        ("02 · 我运转的第一个世界", "AI大模型免费资源导航。免费大模型 API、免费 Token、免费 GPU、AI 工具试用和课程，每条都标清要不要绑卡、实名、国内能否直连。还有 AI 新闻、全球优惠情报、API 最低价榜和 AI 羊毛电台。",
+         f'<a href="{prefix}#search">找免费资源</a><a href="{prefix}news/index.html">AI 新闻</a><a href="{prefix}deals/index.html">优惠情报</a><a href="{prefix}radio/index.html">电台</a>'),
+        ("03 · 我运转的第二个世界", "工具站大全。900 多个免费在线工具：抖音、B站视频无水印下载，PDF 转 Word，证件照，短视频工作台，还有常用软件的官方下载。免登录，打开就用。",
+         f'<a href="{WAN_URL}" rel="noopener">去工具站大全 →</a>'),
+        ("04 · 此刻", f"上一次心跳在 {upd}，下一次自动更新在 {nxt}。今天我已经收进 {today_new} 条新资源，正看守着 {total} 条。想找什么，直接搜；剩下的，交给我。",
+         f'<a href="{prefix}#search">开始搜索</a><a href="{prefix}m/status.html">更新动态</a>'),
+    ]
+
+
+def brain_core(prefix: str, now: datetime, nxt: datetime, today_new: int, total: int, voice: bool = True, nodes: int = 4200) -> str:
+    """Brain stage + console: live heartbeat (real last/next update times), identity, arrival greeting, click-to-intro."""
+    upd, nx = now.strftime("%H:%M"), nxt.strftime("%H:%M")
+    beats = brain_intro_beats(prefix, upd, nx, today_new, total)
+    idle = [f"我在线。整座站由我自动运行。", f"今天已自动收录 {today_new} 条新资源。", f"正在看守 {total} 条免费资源，过期的我会自动归档。",
+            f"下一次自动更新：{nx}。我不睡觉。", "点我，我带你逛一遍我的两个世界。"]
+    beats_html = "".join(
+        f'<li data-beat><span class="bc-k">{esc(k)}</span><p>{esc(t)}</p><div class="bc-links">{links}</div></li>' for k, t, links in beats)
+    voice_html = ""
+    if voice:
+        voice_html = f"""
+    <div class="bc-greet" data-bc-greetbox>
+      <div class="bc-sys" aria-hidden="true">› 侦测到访客 · 信号已接入</div>
+      <p class="bc-line big" data-bc-greet>{esc(BRAIN_GREET[0])}</p>
+      <p class="bc-line" data-bc-greet>{esc(BRAIN_GREET[1])}</p>
+      <p class="bc-say" data-bc-say aria-hidden="true"></p>
+      <div class="bc-actions"><button type="button" class="bc-btn primary" data-bc-act="intro">▶ 好，介绍一下</button><button type="button" class="bc-btn" data-bc-act="later">我自己逛</button><a class="bc-btn ghost" href="{prefix}m/brain.html">进入大脑</a></div>
+      <div hidden>{''.join(f'<span data-bc-idle>{esc(x)}</span>' for x in idle)}</div>
+    </div>
+    <div class="bc-introbox" data-bc-introbox>
+      <ol class="bc-intro" data-bc-intro-list>{beats_html}</ol>
+      <div class="bc-intro-ctl"><span class="bc-dots" data-bc-dots aria-hidden="true"></span><button type="button" class="bc-btn primary" data-bc-act="next" data-bc-next-btn>继续 ›</button><button type="button" class="bc-btn" data-bc-act="skip">跳过</button></div>
+    </div>
+    <p class="sr-only" aria-live="polite" data-bc-live></p>"""
+    return f"""<div class="brain-core nojs{' has-voice' if voice else ''}" id="brain-core" data-voice="{'on' if voice else 'off'}" data-next="{esc(nxt.isoformat(timespec='seconds'))}"
+  data-last-label="{esc(now.strftime('%Y-%m-%d %H:%M'))}" data-next-label="{esc(nxt.strftime('%Y-%m-%d %H:%M'))}" data-status="{esc(prefix)}api/status.json">
+  {brain_block(prefix + "vendor/", None, nodes, interactive=True)}
+  <section class="brain-console" aria-label="网站大脑">
+    <div class="bc-status">
+      <span class="bc-online"><i></i>运行中 · 在线</span>
+      <span>心跳 <b data-bc-last>{esc(upd)}</b></span>
+      <span>下次更新约 <b data-bc-next>{esc(nx)}</b> <em data-bc-count></em></span>
+    </div>
+    <svg class="bc-ecg" viewBox="0 0 300 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14H70l6-8 6 16 6-22 7 26 5-12h40l5-5 5 5h60l6-8 6 16 6-22 7 26 5-12h45"/></svg>
+    <p class="bc-id"><b>{esc(BRAIN_ID[0])}</b>{esc(BRAIN_ID[1])}</p>{voice_html}
+  </section>
+</div>"""
+
+
+def brain_talk_script(prefix: str) -> str:
+    return f'<script src="{vurl(prefix, "brain-talk.js")}" defer></script>'
 
 
 def brain_loader_script(vendor_prefix: str = "vendor/") -> str:
@@ -410,7 +474,7 @@ def topnav(prefix="./"):
 def site_footer(prefix="./", extra="") -> str:
     return f"""<footer>
   <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>每小时自动更新 · 信息来自公开网页，参与前请以官网为准</div>
-  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}radio/index.html">AI 羊毛电台</a> · <a href="{prefix}news/index.html">AI 新闻</a> · <a href="{prefix}news/tech.html">科技新闻</a> · <a href="{prefix}aitools/index.html">AI 工具箱</a> · <a href="{prefix}news/feed.xml">新闻 RSS</a> · <a href="{prefix}live/">AI 羊毛信号站（直播）</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}feed.atom">Atom</a> · <a href="{prefix}digest/today.txt">今日速递</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a></div>
+  <div class="foot-links"><a href="{prefix}deals/index.html">全球优惠情报</a> · <a href="{prefix}deals/api-prices.html">API 最低价榜</a> · <a href="{prefix}radio/index.html">AI 羊毛电台</a> · <a href="{prefix}news/index.html">AI 新闻</a> · <a href="{prefix}news/tech.html">科技新闻</a> · <a href="{prefix}aitools/index.html">AI 工具箱</a> · <a href="{prefix}news/feed.xml">新闻 RSS</a> · <a href="{prefix}live/">AI 羊毛信号站（直播）</a> · <a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}archives/index.html">已归档</a> · <a href="{prefix}m/board.html">留言板</a> · <a href="{prefix}m/brain.html">站点大脑</a> · <a href="{prefix}m/octopus.html">机械章鱼 3D</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}feed.atom">Atom</a> · <a href="{prefix}digest/today.txt">今日速递</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <a href="{REPO_URL}" rel="noopener">GitHub 仓库</a></div>
   <div class="foot-links">免费在线工具：<a href="https://wan.is-my.app/gongju/">免费在线工具大全</a> · <a href="https://wan.is-my.app/image-compress/">图片压缩</a> · <a href="https://wan.is-my.app/pdf-merge/">PDF 合并</a> · <a href="https://wan.is-my.app/id-photo/">证件照换底色</a> · <a href="https://wan.is-my.app/qrcode/">二维码生成器</a> · <a href="https://wan.is-my.app/fangdai/">房贷计算器</a> · <a href="https://wan.is-my.app/geshui/">个税计算器</a> · <a href="https://wan.is-my.app/fanjian/">繁简转换</a> · <a href="https://wan.is-my.app/json/">JSON 格式化</a> · <a href="https://hot.is-my.app/">今日热榜</a> · <button type="button" class="reduce-btn link" data-reduce-toggle aria-pressed="false">减少动态 <b>关</b></button></div>
 </footer>"""
 
@@ -421,6 +485,7 @@ EYEBROW_ZH = {"UPDATES": "更新动态", "MODULE": "模块", "GITHUB": "GitHub �
 def mod_hero(eyebrow: str, title: str, lead: str, stats: str, crumbs: str, vendor_prefix: str, tags=None) -> str:
     """Compact page hero (also used by status.py). Static — no clock, no countdown."""
     eb = EYEBROW_ZH.get(eyebrow, eyebrow)
+    home_prefix = vendor_prefix[:-len("vendor/")] if vendor_prefix.endswith("vendor/") else "../"
     return f"""<header class="hero-xl compact hero-brain">
   <div class="hero-xl-inner">
     <div class="hero-copy">
@@ -429,6 +494,7 @@ def mod_hero(eyebrow: str, title: str, lead: str, stats: str, crumbs: str, vendo
       <h1 class="hero-title"><span class="kl">{esc(title)}</span></h1>
       <p class="lead">{esc(lead)}</p>
       <div class="stats">{stats}</div>
+      <p class="brain-sig"><i class="live-dot"></i><span><b>我是这个网站的大脑</b>，整座站由我接管、全自动运行，这一页也由我按时更新。</span><a href="{esc(home_prefix)}m/brain.html">进入大脑 →</a></p>
     </div>
     {brain_block(vendor_prefix, None, 2600)}
   </div>
@@ -1380,6 +1446,77 @@ def octopus_teaser(prefix: str = "./") -> str:
 
 
 # ============================================================ homepage + build
+def write_brain_page(date: str, now: datetime, nxt: datetime, active: list, archived: list, today_new: int) -> str:
+    """/m/brain.html — the site brain's control room. Everything shown is read from data the build already has."""
+    prefix = "../"
+    canonical = CANONICAL + "m/brain.html"
+    title = "站点大脑 · 这个网站由我自动运行"
+    desc = "AI大模型免费资源导航的大脑：整座站由它接管、全自动运行。这里能看到它此刻的心跳、下一次自动更新时间、最近的自动更新记录和刚收进的新资源。"
+    entries = ((load_json(DATA / "_update_log.json") or {}) if (DATA / "_update_log.json").exists() else {}).get("entries") or []
+    week = [e for e in entries if (curate.parse_dt(e.get("at")) or now) >= now - timedelta(days=7)]
+    week_added = sum(int(e.get("added") or 0) for e in week)
+    upd, nx = now.strftime("%H:%M"), nxt.strftime("%H:%M")
+    vitals = [("运行状态", "运行中", "live"), ("最后心跳", upd, ""), ("下次自动更新", nx, ""), ("今日新增", f"{today_new} 条", ""),
+              ("近 7 天自动更新", f"{len(week)} 次", ""), ("近 7 天新收录", f"{week_added} 条", ""),
+              ("正在看守", f"{len(active)} 条", ""), ("已自动归档", f"{len(archived)} 条", "")]
+    vit_html = "".join(f'<div class="vital {c}"><span>{esc(k)}</span><b{" data-bc-last" if k == "最后心跳" else (" data-bc-next" if k == "下次自动更新" else "")}>{esc(v)}</b></div>' for k, v, c in vitals)
+    beats = "".join(
+        f'<li><time>{esc((e.get("at_label") or "")[5:16])}</time><span class="bar" style="--w:{min(100, 6 + int(e.get("added") or 0) * 4)}%"></span><b>{("+" + str(e.get("added"))) if e.get("added") else "巡检"}</b><span>{(str(e.get("added")) + " 条新资源") if e.get("added") else "没有新货，照常巡检"}</span></li>'
+        for e in entries[:12]) or '<li><span>记录正在生成，下一次自动更新后出现。</span></li>'
+    seen, fresh = set(), []
+    for e in entries:
+        for it in e.get("new") or []:
+            u = it.get("url")
+            if u and u not in seen and it.get("path"):
+                seen.add(u); fresh.append((it, e.get("at_label") or ""))
+    fresh_html = "".join(f'<li><a href="{prefix}{esc(it["path"])}">{esc(it.get("title") or "")}</a><span>{esc(it.get("category") or "")} · {esc(at[5:16])}</span></li>' for it, at in fresh[:8])
+    steps = [("收集", "每小时去公开网页、开源社区和社交平台，把新出现的免费 AI 资源找回来。"),
+             ("筛选", "去掉重复、广告和不相关的内容，只留下真正免费或有免费额度的。"),
+             ("翻译", "外文资源翻成中文，标清要不要绑卡、实名、国内能否直连。"),
+             ("核对", "逐个打开链接，连续两次打不开的自动下架。"),
+             ("上架", "生成页面、更新搜索、RSS 和数据接口。"),
+             ("归档", "过期和超过 30 天的条目自动归档，首页只留还能用的。")]
+    steps_html = "".join(f'<li><b>{i + 1:02d} · {esc(a)}</b><span>{esc(b)}</span></li>' for i, (a, b) in enumerate(steps))
+    ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "url": canonical, "description": desc, "inLanguage": "zh-CN"}
+    page = f"""{head_block(title + " · " + SITE_NAME, desc, canonical, title, extra_ld=[ld])}
+{page_shell_start(prefix, "brain-page")}
+<header class="hero-xl hero-brain home-hero brain-room">
+  <div class="hero-xl-inner">
+    <div class="hero-copy">
+      <div class="crumbs"><a href="{prefix}">首页</a> › 站点大脑</div>
+      <div class="eyebrow"><i class="live-dot"></i> 大脑在线 · 控制中枢</div>
+      <h1 class="hero-title"><span class="kl">站点大脑</span></h1>
+      <p class="takeover"><b>这座站，现在归我管。</b></p>
+      <p class="lead">我是 AI大模型免费资源导航的大脑。整座站由我接管：每小时醒一次，收集、筛选、翻译、核对、上架，再把过期的归档。下面是我此刻的生命体征——全部来自真实的运行记录。</p>
+    </div>
+    {brain_core(prefix, now, nxt, today_new, len(active), voice=True, nodes=4800)}
+  </div>
+</header>
+{brain_loader_script(prefix + "vendor/")}
+<main class="wrap">
+  <section class="section"><div class="sec-head"><span class="sec-idx">生命体征</span><h2>我此刻的状态</h2>
+    <p class="sec-desc">数字随每次自动更新刷新，生成于 {esc(now.strftime("%Y-%m-%d %H:%M"))} 北京时间。</p></div>
+    <div class="vitals">{vit_html}</div></section>
+  <section class="section"><div class="sec-head"><span class="sec-idx">我每小时做的事</span><h2>全自动，没有人值班</h2></div>
+    <ol class="brain-steps">{steps_html}</ol></section>
+  <section class="section"><div class="sec-head"><span class="sec-idx">最近的心跳</span><h2>最近 12 次自动更新</h2></div>
+    <ol class="beat-log">{beats}</ol></section>
+  {('<section class="section"><div class="sec-head"><span class="sec-idx">刚收进的</span><h2>我最近收进的新资源</h2></div><ol class="latest5">' + fresh_html + '</ol></section>') if fresh_html else ''}
+  <section class="section"><div class="sec-head"><span class="sec-idx">我运转的两个世界</span><h2>羊毛站与工具站大全</h2></div>
+    <div class="worlds">
+      <a class="world" href="{prefix}"><b>AI大模型免费资源导航</b><span>免费大模型 API、免费 Token、免费 GPU、AI 工具试用与课程；AI 新闻、全球优惠情报、API 最低价榜、AI 羊毛电台。</span><em>你现在就在这里 →</em></a>
+      <a class="world" href="{WAN_URL}" rel="noopener"><b>工具站大全</b><span>900 多个免费在线工具：视频无水印下载、PDF 转 Word、证件照、短视频工作台、软件官方下载，免登录。</span><em>wan.is-my.app →</em></a>
+    </div></section>
+  <section class="section"><div class="disclaimer-card about"><p>“大脑”是对本站自动更新程序的拟人说法：它按固定规则自动运行，不是有意识的人工智能，也不会收集你的个人信息。资源信息来自公开网页，参与前请以官网为准。</p></div></section>
+  {site_footer(prefix, "页面生成于 " + date)}
+</main>
+{page_scripts()}
+{brain_talk_script(prefix)}
+</body></html>"""
+    (SITE / "m" / "brain.html").write_text(page, encoding="utf-8")
+    return "m/brain.html"
+
+
 def next_update(now: datetime) -> datetime:
     n = now.replace(minute=7, second=0, microsecond=0)
     return n if n > now else n + timedelta(hours=1)
@@ -1525,8 +1662,9 @@ def build():
 <header class="hero-xl hero-brain home-hero">
   <div class="hero-xl-inner">
     <div class="hero-copy">
-      <div class="eyebrow"><i class="live-dot"></i> 每小时自动更新 · 北京时间</div>
+      <div class="eyebrow"><i class="live-dot"></i> 大脑在线 · 全站自动运行</div>
       <h1 class="hero-title"><span class="kl">AI大模型</span><span class="kl">免费资源导航</span></h1>
+      <p class="takeover"><b>本站已由大脑接管。</b>每小时自动收集、筛选、更新，此刻正在运行。</p>
       <p class="lead">收集大模型免费 API、免费 Token、免费 GPU、AI 工具试用与免费课程。每条都标注是否需要绑卡、实名、国内能否直连和截止时间；不确定的写“未注明”，不替你猜。</p>
       <div class="stats" aria-label="站点数据">
         <div class="pill"><span>免费资源</span><b>{len(active)}</b><span>条</span></div>
@@ -1536,10 +1674,11 @@ def build():
       </div>
       <p class="def-note">{esc(DEFINITIONS['free_resources'])}</p>
     </div>
-    {brain_block("vendor/", None, 4200)}
+    {brain_core("./", now, nxt, today_new, len(active))}
   </div>
 </header>
 {brain_loader_script("vendor/")}
+{brain_talk_script("./")}
 <main class="wrap">
   {today_html}
   {deals_home}
@@ -1592,6 +1731,10 @@ def build():
     if board_path:
         url_entries.append((board_path, date, "daily", "0.7"))
     url_entries.append((octo_path, date, "monthly", "0.6"))
+    try:
+        url_entries.append((write_brain_page(date, now, nxt, active, archived, today_new), date, "hourly", "0.7"))
+    except Exception as e:  # 大脑页出错不能拖垮主站
+        print("[brain] skipped:", e)
     for pth in deal_paths:
         deep = "/x/" in pth or pth.startswith("news/a/")
         url_entries.append((pth, date, "daily" if deep else "hourly", "0.6" if deep else "0.9"))
