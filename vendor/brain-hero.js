@@ -76,11 +76,20 @@ function glowTexture() {
 const PT_VERT = `
 attribute float aSize; attribute float aPhase; attribute vec3 aColor;
 uniform float uTime; uniform float uPR; uniform float uScale;
+uniform vec3 uSurgeO; uniform float uSurgeR; uniform float uSurgeA;
 varying vec3 vColor; varying float vAlpha;
 void main(){
-  vec4 mv = modelViewMatrix * vec4(position,1.0);
+  vec3 n = normalize(position + vec3(1e-4));
+  float rip = sin(dot(position, vec3(7.1, 5.3, 6.7)) + uTime * 1.1) * 0.5 + sin(dot(position, vec3(-4.3, 8.2, 3.1)) - uTime * 0.7) * 0.5;
+  vec3 pos = position + n * rip * 0.010;
+  float wave = uSurgeA * exp(-pow((distance(position, uSurgeO) - uSurgeR) / 0.09, 2.0));
+  vec4 mv = modelViewMatrix * vec4(pos,1.0);
+  vec3 vn = normalize(normalMatrix * n);
+  float rim = pow(1.0 - abs(vn.z), 2.5);
   float tw = 0.55 + 0.45*sin(uTime*2.2 + aPhase);
-  vColor = aColor; vAlpha = 0.45 + 0.55*tw;
+  vColor = mix(aColor, vec3(0.75, 1.0, 0.92), clamp(wave, 0.0, 1.0)); vAlpha = 0.45 + 0.55*tw + wave * 0.8 + rim * 0.5;
+  vColor = mix(vColor, vec3(0.86, 1.0, 0.97), rim * 0.45);
+  tw += wave * 1.2 + rim * 0.35;
   gl_PointSize = aSize * uPR * uScale * (0.75+0.5*tw) / -mv.z;
   gl_Position = projectionMatrix * mv;
 }`;
@@ -101,7 +110,7 @@ export function mountBrainHero(container, opts = {}) {
   let reduced = isReduced();
   const mobile = Math.min(window.innerWidth, window.innerHeight) < 720;
   const nodesAttr = parseInt(container.getAttribute("data-nodes") || "0", 10);
-  const COUNT = opts.count || (mobile ? 1600 : (nodesAttr || 4200));
+  const COUNT = opts.count || (mobile ? 2000 : (nodesAttr || 4200));
   const LINKS = mobile ? 2 : 3;
 
   const probe = document.createElement("canvas");
@@ -144,7 +153,8 @@ export function mountBrainHero(container, opts = {}) {
   geo.setAttribute("aSize", new THREE.BufferAttribute(sizes, 1));
   geo.setAttribute("aPhase", new THREE.BufferAttribute(phases, 1));
   geo.setAttribute("aColor", new THREE.BufferAttribute(colors, 3));
-  const uniforms = { uTime: { value: 0 }, uPR: { value: 1 }, uScale: { value: 1 } };
+  const uniforms = { uTime: { value: 0 }, uPR: { value: 1 }, uScale: { value: 1 },
+    uSurgeO: { value: new THREE.Vector3() }, uSurgeR: { value: 0 }, uSurgeA: { value: 0 } };
   const mat = new THREE.ShaderMaterial({ vertexShader: PT_VERT, fragmentShader: PT_FRAG, uniforms, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending });
   const points = new THREE.Points(geo, mat);
 
@@ -204,16 +214,20 @@ export function mountBrainHero(container, opts = {}) {
   const halo2 = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, color: 0xa78bfa, transparent: true, opacity: 0.22, blending: THREE.AdditiveBlending, depthWrite: false }));
   halo2.scale.setScalar(baseRadius * 2.1);
 
+  const core = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, color: 0xfff1d6, transparent: true, opacity: 0.0, blending: THREE.AdditiveBlending, depthWrite: false }));
+  core.scale.setScalar(baseRadius * 1.25);
   const group = new THREE.Group();
   group.add(lines, points, pulsePts);
-  scene.add(halo, halo2, group);
+  scene.add(halo, halo2, core, group);
 
   let mouseX = 0, mouseY = 0, smx = 0, smy = 0;
   const onMove = (e) => {
     const r = container.getBoundingClientRect(); if (!r.width) return;
     mouseX = THREE.MathUtils.clamp(((e.clientX - r.left) / r.width) * 2 - 1, -1.5, 1.5);
     mouseY = THREE.MathUtils.clamp(((e.clientY - r.top) / r.height) * 2 - 1, -1.5, 1.5);
+    moved = performance.now();
   };
+  let moved = -1e9;
   window.addEventListener("pointermove", onMove, { passive: true });
 
   function fitCamera(w, h) {
@@ -249,9 +263,23 @@ export function mountBrainHero(container, opts = {}) {
   // "talking" = the brain is speaking to the visitor: faster, stronger heartbeat
   let talking = 0, talkTarget = 0;
   const setTalking = (on) => { talkTarget = on ? 1 : 0; };
-  window.__brainAPI = { triggerShockwave, setTalking, destroy: null };
+  // living behaviour: irregular breathing, neural surges ("thoughts"), attention that shifts and turns to the visitor
+  let surgeT = -1, nextSurge = 2.5 + Math.random() * 3, surgeBoost = 0;
+  const surge = (front) => {
+    if (reduced) return;
+    const o = front ? new THREE.Vector3(0, 0.1, baseRadius * 0.9) : baseTargets[Math.floor(Math.random() * COUNT)].clone();
+    uniforms.uSurgeO.value.copy(o); surgeT = 0; surgeBoost = 1;
+  };
+  let yawT = 0, pitchT = 0.12, yaw = -0.5, pitch = 0.12, nextGlance = 3, attention = 0, lastMove = -10;
+  let bounceT = -1, hover = 0, hoverT = 0;
+  const perk = () => { if (!reduced) bounceT = 0; };
+  const notice = () => { yawT = 0.25; pitchT = 0.05; attention = 1; nextGlance = 6; surge(true); perk(); };
+  container.addEventListener("pointerenter", () => { hoverT = 1; });
+  container.addEventListener("pointerleave", () => { hoverT = 0; });
+  container.addEventListener("click", () => { surge(true); perk(); });
+  window.__brainAPI = { triggerShockwave, setTalking, notice, surge, destroy: null };
   // heartbeat: "lub-dub" double pulse; period shortens while talking
-  let beatPhase = 0;
+  let beatPhase = 0, beatLen = 1.15, breath = 0;
   const beatShape = (u) => Math.exp(-Math.pow((u - 0.08) / 0.045, 2)) + 0.6 * Math.exp(-Math.pow((u - 0.28) / 0.05, 2));
 
   let visible = true; let raf = 0;
@@ -267,8 +295,8 @@ export function mountBrainHero(container, opts = {}) {
     geo.attributes.position.needsUpdate = true;
     lineMat.opacity = 0.22; pulsePts.visible = false;
     group.rotation.set(0.12, -0.5, 0);
-    halo.material.opacity = 0.26; halo2.material.opacity = 0.18;
-    uniforms.uTime.value = 0;
+    halo.material.opacity = 0.26; halo2.material.opacity = 0.18; core.material.opacity = 0.2;
+    uniforms.uTime.value = 0; uniforms.uSurgeA.value = 0;
     renderer.render(scene, camera);
   }
   function frame(now) {
@@ -293,7 +321,7 @@ export function mountBrainHero(container, opts = {}) {
 
     for (let i = 0; i < PULSES; i++) {
       const p = pulses[i]; if (!edges.length) break;
-      p.u += dt * p.speed * 2.2;
+      p.u += dt * p.speed * 2.2 * (1 + surgeBoost * 1.2 + talking * 0.6);
       if (p.u >= 1) {
         const [a, b] = edges[p.e]; const end = p.from === a ? b : a;
         const nexts = adj[end];
@@ -308,13 +336,36 @@ export function mountBrainHero(container, opts = {}) {
     pulseGeo.attributes.position.needsUpdate = true;
 
     smx += (mouseX - smx) * k * 0.25; smy += (mouseY - smy) * k * 0.25;
-    group.rotation.y = -0.5 + t * 0.16 + smx * 0.6;
-    group.rotation.x = 0.12 + smy * 0.3 + Math.sin(t * 0.4) * 0.04;
-    group.rotation.z = smx * 0.06;
+    // attention: drifts on its own, now and then shifts its gaze; follows the pointer while you move it
+    nextGlance -= dt;
+    if (nextGlance <= 0) { yawT = yaw + (Math.random() - 0.35) * 1.1; pitchT = 0.12 + (Math.random() - 0.5) * 0.28; nextGlance = 2.8 + Math.random() * 4.5; }
+    yawT += dt * 0.05; // slow drift so it never freezes
+    const following = (now - moved) < 1600 ? 1 : 0;
+    attention += ((following ? 1 : 0) - attention) * Math.min(1, dt * 1.5);
+    yaw += (yawT + smx * 0.7 * attention - yaw) * Math.min(1, dt * 1.6);
+    pitch += (pitchT + smy * 0.35 * attention - pitch) * Math.min(1, dt * 1.6);
+    group.rotation.y = yaw;
+    group.rotation.x = pitch + Math.sin(t * 0.37) * 0.025;
+    group.rotation.z = smx * 0.05 * attention + Math.sin(t * 0.23) * 0.015;
+    // thoughts: a wave of activity sweeps across the structure every few seconds
+    nextSurge -= dt * (1 + talking * 1.5);
+    if (nextSurge <= 0) { surge(false); nextSurge = 3.5 + Math.random() * 5.5; }
+    if (surgeT >= 0) { surgeT += dt; uniforms.uSurgeR.value = surgeT * 0.9; uniforms.uSurgeA.value = Math.max(0, 1 - surgeT / 2.2); if (surgeT > 2.2) surgeT = -1; }
+    surgeBoost = Math.max(0, surgeBoost - dt * 0.7);
     talking += (talkTarget - talking) * Math.min(1, dt * 3);
-    beatPhase = (beatPhase + dt / (1.15 - 0.4 * talking)) % 1;
+    // heartbeat with natural jitter between beats; slow irregular breathing underneath
+    const prevPhase = beatPhase;
+    beatPhase = (beatPhase + dt / beatLen) % 1;
+    if (beatPhase < prevPhase) beatLen = (1.05 + Math.random() * 0.25) - 0.35 * talking;
     const beat = beatShape(beatPhase);
-    group.scale.setScalar(1 + beat * (0.022 + 0.02 * talking));
+    breath += dt * (0.95 + 0.35 * Math.sin(t * 0.11) + 0.2 * Math.sin(t * 0.29));
+    const br = Math.sin(breath * 0.9);
+    hover += (hoverT - hover) * Math.min(1, dt * 3);
+    let bounce = 0;
+    if (bounceT >= 0) { bounceT += dt; bounce = Math.exp(-bounceT * 3.2) * Math.sin(bounceT * 14) * 0.06; if (bounceT > 1.6) bounceT = -1; }
+    group.scale.setScalar(1 + br * 0.022 + beat * (0.018 + 0.02 * talking) + bounce + hover * 0.03);
+    core.material.opacity = 0.16 + br * 0.05 + beat * 0.14 + talking * 0.1 + hover * 0.08 + uniforms.uSurgeA.value * 0.12;
+    core.scale.setScalar(baseRadius * (1.2 + beat * 0.12 + br * 0.05));
     halo.material.opacity = 0.24 + 0.06 * Math.sin(t * 1.3) + beat * (0.16 + 0.12 * talking);
     halo2.material.opacity = 0.16 + 0.06 * Math.sin(t * 0.9 + 1) + beat * (0.1 + 0.1 * talking);
     lineMat.opacity += beat * 0.1 * assembled;

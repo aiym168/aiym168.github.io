@@ -89,7 +89,7 @@
       if (dots) [].forEach.call(dots.children, function (d, k) { d.className = k < n ? 'done' : (k === n ? 'on' : ''); });
       var b = beats[n], p = b.querySelector('p');
       announce(core, (b.querySelector('.bc-k') || {}).textContent + '：' + b._text);
-      b.classList.remove('typed');
+      b.classList.remove('typed'); var A = api(); if (A && A.surge && n) A.surge(false);
       typeInto(p, b._text, function () {
         b.classList.add('typed');
         if (!reduced() && n < beats.length - 1) adv = setTimeout(function () { showBeat(n + 1); }, 2600 + b._text.length * 45);
@@ -137,7 +137,10 @@
 
     // arrival: start talking as soon as the brain is on screen
     var started = false;
-    function arrive() { if (started) return; started = true; core.classList.add('awake'); setTimeout(playGreeting, reduced() ? 0 : 700); }
+    function arrive() {
+      if (started) return; started = true; core.classList.add('awake'); setTimeout(playGreeting, reduced() ? 0 : 700);
+      var tries = 0; (function look() { var a = api(); if (a && a.notice) a.notice(); else if (++tries < 25) setTimeout(look, 200); })();
+    }
     if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); arrive(); } }, { threshold: 0.25 });
       io.observe(core);
