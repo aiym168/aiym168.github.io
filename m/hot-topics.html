@@ -1053,7 +1053,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
       <div class="eyebrow"><i class="live-dot"></i> 最近热议</div>
       <h1 class="hero-title"><span class="kl">最近热议</span></h1>
       <p class="lead">Hacker News、V2EX 等社区里与 AI、科技相关的热门讨论（非 AI 话题已过滤），标题已译为中文。</p>
-      <div class="stats"><div class="pill">话题 <b>22</b></div><div class="pill">更新 <b>2026-11-11</b></div></div>
+      <div class="stats"><div class="pill">话题 <b>13</b></div><div class="pill">更新 <b>2026-11-11</b></div></div>
     </div>
     
 <div class="brain-stage" aria-hidden="true">
@@ -1069,7 +1069,7 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   <section class="section" id="search">
     <div class="filters" data-filter-root>
       <form class="searchbar" role="search" onsubmit="return false"><label class="sr-only" for="q">搜索</label><input id="q" type="search" placeholder="搜索最近热议…" autocomplete="off" /><button type="submit" class="btn primary">搜索</button></form>
-      <div class="fbar"><span id="f-count" class="f-count">共 22 条</span></div>
+      <div class="fbar"><span id="f-count" class="f-count">共 13 条</span></div>
     </div>
     <div class="grid" data-list>
 <article class="card" data-id="hnhot-50438318" data-text="AI 的使用会产生脆弱的代码库 ">
@@ -1090,16 +1090,16 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   
 </article>
 
-<article class="card" data-id="v2hot-1255967" data-text="有什么便宜的 Agent/Coding/Token Plan 推荐吗 目前正在使用 9.9 元的火山方舟 Agent Plan，据说第三个月起价格会变成大概 40 元/月。我每个月模型 API 使用量不高，除了按量计费有什么高性价比的 Agent/Coding/Token Plan 推荐吗？">
-  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
-  <h3 class="title"><a href="https://www.v2ex.com/t/1255967" target="_blank" rel="noopener noreferrer">有什么便宜的 Agent/Coding/Token Plan 推荐吗</a></h3>
-  <p class="summary">目前正在使用 9.9 元的火山方舟 Agent Plan，据说第三个月起价格会变成大概 40 元/月。我每个月模型 API 使用量不高，除了按量计费有什么高性价比的 Agent/Coding/Token Plan 推荐吗？</p>
-</article>
-
 <article class="card" data-id="v2hot-1255988" data-text="Apple 发邮件说我的美区 Id 需要更新付款信息才能续费 GPT Pro 邮件正文就下面一行：你好：你的付款方式出现问题，此订阅项目可能会无法续期。为避免服务中断，请更新付款信息。附了一个链接需要去更新支付信息，我试了自己的招行 Visa 卡不能添加，礼品卡的方式不能订阅 GPT 了？">
   <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
   <h3 class="title"><a href="https://www.v2ex.com/t/1255988" target="_blank" rel="noopener noreferrer">Apple 发邮件说我的美区 Id 需要更新付款信息才能续费 GPT Pro</a></h3>
   <p class="summary">邮件正文就下面一行：你好：你的付款方式出现问题，此订阅项目可能会无法续期。为避免服务中断，请更新付款信息。附了一个链接需要去更新支付信息，我试了自己的招行 Visa 卡不能添加，礼品卡的方式不能订阅 GPT 了？</p>
+</article>
+
+<article class="card" data-id="v2hot-1255985" data-text="AI 做游戏美术资源到底行不行？ 1. 生成单图合成图集 2. agent-sprite-forge 视频转图集 3. gpt-image-2.6-sunburst 做 GIF 这三种方案都试过做不出理想的俯视视角动作游戏素材 各位的经验怎么样能交流一下吗？">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255985" target="_blank" rel="noopener noreferrer">AI 做游戏美术资源到底行不行？</a></h3>
+  <p class="summary">1. 生成单图合成图集 2. agent-sprite-forge 视频转图集 3. gpt-image-2.6-sunburst 做 GIF 这三种方案都试过做不出理想的俯视视角动作游戏素材 各位的经验怎么样能交流一下吗？</p>
 </article>
 
 <article class="card" data-id="v2hot-1256010" data-text="写了一个可以清理 claude code 和 codex 会话存储的工具: cc-clean 一键使用: ``` npx cc-clean@latest ``` 背景大概就是，我同时在用 Claude 和 Codex，用久了以后，session 会话实在太多了。而我的磁盘又不太够用，一直在疯狂挪东西，又不敢删。然后自己仔细研究过它们的底层设计，发现有些冗余字段其实是可以清理的。就是在不影响 resume 的前提下，尽可能保留会话，把里面多余的字段移除掉。其中占用很大的一块，就是会话里的图片。比如你给它发一张图，告诉它要改哪里，这张图就会以 Base64 编码的形式存在聊天记录里，有时还会反复出现很多次。但这些图片，基本上在当次会话结束以后就不会">
@@ -1108,10 +1108,16 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   <p class="summary">一键使用: ``` npx cc-clean@latest ``` 背景大概就是，我同时在用 Claude 和 Codex，用久了以后，session 会话实在太多了。而我的磁盘又不太够用，一直在疯狂挪东西，又不敢删。然后自己仔细研究过它们的底层设计，发现有些冗余字段其实是可以清理的。就是在不影响 resume 的前提下，尽可能保留会话，把里面多余的字段移除掉。其中占用很大的一块，就是会话里的图片。比如你给它发一张图，告诉它要改哪里，这张图就会以 Base64 编码的形式存在聊天记录里，有时还会反复出现很多次。但这些图片，基本上在当次会话结束以后就不会</p>
 </article>
 
-<article class="card" data-id="v2hot-1255985" data-text="AI 做游戏美术资源到底行不行？ 1. 生成单图合成图集 2. agent-sprite-forge 视频转图集 3. gpt-image-2.6-sunburst 做 GIF 这三种方案都试过做不出理想的俯视视角动作游戏素材 各位的经验怎么样能交流一下吗？">
+<article class="card" data-id="v2hot-1255995" data-text="Gemini 4 Carbon 已经可以在 Antigravity 中使用 由于是刚发布，使用感受上比 Gemini 4 Argon 快多了。但目前好像仅适用于 Ultra 计划。">
   <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
-  <h3 class="title"><a href="https://www.v2ex.com/t/1255985" target="_blank" rel="noopener noreferrer">AI 做游戏美术资源到底行不行？</a></h3>
-  <p class="summary">1. 生成单图合成图集 2. agent-sprite-forge 视频转图集 3. gpt-image-2.6-sunburst 做 GIF 这三种方案都试过做不出理想的俯视视角动作游戏素材 各位的经验怎么样能交流一下吗？</p>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1255995" target="_blank" rel="noopener noreferrer">Gemini 4 Carbon 已经可以在 Antigravity 中使用</a></h3>
+  <p class="summary">由于是刚发布，使用感受上比 Gemini 4 Argon 快多了。但目前好像仅适用于 Ultra 计划。</p>
+</article>
+
+<article class="card" data-id="v2hot-1256017" data-text="Claude 封号了，五味杂陈 九月份开始 vibe coding 做自己的量化模型，从国模一路折腾到 codex，再到 claude，也看了社区的各种攻略。本以为自己就是那个幸运儿,the chosen one，结果突然 gmail 弹出一个提示，账号被封了。claude 从 pro 开始用起，5 小时的红线很容易撞，所以用了一天就升级了 max，逐渐把主力开发引擎从 cline 换到 claude，花了差不多一周的时间把工作协同方式改成 claude 了，结果封号，申诉无果，现在很迷茫。codex 现在是 pro $500 的档位，其实完全用 codex 已经够了，但是因为涉及到因子回测，要避免幻觉，过">
+  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
+  <h3 class="title"><a href="https://www.v2ex.com/t/1256017" target="_blank" rel="noopener noreferrer">Claude 封号了，五味杂陈</a></h3>
+  <p class="summary">九月份开始 vibe coding 做自己的量化模型，从国模一路折腾到 codex，再到 claude，也看了社区的各种攻略。本以为自己就是那个幸运儿,the chosen one，结果突然 gmail 弹出一个提示，账号被封了。claude 从 pro 开始用起，5 小时的红线很容易撞，所以用了一天就升级了 max，逐渐把主力开发引擎从 cline 换到 claude，花了差不多一周的时间把工作协同方式改成 claude 了，结果封号，申诉无果，现在很迷茫。codex 现在是 pro $500 的档位，其实完全用 codex 已经够了，但是因为涉及到因子回测，要避免幻觉，过</p>
 </article>
 
 <article class="card" data-id="v2hot-1256011" data-text="GROK 是否有故障了？聊天记录全没，新对话会上隐私锁无法查看 ">
@@ -1126,12 +1132,6 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   <p class="summary">在做一个 API 中转（origincoder.com）。在推特上发了三个月内容，每天要找素材、写文案、核对链接，很耗时间，所以把这套流程写成了一个 Claude Code skill，叫 `x-daily-post`。先说清楚它是什么、不是什么：**它不是自动发推机器人。** 它只负责「抓取 + 出草稿」，发不发由我在对话里明确说了才算。1. **抓取**：先抓 Hacker News 和官方博客 / Releases 的 RSS （免费），最后才调一次 X 搜索做补充。2. **去重**：按来源链接对照已发历史去重，前几天出现过的</p>
 </article>
 
-<article class="card" data-id="v2hot-1255995" data-text="Gemini 4 Carbon 已经可以在 Antigravity 中使用 由于是刚发布，使用感受上比 Gemini 4 Argon 快多了。但目前好像仅适用于 Ultra 计划。">
-  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
-  <h3 class="title"><a href="https://www.v2ex.com/t/1255995" target="_blank" rel="noopener noreferrer">Gemini 4 Carbon 已经可以在 Antigravity 中使用</a></h3>
-  <p class="summary">由于是刚发布，使用感受上比 Gemini 4 Argon 快多了。但目前好像仅适用于 Ultra 计划。</p>
-</article>
-
 <article class="card" data-id="v2hot-1255994" data-text="做了个电商 AI 工具目录站，做工具的兄弟来交换 dofollow 先说背景。我做电商挺多年了。这两年 AI 工具一下子出来太多，想挑一个能用的，得翻几十个站、看一堆评测，特别费劲。跟同行聊发现大家都有这个问题——不是没工具，是不知道哪些真能用在电商上、哪个适合自己。所以把这几年选工具的经验总结了一下，做了套工作流去抓常用工具的信息，把有价值的部分提出来——解决什么问题、适合什么规模的店、什么情况下别用——整理成了个网站：**ecomagenttools.com** 现在非常早期，收录还不多，DR 刚到 20，每天也就几十个 UV，分类也在边做边调。中文版在 `/zh`。我知道这儿有不少兄弟在做 AI 创">
   <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
   <h3 class="title"><a href="https://www.v2ex.com/t/1255994" target="_blank" rel="noopener noreferrer">做了个电商 AI 工具目录站，做工具的兄弟来交换 dofollow</a></h3>
@@ -1144,64 +1144,10 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
   <p class="summary">最近几年，ChatGPT Plus、Pro 已经成为不少开发者和办公用户的日常工具。但对于国内用户来说，订阅过程并不总是那么顺利。支付方式、账号地区、银行卡限制等问题，让不少人开始寻找第三方订阅服务。与此同时，网上的代充平台也越来越多。有人担心账号密码泄露，有人担心付款后不到账，也有人担心刚开通会员没多久就失效。那么，ChatGPT 代充到底靠谱吗？第三方平台应该怎么选？为什么有些平台采用 Session 或 Cookies，而小羊 Plus 选择了 Account ID 方式？作为小羊 Plus 的开发者，想从产品设计和技术实现的角度，聊聊这些问题</p>
 </article>
 
-<article class="card" data-id="v2hot-1255971" data-text="我开发了 AI Drake Video 生成器：用一张照片生成派对场景短视频 我最近做了个小工具 AI Drake Video。起因是看到有人用 AI 把自己放进《 Burning Bridges 》的派对场景里，觉得挺有意思，但自己剪片段、写提示词、配音乐又有点折腾，就试着把这些步骤做成了一个网页工具。发到 V2EX 推广节点，想听听大家对效果和使用流程的意见。## AI Drake Video 简介 [AI Drake Video]( 做的事情比较单一：上传一张照片，生成一段以照片中人物为主角的派对场景视频。房间、镜头运动和其他人物是预设的，主要替换站在镜头前的主角；输出是带音乐的 16:9 MP4">
-  <div class="card-top"><span class="src-ico letter" aria-hidden="true">V</span><span class="src-name">V2EX</span></div>
-  <h3 class="title"><a href="https://www.v2ex.com/t/1255971" target="_blank" rel="noopener noreferrer">我开发了 AI Drake Video 生成器：用一张照片生成派对场景短视频</a></h3>
-  <p class="summary">我最近做了个小工具 AI Drake Video。起因是看到有人用 AI 把自己放进《 Burning Bridges 》的派对场景里，觉得挺有意思，但自己剪片段、写提示词、配音乐又有点折腾，就试着把这些步骤做成了一个网页工具。发到 V2EX 推广节点，想听听大家对效果和使用流程的意见。## AI Drake Video 简介 [AI Drake Video]( 做的事情比较单一：上传一张照片，生成一段以照片中人物为主角的派对场景视频。房间、镜头运动和其他人物是预设的，主要替换站在镜头前的主角；输出是带音乐的 16:9 MP4</p>
-</article>
-
-<article class="card" data-id="xhot-xrss-2117251160" data-text="认识 2026 年 Epic AI MegaJam 合作伙伴！Claude、Google、OpenAI 和 SpaceXSI 正在加入 AMD、Diversion、fal、Hyper3D、 认识 2026 年 Epic AI MegaJam 合作伙伴！Claude、Google、OpenAI 和 SpaceXSI 将与 AMD、Diversion、fal、Hyper3D、Intel、Mesy、NetApp、NVIDIA、PBRgen、Reallusion、Rokoko、Tripo 和 WeLoveIndies 一起为今年的 - X 添加工具、积分和奖品">
+<article class="card" data-id="xhot-xrss-5353884322" data-text="有关我们所有 AI Agent 的更多信息，请访问：获取 AI 销售代理的免费指南，请访问 ">
   <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X</span></div>
-  <h3 class="title"><a href="https://x.com/UnrealEngine/status/2120234172573000156" target="_blank" rel="noopener noreferrer">认识 2026 年 Epic AI MegaJam 合作伙伴！Claude、Google、OpenAI 和 SpaceXSI 正在加入 AMD、Diversion、fal、Hyper3D、</a></h3>
-  <p class="summary">认识 2026 年 Epic AI MegaJam 合作伙伴！Claude、Google、OpenAI 和 SpaceXSI 将与 AMD、Diversion、fal、Hyper3D、Intel、Mesy、NetApp、NVIDIA、PBRgen、Reallusion、Rokoko、Tripo 和 WeLoveIndies 一起为今年的 - X 添加工具、积分和奖品</p>
-</article>
-
-<article class="card" data-id="xhot-xrss-4099154833" data-text="Claude Mythos 5.2 现已在 Devin 的托管安全扫描中提供。我们将提供超过 1 亿美元的信贷来帮助公司 Claude Mythos 5.2 现已在 Devin 的托管安全扫描中提供。我们将提供超过 1 亿美元的资金，帮助公司利用 Claude Mythos 5.2 发现并修复最关键的漏洞。适用资格标准和条件。在我们的内部网络平台上">
-  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X</span></div>
-  <h3 class="title"><a href="https://x.com/cognition/status/2120227474223292477" target="_blank" rel="noopener noreferrer">Claude Mythos 5.2 现已在 Devin 的托管安全扫描中提供。我们将提供超过 1 亿美元的信贷来帮助公司</a></h3>
-  <p class="summary">Claude Mythos 5.2 现已在 Devin 的托管安全扫描中提供。我们将提供超过 1 亿美元的资金，帮助公司利用 Claude Mythos 5.2 发现并修复最关键的漏洞。适用资格标准和条件。在我们的内部网络平台上</p>
-</article>
-
-<article class="card" data-id="xhot-xrss-5329998108" data-text="AI 网关的新增功能：Kimi K3.1 Pro、GPT-6.1 Terra、MiniMax M3.1 Flash、Hy4 和 Gemma 4，全部都在您的 ngrok.ai 积分中。钍 AI 网关的新增功能：Kimi K3.1 Pro、GPT-6.1 Terra、MiniMax M3.1 Flash、Hy4 和 Gemma 4，全部都在您的 ngrok.ai 积分中。同样的一句话提示在 Terra 上为 0.00012 美元，在 Kimi K3.1 Pro 上为 0.00516 美元，所以，你知道，思考不是免费的。">
-  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X</span></div>
-  <h3 class="title"><a href="https://x.com/ngrokHQ/status/2120263729657106897" target="_blank" rel="noopener noreferrer">AI 网关的新增功能：Kimi K3.1 Pro、GPT-6.1 Terra、MiniMax M3.1 Flash、Hy4 和 Gemma 4，全部都在您的 ngrok.ai 积分中。钍</a></h3>
-  <p class="summary">AI 网关的新增功能：Kimi K3.1 Pro、GPT-6.1 Terra、MiniMax M3.1 Flash、Hy4 和 Gemma 4，全部都在您的 ngrok.ai 积分中。同样的一句话提示在 Terra 上为 0.00012 美元，在 Kimi K3.1 Pro 上为 0.00516 美元，所以，你知道，思考不是免费的。</p>
-</article>
-
-<article class="card" data-id="xhot-xrss-3029335719" data-text="我要求 Muse 测试一个新的免费 AI 模型...它创建了一个 Modal 帐户，开始在 API 后面部署模型，然后我 我要求 Muse 测试一个新的免费 AI 模型...它创建了一个 Modal 帐户，开始在 API 后面部署模型，现在正在通过 CLI 运行整个设置，我会让您知道这是如何进行的">
-  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X</span></div>
-  <h3 class="title"><a href="https://x.com/dani_avila7/status/2119969430704627730" target="_blank" rel="noopener noreferrer">我要求 Muse 测试一个新的免费 AI 模型...它创建了一个 Modal 帐户，开始在 API 后面部署模型，然后我</a></h3>
-  <p class="summary">我要求 Muse 测试一个新的免费 AI 模型...它创建了一个 Modal 帐户，开始在 API 后面部署模型，现在正在通过 CLI 运行整个设置，我会让您知道这是如何进行的</p>
-</article>
-
-<article class="card" data-id="xhot-xrss-6184844446" data-text="辅导课程通常可以卖出更多的教学时间。但孩子们可能还需要其他东西：个性化的 AI 导师 辅导课程通常可以卖出更多的教学时间。但孩子们可能需要其他东西：一位个性化的 AI 导师，耐心地再次解释一个困难的概念。像 这样的免费 AI 学习伴侣是否是比其他更好的第一步">
-  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X</span></div>
-  <h3 class="title"><a href="https://x.com/malpani/status/2120194843473236202" target="_blank" rel="noopener noreferrer">辅导课程通常可以卖出更多的教学时间。但孩子们可能还需要其他东西：个性化的 AI 导师</a></h3>
-  <p class="summary">辅导课程通常可以卖出更多的教学时间。但孩子们可能需要其他东西：一位个性化的 AI 导师，耐心地再次解释一个困难的概念。像 这样的免费 AI 学习伴侣是否是比其他更好的第一步</p>
-</article>
-
-<article class="card" data-id="xhot-xrss-62167072" data-text="生物学刚刚迎来 HBM 时刻。在芯片领域，瓶颈从 GPU 转移到 HBM，再到网络和电源。AI 药盘中 生物学刚刚迎来 HBM 时刻。在芯片领域，瓶颈从 GPU 转移到 HBM，再到网络和电源。在 AI 药物发现领域，它正在从设计转向湿实验室。现在设计候选人几乎是免费的。Claude 设计了 1,320 个蛋白质结合剂和 Adapt">
-  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X</span></div>
-  <h3 class="title"><a href="https://x.com/heyshrutimishra/status/2120225649671676043" target="_blank" rel="noopener noreferrer">生物学刚刚迎来 HBM 时刻。在芯片领域，瓶颈从 GPU 转移到 HBM，再到网络和电源。AI 药盘中</a></h3>
-  <p class="summary">生物学刚刚迎来 HBM 时刻。在芯片领域，瓶颈从 GPU 转移到 HBM，再到网络和电源。在 AI 药物发现领域，它正在从设计转向湿实验室。现在设计候选人几乎是免费的。Claude 设计了 1,320 个蛋白质结合剂和 Adapt</p>
-</article>
-
-<article class="card" data-id="xhot-xrss-323271943" data-text="毛里求斯希望对 50,000 名公民进行数字和 AI 技能培训。其国家电信运营商刚刚为该国开设了课程 毛里求斯希望对 50,000 名公民进行数字和 AI 技能培训。其国家电信运营商刚刚免费提供了这些课程。毛里求斯电信与 AWS 合作推出了 myt Learning Hub 门户，提供 16 门数字和 AI 技能的免费课程。它于 th-X 推出">
-  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X</span></div>
-  <h3 class="title"><a href="https://x.com/mafolebaraka/status/2120240577317056551" target="_blank" rel="noopener noreferrer">毛里求斯希望对 50,000 名公民进行数字和 AI 技能培训。其国家电信运营商刚刚为该国开设了课程</a></h3>
-  <p class="summary">毛里求斯希望对 50,000 名公民进行数字和 AI 技能培训。其国家电信运营商刚刚免费提供了这些课程。毛里求斯电信与 AWS 合作推出了 myt Learning Hub 门户，提供 16 门数字和 AI 技能的免费课程。它于 th-X 推出</p>
-</article>
-
-<article class="card" data-id="xhot-xrss-1918354278" data-text="全球 AI 大会2027世界巡演正在进行中。10个城市，每个城市1天，每个城市免费。每一站都是一个完整的 全球 AI 大会2027世界巡演正在进行中。10个城市，每个城市1天，每个城市免费。每一站都是一整天的现场演示，以及在生产中构建 AI Agent 的人们的深入探讨。屏幕上的真实代码、诚实的权衡以及 t - X 上出现的问题">
-  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X</span></div>
-  <h3 class="title"><a href="https://x.com/GlobAICommunity/status/2120264320668037319" target="_blank" rel="noopener noreferrer">全球 AI 大会2027世界巡演正在进行中。10个城市，每个城市1天，每个城市免费。每一站都是一个完整的</a></h3>
-  <p class="summary">全球 AI 大会2027世界巡演正在进行中。10个城市，每个城市1天，每个城市免费。每一站都是一整天的现场演示，以及在生产中构建 AI Agent 的人们的深入探讨。屏幕上的真实代码、诚实的权衡以及 t - X 上出现的问题</p>
-</article>
-
-<article class="card" data-id="xhot-xrss-2321294989" data-text="当有像 这样的免费 AI 学习伙伴时，为什么家长还要付费参加商业辅导课程 当有像 这样的免费 AI 学习伙伴可用时，为什么家长仍在付费参加商业辅导课程？在花费数千美元参加额外课程之前，为什么不看看您的孩子是否能够按照自己的节奏学习，并获得支持">
-  <div class="card-top"><span class="src-ico"><img src="../assets/favicons/x.com.png" alt="" width="18" height="18" loading="lazy" /></span><span class="src-name">X</span></div>
-  <h3 class="title"><a href="https://x.com/malpani/status/2120194688569266244" target="_blank" rel="noopener noreferrer">当有像 这样的免费 AI 学习伙伴时，为什么家长还要付费参加商业辅导课程</a></h3>
-  <p class="summary">当有像 这样的免费 AI 学习伙伴可用时，为什么家长仍在付费参加商业辅导课程？在花费数千美元参加额外课程之前，为什么不看看您的孩子是否能够按照自己的节奏学习，并获得支持</p>
+  <h3 class="title"><a href="https://x.com/jasonlk/status/2120298166817788236" target="_blank" rel="noopener noreferrer">有关我们所有 AI Agent 的更多信息，请访问：获取 AI 销售代理的免费指南，请访问</a></h3>
+  
 </article></div>
     <div id="f-empty" class="empty hidden">没有匹配条目</div>
   </section>
