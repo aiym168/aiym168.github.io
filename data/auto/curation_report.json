@@ -2,33 +2,35 @@
  "counts": {
   "archived": 11,
   "deadline_extracted": 6,
-  "drop:duplicate": 33,
+  "drop:duplicate": 72,
   "drop:empty_summary": 10,
-  "drop:negative_signal": 83,
-  "drop:no_clear_offer": 164,
-  "drop:not_ai": 127,
+  "drop:negative_signal": 91,
+  "drop:no_clear_offer": 179,
+  "drop:not_ai": 162,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 219,
   "google_news_total": 219,
-  "kept_total": 130,
+  "kept_total": 132,
   "net:gnews_cache_hit": 219,
-  "raw_total": 606
+  "net:tco_failed": 2,
+  "new_this_run": 2,
+  "raw_total": 705
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "Simstim：Mac 上的本地呼叫转录为.md 文件",
-   "ai-api-gateway-free-tier：AI API 网关/中继，一个 OpenAI 兼容密钥背后有 307 ",
-   "awesome-free-ai-coding：合法免费的 LLM API 和编码代理",
-   "genoffice：免费的开源 AI Office 套件",
-   "ovis：Ovis（以前称为 herdr Web UI）",
-   "figwright：免费的双向 Figma MCP 服务器",
-   "claudemy：Claudemy，Udemy 和 Coursera 的开源替代品",
-   "claude-content-skills：免费的、复制粘贴的 Claude 技能可以运行您的内容增长工厂 - 将创意 ",
-   "unbagrnd：Unbagrnd - 适用于 Windows、macOS、Linux 和 Android 的免费",
-   "OmniCopilot：GitHub Copilot 聊天中包含 1200 多个 AI 模型 - 免费且永久免费",
-   "scumble：用于 AI 修复的免费开源桌面编辑器",
-   "soundbox：ElevenLabs 和 Suno 的免费、开源、本地替代品"
+   "PDFMeasure：在浏览器中测量 PDF 文件",
+   "gemini-4-carbon 免费一天",
+   "再聊 Claude 终极防封方案，持续更新被封情况",
+   "SSHYard 已正式发布 V1.0.0 - 高颜值纯原生 SSH 客户端，功能齐全且体积非常小",
+   "design-os-studio：用 Rust 构建的原生 GPU 加速界​​面设计工具",
+   "ai-api-gateway-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
+   "api-router-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
+   "multi-model-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
+   "llm-serve-dashboard：用于本地 llama.cpp/vLLM 服务的单文件、无依赖性实时仪表板",
+   "unified-ai-api-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
+   "9routerx：9RouterX（9R Next Go Generation）"
   ],
   "empty_summary": [
    "@koltregaskes 分享：所有付费消费者和团队计划均已获得所有型号和限制的完全免费的 Claude 重置",
@@ -99,25 +101,25 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-12T00:03:09+08:00",
+ "generated_at": "2026-11-12T01:55:24+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-12T00:03:08+08:00",
+  "checked_at": "2026-11-12T01:55:23+08:00",
   "counts": {
    "ok": 120
   },
   "hidden": 0
  },
- "seconds": 0.6,
+ "seconds": 0.5,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 2,
-   "drop:not_ai": 9,
-   "drop:not_ai_strict": 8,
-   "kept": 21,
+   "drop:negative_signal": 3,
+   "drop:not_ai": 8,
+   "drop:not_ai_strict": 7,
+   "kept": 22,
    "raw": 40
   }
  }
