@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-11T09:13:18+08:00",
-  "count": 16,
+  "generated_at": "2026-11-11T10:15:44+08:00",
+  "count": 15,
   "items": [
     {
       "id": "hnhot-50438318",
@@ -17,31 +17,10 @@
       "source": "Hacker News"
     },
     {
-      "id": "v2hot-1256017",
-      "title": "Claude 封号了，五味杂陈",
-      "summary": "九月份开始 vibe coding 做自己的量化模型，从国模一路折腾到 codex，再到 claude，也看了社区的各种攻略。本以为自己就是那个幸运儿,the chosen one，结果突然 gmail 弹出一个提示，账号被封了。claude 从 pro 开始用起，5 小时的红线很容易撞，所以用了一天就升级了 max，逐渐把主力开发引擎从 cline 换到 claude，花了差不多一周的时间把工作协同方式改成 claude 了，结果封号，申诉无果，现在很迷茫。codex 现在是 pro $500 的档位，其实完全用 codex 已经够了，但是因为涉及到因子回测，要避免幻觉，过",
-      "url": "https://www.v2ex.com/t/1256017",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1255995",
-      "title": "Gemini 4 Carbon 已经可以在 Antigravity 中使用",
-      "summary": "由于是刚发布，使用感受上比 Gemini 4 Argon 快多了。但目前好像仅适用于 Ultra 计划。",
-      "url": "https://www.v2ex.com/t/1255995",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1255988",
-      "title": "Apple 发邮件说我的美区 Id 需要更新付款信息才能续费 GPT Pro",
-      "summary": "邮件正文就下面一行：你好：你的付款方式出现问题，此订阅项目可能会无法续期。为避免服务中断，请更新付款信息。附了一个链接需要去更新支付信息，我试了自己的招行 Visa 卡不能添加，礼品卡的方式不能订阅 GPT 了？",
-      "url": "https://www.v2ex.com/t/1255988",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1255985",
-      "title": "AI 做游戏美术资源到底行不行？",
-      "summary": "1. 生成单图合成图集 2. agent-sprite-forge 视频转图集 3. gpt-image-2.6-sunburst 做 GIF 这三种方案都试过做不出理想的俯视视角动作游戏素材 各位的经验怎么样能交流一下吗？",
-      "url": "https://www.v2ex.com/t/1255985",
+      "id": "v2hot-1255953",
+      "title": "你对 AI 说的最多的一句话是什么？",
+      "summary": "对 AI 是的话：1. 按照你的建议实现 2. 评估一下，确保能理解需求（功能）",
+      "url": "https://www.v2ex.com/t/1255953",
       "source": "V2EX"
     },
     {
@@ -52,10 +31,24 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1256010",
-      "title": "写了一个可以清理 claude code 和 codex 会话存储的工具: cc-clean",
-      "summary": "一键使用: ``` npx cc-clean@latest ``` 背景大概就是，我同时在用 Claude 和 Codex，用久了以后，session 会话实在太多了。而我的磁盘又不太够用，一直在疯狂挪东西，又不敢删。然后自己仔细研究过它们的底层设计，发现有些冗余字段其实是可以清理的。就是在不影响 resume 的前提下，尽可能保留会话，把里面多余的字段移除掉。其中占用很大的一块，就是会话里的图片。比如你给它发一张图，告诉它要改哪里，这张图就会以 Base64 编码的形式存在聊天记录里，有时还会反复出现很多次。但这些图片，基本上在当次会话结束以后就不会",
-      "url": "https://www.v2ex.com/t/1256010",
+      "id": "v2hot-1256039",
+      "title": "除了 claude,还有替代 codex 工作的其他 ai 可用吗",
+      "summary": "目前用的的 gpt plus, 感觉额度现在越来越少了，在 codex cli 问不了几个问题,5h 额度就要没了。有想要找替代的，claude 不用考虑了，风控太严了。还有哪些 ai 订阅属于真正能用于日常开发的？grok build 这个有用过的没，效果怎样?",
+      "url": "https://www.v2ex.com/t/1256039",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256044",
+      "title": "GG Claude 号被封了",
+      "summary": "用了三四个月吧。被封之后，抱着侥幸心理用护照验证也 gg 了。然后换了另外一个美区苹果 id 礼品卡内购，开通 pro，秒弹认证 kyc！！",
+      "url": "https://www.v2ex.com/t/1256044",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256017",
+      "title": "Claude 封号了，五味杂陈",
+      "summary": "九月份开始 vibe coding 做自己的量化模型，从国模一路折腾到 codex，再到 claude，也看了社区的各种攻略。本以为自己就是那个幸运儿,the chosen one，结果突然 gmail 弹出一个提示，账号被封了。claude 从 pro 开始用起，5 小时的红线很容易撞，所以用了一天就升级了 max，逐渐把主力开发引擎从 cline 换到 claude，花了差不多一周的时间把工作协同方式改成 claude 了，结果封号，申诉无果，现在很迷茫。codex 现在是 pro $500 的档位，其实完全用 codex 已经够了，但是因为涉及到因子回测，要避免幻觉，过",
+      "url": "https://www.v2ex.com/t/1256017",
       "source": "V2EX"
     },
     {
@@ -63,6 +56,34 @@
       "title": "Claude 送了一次完全重置",
       "summary": "为啥 Claude 又送了一次完全重置",
       "url": "https://www.v2ex.com/t/1256031",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256034",
+      "title": "Chatgpt 客户端用了几个月，还是傻傻分搞不明白",
+      "summary": "客户端分为了 chatgpt，work，codex，感觉都没什么区别。最大的区别可能是 chatgpt 聊天可以不同设备同步，work 和 codex 只能保留在本地。但是有时候用 chatgpt 的时候他自己会莫名其妙的把任务转成 work，于是另一个设备就看不到了。还有一个区别就是 chatgpt 不能删除历史对话，只能归档，codex 除了归档还可以删除 后来又出了一个 dot，说是可以在云端运行代码。然而部署到 dot 的代码跑起来后本地是无法访问到的，调试还是需要在本地部署，所以 dot 的云端部署意义又何在呢？后来更新后又出了一个临时会话功能，但临时会话要转",
+      "url": "https://www.v2ex.com/t/1256034",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256064",
+      "title": "给 DeepSeek Harness 做了一层天气：雨、雪、炉火",
+      "summary": "在 DSH（DeepSeek Harness，DeepSeek 的桌面 / Web 工作台）里写代码，界面太安静了，就给它做了一层天气。叫「檐下」，MIT，自己写的，代码在这里：![雨夜]( ![雪夜](",
+      "url": "https://www.v2ex.com/t/1256064",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256062",
+      "title": "Claude Code Tun 疑惑",
+      "summary": "原来我系统就使用的 Tun，但是我还设置了 Powershell profile 的 https proxy，所以在 v2rayN 里，能看到 api.anthropic.com，然后大家说如果存在系统代理，claude 会识别到，反正开了 Tun，所以就把这个代理环境变量去掉了。目前就发现在 v2rayN 里 找不到 api.anthropic.com 的日志了，只在启用 claude code 的时候，显示了 ``` 2026/11/11 10:00:57.765741 from 127.0.0.1:43888 accepted //ab.chatgpt.com",
+      "url": "https://www.v2ex.com/t/1256062",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256041",
+      "title": "做了一个 AI 图片、视频和音乐生成工具 Anyscene，欢迎大家体验和提建议",
+      "summary": "最近一直在折腾 AI 相关的产品，做了一个在线 AI 创作工具 **Anyscene AI**，今天来 V2EX 分享一下。网站：最初只是想做一个简单的 AI 图片生成工具，后来逐渐加入了视频、音乐和一些实用的 AI 编辑功能。目前主要支持：**AI 图片生成**：集成 Nano Banana、GPT Image、Seedream、Flux 等模型，支持文生图、图生图。**AI 视频生成**：支持文生视频、图生视频，以及多种视频生成模型。**AI 音乐生成**：输入描述或歌词生成歌曲，也可以制",
+      "url": "https://www.v2ex.com/t/1256041",
       "source": "V2EX"
     },
     {
@@ -77,34 +98,6 @@
       "title": "ChatGPT Plus/Pro 直充账户 长期稳定",
       "summary": "# ChatGPT Plus/Pro 直充账户 长期稳定 ChatGPT Plus -> 125 ChatGPT 10x -> 660 ChatGPT 20x -> 1150 欢迎 v 友咨询，已服务 100+ v 友 可以 +v(备注 v2) : Y2F0Y2hhZG1pbg==",
       "url": "https://www.v2ex.com/t/1256027",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1256011",
-      "title": "GROK 是否有故障了？聊天记录全没，新对话会上隐私锁无法查看",
-      "summary": "",
-      "url": "https://www.v2ex.com/t/1256011",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1256000",
-      "title": "写了个 Claude Code skill：每天自动抓 AI 编程资讯出推文草稿，我确认后才发到",
-      "summary": "在做一个 API 中转（origincoder.com）。在推特上发了三个月内容，每天要找素材、写文案、核对链接，很耗时间，所以把这套流程写成了一个 Claude Code skill，叫 `x-daily-post`。先说清楚它是什么、不是什么：**它不是自动发推机器人。** 它只负责「抓取 + 出草稿」，发不发由我在对话里明确说了才算。1. **抓取**：先抓 Hacker News 和官方博客 / Releases 的 RSS （免费），最后才调一次 X 搜索做补充。2. **去重**：按来源链接对照已发历史去重，前几天出现过的",
-      "url": "https://www.v2ex.com/t/1256000",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1255994",
-      "title": "做了个电商 AI 工具目录站，做工具的兄弟来交换 dofollow",
-      "summary": "先说背景。我做电商挺多年了。这两年 AI 工具一下子出来太多，想挑一个能用的，得翻几十个站、看一堆评测，特别费劲。跟同行聊发现大家都有这个问题——不是没工具，是不知道哪些真能用在电商上、哪个适合自己。所以把这几年选工具的经验总结了一下，做了套工作流去抓常用工具的信息，把有价值的部分提出来——解决什么问题、适合什么规模的店、什么情况下别用——整理成了个网站：**ecomagenttools.com** 现在非常早期，收录还不多，DR 刚到 20，每天也就几十个 UV，分类也在边做边调。中文版在 `/zh`。我知道这儿有不少兄弟在做 AI 创",
-      "url": "https://www.v2ex.com/t/1255994",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1255989",
-      "title": "ChatGPT 代充靠谱吗？为什么选择小羊 Plus？一位开发者谈谈第三方订阅服务的设计思路",
-      "summary": "最近几年，ChatGPT Plus、Pro 已经成为不少开发者和办公用户的日常工具。但对于国内用户来说，订阅过程并不总是那么顺利。支付方式、账号地区、银行卡限制等问题，让不少人开始寻找第三方订阅服务。与此同时，网上的代充平台也越来越多。有人担心账号密码泄露，有人担心付款后不到账，也有人担心刚开通会员没多久就失效。那么，ChatGPT 代充到底靠谱吗？第三方平台应该怎么选？为什么有些平台采用 Session 或 Cookies，而小羊 Plus 选择了 Account ID 方式？作为小羊 Plus 的开发者，想从产品设计和技术实现的角度，聊聊这些问题",
-      "url": "https://www.v2ex.com/t/1255989",
       "source": "V2EX"
     },
     {
