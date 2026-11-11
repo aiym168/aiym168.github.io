@@ -2,25 +2,24 @@
  "counts": {
   "archived": 11,
   "deadline_extracted": 6,
-  "drop:duplicate": 72,
+  "drop:duplicate": 71,
   "drop:empty_summary": 10,
   "drop:negative_signal": 91,
-  "drop:no_clear_offer": 182,
-  "drop:not_ai": 161,
+  "drop:no_clear_offer": 183,
+  "drop:not_ai": 160,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 222,
   "google_news_total": 222,
-  "kept_total": 133,
-  "net:gnews_cache_hit": 219,
-  "net:gnews_resolved_net": 3,
-  "net:tco_expanded": 1,
+  "kept_total": 134,
+  "net:gnews_cache_hit": 222,
+  "net:tco_failed": 1,
+  "new_this_run": 2,
   "raw_total": 708
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "Simstim：Mac 上的本地呼叫转录为.md 文件",
-   "PDFMeasure：在浏览器中测量 PDF 文件",
    "gemini-4-carbon 免费一天",
    "再聊 Claude 终极防封方案，持续更新被封情况",
    "SSHYard 已正式发布 V1.0.0 - 高颜值纯原生 SSH 客户端，功能齐全且体积非常小",
@@ -30,7 +29,8 @@
    "multi-model-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
    "llm-serve-dashboard：用于本地 llama.cpp/vLLM 服务的单文件、无依赖性实时仪表板",
    "unified-ai-api-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
-   "9routerx：9RouterX（9R Next Go Generation）"
+   "9routerx：9RouterX（9R Next Go Generation）",
+   "wabcut：适用于游戏视频、视频文章和纪录片的免费开源视频编辑器"
   ],
   "empty_summary": [
    "@koltregaskes 分享：所有付费消费者和团队计划均已获得所有型号和限制的完全免费的 Claude 重置",
@@ -101,15 +101,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-12T02:04:40+08:00",
+ "generated_at": "2026-11-12T05:04:19+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-12T02:04:40+08:00",
+  "checked_at": "2026-11-12T05:04:18+08:00",
   "counts": {
-   "ok": 122
+   "ok": 123
   },
   "hidden": 0
  },
- "seconds": 2.1,
+ "seconds": 0.6,
  "side": {
   "github_hot": {
    "kept": 30,
@@ -119,8 +119,8 @@
    "drop:negative_signal": 3,
    "drop:not_ai": 8,
    "drop:not_ai_strict": 7,
-   "kept": 20,
-   "raw": 38
+   "kept": 22,
+   "raw": 40
   }
  }
 }

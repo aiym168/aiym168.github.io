@@ -3,21 +3,14 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 20,
-  "generated_at": "2026-11-12T02:04:40+08:00",
+  "count": 22,
+  "generated_at": "2026-11-12T05:04:19+08:00",
   "items": [
     {
       "id": "hnhot-50452455",
       "title": "Google SWE 将 48 个 AI 代理指向 NASA 激光雷达，72 小时内发现未绘制地图的玛雅金字塔",
       "summary": "",
       "url": "https://pietromiotti.com/latest/maya-site/?maya",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50446520",
-      "title": "苹果推出新的 Mac 应用程序，让运行本地 AI 模型变得更容易",
-      "summary": "",
-      "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
       "source": "Hacker News"
     },
     {
@@ -35,10 +28,31 @@
       "source": "Hacker News"
     },
     {
-      "id": "hnhot-50454951",
-      "title": "显示 HN：Klad，您的编码代理可以驱动的绘画应用程序（来源可用）",
+      "id": "hnhot-50455332",
+      "title": "软件工程中的 AI、活动和成果",
       "summary": "",
-      "url": "https://github.com/klad-app/klad",
+      "url": "https://cabird.com/talks/shipping-faster/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "hnhot-50457164",
+      "title": "退休储蓄正在助长 AI 泡沫",
+      "summary": "",
+      "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "hnhot-50456740",
+      "title": "AWS 模拟器和工程师在代理编写代码时的工作",
+      "summary": "",
+      "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
+      "source": "Hacker News"
+    },
+    {
+      "id": "hnhot-50456791",
+      "title": "Gemini 决策 API",
+      "summary": "",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
       "source": "Hacker News"
     },
     {
@@ -60,6 +74,20 @@
       "title": "[分享] 一句话让 AI Agent 把网课视频变成讲义 PDF（开源 · 全程本地 · 零 API Key）",
       "summary": "备考的人应该都懂：强化班几十讲，做错一道题想回看对应知识点，只能凭记忆拖进度条。视频没法检索、没法打印，这个痛贯穿我整个备考期。所以做了个开源技能 chalkpress——不是又一个「视频转文字」工具，而是把课程视频压缩成一册讲义 PDF：每页一个关键帧画面 + 该时间窗的字幕，文字层可检索可复制。用法就是给 agent 发一句话（ChatGPT / Claude Code 等客户端，任何能执行命令的都行）：用这个技能把我的网课视频转成讲义：agent 会自己走完整个流程：装依赖",
       "url": "https://www.v2ex.com/t/1256309",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256315",
+      "title": "有项目想做？寻找 AI 开发与创业合作伙伴？",
+      "summary": "# 有项目想做？寻找 AI 开发与创业合作伙伴？你有好的产品想法，却缺少技术资源？正在开发 SaaS、AI 应用、软件或游戏，希望找到靠谱的技术合作伙伴？也许我们可以一起做点有意思的事情。我是一名常驻美洲的独立软件工程师，拥有丰富的软件开发方向和 AI 辅助开发能力，可以在当地合规自由地使用 Claude、OpenAI Codex 等先进 AI 开发工具。**我能提供的技术支持：** 全栈 Web 开发：前端、后端、API、数据库及 SaaS。AI / LLM 应用：模型集成、AI Agent、智能工作流。移动应用开发：iOS / An",
+      "url": "https://www.v2ex.com/t/1256315",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256307",
+      "title": "各位 hermes-agent 都用什么模型？",
+      "summary": "七月份在本地部署了个 hermes，接的 deepseek 干点自动分析作图的活，结果有点糙。后来接了 gpt plus，质量倒是高了点，但五小时限额实在是不够用。尤其是换了 6.1sol，又慢额度又少，但穷学生又开不起 pro，一个月 700 多比我工资还高！请问大佬们还能接啥模型呢？或者有啥更好点的渠道呢？ps.要是 plus 和 pro 之间还有一档不那么贵的就好了",
+      "url": "https://www.v2ex.com/t/1256307",
       "source": "V2EX"
     },
     {
@@ -119,13 +147,6 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1256264",
-      "title": "AI 内容生成专员（视频剪辑） 纸飞机 : @aaaaaawe123",
-      "summary": "薪资（源表）：5-20k 二、岗位职责 1、使用主流剪辑工具，独立完成短视频的剪辑、包装与成片输出；2、熟练运用 AI 工具完成视频所需图片素材的生成，对人物细节、画面质感把控到位；3、具备较强的提示词（Prompt）编写能力，能精准表达画面需求，高效产出符合要求的素材；4、配合团队完成内容创意与成片交付，保障产出效率与质量。三、岗位要求 基本要求 1、熟练使用剪映等剪辑工具，能独立完成视频剪辑；2、有相关剪辑或视频作品，提供 30 秒以内的成片样片；3、会使用 AI 进行生图，人物细节表现力好；4、提示词使用能力较好，能够通过文字精准控",
-      "url": "https://www.v2ex.com/t/1256264",
-      "source": "V2EX"
-    },
-    {
       "id": "xhot-xrss-5429376072",
       "title": "Claude 刚刚推出了新的生产力工具，有人已经放弃了免费的开源替代品。Claude 有",
       "summary": "Claude 刚刚推出了新的生产力工具，有人已经放弃了免费的开源替代品。Claude 有白板、表格和数据。现在 puppyone 发布了自己的：白板 电子表格 仪表板 全部免费。全开",
@@ -137,13 +158,6 @@
       "title": "Brevis 推出了 Arca，这是一款免费应用程序，允许用户出售他们计算机上的 AI 聊天和编码会话。",
       "summary": "Brevis 推出了 Arca，这是一款免费应用程序，允许用户出售他们计算机上的 AI 聊天和编码会话。用户可以选择他们想要出售的会话并获得价格范围。在上传聊天记录之前，Arca 会删除所有可识别的信息",
       "url": "https://x.com/testingcatalog/status/2120489472659689611",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-4215299996",
-      "title": "代码峰会直播将在 30 分钟后开始。@nserrino (@gimletlabs) 的 AI 速度提高了 10 倍。@lydiahallie (@AnthropicAI) o",
-      "summary": "代码峰会直播将在 30 分钟后开始。@nserrino (@gimletlabs) 的 AI 速度提高了 10 倍。@lydiahallie (@AnthropicAI) 关于 Claude Code 最佳实践。上午 9 点（太平洋时间）免费观看：由@GoogleDeepMind 呈现。",
-      "url": "https://x.com/aiDotEngineer/status/2120554645781463093",
       "source": "X"
     }
   ]
