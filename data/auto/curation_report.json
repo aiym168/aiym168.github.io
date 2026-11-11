@@ -5,16 +5,16 @@
   "drop:duplicate": 72,
   "drop:empty_summary": 10,
   "drop:negative_signal": 91,
-  "drop:no_clear_offer": 179,
-  "drop:not_ai": 162,
+  "drop:no_clear_offer": 182,
+  "drop:not_ai": 161,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 219,
-  "google_news_total": 219,
-  "kept_total": 132,
+  "google_news_resolved": 222,
+  "google_news_total": 222,
+  "kept_total": 133,
   "net:gnews_cache_hit": 219,
-  "net:tco_failed": 2,
-  "new_this_run": 2,
-  "raw_total": 705
+  "net:gnews_resolved_net": 3,
+  "net:tco_expanded": 1,
+  "raw_total": 708
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -59,6 +59,9 @@
    "@higgsfield_ai 分享：开始您的72小时免费希格斯菲尔德 MCP 试用，无限制访问所有顶级视频，图像和音频模"
   ],
   "no_clear_offer": [
+   "@aiDotEngineer 分享：代码峰会直播将在 30 分钟后开始",
+   "Brevis 推出了 Arca，这是一款免费应用程序，允许用户出售他们计算机上的 AI 聊天和编码会话",
+   "Claude 刚刚推出了新的生产力工具，有人已经放弃了免费的开源替代品",
    "Plurai 让代理测试免费后，AI 工程师：plurai 让代理测试免费后，AI 工程师的反应",
    "@cagyjan1 分享：市面上有许多 AI 游戏开发者，但报道他们游戏的创作者却寥寥无几",
    "@PowerGPU 分享：免费电脑",
@@ -67,10 +70,7 @@
    "@malpani 分享：问题不在于 AI 能否取代一名优秀的教师",
    "开始您的 72 小时免费 Higgsfield MCP 试用，无限访问所有顶级视频、图像和音频模型",
    "@PakStartup 分享：此 AI 工具免费 1 年",
-   "@PakStartup 分享：此 AI 工具免费 1 年",
-   "@csaba_kissi 分享：开源 AI 界面设计技能 - 28+ 免费动画 React 组件 - 免费动画 Reac",
-   "@Jason 分享：.@AnthropicAI 正在将所有 SaaS 产品构建到 @claudeai 中，并使其终身免费",
-   "@malpani 分享：辅导班教授时间表，AI 学习伙伴可以立即回答孩子的问题"
+   "@PakStartup 分享：此 AI 工具免费 1 年"
   ],
   "not_ai": [
    "AWS 首席执行官马特·加曼 (Matt Garman) 谈到轨道数据中心时表示：“我认为，在未来一两年内",
@@ -101,15 +101,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-12T01:55:24+08:00",
+ "generated_at": "2026-11-12T02:04:40+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-12T01:55:23+08:00",
+  "checked_at": "2026-11-12T02:04:40+08:00",
   "counts": {
-   "ok": 120
+   "ok": 122
   },
   "hidden": 0
  },
- "seconds": 0.5,
+ "seconds": 2.1,
  "side": {
   "github_hot": {
    "kept": 30,
@@ -119,8 +119,8 @@
    "drop:negative_signal": 3,
    "drop:not_ai": 8,
    "drop:not_ai_strict": 7,
-   "kept": 22,
-   "raw": 40
+   "kept": 20,
+   "raw": 38
   }
  }
 }
