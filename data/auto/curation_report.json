@@ -4,17 +4,19 @@
   "deadline_extracted": 6,
   "drop:duplicate": 32,
   "drop:empty_summary": 10,
-  "drop:negative_signal": 83,
-  "drop:no_clear_offer": 149,
+  "drop:negative_signal": 82,
+  "drop:no_clear_offer": 153,
   "drop:not_ai": 128,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 204,
-  "google_news_total": 204,
-  "kept_total": 130,
+  "google_news_resolved": 209,
+  "google_news_total": 209,
+  "kept_total": 132,
   "net:gnews_cache_hit": 204,
+  "net:gnews_resolved_net": 5,
+  "net:tco_expanded": 5,
   "net:tco_failed": 1,
-  "new_this_run": 2,
-  "raw_total": 591
+  "new_this_run": 3,
+  "raw_total": 596
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -59,6 +61,10 @@
    "Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化"
   ],
   "no_clear_offer": [
+   "@PakStartup 分享：此 AI 工具免费 1 年",
+   "@PakStartup 分享：此 AI 工具免费 1 年",
+   "@csaba_kissi 分享：开源 AI 界面设计技能 - 28+ 免费动画 React 组件 - 免费动画 Reac",
+   "@Jason 分享：.@AnthropicAI 正在将所有 SaaS 产品构建到 @claudeai 中，并使其终身免费",
    "@malpani 分享：辅导班教授时间表，AI 学习伙伴可以立即回答孩子的问题",
    "@Techmeme 分享：英国大学监管机构表示，AI 使评分课程“几乎不可能”，并建议回归“无 AI 评估”方法",
    "@awilkinson 分享：我用价值 5,000 美元的 Claude Code 积分，编写了一些东西，取代了数万美元",
@@ -66,11 +72,7 @@
    "免费指南帮助用户掌握 Anthropic 的 Claude AI",
    "@DennisonBertram 分享：运行免费的 AI 服务只是与农民不间断的战斗",
    "chatgpt image gen 现已向所有免费用户推出",
-   "5 个免费的新 Claude 技能：1",
-   "这是他妈的黄金，Anthropic、Garry Tan 和 Addy Osmani 将他们的 Claude Code",
-   "SAP 正在取消其免费的 AI Agent Builder，迫使客户陷入典型的供应商锁定困境",
-   "@malpani 分享：更多的辅导并不总是意味着更多的学习",
-   "@malpani 分享：商业辅导可能对某些孩子有用"
+   "5 个免费的新 Claude 技能：1"
   ],
   "not_ai": [
    "AWS 首席执行官马特·加曼 (Matt Garman) 谈到轨道数据中心时表示：“我认为，在未来一两年内",
@@ -101,26 +103,27 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-11T21:28:17+08:00",
+ "generated_at": "2026-11-11T21:30:31+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-11T21:28:17+08:00",
+  "checked_at": "2026-11-11T21:30:31+08:00",
   "counts": {
    "ok": 117
   },
   "hidden": 0
  },
- "seconds": 0.6,
+ "seconds": 3.0,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
+   "drop:duplicate": 1,
    "drop:negative_signal": 5,
    "drop:not_ai": 10,
    "drop:not_ai_strict": 5,
-   "kept": 18,
-   "raw": 38
+   "kept": 19,
+   "raw": 40
   }
  }
 }
