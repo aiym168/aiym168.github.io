@@ -1,18 +1,21 @@
 {
  "counts": {
-  "archived": 8,
-  "deadline_extracted": 5,
+  "archived": 10,
+  "deadline_extracted": 6,
   "drop:duplicate": 34,
   "drop:empty_summary": 10,
   "drop:negative_signal": 83,
-  "drop:no_clear_offer": 140,
-  "drop:not_ai": 126,
+  "drop:no_clear_offer": 145,
+  "drop:not_ai": 128,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 190,
-  "google_news_total": 190,
-  "kept_total": 125,
+  "google_news_resolved": 201,
+  "google_news_total": 201,
+  "kept_total": 129,
   "net:gnews_cache_hit": 190,
-  "raw_total": 577
+  "net:gnews_resolved_net": 11,
+  "net:tco_expanded": 1,
+  "new_this_run": 7,
+  "raw_total": 588
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -20,7 +23,7 @@
    "Simstim：Mac 上的本地呼叫转录为.md 文件",
    "ai-api-gateway-free-tier：AI API 网关/中继，一个 OpenAI 兼容密钥背后有 307 ",
    "awesome-free-ai-coding：合法免费的 LLM API 和编码代理",
-   "awesome-freellm-apis：来自 40 多个提供商的 134 多个免费 LLM API 和 AI API ",
+   "awesome-free-ai-apis：经过验证的免费 AI API、LLM 推理端点",
    "genoffice：免费的开源 AI Office 套件",
    "ovis：Ovis（以前称为 herdr Web UI）",
    "figwright：免费的双向 Figma MCP 服务器",
@@ -57,18 +60,18 @@
    "Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化"
   ],
   "no_clear_offer": [
+   "@awilkinson 分享：我用价值 5,000 美元的 Claude Code 积分，编写了一些东西，取代了数万美元",
+   "开发人员在 Claude 的限制下转向免费的 AI 编码工具 在 Claude 的限制下，开发人员转向免费的 AI 编码",
+   "免费指南帮助用户掌握 Anthropic 的 Claude AI",
+   "@DennisonBertram 分享：运行免费的 AI 服务只是与农民不间断的战斗",
+   "chatgpt image gen 现已向所有免费用户推出",
    "5 个免费的新 Claude 技能：1",
    "这是他妈的黄金，Anthropic、Garry Tan 和 Addy Osmani 将他们的 Claude Code",
    "SAP 正在取消其免费的 AI Agent Builder，迫使客户陷入典型的供应商锁定困境",
    "@malpani 分享：更多的辅导并不总是意味着更多的学习",
    "@malpani 分享：商业辅导可能对某些孩子有用",
    "@malpani 分享：辅导通常被视为每个学习问题的默认解决方案",
-   "@malpani 分享：有些孩子太害羞而不敢要求老师再次解释某个话题",
-   "@alexmashrabov @higgsfield_ai 有关我们所有 AI 代理的更多信息",
-   "现在，申请 ChatGPT 商家资料所需的时间与申请 Google 商家资料的时间差不多：通过 DNS 记录或电话进行验",
-   "Google UK 将于 11 月 27 日星期五（上午 10 点至下午 3 点 30 分）为 DMC 提供免费的现场培",
-   "停止浪费聊天室积分：4 个原因，3 个修复方法 您的积分不会消失 — 它们会导致大多数人从未注意到的 4 件事",
-   "推出 Gamma 代币 Bittensor AI 经济的原生支付系统"
+   "@malpani 分享：有些孩子太害羞而不敢要求老师再次解释某个话题"
   ],
   "not_ai": [
    "AWS 首席执行官马特·加曼 (Matt Garman) 谈到轨道数据中心时表示：“我认为，在未来一两年内",
@@ -99,25 +102,25 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-11T17:12:05+08:00",
+ "generated_at": "2026-11-11T17:52:56+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-11T17:12:05+08:00",
+  "checked_at": "2026-11-11T17:52:56+08:00",
   "counts": {
    "ok": 118
   },
   "hidden": 0
  },
- "seconds": 0.4,
+ "seconds": 6.4,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
+   "drop:negative_signal": 6,
    "drop:not_ai": 12,
-   "drop:not_ai_strict": 6,
-   "kept": 19,
+   "drop:not_ai_strict": 4,
+   "kept": 18,
    "raw": 40
   }
  }
