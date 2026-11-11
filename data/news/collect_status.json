@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-12T05:00:53+08:00",
+ "run_at": "2026-11-12T05:01:51+08:00",
  "sources": {
   "techcrunch-ai": {
    "ok": true,
@@ -195,7 +195,7 @@
    "error": "",
    "rows": 20,
    "new": 1,
-   "blocked": 2
+   "blocked": 3
   },
   "androidpolice-com-feed": {
    "ok": true,
@@ -209,7 +209,7 @@
    "error": "",
    "rows": 10,
    "new": 2,
-   "blocked": 1
+   "blocked": 0
   },
   "ifanr": {
    "ok": true,
@@ -236,14 +236,14 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 2,
+   "new": 1,
    "blocked": 3
   },
   "digitaltrends-com-feed": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 2,
+   "new": 1,
    "blocked": 0
   },
   "notebookcheck-net-news-152-100-html-type-rss": {
@@ -261,11 +261,11 @@
    "blocked": 1
   },
   "eetimes-com-feed": {
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "rows": 0,
+   "ok": true,
+   "error": "",
+   "rows": 10,
    "new": 0,
-   "blocked": 0
+   "blocked": 2
   },
   "semiwiki-com-feed": {
    "ok": true,
@@ -345,11 +345,11 @@
    "blocked": 6
   },
   "199it-com-feed": {
-   "ok": false,
-   "error": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>",
-   "rows": 0,
-   "new": 0,
-   "blocked": 0
+   "ok": true,
+   "error": "",
+   "rows": 30,
+   "new": 3,
+   "blocked": 4
   },
   "36kr-com-feed-newsflash": {
    "ok": true,
@@ -565,8 +565,8 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 0,
-   "blocked": 3
+   "new": 1,
+   "blocked": 2
   },
   "gcores-com-rss": {
    "ok": true,
@@ -912,9 +912,9 @@
    "blocked": 0
   },
   "rsshub-rssforever-com-github-trending-daily-any": {
-   "ok": false,
-   "error": "TimeoutError: The read operation timed out",
-   "rows": 0,
+   "ok": true,
+   "error": "",
+   "rows": 10,
    "new": 0,
    "blocked": 0
   },
@@ -1013,7 +1013,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 0,
+   "new": 1,
    "blocked": 2
   },
   "gn-kling": {
@@ -1068,7 +1068,7 @@
   "gn-llm-tut": {
    "ok": true,
    "error": "",
-   "rows": 5,
+   "rows": 4,
    "new": 0,
    "blocked": 0
   },
@@ -1090,7 +1090,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 0,
+   "new": 1,
    "blocked": 1
   }
  },
@@ -1102,7 +1102,7 @@
   "Congress": 3,
   "affair": 4,
   "espionage": 1,
-  "vote": 3,
+  "vote": 4,
   "GovCloud": 1,
   "drug": 5,
   "weapons": 2,
@@ -1111,11 +1111,11 @@
   "senator": 1,
   "Democrat": 2,
   "Trump": 8,
-  "China": 25,
+  "China": 26,
   "Suicide": 2,
   "bomb": 2,
   "Government": 1,
-  "(非科技)": 43,
+  "(非科技)": 44,
   "新疆": 1,
   "习": 13,
   "explicit": 3,
@@ -1124,9 +1124,9 @@
   "military": 4,
   "politicians": 1,
   "killed": 1,
-  "shooter": 11,
   "prison": 1,
   "president": 3,
+  "shooter": 10,
   "War": 2,
   "Shooter": 1,
   "Taiwan": 2,
@@ -1137,16 +1137,17 @@
   "党委": 1,
   "选举": 1,
   "武器": 3,
-  "婚外": 2,
+  "婚外": 3,
   "主权": 1,
   "投票": 4,
   "领土": 1,
   "Hong Kong": 3,
   "出口管制": 1,
-  "央视": 2,
+  "央视": 3,
   "民主": 1,
   "香港": 3,
   "内衣": 1,
+  "台湾": 2,
   "weapon": 1,
   "betting": 2,
   "Sex": 1,
@@ -1196,33 +1197,33 @@
   "dies": 1,
   "Police": 1,
   "低俗": 1,
-  "台湾": 1,
   "两岸": 1,
   "doge": 1,
   "NSFW": 2,
   "擦边": 1,
-  "审查": 3,
+  "政治": 1,
+  "审查": 2,
   "俄罗斯": 1,
   "爆炸": 2,
   "疫苗": 1,
   "死亡": 1
  },
- "new": 179,
+ "new": 183,
  "sources_total": 158,
- "sources_ok": 152,
+ "sources_ok": 155,
  "translated": 121,
  "counts": {
   "ai": 220,
+  "mobile": 150,
+  "game": 150,
   "software": 150,
   "dev": 146,
-  "mobile": 150,
   "auto": 89,
   "science": 102,
   "chip": 129,
-  "game": 150,
   "internet": 150,
   "gossip": 21,
-  "aivideo": 106,
+  "aivideo": 107,
   "launch": 35,
   "space": 49,
   "comfyui": 49,
