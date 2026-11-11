@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-11T14:26:04+08:00",
+ "run_at": "2026-11-11T14:26:06+08:00",
  "sources": {
   "techcrunch-ai": {
    "ok": true,
@@ -23,17 +23,17 @@
    "blocked": 2
   },
   "deepmind": {
-   "ok": true,
-   "error": "",
-   "rows": 30,
-   "new": 2,
-   "blocked": 1
+   "ok": false,
+   "error": "empty feed",
+   "rows": 0,
+   "new": 0,
+   "blocked": 0
   },
   "google-ai": {
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 1,
+   "new": 2,
    "blocked": 0
   },
   "huggingface": {
@@ -261,11 +261,11 @@
    "blocked": 1
   },
   "eetimes-com-feed": {
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "rows": 0,
+   "ok": true,
+   "error": "",
+   "rows": 10,
    "new": 0,
-   "blocked": 0
+   "blocked": 2
   },
   "semiwiki-com-feed": {
    "ok": true,
@@ -474,7 +474,7 @@
    "ok": true,
    "error": "",
    "rows": 15,
-   "new": 1,
+   "new": 2,
    "blocked": 1
   },
   "bleepingcomputer-com-feed": {
@@ -999,14 +999,14 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 2,
-   "blocked": 7
+   "new": 0,
+   "blocked": 8
   },
   "gn-aiduanju": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 1,
+   "new": 0,
    "blocked": 3
   },
   "gn-aianime": {
@@ -1040,14 +1040,14 @@
   "gn-sora": {
    "ok": true,
    "error": "",
-   "rows": 15,
+   "rows": 17,
    "new": 0,
    "blocked": 2
   },
   "gn-aivideo-en": {
    "ok": true,
    "error": "",
-   "rows": 26,
+   "rows": 27,
    "new": 1,
    "blocked": 3
   },
@@ -1082,7 +1082,7 @@
   "gn-llm-tut": {
    "ok": true,
    "error": "",
-   "rows": 6,
+   "rows": 7,
    "new": 0,
    "blocked": 0
   },
@@ -1110,18 +1110,17 @@
  },
  "skipped": [],
  "dropped": {
-  "affair": 8,
+  "affair": 9,
   "sex": 1,
   "Chinese": 8,
   "espionage": 2,
   "vote": 3,
   "GovCloud": 1,
-  "drug": 6,
   "senator": 1,
   "Democrat": 2,
   "Trump": 7,
   "bomb": 2,
-  "China": 21,
+  "China": 22,
   "Government": 1,
   "Sex": 2,
   "protest": 2,
@@ -1129,6 +1128,7 @@
   "explicit": 3,
   "Sovereign": 1,
   "drugs": 4,
+  "drug": 5,
   "killed": 1,
   "出轨": 3,
   "Dead": 3,
@@ -1139,7 +1139,7 @@
   "Shooter": 1,
   "Taiwan": 2,
   "sovereign": 1,
-  "(非科技)": 30,
+  "(非科技)": 31,
   "央视": 3,
   "政府": 2,
   "选举": 1,
@@ -1223,7 +1223,7 @@
   "官员": 1,
   "疫苗": 1
  },
- "new": 193,
+ "new": 190,
  "sources_total": 158,
  "sources_ok": 152,
  "translated": 123,
@@ -1241,7 +1241,7 @@
   "game": 109,
   "comfyui": 47,
   "aivideo": 88,
-  "aidrama": 71,
+  "aidrama": 68,
   "science": 71,
   "aigc": 30,
   "gossip": 14
