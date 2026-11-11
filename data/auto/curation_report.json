@@ -1,21 +1,21 @@
 {
  "counts": {
-  "archived": 10,
+  "archived": 11,
   "deadline_extracted": 6,
-  "drop:duplicate": 34,
+  "drop:duplicate": 35,
   "drop:empty_summary": 10,
-  "drop:negative_signal": 83,
-  "drop:no_clear_offer": 145,
-  "drop:not_ai": 128,
+  "drop:negative_signal": 82,
+  "drop:no_clear_offer": 149,
+  "drop:not_ai": 129,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 201,
-  "google_news_total": 201,
-  "kept_total": 129,
-  "net:gnews_cache_hit": 190,
-  "net:gnews_resolved_net": 11,
-  "net:tco_expanded": 1,
-  "new_this_run": 7,
-  "raw_total": 588
+  "google_news_resolved": 204,
+  "google_news_total": 204,
+  "kept_total": 127,
+  "net:gnews_cache_hit": 201,
+  "net:gnews_resolved_net": 3,
+  "net:tco_failed": 2,
+  "new_this_run": 1,
+  "raw_total": 591
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -23,6 +23,7 @@
    "Simstim：Mac 上的本地呼叫转录为.md 文件",
    "ai-api-gateway-free-tier：AI API 网关/中继，一个 OpenAI 兼容密钥背后有 307 ",
    "awesome-free-ai-coding：合法免费的 LLM API 和编码代理",
+   "awesome-freellm-apis：来自 40 多个提供商的 134 多个免费 LLM API 和 AI API ",
    "awesome-free-ai-apis：经过验证的免费 AI API、LLM 推理端点",
    "genoffice：免费的开源 AI Office 套件",
    "ovis：Ovis（以前称为 herdr Web UI）",
@@ -30,8 +31,7 @@
    "claudemy：Claudemy，Udemy 和 Coursera 的开源替代品",
    "claude-content-skills：免费的、复制粘贴的 Claude 技能可以运行您的内容增长工厂 - 将创意 ",
    "unbagrnd：Unbagrnd - 适用于 Windows、macOS、Linux 和 Android 的免费",
-   "OmniCopilot：GitHub Copilot 聊天中包含 1200 多个 AI 模型 - 免费且永久免费",
-   "scumble：用于 AI 修复的免费开源桌面编辑器"
+   "OmniCopilot：GitHub Copilot 聊天中包含 1200 多个 AI 模型 - 免费且永久免费"
   ],
   "empty_summary": [
    "@koltregaskes 分享：所有付费消费者和团队计划均已获得所有型号和限制的完全免费的 Claude 重置",
@@ -60,6 +60,8 @@
    "Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化"
   ],
   "no_clear_offer": [
+   "@malpani 分享：辅导班教授时间表，AI 学习伙伴可以立即回答孩子的问题",
+   "@Techmeme 分享：英国大学监管机构表示，AI 使评分课程“几乎不可能”，并建议回归“无 AI 评估”方法",
    "@awilkinson 分享：我用价值 5,000 美元的 Claude Code 积分，编写了一些东西，取代了数万美元",
    "开发人员在 Claude 的限制下转向免费的 AI 编码工具 在 Claude 的限制下，开发人员转向免费的 AI 编码",
    "免费指南帮助用户掌握 Anthropic 的 Claude AI",
@@ -69,9 +71,7 @@
    "这是他妈的黄金，Anthropic、Garry Tan 和 Addy Osmani 将他们的 Claude Code",
    "SAP 正在取消其免费的 AI Agent Builder，迫使客户陷入典型的供应商锁定困境",
    "@malpani 分享：更多的辅导并不总是意味着更多的学习",
-   "@malpani 分享：商业辅导可能对某些孩子有用",
-   "@malpani 分享：辅导通常被视为每个学习问题的默认解决方案",
-   "@malpani 分享：有些孩子太害羞而不敢要求老师再次解释某个话题"
+   "@malpani 分享：商业辅导可能对某些孩子有用"
   ],
   "not_ai": [
    "AWS 首席执行官马特·加曼 (Matt Garman) 谈到轨道数据中心时表示：“我认为，在未来一两年内",
@@ -102,25 +102,25 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-11T17:52:56+08:00",
+ "generated_at": "2026-11-11T19:28:40+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-11T17:52:56+08:00",
+  "checked_at": "2026-11-11T19:28:39+08:00",
   "counts": {
-   "ok": 118
+   "ok": 120
   },
   "hidden": 0
  },
- "seconds": 6.4,
+ "seconds": 1.7,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 6,
-   "drop:not_ai": 12,
-   "drop:not_ai_strict": 4,
-   "kept": 18,
+   "drop:negative_signal": 5,
+   "drop:not_ai": 9,
+   "drop:not_ai_strict": 6,
+   "kept": 20,
    "raw": 40
   }
  }
