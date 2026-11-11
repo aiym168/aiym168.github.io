@@ -1,6 +1,6 @@
 {
-  "updated_at_label": "2026-11-11 08:20 Asia/Shanghai",
-  "count": 13,
+  "updated_at_label": "2026-11-11 09:13 Asia/Shanghai",
+  "count": 16,
   "items": [
     {
       "id": "hnhot-50438318",
@@ -17,11 +17,18 @@
       "source": "Hacker News"
     },
     {
-      "id": "hnhot-50443716",
-      "title": "Claude 白板、Claude 表格和 Claude 数据",
-      "summary": "",
-      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
-      "source": "Hacker News"
+      "id": "v2hot-1256017",
+      "title": "Claude 封号了，五味杂陈",
+      "summary": "九月份开始 vibe coding 做自己的量化模型，从国模一路折腾到 codex，再到 claude，也看了社区的各种攻略。本以为自己就是那个幸运儿,the chosen one，结果突然 gmail 弹出一个提示，账号被封了。claude 从 pro 开始用起，5 小时的红线很容易撞，所以用了一天就升级了 max，逐渐把主力开发引擎从 cline 换到 claude，花了差不多一周的时间把工作协同方式改成 claude 了，结果封号，申诉无果，现在很迷茫。codex 现在是 pro $500 的档位，其实完全用 codex 已经够了，但是因为涉及到因子回测，要避免幻觉，过",
+      "url": "https://www.v2ex.com/t/1256017",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1255995",
+      "title": "Gemini 4 Carbon 已经可以在 Antigravity 中使用",
+      "summary": "由于是刚发布，使用感受上比 Gemini 4 Argon 快多了。但目前好像仅适用于 Ultra 计划。",
+      "url": "https://www.v2ex.com/t/1255995",
+      "source": "V2EX"
     },
     {
       "id": "v2hot-1255988",
@@ -38,6 +45,13 @@
       "source": "V2EX"
     },
     {
+      "id": "v2hot-1256028",
+      "title": "用 claude 加上文墨天机的提示词算命准的可怕",
+      "summary": "使用方法：打开文墨天机 app，输入基本信息创建命盘，然后点击常用功能的导出 ai prompt，接着把 prompt 发给 claude 使用感受：准的可怕，把我的一下病痛都算出来了，频繁换工作也算出来了，高考情况也算出来了，太强啦，大家可以试试",
+      "url": "https://www.v2ex.com/t/1256028",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1256010",
       "title": "写了一个可以清理 claude code 和 codex 会话存储的工具: cc-clean",
       "summary": "一键使用: ``` npx cc-clean@latest ``` 背景大概就是，我同时在用 Claude 和 Codex，用久了以后，session 会话实在太多了。而我的磁盘又不太够用，一直在疯狂挪东西，又不敢删。然后自己仔细研究过它们的底层设计，发现有些冗余字段其实是可以清理的。就是在不影响 resume 的前提下，尽可能保留会话，把里面多余的字段移除掉。其中占用很大的一块，就是会话里的图片。比如你给它发一张图，告诉它要改哪里，这张图就会以 Base64 编码的形式存在聊天记录里，有时还会反复出现很多次。但这些图片，基本上在当次会话结束以后就不会",
@@ -45,17 +59,24 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1255995",
-      "title": "Gemini 4 Carbon 已经可以在 Antigravity 中使用",
-      "summary": "由于是刚发布，使用感受上比 Gemini 4 Argon 快多了。但目前好像仅适用于 Ultra 计划。",
-      "url": "https://www.v2ex.com/t/1255995",
+      "id": "v2hot-1256031",
+      "title": "Claude 送了一次完全重置",
+      "summary": "为啥 Claude 又送了一次完全重置",
+      "url": "https://www.v2ex.com/t/1256031",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1256017",
-      "title": "Claude 封号了，五味杂陈",
-      "summary": "九月份开始 vibe coding 做自己的量化模型，从国模一路折腾到 codex，再到 claude，也看了社区的各种攻略。本以为自己就是那个幸运儿,the chosen one，结果突然 gmail 弹出一个提示，账号被封了。claude 从 pro 开始用起，5 小时的红线很容易撞，所以用了一天就升级了 max，逐渐把主力开发引擎从 cline 换到 claude，花了差不多一周的时间把工作协同方式改成 claude 了，结果封号，申诉无果，现在很迷茫。codex 现在是 pro $500 的档位，其实完全用 codex 已经够了，但是因为涉及到因子回测，要避免幻觉，过",
-      "url": "https://www.v2ex.com/t/1256017",
+      "id": "v2hot-1256029",
+      "title": "多 Agent 协作工具 TogoSpace 发布 0.5.1 大更新",
+      "summary": "大家好，我开源的多智能体团队协作工具 TogoSpace 刚刚发布了 v0.5.1。简单介绍一下：这是一个多 agent 协作 harness，你可以通过跟主管 agnet 沟通，让他帮你组建团队，分派任务，盯进度，检查完成情况等。尤其是在长程任务上表现非常好，我一般是睡觉之前提几个需求，让他带着 AI 干一晚上，早上起来收菜就行。![imgur]( （如图可见帮我盯了一晚上完成六个任务） 上次发帖已经是很早之前了，这段时间从 0.4.x 迭代到 0.5.1，重点打磨了这几个大",
+      "url": "https://www.v2ex.com/t/1256029",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256027",
+      "title": "ChatGPT Plus/Pro 直充账户 长期稳定",
+      "summary": "# ChatGPT Plus/Pro 直充账户 长期稳定 ChatGPT Plus -> 125 ChatGPT 10x -> 660 ChatGPT 20x -> 1150 欢迎 v 友咨询，已服务 100+ v 友 可以 +v(备注 v2) : Y2F0Y2hhZG1pbg==",
+      "url": "https://www.v2ex.com/t/1256027",
       "source": "V2EX"
     },
     {
