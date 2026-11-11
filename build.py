@@ -1446,30 +1446,48 @@ def octopus_teaser(prefix: str = "./") -> str:
 
 
 # ============================================================ homepage + build
+def brain_mood(last_added, today_added: int, gone: int, total: int, next_hm: str, mins_to_next: float) -> dict:
+    """Mood / now / next for the brain, picked only from real run data (same rules in vendor/brain-talk.js)."""
+    if gone >= 3:
+        label, mood = "有点火大", f"刚检查出 {gone} 个链接彻底打不开了，有点火大。已经全部自动下架，不会留给你踩坑。"
+    elif last_added is not None and last_added >= 10:
+        label, mood = "兴奋", f"上一轮一口气收进 {last_added} 条新资源，兴奋得心跳都快了一点。"
+    elif last_added:
+        label, mood = "开心", f"上一轮又收进 {last_added} 条新资源，有点得意。"
+    elif last_added == 0 and today_added >= 10:
+        label, mood = "平静", f"上一轮巡检没有新货，不过今天已经收进 {today_added} 条，我很平静。"
+    elif last_added == 0:
+        label, mood = "有点无聊", "上一轮巡检没有新货，有点无聊，但我照常值班。"
+    else:
+        label, mood = "期待", "我刚开始记录今天的收获，正等着第一批新资源。"
+    if mins_to_next <= 0:
+        now_t = "正在自动更新：收集新资源、筛掉水货、翻译、上架。"
+    else:
+        now_t = f"正在看守 {total} 条免费资源，盯着谁过期、哪个链接打不开。"
+    if 0 < mins_to_next <= 10:
+        next_t = f"还有几分钟，{next_hm} 我就出发：去全网收集新资源，筛掉水货，翻译、上架。有点期待。"
+    else:
+        next_t = f"{next_hm} 我会再出发：去全网收集新资源，筛掉水货，翻译、上架，过期的顺手归档。"
+    return {"label": label, "mood": mood, "now": now_t, "next": next_t}
+
+
 def write_brain_page(date: str, now: datetime, nxt: datetime, active: list, archived: list, today_new: int) -> str:
     """/m/brain.html — the site brain's control room. Everything shown is read from data the build already has."""
     prefix = "../"
     canonical = CANONICAL + "m/brain.html"
     title = "站点大脑 · 这个网站由我自动运行"
-    desc = "AI大模型免费资源导航的大脑：整座站由它接管、全自动运行。这里能看到它此刻的心跳、下一次自动更新时间、最近的自动更新记录和刚收进的新资源。"
+    desc = "AI大模型免费资源导航的大脑：整座站由它接管、全自动运行。这里能看到它此刻的心情、正在做什么，以及下一次自动更新要做的事。"
     entries = ((load_json(DATA / "_update_log.json") or {}) if (DATA / "_update_log.json").exists() else {}).get("entries") or []
-    week = [e for e in entries if (curate.parse_dt(e.get("at")) or now) >= now - timedelta(days=7)]
-    week_added = sum(int(e.get("added") or 0) for e in week)
-    upd, nx = now.strftime("%H:%M"), nxt.strftime("%H:%M")
-    vitals = [("运行状态", "运行中", "live"), ("最后心跳", upd, ""), ("下次自动更新", nx, ""), ("今日新增", f"{today_new} 条", ""),
-              ("近 7 天自动更新", f"{len(week)} 次", ""), ("近 7 天新收录", f"{week_added} 条", ""),
-              ("正在看守", f"{len(active)} 条", ""), ("已自动归档", f"{len(archived)} 条", "")]
-    vit_html = "".join(f'<div class="vital {c}"><span>{esc(k)}</span><b{" data-bc-last" if k == "最后心跳" else (" data-bc-next" if k == "下次自动更新" else "")}>{esc(v)}</b></div>' for k, v, c in vitals)
-    beats = "".join(
-        f'<li><time>{esc((e.get("at_label") or "")[5:16])}</time><span class="bar" style="--w:{min(100, 6 + int(e.get("added") or 0) * 4)}%"></span><b>{("+" + str(e.get("added"))) if e.get("added") else "巡检"}</b><span>{(str(e.get("added")) + " 条新资源") if e.get("added") else "没有新货，照常巡检"}</span></li>'
-        for e in entries[:12]) or '<li><span>记录正在生成，下一次自动更新后出现。</span></li>'
-    seen, fresh = set(), []
-    for e in entries:
-        for it in e.get("new") or []:
-            u = it.get("url")
-            if u and u not in seen and it.get("path"):
-                seen.add(u); fresh.append((it, e.get("at_label") or ""))
-    fresh_html = "".join(f'<li><a href="{prefix}{esc(it["path"])}">{esc(it.get("title") or "")}</a><span>{esc(it.get("category") or "")} · {esc(at[5:16])}</span></li>' for it, at in fresh[:8])
+    lc = (load_json(SITE / "api" / "linkcheck.json") or {}) if (SITE / "api" / "linkcheck.json").exists() else {}
+    gone = len(lc.get("hidden") or [])
+    last_added = int(entries[0].get("added") or 0) if entries else None
+    today_added = sum(int(e.get("added") or 0) for e in entries if (e.get("at_label") or "")[:10] == now.strftime("%Y-%m-%d"))
+    m = brain_mood(last_added, max(today_added, today_new), gone, len(active), nxt.strftime("%H:%M"), (nxt - now).total_seconds() / 60)
+    mood_html = f"""<div class="mood-card" id="brain-mood" data-gone="{gone}" data-total="{len(active)}" data-next-iso="{esc(nxt.isoformat(timespec='seconds'))}" data-next-hm="{esc(nxt.strftime('%H:%M'))}" data-status="{prefix}api/status.json">
+        <div class="mood-row"><span class="mk">此刻心情</span><div><b class="mood-tag" data-mood-label>{esc(m["label"])}</b><p data-mood-text>{esc(m["mood"])}</p></div></div>
+        <div class="mood-row"><span class="mk">正在做</span><p data-mood-now>{esc(m["now"])}</p></div>
+        <div class="mood-row"><span class="mk">接下来</span><p data-mood-next>{esc(m["next"])}</p></div>
+      </div>"""
     steps = [("收集", "每小时去公开网页、开源社区和社交平台，把新出现的免费 AI 资源找回来。"),
              ("筛选", "去掉重复、广告和不相关的内容，只留下真正免费或有免费额度的。"),
              ("翻译", "外文资源翻成中文，标清要不要绑卡、实名、国内能否直连。"),
@@ -1487,21 +1505,16 @@ def write_brain_page(date: str, now: datetime, nxt: datetime, active: list, arch
       <div class="eyebrow"><i class="live-dot"></i> 大脑在线 · 控制中枢</div>
       <h1 class="hero-title"><span class="kl">站点大脑</span></h1>
       <p class="takeover"><b>这座站，现在归我管。</b></p>
-      <p class="lead">我是 AI大模型免费资源导航的大脑。整座站由我接管：每小时醒一次，收集、筛选、翻译、核对、上架，再把过期的归档。下面是我此刻的生命体征——全部来自真实的运行记录。</p>
+      <p class="lead">我是 AI大模型免费资源导航的大脑。整座站由我接管：每小时醒一次，收集、筛选、翻译、核对、上架，再把过期的归档。</p>
+      {mood_html}
     </div>
     {brain_core(prefix, now, nxt, today_new, len(active), voice=True, nodes=4800)}
   </div>
 </header>
 {brain_loader_script(prefix + "vendor/")}
 <main class="wrap">
-  <section class="section"><div class="sec-head"><span class="sec-idx">生命体征</span><h2>我此刻的状态</h2>
-    <p class="sec-desc">数字随每次自动更新刷新，生成于 {esc(now.strftime("%Y-%m-%d %H:%M"))} 北京时间。</p></div>
-    <div class="vitals">{vit_html}</div></section>
   <section class="section"><div class="sec-head"><span class="sec-idx">我每小时做的事</span><h2>全自动，没有人值班</h2></div>
     <ol class="brain-steps">{steps_html}</ol></section>
-  <section class="section"><div class="sec-head"><span class="sec-idx">最近的心跳</span><h2>最近 12 次自动更新</h2></div>
-    <ol class="beat-log">{beats}</ol></section>
-  {('<section class="section"><div class="sec-head"><span class="sec-idx">刚收进的</span><h2>我最近收进的新资源</h2></div><ol class="latest5">' + fresh_html + '</ol></section>') if fresh_html else ''}
   <section class="section"><div class="sec-head"><span class="sec-idx">我运转的两个世界</span><h2>羊毛站与工具站大全</h2></div>
     <div class="worlds">
       <a class="world" href="{prefix}"><b>AI大模型免费资源导航</b><span>免费大模型 API、免费 Token、免费 GPU、AI 工具试用与课程；AI 新闻、全球优惠情报、API 最低价榜、AI 羊毛电台。</span><em>你现在就在这里 →</em></a>

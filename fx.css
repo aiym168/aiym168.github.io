@@ -996,9 +996,9 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .brain-core .brain-stage,.home-hero .brain-core .brain-stage{width:min(100%,480px)}
 .brain-stage.is-live{cursor:pointer;outline:none}
 .brain-stage.is-live:focus-visible{box-shadow:0 0 0 2px var(--mint);border-radius:50%}
-.bc-beat{position:absolute;inset:30%;border-radius:50%;z-index:1;pointer-events:none;background:radial-gradient(circle,rgba(94,240,192,.28),rgba(92,225,255,.1) 45%,transparent 70%);animation:bcHeart 1.15s ease-out infinite}
+.bc-beat{position:absolute;inset:30%;border-radius:50%;z-index:1;pointer-events:none;background:radial-gradient(circle,rgba(94,240,192,.28),rgba(92,225,255,.1) 45%,transparent 70%);animation:bcHeart .833s ease-out infinite}
 @keyframes bcHeart{0%{transform:scale(.86);opacity:.35}8%{transform:scale(1.08);opacity:1}18%{transform:scale(.94);opacity:.5}28%{transform:scale(1.04);opacity:.85}60%,100%{transform:scale(.86);opacity:.35}}
-.brain-core.talking .bc-beat{animation-duration:.75s;inset:24%}
+.brain-core.talking .bc-beat{animation-duration:.706s;inset:27%}
 .brain-core.talking .brain-stage::before{background:radial-gradient(circle,rgba(94,240,192,.3),rgba(92,225,255,.16) 40%,transparent 68%)}
 .bc-tap{position:absolute;left:50%;top:7%;transform:translateX(-50%);z-index:4;font-size:.8rem;letter-spacing:.08em;color:#04111a;background:var(--mint);padding:5px 12px;border-radius:999px;box-shadow:0 0 22px rgba(94,240,192,.55);white-space:nowrap;pointer-events:none;animation:bcTap 2.4s ease-in-out infinite}
 @keyframes bcTap{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-4px)}}
@@ -1012,10 +1012,10 @@ body.board .bd-hint,body.board .bd-rules,body.board .bd-tools span,body.board #b
 .bc-status b{font-family:var(--mono);font-weight:500;color:#fff;font-variant-numeric:tabular-nums}
 .bc-status em{font-style:normal;font-family:var(--mono);color:var(--mint);margin-left:4px;font-variant-numeric:tabular-nums}
 .bc-online{display:inline-flex;align-items:center;gap:8px;color:var(--mint);font-weight:700;letter-spacing:.06em}
-.bc-online i{width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 12px var(--mint);animation:bcDot 1.15s ease-out infinite}
+.bc-online i{width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 12px var(--mint);animation:bcDot .833s ease-out infinite}
 @keyframes bcDot{0%,30%,100%{transform:scale(1);opacity:1}8%{transform:scale(1.5)}18%{transform:scale(.9);opacity:.7}}
 .bc-ecg{display:block;width:100%;height:22px;margin:8px 0 6px}
-.bc-ecg path{fill:none;stroke:var(--mint);stroke-width:1.6;stroke-linejoin:round;stroke-dasharray:90 360;stroke-dashoffset:450;filter:drop-shadow(0 0 4px rgba(94,240,192,.8));animation:bcEcg 2.3s linear infinite}
+.bc-ecg path{fill:none;stroke:var(--mint);stroke-width:1.6;stroke-linejoin:round;stroke-dasharray:90 360;stroke-dashoffset:450;filter:drop-shadow(0 0 4px rgba(94,240,192,.8));animation:bcEcg 1.667s linear infinite}
 .bc-ecg{background:linear-gradient(90deg,rgba(94,240,192,.0),rgba(94,240,192,.08) 50%,rgba(94,240,192,0));border-radius:4px}
 @keyframes bcEcg{to{stroke-dashoffset:0}}
 .bc-id{margin:0 0 10px;color:#cfe0f2;font-size:.98rem;line-height:1.65}
@@ -1092,3 +1092,12 @@ html.reduce-motion .bc-ecg path{stroke-dasharray:none;stroke-dashoffset:0}
   .beat-log li{grid-template-columns:92px 1fr 48px;gap:8px}.beat-log li>span:last-child{display:none}
   .brain-sig{font-size:.9rem}
 }
+
+/* brain page: mood / now / next */
+.mood-card{max-width:640px;margin:4px 0 0;padding:14px 16px;border-radius:16px;border:1px solid rgba(94,240,192,.25);background:linear-gradient(180deg,rgba(94,240,192,.06),rgba(92,225,255,.03))}
+.mood-row{display:grid;grid-template-columns:72px minmax(0,1fr);gap:10px;align-items:baseline;padding:6px 0}
+.mood-row+.mood-row{border-top:1px dashed rgba(140,200,255,.14)}
+.mood-row .mk{font-size:.82rem;color:var(--mint);letter-spacing:.06em}
+.mood-row p{margin:0;color:#dfeaf8;font-size:.98rem;line-height:1.6}
+.mood-tag{display:inline-block;margin:0 0 2px;padding:1px 10px;border-radius:999px;background:rgba(94,240,192,.14);color:#c9ffec;font-size:.9rem}
+@media (max-width:768px){.mood-row{grid-template-columns:62px minmax(0,1fr);gap:8px}.mood-row p{font-size:.95rem}}

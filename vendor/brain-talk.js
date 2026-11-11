@@ -147,7 +147,52 @@
     } else arrive();
   }
 
+  // mood / now / next — same rules as brain_mood() in build.py, refreshed from the live status file
+  function moodFrom(last, today, gone, total, hm, mins) {
+    var label, mood, now, next;
+    if (gone >= 3) { label = '有点火大'; mood = '刚检查出 ' + gone + ' 个链接彻底打不开了，有点火大。已经全部自动下架，不会留给你踩坑。'; }
+    else if (last != null && last >= 10) { label = '兴奋'; mood = '上一轮一口气收进 ' + last + ' 条新资源，兴奋得心跳都快了一点。'; }
+    else if (last) { label = '开心'; mood = '上一轮又收进 ' + last + ' 条新资源，有点得意。'; }
+    else if (last === 0 && today >= 10) { label = '平静'; mood = '上一轮巡检没有新货，不过今天已经收进 ' + today + ' 条，我很平静。'; }
+    else if (last === 0) { label = '有点无聊'; mood = '上一轮巡检没有新货，有点无聊，但我照常值班。'; }
+    else { label = '期待'; mood = '我刚开始记录今天的收获，正等着第一批新资源。'; }
+    now = mins <= 0 ? '正在自动更新：收集新资源、筛掉水货、翻译、上架。' : '正在看守 ' + total + ' 条免费资源，盯着谁过期、哪个链接打不开。';
+    next = (mins > 0 && mins <= 10) ? '还有几分钟，' + hm + ' 我就出发：去全网收集新资源，筛掉水货，翻译、上架。有点期待。'
+      : hm + ' 我会再出发：去全网收集新资源，筛掉水货，翻译、上架，过期的顺手归档。';
+    return { label: label, mood: mood, now: now, next: next };
+  }
+  function initMood() {
+    var box = document.getElementById('brain-mood'); if (!box) return;
+    var st = { last: null, today: 0, gone: +box.getAttribute('data-gone') || 0, total: +box.getAttribute('data-total') || 0,
+      hm: box.getAttribute('data-next-hm') || '', next: Date.parse(box.getAttribute('data-next-iso') || '') };
+    var live = false;
+    function set(sel, t) { var e = box.querySelector(sel); if (e && e.textContent !== t) e.textContent = t; }
+    function render() {
+      if (!live) { // only adjust the time-dependent lines until live data arrives
+        var mins0 = st.next ? (st.next - Date.now()) / 60000 : 99;
+        var m0 = moodFrom(0, 0, 0, st.total, st.hm, mins0); set('[data-mood-now]', m0.now); set('[data-mood-next]', m0.next); return;
+      }
+      var mins = st.next ? (st.next - Date.now()) / 60000 : 99;
+      var m = moodFrom(st.last, st.today, st.gone, st.total, st.hm, mins);
+      set('[data-mood-label]', m.label); set('[data-mood-text]', m.mood); set('[data-mood-now]', m.now); set('[data-mood-next]', m.next);
+    }
+    render(); setInterval(render, 30000);
+    var url = box.getAttribute('data-status'); if (!url || !window.fetch) return;
+    fetch(url + '?t=' + Math.floor(Date.now() / 60000), { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+      if (!d) return;
+      var ru = (d.recent_additions || {}).recent_updates || [], bd = (d.recent_additions || {}).by_day || [];
+      if (ru.length) st.last = +ru[0].added || 0;
+      var today = new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 10);
+      if (bd.length && bd[0].date === today) st.today = +bd[0].added || 0;
+      if (d.totals && d.totals.free_resources) st.total = d.totals.free_resources;
+      var nx = String(d.next_update || '').slice(0, 16);
+      if (nx) { var t = Date.parse(nx.replace(' ', 'T') + ':00+08:00'); if (t && (!st.next || t > st.next)) { st.next = t; st.hm = nx.slice(11, 16); } }
+      live = ru.length > 0; render();
+    }).catch(function () {});
+  }
+
   function boot() {
+    initMood();
     var core = document.getElementById('brain-core'); if (!core) return;
     core.classList.add('js'); core.classList.remove('nojs');
     var list = core.querySelector('[data-bc-intro-list]');

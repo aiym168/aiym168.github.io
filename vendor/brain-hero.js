@@ -279,7 +279,7 @@ export function mountBrainHero(container, opts = {}) {
   container.addEventListener("click", () => { surge(true); perk(); });
   window.__brainAPI = { triggerShockwave, setTalking, notice, surge, destroy: null };
   // heartbeat: "lub-dub" double pulse; period shortens while talking
-  let beatPhase = 0, beatLen = 1.15, breath = 0;
+  let beatPhase = 0, beatLen = 60 / 72, breath = 0; // resting human rate ≈ 72 BPM
   const beatShape = (u) => Math.exp(-Math.pow((u - 0.08) / 0.045, 2)) + 0.6 * Math.exp(-Math.pow((u - 0.28) / 0.05, 2));
 
   let visible = true; let raf = 0;
@@ -356,7 +356,7 @@ export function mountBrainHero(container, opts = {}) {
     // heartbeat with natural jitter between beats; slow irregular breathing underneath
     const prevPhase = beatPhase;
     beatPhase = (beatPhase + dt / beatLen) % 1;
-    if (beatPhase < prevPhase) beatLen = (1.05 + Math.random() * 0.25) - 0.35 * talking;
+    if (beatPhase < prevPhase) beatLen = 60 / (72 + (Math.random() - 0.5) * 6 + 13 * talking); // 69–75 BPM idle, ~85 BPM while talking
     const beat = beatShape(beatPhase);
     breath += dt * (0.95 + 0.35 * Math.sin(t * 0.11) + 0.2 * Math.sin(t * 0.29));
     const br = Math.sin(breath * 0.9);
