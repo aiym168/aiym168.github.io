@@ -421,8 +421,11 @@ def main() -> int:
                     if lang == "en" and not r.get("tpl"):
                         want.append({"id": i, "title": title, "text": summ[:400], "_pub": pub.isoformat()})
             want.sort(key=lambda x: x["_pub"], reverse=True)  # freshest first: they are the ones going up now
-            llm_zh = llm.translate_batch(want[:MAX_NEW_TRANSLATE], scope="pipeline", kind="news", max_items=60, time_budget_s=150)
-            print(f"[news] model translated {len(llm_zh)}/{len(want[:MAX_NEW_TRANSLATE])} (up to 60 fresh items per run go to the model)")
+            calls_left, toks_left = llm.budget_left("pipeline")
+            # spend more of the day's budget when plenty is left, less when it runs low (freshest items always first)
+            cap = 120 if (calls_left >= 70 and toks_left >= 200_000) else 60 if (calls_left >= 25 and toks_left >= 60_000) else 30
+            llm_zh = llm.translate_batch(want[:MAX_NEW_TRANSLATE], scope="pipeline", kind="news", max_items=cap, time_budget_s=150)
+            print(f"[news] model translated {len(llm_zh)}/{len(want[:MAX_NEW_TRANSLATE])} (model cap this run: {cap} freshest)")
     except Exception as e:
         print("[news] model translate skipped:", type(e).__name__)
     order = [k for k in queue]
