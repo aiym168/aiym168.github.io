@@ -419,9 +419,10 @@ def main() -> int:
             for key, q in queue.items():
                 for (i, ch, title, summ, link, pub, r, lang) in q[:(30 if KIND.get(key) else per_source_cap(key))]:
                     if lang == "en" and not r.get("tpl"):
-                        want.append({"id": i, "title": title, "text": summ[:400]})
-            llm_zh = llm.translate_batch(want[:MAX_NEW_TRANSLATE], scope="pipeline", kind="news")
-            print(f"[news] model translated {len(llm_zh)}/{len(want[:MAX_NEW_TRANSLATE])}")
+                        want.append({"id": i, "title": title, "text": summ[:400], "_pub": pub.isoformat()})
+            want.sort(key=lambda x: x["_pub"], reverse=True)  # freshest first: they are the ones going up now
+            llm_zh = llm.translate_batch(want[:MAX_NEW_TRANSLATE], scope="pipeline", kind="news", max_items=60, time_budget_s=150)
+            print(f"[news] model translated {len(llm_zh)}/{len(want[:MAX_NEW_TRANSLATE])} (up to 60 fresh items per run go to the model)")
     except Exception as e:
         print("[news] model translate skipped:", type(e).__name__)
     order = [k for k in queue]

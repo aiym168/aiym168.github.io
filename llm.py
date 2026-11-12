@@ -12,6 +12,7 @@ import json
 import os
 import re
 import time
+import urllib.error
 import urllib.request
 from datetime import datetime
 from pathlib import Path
@@ -131,8 +132,11 @@ def save_cache() -> None:
         pass
 
 
+_NO_EXTRA = False
+
+
 def chat(system: str, user: str, *, scope: str = "pipeline", max_tokens: int = 800, temperature: float = 0.3,
-         cache: bool = True, timeout: int = 45) -> str | None:
+         cache: bool = True, timeout: int = 45, light: bool = False) -> str | None:
     """One chat completion. Returns text or None (no key / budget / error). Never raises, never logs the key."""
     global _fails, _cache_dirty
     try:
@@ -148,15 +152,29 @@ def chat(system: str, user: str, *, scope: str = "pipeline", max_tokens: int = 8
         if calls <= 0 or toks <= 0:
             print(f"[llm] {scope} daily budget used up — rule-based path")
             return None
-        body = json.dumps({"model": model, "temperature": temperature, "max_tokens": max_tokens,
-                           "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}).encode()
-        req = urllib.request.Request(base + "/chat/completions", data=body, method="POST",
-                                     headers={"Authorization": "Bearer " + key, "Content-Type": "application/json",
-                                              "User-Agent": "aiym168-bot/1.0"})
+        global _NO_EXTRA
+        payload = {"model": model, "temperature": temperature, "max_tokens": max_tokens,
+                   "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
+        if light and not _NO_EXTRA:
+            payload["reasoning_effort"] = "low"  # less hidden reasoning = fewer tokens; dropped if the endpoint refuses it
+
+        def send(p):
+            req = urllib.request.Request(base + "/chat/completions", data=json.dumps(p).encode(), method="POST",
+                                         headers={"Authorization": "Bearer " + key, "Content-Type": "application/json",
+                                                  "User-Agent": "aiym168-bot/1.0"})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return json.loads(r.read(2_000_000))
         t0 = time.time()
         try:
-            with urllib.request.urlopen(req, timeout=timeout) as r:
-                d = json.loads(r.read(2_000_000))
+            try:
+                d = send(payload)
+            except urllib.error.HTTPError as e:
+                if e.code == 400 and "reasoning_effort" in payload:
+                    _NO_EXTRA = True
+                    payload.pop("reasoning_effort")
+                    d = send(payload)
+                else:
+                    raise
         except Exception as e:
             _fails += 1
             _budget_add(scope, 0, False)
@@ -197,10 +215,32 @@ def chat_json(system: str, user: str, **kw):
     return None
 
 
+def _salvage_objects(txt: str) -> list[dict]:
+    """Parse a JSON array answer; if it is truncated or has one bad object, keep every object that parses."""
+    t = re.sub(r"^```(?:json)?|```$", "", (txt or "").strip(), flags=re.M).strip()
+    try:
+        v = json.loads(t)
+        if isinstance(v, dict):
+            v = next((x for x in v.values() if isinstance(x, list)), [v])
+        if isinstance(v, list):
+            return [x for x in v if isinstance(x, dict)]
+    except Exception:
+        pass
+    out = []
+    for m in re.finditer(r"\{[^{}]*\}", t, re.S):
+        try:
+            x = json.loads(m.group(0))
+            if isinstance(x, dict):
+                out.append(x)
+        except Exception:
+            continue
+    return out
+
+
 def translate_batch(rows: list[dict], scope: str = "pipeline", kind: str = "news", max_items: int = 60,
-                    time_budget_s: int = 120) -> dict[str, dict]:
-    """rows: [{"id","title","text"}] (English). Returns {id: {"title","summary"}} for the rows the model handled.
-    Callers keep their free translators for anything missing."""
+                    time_budget_s: int = 150, chunk_size: int = 10) -> dict[str, dict]:
+    """rows: [{"id","title","text"}] (English), most important first. Returns {id: {"title","summary"}} for the rows
+    the model handled; callers keep their free translators for anything missing."""
     out: dict[str, dict] = {}
     if not rows or not available():
         return out
@@ -208,10 +248,13 @@ def translate_batch(rows: list[dict], scope: str = "pipeline", kind: str = "news
         from news_collect import blocked as _blocked
     except Exception:
         return out
-    sys_p = ("你是中文科技编辑。把英文科技/AI 资讯翻成自然、准确、简洁的简体中文。标题不超过 40 字，不加感叹号、不夸张、不加评论；"
-             "摘要 1-2 句、不超过 90 字，只根据原文，不编造；原文没有正文时 summary 留空字符串，不要写「原文未提供」之类的话。产品名、公司名、模型名保留英文原名。"
+    sys_p = ("你是中文科技编辑。把英文科技/AI 资讯翻成自然、准确、简洁的简体中文。标题不超过 40 字，必须是中文句子"
+             "（项目名、仓库名如 owner/repo 可以保留英文，但后面要用中文说明它是什么），不加感叹号、不夸张、不加评论；"
+             "摘要 1 句、不超过 70 字，只根据原文，不编造；原文没有正文时 summary 留空字符串。产品名、公司名、模型名保留英文原名。"
              + ("这些是免费资源/优惠条目，标题要说清是什么、免费在哪里。" if kind == "deal" else "")
-             + "只输出 JSON 数组：[{\"id\":\"…\",\"title\":\"…\",\"summary\":\"…\"}]，id 原样返回。")
+             + "只输出紧凑的 JSON 数组，不要代码块、不要换行缩进：[{\"id\":\"…\",\"title\":\"…\",\"summary\":\"…\"}]，"
+             "id 原样返回，每条输入都要有一条输出。字符串里不要用英文双引号，需要引号时用「」。")
+
     def ikey(r):
         return "i:" + hashlib.sha256(f"{kind}\n{r.get('title')}\n{(r.get('text') or '')[:500]}".encode("utf-8")).hexdigest()[:28]
     cache_ = _cache_load()
@@ -222,40 +265,70 @@ def translate_batch(rows: list[dict], scope: str = "pipeline", kind: str = "news
             out[r["id"]] = hit["v"]
         else:
             miss.append(r)
-    rows = miss[:max_items]
-    chunks = [rows[i:i + 12] for i in range(0, len(rows), 12)]
+    cached = len(out)
+    todo = miss[:max_items]
+    st = {"calls": 0, "no_answer": 0, "salvaged": 0, "id_missing": 0, "no_cjk": 0, "too_long": 0, "blocked": 0, "retried": 0}
+    deadline = time.time() + time_budget_s
 
     def one(chunk):
-        if time.time() > deadline:
+        left = deadline - time.time()
+        if left < 15:
             return chunk, None
-        user = json.dumps([{"id": r["id"], "title": (r.get("title") or "")[:200], "text": (r.get("text") or "")[:500]} for r in chunk],
+        user = json.dumps([{"id": r["id"], "title": (r.get("title") or "")[:200], "text": (r.get("text") or "")[:400]} for r in chunk],
                           ensure_ascii=False)
-        return chunk, chat_json(sys_p, user, scope=scope, max_tokens=1800, temperature=0.2, cache=False,
-                                timeout=max(10, min(60, int(deadline - time.time()))))
+        st["calls"] += 1
+        txt = chat(sys_p, user, scope=scope, max_tokens=250 * len(chunk) + 400, temperature=0.2, cache=False,
+                   timeout=int(max(15, min(90, left))), light=True)
+        return chunk, txt
 
-    deadline = time.time() + time_budget_s
-    from concurrent.futures import ThreadPoolExecutor
-    with ThreadPoolExecutor(4) as ex:
-        results = list(ex.map(one, chunks))
-    for chunk, got in results:
-        if not isinstance(got, list):
-            continue
-        ids = {r["id"] for r in chunk}
-        for g in got:
-            if not isinstance(g, dict) or g.get("id") not in ids:
+    def absorb(results) -> list[dict]:
+        missing = []
+        for chunk, txt in results:
+            if not txt:
+                st["no_answer"] += 1
+                missing += chunk
                 continue
-            t = re.sub(r"\s+", " ", str(g.get("title") or "")).strip()
-            s = re.sub(r"\s+", " ", str(g.get("summary") or "")).strip()
-            if t and re.search(r"[\u4e00-\u9fff]", t) and len(t) <= 80 and not _blocked(t, s):
+            objs = _salvage_objects(txt)
+            try:
+                json.loads(re.sub(r"^```(?:json)?|```$", "", txt.strip(), flags=re.M).strip())
+            except Exception:
+                st["salvaged"] += 1
+            by_id = {str(g.get("id")): g for g in objs}
+            for r in chunk:
+                g = by_id.get(str(r["id"]))
+                if not g:
+                    st["id_missing"] += 1; missing.append(r); continue
+                t = re.sub(r"\s+", " ", str(g.get("title") or "")).strip()
+                s = re.sub(r"\s+", " ", str(g.get("summary") or "")).strip()
+                if not re.search(r"[\u4e00-\u9fff]", t):
+                    st["no_cjk"] += 1; missing.append(r); continue
+                if len(t) > 90:
+                    st["too_long"] += 1; missing.append(r); continue
+                if _blocked(t, s):
+                    st["blocked"] += 1; continue  # same filter the site uses; free translators will face it too
                 if re.search(r"原文(未|没有)|未提供|无正文", s):
                     s = ""
-                out[g["id"]] = v = {"title": t, "summary": s[:200] if re.search(r"[\u4e00-\u9fff]", s) else ""}
-                r0 = next(r for r in chunk if r["id"] == g["id"])
+                v = {"title": t, "summary": s[:200] if re.search(r"[\u4e00-\u9fff]", s) else ""}
+                out[r["id"]] = v
                 with _lock:
-                    cache_[ikey(r0)] = {"v": v, "t": int(time.time())}
+                    cache_[ikey(r)] = {"v": v, "t": int(time.time())}
                     global _cache_dirty
                     _cache_dirty = True
+        return missing
+
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(4) as ex:
+        chunks = [todo[i:i + chunk_size] for i in range(0, len(todo), chunk_size)]
+        missing = absorb(list(ex.map(one, chunks)))
+        # one retry for what came back empty / unparsable / without Chinese, in smaller chunks
+        if missing and time.time() < deadline - 20 and _fails < MAX_FAILS_PER_RUN:
+            st["retried"] = len(missing)
+            rc = [missing[i:i + 6] for i in range(0, len(missing), 6)]
+            absorb(list(ex.map(one, rc)))
     save_cache()
+    handled = len(out) - cached
+    print(f"[llm] translate kind={kind} asked={len(rows)} cached={cached} sent={len(todo)} handled={handled} "
+          + " ".join(f"{k}={v}" for k, v in st.items()))
     return out
 
 
