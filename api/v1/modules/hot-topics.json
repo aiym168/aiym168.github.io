@@ -3,14 +3,28 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 21,
-  "generated_at": "2026-11-12T05:04:39+08:00",
+  "count": 20,
+  "generated_at": "2026-11-12T08:03:46+08:00",
   "items": [
     {
       "id": "hnhot-50452455",
-      "title": "Google SWE 将 48 个 AI 代理指向 NASA 激光雷达，72 小时内发现未绘制地图的玛雅金字塔",
+      "title": "我的 AI 代理发现了一个未映射的 Maya 站点",
       "summary": "",
-      "url": "https://pietromiotti.com/latest/maya-site/?maya",
+      "url": "https://pietromiotti.com/latest/maya-site",
+      "source": "Hacker News"
+    },
+    {
+      "id": "hnhot-50458900",
+      "title": "联合航空禁止 AI Agent 代表旅客预订航班",
+      "summary": "",
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "hnhot-50456791",
+      "title": "Gemini 决策 API",
+      "summary": "",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
       "source": "Hacker News"
     },
     {
@@ -25,34 +39,6 @@
       "title": "Atuin Threads：您在每台机器上的所有代理会话",
       "summary": "",
       "url": "https://blog.atuin.sh/threads-agent-sessions/",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50455332",
-      "title": "软件工程中的 AI、活动和成果",
-      "summary": "",
-      "url": "https://cabird.com/talks/shipping-faster/",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50456740",
-      "title": "AWS 模拟器和工程师在代理编写代码时的工作",
-      "summary": "",
-      "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50457164",
-      "title": "退休储蓄正在助长 AI 泡沫",
-      "summary": "",
-      "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50456791",
-      "title": "Gemini 决策 API",
-      "summary": "",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
       "source": "Hacker News"
     },
     {
@@ -74,6 +60,13 @@
       "title": "[分享] 一句话让 AI Agent 把网课视频变成讲义 PDF（开源 · 全程本地 · 零 API Key）",
       "summary": "备考的人应该都懂：强化班几十讲，做错一道题想回看对应知识点，只能凭记忆拖进度条。视频没法检索、没法打印，这个痛贯穿我整个备考期。所以做了个开源技能 chalkpress——不是又一个「视频转文字」工具，而是把课程视频压缩成一册讲义 PDF：每页一个关键帧画面 + 该时间窗的字幕，文字层可检索可复制。用法就是给 agent 发一句话（ChatGPT / Claude Code 等客户端，任何能执行命令的都行）：用这个技能把我的网课视频转成讲义：agent 会自己走完整个流程：装依赖",
       "url": "https://www.v2ex.com/t/1256309",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256317",
+      "title": "有没有办法在 Codex 里用 API 额度",
+      "summary": "前这日子 openai 赠送了 api 额度，有没有办法在 codex 里用上啊",
+      "url": "https://www.v2ex.com/t/1256317",
       "source": "V2EX"
     },
     {
@@ -140,17 +133,17 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1256266",
-      "title": "我用 10 天，把 Super-agent 架构做成了一个 7×24 小时在线的产品",
-      "summary": "10 月 31 日，DeepSeek Harness 团队发表了《Super-agent 设计探索：迈向更自主的 Agent 系统》，读完以后我就做了个决定，要将它实现落地。10 天过去了，今晚我让刚上线的 Fable5.2 测完最后一个用例后，就正式上线了。这是一个真正的 7*24 小时持久在线的 Super-agent，存算分离，云端 Loop 与重状态的环境解耦，水平可扩展，基本实现了文中说的架构和功能。同时是一个 SaaS 产品。### 1.为什么第一眼就决定要将它实现落地？因为我自己就是文中的「人肉 Router」，harness 和模型能力的提升使得我们不必再困于具",
-      "url": "https://www.v2ex.com/t/1256266",
-      "source": "V2EX"
-    },
-    {
       "id": "xhot-xrss-4030636386",
       "title": "隆重推出 Gemini Decision 1，这是我们在 Gemini API 中的新前沿决策模型。每 100 万个输入代币 n 为 0.10 美元",
       "summary": "隆重推出 Gemini Decision 1，这是我们在 Gemini API 中的新前沿决策模型。每 100 万个输入代币的价格为 0.10 美元，无需额外费用。原生支持图像、音频、视频和 PDF、256K 上下文窗口和 1K 问题。您可以在-X 中免费试用",
       "url": "https://x.com/OfficialLoganK/status/2120581433639198885",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-1408486791",
+      "title": "Meta 向美国每位法定失明退伍军人免费赠送一副雷朋 Meta AI 眼镜。沙漠风暴兽医 Don Ov",
+      "summary": "Meta 向美国每位法定失明退伍军人免费赠送一副雷朋 Meta AI 眼镜。沙漠风暴兽医唐·奥弗顿要求他们阅读他的邮件，找到他的蓝色衬衫并检查菜单，并说他恢复了独立性。充分利用多模式 AI",
+      "url": "https://x.com/EvanKirstel/status/2120611659647418768",
       "source": "X"
     }
   ]

@@ -4,18 +4,16 @@
   "deadline_extracted": 6,
   "drop:duplicate": 71,
   "drop:empty_summary": 12,
-  "drop:negative_signal": 92,
-  "drop:no_clear_offer": 184,
-  "drop:not_ai": 163,
+  "drop:negative_signal": 91,
+  "drop:no_clear_offer": 182,
+  "drop:not_ai": 165,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 232,
   "google_news_total": 232,
-  "kept_total": 137,
-  "net:gnews_cache_hit": 222,
-  "net:gnews_resolved_net": 10,
-  "net:tco_expanded": 2,
-  "net:tco_failed": 1,
-  "new_this_run": 5,
+  "kept_total": 138,
+  "net:gnews_cache_hit": 232,
+  "net:tco_failed": 2,
+  "new_this_run": 2,
   "raw_total": 718
  },
  "curation_version": "2026-11-09.c3",
@@ -105,25 +103,27 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-12T05:04:39+08:00",
+ "generated_at": "2026-11-12T08:03:46+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-12T05:04:38+08:00",
+  "checked_at": "2026-11-12T08:03:46+08:00",
   "counts": {
-   "ok": 123
+   "ok": 106,
+   "unsure": 21
   },
   "hidden": 0
  },
- "seconds": 4.6,
+ "seconds": 0.7,
  "side": {
   "github_hot": {
-   "kept": 30,
+   "drop:not_ai": 1,
+   "kept": 29,
    "raw": 30
   },
   "hot_topics": {
    "drop:negative_signal": 3,
-   "drop:not_ai": 9,
-   "drop:not_ai_strict": 7,
-   "kept": 21,
+   "drop:not_ai": 11,
+   "drop:not_ai_strict": 6,
+   "kept": 20,
    "raw": 40
   }
  }
