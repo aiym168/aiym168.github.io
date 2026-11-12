@@ -4,17 +4,19 @@
   "deadline_extracted": 6,
   "drop:duplicate": 94,
   "drop:empty_summary": 21,
-  "drop:negative_signal": 96,
-  "drop:no_clear_offer": 242,
-  "drop:not_ai": 209,
+  "drop:negative_signal": 98,
+  "drop:no_clear_offer": 245,
+  "drop:not_ai": 214,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 306,
-  "google_news_total": 306,
-  "kept_total": 170,
+  "google_news_resolved": 310,
+  "google_news_total": 310,
+  "kept_total": 171,
   "net:gnews_cache_hit": 306,
+  "net:gnews_resolved_net": 4,
+  "net:tco_expanded": 2,
   "net:tco_failed": 2,
-  "new_this_run": 3,
-  "raw_total": 891
+  "new_this_run": 4,
+  "raw_total": 902
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -61,6 +63,9 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "速查表提供可直接使用的 Mentor AI 提示词，帮你摆脱卡壳又不直接给出答案",
+   "@mcwilsonky 分享：该方案教小企业在 90 天内被 ChatGPT、Claude 等 AI 助手推荐，并提供免",
+   "@sumiiitup 分享：他昨晚对阵鹈鹕时打扮成助理教练，赛后还在 IG 发帖调侃",
    "@dhh 分享：推文建议备份若干开放权重模型和基础运行设备，并称免费 AI 失去一位重要支持者",
    "@nancyrubin 分享：教师称若不提供优质 AI 工具，学生会自行寻找可用工具，封锁访问无法教会学生质疑答案",
    "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
@@ -69,12 +74,10 @@
    "Langflow 是免费 GitHub 项目，可拖入模型、数据和步骤连线，并在真实示例上测试 AI agent",
    "运行一条 npx modern-web-guidance 命令，即可让编程 agent 采用现代网页 API，减少旧代码",
    "@Pirat_Nation 分享：随着 AI 在学生提交的作品中的使用越来越多，澳大利亚的 STEM 视频游戏挑战赛将在",
-   "推文称「smol ship」意味着商业模式变成免费功能，并推介 Fireflies 的 Fred 处理会议笔记",
-   "@RSI 分享：新一届国会，不断变化的政治格局",
-   "@klindt_david 分享：其律师兄弟称存在 AI 无法替代的核心，但作者作为外行认为免费方案接近正确即可",
-   "其代码由 Amazon Bedrock AgentCore 上的自主 AI 代理编写，用于离线构建和测试应用"
+   "推文称「smol ship」意味着商业模式变成免费功能，并推介 Fireflies 的 Fred 处理会议笔记"
   ],
   "not_ai": [
+   "官方称屠杀模式下周上线，DOOM: The Dark Ages Revelations 玩家可免费游玩",
    "Modal 将赞助 Vals Hacks 第一、二赛道，提供算力额度、技术支持及2万美元奖金额度",
    "@davj 分享：推文列出首轮融资免费资源，包括 Paul Graham 融资文章和 YC 种子轮融资指南",
    "Apple 的免费容器工具利用 macOS 26 虚拟化，在 Apple Silicon 上以轻量虚拟机运行 OCI 容",
@@ -85,8 +88,7 @@
    "清单列出 Sunsama、Readwise Reader 等付费工具的免费平替及链接",
    "通过免费的交互式 React 视觉效果发现了这个 刚刚发现这个带有免费的交互式 React 视觉效果",
    "付费订阅用户可抢先预留 @muse.ai 邮箱名，该功能之后将向包括免费方案在内的所有用户开放",
-   "Azure 将基础设施、开源创新、智能运维与成本可视化结合，帮助企业推进现代化并创造业务价值",
-   "@Cloudflare 分享：首批 301,300 美元将分配给开源项目与维护者"
+   "Azure 将基础设施、开源创新、智能运维与成本可视化结合，帮助企业推进现代化并创造业务价值"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -103,16 +105,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-13T06:30:09+08:00",
+ "generated_at": "2026-11-13T06:33:11+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-13T06:30:09+08:00",
+  "checked_at": "2026-11-13T06:33:11+08:00",
   "counts": {
-   "ok": 130,
-   "unsure": 28
+   "ok": 158
   },
   "hidden": 0
  },
- "seconds": 0.8,
+ "seconds": 3.0,
  "side": {
   "github_hot": {
    "drop:not_ai": 1,
@@ -120,11 +121,11 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 5,
+   "drop:negative_signal": 4,
    "drop:not_ai": 2,
-   "drop:not_ai_strict": 4,
-   "kept": 19,
-   "raw": 30
+   "drop:not_ai_strict": 3,
+   "kept": 16,
+   "raw": 25
   }
  }
 }

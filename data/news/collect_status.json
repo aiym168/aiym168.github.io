@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-13T06:28:11+08:00",
+ "run_at": "2026-11-13T06:29:16+08:00",
  "sources": {
   "techcrunch-ai": {
    "ok": true,
@@ -173,7 +173,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 4,
+   "new": 5,
    "blocked": 0
   },
   "9to5mac-com-feed": {
@@ -261,11 +261,11 @@
    "blocked": 0
   },
   "eetimes-com-feed": {
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "rows": 0,
+   "ok": true,
+   "error": "",
+   "rows": 10,
    "new": 0,
-   "blocked": 0
+   "blocked": 2
   },
   "semiwiki-com-feed": {
    "ok": true,
@@ -292,7 +292,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 2,
+   "new": 1,
    "blocked": 4
   },
   "semiconductor-today-com-rss-news-xml": {
@@ -345,11 +345,11 @@
    "blocked": 6
   },
   "199it-com-feed": {
-   "ok": true,
-   "error": "",
-   "rows": 30,
-   "new": 6,
-   "blocked": 2
+   "ok": false,
+   "error": "URLError: <urlopen error timed out>",
+   "rows": 0,
+   "new": 0,
+   "blocked": 0
   },
   "36kr-com-feed-newsflash": {
    "ok": true,
@@ -369,8 +369,8 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 1,
-   "blocked": 5
+   "new": 0,
+   "blocked": 6
   },
   "verge": {
    "ok": true,
@@ -740,7 +740,7 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 4,
+   "new": 3,
    "blocked": 2
   },
   "v2ex-com-api-topics-hot-json": {
@@ -986,7 +986,7 @@
    "error": "",
    "rows": 30,
    "new": 0,
-   "blocked": 6
+   "blocked": 5
   },
   "gn-aiduanju": {
    "ok": true,
@@ -1026,16 +1026,16 @@
   "gn-sora": {
    "ok": true,
    "error": "",
-   "rows": 12,
-   "new": 0,
+   "rows": 11,
+   "new": 1,
    "blocked": 1
   },
   "gn-aivideo-en": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 1,
-   "blocked": 5
+   "new": 0,
+   "blocked": 6
   },
   "gn-comfyui": {
    "ok": true,
@@ -1061,7 +1061,7 @@
   "gn-llm-tut": {
    "ok": true,
    "error": "",
-   "rows": 10,
+   "rows": 11,
    "new": 0,
    "blocked": 0
   },
@@ -1104,7 +1104,7 @@
   "government": 3,
   "Democrat": 3,
   "senator": 1,
-  "Affair": 2,
+  "Affair": 3,
   "Government": 2,
   "习": 11,
   "出轨": 1,
@@ -1114,7 +1114,7 @@
   "President": 3,
   "shooter": 11,
   "vote": 3,
-  "(非科技)": 26,
+  "(非科技)": 25,
   "Ukraine": 2,
   "prison": 1,
   "voting": 1,
@@ -1130,7 +1130,7 @@
   "恐怖": 4,
   "战争": 3,
   "投票": 6,
-  "政府": 2,
+  "政府": 1,
   "航母": 1,
   "选举": 1,
   "武器": 1,
@@ -1142,7 +1142,6 @@
   "丑闻": 1,
   "离婚": 1,
   "香港": 2,
-  "西藏": 1,
   "政治": 1,
   "国务院": 1,
   "suicide": 1,
@@ -1203,24 +1202,26 @@
   "人权": 1,
   "NSFW": 2,
   "Porn": 1,
-  "Hentai": 1,
+  "Hentai": 2,
   "跳楼": 1,
   "擦边": 1,
+  "民主": 1,
   "国防": 1,
+  "袭击": 1,
   "审查": 3,
   "俄罗斯": 1,
   "领导人": 1,
   "杀人": 2
  },
- "new": 288,
+ "new": 280,
  "sources_total": 156,
  "sources_ok": 152,
  "translated": 182,
  "counts": {
   "ai": 220,
   "dev": 150,
-  "mobile": 150,
   "software": 150,
+  "mobile": 150,
   "science": 150,
   "game": 150,
   "space": 63,
