@@ -2,24 +2,25 @@
  "counts": {
   "archived": 12,
   "deadline_extracted": 6,
-  "drop:duplicate": 54,
+  "drop:duplicate": 53,
   "drop:empty_summary": 13,
-  "drop:negative_signal": 93,
-  "drop:no_clear_offer": 191,
-  "drop:not_ai": 162,
+  "drop:negative_signal": 94,
+  "drop:no_clear_offer": 193,
+  "drop:not_ai": 163,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 247,
-  "google_news_total": 247,
-  "kept_total": 165,
+  "google_news_resolved": 249,
+  "google_news_total": 249,
+  "kept_total": 164,
   "net:gnews_cache_hit": 247,
-  "raw_total": 737
+  "net:gnews_resolved_net": 2,
+  "new_this_run": 2,
+  "raw_total": 739
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "PDFMeasure：在浏览器中测量 PDF 文件",
-   "awesome-free-ai-coding：合法免费的 LLM API 和编码代理",
    "design-os-studio：用 Rust 构建的原生 GPU 加速界​​面设计工具",
    "ai-api-gateway-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
    "api-router-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
@@ -28,7 +29,8 @@
    "unified-ai-api-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
    "9routerx：9RouterX（9R Next Go Generation）",
    "wabcut：适用于游戏视频、视频文章和纪录片的免费开源视频编辑器",
-   "free-llm-intel：AI 厂商动态别挨家追"
+   "free-llm-intel：AI 厂商动态别挨家追",
+   "PixelArtistry-UltraTex：UltraTex for ComfyUI"
   ],
   "empty_summary": [
    "本周末，通过由 CTO 教授的 12 小时免费 CodeCamp 课程，免费学习 Claude Code",
@@ -59,6 +61,8 @@
    "在笔记本电脑上运行自己的 JARVIS，离线"
   ],
   "no_clear_offer": [
+   "@DeepLearningAI 分享：对表格数据进行预测，无需为每个数据集训练新模型",
+   "我们将向 @HeyGen 视频大赛的亚军提供 3000 美元的 Runware 积分",
    "n8n 刚刚推出了 Nod，这是一款免费的开源 AI 代理，即使没有 API 也能跨应用程序和网站运行",
    "您的 Claude 订阅现在有一次免费的完整重置，外加免费的 Fable 重置",
    "@MattZeitlin 分享：两年后你们尽可以嘲笑我，但我认为特朗普将在即将召开的国会上签署一项 AI 安全法案",
@@ -68,9 +72,7 @@
    "Voxtral 在语音转录方面全面优于当前领先的开源语音转录模型 Whisper large-v3",
    "OpenAI 扩展了其 ChatGPT 财务功能，可在 ChatGPT 桌面上使用",
    "思科 AI 业务从业者 (AIBIZ) 现已推出",
-   "@VaibhavSisinty 分享：我每天都会在我们的免费 AI WhatsApp 社区中分享这样的工具和信息",
-   "是的，我们 @HarrisPolicy 正在寻找更多从事 AI 研究的教授",
-   "@aiDotEngineer 分享：代码峰会直播将在 30 分钟后开始"
+   "@VaibhavSisinty 分享：我每天都会在我们的免费 AI WhatsApp 社区中分享这样的工具和信息"
   ],
   "not_ai": [
    "爆炸性新闻 彭博社报道称，NVIDIA 董事会正在与一家外部公司合作，寻找黄仁勋的继任者，可能先任命一位临时首席执行官",
@@ -101,28 +103,26 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-12T11:29:52+08:00",
+ "generated_at": "2026-11-12T13:29:28+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-12T11:29:51+08:00",
+  "checked_at": "2026-11-12T13:29:28+08:00",
   "counts": {
-   "ok": 127,
-   "unsure": 27
+   "ok": 154
   },
   "hidden": 0
  },
- "seconds": 0.6,
+ "seconds": 1.3,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:duplicate": 1,
-   "drop:negative_signal": 4,
-   "drop:not_ai": 7,
-   "drop:not_ai_strict": 8,
-   "kept": 20,
-   "raw": 40
+   "drop:negative_signal": 1,
+   "drop:not_ai": 6,
+   "drop:not_ai_strict": 9,
+   "kept": 16,
+   "raw": 32
   }
  }
 }
