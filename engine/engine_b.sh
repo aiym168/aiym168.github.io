@@ -90,6 +90,13 @@ fi
 echo "[engine-$eid] mode=$MODE"
 
 if [ "$MODE" = "standby" ]; then
+  # daily self-evolution step if no engine did it yet today (only data/evolve/* changes; model diary when ~/.llm_env exists)
+  timeout 600 python3 evolve.py daily || echo "[engine-$eid] evolve failed — skipped"
+  git add data/evolve 2>/dev/null; git add data/auto/llm_cache.json 2>/dev/null || true
+  if ! git diff --cached --quiet; then
+    git commit -q -m "evolve $(date "+%F %H:%M")"
+    push_retry "evolve" "timeout 600 python3 evolve.py daily" || echo "[engine-$eid] evolve push failed"
+  fi
   SEEN_AGE=$(EIDL=$eid python3 -c '
 import json,datetime
 try:

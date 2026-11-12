@@ -1,0 +1,57 @@
+{
+ "updated_at": "2026-11-12T19:37+08:00",
+ "days": [
+  {
+   "date": "2026-11-12",
+   "lines": [
+    "我淘汰了 Civitai 热门模型，它一直没有产出。",
+    "我淘汰了 Nature，它的抓取失败率太高。",
+    "我调整了 WIRED AI 的权重，先降一档观察。",
+    "我给 landian.news 安排了试用期观察。"
+   ],
+   "by": "model",
+   "events": [
+    {
+     "op": "pause",
+     "name": "Nature",
+     "key": "nature-com-nature-rss",
+     "why": "最近总是打不开"
+    },
+    {
+     "op": "pause",
+     "name": "Civitai 热门模型",
+     "key": "civitai-models",
+     "why": "最近总是打不开"
+    },
+    {
+     "op": "pause",
+     "name": "DEV 社区",
+     "key": "DEV.to",
+     "why": "最近总是没有内容"
+    },
+    {
+     "op": "pause",
+     "name": "Lobsters",
+     "key": "Lobsters",
+     "why": "最近总是没有内容"
+    },
+    {
+     "op": "down",
+     "name": "WIRED AI",
+     "key": "wired-ai",
+     "why": "被过滤掉的内容太多"
+    },
+    {
+     "op": "probation",
+     "name": "landian.news"
+    },
+    {
+     "op": "probation",
+     "name": "science.nasa.gov"
+    }
+   ],
+   "at": "2026-11-12T19:37+08:00",
+   "model_tried": true
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "last_step": {
+  "date": "2026-11-12",
+  "changes": [
+   {
+    "op": "pause",
+    "name": "Nature",
+    "key": "nature-com-nature-rss",
+    "why": "最近总是打不开"
+   },
+   {
+    "op": "pause",
+    "name": "Civitai 热门模型",
+    "key": "civitai-models",
+    "why": "最近总是打不开"
+   },
+   {
+    "op": "pause",
+    "name": "DEV 社区",
+    "key": "DEV.to",
+    "why": "最近总是没有内容"
+   },
+   {
+    "op": "pause",
+    "name": "Lobsters",
+    "key": "Lobsters",
+    "why": "最近总是没有内容"
+   },
+   {
+    "op": "down",
+    "name": "WIRED AI",
+    "key": "wired-ai",
+    "why": "被过滤掉的内容太多"
+   }
+  ],
+  "snapshot": "data/evolve/snapshots/2026-11-12.json",
+  "baseline": {
+   "kept": 5787,
+   "runs": 74,
+   "dead": 0,
+   "checked": 360,
+   "build_ok": 65,
+   "build_bad": 0,
+   "kept_per_run": 78.2,
+   "dead_rate": 0.0,
+   "bad_build_rate": 0.0
+  }
+ },
+ "history": [
+  {
+   "date": "2026-11-12",
+   "verdict_prev": null,
+   "changes": 5,
+   "diary_by": "rules"
+  }
+ ],
+ "last_evolve_date": "2026-11-12"
+}

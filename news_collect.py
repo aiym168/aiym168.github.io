@@ -41,9 +41,24 @@ def load_sources() -> list[tuple]:
     except Exception as e:
         print("[news] sources.json unreadable:", e)
         L = []
+    try:  # self-evolution overlay: promoted sources join, paused / slow-cadence sources sit this run out
+        import tuning
+        have = {x.get("key") for x in L}
+        L = L + [dict(x, need_ai=True) for x in tuning.promoted("news") if x["key"] not in have]
+        L = [x for x in L if tuning.should_fetch("news", x.get("key", ""))]
+        WEIGHT.update({x["key"]: tuning.weight("news", x["key"]) for x in L if x.get("key")})
+    except Exception as e:
+        print("[news] tuning overlay skipped:", e)
     KIND.update({x["key"]: x.get("kind", "") for x in L})
     return [(x["key"], x["name"], x["home"], x["feed"], x["channel"], x.get("lang", "en"), bool(x.get("need_ai")))
             for x in L if x.get("feed") and not x.get("disabled")]
+
+
+WEIGHT: dict[str, float] = {}
+
+
+def per_source_cap(key: str) -> int:
+    return max(3, min(14, round(PER_SOURCE_NEW * WEIGHT.get(key, 1.0))))
 
 
 KIND: dict[str, str] = {}
@@ -396,12 +411,25 @@ def main() -> int:
             seen.add(k)
             queue.setdefault(key, []).append((i, ch, title, summ, link, pub, r, lang))
     n_tr = 0
+    llm_zh: dict[str, dict] = {}
+    try:  # optional model: better Chinese titles/summaries for the English items about to go up (free translators stay as fallback)
+        import llm
+        if llm.available():
+            want = []
+            for key, q in queue.items():
+                for (i, ch, title, summ, link, pub, r, lang) in q[:(30 if KIND.get(key) else per_source_cap(key))]:
+                    if lang == "en" and not r.get("tpl"):
+                        want.append({"id": i, "title": title, "text": summ[:400]})
+            llm_zh = llm.translate_batch(want[:MAX_NEW_TRANSLATE], scope="pipeline", kind="news")
+            print(f"[news] model translated {len(llm_zh)}/{len(want[:MAX_NEW_TRANSLATE])}")
+    except Exception as e:
+        print("[news] model translate skipped:", type(e).__name__)
     order = [k for k in queue]
     rnd = 0
     while order and rnd < 30:
         for key in list(order):
             q = queue[key]
-            if rnd >= len(q) or rnd >= (30 if KIND.get(key) else PER_SOURCE_NEW):
+            if rnd >= len(q) or rnd >= (30 if KIND.get(key) else per_source_cap(key)):
                 order.remove(key); continue
             i, ch, title, summ, link, pub, r, lang = q[rnd]
             _, name, home, *_r = SRC[key]
@@ -410,6 +438,9 @@ def main() -> int:
                 sz = summ if (not summ or re.search(r"[\u4e00-\u9fff]", summ)) else (tr(summ[:300]) if tr and n_tr < MAX_NEW_TRANSLATE else "")
                 if summ and not re.search(r"[\u4e00-\u9fff]", summ):
                     n_tr += 1
+            elif lang == "en" and i in llm_zh:
+                tz, sz = llm_zh[i]["title"], (llm_zh[i]["summary"] or (tr(summ[:300]) if (tr and summ) else ""))
+                n_tr += 1
             elif lang == "en":
                 if not tr or n_tr >= MAX_NEW_TRANSLATE:
                     continue  # 留到下次，不发未翻译的英文

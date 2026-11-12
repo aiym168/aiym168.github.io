@@ -393,7 +393,28 @@ def brain_intro_beats(prefix: str, upd: str, nxt: str, today_new: int, total: in
     ]
 
 
-def brain_core(prefix: str, now: datetime, nxt: datetime, today_new: int, total: int, voice: bool = True, nodes: int = 4200) -> str:
+def evolve_diary(now: datetime, n: int = 3) -> tuple[str, list[str]]:
+    """Latest evolution diary (data/evolve/diary.json, written by evolve.py from the real source ledger)."""
+    try:
+        d0 = ((load_json(DATA / "evolve" / "diary.json") or {}).get("days") or [{}])[0]
+        dt = datetime.strptime(d0.get("date", ""), "%Y-%m-%d").replace(tzinfo=now.tzinfo)
+        if (now - dt).days > 2:
+            return "", []
+        return d0["date"][5:].replace("-", "-"), [str(x) for x in (d0.get("lines") or [])][:n]
+    except Exception:
+        return "", []
+
+
+def evolve_block(now: datetime, cls: str = "bc-evo", n: int = 3) -> str:
+    day, lines = evolve_diary(now, n)
+    if not lines:
+        return ""
+    lis = "".join(f"<li>{esc(x)}</li>" for x in lines)
+    return f'<div class="{cls}"><span class="evo-k">进化日记 · {esc(day)}</span><ul class="evo-list">{lis}</ul></div>'
+
+
+def brain_core(prefix: str, now: datetime, nxt: datetime, today_new: int, total: int, voice: bool = True, nodes: int = 4200,
+               evo: bool = True) -> str:
     """Brain stage + console: live heartbeat (real last/next update times), identity, arrival greeting, click-to-intro."""
     upd, nx = now.strftime("%H:%M"), nxt.strftime("%H:%M")
     beats = brain_intro_beats(prefix, upd, nx, today_new, total)
@@ -428,6 +449,7 @@ def brain_core(prefix: str, now: datetime, nxt: datetime, today_new: int, total:
     </div>
     <svg class="bc-ecg" viewBox="0 0 300 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14H70l6-8 6 16 6-22 7 26 5-12h40l5-5 5 5h60l6-8 6 16 6-22 7 26 5-12h45"/></svg>
     <p class="bc-id"><b>{esc(BRAIN_ID[0])}</b>{esc(BRAIN_ID[1])}</p>{voice_html}
+    {evolve_block(now) if evo else ""}
   </section>
 </div>"""
 
@@ -1487,6 +1509,7 @@ def write_brain_page(date: str, now: datetime, nxt: datetime, active: list, arch
         <div class="mood-row"><span class="mk">此刻心情</span><div><b class="mood-tag" data-mood-label>{esc(m["label"])}</b><p data-mood-text>{esc(m["mood"])}</p></div></div>
         <div class="mood-row"><span class="mk">正在做</span><p data-mood-now>{esc(m["now"])}</p></div>
         <div class="mood-row"><span class="mk">接下来</span><p data-mood-next>{esc(m["next"])}</p></div>
+        {(lambda d: f'<div class="mood-row"><span class="mk">进化日记</span><div><b class="mood-tag">{esc(d[0])}</b><ul class="evo-list">' + "".join(f"<li>{esc(x)}</li>" for x in d[1]) + "</ul></div></div>" if d[1] else "")(evolve_diary(now, 4))}
         <div class="brain-ask">
           <p class="ba-q">地球人，你有什么要跟我说的？</p>
           <p class="ba-d">提问、许愿、吐槽、推荐资源都行。写进星际信号站，审核通过后我会收到、读懂，再亲自回你。</p>
@@ -1513,7 +1536,7 @@ def write_brain_page(date: str, now: datetime, nxt: datetime, active: list, arch
       <p class="lead">我是 AI大模型免费资源导航的大脑。整座站由我接管：每小时醒一次，收集、筛选、翻译、核对、上架，再把过期的归档。</p>
       {mood_html}
     </div>
-    {brain_core(prefix, now, nxt, today_new, len(active), voice=True, nodes=4800)}
+    {brain_core(prefix, now, nxt, today_new, len(active), voice=True, nodes=4800, evo=False)}
   </div>
 </header>
 {brain_loader_script(prefix + "vendor/")}

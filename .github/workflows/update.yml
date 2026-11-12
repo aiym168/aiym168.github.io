@@ -29,6 +29,7 @@ on:
       - "news_build.py"
       - "data/news/sources.json"
       - "data/ai_tools.json"
+      - "evolve.py"
       - "vendor/**"
       - "cli/**"
       - "cli.sh"
@@ -68,6 +69,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
           VERIFY_BAIDU: ${{ secrets.VERIFY_BAIDU }}
           BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
+          # optional model (titles/summaries, daily evolution diary); empty = rule-based path
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
         run: bash engine/pipeline.sh
 
       - name: Commit and push (GitHub Pages)

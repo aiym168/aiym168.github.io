@@ -48,6 +48,9 @@ if [ "$FETCH" = "1" ]; then
 fi
 # 4d) link check: open every listed link; dead twice in a row = hidden by build.py (never blocks the build)
 timeout 300 python3 linkcheck.py || log "[heal] linkcheck failed — continue"
+# 4f) self-evolution: per-source ledger every run; once a day tune sources within guardrails + diary
+#     (only data/evolve/* changes; on any failure the collectors keep the last good tuning)
+timeout 600 python3 evolve.py run || log "[heal] evolve failed — keep current tuning"
 
 # 5) build
 RESULT=ok

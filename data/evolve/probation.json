@@ -1,0 +1,66 @@
+{
+ "candidates": [
+  {
+   "key": "cand-landian-news",
+   "name": "landian.news",
+   "home": "https://landian.news/",
+   "feed": "https://www.landian.news/feed",
+   "channel": "software",
+   "lang": "zh",
+   "origin": "mined",
+   "added": "2026-11-12",
+   "trials": [
+    {
+     "date": "2026-11-12",
+     "ok": true,
+     "rows": 20,
+     "recent": 20,
+     "blocked": 3,
+     "on_topic": 5,
+     "offtopic": 0,
+     "zh": true
+    }
+   ],
+   "score": {
+    "trials": 1,
+    "ok": 1,
+    "blocked": 3,
+    "on_topic": 0.25,
+    "recent": 20.0,
+    "block_rate": 0.15
+   }
+  },
+  {
+   "key": "cand-science-nasa-gov",
+   "name": "science.nasa.gov",
+   "home": "https://science.nasa.gov/",
+   "feed": "https://science.nasa.gov/feed/",
+   "channel": "space",
+   "lang": "en",
+   "origin": "mined",
+   "added": "2026-11-12",
+   "trials": [
+    {
+     "date": "2026-11-12",
+     "ok": true,
+     "rows": 10,
+     "recent": 10,
+     "blocked": 1,
+     "on_topic": 1,
+     "offtopic": 0,
+     "zh": false
+    }
+   ],
+   "score": {
+    "trials": 1,
+    "ok": 1,
+    "blocked": 1,
+    "on_topic": 0.1,
+    "recent": 10.0,
+    "block_rate": 0.1
+   }
+  }
+ ],
+ "rejected": [],
+ "rejected_domains": []
+}

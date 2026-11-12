@@ -45,6 +45,11 @@ jobs:
         env:
           BOARD_PRIVATE_KEY: ${{ secrets.BOARD_PRIVATE_KEY }}
           BOARD_HIDE: ${{ github.event.inputs.hide }}
+          # optional model replies; without the secrets the rule-based reply is used
+          BOARD_REPLY_HOOK: board.llm_reply:compose
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
         run: python -m board.ingest
       - name: Commit
         run: |

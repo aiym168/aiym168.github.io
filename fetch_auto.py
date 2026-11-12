@@ -398,7 +398,27 @@ def batch_translate(rows: list[dict], kind: str, batch_size: int = 12) -> dict[s
     if not rows:
         return out
     print(f"[translate] batch kind={kind} n={len(rows)}")
+    llm_zh: dict[str, dict] = {}
+    if kind == "deal":
+        try:  # optional model first; free translators below stay as fallback
+            import llm
+            if llm.available():
+                want = [{"id": r["id"], "title": (r.get("title") or "")[:180], "text": (r.get("text") or "")[:500]}
+                        for r in rows if not has_cjk(r.get("title") or "")]
+                llm_zh = llm.translate_batch(want, scope="pipeline", kind="deal")
+                print(f"[translate] model handled {len(llm_zh)}/{len(want)}")
+        except Exception as e:
+            print(f"[translate] model skipped: {type(e).__name__}")
     for i, r in enumerate(rows):
+        if r["id"] in llm_zh:
+            title = (r.get("title") or "")[:180]
+            text = (r.get("text") or r.get("title") or "")[:800]
+            z = llm_zh[r["id"]]
+            out[r["id"]] = {"category": keyword_classify(f"{title} {text}")[0], "title": z["title"],
+                            "summary": z["summary"] or translate_fields("", text)["summary"],
+                            "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+                            "original_title": title, "original_summary": text or title, "translated_by": "model"}
+            continue
         try:
             title = (r.get("title") or "")[:180]
             text = (r.get("text") or r.get("title") or "")[:800]
@@ -959,6 +979,13 @@ def main():
         if selfheal.should_skip(name):
             print(f"[heal] {name} auto-skipped (backoff until {selfheal.load()['sources'][name].get('skip_until_label')})")
             continue
+        try:  # self-evolution overlay (data/evolve/tuning.json): paused or slower cadence
+            import tuning
+            if not tuning.should_fetch("deals", name):
+                print(f"[evolve] {name} rests this run (tuning)")
+                continue
+        except Exception:
+            pass
         try:
             got = fn()
             print(f"[fetch] {name}: {len(got)}")
