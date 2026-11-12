@@ -4,23 +4,21 @@
   "deadline_extracted": 6,
   "drop:duplicate": 55,
   "drop:empty_summary": 13,
-  "drop:negative_signal": 91,
-  "drop:no_clear_offer": 190,
+  "drop:negative_signal": 92,
+  "drop:no_clear_offer": 189,
   "drop:not_ai": 161,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 238,
-  "google_news_total": 238,
-  "kept_total": 159,
-  "net:gnews_cache_hit": 236,
-  "net:gnews_resolved_net": 2,
-  "net:tco_expanded": 6,
-  "new_this_run": 22,
-  "raw_total": 728
+  "google_news_resolved": 239,
+  "google_news_total": 239,
+  "kept_total": 160,
+  "net:gnews_cache_hit": 238,
+  "net:gnews_resolved_net": 1,
+  "raw_total": 729
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
-   "Simstim：Mac 上的本地呼叫转录为.md 文件",
+   "PDFMeasure：在浏览器中测量 PDF 文件",
    "gemini-4-carbon 免费一天",
    "再聊 Claude 终极防封方案，持续更新被封情况",
    "awesome-free-ai-coding：合法免费的 LLM API 和编码代理",
@@ -48,6 +46,7 @@
    "今日免费 GPU，是的，全球范围内都有"
   ],
   "negative_signal": [
+   "@mcwilsonky 分享：客户正在询问 AI 该雇用谁",
    "@EvanKirstel 分享：英格兰大学监管机构希望进行更多无 AI 的评估",
    "@mdancho84 分享：我将举办一场免费的研讨会，帮助您开始使用 Python 开展 AI+数据科学项目",
    "Meta：为广告支付20倍的收益，免费获得 AI $META 股票 金融 股市 Meta：为广告支付20倍的利润",
@@ -58,8 +57,7 @@
    "为 Grok Bot 模式命名一次，每个后续都会保留在该模式中",
    "如何使用 Claude Fable 5.2 进行 SEO 效果如此之好，感觉不合法 FABLE 5.2 昨天发布",
    "在笔记本电脑上运行自己的 JARVIS，离线",
-   "将 Day-One Page 工作交给您自己的 SEO 主管",
-   "免费课程：这个新的 Claude Agentic 操作系统改变了一切"
+   "将 Day-One Page 工作交给您自己的 SEO 主管"
   ],
   "no_clear_offer": [
    "@LAMaterialNews 分享：要烤深盘披萨，你真的必须尝试一下",
@@ -104,15 +102,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-12T08:30:14+08:00",
+ "generated_at": "2026-11-12T09:03:27+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-12T08:30:13+08:00",
+  "checked_at": "2026-11-12T09:03:27+08:00",
   "counts": {
-   "ok": 127
+   "ok": 149
   },
   "hidden": 0
  },
- "seconds": 1.7,
+ "seconds": 1.0,
  "side": {
   "github_hot": {
    "drop:not_ai": 1,
@@ -121,10 +119,10 @@
   },
   "hot_topics": {
    "drop:negative_signal": 3,
-   "drop:not_ai": 12,
-   "drop:not_ai_strict": 5,
-   "kept": 20,
-   "raw": 40
+   "drop:not_ai": 11,
+   "drop:not_ai_strict": 6,
+   "kept": 18,
+   "raw": 38
   }
  }
 }
