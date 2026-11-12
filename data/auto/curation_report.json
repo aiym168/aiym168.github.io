@@ -4,23 +4,22 @@
   "deadline_extracted": 6,
   "drop:duplicate": 53,
   "drop:empty_summary": 13,
-  "drop:negative_signal": 92,
-  "drop:no_clear_offer": 193,
-  "drop:not_ai": 165,
+  "drop:negative_signal": 93,
+  "drop:no_clear_offer": 192,
+  "drop:not_ai": 166,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 249,
   "google_news_total": 249,
-  "kept_total": 164,
+  "kept_total": 163,
   "net:gnews_cache_hit": 249,
-  "net:tco_failed": 2,
-  "new_this_run": 3,
+  "net:tco_failed": 1,
+  "new_this_run": 1,
   "raw_total": 739
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "PDFMeasure：在浏览器中测量 PDF 文件",
    "design-os-studio：用 Rust 构建的原生 GPU 加速界​​面设计工具",
    "ai-api-gateway-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
    "api-router-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
@@ -30,7 +29,8 @@
    "9routerx：9RouterX（9R Next Go Generation）",
    "wabcut：适用于游戏视频、视频文章和纪录片的免费开源视频编辑器",
    "free-llm-intel：AI 厂商动态别挨家追",
-   "PixelArtistry-UltraTex：UltraTex for ComfyUI"
+   "PixelArtistry-UltraTex：UltraTex for ComfyUI",
+   "image-api-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型"
   ],
   "empty_summary": [
    "本周末，通过由 CTO 教授的 12 小时免费 CodeCamp 课程，免费学习 Claude Code",
@@ -103,15 +103,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-12T16:11:17+08:00",
+ "generated_at": "2026-11-12T18:17:45+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-12T16:11:17+08:00",
+  "checked_at": "2026-11-12T18:17:44+08:00",
   "counts": {
    "ok": 153
   },
   "hidden": 0
  },
- "seconds": 0.7,
+ "seconds": 0.8,
  "side": {
   "github_hot": {
    "kept": 30,
@@ -119,10 +119,10 @@
   },
   "hot_topics": {
    "drop:negative_signal": 4,
-   "drop:not_ai": 9,
-   "drop:not_ai_strict": 7,
-   "kept": 15,
-   "raw": 35
+   "drop:not_ai": 7,
+   "drop:not_ai_strict": 3,
+   "kept": 18,
+   "raw": 32
   }
  }
 }
