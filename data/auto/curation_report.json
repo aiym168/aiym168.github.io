@@ -2,23 +2,23 @@
  "counts": {
   "archived": 12,
   "deadline_extracted": 6,
-  "drop:duplicate": 55,
+  "drop:duplicate": 54,
   "drop:empty_summary": 15,
-  "drop:negative_signal": 95,
-  "drop:no_clear_offer": 205,
-  "drop:not_ai": 172,
+  "drop:negative_signal": 93,
+  "drop:no_clear_offer": 209,
+  "drop:not_ai": 171,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 271,
   "google_news_total": 271,
   "kept_total": 163,
   "net:gnews_cache_hit": 271,
+  "new_this_run": 3,
   "raw_total": 764
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "Simstim：Mac 上的本地呼叫转录为.md 文件",
    "design-os-studio：用 Rust 构建的原生 GPU 加速界​​面设计工具",
    "ai-api-gateway-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
    "api-router-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
@@ -28,7 +28,8 @@
    "9routerx：9RouterX（9R Next Go Generation）",
    "wabcut：适用于游戏视频、视频文章和纪录片的免费开源视频编辑器",
    "free-llm-intel：AI 厂商动态别挨家追",
-   "PixelArtistry-UltraTex：UltraTex for ComfyUI"
+   "PixelArtistry-UltraTex：UltraTex for ComfyUI",
+   "image-api-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型"
   ],
   "empty_summary": [
    "@PFF 分享：提供180+新指标、自定义数据可视化、32000+统计组合和 Guru AI 访问，可免费试用",
@@ -101,25 +102,26 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-12T20:44:01+08:00",
+ "generated_at": "2026-11-12T21:14:48+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-12T20:44:01+08:00",
+  "checked_at": "2026-11-12T21:14:47+08:00",
   "counts": {
-   "ok": 152
+   "ok": 105,
+   "unsure": 47
   },
   "hidden": 0
  },
- "seconds": 0.3,
+ "seconds": 0.6,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 5,
+   "drop:negative_signal": 7,
    "drop:not_ai": 13,
    "drop:not_ai_strict": 1,
-   "kept": 21,
+   "kept": 19,
    "raw": 40
   }
  }
