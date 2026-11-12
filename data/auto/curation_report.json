@@ -2,22 +2,26 @@
  "counts": {
   "archived": 12,
   "deadline_extracted": 6,
-  "drop:duplicate": 53,
-  "drop:empty_summary": 13,
-  "drop:negative_signal": 93,
-  "drop:no_clear_offer": 192,
-  "drop:not_ai": 166,
+  "drop:duplicate": 55,
+  "drop:empty_summary": 15,
+  "drop:negative_signal": 95,
+  "drop:no_clear_offer": 205,
+  "drop:not_ai": 172,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 249,
-  "google_news_total": 249,
+  "google_news_resolved": 271,
+  "google_news_total": 271,
   "kept_total": 163,
   "net:gnews_cache_hit": 249,
-  "raw_total": 739
+  "net:gnews_resolved_net": 22,
+  "net:tco_expanded": 18,
+  "new_this_run": 1,
+  "raw_total": 764
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
+   "Simstim：Mac 上的本地呼叫转录为.md 文件",
    "design-os-studio：用 Rust 构建的原生 GPU 加速界​​面设计工具",
    "ai-api-gateway-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
    "api-router-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
@@ -27,10 +31,11 @@
    "9routerx：9RouterX（9R Next Go Generation）",
    "wabcut：适用于游戏视频、视频文章和纪录片的免费开源视频编辑器",
    "free-llm-intel：AI 厂商动态别挨家追",
-   "PixelArtistry-UltraTex：UltraTex for ComfyUI",
-   "image-api-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型"
+   "PixelArtistry-UltraTex：UltraTex for ComfyUI"
   ],
   "empty_summary": [
+   "@PFF 分享：提供180+新指标、自定义数据可视化、32000+统计组合和 Guru AI 访问，可免费试用",
+   "观点：AI 热潮始于 ImageNet 这类全球研究者可免费使用的开放数据集，而机器人领域仍缺同样的公开真实数据",
    "本周末，通过由 CTO 教授的 12 小时免费 CodeCamp 课程，免费学习 Claude Code",
    "微软副总裁 Scott Hanselman 发布了“gputaskman”，这是一款免费的开源 GPU 监控实用程序",
    "81 分钟学习 Claude Code，freeCodeCamp 刚刚推出其他免费书籍和课程 81 分钟内学习 Clau",
@@ -40,11 +45,13 @@
    "@appleinsider 分享：随着苹果扩大面向学生和企业的教育计划，土耳其即将推出免费编码课程和 AI 制造培训",
    "今天免费 GPU",
    "@TeachHoopsBBall 分享：免费学习 AI",
-   "@TeachHoopsBBall 分享：免费学习 AI",
-   "今天免费 GPU...也许免费 PC",
-   "今日免费 GPU，是的，全球范围内都有"
+   "@TeachHoopsBBall 分享：免费学习 AI"
   ],
   "negative_signal": [
+   "我将向 2 人赠送一整年的 Claude Max 免费入场",
+   "@alex_prompter 分享：每周分享一个 AI 实用技巧，订阅免费",
+   "作者把自家站点在用的12个 SKILL.md 工作流全部开源，可用 npx skills add 安装",
+   "@pillitterip 分享：该插件已获 28,355 星",
    "@MattiHaapoja 分享：以下是我如何免费学习 AI 电影制作的",
    "@mcwilsonky 分享：客户正在询问 AI 该雇用谁",
    "@EvanKirstel 分享：英格兰大学监管机构希望进行更多无 AI 的评估",
@@ -52,39 +59,35 @@
    "Meta：为广告支付20倍的收益，免费获得 AI $META 股票 金融 股市 Meta：为广告支付20倍的利润",
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理",
    "@mcwilsonky 分享：客户正在询问 AI 该雇用谁",
-   "@higgsfield 分享：开始您的72小时免费希格斯菲尔德 MCP 试用，无限制访问所有顶级视频，图像和音频模型",
-   "在周中之前阻止您的 Grok 机器人燃烧每周限制",
-   "为 Grok Bot 模式命名一次，每个后续都会保留在该模式中",
-   "如何使用 Claude Fable 5.2 进行 SEO 效果如此之好，感觉不合法 FABLE 5.2 昨天发布",
-   "在笔记本电脑上运行自己的 JARVIS，离线"
+   "@higgsfield 分享：开始您的72小时免费希格斯菲尔德 MCP 试用，无限制访问所有顶级视频，图像和音频模型"
   ],
   "no_clear_offer": [
-   "@DeepLearningAI 分享：对表格数据进行预测，无需为每个数据集训练新模型",
-   "我们将向 @HeyGen 视频大赛的亚军提供 3000 美元的 Runware 积分",
-   "n8n 刚刚推出了 Nod，这是一款免费的开源 AI 代理，即使没有 API 也能跨应用程序和网站运行",
-   "您的 Claude 订阅现在有一次免费的完整重置，外加免费的 Fable 重置",
-   "@MattZeitlin 分享：两年后你们尽可以嘲笑我，但我认为特朗普将在即将召开的国会上签署一项 AI 安全法案",
-   "@LAMaterialNews 分享：要烤深盘披萨，你真的必须尝试一下",
-   "我们的首席执行官 @JensenHuang 在阿斯塔纳会见了下一代 AI 构建者",
-   "Magistral 有两种版本：Magistral Small（24B 参数开源版本）和 Magistral",
-   "Voxtral 在语音转录方面全面优于当前领先的开源语音转录模型 Whisper large-v3",
-   "OpenAI 扩展了其 ChatGPT 财务功能，可在 ChatGPT 桌面上使用",
-   "思科 AI 业务从业者 (AIBIZ) 现已推出",
-   "@VaibhavSisinty 分享：我每天都会在我们的免费 AI WhatsApp 社区中分享这样的工具和信息"
+   "@testingcatalog 分享：面向催缴欠款、取消试用订阅等小任务，用户可在 Telegram 或 WhatsAp",
+   "通过 HeyGen MCP 让 AI 智能体用 HeyGen Video 1.0生成视频并润色",
+   "@themissexcel 分享：11月12、13日免费直播，演示如何用 Excel 结合 ChatGPT",
+   "并列出替代方案：Mistral 每月15美元含250–300美元 Vibe Code 用量及约25.5美元 API 额度",
+   "@Timothy_Hughes 分享：文章讨论 AI 智能体如何介入采购流程，避免交易因缺少人工跟进而停滞",
+   "@raisinadialogue 分享：讨论在 AI 与数据中心用电激增背景下，核能能否在保持可负担性和电网稳定的同时提",
+   "@pkBritish 分享：11月19日12:00–13:30 GMT 线上举行，讲解高效提示词、流程优化，英国校友可免",
+   "Anthropic 为付费 Claude 用户提供免费全面重置",
+   "@malpani 分享：我们正在寻找能够帮助我们在 上营销我们的免费 AI 学习伴侣的人，但问题是大多数营销人员都使用 ",
+   "@shawnguyen 我达到了我的 DM 限制",
+   "Andrej Karpathy 将他的整个 AI 课程免费放在 GitHub 上",
+   "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入"
   ],
   "not_ai": [
+   "通过免费的交互式 React 视觉效果发现了这个 刚刚发现这个带有免费的交互式 React 视觉效果",
+   "付费订阅用户可抢先预留 @muse.ai 邮箱名，该功能之后将向包括免费方案在内的所有用户开放",
+   "Azure 将基础设施、开源创新、智能运维与成本可视化结合，帮助企业推进现代化并创造业务价值",
+   "@Cloudflare 分享：首批 301,300 美元将分配给开源项目与维护者",
+   "@Netlify 分享：官方帖文提供完整介绍、文档，以及编写、运行和部署第一个服务的指南",
    "爆炸性新闻 彭博社报道称，NVIDIA 董事会正在与一家外部公司合作，寻找黄仁勋的继任者，可能先任命一位临时首席执行官",
    "您现在可以在 Mac 上本地运行 pplx-decider-flash-v1.2，无需 API 密钥",
    "计算机可以在 Shopify 中创建广告、构建登陆页面，以及在 Klaviyo 中运行电子邮件营销活动",
    "@RealDCunningham 分享：写了一个令人不安的事实，即克利夫兰轮换阵容中的每个成员在詹姆斯·哈登在场时都比在",
    "@rosemoni18 分享：@AbirOnAI “如此宝贵的免费资源合集",
    "@fal 分享：呼叫所有游戏开发者，我们正在与 @opengameio 合作，帮助您将最疯狂的游戏创意变为现实",
-   "Cha-ching 财务现在位于桌面应用程序中",
-   "AWS 首席执行官马特·加曼 (Matt Garman) 谈到轨道数据中心时表示：“我认为，在未来一两年内",
-   "@ansonlin，您期待纽约市的人们提供免费工作",
-   "在接下来的两周内，可在 fal 上使用 MiniMax H3 Image 进行免费生成",
-   "易受攻击的帖子：我 90% 的时间都花在 @chatprd 上，处理日益富有创意的国际代币欺诈操作，这让我想关闭该公司",
-   "我们为所有 Pro、Max、Ultra 和 Team 用户提供了一次免费的全面重置，涵盖所有型号和限制"
+   "Cha-ching 财务现在位于桌面应用程序中"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -101,26 +104,26 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-12T19:53:23+08:00",
+ "generated_at": "2026-11-12T20:30:24+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-12T19:53:22+08:00",
+  "checked_at": "2026-11-12T20:30:24+08:00",
   "counts": {
    "ok": 152
   },
   "hidden": 0
  },
- "seconds": 0.5,
+ "seconds": 10.5,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 7,
-   "drop:not_ai_strict": 3,
-   "kept": 18,
-   "raw": 32
+   "drop:negative_signal": 5,
+   "drop:not_ai": 13,
+   "drop:not_ai_strict": 1,
+   "kept": 21,
+   "raw": 40
   }
  }
 }

@@ -3,8 +3,8 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 18,
-  "generated_at": "2026-11-12T19:53:23+08:00",
+  "count": 21,
+  "generated_at": "2026-11-12T20:30:24+08:00",
   "items": [
     {
       "id": "hnhot-50452455",
@@ -28,17 +28,10 @@
       "source": "Hacker News"
     },
     {
-      "id": "hnhot-50453637",
-      "title": "Atuin Threads：您在每台机器上的所有代理会话",
-      "summary": "",
-      "url": "https://blog.atuin.sh/threads-agent-sessions/",
-      "source": "Hacker News"
-    },
-    {
-      "id": "v2hot-1256516",
-      "title": "受给电驴装监控老哥的启发，我用 AI 搞了个手机哨兵！",
-      "summary": "在天网加持下，有人脸照片时，帽子叔叔找回物品难度大大降低。因此，用 ai 也搞了一个类似的，当有人捡到你的 iphone 把玩的时候，可以悄悄拍照、定位回传。报警速度快的话，交给帽子叔叔，应该能在手机抵达华强北成为零件之前找到你的爱机。![图片](",
-      "url": "https://www.v2ex.com/t/1256516",
+      "id": "v2hot-1256567",
+      "title": "寻下游,Claude-KYC",
+      "summary": "本人肉身在刚果(官方支持),身边很多小黑 寻稳定的下游单子 KYC 的,有量有价",
+      "url": "https://www.v2ex.com/t/1256567",
       "source": "V2EX"
     },
     {
@@ -49,10 +42,17 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1256526",
-      "title": "[送码] 波波抖音助手 7 天 VIP 体验码 10 个：推荐流挂机 + AI 神评，先到先得",
-      "summary": "大家好，我是波波抖音助手的开发者。波波抖音助手是一个跑在抖音网页版上的 Chrome / Edge 扩展，主要做三件事：推荐流自动浏览挂机，不用一直守着刷；关键词搜索获客，在评论区找意向客户；云端 AI 神评，评论自动生成，不用自己憋文案。免费版每天有试用额度。这次放出 10 个 7 天 VIP 体验码，激活后 7 天内专业版功能随便用，先到先得。** [ 7 天 VIP 体验码] ** 在插件 [设置 / 卡密激活] 中粘贴激活：01. DY-PRO-66AF6687-881957B8 02. DY-PRO-E4640FB2-A3",
-      "url": "https://www.v2ex.com/t/1256526",
+      "id": "v2hot-1256574",
+      "title": "其实 AI 是一种平权……",
+      "summary": "其实 AI 是一种平权，它能让普通人以前所未有的方式接触和使用整个世界的知识。我们现在对 AI 的用法还是太粗陋了，以 AI 的能力势必对各行各业产生更大的渗透。可以预见的是，不管大家是否接受，这个时代都将到来。而普通人能做的，是拥有这场科技平权，并尽快用它武装自己。",
+      "url": "https://www.v2ex.com/t/1256574",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256550",
+      "title": "用 Claude Fable 5.2 做的视频，真的很酷～",
+      "summary": "",
+      "url": "https://www.v2ex.com/t/1256550",
       "source": "V2EX"
     },
     {
@@ -63,17 +63,31 @@
       "source": "V2EX"
     },
     {
+      "id": "v2hot-1256579",
+      "title": "用了这么久 Codex，你知道哪个项目、哪个会话最吃 Token 吗？",
+      "summary": "如果你也同时用 Codex 推进几个项目，回想一下：最近一周，哪个项目用掉的 Token 最多？消耗最多的是哪些会话？为什么这个会话消耗了这么多的 Token？订阅额度怎么一下子就没有了。这个会话消耗了多少订阅额度？里面主要在写代码、查资料，还是反复跑命令和修问题？这些问题让我觉得，要有一个能从项目和会话查看 Codex Token 和消耗订阅额度的工具。于是做了 Codex Usage Desktop [ ]。项目免费开源，支",
+      "url": "https://www.v2ex.com/t/1256579",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256573",
+      "title": "有没有什么好用的支持自部署的审核端侧小模型？",
+      "summary": "需求就是给一段话，多语言，500 字左右。能在 5s-10s 内判断出来这段文字是不是色情文字这种 资源节省能力强一些的。。有吗？给平台做审核用。别的功能都不需要。用官方的 api 都太慢了。",
+      "url": "https://www.v2ex.com/t/1256573",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256559",
+      "title": "做了个 VS Code 扩展，把 tmux 里 Claude Code、Codex 的会话放进侧栏",
+      "summary": "我平时 Claude Code 和 Codex 换着用，额度用完了换一个，有的任务另一个更合适。项目约定都写在 AGENTS.md 里，哪个 Agent 都能读，所以换得很勤。换得越勤，会话越多，散在各个项目和终端标签里，哪个还在跑、哪个跑完了，全靠记。所以做了 Berth。它是一个 VS Code 扩展，侧栏按项目列出 tmux 里的 Agent 会话，能看到每个在做什么、是不是还在跑，也能按名称、对话标题或目录搜索。点一下，终端就在编辑器区域打开，旁边开着源码和 diff。除了 Claude Code 和 Codex，Gemini CLI、OpenCode、Copilot",
+      "url": "https://www.v2ex.com/t/1256559",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1256552",
       "title": "ChatGPT 代充平台怎么选？账号安全、Account ID 与售后政策：小羊 Plus 详细介绍",
       "summary": "# ChatGPT 代充平台怎么选？账号安全、Account ID 与售后政策：小羊 Plus 详细介绍 对于国内用户来说，开通 ChatGPT Plus 或 Pro，除了考虑会员价格，还需要关注支付方式、账号安全、订单处理以及后续售后。目前，市面上提供 ChatGPT 第三方订阅服务的平台不少，不同平台采用的账号操作方式、交付流程和售后规则也存在区别。小羊 Plus （xiaoyangplus.com）是一家面向中文用户的独立第三方 AI 会员及数字服务平台，主要提供 ChatGPT Plus、Pro 等相关服务，同时涉及 Claude Pro、Codex 等",
       "url": "https://www.v2ex.com/t/1256552",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1256550",
-      "title": "用 Claude Fable 5.2 做的视频，真的很酷～",
-      "summary": "",
-      "url": "https://www.v2ex.com/t/1256550",
       "source": "V2EX"
     },
     {
@@ -98,38 +112,45 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1256515",
-      "title": "Claude 号被封了？30 秒重新接入 Claude Code",
-      "summary": "刚给 Claude 充了 Max 就收到停用通知？！天塌了，好几个任务都做到一半，这怎么继续搞啊！？换邮箱、换支付渠道、重新注册，然后去学习“保号攻略”，发现需要研究的知识点可太多了：挑网络、查 IP、改时区。。。有人说“新号必须得先“养”几天，还有人建议别把付费额度用完。。。保号攻略却越看越多，越看头越大，越看越没底。。。与其继续把时间花在研究怎么不被封号，不如先把手头的任务继续做下去。通过藕片 接入 Claude，省去重新开通 Claude 订阅的步骤。使用快速接入，一行代码就配好，30 秒重启开发任务。",
-      "url": "https://www.v2ex.com/t/1256515",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1256511",
-      "title": "做了个无账户无服务端的 Pi Agent 移动端 - Pi Remote",
-      "summary": "有时候并不想长时间坐在电脑前用 Agent 去做开发工作，所以就做了这款应用。使用 ssh 连接远程机器，登录和安装好依赖后就可以用手机去用 Pi 去处理一些工作。个人用了一段时间，有时候躺在也可以做一些修改工作也是不错的。当然需要预览运行等内容就无法很好的支持了。对话存在于远程机器上，因此 app 中断、关闭后，也可以恢复对话，不影响正在进行的工作。![Pi Remote]( 免费版本足够处理很多工作，",
-      "url": "https://www.v2ex.com/t/1256511",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1256503",
-      "title": "Google 出了个只打分不说话的 Gemini，拿来做 agent 路由应该挺合适",
-      "summary": "刷到 Google 昨天发的 Gemini Decision 1 和配套的 Decisions API。它不生成文字，你给一组封闭选项，它直接给每个选项打分，返回概率。官方举的用途就是工具选择、模型路由、策略校验这些。现在不少人做 agent 路由，还是让一个小模型吐 JSON 再解析，格式偶尔还会坏。这个接口直接给概率，解析这一步就省了。官方写的价格是输入 $0.10/百万 token，输出不",
-      "url": "https://www.v2ex.com/t/1256503",
-      "source": "V2EX"
-    },
-    {
-      "id": "xhot-xrss-5188932259",
-      "title": "我们将向 @HeyGen 视频大赛的亚军提供 3000 美元的 Runware 积分！要参与，请要求您的 AI 代理",
-      "summary": "我们将向 @HeyGen 视频大赛的亚军提供 3000 美元的 Runware 积分！要参与，请让您的 AI 代理通过 HeyGen 的 MCP 使用 HeyGen Video 1.0 制作视频，然后根据需要进行调整和编辑。查看详细信息以获得 invol",
-      "url": "https://x.com/runware/status/2120205649632010472",
+      "id": "xhot-xrss-6080913524",
+      "title": "AI 编程免费资源合集：设计技能、并行智能体等",
+      "summary": "清单包括免费 AI 编程设计技能、开源并行编程智能体、免费 AI 智能体安全审计及开源桌面自动化工具。",
+      "url": "https://x.com/csaba_kissi/status/2120774532277670061",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-6634169894",
-      "title": "对表格数据进行预测，无需为每个数据集训练新模型。在 Data Sc 的表格基础模型中",
-      "summary": "对表格数据进行预测，无需为每个数据集训练新模型。在使用 @prior_labs 构建的数据科学代理的表格基础模型中，您将为 AI 代理提供表格基础模型作为预测工具。免费注册",
-      "url": "https://x.com/DeepLearningAI/status/2120554648788521464",
+      "id": "xhot-xrss-8419655816",
+      "title": "免费 AI WhatsApp 社区，20 万人已加入",
+      "summary": "该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入。",
+      "url": "https://x.com/VaibhavSisinty/status/2120779579099091160",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-4056545851",
+      "title": "Andrej Karpathy 将他的整个 AI 课程免费放在 GitHub 上。7 个 repos，为了学习它们 nn-zero-to-hero，他的 v",
+      "summary": "Andrej Karpathy 将他的整个 AI 课程免费放在 GitHub 上。7 个存储库，为了学习它们 nn-zero-to-hero，他从头开始构建神经网络的视频课程 micrograd，让 AI 学习的数学，只需少量的 cod",
+      "url": "https://x.com/alex_verem/status/2120063960733089974",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-362722655",
+      "title": "免费领取 ChatGPT 与 AI 变现指南",
+      "summary": "@shawnguyen 我达到了我的 DM 限制。在这里免费获取我的 ChatGPT 和 AI 赚钱指南",
+      "url": "https://x.com/AndrewBolis/status/2120847987475955859",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-4966073304",
+      "title": "我们正在寻找能够帮助我们在 上营销我们的免费 AI 学习伴侣的人，但是 p",
+      "summary": "我们正在寻找能够帮助我们在 上营销我们的免费 AI 学习伴侣的人，但问题是大多数营销人员都使用 Claude 和 ChatGPT 等 AI 工具，而我们可以自己做这些，所以我不确定它们会增加什么价值。",
+      "url": "https://x.com/malpani/status/2120825127680225782",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-6582974777",
+      "title": "Anthropic 为付费 Claude 用户提供免费完整重置",
+      "summary": "Anthropic 为付费 Claude 用户提供免费全面重置",
+      "url": "https://x.com/i/trending/2120395776509747455",
       "source": "X"
     }
   ]
