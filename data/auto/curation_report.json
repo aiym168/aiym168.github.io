@@ -1,26 +1,28 @@
 {
  "counts": {
-  "archived": 11,
+  "archived": 12,
   "deadline_extracted": 6,
-  "drop:duplicate": 55,
+  "drop:duplicate": 54,
   "drop:empty_summary": 13,
-  "drop:negative_signal": 92,
-  "drop:no_clear_offer": 189,
-  "drop:not_ai": 161,
+  "drop:negative_signal": 93,
+  "drop:no_clear_offer": 191,
+  "drop:not_ai": 162,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 239,
-  "google_news_total": 239,
-  "kept_total": 160,
-  "net:gnews_cache_hit": 238,
-  "net:gnews_resolved_net": 1,
-  "raw_total": 729
+  "google_news_resolved": 247,
+  "google_news_total": 247,
+  "kept_total": 165,
+  "net:gnews_cache_hit": 239,
+  "net:gnews_resolved_net": 8,
+  "net:tco_expanded": 1,
+  "net:tco_failed": 1,
+  "new_this_run": 5,
+  "raw_total": 737
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
+   "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "PDFMeasure：在浏览器中测量 PDF 文件",
-   "gemini-4-carbon 免费一天",
-   "再聊 Claude 终极防封方案，持续更新被封情况",
    "awesome-free-ai-coding：合法免费的 LLM API 和编码代理",
    "design-os-studio：用 Rust 构建的原生 GPU 加速界​​面设计工具",
    "ai-api-gateway-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
@@ -29,7 +31,8 @@
    "llm-serve-dashboard：用于本地 llama.cpp/vLLM 服务的单文件、无依赖性实时仪表板",
    "unified-ai-api-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
    "9routerx：9RouterX（9R Next Go Generation）",
-   "wabcut：适用于游戏视频、视频文章和纪录片的免费开源视频编辑器"
+   "wabcut：适用于游戏视频、视频文章和纪录片的免费开源视频编辑器",
+   "free-llm-intel：AI 厂商动态别挨家追"
   ],
   "empty_summary": [
    "本周末，通过由 CTO 教授的 12 小时免费 CodeCamp 课程，免费学习 Claude Code",
@@ -46,6 +49,7 @@
    "今日免费 GPU，是的，全球范围内都有"
   ],
   "negative_signal": [
+   "@MattiHaapoja 分享：以下是我如何免费学习 AI 电影制作的",
    "@mcwilsonky 分享：客户正在询问 AI 该雇用谁",
    "@EvanKirstel 分享：英格兰大学监管机构希望进行更多无 AI 的评估",
    "@mdancho84 分享：我将举办一场免费的研讨会，帮助您开始使用 Python 开展 AI+数据科学项目",
@@ -56,10 +60,12 @@
    "在周中之前阻止您的 Grok 机器人燃烧每周限制",
    "为 Grok Bot 模式命名一次，每个后续都会保留在该模式中",
    "如何使用 Claude Fable 5.2 进行 SEO 效果如此之好，感觉不合法 FABLE 5.2 昨天发布",
-   "在笔记本电脑上运行自己的 JARVIS，离线",
-   "将 Day-One Page 工作交给您自己的 SEO 主管"
+   "在笔记本电脑上运行自己的 JARVIS，离线"
   ],
   "no_clear_offer": [
+   "n8n 刚刚推出了 Nod，这是一款免费的开源 AI 代理，即使没有 API 也能跨应用程序和网站运行",
+   "您的 Claude 订阅现在有一次免费的完整重置，外加免费的 Fable 重置",
+   "@MattZeitlin 分享：两年后你们尽可以嘲笑我，但我认为特朗普将在即将召开的国会上签署一项 AI 安全法案",
    "@LAMaterialNews 分享：要烤深盘披萨，你真的必须尝试一下",
    "我们的首席执行官 @JensenHuang 在阿斯塔纳会见了下一代 AI 构建者",
    "Magistral 有两种版本：Magistral Small（24B 参数开源版本）和 Magistral",
@@ -68,12 +74,10 @@
    "思科 AI 业务从业者 (AIBIZ) 现已推出",
    "@VaibhavSisinty 分享：我每天都会在我们的免费 AI WhatsApp 社区中分享这样的工具和信息",
    "是的，我们 @HarrisPolicy 正在寻找更多从事 AI 研究的教授",
-   "@aiDotEngineer 分享：代码峰会直播将在 30 分钟后开始",
-   "Brevis 推出了 Arca，这是一款免费应用程序，允许用户出售他们计算机上的 AI 聊天和编码会话",
-   "Claude 刚刚推出了新的生产力工具，有人已经放弃了免费的开源替代品",
-   "Plurai 让代理测试免费后，AI 工程师：plurai 让代理测试免费后，AI 工程师的反应"
+   "@aiDotEngineer 分享：代码峰会直播将在 30 分钟后开始"
   ],
   "not_ai": [
+   "爆炸性新闻 彭博社报道称，NVIDIA 董事会正在与一家外部公司合作，寻找黄仁勋的继任者，可能先任命一位临时首席执行官",
    "您现在可以在 Mac 上本地运行 pplx-decider-flash-v1.2，无需 API 密钥",
    "计算机可以在 Shopify 中创建广告、构建登陆页面，以及在 Klaviyo 中运行电子邮件营销活动",
    "@RealDCunningham 分享：写了一个令人不安的事实，即克利夫兰轮换阵容中的每个成员在詹姆斯·哈登在场时都比在",
@@ -84,8 +88,7 @@
    "@ansonlin，您期待纽约市的人们提供免费工作",
    "在接下来的两周内，可在 fal 上使用 MiniMax H3 Image 进行免费生成",
    "易受攻击的帖子：我 90% 的时间都花在 @chatprd 上，处理日益富有创意的国际代币欺诈操作，这让我想关闭该公司",
-   "我们为所有 Pro、Max、Ultra 和 Team 用户提供了一次免费的全面重置，涵盖所有型号和限制",
-   "@aakashgupta 分享：从理论上讲，从尼泊尔这个机场起飞的飞机无法起飞"
+   "我们为所有 Pro、Max、Ultra 和 Team 用户提供了一次免费的全面重置，涵盖所有型号和限制"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -102,27 +105,27 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-12T09:03:27+08:00",
+ "generated_at": "2026-11-12T11:28:00+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-12T09:03:27+08:00",
+  "checked_at": "2026-11-12T11:28:00+08:00",
   "counts": {
-   "ok": 149
+   "ok": 150
   },
   "hidden": 0
  },
- "seconds": 1.0,
+ "seconds": 4.0,
  "side": {
   "github_hot": {
-   "drop:not_ai": 1,
-   "kept": 29,
+   "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
-   "drop:not_ai": 11,
-   "drop:not_ai_strict": 6,
-   "kept": 18,
-   "raw": 38
+   "drop:duplicate": 1,
+   "drop:negative_signal": 4,
+   "drop:not_ai": 7,
+   "drop:not_ai_strict": 8,
+   "kept": 20,
+   "raw": 40
   }
  }
 }
