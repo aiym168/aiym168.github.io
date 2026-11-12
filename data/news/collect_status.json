@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-12T08:01:14+08:00",
+ "run_at": "2026-11-12T08:02:52+08:00",
  "sources": {
   "techcrunch-ai": {
    "ok": true,
@@ -163,11 +163,11 @@
    "blocked": 1
   },
   "gsmarena-com-rss-news-reviews-php3": {
-   "ok": false,
-   "error": "HTTPError: HTTP Error 503: Service Temporarily Unavailable",
-   "rows": 0,
-   "new": 0,
-   "blocked": 0
+   "ok": true,
+   "error": "",
+   "rows": 20,
+   "new": 2,
+   "blocked": 3
   },
   "androidauthority-com-feed": {
    "ok": true,
@@ -250,7 +250,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 2,
+   "new": 1,
    "blocked": 1
   },
   "semiengineering-com-feed": {
@@ -258,14 +258,14 @@
    "error": "",
    "rows": 10,
    "new": 1,
-   "blocked": 1
+   "blocked": 0
   },
   "eetimes-com-feed": {
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "rows": 0,
+   "ok": true,
+   "error": "",
+   "rows": 10,
    "new": 0,
-   "blocked": 0
+   "blocked": 1
   },
   "semiwiki-com-feed": {
    "ok": true,
@@ -278,7 +278,7 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 2,
+   "new": 1,
    "blocked": 3
   },
   "servethehome-com-feed": {
@@ -317,11 +317,11 @@
    "blocked": 0
   },
   "geekpark": {
-   "ok": false,
-   "error": "TimeoutError: The read operation timed out",
-   "rows": 0,
-   "new": 0,
-   "blocked": 0
+   "ok": true,
+   "error": "",
+   "rows": 30,
+   "new": 8,
+   "blocked": 10
   },
   "tmtpost-com-rss-xml": {
    "ok": true,
@@ -1005,7 +1005,7 @@
   "gn-aimanhua": {
    "ok": true,
    "error": "",
-   "rows": 13,
+   "rows": 12,
    "new": 0,
    "blocked": 2
   },
@@ -1026,16 +1026,16 @@
   "gn-sora": {
    "ok": true,
    "error": "",
-   "rows": 13,
+   "rows": 14,
    "new": 0,
    "blocked": 2
   },
   "gn-aivideo-en": {
    "ok": true,
    "error": "",
-   "rows": 28,
+   "rows": 29,
    "new": 1,
-   "blocked": 3
+   "blocked": 4
   },
   "gn-comfyui": {
    "ok": true,
@@ -1061,7 +1061,7 @@
   "gn-llm-tut": {
    "ok": true,
    "error": "",
-   "rows": 5,
+   "rows": 4,
    "new": 0,
    "blocked": 0
   },
@@ -1076,7 +1076,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 1,
+   "new": 2,
    "blocked": 3
   },
   "gn-ascend": {
@@ -1100,16 +1100,16 @@
   "GovCloud": 1,
   "drug": 6,
   "weapons": 2,
-  "Chinese": 5,
+  "Chinese": 6,
   "war": 2,
   "senator": 1,
   "Democrat": 2,
   "Trump": 8,
-  "China": 23,
+  "China": 25,
   "Suicide": 2,
   "bomb": 1,
   "Government": 1,
-  "(非科技)": 32,
+  "(非科技)": 33,
   "新疆": 1,
   "习": 13,
   "explicit": 3,
@@ -1125,14 +1125,18 @@
   "Taiwan": 2,
   "sovereign": 1,
   "新华社": 1,
-  "婚外": 3,
-  "投票": 7,
+  "婚外": 4,
+  "投票": 8,
   "审查": 3,
-  "武器": 3,
+  "武器": 4,
   "政府": 4,
+  "航母": 1,
+  "选举": 1,
+  "主权": 1,
+  "监管": 11,
+  "领土": 1,
   "Hong Kong": 3,
   "出口管制": 1,
-  "监管": 9,
   "死亡": 3,
   "国会": 1,
   "冲突": 2,
@@ -1195,15 +1199,16 @@
   "色情": 1,
   "doge": 1,
   "NSFW": 2,
+  "Porn": 1,
   "擦边": 1,
   "杀人": 2,
   "俄罗斯": 1,
   "爆炸": 1,
   "疫苗": 1
  },
- "new": 188,
+ "new": 197,
  "sources_total": 158,
- "sources_ok": 151,
+ "sources_ok": 154,
  "translated": 122,
  "counts": {
   "internet": 150,
@@ -1216,7 +1221,7 @@
   "launch": 36,
   "game": 150,
   "gossip": 23,
-  "chip": 135,
+  "chip": 134,
   "space": 50,
   "aivideo": 108,
   "comfyui": 50,
