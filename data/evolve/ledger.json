@@ -2752,92 +2752,93 @@
   "2026-11-13": {
    "news": {
     "techcrunch-ai": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 1,
-     "blocked": 7,
-     "dup_or_old": 12
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 3,
+     "blocked": 13,
+     "dup_or_old": 24
     },
     "verge-ai": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 0,
-     "blocked": 6,
-     "dup_or_old": 4
-    },
-    "openai": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 2,
-     "blocked": 1,
-     "dup_or_old": 27
-    },
-    "deepmind": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 2,
-     "blocked": 1,
-     "dup_or_old": 27
-    },
-    "google-ai": {
-     "runs": 1,
-     "ok_runs": 1,
+     "runs": 2,
+     "ok_runs": 2,
      "found": 20,
      "kept": 2,
-     "blocked": 0,
-     "dup_or_old": 18
+     "blocked": 11,
+     "dup_or_old": 7
     },
-    "huggingface": {
-     "runs": 1,
+    "openai": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 4,
+     "blocked": 2,
+     "dup_or_old": 54
+    },
+    "deepmind": {
+     "runs": 2,
      "ok_runs": 1,
      "found": 30,
      "kept": 2,
+     "blocked": 1,
+     "dup_or_old": 27,
+     "fails": 1
+    },
+    "google-ai": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 4,
      "blocked": 0,
-     "dup_or_old": 28
+     "dup_or_old": 36
+    },
+    "huggingface": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 4,
+     "blocked": 0,
+     "dup_or_old": 56
     },
     "decoder": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 0,
-     "blocked": 4,
-     "dup_or_old": 6
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 1,
+     "blocked": 8,
+     "dup_or_old": 11
     },
     "mittr-ai": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 4,
-     "dup_or_old": 5
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
+     "blocked": 8,
+     "dup_or_old": 10
     },
     "wired-ai": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 4,
-     "dup_or_old": 5
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
+     "blocked": 8,
+     "dup_or_old": 10
     },
     "qbitai": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 2,
-     "dup_or_old": 7
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 3,
+     "blocked": 4,
+     "dup_or_old": 13
     },
     "marktechpost-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 2,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 4,
      "blocked": 0,
-     "dup_or_old": 8
+     "dup_or_old": 16
     },
     "bair-berkeley-edu-blog-feed-xml": {
      "runs": 1,
@@ -2848,20 +2849,20 @@
      "dup_or_old": 9
     },
     "aws-amazon-com-blogs-machine-learning-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 4,
-     "blocked": 1,
-     "dup_or_old": 15
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 5,
+     "blocked": 3,
+     "dup_or_old": 32
     },
     "blogs-nvidia-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 18,
-     "kept": 2,
-     "blocked": 2,
-     "dup_or_old": 14
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 36,
+     "kept": 4,
+     "blocked": 4,
+     "dup_or_old": 28
     },
     "syncedreview-com-feed": {
      "runs": 1,
@@ -2872,36 +2873,36 @@
      "dup_or_old": 10
     },
     "news-mit-edu-topic-mitartificial-intellige": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 2,
-     "blocked": 1,
-     "dup_or_old": 27
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 4,
+     "blocked": 2,
+     "dup_or_old": 54
     },
     "machinelearning-apple-com-rss-xml": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 1,
-     "dup_or_old": 8
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
+     "blocked": 2,
+     "dup_or_old": 16
     },
     "microsoft-com-en-us-research-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 2,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 4,
      "blocked": 0,
-     "dup_or_old": 8
+     "dup_or_old": 16
     },
     "simonw": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 2,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 4,
      "blocked": 0,
-     "dup_or_old": 28
+     "dup_or_old": 56
     },
     "lilianweng-github-io-index-xml": {
      "runs": 1,
@@ -2920,396 +2921,396 @@
      "dup_or_old": 15
     },
     "latent-space-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 2,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 4,
      "blocked": 0,
-     "dup_or_old": 18
+     "dup_or_old": 36
     },
     "jack-clark-net-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
      "blocked": 0,
-     "dup_or_old": 9
+     "dup_or_old": 18
     },
     "gsmarena-com-rss-news-reviews-php3": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 2,
-     "blocked": 5,
-     "dup_or_old": 13
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 4,
+     "blocked": 10,
+     "dup_or_old": 26
     },
     "androidauthority-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 7,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 9,
      "blocked": 0,
-     "dup_or_old": 23
+     "dup_or_old": 51
     },
     "9to5mac-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 3,
-     "blocked": 5,
-     "dup_or_old": 22
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 4,
+     "blocked": 11,
+     "dup_or_old": 45
     },
     "9to5google-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 3,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 5,
      "blocked": 0,
-     "dup_or_old": 27
+     "dup_or_old": 55
     },
     "macrumors-com-macrumors-xml": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 5,
-     "blocked": 3,
-     "dup_or_old": 12
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 6,
+     "blocked": 7,
+     "dup_or_old": 27
     },
     "androidpolice-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 3,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 5,
      "blocked": 0,
-     "dup_or_old": 7
+     "dup_or_old": 15
     },
     "xda-developers-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 3,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 5,
      "blocked": 0,
-     "dup_or_old": 7
+     "dup_or_old": 15
     },
     "ifanr": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 8,
-     "blocked": 2,
-     "dup_or_old": 10
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 16,
+     "blocked": 4,
+     "dup_or_old": 20
     },
     "appinn-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 6,
-     "blocked": 0,
-     "dup_or_old": 4
-    },
-    "rss-mydrivers-com-rss-aspx": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 29
-    },
-    "engadget": {
-     "runs": 1,
-     "ok_runs": 1,
+     "runs": 2,
+     "ok_runs": 2,
      "found": 20,
-     "kept": 1,
-     "blocked": 2,
-     "dup_or_old": 17
-    },
-    "digitaltrends-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 5,
-     "blocked": 1,
-     "dup_or_old": 24
-    },
-    "notebookcheck-net-news-152-100-html-type-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 5,
-     "blocked": 5,
-     "dup_or_old": 20
-    },
-    "semiengineering-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
+     "kept": 12,
      "blocked": 0,
-     "dup_or_old": 9
-    },
-    "eetimes-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 9
-    },
-    "semiwiki-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 5,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 4
-    },
-    "wccftech-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 1,
-     "blocked": 5,
-     "dup_or_old": 14
-    },
-    "servethehome-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 6,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 5
-    },
-    "techpowerup-com-rss-news": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 6,
-     "blocked": 3,
-     "dup_or_old": 21
-    },
-    "semiconductor-today-com-rss-news-xml": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 0,
-     "blocked": 5,
-     "dup_or_old": 25
-    },
-    "ithome": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 8,
-     "blocked": 12,
-     "dup_or_old": 10
-    },
-    "sspai": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 8,
-     "blocked": 0,
-     "dup_or_old": 2
-    },
-    "geekpark": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 8,
-     "blocked": 11,
-     "dup_or_old": 11
-    },
-    "tmtpost-com-rss-xml": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 16,
-     "kept": 0,
-     "blocked": 2,
-     "dup_or_old": 14
-    },
-    "cnbeta-com-tw-backend-php": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 8,
-     "blocked": 12,
-     "dup_or_old": 10
-    },
-    "leiphone-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 6,
-     "blocked": 6,
      "dup_or_old": 8
     },
-    "199it-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 8,
-     "blocked": 2,
-     "dup_or_old": 20
-    },
-    "36kr-com-feed-newsflash": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 0,
-     "blocked": 8,
-     "dup_or_old": 12
-    },
-    "woshipm-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 15,
-     "kept": 4,
-     "blocked": 1,
-     "dup_or_old": 10
-    },
-    "ars": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 1,
-     "blocked": 5,
-     "dup_or_old": 14
-    },
-    "verge": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 4,
-     "dup_or_old": 5
-    },
-    "techcrunch-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 1,
-     "blocked": 8,
-     "dup_or_old": 11
-    },
-    "wired-com-feed-category-business-latest": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 1,
-     "blocked": 10,
-     "dup_or_old": 9
-    },
-    "zdnet-com-news-rss-xml": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 25,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 24
-    },
-    "cnet-com-rss-news": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 25,
-     "kept": 1,
-     "blocked": 1,
-     "dup_or_old": 23
-    },
-    "fastcompany-com-technology-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 1,
-     "blocked": 9,
-     "dup_or_old": 10
-    },
-    "theregister-com-headlines-atom": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
-     "blocked": 2,
-     "dup_or_old": 27
-    },
-    "mashable-com-feeds-rss-tech": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
+    "rss-mydrivers-com-rss-aspx": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
      "kept": 2,
-     "blocked": 1,
-     "dup_or_old": 27
-    },
-    "oschina": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 8,
-     "blocked": 1,
-     "dup_or_old": 21
-    },
-    "github-blog-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
      "blocked": 0,
-     "dup_or_old": 9
+     "dup_or_old": 58
     },
-    "linuxcompatible-org-news-rss": {
-     "runs": 1,
-     "ok_runs": 1,
+    "engadget": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 3,
+     "blocked": 4,
+     "dup_or_old": 33
+    },
+    "digitaltrends-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 6,
+     "blocked": 3,
+     "dup_or_old": 51
+    },
+    "notebookcheck-net-news-152-100-html-type-rss": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 7,
+     "blocked": 10,
+     "dup_or_old": 43
+    },
+    "semiengineering-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 3,
+     "blocked": 0,
+     "dup_or_old": 17
+    },
+    "eetimes-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
      "found": 20,
      "kept": 1,
      "blocked": 1,
      "dup_or_old": 18
     },
-    "lwn-net-headlines-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 15,
+    "semiwiki-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 10,
      "kept": 1,
-     "blocked": 1,
-     "dup_or_old": 13
+     "blocked": 0,
+     "dup_or_old": 9
     },
-    "phoronix-com-rss-php": {
-     "runs": 1,
-     "ok_runs": 1,
+    "wccftech-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 2,
+     "blocked": 10,
+     "dup_or_old": 28
+    },
+    "servethehome-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 12,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 10
+    },
+    "techpowerup-com-rss-news": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 7,
+     "blocked": 6,
+     "dup_or_old": 47
+    },
+    "semiconductor-today-com-rss-news-xml": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 0,
+     "blocked": 10,
+     "dup_or_old": 50
+    },
+    "ithome": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 10,
+     "blocked": 24,
+     "dup_or_old": 26
+    },
+    "sspai": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 16,
+     "blocked": 0,
+     "dup_or_old": 4
+    },
+    "geekpark": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 16,
+     "blocked": 22,
+     "dup_or_old": 22
+    },
+    "tmtpost-com-rss-xml": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 32,
+     "kept": 0,
+     "blocked": 4,
+     "dup_or_old": 28
+    },
+    "cnbeta-com-tw-backend-php": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 15,
+     "blocked": 24,
+     "dup_or_old": 21
+    },
+    "leiphone-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 14,
+     "blocked": 12,
+     "dup_or_old": 14
+    },
+    "199it-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 15,
+     "blocked": 4,
+     "dup_or_old": 41
+    },
+    "36kr-com-feed-newsflash": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 0,
+     "blocked": 16,
+     "dup_or_old": 24
+    },
+    "woshipm-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
      "found": 30,
-     "kept": 3,
-     "blocked": 0,
-     "dup_or_old": 27
-    },
-    "omgubuntu-co-uk-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 18,
-     "kept": 1,
-     "blocked": 0,
+     "kept": 11,
+     "blocked": 2,
      "dup_or_old": 17
     },
-    "itsfoss-com-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 15,
-     "kept": 0,
+    "ars": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 2,
+     "blocked": 10,
+     "dup_or_old": 28
+    },
+    "verge": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
+     "blocked": 7,
+     "dup_or_old": 11
+    },
+    "techcrunch-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 2,
+     "blocked": 15,
+     "dup_or_old": 23
+    },
+    "wired-com-feed-category-business-latest": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 2,
+     "blocked": 20,
+     "dup_or_old": 18
+    },
+    "zdnet-com-news-rss-xml": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 50,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 48
+    },
+    "cnet-com-rss-news": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 50,
+     "kept": 2,
      "blocked": 2,
-     "dup_or_old": 13
+     "dup_or_old": 46
+    },
+    "fastcompany-com-technology-rss": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 2,
+     "blocked": 17,
+     "dup_or_old": 21
+    },
+    "theregister-com-headlines-atom": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
+     "blocked": 4,
+     "dup_or_old": 54
+    },
+    "mashable-com-feeds-rss-tech": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 3,
+     "blocked": 4,
+     "dup_or_old": 53
+    },
+    "oschina": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 16,
+     "blocked": 2,
+     "dup_or_old": 42
+    },
+    "github-blog-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 18
+    },
+    "linuxcompatible-org-news-rss": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 1,
+     "blocked": 3,
+     "dup_or_old": 36
+    },
+    "lwn-net-headlines-rss": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 30,
+     "kept": 2,
+     "blocked": 2,
+     "dup_or_old": 26
+    },
+    "phoronix-com-rss-php": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 4,
+     "blocked": 0,
+     "dup_or_old": 56
+    },
+    "omgubuntu-co-uk-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 36,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 34
+    },
+    "itsfoss-com-rss": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 30,
+     "kept": 0,
+     "blocked": 4,
+     "dup_or_old": 26
     },
     "bleepingcomputer-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 15,
-     "kept": 1,
-     "blocked": 1,
-     "dup_or_old": 13
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 30,
+     "kept": 2,
+     "blocked": 2,
+     "dup_or_old": 26
     },
     "blog-mozilla-org-en-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 1,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 2,
      "blocked": 0,
-     "dup_or_old": 19
+     "dup_or_old": 38
     },
     "blog-chromium-org-feeds-posts-default": {
      "runs": 1,
@@ -3320,636 +3321,637 @@
      "dup_or_old": 25
     },
     "ghacks-net-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
-     "blocked": 1,
-     "dup_or_old": 28
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
+     "blocked": 2,
+     "dup_or_old": 56
     },
     "neowin-net-news-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 3,
-     "blocked": 4,
-     "dup_or_old": 23
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 4,
+     "blocked": 8,
+     "dup_or_old": 48
     },
     "howtogeek-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 5,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 6,
      "blocked": 0,
-     "dup_or_old": 5
+     "dup_or_old": 14
     },
     "mshibanami-github-io-githubtrendingrss-daily-all": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
      "kept": 0,
      "blocked": 0,
-     "dup_or_old": 10
+     "dup_or_old": 20
     },
     "landiannews-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
      "kept": 0,
-     "blocked": 1,
-     "dup_or_old": 19
+     "blocked": 2,
+     "dup_or_old": 38
     },
     "gamespot-com-feeds-news": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
-     "blocked": 3,
-     "dup_or_old": 26
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
+     "blocked": 7,
+     "dup_or_old": 51
     },
     "eurogamer-net-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 2,
-     "blocked": 6,
-     "dup_or_old": 22
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 3,
+     "blocked": 12,
+     "dup_or_old": 45
     },
     "pcgamer-com-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 4,
-     "blocked": 14,
-     "dup_or_old": 12
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 5,
+     "blocked": 28,
+     "dup_or_old": 27
     },
     "rockpapershotgun-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
      "kept": 1,
-     "blocked": 10,
-     "dup_or_old": 19
+     "blocked": 21,
+     "dup_or_old": 38
     },
     "kotaku-com-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 2,
-     "blocked": 4,
-     "dup_or_old": 14
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 3,
+     "blocked": 8,
+     "dup_or_old": 29
     },
     "gcores-com-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
      "kept": 0,
-     "blocked": 4,
-     "dup_or_old": 16
+     "blocked": 8,
+     "dup_or_old": 32
     },
     "yystv-cn-rss-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 12,
-     "kept": 4,
-     "blocked": 5,
-     "dup_or_old": 3
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 24,
+     "kept": 8,
+     "blocked": 10,
+     "dup_or_old": 6
     },
     "electrek-co-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
      "kept": 1,
-     "blocked": 4,
-     "dup_or_old": 25
+     "blocked": 8,
+     "dup_or_old": 51
     },
     "teslarati-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
      "kept": 0,
-     "blocked": 1,
-     "dup_or_old": 9
+     "blocked": 2,
+     "dup_or_old": 18
     },
     "cleantechnica-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
      "kept": 0,
-     "blocked": 13,
-     "dup_or_old": 17
+     "blocked": 26,
+     "dup_or_old": 34
     },
     "cnevpost-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
      "kept": 1,
-     "blocked": 10,
-     "dup_or_old": 19
+     "blocked": 21,
+     "dup_or_old": 38
     },
     "thedrive-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 19,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 38,
      "kept": 3,
+     "blocked": 0,
+     "dup_or_old": 35
+    },
+    "spacenews-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 26,
+     "kept": 0,
+     "blocked": 8,
+     "dup_or_old": 18
+    },
+    "nasa-gov-news-release-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 0,
+     "blocked": 0,
+     "dup_or_old": 20
+    },
+    "nasaspaceflight-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 0,
+     "blocked": 2,
+     "dup_or_old": 18
+    },
+    "spaceflightnow-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 0,
+     "blocked": 0,
+     "dup_or_old": 20
+    },
+    "universetoday-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 1,
+     "blocked": 1,
+     "dup_or_old": 38
+    },
+    "planetary-org-rss-articles": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 0,
+     "blocked": 4,
+     "dup_or_old": 56
+    },
+    "sciencedaily-com-rss-top-technology-xml": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 0,
+     "blocked": 6,
+     "dup_or_old": 54
+    },
+    "sciencedaily-com-rss-top-science-xml": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 0,
+     "blocked": 10,
+     "dup_or_old": 50
+    },
+    "phys-org-rss-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 9,
+     "blocked": 8,
+     "dup_or_old": 43
+    },
+    "newscientist-com-feed-home": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
+     "blocked": 6,
+     "dup_or_old": 12
+    },
+    "quantamagazine-org-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 10,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 8
+    },
+    "sciencenews-org-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 1,
+     "blocked": 11,
+     "dup_or_old": 28
+    },
+    "scitechdaily-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 48,
+     "kept": 2,
+     "blocked": 2,
+     "dup_or_old": 44
+    },
+    "scientificamerican-com-platform-syndication-rss": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
+     "blocked": 5,
+     "dup_or_old": 53
+    },
+    "news-mit-edu-rss-research": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 0,
+     "blocked": 2,
+     "dup_or_old": 58
+    },
+    "spectrum-ieee-org-feeds-feed-rss": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 0,
+     "blocked": 2,
+     "dup_or_old": 58
+    },
+    "infoq": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 0,
+     "blocked": 0,
+     "dup_or_old": 40
+    },
+    "hn": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 29,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 27
+    },
+    "v2ex-com-api-topics-hot-json": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 15,
+     "kept": 1,
+     "blocked": 2,
+     "dup_or_old": 12
+    },
+    "dev-to-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 24,
+     "kept": 8,
      "blocked": 0,
      "dup_or_old": 16
     },
-    "spacenews-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 13,
-     "kept": 0,
-     "blocked": 4,
-     "dup_or_old": 9
-    },
-    "nasa-gov-news-release-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 0,
-     "blocked": 0,
-     "dup_or_old": 10
-    },
-    "nasaspaceflight-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 0,
-     "blocked": 1,
-     "dup_or_old": 9
-    },
-    "spaceflightnow-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 0,
-     "blocked": 0,
-     "dup_or_old": 10
-    },
-    "universetoday-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 0,
-     "blocked": 1,
-     "dup_or_old": 19
-    },
-    "planetary-org-rss-articles": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 0,
-     "blocked": 2,
-     "dup_or_old": 28
-    },
-    "sciencedaily-com-rss-top-technology-xml": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 0,
-     "blocked": 3,
-     "dup_or_old": 27
-    },
-    "sciencedaily-com-rss-top-science-xml": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 0,
-     "blocked": 5,
-     "dup_or_old": 25
-    },
-    "phys-org-rss-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 8,
-     "blocked": 4,
-     "dup_or_old": 18
-    },
-    "newscientist-com-feed-home": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 3,
-     "dup_or_old": 6
-    },
-    "quantamagazine-org-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 5,
-     "kept": 2,
-     "blocked": 0,
-     "dup_or_old": 3
-    },
-    "sciencenews-org-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 1,
-     "blocked": 5,
-     "dup_or_old": 14
-    },
-    "scitechdaily-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 24,
-     "kept": 2,
-     "blocked": 1,
-     "dup_or_old": 21
-    },
-    "scientificamerican-com-platform-syndication-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
-     "blocked": 2,
-     "dup_or_old": 27
-    },
-    "news-mit-edu-rss-research": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 0,
-     "blocked": 1,
-     "dup_or_old": 29
-    },
-    "spectrum-ieee-org-feeds-feed-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 0,
-     "blocked": 1,
-     "dup_or_old": 29
-    },
-    "infoq": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 0,
-     "blocked": 0,
-     "dup_or_old": 20
-    },
-    "hn": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 14,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 13
-    },
-    "v2ex-com-api-topics-hot-json": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 7,
-     "kept": 0,
-     "blocked": 1,
-     "dup_or_old": 6
-    },
-    "dev-to-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 12,
-     "kept": 7,
-     "blocked": 0,
-     "dup_or_old": 5
-    },
     "stackoverflow-blog-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
      "blocked": 0,
-     "dup_or_old": 29
+     "dup_or_old": 58
     },
     "infoq-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 15,
-     "kept": 0,
-     "blocked": 1,
-     "dup_or_old": 14
-    },
-    "martinfowler-com-feed-atom": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 29
-    },
-    "blog-cloudflare-com-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 19
-    },
-    "netflixtechblog-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 9
-    },
-    "engineering-fb-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 9,
-     "kept": 1,
-     "blocked": 1,
-     "dup_or_old": 7
-    },
-    "tech-meituan-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 0,
-     "blocked": 0,
-     "dup_or_old": 10
-    },
-    "ruanyifeng-com-blog-atom-xml": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 3,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 2
-    },
-    "blog-rust-lang-org-feed-xml": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 9
-    },
-    "go-dev-blog-feed-atom": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 9
-    },
-    "devblogs-microsoft-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 9
-    },
-    "lobste-rs-rss": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 25,
-     "kept": 2,
-     "blocked": 1,
-     "dup_or_old": 22
-    },
-    "thenewstack-io-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 26,
-     "kept": 1,
-     "blocked": 3,
-     "dup_or_old": 22
-    },
-    "blog-jetbrains-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 12,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 11
-    },
-    "kubernetes-io-feed-xml": {
-     "runs": 1,
-     "ok_runs": 1,
+     "runs": 2,
+     "ok_runs": 2,
      "found": 30,
      "kept": 0,
-     "blocked": 0,
-     "dup_or_old": 30
-    },
-    "docker-com-blog-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 9
-    },
-    "nodejs-org-en-feed-blog-xml": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 29
-    },
-    "react-dev-rss-xml": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 24,
-     "kept": 0,
-     "blocked": 0,
-     "dup_or_old": 24
-    },
-    "blog-python-org-feeds-posts-default": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
-     "blocked": 0,
-     "dup_or_old": 29
-    },
-    "producthunt-com-feed": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
-     "blocked": 1,
+     "blocked": 2,
      "dup_or_old": 28
     },
-    "hnrss-org-show": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 7,
+    "martinfowler-com-feed-atom": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
      "blocked": 0,
-     "dup_or_old": 13
+     "dup_or_old": 58
+    },
+    "blog-cloudflare-com-rss": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 38
+    },
+    "netflixtechblog-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 18
+    },
+    "engineering-fb-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 18,
+     "kept": 2,
+     "blocked": 2,
+     "dup_or_old": 14
+    },
+    "tech-meituan-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 0,
+     "blocked": 0,
+     "dup_or_old": 20
+    },
+    "ruanyifeng-com-blog-atom-xml": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 6,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 4
+    },
+    "blog-rust-lang-org-feed-xml": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 18
+    },
+    "go-dev-blog-feed-atom": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 18
+    },
+    "devblogs-microsoft-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 18
+    },
+    "lobste-rs-rss": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 50,
+     "kept": 3,
+     "blocked": 2,
+     "dup_or_old": 45
+    },
+    "thenewstack-io-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 52,
+     "kept": 2,
+     "blocked": 6,
+     "dup_or_old": 44
+    },
+    "blog-jetbrains-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 24,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 22
+    },
+    "kubernetes-io-feed-xml": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 0,
+     "blocked": 0,
+     "dup_or_old": 60
+    },
+    "docker-com-blog-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 18
+    },
+    "nodejs-org-en-feed-blog-xml": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 58
+    },
+    "react-dev-rss-xml": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 48,
+     "kept": 0,
+     "blocked": 0,
+     "dup_or_old": 48
+    },
+    "blog-python-org-feeds-posts-default": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
+     "blocked": 0,
+     "dup_or_old": 58
+    },
+    "producthunt-com-feed": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
+     "blocked": 2,
+     "dup_or_old": 56
+    },
+    "hnrss-org-show": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 8,
+     "blocked": 0,
+     "dup_or_old": 32
     },
     "hnrss-org-launches": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
      "blocked": 0,
-     "dup_or_old": 29
+     "dup_or_old": 58
     },
     "rsshub-rssforever-com-github-trending-daily-any": {
-     "runs": 1,
+     "runs": 2,
      "ok_runs": 1,
      "found": 13,
      "kept": 0,
      "blocked": 0,
-     "dup_or_old": 13
+     "dup_or_old": 13,
+     "fails": 1
     },
     "huawei-newsroom": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 20,
-     "kept": 0,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 1,
      "blocked": 0,
-     "dup_or_old": 20
+     "dup_or_old": 39
     },
     "comfyui-releases": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 0,
-     "blocked": 0,
-     "dup_or_old": 10
-    },
-    "comfyui-manager": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 10,
-     "kept": 0,
-     "blocked": 0,
-     "dup_or_old": 10
-    },
-    "comfyui-blog": {
-     "runs": 1,
-     "ok_runs": 1,
+     "runs": 2,
+     "ok_runs": 2,
      "found": 20,
      "kept": 0,
      "blocked": 0,
      "dup_or_old": 20
     },
-    "civitai-workflows": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 4,
+    "comfyui-manager": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 20,
      "kept": 0,
      "blocked": 0,
-     "dup_or_old": 4
+     "dup_or_old": 20
+    },
+    "comfyui-blog": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 40,
+     "kept": 0,
+     "blocked": 0,
+     "dup_or_old": 40
+    },
+    "civitai-workflows": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 8,
+     "kept": 0,
+     "blocked": 0,
+     "dup_or_old": 8
     },
     "hf-trending": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 8,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 16,
      "blocked": 0,
-     "dup_or_old": 22
+     "dup_or_old": 44
     },
     "gh-comfyui": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
      "kept": 0,
      "blocked": 0,
-     "dup_or_old": 30
+     "dup_or_old": 60
     },
     "gh-aivideo": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 18,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 36,
      "kept": 0,
      "blocked": 0,
-     "dup_or_old": 18
+     "dup_or_old": 36
     },
     "gh-aigc": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 19,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 38,
      "kept": 1,
      "blocked": 0,
-     "dup_or_old": 18
+     "dup_or_old": 37
     },
     "gn-aidrama": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 0,
-     "blocked": 6,
-     "dup_or_old": 24
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 1,
+     "blocked": 12,
+     "dup_or_old": 47
     },
     "gn-aiduanju": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 0,
-     "blocked": 6,
-     "dup_or_old": 24
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
+     "blocked": 10,
+     "dup_or_old": 48
     },
     "gn-aianime": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 6,
-     "kept": 0,
-     "blocked": 3,
-     "dup_or_old": 3
-    },
-    "gn-aimanhua": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 14,
-     "kept": 1,
-     "blocked": 1,
-     "dup_or_old": 12
-    },
-    "gn-aivideo": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 0,
-     "blocked": 3,
-     "dup_or_old": 27
-    },
-    "gn-kling": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 15,
-     "kept": 0,
-     "blocked": 0,
-     "dup_or_old": 15
-    },
-    "gn-sora": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 12,
-     "kept": 0,
-     "blocked": 1,
-     "dup_or_old": 11
-    },
-    "gn-aivideo-en": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
-     "blocked": 6,
-     "dup_or_old": 23
-    },
-    "gn-comfyui": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 4,
-     "kept": 0,
-     "blocked": 0,
-     "dup_or_old": 4
-    },
-    "gn-comfyui-en": {
-     "runs": 1,
-     "ok_runs": 1,
+     "runs": 2,
+     "ok_runs": 2,
      "found": 11,
      "kept": 0,
+     "blocked": 6,
+     "dup_or_old": 5
+    },
+    "gn-aimanhua": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 28,
+     "kept": 1,
+     "blocked": 2,
+     "dup_or_old": 25
+    },
+    "gn-aivideo": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 0,
+     "blocked": 6,
+     "dup_or_old": 54
+    },
+    "gn-kling": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 30,
+     "kept": 1,
      "blocked": 0,
-     "dup_or_old": 11
+     "dup_or_old": 29
+    },
+    "gn-sora": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 23,
+     "kept": 0,
+     "blocked": 2,
+     "dup_or_old": 21
+    },
+    "gn-aivideo-en": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 1,
+     "blocked": 12,
+     "dup_or_old": 47
+    },
+    "gn-comfyui": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 8,
+     "kept": 0,
+     "blocked": 0,
+     "dup_or_old": 8
+    },
+    "gn-comfyui-en": {
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 23,
+     "kept": 1,
+     "blocked": 0,
+     "dup_or_old": 22
     },
     "gn-aigc-tut": {
      "runs": 1,
@@ -3961,87 +3963,87 @@
      "fails": 1
     },
     "gn-llm-tut": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 7,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 15,
      "kept": 1,
      "blocked": 0,
-     "dup_or_old": 6
+     "dup_or_old": 14
     },
     "gn-harmony": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 2,
-     "blocked": 4,
-     "dup_or_old": 24
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 4,
+     "blocked": 9,
+     "dup_or_old": 47
     },
     "gn-huawei-phone": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 1,
-     "blocked": 2,
-     "dup_or_old": 27
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 2,
+     "blocked": 4,
+     "dup_or_old": 54
     },
     "gn-ascend": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 30,
-     "kept": 2,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 60,
+     "kept": 4,
      "blocked": 2,
-     "dup_or_old": 26
+     "dup_or_old": 54
     }
    },
    "deals": {
     "HN": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 43,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 86,
      "kept": 0,
      "dead_links": 0
     },
     "V2EX": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 2,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 4,
      "kept": 2,
      "dead_links": 0
     },
     "GitHub": {
-     "runs": 1,
-     "ok_runs": 1,
-     "found": 22,
+     "runs": 2,
+     "ok_runs": 2,
+     "found": 41,
      "kept": 9,
      "dead_links": 0
     }
    },
    "site": {
-    "news_kept": 263,
-    "news_runs": 1,
+    "news_kept": 455,
+    "news_runs": 2,
     "checked": 155,
-    "dead": 34,
-    "updated_at": "2026-11-13T00:59+08:00",
+    "dead": 1,
+    "updated_at": "2026-11-13T01:32+08:00",
     "added": 3,
-    "runs": 1,
-    "build_ok": 1
+    "runs": 2,
+    "build_ok": 2
    }
   }
  },
  "seen": {
   "deals": {
-   "HN": "2026-11-13T00:53:58+08:00",
-   "V2EX": "2026-11-13T00:54:00+08:00",
-   "GitHub": "2026-11-13T00:54:06+08:00",
+   "HN": "2026-11-13T01:29:48+08:00",
+   "V2EX": "2026-11-13T01:29:50+08:00",
+   "GitHub": "2026-11-13T01:29:55+08:00",
    "DEV.to": "2026-11-12T05:01:04+08:00",
    "Lobsters": "2026-11-12T05:01:05+08:00"
   },
-  "update_at": "2026-11-13T00:57:08+08:00",
+  "update_at": "2026-11-13T00:59:45+08:00",
   "build_A": "2026-11-13T00:57:08+08:00",
-  "build_B": "2026-11-12T21:14:54+08:00",
+  "build_B": "2026-11-13T00:59:45+08:00",
   "build_C": "2026-11-10T13:10:18+08:00",
-  "linkcheck": "2026-11-13T00:59:39+08:00",
-  "news_run": "2026-11-13T00:55:18+08:00"
+  "linkcheck": "2026-11-13T01:32:34+08:00",
+  "news_run": "2026-11-13T01:30:26+08:00"
  },
- "updated_at": "2026-11-13T00:59+08:00"
+ "updated_at": "2026-11-13T01:32+08:00"
 }
