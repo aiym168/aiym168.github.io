@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-12T23:01:29+08:00",
+ "run_at": "2026-11-12T23:03:51+08:00",
  "sources": {
   "techcrunch-ai": {
    "ok": true,
@@ -23,11 +23,11 @@
    "blocked": 1
   },
   "deepmind": {
-   "ok": false,
-   "error": "empty feed",
-   "rows": 0,
-   "new": 0,
-   "blocked": 0
+   "ok": true,
+   "error": "",
+   "rows": 30,
+   "new": 2,
+   "blocked": 1
   },
   "google-ai": {
    "ok": true,
@@ -173,7 +173,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 7,
+   "new": 5,
    "blocked": 1
   },
   "9to5mac-com-feed": {
@@ -201,7 +201,7 @@
    "ok": true,
    "error": "",
    "rows": 10,
-   "new": 2,
+   "new": 1,
    "blocked": 0
   },
   "xda-developers-com-feed": {
@@ -250,7 +250,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 2,
+   "new": 3,
    "blocked": 5
   },
   "semiengineering-com-feed": {
@@ -261,10 +261,10 @@
    "blocked": 0
   },
   "eetimes-com-feed": {
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "rows": 0,
-   "new": 0,
+   "ok": true,
+   "error": "",
+   "rows": 10,
+   "new": 1,
    "blocked": 0
   },
   "semiwiki-com-feed": {
@@ -317,11 +317,11 @@
    "blocked": 0
   },
   "geekpark": {
-   "ok": false,
-   "error": "TimeoutError: The read operation timed out",
-   "rows": 0,
-   "new": 0,
-   "blocked": 0
+   "ok": true,
+   "error": "",
+   "rows": 30,
+   "new": 8,
+   "blocked": 10
   },
   "tmtpost-com-rss-xml": {
    "ok": true,
@@ -376,8 +376,8 @@
    "ok": true,
    "error": "",
    "rows": 10,
-   "new": 3,
-   "blocked": 2
+   "new": 4,
+   "blocked": 3
   },
   "techcrunch-com-feed": {
    "ok": true,
@@ -425,7 +425,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 3,
+   "new": 2,
    "blocked": 1
   },
   "oschina": {
@@ -516,7 +516,7 @@
    "ok": true,
    "error": "",
    "rows": 10,
-   "new": 4,
+   "new": 3,
    "blocked": 0
   },
   "mshibanami-github-io-githubtrendingrss-daily-all": {
@@ -537,7 +537,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 2,
+   "new": 1,
    "blocked": 3
   },
   "eurogamer-net-feed": {
@@ -607,7 +607,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 2,
+   "new": 1,
    "blocked": 10
   },
   "thedrive-com-feed": {
@@ -677,7 +677,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 8,
+   "new": 7,
    "blocked": 6
   },
   "newscientist-com-feed-home": {
@@ -755,7 +755,7 @@
    "error": "",
    "rows": 12,
    "new": 8,
-   "blocked": 1
+   "blocked": 0
   },
   "stackoverflow-blog-feed": {
    "ok": true,
@@ -901,7 +901,7 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 8,
+   "new": 7,
    "blocked": 0
   },
   "hnrss-org-launches": {
@@ -912,9 +912,9 @@
    "blocked": 0
   },
   "rsshub-rssforever-com-github-trending-daily-any": {
-   "ok": false,
-   "error": "TimeoutError: The read operation timed out",
-   "rows": 0,
+   "ok": true,
+   "error": "",
+   "rows": 13,
    "new": 0,
    "blocked": 0
   },
@@ -985,8 +985,8 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 0,
-   "blocked": 7
+   "new": 1,
+   "blocked": 6
   },
   "gn-aiduanju": {
    "ok": true,
@@ -998,7 +998,7 @@
   "gn-aianime": {
    "ok": true,
    "error": "",
-   "rows": 6,
+   "rows": 5,
    "new": 0,
    "blocked": 3
   },
@@ -1019,8 +1019,8 @@
   "gn-kling": {
    "ok": true,
    "error": "",
-   "rows": 16,
-   "new": 1,
+   "rows": 17,
+   "new": 0,
    "blocked": 0
   },
   "gn-sora": {
@@ -1061,8 +1061,8 @@
   "gn-llm-tut": {
    "ok": true,
    "error": "",
-   "rows": 7,
-   "new": 1,
+   "rows": 8,
+   "new": 0,
    "blocked": 0
   },
   "gn-harmony": {
@@ -1093,19 +1093,20 @@
  "dropped": {
   "affair": 22,
   "Congress": 3,
+  "president": 7,
   "spy": 3,
   "espionage": 2,
-  "vote": 4,
   "GovCloud": 1,
+  "drug": 3,
   "government": 3,
   "weapons": 2,
-  "Chinese": 11,
+  "Chinese": 10,
   "senator": 1,
   "Democrat": 2,
   "Trump": 7,
   "China": 24,
   "Suicide": 2,
-  "习": 9,
+  "习": 10,
   "出轨": 2,
   "explicit": 2,
   "War": 5,
@@ -1114,19 +1115,25 @@
   "military": 5,
   "politicians": 1,
   "shooter": 12,
-  "(非科技)": 30,
+  "vote": 3,
+  "(非科技)": 29,
   "prison": 1,
   "voting": 2,
-  "president": 5,
   "Taiwan": 3,
   "Ukrainian": 2,
   "sovereign": 1,
   "偷拍": 1,
   "战争": 3,
-  "投票": 5,
+  "投票": 6,
   "政府": 3,
   "党委": 1,
-  "婚外": 3,
+  "婚外": 4,
+  "航母": 1,
+  "选举": 1,
+  "武器": 2,
+  "主权": 1,
+  "监管": 6,
+  "领土": 1,
   "Hong Kong": 2,
   "国防": 2,
   "总统": 2,
@@ -1135,7 +1142,6 @@
   "香港": 2,
   "西藏": 1,
   "政治": 1,
-  "监管": 5,
   "国务院": 1,
   "weapon": 1,
   "betting": 2,
@@ -1181,7 +1187,6 @@
   "religion": 1,
   "rape": 1,
   "war": 3,
-  "drug": 2,
   "Killed": 1,
   "Iran": 1,
   "Dies": 1,
@@ -1189,6 +1194,7 @@
   "低俗": 1,
   "台湾": 1,
   "两岸": 1,
+  "维权": 1,
   "doge": 1,
   "人权": 1,
   "NSFW": 2,
@@ -1200,30 +1206,29 @@
   "裸": 1,
   "俄罗斯": 1,
   "爆炸": 2,
-  "官员": 1,
-  "武器": 1
+  "官员": 1
  },
- "new": 246,
+ "new": 249,
  "sources_total": 156,
- "sources_ok": 150,
- "translated": 190,
+ "sources_ok": 154,
+ "translated": 186,
  "counts": {
   "dev": 150,
   "internet": 150,
   "software": 150,
-  "science": 137,
-  "game": 150,
-  "aigc": 53,
   "ai": 220,
   "mobile": 150,
-  "gossip": 37,
+  "science": 136,
+  "game": 150,
   "chip": 150,
+  "gossip": 37,
   "comfyui": 52,
-  "auto": 117,
-  "launch": 58,
+  "auto": 116,
+  "launch": 57,
   "space": 55,
   "huawei": 150,
-  "aivideo": 128,
-  "aidrama": 107
+  "aigc": 51,
+  "aivideo": 127,
+  "aidrama": 108
  }
 }
