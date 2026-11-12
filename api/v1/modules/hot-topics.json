@@ -3,9 +3,16 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 12,
-  "generated_at": "2026-11-13T01:32:34+08:00",
+  "count": 15,
+  "generated_at": "2026-11-13T02:38:02+08:00",
   "items": [
+    {
+      "id": "hnhot-50471431",
+      "title": "Gemini 4 氢",
+      "summary": "",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "source": "Hacker News"
+    },
     {
       "id": "hnhot-50467439",
       "title": "Libreagi – 保存 OSS 模型",
@@ -32,6 +39,13 @@
       "title": "Claude 和其他 AI 的区别好像是通一点点人性。",
       "summary": "突发奇想问 Claude 一个问题，大意是先感慨现在 AI 写的代码简直完美，一次输出就能考虑到各种边界、性能以及优雅地实现，然后问我能不能做到像 Claude 一样编写出完美代码，如何才能做到？Claude 回答的感觉有人味，就像和一个真实的人类对话，也 get 到了问题的重心。以下是 Claude 的回答：能做到一部分，但\"像我一样一次写出完美代码\"这个目标本身值得拆开看。**先说一个真相：你看到的是结果，不是过程。** 我的输出看起来一气呵成，是因为你没看到那些不会出现的东西：我没有被需求变更打断，没有调试环境的反馈，也没有\"这段代码三个月后谁来维护\"的压",
       "url": "https://www.v2ex.com/t/1256619",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256642",
+      "title": "杭州 AI 短剧初创招人 算法-agent-全栈",
+      "summary": "# [ 全职] 目前 2 个人加 1 个实习生扛着 AI 视频生产线，想再找几个爱折腾的人 先说现状：我们是一个 AI 短剧初创团队，已经做了一年多了，目前自动化短剧跑的挺好，目前算法这边两个正式加一个实习。要做的想做的有点多，所以来发帖招些人。## 我们在做什么 AI 影视内容的生产工具链，从剧本一路到成片：**剧本结构化 CLI**：把 txt / docx / 视频 / PDF 漫画转成结构化剧本，支持本地查询、校验、原子修改和带版本冲突检测的发布。它同时是给 agent 用的工具，随包附带 skill。**剧本到分镜到视频的流水线**（Pyt",
+      "url": "https://www.v2ex.com/t/1256642",
       "source": "V2EX"
     },
     {
@@ -70,24 +84,31 @@
       "source": "V2EX"
     },
     {
-      "id": "xhot-xrss-8074390122",
-      "title": "随着 AI 在学生提交的作品中的使用越来越多，澳大利亚的 STEM 视频游戏挑战赛将在 12 年后结束。钍",
-      "summary": "随着 AI 在学生提交的作品中的使用越来越多，澳大利亚的 STEM 视频游戏挑战赛将在 12 年后结束。这项免费竞赛的目的是鼓励学生通过设计和构建自己的视频游戏来学习游戏开发。但是",
-      "url": "https://x.com/Pirat_Nation/status/2120441408805073403",
+      "id": "xhot-xrss-28207044",
+      "title": "Chrome 团队推出免费技能包，让 Claude Code 和 Codex 不再写旧版网页代码",
+      "summary": "运行一条 npx modern-web-guidance 命令，即可让编程 agent 采用现代网页 API，减少旧代码。",
+      "url": "https://x.com/Voxyz_ai/status/2120894401161417203",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-485585326",
-      "title": "文章称若 Nvidia 解雇 Jensen，免费 AI 模型可能受影响",
-      "summary": "文章认为 Nvidia 免费开放模型数量最多且由 Jensen 推动，换人可能先砍免费项目。",
-      "url": "https://x.com/alex_verem/status/2120817755813495085",
+      "id": "xhot-xrss-3054545472",
+      "title": "JetBrains Air 提供免费 AI 配置 Junie Lite，无需订阅即可试用",
+      "summary": "在 GoLand 2026.3 中，只需 JetBrains 账号即可免费使用 Junie Lite 体验智能体编程。",
+      "url": "https://x.com/i/status/2120908244499538220",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-7450583048",
-      "title": "精选 LLM API 目录，收录提供永久免费文本推理层的服务",
-      "summary": "具有用于文本推理的永久免费套餐的 LLM API 精选目录",
-      "url": "https://x.com/tom_doerr/status/2065922030134825177",
+      "id": "xhot-xrss-5530655687",
+      "title": "2026 Epic AI MegaJam 免费提供专家团队支持",
+      "summary": "面向 UnrealEngine 与 UEFN 开发者的 Epic AI MegaJam 活动，免费提供专家团队协助。",
+      "url": "https://x.com/mimmo_the_root/status/2120925276192542964",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-4849432145",
+      "title": "免费开源仓库 Langflow：拖拽方框即可搭建 AI agent",
+      "summary": "Langflow 是免费 GitHub 项目，可拖入模型、数据和步骤连线，并在真实示例上测试 AI agent。",
+      "url": "https://x.com/BrockmesarichAI/status/2120894414700597587",
       "source": "X"
     }
   ]

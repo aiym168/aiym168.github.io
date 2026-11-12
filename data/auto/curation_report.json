@@ -2,17 +2,20 @@
  "counts": {
   "archived": 13,
   "deadline_extracted": 6,
-  "drop:duplicate": 97,
-  "drop:empty_summary": 18,
-  "drop:negative_signal": 96,
-  "drop:no_clear_offer": 233,
-  "drop:not_ai": 213,
+  "drop:duplicate": 96,
+  "drop:empty_summary": 20,
+  "drop:negative_signal": 97,
+  "drop:no_clear_offer": 235,
+  "drop:not_ai": 212,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 292,
-  "google_news_total": 292,
-  "kept_total": 166,
+  "google_news_resolved": 297,
+  "google_news_total": 297,
+  "kept_total": 168,
   "net:gnews_cache_hit": 292,
-  "raw_total": 882
+  "net:gnews_resolved_net": 5,
+  "net:tco_expanded": 2,
+  "new_this_run": 1,
+  "raw_total": 887
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -21,16 +24,18 @@
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
-   "awesome-free-ai-coding：收录合法免费 LLM API 与编程代理",
    "freefield：ComfyUI 上开源 Higgsfield",
    "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
    "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中",
    "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件",
    "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个",
    "api-relay-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
-   "search-boost：AI 编码代理的多引擎网络搜索和证据合成"
+   "search-boost：AI 编码代理的多引擎网络搜索和证据合成",
+   "unified-ai-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型"
   ],
   "empty_summary": [
+   "面向 UnrealEngine 与 UEFN 开发者的 Epic AI MegaJam 活动，免费提供专家团队协助",
+   "在 GoLand 2026.3 中，只需 JetBrains 账号即可免费使用 Junie Lite 体验智能体编程",
    "@tom_doerr 分享：具有用于文本推理的永久免费套餐的 LLM API 精选目录",
    "文章认为 Nvidia 免费开放模型数量最多且由 Jensen 推动，换人可能先砍免费项目",
    "@PFF 分享：提供180+新指标、自定义数据可视化、32000+统计组合和 Guru AI 访问，可免费试用",
@@ -40,9 +45,7 @@
    "81 分钟学习 Claude Code，freeCodeCamp 刚刚推出其他免费书籍和课程 81 分钟内学习 Clau",
    "@koltregaskes 分享：所有付费消费者和团队计划均已获得所有型号和限制的完全免费的 Claude 重置",
    "我开源了 Ember，它在大约一分钟内部署到 @Cloudflare 的免费层，可与 Slack 兼容的有效负载配合使用",
-   "# AI # IA # MATHEMATIQUES 印度政府免费在线课程：8个学习 AI、数学",
-   "@appleinsider 分享：随着苹果扩大面向学生和企业的教育计划，土耳其即将推出免费编码课程和 AI 制造培训",
-   "今天免费 GPU"
+   "# AI # IA # MATHEMATIQUES 印度政府免费在线课程：8个学习 AI、数学"
   ],
   "negative_signal": [
    "@Scobleizer 分享：推文称奥斯汀机器人/AI 活动期间，马斯克每次乘车都获得免费广告，独特设计引发讨论",
@@ -59,6 +62,8 @@
    "@mcwilsonky 分享：客户正在询问 AI 该雇用谁"
   ],
   "no_clear_offer": [
+   "Langflow 是免费 GitHub 项目，可拖入模型、数据和步骤连线，并在真实示例上测试 AI agent",
+   "运行一条 npx modern-web-guidance 命令，即可让编程 agent 采用现代网页 API，减少旧代码",
    "@Pirat_Nation 分享：随着 AI 在学生提交的作品中的使用越来越多，澳大利亚的 STEM 视频游戏挑战赛将在",
    "推文称「smol ship」意味着商业模式变成免费功能，并推介 Fireflies 的 Fred 处理会议笔记",
    "@RSI 分享：新一届国会，不断变化的政治格局",
@@ -68,11 +73,10 @@
    "@DeryaTR_ 分享：这条帖子认为 AI 有望帮助人类突破生物和进化的限制",
    "@ItsmeAjayKV 分享：11月16日前仅限套餐，之后需使用量积分",
    "阿里最新旗舰模型加入 AI Token Plan，首月3美元，原价6美元",
-   "@harshmadhusudan 分享：政府可以为每个印度儿童创建数字基础设施，以获得免费的 AI（AI）导师",
-   "用 HeyGen MCP 基于 MiniMax H3创作电影感视频，12月1日前发帖参赛",
-   "@ZackShutt 分享：专利列出可用现金、积分、免费软件或模型使用权作为报酬"
+   "@harshmadhusudan 分享：政府可以为每个印度儿童创建数字基础设施，以获得免费的 AI（AI）导师"
   ],
   "not_ai": [
+   "Apple 的免费容器工具利用 macOS 26 虚拟化，在 Apple Silicon 上以轻量虚拟机运行 OCI 容",
    "该终端工具由微软副总裁 Scott Hanselman 创建，类似高级任务管理器",
    "推文称 PhysicsWallah 并非教学出色，只是低价填鸭式辅导，并称有更好的免费选择",
    "@GenAI_is_real 分享：引《左传》称受宠不骄、被降不怨且能自抑者少见，地位越高越需克制",
@@ -83,8 +87,7 @@
    "Azure 将基础设施、开源创新、智能运维与成本可视化结合，帮助企业推进现代化并创造业务价值",
    "@Cloudflare 分享：首批 301,300 美元将分配给开源项目与维护者",
    "@Netlify 分享：官方帖文提供完整介绍、文档，以及编写、运行和部署第一个服务的指南",
-   "爆炸性新闻 彭博社报道称，NVIDIA 董事会正在与一家外部公司合作，寻找黄仁勋的继任者，可能先任命一位临时首席执行官",
-   "您现在可以在 Mac 上本地运行 pplx-decider-flash-v1.2，无需 API 密钥"
+   "爆炸性新闻 彭博社报道称，NVIDIA 董事会正在与一家外部公司合作，寻找黄仁勋的继任者，可能先任命一位临时首席执行官"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -101,16 +104,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-13T01:32:34+08:00",
+ "generated_at": "2026-11-13T02:38:02+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-13T01:32:34+08:00",
+  "checked_at": "2026-11-13T02:38:02+08:00",
   "counts": {
-   "ok": 154,
-   "unsure": 1
+   "ok": 154
   },
   "hidden": 0
  },
- "seconds": 0.5,
+ "seconds": 2.9,
  "side": {
   "github_hot": {
    "drop:not_ai": 1,
@@ -119,10 +121,10 @@
   },
   "hot_topics": {
    "drop:negative_signal": 4,
-   "drop:not_ai": 4,
-   "drop:not_ai_strict": 3,
-   "kept": 12,
-   "raw": 23
+   "drop:not_ai": 5,
+   "drop:not_ai_strict": 2,
+   "kept": 15,
+   "raw": 26
   }
  }
 }
