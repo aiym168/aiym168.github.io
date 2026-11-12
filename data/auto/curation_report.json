@@ -1,40 +1,42 @@
 {
  "counts": {
-  "archived": 12,
+  "archived": 13,
   "deadline_extracted": 6,
-  "drop:duplicate": 53,
-  "drop:empty_summary": 16,
-  "drop:negative_signal": 94,
-  "drop:no_clear_offer": 219,
-  "drop:not_ai": 176,
+  "drop:duplicate": 97,
+  "drop:empty_summary": 18,
+  "drop:negative_signal": 96,
+  "drop:no_clear_offer": 233,
+  "drop:not_ai": 213,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 288,
-  "google_news_total": 288,
-  "kept_total": 164,
-  "net:gnews_cache_hit": 271,
-  "net:gnews_resolved_net": 17,
-  "net:tco_expanded": 8,
-  "net:tco_failed": 2,
-  "new_this_run": 2,
-  "raw_total": 781
+  "google_news_resolved": 292,
+  "google_news_total": 292,
+  "kept_total": 167,
+  "net:gnews_cache_hit": 288,
+  "net:gnews_resolved_net": 4,
+  "net:tco_expanded": 1,
+  "net:tco_failed": 1,
+  "new_this_run": 3,
+  "raw_total": 883
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "awesome-free-ai-coding：合法免费的 LLM API 和编码代理",
-   "design-os-studio：用 Rust 构建的原生 GPU 加速界​​面设计工具",
-   "ai-api-gateway-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
-   "api-router-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
-   "multi-model-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
-   "llm-serve-dashboard：用于本地 llama.cpp/vLLM 服务的单文件、无依赖性实时仪表板",
-   "unified-ai-api-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 ",
-   "9routerx：9RouterX（9R Next Go Generation）",
-   "wabcut：适用于游戏视频、视频文章和纪录片的免费开源视频编辑器",
-   "free-llm-intel：AI 厂商动态别挨家追",
-   "PixelArtistry-UltraTex：UltraTex for ComfyUI"
+   "LG Research 免费开放 K-Exaone 2.5 API",
+   "Gemini Decision 1 在 Google AI Studio 上免费开放",
+   "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
+   "awesome-free-ai-coding：收录合法免费 LLM API 与编程代理",
+   "freefield：ComfyUI 上开源 Higgsfield",
+   "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
+   "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中",
+   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件",
+   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个",
+   "api-relay-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
+   "search-boost：AI 编码代理的多引擎网络搜索和证据合成"
   ],
   "empty_summary": [
+   "@tom_doerr 分享：具有用于文本推理的永久免费套餐的 LLM API 精选目录",
+   "文章认为 Nvidia 免费开放模型数量最多且由 Jensen 推动，换人可能先砍免费项目",
    "@PFF 分享：提供180+新指标、自定义数据可视化、32000+统计组合和 Guru AI 访问，可免费试用",
    "观点：AI 热潮始于 ImageNet 这类全球研究者可免费使用的开放数据集，而机器人领域仍缺同样的公开真实数据",
    "本周末，通过由 CTO 教授的 12 小时免费 CodeCamp 课程，免费学习 Claude Code",
@@ -44,9 +46,7 @@
    "我开源了 Ember，它在大约一分钟内部署到 @Cloudflare 的免费层，可与 Slack 兼容的有效负载配合使用",
    "# AI # IA # MATHEMATIQUES 印度政府免费在线课程：8个学习 AI、数学",
    "@appleinsider 分享：随着苹果扩大面向学生和企业的教育计划，土耳其即将推出免费编码课程和 AI 制造培训",
-   "今天免费 GPU",
-   "@TeachHoopsBBall 分享：免费学习 AI",
-   "@TeachHoopsBBall 分享：免费学习 AI"
+   "今天免费 GPU"
   ],
   "negative_signal": [
    "@Scobleizer 分享：推文称奥斯汀机器人/AI 活动期间，马斯克每次乘车都获得免费广告，独特设计引发讨论",
@@ -63,6 +63,7 @@
    "@mcwilsonky 分享：客户正在询问 AI 该雇用谁"
   ],
   "no_clear_offer": [
+   "@Pirat_Nation 分享：随着 AI 在学生提交的作品中的使用越来越多，澳大利亚的 STEM 视频游戏挑战赛将在",
    "推文称「smol ship」意味着商业模式变成免费功能，并推介 Fireflies 的 Fred 处理会议笔记",
    "@RSI 分享：新一届国会，不断变化的政治格局",
    "@klindt_david 分享：其律师兄弟称存在 AI 无法替代的核心，但作者作为外行认为免费方案接近正确即可",
@@ -73,10 +74,10 @@
    "阿里最新旗舰模型加入 AI Token Plan，首月3美元，原价6美元",
    "@harshmadhusudan 分享：政府可以为每个印度儿童创建数字基础设施，以获得免费的 AI（AI）导师",
    "用 HeyGen MCP 基于 MiniMax H3创作电影感视频，12月1日前发帖参赛",
-   "@ZackShutt 分享：专利列出可用现金、积分、免费软件或模型使用权作为报酬",
-   "@testingcatalog 分享：面向催缴欠款、取消试用订阅等小任务，用户可在 Telegram 或 WhatsAp"
+   "@ZackShutt 分享：专利列出可用现金、积分、免费软件或模型使用权作为报酬"
   ],
   "not_ai": [
+   "该终端工具由微软副总裁 Scott Hanselman 创建，类似高级任务管理器",
    "推文称 PhysicsWallah 并非教学出色，只是低价填鸭式辅导，并称有更好的免费选择",
    "@GenAI_is_real 分享：引《左传》称受宠不骄、被降不怨且能自抑者少见，地位越高越需克制",
    "积分不可转账或换回 TAO，服务商自行定价",
@@ -87,8 +88,7 @@
    "@Cloudflare 分享：首批 301,300 美元将分配给开源项目与维护者",
    "@Netlify 分享：官方帖文提供完整介绍、文档，以及编写、运行和部署第一个服务的指南",
    "爆炸性新闻 彭博社报道称，NVIDIA 董事会正在与一家外部公司合作，寻找黄仁勋的继任者，可能先任命一位临时首席执行官",
-   "您现在可以在 Mac 上本地运行 pplx-decider-flash-v1.2，无需 API 密钥",
-   "计算机可以在 Shopify 中创建广告、构建登陆页面，以及在 Klaviyo 中运行电子邮件营销活动"
+   "您现在可以在 Mac 上本地运行 pplx-decider-flash-v1.2，无需 API 密钥"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -105,15 +105,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-12T23:05:51+08:00",
+ "generated_at": "2026-11-13T00:57:02+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-12T23:05:51+08:00",
+  "checked_at": "2026-11-13T00:56:50+08:00",
   "counts": {
-   "ok": 152
+   "ok": 153
   },
   "hidden": 0
  },
- "seconds": 11.9,
+ "seconds": 3.2,
  "side": {
   "github_hot": {
    "drop:not_ai": 1,
@@ -121,11 +121,11 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
-   "drop:not_ai": 12,
-   "drop:not_ai_strict": 4,
-   "kept": 15,
-   "raw": 34
+   "drop:negative_signal": 1,
+   "drop:not_ai": 3,
+   "drop:not_ai_strict": 3,
+   "kept": 14,
+   "raw": 21
   }
  }
 }

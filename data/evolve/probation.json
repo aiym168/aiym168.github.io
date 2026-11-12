@@ -19,12 +19,22 @@
      "on_topic": 5,
      "offtopic": 0,
      "zh": true
+    },
+    {
+     "date": "2026-11-13",
+     "ok": true,
+     "rows": 20,
+     "recent": 20,
+     "blocked": 3,
+     "on_topic": 5,
+     "offtopic": 0,
+     "zh": true
     }
    ],
    "score": {
-    "trials": 1,
-    "ok": 1,
-    "blocked": 3,
+    "trials": 2,
+    "ok": 2,
+    "blocked": 6,
     "on_topic": 0.25,
     "recent": 20.0,
     "block_rate": 0.15
@@ -49,15 +59,85 @@
      "on_topic": 1,
      "offtopic": 0,
      "zh": false
+    },
+    {
+     "date": "2026-11-13",
+     "ok": true,
+     "rows": 10,
+     "recent": 10,
+     "blocked": 1,
+     "on_topic": 0,
+     "offtopic": 0,
+     "zh": false
+    }
+   ],
+   "score": {
+    "trials": 2,
+    "ok": 2,
+    "blocked": 2,
+    "on_topic": 0.05,
+    "recent": 10.0,
+    "block_rate": 0.1
+   }
+  },
+  {
+   "key": "cand-arstechnica-com",
+   "name": "arstechnica.com",
+   "home": "https://arstechnica.com/",
+   "feed": "https://arstechnica.com/feed",
+   "channel": "ai",
+   "lang": "en",
+   "origin": "mined",
+   "added": "2026-11-13",
+   "trials": [
+    {
+     "date": "2026-11-13",
+     "ok": true,
+     "rows": 20,
+     "recent": 20,
+     "blocked": 5,
+     "on_topic": 8,
+     "offtopic": 0,
+     "zh": false
     }
    ],
    "score": {
     "trials": 1,
     "ok": 1,
-    "blocked": 1,
-    "on_topic": 0.1,
-    "recent": 10.0,
-    "block_rate": 0.1
+    "blocked": 5,
+    "on_topic": 0.4,
+    "recent": 20.0,
+    "block_rate": 0.25
+   }
+  },
+  {
+   "key": "interconnects",
+   "name": "Interconnects",
+   "home": "https://www.interconnects.ai/",
+   "feed": "https://www.interconnects.ai/feed",
+   "channel": "ai",
+   "lang": "en",
+   "origin": "seed",
+   "added": "2026-11-13",
+   "trials": [
+    {
+     "date": "2026-11-13",
+     "ok": true,
+     "rows": 20,
+     "recent": 0,
+     "blocked": 4,
+     "on_topic": 10,
+     "offtopic": 0,
+     "zh": false
+    }
+   ],
+   "score": {
+    "trials": 1,
+    "ok": 1,
+    "blocked": 4,
+    "on_topic": 0.5,
+    "recent": 0.0,
+    "block_rate": 0.2
    }
   }
  ],
