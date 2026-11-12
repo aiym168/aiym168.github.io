@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T20:33:12+08:00",
-  "generated_at_label": "2026-11-12 20:33 Asia/Shanghai",
+  "generated_at": "2026-11-12T20:44:04+08:00",
+  "generated_at_label": "2026-11-12 20:44 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
     "A": {
@@ -36,8 +36,8 @@
       },
       "runs_total": 43,
       "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
-      "next_run_label": "2026-11-12 20:37 Asia/Shanghai",
-      "age_min": 2
+      "next_run_label": "2026-11-12 21:07 Asia/Shanghai",
+      "age_min": 13
     },
     "B": {
       "engine": "B",
@@ -74,7 +74,7 @@
       "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
       "next_run_label": "2026-11-12 21:25 Asia/Shanghai",
       "last_seen_at": "2026-11-12T20:33:12+08:00",
-      "age_min": 0
+      "age_min": 10
     },
     "C": {
       "engine": "C",
@@ -111,7 +111,7 @@
       "schedule": "第二台服务器已不参与本站更新：运行独立的直播站，并在每天 08:30 / 20:30 生成羊毛电台",
       "next_run_label": "2026-11-12 20:55 Asia/Shanghai",
       "last_seen_at": "2026-11-10T13:10:18+08:00",
-      "age_min": 3322
+      "age_min": 3333
     },
     "watchdog": {
       "schedule": "每 30 分钟（第 23 / 53 分钟）",
@@ -139,7 +139,7 @@
     "api_pages": 4,
     "next_update_label": "21:07 北京时间（约）"
   },
-  "data_updated_label": "2026-11-12 20:33 Asia/Shanghai",
+  "data_updated_label": "2026-11-12 20:44 Asia/Shanghai",
   "sources": {
     "HN": {
       "ok_total": 48,
