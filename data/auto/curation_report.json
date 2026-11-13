@@ -3,17 +3,19 @@
   "archived": 14,
   "deadline_extracted": 6,
   "drop:duplicate": 94,
-  "drop:empty_summary": 21,
+  "drop:empty_summary": 23,
   "drop:negative_signal": 97,
-  "drop:no_clear_offer": 245,
-  "drop:not_ai": 216,
+  "drop:no_clear_offer": 252,
+  "drop:not_ai": 217,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 310,
-  "google_news_total": 310,
+  "google_news_resolved": 320,
+  "google_news_total": 320,
   "kept_total": 170,
   "net:gnews_cache_hit": 310,
+  "net:gnews_resolved_net": 10,
+  "net:tco_expanded": 3,
   "new_this_run": 2,
-  "raw_total": 902
+  "raw_total": 912
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -32,6 +34,8 @@
    "unified-ai-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型"
   ],
   "empty_summary": [
+   "加入 AMD AI 开发者计划可获免费 API 访问和 Token Lab 赠送积分",
+   "Claude Duet 开始发送邀请，每位 Duet 用户有3个邀请名额",
    "该模型支持100万 token 上下文和图像输入，输入每百万 token 8美元、输出40美元",
    "面向 UnrealEngine 与 UEFN 开发者的 Epic AI MegaJam 活动，免费提供专家团队协助",
    "在 GoLand 2026.3 中，只需 JetBrains 账号即可免费使用 Junie Lite 体验智能体编程",
@@ -41,9 +45,7 @@
    "观点：AI 热潮始于 ImageNet 这类全球研究者可免费使用的开放数据集，而机器人领域仍缺同样的公开真实数据",
    "本周末，通过由 CTO 教授的 12 小时免费 CodeCamp 课程，免费学习 Claude Code",
    "微软副总裁 Scott Hanselman 发布了“gputaskman”，这是一款免费的开源 GPU 监控实用程序",
-   "81 分钟学习 Claude Code，freeCodeCamp 刚刚推出其他免费书籍和课程 81 分钟内学习 Clau",
-   "@koltregaskes 分享：所有付费消费者和团队计划均已获得所有型号和限制的完全免费的 Claude 重置",
-   "我开源了 Ember，它在大约一分钟内部署到 @Cloudflare 的免费层，可与 Slack 兼容的有效负载配合使用"
+   "81 分钟学习 Claude Code，freeCodeCamp 刚刚推出其他免费书籍和课程 81 分钟内学习 Clau"
   ],
   "negative_signal": [
    "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页",
@@ -60,20 +62,22 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "该 macOS 应用让私有 AI 模型快速接入 Claude Code、Codex 和 OpenCode",
+   "目前支持单张 NVIDIA GPU、每机一个模型和 vLLM，已测小模型",
+   "@HuggingPapers 分享：该阅读层只接收必要证据，在保持任务质量的同时，将 token 用量最多降低92.9%",
+   "即使没有 GPU，该链接仍可每周获得免费 GPT-6和 DeepSeek token",
+   "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入",
+   "它把私有模型接入 Claude Code、Codex 和 OpenCode，用户可控制数据外发，共享轨迹可获积分抵扣推理",
    "速查表提供可直接使用的 Mentor AI 提示词，帮你摆脱卡壳又不直接给出答案",
    "@mcwilsonky 分享：该方案教小企业在 90 天内被 ChatGPT、Claude 等 AI 助手推荐，并提供免",
    "@sumiiitup 分享：他昨晚对阵鹈鹕时打扮成助理教练，赛后还在 IG 发帖调侃",
    "@dhh 分享：推文建议备份若干开放权重模型和基础运行设备，并称免费 AI 失去一位重要支持者",
    "@nancyrubin 分享：教师称若不提供优质 AI 工具，学生会自行寻找可用工具，封锁访问无法教会学生质疑答案",
-   "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
-   "Tenzai 的 Zeitlin 称中国开放权重模型免费且无访问限制是真正威胁",
-   "推文称赞黄仁勋从零打造 NVIDIA，让许多人致富，并支持开放免费本地 AI，随后以 X 结尾",
-   "Langflow 是免费 GitHub 项目，可拖入模型、数据和步骤连线，并在真实示例上测试 AI agent",
-   "运行一条 npx modern-web-guidance 命令，即可让编程 agent 采用现代网页 API，减少旧代码",
-   "@Pirat_Nation 分享：随着 AI 在学生提交的作品中的使用越来越多，澳大利亚的 STEM 视频游戏挑战赛将在",
-   "推文称「smol ship」意味着商业模式变成免费功能，并推介 Fireflies 的 Fred 处理会议笔记"
+   "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南"
   ],
   "not_ai": [
+   "用户可实时观看 Box 桌面并在任意时刻接管，用于登录或批准付款",
+   "哪些因素会毁掉您的笔记本电脑：以下行为不会：- 让笔记本电脑一直插着电源 - 同时打开40个标签页 - 从不关机 -",
    "官方称屠杀模式下周上线，DOOM: The Dark Ages Revelations 玩家可免费游玩",
    "Modal 将赞助 Vals Hacks 第一、二赛道，提供算力额度、技术支持及2万美元奖金额度",
    "@davj 分享：推文列出首轮融资免费资源，包括 Paul Graham 融资文章和 YC 种子轮融资指南",
@@ -83,9 +87,7 @@
    "@GenAI_is_real 分享：引《左传》称受宠不骄、被降不怨且能自抑者少见，地位越高越需克制",
    "积分不可转账或换回 TAO，服务商自行定价",
    "清单列出 Sunsama、Readwise Reader 等付费工具的免费平替及链接",
-   "通过免费的交互式 React 视觉效果发现了这个 刚刚发现这个带有免费的交互式 React 视觉效果",
-   "付费订阅用户可抢先预留 @muse.ai 邮箱名，该功能之后将向包括免费方案在内的所有用户开放",
-   "Azure 将基础设施、开源创新、智能运维与成本可视化结合，帮助企业推进现代化并创造业务价值"
+   "通过免费的交互式 React 视觉效果发现了这个 刚刚发现这个带有免费的交互式 React 视觉效果"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -102,16 +104,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-13T11:02:39+08:00",
+ "generated_at": "2026-11-13T11:03:29+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-13T11:02:38+08:00",
+  "checked_at": "2026-11-13T11:03:29+08:00",
   "counts": {
-   "ok": 112,
-   "unsure": 46
+   "ok": 158
   },
   "hidden": 0
  },
- "seconds": 0.6,
+ "seconds": 5.1,
  "side": {
   "github_hot": {
    "kept": 30,
@@ -120,9 +121,9 @@
   "hot_topics": {
    "drop:negative_signal": 7,
    "drop:not_ai": 6,
-   "drop:not_ai_strict": 4,
-   "kept": 22,
-   "raw": 39
+   "drop:not_ai_strict": 3,
+   "kept": 24,
+   "raw": 40
   }
  }
 }
