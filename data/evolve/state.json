@@ -1,6 +1,6 @@
 {
  "last_step": {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "changes": [
    {
     "op": "slower",
@@ -33,20 +33,26 @@
     "why": "总是重复，没有新东西"
    }
   ],
-  "snapshot": "data/evolve/snapshots/2026-11-13.json",
+  "snapshot": "data/evolve/snapshots/2026-11-14.json",
   "baseline": {
-   "kept": 6542,
-   "runs": 64,
+   "kept": 10434,
+   "runs": 60,
    "dead": 0,
-   "checked": 512,
-   "build_ok": 65,
+   "checked": 583,
+   "build_ok": 59,
    "build_bad": 0,
-   "kept_per_run": 102.22,
+   "kept_per_run": 173.9,
    "dead_rate": 0.0,
    "bad_build_rate": 0.0
   }
  },
  "history": [
+  {
+   "date": "2026-11-14",
+   "verdict_prev": null,
+   "changes": 5,
+   "diary_by": "rules"
+  },
   {
    "date": "2026-11-13",
    "verdict_prev": null,
@@ -60,5 +66,5 @@
    "diary_by": "rules"
   }
  ],
- "last_evolve_date": "2026-11-13"
+ "last_evolve_date": "2026-11-14"
 }

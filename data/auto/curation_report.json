@@ -2,35 +2,34 @@
  "counts": {
   "archived": 14,
   "deadline_extracted": 6,
-  "drop:duplicate": 94,
+  "drop:duplicate": 141,
   "drop:empty_summary": 24,
-  "drop:negative_signal": 97,
-  "drop:no_clear_offer": 266,
-  "drop:not_ai": 220,
+  "drop:negative_signal": 99,
+  "drop:no_clear_offer": 281,
+  "drop:not_ai": 254,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 338,
   "google_news_total": 338,
-  "kept_total": 170,
-  "net:gnews_cache_hit": 335,
-  "net:gnews_resolved_net": 3,
-  "net:tco_expanded": 1,
-  "raw_total": 930
+  "kept_total": 171,
+  "net:gnews_cache_hit": 338,
+  "new_this_run": 1,
+  "raw_total": 1029
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
+   "上传房间照片即可用 AI 生成2个免费设计方案",
+   "免费课程：从工程师到 AI 工程师，每集对应一个 Git 标签",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
+   "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
+   "grux：Grux AI，免费的开源 AI 代理",
    "freefield：ComfyUI 上开源 Higgsfield",
+   "awesome-free-llm-api：免费大模型 API 导航 · 只收录能通过 API Key 和 endpoin",
    "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
-   "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中",
-   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件",
-   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个",
-   "api-relay-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型",
-   "search-boost：AI 编码代理的多引擎网络搜索和证据合成",
-   "unified-ai-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型"
+   "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中"
   ],
   "empty_summary": [
    "Gojiberry AI 的 ARR 突破 500 万美元，并发布免费课程",
@@ -103,25 +102,26 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-13T23:19:07+08:00",
+ "generated_at": "2026-11-14T00:47:41+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-13T23:19:06+08:00",
+  "checked_at": "2026-11-14T00:47:20+08:00",
   "counts": {
    "ok": 157
   },
   "hidden": 0
  },
- "seconds": 2.1,
+ "seconds": 0.4,
  "side": {
   "github_hot": {
-   "kept": 30,
+   "drop:duplicate": 7,
+   "kept": 23,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
-   "drop:not_ai": 11,
+   "drop:negative_signal": 4,
+   "drop:not_ai": 12,
    "drop:not_ai_strict": 3,
-   "kept": 23,
+   "kept": 21,
    "raw": 40
   }
  }

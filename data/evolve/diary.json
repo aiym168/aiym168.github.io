@@ -1,6 +1,56 @@
 {
- "updated_at": "2026-11-13T00:57+08:00",
+ "updated_at": "2026-11-14T00:47+08:00",
  "days": [
+  {
+   "date": "2026-11-14",
+   "lines": [
+    "今天我学会了：Hugging Face 热门模型 最近 7 天给了我 456 条新内容，最靠谱。",
+    "我调整了：伯克利 BAIR、Synced 等 5 个来源总是重复，我放慢了去看它的频率。",
+    "我在试用新来源 Chip Huyen、Eugene Yan，合格了才会上架。"
+   ],
+   "by": "rules",
+   "events": [
+    {
+     "op": "slower",
+     "name": "伯克利 BAIR",
+     "key": "bair-berkeley-edu-blog-feed-xml",
+     "why": "总是重复，没有新东西"
+    },
+    {
+     "op": "slower",
+     "name": "Synced",
+     "key": "syncedreview-com-feed",
+     "why": "总是重复，没有新东西"
+    },
+    {
+     "op": "slower",
+     "name": "Lilian Weng",
+     "key": "lilianweng-github-io-index-xml",
+     "why": "总是重复，没有新东西"
+    },
+    {
+     "op": "slower",
+     "name": "The Gradient",
+     "key": "thegradient-pub-rss",
+     "why": "总是重复，没有新东西"
+    },
+    {
+     "op": "slower",
+     "name": "Chromium Blog",
+     "key": "blog-chromium-org-feeds-posts-default",
+     "why": "总是重复，没有新东西"
+    },
+    {
+     "op": "probation",
+     "name": "Chip Huyen"
+    },
+    {
+     "op": "probation",
+     "name": "Eugene Yan"
+    }
+   ],
+   "at": "2026-11-14T00:47+08:00"
+  },
   {
    "date": "2026-11-13",
    "lines": [
