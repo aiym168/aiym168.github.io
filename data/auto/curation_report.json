@@ -5,18 +5,17 @@
   "drop:duplicate": 94,
   "drop:empty_summary": 23,
   "drop:negative_signal": 97,
-  "drop:no_clear_offer": 255,
-  "drop:not_ai": 219,
+  "drop:no_clear_offer": 256,
+  "drop:not_ai": 220,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 327,
-  "google_news_total": 327,
-  "kept_total": 172,
-  "net:gnews_cache_hit": 320,
-  "net:gnews_resolved_net": 7,
-  "net:tco_expanded": 1,
-  "net:tco_failed": 2,
-  "new_this_run": 1,
-  "raw_total": 919
+  "google_news_resolved": 330,
+  "google_news_total": 330,
+  "kept_total": 173,
+  "net:gnews_cache_hit": 327,
+  "net:gnews_resolved_net": 3,
+  "net:tco_failed": 1,
+  "new_this_run": 2,
+  "raw_total": 922
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -63,6 +62,7 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "Epic 更新 Quixel 资产条款，Megascans 与 Megaplants 可用于训练 AI 模型",
    "Goose 由 Jack Dorsey 的 Block 为内部工程师打造后开源，GitHub 已获 3.5 万星",
    "@BkashJosi 分享：它不只聊天，还能用免费技能分析 AI 搜索为何列出竞争对手而非你，另有 52 个技能",
    "Nod 可在 Mac 或 Windows 运行，自带浏览器处理邮件、日历、发票和订阅，用户可选 AI 提供商",
@@ -73,10 +73,11 @@
    "@HuggingPapers 分享：该阅读层只接收必要证据，在保持任务质量的同时，将 token 用量最多降低92.9%",
    "即使没有 GPU，该链接仍可每周获得免费 GPT-6和 DeepSeek token",
    "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入",
-   "它把私有模型接入 Claude Code、Codex 和 OpenCode，用户可控制数据外发，共享轨迹可获积分抵扣推理",
-   "速查表提供可直接使用的 Mentor AI 提示词，帮你摆脱卡壳又不直接给出答案"
+   "它把私有模型接入 Claude Code、Codex 和 OpenCode，用户可控制数据外发，共享轨迹可获积分抵扣推理"
   ],
   "not_ai": [
+   "@MengTo 分享：整段主视觉为2K 的30秒一镜到底，滚动时反向播放，附完整工作流与提示词",
+   "将 Prolong 针对中风开发的药物用于 ME/CFS 患者，探索增加供氧和血流的疗效",
    "@robinebers 分享：发帖者称可接入自己的订阅，拥有强大云端与漂亮界面，不用其云服务则完全免费",
    "Nebius 营收超预期 8%，其中含 3.25 亿美元非经常性收入",
    "用户可实时观看 Box 桌面并在任意时刻接管，用于登录或批准付款",
@@ -86,9 +87,7 @@
    "@davj 分享：推文列出首轮融资免费资源，包括 Paul Graham 融资文章和 YC 种子轮融资指南",
    "Apple 的免费容器工具利用 macOS 26 虚拟化，在 Apple Silicon 上以轻量虚拟机运行 OCI 容",
    "该终端工具由微软副总裁 Scott Hanselman 创建，类似高级任务管理器",
-   "推文称 PhysicsWallah 并非教学出色，只是低价填鸭式辅导，并称有更好的免费选择",
-   "@GenAI_is_real 分享：引《左传》称受宠不骄、被降不怨且能自抑者少见，地位越高越需克制",
-   "积分不可转账或换回 TAO，服务商自行定价"
+   "推文称 PhysicsWallah 并非教学出色，只是低价填鸭式辅导，并称有更好的免费选择"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -105,25 +104,25 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-13T13:28:45+08:00",
+ "generated_at": "2026-11-13T14:13:37+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-13T13:28:45+08:00",
+  "checked_at": "2026-11-13T14:13:37+08:00",
   "counts": {
-   "ok": 157
+   "ok": 159
   },
   "hidden": 0
  },
- "seconds": 4.6,
+ "seconds": 2.0,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 7,
-   "drop:not_ai": 8,
+   "drop:negative_signal": 6,
+   "drop:not_ai": 13,
    "drop:not_ai_strict": 4,
-   "kept": 21,
+   "kept": 17,
    "raw": 40
   }
  }
