@@ -4,15 +4,17 @@
   "deadline_extracted": 6,
   "drop:duplicate": 94,
   "drop:empty_summary": 24,
-  "drop:negative_signal": 96,
-  "drop:no_clear_offer": 265,
-  "drop:not_ai": 219,
+  "drop:negative_signal": 97,
+  "drop:no_clear_offer": 266,
+  "drop:not_ai": 220,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 335,
-  "google_news_total": 335,
+  "google_news_resolved": 338,
+  "google_news_total": 338,
   "kept_total": 170,
   "net:gnews_cache_hit": 335,
-  "raw_total": 927
+  "net:gnews_resolved_net": 3,
+  "net:tco_expanded": 1,
+  "raw_total": 930
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -59,6 +61,9 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "@synthesiaIO 分享：官方称只需 2 分钟即可免费创建自己的 AI 克隆，并可亲自试用",
+   "@ValsAI 分享：两款应用 10 月初换成评分更低的模型，榜首为 Claude Opus 5.5，得分 76.2%，",
+   "@ValsAI 分享：两款应用 10 月初换成评分更低的模型，榜首为 Claude Opus 5.5，得分 76.2%，",
    "哈佛将其完整 ML Systems 课程开源，含 6 大支柱和数百页内容",
    "@hkfp 分享：香港自由报致力于在 AI 时代保持人力新闻编辑室的地位",
    "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
@@ -67,10 +72,7 @@
    "Goose 由 Jack Dorsey 的 Block 为内部工程师打造后开源，GitHub 已获 3.5 万星",
    "@BkashJosi 分享：它不只聊天，还能用免费技能分析 AI 搜索为何列出竞争对手而非你，另有 52 个技能",
    "Nod 可在 Mac 或 Windows 运行，自带浏览器处理邮件、日历、发票和订阅，用户可选 AI 提供商",
-   "Decider v1.3 与 Decider Flash v1.3 开源，新增 locate 能力，用户可描述要查找的内",
-   "@Dexerto 分享：他称这是为严肃问题打造的有趣游戏，问题是 CGI 会抹掉胡子",
-   "该 macOS 应用让私有 AI 模型快速接入 Claude Code、Codex 和 OpenCode",
-   "目前支持单张 NVIDIA GPU、每机一个模型和 vLLM，已测小模型"
+   "Decider v1.3 与 Decider Flash v1.3 开源，新增 locate 能力，用户可描述要查找的内"
   ],
   "not_ai": [
    "@MengTo 分享：整段主视觉为2K 的30秒一镜到底，滚动时反向播放，附完整工作流与提示词",
@@ -101,27 +103,26 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-13T21:32:17+08:00",
+ "generated_at": "2026-11-13T23:19:07+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-13T21:32:16+08:00",
+  "checked_at": "2026-11-13T23:19:06+08:00",
   "counts": {
-   "ok": 121,
-   "unsure": 36
+   "ok": 157
   },
   "hidden": 0
  },
- "seconds": 0.6,
+ "seconds": 2.1,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 5,
-   "drop:not_ai": 8,
-   "drop:not_ai_strict": 5,
-   "kept": 21,
-   "raw": 39
+   "drop:negative_signal": 3,
+   "drop:not_ai": 11,
+   "drop:not_ai_strict": 3,
+   "kept": 23,
+   "raw": 40
   }
  }
 }
