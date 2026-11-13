@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T19:30:43+08:00",
-  "count": 19,
+  "generated_at": "2026-11-13T21:29:42+08:00",
+  "count": 21,
   "items": [
     {
       "id": "hnhot-50471431",
@@ -14,6 +14,13 @@
       "title": "Gemini 4 Hydrogen 和 Orchestrator",
       "summary": "",
       "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "hnhot-50481187",
+      "title": "claude.ai、Claude Code 和 platform.claude.com 上的错误增加",
+      "summary": "",
+      "url": "https://status.claude.com/incidents/nn11wk485zfn",
       "source": "Hacker News"
     },
     {
@@ -38,17 +45,17 @@
       "source": "V2EX"
     },
     {
-      "id": "hnhot-50481187",
-      "title": "claude.ai、Claude Code 和 platform.claude.com 上的错误增加",
-      "summary": "",
-      "url": "https://status.claude.com/incidents/nn11wk485zfn",
-      "source": "Hacker News"
-    },
-    {
       "id": "v2hot-1256910",
       "title": "脱离 Claude 的第 3 天，我的生活和工作并没有变得更差",
       "summary": "Claude 好不好用？好用，省心。这也是很多人在即使封号之后也前赴后继寻找不同的方法用上，Claude 的确是最高生产力的代表，Opus 5.5 也是最省心、最具性价比的模型。但最近 KYC 越来越严重，我的两个 pro 号也相继奉献了，但离开 Claude 后的 3 天，我并没有戒断反应，生活和工作方面也没有受到任何影响。这一切都要感谢 Gemini 4 系列的出现，尤其是今天的 Hydrogen 出来之后，Carbon + Hydrogen 兼顾了生产力和性价比。Gemini 的创意方面要比 Claude 好很多，唯一缺点就是的确不太靠谱，需要多轮追问加更好的提示",
       "url": "https://www.v2ex.com/t/1256910",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256932",
+      "title": "Claude KYC 后被封，申诉后居然解封了",
+      "summary": "今天按要求用护照完成了 Claude 的 KYC 认证，结果刚认证完，就收到了账号被撤销访问权限的邮件。随后我提交了复核申请，晚上就收到了 Anthropic 发来的账号恢复邮件，前后不到一天。分享给最近也遇到 KYC 认证或封号的朋友：先别急着重新注册，走官方申诉流程，复核速度还挺快的",
+      "url": "https://www.v2ex.com/t/1256932",
       "source": "V2EX"
     },
     {
@@ -59,6 +66,13 @@
       "source": "V2EX"
     },
     {
+      "id": "v2hot-1256936",
+      "title": "Google one 和 Chatgpt 比较何如？",
+      "summary": "Chatgpt 每个月 20 刀 加上重置，日常维护屎山差不多够了。不够的情况下靠中转 自己是安卓手机，google 送 5TB 云空间实在眼馋（现在用 piexl 手机白嫖来回传稍显麻烦）。一年 199 美金。算起来跟 gpt 一个价 把 gpt 停掉换成 gemini pro 是一个好选择吗~",
+      "url": "https://www.v2ex.com/t/1256936",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1256901",
       "title": "JIO Gemini 寄了",
       "summary": "3.8Flash Medium 还能用，但是很慢，High 完全用不了，一直提示 model unavaialible",
@@ -66,10 +80,24 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1256893",
-      "title": "Claude 之路",
-      "summary": "论坛中这类帖子越来越多，但是大家都没找到好的方式，都在持续跟 A/ 斗智斗勇。我也不例外。想用 Claude 真的很累。另外，今天的 CodeX 又蠢又慢，让人更累了。",
-      "url": "https://www.v2ex.com/t/1256893",
+      "id": "v2hot-1256934",
+      "title": "用护照的日签页面，选择日本 visa，通过了 portal claude KYC",
+      "summary": "昨天高强度搜索 X 发现日签和美签，美国驾照是可以过的。用日签试了一下，到现在是 24 个小时过去了，目前可用，不知道这个能持续到什么时候，而且我看到美签好像也能过，各位没试过的可以试一下。比较幸运的是我一直以来的节点是日本节点。![](",
+      "url": "https://www.v2ex.com/t/1256934",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256921",
+      "title": "独游开发，ui 和 ui 动效交给 AI 全是废品怎么办？有没有提升审美技巧",
+      "summary": "最近独游开发到美术阶段了，一开始单个素材的时候还好，到后边一整合就全面垮台，文字，颜色，设计，细节全都散发着 ai 味儿，但是我自己手搓的话观感可能还不如 ai 好，所以咨询一下 v 佬们有没有办法提升 AI 的 ui 和动效审美，或者说手搓有没有什么 ai 辅助工具？比如我想到的一个动效切换场景：当前页面整体缩小，收拢成一个 3D 方块，然后进行一个快速的加速到减速的旋转，并最终停止在一面，当面为下一个场景，然后放大到全屏，整体大概 2 秒左右。假如针对这个例子的实现有没有好的辅助工具",
+      "url": "https://www.v2ex.com/t/1256921",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256941",
+      "title": "转战 Gemini 了，antigravity 里面还是可以用 opus5.5 的",
+      "summary": "就是不知道限额多少",
+      "url": "https://www.v2ex.com/t/1256941",
       "source": "V2EX"
     },
     {
@@ -80,17 +108,24 @@
       "source": "V2EX"
     },
     {
+      "id": "v2hot-1256938",
+      "title": "请问使用 google play 订阅 claude，手机选 pixel 2 是否够用？",
+      "summary": "想搞个手机专门用来订阅，请问 pixel 2 是否可以，有经验的给指点一下，谢谢。",
+      "url": "https://www.v2ex.com/t/1256938",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1256937",
+      "title": "claude 确实比 ds 和 gpt 好用一点",
+      "summary": "最近在让 claude 绘制电机 T-N 曲线数据，claude 的理解能力和输出 excel 的风格确实强，不到几分钟就出来了，数据和曲线都很不错，gpt 输出的 excel 数据曲线一般勉强能看但是比 deepseek 强 deepseek 的更是慢的要死，跑了半天没跑完，输出结果一看连曲线图都没有，数据乱标，理解能力是真不行",
+      "url": "https://www.v2ex.com/t/1256937",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1256926",
       "title": "推荐大家使用 Grok bot",
       "summary": "最近很多任务都用 Grok bot 跑了，尤其是做信息源监控和增长 云主机很丝滑的，而且打通了推特就是爽，形成了传播闭环 agent 有自己的独家数据源和传播渠道，还是挺重要的 推特就是 grok bot 的呼伦贝尔草原，提供养料以及撒欢的地，这是个独特优势 另，搓了个开源的用量管理 bot，可以更高效的监控管理 token 使用",
       "url": "https://www.v2ex.com/t/1256926",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1256921",
-      "title": "独游开发，ui 和 ui 动效交给 AI 全是废品怎么办？有没有提升审美技巧",
-      "summary": "最近独游开发到美术阶段了，一开始单个素材的时候还好，到后边一整合就全面垮台，文字，颜色，设计，细节全都散发着 ai 味儿，但是我自己手搓的话观感可能还不如 ai 好，所以咨询一下 v 佬们有没有办法提升 AI 的 ui 和动效审美，或者说手搓有没有什么 ai 辅助工具？比如我想到的一个动效切换场景：当前页面整体缩小，收拢成一个 3D 方块，然后进行一个快速的加速到减速的旋转，并最终停止在一面，当面为下一个场景，然后放大到全屏，整体大概 2 秒左右。假如针对这个例子的实现有没有好的辅助工具",
-      "url": "https://www.v2ex.com/t/1256921",
       "source": "V2EX"
     },
     {
@@ -108,31 +143,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1256889",
-      "title": "分享一个自用工具，用的 rust 构建的 agent 做视频的桌面软件",
-      "summary": "",
-      "url": "https://www.v2ex.com/t/1256889",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1256878",
-      "title": "claude 生产力变现",
-      "summary": "手头有三个 claude，两个是 max 套餐。请问各位大佬们，有没有什么变现渠道或者方法？要求合法的。卖 token、共享算力这种就不考虑了。",
-      "url": "https://www.v2ex.com/t/1256878",
-      "source": "V2EX"
-    },
-    {
-      "id": "xhot-xrss-6975013124",
-      "title": "免费领取 AI 销售代理指南，了解 AI 代理",
-      "summary": "推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南。",
-      "url": "https://x.com/jasonlk/status/2121158761284849993",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-2853223471",
-      "title": "香港自由报致力于在 AI 时代保持人力新闻编辑室的地位。而其他人则在当地新闻中",
-      "summary": "香港自由报致力于在 AI 时代保持人力新闻编辑室的地位。虽然当地新闻界的其他人正在进行试验，但读者可以放心，HKFP 的新闻内容都不是、也不会是由 AI 生成的。",
-      "url": "https://x.com/hkfp/status/2121196526902857831",
+      "id": "xhot-xrss-3952396391",
+      "title": "Gojiberry AI 达 500 万美元 ARR 并推出免费课程",
+      "summary": "Gojiberry AI 的 ARR 突破 500 万美元，并发布免费课程，复盘从 0 到 500 万美元 ARR 的策略、实验、错误和增长方法。",
+      "url": "https://x.com/romanbuildsaas/status/2120881860498624856",
       "source": "X"
     }
   ]

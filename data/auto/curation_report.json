@@ -2,18 +2,20 @@
  "counts": {
   "archived": 14,
   "deadline_extracted": 6,
-  "drop:duplicate": 95,
-  "drop:empty_summary": 23,
-  "drop:negative_signal": 97,
-  "drop:no_clear_offer": 262,
-  "drop:not_ai": 220,
+  "drop:duplicate": 94,
+  "drop:empty_summary": 24,
+  "drop:negative_signal": 96,
+  "drop:no_clear_offer": 265,
+  "drop:not_ai": 219,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 333,
-  "google_news_total": 333,
-  "kept_total": 169,
+  "google_news_resolved": 335,
+  "google_news_total": 335,
+  "kept_total": 170,
   "net:gnews_cache_hit": 333,
-  "net:tco_failed": 2,
-  "raw_total": 925
+  "net:gnews_resolved_net": 2,
+  "net:tco_failed": 1,
+  "new_this_run": 1,
+  "raw_total": 927
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -32,6 +34,7 @@
    "unified-ai-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型"
   ],
   "empty_summary": [
+   "Gojiberry AI 的 ARR 突破 500 万美元，并发布免费课程",
    "加入 AMD AI 开发者计划可获免费 API 访问和 Token Lab 赠送积分",
    "Claude Duet 开始发送邀请，每位 Duet 用户有3个邀请名额",
    "该模型支持100万 token 上下文和图像输入，输入每百万 token 8美元、输出40美元",
@@ -42,8 +45,7 @@
    "@PFF 分享：提供180+新指标、自定义数据可视化、32000+统计组合和 Guru AI 访问，可免费试用",
    "观点：AI 热潮始于 ImageNet 这类全球研究者可免费使用的开放数据集，而机器人领域仍缺同样的公开真实数据",
    "本周末，通过由 CTO 教授的 12 小时免费 CodeCamp 课程，免费学习 Claude Code",
-   "微软副总裁 Scott Hanselman 发布了“gputaskman”，这是一款免费的开源 GPU 监控实用程序",
-   "81 分钟学习 Claude Code，freeCodeCamp 刚刚推出其他免费书籍和课程 81 分钟内学习 Clau"
+   "微软副总裁 Scott Hanselman 发布了“gputaskman”，这是一款免费的开源 GPU 监控实用程序"
   ],
   "negative_signal": [
    "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页",
@@ -60,6 +62,7 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "哈佛将其完整 ML Systems 课程开源，含 6 大支柱和数百页内容",
    "@hkfp 分享：香港自由报致力于在 AI 时代保持人力新闻编辑室的地位",
    "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
    "Anthropic 承认漏洞致配额消耗过快，向 Claude 付费订阅者提供一次全额度重置",
@@ -70,8 +73,7 @@
    "Decider v1.3 与 Decider Flash v1.3 开源，新增 locate 能力，用户可描述要查找的内",
    "@Dexerto 分享：他称这是为严肃问题打造的有趣游戏，问题是 CGI 会抹掉胡子",
    "该 macOS 应用让私有 AI 模型快速接入 Claude Code、Codex 和 OpenCode",
-   "目前支持单张 NVIDIA GPU、每机一个模型和 vLLM，已测小模型",
-   "@HuggingPapers 分享：该阅读层只接收必要证据，在保持任务质量的同时，将 token 用量最多降低92.9%"
+   "目前支持单张 NVIDIA GPU、每机一个模型和 vLLM，已测小模型"
   ],
   "not_ai": [
    "@MengTo 分享：整段主视觉为2K 的30秒一镜到底，滚动时反向播放，附完整工作流与提示词",
@@ -102,16 +104,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-13T19:30:43+08:00",
+ "generated_at": "2026-11-13T21:29:42+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-13T19:30:43+08:00",
+  "checked_at": "2026-11-13T21:29:41+08:00",
   "counts": {
-   "ok": 116,
-   "unsure": 40
+   "ok": 156
   },
   "hidden": 0
  },
- "seconds": 0.9,
+ "seconds": 1.9,
  "side": {
   "github_hot": {
    "kept": 30,
@@ -120,9 +121,9 @@
   "hot_topics": {
    "drop:negative_signal": 5,
    "drop:not_ai": 8,
-   "drop:not_ai_strict": 4,
-   "kept": 19,
-   "raw": 36
+   "drop:not_ai_strict": 5,
+   "kept": 21,
+   "raw": 39
   }
  }
 }
