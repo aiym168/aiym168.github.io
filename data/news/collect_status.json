@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-13T11:01:41+08:00",
+ "run_at": "2026-11-13T13:26:15+08:00",
  "sources": {
   "techcrunch-ai": {
    "ok": true,
@@ -23,11 +23,11 @@
    "blocked": 1
   },
   "deepmind": {
-   "ok": false,
-   "error": "empty feed",
-   "rows": 0,
-   "new": 0,
-   "blocked": 0
+   "ok": true,
+   "error": "",
+   "rows": 30,
+   "new": 2,
+   "blocked": 1
   },
   "google-ai": {
    "ok": true,
@@ -55,7 +55,7 @@
    "error": "",
    "rows": 10,
    "new": 1,
-   "blocked": 5
+   "blocked": 4
   },
   "wired-ai": {
    "ok": true,
@@ -138,8 +138,8 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 5,
-   "blocked": 6
+   "new": 4,
+   "blocked": 8
   },
   "androidauthority-com-feed": {
    "ok": true,
@@ -152,7 +152,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 3,
+   "new": 5,
    "blocked": 3
   },
   "9to5google-com-feed": {
@@ -166,21 +166,21 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 3,
-   "blocked": 2
+   "new": 1,
+   "blocked": 3
   },
   "androidpolice-com-feed": {
    "ok": true,
    "error": "",
    "rows": 10,
-   "new": 2,
+   "new": 0,
    "blocked": 0
   },
   "xda-developers-com-feed": {
    "ok": true,
    "error": "",
    "rows": 10,
-   "new": 2,
+   "new": 0,
    "blocked": 0
   },
   "ifanr": {
@@ -215,14 +215,14 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 4,
-   "blocked": 1
+   "new": 3,
+   "blocked": 2
   },
   "notebookcheck-net-news-152-100-html-type-rss": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 2,
+   "new": 3,
    "blocked": 6
   },
   "semiengineering-com-feed": {
@@ -233,11 +233,11 @@
    "blocked": 0
   },
   "eetimes-com-feed": {
-   "ok": true,
-   "error": "",
-   "rows": 10,
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden",
+   "rows": 0,
    "new": 0,
-   "blocked": 3
+   "blocked": 0
   },
   "semiwiki-com-feed": {
    "ok": true,
@@ -265,7 +265,7 @@
    "error": "",
    "rows": 30,
    "new": 4,
-   "blocked": 4
+   "blocked": 3
   },
   "semiconductor-today-com-rss-news-xml": {
    "ok": true,
@@ -278,7 +278,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 7,
+   "new": 8,
    "blocked": 5
   },
   "sspai": {
@@ -289,18 +289,18 @@
    "blocked": 0
   },
   "geekpark": {
-   "ok": false,
-   "error": "TimeoutError: The read operation timed out",
-   "rows": 0,
-   "new": 0,
-   "blocked": 0
+   "ok": true,
+   "error": "",
+   "rows": 30,
+   "new": 8,
+   "blocked": 10
   },
   "tmtpost-com-rss-xml": {
    "ok": true,
    "error": "",
    "rows": 20,
    "new": 8,
-   "blocked": 4
+   "blocked": 2
   },
   "cnbeta-com-tw-backend-php": {
    "ok": true,
@@ -317,38 +317,38 @@
    "blocked": 6
   },
   "199it-com-feed": {
-   "ok": true,
-   "error": "",
-   "rows": 30,
-   "new": 8,
-   "blocked": 2
+   "ok": false,
+   "error": "URLError: <urlopen error timed out>",
+   "rows": 0,
+   "new": 0,
+   "blocked": 0
   },
   "36kr-com-feed-newsflash": {
    "ok": true,
    "error": "",
    "rows": 20,
    "new": 8,
-   "blocked": 5
+   "blocked": 0
   },
   "woshipm-com-feed": {
    "ok": true,
    "error": "",
    "rows": 15,
    "new": 8,
-   "blocked": 3
+   "blocked": 2
   },
   "ars": {
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 1,
+   "new": 2,
    "blocked": 6
   },
   "verge": {
    "ok": true,
    "error": "",
    "rows": 10,
-   "new": 1,
+   "new": 0,
    "blocked": 2
   },
   "techcrunch-com-feed": {
@@ -376,29 +376,29 @@
    "ok": true,
    "error": "",
    "rows": 25,
-   "new": 3,
+   "new": 5,
    "blocked": 1
   },
   "fastcompany-com-technology-rss": {
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 1,
+   "new": 2,
    "blocked": 10
   },
   "theregister-com-headlines-atom": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 6,
-   "blocked": 5
+   "new": 7,
+   "blocked": 6
   },
   "mashable-com-feeds-rss-tech": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 1,
-   "blocked": 5
+   "new": 3,
+   "blocked": 6
   },
   "oschina": {
    "ok": true,
@@ -412,13 +412,13 @@
    "error": "",
    "rows": 10,
    "new": 1,
-   "blocked": 0
+   "blocked": 1
   },
   "linuxcompatible-org-news-rss": {
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 1,
+   "new": 2,
    "blocked": 1
   },
   "lwn-net-headlines-rss": {
@@ -474,14 +474,14 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 1,
+   "new": 3,
    "blocked": 4
   },
   "howtogeek-com-feed": {
    "ok": true,
    "error": "",
    "rows": 10,
-   "new": 3,
+   "new": 0,
    "blocked": 0
   },
   "mshibanami-github-io-githubtrendingrss-daily-all": {
@@ -495,7 +495,7 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 6,
+   "new": 4,
    "blocked": 2
   },
   "gamespot-com-feeds-news": {
@@ -516,8 +516,8 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 1,
-   "blocked": 11
+   "new": 0,
+   "blocked": 12
   },
   "rockpapershotgun-com-feed": {
    "ok": true,
@@ -537,15 +537,15 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 8,
-   "blocked": 3
+   "new": 3,
+   "blocked": 2
   },
   "yystv-cn-rss-feed": {
    "ok": true,
    "error": "",
    "rows": 12,
-   "new": 4,
-   "blocked": 5
+   "new": 5,
+   "blocked": 4
   },
   "electrek-co-feed": {
    "ok": true,
@@ -565,14 +565,14 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 1,
-   "blocked": 10
+   "new": 0,
+   "blocked": 11
   },
   "cnevpost-com-feed": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 2,
+   "new": 1,
    "blocked": 11
   },
   "thedrive-com-feed": {
@@ -586,8 +586,8 @@
    "ok": true,
    "error": "",
    "rows": 15,
-   "new": 1,
-   "blocked": 4
+   "new": 0,
+   "blocked": 5
   },
   "nasa-gov-news-release-feed": {
    "ok": true,
@@ -600,8 +600,8 @@
    "ok": true,
    "error": "",
    "rows": 10,
-   "new": 0,
-   "blocked": 1
+   "new": 1,
+   "blocked": 0
   },
   "spaceflightnow-com-feed": {
    "ok": true,
@@ -635,14 +635,14 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 1,
+   "new": 2,
    "blocked": 3
   },
   "phys-org-rss-feed": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 6,
+   "new": 3,
    "blocked": 7
   },
   "newscientist-com-feed-home": {
@@ -670,7 +670,7 @@
    "ok": true,
    "error": "",
    "rows": 24,
-   "new": 2,
+   "new": 0,
    "blocked": 2
   },
   "scientificamerican-com-platform-syndication-rss": {
@@ -698,29 +698,29 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 7,
+   "new": 5,
    "blocked": 0
   },
   "hn": {
    "ok": true,
    "error": "",
-   "rows": 18,
-   "new": 1,
+   "rows": 21,
+   "new": 4,
    "blocked": 2
   },
   "v2ex-com-api-topics-hot-json": {
    "ok": true,
    "error": "",
-   "rows": 8,
+   "rows": 10,
    "new": 4,
-   "blocked": 0
+   "blocked": 1
   },
   "dev-to-feed": {
    "ok": true,
    "error": "",
    "rows": 12,
    "new": 8,
-   "blocked": 0
+   "blocked": 1
   },
   "stackoverflow-blog-feed": {
    "ok": true,
@@ -775,7 +775,7 @@
    "ok": true,
    "error": "",
    "rows": 3,
-   "new": 2,
+   "new": 1,
    "blocked": 0
   },
   "blog-rust-lang-org-feed-xml": {
@@ -803,7 +803,7 @@
    "ok": true,
    "error": "",
    "rows": 25,
-   "new": 5,
+   "new": 1,
    "blocked": 0
   },
   "thenewstack-io-feed": {
@@ -877,9 +877,9 @@
    "blocked": 0
   },
   "rsshub-rssforever-com-github-trending-daily-any": {
-   "ok": true,
-   "error": "",
-   "rows": 13,
+   "ok": false,
+   "error": "TimeoutError: The read operation timed out",
+   "rows": 0,
    "new": 0,
    "blocked": 0
   },
@@ -922,7 +922,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 9,
+   "new": 10,
    "blocked": 0
   },
   "gh-comfyui": {
@@ -950,35 +950,35 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 4,
-   "blocked": 4
+   "new": 1,
+   "blocked": 6
   },
   "gn-aiduanju": {
    "ok": true,
    "error": "",
    "rows": 30,
    "new": 0,
-   "blocked": 4
+   "blocked": 5
   },
   "gn-aianime": {
    "ok": true,
    "error": "",
-   "rows": 2,
+   "rows": 3,
    "new": 0,
-   "blocked": 2
+   "blocked": 3
   },
   "gn-aimanhua": {
    "ok": true,
    "error": "",
-   "rows": 15,
-   "new": 1,
+   "rows": 16,
+   "new": 0,
    "blocked": 1
   },
   "gn-aivideo": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 1,
+   "new": 0,
    "blocked": 3
   },
   "gn-kling": {
@@ -991,16 +991,16 @@
   "gn-sora": {
    "ok": true,
    "error": "",
-   "rows": 13,
-   "new": 0,
+   "rows": 15,
+   "new": 1,
    "blocked": 1
   },
   "gn-aivideo-en": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 1,
-   "blocked": 5
+   "new": 2,
+   "blocked": 7
   },
   "gn-comfyui": {
    "ok": true,
@@ -1012,99 +1012,97 @@
   "gn-comfyui-en": {
    "ok": true,
    "error": "",
-   "rows": 11,
-   "new": 0,
-   "blocked": 0
-  },
-  "gn-aigc-tut": {
-   "ok": false,
-   "error": "empty feed",
-   "rows": 0,
-   "new": 0,
+   "rows": 10,
+   "new": 1,
    "blocked": 0
   },
   "gn-llm-tut": {
    "ok": true,
    "error": "",
    "rows": 14,
-   "new": 1,
-   "blocked": 1
+   "new": 2,
+   "blocked": 0
   },
   "gn-harmony": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 5,
-   "blocked": 4
+   "new": 4,
+   "blocked": 3
   },
   "gn-huawei-phone": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 4,
-   "blocked": 1
+   "new": 7,
+   "blocked": 0
   },
   "gn-ascend": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 12,
+   "new": 10,
    "blocked": 2
   }
  },
  "skipped": [
+  "gn-aigc-tut",
   "gn-aipaint-tut"
  ],
  "dropped": {
   "Trump": 14,
   "affair": 22,
-  "Congress": 5,
+  "Congress": 4,
   "sex": 3,
   "political": 3,
-  "China": 28,
-  "Chinese": 17,
+  "China": 31,
+  "Chinese": 16,
   "president": 8,
   "GovCloud": 1,
+  "drug": 3,
   "espionage": 3,
   "government": 3,
   "Democrat": 3,
   "senator": 1,
-  "Affair": 3,
+  "Affair": 2,
   "Government": 3,
   "习": 8,
-  "出轨": 1,
+  "出轨": 2,
   "War": 6,
   "Sovereign": 1,
   "drugs": 3,
   "President": 3,
   "shooter": 9,
-  "(非科技)": 22,
+  "(非科技)": 21,
   "Ukraine": 2,
   "prison": 1,
+  "weapons": 2,
   "voting": 1,
   "Wars": 3,
   "Dead": 1,
   "Taiwan": 3,
-  "Ukrainian": 2,
   "sovereign": 1,
-  "政府": 3,
-  "央视": 2,
+  "新华社": 1,
+  "政府": 2,
+  "冲突": 2,
+  "特朗普": 1,
   "主席": 3,
-  "出口管制": 1,
-  "国务院": 1,
-  "婚外": 3,
-  "死亡": 3,
+  "航母": 1,
+  "选举": 1,
+  "武器": 1,
+  "婚外": 4,
+  "主权": 1,
+  "投票": 4,
+  "监管": 3,
+  "死亡": 2,
   "丑闻": 4,
   "总统": 1,
   "离婚": 2,
-  "香港": 2,
-  "西藏": 1,
-  "新华社": 1,
-  "领导人": 2,
+  "管制": 1,
   "suicide": 1,
   "weapon": 1,
   "Suicide": 1,
-  "Sex": 1,
+  "Sex": 2,
   "protest": 1,
   "dead": 8,
   "death": 5,
@@ -1125,72 +1123,71 @@
   "Warfare": 1,
   "Prison": 1,
   "sexy": 1,
+  "Ukrainian": 1,
   "self-harm": 1,
   "naked": 1,
   "wars": 1,
-  "投票": 2,
   "恐怖": 3,
-  "战争": 2,
-  "冲突": 1,
-  "大使": 3,
+  "战争": 1,
   "election": 1,
+  "Senate": 2,
+  "federal": 1,
   "White House": 1,
   "Election": 1,
   "Vote": 1,
   "Hong Kong": 1,
-  "Senate": 1,
   "National Security": 1,
   "betting": 2,
   "Politics": 1,
   "religious": 1,
   "cannabis": 1,
+  "racism": 1,
   "military": 1,
-  "drug": 2,
   "Iran": 1,
   "Drugs": 2,
-  "weapons": 1,
   "war": 1,
   "Dies": 1,
   "china": 2,
-  "explicit": 1,
-  "监管": 4,
+  "doge": 2,
+  "explicit": 2,
   "低俗": 1,
   "两岸": 1,
-  "doge": 1,
+  "维权": 1,
   "人权": 1,
   "NSFW": 2,
   "Porn": 1,
-  "Hentai": 1,
+  "Hentai": 2,
+  "大使": 2,
   "跳楼": 1,
   "擦边": 1,
-  "民主": 1,
   "国防": 1,
-  "审查": 2,
-  "俄罗斯": 1,
+  "审查": 4,
   "爆炸": 1,
-  "杀人": 1
+  "领导人": 1,
+  "杀人": 2,
+  "民主": 1
  },
- "new": 295,
+ "new": 282,
  "sources_total": 151,
- "sources_ok": 147,
- "translated": 170,
+ "sources_ok": 146,
+ "translated": 169,
  "counts": {
   "internet": 150,
-  "dev": 150,
-  "huawei": 150,
   "ai": 220,
+  "dev": 150,
+  "launch": 113,
+  "aivideo": 142,
   "software": 150,
-  "science": 150,
-  "launch": 106,
-  "auto": 136,
-  "aidrama": 120,
-  "game": 150,
-  "mobile": 150,
-  "aivideo": 137,
   "chip": 150,
-  "space": 65,
-  "gossip": 42,
-  "aigc": 61,
-  "comfyui": 54
+  "huawei": 150,
+  "game": 150,
+  "comfyui": 55,
+  "space": 66,
+  "aigc": 63,
+  "science": 150,
+  "mobile": 150,
+  "auto": 136,
+  "aidrama": 121,
+  "gossip": 43
  }
 }

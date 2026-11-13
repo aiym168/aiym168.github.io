@@ -1,7 +1,7 @@
 {
   "date": "2026-11-13",
-  "updated_at": "2026-11-13T11:00+08:00",
-  "updated_at_label": "2026-11-13 11:00 Asia/Shanghai",
+  "updated_at": "2026-11-13T13:25+08:00",
+  "updated_at_label": "2026-11-13 13:25 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -21,25 +21,6 @@
       },
       "original_title": "Show HN: A free course from engineer to AI engineer, one Git tag per episode",
       "original_summary": "Show HN: A free course from engineer to AI engineer, one Git tag per episode ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50464273",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "TripCoral：基于公开航班数据的免费行程与实时更新工具",
-      "summary": "TripCase关停后的免费替代品，支持登机口和延误实时提醒。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "yuav",
-      "url": "https://www.tripcoral.com/",
-      "posted_at": "2026-11-12 15:55 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: TripCoral – Free itinerary and live updates from public flight data",
-      "original_summary": "Show HN: TripCoral – Free itinerary and live updates from public flight data When TripCase shut down, I couldn&#x27;t find an Android or web replacement I actually liked using. Especially with live flight tracking for gate and delay notifications.<p>So I built TripCoral. Airports and aviation authorities actually give out a lot of FIDS and air-traffic data for free: Avinor (Norway), Swedavia (Sweden), Schiphol (Netherlands), FAA SWIM (United States) etc. Instead of paying a commercial data broker, I wrote a Go collector that pulls from 100s of feeds covering ~1900 airports.<p>Forward your confirmation emails (flights, hotels, cars, dinner bookings) or enter a flight number, and it puts the whole trip on one timeline, works offline, and follows travel day live: check-in desks, gates, delays",
       "translated_by": "model"
     },
     {
@@ -81,25 +62,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50455972",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Papertrails提供个性化新研究论文信息流",
-      "summary": "作者因论文发现流程嘈杂脆弱而开发，提供个性化新论文推荐。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "eagrwl",
-      "url": "https://www.papertrails.app/",
-      "posted_at": "2026-11-12 01:26 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Papertrails – Your personalized feed of new research papers",
-      "original_summary": "Show HN: Papertrails – Your personalized feed of new research papers Hey HN,<p>I’m an AI researcher who craves staying up to date on all of the state of the art techniques in my field.<p>Yet I’ve become very frustrated with my workflow for discovering new papers.<p>Google scholar alerts are too noisy, twitter is too skewed, and relying on word of mouth alone is too fragile. I created Papertrails to solve this problem for myself.<p>Papertrails builds a feed of new research papers, personalized to your interests, based on your own library of papers. It’s free to use, so try it out and let me know what you think!<p>—<p>Note: The app only serves papers from arXiv, hoping to add other journals soon",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50455811",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -111,30 +73,11 @@
       "url": "https://news.ycombinator.com/item?id=50455811",
       "posted_at": "2026-11-12 01:11 Asia/Shanghai",
       "engagement": {
-        "points": 60,
+        "points": 61,
         "comments": 47
       },
       "original_title": "Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents",
       "original_summary": "Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents Hi HN, we’re Alan and Akshay from Pomerado (<a href=\"https:&#x2F;&#x2F;pomerado.ai&#x2F;\">https:&#x2F;&#x2F;pomerado.ai&#x2F;</a>). We connect your agents to any website by turning sites into deterministic, self-healing APIs in minutes, fully self-serve.<p>Agents are no longer limited by their intelligence, but rather by their ability to interact with systems. Airlines, banks, e-commerce, insurance portals, government sites, and legacy portals all lack APIs or MCPs and are common parts of personal assistant or business workflows. Agents instead rely on browser automation or computer use, which can be slow, expensive, and unreliable. And even if computer use were perfect, most companies have banned it out of security and",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50455780",
-      "source": "Hacker News",
-      "category": "云服务/GPU/开发者资源",
-      "title": "Sonamu：基于树形结构的Wayland合成器",
-      "summary": "按任务而非应用组织标签页，把GitHub页面和终端放在一起。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "lyuhdev",
-      "url": "https://github.com/mathkimchi/sonamu/",
-      "posted_at": "2026-11-12 01:09 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Sonamu – Tree-Based Wayland Compositor",
-      "original_summary": "Show HN: Sonamu – Tree-Based Wayland Compositor I use computers for everything and constantly have hundreds of tabs open. Existing paradigms limited me to grouping tabs by applications, but I needed to organize by task.<p>With Sonamu, I can put my GitHub page on the browser right next to my terminal instead of my emails. Sonamu is a Wayland compositor that organizes every tab in a tree hierarchy. I can create a branch for each of my coding projects and my courses. Within each branch, I can create sub-branches to further organize sub-tasks like notes, assignments, and code.<p>I started this 2 years ago hand-coding everything, and now use AI as well.<p>If you use Linux and feel like the current app-level organization paradigm is inefficient, check Sonamu out!",
       "translated_by": "model"
     },
     {
@@ -187,30 +130,11 @@
       "url": "https://github.com/FrigadeHQ/yogurt",
       "posted_at": "2026-11-11 23:33 Asia/Shanghai",
       "engagement": {
-        "points": 285,
+        "points": 288,
         "comments": 111
       },
       "original_title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
       "original_summary": "Show HN: Yogurt – Free, private, open-source alternative to Granola Hey HN, I’m Eric and I want to share an OSS project that I’ve been building in my free time. Yogurt is a free, MIT licensed desktop app that uses on-device AI models to transcribe, summarize, and chat with your meetings.<p>Here&#x27;s a quick demo video: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=BFfbXAwRq98\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=BFfbXAwRq98</a><p>Similar to Granola, Yogurt runs in the background and does not join your calls. But unlike Granola, Yogurt is open-source, free to use, and private. Your meeting transcripts, call recordings, and summaries never leave your computer.<p>As small OSS models have gotten faster and more powerful, Yogurt seemed like a pretty obvious",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50454132",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Tweex追踪X上影响公司的商业、技术与AI信号",
-      "summary": "输入公司网址并选择关注领域后，可跟踪X上影响公司和市场的实时信号。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "2veel",
-      "url": "https://www.tweexai.com",
-      "posted_at": "2026-11-11 22:49 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Find relevant signals on X for your company",
-      "original_summary": "Show HN: Find relevant signals on X for your company Hey HN! I recently built Tweex, a tool that tracks every business, tech and AI signals across X impacting your company and your market right now.<p>Here&#x27;s how early customers (tech&#x2F;AI companies) use it:<p>1&#x2F; Enter your company URL, choose what you want to track (product, customer needs, growth...) and share your current challenges<p>2&#x2F; Tweex AI filters out the noise and pings your team and agents (Slack and email for now) with relevant under-the-radar signals and actionable opportunities from X for your business: who is winning and how, hot product features you can implement, customer needs, market shifts...<p>You can request a free report for your company on the home page. It asks for your email because that&#x27;s w",
       "translated_by": "model"
     },
     {
@@ -252,41 +176,79 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50445758",
+      "id": "hn-50440624",
       "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Zeus：面向AI语音代理的开发平台，无需大量手工调参",
-      "summary": "Zeus是一个让AI电话通话真正可用的平台，据作者介绍无需大量手工调优即可运行。",
+      "category": "科技软件/App 限免",
+      "title": "AppTraction：面向 Apple App Store Connect 的原生 Mac 应用",
+      "summary": "前苹果工程师推出原生 Mac 应用 AppTraction，用于管理 App Store Connect。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "kolchinski",
-      "url": "https://thunderphone.com/blog/introducing-zeus",
-      "posted_at": "2026-11-11 04:20 Asia/Shanghai",
+      "author": "jscalo",
+      "url": "https://apptraction.dev",
+      "posted_at": "2026-11-10 22:09 Asia/Shanghai",
       "engagement": {
         "points": 2,
         "comments": 0
       },
-      "original_title": "Show HN: Zeus – Claude Code for AI voice agents",
-      "original_summary": "Show HN: Zeus – Claude Code for AI voice agents Hi everyone, Alex here - We’re excited to announce the launch of Zeus, which is a platform that makes AI phone calls actually work, and without requiring extensive hand-tuning!<p>(The below is a long description even after we made it shorter! If you prefer video, there&#x27;s one covering the main points here: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kIqp37udd6s\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kIqp37udd6s</a>.)<p>When we started building business phone agents in 2024 (time flies…) we kept running into technical problems that ruined phone calls, caused by the limitations of existing architectures. The two biggest issues were that phone agents would mishear callers, and that they would disobey scrip",
+      "original_title": "Show HN: AppTraction – A Native Mac App for Apple's App Store Connect",
+      "original_summary": "Show HN: AppTraction – A Native Mac App for Apple's App Store Connect Hey HN, I’m John. I’m excited to share something I’ve been working on for a long time and releasing today: AppTraction, a native Mac app for Apple’s App Store Connect.<p>I spent 10 years as an engineer at Apple working on macOS and iOS, and the last 8 as an indie developer with 20+ apps on the App Store for myself and clients. AppTraction is the tool I wish I’d had when I started building my own apps.<p>Most iOS and Mac devs that I talk to agree that Apple’s App Store Connect website is slow, confusing, and buggy. There’s a lot of useful data there, but the clunky site makes it really hard to make sense of. AppTraction brings your sales, analytics, ratings, and reviews to your Mac, and then tells you what matters.<p>I wo",
       "translated_by": "model"
     },
     {
-      "id": "hn-50441321",
+      "id": "hn-50439671",
       "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Sugo：把PDF和截图压缩成精简Markdown，节省LLM的token",
-      "summary": "该项目针对向AI输入大量截图或PDF时token消耗过大的问题，将其转换为紧凑的Markdown格式。",
+      "category": "AI 开发工具与编程助手",
+      "title": "Simstim：在 Mac 本地把通话转写为 .md 文件",
+      "summary": "Simstim 是注重隐私的本地通话转写应用，录制麦克风与系统音频，数据保存在纯 .md 文件中。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Muralnick",
-      "url": "https://github.com/Muralnick/sugo",
-      "posted_at": "2026-11-10 22:59 Asia/Shanghai",
+      "author": "pgrekovich",
+      "url": "https://github.com/pgrekovich/simstim",
+      "posted_at": "2026-11-10 20:56 Asia/Shanghai",
       "engagement": {
-        "points": 2,
+        "points": 1,
         "comments": 0
       },
-      "original_title": "Show HN: Sugo – Turn PDFs and Screenshots into Compact Markdown for LLMs",
-      "original_summary": "Show HN: Sugo – Turn PDFs and Screenshots into Compact Markdown for LLMs hi everyone,\ni&#x27;d like to show my project &quot;Sugo&quot;.\nthis project answers a real problem i had:&quot; how can i save tokens if i put a lot of screenshot or PDF&#x27;s  to give to any AI?&quot;<p>Until recently i was learning to manage RAG system and to run an Ai locally, i got decent result, also with dedicated frameworks.\nthen i realised that the main reason for my bad results was how i managed the files for the RAG.<p>actualy i work in helpdesk, I&#x27;m young and i don&#x27;t have much experience ;), i immagine you also give Ai&#x27;s projects, docs and screenshots so a lot of tokens get used.\ni wondered how the AI converts PDF&#x27;s and images and wow, it uses a lot, the worst part: the more powerful i",
+      "original_title": "Show HN: Simstim – local call transcription on Mac into .md files",
+      "original_summary": "Show HN: Simstim – local call transcription on Mac into .md files Hey there HN!<p>Simstim is a local-first and privacy-focused call transcription app for Mac. It records your mic and system audio (no bot joining calls) and transcribes everything on your machine. No account, no telemetry, audio never leaves your machine and all your data is in plain .md files (Obsidian native btw). Your AI subscription, free forever, MIT.<p>I built it because I used to use Granola, and it was super annoying that I couldn&#x27;t export my transcripts in some convenient manner. I needed an account and a subscription for doing basic things. And all my data was locked inside.<p>I started looking for alternatives, and it drove me mad - &quot;privacy-focused&quot; apps require me to create an account and log in, ",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50432130",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "ApiClay 把网站、Google Sheet 或数据库变成付费 API",
+      "summary": "ApiClay 让用户几分钟内把网站、表格或数据库转为带文档和稳定 JSON 的付费 API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "apiclay",
+      "url": "https://apiclay.com",
+      "posted_at": "2026-11-10 05:06 Asia/Shanghai",
+      "engagement": {
+        "points": 4,
+        "comments": 1
+      },
+      "original_title": "Show HN: ApiClay – Turn a Website, Google Sheet or Database into a Paid API",
+      "original_summary": "Show HN: ApiClay – Turn a Website, Google Sheet or Database into a Paid API Hi HN, I’m a reverse engineer, and I’ve seen the same problem repeatedly: people need data, but the path from “I need this” to “my app, agent, or workflow can use it” is messy.<p>Vibe coders want a working endpoint in minutes. Developers want clean docs, predictable JSON, and no surprise integration work. Businesses want to enrich lists, monitor changes, and safely expose internal data. AI agents need APIs they can discover and call reliably. Sometimes, the API simply doesn&#x27;t exist.<p>ApiClay makes that whole loop easier.<p>You can search a catalogue of APIs and datasets, inspect them in a playground, and copy ready-to-run JavaScript, Python, or cURL snippets into your app. Each API has its own reference, pric",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50428274",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "一个展示上市公司投资关系的可视化地图",
+      "summary": "该网页应用由 Meta AI 模型在黑客松中生成，收录 3.3 万家上市公司及超 10 万条投资持股关系。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "feearent",
+      "url": "https://github.com/feeRnt/whofundsit/tree/post_demo_cloudflare_cdn",
+      "posted_at": "2026-11-10 01:00 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 1
+      },
+      "original_title": "Show HN: A visualization map of the funding of public companies",
+      "original_summary": "Show HN: A visualization map of the funding of public companies I made this webapp (vibecoded) with Meta&#x27;s AI models during the Meta AI hackathon that just ended (Oct 26-Nov 4). So far it contains public 33,000 companies, and 100k+ &#x27;flows&#x27;. A company X has a flow to another company Y if X funds Y or owns its shares, or vice versa.<p>It collects business data from SEC&#x27;s EDGAR (Electronic Data Gathering, Analysis, and Retrieval), Wikidata company lists, and other regional company indices of Europe and Asia to build a database of companies to display on the map. SEC provides financial information liberally, while for the European counterpart I didn&#x27;t find an equivalent yet.<p>I geocoded the business addresses using OpenStreetMap&#x27;s Nominatim (hopefully that doesn&",
       "translated_by": "model"
     },
     {
@@ -358,7 +320,7 @@
       "url": "https://apron.chat/",
       "posted_at": "2026-11-13 00:52 Asia/Shanghai",
       "engagement": {
-        "points": 32,
+        "points": 38,
         "comments": 0
       },
       "original_title": "Show HN: Apron Chat Protocol",
@@ -442,22 +404,41 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50457026",
+      "id": "hn-50450897",
       "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Collection of Beauty：可漫步的公有领域艺术3D博物馆",
-      "summary": "作者手工挑选4000多件公有领域艺术品，做成多层可步行3D博物馆。",
+      "category": "其他科技",
+      "title": "Obeya：用于指挥编码智能体的空间画布",
+      "summary": "面向不再逐行审阅代码、只做任务调度的开发者。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "trebeljahr",
-      "url": "https://collectionofbeauty.com/gallery-3d",
-      "posted_at": "2026-11-12 02:53 Asia/Shanghai",
+      "author": "sadilek",
+      "url": "https://github.com/sadilek/obeya",
+      "posted_at": "2026-11-11 16:14 Asia/Shanghai",
       "engagement": {
-        "points": 1,
+        "points": 4,
         "comments": 0
       },
-      "original_title": "Show HN: Collection of Beauty–a walkable 3D museum of public-domain art",
-      "original_summary": "Show HN: Collection of Beauty–a walkable 3D museum of public-domain art Hi HN,<p>this is Collection of Beauty, a walkable, multi-floor 3D museum, based on a collection of art that I handpicked with 4000+ works.<p>History:\nI&#x27;ve spent some time earlier this year just browsing Wikipedia public domain art for literally hours on end, downloading everything that I liked or appreciated, just asking myself do I find this beautiful on some level?<p>The result is this... Well, not quite ^^<p>In the end I had a large folder with a bunch of images in it that begged the question: can I make this more useful somehow? Like, it&#x27;s nice to have all these images sitting on my hard disk somehow but I want to share this with other people as a Collection of Beauty. But they were just images, nothing e",
+      "original_title": "Show HN: Obeya, a spatial canvas for directing coding agents",
+      "original_summary": "Show HN: Obeya, a spatial canvas for directing coding agents Yeah, I know, &quot;not another AI GUI <i>rolls eyes</i>&quot;. So let me say upfront: This is <i>not</i> for you if you want to regularly review the code agents produce. But if you, like me, stopped writing code at the beginning of the year and for the most part stopped reading it a few months ago, you are my target audience, and I think there&#x27;s a good chance you&#x27;ll benefit from this.<p>I love directing agents to build stuff. But oh, can you get lost in parallel coding sessions. Just walls of text. Cycling through terminal windows. It feels like pair programming with multiple people at the same time. Then: Start a dev server, navigate to the place of interest, click around to test a new feature. It feels like I&#x27;m ",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50448283",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Mimzie：可在原生命令行中运行ChatGPT、Claude等多家AI代理的免费桌面工作区",
+      "summary": "这是一个免费桌面应用，用图形界面统一管理ChatGPT、Claude、Gemini和Grok的原生CLI，用于知识工作。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "kyleandruczk",
+      "url": "https://mimzie.com/",
+      "posted_at": "2026-11-11 08:29 Asia/Shanghai",
+      "engagement": {
+        "points": 6,
+        "comments": 0
+      },
+      "original_title": "Show HN: Mimzie, an agent-neutral alternative to the Claude Suite/Claude Cowork",
+      "original_summary": "Show HN: Mimzie, an agent-neutral alternative to the Claude Suite/Claude Cowork hi HN!<p>I built Mimzie, an agent neutral AI workspace inspired by the Claude Suite (Docs, Sheets, Slides) and Cowork.<p>It&#x27;s a free desktop app that runs ChatGPT, Claude, Gemini, and Grok in their native CLI harnesses. Think T3 Code or Conductor but for knowledge work. It&#x27;s basically a GUI for managing knowledge work agents in various form factors. One of those form factors is Bots, akin to Grok Bot or Dots.<p>The original idea for mimzie was simple: I pay for Claude and ChatGPT, and a lot of my day-to-day work lives in .xlsx, .pptx and .docx files. Moreover, I was sick and tired of losing context between AI platforms. I didn&#x27;t want to bet the house on one AI lab&#x27;s product, be it the ChatGP",
       "translated_by": "model"
     },
     {
@@ -499,265 +480,277 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50454344",
+      "id": "hn-50473419",
       "source": "Hacker News",
       "category": "其他科技",
-      "title": "EarthData：按你在意的条件找旅行或定居地",
-      "summary": "可按旅行月份、停留时长或居住偏好筛选全球地点，避开营销漏斗式推荐。",
+      "title": "Mudroom 免费统一收件箱，汇总分散的客服请求",
+      "summary": "面向 SaaS 团队的统一收件箱，把分散在各平台的客服请求集中处理。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "11thEarlOfMar",
-      "url": "https://earthdata.io/en",
-      "posted_at": "2026-11-11 23:08 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: EarthData – find places to visit or live that match what you care about",
-      "original_summary": "Show HN: EarthData – find places to visit or live that match what you care about Hi HN,<p>A few years ago, I was trying to find the place on Earth that had the optimal combination of attributes to vacation to or live. I couldn&#x27;t find anything that wasn&#x27;t a marketing funnel or was limited in geography. So I built EarthData essentially for myself, but others might find it useful.<p>There are two modes: &quot;visit&quot; for a trip (travel month, length of stay, things to do) and &quot;live&quot; for relocation or retirement (housing, healthcare, day-to-day fit).<p>The way it operates is to allow the user to sculpt the attributes they care about in where they visit on vacation or live. Rate and rank what matters to you. And it will returns 10 initial places, down to specific towns, ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50440624",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "AppTraction：面向 Apple App Store Connect 的原生 Mac 应用",
-      "summary": "前苹果工程师推出原生 Mac 应用 AppTraction，用于管理 App Store Connect。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "jscalo",
-      "url": "https://apptraction.dev",
-      "posted_at": "2026-11-10 22:09 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: AppTraction – A Native Mac App for Apple's App Store Connect",
-      "original_summary": "Show HN: AppTraction – A Native Mac App for Apple's App Store Connect Hey HN, I’m John. I’m excited to share something I’ve been working on for a long time and releasing today: AppTraction, a native Mac app for Apple’s App Store Connect.<p>I spent 10 years as an engineer at Apple working on macOS and iOS, and the last 8 as an indie developer with 20+ apps on the App Store for myself and clients. AppTraction is the tool I wish I’d had when I started building my own apps.<p>Most iOS and Mac devs that I talk to agree that Apple’s App Store Connect website is slow, confusing, and buggy. There’s a lot of useful data there, but the clunky site makes it really hard to make sense of. AppTraction brings your sales, analytics, ratings, and reviews to your Mac, and then tells you what matters.<p>I wo",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50439671",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Simstim：在 Mac 本地把通话转写为 .md 文件",
-      "summary": "Simstim 是注重隐私的本地通话转写应用，录制麦克风与系统音频，数据保存在纯 .md 文件中。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "pgrekovich",
-      "url": "https://github.com/pgrekovich/simstim",
-      "posted_at": "2026-11-10 20:56 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Simstim – local call transcription on Mac into .md files",
-      "original_summary": "Show HN: Simstim – local call transcription on Mac into .md files Hey there HN!<p>Simstim is a local-first and privacy-focused call transcription app for Mac. It records your mic and system audio (no bot joining calls) and transcribes everything on your machine. No account, no telemetry, audio never leaves your machine and all your data is in plain .md files (Obsidian native btw). Your AI subscription, free forever, MIT.<p>I built it because I used to use Granola, and it was super annoying that I couldn&#x27;t export my transcripts in some convenient manner. I needed an account and a subscription for doing basic things. And all my data was locked inside.<p>I started looking for alternatives, and it drove me mad - &quot;privacy-focused&quot; apps require me to create an account and log in, ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50432130",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "ApiClay 把网站、Google Sheet 或数据库变成付费 API",
-      "summary": "ApiClay 让用户几分钟内把网站、表格或数据库转为带文档和稳定 JSON 的付费 API。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "apiclay",
-      "url": "https://apiclay.com",
-      "posted_at": "2026-11-10 05:06 Asia/Shanghai",
-      "engagement": {
-        "points": 4,
-        "comments": 1
-      },
-      "original_title": "Show HN: ApiClay – Turn a Website, Google Sheet or Database into a Paid API",
-      "original_summary": "Show HN: ApiClay – Turn a Website, Google Sheet or Database into a Paid API Hi HN, I’m a reverse engineer, and I’ve seen the same problem repeatedly: people need data, but the path from “I need this” to “my app, agent, or workflow can use it” is messy.<p>Vibe coders want a working endpoint in minutes. Developers want clean docs, predictable JSON, and no surprise integration work. Businesses want to enrich lists, monitor changes, and safely expose internal data. AI agents need APIs they can discover and call reliably. Sometimes, the API simply doesn&#x27;t exist.<p>ApiClay makes that whole loop easier.<p>You can search a catalogue of APIs and datasets, inspect them in a playground, and copy ready-to-run JavaScript, Python, or cURL snippets into your app. Each API has its own reference, pric",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50428274",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "一个展示上市公司投资关系的可视化地图",
-      "summary": "该网页应用由 Meta AI 模型在黑客松中生成，收录 3.3 万家上市公司及超 10 万条投资持股关系。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "feearent",
-      "url": "https://github.com/feeRnt/whofundsit/tree/post_demo_cloudflare_cdn",
-      "posted_at": "2026-11-10 01:00 Asia/Shanghai",
+      "author": "dennis3124",
+      "url": "https://news.ycombinator.com/item?id=50473419",
+      "posted_at": "2026-11-13 04:07 Asia/Shanghai",
       "engagement": {
         "points": 2,
         "comments": 1
       },
-      "original_title": "Show HN: A visualization map of the funding of public companies",
-      "original_summary": "Show HN: A visualization map of the funding of public companies I made this webapp (vibecoded) with Meta&#x27;s AI models during the Meta AI hackathon that just ended (Oct 26-Nov 4). So far it contains public 33,000 companies, and 100k+ &#x27;flows&#x27;. A company X has a flow to another company Y if X funds Y or owns its shares, or vice versa.<p>It collects business data from SEC&#x27;s EDGAR (Electronic Data Gathering, Analysis, and Retrieval), Wikidata company lists, and other regional company indices of Europe and Asia to build a database of companies to display on the map. SEC provides financial information liberally, while for the European counterpart I didn&#x27;t find an equivalent yet.<p>I geocoded the business addresses using OpenStreetMap&#x27;s Nominatim (hopefully that doesn&",
+      "original_title": "Show HN: Mudroom – Unified inbox for support requests",
+      "original_summary": "Show HN: Mudroom – Unified inbox for support requests Hi HN, I&#x27;m Dennis and I wanted to share what I&#x27;ve been working on. Mudroom is a unified inbox for SaaS teams that have support requests scattered across platforms.<p>Here&#x27;s a quick demo: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;GFafCfwqNf4\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;GFafCfwqNf4</a><p>As an engineer, one of the things often frustrated me is how I had to context switch between a task that I&#x27;m working on to a support request that required engineering investigation. Often they revolve around digging through logs, customer profiles, and billing and we believe agents are well equipped to handle data gathering.<p>We&#x27;re strong believers that customers want to interact with Humans instead of AI for t",
       "translated_by": "model"
     },
     {
-      "id": "hn-50424621",
+      "id": "hn-50471511",
       "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Show HN：在免费套餐 VPS 上跑 19 个生产 API",
-      "summary": "Show HN：我在免费 VPS 上运行 19 个生产 API",
+      "category": "科技软件/App 限免",
+      "title": "Captain’s Log：免费开源的 Mac 口述笔记应用",
+      "summary": "在本地把口述内容整理并分类成 Markdown 文件，可直接在 Obsidian 中使用，完全私密。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "hhelll",
-      "url": "https://github.com/hhellll/dev-utility-APIs",
-      "posted_at": "2026-11-09 20:22 Asia/Shanghai",
+      "author": "vnglst",
+      "url": "https://koenvangilst.nl/lab/captains-log",
+      "posted_at": "2026-11-13 02:07 Asia/Shanghai",
       "engagement": {
-        "points": 1,
+        "points": 3,
         "comments": 0
       },
-      "original_title": "Show HN: I run 19 production APIs on a free-tier VPS",
-      "original_summary": "Show HN: I run 19 production APIs on a free-tier VPS ",
+      "original_title": "Show HN: Captain's Log, a Mac app for thinking out loud",
+      "original_summary": "Show HN: Captain's Log, a Mac app for thinking out loud Thinking out loud helps me understand things. So I built Captain’s Log, a Mac app that turns my ramblings into cleaned-up and categorized Markdown files I can use in Obsidian.<p>Everything runs locally, completely private. I built it just for me, but it’s now free and open source for anyone to use or build upon.",
       "translated_by": "model"
     },
     {
-      "id": "hn-50417585",
+      "id": "hn-50469011",
       "source": "Hacker News",
       "category": "AI 开发工具与编程助手",
-      "title": "Fireside Folio为reMarkable免费提供书、漫画和新闻",
-      "summary": "连接reMarkable后可发送7.9万多本公版书、漫画和新闻内容，应用免费。",
+      "title": "DeployAngel：约 20 分钟判断部署是否弄坏生产环境",
+      "summary": "一个发布验证工具，作者因 Rails 8.1 升级事故而开发，目前正在征集反馈。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "hashfunction",
-      "url": "https://firesidefolio.com/",
-      "posted_at": "2026-11-09 05:39 Asia/Shanghai",
+      "author": "jkowens",
+      "url": "https://news.ycombinator.com/item?id=50469011",
+      "posted_at": "2026-11-12 23:30 Asia/Shanghai",
       "engagement": {
         "points": 2,
         "comments": 0
       },
-      "original_title": "Show HN: Fireside Folio – free books, comics and news editions for reMarkable",
-      "original_summary": "Show HN: Fireside Folio – free books, comics and news editions for reMarkable I own a reMarkable 2 and wanted more to read on it than my own PDFs, so I built a free web app. You connect your tablet once with the official one-time code, then:<p>- Send any of 79,000+ public-domain books (Standard Ebooks first, plus Project Gutenberg, Wikisource and OpenStax textbooks).<p>- Get comics (xkcd volumes with the hover text, Pepper&amp;Carrot, pre-1931 strips) and 33,000+ magazine issues from 1930 and earlier, re-rendered for e-ink.<p>- Get puzzle books (sudoku with unique solutions, mazes, nonograms) to solve with the pen.<p>- Subscribe to 160+ blogs and news sites; it builds one EPUB edition every morning or every six hours, and moves editions you&#x27;ve finished to the trash.<p>Each kind lands ",
+      "original_title": "Show HN: DeployAngel – A verdict in ~20 minutes if a deploy broke production",
+      "original_summary": "Show HN: DeployAngel – A verdict in ~20 minutes if a deploy broke production Hey there, I&#x27;m looking for feedback on a release verification tool I&#x27;m building.<p><a href=\"https:&#x2F;&#x2F;www.deployangel.com\" rel=\"nofollow\">https:&#x2F;&#x2F;www.deployangel.com</a><p>I decided to build this after an issue popped up with a recent Rails upgrade. We upgraded a Rails app to 8.1 and picked up a new default that changes the order after_commit callbacks run. Our upload code started telling the virus scanner about files before they were saved to S3, and the scanner just quietly dropped them. No exceptions were raised and uploads sat in &quot;processing&quot; for days. We should have had alarms in place, we know that now but I wondered if there could be some type monitoring that would just",
       "translated_by": "model"
     },
     {
-      "id": "hn-50416992",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "免费浏览器 Game Boy 风格音乐 tracker，可分享链接",
-      "summary": "四通道模拟 Game Boy 音源，纯浏览器运行，无需账号或后端；歌曲存本地，分享链接压缩进 URL，可导出 WAV/M4A/MP4。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "iamdan",
-      "url": "https://chiptunes.studio/",
-      "posted_at": "2026-11-09 04:43 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: A free Gameboy–style music tracker in the browser with shareable URLs",
-      "original_summary": "Show HN: A free Gameboy–style music tracker in the browser with shareable URLs I built a 4-channel music tracker modeled on the original Game Boy&#x27;s sound hardware: two pulse channels, a wave channel, and noise. It runs entirely in the browser using the Web Audio API, with no account or backend.<p>Songs save to localStorage, and share links compress the whole song into the URL hash, so sharing never touches a server. You can also export WAV, M4A, or a square MP4 of the rows playing.<p>It ships with 3 demo songs to show what it can do. I’m a developer, not a composer, so I made the song format LLM-friendly: use “Import from text” on the home page, and see <a href=\"https:&#x2F;&#x2F;chiptunes.studio&#x2F;llms.txt\" rel=\"nofollow\">https:&#x2F;&#x2F;chiptunes.studio&#x2F;llms.txt</a> for th",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50411013",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "SEC Fundamentals：免费财务数据 API",
-      "summary": "显示 HN：SEC 基础知识 – 免费金融 API",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "chartwidgets",
-      "url": "https://www.quotelinks.com/api/sec-fundamentals/",
-      "posted_at": "2026-11-08 14:51 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: SEC Fundamentals – free financial API",
-      "original_summary": "Show HN: SEC Fundamentals – free financial API ",
-      "translated_by": "model"
-    },
-    {
-      "id": "v2ex-1256724",
+      "id": "v2ex-1256772",
       "source": "V2EX",
-      "category": "科技软件/App 限免",
-      "title": "做了一个月的说唱歌词站 LyricBars，记几个有意思的点",
-      "summary": "做了一个月的说唱歌词站 LyricBars，记几个有意思的点\n上个月开始做 https://lyricbars.com ，写说唱歌词，也能把歌词直接出成一首完整的歌。记几个我觉得有意思的点。\r\n\r\n**选词**\r\n\r\nrap song lyrics generator 每月搜索 6600 ，KD 24 左右。看前十的时候发现有两个站 DR 只有 1 和 6 ，说明新站在这个词上是抢得动的，就定了这个方向。\r\n\r\n**出歌**\r\n\r\n网站用 Next.js ，出歌接的 Mureka ，每首每个版本 $0.045 ，平均 39.5 秒出一首。真跑起来才发现坑：并发只有 1 ，第二个请求马上返回 429 ，而且不排队。所以免费档必须限住，不然一波流量就能把余额打空。\r\n\r\n**版权**\r\n\r\n踩的坑里最有价值的是这条：在美国，完全由 AI 生成的音频拿不到著作权登记。所以我把服务条款里原来一句“Pro 可用”改成了六个小节，写清楚三件事：付费档有商用授权；免费档只能个人使用；取消订阅后，已经生成的歌授权不变。顺手做了个页面专门讲这个： https://lyricbars.com/license\r\n\r\n**起名工具**\r\n\r\nhttps://lyricbars.com/rapper-name-generator 的词库是固定的，不是 AI 生成的，我在页面上特意写明了。不想为了进 AI 工具目录去硬套。\r\n\r\n有在做同类站的朋友，想聊聊限流你们是怎么做的，这块我还在验证。",
+      "category": "云服务/GPU/开发者资源",
+      "title": "整了个 Markdown 写简历的前端项目，模版漂亮，开源免费",
+      "summary": "整了个 Markdown 写简历的前端项目，模版漂亮，开源免费\n之前用的是 python 的，但是感觉部署太麻烦了。\r\n\r\n最近刚好要整理简历，所以换成 javascript 的，调试花了不少时间。现在可以直接部署 cloudflare 上，简单明了，不用一直担心服务器不稳定啥的。最重要的是不需要服务器的费用。\r\n\r\n现在使用起来还是比较顺滑的，界面简单漂亮。\r\n\r\n![]( https://github.com/garylab/resumis/raw/main/public/static/img/screenshots/resumis-editor.png)\r\n\r\n大家给提点意见，在[github]( https://github.com/garylab/resumis)上了。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "dfdafan",
-      "url": "https://www.v2ex.com/t/1256724",
-      "posted_at": "2026-11-13 10:54 Asia/Shanghai",
+      "author": "lovis",
+      "url": "https://www.v2ex.com/t/1256772",
+      "posted_at": "2026-11-13 12:45 Asia/Shanghai",
       "engagement": {
         "replies": 0
       },
-      "original_title": "做了一个月的说唱歌词站 LyricBars，记几个有意思的点",
-      "original_summary": "做了一个月的说唱歌词站 LyricBars，记几个有意思的点\n上个月开始做 https://lyricbars.com ，写说唱歌词，也能把歌词直接出成一首完整的歌。记几个我觉得有意思的点。\r\n\r\n**选词**\r\n\r\nrap song lyrics generator 每月搜索 6600 ，KD 24 左右。看前十的时候发现有两个站 DR 只有 1 和 6 ，说明新站在这个词上是抢得动的，就定了这个方向。\r\n\r\n**出歌**\r\n\r\n网站用 Next.js ，出歌接的 Mureka ，每首每个版本 $0.045 ，平均 39.5 秒出一首。真跑起来才发现坑：并发只有 1 ，第二个请求马上返回 429 ，而且不排队。所以免费档必须限住，不然一波流量就能把余额打空。\r\n\r\n**版权**\r\n\r\n踩的坑里最有价值的是这条：在美国，完全由 AI 生成的音频拿不到著作权登记。所以我把服务条款里原来一句“Pro 可用”改成了六个小节，写清楚三件事：付费档有商用授权；免费档只能个人使用；取消订阅后，已经生成的歌授权不变。顺手做了个页面专门讲这个： https://lyricbars.com/license\r\n\r\n**起名工具**\r\n\r\nhttps://lyricbars.com/rapper-name-generator 的词库是固定的，不是 AI 生成的，我在页面上特意写明了。不想为了进 AI 工具目录去硬套。\r\n\r\n有在做同类站的朋友，想聊聊限流你们是怎么做的，这块我还在验证。",
+      "original_title": "整了个 Markdown 写简历的前端项目，模版漂亮，开源免费",
+      "original_summary": "整了个 Markdown 写简历的前端项目，模版漂亮，开源免费\n之前用的是 python 的，但是感觉部署太麻烦了。\r\n\r\n最近刚好要整理简历，所以换成 javascript 的，调试花了不少时间。现在可以直接部署 cloudflare 上，简单明了，不用一直担心服务器不稳定啥的。最重要的是不需要服务器的费用。\r\n\r\n现在使用起来还是比较顺滑的，界面简单漂亮。\r\n\r\n![]( https://github.com/garylab/resumis/raw/main/public/static/img/screenshots/resumis-editor.png)\r\n\r\n大家给提点意见，在[github]( https://github.com/garylab/resumis)上了。",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1256722",
+      "id": "v2ex-1256764",
       "source": "V2EX",
       "category": "大模型 API 免费额度",
-      "title": "Kiso Coding Agent 网页版正式发布「V 站首发」",
-      "summary": "Kiso Coding Agent 网页版正式发布「V 站首发」\n上次发 Kiso ，大家说太长、只有 TUI 、想看对比。这次几件事一起交代。\r\n\r\n## 一、网页版\r\n\r\nKiso 正式发布了 0.54 版本。网页版和终端版是同一个 agent ，跑在你自己的机器上，在浏览器里用：\r\n\r\n```\r\nnpm i -g @vincemakes/kiso-code @vincemakes/kiso-web\r\nkiso web\r\n```\r\n\r\n- 左边按文件夹列出所有任务，右边是改了哪些文件、后台在跑什么；用 CDP 做自动化开发时的关键截图也会显示在对话流里，方便查看；\r\n- 一个任务可以加多个文件夹；\r\n- 模型、推理强度、审批模式都在输入框下面，点一下就能换；\r\n- 能问你问题，能派子代理并行，长命令自动转到后台；\r\n- 运行中可以随时插话（ steer ）改变方向；回复后会猜你下一句，按 Tab 采纳。\r\n\r\n![kiso web]( https://raw.githubusercontent.com/vincemakes/kiso/f8b38d349d9449995c6a621a3a8a6c8a64adaab4/assets/readme/web.png)\r\n\r\n## 二、和 Pi 比：完成率打平，成本互有胜负\r\n\r\n同模型、同推理强度、隔离环境，在 Terminal-Bench 上做配对测试，任务完成率 28 : 26 ，基本持平。成本上，有的任务 Kiso 更省，有的 Pi 更省，总账目前 Pi 略占优。\r\n\r\nKiso 做了很多轮成本优化，但 Pi 的极简路线太强了，Kiso 始终没能在成本上全面胜过它。我原本想先在结构上做出创新、把成本压得更低，再去提升 harness 的产品体验，但这一步目前还没做到。不过 Kiso 的 token 消耗已经比市面上大多数产",
+      "title": "把 IDE 的工作空间思路用到 AI 办公里",
+      "summary": "把 IDE 的工作空间思路用到 AI 办公里\n我们在做 Tokeny ，一个桌面 AI Agent ，来自荐一下。\r\n\r\n它和常见 AI 聊天工具比较不一样的地方，是组织工作的思路：我们借用了 IDE 里“项目 / 工作空间”的概念。\r\n\r\n很多 AI 工具以会话为中心。这次聊天上传几份文件，下次换个对话再重新描述背景，生成的结果也散落在不同会话里。写代码时我们更习惯另一种方式：打开一个项目，文件、终端、上下文和后续改动都围绕它展开。Tokeny 想把这种方式也用于文档、表格、调研和其他日常办公。\r\n\r\n在 Tokeny 里，项目是第一层管理单位。一个代码仓库、一个市场方案或一个调研课题，都可以是一个工作空间。相关的文件、会话和产出围绕它组织；会话只是工作过程的一部分，不再是你管理资料的唯一入口。\r\n\r\n比如：\r\n\r\n选一个代码目录作为工作空间，让 Agent 读代码、修改文件、跑命令和测试；\r\n\r\n为一个市场方案建立工作空间，把参考资料、数据表、文档和 PPT 放在一处，后续任务继续基于这些材料加工；\r\n\r\n给长期项目配置记忆、Skill 、MCP 或定时任务，不必把所有事情塞进一段越来越长的对话。\r\n\r\n文件管理、终端、Git 和预览也放在同一个工作空间里。它既能做代码任务，也能生成 Word 、PPT 、Excel 、PDF 等办公文件。\r\n\r\n模型不绑定：可以接自己的 API Key 、自定义兼容渠道或 Ollama ，也可以使用平台内置模型。权限方面，删除文件、执行命令等操作有审批和规则限制，默认不建议大家直接开完全权限。\r\n\r\n支持 Windows / macOS / Linux ，软件免费下载，不登录也能配置自己的 API Key 使用。\r\n\r\n项目还在持续迭代。如果你愿意试用，我更想听到具体问题：这种按工作空间组织的方式是否符合你的习惯，哪一步配置不清楚，或",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "langlang280025",
-      "url": "https://www.v2ex.com/t/1256722",
-      "posted_at": "2026-11-13 10:45 Asia/Shanghai",
+      "author": "terromm",
+      "url": "https://www.v2ex.com/t/1256764",
+      "posted_at": "2026-11-13 12:13 Asia/Shanghai",
       "engagement": {
         "replies": 0
       },
-      "original_title": "Kiso Coding Agent 网页版正式发布「V 站首发」",
-      "original_summary": "Kiso Coding Agent 网页版正式发布「V 站首发」\n上次发 Kiso ，大家说太长、只有 TUI 、想看对比。这次几件事一起交代。\r\n\r\n## 一、网页版\r\n\r\nKiso 正式发布了 0.54 版本。网页版和终端版是同一个 agent ，跑在你自己的机器上，在浏览器里用：\r\n\r\n```\r\nnpm i -g @vincemakes/kiso-code @vincemakes/kiso-web\r\nkiso web\r\n```\r\n\r\n- 左边按文件夹列出所有任务，右边是改了哪些文件、后台在跑什么；用 CDP 做自动化开发时的关键截图也会显示在对话流里，方便查看；\r\n- 一个任务可以加多个文件夹；\r\n- 模型、推理强度、审批模式都在输入框下面，点一下就能换；\r\n- 能问你问题，能派子代理并行，长命令自动转到后台；\r\n- 运行中可以随时插话（ steer ）改变方向；回复后会猜你下一句，按 Tab 采纳。\r\n\r\n![kiso web]( https://raw.githubusercontent.com/vincemakes/kiso/f8b38d349d9449995c6a621a3a8a6c8a64adaab4/assets/readme/web.png)\r\n\r\n## 二、和 Pi 比：完成率打平，成本互有胜负\r\n\r\n同模型、同推理强度、隔离环境，在 Terminal-Bench 上做配对测试，任务完成率 28 : 26 ，基本持平。成本上，有的任务 Kiso 更省，有的 Pi 更省，总账目前 Pi 略占优。\r\n\r\nKiso 做了很多轮成本优化，但 Pi 的极简路线太强了，Kiso 始终没能在成本上全面胜过它。我原本想先在结构上做出创新、把成本压得更低，再去提升 harness 的产品体验，但这一步目前还没做到。不过 Kiso 的 token 消耗已经比市面上大多数产",
+      "original_title": "把 IDE 的工作空间思路用到 AI 办公里",
+      "original_summary": "把 IDE 的工作空间思路用到 AI 办公里\n我们在做 Tokeny ，一个桌面 AI Agent ，来自荐一下。\r\n\r\n它和常见 AI 聊天工具比较不一样的地方，是组织工作的思路：我们借用了 IDE 里“项目 / 工作空间”的概念。\r\n\r\n很多 AI 工具以会话为中心。这次聊天上传几份文件，下次换个对话再重新描述背景，生成的结果也散落在不同会话里。写代码时我们更习惯另一种方式：打开一个项目，文件、终端、上下文和后续改动都围绕它展开。Tokeny 想把这种方式也用于文档、表格、调研和其他日常办公。\r\n\r\n在 Tokeny 里，项目是第一层管理单位。一个代码仓库、一个市场方案或一个调研课题，都可以是一个工作空间。相关的文件、会话和产出围绕它组织；会话只是工作过程的一部分，不再是你管理资料的唯一入口。\r\n\r\n比如：\r\n\r\n选一个代码目录作为工作空间，让 Agent 读代码、修改文件、跑命令和测试；\r\n\r\n为一个市场方案建立工作空间，把参考资料、数据表、文档和 PPT 放在一处，后续任务继续基于这些材料加工；\r\n\r\n给长期项目配置记忆、Skill 、MCP 或定时任务，不必把所有事情塞进一段越来越长的对话。\r\n\r\n文件管理、终端、Git 和预览也放在同一个工作空间里。它既能做代码任务，也能生成 Word 、PPT 、Excel 、PDF 等办公文件。\r\n\r\n模型不绑定：可以接自己的 API Key 、自定义兼容渠道或 Ollama ，也可以使用平台内置模型。权限方面，删除文件、执行命令等操作有审批和规则限制，默认不建议大家直接开完全权限。\r\n\r\n支持 Windows / macOS / Linux ，软件免费下载，不登录也能配置自己的 API Key 使用。\r\n\r\n项目还在持续迭代。如果你愿意试用，我更想听到具体问题：这种按工作空间组织的方式是否符合你的习惯，哪一步配置不清楚，或",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1256714",
+      "id": "v2ex-1256740",
       "source": "V2EX",
       "category": "AI 产品会员/试用",
-      "title": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖",
-      "summary": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖\n做 Ebb 的初衷就一句话：想要一个好看、原生、轻量的系统监控软件。\r\n\r\n好看：我很喜欢 tw93 的 Mole ，克制、干净，又有点小趣味，Ebb 整体的设计气质就是参考 Mole 做的。每一页都有自己的图表，比如处理器是\"核心花\"，内存是\"气泡\"，网络是\"星图\"。\r\n\r\n原生、轻量：SwiftUI 原生开发，不套壳。数据全部存在本机，不上传。\r\n\r\n除了好看，也塞了几个我自己天天用的功能：\r\n\r\n- 刚才怎么了：按 ⌃⌥E 回放最近 60 秒，看是哪个进程在哪一秒把 CPU 吃满了\r\n- 失控进程：后台进程长时间占着 CPU ，或者内存只涨不降，会直接标出来\r\n- 睡眠体检：合盖再打开，告诉你睡了多久、掉了多少电、被唤醒了几次\r\n- 菜单栏面板：负载、网速、蓝牙设备电量，扫一眼就够了\r\n\r\n支持 macOS 13 及以上，Apple 芯片和 Intel 都能用。免费试用 14 天，之后 5 美元买断。\r\n\r\n官网： https://ebbapp.top\r\n\r\n [送码] \r\n准备了 15 个激活码。在楼下回复你的使用建议、吐槽或者想要的功能，说一句\"好看\"也行。回复时请附上 base64 编码后的邮箱，我会从回复里挑 15 位，把激活码发到邮箱。\r\n\r\n才刚上线，肯定有不少毛病，欢迎大家狠狠提意见，我都会看。\r\n\r\n部分截图：\r\n\r\n亮色：\r\n\r\n![总览]( https://img.cdn1.vip/i/6af671417c5e0_1794535745.webp)\r\n![处理器]( https://img.cdn1.vip/i/6af6713d0c63f_1794535741.webp)\r\n![能耗]( https://img.cdn1.vip/i/6af6713d64dcb_17945",
+      "title": "独立开发复盘：给 ADHD、拖延的人做的专注力 App 一个半月后正式发布，复盘数据以及聊聊一些 AI 的想法",
+      "summary": "独立开发复盘：给 ADHD、拖延的人做的专注力 App 一个半月后正式发布，复盘数据以及聊聊一些 AI 的想法\n这篇文章分两部分，没有使用 AI 来写，我日常使用备忘录来记录，仅让 AI 帮我转了一下 markdown 格式。\r\n第一部分是独立开发和产品，第二部分聊 AI ，不感兴趣可以跳。\r\n\r\n## 一、独立开发复盘\r\n一个半月前，我在这里发布了一个独立开发的产品贴：[做了个帮 ADHD 、拖延、容易走神的人找回专注力的 Mac App ，纯本地送码]( https://www.v2ex.com/t/1245758)。当时主要是想找一些有同样需求的朋友帮忙测试。最开始手里只有一个 App 和一个产品页，付费、推广这些事情都没有考虑清楚。当时也想过，如果发出来没人感兴趣，那就当作自己平时使用的一个工具好了。\r\n\r\n### 数据\r\n帖子发出去之后的数据大概是这样：\r\n\r\n* **浏览量**：V2EX 帖子点击一千多，实际点进去查看的人数大概 400 左右。\r\n* **试用转化**：有 37 位 V2EX 社区的朋友留下了邮箱。\r\n* **反馈与迭代**：后续和我通过邮件来回沟通的有 9 个用户，主要帮我提 bug 反馈和功能建议，非常感谢他们的反馈。这期间我一共修复和更新了 13 个版本（从 1.0.6 一路更到了 1.1.9 ）。\r\n\r\n除了修 bug ，根据和大家邮件沟通的结果，我新加了一些稍微强一点的走神提醒，也重构了部分页面的 UI 。不过现在的 UI 我自己打分的话还是只能给到 6 分左右。\r\n\r\n这些数据到底能不能证明这个 App 有真实的市场需求，我其实也不太确定。毕竟测试用户数量还是比较少的，也没有真正验证付费意愿。但这个产品我自己持续使用了大概 3 个月，所以后续只要还有可以优化的地方，或者有什么新的想法，我还是会继续更新 App 的。\r\n\r\n### 产品",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "murongxdb",
-      "url": "https://www.v2ex.com/t/1256714",
-      "posted_at": "2026-11-13 10:21 Asia/Shanghai",
+      "author": "marcogray",
+      "url": "https://www.v2ex.com/t/1256740",
+      "posted_at": "2026-11-13 11:15 Asia/Shanghai",
       "engagement": {
-        "replies": 24
+        "replies": 2
       },
-      "original_title": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖",
-      "original_summary": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖\n做 Ebb 的初衷就一句话：想要一个好看、原生、轻量的系统监控软件。\r\n\r\n好看：我很喜欢 tw93 的 Mole ，克制、干净，又有点小趣味，Ebb 整体的设计气质就是参考 Mole 做的。每一页都有自己的图表，比如处理器是\"核心花\"，内存是\"气泡\"，网络是\"星图\"。\r\n\r\n原生、轻量：SwiftUI 原生开发，不套壳。数据全部存在本机，不上传。\r\n\r\n除了好看，也塞了几个我自己天天用的功能：\r\n\r\n- 刚才怎么了：按 ⌃⌥E 回放最近 60 秒，看是哪个进程在哪一秒把 CPU 吃满了\r\n- 失控进程：后台进程长时间占着 CPU ，或者内存只涨不降，会直接标出来\r\n- 睡眠体检：合盖再打开，告诉你睡了多久、掉了多少电、被唤醒了几次\r\n- 菜单栏面板：负载、网速、蓝牙设备电量，扫一眼就够了\r\n\r\n支持 macOS 13 及以上，Apple 芯片和 Intel 都能用。免费试用 14 天，之后 5 美元买断。\r\n\r\n官网： https://ebbapp.top\r\n\r\n [送码] \r\n准备了 15 个激活码。在楼下回复你的使用建议、吐槽或者想要的功能，说一句\"好看\"也行。回复时请附上 base64 编码后的邮箱，我会从回复里挑 15 位，把激活码发到邮箱。\r\n\r\n才刚上线，肯定有不少毛病，欢迎大家狠狠提意见，我都会看。\r\n\r\n部分截图：\r\n\r\n亮色：\r\n\r\n![总览]( https://img.cdn1.vip/i/6af671417c5e0_1794535745.webp)\r\n![处理器]( https://img.cdn1.vip/i/6af6713d0c63f_1794535741.webp)\r\n![能耗]( https://img.cdn1.vip/i/6af6713d64dcb_17945",
+      "original_title": "独立开发复盘：给 ADHD、拖延的人做的专注力 App 一个半月后正式发布，复盘数据以及聊聊一些 AI 的想法",
+      "original_summary": "独立开发复盘：给 ADHD、拖延的人做的专注力 App 一个半月后正式发布，复盘数据以及聊聊一些 AI 的想法\n这篇文章分两部分，没有使用 AI 来写，我日常使用备忘录来记录，仅让 AI 帮我转了一下 markdown 格式。\r\n第一部分是独立开发和产品，第二部分聊 AI ，不感兴趣可以跳。\r\n\r\n## 一、独立开发复盘\r\n一个半月前，我在这里发布了一个独立开发的产品贴：[做了个帮 ADHD 、拖延、容易走神的人找回专注力的 Mac App ，纯本地送码]( https://www.v2ex.com/t/1245758)。当时主要是想找一些有同样需求的朋友帮忙测试。最开始手里只有一个 App 和一个产品页，付费、推广这些事情都没有考虑清楚。当时也想过，如果发出来没人感兴趣，那就当作自己平时使用的一个工具好了。\r\n\r\n### 数据\r\n帖子发出去之后的数据大概是这样：\r\n\r\n* **浏览量**：V2EX 帖子点击一千多，实际点进去查看的人数大概 400 左右。\r\n* **试用转化**：有 37 位 V2EX 社区的朋友留下了邮箱。\r\n* **反馈与迭代**：后续和我通过邮件来回沟通的有 9 个用户，主要帮我提 bug 反馈和功能建议，非常感谢他们的反馈。这期间我一共修复和更新了 13 个版本（从 1.0.6 一路更到了 1.1.9 ）。\r\n\r\n除了修 bug ，根据和大家邮件沟通的结果，我新加了一些稍微强一点的走神提醒，也重构了部分页面的 UI 。不过现在的 UI 我自己打分的话还是只能给到 6 分左右。\r\n\r\n这些数据到底能不能证明这个 App 有真实的市场需求，我其实也不太确定。毕竟测试用户数量还是比较少的，也没有真正验证付费意愿。但这个产品我自己持续使用了大概 3 个月，所以后续只要还有可以优化的地方，或者有什么新的想法，我还是会继续更新 App 的。\r\n\r\n### 产品",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1256706",
-      "source": "V2EX",
-      "category": "AI 产品会员/试用",
-      "title": "做了一个本地工具：把 Gumroad / Stripe / PayPal 导出整理成统一账本（不算税，求反馈）",
-      "summary": "做了一个本地工具：把 Gumroad / Stripe / PayPal 导出整理成统一账本（不算税，求反馈）\n年底要对账，或者准备把出海收入材料交给会计之前，我发现「有收入」和「对得上账」不是一回事。Gumroad 、Stripe 、PayPal 各自一份导出，列名不同，有的按销售日，有的按到账日，银行入账还可能再扣一笔汇兑。\r\n\r\n我先给自己做了一个只在浏览器里跑的转换页，文件不会上传。现在把它做成免费精简版公开，方便先走一遍流程：\r\n\r\n[xiaoyangge1993.github.io/ledger-converter]( https://xiaoyangge1993.github.io/ledger-converter/)\r\n\r\n它能做什么：\r\n\r\n识别并转换 Gumroad 销售 CSV 、Stripe payout reconciliation 、PayPal Activity Download 、Paddle payout reconciliation 、Lemon Squeezy 订单导出（按官方已公布列名）。\r\n下载成统一字段的 CSV ，方便贴进自己的表。\r\n提供虚构示例，可以先试用，不必一上来就上传自己的真实文件。\r\n明确不是什么：\r\n\r\n不是税务、法律或会计建议，也不会计算应纳税额，更不会告诉你这笔收入必须按哪一个个人所得税项目申报。\r\n当前不支持 App Store 、Google AdMob 和 Google AdSense 。如果你的主要收入来自这几个平台，这个版本还帮不上忙。\r\n部分 payout 文件，官方确认可以下载，但没有公布列名（例如部分 Gumroad / Lemon Squeezy payout ）。遇到这种情况会提示，而不是假装已经自动对齐。\r\n如果还需要完整的中文指南、带公式的 Excel 账本、示例和资料清单，我另外整理了",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "DevYuFeng",
-      "url": "https://www.v2ex.com/t/1256706",
-      "posted_at": "2026-11-13 10:11 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "做了一个本地工具：把 Gumroad / Stripe / PayPal 导出整理成统一账本（不算税，求反馈）",
-      "original_summary": "做了一个本地工具：把 Gumroad / Stripe / PayPal 导出整理成统一账本（不算税，求反馈）\n年底要对账，或者准备把出海收入材料交给会计之前，我发现「有收入」和「对得上账」不是一回事。Gumroad 、Stripe 、PayPal 各自一份导出，列名不同，有的按销售日，有的按到账日，银行入账还可能再扣一笔汇兑。\r\n\r\n我先给自己做了一个只在浏览器里跑的转换页，文件不会上传。现在把它做成免费精简版公开，方便先走一遍流程：\r\n\r\n[xiaoyangge1993.github.io/ledger-converter]( https://xiaoyangge1993.github.io/ledger-converter/)\r\n\r\n它能做什么：\r\n\r\n识别并转换 Gumroad 销售 CSV 、Stripe payout reconciliation 、PayPal Activity Download 、Paddle payout reconciliation 、Lemon Squeezy 订单导出（按官方已公布列名）。\r\n下载成统一字段的 CSV ，方便贴进自己的表。\r\n提供虚构示例，可以先试用，不必一上来就上传自己的真实文件。\r\n明确不是什么：\r\n\r\n不是税务、法律或会计建议，也不会计算应纳税额，更不会告诉你这笔收入必须按哪一个个人所得税项目申报。\r\n当前不支持 App Store 、Google AdMob 和 Google AdSense 。如果你的主要收入来自这几个平台，这个版本还帮不上忙。\r\n部分 payout 文件，官方确认可以下载，但没有公布列名（例如部分 Gumroad / Lemon Squeezy payout ）。遇到这种情况会提示，而不是假装已经自动对齐。\r\n如果还需要完整的中文指南、带公式的 Excel 账本、示例和资料清单，我另外整理了",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1256700",
+      "id": "v2ex-1256560",
       "source": "V2EX",
       "category": "大模型 API 免费额度",
-      "title": "gemini-4-carbon 补开一天免费",
-      "summary": "gemini-4-carbon 补开一天免费\nhttps://api.apichatgpt.org/ 想登的切换全模型白嫖分组就行 限制 1 并发 免费玩一天\r\n昨天全网性 gemini 封号爆炸，好不容易补上号 补开一天免费",
+      "title": "[KeyVia 满血中转站] 原生 Claude Fable5.2、GPT-6 Astra 免费用",
+      "summary": "[KeyVia 满血中转站] 原生 Claude Fable5.2、GPT-6 Astra 免费用\n站点： https://keyvia.cc\r\n\r\n完成 KeyVia 注册后，在本贴评论留 KeyVia 站内 ID ，或通过 KeyVia 页面提交工单联系客服说明来自 V2EX ，即可获得原价 112 美元的$19.99 套餐，可使用全站满血模型。\r\n\r\n容量有限，先到先得。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "asli96",
-      "url": "https://www.v2ex.com/t/1256700",
-      "posted_at": "2026-11-13 10:04 Asia/Shanghai",
+      "author": "keyvia",
+      "url": "https://www.v2ex.com/t/1256560",
+      "posted_at": "2026-11-12 18:35 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 154
       },
-      "original_title": "gemini-4-carbon 补开一天免费",
-      "original_summary": "gemini-4-carbon 补开一天免费\nhttps://api.apichatgpt.org/ 想登的切换全模型白嫖分组就行 限制 1 并发 免费玩一天\r\n昨天全网性 gemini 封号爆炸，好不容易补上号 补开一天免费",
+      "original_title": "[KeyVia 满血中转站] 原生 Claude Fable5.2、GPT-6 Astra 免费用",
+      "original_summary": "[KeyVia 满血中转站] 原生 Claude Fable5.2、GPT-6 Astra 免费用\n站点： https://keyvia.cc\r\n\r\n完成 KeyVia 注册后，在本贴评论留 KeyVia 站内 ID ，或通过 KeyVia 页面提交工单联系客服说明来自 V2EX ，即可获得原价 112 美元的$19.99 套餐，可使用全站满血模型。\r\n\r\n容量有限，先到先得。",
       "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "llm4jobs-v2：免费求职雷达，每日邮件摘要",
+      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历与地点筛选，跑在 GitHub Actions 上免费。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-lifejx-free-llm-api-list",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "free-llm-api-list：免费大模型接口可用性巡检清单",
+      "summary": "自动巡检各大平台免费大模型接口的可用性，由 GitHub Actions 每 4 小时更新，无需服务器。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "lifejx",
+      "url": "https://github.com/lifejx/free-llm-api-list",
+      "posted_at": "2026-11-13 01:30 Asia/Shanghai",
+      "engagement": {
+        "stars": 1
+      },
+      "original_title": "lifejx/free-llm-api-list",
+      "original_summary": "lifejx/free-llm-api-list \\u81ea\\u52a8\\u5de1\\u68c0\\u5404\\u5927\\u5e73\\u53f0\\u514d\\u8d39\\u5927\\u6a21\\u578b\\u63a5\\u53e3\\u53ef\\u7528\\u6027\\uff0c\\u6bcf 4 \\u5c0f\\u65f6\\u66f4\\u65b0\\uff08GitHub Actions\\uff0c\\u65e0\\u9700\\u670d\\u52a1\\u5668\\uff09",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-romeroyang-free-llm-api-deals",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "free-llm-api-deals：每日更新的 LLM API 免费额度清单",
+      "summary": "按来源标注、每日刷新的 LLM API 免费额度、试用额度和降价信息清单。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "RomeroYang",
+      "url": "https://github.com/RomeroYang/free-llm-api-deals",
+      "posted_at": "2026-11-12 13:05 Asia/Shanghai",
+      "engagement": {
+        "stars": 5
+      },
+      "original_title": "RomeroYang/free-llm-api-deals",
+      "original_summary": "RomeroYang/free-llm-api-deals Daily-refreshed, source-linked list of free tiers, trial credits and price cuts across LLM API providers",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-td685548-sketch-freellmapi-custom",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "freellmapi-custom 是多供应商 LLM API 网关管理面板",
+      "summary": "自建的多供应商 LLM API 网关与代理管理面板，支持 token 路由、模型回退和组合策略。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "td685548-sketch",
+      "url": "https://github.com/td685548-sketch/freellmapi-custom",
+      "posted_at": "2026-11-12 23:12 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "td685548-sketch/freellmapi-custom",
+      "original_summary": "td685548-sketch/freellmapi-custom Custom multi-provider LLM API gateway and proxy management dashboard with token routing, model fallbacks, and smart combos.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-shivaprasad7894530722-wq-free-llm-api-tokens",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "free-llm-api-tokens：每日更新免费LLM API token站点清单",
+      "summary": "该项目提供每日更新的免费LLM API token站点列表，包含OpenAI兼容接口、base URL和每日额度。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "shivaprasad7894530722-wq",
+      "url": "https://github.com/shivaprasad7894530722-wq/free-llm-api-tokens",
+      "posted_at": "2026-11-12 21:50 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "shivaprasad7894530722-wq/free-llm-api-tokens",
+      "original_summary": "shivaprasad7894530722-wq/free-llm-api-tokens Daily-updated list of sites giving free LLM API tokens (OpenAI compatibility, base URLs, tokens/day)",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-nejib1-free-llm",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Free-LLM 收录 34 个以上免费 LLM 与 AI API",
+      "summary": "汇总 34 个以上免费 LLM 与 AI API，含永久免费额度、试用额度与免信用卡选项，每日同步。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "nejib1",
+      "url": "https://github.com/nejib1/Free-LLM",
+      "posted_at": "2026-11-13 08:31 Asia/Shanghai",
+      "engagement": {
+        "stars": 1020
+      },
+      "original_title": "nejib1/Free-LLM",
+      "original_summary": "nejib1/Free-LLM Directory of 34+ free LLM & AI APIs — permanent free tiers, trial credits, and no-card options. GPT-4o, Gemini, Claude, Llama, DeepSeek, Mistral & more. Synced daily from the live directory at free-llm.com.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-msz-legend-free-llm-tokens",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "free-llm-tokens：每日刷新免费 LLM Token 源注册表",
+      "summary": "每日更新的免费 LLM API token 来源清单，并支持一键接入 Claude Code、Codex 和 OpenCode。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "msz-legend",
+      "url": "https://github.com/msz-legend/free-llm-tokens",
+      "posted_at": "2026-11-12 12:10 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "msz-legend/free-llm-tokens",
+      "original_summary": "msz-legend/free-llm-tokens Daily-refreshed registry of free LLM API tokens (free-tier sources) + one-command connect into Claude Code / OpenAI Codex / OpenCode. 每日刷新的免费大模型 Token 源注册表与一键接入。",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-enapt-swarmllm",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "SwarmLLM：在自己电脑上免费运行 AI 对话模型",
+      "summary": "开源应用，可多台电脑联网协作运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-12 23:54 Asia/Shanghai",
+      "engagement": {
+        "stars": 85
+      },
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
+      "translated_by": "model"
     },
     {
       "id": "disc-hollisorg-iv-studio",
