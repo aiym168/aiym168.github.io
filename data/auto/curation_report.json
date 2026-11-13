@@ -2,23 +2,27 @@
  "counts": {
   "archived": 14,
   "deadline_extracted": 6,
-  "drop:duplicate": 138,
+  "drop:duplicate": 139,
   "drop:empty_summary": 26,
   "drop:negative_signal": 99,
   "drop:no_clear_offer": 288,
   "drop:not_ai": 251,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 344,
-  "google_news_total": 344,
+  "google_news_resolved": 345,
+  "google_news_total": 345,
   "kept_total": 173,
   "net:gnews_cache_hit": 344,
-  "raw_total": 1034
+  "net:gnews_resolved_net": 1,
+  "net:tco_expanded": 1,
+  "new_this_run": 1,
+  "raw_total": 1035
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "上传房间照片即可用 AI 生成2个免费设计方案",
+   "免费课程：从工程师到 AI 工程师，每集对应一个 Git 标签",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
@@ -27,8 +31,7 @@
    "freefield：ComfyUI 上开源 Higgsfield",
    "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
    "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中",
-   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件",
-   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个"
+   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件"
   ],
   "empty_summary": [
    "演示用 Claude 与 Composio 查找并验证20个营销线索，成本0.68美元，可凭免费额度试用",
@@ -59,6 +62,7 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "该工具把 BookMyShow 每场演出、每个空座的座位图汇总到一页，无需逐场点开，由 Claude Opus 5.5 ",
    "Envato 在平台上于11月19日美东8点起24小时内免费无限提供 AI 视频模型 MiniMax H3",
    "@rperezmarco 分享：声明称在所有人能用相同 AI 模型前不再公开推测，也不为大公司提供免费基准问题",
    "@synthesiaIO 分享：官方称只需 2 分钟即可免费创建自己的 AI 克隆，并可亲自试用",
@@ -69,8 +73,7 @@
    "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
    "Anthropic 承认漏洞致配额消耗过快，向 Claude 付费订阅者提供一次全额度重置",
    "Epic 更新 Quixel 资产条款，Megascans 与 Megaplants 可用于训练 AI 模型",
-   "Goose 由 Jack Dorsey 的 Block 为内部工程师打造后开源，GitHub 已获 3.5 万星",
-   "@BkashJosi 分享：它不只聊天，还能用免费技能分析 AI 搜索为何列出竞争对手而非你，另有 52 个技能"
+   "Goose 由 Jack Dorsey 的 Block 为内部工程师打造后开源，GitHub 已获 3.5 万星"
   ],
   "not_ai": [
    "@CommandCodeAI 分享：每月 10 美元套餐用量提升至 7 倍，支持 100 万 token 上下文，Pro",
@@ -101,16 +104,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-14T05:30:15+08:00",
+ "generated_at": "2026-11-14T05:56:45+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-14T05:30:14+08:00",
+  "checked_at": "2026-11-14T05:56:45+08:00",
   "counts": {
-   "ok": 135,
-   "unsure": 25
+   "ok": 160
   },
   "hidden": 0
  },
- "seconds": 0.6,
+ "seconds": 1.2,
  "side": {
   "github_hot": {
    "drop:duplicate": 7,
@@ -120,8 +122,8 @@
   "hot_topics": {
    "drop:negative_signal": 4,
    "drop:not_ai": 13,
-   "drop:not_ai_strict": 2,
-   "kept": 21,
+   "drop:not_ai_strict": 1,
+   "kept": 22,
    "raw": 40
   }
  }
