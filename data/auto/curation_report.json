@@ -5,14 +5,17 @@
   "drop:duplicate": 138,
   "drop:empty_summary": 26,
   "drop:negative_signal": 99,
-  "drop:no_clear_offer": 287,
-  "drop:not_ai": 253,
+  "drop:no_clear_offer": 288,
+  "drop:not_ai": 251,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 343,
-  "google_news_total": 343,
-  "kept_total": 171,
+  "google_news_resolved": 344,
+  "google_news_total": 344,
+  "kept_total": 173,
   "net:gnews_cache_hit": 343,
-  "raw_total": 1033
+  "net:gnews_resolved_net": 1,
+  "net:tco_failed": 1,
+  "new_this_run": 1,
+  "raw_total": 1034
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -73,6 +76,7 @@
    "@BkashJosi 分享：它不只聊天，还能用免费技能分析 AI 搜索为何列出竞争对手而非你，另有 52 个技能"
   ],
   "not_ai": [
+   "@CommandCodeAI 分享：每月 10 美元套餐用量提升至 7 倍，支持 100 万 token 上下文，Pro",
    "面向加入 beta 的团队提供1000美元额度",
    "@MengTo 分享：整段主视觉为2K 的30秒一镜到底，滚动时反向播放，附完整工作流与提示词",
    "将 Prolong 针对中风开发的药物用于 ME/CFS 患者，探索增加供氧和血流的疗效",
@@ -83,8 +87,7 @@
    "官方称屠杀模式下周上线，DOOM: The Dark Ages Revelations 玩家可免费游玩",
    "Modal 将赞助 Vals Hacks 第一、二赛道，提供算力额度、技术支持及2万美元奖金额度",
    "@davj 分享：推文列出首轮融资免费资源，包括 Paul Graham 融资文章和 YC 种子轮融资指南",
-   "Apple 的免费容器工具利用 macOS 26 虚拟化，在 Apple Silicon 上以轻量虚拟机运行 OCI 容",
-   "该终端工具由微软副总裁 Scott Hanselman 创建，类似高级任务管理器"
+   "Apple 的免费容器工具利用 macOS 26 虚拟化，在 Apple Silicon 上以轻量虚拟机运行 OCI 容"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -101,16 +104,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-14T03:06:39+08:00",
+ "generated_at": "2026-11-14T05:28:31+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-14T03:06:38+08:00",
+  "checked_at": "2026-11-14T05:28:30+08:00",
   "counts": {
-   "ok": 115,
-   "unsure": 43
+   "ok": 158
   },
   "hidden": 0
  },
- "seconds": 0.8,
+ "seconds": 1.1,
  "side": {
   "github_hot": {
    "drop:duplicate": 7,
@@ -119,8 +121,8 @@
   },
   "hot_topics": {
    "drop:negative_signal": 4,
-   "drop:not_ai": 14,
-   "drop:not_ai_strict": 1,
+   "drop:not_ai": 13,
+   "drop:not_ai_strict": 2,
    "kept": 21,
    "raw": 40
   }
