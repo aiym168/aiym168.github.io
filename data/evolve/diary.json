@@ -4,11 +4,12 @@
   {
    "date": "2026-11-14",
    "lines": [
-    "今天我学会了：Hugging Face 热门模型 最近 7 天给了我 456 条新内容，最靠谱。",
-    "我调整了：伯克利 BAIR、Synced 等 5 个来源总是重复，我放慢了去看它的频率。",
-    "我在试用新来源 Chip Huyen、Eugene Yan，合格了才会上架。"
+    "我调整了 Hugging Face 热门模型 的权重，它留存最稳。",
+    "我把 雷峰网 的权重略微下调，它在 top5 里偏弱。",
+    "我给 伯克利 BAIR 和 Synced 放慢了节奏，先观察。",
+    "我把 Chip Huyen 放进试用期，看后续表现。"
    ],
-   "by": "rules",
+   "by": "model",
    "events": [
     {
      "op": "slower",
@@ -49,7 +50,8 @@
      "name": "Eugene Yan"
     }
    ],
-   "at": "2026-11-14T00:47+08:00"
+   "at": "2026-11-14T01:00+08:00",
+   "model_tried": true
   },
   {
    "date": "2026-11-13",
