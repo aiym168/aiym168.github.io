@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T23:19:12+08:00",
-  "generated_at_label": "2026-11-13 23:19 Asia/Shanghai",
+  "generated_at": "2026-11-13T23:30:31+08:00",
+  "generated_at_label": "2026-11-13 23:30 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
     "A": {
@@ -37,7 +37,7 @@
       "runs_total": 59,
       "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
       "next_run_label": "2026-11-14 00:07 Asia/Shanghai",
-      "age_min": 0
+      "age_min": 11
     },
     "B": {
       "engine": "B",
@@ -71,10 +71,12 @@
         "next_update_label": "22:07 北京时间（约）"
       },
       "runs_total": 21,
+      "standby_seen_label": "2026-11-13 23:25 Asia/Shanghai",
+      "standby_seen_at": "2026-11-13T23:25:20+08:00",
       "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
-      "next_run_label": "2026-11-13 23:25 Asia/Shanghai",
-      "last_seen_at": "2026-11-13T21:32:21+08:00",
-      "age_min": 106
+      "next_run_label": "2026-11-14 00:25 Asia/Shanghai",
+      "last_seen_at": "2026-11-13T23:25:20+08:00",
+      "age_min": 5
     },
     "C": {
       "engine": "C",
@@ -111,11 +113,11 @@
       "schedule": "第二台服务器已不参与本站更新：运行独立的直播站，并在每天 08:30 / 20:30 生成羊毛电台",
       "next_run_label": "2026-11-13 23:55 Asia/Shanghai",
       "last_seen_at": "2026-11-10T13:10:18+08:00",
-      "age_min": 4928
+      "age_min": 4940
     },
     "watchdog": {
       "schedule": "每 30 分钟（第 23 / 53 分钟）",
-      "next_run_label": "2026-11-13 23:23 Asia/Shanghai"
+      "next_run_label": "2026-11-13 23:53 Asia/Shanghai"
     }
   },
   "counts": {
@@ -331,7 +333,7 @@
   "heartbeat_label": "2026-11-13 00:57:08 Asia/Shanghai",
   "server": {
     "box_id": "已隐藏",
-    "checked_at_label": "2026-11-13 14:57 Asia/Shanghai",
+    "checked_at_label": "2026-11-13 23:30 Asia/Shanghai",
     "state_before": "BOX_STATE_RUNNING",
     "state_after": "BOX_STATE_RUNNING",
     "state_after_zh": "运行中",
@@ -341,16 +343,16 @@
       "cron": "0 * * * *",
       "tz": "Asia/Shanghai",
       "awake_for_s": 3600,
-      "next_label": "2026-11-13 15:00 Asia/Shanghai",
-      "last_wake_label": "2026-11-13 13:59 Asia/Shanghai"
+      "next_label": "2026-11-14 00:00 Asia/Shanghai",
+      "last_wake_label": "2026-11-13 20:59 Asia/Shanghai"
     },
-    "last_saved_label": "2026-11-13 14:32 Asia/Shanghai",
+    "last_saved_label": "2026-11-13 23:08 Asia/Shanghai",
     "ok": true,
-    "engine_b_age_min": 57
+    "engine_b_age_min": 5
   },
   "server2": {
     "box_id": "已隐藏",
-    "checked_at_label": "2026-11-13 14:57 Asia/Shanghai",
+    "checked_at_label": "2026-11-13 23:30 Asia/Shanghai",
     "state_before": "BOX_STATE_RUNNING",
     "state_after": "BOX_STATE_RUNNING",
     "state_after_zh": "运行中",
@@ -360,10 +362,10 @@
       "cron": "0 * * * *",
       "tz": "Asia/Shanghai",
       "awake_for_s": 3600,
-      "next_label": "2026-11-13 15:00 Asia/Shanghai",
+      "next_label": "2026-11-14 00:00 Asia/Shanghai",
       "last_wake_label": "2026-11-12 22:59 Asia/Shanghai"
     },
-    "last_saved_label": "2026-11-13 13:57 Asia/Shanghai",
+    "last_saved_label": "2026-11-13 23:20 Asia/Shanghai",
     "ok": true,
     "engine_b_age_min": null
   }
