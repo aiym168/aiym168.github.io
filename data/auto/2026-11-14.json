@@ -1,7 +1,7 @@
 {
   "date": "2026-11-14",
-  "updated_at": "2026-11-14T05:54+08:00",
-  "updated_at_label": "2026-11-14 05:54 Asia/Shanghai",
+  "updated_at": "2026-11-14T07:50+08:00",
+  "updated_at_label": "2026-11-14 07:50 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -35,8 +35,8 @@
       "url": "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
       "posted_at": "2026-11-13 23:10 Asia/Shanghai",
       "engagement": {
-        "points": 8,
-        "comments": 0
+        "points": 9,
+        "comments": 1
       },
       "original_title": "Show HN: Langfuse AI Gateway, open source rust gateway to trace every LLM call",
       "original_summary": "Show HN: Langfuse AI Gateway, open source rust gateway to trace every LLM call Hi HN, this is Max, Marc and Clemens, co-founders of Langfuse, the open source tool for agent &amp; observability &amp; evals (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;langfuse&#x2F;langfuse</a>).<p>It’s been a minute since our last Show HN in August 2023 (<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=37310070\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=37310070</a>) - we’ve been busy building out and serving our tracing &amp; eval pieces over the past years and have been very lucky to build a successful company and open source project around it. Today, we are happy to show the beta of Langfuse AI Gateway: <a href=",
@@ -309,6 +309,25 @@
       "translated_by": "model"
     },
     {
+      "id": "hn-50491617",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "告诉 HN：Google 搜索开始将搜索锁定在登录墙后面",
+      "summary": "告诉 HN：Google 搜索开始锁定登录墙后面的搜索通常，当我在某些 ISP CGNAT IP 地址（甚至不是 VPN）上使用 Google 搜索时，每当我在新的私密浏览窗口上启动 Google 搜索的新会话（可能是住宅代理僵尸网络的产物）时，我通常都会收到无数的验证码。<p>最近，除此之外，他们开始在某些不良 IP 地址上的登录提示后面锁定整个搜索结果页面（就像 YouTube 在一段时间内所做的那样） “登录以确认您不是机器人”提示）。这可能会降低服务的访问性，特别是对于那些使用共享/公共计算机的人。<p>我什至在某些 VPN IP 上没有收到此提示，甚至根本没有验证码，即使有像给定的免费验证码",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "exploraz",
+      "url": "https://news.ycombinator.com/item?id=50491617",
+      "posted_at": "2026-11-14 07:26 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 1
+      },
+      "original_title": "Tell HN: Google Search to start locking down search behind a login wall",
+      "original_summary": "Tell HN: Google Search to start locking down search behind a login wall Usually, when I used Google Search on some ISP CGNAT IP addresses (not even a VPN), I usually get countless CAPTCHAs evertime I initiate a new session to Google Search on a new private browsing window (probably an artifact from residential proxy botnets).<p>Recently, in addition to that, they started to just lock the entire search results page behind a login prompt on some of those bad IP addresses (like YouTube does for some time with the &quot;Sign in to confirm you&#x27;re not a bot&quot; prompt). This potentially makes the service less accessible, especially for those using a shared&#x2F;public computers.<p>I did not even get this prompt on some VPN IPs, and even no CAPTCHAs at all, even with a free one like given",
+      "translated_by": "free-translate"
+    },
+    {
       "id": "hn-50489240",
       "source": "Hacker News",
       "category": "AI 开发工具与编程助手",
@@ -366,6 +385,25 @@
       "translated_by": "model"
     },
     {
+      "id": "hn-50475689",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "ActiveDNS：免费的 DNS 搜索服务",
+      "summary": "可搜索域名、委托和 IP 地址的 DNS 数据集搜索引擎，起因是想查 CIDR 网段。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "elnerd",
+      "url": "https://activedns.net/",
+      "posted_at": "2026-11-13 07:04 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: ActiveDNS, a free DNS search service",
+      "original_summary": "Show HN: ActiveDNS, a free DNS search service Hi, ActiveDNS is a project I’ve published online and has running for a couple of months now. It is a search engine for a DNS dataset\nI am constantly building. The purpose of it is to provide an accurate searchable database of domains, delegations and ip addresses and my initial motivation to make it was the need to look up CIDR ranges and find all associated IP adresses.<p>From the dataset, I am publishing monthly extracts of all observed registrable domain and top N hostnames. I’m sure I will find more interesting use cases for it later.",
+      "translated_by": "model"
+    },
+    {
       "id": "hn-50470343",
       "source": "Hacker News",
       "category": "其他科技",
@@ -378,10 +416,29 @@
       "posted_at": "2026-11-13 00:52 Asia/Shanghai",
       "engagement": {
         "points": 55,
-        "comments": 2
+        "comments": 3
       },
       "original_title": "Show HN: Apron Chat Protocol",
       "original_summary": "Show HN: Apron Chat Protocol Hi HN friends - I&#x27;ve been obsessed with chat protocols for ages - one previous project is ssh-chat (<a href=\"https:&#x2F;&#x2F;ssh.chat&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;ssh.chat&#x2F;</a>)<p>I come bringing a new kind of chat protocol that I&#x27;ve been working on since I spent quite a lot of time exploring the 14 other competing standards we&#x27;ve come up with in the past few decades.<p>The protocol details are here: <a href=\"https:&#x2F;&#x2F;apron.chat\" rel=\"nofollow\">https:&#x2F;&#x2F;apron.chat</a><p>I&#x27;m hoping that Apron will better reflect our needs beyond 2026, which I expect will move more and more toward semi-private chats rather than global social networks.<p>Come say hi on the live public demo: <a href=\"https:&#x2F;&#x2F;web.apro",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50469853",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "免费开源容器工具 ReadyStack.dev：逐比特可复现 OSS 镜像",
+      "summary": "作者用极低 LLM 成本（两张 3090 本地运行、一份订阅）自动生成 OSS 容器的构建配方。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "readystack",
+      "url": "https://news.ycombinator.com/item?id=50469853",
+      "posted_at": "2026-11-13 00:20 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: ReadyStack.dev – Bit-for-bit reproducible OSS containers",
+      "original_summary": "Show HN: ReadyStack.dev – Bit-for-bit reproducible OSS containers <a href=\"https:&#x2F;&#x2F;readystack.dev\" rel=\"nofollow\">https:&#x2F;&#x2F;readystack.dev</a><p>If you are like me, coding LLMs made open source more important not less. A few months ago I wanted to see how far I could get using minimal LLM cost (local on two 3090s and one subscription) to automate OSS containers with a build recipe that matched bits.<p>That project ended up as ReadyStack.dev. ReadyStack publishes free Community Edition containers for open-source applications. I designed it to be a low cost image standard that puts provenance as a first order concern.<p>My goal was to see if I could build in trust with my images in a way nobody else had. Use the build recipe and match bits. Each release&#x27;s build kit inc",
       "translated_by": "model"
     },
     {
@@ -421,44 +478,6 @@
       "original_title": "Show HN: Poker Diary – replace your home game's spreadsheet and group-chat poll",
       "original_summary": "Show HN: Poker Diary – replace your home game's spreadsheet and group-chat poll Hi HN, I host a poker night with friends most weeks. For years we ran it on a Facebook Messenger poll for the date, and keeping results in a notes app. Results went missing, it was difficult to reconcile payments on games where we didn&#x27;t use cash, and nobody agreed on who was up for the year.<p>Poker Diary covers the whole cycle for a regular group:<p>Before the game: date polls, RSVPs with a seat limit and waitlist, and calendar feeds.\nAt the table: a live cash-game tracker for buy-ins and rebuys, or a tournament clock. You can put the clock on a TV.\nAfter the game: settle-up with the fewest payments, then mark each one as paid.\nOver time: an all-time leaderboard, records, head-to-heads, form, year in rev",
       "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50458246",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Disband：带API的音轨分离工具，可拆到鼓组各部件",
-      "summary": "上传歌曲分离人声、乐器，甚至拆出底鼓军鼓，每日有免费额度。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "f1nniboy",
-      "url": "https://disband.io/",
-      "posted_at": "2026-11-12 04:29 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Disband – a stem separator with an API, down to the drum kit",
-      "original_summary": "Show HN: Disband – a stem separator with an API, down to the drum kit A stem splitter I built. Upload a song and get vocals (lead and backing), instrumental, drums, bass, guitar, piano, or even the drums split into kick, snare, toms, hi-hat and the rest. You pay per minute of audio with credits (while also being cheaper than other competitors), and there&#x27;s a free daily allowance (with an account, I don&#x27;t want it to be abused), and downloads&#x2F;stems aren&#x27;t locked behind a paid tier. You can listen to the example on the landing page if you don&#x27;t want to sign up yet. There&#x27;s also a pretty easy-to-use API, if you want to integrate it with your own tools. You also don&#x27;t have to know anything at all about the underlying models either, because there&#x27;s no comp",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50450897",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Obeya：用于指挥编码智能体的空间画布",
-      "summary": "面向不再逐行审阅代码、只做任务调度的开发者。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "sadilek",
-      "url": "https://github.com/sadilek/obeya",
-      "posted_at": "2026-11-11 16:14 Asia/Shanghai",
-      "engagement": {
-        "points": 4,
-        "comments": 0
-      },
-      "original_title": "Show HN: Obeya, a spatial canvas for directing coding agents",
-      "original_summary": "Show HN: Obeya, a spatial canvas for directing coding agents Yeah, I know, &quot;not another AI GUI <i>rolls eyes</i>&quot;. So let me say upfront: This is <i>not</i> for you if you want to regularly review the code agents produce. But if you, like me, stopped writing code at the beginning of the year and for the most part stopped reading it a few months ago, you are my target audience, and I think there&#x27;s a good chance you&#x27;ll benefit from this.<p>I love directing agents to build stuff. But oh, can you get lost in parallel coding sessions. Just walls of text. Cycling through terminal windows. It feels like pair programming with multiple people at the same time. Then: Start a dev server, navigate to the place of interest, click around to test a new feature. It feels like I&#x27;m ",
-      "translated_by": "model"
     },
     {
       "id": "hn-50490283",
@@ -594,6 +613,24 @@
       "translated_by": "model"
     },
     {
+      "id": "v2ex-1256984",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "最近大厂也在 AI 标注平台么",
+      "summary": "最近大厂也在 AI 标注平台么\n最近大厂也在 AI 标注平台么\r\n\r\n前几天 天猫打了好几次电话\r\n我还以为啥大事\r\n原来是让我注册 他们的 “晓天睿士” 平台，但是搞笑的是 他们网页标题：\r\n![pasted-image.png · 335]( https://img.cdn1.vip/i/6af7a10b8c357_1794613515.webp)\r\n\r\n然后这几天 腾讯也高了一个，认证就能提现 100 现金， 😂 真的薅羊毛么\r\n\r\n![pasted-image.png · 304]( https://img.cdn1.vip/i/6af7a0ab89d7c_1794613419.webp)\r\n\r\n\r\nhttps://experthub.tencent.com/?referral_code=WPNXGE",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ToDayMkCode",
+      "url": "https://www.v2ex.com/t/1256984",
+      "posted_at": "2026-11-14 07:47 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "最近大厂也在 AI 标注平台么",
+      "original_summary": "最近大厂也在 AI 标注平台么\n最近大厂也在 AI 标注平台么\r\n\r\n前几天 天猫打了好几次电话\r\n我还以为啥大事\r\n原来是让我注册 他们的 “晓天睿士” 平台，但是搞笑的是 他们网页标题：\r\n![pasted-image.png · 335]( https://img.cdn1.vip/i/6af7a10b8c357_1794613515.webp)\r\n\r\n然后这几天 腾讯也高了一个，认证就能提现 100 现金， 😂 真的薅羊毛么\r\n\r\n![pasted-image.png · 304]( https://img.cdn1.vip/i/6af7a0ab89d7c_1794613419.webp)\r\n\r\n\r\nhttps://experthub.tencent.com/?referral_code=WPNXGE",
+      "translated_by": "free-translate"
+    },
+    {
       "id": "v2ex-1256973",
       "source": "V2EX",
       "category": "大模型 API 免费额度",
@@ -684,24 +721,6 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1256933",
-      "source": "V2EX",
-      "category": "科技软件/App 限免",
-      "title": "V 站的兄弟们，免费用🔥🔥一起免费学英语",
-      "summary": "V 站的兄弟们，免费用🔥🔥一起免费学英语\n今天，词光终于能在国区 App Store 直接下载了。🔥🔥\r\n依旧免费。🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\r\n\r\n10 月 25 日，我把那个免费开源的背单词网站发了出去。19 天后，它成了大家可以直接下载的 iOS App 。\r\n\r\n从一条开源帖，到大家一起改造\r\n61.8 万次浏览最初介绍词光网页版的那条帖子 5,345 个赞 · 1,034 次转发 · 6,520 次收藏\r\n\r\nGitHub 上，词光收到了 4,798 颗星、1,020 次 Fork 。\r\n小红书上，介绍词光的那一篇，就有 3,046 次收藏。\r\n\r\n官网最近 30 天，也有约 140.96 万次页面浏览、120.48 万次访问。\r\n\r\n大家一起学英语\r\n\r\nhttps://x.com/yangleiocx3/status/2121212581457121440?a=FTdLQ3jiPvUIP4EVWug&s=20",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "gheiisiei",
-      "url": "https://www.v2ex.com/t/1256933",
-      "posted_at": "2026-11-13 20:07 Asia/Shanghai",
-      "engagement": {
-        "replies": 3
-      },
-      "original_title": "V 站的兄弟们，免费用🔥🔥一起免费学英语",
-      "original_summary": "V 站的兄弟们，免费用🔥🔥一起免费学英语\n今天，词光终于能在国区 App Store 直接下载了。🔥🔥\r\n依旧免费。🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\r\n\r\n10 月 25 日，我把那个免费开源的背单词网站发了出去。19 天后，它成了大家可以直接下载的 iOS App 。\r\n\r\n从一条开源帖，到大家一起改造\r\n61.8 万次浏览最初介绍词光网页版的那条帖子 5,345 个赞 · 1,034 次转发 · 6,520 次收藏\r\n\r\nGitHub 上，词光收到了 4,798 颗星、1,020 次 Fork 。\r\n小红书上，介绍词光的那一篇，就有 3,046 次收藏。\r\n\r\n官网最近 30 天，也有约 140.96 万次页面浏览、120.48 万次访问。\r\n\r\n大家一起学英语\r\n\r\nhttps://x.com/yangleiocx3/status/2121212581457121440?a=FTdLQ3jiPvUIP4EVWug&s=20",
-      "translated_by": "free-translate"
-    },
-    {
       "id": "v2ex-1256714",
       "source": "V2EX",
       "category": "AI 产品会员/试用",
@@ -720,40 +739,22 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-shivaprasad7894530722-wq-free-llm-api-tokens",
+      "id": "ghdeal-glacode-suggestio",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "free-llm-api-tokens：每日更新免费LLM API token站点清单",
-      "summary": "该项目提供每日更新的免费LLM API token站点列表，包含OpenAI兼容接口、base URL和每日额度。",
+      "title": "glacode/Suggestio",
+      "summary": "glacode/Suggestio 使用免费 LLM 提供商的自主编码代理。无需注册，无需 API 密钥即可尝试",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "shivaprasad7894530722-wq",
-      "url": "https://github.com/shivaprasad7894530722-wq/free-llm-api-tokens",
-      "posted_at": "2026-11-12 21:50 Asia/Shanghai",
+      "author": "glacode",
+      "url": "https://github.com/glacode/Suggestio",
+      "posted_at": "2026-11-12 04:27 Asia/Shanghai",
       "engagement": {
-        "stars": 0
+        "stars": 9
       },
-      "original_title": "shivaprasad7894530722-wq/free-llm-api-tokens",
-      "original_summary": "shivaprasad7894530722-wq/free-llm-api-tokens Daily-updated list of sites giving free LLM API tokens (OpenAI compatibility, base URLs, tokens/day)",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-lifejx-free-llm-api-list",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "free-llm-api-list：免费大模型接口可用性巡检清单",
-      "summary": "自动巡检各大平台免费大模型接口的可用性，由 GitHub Actions 每 4 小时更新，无需服务器。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "lifejx",
-      "url": "https://github.com/lifejx/free-llm-api-list",
-      "posted_at": "2026-11-13 01:30 Asia/Shanghai",
-      "engagement": {
-        "stars": 1
-      },
-      "original_title": "lifejx/free-llm-api-list",
-      "original_summary": "lifejx/free-llm-api-list \\u81ea\\u52a8\\u5de1\\u68c0\\u5404\\u5927\\u5e73\\u53f0\\u514d\\u8d39\\u5927\\u6a21\\u578b\\u63a5\\u53e3\\u53ef\\u7528\\u6027\\uff0c\\u6bcf 4 \\u5c0f\\u65f6\\u66f4\\u65b0\\uff08GitHub Actions\\uff0c\\u65e0\\u9700\\u670d\\u52a1\\u5668\\uff09",
-      "translated_by": "model"
+      "original_title": "glacode/Suggestio",
+      "original_summary": "glacode/Suggestio Autonomous coding agent using free LLM Providers. No sign-up, no API key needed to try it",
+      "translated_by": "free-translate"
     },
     {
       "id": "disc-useapi-muse-api",
