@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T13:28:10+08:00",
+  "generated_at": "2026-11-13T13:28:53+08:00",
   "generated_at_label": "2026-11-13 13:28 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
@@ -8,47 +8,11 @@
       "name": "GitHub Actions 云端引擎",
       "mode": "workflow_dispatch",
       "result": "ok",
-      "last_run_at": "2026-11-13T11:03:38+08:00",
-      "last_run_label": "2026-11-13 11:03 Asia/Shanghai",
-      "last_success_label": "2026-11-13 11:03 Asia/Shanghai",
-      "run_url": "https://github.com/aiym168/aiym168.github.io/actions/runs/43355866970",
-      "host": "github-actions",
-      "counts": {
-        "deals": 157,
-        "free_resources": 157,
-        "github_hot": 30,
-        "hot": 24,
-        "today_new": 6,
-        "archived": 14,
-        "modules": {
-          "damoxing-mianfei-api": 38,
-          "ai-huiyuan-shiyong": 7,
-          "ai-kaifa-gongju": 74,
-          "mianfei-gpu-yunfuwu": 10,
-          "keji-app-xianmian": 6,
-          "ai-kecheng-huodong": 14,
-          "qita-keji": 8,
-          "github-hot": 30,
-          "hot-topics": 24
-        },
-        "api_pages": 4,
-        "next_update_label": "11:07 北京时间（约）"
-      },
-      "runs_total": 52,
-      "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
-      "next_run_label": "2026-11-13 14:07 Asia/Shanghai",
-      "age_min": 144
-    },
-    "B": {
-      "engine": "B",
-      "name": "Simular 云服务器引擎",
-      "mode": "takeover",
-      "result": "ok",
-      "last_run_at": "2026-11-13T13:28:10+08:00",
+      "last_run_at": "2026-11-13T13:28:53+08:00",
       "last_run_label": "2026-11-13 13:28 Asia/Shanghai",
       "last_success_label": "2026-11-13 13:28 Asia/Shanghai",
-      "run_url": "https://github.com/aiym168/aiym168.github.io/commits/main",
-      "host": "main",
+      "run_url": "https://github.com/aiym168/aiym168.github.io/actions/runs/43371892802",
+      "host": "github-actions",
       "counts": {
         "deals": 159,
         "free_resources": 159,
@@ -70,11 +34,49 @@
         "api_pages": 4,
         "next_update_label": "14:07 北京时间（约）"
       },
-      "runs_total": 19,
+      "runs_total": 53,
+      "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
+      "next_run_label": "2026-11-13 14:07 Asia/Shanghai",
+      "age_min": 0
+    },
+    "B": {
+      "engine": "B",
+      "name": "Simular 云服务器引擎",
+      "mode": "takeover",
+      "result": "ok",
+      "last_run_at": "2026-11-13T00:59:45+08:00",
+      "last_run_label": "2026-11-13 00:59 Asia/Shanghai",
+      "last_success_label": "2026-11-13 00:59 Asia/Shanghai",
+      "run_url": "",
+      "host": "main",
+      "counts": {
+        "deals": 155,
+        "free_resources": 155,
+        "github_hot": 29,
+        "hot": 14,
+        "today_new": 3,
+        "archived": 13,
+        "modules": {
+          "damoxing-mianfei-api": 39,
+          "ai-huiyuan-shiyong": 6,
+          "ai-kaifa-gongju": 73,
+          "mianfei-gpu-yunfuwu": 10,
+          "keji-app-xianmian": 6,
+          "ai-kecheng-huodong": 14,
+          "qita-keji": 7,
+          "github-hot": 29,
+          "hot-topics": 14
+        },
+        "api_pages": 4,
+        "next_update_label": "01:07 北京时间（约）"
+      },
+      "runs_total": 18,
+      "standby_seen_label": "2026-11-13 12:25 Asia/Shanghai",
+      "standby_seen_at": "2026-11-13T12:25:04+08:00",
       "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
       "next_run_label": "2026-11-13 14:25 Asia/Shanghai",
-      "last_seen_at": "2026-11-13T13:28:10+08:00",
-      "age_min": 0
+      "last_seen_at": "2026-11-13T12:25:04+08:00",
+      "age_min": 63
     },
     "C": {
       "engine": "C",
@@ -111,7 +113,7 @@
       "schedule": "第二台服务器已不参与本站更新：运行独立的直播站，并在每天 08:30 / 20:30 生成羊毛电台",
       "next_run_label": "2026-11-13 13:55 Asia/Shanghai",
       "last_seen_at": "2026-11-10T13:10:18+08:00",
-      "age_min": 4337
+      "age_min": 4338
     },
     "watchdog": {
       "schedule": "每 30 分钟（第 23 / 53 分钟）",
@@ -146,11 +148,11 @@
       "fail_total": 0,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-13T13:25:14+08:00",
-      "last_run_label": "2026-11-13 13:25 Asia/Shanghai",
-      "last_count": 38,
-      "last_ok": "2026-11-13T13:25:14+08:00",
-      "last_ok_label": "2026-11-13 13:25 Asia/Shanghai",
+      "last_run": "2026-11-13T13:26:12+08:00",
+      "last_run_label": "2026-11-13 13:26 Asia/Shanghai",
+      "last_count": 37,
+      "last_ok": "2026-11-13T13:26:12+08:00",
+      "last_ok_label": "2026-11-13 13:26 Asia/Shanghai",
       "state": "healthy"
     },
     "V2EX": {
@@ -158,11 +160,11 @@
       "fail_total": 0,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-13T13:25:16+08:00",
-      "last_run_label": "2026-11-13 13:25 Asia/Shanghai",
+      "last_run": "2026-11-13T13:26:14+08:00",
+      "last_run_label": "2026-11-13 13:26 Asia/Shanghai",
       "last_count": 4,
-      "last_ok": "2026-11-13T13:25:16+08:00",
-      "last_ok_label": "2026-11-13 13:25 Asia/Shanghai",
+      "last_ok": "2026-11-13T13:26:14+08:00",
+      "last_ok_label": "2026-11-13 13:26 Asia/Shanghai",
       "state": "healthy"
     },
     "GitHub": {
@@ -170,11 +172,11 @@
       "fail_total": 0,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-13T13:25:21+08:00",
-      "last_run_label": "2026-11-13 13:25 Asia/Shanghai",
-      "last_count": 23,
-      "last_ok": "2026-11-13T13:25:21+08:00",
-      "last_ok_label": "2026-11-13 13:25 Asia/Shanghai",
+      "last_run": "2026-11-13T13:26:19+08:00",
+      "last_run_label": "2026-11-13 13:26 Asia/Shanghai",
+      "last_count": 21,
+      "last_ok": "2026-11-13T13:26:19+08:00",
+      "last_ok_label": "2026-11-13 13:26 Asia/Shanghai",
       "state": "healthy"
     },
     "DEV.to": {
@@ -208,11 +210,11 @@
       "fail_total": 0,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-13T13:25:43+08:00",
-      "last_run_label": "2026-11-13 13:25 Asia/Shanghai",
+      "last_run": "2026-11-13T13:26:41+08:00",
+      "last_run_label": "2026-11-13 13:26 Asia/Shanghai",
       "last_count": 30,
-      "last_ok": "2026-11-13T13:25:43+08:00",
-      "last_ok_label": "2026-11-13 13:25 Asia/Shanghai",
+      "last_ok": "2026-11-13T13:26:41+08:00",
+      "last_ok_label": "2026-11-13 13:26 Asia/Shanghai",
       "state": "healthy"
     },
     "HotTopics": {
@@ -220,23 +222,23 @@
       "fail_total": 0,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-13T13:25:45+08:00",
-      "last_run_label": "2026-11-13 13:25 Asia/Shanghai",
+      "last_run": "2026-11-13T13:26:43+08:00",
+      "last_run_label": "2026-11-13 13:26 Asia/Shanghai",
       "last_count": 40,
-      "last_ok": "2026-11-13T13:25:45+08:00",
-      "last_ok_label": "2026-11-13 13:25 Asia/Shanghai",
+      "last_ok": "2026-11-13T13:26:43+08:00",
+      "last_ok_label": "2026-11-13 13:26 Asia/Shanghai",
       "state": "healthy"
     },
     "X": {
-      "ok_total": 35,
+      "ok_total": 36,
       "fail_total": 2,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-13T11:00:12+08:00",
-      "last_run_label": "2026-11-13 11:00 Asia/Shanghai",
-      "last_count": 10,
-      "last_ok": "2026-11-13T11:00:12+08:00",
-      "last_ok_label": "2026-11-13 11:00 Asia/Shanghai",
+      "last_run": "2026-11-13T13:26:08+08:00",
+      "last_run_label": "2026-11-13 13:26 Asia/Shanghai",
+      "last_count": 7,
+      "last_ok": "2026-11-13T13:26:08+08:00",
+      "last_ok_label": "2026-11-13 13:26 Asia/Shanghai",
       "state": "healthy",
       "last_error": "0 kept"
     },
@@ -255,14 +257,14 @@
   },
   "translators": {
     "google": {
-      "ok_total": 3108,
+      "ok_total": 3109,
       "fail_total": 45,
       "fail_streak": 0,
       "score": 100,
-      "last_run": "2026-11-13T13:27:14+08:00",
-      "last_run_label": "2026-11-13 13:27 Asia/Shanghai",
-      "last_ok": "2026-11-13T13:27:14+08:00",
-      "last_ok_label": "2026-11-13 13:27 Asia/Shanghai",
+      "last_run": "2026-11-13T13:28:33+08:00",
+      "last_run_label": "2026-11-13 13:28 Asia/Shanghai",
+      "last_ok": "2026-11-13T13:28:33+08:00",
+      "last_ok_label": "2026-11-13 13:28 Asia/Shanghai",
       "state": "healthy",
       "last_error": "no result"
     },
@@ -324,9 +326,9 @@
     "dead_count": 0
   },
   "x": {
-    "updated_at_label": "2026-11-13 10:59 Asia/Shanghai",
-    "primary_route": "google-news-rss",
-    "kept": 10
+    "updated_at_label": "2026-11-13 13:25 Asia/Shanghai",
+    "primary_route": "syndication",
+    "kept": 7
   },
   "heartbeat_label": "2026-11-13 00:57:08 Asia/Shanghai",
   "server": {

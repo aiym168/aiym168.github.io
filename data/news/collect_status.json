@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-13T13:26:15+08:00",
+ "run_at": "2026-11-13T13:27:17+08:00",
  "sources": {
   "techcrunch-ai": {
    "ok": true,
@@ -233,11 +233,11 @@
    "blocked": 0
   },
   "eetimes-com-feed": {
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "rows": 0,
+   "ok": true,
+   "error": "",
+   "rows": 10,
    "new": 0,
-   "blocked": 0
+   "blocked": 3
   },
   "semiwiki-com-feed": {
    "ok": true,
@@ -317,11 +317,11 @@
    "blocked": 6
   },
   "199it-com-feed": {
-   "ok": false,
-   "error": "URLError: <urlopen error timed out>",
-   "rows": 0,
-   "new": 0,
-   "blocked": 0
+   "ok": true,
+   "error": "",
+   "rows": 30,
+   "new": 8,
+   "blocked": 2
   },
   "36kr-com-feed-newsflash": {
    "ok": true,
@@ -341,8 +341,8 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 2,
-   "blocked": 6
+   "new": 3,
+   "blocked": 5
   },
   "verge": {
    "ok": true,
@@ -418,7 +418,7 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 2,
+   "new": 1,
    "blocked": 1
   },
   "lwn-net-headlines-rss": {
@@ -635,7 +635,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 2,
+   "new": 3,
    "blocked": 3
   },
   "phys-org-rss-feed": {
@@ -963,9 +963,9 @@
   "gn-aianime": {
    "ok": true,
    "error": "",
-   "rows": 3,
+   "rows": 2,
    "new": 0,
-   "blocked": 3
+   "blocked": 2
   },
   "gn-aimanhua": {
    "ok": true,
@@ -991,8 +991,8 @@
   "gn-sora": {
    "ok": true,
    "error": "",
-   "rows": 15,
-   "new": 1,
+   "rows": 14,
+   "new": 0,
    "blocked": 1
   },
   "gn-aivideo-en": {
@@ -1012,14 +1012,14 @@
   "gn-comfyui-en": {
    "ok": true,
    "error": "",
-   "rows": 10,
-   "new": 1,
+   "rows": 11,
+   "new": 0,
    "blocked": 0
   },
   "gn-llm-tut": {
    "ok": true,
    "error": "",
-   "rows": 14,
+   "rows": 13,
    "new": 2,
    "blocked": 0
   },
@@ -1027,7 +1027,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 4,
+   "new": 5,
    "blocked": 3
   },
   "gn-huawei-phone": {
@@ -1064,7 +1064,7 @@
   "government": 3,
   "Democrat": 3,
   "senator": 1,
-  "Affair": 2,
+  "Affair": 3,
   "Government": 3,
   "习": 8,
   "出轨": 2,
@@ -1083,7 +1083,7 @@
   "Taiwan": 3,
   "sovereign": 1,
   "新华社": 1,
-  "政府": 2,
+  "政府": 3,
   "冲突": 2,
   "特朗普": 1,
   "主席": 3,
@@ -1093,11 +1093,12 @@
   "婚外": 4,
   "主权": 1,
   "投票": 4,
-  "监管": 3,
+  "监管": 4,
   "死亡": 2,
   "丑闻": 4,
   "总统": 1,
   "离婚": 2,
+  "西藏": 1,
   "管制": 1,
   "suicide": 1,
   "weapon": 1,
@@ -1114,7 +1115,7 @@
   "Beijing": 2,
   "Police": 2,
   "fraud": 2,
-  "袭击": 2,
+  "袭击": 1,
   "制裁": 1,
   "Death": 2,
   "sexual": 1,
@@ -1152,7 +1153,6 @@
   "explicit": 2,
   "低俗": 1,
   "两岸": 1,
-  "维权": 1,
   "人权": 1,
   "NSFW": 2,
   "Porn": 1,
@@ -1160,34 +1160,34 @@
   "大使": 2,
   "跳楼": 1,
   "擦边": 1,
+  "民主": 2,
   "国防": 1,
   "审查": 4,
   "爆炸": 1,
   "领导人": 1,
-  "杀人": 2,
-  "民主": 1
+  "杀人": 2
  },
- "new": 282,
+ "new": 290,
  "sources_total": 151,
- "sources_ok": 146,
- "translated": 169,
+ "sources_ok": 148,
+ "translated": 170,
  "counts": {
   "internet": 150,
   "ai": 220,
   "dev": 150,
-  "launch": 113,
-  "aivideo": 142,
+  "launch": 112,
+  "aivideo": 141,
   "software": 150,
   "chip": 150,
   "huawei": 150,
   "game": 150,
-  "comfyui": 55,
   "space": 66,
   "aigc": 63,
   "science": 150,
   "mobile": 150,
   "auto": 136,
   "aidrama": 121,
-  "gossip": 43
+  "gossip": 43,
+  "comfyui": 54
  }
 }
