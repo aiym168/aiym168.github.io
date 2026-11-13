@@ -2,36 +2,41 @@
  "counts": {
   "archived": 14,
   "deadline_extracted": 6,
-  "drop:duplicate": 141,
-  "drop:empty_summary": 24,
+  "drop:duplicate": 138,
+  "drop:empty_summary": 26,
   "drop:negative_signal": 99,
-  "drop:no_clear_offer": 281,
-  "drop:not_ai": 254,
+  "drop:no_clear_offer": 287,
+  "drop:not_ai": 253,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 338,
-  "google_news_total": 338,
+  "google_news_resolved": 343,
+  "google_news_total": 343,
   "kept_total": 171,
   "net:gnews_cache_hit": 338,
+  "net:gnews_resolved_net": 5,
+  "net:tco_expanded": 2,
+  "net:tco_failed": 2,
   "new_this_run": 1,
-  "raw_total": 1029
+  "raw_total": 1033
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "上传房间照片即可用 AI 生成2个免费设计方案",
-   "免费课程：从工程师到 AI 工程师，每集对应一个 Git 标签",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
    "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
    "grux：Grux AI，免费的开源 AI 代理",
    "freefield：ComfyUI 上开源 Higgsfield",
-   "awesome-free-llm-api：免费大模型 API 导航 · 只收录能通过 API Key 和 endpoin",
    "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
-   "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中"
+   "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中",
+   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件",
+   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个"
   ],
   "empty_summary": [
+   "演示用 Claude 与 Composio 查找并验证20个营销线索，成本0.68美元，可凭免费额度试用",
+   "该免费电子书涵盖 LLM 漏洞、幻觉评估、护栏与生产部署，帮助构建更安全可靠的系统",
    "Gojiberry AI 的 ARR 突破 500 万美元，并发布免费课程",
    "加入 AMD AI 开发者计划可获免费 API 访问和 Token Lab 赠送积分",
    "Claude Duet 开始发送邀请，每位 Duet 用户有3个邀请名额",
@@ -41,9 +46,7 @@
    "@tom_doerr 分享：具有用于文本推理的永久免费套餐的 LLM API 精选目录",
    "文章认为 Nvidia 免费开放模型数量最多且由 Jensen 推动，换人可能先砍免费项目",
    "@PFF 分享：提供180+新指标、自定义数据可视化、32000+统计组合和 Guru AI 访问，可免费试用",
-   "观点：AI 热潮始于 ImageNet 这类全球研究者可免费使用的开放数据集，而机器人领域仍缺同样的公开真实数据",
-   "本周末，通过由 CTO 教授的 12 小时免费 CodeCamp 课程，免费学习 Claude Code",
-   "微软副总裁 Scott Hanselman 发布了“gputaskman”，这是一款免费的开源 GPU 监控实用程序"
+   "观点：AI 热潮始于 ImageNet 这类全球研究者可免费使用的开放数据集，而机器人领域仍缺同样的公开真实数据"
   ],
   "negative_signal": [
    "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页",
@@ -60,6 +63,8 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "Envato 在平台上于11月19日美东8点起24小时内免费无限提供 AI 视频模型 MiniMax H3",
+   "@rperezmarco 分享：声明称在所有人能用相同 AI 模型前不再公开推测，也不为大公司提供免费基准问题",
    "@synthesiaIO 分享：官方称只需 2 分钟即可免费创建自己的 AI 克隆，并可亲自试用",
    "@ValsAI 分享：两款应用 10 月初换成评分更低的模型，榜首为 Claude Opus 5.5，得分 76.2%，",
    "@ValsAI 分享：两款应用 10 月初换成评分更低的模型，榜首为 Claude Opus 5.5，得分 76.2%，",
@@ -69,11 +74,10 @@
    "Anthropic 承认漏洞致配额消耗过快，向 Claude 付费订阅者提供一次全额度重置",
    "Epic 更新 Quixel 资产条款，Megascans 与 Megaplants 可用于训练 AI 模型",
    "Goose 由 Jack Dorsey 的 Block 为内部工程师打造后开源，GitHub 已获 3.5 万星",
-   "@BkashJosi 分享：它不只聊天，还能用免费技能分析 AI 搜索为何列出竞争对手而非你，另有 52 个技能",
-   "Nod 可在 Mac 或 Windows 运行，自带浏览器处理邮件、日历、发票和订阅，用户可选 AI 提供商",
-   "Decider v1.3 与 Decider Flash v1.3 开源，新增 locate 能力，用户可描述要查找的内"
+   "@BkashJosi 分享：它不只聊天，还能用免费技能分析 AI 搜索为何列出竞争对手而非你，另有 52 个技能"
   ],
   "not_ai": [
+   "面向加入 beta 的团队提供1000美元额度",
    "@MengTo 分享：整段主视觉为2K 的30秒一镜到底，滚动时反向播放，附完整工作流与提示词",
    "将 Prolong 针对中风开发的药物用于 ME/CFS 患者，探索增加供氧和血流的疗效",
    "@robinebers 分享：发帖者称可接入自己的订阅，拥有强大云端与漂亮界面，不用其云服务则完全免费",
@@ -84,8 +88,7 @@
    "Modal 将赞助 Vals Hacks 第一、二赛道，提供算力额度、技术支持及2万美元奖金额度",
    "@davj 分享：推文列出首轮融资免费资源，包括 Paul Graham 融资文章和 YC 种子轮融资指南",
    "Apple 的免费容器工具利用 macOS 26 虚拟化，在 Apple Silicon 上以轻量虚拟机运行 OCI 容",
-   "该终端工具由微软副总裁 Scott Hanselman 创建，类似高级任务管理器",
-   "推文称 PhysicsWallah 并非教学出色，只是低价填鸭式辅导，并称有更好的免费选择"
+   "该终端工具由微软副总裁 Scott Hanselman 创建，类似高级任务管理器"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -102,15 +105,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-14T00:47:41+08:00",
+ "generated_at": "2026-11-14T03:04:19+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-14T00:47:20+08:00",
+  "checked_at": "2026-11-14T03:04:18+08:00",
   "counts": {
-   "ok": 157
+   "ok": 158
   },
   "hidden": 0
  },
- "seconds": 0.4,
+ "seconds": 3.1,
  "side": {
   "github_hot": {
    "drop:duplicate": 7,
@@ -119,8 +122,8 @@
   },
   "hot_topics": {
    "drop:negative_signal": 4,
-   "drop:not_ai": 12,
-   "drop:not_ai_strict": 3,
+   "drop:not_ai": 14,
+   "drop:not_ai_strict": 1,
    "kept": 21,
    "raw": 40
   }

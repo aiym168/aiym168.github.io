@@ -3,10 +3,10 @@
   "canonical": "https://aiym168.github.io/",
   "version": "3.0.0",
   "curation_version": "2026-11-09.c3",
-  "updated_at_label": "2026-11-14 00:47 Asia/Shanghai",
-  "generated_at_label": "2026-11-14 00:47 Asia/Shanghai",
-  "generated_at": "2026-11-14T00:47:41+08:00",
-  "next_update_label": "01:07 北京时间（约）",
+  "updated_at_label": "2026-11-14 03:04 Asia/Shanghai",
+  "generated_at_label": "2026-11-14 03:04 Asia/Shanghai",
+  "generated_at": "2026-11-14T03:04:19+08:00",
+  "next_update_label": "03:07 北京时间（约）",
   "date": "2026-11-14",
   "counts": {
     "deals": 158,
@@ -27,7 +27,7 @@
       "hot-topics": 21
     },
     "api_pages": 4,
-    "next_update_label": "01:07 北京时间（约）"
+    "next_update_label": "03:07 北京时间（约）"
   },
   "definitions": {
     "free_resources": "免费资源 = 去重后仍在有效期内的资源条目（含置顶与编辑整理条目；不含 GitHub 新热门与最近热议；已过期、或发布超过 30 天且没有未来截止日期的自动收录条目会移入归档）。",
@@ -39,18 +39,21 @@
   "curation": {
     "archived": 14,
     "deadline_extracted": 6,
-    "drop:duplicate": 141,
-    "drop:empty_summary": 24,
+    "drop:duplicate": 138,
+    "drop:empty_summary": 26,
     "drop:negative_signal": 99,
-    "drop:no_clear_offer": 281,
-    "drop:not_ai": 254,
+    "drop:no_clear_offer": 287,
+    "drop:not_ai": 253,
     "drop:too_old_pre2025": 59,
-    "google_news_resolved": 338,
-    "google_news_total": 338,
+    "google_news_resolved": 343,
+    "google_news_total": 343,
     "kept_total": 171,
     "net:gnews_cache_hit": 338,
+    "net:gnews_resolved_net": 5,
+    "net:tco_expanded": 2,
+    "net:tco_failed": 2,
     "new_this_run": 1,
-    "raw_total": 1029
+    "raw_total": 1033
   },
   "cli": {
     "download_inspect_run": [
