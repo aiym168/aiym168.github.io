@@ -1,9 +1,28 @@
 {
   "date": "2026-11-13",
-  "updated_at": "2026-11-13T15:13+08:00",
-  "updated_at_label": "2026-11-13 15:13 Asia/Shanghai",
+  "updated_at": "2026-11-13T17:00+08:00",
+  "updated_at_label": "2026-11-13 17:00 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50479949",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "AI-drop 项目可快速拦截异常爬虫流量，采用 AGPL 开源许可",
+      "summary": "项目源于 rocketgit.com 每日请求量达400万而非数千，附8页演示文档。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "catab",
+      "url": "https://rocketgit.com/user/catalinux/ai-drop",
+      "posted_at": "2026-11-13 16:05 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: AI-drop project – drop traffic fast from misbehaving crawlers (AGPL)",
+      "original_summary": "Show HN: AI-drop project – drop traffic fast from misbehaving crawlers (AGPL) Hello!<p>All started with 4 million requests &#x2F; day on rocketgit.com (AGPL git hosting).\nInstead of thousands. Enough is enough!<p>Presentation (8 pages):\n<a href=\"https:&#x2F;&#x2F;rocketgit.com&#x2F;user&#x2F;catalinux&#x2F;ai-drop&#x2F;artefacts&#x2F;download&#x2F;docs&#x2F;pre1.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;rocketgit.com&#x2F;user&#x2F;catalinux&#x2F;ai-drop&#x2F;artefacts&#x2F;downl...</a><p>So, I built AI-drop free-software project (AGPL) to block this kind of crawlers.\nrocketgit.com has a very restrictive robots.txt (only around 10 pages are allowed).\nBut the crawlers are not respecting it. So, who is not respecting it will be blocked.<p>Limiting by IP or user-agent is not working anymore. The ",
+      "translated_by": "model"
+    },
     {
       "id": "hn-50479411",
       "source": "Hacker News",
@@ -16,8 +35,8 @@
       "url": "https://wonderchat.io/",
       "posted_at": "2026-11-13 14:59 Asia/Shanghai",
       "engagement": {
-        "points": 2,
-        "comments": 0
+        "points": 3,
+        "comments": 2
       },
       "original_title": "Show HN: Wonderchat – A Zendesk alternative that doesn't charge per seat",
       "original_summary": "Show HN: Wonderchat – A Zendesk alternative that doesn't charge per seat Hi HN, I’m Vera, co-founder of Wonderchat.<p>We started as an AI website agent that answers customer questions from a company’s website and docs. Over time, customers kept asking for the rest of the support stack around it, so we built a helpdesk: live chat, a unified inbox for email and SMS, and a help center (coming soon in a couple of weeks).<p>The pricing and AI native helpdesk experience is the part I most wanted to change. Most helpdesks charge per seat, so every new teammate adds to the bill, and support teams end up rationing logins. We charge one flat price with unlimited seats. You pay only for AI work: the replies and resolutions the agent handles. Human agents replying to tickets don’t cost anything extra.",
@@ -93,7 +112,7 @@
       "posted_at": "2026-11-12 01:11 Asia/Shanghai",
       "engagement": {
         "points": 61,
-        "comments": 47
+        "comments": 48
       },
       "original_title": "Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents",
       "original_summary": "Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents Hi HN, we’re Alan and Akshay from Pomerado (<a href=\"https:&#x2F;&#x2F;pomerado.ai&#x2F;\">https:&#x2F;&#x2F;pomerado.ai&#x2F;</a>). We connect your agents to any website by turning sites into deterministic, self-healing APIs in minutes, fully self-serve.<p>Agents are no longer limited by their intelligence, but rather by their ability to interact with systems. Airlines, banks, e-commerce, insurance portals, government sites, and legacy portals all lack APIs or MCPs and are common parts of personal assistant or business workflows. Agents instead rely on browser automation or computer use, which can be slow, expensive, and unreliable. And even if computer use were perfect, most companies have banned it out of security and",
@@ -131,7 +150,7 @@
       "posted_at": "2026-11-12 00:00 Asia/Shanghai",
       "engagement": {
         "points": 83,
-        "comments": 32
+        "comments": 33
       },
       "original_title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
       "original_summary": "Show HN: Klad, a paint app your coding agent can drive (source-available) I&#x27;ve been developing applications for a long time and have turned to game development as well lately. One of the things that frustrated me the most was that using AI agents for game development is very annoying in the art department. Your only options right now are to either use an image genAI model and roll the dice every time you want to make an edit, or have your agent draw with something like vectors.<p>I was looking for an application that would allow me to ask an agent to make a first draft of whatever art I needed with actual brushes, and then be able to go in myself and edit every last stroke or layer that it created.<p>Klad is that application. Written in Rust, it can be fully controlled by an agent thr",
@@ -173,6 +192,25 @@
       },
       "original_title": "Show HN: Rystic – Stateful Local Simulators of Slack, GitHub and Linear",
       "original_summary": "Show HN: Rystic – Stateful Local Simulators of Slack, GitHub and Linear Hi HN, we&#x27;re Zach and Evan, founders of Rystic (<a href=\"https:&#x2F;&#x2F;www.rystic.ai\">https:&#x2F;&#x2F;www.rystic.ai</a>). As LLMs have progressed, producing code has become fast and cheap but verification has not. At my previous company I noticed that whenever I could test a service locally or in CI this bottleneck went away. If a service needed to use a shared sandbox or staging environment to run integration tests, verification was a huge pain. At Rystic we are taking that idea and applying it to every third-party service. We are trying to give developers a way to verify that their code works without calling real systems.<p>To do this, we build deterministic simulators of APIs like Slack, Stripe and S3. Yo",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50446617",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "HR视角：系统工程高级人才断层的成因",
+      "summary": "文章指出，在C++等关键系统编程领域，企业取消初级岗位入口却要求新人具备资深水平，导致人才供给出现断层。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ayoub10150",
+      "url": "https://news.ycombinator.com/item?id=50446617",
+      "posted_at": "2026-11-11 05:33 Asia/Shanghai",
+      "engagement": {
+        "points": 7,
+        "comments": 7
+      },
+      "original_title": "Ask HR: Systems Engineering's Senior Pipeline Crisis",
+      "original_summary": "Ask HR: Systems Engineering's Senior Pipeline Crisis The modern software industry is engineering its own talent famine. In mission-critical systems programming—especially within the C++ ecosystem—companies are dismantling entry-level pathways while demanding senior-level proficiency from day one. By treating engineering talent purely as a resource to be acquired from the market rather than cultivated from within, corporations are creating an unsustainable knowledge vacuum that threatens the long-term maintainability of global software infrastructure.<p>This systemic breakdown is driven by four interconnected bottlenecks.<p>1. The Myth of the Zero-Risk Junior\nC++ sits at the foundation of critical infrastructure: autonomous systems, high-frequency trading platforms, game engines, and operat",
       "translated_by": "model"
     },
     {
@@ -320,7 +358,7 @@
       "url": "https://apron.chat/",
       "posted_at": "2026-11-13 00:52 Asia/Shanghai",
       "engagement": {
-        "points": 40,
+        "points": 43,
         "comments": 1
       },
       "original_title": "Show HN: Apron Chat Protocol",
@@ -442,25 +480,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50446617",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "HR视角：系统工程高级人才断层的成因",
-      "summary": "文章指出，在C++等关键系统编程领域，企业取消初级岗位入口却要求新人具备资深水平，导致人才供给出现断层。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "ayoub10150",
-      "url": "https://news.ycombinator.com/item?id=50446617",
-      "posted_at": "2026-11-11 05:33 Asia/Shanghai",
-      "engagement": {
-        "points": 7,
-        "comments": 7
-      },
-      "original_title": "Ask HR: Systems Engineering's Senior Pipeline Crisis",
-      "original_summary": "Ask HR: Systems Engineering's Senior Pipeline Crisis The modern software industry is engineering its own talent famine. In mission-critical systems programming—especially within the C++ ecosystem—companies are dismantling entry-level pathways while demanding senior-level proficiency from day one. By treating engineering talent purely as a resource to be acquired from the market rather than cultivated from within, corporations are creating an unsustainable knowledge vacuum that threatens the long-term maintainability of global software infrastructure.<p>This systemic breakdown is driven by four interconnected bottlenecks.<p>1. The Myth of the Zero-Risk Junior\nC++ sits at the foundation of critical infrastructure: autonomous systems, high-frequency trading platforms, game engines, and operat",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50476872",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -556,129 +575,75 @@
       "translated_by": "model"
     },
     {
-      "id": "v2ex-1256830",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "🌐 1024Proxy｜为全球业务打造灵活稳定的网络连接方案",
-      "summary": "🌐 1024Proxy｜为全球业务打造灵活稳定的网络连接方案\n在跨境业务和海外市场运营中，一个稳定、可靠的网络环境非常重要。无论是跨境电商、社媒运营，还是海外数据采集，合适的代理资源都能让工作流程更加顺畅。\r\n\r\n✨ **选择 1024Proxy 的几个理由：**\r\n\r\n🌍 **1. 全球住宅 IP 资源**\r\n覆盖 190+国家和地区，支持不同地区的 IP 需求，方便开展全球业务。\r\n\r\n🏡 **2. 多样化 IP 选择**\r\n- 动态住宅 IP：灵活轮换，适合高频访问及数据采集。\r\n- 长效静态 IP：固定连接，适合长期账号运营。\r\n- 短效静态 IP：适合短周期、灵活性的业务场景。\r\n- ISP 静态 IP：兼顾连接速度与稳定性。\r\n\r\n⚙️ **3. 灵活的技术支持**\r\n- 支持 HTTP(S) 和 SOCKS5 协议\r\n- 提供 API 接入方式\r\n- 满足不同工具和业务环境的配置需求\r\n\r\n📌 **4. 适用多个业务场景**\r\n- 跨境电商平台运营\r\n- 海外社交媒体管理\r\n- 全球市场调研\r\n- 数据采集与分析\r\n- 广告效果及本地化验证\r\n\r\n🎁 **5. 新用户免费体验**\r\n支持新用户注册体验，可以先了解实际连接表现，再选择适合自己的代理产品。\r\n\r\n🚀 **了解更多：**\r\n官网： https://1024proxy.com/?kwd=channel-2e\r\n\r\n💡 无论是个人项目还是企业级业务，1024Proxy 都致力于提供更加灵活的全球代理连接体验。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "tanghuai139",
-      "url": "https://www.v2ex.com/t/1256830",
-      "posted_at": "2026-11-13 15:11 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "🌐 1024Proxy｜为全球业务打造灵活稳定的网络连接方案",
-      "original_summary": "🌐 1024Proxy｜为全球业务打造灵活稳定的网络连接方案\n在跨境业务和海外市场运营中，一个稳定、可靠的网络环境非常重要。无论是跨境电商、社媒运营，还是海外数据采集，合适的代理资源都能让工作流程更加顺畅。\r\n\r\n✨ **选择 1024Proxy 的几个理由：**\r\n\r\n🌍 **1. 全球住宅 IP 资源**\r\n覆盖 190+国家和地区，支持不同地区的 IP 需求，方便开展全球业务。\r\n\r\n🏡 **2. 多样化 IP 选择**\r\n- 动态住宅 IP：灵活轮换，适合高频访问及数据采集。\r\n- 长效静态 IP：固定连接，适合长期账号运营。\r\n- 短效静态 IP：适合短周期、灵活性的业务场景。\r\n- ISP 静态 IP：兼顾连接速度与稳定性。\r\n\r\n⚙️ **3. 灵活的技术支持**\r\n- 支持 HTTP(S) 和 SOCKS5 协议\r\n- 提供 API 接入方式\r\n- 满足不同工具和业务环境的配置需求\r\n\r\n📌 **4. 适用多个业务场景**\r\n- 跨境电商平台运营\r\n- 海外社交媒体管理\r\n- 全球市场调研\r\n- 数据采集与分析\r\n- 广告效果及本地化验证\r\n\r\n🎁 **5. 新用户免费体验**\r\n支持新用户注册体验，可以先了解实际连接表现，再选择适合自己的代理产品。\r\n\r\n🚀 **了解更多：**\r\n官网： https://1024proxy.com/?kwd=channel-2e\r\n\r\n💡 无论是个人项目还是企业级业务，1024Proxy 都致力于提供更加灵活的全球代理连接体验。",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1256818",
+      "id": "v2ex-1256872",
       "source": "V2EX",
       "category": "科技软件/App 限免",
-      "title": "分享几个自己开发的 Apple TV App（免费 TestFlight 内测）",
-      "summary": "分享几个自己开发的 Apple TV App（免费 TestFlight 内测）\n包括 qq 音乐,网易云音乐,apple music 国区,酷狗,tiktok,斗鱼,汽水,爱奇艺(还没上架)\r\n\r\n![img]( https://pic1.zhimg.com/80/v2-1cc3221d965cc4587033a786b0e4d86f_1440w.webp?source=2c26e567)\r\n![img]( https://picx.zhimg.com/80/v2-1db6c31bdc391a82180bbc80fdcac35b_1440w.webp?source=2c26e567)\r\n\r\n​https://testflight.apple.com/join/a7hnE5V4 qq 音乐\r\n\r\n​https://testflight.apple.com/join/uamMTktr 抖音\r\n\r\n​https://testflight.apple.com/join/C3egRzRY 网易云\r\n\r\n​https://testflight.apple.com/join/9GNgZfSS 汽水\r\n\r\n​https://testflight.apple.com/join/Xzfsm89x tiktok\r\n\r\n​https://testflight.apple.com/join/2KDXwZkp 斗鱼\r\n\r\n​https://testflight.apple.com/join/uJE2zMMQ 酷狗\r\n\r\ntg 群: ​t.me/ylwggg",
+      "title": "[分享创造] Caruno：电车充电成本记账，拍小票成账单 [送码]",
+      "summary": "[分享创造] Caruno：电车充电成本记账，拍小票成账单 [送码]\n大家好，我是 Lans ，一个独立 Android 开发者。\r\n\r\n我做了 Caruno ，因为我一直不知道自己的电车每公里到底花了多少钱。\r\n\r\n拍一张充电小票，AI 识别成账单：每度电多少钱、每公里多少钱、家充和公共充电分开算，还支持峰谷电价、保养提醒、CSV 导出。\r\n\r\n免费版可以用核心记账，1 辆车； Pro 去广告、无限 AI 扫描、多车、云同步。\r\n\r\n月付 4.99 美元，年付 29.99 美元，终身 89.99 美元。\r\n\r\n这次送 10 个终身版兑换码，先到先得：\r\n\r\nX9LFR52PAMP8MECUF2M4EYL\r\n9VDLZ8JYGPWK83F6NEM1BG7\r\nZTAK4ZQ13DXUC7M7CUE3ZLV\r\nD8XD2JL5F0P11BH4HF6J2AD\r\n8XXKY0NGHSLNLXE36WX14HV\r\nMT2RRDX07CF696B1HFJP8X0\r\nFDMS3490M20BAVHKG67L71B\r\nLKAKANP6BLS6EB4NV5H2QVR\r\n5H6DJU10Q0R9SAXBTR1Q1BG\r\n65PYUEPCZ6DVYP4H3CWFXTM\r\n\r\n兑换方法：打开 Play 商店，点头像 → 付款和订阅 → 兑换代码，输入上面的码。\r\n\r\n领了的回帖说一声用了哪个，免得别人重复试。\r\n\r\n用完告诉我你每公里到底花了多少钱，或者哪里不好用，我按反馈改。\r\n\r\n反响好的话，评论里再放第二批。\r\n\r\nPlay 链接： https://play.google.com/store/apps/details?id=com.lans.carva",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "jzr1280426581",
-      "url": "https://www.v2ex.com/t/1256818",
-      "posted_at": "2026-11-13 14:50 Asia/Shanghai",
-      "engagement": {
-        "replies": 2
-      },
-      "original_title": "分享几个自己开发的 Apple TV App（免费 TestFlight 内测）",
-      "original_summary": "分享几个自己开发的 Apple TV App（免费 TestFlight 内测）\n包括 qq 音乐,网易云音乐,apple music 国区,酷狗,tiktok,斗鱼,汽水,爱奇艺(还没上架)\r\n\r\n![img]( https://pic1.zhimg.com/80/v2-1cc3221d965cc4587033a786b0e4d86f_1440w.webp?source=2c26e567)\r\n![img]( https://picx.zhimg.com/80/v2-1db6c31bdc391a82180bbc80fdcac35b_1440w.webp?source=2c26e567)\r\n\r\n​https://testflight.apple.com/join/a7hnE5V4 qq 音乐\r\n\r\n​https://testflight.apple.com/join/uamMTktr 抖音\r\n\r\n​https://testflight.apple.com/join/C3egRzRY 网易云\r\n\r\n​https://testflight.apple.com/join/9GNgZfSS 汽水\r\n\r\n​https://testflight.apple.com/join/Xzfsm89x tiktok\r\n\r\n​https://testflight.apple.com/join/2KDXwZkp 斗鱼\r\n\r\n​https://testflight.apple.com/join/uJE2zMMQ 酷狗\r\n\r\ntg 群: ​t.me/ylwggg",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1256816",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "[GPT 订阅 | 可对公 | 可开普票专票] GPT Plus/Pro、Codex 点数、API 额度代充",
-      "summary": "[GPT 订阅 | 可对公 | 可开普票专票] GPT Plus/Pro、Codex 点数、API 额度代充\n✅GPT Plus Pro 100/200/500 订阅\r\n✅Codex 点数充值\r\n✅GPT 会员升级\r\n✅支持开票，普票专票均可\r\n✅接各种代付\r\n\r\n🚩支持对公、开票；欢迎采购。 \r\n\r\n📱 客服 V：Kaiser_AI \r\n\r\n🌐中转站： https://web.aichongstore.xyz/\r\n\r\n🌐 充值卡密店铺： https://pay.ldxp.cn/shop/aistore",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "kevin96",
-      "url": "https://www.v2ex.com/t/1256816",
-      "posted_at": "2026-11-13 14:47 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "[GPT 订阅 | 可对公 | 可开普票专票] GPT Plus/Pro、Codex 点数、API 额度代充",
-      "original_summary": "[GPT 订阅 | 可对公 | 可开普票专票] GPT Plus/Pro、Codex 点数、API 额度代充\n✅GPT Plus Pro 100/200/500 订阅\r\n✅Codex 点数充值\r\n✅GPT 会员升级\r\n✅支持开票，普票专票均可\r\n✅接各种代付\r\n\r\n🚩支持对公、开票；欢迎采购。 \r\n\r\n📱 客服 V：Kaiser_AI \r\n\r\n🌐中转站： https://web.aichongstore.xyz/\r\n\r\n🌐 充值卡密店铺： https://pay.ldxp.cn/shop/aistore",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1256814",
-      "source": "V2EX",
-      "category": "AI 开发工具与编程助手",
-      "title": "做了一个免费的 AI 书签管理器，想听听大家还想要什么 AI 功能 #29",
-      "summary": "做了一个免费的 AI 书签管理器，想听听大家还想要什么 AI 功能 #29\n先简单介绍下我做的这个工具：\r\n\r\n**Linkit** 是一款跨平台桌面书签管理器，本地优先存储，永久免费。目前已经有这些功能：\r\n\r\n- AI 自动摘要：保存链接后自动提炼核心内容和关键结论\r\n- 语义搜索：不记得标题也没关系，按意思就能搜到\r\n- 知识图谱：可视化你收藏的链接之间的关联\r\n- 主题空间：一个书签可以同时归入多个主题，支持自然语言一键策展\r\n- 死链检测 + 重复书签合并\r\n- 免费云端多设备同步（ Supabase RLS 行级安全隔离）\r\n- Spotlight 全局呼出快速入库\r\n- 一键导入 Chrome / Edge / Firefox / Safari 书签\r\n\r\n项目地址： https://github.com/blue-idea/linkit\r\n\r\n![工作台]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/dashboard.png)\r\n\r\n![AI 洞察]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/ai_insights.png)\r\n\r\n![主题空间]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/zhuti.png)\r\n\r\n![Spotlight]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/spotlight.png)\r\n\r\n---\r\n\r\n现在想做的事情是：**听听大家的声",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "manbudezhu",
-      "url": "https://www.v2ex.com/t/1256814",
-      "posted_at": "2026-11-13 14:45 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "做了一个免费的 AI 书签管理器，想听听大家还想要什么 AI 功能 #29",
-      "original_summary": "做了一个免费的 AI 书签管理器，想听听大家还想要什么 AI 功能 #29\n先简单介绍下我做的这个工具：\r\n\r\n**Linkit** 是一款跨平台桌面书签管理器，本地优先存储，永久免费。目前已经有这些功能：\r\n\r\n- AI 自动摘要：保存链接后自动提炼核心内容和关键结论\r\n- 语义搜索：不记得标题也没关系，按意思就能搜到\r\n- 知识图谱：可视化你收藏的链接之间的关联\r\n- 主题空间：一个书签可以同时归入多个主题，支持自然语言一键策展\r\n- 死链检测 + 重复书签合并\r\n- 免费云端多设备同步（ Supabase RLS 行级安全隔离）\r\n- Spotlight 全局呼出快速入库\r\n- 一键导入 Chrome / Edge / Firefox / Safari 书签\r\n\r\n项目地址： https://github.com/blue-idea/linkit\r\n\r\n![工作台]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/dashboard.png)\r\n\r\n![AI 洞察]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/ai_insights.png)\r\n\r\n![主题空间]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/zhuti.png)\r\n\r\n![Spotlight]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/spotlight.png)\r\n\r\n---\r\n\r\n现在想做的事情是：**听听大家的声",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1256812",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "习惯 deepseek 4.1flash，用 hy4 感觉好慢啊",
-      "summary": "习惯 deepseek 4.1flash，用 hy4 感觉好慢啊\n因为是免费嘛，也就忍了，好在简单的任务也都能完成。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "libasten",
-      "url": "https://www.v2ex.com/t/1256812",
-      "posted_at": "2026-11-13 14:44 Asia/Shanghai",
-      "engagement": {
-        "replies": 3
-      },
-      "original_title": "习惯 deepseek 4.1flash，用 hy4 感觉好慢啊",
-      "original_summary": "习惯 deepseek 4.1flash，用 hy4 感觉好慢啊\n因为是免费嘛，也就忍了，好在简单的任务也都能完成。",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1256805",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "[踩坑复盘] 带着 32 个产品和 26 个粉丝，为了推广开源小红书下载插件，账号被小红书封了……",
-      "summary": "[踩坑复盘] 带着 32 个产品和 26 个粉丝，为了推广开源小红书下载插件，账号被小红书封了……\n大家好，我是之前在 V 站开源小红书原图下载扩展的开发者（前帖： https://www.v2ex.com/t/1255339 ）。\r\n\r\n前两天扩展上架了 Chrome 和 Edge ，代码也开源到了 GitHub 。为了给这个工具找点种子用户，我干了一件很“朴素”的事：\r\n拿着自己的小红书账号，满怀期待地去搜相关话题，在别人的笔记评论区纯纯纯**手动**敲了十几条安利评论……\r\n\r\n结果昨天晚上直接收到了小红书的风控大礼包：\r\n\r\n![封禁处罚通知]( https://cdn.jsdelivr.net/gh/crx8-com/bobo-xiaohongshu-downloader@master/docs/assets/xhs_ban_overview.jpg)\r\n\r\n- **禁止发笔记、禁止评论、禁止私信等 7 天**\r\n- **历史笔记永久不被对外展示**\r\n- 违规原因直截了当：*账号下存在利用不当手段进行营销推广*（抓出来的罪证就是我昨天手打的 15 条安利评论）。\r\n\r\n![抓出的 15 条违规评论详情]( https://cdn.jsdelivr.net/gh/crx8-com/bobo-xiaohongshu-downloader@master/docs/assets/xhs_ban_comments.jpg)\r\n\r\n看着我那叫 [我有 32 个产品和 26 个粉丝] 的账号，真的哭笑不得，属于是典型的独立开发者营销翻车现场了。\r\n\r\n### 踩坑复盘\r\n1. **别迷信“纯手动”**：我以为不是机器人刷屏就没事，但在短时间内密集出现固定产品词（如“波波插件”、“批量存原图”），平台算法一扫一个准。\r\n2. **账号权重太脆**：新号+低粉，抗风险能力基本为零",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "gybin02",
-      "url": "https://www.v2ex.com/t/1256805",
-      "posted_at": "2026-11-13 14:31 Asia/Shanghai",
+      "author": "Lans",
+      "url": "https://www.v2ex.com/t/1256872",
+      "posted_at": "2026-11-13 16:27 Asia/Shanghai",
       "engagement": {
         "replies": 1
       },
-      "original_title": "[踩坑复盘] 带着 32 个产品和 26 个粉丝，为了推广开源小红书下载插件，账号被小红书封了……",
-      "original_summary": "[踩坑复盘] 带着 32 个产品和 26 个粉丝，为了推广开源小红书下载插件，账号被小红书封了……\n大家好，我是之前在 V 站开源小红书原图下载扩展的开发者（前帖： https://www.v2ex.com/t/1255339 ）。\r\n\r\n前两天扩展上架了 Chrome 和 Edge ，代码也开源到了 GitHub 。为了给这个工具找点种子用户，我干了一件很“朴素”的事：\r\n拿着自己的小红书账号，满怀期待地去搜相关话题，在别人的笔记评论区纯纯纯**手动**敲了十几条安利评论……\r\n\r\n结果昨天晚上直接收到了小红书的风控大礼包：\r\n\r\n![封禁处罚通知]( https://cdn.jsdelivr.net/gh/crx8-com/bobo-xiaohongshu-downloader@master/docs/assets/xhs_ban_overview.jpg)\r\n\r\n- **禁止发笔记、禁止评论、禁止私信等 7 天**\r\n- **历史笔记永久不被对外展示**\r\n- 违规原因直截了当：*账号下存在利用不当手段进行营销推广*（抓出来的罪证就是我昨天手打的 15 条安利评论）。\r\n\r\n![抓出的 15 条违规评论详情]( https://cdn.jsdelivr.net/gh/crx8-com/bobo-xiaohongshu-downloader@master/docs/assets/xhs_ban_comments.jpg)\r\n\r\n看着我那叫 [我有 32 个产品和 26 个粉丝] 的账号，真的哭笑不得，属于是典型的独立开发者营销翻车现场了。\r\n\r\n### 踩坑复盘\r\n1. **别迷信“纯手动”**：我以为不是机器人刷屏就没事，但在短时间内密集出现固定产品词（如“波波插件”、“批量存原图”），平台算法一扫一个准。\r\n2. **账号权重太脆**：新号+低粉，抗风险能力基本为零",
+      "original_title": "[分享创造] Caruno：电车充电成本记账，拍小票成账单 [送码]",
+      "original_summary": "[分享创造] Caruno：电车充电成本记账，拍小票成账单 [送码]\n大家好，我是 Lans ，一个独立 Android 开发者。\r\n\r\n我做了 Caruno ，因为我一直不知道自己的电车每公里到底花了多少钱。\r\n\r\n拍一张充电小票，AI 识别成账单：每度电多少钱、每公里多少钱、家充和公共充电分开算，还支持峰谷电价、保养提醒、CSV 导出。\r\n\r\n免费版可以用核心记账，1 辆车； Pro 去广告、无限 AI 扫描、多车、云同步。\r\n\r\n月付 4.99 美元，年付 29.99 美元，终身 89.99 美元。\r\n\r\n这次送 10 个终身版兑换码，先到先得：\r\n\r\nX9LFR52PAMP8MECUF2M4EYL\r\n9VDLZ8JYGPWK83F6NEM1BG7\r\nZTAK4ZQ13DXUC7M7CUE3ZLV\r\nD8XD2JL5F0P11BH4HF6J2AD\r\n8XXKY0NGHSLNLXE36WX14HV\r\nMT2RRDX07CF696B1HFJP8X0\r\nFDMS3490M20BAVHKG67L71B\r\nLKAKANP6BLS6EB4NV5H2QVR\r\n5H6DJU10Q0R9SAXBTR1Q1BG\r\n65PYUEPCZ6DVYP4H3CWFXTM\r\n\r\n兑换方法：打开 Play 商店，点头像 → 付款和订阅 → 兑换代码，输入上面的码。\r\n\r\n领了的回帖说一声用了哪个，免得别人重复试。\r\n\r\n用完告诉我你每公里到底花了多少钱，或者哪里不好用，我按反馈改。\r\n\r\n反响好的话，评论里再放第二批。\r\n\r\nPlay 链接： https://play.google.com/store/apps/details?id=com.lans.carva",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1256800",
+      "id": "v2ex-1256856",
       "source": "V2EX",
-      "category": "科技软件/App 限免",
-      "title": "自荐 HeyPix：一个 AI 图片生成与参考图编辑工具，想听听大家对使用流程的建议",
-      "summary": "自荐 HeyPix：一个 AI 图片生成与参考图编辑工具，想听听大家对使用流程的建议\n大家好，自荐一下我在做的 HeyPix 。先说明利益关系：我是站方，这篇是产品介绍，不是第三方测评。\r\n\r\n地址： https://heypix.io/\r\n\r\n一句话定位：把文字生图、参考图编辑和提示词示例放在一个网页里，方便做人物概念图、商品场景草稿和社媒配图。\r\n\r\n### 目前的使用流程\r\n\r\n首页可以直接填写提示词，选择模型、比例、分辨率和张数，提交前会显示本次所需积分；有参考图时，可以选择支持图片输入的模型再描述修改要求。页面也提供换背景、去除物体、放大等任务入口，具体支持情况取决于所选模型。\r\n\r\n一个具体的界面例子：当前选择 Nano Banana 2 、1:1 、1K 、1 张，显示需要 3 积分。这个数字只是该组合的报价，不代表所有模型或尺寸都一样。这里分享的是操作流程，没有做严格的模型效果横评。\r\n\r\n### 收费说明\r\n\r\n浏览公开案例不需要购买，生成图片消耗积分，不是无限免费工具。目前 Basic 月付为 15 美元，包含 400 积分，积分有效期 31 天；另外有一次性积分包。具体价格和单次消耗以页面及提交前显示为准，不把临时活动价格当作长期价格。\r\n\r\n支持游客方式使用，但免注册不等于免费生成；游客积分和历史与当前浏览器关联，清理浏览器数据或换设备时需要注意。订阅需要登录。\r\n\r\n### 优点和局限\r\n\r\n方便的地方是不用本地部署，可以在同一个界面调整模型与参数，提交前能看到积分消耗。与自己搭建本地工作流相比，省去了部署步骤，但也要接受平台提供的模型、参数和积分计费方式。\r\n\r\n局限也直接说：不同模型的输入支持和效果不一致；人物细节、商品形状、文字和连续图片的一致性仍需要人工检查，不能把一次生成当作可直接交付的成品。目前也没有依据宣称比官方入口更便宜或效果更好。",
+      "category": "AI 开发工具与编程助手",
+      "title": "做了一个免费的 AI 书签管理器，想听听大家还想要什么 AI 功能 #30",
+      "summary": "做了一个免费的 AI 书签管理器，想听听大家还想要什么 AI 功能 #30\n先简单介绍下我做的这个工具：\r\n\r\n**Linkit** 是一款跨平台桌面书签管理器，本地优先存储，永久免费。目前已经有这些功能：\r\n\r\n- AI 自动摘要：保存链接后自动提炼核心内容和关键结论\r\n- 语义搜索：不记得标题也没关系，按意思就能搜到\r\n- 知识图谱：可视化你收藏的链接之间的关联\r\n- 主题空间：一个书签可以同时归入多个主题，支持自然语言一键策展\r\n- 死链检测 + 重复书签合并\r\n- 免费云端多设备同步（ Supabase RLS 行级安全隔离）\r\n- Spotlight 全局呼出快速入库\r\n- 一键导入 Chrome / Edge / Firefox / Safari 书签\r\n\r\n项目地址： https://github.com/blue-idea/linkit\r\n\r\n![工作台]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/dashboard.png)\r\n\r\n![AI 洞察]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/ai_insights.png)\r\n\r\n![主题空间]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/zhuti.png)\r\n\r\n![Spotlight]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/spotlight.png)\r\n\r\n---\r\n\r\n现在想做的事情是：**听听大家的声",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "CanvasSeed",
-      "url": "https://www.v2ex.com/t/1256800",
-      "posted_at": "2026-11-13 14:19 Asia/Shanghai",
+      "author": "manbudezhu",
+      "url": "https://www.v2ex.com/t/1256856",
+      "posted_at": "2026-11-13 15:55 Asia/Shanghai",
+      "engagement": {
+        "replies": 1
+      },
+      "original_title": "做了一个免费的 AI 书签管理器，想听听大家还想要什么 AI 功能 #30",
+      "original_summary": "做了一个免费的 AI 书签管理器，想听听大家还想要什么 AI 功能 #30\n先简单介绍下我做的这个工具：\r\n\r\n**Linkit** 是一款跨平台桌面书签管理器，本地优先存储，永久免费。目前已经有这些功能：\r\n\r\n- AI 自动摘要：保存链接后自动提炼核心内容和关键结论\r\n- 语义搜索：不记得标题也没关系，按意思就能搜到\r\n- 知识图谱：可视化你收藏的链接之间的关联\r\n- 主题空间：一个书签可以同时归入多个主题，支持自然语言一键策展\r\n- 死链检测 + 重复书签合并\r\n- 免费云端多设备同步（ Supabase RLS 行级安全隔离）\r\n- Spotlight 全局呼出快速入库\r\n- 一键导入 Chrome / Edge / Firefox / Safari 书签\r\n\r\n项目地址： https://github.com/blue-idea/linkit\r\n\r\n![工作台]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/dashboard.png)\r\n\r\n![AI 洞察]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/ai_insights.png)\r\n\r\n![主题空间]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/zhuti.png)\r\n\r\n![Spotlight]( https://raw.githubusercontent.com/blue-idea/linkit/main/ui/screenshot/spotlight.png)\r\n\r\n---\r\n\r\n现在想做的事情是：**听听大家的声",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1256848",
+      "source": "V2EX",
+      "category": "AI 产品会员/试用",
+      "title": "《我享云》机场推荐 ，一块钱也能用专线",
+      "summary": "《我享云》机场推荐 ，一块钱也能用专线\n## 注册免费试用专线\r\n\r\n优惠截止 11 月 15 日\r\n\r\n¥3 起/月。季付，半年付，年付 更有折上折。\r\n\r\nhttps://m.vxcloud.cfd/coupon.html",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "VXCloud",
+      "url": "https://www.v2ex.com/t/1256848",
+      "posted_at": "2026-11-13 15:40 Asia/Shanghai",
       "engagement": {
         "replies": 0
       },
-      "original_title": "自荐 HeyPix：一个 AI 图片生成与参考图编辑工具，想听听大家对使用流程的建议",
-      "original_summary": "自荐 HeyPix：一个 AI 图片生成与参考图编辑工具，想听听大家对使用流程的建议\n大家好，自荐一下我在做的 HeyPix 。先说明利益关系：我是站方，这篇是产品介绍，不是第三方测评。\r\n\r\n地址： https://heypix.io/\r\n\r\n一句话定位：把文字生图、参考图编辑和提示词示例放在一个网页里，方便做人物概念图、商品场景草稿和社媒配图。\r\n\r\n### 目前的使用流程\r\n\r\n首页可以直接填写提示词，选择模型、比例、分辨率和张数，提交前会显示本次所需积分；有参考图时，可以选择支持图片输入的模型再描述修改要求。页面也提供换背景、去除物体、放大等任务入口，具体支持情况取决于所选模型。\r\n\r\n一个具体的界面例子：当前选择 Nano Banana 2 、1:1 、1K 、1 张，显示需要 3 积分。这个数字只是该组合的报价，不代表所有模型或尺寸都一样。这里分享的是操作流程，没有做严格的模型效果横评。\r\n\r\n### 收费说明\r\n\r\n浏览公开案例不需要购买，生成图片消耗积分，不是无限免费工具。目前 Basic 月付为 15 美元，包含 400 积分，积分有效期 31 天；另外有一次性积分包。具体价格和单次消耗以页面及提交前显示为准，不把临时活动价格当作长期价格。\r\n\r\n支持游客方式使用，但免注册不等于免费生成；游客积分和历史与当前浏览器关联，清理浏览器数据或换设备时需要注意。订阅需要登录。\r\n\r\n### 优点和局限\r\n\r\n方便的地方是不用本地部署，可以在同一个界面调整模型与参数，提交前能看到积分消耗。与自己搭建本地工作流相比，省去了部署步骤，但也要接受平台提供的模型、参数和积分计费方式。\r\n\r\n局限也直接说：不同模型的输入支持和效果不一致；人物细节、商品形状、文字和连续图片的一致性仍需要人工检查，不能把一次生成当作可直接交付的成品。目前也没有依据宣称比官方入口更便宜或效果更好。",
+      "original_title": "《我享云》机场推荐 ，一块钱也能用专线",
+      "original_summary": "《我享云》机场推荐 ，一块钱也能用专线\n## 注册免费试用专线\r\n\r\n优惠截止 11 月 15 日\r\n\r\n¥3 起/月。季付，半年付，年付 更有折上折。\r\n\r\nhttps://m.vxcloud.cfd/coupon.html",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1256844",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "做了一个免费网页游戏合集「星入幻境」，打开浏览器就能玩",
+      "summary": "做了一个免费网页游戏合集「星入幻境」，打开浏览器就能玩\n我做了一个独立网页游戏站「星入幻境（ XEROSH ）」，把竞速、街机、地牢 RPG 和同屏双人游戏放在了一起。打开浏览器就能免费玩，无需下载或注册。每款游戏也有玩法说明，方便先看看操作方式和设备要求。\r\n\r\n[打开星入幻境中文版]( https://www.xrhshui.com/zh/)\r\n\r\n下面是竞速和同屏对战的实际游戏画面：\r\n\r\n![巅峰疾驰实机截图]( https://www.xrhshui.com/assets/apex-detail.webp)\r\n\r\n![火柴人对战实机截图]( https://www.xrhshui.com/assets/stick-arena.webp)\r\n\r\n如果你用手机打开，欢迎说说第一眼能不能找到适合触屏或同屏双人的游戏。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Xrhshui",
+      "url": "https://www.v2ex.com/t/1256844",
+      "posted_at": "2026-11-13 15:35 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "做了一个免费网页游戏合集「星入幻境」，打开浏览器就能玩",
+      "original_summary": "做了一个免费网页游戏合集「星入幻境」，打开浏览器就能玩\n我做了一个独立网页游戏站「星入幻境（ XEROSH ）」，把竞速、街机、地牢 RPG 和同屏双人游戏放在了一起。打开浏览器就能免费玩，无需下载或注册。每款游戏也有玩法说明，方便先看看操作方式和设备要求。\r\n\r\n[打开星入幻境中文版]( https://www.xrhshui.com/zh/)\r\n\r\n下面是竞速和同屏对战的实际游戏画面：\r\n\r\n![巅峰疾驰实机截图]( https://www.xrhshui.com/assets/apex-detail.webp)\r\n\r\n![火柴人对战实机截图]( https://www.xrhshui.com/assets/stick-arena.webp)\r\n\r\n如果你用手机打开，欢迎说说第一眼能不能找到适合触屏或同屏双人的游戏。",
       "translated_by": "free-translate"
     },
     {
@@ -693,64 +658,100 @@
       "url": "https://www.v2ex.com/t/1256560",
       "posted_at": "2026-11-12 18:35 Asia/Shanghai",
       "engagement": {
-        "replies": 164
+        "replies": 174
       },
       "original_title": "[KeyVia 满血中转站] 原生 Claude Fable5.2、GPT-6 Astra 免费用",
       "original_summary": "[KeyVia 满血中转站] 原生 Claude Fable5.2、GPT-6 Astra 免费用\n站点： https://keyvia.cc\r\n\r\n完成 KeyVia 注册后，在本贴评论留 KeyVia 站内 ID ，或通过 KeyVia 页面提交工单联系客服说明来自 V2EX ，即可获得原价 112 美元的$19.99 套餐，可使用全站满血模型。\r\n\r\n容量有限，先到先得。",
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-sebytzr16-on-device-llm",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "sebytzr16/on-device-llm 是本地离线 AI，免账号免云",
-      "summary": "在 Android 和 Windows 本地运行 GGUF 模型，支持图像视频生成、语音、并行代理和 OpenAI 兼容 API。",
+      "id": "v2ex-1256714",
+      "source": "V2EX",
+      "category": "AI 产品会员/试用",
+      "title": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖",
+      "summary": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖\n做 Ebb 的初衷就一句话：想要一个好看、原生、轻量的系统监控软件。\r\n\r\n好看：我很喜欢 tw93 的 Mole ，克制、干净，又有点小趣味，Ebb 整体的设计气质就是参考 Mole 做的。每一页都有自己的图表，比如处理器是\"核心花\"，内存是\"气泡\"，网络是\"星图\"。\r\n\r\n原生、轻量：SwiftUI 原生开发，不套壳。数据全部存在本机，不上传。\r\n\r\n除了好看，也塞了几个我自己天天用的功能：\r\n\r\n- 刚才怎么了：按 ⌃⌥E 回放最近 60 秒，看是哪个进程在哪一秒把 CPU 吃满了\r\n- 失控进程：后台进程长时间占着 CPU ，或者内存只涨不降，会直接标出来\r\n- 睡眠体检：合盖再打开，告诉你睡了多久、掉了多少电、被唤醒了几次\r\n- 菜单栏面板：负载、网速、蓝牙设备电量，扫一眼就够了\r\n\r\n支持 macOS 13 及以上，Apple 芯片和 Intel 都能用。免费试用 14 天，之后 5 美元买断。\r\n\r\n官网： https://ebbapp.top\r\n\r\n [送码] \r\n准备了 15 个激活码。在楼下回复你的使用建议、吐槽或者想要的功能，说一句\"好看\"也行。回复时请附上 base64 编码后的邮箱，我会从回复里挑 15 位，把激活码发到邮箱。\r\n\r\n才刚上线，肯定有不少毛病，欢迎大家狠狠提意见，我都会看。\r\n\r\n部分截图：\r\n\r\n亮色：\r\n\r\n![总览]( https://img.cdn1.vip/i/6af671417c5e0_1794535745.webp)\r\n![处理器]( https://img.cdn1.vip/i/6af6713d0c63f_1794535741.webp)\r\n![能耗]( https://img.cdn1.vip/i/6af6713d64dcb_17945",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "sebytzr16",
-      "url": "https://github.com/sebytzr16/on-device-llm",
-      "posted_at": "2026-11-13 15:07 Asia/Shanghai",
+      "author": "murongxdb",
+      "url": "https://www.v2ex.com/t/1256714",
+      "posted_at": "2026-11-13 10:21 Asia/Shanghai",
       "engagement": {
-        "stars": 20
+        "replies": 61
       },
-      "original_title": "sebytzr16/on-device-llm",
-      "original_summary": "sebytzr16/on-device-llm Private, offline AI for Android and Windows: run local LLMs (Gemma 4, Qwen, Ternary Bonsai, any GGUF) with llama.cpp on CUDA or Vulkan, create images and videos on your own GPU, talk hands-free with on-device voice, run parallel agents, cite web research, pair phone and PC, serve an OpenAI-compatible API. No account, no cloud.",
+      "original_title": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖",
+      "original_summary": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖\n做 Ebb 的初衷就一句话：想要一个好看、原生、轻量的系统监控软件。\r\n\r\n好看：我很喜欢 tw93 的 Mole ，克制、干净，又有点小趣味，Ebb 整体的设计气质就是参考 Mole 做的。每一页都有自己的图表，比如处理器是\"核心花\"，内存是\"气泡\"，网络是\"星图\"。\r\n\r\n原生、轻量：SwiftUI 原生开发，不套壳。数据全部存在本机，不上传。\r\n\r\n除了好看，也塞了几个我自己天天用的功能：\r\n\r\n- 刚才怎么了：按 ⌃⌥E 回放最近 60 秒，看是哪个进程在哪一秒把 CPU 吃满了\r\n- 失控进程：后台进程长时间占着 CPU ，或者内存只涨不降，会直接标出来\r\n- 睡眠体检：合盖再打开，告诉你睡了多久、掉了多少电、被唤醒了几次\r\n- 菜单栏面板：负载、网速、蓝牙设备电量，扫一眼就够了\r\n\r\n支持 macOS 13 及以上，Apple 芯片和 Intel 都能用。免费试用 14 天，之后 5 美元买断。\r\n\r\n官网： https://ebbapp.top\r\n\r\n [送码] \r\n准备了 15 个激活码。在楼下回复你的使用建议、吐槽或者想要的功能，说一句\"好看\"也行。回复时请附上 base64 编码后的邮箱，我会从回复里挑 15 位，把激活码发到邮箱。\r\n\r\n才刚上线，肯定有不少毛病，欢迎大家狠狠提意见，我都会看。\r\n\r\n部分截图：\r\n\r\n亮色：\r\n\r\n![总览]( https://img.cdn1.vip/i/6af671417c5e0_1794535745.webp)\r\n![处理器]( https://img.cdn1.vip/i/6af6713d0c63f_1794535741.webp)\r\n![能耗]( https://img.cdn1.vip/i/6af6713d64dcb_17945",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-faustinopalma-ai-gateway-lab-load-balancing",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "AI_Gateway_lab_load_balancing 实测 AI 网关",
+      "summary": "对比 Azure API Management 与独立 Azure AI Gateway 在无 Cookie 的 LLM 会话亲和、缓存和故障转移上的表现。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "faustinopalma",
+      "url": "https://github.com/faustinopalma/AI_Gateway_lab_load_balancing",
+      "posted_at": "2026-11-13 05:56 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "faustinopalma/AI_Gateway_lab_load_balancing",
+      "original_summary": "faustinopalma/AI_Gateway_lab_load_balancing Measured comparison of Azure API Management and standalone Azure AI Gateway for cookie-free LLM session affinity, caching, and failover.",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-enapt-swarmllm",
+      "id": "ghdeal-godlovetikum-ag-termux",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "SwarmLLM：在自己电脑上免费运行 AI 对话模型",
-      "summary": "开源应用，可多台电脑联网协作运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
+      "title": "Godlovetikum/AG-Termux",
+      "summary": "godlovetikum/AG-Termux 适用于您手机的免费层编码代理：基于免费 LLM API 的后备路由器以及经过审查的编辑 CLI。零依赖，专为 Termux 构建。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "enapt",
-      "url": "https://github.com/enapt/SwarmLLM",
-      "posted_at": "2026-11-13 14:45 Asia/Shanghai",
+      "author": "godlovetikum",
+      "url": "https://github.com/godlovetikum/AG-Termux",
+      "posted_at": "2026-11-13 16:44 Asia/Shanghai",
       "engagement": {
-        "stars": 86
+        "stars": 0
       },
-      "original_title": "enapt/SwarmLLM",
-      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
+      "original_title": "godlovetikum/AG-Termux",
+      "original_summary": "godlovetikum/AG-Termux Free-tier coding agent for your phone: a fallback router over free LLM APIs plus a reviewed-edit CLI. Zero dependencies, built for Termux.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-td685548-sketch-freellmapi-custom",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "freellmapi-custom：多供应商 LLM API 网关与代理面板",
+      "summary": "支持 token 路由、模型回退和智能组合的自建 LLM API 网关与代理管理面板。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "td685548-sketch",
+      "url": "https://github.com/td685548-sketch/freellmapi-custom",
+      "posted_at": "2026-11-12 23:12 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "td685548-sketch/freellmapi-custom",
+      "original_summary": "td685548-sketch/freellmapi-custom Custom multi-provider LLM API gateway and proxy management dashboard with token routing, model fallbacks, and smart combos.",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-leestars21-free-llm-api-watch",
+      "id": "ghdeal-arsh624-llm4jobs-v2",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "free-llm-api-watch 是免费 LLM API 监控项目",
-      "summary": "Leestars21/free-llm-api-watch",
+      "title": "llm4jobs-v2：免费求职雷达，每日邮件摘要",
+      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历与地点筛选，跑在 GitHub Actions 上免费。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Leestars21",
-      "url": "https://github.com/Leestars21/free-llm-api-watch",
-      "posted_at": "2026-11-12 15:51 Asia/Shanghai",
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
       "engagement": {
-        "stars": 1
+        "stars": 0
       },
-      "original_title": "Leestars21/free-llm-api-watch",
-      "original_summary": "Leestars21/free-llm-api-watch ",
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
       "translated_by": "model"
     },
     {

@@ -5,15 +5,17 @@
   "drop:duplicate": 94,
   "drop:empty_summary": 23,
   "drop:negative_signal": 98,
-  "drop:no_clear_offer": 257,
-  "drop:not_ai": 219,
+  "drop:no_clear_offer": 258,
+  "drop:not_ai": 220,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 330,
-  "google_news_total": 330,
-  "kept_total": 172,
+  "google_news_resolved": 331,
+  "google_news_total": 331,
+  "kept_total": 171,
   "net:gnews_cache_hit": 330,
-  "new_this_run": 3,
-  "raw_total": 922
+  "net:gnews_resolved_net": 1,
+  "net:tco_expanded": 1,
+  "new_this_run": 2,
+  "raw_total": 923
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -60,6 +62,7 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "Anthropic 承认漏洞致配额消耗过快，向 Claude 付费订阅者提供一次全额度重置",
    "Epic 更新 Quixel 资产条款，Megascans 与 Megaplants 可用于训练 AI 模型",
    "Goose 由 Jack Dorsey 的 Block 为内部工程师打造后开源，GitHub 已获 3.5 万星",
    "@BkashJosi 分享：它不只聊天，还能用免费技能分析 AI 搜索为何列出竞争对手而非你，另有 52 个技能",
@@ -70,8 +73,7 @@
    "目前支持单张 NVIDIA GPU、每机一个模型和 vLLM，已测小模型",
    "@HuggingPapers 分享：该阅读层只接收必要证据，在保持任务质量的同时，将 token 用量最多降低92.9%",
    "即使没有 GPU，该链接仍可每周获得免费 GPT-6和 DeepSeek token",
-   "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入",
-   "它把私有模型接入 Claude Code、Codex 和 OpenCode，用户可控制数据外发，共享轨迹可获积分抵扣推理"
+   "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入"
   ],
   "not_ai": [
    "@MengTo 分享：整段主视觉为2K 的30秒一镜到底，滚动时反向播放，附完整工作流与提示词",
@@ -102,27 +104,26 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-13T15:15:24+08:00",
+ "generated_at": "2026-11-13T17:02:33+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-13T15:15:24+08:00",
+  "checked_at": "2026-11-13T17:02:33+08:00",
   "counts": {
-   "ok": 159,
-   "unsure": 1
+   "ok": 159
   },
   "hidden": 0
  },
- "seconds": 0.7,
+ "seconds": 1.2,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 5,
-   "drop:not_ai": 11,
-   "drop:not_ai_strict": 6,
-   "kept": 17,
-   "raw": 39
+   "drop:negative_signal": 4,
+   "drop:not_ai": 6,
+   "drop:not_ai_strict": 5,
+   "kept": 16,
+   "raw": 31
   }
  }
 }
