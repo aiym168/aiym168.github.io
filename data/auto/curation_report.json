@@ -2,17 +2,19 @@
  "counts": {
   "archived": 14,
   "deadline_extracted": 6,
-  "drop:duplicate": 94,
+  "drop:duplicate": 95,
   "drop:empty_summary": 23,
-  "drop:negative_signal": 98,
-  "drop:no_clear_offer": 258,
+  "drop:negative_signal": 97,
+  "drop:no_clear_offer": 262,
   "drop:not_ai": 220,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 331,
-  "google_news_total": 331,
-  "kept_total": 171,
+  "google_news_resolved": 333,
+  "google_news_total": 333,
+  "kept_total": 169,
   "net:gnews_cache_hit": 331,
-  "raw_total": 923
+  "net:gnews_resolved_net": 2,
+  "new_this_run": 1,
+  "raw_total": 925
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -59,6 +61,8 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "@hkfp 分享：香港自由报致力于在 AI 时代保持人力新闻编辑室的地位",
+   "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
    "Anthropic 承认漏洞致配额消耗过快，向 Claude 付费订阅者提供一次全额度重置",
    "Epic 更新 Quixel 资产条款，Megascans 与 Megaplants 可用于训练 AI 模型",
    "Goose 由 Jack Dorsey 的 Block 为内部工程师打造后开源，GitHub 已获 3.5 万星",
@@ -68,9 +72,7 @@
    "@Dexerto 分享：他称这是为严肃问题打造的有趣游戏，问题是 CGI 会抹掉胡子",
    "该 macOS 应用让私有 AI 模型快速接入 Claude Code、Codex 和 OpenCode",
    "目前支持单张 NVIDIA GPU、每机一个模型和 vLLM，已测小模型",
-   "@HuggingPapers 分享：该阅读层只接收必要证据，在保持任务质量的同时，将 token 用量最多降低92.9%",
-   "即使没有 GPU，该链接仍可每周获得免费 GPT-6和 DeepSeek token",
-   "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入"
+   "@HuggingPapers 分享：该阅读层只接收必要证据，在保持任务质量的同时，将 token 用量最多降低92.9%"
   ],
   "not_ai": [
    "@MengTo 分享：整段主视觉为2K 的30秒一镜到底，滚动时反向播放，附完整工作流与提示词",
@@ -101,27 +103,26 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-13T17:04:32+08:00",
+ "generated_at": "2026-11-13T19:28:40+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-13T17:04:32+08:00",
+  "checked_at": "2026-11-13T19:28:40+08:00",
   "counts": {
-   "ok": 119,
-   "unsure": 39
+   "ok": 158
   },
   "hidden": 0
  },
- "seconds": 0.6,
+ "seconds": 1.4,
  "side": {
   "github_hot": {
    "kept": 30,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 6,
-   "drop:not_ai_strict": 5,
-   "kept": 16,
-   "raw": 31
+   "drop:negative_signal": 5,
+   "drop:not_ai": 8,
+   "drop:not_ai_strict": 4,
+   "kept": 19,
+   "raw": 36
   }
  }
 }
