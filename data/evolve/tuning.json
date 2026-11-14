@@ -1,14 +1,14 @@
 {
  "news": {
   "nature-com-nature-rss": {
-   "state": "paused",
-   "since": "2026-11-12",
-   "why": "最近总是打不开"
+   "state": "retest",
+   "since": "2026-11-15",
+   "why": ""
   },
   "civitai-models": {
-   "state": "paused",
-   "since": "2026-11-12",
-   "why": "最近总是打不开"
+   "state": "retest",
+   "since": "2026-11-15",
+   "why": ""
   },
   "wired-ai": {
    "weight": 0.75,
@@ -18,8 +18,9 @@
   "bair-berkeley-edu-blog-feed-xml": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-14",
-   "why": "总是重复，没有新东西"
+   "since": "2026-11-15",
+   "why": "一周都没有新东西",
+   "state": "paused"
   },
   "syncedreview-com-feed": {
    "weight": 0.5,
@@ -48,16 +49,16 @@
  },
  "deals": {
   "DEV.to": {
-   "state": "paused",
-   "since": "2026-11-12",
-   "why": "最近总是没有内容"
+   "state": "retest",
+   "since": "2026-11-15",
+   "why": ""
   },
   "Lobsters": {
-   "state": "paused",
-   "since": "2026-11-12",
-   "why": "最近总是没有内容"
+   "state": "retest",
+   "since": "2026-11-15",
+   "why": ""
   }
  },
- "updated_at": "2026-11-14T00:47+08:00",
+ "updated_at": "2026-11-15T00:34+08:00",
  "note": "由 evolve.py 每天自动维护；采集脚本只读。删除此文件即恢复默认（全部来源、权重 1.0）。"
 }
