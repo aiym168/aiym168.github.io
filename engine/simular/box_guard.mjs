@@ -9,7 +9,10 @@ import { fileURLToPath } from 'node:url'
 
 const here = path.dirname(fileURLToPath(import.meta.url))
 const BOX_ID = process.env.BOX_ID || 'cb-6ad4209d8372'
-const WANT = { cron: '0 * * * *', tz: 'Asia/Shanghai', awake_for_s: 3600 }
+// Wake window lives in engine/wake.json. A 3600s hourly window ends on the same
+// minute as the next wake, and hibernate wins, so the server sleeps through :25.
+const SPEC = JSON.parse(fs.readFileSync(path.join(here, '..', 'wake.json'), 'utf8'))
+const WANT = { cron: SPEC.cron, tz: SPEC.tz, awake_for_s: Number(SPEC.awake_for_s) }
 const STALE_B_MIN = Number(process.env.STALE_B_MIN || 120)
 const key = (process.env.SIMULAR_BOX_KEY || '').trim()
 const fmt = ms => ms ? new Date(Number(ms)).toLocaleString('sv-SE', { timeZone: 'Asia/Shanghai' }).slice(0, 16) + ' Asia/Shanghai' : null
@@ -64,7 +67,7 @@ try {
   let s = (ls.schedules || []).find(x => x.box_id === BOX_ID)
   if (!s || s.cron !== WANT.cron || s.tz !== WANT.tz || Number(s.awake_for_s) !== WANT.awake_for_s) {
     s = await call('SetWakeSchedule', { box_id: BOX_ID, ...WANT })
-    out.actions.push('SetWakeSchedule(0 * * * *, Asia/Shanghai, 3600s)')
+    out.actions.push(`SetWakeSchedule(${WANT.cron}, ${WANT.tz}, ${WANT.awake_for_s}s)`)
   }
   out.wake_schedule = { cron: s.cron, tz: s.tz, awake_for_s: Number(s.awake_for_s), next_label: fmt(s.next_at_ms), last_wake_label: fmt(s.last_wake_at_ms) }
   out.ok = box.state === 'BOX_STATE_RUNNING'

@@ -18,6 +18,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import build as B
+import schedule_health as sched
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -119,8 +120,8 @@ def build_status(now: datetime) -> dict:
             },
             "B": {
                 **b,
-                "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
-                "next_run_label": lbl(next_minute(now, (25,))),
+                "schedule": "服务器每小时第 20 与 50 分钟检查；公开内容超过 75 分钟就完整更新",
+                "next_run_label": lbl(next_minute(now, tuple(sched.ENGINE_MINUTES))),
                 "last_seen_at": b_seen,
                 "age_min": age_min(b_seen, now),
             },
@@ -159,6 +160,7 @@ def build_status(now: datetime) -> dict:
         "heartbeat_label": hb.get("updated_at_label"),
         "server": _server(j(DATA / "box_state.json")),
         "server2": _server(j(DATA / "box_state_2.json")),
+        "schedule_health": sched.summarize(now, ROOT),
     }
 
 
@@ -316,6 +318,7 @@ def render(st: dict) -> str:
 
 
 def main() -> int:
+    sched.maybe_sync_box_timer()
     now = datetime.now(TZ)
     write_marker(now)
     record_update(now)

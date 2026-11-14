@@ -23,13 +23,17 @@ from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import schedule_health as sched
+
 REPO = os.environ.get("GITHUB_REPOSITORY", "aiym168/aiym168.github.io")
 API = "https://api.github.com"
 SITE = "https://aiym168.github.io"
 TZ = ZoneInfo("Asia/Shanghai")
 MAIN_WF = "update.yml"
-WATCHED = ["update.yml", "watchdog.yml"]
-STALE_MIN = int(os.environ.get("STALE_MIN", "90"))
+WATCHED = ["update.yml", "watchdog.yml", "keepalive.yml"]
+STALE_MIN = int(os.environ.get("STALE_MIN", str(sched.PUBLISH_AFTER_MIN)))
+ACTIVE_STATES = ("queued", "in_progress", "waiting", "pending", "requested")
 ISSUE_TITLE = "[看门狗] 自动更新故障记录"
 
 
@@ -133,6 +137,11 @@ def check() -> dict:
                                "url": latest_done.get("html_url") if latest_done else None,
                                "at": sh(latest_done.get("updated_at")) if latest_done else None}
     out["active_runs"] = len(active)
+    extra = 0
+    st_k, body_k = req("GET", f"/repos/{REPO}/actions/workflows/keepalive.yml/runs?per_page=10")
+    if st_k == 200:
+        extra = sum(1 for r in (body_k.get("workflow_runs") or []) if r.get("status") in ACTIVE_STATES)
+    out["publishers_active"] = out["active_runs"] + extra
     meta = live_json("api/meta.json")
     gen = meta.get("generated_at_label") or ""
     try:
@@ -194,9 +203,14 @@ def heal(who: str) -> dict:
     lc = s["latest_completed"]
     age = s["last_success"]["age_min"]
     failed = lc.get("conclusion") in ("failure", "timed_out", "startup_failure")
-    stale = age is None or age > STALE_MIN
+    live = s.get("live_age_min")
+    if live is not None:
+        stale = live >= STALE_MIN
+    else:
+        stale = age is None or age >= STALE_MIN
     disabled = any(v.startswith("disabled") for v in s["workflows"].values())
-    if (failed or stale or disabled) and s["active_runs"] == 0:
+    busy = s.get("publishers_active", s["active_runs"])
+    if (failed or stale or disabled) and busy == 0:
         st, _ = req("POST", f"/repos/{REPO}/actions/workflows/{MAIN_WF}/dispatches", {"ref": "main"})
         actions.append(f"dispatch {MAIN_WF} -> http{st}")
     if actions:
@@ -206,7 +220,10 @@ def heal(who: str) -> dict:
         if failed:
             reason.append(f"最近一次运行失败（{lc.get('url')}）")
         if stale:
-            reason.append(f"距上次成功已 {age} 分钟（阈值 {STALE_MIN}）")
+            if live is not None:
+                reason.append(f"公开内容已 {live} 分钟未更新（阈值 {STALE_MIN}）")
+            else:
+                reason.append(f"距上次成功已 {age} 分钟（阈值 {STALE_MIN}）")
         detail = f"发现方：{who}\n\n原因：{'；'.join(reason) or '-'}\n\n自愈动作：\n" + "\n".join(f"- `{a}`" for a in actions)
         if failed and lc.get("id"):
             detail += "\n\n失败日志（末尾）：\n\n" + failed_log_tail(lc["id"])

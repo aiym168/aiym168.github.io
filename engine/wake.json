@@ -1,0 +1,8 @@
+{
+  "cron": "20,50 * * * *",
+  "tz": "Asia/Shanghai",
+  "awake_for_s": 1200,
+  "engine_minutes": [20, 50],
+  "publish_after_min": 75,
+  "comment": "Provider wakes the server one minute before each cron time, then hibernates it after awake_for_s. A 3600s window on an hourly cron ends on the same minute as the next wake, and the hibernate wins, so the server sleeps through the hour. These two 20-minute windows leave a 10-minute gap before the next wake and still cover the engine minutes."
+}

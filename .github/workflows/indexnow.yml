@@ -9,7 +9,8 @@ on:
       - "sitemap.xml"
       - "indexnow_push.py"
       - ".github/workflows/indexnow.yml"
-      - "cPVql59NwdhOJ5dmXGgRmGuf59RJXt9g.txt"
+      - "450689b4bf9c48644ca1ea6ac5547539.txt"
+      - ".well-known/indexnow.txt"
 
 permissions:
   contents: read
@@ -21,10 +22,15 @@ concurrency:
 jobs:
   ping:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Submit IndexNow
+        env:
+          # Pages may still be deploying the new key file, and Bing can 403 once
+          # more while it fetches that file. Wait and retry inside this job only.
+          INDEXNOW_WAIT_SEC: "720"
         run: python3 indexnow_push.py

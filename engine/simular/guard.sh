@@ -47,7 +47,7 @@ if [ -n "$URLS" ]; then
   echo "[site] station: ${SITE2:-ok}"
 fi
 one "服务器 2" "${SIMULAR_KEY_2:-}" "cb-e24d45c9724d" data/box_state_2.json - "$SITE2"
-if [ "$COMMIT" = "1" ]; then
+if [ "${GUARD_NO_PUSH:-0}" != "1" ] && [ "$COMMIT" = "1" ]; then
   git config user.name "laohe-bot"; git config user.email "9499758-wq@users.noreply.github.com"
   STATUS_MARK=0 python3 status.py || true
   git add $ADD api/status.json m/status.html data/_internal_status.json 2>/dev/null

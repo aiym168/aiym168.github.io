@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Server engine — runs on a Simular cloud server (cron/systemd, hourly).
 # Same script on every server; ~/.engine.conf (outside the repo) picks the identity:
-#   ENGINE_ID=B  ENGINE_MINUTE=25   (first server, default)
+#   ENGINE_ID=B                      (first server; minutes come from engine/wake.json, default :20 and :50)
 #   ENGINE_ID=C  ENGINE_MINUTE=55   (second server: third line of defence, only takes over
 #                                    when neither GitHub nor the first server has updated the site)
 # 1. mutual watchdog: re-enable / re-dispatch GitHub engine A if needed
@@ -67,21 +67,38 @@ push_retry(){ # $1 = commit message ; $2 = rerun cmd on conflict
 }
 
 sync_main || { echo "[engine-$eid] git sync failed"; exit 3; }
+# Timer files are refreshed from status.py after this sync. The running copy of
+# this script was taken before the sync, so a schedule change applies on the
+# next start, which is already the pulled file.
 
 # --- mutual watchdog (also re-enables / re-dispatches engine A) ---
 W="$(python3 engine/gh_watch.py heal --who "服务器引擎 $EID" 2>>"$LOG")"
-read -r LIVE_AGE A_AGE ACTIONS B_AGE <<<"$(printf '%s' "$W" | python3 -c '
+read -r LIVE_AGE A_AGE ACTIONS B_AGE ACTIVE <<<"$(printf '%s' "$W" | python3 -c '
 import json,sys
 try: d=json.load(sys.stdin)
 except Exception: d={}
 la=d.get("live_age_min"); aa=(d.get("last_success") or {}).get("age_min"); ba=(d.get("engine_b") or {}).get("age_min")
-print(la if la is not None else 99999, aa if aa is not None else 99999, len(d.get("actions") or []), ba if ba is not None else 99999)')"
-echo "[engine-$eid] live_age=${LIVE_AGE}min engineA_last_success=${A_AGE}min peerB_seen=${B_AGE}min watchdog_actions=${ACTIONS}"
+act=d.get("publishers_active")
+if act is None: act=d.get("active_runs")
+print(la if la is not None else 99999, aa if aa is not None else 99999, len(d.get("actions") or []), ba if ba is not None else 99999, 0 if act is None else act)')"
+echo "[engine-$eid] live_age=${LIVE_AGE}min engineA_last_success=${A_AGE}min peerB_seen=${B_AGE}min active_publishers=${ACTIVE} watchdog_actions=${ACTIONS}"
 
 MODE=standby
 if [ "${FORCE:-0}" = "1" ]; then MODE=forced
 elif [ "$EID" = "B" ]; then
-  if [ "$LIVE_AGE" -gt "$STALE_MIN" ] || [ "$A_AGE" -gt "$STALE_MIN" ]; then MODE=takeover; fi
+  # Real pipeline only. A standby/seen commit is not a content update.
+  # If this same check just started engine A, let that run publish.
+  if python3 schedule_health.py publish-needed --content-age "$LIVE_AGE" --active-runs "$ACTIVE"; then
+    if printf '%s' "$W" | python3 -c 'import json,sys
+try: d=json.load(sys.stdin)
+except Exception: d={}
+ok=any("dispatch" in str(a) and "http2" in str(a) for a in (d.get("actions") or []))
+raise SystemExit(0 if ok else 1)'; then
+      echo "[engine-$eid] engine A was just started — it will publish"
+    else
+      MODE=takeover
+    fi
+  fi
 else
   # third line: only when the live site itself is stale, or both other engines look dead
   if [ "$LIVE_AGE" -gt "$C_LIVE_STALE_MIN" ]; then MODE=takeover

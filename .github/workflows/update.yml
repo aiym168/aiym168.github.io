@@ -1,7 +1,8 @@
 name: Auto update site
 
 # Runs everything in GitHub Actions: collect → translate → filter → build → link-check → IndexNow/sitemap → self-heal.
-# An optional backup server job (engine/engine_b.sh) may also push; the site does not depend on it.
+# GitHub's own scheduler is not the only way this starts. keepalive.yml accepts an external ping,
+# and the backup server (engine/engine_b.sh) publishes when public content is older than 75 minutes.
 # Watchdog (.github/workflows/watchdog.yml) re-enables / re-dispatches this if it stops.
 on:
   schedule:

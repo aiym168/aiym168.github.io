@@ -1,0 +1,136 @@
+name: External keepalive
+
+# Not a GitHub schedule. A free external cron POSTs repository_dispatch (event_type keepalive)
+# and this workflow runs on a GitHub-hosted runner, whether or not the backup server is awake
+# and whether or not GitHub dropped the scheduled workflows.
+# Setup is documented in the README. repository_dispatch only fires from the default branch.
+on:
+  repository_dispatch:
+    types: [keepalive]
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "内容还新时也做一次完整更新"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: read
+  issues: write
+
+concurrency:
+  group: update-site
+  cancel-in-progress: false
+
+jobs:
+  keep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      HAS_BOX_KEY: ${{ secrets.SIMULAR_BOX_KEY != '' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 2
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Decide
+        id: decide
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN_ALT: ${{ secrets.PAGES_DEPLOY_TOKEN }}
+          SKIP_TIMER_SYNC: "1"
+          KEEPALIVE_FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force && '1' || '0' }}
+        run: python3 schedule_health.py decide
+
+      - name: Real content update
+        if: ${{ steps.decide.outputs.publish == '1' }}
+        env:
+          ENGINE: A
+          ENGINE_MODE: dispatch
+          FETCH: "1"
+          STATUS_MARK: "1"
+          SKIP_TIMER_SYNC: "1"
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          GITHUB_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
+          VERIFY_BAIDU: ${{ secrets.VERIFY_BAIDU }}
+          BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+        run: bash engine/pipeline.sh
+
+      - name: Refresh schedule health
+        if: ${{ steps.decide.outputs.publish != '1' }}
+        env:
+          SKIP_TIMER_SYNC: "1"
+        run: python3 schedule_health.py refresh
+
+      - name: Commit and push
+        env:
+          DEPLOY_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN }}
+          PUBLISH: ${{ steps.decide.outputs.publish }}
+          CONTENT_AGE: ${{ steps.decide.outputs.content_age_min }}
+        run: |
+          set -e
+          git config user.name "laohe-bot"
+          git config user.email "9499758-wq@users.noreply.github.com"
+          if [ -n "$DEPLOY_TOKEN" ]; then
+            git remote set-url origin "https://x-access-token:${DEPLOY_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          fi
+          rm -rf .last_good __pycache__
+          if [ "$PUBLISH" = "1" ]; then
+            git add -A
+            git reset -q HEAD -- __pycache__ .last_good 2>/dev/null || true
+            MSG="auto update $(TZ=Asia/Shanghai date '+%F %H:%M') [engine A]"
+          else
+            # A fresh check must not commit: a commit every 15 minutes redeploys
+            # the site and can cancel a content deploy. Record status only when
+            # content is already old and another publish is in progress.
+            if ! python3 -c 'import os,sys,schedule_health as s; age=(os.environ.get("CONTENT_AGE") or "").strip(); sys.exit(0 if age.isdigit() and int(age) >= s.PUBLISH_AFTER_MIN else 1)'; then
+              echo "content is current — no status commit"
+              exit 0
+            fi
+            git add data/watchdog.json data/_internal_status.json
+            MSG="status check $(TZ=Asia/Shanghai date '+%F %H:%M')"
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes — skip commit"
+            exit 0
+          fi
+          git commit -q -m "$MSG"
+          for i in 1 2 3 4 5; do
+            if git push -q origin HEAD:main; then echo "pushed (try $i)"; exit 0; fi
+            echo "push rejected — rebase on remote"
+            git fetch -q origin main
+            if ! git rebase -q -X ours origin/main; then
+              git rebase --abort || true
+              git reset -q --soft origin/main
+              git commit -q -m "$MSG" || true
+            fi
+            sleep $((i * 5))
+          done
+          echo "push failed after retries"; exit 1
+
+      - name: Setup Node
+        if: ${{ always() && env.HAS_BOX_KEY == 'true' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh backup wake window
+        if: ${{ always() && env.HAS_BOX_KEY == 'true' }}
+        continue-on-error: true
+        env:
+          SIMULAR_BOX_KEY: ${{ secrets.SIMULAR_BOX_KEY }}
+          SIMULAR_KEY_2: ${{ secrets.SIMULAR_KEY_2 }}
+          GH_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_TOKEN_ALT: ${{ secrets.GITHUB_TOKEN }}
+        run: bash engine/simular/guard.sh

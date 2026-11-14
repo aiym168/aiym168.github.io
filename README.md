@@ -4,7 +4,39 @@
 **主站（canonical）：** https://aiym168.github.io/  
 **仓库：** https://github.com/aiym168/aiym168.github.io  
 
-由 GitHub Actions 每 6 小时自动抓取、中文整理、构建并推送到 GitHub Pages（零人工）。
+由自动任务抓取、中文整理、构建并推送到 GitHub Pages（零人工）。GitHub 的定时任务不是唯一保证，见下面「自动更新靠什么保证」。
+
+## 自动更新靠什么保证
+
+GitHub Actions 的 `schedule` 会在平台忙的时候被静默丢掉：那一次既不会成功，也不会失败。所以定时任务不是内容更新的唯一保证。公开内容超过 75 分钟，就会跑完整的采集和发布（心跳、只签到的提交不算）。
+
+还有两条不依赖 GitHub 定时器的路：
+
+1. **备用服务器自己的唤醒时刻。** 服务商在每小时的第 19 分和第 49 分把服务器叫醒，并保持 20 分钟。服务器里的任务在第 20 分和第 50 分检查；内容已经旧于 75 分钟就发布。这个唤醒不需要有人去开机。两次唤醒之间留有空隙，避免上一段“保持醒着”的结束和下一次唤醒撞在同一分钟、服务器反而继续睡过整点。
+2. **仓库以外的免费定时请求。** 它调用 GitHub 的 `repository_dispatch`，流水线跑在 GitHub 托管的机器上。备用服务器可以一直睡着，GitHub 的定时器也可以被丢掉。这一条要等下面的一次性设置做完，并且本变更已经在默认分支上，才会开始。
+
+错过的定时点写在 `data/_internal_status.json` 的 `schedule_health` 里：内容年龄、引擎 A 缺了哪几次、看门狗缺了哪几次。看门狗每次实际跑完会把这份记录提交上去，提交说明是「status check」，那不是一次内容更新。对外页面不写这些。
+
+### 需要你做的一次设置（免费）
+
+没有这一步时，第 1 条仍然有效。第 2 条要等令牌和定时任务建好。
+
+1. 打开 GitHub → Settings → Developer settings → Fine-grained tokens → Generate new token。
+2. 只选择仓库 `aiym168/aiym168.github.io`。权限只给 **Contents: Read and write**。设一个到期日；到期前换一次令牌，否则外部定时会悄悄停掉。这个令牌能推送本仓库的代码，不要写进仓库，也不要发给别人。
+3. 打开 https://cron-job.org 注册（服务本身不收费，最短可以每分钟一次）。新建一个任务：
+   - 地址：`https://api.github.com/repos/aiym168/aiym168.github.io/dispatches`
+   - 时间：每 15 分钟
+   - 方法：POST
+   - 请求头：
+     - `Accept: application/vnd.github+json`
+     - `Authorization: Bearer <刚生成的令牌>`
+     - `X-GitHub-Api-Version: 2022-11-28`
+     - `Content-Type: application/json`
+   - 正文：`{"event_type":"keepalive"}`
+4. 用它的测试运行。GitHub 返回 **204**（没有正文）就是成功。Actions 里会出现 “External keepalive”。
+5. 本变更进入默认分支后，在 Actions 里手动运行一次 “Watchdog (self-heal)”，把备用服务器的唤醒窗口写成上面的新时刻。不跑的话，要等下一次看门狗或这次外部保活自己去写。服务器上的钟点会在它下一次启动任务时自己改过来。
+
+也可以不建 cron-job.org，改用任何能发带请求头的 POST 的免费定时器，地址和正文同上。
 
 ## 功能
 

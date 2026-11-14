@@ -1,13 +1,20 @@
 #!/usr/bin/env bash
 # Idempotent installer for a server engine on a Simular box. Safe to re-run (also run at login/boot).
 # Identity comes from ~/.engine.conf (not in the repo):
-#   ENGINE_ID=B ENGINE_MINUTE=25            first server (default when the file is missing)
+#   ENGINE_ID=B                             first server (minutes from schedule_health.py; ENGINE_MINUTE is ignored)
 #   ENGINE_ID=C SITE_ENGINE=0 RADIO=1 STATION=1   second server: no site updates, runs its own station site + audio briefing
 set -uo pipefail
 U="${SUDO_USER:-$(id -un)}"; H="$(getent passwd "$U" | cut -d: -f6)"
 E="$H/engine"
 [ -r "$H/.engine.conf" ] && . "$H/.engine.conf"
-EID="${ENGINE_ID:-B}"; eid="$(printf '%s' "$EID" | tr 'A-Z' 'a-z')"; MIN="${ENGINE_MINUTE:-25}"
+EID="${ENGINE_ID:-B}"; eid="$(printf '%s' "$EID" | tr 'A-Z' 'a-z')"
+# Engine B's minutes come from the repo (schedule_health.py / engine/wake.json), not from a
+# single ENGINE_MINUTE that can sit outside the provider wake window.
+if [ "$EID" = "B" ]; then
+  MINS="$(python3 "$E/schedule_health.py" timer-minutes 2>/dev/null || echo 20,50)"
+else
+  MINS="${ENGINE_MINUTE:-55}"
+fi
 chmod +x "$E/engine/engine_b.sh" "$E/engine/pipeline.sh" "$E/engine/resume_tick.sh" "$E/engine/radio_run.sh" 2>/dev/null || true
 grep -qxF 'logs/' "$E/.git/info/exclude" 2>/dev/null || printf 'logs/\n.lock\n.tick\n' >> "$E/.git/info/exclude"
 
@@ -29,8 +36,8 @@ sudo -n tee /etc/systemd/system/engine-$eid.timer >/dev/null <<UNIT
 [Unit]
 Description=Run aiym168 server engine $EID hourly
 [Timer]
-OnCalendar=*-*-* *:$MIN:00 Asia/Shanghai
-OnBootSec=4min
+OnCalendar=*-*-* *:$MINS:00 Asia/Shanghai
+OnBootSec=90s
 Persistent=true
 AccuracySec=30s
 [Install]
@@ -50,7 +57,9 @@ sudo -n tee /etc/systemd/system/engine-$eid-resume.timer >/dev/null <<UNIT
 [Unit]
 Description=Detect wake-up of the box every 5 min and run engine $EID after a sleep
 [Timer]
+OnBootSec=45s
 OnCalendar=*:0/5
+Persistent=true
 AccuracySec=20s
 [Install]
 WantedBy=timers.target
@@ -97,7 +106,7 @@ if command -v crontab >/dev/null 2>&1; then
   sudo -n systemctl enable --now cron >/dev/null 2>&1 || true
   ( crontab -l 2>/dev/null | grep -v -E 'engine/engine_b.sh|engine/radio_run.sh|^CRON_TZ' ; \
     echo "CRON_TZ=Asia/Shanghai"; \
-    [ "${SITE_ENGINE:-1}" = "1" ] && echo "$MIN * * * * $E/engine/engine_b.sh >/dev/null 2>&1"; \
+    [ "${SITE_ENGINE:-1}" = "1" ] && echo "$MINS * * * * $E/engine/engine_b.sh >/dev/null 2>&1"; \
     [ "${SITE_ENGINE:-1}" = "1" ] && echo "@reboot sleep 240 && $E/engine/engine_b.sh >/dev/null 2>&1"; \
     [ "${RADIO:-0}" = "1" ] && echo "33 8,20 * * * $E/engine/radio_run.sh >/dev/null 2>&1" ) | awk '!seen[$0]++' | crontab -
 fi
@@ -112,4 +121,4 @@ Exec=bash -c "sleep 30; bash $E/engine/install_box.sh >> $E/logs/install.log 2>&
 X-GNOME-Autostart-enabled=true
 NoDisplay=true
 DESK
-echo "[install] engine $EID at :$MIN radio=${RADIO:-0} done"; systemctl list-timers "engine-$eid.timer" radio.timer --no-pager | head -4; crontab -l 2>/dev/null | grep -E 'engine_b|radio|CRON_TZ' || true
+echo "[install] engine $EID at :$MINS radio=${RADIO:-0} done"; systemctl list-timers "engine-$eid.timer" radio.timer --no-pager | head -4; crontab -l 2>/dev/null | grep -E 'engine_b|radio|CRON_TZ' || true
