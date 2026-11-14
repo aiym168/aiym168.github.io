@@ -1,28 +1,9 @@
 {
   "date": "2026-11-14",
-  "updated_at": "2026-11-14T10:11+08:00",
-  "updated_at_label": "2026-11-14 10:11 Asia/Shanghai",
+  "updated_at": "2026-11-14T12:25+08:00",
+  "updated_at_label": "2026-11-14 12:25 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
-    {
-      "id": "hn-50492141",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Anthropic 升级 Claude Code，支持无人值守并行 AI 工作进程",
-      "summary": "Anthropic 升级 Claude Code 项目，免提运行并行 AI 工作人员",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "toppa33",
-      "url": "https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free",
-      "posted_at": "2026-11-14 08:28 Asia/Shanghai",
-      "engagement": {
-        "points": 24,
-        "comments": 6
-      },
-      "original_title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
-      "original_summary": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free ",
-      "translated_by": "model"
-    },
     {
       "id": "hn-50492076",
       "source": "Hacker News",
@@ -282,11 +263,30 @@
       "url": "https://github.com/FrigadeHQ/yogurt",
       "posted_at": "2026-11-11 23:33 Asia/Shanghai",
       "engagement": {
-        "points": 297,
+        "points": 298,
         "comments": 113
       },
       "original_title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
       "original_summary": "Show HN: Yogurt – Free, private, open-source alternative to Granola Hey HN, I’m Eric and I want to share an OSS project that I’ve been building in my free time. Yogurt is a free, MIT licensed desktop app that uses on-device AI models to transcribe, summarize, and chat with your meetings.<p>Here&#x27;s a quick demo video: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=BFfbXAwRq98\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=BFfbXAwRq98</a><p>Similar to Granola, Yogurt runs in the background and does not join your calls. But unlike Granola, Yogurt is open-source, free to use, and private. Your meeting transcripts, call recordings, and summaries never leave your computer.<p>As small OSS models have gotten faster and more powerful, Yogurt seemed like a pretty obvious",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50448400",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Rystic 提供 Slack、GitHub 和 Linear 的有状态本地模拟器",
+      "summary": "Rystic 在本地和 CI 中模拟 Slack、GitHub、Linear 服务，用于低成本验证 AI 生成的代码。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "evan_whitehouse",
+      "url": "https://www.rystic.ai",
+      "posted_at": "2026-11-11 08:44 Asia/Shanghai",
+      "engagement": {
+        "points": 4,
+        "comments": 0
+      },
+      "original_title": "Show HN: Rystic – Stateful Local Simulators of Slack, GitHub and Linear",
+      "original_summary": "Show HN: Rystic – Stateful Local Simulators of Slack, GitHub and Linear Hi HN, we&#x27;re Zach and Evan, founders of Rystic (<a href=\"https:&#x2F;&#x2F;www.rystic.ai\">https:&#x2F;&#x2F;www.rystic.ai</a>). As LLMs have progressed, producing code has become fast and cheap but verification has not. At my previous company I noticed that whenever I could test a service locally or in CI this bottleneck went away. If a service needed to use a shared sandbox or staging environment to run integration tests, verification was a huge pain. At Rystic we are taking that idea and applying it to every third-party service. We are trying to give developers a way to verify that their code works without calling real systems.<p>To do this, we build deterministic simulators of APIs like Slack, Stripe and S3. Yo",
       "translated_by": "model"
     },
     {
@@ -339,8 +339,8 @@
       "url": "https://news.ycombinator.com/item?id=50491617",
       "posted_at": "2026-11-14 07:26 Asia/Shanghai",
       "engagement": {
-        "points": 17,
-        "comments": 3
+        "points": 27,
+        "comments": 9
       },
       "original_title": "Tell HN: Google Search to start locking down search behind a login wall",
       "original_summary": "Tell HN: Google Search to start locking down search behind a login wall Usually, when I used Google Search on some ISP CGNAT IP addresses (not even a VPN), I usually get countless CAPTCHAs evertime I initiate a new session to Google Search on a new private browsing window (probably an artifact from residential proxy botnets).<p>Recently, in addition to that, they started to just lock the entire search results page behind a login prompt on some of those bad IP addresses (like YouTube does for some time with the &quot;Sign in to confirm you&#x27;re not a bot&quot; prompt). This potentially makes the service less accessible, especially for those using a shared&#x2F;public computers.<p>I did not even get this prompt on some VPN IPs, and even no CAPTCHAs at all, even with a free one like given ",
@@ -434,7 +434,7 @@
       "url": "https://apron.chat/",
       "posted_at": "2026-11-13 00:52 Asia/Shanghai",
       "engagement": {
-        "points": 56,
+        "points": 57,
         "comments": 4
       },
       "original_title": "Show HN: Apron Chat Protocol",
@@ -594,23 +594,77 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50479949",
+      "id": "hn-50476872",
       "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "AI-drop 项目可快速拦截异常爬虫流量，采用 AGPL 开源许可",
-      "summary": "项目源于 rocketgit.com 每日请求量达400万而非数千，附8页演示文档。",
+      "category": "大模型 API 免费额度",
+      "title": "共享在线 Etch A Sketch 画板：一条连续线，或调用免费 API",
+      "summary": "一块 4000×4000 共享画布，可实时看到他人画笔移动，如同真玩具只能画一条连续线，也能用免费 API 作画。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "catab",
-      "url": "https://rocketgit.com/user/catalinux/ai-drop",
-      "posted_at": "2026-11-13 16:05 Asia/Shanghai",
+      "author": "ipgarden",
+      "url": "https://graciegould.com/etch-a-sketch-live",
+      "posted_at": "2026-11-13 09:20 Asia/Shanghai",
       "engagement": {
-        "points": 2,
+        "points": 1,
         "comments": 0
       },
-      "original_title": "Show HN: AI-drop project – drop traffic fast from misbehaving crawlers (AGPL)",
-      "original_summary": "Show HN: AI-drop project – drop traffic fast from misbehaving crawlers (AGPL) Hello!<p>All started with 4 million requests &#x2F; day on rocketgit.com (AGPL git hosting).\nInstead of thousands. Enough is enough!<p>Presentation (8 pages):\n<a href=\"https:&#x2F;&#x2F;rocketgit.com&#x2F;user&#x2F;catalinux&#x2F;ai-drop&#x2F;artefacts&#x2F;download&#x2F;docs&#x2F;pre1.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;rocketgit.com&#x2F;user&#x2F;catalinux&#x2F;ai-drop&#x2F;artefacts&#x2F;downl...</a><p>So, I built AI-drop free-software project (AGPL) to block this kind of crawlers.\nrocketgit.com has a very restrictive robots.txt (only around 10 pages are allowed).\nBut the crawlers are not respecting it. So, who is not respecting it will be blocked.<p>Limiting by IP or user-agent is not working anymore. The ",
+      "original_title": "Show HN: A shared live Etch A Sketch – one continuous line, or draw via API",
+      "original_summary": "Show HN: A shared live Etch A Sketch – one continuous line, or draw via API I made a live Etch A Sketch that everyone draws on together. It&#x27;s one shared 4000×4000 canvas, and you see other people&#x27;s pens moving in real time. Like the real toy, you only get one continuous line and can only draw or erase.<p>If you want to draw something more intricate, there&#x27;s a free API you can post your stroke coordinates strokes to: <a href=\"https:&#x2F;&#x2F;graciegould.com&#x2F;api&#x2F;etch&#x2F;stroke\" rel=\"nofollow\">https:&#x2F;&#x2F;graciegould.com&#x2F;api&#x2F;etch&#x2F;stroke</a> (example under the API button on the page).<p>I&#x27;d love feedback on how the drawing feels and on the API. No profanity please.",
       "translated_by": "model"
+    },
+    {
+      "id": "v2ex-1257016",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "送的 100$ API 额度，用了大约 6000 万 token 后耗尽了， astra-中",
+      "summary": "送的 100$ API 额度，用了大约 6000 万 token 后耗尽了， astra-中\nResponses API 返回 failed [credit_balance_exhausted]：You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "jiuzhougege",
+      "url": "https://www.v2ex.com/t/1257016",
+      "posted_at": "2026-11-14 12:20 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "送的 100$ API 额度，用了大约 6000 万 token 后耗尽了， astra-中",
+      "original_summary": "送的 100$ API 额度，用了大约 6000 万 token 后耗尽了， astra-中\nResponses API 返回 failed [credit_balance_exhausted]：You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1257007",
+      "source": "V2EX",
+      "category": "AI 产品会员/试用",
+      "title": "做了个免费的 3MF / STL 互转工具，文件不用上传，浏览器本地转换",
+      "summary": "做了个免费的 3MF / STL 互转工具，文件不用上传，浏览器本地转换\n最近处理 3D 打印模型时，遇到两个需求：下载的是 3MF ，但后续软件或协作方需要 STL ； STL 文件又比较大，想换成更方便保存和分享的格式。\r\n\r\n于是做了个小工具「形转」：\r\n- 3MF → STL：提取模型几何，交给需要 STL 的软件或打印服务。\r\n- STL → 3MF：压缩存储，方便保存和分享，并记录指定的模型单位。\r\n地址： https://model.white-box.cc\r\n\r\n免费使用，无需注册，转换在浏览器后台线程中完成，模型文件不会上传到服务器。\r\n\r\n用手头一个约 187 万三角面的模型测试，约 93 MB 的 STL 转成了 36.5 MB 的 3MF ，逐项校验后三角面顶点坐标保持一致。没有做减面，压缩效果因模型而异。\r\n\r\n当前支持：\r\n- 3MF 输入最大 50 MB ，STL 输入最大 200 MB 。\r\n- 最多 300 万个三角面。\r\n- 3MF 模型数据解压后最大 300 MB 。\r\n工具只转换模型几何，不保留颜色、材质和打印配置，也不会将网格重建为参数化 CAD 模型。\r\n\r\n欢迎试用和反馈，尤其是不同切片软件导出的 3MF 兼容性问题。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "fatelei",
+      "url": "https://www.v2ex.com/t/1257007",
+      "posted_at": "2026-11-14 10:59 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "做了个免费的 3MF / STL 互转工具，文件不用上传，浏览器本地转换",
+      "original_summary": "做了个免费的 3MF / STL 互转工具，文件不用上传，浏览器本地转换\n最近处理 3D 打印模型时，遇到两个需求：下载的是 3MF ，但后续软件或协作方需要 STL ； STL 文件又比较大，想换成更方便保存和分享的格式。\r\n\r\n于是做了个小工具「形转」：\r\n- 3MF → STL：提取模型几何，交给需要 STL 的软件或打印服务。\r\n- STL → 3MF：压缩存储，方便保存和分享，并记录指定的模型单位。\r\n地址： https://model.white-box.cc\r\n\r\n免费使用，无需注册，转换在浏览器后台线程中完成，模型文件不会上传到服务器。\r\n\r\n用手头一个约 187 万三角面的模型测试，约 93 MB 的 STL 转成了 36.5 MB 的 3MF ，逐项校验后三角面顶点坐标保持一致。没有做减面，压缩效果因模型而异。\r\n\r\n当前支持：\r\n- 3MF 输入最大 50 MB ，STL 输入最大 200 MB 。\r\n- 最多 300 万个三角面。\r\n- 3MF 模型数据解压后最大 300 MB 。\r\n工具只转换模型几何，不保留颜色、材质和打印配置，也不会将网格重建为参数化 CAD 模型。\r\n\r\n欢迎试用和反馈，尤其是不同切片软件导出的 3MF 兼容性问题。",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1257003",
+      "source": "V2EX",
+      "category": "AI 产品会员/试用",
+      "title": "开发了一个 Windows 版类似 typora 的原生 markdown 编辑器，永久免费，欢迎试用。",
+      "summary": "开发了一个 Windows 版类似 typora 的原生 markdown 编辑器，永久免费，欢迎试用。\n以 typora 为核心，参考了 Bear 和飞书文档，做了个原生 markdown 编辑器。\r\n主要是不想使用破解的 typora ，其他产品也都不怎么好用，所以造个轮子。\r\n永远免费，也永远不挂广告。纯单机，没有任何联网功能。\r\n欢迎使用。windows store 里搜“如言”。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "tiyee",
+      "url": "https://www.v2ex.com/t/1257003",
+      "posted_at": "2026-11-14 10:12 Asia/Shanghai",
+      "engagement": {
+        "replies": 3
+      },
+      "original_title": "开发了一个 Windows 版类似 typora 的原生 markdown 编辑器，永久免费，欢迎试用。",
+      "original_summary": "开发了一个 Windows 版类似 typora 的原生 markdown 编辑器，永久免费，欢迎试用。\n以 typora 为核心，参考了 Bear 和飞书文档，做了个原生 markdown 编辑器。\r\n主要是不想使用破解的 typora ，其他产品也都不怎么好用，所以造个轮子。\r\n永远免费，也永远不挂广告。纯单机，没有任何联网功能。\r\n欢迎使用。windows store 里搜“如言”。",
+      "translated_by": "free-translate"
     },
     {
       "id": "v2ex-1256998",
@@ -624,7 +678,7 @@
       "url": "https://www.v2ex.com/t/1256998",
       "posted_at": "2026-11-14 09:54 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 5
       },
       "original_title": "GPT 官 Key 免费用。蹬完即止",
       "original_summary": "GPT 官 Key 免费用。蹬完即止\n周末没人上班，Token 用不完。送给 V2EX 的大佬免费用。\r\n\r\nhttps://pixcook.ai\r\n\r\n\r\nsk-6810902ebc0f3256989f528a8727f2e658fff1d483c0ef2e801ddd94fe83629e\r\n\r\n\r\n我们是做 AI 出海应用的团队，因为自身开发团队的需要，为了降低成本，所以自己购买一些 ChatGPT 账号搭建了一个中转站。\r\n\r\n自有的反代理技术，可以做到稳定不降智，缓存率长期保持在 97%以上的体验，缓存写入长期个位数或者 3 位数以内。\r\n\r\nV2EX 的大佬，如果注册后，回帖留下站内 ID （右上角账户下来菜单中可以查阅），我将送上 5 刀 余额，数量有限，送完即止。",
@@ -642,7 +696,7 @@
       "url": "https://www.v2ex.com/t/1256984",
       "posted_at": "2026-11-14 07:47 Asia/Shanghai",
       "engagement": {
-        "replies": 2
+        "replies": 6
       },
       "original_title": "最近大厂也在 AI 标注平台么",
       "original_summary": "最近大厂也在 AI 标注平台么\n最近大厂也在 AI 标注平台么\r\n\r\n前几天 天猫打了好几次电话\r\n我还以为啥大事\r\n原来是让我注册 他们的 “晓天睿士” 平台，但是搞笑的是 他们网页标题：\r\n![pasted-image.png · 335]( https://img.cdn1.vip/i/6af7a10b8c357_1794613515.webp)\r\n\r\n然后这几天 腾讯也高了一个，认证就能提现 100 现金， 😂 真的薅羊毛么\r\n\r\n![pasted-image.png · 304]( https://img.cdn1.vip/i/6af7a0ab89d7c_1794613419.webp)\r\n\r\n\r\nhttps://experthub.tencent.com/?referral_code=WPNXGE",
@@ -685,75 +739,21 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1256963",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "白嫖 1000 刀 api 额度",
-      "summary": "白嫖 1000 刀 api 额度\nTG 机器人领取： https://t.me/xingchi66bot?start=inv_9086269352",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "jsjgjbzhang",
-      "url": "https://www.v2ex.com/t/1256963",
-      "posted_at": "2026-11-13 23:20 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "白嫖 1000 刀 api 额度",
-      "original_summary": "白嫖 1000 刀 api 额度\nTG 机器人领取： https://t.me/xingchi66bot?start=inv_9086269352",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1256954",
-      "source": "V2EX",
-      "category": "科技软件/App 限免",
-      "title": "ChatGPT plus 打着免费一个月的旗号也太狗了吧",
-      "summary": "ChatGPT plus 打着免费一个月的旗号也太狗了吧\n网页看着有免费一个月，想领来用 codex ，结果支付（招商 visa ）过不了关\r\n\r\n然后用手机 app 尝试支付一下（没有显示免费），结果用 google pay +手续费 21 刀就支付出去了",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "lyfxmw",
-      "url": "https://www.v2ex.com/t/1256954",
-      "posted_at": "2026-11-13 22:57 Asia/Shanghai",
-      "engagement": {
-        "replies": 6
-      },
-      "original_title": "ChatGPT plus 打着免费一个月的旗号也太狗了吧",
-      "original_summary": "ChatGPT plus 打着免费一个月的旗号也太狗了吧\n网页看着有免费一个月，想领来用 codex ，结果支付（招商 visa ）过不了关\r\n\r\n然后用手机 app 尝试支付一下（没有显示免费），结果用 google pay +手续费 21 刀就支付出去了",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1256714",
-      "source": "V2EX",
-      "category": "AI 产品会员/试用",
-      "title": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖",
-      "summary": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖\n做 Ebb 的初衷就一句话：想要一个好看、原生、轻量的系统监控软件。\r\n\r\n好看：我很喜欢 tw93 的 Mole ，克制、干净，又有点小趣味，Ebb 整体的设计气质就是参考 Mole 做的。每一页都有自己的图表，比如处理器是\"核心花\"，内存是\"气泡\"，网络是\"星图\"。\r\n\r\n原生、轻量：SwiftUI 原生开发，不套壳。数据全部存在本机，不上传。\r\n\r\n除了好看，也塞了几个我自己天天用的功能：\r\n\r\n- 刚才怎么了：按 ⌃⌥E 回放最近 60 秒，看是哪个进程在哪一秒把 CPU 吃满了\r\n- 失控进程：后台进程长时间占着 CPU ，或者内存只涨不降，会直接标出来\r\n- 睡眠体检：合盖再打开，告诉你睡了多久、掉了多少电、被唤醒了几次\r\n- 菜单栏面板：负载、网速、蓝牙设备电量，扫一眼就够了\r\n\r\n支持 macOS 13 及以上，Apple 芯片和 Intel 都能用。免费试用 14 天，之后 5 美元买断。\r\n\r\n官网： https://ebbapp.top\r\n\r\n [送码] \r\n准备了 15 个激活码。在楼下回复你的使用建议、吐槽或者想要的功能，说一句\"好看\"也行。回复时请附上 base64 编码后的邮箱，我会从回复里挑 15 位，把激活码发到邮箱。\r\n\r\n才刚上线，肯定有不少毛病，欢迎大家狠狠提意见，我都会看。\r\n\r\n部分截图：\r\n\r\n亮色：\r\n\r\n![总览]( https://img.cdn1.vip/i/6af671417c5e0_1794535745.webp)\r\n![处理器]( https://img.cdn1.vip/i/6af6713d0c63f_1794535741.webp)\r\n![能耗]( https://img.cdn1.vip/i/6af6713d64dcb_17945",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "murongxdb",
-      "url": "https://www.v2ex.com/t/1256714",
-      "posted_at": "2026-11-13 10:21 Asia/Shanghai",
-      "engagement": {
-        "replies": 81
-      },
-      "original_title": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖",
-      "original_summary": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖\n做 Ebb 的初衷就一句话：想要一个好看、原生、轻量的系统监控软件。\r\n\r\n好看：我很喜欢 tw93 的 Mole ，克制、干净，又有点小趣味，Ebb 整体的设计气质就是参考 Mole 做的。每一页都有自己的图表，比如处理器是\"核心花\"，内存是\"气泡\"，网络是\"星图\"。\r\n\r\n原生、轻量：SwiftUI 原生开发，不套壳。数据全部存在本机，不上传。\r\n\r\n除了好看，也塞了几个我自己天天用的功能：\r\n\r\n- 刚才怎么了：按 ⌃⌥E 回放最近 60 秒，看是哪个进程在哪一秒把 CPU 吃满了\r\n- 失控进程：后台进程长时间占着 CPU ，或者内存只涨不降，会直接标出来\r\n- 睡眠体检：合盖再打开，告诉你睡了多久、掉了多少电、被唤醒了几次\r\n- 菜单栏面板：负载、网速、蓝牙设备电量，扫一眼就够了\r\n\r\n支持 macOS 13 及以上，Apple 芯片和 Intel 都能用。免费试用 14 天，之后 5 美元买断。\r\n\r\n官网： https://ebbapp.top\r\n\r\n [送码] \r\n准备了 15 个激活码。在楼下回复你的使用建议、吐槽或者想要的功能，说一句\"好看\"也行。回复时请附上 base64 编码后的邮箱，我会从回复里挑 15 位，把激活码发到邮箱。\r\n\r\n才刚上线，肯定有不少毛病，欢迎大家狠狠提意见，我都会看。\r\n\r\n部分截图：\r\n\r\n亮色：\r\n\r\n![总览]( https://img.cdn1.vip/i/6af671417c5e0_1794535745.webp)\r\n![处理器]( https://img.cdn1.vip/i/6af6713d0c63f_1794535741.webp)\r\n![能耗]( https://img.cdn1.vip/i/6af6713d64dcb_17945",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-pacocartones-free-llm-api-hub",
+      "id": "ghdeal-td685548-sketch-freellmapi-custom",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "pacocartones/free-llm-api-hub 汇总持续验证的免费 LLM API",
-      "summary": "面向开发者，提供按提供商文档标注日期、机器可读的免费额度与试用额度 LLM API 数据集。",
+      "title": "freellmapi-custom：多供应商 LLM API 网关与代理面板",
+      "summary": "支持 token 路由、模型回退和智能组合的自建 LLM API 网关与代理管理面板。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "pacocartones",
-      "url": "https://github.com/pacocartones/free-llm-api-hub",
-      "posted_at": "2026-11-14 09:54 Asia/Shanghai",
+      "author": "td685548-sketch",
+      "url": "https://github.com/td685548-sketch/freellmapi-custom",
+      "posted_at": "2026-11-12 23:12 Asia/Shanghai",
       "engagement": {
-        "stars": 121
+        "stars": 0
       },
-      "original_title": "pacocartones/free-llm-api-hub",
-      "original_summary": "pacocartones/free-llm-api-hub A continuously-verified dataset of free-tier & trial-credit LLM APIs for developers. Every entry dated, sourced to the provider's own docs, and machine-readable. No hype, no dead links.",
+      "original_title": "td685548-sketch/freellmapi-custom",
+      "original_summary": "td685548-sketch/freellmapi-custom Custom multi-provider LLM API gateway and proxy management dashboard with token routing, model fallbacks, and smart combos.",
       "translated_by": "model"
     },
     {
