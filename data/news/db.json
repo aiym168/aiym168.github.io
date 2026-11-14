@@ -1,41 +1,25 @@
 {
- "updated_at": "2026-11-14T20:39:16+08:00",
+ "updated_at": "2026-11-14T20:39:11+08:00",
  "counts": {
   "ai": 220,
-  "aigc": 75,
   "dev": 150,
+  "gossip": 60,
   "software": 150,
-  "huawei": 150,
   "game": 150,
   "science": 150,
   "internet": 150,
   "chip": 150,
   "mobile": 150,
-  "gossip": 59,
   "launch": 150,
+  "aigc": 74,
   "aivideo": 150,
+  "huawei": 150,
   "aidrama": 150,
   "comfyui": 60,
   "auto": 150,
   "space": 81
  },
  "items": [
-  {
-   "id": "e541bc976e46",
-   "channel": "ai",
-   "title": "如何为黑客松项目制作AI演示视频",
-   "title_orig": "How I Create AI Demo Videos for My Hackathon Projects",
-   "summary": "用本地LLM配合vLLM、Edge TTS和AI工具，把项目演示做成清晰有吸引力的视频。",
-   "summary_orig": "Using a local LLM with vLLM, Microsoft Edge TTS, and AI tools to turn project demos into clear, engaging videos. workspace\" width=\"1600\" height=\"900\"> Why I built this workflow Building a hackathon project is only half the work. You also need to explain the problem, show the product working, and make the value obvious to judges.",
-   "url": "https://dev.to/sumit0rn/how-i-create-ai-demo-videos-for-my-hackathon-projects-33l0",
-   "hn": "",
-   "source": "DEV",
-   "source_key": "dev-to-feed",
-   "source_home": "https://dev.to/",
-   "lang": "en",
-   "published_at": "2026-11-14T20:39:17+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
-  },
   {
    "id": "93958f67012a",
    "channel": "ai",
@@ -49,127 +33,127 @@
    "source_key": "hf-trending",
    "source_home": "https://huggingface.co/models",
    "lang": "tpl",
-   "published_at": "2026-11-14T20:39:16+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "published_at": "2026-11-14T20:39:11+08:00",
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
-   "id": "31fcb3ef9f4b",
-   "channel": "aigc",
-   "title": "如何在Python中使用SQLite而无需安装数据库服务器",
-   "title_orig": "📝 How to Use SQLite in Python (Without Installing a Database Server)",
-   "summary": "轻量应用、本地脚本或受限硬件无需数据库服务器，SQLite即可满足。",
-   "summary_orig": "When developers think of databases, they usually think of PostgreSQL, MySQL, or MongoDB. They think of servers, ports, and complex installations. But if you are building a lightweight app, a local script, or an AI tool on constrained hardware (like an Android phone via Termux), you don't need a database server. You need SQLite.",
-   "url": "https://dev.to/ezenwa_christian_5243b406/how-to-use-sqlite-in-python-without-installing-a-database-server-17g9",
-   "hn": "",
-   "source": "DEV",
-   "source_key": "dev-to-feed",
-   "source_home": "https://dev.to/",
-   "lang": "en",
-   "published_at": "2026-11-14T20:38:53+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
-  },
-  {
-   "id": "d7e75b07110f",
-   "channel": "dev",
-   "title": "用笔记本摄像头替代3000美元眼动仪，构建免手控空间通信器",
-   "title_orig": "I Replaced $3,000 Eye-Trackers with a Laptop Webcam: Building a Hands-Free Spatial Communicator with SmartSpectra",
-   "summary": "基于Presage SmartSpectra SDK，为严重运动与语言障碍者提供低成本免手控AAC方案。",
-   "summary_orig": "This is a submission for the Presage SmartSpectra SDK Challenge What I Built Traditional Augmentative and Alternative Communication (AAC) systems for people with severe motor and speech impairments (such as ALS, high-level quadriplegia, or locked-in syndrome) force an impossible trade-off: spend $3,000+ on specialized infrared eye-tracking hardware , or endu",
-   "url": "https://dev.to/akul_9512534b6f460d338911/i-replaced-3000-eye-trackers-with-a-laptop-webcam-building-a-hands-free-spatial-communicator-522l",
-   "hn": "",
-   "source": "DEV",
-   "source_key": "dev-to-feed",
-   "source_home": "https://dev.to/",
-   "lang": "en",
-   "published_at": "2026-11-14T20:38:31+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
-  },
-  {
-   "id": "87fb40249eae",
+   "id": "1794e785df42",
    "channel": "ai",
-   "title": "Cursor泄露事件：Fireworks密钥暴露引发连锁",
-   "title_orig": "Brecha de Cursor: la clave de Fireworks abrió la cadena",
-   "summary": "报告称攻击者获取Cursor发给Fireworks AI的访问密钥，该密钥在供应商侧暴露。",
-   "summary_orig": "La brecha de Cursor empezó con una clave de Fireworks. El informe completo, publicado el 13 de noviembre tras dos semanas de investigación, cuenta que no hubo un fallo del editor: un atacante obtuvo una clave de acceso que Cursor había emitido para Fireworks AI, su proveedor de inferencia y entrenamiento, y esa clave quedó expuesta en el lado del proveedor.",
-   "url": "https://dev.to/henryramireztech/brecha-de-cursor-la-clave-de-fireworks-abrio-la-cadena-2ofb",
+   "title": "Claude Duet 会主动联系你，控制权归属随之改变",
+   "title_orig": "Claude Duet Messages You First. That Changes Who Is in Control.",
+   "summary": "Anthropic于2026年10月21日开放Claude Duet研究预览，Claude可监控关联账户、预先准备工作并主动发消息。",
+   "summary_orig": "On October 21, 2026, Anthropic opened a research preview of Claude Duet, an app where Claude works as a proactive agent: it watches your connected accounts, prepares work while you are away, and messages you when something needs you. The interesting part is not that Claude can now start the conversation.",
+   "url": "https://dev.to/suraj_khaitan_f893c243958/claude-duet-messages-you-first-that-changes-who-is-in-control-3n74",
    "hn": "",
    "source": "DEV",
    "source_key": "dev-to-feed",
    "source_home": "https://dev.to/",
    "lang": "en",
-   "published_at": "2026-11-14T20:37:42+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "published_at": "2026-11-14T20:32:20+08:00",
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
-   "id": "6bc8465b9949",
+   "id": "0c73aee0153c",
    "channel": "dev",
-   "title": "从AWS视角看Snowflake Storage for Iceberg",
-   "title_orig": "Snowflake Storage for Iceberg from an AWS Perspective",
-   "summary": "Snowflake Storage for Apache Iceberg表的备份功能已正式可用。",
-   "summary_orig": "",
-   "url": "https://dev.to/aws-builders/snowflake-storage-for-iceberg-from-an-aws-perspective-44od",
+   "title": "隐形画笔：生成艺术与作画算法",
+   "title_orig": "The Invisible Brush: Generative Art and the Algorithms That Paint",
+   "summary": "一篇长文用Clojure和Quil探索程序化内容生成，把它当作创作引擎。",
+   "summary_orig": "A long-form exploration of Procedural Content Generation as a creative engine — with Clojure and Quil. There is a particular kind of wonder that comes from watching something grow on a screen that you did not draw. A tree that branches unpredictably. A coastline that stretches further than any hand could trace. A galaxy of stars no astronomer catalogued.",
+   "url": "https://dev.to/ganesh_rajendran_art/the-invisible-brush-generative-art-and-the-algorithms-that-paint-32ig",
    "hn": "",
    "source": "DEV",
    "source_key": "dev-to-feed",
    "source_home": "https://dev.to/",
    "lang": "en",
-   "published_at": "2026-11-14T20:37:25+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "published_at": "2026-11-14T20:32:16+08:00",
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
-   "id": "50ce8be67de8",
-   "channel": "ai",
-   "title": "JARVIS Chat将于11月20日推出，带来新AI体验",
-   "title_orig": "🚀 Introducing JARVIS Chat: A New AI Experience Launching November 20!",
-   "summary": "由400个AI模型驱动，官方宣布于2026年11月20日星期五正式上线。",
-   "summary_orig": "One Platform. Multiple Possibilities. Powered by 400 AI Models. The future of AI interaction is getting closer! I'm excited to announce that JARVIS Chat is officially launching on Friday, November 20, 2026. JARVIS is not just another AI chatbot.",
-   "url": "https://dev.to/madhu_01a88ee43799e4c0bd9/introducing-jarvis-chat-a-new-ai-experience-launching-november-20-4b3b",
-   "hn": "",
-   "source": "DEV",
-   "source_key": "dev-to-feed",
-   "source_home": "https://dev.to/",
-   "lang": "en",
-   "published_at": "2026-11-14T20:37:18+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
-  },
-  {
-   "id": "7dd72fbfc081",
-   "channel": "ai",
-   "title": "我没给AI团队史诗任务，而是给了定义",
-   "title_orig": "I Didn't Give My AI Team Its Epics. I Gave It a Definition of One.",
-   "summary": "作者在11月14日向AI团队说明工作室对epic的含义，并两次重写定义。",
-   "summary_orig": "\"If you build the overview at the very end and find out it doesn't hold together, are you going to redo every admin screen? Is that how people normally work?\" I wrote that to my AI team at 10:36 on November 14. The day before, I had rewritten what the studio means by an epic, twice.",
-   "url": "https://dev.to/shinpr/i-didnt-give-my-ai-team-its-epics-i-gave-it-a-definition-of-one-2pgf",
-   "hn": "",
-   "source": "DEV",
-   "source_key": "dev-to-feed",
-   "source_home": "https://dev.to/",
-   "lang": "en",
-   "published_at": "2026-11-14T20:37:00+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
-  },
-  {
-   "id": "254e5a6e9824",
+   "id": "2fb2715eea0b",
    "channel": "dev",
-   "title": "本周测试并修复Web应用中的OWASP Top 10 2025问题",
-   "title_orig": "Test and fix the OWASP Top 10 2025 in your web app this week",
-   "summary": "针对当前OWASP Top 10的实用测试清单，仅可用于自有或获授权的应用。",
-   "summary_orig": "This article was first published on the Rokkhe blog on Hashnode . It was drafted with AI assistance and reviewed and edited by the Rokkhe team; all commands and sources were checked against OWASP's documentation. A practical testing checklist for the current OWASP Top 10, run only against applications you own or are authorized to test.",
-   "url": "https://dev.to/rokkhe/test-and-fix-the-owasp-top-10-2025-in-your-web-app-this-week-1bnp",
+   "title": "事件ID 4673泛滥：安全日志为何写满、电脑为何变慢",
+   "title_orig": "Event ID 4673 flood: why the Security log is full and the PC is slow",
+   "summary": "事件4673表示特权服务被调用；若chrome.exe等每秒产生数十次，日志服务会占满CPU核心并严重滞后。",
+   "summary_orig": "Originally published at coinetic.io . Event 4673 is Windows saying \"A privileged service was called\" . A few a day are normal. Dozens per second, from chrome.exe , msedgewebview2.exe or Code.exe , make the Windows Event Log service eat whole processor cores – and the log falls minutes or hours behind.",
+   "url": "https://dev.to/coinetic_ai_security/event-id-4673-flood-why-the-security-log-is-full-and-the-pc-is-slow-1c7e",
    "hn": "",
    "source": "DEV",
    "source_key": "dev-to-feed",
    "source_home": "https://dev.to/",
    "lang": "en",
-   "published_at": "2026-11-14T20:35:57+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "published_at": "2026-11-14T20:32:08+08:00",
+   "fetched_at": "2026-11-14T20:39:11+08:00"
+  },
+  {
+   "id": "2f785393167d",
+   "channel": "dev",
+   "title": "我删除了 extensions.gnome.org 账户，扩展却仍在线",
+   "title_orig": "I deleted my extensions.gnome.org account. My extensions stayed online.",
+   "summary": "作者2025年12月删除GNOME Shell扩展官方商店账户，本以为三个扩展会一并下架，结果并未发生。",
+   "summary_orig": "In December 2025 I deleted my account on extensions.gnome.org, the official store for GNOME Shell extensions. I expected my three extensions to go with it. They didn't.",
+   "url": "https://dev.to/nickotmazgin/i-deleted-my-extensionsgnomeorg-account-my-extensions-stayed-online-3ig4",
+   "hn": "",
+   "source": "DEV",
+   "source_key": "dev-to-feed",
+   "source_home": "https://dev.to/",
+   "lang": "en",
+   "published_at": "2026-11-14T20:31:55+08:00",
+   "fetched_at": "2026-11-14T20:39:11+08:00"
+  },
+  {
+   "id": "cc71cb936939",
+   "channel": "dev",
+   "title": "保留 .ll 文件：诚实时序数据为何需要 IR",
+   "title_orig": "Keep Your IR Alive: Why the .ll File Matters for Honest Timing",
+   "summary": "运行 csperf run 得到的 JSON 会引用生成的 LLVM IR，常被当作临时文件删掉，其实 IR 才是数字背后的解释。",
+   "summary_orig": "Why this lesson exists When you run csperf run you get a JSON file that contains timing, machine metadata, and a reference to the generated LLVM IR. Many developers delete the .ll file after the run, thinking it’s just a temporary artifact. In reality, the IR is the explanation behind the numbers.",
+   "url": "https://dev.to/aabhinavg/keep-your-ir-alive-why-the-ll-file-matters-for-honest-timing-1h1n",
+   "hn": "",
+   "source": "DEV",
+   "source_key": "dev-to-feed",
+   "source_home": "https://dev.to/",
+   "lang": "en",
+   "published_at": "2026-11-14T20:31:38+08:00",
+   "fetched_at": "2026-11-14T20:39:11+08:00"
+  },
+  {
+   "id": "90113d6fd97a",
+   "channel": "gossip",
+   "title": "自托管 Claude Managed Agents：哪些数据仍会离开你的网络",
+   "title_orig": "Self-hosted Claude Managed Agents: what you run, what still leaves your network",
+   "summary": "Anthropic 于 11 月 12 日开放私有测试，此前只能自托管沙箱，现在整个服务可部署在自有云或本地。",
+   "summary_orig": "Anthropic opened a private beta of self-hosted Claude Managed Agents on Nov 12. Access is by request through your Anthropic account team. Before this, you could self-host the sandbox where an agent's code runs, but Anthropic ran the rest, including credentials and the record of what each agent did. Now the whole service can sit in your cloud or on-prem.",
+   "url": "https://dev.to/thirumalaivasangj3/self-hosted-claude-managed-agents-what-you-run-what-still-leaves-your-network-58kc",
+   "hn": "",
+   "source": "DEV",
+   "source_key": "dev-to-feed",
+   "source_home": "https://dev.to/",
+   "lang": "en",
+   "published_at": "2026-11-14T20:31:31+08:00",
+   "fetched_at": "2026-11-14T20:39:11+08:00"
+  },
+  {
+   "id": "962dd747d858",
+   "channel": "dev",
+   "title": "用 React 19 构建 macOS 风格开发者作品集 HarshitOS",
+   "title_orig": "Building HarshitOS: A macOS-Inspired Developer Portfolio in React 19",
+   "summary": "作者想打破常规作品集模板，用 React 19 打造仿 macOS 界面的个人作品集 HarshitOS。",
+   "summary_orig": "Building HarshitOS: A macOS-Inspired Developer Portfolio in React 19 Most developer portfolios follow a standard recipe: a hero section, an \"About Me\" paragraph, a grid of project cards, and a contact form. When redesigning my portfolio, I wanted to challenge that template.",
+   "url": "https://dev.to/harshit_tiwari_df50f43d2a/building-harshitos-a-macos-inspired-developer-portfolio-in-react-19-1c1a",
+   "hn": "",
+   "source": "DEV",
+   "source_key": "dev-to-feed",
+   "source_home": "https://dev.to/",
+   "lang": "en",
+   "published_at": "2026-11-14T20:30:54+08:00",
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "bd34af6e7597",
    "channel": "ai",
-   "title": "我用Claude Code构建了想要多年的浏览器功能",
+   "title": "我用 Claude Code 做出想要多年的浏览器功能",
    "title_orig": "I used Claude Code to build the browser feature I've been wanting for years",
-   "summary": "与浏览器分手不意味着放弃它最好的功能。",
+   "summary": "原文仅有一句引言，称与浏览器分手并不意味着放弃它最好的功能。",
    "summary_orig": "Breaking up with a browser doesn't mean giving up its best features.",
    "url": "https://www.xda-developers.com/used-claude-code-to-build-the-browser-feature-been-wanting-for-years/",
    "hn": "",
@@ -178,14 +162,14 @@
    "source_home": "https://www.xda-developers.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:30:20+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "e2220eb1089c",
    "channel": "ai",
-   "title": "Claude Code 正悄然成为硬件黑客的得力助手，下一步支持 Linux",
+   "title": "Claude Code 正成为硬件玩家的好帮手，下一步支持 Linux",
    "title_orig": "Claude Code is quietly becoming a hardware hacker's best helper, and Linux support is next",
-   "summary": "Claude Code 正在改变人们折腾硬件的方式。",
+   "summary": "原文称 Claude Code 正在改变人们折腾硬件的方式，并预告将支持 Linux。",
    "summary_orig": "Claude Code is changing how we tinker with hardware.",
    "url": "https://www.xda-developers.com/claude-code-becoming-hardware-hacker-best-helper-linux-support-next/",
    "hn": "",
@@ -194,14 +178,14 @@
    "source_home": "https://www.xda-developers.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:30:20+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "0db7a1a73cd5",
    "channel": "software",
-   "title": "不到100美元可买到25G网卡，但别指望有RJ45端口",
+   "title": "不到100美元可买到25G网卡，但别指望有RJ45接口",
    "title_orig": "You can get a 25G network card for less than $100, but don’t expect an RJ45 port",
-   "summary": "这是超高速以太网方案，但存在若干注意事项。",
+   "summary": "超高速以太网，但存在多项限制。",
    "summary_orig": "Ultra-fast Ethernet, but with a number of caveats.",
    "url": "https://www.howtogeek.com/get-25g-network-card-for-less-than-100-but-dont-expect-an-rj45-port/",
    "hn": "",
@@ -210,30 +194,30 @@
    "source_home": "https://www.howtogeek.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:30:15+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
-   "id": "26d703ee96dd",
-   "channel": "huawei",
-   "title": "【视频】鸿蒙智行大集合！我感兴趣的是这三台车",
-   "title_orig": "",
-   "summary": "",
-   "summary_orig": "",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fZTZDdG9ySWI4UXhaU3VDbWRSVnhwcW9WMXhpa09IeDhIR2tNejB2cFJjOHMwY0xMTFlPN1FZMkV3NkVxaXJPdy0zbm41NGhCMVFSd2ZNRTBNd2s?oc=5",
+   "id": "39e836ec86fc",
+   "channel": "dev",
+   "title": "酒店POS系统夜审：在深夜订单仍到来时结束营业日",
+   "title_orig": "Night Audit for a Hotel POS: Closing the Business Day While Late Orders Are Still Arriving",
+   "summary": "酒店跨日仍运营，客人可能午夜后点客房服务，账目与财务日报需同时处理。",
+   "summary_orig": "A hotel does not stop operating when the calendar day changes. Guests may order room service after midnight, restaurant bills may remain unsettled, and reception teams may continue posting charges while the finance department prepares the daily revenue report.",
+   "url": "https://dev.to/williamsj04/night-audit-for-a-hotel-pos-closing-the-business-day-while-late-orders-are-still-arriving-18il",
    "hn": "",
-   "source": "汽车之家",
-   "source_key": "gn-ascend",
-   "source_home": "https://news.google.com/",
-   "lang": "zh",
-   "published_at": "2026-11-14T20:28:37+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "source": "DEV",
+   "source_key": "dev-to-feed",
+   "source_home": "https://dev.to/",
+   "lang": "en",
+   "published_at": "2026-11-14T20:30:00+08:00",
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "19e563a267e1",
    "channel": "game",
-   "title": "育碧据称正开发新 Rainbow Six Vegas 游戏，距上一作近20年",
+   "title": "Ubisoft据报将开发新的Rainbow Six Vegas游戏",
    "title_orig": "Ubisoft is reportedly making a new Rainbow Six Vegas game, nearly two decades after Vegas 2",
-   "summary": "育碧据称正在制作新的 Rainbow Six Vegas 游戏，距离该系列上一作已过去18年。",
+   "summary": "距上一作已18年，据报育碧正在开发新的Rainbow Six Vegas游戏。",
    "summary_orig": "Ubisoft is reportedly working on a new Rainbow Six Vegas game 18 years after the last entry in the series.",
    "url": "https://www.eurogamer.net/rainbow-six-vegas-new-game-ubisoft-spades-report",
    "hn": "",
@@ -242,14 +226,14 @@
    "source_home": "https://www.eurogamer.net/",
    "lang": "en",
    "published_at": "2026-11-14T20:19:50+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "107a88e61251",
    "channel": "science",
-   "title": "一种简单药片或可治愈高血压的常见病因",
+   "title": "一种简单药片或可治愈常见高血压病因",
    "title_orig": "A Simple Pill Could Cure a Common Cause of High Blood Pressure",
-   "summary": "小型随访研究显示治疗结束后血压可保持较低达两年，提示部分激素驱动的高血压患者或可免于终身服药。",
+   "summary": "小型随访研究显示治疗结束后血压可维持较低达两年，部分激素性高血压患者或可免于终身服药。",
    "summary_orig": "Blood pressure stayed lower for up to two years after treatment ended in a small follow-up study, suggesting some people with hormone-driven hypertension could avoid lifelong medication. For people with a common hormonal cause of high blood pressure, a cure has required surgery to remove an entire adrenal gland. Medication can keep their blood pressure [...]",
    "url": "https://scitechdaily.com/a-simple-pill-could-cure-a-common-cause-of-high-blood-pressure/",
    "hn": "",
@@ -258,14 +242,14 @@
    "source_home": "https://scitechdaily.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:19:16+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "36a3bda31172",
    "channel": "internet",
-   "title": "James Webb 望远镜发现比所环绕恒星更古老的冰",
+   "title": "James Webb望远镜发现比所绕恒星更古老的冰",
    "title_orig": "James Webb telescope finds ice older than the star it orbits",
-   "summary": "辐射和碰撞重塑了行星建筑材料。",
+   "summary": "辐射与碰撞会重塑行星构建材料。",
    "summary_orig": "Radiation and collisions reshape the planetary building materials.",
    "url": "https://arstechnica.com/science/2026/11/james-webb-telescope-finds-ice-older-than-the-star-it-orbits/",
    "hn": "",
@@ -274,14 +258,30 @@
    "source_home": "https://feeds.arstechnica.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:15:48+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
+  },
+  {
+   "id": "9bb5d040a114",
+   "channel": "internet",
+   "title": "苹果重申对 visionOS 平台的长期投入，仍看好空间计算发展前景",
+   "title_orig": "",
+   "summary": "据外媒 Road to VR 报道，苹果本周举办了一场特别的「Meet with Apple」开发者活动，重点围绕旗下空间计算平台 visionOS 展开。在外界数月来持续质疑苹果是否仍将投入 XR 领域的背景下，苹果公司再次强调“仍然看好空间计算平台的发展前景”。 苹果空间计算部门产品经理 Yur…",
+   "summary_orig": "",
+   "url": "https://www.ithome.com/1/027/223.htm",
+   "hn": "",
+   "source": "IT之家",
+   "source_key": "ithome",
+   "source_home": "https://www.ithome.com/",
+   "lang": "zh",
+   "published_at": "2026-11-14T20:15:10+08:00",
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "7471e2333103",
    "channel": "chip",
-   "title": "TeamGroup CEO 警告2027年DRAM短缺或严重到有钱也难保供应",
+   "title": "TeamGroup CEO警告2027年DRAM短缺或严重到有钱也难保供应",
    "title_orig": "TeamGroup CEO Warns 2027 DRAM Shortage Could Become So Severe That Even Money Won’t Guarantee Supply",
-   "summary": "全球内存短缺可能在2027年显著恶化，DRAM供应或紧到即使愿意支付高价也难以获得库存。",
+   "summary": "全球内存短缺可能到2027年显著恶化，即使愿付高价客户也难获得DRAM库存。",
    "summary_orig": "The ongoing global memory shortage could become significantly worse in 2027, with TeamGroup warning that DRAM supplies may become so constrained that even customers willing to pay inflated prices will struggle to secure inventory.",
    "url": "https://wccftech.com/teamgroup-ceo-warns-2027-ram-shortage-could-become-so-severe-that-even-money-wont-guarantee-supply/",
    "hn": "",
@@ -290,12 +290,12 @@
    "source_home": "https://wccftech.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:11:17+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "c03a709644df",
    "channel": "internet",
-   "title": "酿酒商逐渐认识到保护环境也有利于生意",
+   "title": "酿酒商正认识到保护环境有利于生意",
    "title_orig": "Winemakers are learning that conservation can be good for business",
    "summary": "健康土壤、本土植物和更少化学品正帮助葡萄园适应变化。",
    "summary_orig": "Healthy soils, native plants, and fewer chemicals are helping vineyards adapt.",
@@ -306,14 +306,14 @@
    "source_home": "https://feeds.arstechnica.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:05:51+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "7e044e56c268",
    "channel": "chip",
-   "title": "日本 RTX 5090 与 5080 价格骤降最高22%，或与黄仁勋辞职无关",
+   "title": "日本RTX 5090和RTX 5080价格突降最高达22%",
    "title_orig": "GeForce RTX 5090 And RTX 5080 Witness A Sudden Price Drop Of Up To 22% In Japan, But It’s Unlikely Due To Jensen’s Resignation",
-   "summary": "日本高端 RTX 50 系列 GPU 出现意外降价，但报道认为与黄仁勋辞职没有直接关联。",
+   "summary": "日本高端RTX 50系列GPU意外降价，报道称与Jensen辞职无直接关联。",
    "summary_orig": "A lot has happened in the past few days, but the sudden price decline for some of the high-end RTX 50 series GPUs was unexpected. Japan Records An Unexpected Price Drop For RTX 5090 and RTX 5080 GPUs Right After Jensen's Resignation, But No Direct Connection Between the Two NVIDIA might not remain the same after Jensen's resignation.",
    "url": "https://wccftech.com/geforce-rtx-5090-and-rtx-5080-witness-a-sudden-price-drop-of-up-to-22-in-japan-but-its-unlikely-due-to-jensens-resignation/",
    "hn": "",
@@ -322,14 +322,14 @@
    "source_home": "https://wccftech.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:02:59+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "e5e7218ab9d6",
    "channel": "mobile",
-   "title": "我如何在没删一张照片的情况下为安卓手机腾出36GB空间",
+   "title": "我未删一张照片就在Android手机上腾出36GB空间",
    "title_orig": "How I freed up 36GB on my Android phone without deleting a single photo",
-   "summary": "无需 SD 卡也能做到。",
+   "summary": "无需SD卡也能释放空间。",
    "summary_orig": "No SD card, no problem.",
    "url": "https://www.androidauthority.com/free-up-android-storage-tips-3734228/",
    "hn": "",
@@ -338,14 +338,14 @@
    "source_home": "https://www.androidauthority.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:00:31+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "4b62ddca7cdf",
    "channel": "mobile",
-   "title": "我家服务器最快的存储升级不是更快硬盘，而是更多内存",
+   "title": "我家服务器最快的存储升级不是更快硬盘而是更多内存",
    "title_orig": "The fastest storage upgrade for my home server wasn't a faster drive; it was more RAM",
-   "summary": "给服务器加内存带来了提升。",
+   "summary": "为家庭服务器增加内存带来了明显提升。",
    "summary_orig": "Giving the server a boost.",
    "url": "https://www.xda-developers.com/fastest-storage-upgrade-home-server-was-more-ram/",
    "hn": "",
@@ -354,14 +354,14 @@
    "source_home": "https://www.xda-developers.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:00:21+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "47395265f743",
    "channel": "science",
-   "title": "阿拉斯加渔民感叹珍视的鲑鱼种群衰退",
+   "title": "阿拉斯加渔民感叹珍贵三文鱼种群衰退",
    "title_orig": "Alaska laments decline of its prized salmon populations",
-   "summary": "渔民Bob Candopoulos在阿拉斯加社区经营以帝王鲑招牌吸引游客的生意。",
+   "summary": "渔民Bob Candopoulos在阿拉斯加社区长期接待游客，其店铺招牌是一条帝王鲑。",
    "summary_orig": "In his Alaskan community, fisherman Bob Candopoulos has long welcomed tourists to his business that's showcased by a sign featuring a king salmon.",
    "url": "https://phys.org/news/2026-11-alaska-laments-decline-prized-salmon.html",
    "hn": "",
@@ -370,14 +370,14 @@
    "source_home": "https://phys.org/",
    "lang": "en",
    "published_at": "2026-11-14T20:00:12+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "a1eea252f5a9",
    "channel": "mobile",
-   "title": "我给8GB Fire Stick清缓存并插U盘，只有一项释放了空间",
+   "title": "我试了清理缓存和给8GB Fire Stick插U盘，只有一种释放了空间",
    "title_orig": "I tried a cache purge and plugging a USB stick into my 8GB Fire Stick; only one freed up gigabytes",
-   "summary": "我把杂乱文件和电影文件转移到外置存储。",
+   "summary": "把杂物和电影文件转移到外置硬盘后，只有一种方法真正释放出GB级空间。",
    "summary_orig": "I offloaded clutter and movie files to the external drive storage",
    "url": "https://www.androidpolice.com/i-tried-cache-purge-plugging-usb-stick-into-my-8gb-fire-stick-one-freed-up-gigabytes/",
    "hn": "",
@@ -386,14 +386,14 @@
    "source_home": "https://www.androidpolice.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:00:10+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "567fa298898a",
    "channel": "gossip",
-   "title": "Jensen Huang的明星时刻折射愿景型创始人CEO衰落",
+   "title": "黄仁勋与远见型表演式创始人CEO的衰落",
    "title_orig": "Jensen Huang and the decline of the visionary showman founder CEO",
-   "summary": "2025年1月6日，Nvidia CEO Jensen Huang在挤满网红和粉丝的14000人场馆登台。",
+   "summary": "2025年1月6日，Nvidia CEO黄仁勋穿黑皮夹克在1.4万人场馆登台，享受明星般欢呼。",
    "summary_orig": "On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packed with influencers and fans, their faces awash in blue glow, as he made his entrance in a black leather jacket that […]",
    "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
    "hn": "",
@@ -402,14 +402,14 @@
    "source_home": "https://www.theverge.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:00:00+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "b423af416c6e",
    "channel": "science",
-   "title": "美国曾消灭螺旋蝇，如今需新办法应对其回归",
+   "title": "我们曾消灭螺旋蝇，如今正尝试再次做到",
    "title_orig": "We beat screwworm once. Here’s how we’re trying to do it again",
-   "summary": "螺旋蝇曾于1966年在美国被消灭，如今卷土重来，旧技术已不够用。",
+   "summary": "螺旋蝇曾于1966年在美国被消灭，如今卷土重来，旧方法已不够用。",
    "summary_orig": "Screwworm, which can devastate livestock, was eliminated from the U.S. in 1966. Now they’re back and the same old technique won’t be enough to get rid of them",
    "url": "https://www.scientificamerican.com/article/we-beat-screwworm-once-heres-how-were-trying-to-do-it-again/",
    "hn": "",
@@ -418,14 +418,14 @@
    "source_home": "https://www.scientificamerican.com/",
    "lang": "en",
    "published_at": "2026-11-14T20:00:00+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "3a54dfb834d0",
    "channel": "software",
-   "title": "LibreOffice嘲讽微软云服务故障，日捐款达峰值",
+   "title": "LibreOffice嘲讽微软云故障，每日捐款创新高",
    "title_orig": "LibreOffice mocks Microsoft's cloud outage as daily donations peak",
-   "summary": "微软最新服务中断引发对Office替代品的关注，LibreOffice另有理由庆祝。",
+   "summary": "微软最新服务中断似乎引发用户对Office替代品的兴趣，LibreOffice另有理由庆祝。",
    "summary_orig": "Microsoft's latest service disruption appears to have sparked renewed interest in alternatives to Office, but LibreOffice has another reason to celebrate.",
    "url": "https://www.neowin.net/news/libreoffice-mocks-microsofts-cloud-outage-as-daily-donations-peak/",
    "hn": "",
@@ -434,14 +434,14 @@
    "source_home": "https://www.neowin.net/",
    "lang": "en",
    "published_at": "2026-11-14T19:54:01+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "98cd8f4c4f12",
    "channel": "chip",
    "title": "Intel重夺70%桌面CPU份额，AMD在2026年Q3跌破30%",
    "title_orig": "Intel Reclaims 70% Desktop CPU Market Share As AMD Falls Below 30% In Surprise Q3 2026 Turnaround",
-   "summary": "Intel份额回升可能更多源于供应状况和游戏PC市场低迷，而非处理器竞争力突变。",
+   "summary": "Intel在桌面CPU市场意外反弹，重夺大量份额，但这可能更多源于供应状况和游戏PC市场低迷，而非处理器竞争力突变。",
    "summary_orig": "Intel has staged a rather unexpected comeback in the desktop CPU market, reclaiming a significant portion of the market share it previously lost to AMD. Interestingly, the turnaround might have more to do with supply conditions and the struggling gaming PC market than a sudden shift in processor competitiveness.",
    "url": "https://wccftech.com/intel-reclaims-70-desktop-cpu-market-share-as-amd-falls-below-30-in-surprise-q3-2026-turnaround/",
    "hn": "",
@@ -450,7 +450,7 @@
    "source_home": "https://wccftech.com/",
    "lang": "en",
    "published_at": "2026-11-14T19:46:15+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "e18b61d7340e",
@@ -466,14 +466,14 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T19:45:39+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "24c2b24750e0",
    "channel": "launch",
-   "title": "Ledge把Mac屏幕顶部变成文件、剪贴板和音乐搁架",
+   "title": "Show HN：Ledge，文件、剪贴板历史与音乐的置物架",
    "title_orig": "Show HN: Ledge – a shelf for files, clipboard history, and music",
-   "summary": "Ledge是Mac顶部工具，可快速访问文件与剪贴板历史，显示正在播放歌曲和实时活动。",
+   "summary": "Ledge利用Mac屏幕顶部空间，提供文件和剪贴板历史快捷访问，显示播放歌曲与实时活动，有无刘海均可用。",
    "summary_orig": "I built Ledge to make the space along the top of the Mac screen useful. It gives you quick access to files and clipboard history, shows the song that’s playing and live activities, and works with or without a notch. It’s in beta: https://www.tryledge.app Comments URL: https://news.ycombinator.com/item?id=50496216 Points: 1 # Comments: 0",
    "url": "https://www.tryledge.app",
    "hn": "",
@@ -482,14 +482,14 @@
    "source_home": "https://hnrss.org/",
    "lang": "en",
    "published_at": "2026-11-14T19:42:05+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "703d5a8bd206",
    "channel": "ai",
-   "title": "OpenAI解散独立机器人团队，研究人员转至其他团队",
+   "title": "OpenAI将机器人研究人员调往其他团队",
    "title_orig": "OpenAI reassigns robotics researchers to other teams as general-purpose models might make specialized robotics AI unnecessary",
-   "summary": "OpenAI称GPT-6 Astra等通用模型可直接控制机器人，因此无需专门机器人团队。",
+   "summary": "OpenAI第二次解散独立机器人团队，因GPT-6 Astra等通用模型可直接控制机器人，研究人员被重新分配以加速机器人工作。",
    "summary_orig": "OpenAI is dissolving its standalone robotics team for the second time, but not because it lacks data. General-purpose models like GPT-6 Astra can apparently control robots directly, making a dedicated unit unnecessary. The researchers are being redistributed across other teams in what the company frames as a way to accelerate its robotics efforts.",
    "url": "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/",
    "hn": "",
@@ -498,14 +498,14 @@
    "source_home": "https://the-decoder.com/",
    "lang": "en",
    "published_at": "2026-11-14T19:40:51+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "27fb26f08d22",
    "channel": "science",
-   "title": "加州严阵以待，风暴或引发巨浪和洪水",
+   "title": "加州严阵以待可能引发巨浪与洪水的风暴",
    "title_orig": "California steels for storms that could trigger massive waves, flooding",
-   "summary": "加州周五准备迎接连续风暴，强降雨和海浪可能再次淹没沿海社区并带来巨浪。",
+   "summary": "加州周五准备迎接一连串带来强降雨和海浪的风暴，可能再次淹没沿海社区并带来巨浪。",
    "summary_orig": "California was bracing Friday for a storm series packing heavy rain and surf that could once again flood coastal communities and potentially send monster waves pounding shores.",
    "url": "https://phys.org/news/2026-11-california-steels-storms-trigger-massive.html",
    "hn": "",
@@ -514,7 +514,7 @@
    "source_home": "https://phys.org/",
    "lang": "en",
    "published_at": "2026-11-14T19:40:06+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "db4742f2a097",
@@ -530,7 +530,7 @@
    "source_home": "https://www.androidauthority.com/",
    "lang": "en",
    "published_at": "2026-11-14T19:30:46+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "46422b7da048",
@@ -546,7 +546,7 @@
    "source_home": "https://www.androidpolice.com/",
    "lang": "en",
    "published_at": "2026-11-14T19:30:10+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "7e1c3c543cb5",
@@ -562,7 +562,7 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T19:23:33+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "7aa396968c8d",
@@ -578,7 +578,7 @@
    "source_home": "https://www.notebookcheck.net/",
    "lang": "en",
    "published_at": "2026-11-14T19:23:00+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "e2d674adf4bc",
@@ -594,7 +594,7 @@
    "source_home": "https://the-decoder.com/",
    "lang": "en",
    "published_at": "2026-11-14T19:21:41+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "280db904c2b3",
@@ -610,7 +610,7 @@
    "source_home": "https://www.phoronix.com/",
    "lang": "en",
    "published_at": "2026-11-14T19:19:30+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "58705e40ddb6",
@@ -626,7 +626,7 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T19:14:33+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "0a5e88bac6d4",
@@ -642,7 +642,23 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T19:14:23+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
+  },
+  {
+   "id": "0ad17acbb87c",
+   "channel": "mobile",
+   "title": "Steam 上好评率达 90% 的轻松城市建设游戏再创新低",
+   "title_orig": "Relaxed city builder with 90% positive reviews hits a new low on Steam",
+   "summary": "交易 | 《工厂小镇》是一款城市建设模拟游戏，具有大量自动化功能，但没有来自敌人或人口需求的压力。这款广受好评的游戏目前在 Steam 上以迄今为止最低的价格发售。",
+   "summary_orig": "Deal | Factory Town is a city-building simulation with plenty of automation but none of the pressure from enemies or population demands. The well-reviewed game is currently available on Steam at its lowest price to date.",
+   "url": "https://www.notebookcheck.net/Relaxed-city-builder-with-90-positive-reviews-hits-a-new-low-on-Steam.1450380.0.html",
+   "hn": "",
+   "source": "Notebookcheck",
+   "source_key": "notebookcheck-net-news-152-100-html-type-rss",
+   "source_home": "https://www.notebookcheck.net/",
+   "lang": "en",
+   "published_at": "2026-11-14T19:14:00+08:00",
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "d72edda2b460",
@@ -658,7 +674,7 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T19:03:05+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "1d4d88e2c430",
@@ -674,7 +690,7 @@
    "source_home": "https://www.gsmarena.com/",
    "lang": "en",
    "published_at": "2026-11-14T19:02:02+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "2763cf9b365f",
@@ -690,7 +706,7 @@
    "source_home": "https://www.digitaltrends.com/",
    "lang": "en",
    "published_at": "2026-11-14T19:01:29+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "2501ffbbda19",
@@ -706,7 +722,7 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T18:52:39+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "6fa679d3d9db",
@@ -722,7 +738,7 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T18:43:16+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "545d3ee004cb",
@@ -738,7 +754,7 @@
    "source_home": "https://www.tmtpost.com/",
    "lang": "zh",
    "published_at": "2026-11-14T18:37:06+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "e30735d27a4d",
@@ -754,23 +770,7 @@
    "source_home": "https://www.tmtpost.com/",
    "lang": "zh",
    "published_at": "2026-11-14T18:37:01+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
-  },
-  {
-   "id": "12015f529f5a",
-   "channel": "huawei",
-   "title": "三款人像旗舰实拍横评：vivo X500、华为Pura 90、OPPO Find X10谁更懂女生自然美",
-   "title_orig": "",
-   "summary": "",
-   "summary_orig": "",
-   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE94TnZCLWhPWGlQVDcxQnA2NkNPZzlCbHBjX1FyUzFVbmZyMXZWVk1hajlUWmU4T1pxYUJGMGMyWUFNY1lKTy1hMUFjRjBUTVF3eVM3Yk45M0pwWDVJS01ic3ZOM19rdWxXeHh5ZkY4aUNEZw?oc=5",
-   "hn": "",
-   "source": "手机新浪网",
-   "source_key": "gn-huawei-phone",
-   "source_home": "https://news.google.com/",
-   "lang": "zh",
-   "published_at": "2026-11-14T18:35:39+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "17dd37ef7f39",
@@ -786,7 +786,7 @@
    "source_home": "https://www.cnbeta.com.tw/",
    "lang": "zh",
    "published_at": "2026-11-14T18:27:16+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "1576f8db33aa",
@@ -802,23 +802,7 @@
    "source_home": "https://www.theregister.com/",
    "lang": "en",
    "published_at": "2026-11-14T18:27:00+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
-  },
-  {
-   "id": "ea3d09eb3913",
-   "channel": "ai",
-   "title": "美国首届 AI 音乐奖颁奖典礼举行，入围者坦言背后同样凝聚真人心血",
-   "title_orig": "",
-   "summary": "据路透社报道，当地时间 13 日，美国首届 AI 音乐奖颁奖典礼正式举行，表彰利用 AI 参与歌曲创作的音乐人。 AI 音乐虽然饱受争议，甚至引发诉讼，但仍在流媒体平台获得数百万次播放，并成功登上音乐排行榜。 在洛杉矶市中心举行的颁奖典礼上，负责颁奖和领奖的真人音乐人认为，AI 音乐应该被视为 一种…",
-   "summary_orig": "",
-   "url": "https://www.ithome.com/1/027/210.htm",
-   "hn": "",
-   "source": "IT之家",
-   "source_key": "ithome",
-   "source_home": "https://www.ithome.com/",
-   "lang": "zh",
-   "published_at": "2026-11-14T18:22:58+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "3f4e09b05300",
@@ -834,7 +818,7 @@
    "source_home": "https://github.com/topics/aigc",
    "lang": "tpl",
    "published_at": "2026-11-14T18:22:50+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "611023eb626c",
@@ -850,7 +834,7 @@
    "source_home": "https://www.cnbeta.com.tw/",
    "lang": "zh",
    "published_at": "2026-11-14T18:22:45+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "ad306b16c1bb",
@@ -866,7 +850,7 @@
    "source_home": "https://www.marktechpost.com/",
    "lang": "en",
    "published_at": "2026-11-14T18:21:21+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "fb4042811729",
@@ -882,7 +866,7 @@
    "source_home": "https://www.digitaltrends.com/",
    "lang": "en",
    "published_at": "2026-11-14T18:09:18+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "4d8443388c33",
@@ -914,7 +898,7 @@
    "source_home": "https://lobste.rs/",
    "lang": "en",
    "published_at": "2026-11-14T18:01:58+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "7afea9831108",
@@ -1027,7 +1011,7 @@
    "source_home": "https://www.fastcompany.com/",
    "lang": "en",
    "published_at": "2026-11-14T18:00:00+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "5c4d8be5cdfd",
@@ -1043,7 +1027,7 @@
    "source_home": "https://mashable.com/",
    "lang": "en",
    "published_at": "2026-11-14T18:00:00+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "838a9316b6ce",
@@ -3513,23 +3497,6 @@
    "fetched_at": "2026-11-14T14:26:30+08:00"
   },
   {
-   "id": "742b7ce9a14a",
-   "channel": "huawei",
-   "title": "直板手机屏幕不够用？华为Mate X7折叠旗舰体验升级，购机好礼加码",
-   "title_orig": "",
-   "summary": "",
-   "summary_orig": "",
-   "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8yVWVjLXFxbXNKWXhnd2ZaUDUtQ1RfR0lrbk94UW5YNERFVTBWVHdTZDVac3otYUkyNmJVVzZ6U2dJRGVtTE4xSQ?oc=5",
-   "hn": "",
-   "source": "品玩",
-   "source_key": "gn-huawei-phone",
-   "source_home": "https://news.google.com/",
-   "lang": "zh",
-   "published_at": "2026-11-14T14:05:28+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00",
-   "_md": 1
-  },
-  {
    "id": "5b382dc456b2",
    "channel": "mobile",
    "title": "Bose SoundLink Flex 第二代日落桃色版感恩节前降至历史最低价",
@@ -5378,23 +5345,6 @@
    "fetched_at": "2026-11-14T10:11:29+08:00"
   },
   {
-   "id": "6455aa2a3a9c",
-   "channel": "huawei",
-   "title": "315现形记：一辆吉利车，如何成了鸿蒙智行的“智驾功臣”？",
-   "title_orig": "",
-   "summary": "",
-   "summary_orig": "",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1UelpGY1B3UWlJMGllQ1U3ck9KYkxiMmV2aUdPUUpHV0Z1MzNjSV94clFQSmpRTkNpQmhDMFVyTlluOHkxc3B5b2dGdlB3U1hob1dCTnRScXpFZVU?oc=5",
-   "hn": "",
-   "source": "汽车之家",
-   "source_key": "gn-ascend",
-   "source_home": "https://news.google.com/",
-   "lang": "zh",
-   "published_at": "2026-11-14T09:57:10+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00",
-   "_md": 1
-  },
-  {
    "id": "f21b34b1a4c5",
    "channel": "internet",
    "title": "又一款10万元内合资纯电车上市，低价能拯救它们吗？",
@@ -6485,7 +6435,7 @@
    "source_home": "https://www.v2ex.com/",
    "lang": "zh",
    "published_at": "2026-11-14T08:58:37+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00"
+   "fetched_at": "2026-11-14T20:39:11+08:00"
   },
   {
    "id": "f2e8e9f3ba75",
@@ -6858,22 +6808,6 @@
    "lang": "en",
    "published_at": "2026-11-14T08:20:15+08:00",
    "fetched_at": "2026-11-14T09:26:05+08:00"
-  },
-  {
-   "id": "ddf8c452942e",
-   "channel": "internet",
-   "title": "雷蛇辉月神专业版电竞椅发布：六马达多区域触觉反馈、THX 扬声器、RGB 灯效，7999 元",
-   "title_orig": "",
-   "summary": "雷蛇今日发布了辉月神专业版电竞椅，中国区定价 7999 元。这款产品的思路是把游戏中的震动、声音和灯光整合进座椅本身，而非仅在外设层面做叠加。 京东 雷蛇（Razer）辉月神专业版电竞椅 触觉反馈 内置无线扬声器 人体工学腰弓 RGB 7999 元 直达链接 辉月神专业版对应的海外型号为 Razer…",
-   "summary_orig": "",
-   "url": "https://www.ithome.com/1/027/022.htm",
-   "hn": "",
-   "source": "IT之家",
-   "source_key": "ithome",
-   "source_home": "https://www.ithome.com/",
-   "lang": "zh",
-   "published_at": "2026-11-14T08:18:41+08:00",
-   "fetched_at": "2026-11-14T09:54:41+08:00"
   },
   {
    "id": "f2c708958386",
@@ -15820,22 +15754,6 @@
    "fetched_at": "2026-11-14T05:54:55+08:00"
   },
   {
-   "id": "6e9bab39816f",
-   "channel": "mobile",
-   "title": "X单条帖子现可分享最多20张照片和视频",
-   "title_orig": "X now lets you share up to 20 photos and videos in a single post",
-   "summary": "X将单帖媒体上限从4个提高到20个，网页版已上线，移动端正在推送。",
-   "summary_orig": "X just increased its photo and video limit from 4 to 20 items per post, a five times jump that is already live on web, with mobile rolling out now.",
-   "url": "https://www.digitaltrends.com/social-media/x-now-lets-you-share-up-to-20-photos-and-videos-in-a-single-post/",
-   "hn": "",
-   "source": "Digital Trends",
-   "source_key": "digitaltrends-com-feed",
-   "source_home": "https://www.digitaltrends.com/",
-   "lang": "en",
-   "published_at": "2026-11-13T22:31:24+08:00",
-   "fetched_at": "2026-11-14T05:54:55+08:00"
-  },
-  {
    "id": "26ff299c9265",
    "channel": "ai",
    "title": "SpaceXAI 资源向 AI 编程工具与 Grok Bot 倾斜，消息称裁减约 60 名 Grok Imagine 员工",
@@ -17414,22 +17332,6 @@
    "_md": 1
   },
   {
-   "id": "4f57baa5a370",
-   "channel": "dev",
-   "title": "酷态科暴雷了，充电头会死机大电压烧毁设备",
-   "title_orig": "",
-   "summary": "https://www.bilibili.com/video/BV1MeWv6gEGu https://www.bilibili.com/video/BV1ZogX6gEpb https://www.bilibili.com/video/BV16nMY6jEEE/ https://www.bilib…",
-   "summary_orig": "",
-   "url": "https://www.v2ex.com/t/1256928",
-   "hn": "",
-   "source": "V2EX 热门",
-   "source_key": "v2ex-com-api-topics-hot-json",
-   "source_home": "https://www.v2ex.com/",
-   "lang": "zh",
-   "published_at": "2026-11-13T19:27:00+08:00",
-   "fetched_at": "2026-11-14T09:26:05+08:00"
-  },
-  {
    "id": "09a3e479d01f",
    "channel": "software",
    "title": "plannotator 提供与 agent 协作标注和评审代码的工作区",
@@ -17542,22 +17444,6 @@
    "fetched_at": "2026-11-13T19:26:42+08:00"
   },
   {
-   "id": "894a9786f5c3",
-   "channel": "dev",
-   "title": "iPhone 连接 Linux 太痛苦，于是我用 Rust 写了 Rollcopy",
-   "title_orig": "iPhone + Linux = pain. So I built Rollcopy 🦀📸",
-   "summary": "作者因 iPhone 与 Linux 之间传照片体验糟糕，开发了用 Rust 编写的照片拷贝工具 Rollcopy。",
-   "summary_orig": "The pain 😩 If you use an iPhone and a Linux laptop, you know this one. You plug the phone in. Ubuntu shows a folder called DCIM . Inside: 100APPLE , 101APPLE , 102APPLE … thousands of IMG_XXXX files with no dates, no albums, no idea which ones you already copied. There's no iTunes for Linux. Apple's tools are for macOS and Windows only.",
-   "url": "https://dev.to/ankurk91/iphone-linux-pain-so-i-built-rollcopy-56nl",
-   "hn": "",
-   "source": "DEV",
-   "source_key": "dev-to-feed",
-   "source_home": "https://dev.to/",
-   "lang": "en",
-   "published_at": "2026-11-13T19:26:35+08:00",
-   "fetched_at": "2026-11-13T19:26:42+08:00"
-  },
-  {
    "id": "8558d0481f3f",
    "channel": "aidrama",
    "title": "一支“没有外挂”的穿越小队，如何把AI短剧打回内容战场",
@@ -17606,22 +17492,6 @@
    "published_at": "2026-11-13T19:25:45+08:00",
    "fetched_at": "2026-11-14T07:51:08+08:00",
    "_md": 1
-  },
-  {
-   "id": "b3aa3b1b01f5",
-   "channel": "dev",
-   "title": "14 个完全在浏览器本地运行、免注册免上传的开发工具",
-   "title_orig": "14 free dev tools that run entirely in your browser — no signup, no upload",
-   "summary": "这些工具全部在浏览器客户端运行，查正则、格式化 JSON 或试跑 Python 片段都无需账号。",
-   "summary_orig": "Every online code editor wants an account before you run line one. For a quick test — check a regex, format some JSON, try a Python snippet — that's backwards. You shouldn't need an account, a server round-trip, or to upload your code anywhere just to answer a small question. I use a free set of tools that all run client-side, in your own browser.",
-   "url": "https://dev.to/umaimughal/14-free-dev-tools-that-run-entirely-in-your-browser-no-signup-no-upload-40oh",
-   "hn": "",
-   "source": "DEV",
-   "source_key": "dev-to-feed",
-   "source_home": "https://dev.to/",
-   "lang": "en",
-   "published_at": "2026-11-13T19:25:29+08:00",
-   "fetched_at": "2026-11-13T19:26:42+08:00"
   },
   {
    "id": "2da4f01f945b",
@@ -18816,6 +18686,22 @@
    "fetched_at": "2026-11-13T17:00:44+08:00"
   },
   {
+   "id": "8bb052530035",
+   "channel": "ai",
+   "title": "Anthropic的FlashProve或让AI模型身份可验证",
+   "title_orig": "Anthropic’s FlashProve Could Make AI Model Identity Verifiable",
+   "summary": "FlashProve可让用户获得密码学证明，显示是哪个模型生成了回答，而不再只信任供应商标签。",
+   "summary_orig": "Imagine asking an AI assistant to review a security incident, approve a loan application or summarize confidential research. Instead of trusting a provider’s label, you could receive a cryptographic proof showing which model generated the answer.",
+   "url": "https://dev.to/spaisee/anthropics-flashprove-could-make-ai-model-identity-verifiable-5471",
+   "hn": "",
+   "source": "DEV",
+   "source_key": "dev-to-feed",
+   "source_home": "https://dev.to/",
+   "lang": "en",
+   "published_at": "2026-11-13T16:57:01+08:00",
+   "fetched_at": "2026-11-13T17:00:44+08:00"
+  },
+  {
    "id": "21786cbd1e67",
    "channel": "huawei",
    "title": "问界新M8上市发布会，余承东晒鸿蒙智行五大品牌矩阵",
@@ -18831,6 +18717,22 @@
    "published_at": "2026-11-13T16:56:05+08:00",
    "fetched_at": "2026-11-14T17:01:51+08:00",
    "_md": 1
+  },
+  {
+   "id": "f6f0b21aa3e6",
+   "channel": "ai",
+   "title": "ChatGPT 中的商家：让客户通过 ChatGPT 发现你的业务",
+   "title_orig": "Businesses in ChatGPT",
+   "summary": "介绍如何借助 ChatGPT 帮助客户发现你的业务。",
+   "summary_orig": "Help customers discover your business through ChatGPT Discussion | Link",
+   "url": "https://www.producthunt.com/products/openai",
+   "hn": "",
+   "source": "Product Hunt",
+   "source_key": "producthunt-com-feed",
+   "source_home": "https://www.producthunt.com/",
+   "lang": "en",
+   "published_at": "2026-11-13T16:53:51+08:00",
+   "fetched_at": "2026-11-14T17:01:51+08:00"
   },
   {
    "id": "b4683ce1d1bf",
@@ -18997,6 +18899,38 @@
    "published_at": "2026-11-13T16:16:29+08:00",
    "fetched_at": "2026-11-13T17:00:44+08:00",
    "_md": 1
+  },
+  {
+   "id": "1811b092b555",
+   "channel": "ai",
+   "title": "有人用 Claude Fable 5.2 配合网络摄像头做出 X 光镜效果",
+   "title_orig": "Someone use Claude Fable 5.2 to create an x-ray mirror with their webcam, and you can try it too",
+   "summary": "据称能看到内部视角，读者也可以自己动手尝试。",
+   "summary_orig": "Get an inside view.",
+   "url": "https://www.xda-developers.com/someone-use-claude-fable-52-to-create-an-x-ray-mirror-with-their-webcam-and-you-can-try-it-too/",
+   "hn": "",
+   "source": "XDA",
+   "source_key": "xda-developers-com-feed",
+   "source_home": "https://www.xda-developers.com/",
+   "lang": "en",
+   "published_at": "2026-11-13T16:15:18+08:00",
+   "fetched_at": "2026-11-13T17:00:44+08:00"
+  },
+  {
+   "id": "67eec1b29f06",
+   "channel": "ai",
+   "title": "Show HN：AI-drop 项目可快速拦截异常爬虫（AGPL）",
+   "title_orig": "Show HN: AI-drop project – drop traffic fast from misbehaving crawlers (AGPL)",
+   "summary": "作者称 rocketgit.com 每日遭 400 万请求而非几千，于是开发 AGPL 项目 AI-drop 拦截这类爬虫。",
+   "summary_orig": "Hello! All started with 4 million requests / day on rocketgit.com (AGPL git hosting). Instead of thousands. Enough is enough! Presentation (8 pages): https://rocketgit.com/user/catalinux/ai-drop/artefacts/downl... So, I built AI-drop free-software project (AGPL) to block this kind of crawlers.",
+   "url": "https://rocketgit.com/user/catalinux/ai-drop",
+   "hn": "",
+   "source": "Show HN",
+   "source_key": "hnrss-org-show",
+   "source_home": "https://hnrss.org/",
+   "lang": "en",
+   "published_at": "2026-11-13T16:05:44+08:00",
+   "fetched_at": "2026-11-13T17:00:44+08:00"
   },
   {
    "id": "487fd3898f1a",
@@ -22434,23 +22368,6 @@
    "lang": "en",
    "published_at": "2026-11-13T06:30:01+08:00",
    "fetched_at": "2026-11-13T07:27:22+08:00"
-  },
-  {
-   "id": "20a0209e3f94",
-   "channel": "aidrama",
-   "title": "让千年山河文脉在AI短剧中生辉|四川日报|川剧变脸|四川省|AI技术|宣传片_手机新浪网",
-   "title_orig": "",
-   "summary": "",
-   "summary_orig": "",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lel9qdGZQSGlyQzlXWk1adGY3Y0xJOGhMQmEzSUIxbHM5cHZ3dWNUSXAyYkZzQTZJR0lQaGNiYkRKMV8xYU5RWDlnR1ZTV3l5ZTl4QkxwRm9QUEE3SnplQ3l2ZlR5THNUUG1ZS1ZZQTJqV0podGUzdA?oc=5",
-   "hn": "",
-   "source": "新浪财经_金融信息服务商",
-   "source_key": "gn-aiduanju",
-   "source_home": "https://news.google.com/",
-   "lang": "zh",
-   "published_at": "2026-11-13T06:29:53+08:00",
-   "fetched_at": "2026-11-14T20:39:16+08:00",
-   "_md": 1
   },
   {
    "id": "75c0e099feca",
@@ -30632,6 +30549,23 @@
    "_md": 1
   },
   {
+   "id": "88b949262430",
+   "channel": "huawei",
+   "title": "东风本田CR-V全能荣耀款上市，华为云赋能车机，售价13.79万起",
+   "title_orig": "",
+   "summary": "",
+   "summary_orig": "",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8yd0N4RE0wQXZtM1g0YllVTEhWcWc2RkN5TF9DTWdfdFFUX0ZuX3F4cGlWVF8zUWNRRjkwYTBtaWxnYjJMb2ZPZmgwc1FCam1SRTRxUi1aQjEyNXM?oc=5",
+   "hn": "",
+   "source": "网通社",
+   "source_key": "gn-ascend",
+   "source_home": "https://news.google.com/",
+   "lang": "zh",
+   "published_at": "2026-11-11T18:03:09+08:00",
+   "fetched_at": "2026-11-12T01:50:43+08:00",
+   "_md": 1
+  },
+  {
    "id": "fefddb8cd852",
    "channel": "launch",
    "title": "显示 HN：Ascope –每日 App Store 和 Google Play 关键词排名，原生 Mac 应用程序",
@@ -30663,6 +30597,22 @@
    "published_at": "2026-11-11T17:33:49+08:00",
    "fetched_at": "2026-11-12T11:26:29+08:00",
    "_md": 1
+  },
+  {
+   "id": "2a00e7f4c19c",
+   "channel": "huawei",
+   "title": "双十一换机正当时：华为Mate X7购机好礼，降低折叠旗舰换新门槛",
+   "title_orig": "",
+   "summary": "双十一临近尾声，手机市场换新热潮持续走高。不少华为老用户面临换新抉择：手中的华为直板机虽可正常使用，但电池已需一天两充，夜景拍摄时常模糊，多应用同开切换偶尔卡顿……如果换新直板旗舰，仅能收获影像、性能的小幅提升，日常用起来几乎没有区别，新鲜感三天就没了。想要获得显著的体验跃升，折叠屏是不错的选择，其…",
+   "summary_orig": "",
+   "url": "https://www.leiphone.com/category/industrynews/C6UjjlUlmA70WLVq.html",
+   "hn": "",
+   "source": "雷峰网",
+   "source_key": "leiphone-com-feed",
+   "source_home": "https://www.leiphone.com/",
+   "lang": "zh",
+   "published_at": "2026-11-11T17:31:00+08:00",
+   "fetched_at": "2026-11-11T21:26:11+08:00"
   },
   {
    "id": "68c45cce4abd",
@@ -30715,6 +30665,22 @@
    "_md": 1
   },
   {
+   "id": "cd7d4d205877",
+   "channel": "huawei",
+   "title": "华为鸿蒙 HarmonyOS 7 (API 26.0.1)Developer Beta 开启定向招募，Mate 80 Pro 等机型可报名",
+   "title_orig": "",
+   "summary": "华为鸿蒙 HarmonyOS 开发套件 26.0.1 Beta1 今日正式发布 ，该版本为 26.0.0 的增量版本，仅供对新增特性有需求的开发者尝鲜使用。 IT之家注意到， 华为开发者联盟已开启 HarmonyOS 7 (API 26.0.1)Developer Beta 定向招募 。开发者可通过…",
+   "summary_orig": "",
+   "url": "https://www.ithome.com/1/025/611.htm",
+   "hn": "",
+   "source": "IT之家",
+   "source_key": "ithome",
+   "source_home": "https://www.ithome.com/",
+   "lang": "zh",
+   "published_at": "2026-11-11T17:10:12+08:00",
+   "fetched_at": "2026-11-11T17:10:40+08:00"
+  },
+  {
    "id": "bb01281908c1",
    "channel": "aivideo",
    "title": "AI 视频生成开源项目：nexu-io/html-anything（★9498）",
@@ -30761,6 +30727,22 @@
    "lang": "en",
    "published_at": "2026-11-11T17:00:00+08:00",
    "fetched_at": "2026-11-11T17:49:49+08:00"
+  },
+  {
+   "id": "6410a6c9b9e9",
+   "channel": "huawei",
+   "title": "微信鸿蒙版 App 获 8.0.23.37 邀测升级，小微 AI 助手更多功能灰度中",
+   "title_orig": "",
+   "summary": "据用户反馈，微信鸿蒙版 App 在华为应用市场（App Gallery）发布了 8.0.23.37 (8394533) 版本邀测升级（需收到短信通知后点击链接跳转安装），测试时间为 2026/11/10-2026/12/10。 和往常一样，本次更新的说明依旧为“修复了一些已知问题”。据博主 @伤心萨…",
+   "summary_orig": "",
+   "url": "https://www.ithome.com/1/025/601.htm",
+   "hn": "",
+   "source": "IT之家",
+   "source_key": "ithome",
+   "source_home": "https://www.ithome.com/",
+   "lang": "zh",
+   "published_at": "2026-11-11T16:54:14+08:00",
+   "fetched_at": "2026-11-11T17:02:05+08:00"
   },
   {
    "id": "f6b745b5ebb0",
@@ -36984,6 +36966,23 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-05T11:35:16+08:00",
+   "fetched_at": "2026-11-11T01:10:50+08:00",
+   "_md": 1
+  },
+  {
+   "id": "7410ef9b107d",
+   "channel": "aidrama",
+   "title": "AI漫剧概念，龙头4连板",
+   "title_orig": "",
+   "summary": "",
+   "summary_orig": "",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdEkxZ09iU2dqZm5sanhISktQNUVHYzB5eEszeExUZjJiN3ZIM1FZRXJwckxUTWw1N1RZM2lpUUl6SFFUS3daWWF4QU1BZVdBZ1JMemlvdVZBYXU5V3Q1enBSdUcyblBUeDJuclJBZEpPb1FickFxN0J4Qk1nTHE3cTNsd21nYW52V1V1cE1zcw?oc=5",
+   "hn": "",
+   "source": "21财经",
+   "source_key": "gn-aidrama",
+   "source_home": "https://news.google.com/",
+   "lang": "zh",
+   "published_at": "2026-11-05T10:04:20+08:00",
    "fetched_at": "2026-11-11T01:10:50+08:00",
    "_md": 1
   },

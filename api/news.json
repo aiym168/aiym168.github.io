@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-14T20:39:16+08:00",
+ "updated_at": "2026-11-14T20:39:11+08:00",
  "counts": {
   "ai": 220,
   "aivideo": 150,
   "comfyui": 60,
   "aidrama": 150,
-  "aigc": 75,
-  "gossip": 59,
+  "aigc": 74,
+  "gossip": 60,
   "huawei": 150,
   "mobile": 150,
   "chip": 150,
@@ -152,19 +152,6 @@
  ],
  "items": [
   {
-   "id": "e541bc976e46",
-   "channel": "ai",
-   "title": "如何为黑客松项目制作AI演示视频",
-   "summary": "用本地LLM配合vLLM、Edge TTS和AI工具，把项目演示做成清晰有吸引力的视频。",
-   "source": "DEV",
-   "tags": [
-    "大模型"
-   ],
-   "url": "https://dev.to/sumit0rn/how-i-create-ai-demo-videos-for-my-hackathon-projects-33l0",
-   "page": "https://aiym168.github.io/news/a/e541bc976e46.html",
-   "published_at": "2026-11-14T20:39:17+08:00"
-  },
-  {
    "id": "93958f67012a",
    "channel": "ai",
    "title": "Hugging Face 热门多模态模型：meituan-longcat/LongCat-2.5",
@@ -175,96 +162,98 @@
    ],
    "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
    "page": "https://aiym168.github.io/news/a/93958f67012a.html",
-   "published_at": "2026-11-14T20:39:16+08:00"
+   "published_at": "2026-11-14T20:39:11+08:00"
   },
   {
-   "id": "31fcb3ef9f4b",
-   "channel": "aigc",
-   "title": "如何在Python中使用SQLite而无需安装数据库服务器",
-   "summary": "轻量应用、本地脚本或受限硬件无需数据库服务器，SQLite即可满足。",
+   "id": "1794e785df42",
+   "channel": "ai",
+   "title": "Claude Duet 会主动联系你，控制权归属随之改变",
+   "summary": "Anthropic于2026年10月21日开放Claude Duet研究预览，Claude可监控关联账户、预先准备工作并主动发消息。",
    "source": "DEV",
    "tags": [
-    "Python"
+    "Claude"
    ],
-   "url": "https://dev.to/ezenwa_christian_5243b406/how-to-use-sqlite-in-python-without-installing-a-database-server-17g9",
-   "page": "https://aiym168.github.io/news/a/31fcb3ef9f4b.html",
-   "published_at": "2026-11-14T20:38:53+08:00"
+   "url": "https://dev.to/suraj_khaitan_f893c243958/claude-duet-messages-you-first-that-changes-who-is-in-control-3n74",
+   "page": "https://aiym168.github.io/news/a/1794e785df42.html",
+   "published_at": "2026-11-14T20:32:20+08:00"
   },
   {
-   "id": "d7e75b07110f",
+   "id": "0c73aee0153c",
    "channel": "dev",
-   "title": "用笔记本摄像头替代3000美元眼动仪，构建免手控空间通信器",
-   "summary": "基于Presage SmartSpectra SDK，为严重运动与语言障碍者提供低成本免手控AAC方案。",
+   "title": "隐形画笔：生成艺术与作画算法",
+   "summary": "一篇长文用Clojure和Quil探索程序化内容生成，把它当作创作引擎。",
    "source": "DEV",
    "tags": [],
-   "url": "https://dev.to/akul_9512534b6f460d338911/i-replaced-3000-eye-trackers-with-a-laptop-webcam-building-a-hands-free-spatial-communicator-522l",
-   "page": "https://aiym168.github.io/news/a/d7e75b07110f.html",
-   "published_at": "2026-11-14T20:38:31+08:00"
+   "url": "https://dev.to/ganesh_rajendran_art/the-invisible-brush-generative-art-and-the-algorithms-that-paint-32ig",
+   "page": "https://aiym168.github.io/news/a/0c73aee0153c.html",
+   "published_at": "2026-11-14T20:32:16+08:00"
   },
   {
-   "id": "87fb40249eae",
-   "channel": "ai",
-   "title": "Cursor泄露事件：Fireworks密钥暴露引发连锁",
-   "summary": "报告称攻击者获取Cursor发给Fireworks AI的访问密钥，该密钥在供应商侧暴露。",
+   "id": "2fb2715eea0b",
+   "channel": "dev",
+   "title": "事件ID 4673泛滥：安全日志为何写满、电脑为何变慢",
+   "summary": "事件4673表示特权服务被调用；若chrome.exe等每秒产生数十次，日志服务会占满CPU核心并严重滞后。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/coinetic_ai_security/event-id-4673-flood-why-the-security-log-is-full-and-the-pc-is-slow-1c7e",
+   "page": "https://aiym168.github.io/news/a/2fb2715eea0b.html",
+   "published_at": "2026-11-14T20:32:08+08:00"
+  },
+  {
+   "id": "2f785393167d",
+   "channel": "dev",
+   "title": "我删除了 extensions.gnome.org 账户，扩展却仍在线",
+   "summary": "作者2025年12月删除GNOME Shell扩展官方商店账户，本以为三个扩展会一并下架，结果并未发生。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/nickotmazgin/i-deleted-my-extensionsgnomeorg-account-my-extensions-stayed-online-3ig4",
+   "page": "https://aiym168.github.io/news/a/2f785393167d.html",
+   "published_at": "2026-11-14T20:31:55+08:00"
+  },
+  {
+   "id": "cc71cb936939",
+   "channel": "dev",
+   "title": "保留 .ll 文件：诚实时序数据为何需要 IR",
+   "summary": "运行 csperf run 得到的 JSON 会引用生成的 LLVM IR，常被当作临时文件删掉，其实 IR 才是数字背后的解释。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/aabhinavg/keep-your-ir-alive-why-the-ll-file-matters-for-honest-timing-1h1n",
+   "page": "https://aiym168.github.io/news/a/cc71cb936939.html",
+   "published_at": "2026-11-14T20:31:38+08:00"
+  },
+  {
+   "id": "90113d6fd97a",
+   "channel": "gossip",
+   "title": "自托管 Claude Managed Agents：哪些数据仍会离开你的网络",
+   "summary": "Anthropic 于 11 月 12 日开放私有测试，此前只能自托管沙箱，现在整个服务可部署在自有云或本地。",
    "source": "DEV",
    "tags": [
-    "AI 编程"
+    "Claude",
+    "AI Agent"
    ],
-   "url": "https://dev.to/henryramireztech/brecha-de-cursor-la-clave-de-fireworks-abrio-la-cadena-2ofb",
-   "page": "https://aiym168.github.io/news/a/87fb40249eae.html",
-   "published_at": "2026-11-14T20:37:42+08:00"
+   "url": "https://dev.to/thirumalaivasangj3/self-hosted-claude-managed-agents-what-you-run-what-still-leaves-your-network-58kc",
+   "page": "https://aiym168.github.io/news/a/90113d6fd97a.html",
+   "published_at": "2026-11-14T20:31:31+08:00"
   },
   {
-   "id": "6bc8465b9949",
+   "id": "962dd747d858",
    "channel": "dev",
-   "title": "从AWS视角看Snowflake Storage for Iceberg",
-   "summary": "Snowflake Storage for Apache Iceberg表的备份功能已正式可用。",
+   "title": "用 React 19 构建 macOS 风格开发者作品集 HarshitOS",
+   "summary": "作者想打破常规作品集模板，用 React 19 打造仿 macOS 界面的个人作品集 HarshitOS。",
    "source": "DEV",
    "tags": [
-    "亚马逊"
+    "苹果",
+    "JavaScript"
    ],
-   "url": "https://dev.to/aws-builders/snowflake-storage-for-iceberg-from-an-aws-perspective-44od",
-   "page": "https://aiym168.github.io/news/a/6bc8465b9949.html",
-   "published_at": "2026-11-14T20:37:25+08:00"
-  },
-  {
-   "id": "50ce8be67de8",
-   "channel": "ai",
-   "title": "JARVIS Chat将于11月20日推出，带来新AI体验",
-   "summary": "由400个AI模型驱动，官方宣布于2026年11月20日星期五正式上线。",
-   "source": "DEV",
-   "tags": [],
-   "url": "https://dev.to/madhu_01a88ee43799e4c0bd9/introducing-jarvis-chat-a-new-ai-experience-launching-november-20-4b3b",
-   "page": "https://aiym168.github.io/news/a/50ce8be67de8.html",
-   "published_at": "2026-11-14T20:37:18+08:00"
-  },
-  {
-   "id": "7dd72fbfc081",
-   "channel": "ai",
-   "title": "我没给AI团队史诗任务，而是给了定义",
-   "summary": "作者在11月14日向AI团队说明工作室对epic的含义，并两次重写定义。",
-   "source": "DEV",
-   "tags": [],
-   "url": "https://dev.to/shinpr/i-didnt-give-my-ai-team-its-epics-i-gave-it-a-definition-of-one-2pgf",
-   "page": "https://aiym168.github.io/news/a/7dd72fbfc081.html",
-   "published_at": "2026-11-14T20:37:00+08:00"
-  },
-  {
-   "id": "254e5a6e9824",
-   "channel": "dev",
-   "title": "本周测试并修复Web应用中的OWASP Top 10 2025问题",
-   "summary": "针对当前OWASP Top 10的实用测试清单，仅可用于自有或获授权的应用。",
-   "source": "DEV",
-   "tags": [],
-   "url": "https://dev.to/rokkhe/test-and-fix-the-owasp-top-10-2025-in-your-web-app-this-week-1bnp",
-   "page": "https://aiym168.github.io/news/a/254e5a6e9824.html",
-   "published_at": "2026-11-14T20:35:57+08:00"
+   "url": "https://dev.to/harshit_tiwari_df50f43d2a/building-harshitos-a-macos-inspired-developer-portfolio-in-react-19-1c1a",
+   "page": "https://aiym168.github.io/news/a/962dd747d858.html",
+   "published_at": "2026-11-14T20:30:54+08:00"
   },
   {
    "id": "bd34af6e7597",
    "channel": "ai",
-   "title": "我用Claude Code构建了想要多年的浏览器功能",
-   "summary": "与浏览器分手不意味着放弃它最好的功能。",
+   "title": "我用 Claude Code 做出想要多年的浏览器功能",
+   "summary": "原文仅有一句引言，称与浏览器分手并不意味着放弃它最好的功能。",
    "source": "XDA",
    "tags": [
     "Claude",
@@ -277,8 +266,8 @@
   {
    "id": "e2220eb1089c",
    "channel": "ai",
-   "title": "Claude Code 正悄然成为硬件黑客的得力助手，下一步支持 Linux",
-   "summary": "Claude Code 正在改变人们折腾硬件的方式。",
+   "title": "Claude Code 正成为硬件玩家的好帮手，下一步支持 Linux",
+   "summary": "原文称 Claude Code 正在改变人们折腾硬件的方式，并预告将支持 Linux。",
    "source": "XDA",
    "tags": [
     "Claude",
@@ -292,8 +281,8 @@
   {
    "id": "0db7a1a73cd5",
    "channel": "software",
-   "title": "不到100美元可买到25G网卡，但别指望有RJ45端口",
-   "summary": "这是超高速以太网方案，但存在若干注意事项。",
+   "title": "不到100美元可买到25G网卡，但别指望有RJ45接口",
+   "summary": "超高速以太网，但存在多项限制。",
    "source": "How-To Geek",
    "tags": [],
    "url": "https://www.howtogeek.com/get-25g-network-card-for-less-than-100-but-dont-expect-an-rj45-port/",
@@ -301,24 +290,21 @@
    "published_at": "2026-11-14T20:30:15+08:00"
   },
   {
-   "id": "26d703ee96dd",
-   "channel": "huawei",
-   "title": "【视频】鸿蒙智行大集合！我感兴趣的是这三台车",
-   "summary": "",
-   "source": "汽车之家",
-   "tags": [
-    "鸿蒙",
-    "问界"
-   ],
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fZTZDdG9ySWI4UXhaU3VDbWRSVnhwcW9WMXhpa09IeDhIR2tNejB2cFJjOHMwY0xMTFlPN1FZMkV3NkVxaXJPdy0zbm41NGhCMVFSd2ZNRTBNd2s?oc=5",
-   "page": "https://aiym168.github.io/news/a/26d703ee96dd.html",
-   "published_at": "2026-11-14T20:28:37+08:00"
+   "id": "39e836ec86fc",
+   "channel": "dev",
+   "title": "酒店POS系统夜审：在深夜订单仍到来时结束营业日",
+   "summary": "酒店跨日仍运营，客人可能午夜后点客房服务，账目与财务日报需同时处理。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/williamsj04/night-audit-for-a-hotel-pos-closing-the-business-day-while-late-orders-are-still-arriving-18il",
+   "page": "https://aiym168.github.io/news/a/39e836ec86fc.html",
+   "published_at": "2026-11-14T20:30:00+08:00"
   },
   {
    "id": "19e563a267e1",
    "channel": "game",
-   "title": "育碧据称正开发新 Rainbow Six Vegas 游戏，距上一作近20年",
-   "summary": "育碧据称正在制作新的 Rainbow Six Vegas 游戏，距离该系列上一作已过去18年。",
+   "title": "Ubisoft据报将开发新的Rainbow Six Vegas游戏",
+   "summary": "距上一作已18年，据报育碧正在开发新的Rainbow Six Vegas游戏。",
    "source": "Eurogamer",
    "tags": [],
    "url": "https://www.eurogamer.net/rainbow-six-vegas-new-game-ubisoft-spades-report",
@@ -328,8 +314,8 @@
   {
    "id": "107a88e61251",
    "channel": "science",
-   "title": "一种简单药片或可治愈高血压的常见病因",
-   "summary": "小型随访研究显示治疗结束后血压可保持较低达两年，提示部分激素驱动的高血压患者或可免于终身服药。",
+   "title": "一种简单药片或可治愈常见高血压病因",
+   "summary": "小型随访研究显示治疗结束后血压可维持较低达两年，部分激素性高血压患者或可免于终身服药。",
    "source": "SciTechDaily",
    "tags": [],
    "url": "https://scitechdaily.com/a-simple-pill-could-cure-a-common-cause-of-high-blood-pressure/",
@@ -339,8 +325,8 @@
   {
    "id": "36a3bda31172",
    "channel": "internet",
-   "title": "James Webb 望远镜发现比所环绕恒星更古老的冰",
-   "summary": "辐射和碰撞重塑了行星建筑材料。",
+   "title": "James Webb望远镜发现比所绕恒星更古老的冰",
+   "summary": "辐射与碰撞会重塑行星构建材料。",
    "source": "Ars Technica",
    "tags": [],
    "url": "https://arstechnica.com/science/2026/11/james-webb-telescope-finds-ice-older-than-the-star-it-orbits/",
@@ -348,10 +334,24 @@
    "published_at": "2026-11-14T20:15:48+08:00"
   },
   {
+   "id": "9bb5d040a114",
+   "channel": "internet",
+   "title": "苹果重申对 visionOS 平台的长期投入，仍看好空间计算发展前景",
+   "summary": "据外媒 Road to VR 报道，苹果本周举办了一场特别的「Meet with Apple」开发者活动，重点围绕旗下空间计算平台 visionOS 展开。在外界数月来持续质疑苹果是否仍将投入 XR 领域的背景下，苹果公司再次强调“仍然看好空间计算平台的发展前景”。 苹果空间计算部门产品经理 Yur…",
+   "source": "IT之家",
+   "tags": [
+    "苹果",
+    "AR/VR"
+   ],
+   "url": "https://www.ithome.com/1/027/223.htm",
+   "page": "https://aiym168.github.io/news/a/9bb5d040a114.html",
+   "published_at": "2026-11-14T20:15:10+08:00"
+  },
+  {
    "id": "7471e2333103",
    "channel": "chip",
-   "title": "TeamGroup CEO 警告2027年DRAM短缺或严重到有钱也难保供应",
-   "summary": "全球内存短缺可能在2027年显著恶化，DRAM供应或紧到即使愿意支付高价也难以获得库存。",
+   "title": "TeamGroup CEO警告2027年DRAM短缺或严重到有钱也难保供应",
+   "summary": "全球内存短缺可能到2027年显著恶化，即使愿付高价客户也难获得DRAM库存。",
    "source": "Wccftech",
    "tags": [
     "存储",
@@ -364,7 +364,7 @@
   {
    "id": "c03a709644df",
    "channel": "internet",
-   "title": "酿酒商逐渐认识到保护环境也有利于生意",
+   "title": "酿酒商正认识到保护环境有利于生意",
    "summary": "健康土壤、本土植物和更少化学品正帮助葡萄园适应变化。",
    "source": "Ars Technica",
    "tags": [],
@@ -375,8 +375,8 @@
   {
    "id": "7e044e56c268",
    "channel": "chip",
-   "title": "日本 RTX 5090 与 5080 价格骤降最高22%，或与黄仁勋辞职无关",
-   "summary": "日本高端 RTX 50 系列 GPU 出现意外降价，但报道认为与黄仁勋辞职没有直接关联。",
+   "title": "日本RTX 5090和RTX 5080价格突降最高达22%",
+   "summary": "日本高端RTX 50系列GPU意外降价，报道称与Jensen辞职无直接关联。",
    "source": "Wccftech",
    "tags": [
     "英伟达",
@@ -389,8 +389,8 @@
   {
    "id": "e5e7218ab9d6",
    "channel": "mobile",
-   "title": "我如何在没删一张照片的情况下为安卓手机腾出36GB空间",
-   "summary": "无需 SD 卡也能做到。",
+   "title": "我未删一张照片就在Android手机上腾出36GB空间",
+   "summary": "无需SD卡也能释放空间。",
    "source": "Android Authority",
    "tags": [
     "安卓"
@@ -402,8 +402,8 @@
   {
    "id": "4b62ddca7cdf",
    "channel": "mobile",
-   "title": "我家服务器最快的存储升级不是更快硬盘，而是更多内存",
-   "summary": "给服务器加内存带来了提升。",
+   "title": "我家服务器最快的存储升级不是更快硬盘而是更多内存",
+   "summary": "为家庭服务器增加内存带来了明显提升。",
    "source": "XDA",
    "tags": [
     "存储",
@@ -416,8 +416,8 @@
   {
    "id": "47395265f743",
    "channel": "science",
-   "title": "阿拉斯加渔民感叹珍视的鲑鱼种群衰退",
-   "summary": "渔民Bob Candopoulos在阿拉斯加社区经营以帝王鲑招牌吸引游客的生意。",
+   "title": "阿拉斯加渔民感叹珍贵三文鱼种群衰退",
+   "summary": "渔民Bob Candopoulos在阿拉斯加社区长期接待游客，其店铺招牌是一条帝王鲑。",
    "source": "Phys.org",
    "tags": [],
    "url": "https://phys.org/news/2026-11-alaska-laments-decline-prized-salmon.html",
@@ -427,8 +427,8 @@
   {
    "id": "a1eea252f5a9",
    "channel": "mobile",
-   "title": "我给8GB Fire Stick清缓存并插U盘，只有一项释放了空间",
-   "summary": "我把杂乱文件和电影文件转移到外置存储。",
+   "title": "我试了清理缓存和给8GB Fire Stick插U盘，只有一种释放了空间",
+   "summary": "把杂物和电影文件转移到外置硬盘后，只有一种方法真正释放出GB级空间。",
    "source": "Android Police",
    "tags": [],
    "url": "https://www.androidpolice.com/i-tried-cache-purge-plugging-usb-stick-into-my-8gb-fire-stick-one-freed-up-gigabytes/",
@@ -438,8 +438,8 @@
   {
    "id": "567fa298898a",
    "channel": "gossip",
-   "title": "Jensen Huang的明星时刻折射愿景型创始人CEO衰落",
-   "summary": "2025年1月6日，Nvidia CEO Jensen Huang在挤满网红和粉丝的14000人场馆登台。",
+   "title": "黄仁勋与远见型表演式创始人CEO的衰落",
+   "summary": "2025年1月6日，Nvidia CEO黄仁勋穿黑皮夹克在1.4万人场馆登台，享受明星般欢呼。",
    "source": "The Verge AI",
    "tags": [
     "英伟达"
@@ -451,8 +451,8 @@
   {
    "id": "b423af416c6e",
    "channel": "science",
-   "title": "美国曾消灭螺旋蝇，如今需新办法应对其回归",
-   "summary": "螺旋蝇曾于1966年在美国被消灭，如今卷土重来，旧技术已不够用。",
+   "title": "我们曾消灭螺旋蝇，如今正尝试再次做到",
+   "summary": "螺旋蝇曾于1966年在美国被消灭，如今卷土重来，旧方法已不够用。",
    "source": "Scientific American",
    "tags": [],
    "url": "https://www.scientificamerican.com/article/we-beat-screwworm-once-heres-how-were-trying-to-do-it-again/",
@@ -462,8 +462,8 @@
   {
    "id": "3a54dfb834d0",
    "channel": "software",
-   "title": "LibreOffice嘲讽微软云服务故障，日捐款达峰值",
-   "summary": "微软最新服务中断引发对Office替代品的关注，LibreOffice另有理由庆祝。",
+   "title": "LibreOffice嘲讽微软云故障，每日捐款创新高",
+   "summary": "微软最新服务中断似乎引发用户对Office替代品的兴趣，LibreOffice另有理由庆祝。",
    "source": "Neowin",
    "tags": [
     "微软"
@@ -476,7 +476,7 @@
    "id": "98cd8f4c4f12",
    "channel": "chip",
    "title": "Intel重夺70%桌面CPU份额，AMD在2026年Q3跌破30%",
-   "summary": "Intel份额回升可能更多源于供应状况和游戏PC市场低迷，而非处理器竞争力突变。",
+   "summary": "Intel在桌面CPU市场意外反弹，重夺大量份额，但这可能更多源于供应状况和游戏PC市场低迷，而非处理器竞争力突变。",
    "source": "Wccftech",
    "tags": [
     "AMD",
@@ -503,8 +503,8 @@
   {
    "id": "24c2b24750e0",
    "channel": "launch",
-   "title": "Ledge把Mac屏幕顶部变成文件、剪贴板和音乐搁架",
-   "summary": "Ledge是Mac顶部工具，可快速访问文件与剪贴板历史，显示正在播放歌曲和实时活动。",
+   "title": "Show HN：Ledge，文件、剪贴板历史与音乐的置物架",
+   "summary": "Ledge利用Mac屏幕顶部空间，提供文件和剪贴板历史快捷访问，显示播放歌曲与实时活动，有无刘海均可用。",
    "source": "Show HN",
    "tags": [],
    "url": "https://www.tryledge.app",
@@ -514,8 +514,8 @@
   {
    "id": "703d5a8bd206",
    "channel": "ai",
-   "title": "OpenAI解散独立机器人团队，研究人员转至其他团队",
-   "summary": "OpenAI称GPT-6 Astra等通用模型可直接控制机器人，因此无需专门机器人团队。",
+   "title": "OpenAI将机器人研究人员调往其他团队",
+   "summary": "OpenAI第二次解散独立机器人团队，因GPT-6 Astra等通用模型可直接控制机器人，研究人员被重新分配以加速机器人工作。",
    "source": "The Decoder",
    "tags": [
     "OpenAI",
@@ -528,8 +528,8 @@
   {
    "id": "27fb26f08d22",
    "channel": "science",
-   "title": "加州严阵以待，风暴或引发巨浪和洪水",
-   "summary": "加州周五准备迎接连续风暴，强降雨和海浪可能再次淹没沿海社区并带来巨浪。",
+   "title": "加州严阵以待可能引发巨浪与洪水的风暴",
+   "summary": "加州周五准备迎接一连串带来强降雨和海浪的风暴，可能再次淹没沿海社区并带来巨浪。",
    "source": "Phys.org",
    "tags": [],
    "url": "https://phys.org/news/2026-11-california-steels-storms-trigger-massive.html",
@@ -640,6 +640,19 @@
    "published_at": "2026-11-14T19:14:23+08:00"
   },
   {
+   "id": "0ad17acbb87c",
+   "channel": "mobile",
+   "title": "Steam 上好评率达 90% 的轻松城市建设游戏再创新低",
+   "summary": "交易 | 《工厂小镇》是一款城市建设模拟游戏，具有大量自动化功能，但没有来自敌人或人口需求的压力。这款广受好评的游戏目前在 Steam 上以迄今为止最低的价格发售。",
+   "source": "Notebookcheck",
+   "tags": [
+    "Steam"
+   ],
+   "url": "https://www.notebookcheck.net/Relaxed-city-builder-with-90-positive-reviews-hits-a-new-low-on-Steam.1450380.0.html",
+   "page": "https://aiym168.github.io/news/a/0ad17acbb87c.html",
+   "published_at": "2026-11-14T19:14:00+08:00"
+  },
+  {
    "id": "d72edda2b460",
    "channel": "internet",
    "title": "预测市场平台 Kalshi 招募《GTA 6》研究员，需全程直播游玩过程并分析游戏内外经济",
@@ -738,21 +751,6 @@
    "published_at": "2026-11-14T18:37:01+08:00"
   },
   {
-   "id": "12015f529f5a",
-   "channel": "huawei",
-   "title": "三款人像旗舰实拍横评：vivo X500、华为Pura 90、OPPO Find X10谁更懂女生自然美",
-   "summary": "",
-   "source": "手机新浪网",
-   "tags": [
-    "华为",
-    "OPPO",
-    "vivo"
-   ],
-   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE94TnZCLWhPWGlQVDcxQnA2NkNPZzlCbHBjX1FyUzFVbmZyMXZWVk1hajlUWmU4T1pxYUJGMGMyWUFNY1lKTy1hMUFjRjBUTVF3eVM3Yk45M0pwWDVJS01ic3ZOM19rdWxXeHh5ZkY4aUNEZw?oc=5",
-   "page": "https://aiym168.github.io/news/a/12015f529f5a.html",
-   "published_at": "2026-11-14T18:35:39+08:00"
-  },
-  {
    "id": "17dd37ef7f39",
    "channel": "internet",
    "title": "微软否认FAA全美航班停飞故障与自身服务有关",
@@ -779,19 +777,6 @@
    "url": "https://www.theregister.com/saas/2026/11/14/microsofts-school-email-bill-gives-rivals-something-to-smile-about/5309296",
    "page": "https://aiym168.github.io/news/a/1576f8db33aa.html",
    "published_at": "2026-11-14T18:27:00+08:00"
-  },
-  {
-   "id": "ea3d09eb3913",
-   "channel": "ai",
-   "title": "美国首届 AI 音乐奖颁奖典礼举行，入围者坦言背后同样凝聚真人心血",
-   "summary": "据路透社报道，当地时间 13 日，美国首届 AI 音乐奖颁奖典礼正式举行，表彰利用 AI 参与歌曲创作的音乐人。 AI 音乐虽然饱受争议，甚至引发诉讼，但仍在流媒体平台获得数百万次播放，并成功登上音乐排行榜。 在洛杉矶市中心举行的颁奖典礼上，负责颁奖和领奖的真人音乐人认为，AI 音乐应该被视为 一种…",
-   "source": "IT之家",
-   "tags": [
-    "AI 音乐"
-   ],
-   "url": "https://www.ithome.com/1/027/210.htm",
-   "page": "https://aiym168.github.io/news/a/ea3d09eb3913.html",
-   "published_at": "2026-11-14T18:22:58+08:00"
   },
   {
    "id": "3f4e09b05300",
@@ -2671,6 +2656,20 @@
    "url": "https://36kr.com/newsflashes/4068946927047558?f=rss",
    "page": "https://aiym168.github.io/news/a/432b85a4da8f.html",
    "published_at": "2026-11-14T14:26:30+08:00"
+  },
+  {
+   "id": "fa546dd9904b",
+   "channel": "software",
+   "title": "Plasma 6.9 加入延迟加载 XWayland、窗口晃动预设和屏幕键盘升级",
+   "summary": "KDE Plasma 6.9 让 XWayland 仅在启动 X11 应用时延迟加载，减少内存和 GPU 开销。",
+   "source": "LinuxCompatible",
+   "tags": [
+    "显卡",
+    "存储"
+   ],
+   "url": "https://www.linuxcompatible.org/story/plasma-69-adds-lazy-xwayland-wobble-window-presets-and-onscreen-keyboard-upgrades/",
+   "page": "https://aiym168.github.io/news/a/fa546dd9904b.html",
+   "published_at": "2026-11-14T14:26:00+08:00"
   }
  ]
 }
