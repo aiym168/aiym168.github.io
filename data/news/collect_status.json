@@ -1,11 +1,11 @@
 {
- "run_at": "2026-11-14T12:26:09+08:00",
+ "run_at": "2026-11-14T12:26:48+08:00",
  "sources": {
   "techcrunch-ai": {
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 4,
+   "new": 3,
    "blocked": 6
   },
   "verge-ai": {
@@ -261,11 +261,11 @@
    "blocked": 1
   },
   "eetimes-com-feed": {
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "rows": 0,
+   "ok": true,
+   "error": "",
+   "rows": 10,
    "new": 0,
-   "blocked": 0
+   "blocked": 3
   },
   "semiwiki-com-feed": {
    "ok": true,
@@ -345,11 +345,11 @@
    "blocked": 5
   },
   "199it-com-feed": {
-   "ok": true,
-   "error": "",
-   "rows": 30,
-   "new": 8,
-   "blocked": 2
+   "ok": false,
+   "error": "URLError: <urlopen error timed out>",
+   "rows": 0,
+   "new": 0,
+   "blocked": 0
   },
   "36kr-com-feed-newsflash": {
    "ok": true,
@@ -663,7 +663,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 1,
+   "new": 2,
    "blocked": 2
   },
   "sciencedaily-com-rss-top-science-xml": {
@@ -671,7 +671,7 @@
    "error": "",
    "rows": 30,
    "new": 0,
-   "blocked": 3
+   "blocked": 4
   },
   "phys-org-rss-feed": {
    "ok": true,
@@ -912,11 +912,11 @@
    "blocked": 0
   },
   "rsshub-rssforever-com-github-trending-daily-any": {
-   "ok": true,
-   "error": "",
-   "rows": 12,
+   "ok": false,
+   "error": "TimeoutError: The read operation timed out",
+   "rows": 0,
    "new": 0,
-   "blocked": 1
+   "blocked": 0
   },
   "huawei-newsroom": {
    "ok": true,
@@ -992,7 +992,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 3,
+   "new": 2,
    "blocked": 3
   },
   "gn-aianime": {
@@ -1005,7 +1005,7 @@
   "gn-aimanhua": {
    "ok": true,
    "error": "",
-   "rows": 12,
+   "rows": 10,
    "new": 0,
    "blocked": 1
   },
@@ -1026,7 +1026,7 @@
   "gn-sora": {
    "ok": true,
    "error": "",
-   "rows": 17,
+   "rows": 16,
    "new": 0,
    "blocked": 1
   },
@@ -1035,19 +1035,19 @@
    "error": "",
    "rows": 30,
    "new": 0,
-   "blocked": 3
+   "blocked": 2
   },
   "gn-comfyui": {
    "ok": true,
    "error": "",
-   "rows": 4,
+   "rows": 5,
    "new": 0,
    "blocked": 0
   },
   "gn-comfyui-en": {
    "ok": true,
    "error": "",
-   "rows": 14,
+   "rows": 13,
    "new": 0,
    "blocked": 0
   },
@@ -1061,7 +1061,7 @@
   "gn-llm-tut": {
    "ok": true,
    "error": "",
-   "rows": 21,
+   "rows": 19,
    "new": 0,
    "blocked": 2
   },
@@ -1076,14 +1076,14 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 7,
+   "new": 6,
    "blocked": 0
   },
   "gn-ascend": {
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 9,
+   "new": 10,
    "blocked": 1
   }
  },
@@ -1104,7 +1104,7 @@
   "senator": 1,
   "sex": 3,
   "Betting": 1,
-  "Affair": 2,
+  "Affair": 3,
   "Government": 2,
   "中美": 1,
   "War": 2,
@@ -1135,9 +1135,9 @@
   "婚外": 2,
   "主权": 1,
   "投票": 3,
-  "监管": 4,
+  "监管": 5,
   "总统": 3,
-  "政府": 7,
+  "政府": 6,
   "出口管制": 1,
   "关税": 1,
   "诈骗": 2,
@@ -1145,7 +1145,6 @@
   "禁令": 1,
   "香港": 2,
   "中央": 1,
-  "西藏": 1,
   "领导人": 2,
   "新华社": 1,
   "政治": 1,
@@ -1181,7 +1180,7 @@
   "冲突": 1,
   "死亡": 1,
   "election": 1,
-  "killed": 1,
+  "killed": 2,
   "Senate": 2,
   "federal": 1,
   "White House": 1,
@@ -1204,19 +1203,19 @@
   "两岸": 1,
   "doge": 1,
   "人权": 1,
-  "Hentai": 1,
   "NSFW": 1,
   "大使": 2,
   "擦边": 1,
+  "民主": 1,
   "离婚": 1,
-  "审查": 2,
+  "审查": 1,
   "爆炸": 1,
   "性感": 1
  },
- "new": 302,
+ "new": 293,
  "sources_total": 156,
- "sources_ok": 153,
- "translated": 180,
+ "sources_ok": 152,
+ "translated": 181,
  "counts": {
   "internet": 150,
   "ai": 220,
@@ -1231,7 +1230,7 @@
   "science": 150,
   "chip": 150,
   "gossip": 56,
-  "aidrama": 141,
+  "aidrama": 140,
   "space": 81,
   "game": 150,
   "comfyui": 58

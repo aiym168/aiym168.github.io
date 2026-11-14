@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-14T12:26:09+08:00",
+ "updated_at": "2026-11-14T12:26:48+08:00",
  "counts": {
   "ai": 220,
   "aivideo": 150,
   "comfyui": 58,
-  "aidrama": 141,
+  "aidrama": 140,
   "aigc": 71,
   "gossip": 56,
   "huawei": 150,
@@ -160,7 +160,7 @@
    "tags": [],
    "url": "https://36kr.com/newsflashes/4069079494775682?f=rss",
    "page": "https://aiym168.github.io/news/a/15c65c2fced2.html",
-   "published_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "a302fa510578",
@@ -173,7 +173,7 @@
    ],
    "url": "https://36kr.com/newsflashes/4068951501837186?f=rss",
    "page": "https://aiym168.github.io/news/a/a302fa510578.html",
-   "published_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "f8dc2caad04c",
@@ -184,7 +184,7 @@
    "tags": [],
    "url": "https://36kr.com/newsflashes/4069026187154307?f=rss",
    "page": "https://aiym168.github.io/news/a/f8dc2caad04c.html",
-   "published_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "e44d478a2637",
@@ -195,7 +195,7 @@
    "tags": [],
    "url": "https://36kr.com/newsflashes/4069024183981193?f=rss",
    "page": "https://aiym168.github.io/news/a/e44d478a2637.html",
-   "published_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "08c7dd1c5eb9",
@@ -206,7 +206,7 @@
    "tags": [],
    "url": "https://36kr.com/newsflashes/4068948814599040?f=rss",
    "page": "https://aiym168.github.io/news/a/08c7dd1c5eb9.html",
-   "published_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "779685ab37e0",
@@ -217,7 +217,7 @@
    "tags": [],
    "url": "https://36kr.com/newsflashes/4069006049350530?f=rss",
    "page": "https://aiym168.github.io/news/a/779685ab37e0.html",
-   "published_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "d75f17bbe68e",
@@ -228,7 +228,7 @@
    "tags": [],
    "url": "https://36kr.com/newsflashes/4068942186599296?f=rss",
    "page": "https://aiym168.github.io/news/a/d75f17bbe68e.html",
-   "published_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "ae3a3002bbca",
@@ -239,7 +239,7 @@
    "tags": [],
    "url": "https://36kr.com/newsflashes/4068998178870146?f=rss",
    "page": "https://aiym168.github.io/news/a/ae3a3002bbca.html",
-   "published_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "276a2df43aba",
@@ -252,13 +252,13 @@
    ],
    "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
    "page": "https://aiym168.github.io/news/a/276a2df43aba.html",
-   "published_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "c7ab54a51d37",
    "channel": "dev",
-   "title": "CSP nonce 需按响应生成并管理缓存",
-   "summary": "CSP nonce 只有在攻击者无法预测或复用时才有效，因此需每次响应生成新值并注意缓存。",
+   "title": "CSP nonce 需要每次响应随机熵与缓存纪律",
+   "summary": "文章解释 CSP nonce 的作用与浏览器比对机制，强调其有效性依赖每次响应的随机性和不可预测。",
    "source": "DEV",
    "tags": [],
    "url": "https://dev.to/facilishz/csp-nonces-need-per-response-entropy-and-cache-discipline-3m2j",
@@ -268,8 +268,8 @@
   {
    "id": "87024853d0e2",
    "channel": "ai",
-   "title": "AI 服务宕机时状态页未说明原因",
-   "summary": "2026 年 11 月微软大范围故障期间 Claude 也出现问题，但状态页未反映真实原因。",
+   "title": "大家都以为知道 AI 宕机原因，状态页却没有说明",
+   "summary": "2026 年 11 月 12 至 13 日微软大范围故障影响 Teams、Outlook 等，Claude 同期也出现问题，状态页未说明原因。",
    "source": "DEV",
    "tags": [
     "微软",
@@ -282,8 +282,8 @@
   {
    "id": "76a85bc7abe6",
    "channel": "dev",
-   "title": "可重复的调试流程能减少新问题",
-   "summary": "调试时先复现问题、记录触发步骤，并确认是否每次都发生。",
+   "title": "一套简单调试流程让你成为更好的开发者",
+   "summary": "文章介绍可重复的调试流程，第一步是记录复现步骤，确认问题是否每次都发生或只在特定条件下出现。",
    "source": "DEV",
    "tags": [],
    "url": "https://dev.to/abdulhaseebmari/a-simple-debugging-workflow-that-makes-you-a-better-developer-3a22",
@@ -293,8 +293,8 @@
   {
    "id": "e1ad5da1968e",
    "channel": "aigc",
-   "title": "用 AI 局部改图：先标位置再描述",
-   "summary": "局部改图的难点是指明改哪里，先标记目标区域再描述修改可避免改错对象。",
+   "title": "如何用 AI 编辑图像局部：先标记再描述",
+   "summary": "文章指出 AI 改图难点在于告诉模型改哪里，先标记目标区域再描述修改，可避免改错枕头等对象。",
    "source": "DEV",
    "tags": [],
    "url": "https://dev.to/deepfox/how-to-edit-part-of-an-image-with-ai-mark-it-then-describe-it-g42",
@@ -304,8 +304,8 @@
   {
    "id": "eb3b74f3f1bc",
    "channel": "dev",
-   "title": "物流多租户回执图像需隔离存储",
-   "summary": "按租户划分桶或严格键命名空间，保持原图不可变，并选用统一操作契约的存储 API。",
+   "title": "物流系统租户隔离图片上传：选择审计安全的存储边界",
+   "summary": "物流系统需保留原始票据图片，关键是谁能访问这些字节；应按租户分桶或严格命名空间，并用策略保持原图不可变。",
    "source": "DEV",
    "tags": [],
    "url": "https://dev.to/corneliushayes8579/tenant-isolated-image-uploads-choosing-an-audit-safe-storage-boundary-for-logistics-4f80",
@@ -315,12 +315,11 @@
   {
    "id": "0fff4d0dd5df",
    "channel": "ai",
-   "title": "19.5GB 模型在 24GB 显存上为何仍卡",
-   "summary": "模型权重虽小于显存，加载后处理真实代码库时仍会因额外内存占用出现问题。",
+   "title": "19.5GB 大模型在 24GB 显存上为何卡顿：KV 缓存修复",
+   "summary": "文章从 19.5GB GGUF 模型和 24GB 显存看似放得下出发，解释实际运行变慢的原因与 KV 缓存修复思路。",
    "source": "DEV",
    "tags": [
-    "大模型",
-    "存储"
+    "大模型"
    ],
    "url": "https://dev.to/shuraj_shampang_823cf28f2/why-your-195gb-llm-crawls-on-24gb-vram-the-kv-cache-fix-1k19",
    "page": "https://aiym168.github.io/news/a/0fff4d0dd5df.html",
@@ -329,8 +328,8 @@
   {
    "id": "6c7fc19e6089",
    "channel": "dev",
-   "title": "医疗 SaaS 回执上传需私有存储与审计链接",
-   "summary": "回执要方便授权审核者获取，但原文件不能成为永久公开 URL，因此应选私有对象存储。",
+   "title": "Node.js 医疗 SaaS 票据上传：私有对象存储与审计链接",
+   "summary": "医疗 SaaS 的票据需便于授权审核者获取，同时原始文件不能成为永久公开 URL，这决定存储方案选择。",
    "source": "DEV",
    "tags": [
     "JavaScript",
@@ -343,8 +342,8 @@
   {
    "id": "dbb552beaaa0",
    "channel": "dev",
-   "title": "16GB 显卡上图像转高斯泼溅实测",
-   "summary": "在 RTX 5070 Ti 的 WSL2 环境完成 14 次本地生成，原生 Windows 与 iPhone 仍待测试。",
+   "title": "16GB GPU 上从图像生成高斯泼溅：Idol 与 Three.js 测试",
+   "summary": "作者在 RTX 5070 Ti 的 WSL2 环境完成 14 次本地生成任务，原生 Windows 与 iPhone 仍待单独测试。",
    "source": "DEV",
    "tags": [
     "苹果",
@@ -360,8 +359,8 @@
   {
    "id": "53dc7ff35f8f",
    "channel": "mobile",
-   "title": "部分 GTA 6 实体盒缺少兑换码",
-   "summary": "部分密封零售版未含 Xbox 或 PlayStation Store 兑换码，购买无光驱版玩家向 Rockstar 和零售商退款未果。",
+   "title": "部分 GTA 6 实体盒缺兑换码，Rockstar 拒绝协助",
+   "summary": "GTA 6 发售前几天发现部分密封零售盒内缺少 Xbox 或 PlayStation Store 兑换码，无光驱版买家向 Rockstar 和零售商退款未果。",
    "source": "Notebookcheck",
    "tags": [
     "PlayStation",
@@ -389,8 +388,8 @@
   {
    "id": "c8cc58f907ae",
    "channel": "software",
-   "title": "挪威网盘 Jottacloud 正开发 Linux 桌面应用",
-   "summary": "挪威 Jotta Group 旗下网盘 Jottacloud 自 2008 年起提供备份同步服务，此前只有 Windows、苹果和安卓客户端，如今着手开发 Linux 桌面应用。",
+   "title": "挪威 Dropbox 竞品 Jottacloud 正在开发 Linux 应用",
+   "summary": "Jottacloud 自 2008 年提供文件与照片备份同步，已有 Windows、Apple 和 Android 官方应用，但一直缺少 Linux 桌面应用。",
    "source": "OMG! Ubuntu",
    "tags": [
     "苹果",
@@ -435,8 +434,8 @@
   {
    "id": "62c4148f4162",
    "channel": "mobile",
-   "title": "TCL CSOT 展示 0.6 毫米超薄低反射 IJP OLED 屏",
-   "summary": "在 TCL CSOT 主办的 DTC 2026 活动上，公司展出面向轻薄笔记本的 14 英寸 IJP OLED 面板，厚度仅 0.6mm，另有边框 1.6mm 的 16 英寸屏。",
+   "title": "TCL CSOT 展出 14 英寸 0.6mm 厚 IJP OLED 屏",
+   "summary": "在 DTC 2026 上，TCL CSOT 展示厚 0.6mm 的 14 英寸 IJP OLED 面板，以及边框仅 1.6mm 的 16 英寸屏。",
    "source": "Notebookcheck",
    "tags": [],
    "url": "https://www.notebookcheck.net/Super-slim-low-reflection-IJP-OLED-display-debuts-for-thin-and-light-laptops.1450215.0.html",
@@ -473,8 +472,8 @@
   {
    "id": "788000071087",
    "channel": "ai",
-   "title": "backendskills：为 AI 代理提供后端代码安全技能",
-   "summary": "globalmpc/backendskills 是开源仓库，提供让 AI 代理编写更安全的鉴权、数据和迁移代码的技能。",
+   "title": "开源项目 backendskills 提供认证与数据代码的 agent 技能",
+   "summary": "该项目提供一组 agent 技能，用于更安全地编写认证、数据和迁移代码。",
    "source": "Show HN",
    "tags": [
     "AI Agent"
@@ -486,8 +485,8 @@
   {
    "id": "ea94c8729aee",
    "channel": "auto",
-   "title": "美国居民厨余垃圾路边收集项目成本对比分析",
-   "summary": "对八个居民项目的分析显示，若实施得当，新设有机垃圾收集项目可让城市固废系统更高效、更有韧性、更可持续。",
+   "title": "美国住宅路边有机垃圾收集项目成本对比分析",
+   "summary": "对八个住宅项目的分析显示，妥善实施有机垃圾收集可让城市固废系统更高效、更有韧性。",
    "source": "CleanTechnica",
    "tags": [],
    "url": "https://cleantechnica.com/2026/11/13/comparative-cost-analysis-for-residential-curbside-organics-collection-programs/",
@@ -497,8 +496,8 @@
   {
    "id": "55372eb3ef87",
    "channel": "ai",
-   "title": "Browserr：面向 AI 代理的 MCP 优先浏览器",
-   "summary": "Browserr 以单个 Rust 二进制实现，主打 MCP 优先，供 AI 代理驱动浏览器。",
+   "title": "Browserr：面向 AI agent 的 MCP 优先浏览器",
+   "summary": "该项目是面向 AI agent 的 MCP 优先浏览器，以单个 Rust 二进制形式发布。",
    "source": "Show HN",
    "tags": [
     "AI Agent",
@@ -526,7 +525,7 @@
    "id": "9e727051dd57",
    "channel": "launch",
    "title": "open-geocode：9GB 内存 5 小时索引 6.3 亿地址",
-   "summary": "open-geocode-rs/open-geocode 是开源地理编码项目，称可在 9GB 内存预算下用 5 小时完成全球 6.3 亿地址索引。",
+   "summary": "该项目在 9GB 内存预算下，用 5 小时完成全球 6.3 亿条地址的索引。",
    "source": "Show HN",
    "tags": [
     "存储"
@@ -678,8 +677,8 @@
   {
    "id": "4579221944d8",
    "channel": "ai",
-   "title": "OpenCyclone：以 AI 为交互界面的开源手机项目",
-   "summary": "OpenCyclone 是 Cyclon 的开源版本，探索让 AI 成为手机主要交互界面的形态。",
+   "title": "开源项目 opencyclone：以 AI 为界面的手机",
+   "summary": "该项目是 Cyclon 的开源版本，探索以 AI 作为手机主要交互界面。",
    "source": "Show HN",
    "tags": [
     "Open-Source"
@@ -720,8 +719,8 @@
   {
    "id": "c1f000a56fec",
    "channel": "science",
-   "title": "社会关系在农业创新推广中的作用常被研究忽视",
-   "summary": "发表于 Frontiers in Sustainable Food Systems 的研究指出，气候导向农业研究虽常提伙伴关系与机构合作，却很少明确记录其与创新推广的关系。",
+   "title": "研究：社会关系在农业创新规模化中作用被低估",
+   "summary": "研究指出，气候导向的农业研究中合作关系常见，但其与创新规模化的关系很少被明确记录。",
    "source": "Phys.org",
    "tags": [],
    "url": "https://phys.org/news/2026-11-role-social-relationships-scaling-agricultural.html",
@@ -742,22 +741,6 @@
    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5UeER2MlVUVlQtZTF1TTVsWFBSTWx2YVpnWGh2MV9HRWJ6ZHVwa3l4aHdrbWs4MWRjZC05Vk5mX1dRcmtvajJ1ZWhISG4yNWdSSTJlX3N6eEFGZFE2a0NFRzUzSHhqWHpZQXhNaHZMaG5xUQ?oc=5",
    "page": "https://aiym168.github.io/news/a/cd756bb2fb35.html",
    "published_at": "2026-11-14T10:37:44+08:00"
-  },
-  {
-   "id": "83ed49ee19ae",
-   "channel": "huawei",
-   "title": "小米18 Fold折痕控制出色 华为Pura X Max折痕明显 iPhone Duo铰链镂空易进沙",
-   "summary": "",
-   "source": "手机新浪网",
-   "tags": [
-    "华为",
-    "小米",
-    "苹果",
-    "iPhone"
-   ],
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRlhVQlVGMWQybFJWTXE3dkpCc3E1eXdwcXVoMFdqVnBfM2Z3NWtuMGlRcUI5RHBydzY5Q1JlLXR5UWxmTlNaYm41dEdxb2piUjNsSmhEZ1lBWExGVzNYcjV2am1SYWJvUHE3RWtyZFlfS0tzTVJoV1NiNG9IYXk2MA?oc=5",
-   "page": "https://aiym168.github.io/news/a/83ed49ee19ae.html",
-   "published_at": "2026-11-14T10:37:43+08:00"
   },
   {
    "id": "fcfc3b8f7b6c",
@@ -786,8 +769,8 @@
   {
    "id": "8755b90e11b8",
    "channel": "ai",
-   "title": "CD Projekt Red用AI还原《巫师3》DLC杰洛特配音",
-   "summary": "波兰配音演员Jacek Rozenek中风后声音变低哑，CDPR让他重录新台词并用Respeecher AI匹配原声。",
+   "title": "CDPR 用 AI 在《巫师3》新 DLC 中保留杰洛特嗓音",
+   "summary": "因配音演员 Rozenek 中风后嗓音变低哑，CDPR 让他本人录制新台词，再用 Respeecher 的 AI 处理以匹配原音。",
    "source": "Notebookcheck",
    "tags": [],
    "url": "https://www.notebookcheck.net/CD-Projekt-Red-is-using-AI-to-preserve-Geralt-s-voice-in-The-Witcher-3-s-upcoming-Songs-of-the-Past-DLC.1450118.0.html",
@@ -821,8 +804,8 @@
   {
    "id": "4dbfb303f191",
    "channel": "auto",
-   "title": "特斯拉Cybercab开放订购，售价29990美元且仅限Robotaxi区域",
-   "summary": "购车还需每月299美元Autonomy订阅，车辆只在得州和佛州Robotaxi服务区内运行。",
+   "title": "Tesla Cybercab 开放订购，售价 29990 美元",
+   "summary": "还需每月支付 299 美元订阅自动驾驶，且只能在得州和佛州的 Robotaxi 服务区内行驶。",
    "source": "Electrek",
    "tags": [
     "机器人",
@@ -1720,6 +1703,19 @@
    "published_at": "2026-11-14T09:13:57+08:00"
   },
   {
+   "id": "39136d85fce3",
+   "channel": "science",
+   "title": "科学家捕捉到电子进行看似不可能的量子跃迁",
+   "summary": "在石墨烯中观测到电子跨越禁戒能隙的跃迁，部分跃迁概率高达 100%，有望推动超快光控电子器件。",
+   "source": "ScienceDaily 科技",
+   "tags": [
+    "量子计算"
+   ],
+   "url": "https://www.sciencedaily.com/releases/2026/11/261112025523.htm",
+   "page": "https://aiym168.github.io/news/a/39136d85fce3.html",
+   "published_at": "2026-11-14T09:13:05+08:00"
+  },
+  {
    "id": "4692cbe94955",
    "channel": "gossip",
    "title": "礼来 CEO 回应“AI 十年内攻克癌症”：愿景很美好，但不太可能",
@@ -2363,7 +2359,7 @@
   {
    "id": "dcab381c8b78",
    "channel": "dev",
-   "title": "3Com发生了什么？",
+   "title": "3Com 公司后来怎么样了",
    "summary": "",
    "source": "Hacker News",
    "tags": [],
@@ -2509,6 +2505,17 @@
    "url": "https://www.tryanvil.dev/",
    "page": "https://aiym168.github.io/news/a/7be2027a1425.html",
    "published_at": "2026-11-14T07:42:35+08:00"
+  },
+  {
+   "id": "916f45b01bb0",
+   "channel": "science",
+   "title": "AI 将激光物理模拟速度提升 250 倍",
+   "summary": "斯坦福等机构开发的 AI 系统可在毫秒内预测激光脉冲在晶体中的行为，精度损失不大。",
+   "source": "ScienceDaily 科技",
+   "tags": [],
+   "url": "https://www.sciencedaily.com/releases/2026/11/261111005913.htm",
+   "page": "https://aiym168.github.io/news/a/916f45b01bb0.html",
+   "published_at": "2026-11-14T07:41:08+08:00"
   },
   {
    "id": "a6ebb8e60c6f",
@@ -2684,19 +2691,6 @@
    "url": "https://phys.org/news/2026-11-unstable-plasma-generates-reveal.html",
    "page": "https://aiym168.github.io/news/a/c02ab589a904.html",
    "published_at": "2026-11-14T07:20:02+08:00"
-  },
-  {
-   "id": "7ab113adec14",
-   "channel": "launch",
-   "title": "grounds.top 是 FAA 全国停飞期间的美国航班实时地图",
-   "summary": "文章网址：https://grounds.top/ 评论网址：https://news.ycombinator.com/item?id=50491545 积分：23 # 评论：4",
-   "source": "Show HN",
-   "tags": [
-    "FAA"
-   ],
-   "url": "https://grounds.top/",
-   "page": "https://aiym168.github.io/news/a/7ab113adec14.html",
-   "published_at": "2026-11-14T07:17:39+08:00"
   }
  ]
 }

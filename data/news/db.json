@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-14T12:26:09+08:00",
+ "updated_at": "2026-11-14T12:26:48+08:00",
  "counts": {
   "internet": 150,
   "ai": 220,
@@ -14,7 +14,7 @@
   "science": 150,
   "chip": 150,
   "gossip": 56,
-  "aidrama": 141,
+  "aidrama": 140,
   "space": 81,
   "game": 150,
   "comfyui": 58
@@ -33,8 +33,8 @@
    "source_key": "36kr-com-feed-newsflash",
    "source_home": "https://www.36kr.com/",
    "lang": "zh",
-   "published_at": "2026-11-14T12:26:09+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "a302fa510578",
@@ -49,8 +49,8 @@
    "source_key": "36kr-com-feed-newsflash",
    "source_home": "https://www.36kr.com/",
    "lang": "zh",
-   "published_at": "2026-11-14T12:26:09+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "f8dc2caad04c",
@@ -65,8 +65,8 @@
    "source_key": "36kr-com-feed-newsflash",
    "source_home": "https://www.36kr.com/",
    "lang": "zh",
-   "published_at": "2026-11-14T12:26:09+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "e44d478a2637",
@@ -81,8 +81,8 @@
    "source_key": "36kr-com-feed-newsflash",
    "source_home": "https://www.36kr.com/",
    "lang": "zh",
-   "published_at": "2026-11-14T12:26:09+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "08c7dd1c5eb9",
@@ -97,8 +97,8 @@
    "source_key": "36kr-com-feed-newsflash",
    "source_home": "https://www.36kr.com/",
    "lang": "zh",
-   "published_at": "2026-11-14T12:26:09+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "779685ab37e0",
@@ -113,8 +113,8 @@
    "source_key": "36kr-com-feed-newsflash",
    "source_home": "https://www.36kr.com/",
    "lang": "zh",
-   "published_at": "2026-11-14T12:26:09+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "d75f17bbe68e",
@@ -129,8 +129,8 @@
    "source_key": "36kr-com-feed-newsflash",
    "source_home": "https://www.36kr.com/",
    "lang": "zh",
-   "published_at": "2026-11-14T12:26:09+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "ae3a3002bbca",
@@ -145,8 +145,8 @@
    "source_key": "36kr-com-feed-newsflash",
    "source_home": "https://www.36kr.com/",
    "lang": "zh",
-   "published_at": "2026-11-14T12:26:09+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "276a2df43aba",
@@ -161,15 +161,15 @@
    "source_key": "hf-trending",
    "source_home": "https://huggingface.co/models",
    "lang": "tpl",
-   "published_at": "2026-11-14T12:26:09+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "published_at": "2026-11-14T12:26:48+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "c7ab54a51d37",
    "channel": "dev",
-   "title": "CSP nonce 需按响应生成并管理缓存",
+   "title": "CSP nonce 需要每次响应随机熵与缓存纪律",
    "title_orig": "CSP Nonces Need Per-Response Entropy and Cache Discipline",
-   "summary": "CSP nonce 只有在攻击者无法预测或复用时才有效，因此需每次响应生成新值并注意缓存。",
+   "summary": "文章解释 CSP nonce 的作用与浏览器比对机制，强调其有效性依赖每次响应的随机性和不可预测。",
    "summary_orig": "CSP Nonces Need Per-Response Entropy and Cache Discipline A CSP nonce lets a page allow a specific inline script without opening the policy to every inline script. The browser compares the nonce in the element with a nonce source in the policy. That comparison is only useful when an attacker cannot predict or reuse the value.",
    "url": "https://dev.to/facilishz/csp-nonces-need-per-response-entropy-and-cache-discipline-3m2j",
    "hn": "",
@@ -178,14 +178,14 @@
    "source_home": "https://dev.to/",
    "lang": "en",
    "published_at": "2026-11-14T12:23:30+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "87024853d0e2",
    "channel": "ai",
-   "title": "AI 服务宕机时状态页未说明原因",
+   "title": "大家都以为知道 AI 宕机原因，状态页却没有说明",
    "title_orig": "Everyone knew why the AI went down. The status page did not.",
-   "summary": "2026 年 11 月微软大范围故障期间 Claude 也出现问题，但状态页未反映真实原因。",
+   "summary": "2026 年 11 月 12 至 13 日微软大范围故障影响 Teams、Outlook 等，Claude 同期也出现问题，状态页未说明原因。",
    "summary_orig": "Three incidents, one day, one borrowed explanation. What the primary source actually said. Everyone knew why the AI went down. The status page did not. What happened On 12 and 13 November 2026 a large Microsoft outage disrupted Teams, Outlook and other services. Claude had problems in the same window.",
    "url": "https://dev.to/dhrubojyoti/everyone-knew-why-the-ai-went-down-the-status-page-did-not-4gjk",
    "hn": "",
@@ -194,14 +194,14 @@
    "source_home": "https://dev.to/",
    "lang": "en",
    "published_at": "2026-11-14T12:23:24+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "76a85bc7abe6",
    "channel": "dev",
-   "title": "可重复的调试流程能减少新问题",
+   "title": "一套简单调试流程让你成为更好的开发者",
    "title_orig": "A Simple Debugging Workflow That Makes You a Better Developer",
-   "summary": "调试时先复现问题、记录触发步骤，并确认是否每次都发生。",
+   "summary": "文章介绍可重复的调试流程，第一步是记录复现步骤，确认问题是否每次都发生或只在特定条件下出现。",
    "summary_orig": "Debugging can feel frustrating, especially when a problem appears without an obvious cause. A repeatable process makes it easier to investigate issues without introducing more of them. 1. Reproduce the problem Write down the steps that cause the issue. Confirm whether it happens every time or only under certain conditions. 2.",
    "url": "https://dev.to/abdulhaseebmari/a-simple-debugging-workflow-that-makes-you-a-better-developer-3a22",
    "hn": "",
@@ -210,14 +210,14 @@
    "source_home": "https://dev.to/",
    "lang": "en",
    "published_at": "2026-11-14T12:23:21+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "e1ad5da1968e",
    "channel": "aigc",
-   "title": "用 AI 局部改图：先标位置再描述",
+   "title": "如何用 AI 编辑图像局部：先标记再描述",
    "title_orig": "How to Edit Part of an Image with AI (Mark It, Then Describe It)",
-   "summary": "局部改图的难点是指明改哪里，先标记目标区域再描述修改可避免改错对象。",
+   "summary": "文章指出 AI 改图难点在于告诉模型改哪里，先标记目标区域再描述修改，可避免改错枕头等对象。",
    "summary_orig": "When you edit an image with AI, or try any AI photo changer, the hard part is rarely the change itself. It is telling the model where to change it. Ask for \"a green pillow\" in a room with four pillows, and you may get the wrong one, or all of them. The fix is to point.",
    "url": "https://dev.to/deepfox/how-to-edit-part-of-an-image-with-ai-mark-it-then-describe-it-g42",
    "hn": "",
@@ -226,14 +226,14 @@
    "source_home": "https://dev.to/",
    "lang": "en",
    "published_at": "2026-11-14T12:22:26+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "eb3b74f3f1bc",
    "channel": "dev",
-   "title": "物流多租户回执图像需隔离存储",
+   "title": "物流系统租户隔离图片上传：选择审计安全的存储边界",
    "title_orig": "Tenant-Isolated Image Uploads: Choosing an Audit-Safe Storage Boundary for Logistics",
-   "summary": "按租户划分桶或严格键命名空间，保持原图不可变，并选用统一操作契约的存储 API。",
+   "summary": "物流系统需保留原始票据图片，关键是谁能访问这些字节；应按租户分桶或严格命名空间，并用策略保持原图不可变。",
    "summary_orig": "For a logistics system that must keep the original receipt image, the hard choice is not how to upload bytes. It is who can ever address those bytes. Put each tenant behind a bucket or an equally strict key namespace, keep the original immutable by policy, and choose the storage API that lets the rest of your backend use the same operational contract.",
    "url": "https://dev.to/corneliushayes8579/tenant-isolated-image-uploads-choosing-an-audit-safe-storage-boundary-for-logistics-4f80",
    "hn": "",
@@ -242,14 +242,14 @@
    "source_home": "https://dev.to/",
    "lang": "en",
    "published_at": "2026-11-14T12:21:10+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "0fff4d0dd5df",
    "channel": "ai",
-   "title": "19.5GB 模型在 24GB 显存上为何仍卡",
+   "title": "19.5GB 大模型在 24GB 显存上为何卡顿：KV 缓存修复",
    "title_orig": "Why Your 19.5GB LLM Crawls on 24GB VRAM (The KV Cache Fix)",
-   "summary": "模型权重虽小于显存，加载后处理真实代码库时仍会因额外内存占用出现问题。",
+   "summary": "文章从 19.5GB GGUF 模型和 24GB 显存看似放得下出发，解释实际运行变慢的原因与 KV 缓存修复思路。",
    "summary_orig": "You find a promising coding model on Hugging Face. Its GGUF file is approximately 19.5 GB. Your GPU has 24 GB of VRAM. The math looks simple: 19.5 GB of model weights < 24 GB of VRAM. It should fit, right? You download it, load it through Ollama, connect it to Cursor or Cline, and start working on a real codebase. Then something unexpected happens.",
    "url": "https://dev.to/shuraj_shampang_823cf28f2/why-your-195gb-llm-crawls-on-24gb-vram-the-kv-cache-fix-1k19",
    "hn": "",
@@ -258,14 +258,14 @@
    "source_home": "https://dev.to/",
    "lang": "en",
    "published_at": "2026-11-14T12:21:04+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "6c7fc19e6089",
    "channel": "dev",
-   "title": "医疗 SaaS 回执上传需私有存储与审计链接",
+   "title": "Node.js 医疗 SaaS 票据上传：私有对象存储与审计链接",
    "title_orig": "Healthtech Receipt Uploads in Node.js SaaS: Private Object Storage and Audit Links",
-   "summary": "回执要方便授权审核者获取，但原文件不能成为永久公开 URL，因此应选私有对象存储。",
+   "summary": "医疗 SaaS 的票据需便于授权审核者获取，同时原始文件不能成为永久公开 URL，这决定存储方案选择。",
    "summary_orig": "The operational constraint decides this storage choice: a receipt must be easy for an authorized reviewer to retrieve, but the original file must not become a permanent public URL.",
    "url": "https://dev.to/ignazcole6453/healthtech-receipt-uploads-in-nodejs-saas-private-object-storage-and-audit-links-1g95",
    "hn": "",
@@ -274,14 +274,14 @@
    "source_home": "https://dev.to/",
    "lang": "en",
    "published_at": "2026-11-14T12:20:42+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "dbb552beaaa0",
    "channel": "dev",
-   "title": "16GB 显卡上图像转高斯泼溅实测",
+   "title": "16GB GPU 上从图像生成高斯泼溅：Idol 与 Three.js 测试",
    "title_orig": "Image to Gaussian Splat on a 16GB GPU: Idol and Three.js Tested",
-   "summary": "在 RTX 5070 Ti 的 WSL2 环境完成 14 次本地生成，原生 Windows 与 iPhone 仍待测试。",
+   "summary": "作者在 RTX 5070 Ti 的 WSL2 环境完成 14 次本地生成任务，原生 Windows 与 iPhone 仍待单独测试。",
    "summary_orig": "Originally published by Alicia on 13 November 2026 at Digital Garden . Alicia is a 3D technical artist (TA) and independent developer. Codex assisted with the desktop tests, numerical checks and writing. Key takeaways Fourteen local generation jobs completed on the RTX 5070 Ti under WSL2; native Windows and iPhone remain separate tests.",
    "url": "https://dev.to/alicia_lu/image-to-gaussian-splat-on-a-16gb-gpu-idol-and-threejs-tested-2004",
    "hn": "",
@@ -290,14 +290,14 @@
    "source_home": "https://dev.to/",
    "lang": "en",
    "published_at": "2026-11-14T12:19:15+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "53dc7ff35f8f",
    "channel": "mobile",
-   "title": "部分 GTA 6 实体盒缺少兑换码",
+   "title": "部分 GTA 6 实体盒缺兑换码，Rockstar 拒绝协助",
    "title_orig": "Some physical GTA 6 boxes are missing codes, with Rockstar refusing to help",
-   "summary": "部分密封零售版未含 Xbox 或 PlayStation Store 兑换码，购买无光驱版玩家向 Rockstar 和零售商退款未果。",
+   "summary": "GTA 6 发售前几天发现部分密封零售盒内缺少 Xbox 或 PlayStation Store 兑换码，无光驱版买家向 Rockstar 和零售商退款未果。",
    "summary_orig": "Flaws with the GTA 6 code-in-box approach are being discovered days before its release date. Some sealed retail cases shipped without the Xbox or PlayStation Store redemption inside. Buyers of the disc-less Xbox and PS5 versions have unsuccessfully requested refunds from Rockstar and retailers.",
    "url": "https://www.notebookcheck.net/Some-physical-GTA-6-boxes-are-missing-codes-with-Rockstar-refusing-to-help.1449998.0.html",
    "hn": "",
@@ -306,7 +306,7 @@
    "source_home": "https://www.notebookcheck.net/",
    "lang": "en",
    "published_at": "2026-11-14T12:11:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "f14e79ccf9c7",
@@ -322,14 +322,14 @@
    "source_home": "https://www.landiannews.com/",
    "lang": "zh",
    "published_at": "2026-11-14T12:00:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "c8cc58f907ae",
    "channel": "software",
-   "title": "挪威网盘 Jottacloud 正开发 Linux 桌面应用",
+   "title": "挪威 Dropbox 竞品 Jottacloud 正在开发 Linux 应用",
    "title_orig": "Norway’s Dropbox Rival Jottacloud is making a Linux app",
-   "summary": "挪威 Jotta Group 旗下网盘 Jottacloud 自 2008 年起提供备份同步服务，此前只有 Windows、苹果和安卓客户端，如今着手开发 Linux 桌面应用。",
+   "summary": "Jottacloud 自 2008 年提供文件与照片备份同步，已有 Windows、Apple 和 Android 官方应用，但一直缺少 Linux 桌面应用。",
    "summary_orig": "Norwegian Dropbox rival Jottacloud is finally working on a desktop app for Linux. Jottacloud, run by Jotta Group AS, has been around since 2008, offering file and photo backup, syncing and sharing via official Windows, Apple and Android apps. What it hasn’t had is a ‘proper desktop app’ on Linux.",
    "url": "https://www.omgubuntu.co.uk/2026/11/jottacloud-linux-app-coming-soon",
    "hn": "",
@@ -338,7 +338,7 @@
    "source_home": "https://www.omgubuntu.co.uk/",
    "lang": "en",
    "published_at": "2026-11-14T11:55:34+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "2b101b7f0c25",
@@ -354,7 +354,7 @@
    "source_home": "https://www.woshipm.com/",
    "lang": "zh",
    "published_at": "2026-11-14T11:45:29+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "dd9ba3519813",
@@ -370,14 +370,14 @@
    "source_home": "https://www.woshipm.com/",
    "lang": "zh",
    "published_at": "2026-11-14T11:42:36+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "62c4148f4162",
    "channel": "mobile",
-   "title": "TCL CSOT 展示 0.6 毫米超薄低反射 IJP OLED 屏",
+   "title": "TCL CSOT 展出 14 英寸 0.6mm 厚 IJP OLED 屏",
    "title_orig": "Super-slim, low-reflection IJP OLED display debuts for thin and light laptops",
-   "summary": "在 TCL CSOT 主办的 DTC 2026 活动上，公司展出面向轻薄笔记本的 14 英寸 IJP OLED 面板，厚度仅 0.6mm，另有边框 1.6mm 的 16 英寸屏。",
+   "summary": "在 DTC 2026 上，TCL CSOT 展示厚 0.6mm 的 14 英寸 IJP OLED 面板，以及边框仅 1.6mm 的 16 英寸屏。",
    "summary_orig": "The DTC 2026 event, hosted by TCL CSOT, featured a wide range of interesting IJP OLED prototypes. Alongside the 16-inch display with bezels as thin as 1.6mm, the company has showcased a 14-inch panel with a claimed thickness of just 0.6mm.",
    "url": "https://www.notebookcheck.net/Super-slim-low-reflection-IJP-OLED-display-debuts-for-thin-and-light-laptops.1450215.0.html",
    "hn": "",
@@ -386,7 +386,7 @@
    "source_home": "https://www.notebookcheck.net/",
    "lang": "en",
    "published_at": "2026-11-14T11:42:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "4669037f0fb3",
@@ -402,7 +402,7 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T11:39:34+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "838ab3a48ec3",
@@ -418,14 +418,14 @@
    "source_home": "https://www.woshipm.com/",
    "lang": "zh",
    "published_at": "2026-11-14T11:34:41+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "788000071087",
    "channel": "ai",
-   "title": "backendskills：为 AI 代理提供后端代码安全技能",
+   "title": "开源项目 backendskills 提供认证与数据代码的 agent 技能",
    "title_orig": "Show HN: Back endskills – agent skills for safer auth, data and migration code",
-   "summary": "globalmpc/backendskills 是开源仓库，提供让 AI 代理编写更安全的鉴权、数据和迁移代码的技能。",
+   "summary": "该项目提供一组 agent 技能，用于更安全地编写认证、数据和迁移代码。",
    "summary_orig": "Article URL: https://github.com/globalmpc/backendskills Comments URL: https://news.ycombinator.com/item?id=50493538 Points: 1 # Comments: 0",
    "url": "https://github.com/globalmpc/backendskills",
    "hn": "",
@@ -434,14 +434,14 @@
    "source_home": "https://hnrss.org/",
    "lang": "en",
    "published_at": "2026-11-14T11:32:05+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "ea94c8729aee",
    "channel": "auto",
-   "title": "美国居民厨余垃圾路边收集项目成本对比分析",
+   "title": "美国住宅路边有机垃圾收集项目成本对比分析",
    "title_orig": "Comparative Cost Analysis for Residential Curbside Organics Collection Programs",
-   "summary": "对八个居民项目的分析显示，若实施得当，新设有机垃圾收集项目可让城市固废系统更高效、更有韧性、更可持续。",
+   "summary": "对八个住宅项目的分析显示，妥善实施有机垃圾收集可让城市固废系统更高效、更有韧性。",
    "summary_orig": "This analysis of eight residential programs shows that, if properly implemented, cities can use a new organics collection program to build a more efficient, resilient, and sustainable solid waste system. Coauthored with Raftelis Residential curbside organics collection is expanding across the United States as states and local governments seek to ...",
    "url": "https://cleantechnica.com/2026/11/13/comparative-cost-analysis-for-residential-curbside-organics-collection-programs/",
    "hn": "",
@@ -450,14 +450,14 @@
    "source_home": "https://cleantechnica.com/",
    "lang": "en",
    "published_at": "2026-11-14T11:23:44+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "55372eb3ef87",
    "channel": "ai",
-   "title": "Browserr：面向 AI 代理的 MCP 优先浏览器",
+   "title": "Browserr：面向 AI agent 的 MCP 优先浏览器",
    "title_orig": "Show HN: Browserr – An MCP-first browser for AI agents (one Rust binary)",
-   "summary": "Browserr 以单个 Rust 二进制实现，主打 MCP 优先，供 AI 代理驱动浏览器。",
+   "summary": "该项目是面向 AI agent 的 MCP 优先浏览器，以单个 Rust 二进制形式发布。",
    "summary_orig": "Article URL: https://browserr.dev Comments URL: https://news.ycombinator.com/item?id=50493464 Points: 1 # Comments: 0",
    "url": "https://browserr.dev",
    "hn": "",
@@ -466,7 +466,7 @@
    "source_home": "https://hnrss.org/",
    "lang": "en",
    "published_at": "2026-11-14T11:22:22+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "f560d11600f3",
@@ -482,14 +482,14 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T11:19:47+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "9e727051dd57",
    "channel": "launch",
    "title": "open-geocode：9GB 内存 5 小时索引 6.3 亿地址",
    "title_orig": "Show HN: Geocode the planet(630M addresses), indexed in 5h on a 9 GB RAM budget",
-   "summary": "open-geocode-rs/open-geocode 是开源地理编码项目，称可在 9GB 内存预算下用 5 小时完成全球 6.3 亿地址索引。",
+   "summary": "该项目在 9GB 内存预算下，用 5 小时完成全球 6.3 亿条地址的索引。",
    "summary_orig": "Article URL: https://github.com/open-geocode-rs/open-geocode Comments URL: https://news.ycombinator.com/item?id=50493418 Points: 2 # Comments: 0",
    "url": "https://github.com/open-geocode-rs/open-geocode",
    "hn": "",
@@ -498,7 +498,7 @@
    "source_home": "https://hnrss.org/",
    "lang": "en",
    "published_at": "2026-11-14T11:17:15+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "d5f01235eba7",
@@ -514,7 +514,7 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T11:11:23+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "820c0af0456a",
@@ -530,7 +530,7 @@
    "source_home": "https://www.woshipm.com/",
    "lang": "zh",
    "published_at": "2026-11-14T11:11:16+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "77bc731bd642",
@@ -546,7 +546,7 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T11:09:49+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "95fdd8255559",
@@ -562,7 +562,7 @@
    "source_home": "https://www.woshipm.com/",
    "lang": "zh",
    "published_at": "2026-11-14T11:07:02+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "cfff2c675f01",
@@ -578,7 +578,7 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T11:03:47+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "2cbafcf3376b",
@@ -594,7 +594,7 @@
    "source_home": "https://www.landiannews.com/",
    "lang": "zh",
    "published_at": "2026-11-14T11:00:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "36ea49a5fc6f",
@@ -610,7 +610,7 @@
    "source_home": "https://lobste.rs/",
    "lang": "en",
    "published_at": "2026-11-14T10:57:49+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "1ae790dfe367",
@@ -626,7 +626,7 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:57:26+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "5fe120d06d74",
@@ -642,7 +642,7 @@
    "source_home": "https://www.woshipm.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:53:49+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "92c83c9d5918",
@@ -658,7 +658,7 @@
    "source_home": "https://www.woshipm.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:48:47+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "b331f1d6e209",
@@ -674,14 +674,14 @@
    "source_home": "https://www.woshipm.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:47:48+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "4579221944d8",
    "channel": "ai",
-   "title": "OpenCyclone：以 AI 为交互界面的开源手机项目",
+   "title": "开源项目 opencyclone：以 AI 为界面的手机",
    "title_orig": "Show HN: Open-Source Version of Cyclon: Phone where AI is the interface?",
-   "summary": "OpenCyclone 是 Cyclon 的开源版本，探索让 AI 成为手机主要交互界面的形态。",
+   "summary": "该项目是 Cyclon 的开源版本，探索以 AI 作为手机主要交互界面。",
    "summary_orig": "Article URL: https://opencyclone.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=50493213 Points: 2 # Comments: 0",
    "url": "https://opencyclone.vercel.app/",
    "hn": "",
@@ -690,7 +690,7 @@
    "source_home": "https://hnrss.org/",
    "lang": "en",
    "published_at": "2026-11-14T10:46:12+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "4298d9ea28b7",
@@ -706,7 +706,7 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:44:02+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "b0ab3c2af989",
@@ -722,14 +722,14 @@
    "source_home": "https://www.ithome.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:42:54+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "c1f000a56fec",
    "channel": "science",
-   "title": "社会关系在农业创新推广中的作用常被研究忽视",
+   "title": "研究：社会关系在农业创新规模化中作用被低估",
    "title_orig": "The role of social relationships in scaling agricultural innovations: A dimension that remains underreported in research",
-   "summary": "发表于 Frontiers in Sustainable Food Systems 的研究指出，气候导向农业研究虽常提伙伴关系与机构合作，却很少明确记录其与创新推广的关系。",
+   "summary": "研究指出，气候导向的农业研究中合作关系常见，但其与创新规模化的关系很少被明确记录。",
    "summary_orig": "A study published in Frontiers in Sustainable Food Systems reveals that, although partnerships and institutional collaboration feature prominently in climate-oriented agricultural research, their relationship with the scaling of innovations is rarely explicitly documented.",
    "url": "https://phys.org/news/2026-11-role-social-relationships-scaling-agricultural.html",
    "hn": "",
@@ -738,7 +738,7 @@
    "source_home": "https://phys.org/",
    "lang": "en",
    "published_at": "2026-11-14T10:40:01+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "cd756bb2fb35",
@@ -754,24 +754,7 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:37:44+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00",
-   "_md": 1
-  },
-  {
-   "id": "83ed49ee19ae",
-   "channel": "huawei",
-   "title": "小米18 Fold折痕控制出色 华为Pura X Max折痕明显 iPhone Duo铰链镂空易进沙",
-   "title_orig": "",
-   "summary": "",
-   "summary_orig": "",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRlhVQlVGMWQybFJWTXE3dkpCc3E1eXdwcXVoMFdqVnBfM2Z3NWtuMGlRcUI5RHBydzY5Q1JlLXR5UWxmTlNaYm41dEdxb2piUjNsSmhEZ1lBWExGVzNYcjV2am1SYWJvUHE3RWtyZFlfS0tzTVJoV1NiNG9IYXk2MA?oc=5",
-   "hn": "",
-   "source": "手机新浪网",
-   "source_key": "gn-huawei-phone",
-   "source_home": "https://news.google.com/",
-   "lang": "zh",
-   "published_at": "2026-11-14T10:37:43+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00",
    "_md": 1
   },
   {
@@ -788,7 +771,7 @@
    "source_home": "https://www.tmtpost.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:30:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "38ed55eecc21",
@@ -804,14 +787,14 @@
    "source_home": "https://www.tmtpost.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:25:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "8755b90e11b8",
    "channel": "ai",
-   "title": "CD Projekt Red用AI还原《巫师3》DLC杰洛特配音",
+   "title": "CDPR 用 AI 在《巫师3》新 DLC 中保留杰洛特嗓音",
    "title_orig": "CD Projekt Red is using AI to preserve Geralt’s voice in The Witcher 3’s upcoming Songs of the Past DLC",
-   "summary": "波兰配音演员Jacek Rozenek中风后声音变低哑，CDPR让他重录新台词并用Respeecher AI匹配原声。",
+   "summary": "因配音演员 Rozenek 中风后嗓音变低哑，CDPR 让他本人录制新台词，再用 Respeecher 的 AI 处理以匹配原音。",
    "summary_orig": "Jacek Rozenek, the Polish voice of Geralt since the first Witcher game, suffered a stroke in 2019 that left his voice lower and gruffer. Rather than recast the role for The Witcher 3: Songs of the Past, CD Projekt Red will have Rozenek perform his new lines himself and run them through Respeecher's AI so they match his original performance.",
    "url": "https://www.notebookcheck.net/CD-Projekt-Red-is-using-AI-to-preserve-Geralt-s-voice-in-The-Witcher-3-s-upcoming-Songs-of-the-Past-DLC.1450118.0.html",
    "hn": "",
@@ -820,7 +803,7 @@
    "source_home": "https://www.notebookcheck.net/",
    "lang": "en",
    "published_at": "2026-11-14T10:25:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "c0f00eec6097",
@@ -836,7 +819,7 @@
    "source_home": "https://www.tmtpost.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:17:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "a4ab1b538fef",
@@ -852,14 +835,14 @@
    "source_home": "https://www.tmtpost.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:13:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "4dbfb303f191",
    "channel": "auto",
-   "title": "特斯拉Cybercab开放订购，售价29990美元且仅限Robotaxi区域",
+   "title": "Tesla Cybercab 开放订购，售价 29990 美元",
    "title_orig": "Tesla Cybercab orders open at $29,990 + $299/mo, only in Robotaxi zones",
-   "summary": "购车还需每月299美元Autonomy订阅，车辆只在得州和佛州Robotaxi服务区内运行。",
+   "summary": "还需每月支付 299 美元订阅自动驾驶，且只能在得州和佛州的 Robotaxi 服务区内行驶。",
    "summary_orig": "Tesla is now inviting “select customers” to buy a Cybercab for personal use at $29,990, but the car won’t move unless you also pay $299 a month for an “Autonomy Subscription.” And it only works inside Tesla’s Robotaxi service areas in Texas and Florida, the same geofences that have turned out to be significantly smaller than what Tesla advertises. more…",
    "url": "https://electrek.co/2026/11/13/tesla-cybercab-personal-use-orders-299-subscription-geofence/",
    "hn": "",
@@ -868,7 +851,7 @@
    "source_home": "https://electrek.co/",
    "lang": "en",
    "published_at": "2026-11-14T10:11:39+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "f369500bb789",
@@ -932,7 +915,7 @@
    "source_home": "https://www.tmtpost.com/",
    "lang": "zh",
    "published_at": "2026-11-14T10:09:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "fb8e155ef8c8",
@@ -1364,7 +1347,7 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-14T09:37:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "e0921c055da9",
@@ -1992,6 +1975,22 @@
    "fetched_at": "2026-11-14T09:54:41+08:00"
   },
   {
+   "id": "39136d85fce3",
+   "channel": "science",
+   "title": "科学家捕捉到电子进行看似不可能的量子跃迁",
+   "title_orig": "Scientists capture electrons making seemingly impossible quantum jumps",
+   "summary": "在石墨烯中观测到电子跨越禁戒能隙的跃迁，部分跃迁概率高达 100%，有望推动超快光控电子器件。",
+   "summary_orig": "Scientists have captured electrons making seemingly impossible jumps across forbidden energy gaps in graphene, with some transitions occurring at a remarkable 100% probability. The breakthrough offers an unprecedented look at quantum behavior and could help unlock a new generation of ultrafast, light-controlled electronics.",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261112025523.htm",
+   "hn": "",
+   "source": "ScienceDaily 科技",
+   "source_key": "sciencedaily-com-rss-top-technology-xml",
+   "source_home": "https://www.sciencedaily.com/",
+   "lang": "en",
+   "published_at": "2026-11-14T09:13:05+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00"
+  },
+  {
    "id": "4692cbe94955",
    "channel": "gossip",
    "title": "礼来 CEO 回应“AI 十年内攻克癌症”：愿景很美好，但不太可能",
@@ -2021,7 +2020,7 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-14T09:10:52+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00",
    "_md": 1
   },
   {
@@ -2800,7 +2799,7 @@
   {
    "id": "dcab381c8b78",
    "channel": "dev",
-   "title": "3Com发生了什么？",
+   "title": "3Com 公司后来怎么样了",
    "title_orig": "What Happened to 3Com?",
    "summary": "",
    "summary_orig": "",
@@ -2811,7 +2810,7 @@
    "source_home": "https://hn.algolia.com/",
    "lang": "en",
    "published_at": "2026-11-14T07:48:59+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "85953ec7e703",
@@ -2988,6 +2987,22 @@
    "lang": "en",
    "published_at": "2026-11-14T07:42:35+08:00",
    "fetched_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "916f45b01bb0",
+   "channel": "science",
+   "title": "AI 将激光物理模拟速度提升 250 倍",
+   "title_orig": "AI supercharges laser physics with a stunning 250x speed boost",
+   "summary": "斯坦福等机构开发的 AI 系统可在毫秒内预测激光脉冲在晶体中的行为，精度损失不大。",
+   "summary_orig": "Researchers at Stanford, UCLA, and SLAC have developed an AI system that simulates complex laser interactions thousands of times faster than conventional methods. The breakthrough allows scientists to predict how laser pulses behave inside special crystals in just milliseconds, without sacrificing much accuracy.",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261111005913.htm",
+   "hn": "",
+   "source": "ScienceDaily 科技",
+   "source_key": "sciencedaily-com-rss-top-technology-xml",
+   "source_home": "https://www.sciencedaily.com/",
+   "lang": "en",
+   "published_at": "2026-11-14T07:41:08+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "a6ebb8e60c6f",
@@ -3584,9 +3599,9 @@
   {
    "id": "d972c5a5c01d",
    "channel": "internet",
-   "title": "FAA解除地面停飞，此前长时间延误影响旅客",
+   "title": "FAA 因通信故障发布全国停飞令，数小时后解除",
    "title_orig": "FAA lifts ground stop after hours-long delays snag travelers",
-   "summary": "停飞因安全原因和未指明的通信问题，持续数小时后解除。",
+   "summary": "停飞导致旅客滞留数小时，官方称出于安全考虑并提及未说明的通信问题。",
    "summary_orig": "Safety reasons and unspecified communications issue cited",
    "url": "https://www.theregister.com/offbeat/2026/11/13/faa-lifts-ground-stop-after-hours-long-delays-snag-travelers/5309912",
    "hn": "",
@@ -3595,7 +3610,7 @@
    "source_home": "https://www.theregister.com/",
    "lang": "en",
    "published_at": "2026-11-14T06:42:28+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "aa15e1266aad",
@@ -4059,7 +4074,7 @@
    "source_home": "https://www.gcores.com/",
    "lang": "zh",
    "published_at": "2026-11-14T06:00:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "2c75a66fbe72",
@@ -5024,7 +5039,7 @@
   {
    "id": "9c247e087592",
    "channel": "dev",
-   "title": "FAA发布全国地面停飞令，4.5小时后解除",
+   "title": "FAA 发布全国停飞令，4.5 小时后解除",
    "title_orig": "FAA issues national ground stop – lifted 4.5 hours later",
    "summary": "",
    "summary_orig": "",
@@ -5035,7 +5050,7 @@
    "source_home": "https://hn.algolia.com/",
    "lang": "en",
    "published_at": "2026-11-14T05:05:53+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "4ff8bca9c165",
@@ -5841,7 +5856,7 @@
   {
    "id": "504572814b78",
    "channel": "dev",
-   "title": "FreeBSD与bhyve将支持实时迁移",
+   "title": "FreeBSD 与 bhyve 即将支持热迁移",
    "title_orig": "Live-migration support in FreeBSD and bhyve coming",
    "summary": "",
    "summary_orig": "",
@@ -5852,7 +5867,7 @@
    "source_home": "https://hn.algolia.com/",
    "lang": "en",
    "published_at": "2026-11-14T03:58:42+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "edcfd809ff6e",
@@ -8257,23 +8272,6 @@
    "lang": "en",
    "published_at": "2026-11-14T01:51:07+08:00",
    "fetched_at": "2026-11-14T03:02:47+08:00"
-  },
-  {
-   "id": "ff185a39a0c7",
-   "channel": "aidrama",
-   "title": "短剧出海变“红海” AI助力产能爆发 投流烧钱赚钱不易",
-   "title_orig": "",
-   "summary": "",
-   "summary_orig": "",
-   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBtSFVNVDZBVGR5QVZZYnR0bzlfaE1aQmxCY0dSN3gyVV9lTmlPZHYzbUJpbFV3Ym1BY2VUS0VKS3diRXlXeFVhRDNLMFdjWkEzY01DMGtiUGZmN0ZvTkRDTV93?oc=5",
-   "hn": "",
-   "source": "证券之星",
-   "source_key": "gn-aiduanju",
-   "source_home": "https://news.google.com/",
-   "lang": "zh",
-   "published_at": "2026-11-14T01:49:00+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00",
-   "_md": 1
   },
   {
    "id": "6aba64c79cb3",
@@ -11485,9 +11483,9 @@
   {
    "id": "4f5b4ce8cb48",
    "channel": "ai",
-   "title": "Jonathan Blow：若 AI 解决了编程，为何我的软件还是老样子？",
+   "title": "Jonathan Blow 发问：AI 若已解决编程，为何我的软件还是老样子",
    "title_orig": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-   "summary": "",
+   "summary": "Jonathan Blow 在视频中质疑，若 AI 真已解决编程问题，为何他的软件没有明显变化。",
    "summary_orig": "",
    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
    "hn": "https://news.ycombinator.com/item?id=50484658",
@@ -11496,7 +11494,7 @@
    "source_home": "https://hn.algolia.com/",
    "lang": "en",
    "published_at": "2026-11-13T23:08:44+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "bb8608a04f3d",
@@ -15656,7 +15654,7 @@
    "source_home": "https://www.v2ex.com/",
    "lang": "zh",
    "published_at": "2026-11-13T18:23:08+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "ad6656db04cb",
@@ -16675,7 +16673,7 @@
    "source_home": "https://www.v2ex.com/",
    "lang": "zh",
    "published_at": "2026-11-13T15:44:48+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "50737ca17599",
@@ -16900,7 +16898,7 @@
    "source_home": "https://www.v2ex.com/",
    "lang": "zh",
    "published_at": "2026-11-13T15:18:13+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "c59fedced1bf",
@@ -17140,7 +17138,7 @@
    "source_home": "https://news.google.com/",
    "lang": "zh",
    "published_at": "2026-11-13T15:05:42+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00",
+   "fetched_at": "2026-11-14T12:26:48+08:00",
    "_md": 1
   },
   {
@@ -17367,7 +17365,7 @@
    "source_home": "https://www.v2ex.com/",
    "lang": "zh",
    "published_at": "2026-11-13T14:48:49+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "4c35b4d29a5b",
@@ -18419,7 +18417,7 @@
    "source_home": "https://www.v2ex.com/",
    "lang": "zh",
    "published_at": "2026-11-13T13:03:35+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "7b095e3c6406",
@@ -18756,7 +18754,7 @@
    "source_home": "https://www.v2ex.com/",
    "lang": "zh",
    "published_at": "2026-11-13T12:28:01+08:00",
-   "fetched_at": "2026-11-14T12:26:09+08:00"
+   "fetched_at": "2026-11-14T12:26:48+08:00"
   },
   {
    "id": "ee2f7ac61382",
@@ -25256,22 +25254,6 @@
    "fetched_at": "2026-11-12T23:03:51+08:00"
   },
   {
-   "id": "17dcd545f05d",
-   "channel": "science",
-   "title": "欧洲 Hera 任务准备加倍投入小行星科学",
-   "title_orig": "Europe’s Hera mission is ready to double down on asteroid science",
-   "summary": "欧洲 Hera 飞船刚开始探索双小行星 Didymos，该任务在两个前沿令科学家着迷。",
-   "summary_orig": "Europe’s Hera spacecraft is just beginning its exploration of the binary asteroid Didymos in a mission that’s tantalizing scientists on two fronts.",
-   "url": "https://www.sciencenews.org/article/europe-hera-mission-double-asteroid",
-   "hn": "",
-   "source": "Science News",
-   "source_key": "sciencenews-org-feed",
-   "source_home": "https://www.sciencenews.org/",
-   "lang": "en",
-   "published_at": "2026-11-12T22:00:00+08:00",
-   "fetched_at": "2026-11-12T23:03:51+08:00"
-  },
-  {
    "id": "ed4419677298",
    "channel": "game",
    "title": "星际：异端先知有一些意想不到的动漫影响",
@@ -25350,22 +25332,6 @@
    "lang": "en",
    "published_at": "2026-11-12T21:43:00+08:00",
    "fetched_at": "2026-11-13T00:55:18+08:00"
-  },
-  {
-   "id": "5e92bc599b25",
-   "channel": "science",
-   "title": "研究追踪 Rum Jungle 铀铜矿经芬尼斯河食物网留下的金属污染",
-   "title_orig": "Study tracks Rum Jungle Mine's metal legacy through Finniss River food web",
-   "summary": "查尔斯达尔文大学主导的首次同类研究发现，该矿关闭逾 50 年后仍影响北领地主要河系的生态系统。",
-   "summary_orig": "The environmental legacy of a uranium-copper mine continues to impact the ecosystem of a major Top End river system more than 50 years after the site was closed, a first-of-its-kind study led by Charles Darwin University (CDU) has found.",
-   "url": "https://phys.org/news/2026-11-tracks-rum-jungle-metal-legacy.html",
-   "hn": "",
-   "source": "Phys.org",
-   "source_key": "phys-org-rss-feed",
-   "source_home": "https://phys.org/",
-   "lang": "en",
-   "published_at": "2026-11-12T21:40:11+08:00",
-   "fetched_at": "2026-11-12T23:03:51+08:00"
   },
   {
    "id": "6e4f6c45e86f",
@@ -30512,6 +30478,23 @@
    "lang": "zh",
    "published_at": "2026-11-11T11:50:00+08:00",
    "fetched_at": "2026-11-13T07:52:52+08:00",
+   "_md": 1
+  },
+  {
+   "id": "7254d9ac2946",
+   "channel": "huawei",
+   "title": "苹果折叠之外拍照办公怎么选 华为Pura X Max值得关注么",
+   "title_orig": "",
+   "summary": "",
+   "summary_orig": "",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5HWlRSNWo3a3h5b0RPczZ2T0tWWU9rTW1KSktSaEJGS3cyRkFETlpSYU9qUnNDMEJFS2pBYVczbVl0QWxiNERDT01LQ2ZTd0pNSDAwN25sQ2Y?oc=5",
+   "hn": "",
+   "source": "驱动之家",
+   "source_key": "gn-huawei-phone",
+   "source_home": "https://news.google.com/",
+   "lang": "zh",
+   "published_at": "2026-11-11T11:49:00+08:00",
+   "fetched_at": "2026-11-11T12:03:13+08:00",
    "_md": 1
   },
   {
