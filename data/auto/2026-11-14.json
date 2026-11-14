@@ -1,7 +1,7 @@
 {
   "date": "2026-11-14",
-  "updated_at": "2026-11-14T14:59+08:00",
-  "updated_at_label": "2026-11-14 14:59 Asia/Shanghai",
+  "updated_at": "2026-11-14T17:01+08:00",
+  "updated_at_label": "2026-11-14 17:01 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -339,8 +339,8 @@
       "url": "https://news.ycombinator.com/item?id=50491617",
       "posted_at": "2026-11-14 07:26 Asia/Shanghai",
       "engagement": {
-        "points": 31,
-        "comments": 12
+        "points": 34,
+        "comments": 16
       },
       "original_title": "Tell HN: Google Search to start locking down search behind a login wall",
       "original_summary": "Tell HN: Google Search to start locking down search behind a login wall Usually, when I used Google Search on some ISP CGNAT IP addresses (not even a VPN), I usually get countless CAPTCHAs evertime I initiate a new session to Google Search on a new private browsing window (probably an artifact from residential proxy botnets).<p>Recently, in addition to that, they started to just lock the entire search results page behind a login prompt on some of those bad IP addresses (like YouTube does for some time with the &quot;Sign in to confirm you&#x27;re not a bot&quot; prompt). This potentially makes the service less accessible, especially for those using a shared&#x2F;public computers.<p>I did not even get this prompt on some VPN IPs, and even no CAPTCHAs at all, even with a free one like given ",
@@ -404,25 +404,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50475689",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "ActiveDNS：免费的 DNS 搜索服务",
-      "summary": "可搜索域名、委托和 IP 地址的 DNS 数据集搜索引擎，起因是想查 CIDR 网段。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "elnerd",
-      "url": "https://activedns.net/",
-      "posted_at": "2026-11-13 07:04 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: ActiveDNS, a free DNS search service",
-      "original_summary": "Show HN: ActiveDNS, a free DNS search service Hi, ActiveDNS is a project I’ve published online and has running for a couple of months now. It is a search engine for a DNS dataset\nI am constantly building. The purpose of it is to provide an accurate searchable database of domains, delegations and ip addresses and my initial motivation to make it was the need to look up CIDR ranges and find all associated IP adresses.<p>From the dataset, I am publishing monthly extracts of all observed registrable domain and top N hostnames. I’m sure I will find more interesting use cases for it later.",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50470343",
       "source": "Hacker News",
       "category": "其他科技",
@@ -439,25 +420,6 @@
       },
       "original_title": "Show HN: Apron Chat Protocol",
       "original_summary": "Show HN: Apron Chat Protocol Hi HN friends - I&#x27;ve been obsessed with chat protocols for ages - one previous project is ssh-chat (<a href=\"https:&#x2F;&#x2F;ssh.chat&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;ssh.chat&#x2F;</a>)<p>I come bringing a new kind of chat protocol that I&#x27;ve been working on since I spent quite a lot of time exploring the 14 other competing standards we&#x27;ve come up with in the past few decades.<p>The protocol details are here: <a href=\"https:&#x2F;&#x2F;apron.chat\" rel=\"nofollow\">https:&#x2F;&#x2F;apron.chat</a><p>I&#x27;m hoping that Apron will better reflect our needs beyond 2026, which I expect will move more and more toward semi-private chats rather than global social networks.<p>Come say hi on the live public demo: <a href=\"https:&#x2F;&#x2F;web.apro",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50469853",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "免费开源容器工具 ReadyStack.dev：逐比特可复现 OSS 镜像",
-      "summary": "作者用极低 LLM 成本（两张 3090 本地运行、一份订阅）自动生成 OSS 容器的构建配方。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "readystack",
-      "url": "https://news.ycombinator.com/item?id=50469853",
-      "posted_at": "2026-11-13 00:20 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: ReadyStack.dev – Bit-for-bit reproducible OSS containers",
-      "original_summary": "Show HN: ReadyStack.dev – Bit-for-bit reproducible OSS containers <a href=\"https:&#x2F;&#x2F;readystack.dev\" rel=\"nofollow\">https:&#x2F;&#x2F;readystack.dev</a><p>If you are like me, coding LLMs made open source more important not less. A few months ago I wanted to see how far I could get using minimal LLM cost (local on two 3090s and one subscription) to automate OSS containers with a build recipe that matched bits.<p>That project ended up as ReadyStack.dev. ReadyStack publishes free Community Edition containers for open-source applications. I designed it to be a low cost image standard that puts provenance as a first order concern.<p>My goal was to see if I could build in trust with my images in a way nobody else had. Use the build recipe and match bits. Each release&#x27;s build kit inc",
       "translated_by": "model"
     },
     {
@@ -499,6 +461,25 @@
       "translated_by": "free-translate"
     },
     {
+      "id": "hn-50458246",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Disband：带API的音轨分离工具，可拆到鼓组各部件",
+      "summary": "上传歌曲分离人声、乐器，甚至拆出底鼓军鼓，每日有免费额度。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "f1nniboy",
+      "url": "https://disband.io/",
+      "posted_at": "2026-11-12 04:29 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: Disband – a stem separator with an API, down to the drum kit",
+      "original_summary": "Show HN: Disband – a stem separator with an API, down to the drum kit A stem splitter I built. Upload a song and get vocals (lead and backing), instrumental, drums, bass, guitar, piano, or even the drums split into kick, snare, toms, hi-hat and the rest. You pay per minute of audio with credits (while also being cheaper than other competitors), and there&#x27;s a free daily allowance (with an account, I don&#x27;t want it to be abused), and downloads&#x2F;stems aren&#x27;t locked behind a paid tier. You can listen to the example on the landing page if you don&#x27;t want to sign up yet. There&#x27;s also a pretty easy-to-use API, if you want to integrate it with your own tools. You also don&#x27;t have to know anything at all about the underlying models either, because there&#x27;s no comp",
+      "translated_by": "model"
+    },
+    {
       "id": "hn-50494578",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -510,7 +491,7 @@
       "url": "https://api.suvankar.cc/docs/dictionary",
       "posted_at": "2026-11-14 14:30 Asia/Shanghai",
       "engagement": {
-        "points": 1,
+        "points": 2,
         "comments": 0
       },
       "original_title": "Show HN: Free Dictionary API – Wiktionary data, no API key required",
@@ -613,6 +594,24 @@
       "translated_by": "model"
     },
     {
+      "id": "v2ex-1257050",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "从 GPT Pro 切到 Google AI Ultra 两周实测： 30 亿 Tokens 账本与 Antigravity 对比",
+      "summary": "从 GPT Pro 切到 Google AI Ultra 两周实测： 30 亿 Tokens 账本与 Antigravity 对比\n> **📊 实测导读**：本文基于两台主力 Mac 本地 Tokei 统计的真实请求账本，完整拆解 **Google AI Ultra （$200/月）全套回血权益**、**Antigravity （反重力） vs OpenAI Codex 单周真实额度反算与 12 款模型速度实测**，以及两周高强度落地的开源输入法 `TypeFree v3.5.0` 与 AI 连载短剧实战消耗账单。\r\n先说清楚我为什么要从 GPT 订阅转到谷歌订阅。\r\n我前前后后用了大半年 OpenAI 的 $200/月（ Pro + Codex ）订阅。从刚开始的惊艳，到最近这几个月，GPT 给我的体感可以用四个词概括：**疯狂“流口水” + 速度慢 + 不说人话不沾锅 + 写材料打满了补丁**，实在让人受不了：\r\n- **疯狂“流口水” & 速度慢**：不管问多简单的问题，先给你铺垫一屏正确废话，真正有用的信息藏在中间；再加上吐字速度掉到 `30 tok/s` 出头，看着屏幕一字一顿往外蹦废话，耐心直接耗光。\r\n- **不说人话**：满嘴八股黑话和套娃句式——动辄“不是 A ，而是 B”“本质上是……核心在于……”“在当前约束条件下形成闭环”。明明一句话能说清的事，非要给你端出三层嵌套的“汇报腔”。\r\n- **极度“不沾锅”（防御性叠甲）**：一旦涉及方案拍板或具体判断，它永远不肯给你一个痛快话，而是左右各打五十大板，句尾还要挂一长串“视具体业务场景而定 / 需结合线上实际情况进一步验证 / 存在一定边界限制”。看起来面面俱到，实际上把所有风险和责任全摘干净了，等于没给结论。\r\n- **写材料“打满了补丁”**：让它改文档是最崩溃的——它不会帮你重构逻辑，而是在原句上疯",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "submartingale",
+      "url": "https://www.v2ex.com/t/1257050",
+      "posted_at": "2026-11-14 15:46 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "从 GPT Pro 切到 Google AI Ultra 两周实测： 30 亿 Tokens 账本与 Antigravity 对比",
+      "original_summary": "从 GPT Pro 切到 Google AI Ultra 两周实测： 30 亿 Tokens 账本与 Antigravity 对比\n> **📊 实测导读**：本文基于两台主力 Mac 本地 Tokei 统计的真实请求账本，完整拆解 **Google AI Ultra （$200/月）全套回血权益**、**Antigravity （反重力） vs OpenAI Codex 单周真实额度反算与 12 款模型速度实测**，以及两周高强度落地的开源输入法 `TypeFree v3.5.0` 与 AI 连载短剧实战消耗账单。\r\n先说清楚我为什么要从 GPT 订阅转到谷歌订阅。\r\n我前前后后用了大半年 OpenAI 的 $200/月（ Pro + Codex ）订阅。从刚开始的惊艳，到最近这几个月，GPT 给我的体感可以用四个词概括：**疯狂“流口水” + 速度慢 + 不说人话不沾锅 + 写材料打满了补丁**，实在让人受不了：\r\n- **疯狂“流口水” & 速度慢**：不管问多简单的问题，先给你铺垫一屏正确废话，真正有用的信息藏在中间；再加上吐字速度掉到 `30 tok/s` 出头，看着屏幕一字一顿往外蹦废话，耐心直接耗光。\r\n- **不说人话**：满嘴八股黑话和套娃句式——动辄“不是 A ，而是 B”“本质上是……核心在于……”“在当前约束条件下形成闭环”。明明一句话能说清的事，非要给你端出三层嵌套的“汇报腔”。\r\n- **极度“不沾锅”（防御性叠甲）**：一旦涉及方案拍板或具体判断，它永远不肯给你一个痛快话，而是左右各打五十大板，句尾还要挂一长串“视具体业务场景而定 / 需结合线上实际情况进一步验证 / 存在一定边界限制”。看起来面面俱到，实际上把所有风险和责任全摘干净了，等于没给结论。\r\n- **写材料“打满了补丁”**：让它改文档是最崩溃的——它不会帮你重构逻辑，而是在原句上疯",
+      "translated_by": "free-translate"
+    },
+    {
       "id": "v2ex-1257038",
       "source": "V2EX",
       "category": "AI 产品会员/试用",
@@ -660,7 +659,7 @@
       "url": "https://www.v2ex.com/t/1257030",
       "posted_at": "2026-11-14 14:05 Asia/Shanghai",
       "engagement": {
-        "replies": 1
+        "replies": 10
       },
       "original_title": "iOS 原生多论坛客户端： V2EX / NGA / Linux .do / Chiphell / 4D4Y 一个 App 刷，抽 10 个半年 Pro",
       "original_summary": "iOS 原生多论坛客户端： V2EX / NGA / Linux .do / Chiphell / 4D4Y 一个 App 刷，抽 10 个半年 Pro\n平时同时逛好几个论坛，一个论坛一个 App 或者一个网页，来回切有点烦。之前一直用论坛助手，支持的论坛多，用着其实也不差，就是我这人比较龟毛，很多地方想按自己的审美和习惯来，索性自己手搓了一个。断断续续做了几个月，前两天终于上架了。\r\n\r\nApp Store 搜「[**Dis 看帖**]( https://apps.apple.com/app/id6821816100)」，需要 iOS 18 以上，iPhone / iPad 都能用，iPhone Duo 也做了初步适配。\r\n\r\n现在支持 V2EX 、NGA 、Linuxdo 、4D4Y 、Chiphell ，后面会接更多。\r\n\r\n![全部视图和聚合搜索]( https://i.imgur.com/Wt1fv61.png)\r\n\r\n## 功能\r\n\r\n- 「全部」里几个论坛的帖子混在一起刷，搜索也可以一次搜好几个论坛\r\n- 帖子没有「页」的概念，一路往下滑就是。想去哪层，按住右下角的胶囊拖一下，楼层实时跟着变，几万楼的帖子也能准确跳过去（喜欢分页的，设置里能切回去）\r\n- 尽量做成 iOS 原生的手感，不是网页套壳\r\n- 不登录也能逛，有账号再登录回帖\r\n- iCloud 同步登录状态、常用节点、看到哪了、外观设置，换设备接着看\r\n- 十几套深浅色主题，列表排版、疏密、字号都能调\r\n- 没广告\r\n\r\n![无极楼层]( https://i.imgur.com/PPy9UAD.gif)\r\n\r\n## V2EX 支持情况\r\n\r\n看帖、回复、节点、收藏、提醒、特别关注、Block 都有，网站本身没有的（比如私信）也就没有了。只看 V2EX 的话，V2ER 这些已经很好用了，Dis 可能更",
@@ -696,7 +695,7 @@
       "url": "https://www.v2ex.com/t/1257019",
       "posted_at": "2026-11-14 12:48 Asia/Shanghai",
       "engagement": {
-        "replies": 1
+        "replies": 2
       },
       "original_title": "智友社回馈 V 站新老客户，抽送第 14 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）",
       "original_summary": "智友社回馈 V 站新老客户，抽送第 14 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）\n各位 V 友好，感谢大家一直以来对我们智友社的支持和关注。\r\n\r\n我们智友社的初衷是帮大家寻找市面上稳定的主流 AI 特价渠道，鉴于目前国外主流 AI 的正价订购价格昂贵，我们发现市面上有不少的价格实惠的特殊渠道 AI 产品，可惜质量参差不齐，为了节省大家的时间跟金钱，我们花了不少精力对各个渠道商的特价 AI 进行了购买评测，再从中选取稳定的渠道上架出售，我们也欢迎各位佬友跟我们推荐稳定的特殊渠道 AI ，我们会自费购买进行稳定性测试，测试通过后也能让更多的人能受益！\r\n\r\n由于目前国外 AI 并不能上架国内主流购物平台，所以我们只能把店铺开在了一个小众平台—链动小铺，您有问题可以随时联系我们 QQ 客服，我们会协助您一起解决。\r\n\r\n**我们的小铺地址： https://www.ldxp.cn/shop/282D9KDL 。我们的产品目前只要分成下面两种。**\r\n\r\n**一：稳定特殊渠道特价商品：目前这几款我们测试下来都是很稳定，价格会随每天行情变化，请以平台价格为准。**\r\n\r\n**GPT 系列：**\r\n\r\n[GPTPlus 新日区成品号（质保 24 小时）]( https://wzyp.cn/item/z6vcon) 58.88 | [GPTPlus 东南亚区成品号（质保 24 小时）]( https://pay.ldxp.cn/item/5wdrjz) 52.88\r\n\r\n[GPTPlus 新日区成品号（质保 28 天）]( https://wzyp.cn/item/x3dzw0) 78.88 |  [GPTPlus 越南区成品号（质保 28 天）]( https://wzyp.cn/item/tc7p4m) 72.88\r\n\r\n**Ge",
@@ -714,46 +713,46 @@
       "url": "https://www.v2ex.com/t/1257016",
       "posted_at": "2026-11-14 12:20 Asia/Shanghai",
       "engagement": {
-        "replies": 2
+        "replies": 4
       },
       "original_title": "送的 100$ API 额度，用了大约 6000 万 token 后耗尽了， astra-中",
       "original_summary": "送的 100$ API 额度，用了大约 6000 万 token 后耗尽了， astra-中\nResponses API 返回 failed [credit_balance_exhausted]：You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1257007",
+      "id": "v2ex-1256998",
       "source": "V2EX",
-      "category": "AI 产品会员/试用",
-      "title": "做了个免费的 3MF / STL 互转工具，文件不用上传，浏览器本地转换",
-      "summary": "做了个免费的 3MF / STL 互转工具，文件不用上传，浏览器本地转换\n最近处理 3D 打印模型时，遇到两个需求：下载的是 3MF ，但后续软件或协作方需要 STL ； STL 文件又比较大，想换成更方便保存和分享的格式。\r\n\r\n于是做了个小工具「形转」：\r\n- 3MF → STL：提取模型几何，交给需要 STL 的软件或打印服务。\r\n- STL → 3MF：压缩存储，方便保存和分享，并记录指定的模型单位。\r\n地址： https://model.white-box.cc\r\n\r\n免费使用，无需注册，转换在浏览器后台线程中完成，模型文件不会上传到服务器。\r\n\r\n用手头一个约 187 万三角面的模型测试，约 93 MB 的 STL 转成了 36.5 MB 的 3MF ，逐项校验后三角面顶点坐标保持一致。没有做减面，压缩效果因模型而异。\r\n\r\n当前支持：\r\n- 3MF 输入最大 50 MB ，STL 输入最大 200 MB 。\r\n- 最多 300 万个三角面。\r\n- 3MF 模型数据解压后最大 300 MB 。\r\n工具只转换模型几何，不保留颜色、材质和打印配置，也不会将网格重建为参数化 CAD 模型。\r\n\r\n欢迎试用和反馈，尤其是不同切片软件导出的 3MF 兼容性问题。",
+      "category": "大模型 API 免费额度",
+      "title": "GPT 官 Key 免费用。蹬完即止",
+      "summary": "GPT 官 Key 免费用。蹬完即止\n周末没人上班，Token 用不完。送给 V2EX 的大佬免费用。\r\n\r\nhttps://pixcook.ai\r\n\r\n\r\nsk-6810902ebc0f3256989f528a8727f2e658fff1d483c0ef2e801ddd94fe83629e\r\n\r\n\r\n我们是做 AI 出海应用的团队，因为自身开发团队的需要，为了降低成本，所以自己购买一些 ChatGPT 账号搭建了一个中转站。\r\n\r\n自有的反代理技术，可以做到稳定不降智，缓存率长期保持在 97%以上的体验，缓存写入长期个位数或者 3 位数以内。\r\n\r\nV2EX 的大佬，如果注册后，回帖留下站内 ID （右上角账户下来菜单中可以查阅），我将送上 5 刀 余额，数量有限，送完即止。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "fatelei",
-      "url": "https://www.v2ex.com/t/1257007",
-      "posted_at": "2026-11-14 10:59 Asia/Shanghai",
+      "author": "luotao21",
+      "url": "https://www.v2ex.com/t/1256998",
+      "posted_at": "2026-11-14 09:54 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 25
       },
-      "original_title": "做了个免费的 3MF / STL 互转工具，文件不用上传，浏览器本地转换",
-      "original_summary": "做了个免费的 3MF / STL 互转工具，文件不用上传，浏览器本地转换\n最近处理 3D 打印模型时，遇到两个需求：下载的是 3MF ，但后续软件或协作方需要 STL ； STL 文件又比较大，想换成更方便保存和分享的格式。\r\n\r\n于是做了个小工具「形转」：\r\n- 3MF → STL：提取模型几何，交给需要 STL 的软件或打印服务。\r\n- STL → 3MF：压缩存储，方便保存和分享，并记录指定的模型单位。\r\n地址： https://model.white-box.cc\r\n\r\n免费使用，无需注册，转换在浏览器后台线程中完成，模型文件不会上传到服务器。\r\n\r\n用手头一个约 187 万三角面的模型测试，约 93 MB 的 STL 转成了 36.5 MB 的 3MF ，逐项校验后三角面顶点坐标保持一致。没有做减面，压缩效果因模型而异。\r\n\r\n当前支持：\r\n- 3MF 输入最大 50 MB ，STL 输入最大 200 MB 。\r\n- 最多 300 万个三角面。\r\n- 3MF 模型数据解压后最大 300 MB 。\r\n工具只转换模型几何，不保留颜色、材质和打印配置，也不会将网格重建为参数化 CAD 模型。\r\n\r\n欢迎试用和反馈，尤其是不同切片软件导出的 3MF 兼容性问题。",
+      "original_title": "GPT 官 Key 免费用。蹬完即止",
+      "original_summary": "GPT 官 Key 免费用。蹬完即止\n周末没人上班，Token 用不完。送给 V2EX 的大佬免费用。\r\n\r\nhttps://pixcook.ai\r\n\r\n\r\nsk-6810902ebc0f3256989f528a8727f2e658fff1d483c0ef2e801ddd94fe83629e\r\n\r\n\r\n我们是做 AI 出海应用的团队，因为自身开发团队的需要，为了降低成本，所以自己购买一些 ChatGPT 账号搭建了一个中转站。\r\n\r\n自有的反代理技术，可以做到稳定不降智，缓存率长期保持在 97%以上的体验，缓存写入长期个位数或者 3 位数以内。\r\n\r\nV2EX 的大佬，如果注册后，回帖留下站内 ID （右上角账户下来菜单中可以查阅），我将送上 5 刀 余额，数量有限，送完即止。",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1257003",
-      "source": "V2EX",
-      "category": "AI 产品会员/试用",
-      "title": "开发了一个 Windows 版类似 typora 的原生 markdown 编辑器，永久免费，欢迎试用。",
-      "summary": "开发了一个 Windows 版类似 typora 的原生 markdown 编辑器，永久免费，欢迎试用。\n以 typora 为核心，参考了 Bear 和飞书文档，做了个原生 markdown 编辑器。\r\n主要是不想使用破解的 typora ，其他产品也都不怎么好用，所以造个轮子。\r\n永远免费，也永远不挂广告。纯单机，没有任何联网功能。\r\n欢迎使用。windows store 里搜“如言”。",
+      "id": "ghdeal-owaid0723666-free-llm-radar",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Owaid0723666/免费-llm-雷达",
+      "summary": "Owaid0723666/free-llm-radar 每个免费的 LLM API 模型每天都会问一个简短的问题：哪些回答以及回答速度有多快。表格每天由 GitHub Actions 更新。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "tiyee",
-      "url": "https://www.v2ex.com/t/1257003",
-      "posted_at": "2026-11-14 10:12 Asia/Shanghai",
+      "author": "Owaid0723666",
+      "url": "https://github.com/Owaid0723666/free-llm-radar",
+      "posted_at": "2026-11-12 18:49 Asia/Shanghai",
       "engagement": {
-        "replies": 5
+        "stars": 1
       },
-      "original_title": "开发了一个 Windows 版类似 typora 的原生 markdown 编辑器，永久免费，欢迎试用。",
-      "original_summary": "开发了一个 Windows 版类似 typora 的原生 markdown 编辑器，永久免费，欢迎试用。\n以 typora 为核心，参考了 Bear 和飞书文档，做了个原生 markdown 编辑器。\r\n主要是不想使用破解的 typora ，其他产品也都不怎么好用，所以造个轮子。\r\n永远免费，也永远不挂广告。纯单机，没有任何联网功能。\r\n欢迎使用。windows store 里搜“如言”。",
+      "original_title": "Owaid0723666/free-llm-radar",
+      "original_summary": "Owaid0723666/free-llm-radar Every free LLM API model, asked one short question a day: which ones answer and how fast. Tables update daily by GitHub Actions.",
       "translated_by": "free-translate"
     },
     {
