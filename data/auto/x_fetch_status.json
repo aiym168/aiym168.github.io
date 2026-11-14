@@ -1,22 +1,22 @@
 {
-  "updated_at_label": "2026-11-14 20:37 Asia/Shanghai",
-  "primary_route": null,
+  "updated_at_label": "2026-11-14 23:00 Asia/Shanghai",
+  "primary_route": "google-news-rss",
   "routes": {
     "syndication": {
       "accounts_ok": 0,
       "tweets": 0
     },
     "google-news-rss": {
-      "items": 0
+      "items": 100
     },
     "bing-news-rss": {
       "items": 0
     }
   },
   "accounts_ok": 0,
-  "raw": 0,
-  "kept": 0,
-  "added": 0,
+  "raw": 100,
+  "kept": 6,
+  "added": 6,
   "alt_probes": {
     "nitter.net": {
       "status": 410,
@@ -31,5 +31,5 @@
       "ok": false
     }
   },
-  "ok": false
+  "ok": true
 }
