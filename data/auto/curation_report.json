@@ -2,11 +2,11 @@
  "counts": {
   "archived": 14,
   "deadline_extracted": 6,
-  "drop:duplicate": 138,
+  "drop:duplicate": 139,
   "drop:empty_summary": 29,
-  "drop:negative_signal": 102,
-  "drop:no_clear_offer": 297,
-  "drop:not_ai": 252,
+  "drop:negative_signal": 101,
+  "drop:no_clear_offer": 295,
+  "drop:not_ai": 254,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 361,
   "google_news_total": 361,
@@ -19,6 +19,7 @@
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "上传房间照片即可用 AI 生成2个免费设计方案",
+   "免费课程：从工程师到 AI 工程师，每集对应一个 Git 标签",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
@@ -27,8 +28,7 @@
    "freefield：ComfyUI 上开源 Higgsfield",
    "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
    "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中",
-   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件",
-   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个"
+   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件"
   ],
   "empty_summary": [
    "该模型总参数 280B、每 token 激活 14B、上下文窗口 1M，目前在 OpenRouter 可免费使用",
@@ -101,17 +101,16 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-14T14:29:23+08:00",
+ "generated_at": "2026-11-14T15:00:26+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-14T14:29:22+08:00",
+  "checked_at": "2026-11-14T15:00:26+08:00",
   "counts": {
-   "ok": 137,
-   "recheck": 1,
-   "unsure": 23
+   "gone": 1,
+   "ok": 160
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 0.6,
+ "seconds": 0.4,
  "side": {
   "github_hot": {
    "drop:duplicate": 7,
@@ -121,8 +120,8 @@
   "hot_topics": {
    "drop:negative_signal": 1,
    "drop:not_ai": 15,
-   "drop:not_ai_strict": 9,
-   "kept": 15,
+   "drop:not_ai_strict": 7,
+   "kept": 17,
    "raw": 40
   }
  }
