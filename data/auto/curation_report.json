@@ -4,15 +4,18 @@
   "deadline_extracted": 6,
   "drop:duplicate": 188,
   "drop:empty_summary": 30,
-  "drop:negative_signal": 105,
-  "drop:no_clear_offer": 316,
-  "drop:not_ai": 282,
+  "drop:negative_signal": 107,
+  "drop:no_clear_offer": 320,
+  "drop:not_ai": 279,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 369,
-  "google_news_total": 369,
-  "kept_total": 177,
+  "google_news_resolved": 375,
+  "google_news_total": 375,
+  "kept_total": 180,
   "net:gnews_cache_hit": 369,
-  "raw_total": 1157
+  "net:gnews_resolved_net": 6,
+  "net:tco_failed": 1,
+  "new_this_run": 2,
+  "raw_total": 1163
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -59,18 +62,18 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "@alex_prompter 分享：10 天内扫描发现 1200 多个严重问题，帮助维护者应对持续攻击",
+   "@TarasTechCom 分享：故障持续约 30 小时、可用性 95.8%，达 50% 抵扣档",
+   "@DataChaz 分享：该记忆层支撑其 AI 代理，推文列出 7 个免费开源项目",
+   "@jasonlk 分享：推文提供 AI 代理更多信息链接，并可获取免费的 AI 销售代理指南",
+   "上传租金名册、T-12 和租约，可得到真实 NOI、排序后的风险点和发给经纪人的问题，也适用于 ChatGPT",
+   "@farbood 分享：该工具免费、开源、完全离线，无追踪和账户，提供本地 AI、地图与视频，支持 Windows 和 ",
    "@alexxubyte 分享：11月15日太平洋时间12点在 Zoom 直播一小时，已有2500多人报名，主题是构建 A",
    "@pkBritish 分享：2026年11月19日格林尼治时间12:00至13:30在线举行，英国校友免费参加，主题是有",
    "@heyrimsha 分享：这些仓库可帮助编写、分轨、母带处理和混音，部分使用 Claude 与 AI，且全部免费",
    "技巧来自工具官方指南，例如 Google Flow 需逐项修改并保留其他内容不变",
    "该优惠包含最新 Gemini 模型和 YouTube Premium，需转发并评论「Google AI Pro」获取详情",
-   "@tylertarver 分享：为教师和校长提供免费的 AI 政策模板",
-   "@smart_poly 分享：用 AI 在引擎内直接把文本生成角色动画，无需订阅或云端处理，全程用本地 GPU 完成",
-   "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入",
-   "@coreyhainesco 分享：每个列表构建工具都需要 99 美元/月的席位",
-   "@leodev 分享：他妈的，我在 AI 推理上花费了数千美元开源了苹果的动态岛，现在在 Github 上",
-   "参与活动即有机会赢取 QPR 对 Sheffield United 的 Corner Lounge 门票两张",
-   "@mcwilsonky 分享：为小企业提供 90 天计划，帮助其被 ChatGPT、Claude 等 AI 助手推荐"
+   "@tylertarver 分享：为教师和校长提供免费的 AI 政策模板"
   ],
   "not_ai": [
    "Strategy 称比特币是数字资本并转为数字信用",
@@ -101,15 +104,16 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-15T00:34:14+08:00",
+ "generated_at": "2026-11-15T02:28:00+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-15T00:33:54+08:00",
+  "checked_at": "2026-11-15T02:27:59+08:00",
   "counts": {
-   "ok": 162
+   "ok": 162,
+   "recheck": 1
   },
   "hidden": 0
  },
- "seconds": 0.5,
+ "seconds": 3.4,
  "side": {
   "github_hot": {
    "drop:duplicate": 9,
@@ -117,11 +121,11 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
+   "drop:negative_signal": 3,
    "drop:not_ai": 11,
-   "drop:not_ai_strict": 7,
-   "kept": 12,
-   "raw": 34
+   "drop:not_ai_strict": 9,
+   "kept": 14,
+   "raw": 37
   }
  }
 }

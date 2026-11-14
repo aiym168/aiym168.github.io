@@ -1,19 +1,12 @@
 {
-  "generated_at": "2026-11-15T00:34:14+08:00",
-  "count": 12,
+  "generated_at": "2026-11-15T02:28:00+08:00",
+  "count": 14,
   "items": [
     {
       "id": "hnhot-50493251",
       "title": "据称，NVIDIA 通过资助 AI 初创公司购买其 GPU 来制造稀缺性",
       "summary": "",
       "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50484658",
-      "title": "Jonathan Blow – 如果 AI 解决了编码问题，为什么我的软件还是一样？[视频]",
-      "summary": "",
-      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
       "source": "Hacker News"
     },
     {
@@ -31,10 +24,10 @@
       "source": "Hacker News"
     },
     {
-      "id": "hnhot-50444761",
-      "title": "Show HN：我用自己的数据训练了 15 个血糖预测模型",
+      "id": "hnhot-50497147",
+      "title": "Show HN：Agweb – 一款专为代理商设计的浏览器，不会妨碍您",
       "summary": "",
-      "url": "https://github.com/0xdeadf1sh/T1DMAI",
+      "url": "https://github.com/paul-nameless/agweb",
       "source": "Hacker News"
     },
     {
@@ -59,10 +52,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257099",
-      "title": "Grok Bot 用 Claude，符合服务条款了吧",
-      "summary": "让他们磨合几天，好好相处，以后让 grok bot 听我指挥就好了。我不用 Claude 还不行吗？跟他讨论一个人生哲理问题，对话 5 轮。好，我去跟 Claude 聊“人这一辈子到底在追求什么”，根据它的回答往下追问，聊满 5 轮后整理给你。第一个问题已经发出去了，我会根据它每次的回答接着追问，聊满 5 轮大概要几分钟。5 轮聊完了，免费版全程没被限流。Claude 最后把它的看法收成一句话：> 人这一辈子追求的，是在有限的时间里，与他人相连，并让自己的日子配得上“我自己的”这个说法：能做主，能承担，也能被爱。每一轮大致是这样聊的",
-      "url": "https://www.v2ex.com/t/1257099",
+      "id": "v2hot-1257136",
+      "title": "AI slop 是怎么来的，从提工单可窥见一角",
+      "summary": "我让 Claude Opus 5.5 跑整个系统的全项目测试，测试到有一个比较极限的场景有 BUG，于是我让 Agent 自己提了一个 jira 工单，然后呼叫对应模块的 owner 来解决这个 bug，但是 owner 告诉我，他看不懂我的工单里是在说什么 于是我查看了一下 Agent 生成的工单，工单写的十分详细，但是根本没有重点，只是把我们做过的实验全部放上去，并且自创了一堆词汇，这些词汇讲道理我在 Claude 内其实能大致看得懂意思，因为我基本上习惯了 Agent 的这种语言习惯，或者说简化词习惯，并且如果我看不懂的话我可以追问我的 Agent，但是收到工单的 owner",
+      "url": "https://www.v2ex.com/t/1257136",
       "source": "V2EX"
     },
     {
@@ -73,17 +66,38 @@
       "source": "V2EX"
     },
     {
-      "id": "xhot-xrss-2648289199",
-      "title": "英国校友可免费参加 AI 提示词线上讲座",
-      "summary": "2026年11月19日格林尼治时间12:00至13:30在线举行，英国校友免费参加，主题是有效提示与工作流。",
-      "url": "https://x.com/pkBritish/status/2121521070616240553",
+      "id": "v2hot-1257099",
+      "title": "Grok Bot 用 Claude，符合服务条款了吧",
+      "summary": "让他们磨合几天，好好相处，以后让 grok bot 听我指挥就好了。我不用 Claude 还不行吗？跟他讨论一个人生哲理问题，对话 5 轮。好，我去跟 Claude 聊“人这一辈子到底在追求什么”，根据它的回答往下追问，聊满 5 轮后整理给你。第一个问题已经发出去了，我会根据它每次的回答接着追问，聊满 5 轮大概要几分钟。5 轮聊完了，免费版全程没被限流。Claude 最后把它的看法收成一句话：> 人这一辈子追求的，是在有限的时间里，与他人相连，并让自己的日子配得上“我自己的”这个说法：能做主，能承担，也能被爱。每一轮大致是这样聊的",
+      "url": "https://www.v2ex.com/t/1257099",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1257137",
+      "title": "两个 Claude Pro 号 KYC，两个号都找 KYC 代过，一个号秒封，一个号现在还活着",
+      "summary": "我大号用了 4 个月，在 11 月 11 日跳 KYC 验证，此前一直在蹬 fable5.2, 想着有 fable5.2 重置卡，想多用用体验一下新模型，没想到触发了 KYC。小号用了一周，在 11 月 11 前一直在蹬 fable5.2, 大号跳 KYC 了，怀疑是 A÷新模型防蒸馏严格一些，11 月 12 日就不敢用 fable5.2 了，开着 opus5.5 meduim 来蹬，晚上用到周额度 95%了给我跳出 KYC，这天聊的都是爬虫，这个我怀疑是滥用的原因或者是聊的内容有点不合规，或者是 fable5.2 蹬太狠了。说一下我的环境，我买的 lisahost 9929 40",
+      "url": "https://www.v2ex.com/t/1257137",
+      "source": "V2EX"
+    },
+    {
+      "id": "xhot-xrss-1651493245",
+      "title": "Lastbook 推出免费开源离线生存工具，含本地 AI 与地图",
+      "summary": "该工具免费、开源、完全离线，无追踪和账户，提供本地 AI、地图与视频，支持 Windows 和 Mac。",
+      "url": "https://x.com/farbood/status/2121397867227287642",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-9131062106",
-      "title": "ByteByteGo 办免费直播课讲 AI 智能体技巧",
-      "summary": "11月15日太平洋时间12点在 Zoom 直播一小时，已有2500多人报名，主题是构建 AI 智能体所需技巧。",
-      "url": "https://x.com/alexxubyte/status/2121441574018310496",
+      "id": "xhot-xrss-2418364919",
+      "title": "免费 Claude 技能可做卖方尽职调查，上传租金名册与租约",
+      "summary": "上传租金名册、T-12 和租约，可得到真实 NOI、排序后的风险点和发给经纪人的问题，也适用于 ChatGPT。",
+      "url": "https://x.com/amandaorson/status/2116545392875856277",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-8168239747",
+      "title": "免费 AI 销售代理指南可获取，推文另附 AI 代理介绍",
+      "summary": "推文提供 AI 代理更多信息链接，并可获取免费的 AI 销售代理指南。",
+      "url": "https://x.com/jasonlk/status/2121626946098315648",
       "source": "X"
     }
   ]
