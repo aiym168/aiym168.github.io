@@ -2,25 +2,25 @@
  "counts": {
   "archived": 14,
   "deadline_extracted": 6,
-  "drop:duplicate": 140,
-  "drop:empty_summary": 26,
+  "drop:duplicate": 139,
+  "drop:empty_summary": 28,
   "drop:negative_signal": 100,
-  "drop:no_clear_offer": 287,
-  "drop:not_ai": 250,
+  "drop:no_clear_offer": 292,
+  "drop:not_ai": 252,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 345,
-  "google_news_total": 345,
+  "google_news_resolved": 353,
+  "google_news_total": 353,
   "kept_total": 173,
   "net:gnews_cache_hit": 345,
-  "net:tco_failed": 2,
-  "raw_total": 1035
+  "net:gnews_resolved_net": 8,
+  "net:tco_expanded": 1,
+  "raw_total": 1043
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "上传房间照片即可用 AI 生成2个免费设计方案",
-   "免费课程：从工程师到 AI 工程师，每集对应一个 Git 标签",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
@@ -29,9 +29,12 @@
    "freefield：ComfyUI 上开源 Higgsfield",
    "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
    "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中",
-   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件"
+   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件",
+   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个"
   ],
   "empty_summary": [
+   "MIT 将于2027年1月在塞浦路斯大学和塞浦路斯理工大学为青少年举办免费 AI 训练营",
+   "DeepAI Code 新增 Muse Ember 免费使用，Claude Sonnet 5.5",
    "演示用 Claude 与 Composio 查找并验证20个营销线索，成本0.68美元，可凭免费额度试用",
    "该免费电子书涵盖 LLM 漏洞、幻觉评估、护栏与生产部署，帮助构建更安全可靠的系统",
    "Gojiberry AI 的 ARR 突破 500 万美元，并发布免费课程",
@@ -41,9 +44,7 @@
    "面向 UnrealEngine 与 UEFN 开发者的 Epic AI MegaJam 活动，免费提供专家团队协助",
    "在 GoLand 2026.3 中，只需 JetBrains 账号即可免费使用 Junie Lite 体验智能体编程",
    "@tom_doerr 分享：具有用于文本推理的永久免费套餐的 LLM API 精选目录",
-   "文章认为 Nvidia 免费开放模型数量最多且由 Jensen 推动，换人可能先砍免费项目",
-   "@PFF 分享：提供180+新指标、自定义数据可视化、32000+统计组合和 Guru AI 访问，可免费试用",
-   "观点：AI 热潮始于 ImageNet 这类全球研究者可免费使用的开放数据集，而机器人领域仍缺同样的公开真实数据"
+   "文章认为 Nvidia 免费开放模型数量最多且由 Jensen 推动，换人可能先砍免费项目"
   ],
   "negative_signal": [
    "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页",
@@ -60,20 +61,21 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "参与活动即有机会赢取 QPR 对 Sheffield United 的 Corner Lounge 门票两张",
+   "@mcwilsonky 分享：为小企业提供 90 天计划，帮助其被 ChatGPT、Claude 等 AI 助手推荐",
+   "参与者用 ClickUp Brain 研究制作了中世纪音乐互动时间线「A Thousand Years of Song」",
+   "作者用 AI 协助发现 QuakeSpasm 一个15年以上内存损坏 bug，提交 issue 和两个 PR",
+   "@_ellisbrown 分享：研究从零训练200多个模型，比较预训练编码器、无编码器、放在 LLM 前等选择的影响",
    "该工具把 BookMyShow 每场演出、每个空座的座位图汇总到一页，无需逐场点开，由 Claude Opus 5.5 ",
    "Envato 在平台上于11月19日美东8点起24小时内免费无限提供 AI 视频模型 MiniMax H3",
    "@rperezmarco 分享：声明称在所有人能用相同 AI 模型前不再公开推测，也不为大公司提供免费基准问题",
    "@synthesiaIO 分享：官方称只需 2 分钟即可免费创建自己的 AI 克隆，并可亲自试用",
    "@ValsAI 分享：两款应用 10 月初换成评分更低的模型，榜首为 Claude Opus 5.5，得分 76.2%，",
    "@ValsAI 分享：两款应用 10 月初换成评分更低的模型，榜首为 Claude Opus 5.5，得分 76.2%，",
-   "哈佛将其完整 ML Systems 课程开源，含 6 大支柱和数百页内容",
-   "@hkfp 分享：香港自由报致力于在 AI 时代保持人力新闻编辑室的地位",
-   "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
-   "Anthropic 承认漏洞致配额消耗过快，向 Claude 付费订阅者提供一次全额度重置",
-   "Epic 更新 Quixel 资产条款，Megascans 与 Megaplants 可用于训练 AI 模型",
-   "Goose 由 Jack Dorsey 的 Block 为内部工程师打造后开源，GitHub 已获 3.5 万星"
+   "哈佛将其完整 ML Systems 课程开源，含 6 大支柱和数百页内容"
   ],
   "not_ai": [
+   "可观看 X 直播 FREE GPU TODAY，参与讨论并获取实时更新",
    "@CommandCodeAI 分享：每月 10 美元套餐用量提升至 7 倍，支持 100 万 token 上下文，Pro",
    "面向加入 beta 的团队提供1000美元额度",
    "@MengTo 分享：整段主视觉为2K 的30秒一镜到底，滚动时反向播放，附完整工作流与提示词",
@@ -84,8 +86,7 @@
    "哪些因素会毁掉您的笔记本电脑：以下行为不会：- 让笔记本电脑一直插着电源 - 同时打开40个标签页 - 从不关机 -",
    "官方称屠杀模式下周上线，DOOM: The Dark Ages Revelations 玩家可免费游玩",
    "Modal 将赞助 Vals Hacks 第一、二赛道，提供算力额度、技术支持及2万美元奖金额度",
-   "@davj 分享：推文列出首轮融资免费资源，包括 Paul Graham 融资文章和 YC 种子轮融资指南",
-   "Apple 的免费容器工具利用 macOS 26 虚拟化，在 Apple Silicon 上以轻量虚拟机运行 OCI 容"
+   "@davj 分享：推文列出首轮融资免费资源，包括 Paul Graham 融资文章和 YC 种子轮融资指南"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -102,17 +103,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-14T09:27:45+08:00",
+ "generated_at": "2026-11-14T09:56:04+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-14T09:27:44+08:00",
+  "checked_at": "2026-11-14T09:56:04+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 118,
-   "unsure": 40
+   "ok": 159
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 0.9,
+ "seconds": 5.2,
  "side": {
   "github_hot": {
    "drop:duplicate": 7,
@@ -123,8 +122,8 @@
    "drop:negative_signal": 4,
    "drop:not_ai": 15,
    "drop:not_ai_strict": 3,
-   "kept": 16,
-   "raw": 38
+   "kept": 18,
+   "raw": 40
   }
  }
 }

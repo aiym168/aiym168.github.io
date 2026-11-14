@@ -1,7 +1,7 @@
 {
   "date": "2026-11-14",
-  "updated_at": "2026-11-14T09:25+08:00",
-  "updated_at_label": "2026-11-14 09:25 Asia/Shanghai",
+  "updated_at": "2026-11-14T09:54+08:00",
+  "updated_at_label": "2026-11-14 09:54 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -16,8 +16,8 @@
       "url": "https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free",
       "posted_at": "2026-11-14 08:28 Asia/Shanghai",
       "engagement": {
-        "points": 4,
-        "comments": 0
+        "points": 14,
+        "comments": 2
       },
       "original_title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
       "original_summary": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free ",
@@ -138,25 +138,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50479949",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "AI-drop 项目可快速拦截异常爬虫流量，采用 AGPL 开源许可",
-      "summary": "项目源于 rocketgit.com 每日请求量达400万而非数千，附8页演示文档。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "catab",
-      "url": "https://rocketgit.com/user/catalinux/ai-drop",
-      "posted_at": "2026-11-13 16:05 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: AI-drop project – drop traffic fast from misbehaving crawlers (AGPL)",
-      "original_summary": "Show HN: AI-drop project – drop traffic fast from misbehaving crawlers (AGPL) Hello!<p>All started with 4 million requests &#x2F; day on rocketgit.com (AGPL git hosting).\nInstead of thousands. Enough is enough!<p>Presentation (8 pages):\n<a href=\"https:&#x2F;&#x2F;rocketgit.com&#x2F;user&#x2F;catalinux&#x2F;ai-drop&#x2F;artefacts&#x2F;download&#x2F;docs&#x2F;pre1.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;rocketgit.com&#x2F;user&#x2F;catalinux&#x2F;ai-drop&#x2F;artefacts&#x2F;downl...</a><p>So, I built AI-drop free-software project (AGPL) to block this kind of crawlers.\nrocketgit.com has a very restrictive robots.txt (only around 10 pages are allowed).\nBut the crawlers are not respecting it. So, who is not respecting it will be blocked.<p>Limiting by IP or user-agent is not working anymore. The ",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50479411",
       "source": "Hacker News",
       "category": "其他科技",
@@ -173,25 +154,6 @@
       },
       "original_title": "Show HN: Wonderchat – A Zendesk alternative that doesn't charge per seat",
       "original_summary": "Show HN: Wonderchat – A Zendesk alternative that doesn't charge per seat Hi HN, I’m Vera, co-founder of Wonderchat.<p>We started as an AI website agent that answers customer questions from a company’s website and docs. Over time, customers kept asking for the rest of the support stack around it, so we built a helpdesk: live chat, a unified inbox for email and SMS, and a help center (coming soon in a couple of weeks).<p>The pricing and AI native helpdesk experience is the part I most wanted to change. Most helpdesks charge per seat, so every new teammate adds to the bill, and support teams end up rationing logins. We charge one flat price with unlimited seats. You pay only for AI work: the replies and resolutions the agent handles. Human agents replying to tickets don’t cost anything extra.",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50466649",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "免费课程：从工程师到 AI 工程师，每集对应一个 Git 标签",
-      "summary": "Show HN：从工程师到 AI 工程师的免费课程，每集一个 Git 标签",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "joelstevick",
-      "url": "https://github.com/AiFirstDevelopment/engineer-to-ai-engineer",
-      "posted_at": "2026-11-12 21:15 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: A free course from engineer to AI engineer, one Git tag per episode",
-      "original_summary": "Show HN: A free course from engineer to AI engineer, one Git tag per episode ",
       "translated_by": "model"
     },
     {
@@ -290,6 +252,44 @@
       "translated_by": "model"
     },
     {
+      "id": "hn-50454951",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "Klad：可由编码智能体驱动的绘画应用，源码可见",
+      "summary": "面向游戏开发的绘画工具，让AI智能体直接操作绘图。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ambewas",
+      "url": "https://github.com/klad-app/klad",
+      "posted_at": "2026-11-12 00:00 Asia/Shanghai",
+      "engagement": {
+        "points": 83,
+        "comments": 34
+      },
+      "original_title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
+      "original_summary": "Show HN: Klad, a paint app your coding agent can drive (source-available) I&#x27;ve been developing applications for a long time and have turned to game development as well lately. One of the things that frustrated me the most was that using AI agents for game development is very annoying in the art department. Your only options right now are to either use an image genAI model and roll the dice every time you want to make an edit, or have your agent draw with something like vectors.<p>I was looking for an application that would allow me to ask an agent to make a first draft of whatever art I needed with actual brushes, and then be able to go in myself and edit every last stroke or layer that it created.<p>Klad is that application. Written in Rust, it can be fully controlled by an agent thr",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50454625",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Yogurt：Granola 的免费开源替代品，本地转写并总结会议",
+      "summary": "Yogurt 是 MIT 许可的免费桌面应用，用本地 AI 模型转写、总结会议并支持对话，隐私安全。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "brownrout",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "posted_at": "2026-11-11 23:33 Asia/Shanghai",
+      "engagement": {
+        "points": 297,
+        "comments": 113
+      },
+      "original_title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+      "original_summary": "Show HN: Yogurt – Free, private, open-source alternative to Granola Hey HN, I’m Eric and I want to share an OSS project that I’ve been building in my free time. Yogurt is a free, MIT licensed desktop app that uses on-device AI models to transcribe, summarize, and chat with your meetings.<p>Here&#x27;s a quick demo video: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=BFfbXAwRq98\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=BFfbXAwRq98</a><p>Similar to Granola, Yogurt runs in the background and does not join your calls. But unlike Granola, Yogurt is open-source, free to use, and private. Your meeting transcripts, call recordings, and summaries never leave your computer.<p>As small OSS models have gotten faster and more powerful, Yogurt seemed like a pretty obvious",
+      "translated_by": "model"
+    },
+    {
       "id": "hn-50491841",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -339,7 +339,7 @@
       "url": "https://news.ycombinator.com/item?id=50491617",
       "posted_at": "2026-11-14 07:26 Asia/Shanghai",
       "engagement": {
-        "points": 14,
+        "points": 15,
         "comments": 2
       },
       "original_title": "Tell HN: Google Search to start locking down search behind a login wall",
@@ -480,25 +480,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50454951",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Klad：可由编码智能体驱动的绘画应用，源码可见",
-      "summary": "面向游戏开发的绘画工具，让AI智能体直接操作绘图。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "ambewas",
-      "url": "https://github.com/klad-app/klad",
-      "posted_at": "2026-11-12 00:00 Asia/Shanghai",
-      "engagement": {
-        "points": 83,
-        "comments": 34
-      },
-      "original_title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
-      "original_summary": "Show HN: Klad, a paint app your coding agent can drive (source-available) I&#x27;ve been developing applications for a long time and have turned to game development as well lately. One of the things that frustrated me the most was that using AI agents for game development is very annoying in the art department. Your only options right now are to either use an image genAI model and roll the dice every time you want to make an edit, or have your agent draw with something like vectors.<p>I was looking for an application that would allow me to ask an agent to make a first draft of whatever art I needed with actual brushes, and then be able to go in myself and edit every last stroke or layer that it created.<p>Klad is that application. Written in Rust, it can be fully controlled by an agent thr",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50490283",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -594,6 +575,25 @@
       "translated_by": "model"
     },
     {
+      "id": "hn-50476872",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "共享在线 Etch A Sketch 画板：一条连续线，或调用免费 API",
+      "summary": "一块 4000×4000 共享画布，可实时看到他人画笔移动，如同真玩具只能画一条连续线，也能用免费 API 作画。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ipgarden",
+      "url": "https://graciegould.com/etch-a-sketch-live",
+      "posted_at": "2026-11-13 09:20 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: A shared live Etch A Sketch – one continuous line, or draw via API",
+      "original_summary": "Show HN: A shared live Etch A Sketch – one continuous line, or draw via API I made a live Etch A Sketch that everyone draws on together. It&#x27;s one shared 4000×4000 canvas, and you see other people&#x27;s pens moving in real time. Like the real toy, you only get one continuous line and can only draw or erase.<p>If you want to draw something more intricate, there&#x27;s a free API you can post your stroke coordinates strokes to: <a href=\"https:&#x2F;&#x2F;graciegould.com&#x2F;api&#x2F;etch&#x2F;stroke\" rel=\"nofollow\">https:&#x2F;&#x2F;graciegould.com&#x2F;api&#x2F;etch&#x2F;stroke</a> (example under the API button on the page).<p>I&#x27;d love feedback on how the drawing feels and on the API. No profanity please.",
+      "translated_by": "model"
+    },
+    {
       "id": "v2ex-1256984",
       "source": "V2EX",
       "category": "其他科技",
@@ -605,7 +605,7 @@
       "url": "https://www.v2ex.com/t/1256984",
       "posted_at": "2026-11-14 07:47 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 2
       },
       "original_title": "最近大厂也在 AI 标注平台么",
       "original_summary": "最近大厂也在 AI 标注平台么\n最近大厂也在 AI 标注平台么\r\n\r\n前几天 天猫打了好几次电话\r\n我还以为啥大事\r\n原来是让我注册 他们的 “晓天睿士” 平台，但是搞笑的是 他们网页标题：\r\n![pasted-image.png · 335]( https://img.cdn1.vip/i/6af7a10b8c357_1794613515.webp)\r\n\r\n然后这几天 腾讯也高了一个，认证就能提现 100 现金， 😂 真的薅羊毛么\r\n\r\n![pasted-image.png · 304]( https://img.cdn1.vip/i/6af7a0ab89d7c_1794613419.webp)\r\n\r\n\r\nhttps://experthub.tencent.com/?referral_code=WPNXGE",
@@ -695,7 +695,7 @@
       "url": "https://www.v2ex.com/t/1256714",
       "posted_at": "2026-11-13 10:21 Asia/Shanghai",
       "engagement": {
-        "replies": 80
+        "replies": 81
       },
       "original_title": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖",
       "original_summary": "做了个好看的 Mac 系统监控软件 Ebb，送 15 个激活码，求 v 友拍砖\n做 Ebb 的初衷就一句话：想要一个好看、原生、轻量的系统监控软件。\r\n\r\n好看：我很喜欢 tw93 的 Mole ，克制、干净，又有点小趣味，Ebb 整体的设计气质就是参考 Mole 做的。每一页都有自己的图表，比如处理器是\"核心花\"，内存是\"气泡\"，网络是\"星图\"。\r\n\r\n原生、轻量：SwiftUI 原生开发，不套壳。数据全部存在本机，不上传。\r\n\r\n除了好看，也塞了几个我自己天天用的功能：\r\n\r\n- 刚才怎么了：按 ⌃⌥E 回放最近 60 秒，看是哪个进程在哪一秒把 CPU 吃满了\r\n- 失控进程：后台进程长时间占着 CPU ，或者内存只涨不降，会直接标出来\r\n- 睡眠体检：合盖再打开，告诉你睡了多久、掉了多少电、被唤醒了几次\r\n- 菜单栏面板：负载、网速、蓝牙设备电量，扫一眼就够了\r\n\r\n支持 macOS 13 及以上，Apple 芯片和 Intel 都能用。免费试用 14 天，之后 5 美元买断。\r\n\r\n官网： https://ebbapp.top\r\n\r\n [送码] \r\n准备了 15 个激活码。在楼下回复你的使用建议、吐槽或者想要的功能，说一句\"好看\"也行。回复时请附上 base64 编码后的邮箱，我会从回复里挑 15 位，把激活码发到邮箱。\r\n\r\n才刚上线，肯定有不少毛病，欢迎大家狠狠提意见，我都会看。\r\n\r\n部分截图：\r\n\r\n亮色：\r\n\r\n![总览]( https://img.cdn1.vip/i/6af671417c5e0_1794535745.webp)\r\n![处理器]( https://img.cdn1.vip/i/6af6713d0c63f_1794535741.webp)\r\n![能耗]( https://img.cdn1.vip/i/6af6713d64dcb_17945",
