@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-14T07:51:08+08:00",
+ "updated_at": "2026-11-14T09:26:05+08:00",
  "counts": {
   "ai": 220,
   "aivideo": 150,
   "comfyui": 58,
-  "aidrama": 136,
-  "aigc": 71,
-  "gossip": 54,
+  "aidrama": 138,
+  "aigc": 70,
+  "gossip": 55,
   "huawei": 150,
   "mobile": 150,
   "chip": 150,
@@ -15,10 +15,10 @@
   "dev": 150,
   "game": 150,
   "auto": 150,
-  "space": 78,
+  "space": 81,
   "science": 150,
   "launch": 150,
-  "tech": 1578
+  "tech": 1581
  },
  "hot": [
   "英伟达",
@@ -26,25 +26,25 @@
   "AMD",
   "OpenAI",
   "微软",
-  "SpaceX",
   "大模型",
+  "FAA",
+  "SpaceX",
   "HomeView",
   "比亚迪",
-  "ComfyUI",
   "SUV",
-  "FAA",
   "存储",
+  "ComfyUI",
   "MCP",
   "GitHub",
-  "谷歌",
   "Wolfenstein 3",
   "November 13",
-  "任天堂",
-  "Open-Source",
-  "RTX",
+  "谷歌",
   "GTA",
   "DLSS",
-  "YouTube"
+  "Open-Source",
+  "任天堂",
+  "YouTube",
+  "Xbox"
  ],
  "channels": [
   {
@@ -152,6 +152,823 @@
  ],
  "items": [
   {
+   "id": "2e74d0228d63",
+   "channel": "ai",
+   "title": "agent-skills 为 AI 编程 agent 提供工程技能",
+   "summary": "该技能集把资深工程师的工作流程、质量门禁与最佳实践打包，让 AI agent 在开发各阶段保持一致。",
+   "source": "GitHub Trending",
+   "tags": [
+    "AI 编程",
+    "AI Agent"
+   ],
+   "url": "https://github.com/addyosmani/agent-skills",
+   "page": "https://aiym168.github.io/news/a/2e74d0228d63.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "80c5907161fc",
+   "channel": "ai",
+   "title": "美团正式发布 LongCat-2.5：面向智能体任务的原生多模态模型",
+   "summary": "美团发布 LongCat-2.5，一个面向长程智能体任务的原生多模态模型。模型总参数量为 1.6 万亿，每个 token 激活约 480 亿参数，在 LongCat-2.0 的基础上进一步强化原生视觉理解与智能体编程能力。",
+   "source": "美团技术团队",
+   "tags": [
+    "AI Agent",
+    "美团"
+   ],
+   "url": "https://tech.meituan.com/2026/11/02/Meituan-LongCat-2.5.html",
+   "page": "https://aiym168.github.io/news/a/80c5907161fc.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "f78606104efc",
+   "channel": "ai",
+   "title": "如何在“不能出错”的系统里使用 AI Coding？分布式存储实践与边界",
+   "summary": "本文结合美团基础技术部在 AI 评审、问题排查和自动化开发中的真实实践，分享 AI 能帮上什么忙、容易在哪些地方犯错，以及哪些地方仍需要人来把关。比「多写代码」更重要的，是让代码和结论经得起验证。",
+   "source": "美团技术团队",
+   "tags": [
+    "美团"
+   ],
+   "url": "https://tech.meituan.com/2026/10/29/AI-Coding-IN-Distributed-Storage-System.html",
+   "page": "https://aiym168.github.io/news/a/f78606104efc.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "6c64301c09e0",
+   "channel": "ai",
+   "title": "Hugging Face 热门多模态模型：Qwen/Qwen3.8-27B",
+   "summary": "Hugging Face 趋势榜上的多模态模型，19880 个点赞、6960395 次下载。",
+   "source": "Hugging Face 热门模型",
+   "tags": [
+    "通义千问",
+    "Hugging Face"
+   ],
+   "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+   "page": "https://aiym168.github.io/news/a/6c64301c09e0.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "3fb6826c8535",
+   "channel": "dev",
+   "title": "从 LOOP 到图探索 —— 算法模型的 AutoResearch 自进化系统架构演进之路",
+   "summary": "本文分享这套系统的设计理念、架构演进与可信度设计，希望对大家有所帮助或启发。",
+   "source": "美团技术团队",
+   "tags": [],
+   "url": "https://tech.meituan.com/2026/10/22/LOOP-AutoResearch.html",
+   "page": "https://aiym168.github.io/news/a/3fb6826c8535.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "46e307363c08",
+   "channel": "ai",
+   "title": "Hugging Face 热门模型：speridlabs/idol",
+   "summary": "Hugging Face 趋势榜上的image-to-3d模型，2298 个点赞、31367 次下载。",
+   "source": "Hugging Face 热门模型",
+   "tags": [
+    "Hugging Face"
+   ],
+   "url": "https://huggingface.co/speridlabs/idol",
+   "page": "https://aiym168.github.io/news/a/46e307363c08.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "f1ea6968e144",
+   "channel": "ai",
+   "title": "SLM 生成式高并发推理引擎：延迟约束下的有效吞吐优化",
+   "summary": "本文为SLM（Small Language Model， 小参数量语言模型0.5~1B）在搜推场景的大规模落地提供了一套高性能、可复用的工程实践。",
+   "source": "美团技术团队",
+   "tags": [
+    "大模型"
+   ],
+   "url": "https://tech.meituan.com/2026/10/15/Small-Language-Model-in-meituan.html",
+   "page": "https://aiym168.github.io/news/a/f1ea6968e144.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "c628cda7f178",
+   "channel": "ai",
+   "title": "MTFM：美团统一推荐基座大模型在外卖多业务场景的落地实践",
+   "summary": "美团在 MTGR 基础上提出统一推荐基座大模型 MTFM，首次实现外卖多个主要业务的统一精排模型。",
+   "source": "美团技术团队",
+   "tags": [
+    "大模型",
+    "美团"
+   ],
+   "url": "https://tech.meituan.com/2026/09/22/Meituan-Foundation-Model-for-Recommendation.html",
+   "page": "https://aiym168.github.io/news/a/c628cda7f178.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "1c6441623ff5",
+   "channel": "ai",
+   "title": "Hugging Face 热门模型：ccore/Qwen3.5-4B-3D-Coder",
+   "summary": "Hugging Face 趋势榜上的模型，1096 个点赞、392582 次下载。",
+   "source": "Hugging Face 热门模型",
+   "tags": [
+    "通义千问",
+    "Hugging Face"
+   ],
+   "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+   "page": "https://aiym168.github.io/news/a/1c6441623ff5.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "dcd327682447",
+   "channel": "dev",
+   "title": "美团智播——数字人直播技术创新与实践",
+   "summary": "美团智播围绕 AI 主播「长得真→动得准→演得活→卖得好」构建了完整技术闭环：真人 1:1 复刻、换装换背景身份不跑偏；动作自然流畅，告别「木偶戏」；边说边动、音画一致；背后还有推理加速技术支撑万路并发开播，让普惠落地成为可能。",
+   "source": "美团技术团队",
+   "tags": [
+    "美团"
+   ],
+   "url": "https://tech.meituan.com/2026/09/03/meituan-Digital-Human-practice.html",
+   "page": "https://aiym168.github.io/news/a/dcd327682447.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "4e8227e28349",
+   "channel": "ai",
+   "title": "美团搜索3.0：LLM 语义表征在排序模型的探索与应用",
+   "summary": "美团搜索团队正依托团垂融合新架构与生成式大模型新技术，全面重构本地生活搜索底座。本系列技术博客将持续介绍美团搜索 3.0 的技术探索，本文聚焦 LLM 语义表征在服务零售排序场景上的三期实践——从单点特征验证到系统性表征体系构建，再到跨场景迁移复用，探索语义匹配信号在搜索排序中的应用路径。",
+   "source": "美团技术团队",
+   "tags": [
+    "大模型",
+    "美团"
+   ],
+   "url": "https://tech.meituan.com/2026/08/20/01-meituan-Query-3.0.html",
+   "page": "https://aiym168.github.io/news/a/4e8227e28349.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "669158398996",
+   "channel": "ai",
+   "title": "Hugging Face 热门模型：facebook/sam3",
+   "summary": "Hugging Face 趋势榜上的mask-generation模型，6535 个点赞、2092498 次下载。",
+   "source": "Hugging Face 热门模型",
+   "tags": [
+    "Hugging Face",
+    "Meta"
+   ],
+   "url": "https://huggingface.co/facebook/sam3",
+   "page": "https://aiym168.github.io/news/a/669158398996.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "de90f909a0f0",
+   "channel": "ai",
+   "title": "Hugging Face 热门多模态模型：unsloth/Qwen3.8-Flash-Next-GGUF",
+   "summary": "Hugging Face 趋势榜上的多模态模型，1687 个点赞、2322693 次下载。",
+   "source": "Hugging Face 热门模型",
+   "tags": [
+    "通义千问",
+    "Hugging Face"
+   ],
+   "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+   "page": "https://aiym168.github.io/news/a/de90f909a0f0.html",
+   "published_at": "2026-11-14T09:26:05+08:00"
+  },
+  {
+   "id": "ebd9975047a7",
+   "channel": "dev",
+   "title": "在印度电脑上装 VPN 应按安装、导入、测试的顺序进行",
+   "summary": "先选支持 Windows 和所用协议的客户端，安装并导入订阅，再切换位置和测试 DNS。",
+   "source": "DEV",
+   "tags": [
+    "微软"
+   ],
+   "url": "https://dev.to/akimbo9a2416ff0b47/vpn-on-a-pc-in-india-install-import-and-test-in-that-order-och",
+   "page": "https://aiym168.github.io/news/a/ebd9975047a7.html",
+   "published_at": "2026-11-14T09:24:13+08:00"
+  },
+  {
+   "id": "c9bf0256769d",
+   "channel": "dev",
+   "title": "用日本邮政免费数据做邮编自动填地址，无需 API Key",
+   "summary": "日本地址表单从 7 位邮编开始，输入后应自动填出都道府县和市区町村。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/gen_jidouka/japanese-postal-code-to-address-auto-fill-built-from-japan-posts-free-data-no-api-key-4ccg",
+   "page": "https://aiym168.github.io/news/a/c9bf0256769d.html",
+   "published_at": "2026-11-14T09:22:35+08:00"
+  },
+  {
+   "id": "8a615b3e7196",
+   "channel": "dev",
+   "title": "印度店主可以用自家网站收集 Google 评价",
+   "summary": "满意的顾客很少主动留评，网站可以替店主发出邀请，文中给出简单做法。",
+   "source": "DEV",
+   "tags": [
+    "谷歌"
+   ],
+   "url": "https://dev.to/krishna_kumar_ecc1e764686/how-indian-shop-owners-can-collect-google-reviews-from-their-website-52i9",
+   "page": "https://aiym168.github.io/news/a/8a615b3e7196.html",
+   "published_at": "2026-11-14T09:22:33+08:00"
+  },
+  {
+   "id": "15fe04172d92",
+   "channel": "dev",
+   "title": "2026 年我的 Mac 写作栈：7 个应用各管一件事",
+   "summary": "作者不再找全能应用，而是按文字实际流转顺序让每个工具负责一个阶段。",
+   "source": "DEV",
+   "tags": [
+    "苹果"
+   ],
+   "url": "https://dev.to/jeff_feldman_7ab3898/my-mac-writing-stack-in-2026-from-dictation-to-send-7-apps-one-job-each-38i5",
+   "page": "https://aiym168.github.io/news/a/15fe04172d92.html",
+   "published_at": "2026-11-14T09:22:20+08:00"
+  },
+  {
+   "id": "420ed1fe4e1f",
+   "channel": "dev",
+   "title": "助听器或眼科诊所的网站该怎么规划",
+   "summary": "网站的目标是让焦虑的患者或其子女安心到愿意打电话或上门，文中给出务实思路。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/krishna_kumar_ecc1e764686/planning-a-website-for-a-hearing-aid-or-eye-care-clinic-2lfp",
+   "page": "https://aiym168.github.io/news/a/420ed1fe4e1f.html",
+   "published_at": "2026-11-14T09:22:08+08:00"
+  },
+  {
+   "id": "79b639e54653",
+   "channel": "dev",
+   "title": "发布 TypeScript 库时如何提供类型又藏住实现",
+   "summary": "让使用者获得完整的类型提示与跳转定义，同时拿不到可读的实现代码。",
+   "source": "DEV",
+   "tags": [
+    "JavaScript"
+   ],
+   "url": "https://dev.to/veilvm/protecting-a-typescript-library-you-publish-ship-typings-hide-the-implementation-1mhi",
+   "page": "https://aiym168.github.io/news/a/79b639e54653.html",
+   "published_at": "2026-11-14T09:21:26+08:00"
+  },
+  {
+   "id": "724f20949df3",
+   "channel": "dev",
+   "title": "Apache Hue：用通用词做检索会带来大量无关结果",
+   "summary": "Hue 既是常见单词也是照明品牌，用短词查标题会命中大量与该项目无关的条目。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/johnettagaweraks/apache-hue-a-generic-word-makes-a-poor-exposure-count-11jh",
+   "page": "https://aiym168.github.io/news/a/724f20949df3.html",
+   "published_at": "2026-11-14T09:20:53+08:00"
+  },
+  {
+   "id": "699c0f47189f",
+   "channel": "science",
+   "title": "电子表现比预期更重，或解释氧化镓中较慢的电流",
+   "summary": "功率电子器件转换电能时会以热量损耗部分能量，降低效率并可能影响器件性能。",
+   "source": "Phys.org",
+   "tags": [],
+   "url": "https://phys.org/news/2026-11-heavier-electron-behavior-slower-electrical.html",
+   "page": "https://aiym168.github.io/news/a/699c0f47189f.html",
+   "published_at": "2026-11-14T09:20:01+08:00"
+  },
+  {
+   "id": "1500a0484261",
+   "channel": "dev",
+   "title": "用 Notion 无代码搭建客户看板，统一管理客户",
+   "summary": "一个 Clients 数据库配三个关联视图，就能在免费版上用几分钟搭好看板。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/stackscale/build-client-dashboard-in-notion-no-code-track-clients-like-a-pro-22c3",
+   "page": "https://aiym168.github.io/news/a/1500a0484261.html",
+   "published_at": "2026-11-14T09:19:30+08:00"
+  },
+  {
+   "id": "747307b3f89c",
+   "channel": "software",
+   "title": "Wine 新增 AVX 支持，x86 Windows 应用可在 ARM64 运行",
+   "summary": "Wine 新版本还修复了数十个错误，并加入新的安全功能。",
+   "source": "How-To Geek",
+   "tags": [
+    "微软"
+   ],
+   "url": "https://www.howtogeek.com/your-x86-windows-apps-may-now-run-on-arm64-thanks-to-wines-avx-support/",
+   "page": "https://aiym168.github.io/news/a/747307b3f89c.html",
+   "published_at": "2026-11-14T09:17:35+08:00"
+  },
+  {
+   "id": "b9d8dca8af2e",
+   "channel": "chip",
+   "title": "AMD 桌面 CPU 份额降至 29.9%，Intel 回升至 70.1%",
+   "summary": "Mercury Research 数据显示，2026 年第三季度 AMD 桌面 CPU 份额降至 29.9%，Intel回升至 70.1%。",
+   "source": "TechPowerUp",
+   "tags": [
+    "AMD",
+    "英特尔"
+   ],
+   "url": "https://www.techpowerup.com/354824/amd-loses-desktop-cpu-share-for-the-first-time-in-months-intel-regains-ground",
+   "page": "https://aiym168.github.io/news/a/b9d8dca8af2e.html",
+   "published_at": "2026-11-14T09:16:16+08:00"
+  },
+  {
+   "id": "871eab182217",
+   "channel": "mobile",
+   "title": "Samsung 可能意外展示了 Galaxy S27 最醒目的功能",
+   "summary": "紫色退场，红色登场。",
+   "source": "Android Police",
+   "tags": [
+    "三星"
+   ],
+   "url": "https://www.androidpolice.com/samsung-might-leaked-galaxy-s27-most-eye-catching-feature-colors/",
+   "page": "https://aiym168.github.io/news/a/871eab182217.html",
+   "published_at": "2026-11-14T09:16:14+08:00"
+  },
+  {
+   "id": "8e21778422ff",
+   "channel": "science",
+   "title": "科学家解开数十年谜团，或助实现更快互联网",
+   "summary": "研究人员厘清钛酸钡与光的相互作用，为设计更快的光通信器件提供数据，有望减少试错成本。",
+   "source": "SciTechDaily",
+   "tags": [],
+   "url": "https://scitechdaily.com/scientists-crack-a-decades-old-mystery-that-could-unlock-faster-internet/",
+   "page": "https://aiym168.github.io/news/a/8e21778422ff.html",
+   "published_at": "2026-11-14T09:15:58+08:00"
+  },
+  {
+   "id": "4692cbe94955",
+   "channel": "gossip",
+   "title": "礼来 CEO 回应“AI 十年内攻克癌症”：愿景很美好，但不太可能",
+   "summary": "礼来（Eli Lilly）董事长兼首席执行官戴夫 · 里克斯（Dave Ricks）于 11 月 12 日在 X 平台发布推文，回应 Anthropic 首席执行官达里奥 · 阿莫代伊（Dario Amodei）有关“AI 将在不到十年内攻克癌症等疾病”的预测， 称这一愿景“令人向往”，但实现的可能…",
+   "source": "IT之家",
+   "tags": [
+    "Claude"
+   ],
+   "url": "https://www.ithome.com/1/027/037.htm",
+   "page": "https://aiym168.github.io/news/a/4692cbe94955.html",
+   "published_at": "2026-11-14T09:10:57+08:00"
+  },
+  {
+   "id": "e788626d2818",
+   "channel": "internet",
+   "title": "比亚迪方程豹钛 9 官宣 11 月 19 日上市，闪充技术 + 二代刀片电池加持",
+   "summary": "比亚迪方程豹事业部总经理熊甜波昨晚宣布，方程豹钛 9 车型将于 11 月 19 日上市，车辆已抵达全国 12 城 21 门店，新增 20 城已发运在途即将抵达。 IT之家注意到，钛 9 是方程豹品牌当前唯一一款 9 系旗舰车型，全系标配四项技术： 首发首搭 DMS 全新混动平台：DMS 专为钛系列打…",
+   "source": "IT之家",
+   "tags": [
+    "比亚迪",
+    "新能源"
+   ],
+   "url": "https://www.ithome.com/1/027/036.htm",
+   "page": "https://aiym168.github.io/news/a/e788626d2818.html",
+   "published_at": "2026-11-14T09:09:29+08:00"
+  },
+  {
+   "id": "96b0fbe99592",
+   "channel": "mobile",
+   "title": "免费 Windows 应用让 PC 用户无需树莓派使用 DualSense",
+   "summary": "一款免费应用可为 DualSense 提供完整功能。",
+   "source": "XDA",
+   "tags": [
+    "微软"
+   ],
+   "url": "https://www.xda-developers.com/a-free-windows-app-just-replaced-raspberry-pi-for-dualsense-users-on-pc/",
+   "page": "https://aiym168.github.io/news/a/96b0fbe99592.html",
+   "published_at": "2026-11-14T09:00:20+08:00"
+  },
+  {
+   "id": "6d99369b45a5",
+   "channel": "software",
+   "title": "X/Twitter现在单篇推文可以附加20张图片和视频 避免用户发布多图时需要拆分",
+   "summary": "#网站应用 社交网站 X/Twitter 调整帖子可附加的媒体内容数量，单篇附加项从 4 项提高到 20 项，用户可以直接添加 20 张图片或视频。需要注意的是图片和视频合计最多 20 项，不是每种都能附加 20 项。另外视频长度、图片格式等限制没有变化，还是沿用之前的限制。",
+   "source": "蓝点网",
+   "tags": [],
+   "url": "https://www.landian.news/archives/128378.html",
+   "page": "https://aiym168.github.io/news/a/6d99369b45a5.html",
+   "published_at": "2026-11-14T09:00:00+08:00"
+  },
+  {
+   "id": "f682ab160f01",
+   "channel": "internet",
+   "title": "特斯拉 Cybercab 面向个人用户开放销售：售 29990 美元，每月还需支付 299 美元自动驾驶订阅费用",
+   "summary": "特斯拉宣布开始向部分个人用户开放 Cybercab 无人驾驶汽车购买渠道，起售价为 29,990 美元 （IT之家注：现汇率约合 20 万元人民币） ，首批车辆预计将于 2026 年 12 月交付。 不过，目前特斯拉 Cybercab 个人购买资格仅向特定受邀客户开放，首批交付范围也暂时集中在美国得…",
+   "source": "IT之家",
+   "tags": [
+    "特斯拉",
+    "智能驾驶"
+   ],
+   "url": "https://www.ithome.com/1/027/034.htm",
+   "page": "https://aiym168.github.io/news/a/f682ab160f01.html",
+   "published_at": "2026-11-14T08:59:11+08:00"
+  },
+  {
+   "id": "f2e8e9f3ba75",
+   "channel": "internet",
+   "title": "马斯克声援黄仁勋：将签署请愿，支持其重返英伟达 CEO 岗位",
+   "summary": "全球首富埃隆 · 马斯克（Elon Musk）昨日（11 月 13 日）发布推文，回应网友关于“ 约 1600 名英伟达员工呼吁黄仁勋回归 ”的推文， 表示“一项要求让黄仁勋复职的请愿正在进行，我也会签署。” 网友 @yunta_tsai 主张，希望黄仁勋回归的员工可以通过辞职表达立场，并强调工程师…",
+   "source": "IT之家",
+   "tags": [
+    "英伟达"
+   ],
+   "url": "https://www.ithome.com/1/027/033.htm",
+   "page": "https://aiym168.github.io/news/a/f2e8e9f3ba75.html",
+   "published_at": "2026-11-14T08:56:42+08:00"
+  },
+  {
+   "id": "0d5966cfedcd",
+   "channel": "auto",
+   "title": "Rinnai 新款热泵热水器更智能，安装也更方便",
+   "summary": "Rinnai 推出新款电动热泵热水器，新增 Wi-Fi 控制和更多安装选项，可减少热水淋浴所需能源。",
+   "source": "Electrek",
+   "tags": [],
+   "url": "https://electrek.co/2026/11/13/rinnai-new-heat-pump-water-heaters-get-smarter-and-easier-to-install/",
+   "page": "https://aiym168.github.io/news/a/0d5966cfedcd.html",
+   "published_at": "2026-11-14T08:53:37+08:00"
+  },
+  {
+   "id": "46f76adf161f",
+   "channel": "internet",
+   "title": "Starship 第 15 次试飞进入轨道，为周六可能回收做准备",
+   "summary": "公司将在周六以某种方式获得更多数据。",
+   "source": "Ars Technica",
+   "tags": [
+    "SpaceX"
+   ],
+   "url": "https://arstechnica.com/space/2026/11/starship-flight-15-powers-to-orbit-setting-up-a-possible-catch-on-saturday/",
+   "page": "https://aiym168.github.io/news/a/46f76adf161f.html",
+   "published_at": "2026-11-14T08:49:13+08:00"
+  },
+  {
+   "id": "bf9b419c301a",
+   "channel": "mobile",
+   "title": "Logitech G733 以当前价格值得考虑",
+   "summary": "这是一款适合游戏和通话的可靠无线耳机。",
+   "source": "XDA",
+   "tags": [],
+   "url": "https://www.xda-developers.com/logitechs-logitech-g733-is-a-no-brainer-at-its-current-price/",
+   "page": "https://aiym168.github.io/news/a/bf9b419c301a.html",
+   "published_at": "2026-11-14T08:45:03+08:00"
+  },
+  {
+   "id": "58eb76e91c6e",
+   "channel": "launch",
+   "title": "开源项目可控制 MacBook 充电器状态灯",
+   "summary": "这个开源项目可控制 MacBook 充电器指示灯，支持按时间或专注状态自动开关。",
+   "source": "Show HN",
+   "tags": [
+    "新能源",
+    "Open-Source",
+    "MacBook"
+   ],
+   "url": "https://github.com/Getterbetter/ember/releases/tag/v1.0.1",
+   "page": "https://aiym168.github.io/news/a/58eb76e91c6e.html",
+   "published_at": "2026-11-14T08:44:58+08:00"
+  },
+  {
+   "id": "6c8ded9d0ecc",
+   "channel": "launch",
+   "title": "Xdoc 可离线查看 PPTX 并转换为 PDF",
+   "summary": "原文提供了项目展示页面链接。",
+   "source": "Show HN",
+   "tags": [],
+   "url": "https://structurify.io/en/playground/",
+   "page": "https://aiym168.github.io/news/a/6c8ded9d0ecc.html",
+   "published_at": "2026-11-14T08:44:58+08:00"
+  },
+  {
+   "id": "2339961faffe",
+   "channel": "internet",
+   "title": "育碧被曝开发《彩虹六号：维加斯》新作，项目代号“Spades”",
+   "summary": "据游戏媒体 Insider Gaming 当地时间 11 月 13 日报道，育碧正在早期开发一款《彩虹六号：维加斯》系列新作，项目代号为“Spades”。消息人士透露，该项目已经获得批准，由育碧蒙特利尔工作室负责推进。 目前尚不清楚这款游戏最终是否会以《彩虹六号：维加斯 3》的名称推出，也不排除采用…",
+   "source": "IT之家",
+   "tags": [],
+   "url": "https://www.ithome.com/1/027/029.htm",
+   "page": "https://aiym168.github.io/news/a/2339961faffe.html",
+   "published_at": "2026-11-14T08:44:28+08:00"
+  },
+  {
+   "id": "a997e0c5e602",
+   "channel": "ai",
+   "title": "Portal2Bench基准测试：AI代理能否通关《传送门2》",
+   "summary": "文章网址：https://kingstonyip.com/portal2bench 评论网址：https://news.ycombinator.com/item?id=50492238 积分：1 # 评论：0",
+   "source": "Show HN",
+   "tags": [
+    "AI Agent"
+   ],
+   "url": "https://kingstonyip.com/portal2bench",
+   "page": "https://aiym168.github.io/news/a/a997e0c5e602.html",
+   "published_at": "2026-11-14T08:40:55+08:00"
+  },
+  {
+   "id": "26618bcfe9c9",
+   "channel": "ai",
+   "title": "有人花45美元让Claude Fable 5.2画MS Paint图，效果尚可",
+   "summary": "有人付费让Claude Fable 5.2生成一幅MS Paint图像，结果不算太差。",
+   "source": "XDA",
+   "tags": [
+    "Claude"
+   ],
+   "url": "https://www.xda-developers.com/someone-paid-45-for-claude-fable-52-to-make-an-ms-paint-image-and-the-results-arent-too-bad/",
+   "page": "https://aiym168.github.io/news/a/26618bcfe9c9.html",
+   "published_at": "2026-11-14T08:39:52+08:00"
+  },
+  {
+   "id": "96331e0f2672",
+   "channel": "chip",
+   "title": "Intel Core Ultra 7 260K未发布即开卖，仅限两款整机",
+   "summary": "Newegg确认该CPU仅用于其ABS整机、不单独零售，两款机型分别售1699.99和1999.99美元。",
+   "source": "TechPowerUp",
+   "tags": [
+    "英特尔"
+   ],
+   "url": "https://www.techpowerup.com/354821/intel-core-ultra-7-260k-arrives-without-an-announcement-limited-to-two-prebuilt-desktops",
+   "page": "https://aiym168.github.io/news/a/96331e0f2672.html",
+   "published_at": "2026-11-14T08:38:45+08:00"
+  },
+  {
+   "id": "e310e737e8bc",
+   "channel": "space",
+   "title": "爱因斯坦引力波遇上牛顿潮汐：在月球潮汐中寻找相对论痕迹",
+   "summary": "柏林自由大学研究者提出理论框架，用高精度测量在月球潮汐中寻找可能的相对论痕迹。",
+   "source": "Universe Today",
+   "tags": [],
+   "url": "https://www.universetoday.com/articles/when-einsteins-gravitational-waves-meet-newtons-tides",
+   "page": "https://aiym168.github.io/news/a/e310e737e8bc.html",
+   "published_at": "2026-11-14T08:35:51+08:00"
+  },
+  {
+   "id": "c3361b993ab5",
+   "channel": "software",
+   "title": "Fanttik F2 Pro旋转工具套装售价仅60美元",
+   "summary": "小巧动力适合机箱改造和3D打印清理。",
+   "source": "How-To Geek",
+   "tags": [],
+   "url": "https://www.howtogeek.com/save-33-on-fanttiks-f2-pro-cordless-rotary-tool-kit-and-start-your-first-diy-projects/",
+   "page": "https://aiym168.github.io/news/a/c3361b993ab5.html",
+   "published_at": "2026-11-14T08:34:43+08:00"
+  },
+  {
+   "id": "64dafba15fe9",
+   "channel": "internet",
+   "title": "福伦达 NOKTON 35mm F1.2 全画幅镜头发布，提供索尼 E 、尼康 Z 卡口",
+   "summary": "日本光学厂商确善能（Cosina）宣布推出福伦达（Voigtländer）NOKTON 35mm F1.2 Aspherical 全画幅定焦镜头，提供索尼 E 卡口和尼康 Z 卡口两个版本，计划于 2026 年 12 月上市，含税建议零售价为 14.3 万日元 （IT之家注：现汇率约合 5,978 …",
+   "source": "IT之家",
+   "tags": [
+    "PlayStation"
+   ],
+   "url": "https://www.ithome.com/1/027/026.htm",
+   "page": "https://aiym168.github.io/news/a/64dafba15fe9.html",
+   "published_at": "2026-11-14T08:29:20+08:00"
+  },
+  {
+   "id": "e96cb021e645",
+   "channel": "internet",
+   "title": "英特尔新一代酷睿露面：Razor Lake 台式机、笔记本型号标识获确认",
+   "summary": "科技媒体 TechPowerUp 昨日（11 月 13 日）发布博文，报道称英特尔本月（2026 年 11 月）更新的《架构指令集扩展编程参考》（第 063 版）中，新增了 Razor Lake 消费级处理器与 Coral Rapids 至强服务器处理器的型号标识。 第 063 版文档显示，Razo…",
+   "source": "IT之家",
+   "tags": [
+    "英特尔"
+   ],
+   "url": "https://www.ithome.com/1/027/025.htm",
+   "page": "https://aiym168.github.io/news/a/e96cb021e645.html",
+   "published_at": "2026-11-14T08:26:20+08:00"
+  },
+  {
+   "id": "46e3f7afe361",
+   "channel": "huawei",
+   "title": "Pura X View比肩iPhone 18 Pro系列！华为阔直板激活销量破百万 3成用户来自果粉",
+   "summary": "",
+   "source": "驱动之家",
+   "tags": [
+    "华为",
+    "苹果",
+    "iPhone"
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBDajV5a1BWYy1KdWJ3eEFyTklyamVLNXNuRjJLeVV3bF9ncGc4Yk9LR09veUhUUU1yNlV0WXUzRXQyLWV0aDNieHk5aEpsdG5fZC1ubkNSbl8?oc=5",
+   "page": "https://aiym168.github.io/news/a/46e3f7afe361.html",
+   "published_at": "2026-11-14T08:26:00+08:00"
+  },
+  {
+   "id": "9a13bee9914a",
+   "channel": "aidrama",
+   "title": "AI短剧出海产能井喷之后：谁在赚钱，谁在赔本",
+   "summary": "",
+   "source": "同花顺财经",
+   "tags": [
+    "AI 漫剧"
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KSkd1U0V0UnEtSUhLVTY5QWE3RXVlZ0FnNnZVS0Jaa01rSjk0a1VMaW5pbTFrM0RXRXl0WHl5bGdUMkRkVVJHc0E3cE5iR3dBSXdlM1dlRGtNcU9IbGhqdQ?oc=5",
+   "page": "https://aiym168.github.io/news/a/9a13bee9914a.html",
+   "published_at": "2026-11-14T08:24:50+08:00"
+  },
+  {
+   "id": "d981e97244f8",
+   "channel": "aidrama",
+   "title": "抖音激励条款拆解：AI漫剧的供给结构会被怎样筛选",
+   "summary": "",
+   "source": "同花顺财经",
+   "tags": [
+    "AI 漫剧",
+    "抖音"
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9jSVZHUjI3ck5CQ1U4Yng2TVFRZnZMNmptVm94cWgyUGcwUGVGel9YeTJkUlNxdWVqUDdtRDRZazA5S3NjbUdQcnBDSUdTa2dBWHhRZk9PSmhNc0w3bzlRRQ?oc=5",
+   "page": "https://aiym168.github.io/news/a/d981e97244f8.html",
+   "published_at": "2026-11-14T08:24:50+08:00"
+  },
+  {
+   "id": "3f04584b2401",
+   "channel": "aidrama",
+   "title": "AI短剧概念再升温，机构划出四条主线",
+   "summary": "",
+   "source": "同花顺财经",
+   "tags": [
+    "AI 漫剧"
+   ],
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBEbEFHa0hFZHl3SndKR3ZfUEhJTGFKQmpDTWYwcWtfeGZSQUM3emhORVB0UFByZVlZQk1IME5RYkwzeExtdDN5dDc4QW5IcHl4RGJjRUp1MV9oZHNRT2VoMg?oc=5",
+   "page": "https://aiym168.github.io/news/a/3f04584b2401.html",
+   "published_at": "2026-11-14T08:24:50+08:00"
+  },
+  {
+   "id": "cc707533e023",
+   "channel": "mobile",
+   "title": "带散热片的2TB PCIe Gen 4 SSD半价促销",
+   "summary": "为PS5设计，也值得PC装机时对比。",
+   "source": "XDA",
+   "tags": [
+    "存储",
+    "PlayStation"
+   ],
+   "url": "https://www.xda-developers.com/this-2tb-pcie-gen-4-ssd-with-a-heatsink-drops-to-just-29999-half-off-its-regular-price/",
+   "page": "https://aiym168.github.io/news/a/cc707533e023.html",
+   "published_at": "2026-11-14T08:24:11+08:00"
+  },
+  {
+   "id": "4523b07dcfb4",
+   "channel": "internet",
+   "title": "日产 Z NISMO 硬顶跑车国内首发：售价 66 万元，半年内全国仅 9 台配额",
+   "summary": "11 月 13 日，在 NISSAN DAY 现场，日产 Z NISMO 硬顶跑车国内首发，建议售价 66 万元。 新车承袭日产赛道冠军血统，由传奇赛车运动团队打造，主打赛道取向调校。该车型尺寸为 4399*1869*1316mm，轴距为 2550mm。 动力上，日产 Z NISMO 搭载 NISM…",
+   "source": "IT之家",
+   "tags": [],
+   "url": "https://www.ithome.com/1/027/024.htm",
+   "page": "https://aiym168.github.io/news/a/4523b07dcfb4.html",
+   "published_at": "2026-11-14T08:21:22+08:00"
+  },
+  {
+   "id": "8fa942c653a8",
+   "channel": "mobile",
+   "title": "GTA 6终极版逾万个免费兑换码将通过Twitch直播掉落",
+   "summary": "Twitch宣布为庆祝GTA 6发售日发放数千个Xbox和PS5终极版兑换码，并推出新徽章和表情。",
+   "source": "Notebookcheck",
+   "tags": [
+    "PlayStation",
+    "Xbox",
+    "GTA 6",
+    "GTA"
+   ],
+   "url": "https://www.notebookcheck.net/10K-free-GTA-6-Ultimate-Edition-game-codes-coming-in-livestream-Twitch-drops.1449873.0.html",
+   "page": "https://aiym168.github.io/news/a/8fa942c653a8.html",
+   "published_at": "2026-11-14T08:21:00+08:00"
+  },
+  {
+   "id": "31e4e9e08589",
+   "channel": "ai",
+   "title": "Memro：为Claude Code、Cursor和Codex提供持久记忆",
+   "summary": "基于PostgreSQL、通过MCP让AI代理跨会话共享上下文的Go持久记忆系统。",
+   "source": "Show HN",
+   "tags": [
+    "Claude",
+    "AI 编程"
+   ],
+   "url": "https://github.com/memrohq/memro",
+   "page": "https://aiym168.github.io/news/a/31e4e9e08589.html",
+   "published_at": "2026-11-14T08:20:15+08:00"
+  },
+  {
+   "id": "f2c708958386",
+   "channel": "launch",
+   "title": "一份人工审核的应用发布平台清单",
+   "summary": "清单由人工结合AI审核并持续更新，欢迎提交建议。",
+   "source": "Show HN",
+   "tags": [],
+   "url": "https://another.directory/where-to-launch",
+   "page": "https://aiym168.github.io/news/a/f2c708958386.html",
+   "published_at": "2026-11-14T08:18:06+08:00"
+  },
+  {
+   "id": "d82a01b80042",
+   "channel": "mobile",
+   "title": "Garmin Forerunner 965降至450美元，为发布以来最低价",
+   "summary": "对想要腕上真实数据的跑者来说是不小的升级。",
+   "source": "XDA",
+   "tags": [],
+   "url": "https://www.xda-developers.com/the-garmin-forerunner-965-is-down-to-44999-its-lowest-price-since-launch/",
+   "page": "https://aiym168.github.io/news/a/d82a01b80042.html",
+   "published_at": "2026-11-14T08:12:34+08:00"
+  },
+  {
+   "id": "cf18d5924122",
+   "channel": "ai",
+   "title": "ChatGPT Wallet 可让 OpenAI 智能体替你购物",
+   "summary": "OpenAI 与 American Express、Mastercard、Visa 合作推出该功能，初期仅限美国 ChatGPT Pro 用户。",
+   "source": "GSMArena",
+   "tags": [
+    "OpenAI",
+    "ChatGPT",
+    "AI Agent"
+   ],
+   "url": "https://www.gsmarena.com/chatgpt_wallet_lets_openais_agents_buy_things_for_you-news-75481.php",
+   "page": "https://aiym168.github.io/news/a/cf18d5924122.html",
+   "published_at": "2026-11-14T08:09:02+08:00"
+  },
+  {
+   "id": "6eb67d48054e",
+   "channel": "mobile",
+   "title": "Fiio DM11 便携 CD 播放器发布，采用经典圆形设计",
+   "summary": "这款播放器使用类似 AA 的 14500 锂电池，具备多种 EQ 预设和透明顶盖，便于快速识别 CD。",
+   "source": "Notebookcheck",
+   "tags": [
+    "新能源"
+   ],
+   "url": "https://www.notebookcheck.net/Fiio-DM11-portable-CD-player-unveiled-with-two-upgrades-to-a-classic-round-design.1449867.0.html",
+   "page": "https://aiym168.github.io/news/a/6eb67d48054e.html",
+   "published_at": "2026-11-14T08:03:00+08:00"
+  },
+  {
+   "id": "fe005f57c024",
+   "channel": "chip",
+   "title": "Astro Bot 借 AnyPS5 在 PC 原生运行并支持 DLSS 帧生成",
+   "summary": "该非官方移植由 GitHub 用户 imnotsharingmyname 完成，支持 DLSS 超分辨率、帧生成和 Reflex，不是 PS5 模拟器。",
+   "source": "TechPowerUp",
+   "tags": [
+    "PlayStation",
+    "GitHub",
+    "DLSS"
+   ],
+   "url": "https://www.techpowerup.com/354807/astro-bot-runs-natively-on-pc-through-anyps5-with-dlss-frame-generation",
+   "page": "https://aiym168.github.io/news/a/fe005f57c024.html",
+   "published_at": "2026-11-14T08:02:50+08:00"
+  },
+  {
+   "id": "70d4621d9810",
+   "channel": "ai",
+   "title": "我不再追逐 AI 优先代码编辑器，回归普通 VS Code 后完成更多工作",
+   "summary": "作者表示自己不需要另一个编辑器。",
+   "source": "XDA",
+   "tags": [],
+   "url": "https://www.xda-developers.com/stopped-chasing-ai-first-code-editors-went-back-plain-vs-code-getting-more-done/",
+   "page": "https://aiym168.github.io/news/a/70d4621d9810.html",
+   "published_at": "2026-11-14T08:01:20+08:00"
+  },
+  {
+   "id": "c755c7f12e46",
+   "channel": "software",
+   "title": "这 4 个地方不应下载 Android 应用",
+   "summary": "提供高级功能的修改版应用常暗藏恶意软件，会篡改正规应用并窃取凭据。",
+   "source": "How-To Geek",
+   "tags": [
+    "安卓"
+   ],
+   "url": "https://www.howtogeek.com/places-you-should-never-download-android-apps-from/",
+   "page": "https://aiym168.github.io/news/a/c755c7f12e46.html",
+   "published_at": "2026-11-14T08:01:15+08:00"
+  },
+  {
+   "id": "76b240f3a219",
+   "channel": "mobile",
+   "title": "让我的 Pixel 启动器从好用变得出色的 3 个应用",
+   "summary": "文章称这些应用变化细微但功能强大。",
+   "source": "Android Police",
+   "tags": [
+    "谷歌"
+   ],
+   "url": "https://www.androidpolice.com/these-3-apps-fix-everything-i-dislike-about-the-pixel-launcher/",
+   "page": "https://aiym168.github.io/news/a/76b240f3a219.html",
+   "published_at": "2026-11-14T08:00:10+08:00"
+  },
+  {
+   "id": "1f71cad1a5ec",
+   "channel": "science",
+   "title": "FAA 在扩展 AI 空中交通系统数日后停飞全美航班",
+   "summary": "原文指出，这类全国性停飞极其罕见。",
+   "source": "Scientific American",
+   "tags": [
+    "FAA"
+   ],
+   "url": "https://www.scientificamerican.com/article/faa-grounds-all-u-s-flights-days-after-expanding-its-ai-air-traffic-system/",
+   "page": "https://aiym168.github.io/news/a/1f71cad1a5ec.html",
+   "published_at": "2026-11-14T08:00:00+08:00"
+  },
+  {
+   "id": "d1e9cc9231f4",
+   "channel": "internet",
+   "title": "Razer 推出 1000 美元游戏椅，配 6 个电机、扬声器和 RGB 灯效",
+   "summary": "Soma Pro 与 Some Sense HD Haptics 属于升级版振动游戏椅系列，宣称提供更好沉浸感和舒适度。",
+   "source": "CNET",
+   "tags": [],
+   "url": "https://www.cnet.com/tech/gaming/razer-soma-pro-gaming-chair-1000-has-six-motors-built-in-speakers-rgb-lighting/",
+   "page": "https://aiym168.github.io/news/a/d1e9cc9231f4.html",
+   "published_at": "2026-11-14T07:59:49+08:00"
+  },
+  {
+   "id": "9dbbe84600ba",
+   "channel": "launch",
+   "title": "Show HN：用 String#to_proc 简化 JSON 遍历",
+   "summary": "作者重启旧项目，希望让 Ruby 中深度嵌套 JSON 的遍历更简单易读，同时保留灵活性。",
+   "source": "Show HN",
+   "tags": [],
+   "url": "https://github.com/samleb/schmuck",
+   "page": "https://aiym168.github.io/news/a/9dbbe84600ba.html",
+   "published_at": "2026-11-14T07:59:03+08:00"
+  },
+  {
    "id": "9b13d6a721a0",
    "channel": "ai",
    "title": "Hugging Face 热门多模态模型：deepseek-ai/DeepSeek-V4.1-Flash-1017",
@@ -179,6 +996,30 @@
    "published_at": "2026-11-14T07:51:08+08:00"
   },
   {
+   "id": "15e16b99129d",
+   "channel": "chip",
+   "title": "马斯克称推动 Jensen Huang 重返 NVIDIA 的请愿正在进行，他将签署",
+   "summary": "马斯克此前支持让 NVIDIA 前 CEO 兼创始人 Jensen Huang 回归担任董事长，如今将签署相关请愿。",
+   "source": "Wccftech",
+   "tags": [
+    "英伟达"
+   ],
+   "url": "https://wccftech.com/elon-musk-says-petition-to-bring-jensen-huang-back-to-nvidia-is-underway-and-hell-sign-it/",
+   "page": "https://aiym168.github.io/news/a/15e16b99129d.html",
+   "published_at": "2026-11-14T07:51:01+08:00"
+  },
+  {
+   "id": "8fa90561555d",
+   "channel": "space",
+   "title": "天体物理学家把 SLABs（超大质量黑洞）从暗物质候选名单中排除",
+   "summary": "研究者已考察 WIMPs、轴子、原初黑洞等候选者，如今又将 SLABs 这类超大质量原初黑洞排除在外。",
+   "source": "Universe Today",
+   "tags": [],
+   "url": "https://www.universetoday.com/articles/astrophysicists-cross-another-dark-matter-candidate-off-their-list-stupendously-large-black-holes",
+   "page": "https://aiym168.github.io/news/a/8fa90561555d.html",
+   "published_at": "2026-11-14T07:49:58+08:00"
+  },
+  {
    "id": "f92ff2893ff7",
    "channel": "dev",
    "title": "通俗解释页表：CPU 如何把虚拟地址翻译为物理地址",
@@ -190,6 +1031,33 @@
    "url": "https://dev.to/parsaaftabi/page-tables-in-plain-words-2kn4",
    "page": "https://aiym168.github.io/news/a/f92ff2893ff7.html",
    "published_at": "2026-11-14T07:49:16+08:00"
+  },
+  {
+   "id": "04367a7d0b10",
+   "channel": "ai",
+   "title": "Amazon 拟建全球商品数据库 World Product Graph",
+   "summary": "据路透社报道，该项目将汇集互联网上销售的所有商品数据，包括 Amazon 不自营的商品。",
+   "source": "The Verge AI",
+   "tags": [
+    "亚马逊"
+   ],
+   "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+   "page": "https://aiym168.github.io/news/a/04367a7d0b10.html",
+   "published_at": "2026-11-14T07:49:11+08:00"
+  },
+  {
+   "id": "46fd8d9166e5",
+   "channel": "huawei",
+   "title": "问界新M8上市：15亿元投入兑现用户共创，见证鸿蒙智行合作新阶段",
+   "summary": "",
+   "source": "手机新浪网",
+   "tags": [
+    "鸿蒙",
+    "问界"
+   ],
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1QbzVLbHNla3hPSlYzQVo2Q2syTjF4YlhyZG5qUHV6bGZyMjRxdHdCN1djbnFlOVpzNmpXSVg0clJVeWpMVlYzVmpyTU1lWUMyUEVCb3lIQ3FCdVRLOHh1czV3dUZoQ3dITmJtVTRVOVE2cGNOXzhURk5sTHE0dw?oc=5",
+   "page": "https://aiym168.github.io/news/a/46fd8d9166e5.html",
+   "published_at": "2026-11-14T07:49:00+08:00"
   },
   {
    "id": "85953ec7e703",
@@ -305,6 +1173,17 @@
    "url": "https://www.notebookcheck.net/Japanese-rugged-tablet-arrives-with-16-GB-RAM-and-8-core-Intel-Panther-Lake-CPU.1449481.0.html",
    "page": "https://aiym168.github.io/news/a/0ade064420e2.html",
    "published_at": "2026-11-14T07:43:00+08:00"
+  },
+  {
+   "id": "7be2027a1425",
+   "channel": "launch",
+   "title": "Show HN：Anvil 用 AI 以更低成本搭建高品质网站",
+   "summary": "这款 AI 建站工具主打高水准 UI/UX，支持自然语言生成、实时预览与自动纠错，7 天套餐 1 美元起。",
+   "source": "Show HN",
+   "tags": [],
+   "url": "https://www.tryanvil.dev/",
+   "page": "https://aiym168.github.io/news/a/7be2027a1425.html",
+   "published_at": "2026-11-14T07:42:35+08:00"
   },
   {
    "id": "a6ebb8e60c6f",
@@ -530,6 +1409,20 @@
    "published_at": "2026-11-14T07:13:11+08:00"
   },
   {
+   "id": "294ac86f23bf",
+   "channel": "space",
+   "title": "SpaceX 发射 Starship，出于安全放弃助推器回收",
+   "summary": "本次飞行原计划首次同时回收两级火箭，但出于安全考虑取消了发射塔捕获一级助推器。",
+   "source": "Universe Today",
+   "tags": [
+    "SpaceX",
+    "火箭"
+   ],
+   "url": "https://www.universetoday.com/articles/spacex-launches-starship-but-passes-up-booster-catch-for-safetys-sake",
+   "page": "https://aiym168.github.io/news/a/294ac86f23bf.html",
+   "published_at": "2026-11-14T07:12:00+08:00"
+  },
+  {
    "id": "2892617961cd",
    "channel": "internet",
    "title": "路透社：Arm 掌门人哈斯进入接棒黄仁勋候选视野，曾在英伟达工作 7 年",
@@ -720,6 +1613,19 @@
    "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
    "page": "https://aiym168.github.io/news/a/ec577d4c46a6.html",
    "published_at": "2026-11-14T06:43:00+08:00"
+  },
+  {
+   "id": "78b79f0f5b0c",
+   "channel": "internet",
+   "title": "FAA 因安全与通信问题停飞全美航班",
+   "summary": "官方以安全原因和未说明的通信问题为由下令停飞。",
+   "source": "The Register",
+   "tags": [
+    "FAA"
+   ],
+   "url": "https://www.theregister.com/offbeat/2026/11/13/all-us-flights-grounded-by-faa/5309912",
+   "page": "https://aiym168.github.io/news/a/78b79f0f5b0c.html",
+   "published_at": "2026-11-14T06:42:28+08:00"
   },
   {
    "id": "aa15e1266aad",
@@ -1167,9 +2073,7 @@
    "title": "Show HN：Algorithmic MIDI Companion，含 Viterbi SATB 求解器与欧几里得节奏",
    "summary": "作者在 Hacker News 分享的算法 MIDI 助手，包含 Viterbi SATB 求解器和欧几里得节奏功能。",
    "source": "Show HN",
-   "tags": [
-    "CLI"
-   ],
+   "tags": [],
    "url": "https://midicompanion.revisitedlabs.com/",
    "page": "https://aiym168.github.io/news/a/658347e00df9.html",
    "published_at": "2026-11-14T05:48:53+08:00"
@@ -1192,7 +2096,7 @@
    "summary": "MacBook Air 当前最大短板是 60 Hz IPS 屏，MacBook Pro 采用 OLED 后，Air 也有望很快升级屏幕。",
    "source": "Notebookcheck",
    "tags": [
-    "OLED"
+    "MacBook"
    ],
    "url": "https://www.notebookcheck.net/Does-the-new-OLED-MacBook-Pro-also-pave-the-way-for-a-MacBook-Air-with-an-OLED-screen.1449769.0.html",
    "page": "https://aiym168.github.io/news/a/0c3aa007b83c.html",
@@ -1793,894 +2697,6 @@
    "url": "https://www.androidauthority.com/google-kill-magic-cue-3735173/",
    "page": "https://aiym168.github.io/news/a/91a157657efb.html",
    "published_at": "2026-11-14T05:10:02+08:00"
-  },
-  {
-   "id": "729635c933e3",
-   "channel": "dev",
-   "title": "FAA因「特殊情况」发布全国停飞令",
-   "summary": "",
-   "source": "Hacker News",
-   "tags": [
-    "FAA"
-   ],
-   "url": "https://www.axios.com/2026/11/13/faa-nationwide-ground-stop",
-   "page": "https://aiym168.github.io/news/a/729635c933e3.html",
-   "published_at": "2026-11-14T05:08:49+08:00"
-  },
-  {
-   "id": "93e66f73c6d0",
-   "channel": "ai",
-   "title": "Cloudflare开源Kitesurf：一款面向AI agent的网页浏览器",
-   "summary": "Cloudflare今年早些时候发布无状态浏览器Kitesurf，完善功能后现已兑现开源承诺。",
-   "source": "Phoronix",
-   "tags": [
-    "AI Agent"
-   ],
-   "url": "https://www.phoronix.com/news/Cloudflare-Kitesurf-Open-Source",
-   "page": "https://aiym168.github.io/news/a/93e66f73c6d0.html",
-   "published_at": "2026-11-14T05:07:09+08:00"
-  },
-  {
-   "id": "a99b67c91f9f",
-   "channel": "dev",
-   "title": "美国所有机场目前均处于停飞状态",
-   "summary": "",
-   "source": "Hacker News",
-   "tags": [],
-   "url": "https://twitter.com/flightradar24/status/2121347654714077605",
-   "page": "https://aiym168.github.io/news/a/a99b67c91f9f.html",
-   "published_at": "2026-11-14T05:06:52+08:00"
-  },
-  {
-   "id": "6c01cbd04af3",
-   "channel": "dev",
-   "title": "FAA 发布全国地面停飞令",
-   "summary": "",
-   "source": "Hacker News",
-   "tags": [
-    "FAA"
-   ],
-   "url": "https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11132026&advn=111",
-   "page": "https://aiym168.github.io/news/a/6c01cbd04af3.html",
-   "published_at": "2026-11-14T05:05:53+08:00"
-  },
-  {
-   "id": "4ff8bca9c165",
-   "channel": "game",
-   "title": "GTA 6实体版包装或存漏洞，用手电筒就能偷走游戏码",
-   "summary": "GTA 6实体版改为盒内数字码，但包装选材可能让盗贼只需手电筒就能看到并盗取游戏码。",
-   "source": "GameSpot",
-   "tags": [
-    "GTA 6",
-    "GTA"
-   ],
-   "url": "https://www.gamespot.com/articles/physical-gta-6-copies-might-be-vulnerable-to-a-very-stupid-but-serious-trick/",
-   "page": "https://aiym168.github.io/news/a/4ff8bca9c165.html",
-   "published_at": "2026-11-14T05:03:51+08:00"
-  },
-  {
-   "id": "963e97359675",
-   "channel": "game",
-   "title": "EA以550亿美元私有化后，Take-Two称无意出售公司",
-   "summary": "GTA 6母公司Take-Two CEO Strauss Zelnick表示，公司不打算像EA那样被收购。",
-   "source": "GameSpot",
-   "tags": [
-    "GTA 6",
-    "GTA"
-   ],
-   "url": "https://www.gamespot.com/articles/gta-6-owner-take-two-is-not-interested-in-selling-itself-after-ea-goes-private-for-55-billion/",
-   "page": "https://aiym168.github.io/news/a/963e97359675.html",
-   "published_at": "2026-11-14T05:02:34+08:00"
-  },
-  {
-   "id": "b45b51f47cdc",
-   "channel": "internet",
-   "title": "Epic要求美国最高法院追究苹果责任 指其遵守判决字面规定却违背裁决的真正意图",
-   "summary": "苹果与Epic Games围绕App Store应用商店政策展开的法律争端再次出现新进展。当地时间11月13日，Epic向美国最高法院提交了最新法律文件，要求法院继续追究苹果的责任，认为苹果虽然在形式上遵守了此前法院作出的裁决，但实际上通过收费政策和其他限制措施，规避了判决希望实现的目标。",
-   "source": "cnBeta",
-   "tags": [
-    "苹果"
-   ],
-   "url": "https://www.cnbeta.com.tw/articles/game/1586322.htm",
-   "page": "https://aiym168.github.io/news/a/b45b51f47cdc.html",
-   "published_at": "2026-11-14T05:01:39+08:00"
-  },
-  {
-   "id": "90ed0ab61436",
-   "channel": "ai",
-   "title": "Harness Relay让手头已有的编码agent组队协作",
-   "summary": "支持Claude Code、Codex、Grok、Cursor等编码agent混用，由主导agent为每个问题安排成员角色、模型与轮次。",
-   "source": "Show HN",
-   "tags": [
-    "Claude",
-    "Grok",
-    "AI 编程",
-    "AI Agent"
-   ],
-   "url": "https://agentic-system-lab.github.io/harness-relay/",
-   "page": "https://aiym168.github.io/news/a/90ed0ab61436.html",
-   "published_at": "2026-11-14T05:01:02+08:00"
-  },
-  {
-   "id": "55f8afd22478",
-   "channel": "internet",
-   "title": "英伟达澄清CEO接班传闻：尚未接触任何正式候选人 继任者遴选仍在初期阶段",
-   "summary": "当地时间11月13日，人工智能芯片巨头英伟达董事会表示，公司尚未选定负责CEO招聘工作的猎头机构，也尚未正式接触任何潜在候选人。此番表态旨在回应近期围绕前首席执行官黄仁勋继任人选的大量市场猜测。",
-   "source": "cnBeta",
-   "tags": [
-    "英伟达"
-   ],
-   "url": "https://www.cnbeta.com.tw/articles/tech/1586320.htm",
-   "page": "https://aiym168.github.io/news/a/55f8afd22478.html",
-   "published_at": "2026-11-14T05:00:54+08:00"
-  },
-  {
-   "id": "1d7d4336fc7f",
-   "channel": "ai",
-   "title": "我让本地AI模型接管Windows电脑，它包办我讨厌的杂活",
-   "summary": "作者把Windows电脑交给本地AI agent，让它替自己完成日常琐事。",
-   "source": "XDA",
-   "tags": [
-    "微软",
-    "AI Agent"
-   ],
-   "url": "https://www.xda-developers.com/i-gave-a-local-ai-model-control-of-my-windows-pc-and-it-handles-the-chores-i-hate/",
-   "page": "https://aiym168.github.io/news/a/1d7d4336fc7f.html",
-   "published_at": "2026-11-14T05:00:22+08:00"
-  },
-  {
-   "id": "81cf768ea96a",
-   "channel": "game",
-   "title": "塞尔达传说：时之笛重制版强调这是一个悲剧故事",
-   "summary": "这款重制版想告诉玩家，时之笛讲的是一个男孩的悲剧。",
-   "source": "Kotaku",
-   "tags": [],
-   "url": "https://kotaku.com/legend-zelda-ocarina-of-time-young-link-adult-master-sword-scene-heros-shade-2000756682",
-   "page": "https://aiym168.github.io/news/a/81cf768ea96a.html",
-   "published_at": "2026-11-14T05:00:18+08:00"
-  },
-  {
-   "id": "c3be774a4bbb",
-   "channel": "software",
-   "title": "4个可以关掉的烦人Google Maps功能",
-   "summary": "文章介绍4个可关闭的Google Maps功能，它们让地图体验变差。",
-   "source": "How-To Geek",
-   "tags": [
-    "谷歌"
-   ],
-   "url": "https://www.howtogeek.com/annoying-google-maps-features-you-can-turn-off/",
-   "page": "https://aiym168.github.io/news/a/c3be774a4bbb.html",
-   "published_at": "2026-11-14T05:00:16+08:00"
-  },
-  {
-   "id": "ce0d500ac0ee",
-   "channel": "science",
-   "title": "笑脸配怒声：人狗互动研究追踪相互矛盾的信号",
-   "summary": "行为实验、脑研究和心率测量都显示，狗会根据人类不同的情绪表达做出不同反应。",
-   "source": "Phys.org",
-   "tags": [],
-   "url": "https://phys.org/news/2026-11-happy-angry-voice-humandog-interaction.html",
-   "page": "https://aiym168.github.io/news/a/ce0d500ac0ee.html",
-   "published_at": "2026-11-14T05:00:06+08:00"
-  },
-  {
-   "id": "9dac422a5c30",
-   "channel": "mobile",
-   "title": "9to5Mac Overtime 090：iPhone Duo的长测蜜月期",
-   "summary": "长时间使用后重评iPhone Duo，讨论多任务与FaceTime，并与Galaxy Z Fold 8对比。",
-   "source": "9to5Mac",
-   "tags": [
-    "苹果",
-    "iPhone",
-    "三星"
-   ],
-   "url": "https://9to5mac.com/2026/11/13/9to5mac-overtime-090-iphone-duo-honeymoon/",
-   "page": "https://aiym168.github.io/news/a/9dac422a5c30.html",
-   "published_at": "2026-11-14T05:00:00+08:00"
-  },
-  {
-   "id": "e328fbe77834",
-   "channel": "launch",
-   "title": "Copper-KiCad 项目可用 MCP 更省更好地设计 KiCad PCB",
-   "summary": "文章网址：https://github.com/claynicholson/copper-kicad-mcp 评论网址：https://news.ycombinator.com/item?id=50489574 积分：1 # 评论：0",
-   "source": "Show HN",
-   "tags": [
-    "GitHub",
-    "MCP"
-   ],
-   "url": "https://github.com/claynicholson/copper-kicad-mcp",
-   "page": "https://aiym168.github.io/news/a/e328fbe77834.html",
-   "published_at": "2026-11-14T04:59:49+08:00"
-  },
-  {
-   "id": "50e8086f027f",
-   "channel": "ai",
-   "title": "从快速部署到记忆共享，数据库如何支撑 Agent 应用？",
-   "summary": "",
-   "source": "InfoQ 中文",
-   "tags": [
-    "AI Agent"
-   ],
-   "url": "https://www.infoq.cn/video/FwbOyyfoAmkQPMTItMDN",
-   "page": "https://aiym168.github.io/news/a/50e8086f027f.html",
-   "published_at": "2026-11-14T04:54:12+08:00"
-  },
-  {
-   "id": "d87e5503134f",
-   "channel": "launch",
-   "title": "我训练了一个模型来预测自己的血糖",
-   "summary": "作者用合成 CGM 数据训练 31253 参数模型，再用 LoRA 适配个人 115 天血糖数据。",
-   "source": "Show HN",
-   "tags": [
-    "LoRA"
-   ],
-   "url": "https://github.com/0xdeadf1sh/T1DMAI",
-   "page": "https://aiym168.github.io/news/a/d87e5503134f.html",
-   "published_at": "2026-11-14T04:53:10+08:00"
-  },
-  {
-   "id": "cced99eaa175",
-   "channel": "internet",
-   "title": "今年漏洞数量突破 10 万",
-   "summary": "安全团队表示，现在的问题已不是安全，而是数据。",
-   "source": "The Register",
-   "tags": [],
-   "url": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882",
-   "page": "https://aiym168.github.io/news/a/cced99eaa175.html",
-   "published_at": "2026-11-14T04:52:17+08:00"
-  },
-  {
-   "id": "ae2f7d9cc747",
-   "channel": "launch",
-   "title": "Bloomline 是一款小型益智游戏",
-   "summary": "文章网址：https://matthewoldach.com/play/bloomline/ 评论网址：https://news.ycombinator.com/item?id=50489468 积分：1 # 评论：0",
-   "source": "Show HN",
-   "tags": [],
-   "url": "https://matthewoldach.com/play/bloomline/",
-   "page": "https://aiym168.github.io/news/a/ae2f7d9cc747.html",
-   "published_at": "2026-11-14T04:51:33+08:00"
-  },
-  {
-   "id": "5eec5e74abf5",
-   "channel": "ai",
-   "title": "Free AI Image Gallery 是一个免费 AI 图库",
-   "summary": "文章网址：https://images.skynettstudio.com/ 评论网址：https://news.ycombinator.com/item?id=50489463 积分：1 # 评论：0",
-   "source": "Show HN",
-   "tags": [
-    "AI 音乐"
-   ],
-   "url": "https://images.skynettstudio.com/",
-   "page": "https://aiym168.github.io/news/a/5eec5e74abf5.html",
-   "published_at": "2026-11-14T04:51:08+08:00"
-  },
-  {
-   "id": "8096d0c63c29",
-   "channel": "game",
-   "title": "《The Blood of Dawnwalker》下周更新加入二周目模式",
-   "summary": "吸血鬼 RPG《The Blood of Dawnwalker》将于下周更新加入 New Game Plus 模式。",
-   "source": "Eurogamer",
-   "tags": [],
-   "url": "https://www.eurogamer.net/blood-of-dawnwalker-new-game-plus",
-   "page": "https://aiym168.github.io/news/a/8096d0c63c29.html",
-   "published_at": "2026-11-14T04:49:20+08:00"
-  },
-  {
-   "id": "58c0264aeed5",
-   "channel": "auto",
-   "title": "播客谈Tesla缩减、Hyundai 2027与BYD的Rolls-Royce",
-   "summary": "本期播客讨论 Tesla 车型缩减、Hyundai 2027 阵容以及 BYD 的 Rolls-Royce。",
-   "source": "Electrek",
-   "tags": [
-    "特斯拉",
-    "比亚迪"
-   ],
-   "url": "https://electrek.co/2026/11/13/podcast-tesla-trims-are-falling-like-flies-hyundai-2027-lineup-and-byds-rolls-royce/",
-   "page": "https://aiym168.github.io/news/a/58c0264aeed5.html",
-   "published_at": "2026-11-14T04:49:15+08:00"
-  },
-  {
-   "id": "951c84561943",
-   "channel": "ai",
-   "title": "ChatGPT Wallet 让 OpenAI 的 Dots 代理替你付款",
-   "summary": "OpenAI 为 Dots AI 代理推出 ChatGPT Wallet，先向美国 ChatGPT Pro 订阅用户开放。",
-   "source": "The Verge AI",
-   "tags": [
-    "OpenAI",
-    "ChatGPT",
-    "AI Agent"
-   ],
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-   "page": "https://aiym168.github.io/news/a/951c84561943.html",
-   "published_at": "2026-11-14T04:45:10+08:00"
-  },
-  {
-   "id": "1bdd4acfa6c7",
-   "channel": "science",
-   "title": "完美搭档：铬让钌在水电解中保持稳定",
-   "summary": "ICFO 研究发现，铬与钌的化学相互作用能让钌在水电解中保持稳定。",
-   "source": "Phys.org",
-   "tags": [],
-   "url": "https://phys.org/news/2026-11-couple-chromium-ruthenium-grounded-electrolysis.html",
-   "page": "https://aiym168.github.io/news/a/1bdd4acfa6c7.html",
-   "published_at": "2026-11-14T04:40:01+08:00"
-  },
-  {
-   "id": "c941cb89a26b",
-   "channel": "dev",
-   "title": "有人在冒充这个博客",
-   "summary": "评论",
-   "source": "Lobsters",
-   "tags": [],
-   "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
-   "page": "https://aiym168.github.io/news/a/c941cb89a26b.html",
-   "published_at": "2026-11-14T04:39:53+08:00"
-  },
-  {
-   "id": "85befe00ae20",
-   "channel": "game",
-   "title": "Pioner 将停运：曾被称作 Stalker 与 Tarkov 的外星宝宝",
-   "summary": "Pioner 在 2025 年底进入抢先体验后仅数月便走向失败，即将关闭。",
-   "source": "PC Gamer",
-   "tags": [],
-   "url": "https://www.pcgamer.com/games/fps/a-survival-game-we-once-called-stalker-and-tarkovs-alien-baby-is-closing-down-less-than-a-year-after-launch/",
-   "page": "https://aiym168.github.io/news/a/85befe00ae20.html",
-   "published_at": "2026-11-14T04:37:35+08:00"
-  },
-  {
-   "id": "6eed3436807c",
-   "channel": "chip",
-   "title": "七彩虹推出 iGame X870E Senna V14 主板",
-   "summary": "这款 ATX AM5 主板支持 AMD Ryzen，采用主题散热片与八层 PCB，提供多个 M.2 插槽和 Wi-Fi 7。",
-   "source": "TechPowerUp",
-   "tags": [
-    "AMD"
-   ],
-   "url": "https://www.techpowerup.com/354806/colorful-launches-igame-x870e-senna-v14-motherboard",
-   "page": "https://aiym168.github.io/news/a/6eed3436807c.html",
-   "published_at": "2026-11-14T04:37:22+08:00"
-  },
-  {
-   "id": "0436009e568f",
-   "channel": "launch",
-   "title": "我发布了首款手游 Little Boxes，包含 20 种井字棋变体",
-   "summary": "该游戏以关卡形式收录 20 种井字棋变体，从最基础玩法到更复杂的版本。",
-   "source": "Show HN",
-   "tags": [],
-   "url": "https://apps.apple.com/fr/app/little-boxes/id6777767346",
-   "page": "https://aiym168.github.io/news/a/0436009e568f.html",
-   "published_at": "2026-11-14T04:35:48+08:00"
-  },
-  {
-   "id": "1b0a04ff2363",
-   "channel": "software",
-   "title": "亚马逊黑五早期促销将 SHOKZ OpenFit 2+ 降至历史最低价",
-   "summary": "这款开放式耳机迎来力度可观的优惠。",
-   "source": "How-To Geek",
-   "tags": [
-    "亚马逊"
-   ],
-   "url": "https://www.howtogeek.com/save-100-on-shokz-openfit-2-open-ear-earbuds-and-hear-whats-around-you/",
-   "page": "https://aiym168.github.io/news/a/1b0a04ff2363.html",
-   "published_at": "2026-11-14T04:31:37+08:00"
-  },
-  {
-   "id": "583065850ffa",
-   "channel": "game",
-   "title": "任天堂的一次举动让塞尔达粉丝燃起希望",
-   "summary": "女孩子是有梦想的，不是吗？",
-   "source": "Kotaku",
-   "tags": [
-    "任天堂"
-   ],
-   "url": "https://kotaku.com/nintendo-official-website-erroneously-suggests-a-link-between-worlds-is-available-on-nso-2000756672",
-   "page": "https://aiym168.github.io/news/a/583065850ffa.html",
-   "published_at": "2026-11-14T04:30:32+08:00"
-  },
-  {
-   "id": "96505837386d",
-   "channel": "mobile",
-   "title": "我在三星 Galaxy 手机上解锁了隐藏按钮，比预想的更实用",
-   "summary": "可以新增按钮，也可以重新编程已有按钮。",
-   "source": "XDA",
-   "tags": [
-    "三星"
-   ],
-   "url": "https://www.xda-developers.com/unlocking-buttons-samsung-galaxy-smartphone/",
-   "page": "https://aiym168.github.io/news/a/96505837386d.html",
-   "published_at": "2026-11-14T04:30:21+08:00"
-  },
-  {
-   "id": "7ad5db552cf2",
-   "channel": "software",
-   "title": "4 款 Ryobi 40V 配件让电池发挥更多用途",
-   "summary": "用这些配件让设备做更多事。",
-   "source": "How-To Geek",
-   "tags": [
-    "新能源"
-   ],
-   "url": "https://www.howtogeek.com/useful-accessories-that-take-advantage-of-ryobi-40v-batteries/",
-   "page": "https://aiym168.github.io/news/a/7ad5db552cf2.html",
-   "published_at": "2026-11-14T04:30:15+08:00"
-  },
-  {
-   "id": "b251b3edf0eb",
-   "channel": "internet",
-   "title": "CMF 牛奶盒造型蓝牙音箱降至新低价",
-   "summary": "黑五早期促销中，CMF Speaker S 在亚马逊和 Nothing 售价 39 美元，优惠 20 美元，为迄今最低价。",
-   "source": "The Verge",
-   "tags": [
-    "亚马逊"
-   ],
-   "url": "https://www.theverge.com/gadgets/1033185/nothing-cmf-speaker-s-m-black-friday-deal-sale",
-   "page": "https://aiym168.github.io/news/a/b251b3edf0eb.html",
-   "published_at": "2026-11-14T04:30:00+08:00"
-  },
-  {
-   "id": "323d8a3fbced",
-   "channel": "launch",
-   "title": "fmrl：从浏览器标签页托管网站并通过 WebRTC 提供服务",
-   "summary": "该项目可从打开的浏览器窗口托管网站、内容与流媒体，通过 WebRTC 连接对外提供服务。",
-   "source": "Show HN",
-   "tags": [],
-   "url": "https://fmrl.live",
-   "page": "https://aiym168.github.io/news/a/323d8a3fbced.html",
-   "published_at": "2026-11-14T04:29:03+08:00"
-  },
-  {
-   "id": "2f0e26136137",
-   "channel": "ai",
-   "title": "人类难识破 LLM 说谎，不如让 AI 自己举报",
-   "summary": "你本来也没打算自己去核实事实吧。",
-   "source": "The Register",
-   "tags": [
-    "大模型"
-   ],
-   "url": "https://www.theregister.com/offbeat/2026/11/13/meatbags-suck-at-spotting-lying-llms-so-let-ai-narc-on-itself/5309876",
-   "page": "https://aiym168.github.io/news/a/2f0e26136137.html",
-   "published_at": "2026-11-14T04:27:31+08:00"
-  },
-  {
-   "id": "136580d82840",
-   "channel": "science",
-   "title": "CT 扫描揭开一把 400 年前神秘锁具的秘密",
-   "summary": "X 射线扫描破解了伊丽莎白时代挂锁的机关，且未损坏这件保存完好的海事文物。",
-   "source": "SciTechDaily",
-   "tags": [],
-   "url": "https://scitechdaily.com/ct-scans-reveal-the-secret-of-a-mysterious-400-year-old-lock/",
-   "page": "https://aiym168.github.io/news/a/136580d82840.html",
-   "published_at": "2026-11-14T04:22:22+08:00"
-  },
-  {
-   "id": "326c64206610",
-   "channel": "dev",
-   "title": "大厂这次又是来让人失望的",
-   "summary": "",
-   "source": "Hacker News",
-   "tags": [],
-   "url": "https://blog.jsweeting.me/big-tech-is-here-to-let-us-down",
-   "page": "https://aiym168.github.io/news/a/326c64206610.html",
-   "published_at": "2026-11-14T04:20:30+08:00"
-  },
-  {
-   "id": "76962f5e09a0",
-   "channel": "dev",
-   "title": "Kitesurf 浏览器引擎现已开源",
-   "summary": "这款面向 AI agent 的实验性浏览器引擎已开源，可在本地运行或部署到 Cloudflare Workers。",
-   "source": "Cloudflare 博客",
-   "tags": [
-    "AI Agent"
-   ],
-   "url": "https://blog.cloudflare.com/kitesurf-open-source/",
-   "page": "https://aiym168.github.io/news/a/76962f5e09a0.html",
-   "published_at": "2026-11-14T04:20:21+08:00"
-  },
-  {
-   "id": "3f17f893267c",
-   "channel": "science",
-   "title": "新发现的南非恐龙 Nyana rooiwalensis 幼年时体重已约 400 公斤",
-   "summary": "这种两足行走的恐龙生活在 2 亿多年前的今南非地区，幼年个体体重约 400 公斤。",
-   "source": "Phys.org",
-   "tags": [],
-   "url": "https://phys.org/news/2026-11-newly-south-african-dinosaur-heavyweight.html",
-   "page": "https://aiym168.github.io/news/a/3f17f893267c.html",
-   "published_at": "2026-11-14T04:20:04+08:00"
-  },
-  {
-   "id": "33748a9e4fb2",
-   "channel": "mobile",
-   "title": "小米 18 Pro 背屏将支持 Google Maps、Spotify 等应用",
-   "summary": "小米希望用户多花时间看手机背面。",
-   "source": "Android Authority",
-   "tags": [
-    "小米",
-    "谷歌"
-   ],
-   "url": "https://www.androidauthority.com/xiaomi-18-pro-rear-display-features-3735180/",
-   "page": "https://aiym168.github.io/news/a/33748a9e4fb2.html",
-   "published_at": "2026-11-14T04:19:37+08:00"
-  },
-  {
-   "id": "85792d520b6d",
-   "channel": "ai",
-   "title": "HomePod mini 2 最新软件更新仍未启用 Siri AI",
-   "summary": "苹果发布 HomePod 软件 27.2.1，但未在 HomePod mini 2 上启用 Siri AI，官网称将在未来更新推出，未给时间表。",
-   "source": "MacRumors",
-   "tags": [
-    "苹果"
-   ],
-   "url": "https://www.macrumors.com/2026/11/13/homepod-mini-2-still-lacks-siri-ai/",
-   "page": "https://aiym168.github.io/news/a/85792d520b6d.html",
-   "published_at": "2026-11-14T04:18:36+08:00"
-  },
-  {
-   "id": "72b0dc780bbb",
-   "channel": "mobile",
-   "title": "BOSGAME E5 迷你主机降至 210 美元，比原价低 42%",
-   "summary": "这款商用主机配备双 2.5GbE 网口，并支持三路 4K 输出。",
-   "source": "XDA",
-   "tags": [],
-   "url": "https://www.xda-developers.com/bosgame-e5-42-off-with-a-ryzen-5-5300u/",
-   "page": "https://aiym168.github.io/news/a/72b0dc780bbb.html",
-   "published_at": "2026-11-14T04:12:27+08:00"
-  },
-  {
-   "id": "54e1c3502f7d",
-   "channel": "launch",
-   "title": "Show HN 项目可按功能搜索 1.2 万个 n8n 社区节点",
-   "summary": "文章网址：https://workflownodes.vercel.app/ 评论网址：https://news.ycombinator.com/item?id=50488992 积分：1 # 评论：0",
-   "source": "Show HN",
-   "tags": [],
-   "url": "https://workflownodes.vercel.app/",
-   "page": "https://aiym168.github.io/news/a/54e1c3502f7d.html",
-   "published_at": "2026-11-14T04:12:22+08:00"
-  },
-  {
-   "id": "633d2a6ad9a1",
-   "channel": "ai",
-   "title": "黄仁勋离职或更多源于英伟达的高风险商业操作",
-   "summary": "华尔街日报称，英伟达为芯片采购向云厂商提供数十亿美元担保，包括与 OpenAI 计划中的 2500 亿美元交易。",
-   "source": "The Decoder",
-   "tags": [
-    "OpenAI",
-    "英伟达"
-   ],
-   "url": "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/",
-   "page": "https://aiym168.github.io/news/a/633d2a6ad9a1.html",
-   "published_at": "2026-11-14T04:07:34+08:00"
-  },
-  {
-   "id": "33abe01e58e8",
-   "channel": "launch",
-   "title": "Show HN：帮你找最适合居住或旅行的国家和城市",
-   "summary": "文章网址：https://my-next-spot.com/en 评论网址：https://news.ycombinator.com/item?id=50488934 积分：2 # 评论：0",
-   "source": "Show HN",
-   "tags": [],
-   "url": "https://my-next-spot.com/en",
-   "page": "https://aiym168.github.io/news/a/33abe01e58e8.html",
-   "published_at": "2026-11-14T04:07:27+08:00"
-  },
-  {
-   "id": "c407c87afb3e",
-   "channel": "internet",
-   "title": "初创公司 Drogue 拟用海洋热能驱动浮动数据中心",
-   "summary": "Drogue 从海洋采集热量，为浮动船只上的数据中心供电，首台原型预计不到两年即可下水运行。",
-   "source": "TechCrunch",
-   "tags": [],
-   "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/",
-   "page": "https://aiym168.github.io/news/a/c407c87afb3e.html",
-   "published_at": "2026-11-14T04:07:24+08:00"
-  },
-  {
-   "id": "577455be57bd",
-   "channel": "internet",
-   "title": "大象群体的韧性也有极限",
-   "summary": "在斯里兰卡，生态变化正使一座公园的大象数量减少。",
-   "source": "Ars Technica",
-   "tags": [],
-   "url": "https://arstechnica.com/science/2026/11/in-elephants-the-resilience-of-communities-has-its-limits/",
-   "page": "https://aiym168.github.io/news/a/577455be57bd.html",
-   "published_at": "2026-11-14T04:03:13+08:00"
-  },
-  {
-   "id": "6fa2f1b1acff",
-   "channel": "chip",
-   "title": "SteamOS 3.9.6 Beta 修复 120Hz 屏上帧率异常等 bug",
-   "summary": "该测试版修复了多项显示与帧同步问题，并修正 HDR10 色彩等缺陷。",
-   "source": "Wccftech",
-   "tags": [
-    "Steam"
-   ],
-   "url": "https://wccftech.com/steamos-3-9-6-beta-fixes-a-bug-where-a-30-fps-game-with-a-60-fps-cap-dropped-to-24-fps-on-120-hz-displays/",
-   "page": "https://aiym168.github.io/news/a/6fa2f1b1acff.html",
-   "published_at": "2026-11-14T04:01:43+08:00"
-  },
-  {
-   "id": "095fa52a4087",
-   "channel": "mobile",
-   "title": "Epic 正式请求最高法院维持对苹果的藐视法庭裁决",
-   "summary": "Epic Games 就苹果上诉提交正式回应，敦促大法官维持因 App Store 支付限制而作出的藐视裁决。",
-   "source": "9to5Mac",
-   "tags": [
-    "苹果"
-   ],
-   "url": "https://9to5mac.com/2026/11/13/epic-formally-asks-scotus-to-uphold-contempt-ruling-against-apple/",
-   "page": "https://aiym168.github.io/news/a/095fa52a4087.html",
-   "published_at": "2026-11-14T04:00:50+08:00"
-  },
-  {
-   "id": "040db43be567",
-   "channel": "mobile",
-   "title": "一台便宜投影仪和Switch 2，让我实现童年梦想的沙发多人游戏",
-   "summary": "十个人用Switch 2和投影仪一起玩，是我最开心的体验之一。",
-   "source": "XDA",
-   "tags": [
-    "任天堂"
-   ],
-   "url": "https://www.xda-developers.com/cheap-projector-nintendo-switch-2-gave-me-couch-multiplayer-session-dreamed-of-as-kid/",
-   "page": "https://aiym168.github.io/news/a/040db43be567.html",
-   "published_at": "2026-11-14T04:00:21+08:00"
-  },
-  {
-   "id": "0a2e7fdc5507",
-   "channel": "software",
-   "title": "我终于不再过度管理我的安卓手机，你也该这样",
-   "summary": "我的手机很喜欢这个改变。",
-   "source": "How-To Geek",
-   "tags": [
-    "安卓"
-   ],
-   "url": "https://www.howtogeek.com/i-finally-stopped-micromanaging-my-android-phone-and-you-should-too/",
-   "page": "https://aiym168.github.io/news/a/0a2e7fdc5507.html",
-   "published_at": "2026-11-14T04:00:15+08:00"
-  },
-  {
-   "id": "234e9363cfc7",
-   "channel": "comfyui",
-   "title": "ComfyUI 节点/工作流开源项目：wildminder/awesome-ltx2（★602）",
-   "summary": "",
-   "source": "GitHub ComfyUI 热门项目",
-   "tags": [
-    "ComfyUI"
-   ],
-   "url": "https://github.com/wildminder/awesome-ltx2",
-   "page": "https://aiym168.github.io/news/a/234e9363cfc7.html",
-   "published_at": "2026-11-14T04:00:12+08:00"
-  },
-  {
-   "id": "4877cebda37b",
-   "channel": "mobile",
-   "title": "我在安卓上试了Unexpected Keyboard，它是首个能挑战Gboard的开源应用",
-   "summary": "这款面向开发者的键盘不仅让我印象深刻，还改变了我的打字方式。",
-   "source": "Android Police",
-   "tags": [
-    "安卓"
-   ],
-   "url": "https://www.androidpolice.com/unexpected-keyboard-on-android-open-source-app-worth-challenging-gboard/",
-   "page": "https://aiym168.github.io/news/a/4877cebda37b.html",
-   "published_at": "2026-11-14T04:00:10+08:00"
-  },
-  {
-   "id": "edcfd809ff6e",
-   "channel": "internet",
-   "title": "OpenAI撤销独立机器人研究团队 人员并入核心研究与应用部门",
-   "summary": "11月14日，OpenAI确认，已撤销独立机器人研究团队，并将相关人员重新分配至核心研究和应用业务部门。公司表示，此次调整并不意味着退出机器人领域，而是希望将机器人研发与通用人工智能模型研究进一步整合。",
-   "source": "cnBeta",
-   "tags": [
-    "OpenAI",
-    "机器人"
-   ],
-   "url": "https://www.cnbeta.com.tw/articles/tech/1586318.htm",
-   "page": "https://aiym168.github.io/news/a/edcfd809ff6e.html",
-   "published_at": "2026-11-14T03:58:01+08:00"
-  },
-  {
-   "id": "a4445bb3eaa4",
-   "channel": "mobile",
-   "title": "Fanttik入门级F2 PRO旋转工具套装现降价33%",
-   "summary": "五档速度和Type-C充电适合初次使用者。",
-   "source": "XDA",
-   "tags": [
-    "新能源"
-   ],
-   "url": "https://www.xda-developers.com/save-33-on-fanttiks-f2-pro-cordless-rotary-tool-kit-and-start-your-first-diy-projects/",
-   "page": "https://aiym168.github.io/news/a/a4445bb3eaa4.html",
-   "published_at": "2026-11-14T03:57:53+08:00"
-  },
-  {
-   "id": "85f0f650a4ea",
-   "channel": "internet",
-   "title": "Uber证实数据泄露致数千名司机身份证件信息被窃",
-   "summary": "某网络犯罪团伙入侵Fireworks AI客户数据库，窃取含数千名Uber司机ID的信息。",
-   "source": "Mashable",
-   "tags": [],
-   "url": "https://mashable.com/tech/uber-hack-stolen-drivers-licenses",
-   "page": "https://aiym168.github.io/news/a/85f0f650a4ea.html",
-   "published_at": "2026-11-14T03:55:24+08:00"
-  },
-  {
-   "id": "4a2f87d6768e",
-   "channel": "game",
-   "title": "微软就全球服务中断「深表」道歉，称无关AI或黑客",
-   "summary": "微软称此次全球服务中断并非AI或黑客所致。",
-   "source": "PC Gamer",
-   "tags": [
-    "微软"
-   ],
-   "url": "https://www.pcgamer.com/software/microsoft-deeply-apologizes-for-global-service-outage-says-no-ai-or-hackers-are-to-blame/",
-   "page": "https://aiym168.github.io/news/a/4a2f87d6768e.html",
-   "published_at": "2026-11-14T03:54:20+08:00"
-  },
-  {
-   "id": "c97f3fa42e72",
-   "channel": "game",
-   "title": "前任天堂营销负责人称The Legend of Zelda热度曾持续下滑",
-   "summary": "两位前任天堂营销负责人称，《Breath of the Wild》让该系列重获生机。",
-   "source": "Eurogamer",
-   "tags": [
-    "任天堂"
-   ],
-   "url": "https://www.eurogamer.net/legend-of-zelda-smaller-before-breath-of-the-wild",
-   "page": "https://aiym168.github.io/news/a/c97f3fa42e72.html",
-   "published_at": "2026-11-14T03:52:50+08:00"
-  },
-  {
-   "id": "f0632826eee2",
-   "channel": "ai",
-   "title": "拒绝AI垃圾内容：一份宣言",
-   "summary": "",
-   "source": "Hacker News",
-   "tags": [],
-   "url": "https://www.slopmanifesto.com/",
-   "page": "https://aiym168.github.io/news/a/f0632826eee2.html",
-   "published_at": "2026-11-14T03:51:56+08:00"
-  },
-  {
-   "id": "f4e0f02418aa",
-   "channel": "chip",
-   "title": "Intel指令集参考文档确认Razor Lake桌面与笔记本型号ID",
-   "summary": "Intel在11月版架构指令集扩展编程参考中新增Razor Lake和Coral Rapids。",
-   "source": "TechPowerUp",
-   "tags": [
-    "英特尔"
-   ],
-   "url": "https://www.techpowerup.com/354804/intels-isa-reference-confirms-razor-lake-desktop-and-laptop-model-ids",
-   "page": "https://aiym168.github.io/news/a/f4e0f02418aa.html",
-   "published_at": "2026-11-14T03:51:02+08:00"
-  },
-  {
-   "id": "cf6baf50f383",
-   "channel": "launch",
-   "title": "Show HN：大学篮球数据统计与赛果预测",
-   "summary": "文章网址：https://fijimf.com/ 评论网址：https://news.ycombinator.com/item?id=50488733 积分：3 # 评论：0",
-   "source": "Show HN",
-   "tags": [],
-   "url": "https://fijimf.com/",
-   "page": "https://aiym168.github.io/news/a/cf6baf50f383.html",
-   "published_at": "2026-11-14T03:47:43+08:00"
-  },
-  {
-   "id": "202a61446d17",
-   "channel": "science",
-   "title": "巨石阵六吨祭坛石来源成谜，科学家在全英搜寻",
-   "summary": "科学家百余年来试图确定这块六吨砂岩祭坛石的来源，详细地质检测仍未找到答案。",
-   "source": "SciTechDaily",
-   "tags": [],
-   "url": "https://scitechdaily.com/stonehenges-mysterious-six-ton-stone-has-scientists-searching-across-britain/",
-   "page": "https://aiym168.github.io/news/a/202a61446d17.html",
-   "published_at": "2026-11-14T03:47:18+08:00"
-  },
-  {
-   "id": "a25d23750d20",
-   "channel": "mobile",
-   "title": "YouTube在新款Apple TV 4K上出现问题",
-   "summary": "YouTube无法在苹果这款与Google TV Streamer竞争的设备上运行。",
-   "source": "Android Authority",
-   "tags": [
-    "苹果",
-    "谷歌",
-    "YouTube"
-   ],
-   "url": "https://www.androidauthority.com/youtube-apple-tv-4k-problems-3735158/",
-   "page": "https://aiym168.github.io/news/a/a25d23750d20.html",
-   "published_at": "2026-11-14T03:45:19+08:00"
-  },
-  {
-   "id": "ee274201614e",
-   "channel": "software",
-   "title": "Trezor 确认三款钱包被植入恶意硬件并已发布修复",
-   "summary": "Trezor 确认东南亚经销商 CryptoBilis 售出的三台 Safe 5 含恶意硬件，可窃取助记词并经蜂窝网络回传。",
-   "source": "BleepingComputer",
-   "tags": [],
-   "url": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
-   "page": "https://aiym168.github.io/news/a/ee274201614e.html",
-   "published_at": "2026-11-14T03:38:36+08:00"
-  },
-  {
-   "id": "645e798427f9",
-   "channel": "ai",
-   "title": "AI 智能体初创公司 LangChain 估值达 30 亿美元",
-   "summary": "LangChain 称，其不依赖特定模型与平台的智能体管理工具 LangSmith 已有 7000 家客户。",
-   "source": "TechCrunch AI",
-   "tags": [
-    "AI Agent"
-   ],
-   "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
-   "page": "https://aiym168.github.io/news/a/645e798427f9.html",
-   "published_at": "2026-11-14T03:37:57+08:00"
-  },
-  {
-   "id": "978f252d423a",
-   "channel": "game",
-   "title": "报告称 GTA 6 明年初前或售出 5500 万份，均价或达 90 美元",
-   "summary": "Investor's Business Daily 汇总多份分析师报告，普遍预期这款 11 月 19 日发售的游戏将极为畅销。",
-   "source": "GameSpot",
-   "tags": [
-    "GTA 6",
-    "GTA"
-   ],
-   "url": "https://www.gamespot.com/articles/gta-6-could-sell-55-million-copies-by-early-next-year-report-says-and-average-selling-price-could-be-90/",
-   "page": "https://aiym168.github.io/news/a/978f252d423a.html",
-   "published_at": "2026-11-14T03:36:04+08:00"
-  },
-  {
-   "id": "a57e1e8e8188",
-   "channel": "mobile",
-   "title": "Garmin 为多款智能手表推送更新，改进睡眠模式与关机问题",
-   "summary": "该更新全球推送，覆盖 Enduro 2、Fenix 7 及 Fenix 7 Pro 等较旧高端机型，改善睡眠模式并减少意外关机。",
-   "source": "Notebookcheck",
-   "tags": [],
-   "url": "https://www.notebookcheck.net/Garmin-releases-new-update-for-multiple-smartwatches-with-sleep-mode-and-shutdown-improvements.1449856.0.html",
-   "page": "https://aiym168.github.io/news/a/a57e1e8e8188.html",
-   "published_at": "2026-11-14T03:36:00+08:00"
-  },
-  {
-   "id": "689b48159cef",
-   "channel": "chip",
-   "title": "GIGABYTE 将举办 AI 合作伙伴峰会，助企业构建实际 AI 方案",
-   "summary": "峰会定于 2026 年 11 月 13 日在南加州 Pacific Palms Resort 举行。",
-   "source": "TechPowerUp",
-   "tags": [],
-   "url": "https://www.techpowerup.com/354805/gigabyte-to-host-ai-partner-summit-empowering-businesses-to-build-real-world-ai-solutions",
-   "page": "https://aiym168.github.io/news/a/689b48159cef.html",
-   "published_at": "2026-11-14T03:35:39+08:00"
-  },
-  {
-   "id": "081d77d792d9",
-   "channel": "ai",
-   "title": "AssemblyAI 借 Amazon EC2 Spot 优化 AWS 语音转文字推理成本",
-   "summary": "其结合 ECS、Spot GPU 实例与基于 SQS 的重试架构，在欧洲区域节省 70% 成本并守住 SLA。",
-   "source": "AWS 机器学习博客",
-   "tags": [
-    "显卡",
-    "亚马逊"
-   ],
-   "url": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
-   "page": "https://aiym168.github.io/news/a/081d77d792d9.html",
-   "published_at": "2026-11-14T03:35:35+08:00"
-  },
-  {
-   "id": "cb831438be79",
-   "channel": "dev",
-   "title": "Kildall 算法：新 Lisp 编译器 Cleavir 的相关笔记",
-   "summary": "作者正在开发 Common Lisp 编译器 Cleavir，它是 Robert Strandh 的 SICL 项目中的编译器部分。",
-   "source": "Lobsters",
-   "tags": [],
-   "url": "https://bike.github.io/posts/kildall.html",
-   "page": "https://aiym168.github.io/news/a/cb831438be79.html",
-   "published_at": "2026-11-14T03:34:28+08:00"
-  },
-  {
-   "id": "a64912cefb00",
-   "channel": "mobile",
-   "title": "Apple 发布 tvOS 27.2.1 与 HomePod 27.2.1 更新",
-   "summary": "Apple 刚刚发布了适用于 Apple TV 4K 的 tvOS 27.2.1 和适用于 HomePod 型号的 HomePod 27.2.1，以下是新内容。更多的…",
-   "source": "9to5Mac",
-   "tags": [
-    "苹果"
-   ],
-   "url": "https://9to5mac.com/2026/11/13/apple-releases-tvos-27-2-1-and-homepod-27-2-1-heres-whats-new/",
-   "page": "https://aiym168.github.io/news/a/a64912cefb00.html",
-   "published_at": "2026-11-14T03:33:08+08:00"
   }
  ]
 }
