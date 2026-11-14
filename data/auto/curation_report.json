@@ -5,24 +5,22 @@
   "drop:duplicate": 138,
   "drop:empty_summary": 30,
   "drop:negative_signal": 101,
-  "drop:no_clear_offer": 297,
-  "drop:not_ai": 256,
+  "drop:no_clear_offer": 300,
+  "drop:not_ai": 254,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 367,
-  "google_news_total": 367,
-  "kept_total": 176,
-  "net:gnews_cache_hit": 361,
-  "net:gnews_resolved_net": 6,
-  "net:tco_expanded": 2,
-  "net:tco_failed": 2,
-  "new_this_run": 2,
-  "raw_total": 1057
+  "google_news_resolved": 369,
+  "google_news_total": 369,
+  "kept_total": 177,
+  "net:gnews_cache_hit": 367,
+  "net:gnews_resolved_net": 2,
+  "net:tco_expanded": 1,
+  "new_this_run": 3,
+  "raw_total": 1059
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "上传房间照片即可用 AI 生成2个免费设计方案",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
@@ -32,7 +30,8 @@
    "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
    "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中",
    "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件",
-   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个"
+   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个",
+   "api-relay-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型"
   ],
   "empty_summary": [
    "Khan Academy Philippines 称该国所有教师无论是否合作学校都可免费使用，约一分钟生成教案",
@@ -63,6 +62,8 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "@alexxubyte 分享：11月15日太平洋时间12点在 Zoom 直播一小时，已有2500多人报名，主题是构建 A",
+   "@pkBritish 分享：2026年11月19日格林尼治时间12:00至13:30在线举行，英国校友免费参加，主题是有",
    "@heyrimsha 分享：这些仓库可帮助编写、分轨、母带处理和混音，部分使用 Claude 与 AI，且全部免费",
    "技巧来自工具官方指南，例如 Google Flow 需逐项修改并保留其他内容不变",
    "该优惠包含最新 Gemini 模型和 YouTube Premium，需转发并评论「Google AI Pro」获取详情",
@@ -72,9 +73,7 @@
    "@coreyhainesco 分享：每个列表构建工具都需要 99 美元/月的席位",
    "@leodev 分享：他妈的，我在 AI 推理上花费了数千美元开源了苹果的动态岛，现在在 Github 上",
    "参与活动即有机会赢取 QPR 对 Sheffield United 的 Corner Lounge 门票两张",
-   "@mcwilsonky 分享：为小企业提供 90 天计划，帮助其被 ChatGPT、Claude 等 AI 助手推荐",
-   "参与者用 ClickUp Brain 研究制作了中世纪音乐互动时间线「A Thousand Years of Song」",
-   "作者用 AI 协助发现 QuakeSpasm 一个15年以上内存损坏 bug，提交 issue 和两个 PR"
+   "@mcwilsonky 分享：为小企业提供 90 天计划，帮助其被 ChatGPT、Claude 等 AI 助手推荐"
   ],
   "not_ai": [
    "Strategy 称比特币是数字资本并转为数字信用",
@@ -105,28 +104,28 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-14T23:05:13+08:00",
+ "generated_at": "2026-11-14T23:25:26+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-14T23:05:13+08:00",
+  "checked_at": "2026-11-14T23:25:25+08:00",
   "counts": {
-   "ok": 160,
-   "recheck": 1
+   "gone": 1,
+   "ok": 161
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 3.9,
+ "seconds": 1.7,
  "side": {
   "github_hot": {
-   "drop:duplicate": 9,
-   "kept": 21,
+   "drop:duplicate": 10,
+   "kept": 20,
    "raw": 30
   },
   "hot_topics": {
    "drop:negative_signal": 5,
-   "drop:not_ai": 16,
-   "drop:not_ai_strict": 5,
+   "drop:not_ai": 14,
+   "drop:not_ai_strict": 4,
    "kept": 13,
-   "raw": 39
+   "raw": 36
   }
  }
 }
