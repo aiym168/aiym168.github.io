@@ -2,28 +2,24 @@
  "counts": {
   "archived": 14,
   "deadline_extracted": 6,
-  "drop:duplicate": 139,
-  "drop:empty_summary": 28,
-  "drop:negative_signal": 101,
-  "drop:no_clear_offer": 293,
+  "drop:duplicate": 138,
+  "drop:empty_summary": 29,
+  "drop:negative_signal": 102,
+  "drop:no_clear_offer": 297,
   "drop:not_ai": 252,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 356,
-  "google_news_total": 356,
+  "google_news_resolved": 361,
+  "google_news_total": 361,
   "kept_total": 174,
-  "net:gnews_cache_hit": 353,
-  "net:gnews_resolved_net": 3,
-  "net:tco_expanded": 1,
-  "net:tco_failed": 1,
-  "new_this_run": 2,
-  "raw_total": 1046
+  "net:gnews_cache_hit": 356,
+  "net:gnews_resolved_net": 5,
+  "raw_total": 1051
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "上传房间照片即可用 AI 生成2个免费设计方案",
-   "免费课程：从工程师到 AI 工程师，每集对应一个 Git 标签",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
@@ -32,9 +28,11 @@
    "freefield：ComfyUI 上开源 Higgsfield",
    "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
    "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中",
-   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件"
+   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件",
+   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个"
   ],
   "empty_summary": [
+   "该模型总参数 280B、每 token 激活 14B、上下文窗口 1M，目前在 OpenRouter 可免费使用",
    "MIT 将于2027年1月在塞浦路斯大学和塞浦路斯理工大学为青少年举办免费 AI 训练营",
    "DeepAI Code 新增 Muse Ember 免费使用，Claude Sonnet 5.5",
    "演示用 Claude 与 Composio 查找并验证20个营销线索，成本0.68美元，可凭免费额度试用",
@@ -45,8 +43,7 @@
    "该模型支持100万 token 上下文和图像输入，输入每百万 token 8美元、输出40美元",
    "面向 UnrealEngine 与 UEFN 开发者的 Epic AI MegaJam 活动，免费提供专家团队协助",
    "在 GoLand 2026.3 中，只需 JetBrains 账号即可免费使用 Junie Lite 体验智能体编程",
-   "@tom_doerr 分享：具有用于文本推理的永久免费套餐的 LLM API 精选目录",
-   "文章认为 Nvidia 免费开放模型数量最多且由 Jensen 推动，换人可能先砍免费项目"
+   "@tom_doerr 分享：具有用于文本推理的永久免费套餐的 LLM API 精选目录"
   ],
   "negative_signal": [
    "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页",
@@ -63,6 +60,8 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "@smart_poly 分享：用 AI 在引擎内直接把文本生成角色动画，无需订阅或云端处理，全程用本地 GPU 完成",
+   "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入",
    "@coreyhainesco 分享：每个列表构建工具都需要 99 美元/月的席位",
    "@leodev 分享：他妈的，我在 AI 推理上花费了数千美元开源了苹果的动态岛，现在在 Github 上",
    "参与活动即有机会赢取 QPR 对 Sheffield United 的 Corner Lounge 门票两张",
@@ -72,11 +71,11 @@
    "@_ellisbrown 分享：研究从零训练200多个模型，比较预训练编码器、无编码器、放在 LLM 前等选择的影响",
    "该工具把 BookMyShow 每场演出、每个空座的座位图汇总到一页，无需逐场点开，由 Claude Opus 5.5 ",
    "Envato 在平台上于11月19日美东8点起24小时内免费无限提供 AI 视频模型 MiniMax H3",
-   "@rperezmarco 分享：声明称在所有人能用相同 AI 模型前不再公开推测，也不为大公司提供免费基准问题",
-   "@synthesiaIO 分享：官方称只需 2 分钟即可免费创建自己的 AI 克隆，并可亲自试用",
-   "@ValsAI 分享：两款应用 10 月初换成评分更低的模型，榜首为 Claude Opus 5.5，得分 76.2%，"
+   "@rperezmarco 分享：声明称在所有人能用相同 AI 模型前不再公开推测，也不为大公司提供免费基准问题"
   ],
   "not_ai": [
+   "支持 Windows、Linux 和 Android，可看影视、动漫与直播电视，还支持离线下载",
+   "@TimSweeneyEpic 分享：看看政府为苹果公司提供的所有免费通行证，以垄断应用程序分发和支付——包括掩盖这里和",
    "@sainingxie 分享：在跳上“无编码器”炒作列车之前，请三思而后行",
    "可观看 X 直播 FREE GPU TODAY，参与讨论并获取实时更新",
    "@CommandCodeAI 分享：每月 10 美元套餐用量提升至 7 倍，支持 100 万 token 上下文，Pro",
@@ -86,9 +85,7 @@
    "@robinebers 分享：发帖者称可接入自己的订阅，拥有强大云端与漂亮界面，不用其云服务则完全免费",
    "Nebius 营收超预期 8%，其中含 3.25 亿美元非经常性收入",
    "用户可实时观看 Box 桌面并在任意时刻接管，用于登录或批准付款",
-   "哪些因素会毁掉您的笔记本电脑：以下行为不会：- 让笔记本电脑一直插着电源 - 同时打开40个标签页 - 从不关机 -",
-   "官方称屠杀模式下周上线，DOOM: The Dark Ages Revelations 玩家可免费游玩",
-   "Modal 将赞助 Vals Hacks 第一、二赛道，提供算力额度、技术支持及2万美元奖金额度"
+   "哪些因素会毁掉您的笔记本电脑：以下行为不会：- 让笔记本电脑一直插着电源 - 同时打开40个标签页 - 从不关机 -"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -105,16 +102,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-14T12:29:27+08:00",
+ "generated_at": "2026-11-14T14:27:47+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-14T12:29:27+08:00",
+  "checked_at": "2026-11-14T14:27:46+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 158
+   "ok": 160
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 2.3,
+ "seconds": 3.6,
  "side": {
   "github_hot": {
    "drop:duplicate": 7,
@@ -122,8 +118,8 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 2,
-   "drop:not_ai": 14,
+   "drop:negative_signal": 1,
+   "drop:not_ai": 15,
    "drop:not_ai_strict": 9,
    "kept": 15,
    "raw": 40
