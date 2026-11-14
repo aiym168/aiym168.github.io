@@ -4,15 +4,18 @@
   "deadline_extracted": 6,
   "drop:duplicate": 188,
   "drop:empty_summary": 30,
-  "drop:negative_signal": 107,
-  "drop:no_clear_offer": 320,
-  "drop:not_ai": 279,
+  "drop:negative_signal": 105,
+  "drop:no_clear_offer": 321,
+  "drop:not_ai": 282,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 375,
-  "google_news_total": 375,
-  "kept_total": 180,
+  "google_news_resolved": 376,
+  "google_news_total": 376,
+  "kept_total": 179,
   "net:gnews_cache_hit": 375,
-  "raw_total": 1163
+  "net:gnews_resolved_net": 1,
+  "net:tco_failed": 1,
+  "new_this_run": 1,
+  "raw_total": 1164
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -59,6 +62,7 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "用户询问100%免费方案，Claude 推荐 OBS 加摄像头圆形遮罩并代做了遮罩",
    "@alex_prompter 分享：10 天内扫描发现 1200 多个严重问题，帮助维护者应对持续攻击",
    "@TarasTechCom 分享：故障持续约 30 小时、可用性 95.8%，达 50% 抵扣档",
    "@DataChaz 分享：该记忆层支撑其 AI 代理，推文列出 7 个免费开源项目",
@@ -69,8 +73,7 @@
    "@pkBritish 分享：2026年11月19日格林尼治时间12:00至13:30在线举行，英国校友免费参加，主题是有",
    "@heyrimsha 分享：这些仓库可帮助编写、分轨、母带处理和混音，部分使用 Claude 与 AI，且全部免费",
    "技巧来自工具官方指南，例如 Google Flow 需逐项修改并保留其他内容不变",
-   "该优惠包含最新 Gemini 模型和 YouTube Premium，需转发并评论「Google AI Pro」获取详情",
-   "@tylertarver 分享：为教师和校长提供免费的 AI 政策模板"
+   "该优惠包含最新 Gemini 模型和 YouTube Premium，需转发并评论「Google AI Pro」获取详情"
   ],
   "not_ai": [
    "Strategy 称比特币是数字资本并转为数字信用",
@@ -101,17 +104,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-15T02:30:00+08:00",
+ "generated_at": "2026-11-15T04:28:01+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-15T02:29:59+08:00",
+  "checked_at": "2026-11-15T04:28:01+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 140,
-   "unsure": 25
+   "ok": 165
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 1.0,
+ "seconds": 1.3,
  "side": {
   "github_hot": {
    "drop:duplicate": 9,
@@ -120,10 +121,10 @@
   },
   "hot_topics": {
    "drop:negative_signal": 3,
-   "drop:not_ai": 11,
-   "drop:not_ai_strict": 9,
-   "kept": 14,
-   "raw": 37
+   "drop:not_ai": 8,
+   "drop:not_ai_strict": 7,
+   "kept": 12,
+   "raw": 30
   }
  }
 }

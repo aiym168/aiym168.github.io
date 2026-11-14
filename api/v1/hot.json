@@ -1,26 +1,19 @@
 {
-  "generated_at": "2026-11-15T02:30:00+08:00",
-  "count": 14,
+  "generated_at": "2026-11-15T04:28:01+08:00",
+  "count": 12,
   "items": [
-    {
-      "id": "hnhot-50493251",
-      "title": "据称，NVIDIA 通过资助 AI 初创公司购买其 GPU 来制造稀缺性",
-      "summary": "",
-      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50491980",
-      "title": "Unsloth Qwen3.8-27B 量化 – 动态 v3.1 更新",
-      "summary": "",
-      "url": "https://unsloth.ai/docs/models/qwen3.8",
-      "source": "Hacker News"
-    },
     {
       "id": "hnhot-50441444",
       "title": "生成式 AI 在非英语文本上使用更多能量",
       "summary": "",
       "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "hnhot-50497589",
+      "title": "以约 200 行纯 Jax 代码显示 HN：DeepSeek V3",
+      "summary": "",
+      "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
       "source": "Hacker News"
     },
     {
@@ -45,10 +38,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257126",
-      "title": "Google Gemini 有好用的其他家 agent 吗",
-      "summary": "Claude 开了 5x，124 刀，用了半个月，昨天被封了，申请退款，退了 56 刀。GPT 已经彻底废了，完全干不了活，x 上看到不少推荐 Gemini 的，模型能力还可以，5x 土区大概 280 元，之前有 20x 大概 470 元。但是众所周知，谷歌 Antigravity 并不好用。似乎没有办法将它接入到 Claude code 或者 codex。",
-      "url": "https://www.v2ex.com/t/1257126",
+      "id": "v2hot-1257137",
+      "title": "两个 Claude Pro 号 KYC，两个号都找 KYC 代过，一个号秒封，一个号现在还活着",
+      "summary": "我大号用了 4 个月，在 11 月 11 日跳 KYC 验证，此前一直在蹬 fable5.2, 想着有 fable5.2 重置卡，想多用用体验一下新模型，没想到触发了 KYC。小号用了一周，在 11 月 11 前一直在蹬 fable5.2, 大号跳 KYC 了，怀疑是 A÷新模型防蒸馏严格一些，11 月 12 日就不敢用 fable5.2 了，开着 opus5.5 meduim 来蹬，晚上用到周额度 95%了给我跳出 KYC，这天聊的都是爬虫，这个我怀疑是滥用的原因或者是聊的内容有点不合规，或者是 fable5.2 蹬太狠了。说一下我的环境，我买的 lisahost 9929 40",
+      "url": "https://www.v2ex.com/t/1257137",
       "source": "V2EX"
     },
     {
@@ -56,6 +49,13 @@
       "title": "AI slop 是怎么来的，从提工单可窥见一角",
       "summary": "我让 Claude Opus 5.5 跑整个系统的全项目测试，测试到有一个比较极限的场景有 BUG，于是我让 Agent 自己提了一个 jira 工单，然后呼叫对应模块的 owner 来解决这个 bug，但是 owner 告诉我，他看不懂我的工单里是在说什么 于是我查看了一下 Agent 生成的工单，工单写的十分详细，但是根本没有重点，只是把我们做过的实验全部放上去，并且自创了一堆词汇，这些词汇讲道理我在 Claude 内其实能大致看得懂意思，因为我基本上习惯了 Agent 的这种语言习惯，或者说简化词习惯，并且如果我看不懂的话我可以追问我的 Agent，但是收到工单的 owner",
       "url": "https://www.v2ex.com/t/1257136",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1257126",
+      "title": "Google Gemini 有好用的其他家 agent 吗",
+      "summary": "Claude 开了 5x，124 刀，用了半个月，昨天被封了，申请退款，退了 56 刀。GPT 已经彻底废了，完全干不了活，x 上看到不少推荐 Gemini 的，模型能力还可以，5x 土区大概 280 元，之前有 20x 大概 470 元。但是众所周知，谷歌 Antigravity 并不好用。似乎没有办法将它接入到 Claude code 或者 codex。",
+      "url": "https://www.v2ex.com/t/1257126",
       "source": "V2EX"
     },
     {
@@ -73,31 +73,17 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257137",
-      "title": "两个 Claude Pro 号 KYC，两个号都找 KYC 代过，一个号秒封，一个号现在还活着",
-      "summary": "我大号用了 4 个月，在 11 月 11 日跳 KYC 验证，此前一直在蹬 fable5.2, 想着有 fable5.2 重置卡，想多用用体验一下新模型，没想到触发了 KYC。小号用了一周，在 11 月 11 前一直在蹬 fable5.2, 大号跳 KYC 了，怀疑是 A÷新模型防蒸馏严格一些，11 月 12 日就不敢用 fable5.2 了，开着 opus5.5 meduim 来蹬，晚上用到周额度 95%了给我跳出 KYC，这天聊的都是爬虫，这个我怀疑是滥用的原因或者是聊的内容有点不合规，或者是 fable5.2 蹬太狠了。说一下我的环境，我买的 lisahost 9929 40",
-      "url": "https://www.v2ex.com/t/1257137",
+      "id": "v2hot-1257138",
+      "title": "在英国做了五年 AI 创业，找几个能自己把事做成的人一起做英国市场",
+      "summary": "我是 Tim，2021 年在英国开了家公司 Mutus Tech，做农业和产业场景的 AI。和谢菲尔德大学、利物浦大学、Harper Adams 大学和农业咨询机构 ADAS 做过项目，参与过多个 Innovate UK 支持的研发项目，今年 4 月 Innovate UK Business Connect 写过一篇我们的案例。五年下来最大的感受：在英国，技术不是最难的，难的是找对需求、拿到第一批客户、把研发项目变成能持续收钱的生意。这些坑我们一个个踩过。现在想把经验、团队和平台开放出来，和外面的人一起做新项目。找谁。三类人：1. 有技术或产品、已经有一点验证（原型、试",
+      "url": "https://www.v2ex.com/t/1257138",
       "source": "V2EX"
     },
     {
-      "id": "xhot-xrss-1651493245",
-      "title": "Lastbook 推出免费开源离线生存工具，含本地 AI 与地图",
-      "summary": "该工具免费、开源、完全离线，无追踪和账户，提供本地 AI、地图与视频，支持 Windows 和 Mac。",
-      "url": "https://x.com/farbood/status/2121397867227287642",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-2418364919",
-      "title": "免费 Claude 技能可做卖方尽职调查，上传租金名册与租约",
-      "summary": "上传租金名册、T-12 和租约，可得到真实 NOI、排序后的风险点和发给经纪人的问题，也适用于 ChatGPT。",
-      "url": "https://x.com/amandaorson/status/2116545392875856277",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-8168239747",
-      "title": "免费 AI 销售代理指南可获取，推文另附 AI 代理介绍",
-      "summary": "推文提供 AI 代理更多信息链接，并可获取免费的 AI 销售代理指南。",
-      "url": "https://x.com/jasonlk/status/2121626946098315648",
+      "id": "xhot-xrss-195476353",
+      "title": "Claude 推荐用免费 OBS 给摄像头加圆形遮罩",
+      "summary": "用户询问100%免费方案，Claude 推荐 OBS 加摄像头圆形遮罩并代做了遮罩。",
+      "url": "https://x.com/levelsio/status/2121686411900551270",
       "source": "X"
     }
   ]
