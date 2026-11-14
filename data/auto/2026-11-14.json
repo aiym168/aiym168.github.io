@@ -1,7 +1,7 @@
 {
   "date": "2026-11-14",
-  "updated_at": "2026-11-14T17:01+08:00",
-  "updated_at_label": "2026-11-14 17:01 Asia/Shanghai",
+  "updated_at": "2026-11-14T18:02+08:00",
+  "updated_at_label": "2026-11-14 18:02 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -491,7 +491,7 @@
       "url": "https://api.suvankar.cc/docs/dictionary",
       "posted_at": "2026-11-14 14:30 Asia/Shanghai",
       "engagement": {
-        "points": 2,
+        "points": 3,
         "comments": 0
       },
       "original_title": "Show HN: Free Dictionary API – Wiktionary data, no API key required",
@@ -659,64 +659,10 @@
       "url": "https://www.v2ex.com/t/1257030",
       "posted_at": "2026-11-14 14:05 Asia/Shanghai",
       "engagement": {
-        "replies": 10
+        "replies": 13
       },
       "original_title": "iOS 原生多论坛客户端： V2EX / NGA / Linux .do / Chiphell / 4D4Y 一个 App 刷，抽 10 个半年 Pro",
       "original_summary": "iOS 原生多论坛客户端： V2EX / NGA / Linux .do / Chiphell / 4D4Y 一个 App 刷，抽 10 个半年 Pro\n平时同时逛好几个论坛，一个论坛一个 App 或者一个网页，来回切有点烦。之前一直用论坛助手，支持的论坛多，用着其实也不差，就是我这人比较龟毛，很多地方想按自己的审美和习惯来，索性自己手搓了一个。断断续续做了几个月，前两天终于上架了。\r\n\r\nApp Store 搜「[**Dis 看帖**]( https://apps.apple.com/app/id6821816100)」，需要 iOS 18 以上，iPhone / iPad 都能用，iPhone Duo 也做了初步适配。\r\n\r\n现在支持 V2EX 、NGA 、Linuxdo 、4D4Y 、Chiphell ，后面会接更多。\r\n\r\n![全部视图和聚合搜索]( https://i.imgur.com/Wt1fv61.png)\r\n\r\n## 功能\r\n\r\n- 「全部」里几个论坛的帖子混在一起刷，搜索也可以一次搜好几个论坛\r\n- 帖子没有「页」的概念，一路往下滑就是。想去哪层，按住右下角的胶囊拖一下，楼层实时跟着变，几万楼的帖子也能准确跳过去（喜欢分页的，设置里能切回去）\r\n- 尽量做成 iOS 原生的手感，不是网页套壳\r\n- 不登录也能逛，有账号再登录回帖\r\n- iCloud 同步登录状态、常用节点、看到哪了、外观设置，换设备接着看\r\n- 十几套深浅色主题，列表排版、疏密、字号都能调\r\n- 没广告\r\n\r\n![无极楼层]( https://i.imgur.com/PPy9UAD.gif)\r\n\r\n## V2EX 支持情况\r\n\r\n看帖、回复、节点、收藏、提醒、特别关注、Block 都有，网站本身没有的（比如私信）也就没有了。只看 V2EX 的话，V2ER 这些已经很好用了，Dis 可能更",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1257020",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "做了个把一张图拆成透明图层（可导出 PSD）的在线工具，被挡住的部分会补全，首次免费求拍砖",
-      "summary": "做了个把一张图拆成透明图层（可导出 PSD）的在线工具，被挡住的部分会补全，首次免费求拍砖\n手里只有一张导出的海报或 banner ，源文件找不到了。\r\n想换掉其中一个元素、改一行字、把价格换成另一个市场的版本，最后只能重新抠图。\r\nAI 生成的图也一样：想只改其中一个东西，又不想整张重新生成。\r\n\r\n我做了个工具 LayerSplit 来解决这个问题：上传一张平面图片，它把图里的每个元素拆成单独的、有名字的透明图层。\r\n被前面物体挡住的部分会尽量补全，每个图层后面的背景也会补好，所以挪动或删掉一个图层，不会留下一个洞。\r\n\r\n网址： https://layersplit.com/?utm_source=v2ex&utm_medium=social&utm_campaign=launch_v1\r\n\r\n先说一句：站点目前只有英文界面，抱歉。\r\n\r\n下面是官网示例里的一张球鞋促销 banner：原图、被单独抠出来的前景球鞋，以及被前景球鞋挡住、已经补全的后面那只球鞋。\r\n\r\n![原图]( https://layersplit.com/samples/sneaker/original.jpg)\r\n\r\n![前景球鞋]( https://layersplit.com/samples/sneaker/l05.webp)\r\n\r\n![被挡住后补全的球鞋]( https://layersplit.com/samples/sneaker/l06.webp)\r\n\r\n## 能做什么\r\n\r\n- 每个元素一个命名好的透明图层（文字块、物体、图形、按钮、角标等）。\r\n- 前面的物体会先被抠出来，再恢复后面被挡住的部分。\r\n- 每层后面的背景会补全。\r\n- 可以下载：单层 PNG 、全部图层的 ZIP （带一个 layers.json ，记录名称、位置、尺寸）、分层 PSD （ Photoshop 、Ph",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "yantao006",
-      "url": "https://www.v2ex.com/t/1257020",
-      "posted_at": "2026-11-14 12:55 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "做了个把一张图拆成透明图层（可导出 PSD）的在线工具，被挡住的部分会补全，首次免费求拍砖",
-      "original_summary": "做了个把一张图拆成透明图层（可导出 PSD）的在线工具，被挡住的部分会补全，首次免费求拍砖\n手里只有一张导出的海报或 banner ，源文件找不到了。\r\n想换掉其中一个元素、改一行字、把价格换成另一个市场的版本，最后只能重新抠图。\r\nAI 生成的图也一样：想只改其中一个东西，又不想整张重新生成。\r\n\r\n我做了个工具 LayerSplit 来解决这个问题：上传一张平面图片，它把图里的每个元素拆成单独的、有名字的透明图层。\r\n被前面物体挡住的部分会尽量补全，每个图层后面的背景也会补好，所以挪动或删掉一个图层，不会留下一个洞。\r\n\r\n网址： https://layersplit.com/?utm_source=v2ex&utm_medium=social&utm_campaign=launch_v1\r\n\r\n先说一句：站点目前只有英文界面，抱歉。\r\n\r\n下面是官网示例里的一张球鞋促销 banner：原图、被单独抠出来的前景球鞋，以及被前景球鞋挡住、已经补全的后面那只球鞋。\r\n\r\n![原图]( https://layersplit.com/samples/sneaker/original.jpg)\r\n\r\n![前景球鞋]( https://layersplit.com/samples/sneaker/l05.webp)\r\n\r\n![被挡住后补全的球鞋]( https://layersplit.com/samples/sneaker/l06.webp)\r\n\r\n## 能做什么\r\n\r\n- 每个元素一个命名好的透明图层（文字块、物体、图形、按钮、角标等）。\r\n- 前面的物体会先被抠出来，再恢复后面被挡住的部分。\r\n- 每层后面的背景会补全。\r\n- 可以下载：单层 PNG 、全部图层的 ZIP （带一个 layers.json ，记录名称、位置、尺寸）、分层 PSD （ Photoshop 、Ph",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1257019",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "智友社回馈 V 站新老客户，抽送第 14 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）",
-      "summary": "智友社回馈 V 站新老客户，抽送第 14 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）\n各位 V 友好，感谢大家一直以来对我们智友社的支持和关注。\r\n\r\n我们智友社的初衷是帮大家寻找市面上稳定的主流 AI 特价渠道，鉴于目前国外主流 AI 的正价订购价格昂贵，我们发现市面上有不少的价格实惠的特殊渠道 AI 产品，可惜质量参差不齐，为了节省大家的时间跟金钱，我们花了不少精力对各个渠道商的特价 AI 进行了购买评测，再从中选取稳定的渠道上架出售，我们也欢迎各位佬友跟我们推荐稳定的特殊渠道 AI ，我们会自费购买进行稳定性测试，测试通过后也能让更多的人能受益！\r\n\r\n由于目前国外 AI 并不能上架国内主流购物平台，所以我们只能把店铺开在了一个小众平台—链动小铺，您有问题可以随时联系我们 QQ 客服，我们会协助您一起解决。\r\n\r\n**我们的小铺地址： https://www.ldxp.cn/shop/282D9KDL 。我们的产品目前只要分成下面两种。**\r\n\r\n**一：稳定特殊渠道特价商品：目前这几款我们测试下来都是很稳定，价格会随每天行情变化，请以平台价格为准。**\r\n\r\n**GPT 系列：**\r\n\r\n[GPTPlus 新日区成品号（质保 24 小时）]( https://wzyp.cn/item/z6vcon) 58.88 | [GPTPlus 东南亚区成品号（质保 24 小时）]( https://pay.ldxp.cn/item/5wdrjz) 52.88\r\n\r\n[GPTPlus 新日区成品号（质保 28 天）]( https://wzyp.cn/item/x3dzw0) 78.88 |  [GPTPlus 越南区成品号（质保 28 天）]( https://wzyp.cn/item/tc7p4m) 72.88\r\n\r\n**Ge",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Ai2You",
-      "url": "https://www.v2ex.com/t/1257019",
-      "posted_at": "2026-11-14 12:48 Asia/Shanghai",
-      "engagement": {
-        "replies": 2
-      },
-      "original_title": "智友社回馈 V 站新老客户，抽送第 14 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）",
-      "original_summary": "智友社回馈 V 站新老客户，抽送第 14 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）\n各位 V 友好，感谢大家一直以来对我们智友社的支持和关注。\r\n\r\n我们智友社的初衷是帮大家寻找市面上稳定的主流 AI 特价渠道，鉴于目前国外主流 AI 的正价订购价格昂贵，我们发现市面上有不少的价格实惠的特殊渠道 AI 产品，可惜质量参差不齐，为了节省大家的时间跟金钱，我们花了不少精力对各个渠道商的特价 AI 进行了购买评测，再从中选取稳定的渠道上架出售，我们也欢迎各位佬友跟我们推荐稳定的特殊渠道 AI ，我们会自费购买进行稳定性测试，测试通过后也能让更多的人能受益！\r\n\r\n由于目前国外 AI 并不能上架国内主流购物平台，所以我们只能把店铺开在了一个小众平台—链动小铺，您有问题可以随时联系我们 QQ 客服，我们会协助您一起解决。\r\n\r\n**我们的小铺地址： https://www.ldxp.cn/shop/282D9KDL 。我们的产品目前只要分成下面两种。**\r\n\r\n**一：稳定特殊渠道特价商品：目前这几款我们测试下来都是很稳定，价格会随每天行情变化，请以平台价格为准。**\r\n\r\n**GPT 系列：**\r\n\r\n[GPTPlus 新日区成品号（质保 24 小时）]( https://wzyp.cn/item/z6vcon) 58.88 | [GPTPlus 东南亚区成品号（质保 24 小时）]( https://pay.ldxp.cn/item/5wdrjz) 52.88\r\n\r\n[GPTPlus 新日区成品号（质保 28 天）]( https://wzyp.cn/item/x3dzw0) 78.88 |  [GPTPlus 越南区成品号（质保 28 天）]( https://wzyp.cn/item/tc7p4m) 72.88\r\n\r\n**Ge",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1257016",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "送的 100$ API 额度，用了大约 6000 万 token 后耗尽了， astra-中",
-      "summary": "送的 100$ API 额度，用了大约 6000 万 token 后耗尽了， astra-中\nResponses API 返回 failed [credit_balance_exhausted]：You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "jiuzhougege",
-      "url": "https://www.v2ex.com/t/1257016",
-      "posted_at": "2026-11-14 12:20 Asia/Shanghai",
-      "engagement": {
-        "replies": 4
-      },
-      "original_title": "送的 100$ API 额度，用了大约 6000 万 token 后耗尽了， astra-中",
-      "original_summary": "送的 100$ API 额度，用了大约 6000 万 token 后耗尽了， astra-中\nResponses API 返回 failed [credit_balance_exhausted]：You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
       "translated_by": "free-translate"
     },
     {
@@ -731,29 +677,83 @@
       "url": "https://www.v2ex.com/t/1256998",
       "posted_at": "2026-11-14 09:54 Asia/Shanghai",
       "engagement": {
-        "replies": 25
+        "replies": 29
       },
       "original_title": "GPT 官 Key 免费用。蹬完即止",
       "original_summary": "GPT 官 Key 免费用。蹬完即止\n周末没人上班，Token 用不完。送给 V2EX 的大佬免费用。\r\n\r\nhttps://pixcook.ai\r\n\r\n\r\nsk-6810902ebc0f3256989f528a8727f2e658fff1d483c0ef2e801ddd94fe83629e\r\n\r\n\r\n我们是做 AI 出海应用的团队，因为自身开发团队的需要，为了降低成本，所以自己购买一些 ChatGPT 账号搭建了一个中转站。\r\n\r\n自有的反代理技术，可以做到稳定不降智，缓存率长期保持在 97%以上的体验，缓存写入长期个位数或者 3 位数以内。\r\n\r\nV2EX 的大佬，如果注册后，回帖留下站内 ID （右上角账户下来菜单中可以查阅），我将送上 5 刀 余额，数量有限，送完即止。",
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-owaid0723666-free-llm-radar",
+      "id": "ghdeal-jinwovo-recall",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "Owaid0723666/免费-llm-雷达",
-      "summary": "Owaid0723666/free-llm-radar 每个免费的 LLM API 模型每天都会问一个简短的问题：哪些回答以及回答速度有多快。表格每天由 GitHub Actions 更新。",
+      "title": "金沃沃/召回",
+      "summary": "jinwovo/recall 自托管混合搜索 + RAG QA (KO/EN) — BM25 + 矢量 + RRF + Elasticsearch 上的重新排名、带有 DLQ 回放的 Kafka 摄取、CI 门控检索评估、通过 Ollama 的免费本地 LLM。无需 API 密钥。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Owaid0723666",
-      "url": "https://github.com/Owaid0723666/free-llm-radar",
-      "posted_at": "2026-11-12 18:49 Asia/Shanghai",
+      "author": "jinwovo",
+      "url": "https://github.com/jinwovo/recall",
+      "posted_at": "2026-11-02 21:53 Asia/Shanghai",
       "engagement": {
-        "stars": 1
+        "stars": 4
       },
-      "original_title": "Owaid0723666/free-llm-radar",
-      "original_summary": "Owaid0723666/free-llm-radar Every free LLM API model, asked one short question a day: which ones answer and how fast. Tables update daily by GitHub Actions.",
+      "original_title": "jinwovo/recall",
+      "original_summary": "jinwovo/recall Self-hosted hybrid search + RAG QA (KO/EN) — BM25 + vectors + RRF + rerank on Elasticsearch, Kafka ingestion with DLQ replay, CI-gated retrieval evals, free local LLM via Ollama. No API key needed.",
       "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-pacocartones-free-llm-api-hub",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "pacocartones/free-llm-api-hub 汇总持续验证的免费 LLM API",
+      "summary": "面向开发者，提供按提供商文档标注日期、机器可读的免费额度与试用额度 LLM API 数据集。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "pacocartones",
+      "url": "https://github.com/pacocartones/free-llm-api-hub",
+      "posted_at": "2026-11-14 16:22 Asia/Shanghai",
+      "engagement": {
+        "stars": 122
+      },
+      "original_title": "pacocartones/free-llm-api-hub",
+      "original_summary": "pacocartones/free-llm-api-hub A continuously-verified dataset of free-tier & trial-credit LLM APIs for developers. Every entry dated, sourced to the provider's own docs, and machine-readable. No hype, no dead links.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "llm4jobs-v2：免费求职雷达，每日邮件摘要",
+      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历与地点筛选，跑在 GitHub Actions 上免费。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-ximilar-com-cardloader",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Cardloader：免费识别评级集换卡的桌面应用",
+      "summary": "借助 Ximilar API 与本地 LLM 扫描识别卡牌，可接富士通理光扫描仪，也可分析本地文件夹。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Ximilar-com",
+      "url": "https://github.com/Ximilar-com/cardloader",
+      "posted_at": "2026-11-13 10:15 Asia/Shanghai",
+      "engagement": {
+        "stars": 5
+      },
+      "original_title": "Ximilar-com/cardloader",
+      "original_summary": "Ximilar-com/cardloader Free desktop app to scan, identify and grade trading and sports cards with the Ximilar API and local LLMs. It can connect to fujitsu ricoh scanners or analyse local folders.",
+      "translated_by": "model"
     },
     {
       "id": "disc-useapi-muse-api",
