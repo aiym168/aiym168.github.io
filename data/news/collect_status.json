@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-14T23:01:26+08:00",
+ "run_at": "2026-11-14T23:01:52+08:00",
  "sources": {
   "techcrunch-ai": {
    "ok": true,
@@ -13,7 +13,7 @@
    "error": "",
    "rows": 10,
    "new": 2,
-   "blocked": 4
+   "blocked": 3
   },
   "openai": {
    "ok": true,
@@ -23,10 +23,10 @@
    "blocked": 0
   },
   "deepmind": {
-   "ok": true,
-   "error": "",
-   "rows": 30,
-   "new": 2,
+   "ok": false,
+   "error": "empty feed",
+   "rows": 0,
+   "new": 0,
    "blocked": 0
   },
   "google-ai": {
@@ -208,7 +208,7 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 4,
+   "new": 2,
    "blocked": 0
   },
   "digitaltrends-com-feed": {
@@ -233,11 +233,11 @@
    "blocked": 1
   },
   "eetimes-com-feed": {
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "rows": 0,
+   "ok": true,
+   "error": "",
+   "rows": 10,
    "new": 0,
-   "blocked": 0
+   "blocked": 2
   },
   "semiwiki-com-feed": {
    "ok": true,
@@ -318,7 +318,7 @@
   },
   "199it-com-feed": {
    "ok": false,
-   "error": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>",
+   "error": "URLError: <urlopen error timed out>",
    "rows": 0,
    "new": 0,
    "blocked": 0
@@ -376,7 +376,7 @@
    "ok": true,
    "error": "",
    "rows": 25,
-   "new": 2,
+   "new": 1,
    "blocked": 0
   },
   "fastcompany-com-technology-rss": {
@@ -397,7 +397,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 2,
+   "new": 1,
    "blocked": 0
   },
   "oschina": {
@@ -481,7 +481,7 @@
    "ok": true,
    "error": "",
    "rows": 10,
-   "new": 2,
+   "new": 1,
    "blocked": 1
   },
   "mshibanami-github-io-githubtrendingrss-daily-all": {
@@ -597,9 +597,9 @@
    "blocked": 0
   },
   "nasaspaceflight-com-feed": {
-   "ok": true,
-   "error": "",
-   "rows": 10,
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden",
+   "rows": 0,
    "new": 0,
    "blocked": 0
   },
@@ -866,7 +866,7 @@
    "ok": true,
    "error": "",
    "rows": 20,
-   "new": 2,
+   "new": 1,
    "blocked": 0
   },
   "hnrss-org-launches": {
@@ -877,10 +877,10 @@
    "blocked": 0
   },
   "rsshub-rssforever-com-github-trending-daily-any": {
-   "ok": false,
-   "error": "TimeoutError: The read operation timed out",
-   "rows": 0,
-   "new": 0,
+   "ok": true,
+   "error": "",
+   "rows": 15,
+   "new": 5,
    "blocked": 0
   },
   "huawei-newsroom": {
@@ -998,9 +998,9 @@
   "gn-aivideo-en": {
    "ok": true,
    "error": "",
-   "rows": 30,
+   "rows": 28,
    "new": 1,
-   "blocked": 2
+   "blocked": 0
   },
   "gn-comfyui": {
    "ok": true,
@@ -1012,14 +1012,14 @@
   "gn-comfyui-en": {
    "ok": true,
    "error": "",
-   "rows": 14,
+   "rows": 13,
    "new": 0,
    "blocked": 0
   },
   "gn-llm-tut": {
    "ok": true,
    "error": "",
-   "rows": 18,
+   "rows": 19,
    "new": 1,
    "blocked": 2
   },
@@ -1027,7 +1027,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 11,
+   "new": 12,
    "blocked": 3
   },
   "gn-huawei-phone": {
@@ -1041,7 +1041,7 @@
    "ok": true,
    "error": "",
    "rows": 30,
-   "new": 7,
+   "new": 6,
    "blocked": 3
   }
  },
@@ -1051,7 +1051,7 @@
  ],
  "dropped": {
   "China": 31,
-  "affair": 12,
+  "affair": 11,
   "Israel": 2,
   "Trump": 6,
   "Congress": 2,
@@ -1062,7 +1062,7 @@
   "senator": 1,
   "sex": 3,
   "Betting": 1,
-  "Affair": 3,
+  "Affair": 4,
   "Government": 2,
   "(非科技)": 22,
   "中美": 1,
@@ -1160,27 +1160,27 @@
   "诈骗": 1,
   "doge": 1,
   "人权": 1,
-  "NSFW": 2,
   "大使": 2,
   "擦边": 1,
+  "民主": 1,
   "国防": 1,
   "审查": 3,
   "离婚": 1,
   "管制": 1
  },
- "new": 245,
+ "new": 242,
  "sources_total": 151,
  "sources_ok": 146,
- "translated": 137,
+ "translated": 135,
  "counts": {
+  "software": 150,
   "ai": 220,
   "mobile": 150,
-  "software": 150,
   "dev": 150,
+  "internet": 150,
   "game": 150,
   "auto": 150,
   "chip": 150,
-  "internet": 150,
   "huawei": 150,
   "launch": 150,
   "aigc": 75,

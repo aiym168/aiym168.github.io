@@ -2,26 +2,27 @@
  "counts": {
   "archived": 15,
   "deadline_extracted": 6,
-  "drop:duplicate": 137,
+  "drop:duplicate": 138,
   "drop:empty_summary": 30,
-  "drop:negative_signal": 100,
-  "drop:no_clear_offer": 298,
-  "drop:not_ai": 258,
+  "drop:negative_signal": 101,
+  "drop:no_clear_offer": 297,
+  "drop:not_ai": 256,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 367,
   "google_news_total": 367,
-  "kept_total": 175,
+  "kept_total": 176,
   "net:gnews_cache_hit": 361,
   "net:gnews_resolved_net": 6,
   "net:tco_expanded": 2,
   "net:tco_failed": 2,
-  "new_this_run": 1,
+  "new_this_run": 2,
   "raw_total": 1057
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
+   "上传房间照片即可用 AI 生成2个免费设计方案",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
@@ -31,11 +32,10 @@
    "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
    "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中",
    "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件",
-   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个",
-   "api-relay-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型"
+   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个"
   ],
   "empty_summary": [
-   "@tylertarver 分享：该模板免费提供给教师和校长使用",
+   "Khan Academy Philippines 称该国所有教师无论是否合作学校都可免费使用，约一分钟生成教案",
    "该模型总参数 280B、每 token 激活 14B、上下文窗口 1M，目前在 OpenRouter 可免费使用",
    "MIT 将于2027年1月在塞浦路斯大学和塞浦路斯理工大学为青少年举办免费 AI 训练营",
    "DeepAI Code 新增 Muse Ember 免费使用，Claude Sonnet 5.5",
@@ -63,10 +63,10 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
-   "@heyrimsha 分享：这些仓库可帮助编写、分轨、母带处理和混音曲目",
-   "@bncdotph 分享：该工具可在约一分钟内生成教案，但平台并非全部免费",
-   "涵盖 Google Flow、Google Veo 等工具，教用户避免浪费积分",
-   "活动称转发并评论「Google AI Pro」即可通过私信获取详情",
+   "@heyrimsha 分享：这些仓库可帮助编写、分轨、母带处理和混音，部分使用 Claude 与 AI，且全部免费",
+   "技巧来自工具官方指南，例如 Google Flow 需逐项修改并保留其他内容不变",
+   "该优惠包含最新 Gemini 模型和 YouTube Premium，需转发并评论「Google AI Pro」获取详情",
+   "@tylertarver 分享：为教师和校长提供免费的 AI 政策模板",
    "@smart_poly 分享：用 AI 在引擎内直接把文本生成角色动画，无需订阅或云端处理，全程用本地 GPU 完成",
    "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入",
    "@coreyhainesco 分享：每个列表构建工具都需要 99 美元/月的席位",
@@ -77,7 +77,7 @@
    "作者用 AI 协助发现 QuakeSpasm 一个15年以上内存损坏 bug，提交 issue 和两个 PR"
   ],
   "not_ai": [
-   "@saylor 分享：比特币过去一个月跌 17.3%，STRC 价格基本持平，股息使其总回报达 +1.0%",
+   "Strategy 称比特币是数字资本并转为数字信用",
    "支持 Windows、Linux 和 Android，可看影视、动漫与直播电视，还支持离线下载",
    "@TimSweeneyEpic 分享：看看政府为苹果公司提供的所有免费通行证，以垄断应用程序分发和支付——包括掩盖这里和",
    "@sainingxie 分享：在跳上“无编码器”炒作列车之前，请三思而后行",
@@ -105,17 +105,16 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-14T23:03:54+08:00",
+ "generated_at": "2026-11-14T23:05:13+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-14T23:03:53+08:00",
+  "checked_at": "2026-11-14T23:05:13+08:00",
   "counts": {
-   "ok": 137,
-   "recheck": 1,
-   "unsure": 23
+   "ok": 160,
+   "recheck": 1
   },
   "hidden": 0
  },
- "seconds": 5.2,
+ "seconds": 3.9,
  "side": {
   "github_hot": {
    "drop:duplicate": 9,
@@ -125,8 +124,8 @@
   "hot_topics": {
    "drop:negative_signal": 5,
    "drop:not_ai": 16,
-   "drop:not_ai_strict": 4,
-   "kept": 14,
+   "drop:not_ai_strict": 5,
+   "kept": 13,
    "raw": 39
   }
  }
