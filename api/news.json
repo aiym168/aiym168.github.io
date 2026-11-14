@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-15T04:55:23+08:00",
+ "updated_at": "2026-11-15T05:16:40+08:00",
  "counts": {
   "ai": 220,
   "aivideo": 150,
-  "comfyui": 59,
+  "comfyui": 60,
   "aidrama": 150,
   "aigc": 78,
   "gossip": 61,
@@ -25,11 +25,11 @@
   "AMD",
   "OpenAI",
   "GTA 6",
+  "SpaceX",
   "FAA",
   "微软",
-  "SpaceX",
-  "MCP",
   "ComfyUI",
+  "MCP",
   "大模型",
   "存储",
   "任天堂",
@@ -41,9 +41,9 @@
   "比亚迪",
   "RTX",
   "DLSS",
-  "HomeView",
   "RAM",
   "Take-Two",
+  "谷歌",
   "Wi-Fi"
  ],
  "channels": [
@@ -152,6 +152,200 @@
  ],
  "items": [
   {
+   "id": "c9040759e2dd",
+   "channel": "dev",
+   "title": "时薪换算年薪：算法与背后的假设",
+   "summary": "把时薪换算成年薪看似只是乘法，但真正的麻烦恰恰从这些假设开始。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/miri-calc/hourly-to-annual-pay-the-math-and-the-assumptions-behind-it-7cd",
+   "page": "https://aiym168.github.io/news/a/c9040759e2dd.html",
+   "published_at": "2026-11-15T05:10:31+08:00"
+  },
+  {
+   "id": "45c7c905f4a2",
+   "channel": "dev",
+   "title": "配速：把时间和距离换算成可训练的数字",
+   "summary": "配速看似只需用时间除以距离，算术很简单，但用于训练时并不止于此。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/miri-calc/pace-converting-time-and-distance-into-a-number-you-can-train-with-1n4e",
+   "page": "https://aiym168.github.io/news/a/45c7c905f4a2.html",
+   "published_at": "2026-11-15T05:10:26+08:00"
+  },
+  {
+   "id": "a008fd021839",
+   "channel": "dev",
+   "title": "社交媒体最佳发布时间：三项研究给出三种答案",
+   "summary": "三项知名研究给出不同答案，文章并排比较 Hootsuite、Sprout Social 与 Buffer 的数据。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/clienzodotco/best-time-to-post-on-social-media-3-studies-3-different-answers-21n1",
+   "page": "https://aiym168.github.io/news/a/a008fd021839.html",
+   "published_at": "2026-11-15T05:10:06+08:00"
+  },
+  {
+   "id": "d16fe3ac77b9",
+   "channel": "dev",
+   "title": "把 Symfony 发票系统接入法国电子发票平台的经验",
+   "summary": "法国分阶段强制电子发票，作者记录接入获批平台的五点经验。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/pierrearthurdemengel/i-wired-my-own-symfony-invoicing-to-a-french-e-invoicing-platform-five-things-i-learned-4035",
+   "page": "https://aiym168.github.io/news/a/d16fe3ac77b9.html",
+   "published_at": "2026-11-15T05:10:03+08:00"
+  },
+  {
+   "id": "679c5c35000c",
+   "channel": "dev",
+   "title": "从火箭科学到代码：12 个 pyglenn 热力学笔记本",
+   "summary": "教材常假设比热恒定，但在燃烧室和火箭喷管中该简化会失效，文章用 pyglenn 给出 12 个实例。",
+   "source": "DEV",
+   "tags": [
+    "火箭"
+   ],
+   "url": "https://dev.to/profleao/from-rocket-science-to-code-12-real-world-thermodynamic-notebooks-with-pyglenn-5h8i",
+   "page": "https://aiym168.github.io/news/a/679c5c35000c.html",
+   "published_at": "2026-11-15T05:09:48+08:00"
+  },
+  {
+   "id": "fc65133b56af",
+   "channel": "dev",
+   "title": "今秋 68 场工业清算拍卖中 13 场为生物医药设备",
+   "summary": "一场名为「Pfizer #162」的拍卖涵盖五地的生物反应器、色谱系统和离心机，12 月 16 日截止。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/mdcurt/13-of-68-industrial-liquidation-sales-this-fall-are-biotech-or-pharma-equipment-4d17",
+   "page": "https://aiym168.github.io/news/a/fc65133b56af.html",
+   "published_at": "2026-11-15T05:09:09+08:00"
+  },
+  {
+   "id": "2e46fa05f2ee",
+   "channel": "dev",
+   "title": "规模化 GitOps 中真正棘手的是配置漂移",
+   "summary": "GitOps 规模化的难点不在同步引擎，而在 Argo CD 显示同步后集群仍发生的各种变化。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/robust_true_try/the-drift-problem-that-breaks-gitops-at-scale-i99",
+   "page": "https://aiym168.github.io/news/a/2e46fa05f2ee.html",
+   "published_at": "2026-11-15T05:08:02+08:00"
+  },
+  {
+   "id": "e9fe1acf0d15",
+   "channel": "dev",
+   "title": "用 NLTP 配合 MQTT 修复 ESP-NOW 与 UDP 的丢包",
+   "summary": "户外无线链路常遇首英里瓶颈，文章介绍在数据到达 broker 前用 NLTP 修复 35% 的丢包。",
+   "source": "DEV",
+   "tags": [],
+   "url": "https://dev.to/amannotsofunny/using-nltp-with-mqtt-healing-35-wireless-packet-loss-on-esp-now-udp-before-your-broker-i0e",
+   "page": "https://aiym168.github.io/news/a/e9fe1acf0d15.html",
+   "published_at": "2026-11-15T05:07:35+08:00"
+  },
+  {
+   "id": "9797dd2f0bcb",
+   "channel": "auto",
+   "title": "织物模具可让省料混凝土梁更易实现",
+   "summary": "MIT 工程师用缝制织物模具浇筑混凝土梁，混凝土用量仅为传统梁的三分之一，钢材用量减半。",
+   "source": "CleanTechnica",
+   "tags": [],
+   "url": "https://cleantechnica.com/2026/11/14/fabric-molds-could-bring-material-saving-concrete-beams-within-reach/",
+   "page": "https://aiym168.github.io/news/a/9797dd2f0bcb.html",
+   "published_at": "2026-11-15T05:06:51+08:00"
+  },
+  {
+   "id": "67cc6c164eba",
+   "channel": "ai",
+   "title": "Gemini 4 Argon 让我认真考虑退订 Claude 和 ChatGPT",
+   "summary": "作者起初用错了它，调整提示词后才认真考虑退订。",
+   "source": "XDA",
+   "tags": [
+    "谷歌",
+    "OpenAI",
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "url": "https://www.xda-developers.com/gemini-4-argon-made-me-consider-cutting-claude-and-chatgpt-subscriptions/",
+   "page": "https://aiym168.github.io/news/a/67cc6c164eba.html",
+   "published_at": "2026-11-15T05:00:20+08:00"
+  },
+  {
+   "id": "16a2618f98be",
+   "channel": "software",
+   "title": "尝试弃用 Plex 几周后，我为何在 Jellyfin 上妥协",
+   "summary": "Jellyfin 默认设置简陋且依赖插件，让日常播放变成意外的配置和维护负担。",
+   "source": "How-To Geek",
+   "tags": [],
+   "url": "https://www.howtogeek.com/why-i-folded-on-jellyfin-after-weeks-of-trying-to-ditch-plex/",
+   "page": "https://aiym168.github.io/news/a/16a2618f98be.html",
+   "published_at": "2026-11-15T05:00:15+08:00"
+  },
+  {
+   "id": "77f3c585c2ec",
+   "channel": "mobile",
+   "title": "如何清除 Samsung 电视的缓存",
+   "summary": "电视缓存是临时文件集合，其中一些已不再需要，本文说明为何以及如何清除。",
+   "source": "Engadget",
+   "tags": [
+    "三星"
+   ],
+   "url": "https://www.engadget.com/2312222/how-to-clear-cache-samsung-tv/",
+   "page": "https://aiym168.github.io/news/a/77f3c585c2ec.html",
+   "published_at": "2026-11-15T05:00:00+08:00"
+  },
+  {
+   "id": "31f9fff88eee",
+   "channel": "internet",
+   "title": "台积电确认员工个人信息遭泄露 问题指向第三方云服务商",
+   "summary": "全球最大晶圆代工企业台积电（TSMC）近日确认，部分现任及前任员工的个人信息未经授权出现在外部网站上。台积电表示，初步调查没有发现公司自身的信息系统遭到入侵的证据，涉事数据与一家第三方云服务提供商系统中保存的信息相吻合，但不涉及台积电的生产运营、商业机密以及客户相关数据。",
+   "source": "cnBeta",
+   "tags": [
+    "台积电"
+   ],
+   "url": "https://www.cnbeta.com.tw/articles/tech/1586436.htm",
+   "page": "https://aiym168.github.io/news/a/31f9fff88eee.html",
+   "published_at": "2026-11-15T04:57:31+08:00"
+  },
+  {
+   "id": "189bd85d57f3",
+   "channel": "internet",
+   "title": "Windows 11启动界面大翻新 首个被淘汰的是沿用多年的设备连接弹窗",
+   "summary": "微软已经开始向用户推送Windows 11新一轮界面现代化改造，而最先发生变化的并非开始菜单或任务栏，而是许多用户几乎每天都会遇到的AutoPlay（自动播放）窗口。随着2026年11月更新发布，这个自Windows 8时代沿用至今的老旧弹窗终于迎来彻底重设计。",
+   "source": "cnBeta",
+   "tags": [
+    "微软"
+   ],
+   "url": "https://www.cnbeta.com.tw/articles/tech/1586434.htm",
+   "page": "https://aiym168.github.io/news/a/189bd85d57f3.html",
+   "published_at": "2026-11-15T04:56:45+08:00"
+  },
+  {
+   "id": "e11f4e3d6b4e",
+   "channel": "internet",
+   "title": "英伟达两大机构投资者致信董事会：要求谨慎选择继任者 为黄仁勋回归保留可能",
+   "summary": "在黄仁勋突然辞去英伟达首席执行官职务后，围绕这家全球最大人工智能芯片公司的领导层变动，外界的关注正在迅速升温。当地时间11月13日，英伟达两家重要机构投资者向公司董事会提交联名信，要求董事会不要仓促确定新的永久首席执行官，而应采取更加审慎、充分的决策程序，并明确保留黄仁勋未来重新执掌公司的可能性。",
+   "source": "cnBeta",
+   "tags": [
+    "英伟达"
+   ],
+   "url": "https://www.cnbeta.com.tw/articles/tech/1586432.htm",
+   "page": "https://aiym168.github.io/news/a/e11f4e3d6b4e.html",
+   "published_at": "2026-11-15T04:55:51+08:00"
+  },
+  {
+   "id": "e247ba997ea5",
+   "channel": "internet",
+   "title": "微软大规模全球宕机引发索赔行动 部分客户寻求获得服务补偿",
+   "summary": "微软日前遭遇持续近一整天的大规模全球服务中断事件，多项在线服务受到不同程度影响。随着事故影响逐渐显现，一些客户开始采取行动，希望推动微软为此次故障造成的损失承担相应责任，并向受影响用户提供服务补偿。",
+   "source": "cnBeta",
+   "tags": [
+    "微软"
+   ],
+   "url": "https://www.cnbeta.com.tw/articles/tech/1586430.htm",
+   "page": "https://aiym168.github.io/news/a/e247ba997ea5.html",
+   "published_at": "2026-11-15T04:55:24+08:00"
+  },
+  {
    "id": "5ad23f0e2e10",
    "channel": "ai",
    "title": "QwenLM/qwen-code 是终端中的开源 AI 编程代理",
@@ -182,6 +376,19 @@
    "published_at": "2026-11-15T04:55:23+08:00"
   },
   {
+   "id": "ebd457cbebfe",
+   "channel": "mobile",
+   "title": "SpaceX 将首次尝试捕获 Starship 上面级",
+   "summary": "公司已用 Super Heavy 助推器多次完成这一操作，但捕获 Ship 尚属首次。",
+   "source": "Engadget",
+   "tags": [
+    "SpaceX"
+   ],
+   "url": "https://www.engadget.com/2316926/watch-spacex-attempt-to-catch-the-starship-upper-stage-for-the-first-time/",
+   "page": "https://aiym168.github.io/news/a/ebd457cbebfe.html",
+   "published_at": "2026-11-15T04:54:14+08:00"
+  },
+  {
    "id": "d7dda051c4f6",
    "channel": "dev",
    "title": "STATERA 图书馆人形机器人电气架构第11章讲通信架构（英文）",
@@ -206,6 +413,17 @@
    "published_at": "2026-11-15T04:51:05+08:00"
   },
   {
+   "id": "52cacbf31b85",
+   "channel": "launch",
+   "title": "Atmosphere 项目为 Netflix 添加 Dolby Atmos",
+   "summary": "Atmosphere 是一个让 Safari 中的 Netflix 支持 Dolby Atmos 的项目。",
+   "source": "Show HN",
+   "tags": [],
+   "url": "https://github.com/meghrathod/atmosphere",
+   "page": "https://aiym168.github.io/news/a/52cacbf31b85.html",
+   "published_at": "2026-11-15T04:49:41+08:00"
+  },
+  {
    "id": "350f232fc0d0",
    "channel": "game",
    "title": "Jackbox CEO称用喜剧编剧测试游戏常遇大量误报",
@@ -228,6 +446,17 @@
    "url": "https://www.engadget.com/2312189/how-to-clear-cache-xbox-series-x/",
    "page": "https://aiym168.github.io/news/a/31717a4f6120.html",
    "published_at": "2026-11-15T04:45:00+08:00"
+  },
+  {
+   "id": "d3c4032fe4ff",
+   "channel": "launch",
+   "title": "MorletDB 项目是用于波形的 Postgres 扩展",
+   "summary": "它面向高频传感器数据，原文称其比所有时间序列数据库都快。",
+   "source": "Show HN",
+   "tags": [],
+   "url": "https://github.com/merkhet-io/morletdb",
+   "page": "https://aiym168.github.io/news/a/d3c4032fe4ff.html",
+   "published_at": "2026-11-15T04:34:17+08:00"
   },
   {
    "id": "9cfba8c0865a",
@@ -2425,238 +2654,6 @@
    "url": "https://github.com/Tencent/LoopForge",
    "page": "https://aiym168.github.io/news/a/6a36938791d1.html",
    "published_at": "2026-11-14T23:01:52+08:00"
-  },
-  {
-   "id": "d39f1081244a",
-   "channel": "software",
-   "title": "airgorah：用 Rust 编写的 WiFi 安全审计工具",
-   "summary": "一款开源的 WiFi 安全审计软件，以 Rust 实现，已获 5500 余星标。",
-   "source": "GitHub Trending",
-   "tags": [
-    "Rust"
-   ],
-   "url": "https://github.com/martin-olivier/airgorah",
-   "page": "https://aiym168.github.io/news/a/d39f1081244a.html",
-   "published_at": "2026-11-14T23:01:52+08:00"
-  },
-  {
-   "id": "2bba785a3330",
-   "channel": "ai",
-   "title": "Hugging Face 热门模型：VideoRebirthAI/hyperflow-h3-flash",
-   "summary": "Hugging Face 趋势榜上的image-text-to-video模型，290 个点赞、440150 次下载。",
-   "source": "Hugging Face 热门模型",
-   "tags": [
-    "Hugging Face"
-   ],
-   "url": "https://huggingface.co/VideoRebirthAI/hyperflow-h3-flash",
-   "page": "https://aiym168.github.io/news/a/2bba785a3330.html",
-   "published_at": "2026-11-14T23:01:52+08:00"
-  },
-  {
-   "id": "4a80f6e765b8",
-   "channel": "mobile",
-   "title": "用 Tailscale 出口节点把家庭广告拦截带在身边",
-   "summary": "介绍如何让全部流量经家庭网络转发，从而在外也能使用自建服务与广告拦截。",
-   "source": "XDA",
-   "tags": [],
-   "url": "https://www.xda-developers.com/tailscale-exit-nodes-bring-home-ad-blocking-with-me-everywhere-go/",
-   "page": "https://aiym168.github.io/news/a/4a80f6e765b8.html",
-   "published_at": "2026-11-14T23:01:21+08:00"
-  },
-  {
-   "id": "721746fce6f3",
-   "channel": "software",
-   "title": "树脂 3D 打印变得更安全也更好上手",
-   "summary": "介绍树脂 3D 打印在安全与易用性上的改进，入门成本同样不高。",
-   "source": "How-To Geek",
-   "tags": [],
-   "url": "https://www.howtogeek.com/resin-3d-printing-safer-easier/",
-   "page": "https://aiym168.github.io/news/a/721746fce6f3.html",
-   "published_at": "2026-11-14T23:01:15+08:00"
-  },
-  {
-   "id": "80ae2edf97e3",
-   "channel": "software",
-   "title": "AGM X7 Pro 评测：去年 G3 Pro 的降配重制版",
-   "summary": "这款三防新机沿用上一代 G3 Pro 的硬件，存储和内存均减半。",
-   "source": "Neowin",
-   "tags": [
-    "存储"
-   ],
-   "url": "https://www.neowin.net/reviews/agm-x7-pro-review-a-budget-trimmed-rerun-of-last-years-g3-pro/",
-   "page": "https://aiym168.github.io/news/a/80ae2edf97e3.html",
-   "published_at": "2026-11-14T23:00:01+08:00"
-  },
-  {
-   "id": "09c779fc7cfb",
-   "channel": "dev",
-   "title": "我给自家网站服务器做免费安全检查，吓人的分数并非重点",
-   "summary": "作者讲述用两台家用小主机托管网站与应用时做安全体检的经历与发现。",
-   "source": "DEV",
-   "tags": [],
-   "url": "https://dev.to/scott_steinmetz/i-ran-a-free-security-checkup-on-the-servers-behind-my-websites-the-scary-score-wasnt-the-real-18db",
-   "page": "https://aiym168.github.io/news/a/09c779fc7cfb.html",
-   "published_at": "2026-11-14T23:00:01+08:00"
-  },
-  {
-   "id": "d46b516a4c83",
-   "channel": "ai",
-   "title": "曾解雇Sam Altman的OpenAI董事称仍不能信任AI公司CEO",
-   "summary": "Helen Toner在访谈中表示，人们仍不能信任AI公司的CEO。",
-   "source": "The Verge AI",
-   "tags": [
-    "OpenAI"
-   ],
-   "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
-   "page": "https://aiym168.github.io/news/a/d46b516a4c83.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "fcf5f67c5276",
-   "channel": "mobile",
-   "title": "以太网线比Wi-Fi还慢的奇怪原因",
-   "summary": "原因可能是硬件、软件或其他因素。",
-   "source": "Engadget",
-   "tags": [
-    "Wi-Fi"
-   ],
-   "url": "https://www.engadget.com/2311140/reason-why-ethernet-cable-slower-than-wifi/",
-   "page": "https://aiym168.github.io/news/a/fcf5f67c5276.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "b4862da785e3",
-   "channel": "mobile",
-   "title": "Snapdragon V系列游戏测试：性能损失有多大？",
-   "summary": "Poco F9 Pro的V系列GPU缩减，游戏性能损失视设置从几乎为零到33%。",
-   "source": "Notebookcheck",
-   "tags": [
-    "高通",
-    "显卡"
-   ],
-   "url": "https://www.notebookcheck.net/Snapdragon-V-Series-gaming-test-How-much-performance-do-you-lose.1448074.0.html",
-   "page": "https://aiym168.github.io/news/a/b4862da785e3.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "9d893453c0da",
-   "channel": "internet",
-   "title": "REI大型假日促销中我们最喜欢的优惠",
-   "summary": "REI假日促销提前开启，适合选购户外装备或旅行用品。",
-   "source": "The Verge",
-   "tags": [],
-   "url": "https://www.theverge.com/gadgets/1032500/best-deals-rei-holiday-sale-2026",
-   "page": "https://aiym168.github.io/news/a/9d893453c0da.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "53854a33f277",
-   "channel": "game",
-   "title": "规则是流动的，核周报 11.14",
-   "summary": "本期时间轴制作：老斧子 本期要闻：《GTA6》开发正式完成，Take-Two 财报确认预购「远超预期」，索尼、微软双双官宣《GTA6》 是各自商店史上预购最高的游戏，全主机平台目标 30FPS，无性能模式；MW4 登顶Steam全球周榜，《影之刃零》国区三连庄、好评率升至 91%；Switch 23…",
-   "source": "机核",
-   "tags": [
-    "微软",
-    "Steam",
-    "任天堂",
-    "PlayStation",
-    "GTA 6"
-   ],
-   "url": "https://www.gcores.com/radios/222022",
-   "page": "https://aiym168.github.io/news/a/53854a33f277.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "c8eec55e897e",
-   "channel": "auto",
-   "title": "终于有一款像真车的NASCAR福特Mustang",
-   "summary": "福特2027赛季改用Mustang Dark Horse SC，外形更接近真实车型。",
-   "source": "The Drive",
-   "tags": [],
-   "url": "https://www.thedrive.com/news/finally-a-nascar-ford-mustang-that-looks-like-the-real-thing",
-   "page": "https://aiym168.github.io/news/a/c8eec55e897e.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "0addac46105a",
-   "channel": "dev",
-   "title": "GitHub Actions 锁文件功能正式可用，保障工作流依赖安全",
-   "summary": "GitHub 已于 2026 年 10 月 28 日正式推出 GitHub Actions 工作流依赖锁文件功能，工作流仍可保留清晰的标签与分支引用。",
-   "source": "InfoQ 中文",
-   "tags": [
-    "GitHub"
-   ],
-   "url": "https://www.infoq.cn/article/XrW1cdg9NFRkemvqLiZc",
-   "page": "https://aiym168.github.io/news/a/0addac46105a.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "54c8371184a4",
-   "channel": "ai",
-   "title": "我用AI建three.js互动客栈时简报遗漏了什么",
-   "summary": "作者分享在AI辅助下将武侠客栈创意做成three.js互动网站的经验教训。",
-   "source": "DEV",
-   "tags": [],
-   "url": "https://dev.to/elephantlogix/what-my-ai-brief-missed-when-i-built-an-interactive-threejs-inn-15kg",
-   "page": "https://aiym168.github.io/news/a/54c8371184a4.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "eeab681f5ec3",
-   "channel": "ai",
-   "title": "2026年小企业AI投资回报最高的5个用例",
-   "summary": "91%使用AI的小企业收入更高，五个用例能最快带来明显回报。",
-   "source": "DEV",
-   "tags": [],
-   "url": "https://dev.to/kawsarlog/ai-for-small-business-5-use-cases-with-the-best-roi-in-2026-59dh",
-   "page": "https://aiym168.github.io/news/a/eeab681f5ec3.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "c515bcb22933",
-   "channel": "dev",
-   "title": "移动游戏内购实现指南",
-   "summary": "内购应走服务器中转流程：获取商品、购买、服务器验证、发放物品并确认完成。",
-   "source": "DEV",
-   "tags": [],
-   "url": "https://dev.to/aplusgamesstudio/in-app-purchase-implementation-guide-for-mobile-games-445m",
-   "page": "https://aiym168.github.io/news/a/c515bcb22933.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "b9176ba52916",
-   "channel": "ai",
-   "title": "你的AI写的是它记忆中的API：TanStack已弃用",
-   "summary": "升级TanStack时AI误用已弃用的inputValidator，说明不能轻信AI对API版本的记忆。",
-   "source": "DEV",
-   "tags": [],
-   "url": "https://dev.to/getversyka/your-ai-writes-the-api-it-remembers-tanstack-116860-had-already-deprecated-it-2aji",
-   "page": "https://aiym168.github.io/news/a/b9176ba52916.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "e3090568af38",
-   "channel": "game",
-   "title": "《耻辱 2》导演哈维·史密斯希望尊重神圣的 imsim 文本，同时寻找新闻方式给粉丝带来惊喜：“那是我内心的两只狼”",
-   "summary": "“一方面，我想回报这些期望。另一方面，我想超越它们。”",
-   "source": "PC Gamer",
-   "tags": [],
-   "url": "https://www.pcgamer.com/games/sim/dishonored-2-director-harvey-smith-wants-to-honour-sacred-imsim-texts-while-finding-news-ways-to-surprise-fans-thats-the-two-wolves-inside-me/",
-   "page": "https://aiym168.github.io/news/a/e3090568af38.html",
-   "published_at": "2026-11-14T23:00:00+08:00"
-  },
-  {
-   "id": "4f0a6f6d84fa",
-   "channel": "dev",
-   "title": "Amazon SageMaker HyperPod Data Capture将推理记录连到模型改进",
-   "summary": "该功能把推理记录用于模型改进，呼应厂商对闭环反馈的推销。",
-   "source": "DEV",
-   "tags": [
-    "亚马逊"
-   ],
-   "url": "https://dev.to/kami_butt_69b922ade8de012/amazon-sagemaker-hyperpod-data-capture-connects-inference-records-to-model-improvement-3o0e",
-   "page": "https://aiym168.github.io/news/a/4f0a6f6d84fa.html",
-   "published_at": "2026-11-14T22:58:27+08:00"
   }
  ]
 }
