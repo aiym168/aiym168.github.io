@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-14T17:03:28+08:00",
-  "generated_at_label": "2026-11-14 17:03 Asia/Shanghai",
+  "generated_at": "2026-11-14T17:05:04+08:00",
+  "generated_at_label": "2026-11-14 17:05 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
     "A": {
@@ -37,46 +37,44 @@
       "runs_total": 70,
       "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
       "next_run_label": "2026-11-14 17:07 Asia/Shanghai",
-      "age_min": 0
+      "age_min": 1
     },
     "B": {
       "engine": "B",
       "name": "Simular 云服务器引擎",
       "mode": "takeover",
       "result": "ok",
-      "last_run_at": "2026-11-14T14:29:27+08:00",
-      "last_run_label": "2026-11-14 14:29 Asia/Shanghai",
-      "last_success_label": "2026-11-14 14:29 Asia/Shanghai",
+      "last_run_at": "2026-11-14T17:05:04+08:00",
+      "last_run_label": "2026-11-14 17:05 Asia/Shanghai",
+      "last_success_label": "2026-11-14 17:05 Asia/Shanghai",
       "run_url": "",
       "host": "main",
       "counts": {
         "deals": 161,
         "free_resources": 161,
-        "github_hot": 23,
-        "hot": 15,
+        "github_hot": 22,
+        "hot": 23,
         "today_new": 4,
         "archived": 14,
         "modules": {
-          "damoxing-mianfei-api": 39,
+          "damoxing-mianfei-api": 40,
           "ai-huiyuan-shiyong": 7,
           "ai-kaifa-gongju": 76,
-          "mianfei-gpu-yunfuwu": 11,
+          "mianfei-gpu-yunfuwu": 10,
           "keji-app-xianmian": 6,
           "ai-kecheng-huodong": 14,
           "qita-keji": 8,
-          "github-hot": 23,
-          "hot-topics": 15
+          "github-hot": 22,
+          "hot-topics": 23
         },
         "api_pages": 4,
-        "next_update_label": "15:07 北京时间（约）"
+        "next_update_label": "17:07 北京时间（约）"
       },
-      "runs_total": 25,
-      "standby_seen_label": "2026-11-14 16:00 Asia/Shanghai",
-      "standby_seen_at": "2026-11-14T16:00:05+08:00",
+      "runs_total": 26,
       "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
       "next_run_label": "2026-11-14 17:25 Asia/Shanghai",
-      "last_seen_at": "2026-11-14T16:00:05+08:00",
-      "age_min": 63
+      "last_seen_at": "2026-11-14T17:05:04+08:00",
+      "age_min": 0
     },
     "C": {
       "engine": "C",
@@ -113,7 +111,7 @@
       "schedule": "第二台服务器已不参与本站更新：运行独立的直播站，并在每天 08:30 / 20:30 生成羊毛电台",
       "next_run_label": "2026-11-14 17:55 Asia/Shanghai",
       "last_seen_at": "2026-11-10T13:10:18+08:00",
-      "age_min": 5993
+      "age_min": 5994
     },
     "watchdog": {
       "schedule": "每 30 分钟（第 23 / 53 分钟）",
@@ -141,7 +139,7 @@
     "api_pages": 4,
     "next_update_label": "17:07 北京时间（约）"
   },
-  "data_updated_label": "2026-11-14 17:03 Asia/Shanghai",
+  "data_updated_label": "2026-11-14 17:05 Asia/Shanghai",
   "sources": {
     "HN": {
       "ok_total": 77,
