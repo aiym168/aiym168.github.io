@@ -1,26 +1,27 @@
 {
  "counts": {
-  "archived": 14,
+  "archived": 15,
   "deadline_extracted": 6,
-  "drop:duplicate": 139,
+  "drop:duplicate": 137,
   "drop:empty_summary": 29,
-  "drop:negative_signal": 101,
-  "drop:no_clear_offer": 293,
-  "drop:not_ai": 256,
+  "drop:negative_signal": 100,
+  "drop:no_clear_offer": 295,
+  "drop:not_ai": 259,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 361,
-  "google_news_total": 361,
-  "kept_total": 174,
+  "google_news_resolved": 365,
+  "google_news_total": 365,
+  "kept_total": 176,
   "net:gnews_cache_hit": 361,
+  "net:gnews_resolved_net": 4,
+  "net:tco_expanded": 2,
+  "net:tco_failed": 1,
   "new_this_run": 1,
-  "raw_total": 1051
+  "raw_total": 1055
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "上传房间照片即可用 AI 生成2个免费设计方案",
-   "免费课程：从工程师到 AI 工程师，每集对应一个 Git 标签",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
@@ -29,7 +30,9 @@
    "freefield：ComfyUI 上开源 Higgsfield",
    "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
    "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中",
-   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件"
+   "dockyard-dsh：DeepSeek Harness 的本机帐户池和提供商插件",
+   "llm-api-proxy-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个",
+   "api-relay-free-tier：AI API 网关/中继，一把 OpenAI 兼容密钥背后有 307 个模型"
   ],
   "empty_summary": [
    "该模型总参数 280B、每 token 激活 14B、上下文窗口 1M，目前在 OpenRouter 可免费使用",
@@ -60,6 +63,10 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "加入 ByteByteGo 的免费现场大师班：“在不学习这些技术的情况下，不要构建 AI Agent",
+   "@pkBritish 分享：学习有效的提示、改进工作流程并利用 AI 更智能地工作",
+   "@bncdotph 分享：菲律宾可汗学院表示，其 AI 工具 Khanmigo for Teacher 对于该国的每位教",
+   "@tylertarver 分享：为教师和校长提供免费的 AI 政策模板",
    "@smart_poly 分享：用 AI 在引擎内直接把文本生成角色动画，无需订阅或云端处理，全程用本地 GPU 完成",
    "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入",
    "@coreyhainesco 分享：每个列表构建工具都需要 99 美元/月的席位",
@@ -67,11 +74,7 @@
    "参与活动即有机会赢取 QPR 对 Sheffield United 的 Corner Lounge 门票两张",
    "@mcwilsonky 分享：为小企业提供 90 天计划，帮助其被 ChatGPT、Claude 等 AI 助手推荐",
    "参与者用 ClickUp Brain 研究制作了中世纪音乐互动时间线「A Thousand Years of Song」",
-   "作者用 AI 协助发现 QuakeSpasm 一个15年以上内存损坏 bug，提交 issue 和两个 PR",
-   "@_ellisbrown 分享：研究从零训练200多个模型，比较预训练编码器、无编码器、放在 LLM 前等选择的影响",
-   "该工具把 BookMyShow 每场演出、每个空座的座位图汇总到一页，无需逐场点开，由 Claude Opus 5.5 ",
-   "Envato 在平台上于11月19日美东8点起24小时内免费无限提供 AI 视频模型 MiniMax H3",
-   "@rperezmarco 分享：声明称在所有人能用相同 AI 模型前不再公开推测，也不为大公司提供免费基准问题"
+   "作者用 AI 协助发现 QuakeSpasm 一个15年以上内存损坏 bug，提交 issue 和两个 PR"
   ],
   "not_ai": [
    "支持 Windows、Linux 和 Android，可看影视、动漫与直播电视，还支持离线下载",
@@ -102,27 +105,27 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-14T18:04:15+08:00",
+ "generated_at": "2026-11-14T20:40:54+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-14T18:04:15+08:00",
+  "checked_at": "2026-11-14T20:40:54+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 160
+   "ok": 137,
+   "unsure": 23
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 0.6,
+ "seconds": 7.5,
  "side": {
   "github_hot": {
-   "drop:duplicate": 11,
-   "kept": 19,
+   "drop:duplicate": 10,
+   "kept": 20,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 2,
-   "drop:not_ai": 8,
-   "drop:not_ai_strict": 7,
-   "kept": 23,
+   "drop:negative_signal": 3,
+   "drop:not_ai": 13,
+   "drop:not_ai_strict": 5,
+   "kept": 19,
    "raw": 40
   }
  }
