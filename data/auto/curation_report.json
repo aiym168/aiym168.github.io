@@ -1,38 +1,35 @@
 {
  "counts": {
-  "archived": 16,
+  "archived": 18,
   "deadline_extracted": 6,
-  "drop:duplicate": 183,
+  "drop:duplicate": 231,
   "drop:empty_summary": 30,
-  "drop:negative_signal": 107,
-  "drop:no_clear_offer": 333,
-  "drop:not_ai": 285,
+  "drop:negative_signal": 113,
+  "drop:no_clear_offer": 350,
+  "drop:not_ai": 313,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 390,
   "google_news_total": 390,
   "kept_total": 182,
-  "net:gnews_cache_hit": 386,
-  "net:gnews_resolved_net": 4,
-  "net:tco_expanded": 1,
-  "net:tco_failed": 3,
-  "new_this_run": 2,
-  "raw_total": 1179
+  "net:gnews_cache_hit": 390,
+  "net:tco_failed": 2,
+  "raw_total": 1278
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
+   "YVD：免费额度可秒级生成视频、图像和音乐",
    "Orty：面向自由职业者的 AI 客户线索筛选工具",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
-   "Webflow 转 Claude Code 转换器免费开放，可一比一还原站点",
+   "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
+   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
    "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
+   "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录",
    "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
-   "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
-   "grux：Grux AI，免费的开源 AI 代理",
-   "freefield：ComfyUI 上开源 Higgsfield",
-   "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案"
+   "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室"
   ],
   "empty_summary": [
    "Khan Academy Philippines 称该国所有教师无论是否合作学校都可免费使用，约一分钟生成教案",
@@ -105,16 +102,15 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-15T22:28:26+08:00",
+ "generated_at": "2026-11-16T00:19:02+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-15T22:28:26+08:00",
+  "checked_at": "2026-11-16T00:18:38+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 164
+   "ok": 166
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 2.6,
+ "seconds": 1.0,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -122,11 +118,11 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 10,
-   "drop:not_ai_strict": 2,
-   "kept": 18,
-   "raw": 34
+   "drop:negative_signal": 7,
+   "drop:not_ai": 8,
+   "drop:not_ai_strict": 3,
+   "kept": 21,
+   "raw": 39
   }
  }
 }

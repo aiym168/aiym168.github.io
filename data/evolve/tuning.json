@@ -25,25 +25,35 @@
   "syncedreview-com-feed": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-14",
-   "why": "总是重复，没有新东西"
+   "since": "2026-11-16",
+   "why": "一周都没有新东西",
+   "state": "paused"
   },
   "lilianweng-github-io-index-xml": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-14",
-   "why": "总是重复，没有新东西"
+   "since": "2026-11-16",
+   "why": "一周都没有新东西",
+   "state": "paused"
   },
   "thegradient-pub-rss": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-14",
-   "why": "总是重复，没有新东西"
+   "since": "2026-11-16",
+   "why": "一周都没有新东西",
+   "state": "paused"
   },
   "blog-chromium-org-feeds-posts-default": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-14",
+   "since": "2026-11-16",
+   "why": "一周都没有新东西",
+   "state": "paused"
+  },
+  "kubernetes-io-feed-xml": {
+   "weight": 0.75,
+   "every": 2,
+   "since": "2026-11-16",
    "why": "总是重复，没有新东西"
   }
  },
@@ -59,6 +69,6 @@
    "why": ""
   }
  },
- "updated_at": "2026-11-15T00:34+08:00",
+ "updated_at": "2026-11-16T00:19+08:00",
  "note": "由 evolve.py 每天自动维护；采集脚本只读。删除此文件即恢复默认（全部来源、权重 1.0）。"
 }

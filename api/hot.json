@@ -1,7 +1,21 @@
 {
-  "updated_at_label": "2026-11-15 22:28 Asia/Shanghai",
-  "count": 18,
+  "updated_at_label": "2026-11-16 00:19 Asia/Shanghai",
+  "count": 21,
   "items": [
+    {
+      "id": "hnhot-50507303",
+      "title": "所有 AI 生成的代码都应该是开源的",
+      "summary": "",
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "hnhot-50506376",
+      "title": "了解现代 LLM 中的位置嵌入",
+      "summary": "",
+      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "source": "Hacker News"
+    },
     {
       "id": "v2hot-1257214",
       "title": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结",
@@ -10,24 +24,17 @@
       "source": "V2EX"
     },
     {
+      "id": "hnhot-50481321",
+      "title": "语言模型中的数千个对话是什么样子的",
+      "summary": "",
+      "url": "https://operator0x.com/field-notes/qwen-conversation-state-space/",
+      "source": "Hacker News"
+    },
+    {
       "id": "v2hot-1257158",
       "title": "打算购买 Claude Team 成品号，这种号的风险跟稳定性怎么样？",
       "summary": "有在用的老师提供一些经验分享吗？只自己工作室内部使用。",
       "url": "https://www.v2ex.com/t/1257158",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1257137",
-      "title": "两个 Claude Pro 号 KYC，两个号都找 KYC 代过，一个号秒封，一个号现在还活着",
-      "summary": "我大号用了 4 个月，在 11 月 11 日跳 KYC 验证，此前一直在蹬 fable5.2, 想着有 fable5.2 重置卡，想多用用体验一下新模型，没想到触发了 KYC。小号用了一周，在 11 月 11 前一直在蹬 fable5.2, 大号跳 KYC 了，怀疑是 A÷新模型防蒸馏严格一些，11 月 12 日就不敢用 fable5.2 了，开着 opus5.5 meduim 来蹬，晚上用到周额度 95%了给我跳出 KYC，这天聊的都是爬虫，这个我怀疑是滥用的原因或者是聊的内容有点不合规，或者是 fable5.2 蹬太狠了。说一下我的环境，我买的 lisahost 9929 40",
-      "url": "https://www.v2ex.com/t/1257137",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1257203",
-      "title": "AI 写代码，看 diff 却要开个几 G 的 IDE？我写了个 4MB 的工具，开源免费。",
-      "summary": "我有个痛点，不知道大家有没有。现在写代码基本都交给 AI Agent 了，很少再自己手写。手是不用写了，可 AI 改的代码还是得看呀，不看心里实在没底。但为了看 diff，我们还是习惯打开手写代码时用的那些 IDE，比如 Xcode、Android Studio，或者 JetBrains 全家桶。这些 IDE 在手写代码的年代确实离不开，可它们太重了。代码补全、编译、各种插件都集成在里面，一启动动辄就吃掉几个 G 内存。内存不够用，系统就拿硬盘做交换，我这台 500G 硬盘的 Mac 天天得清理空间，有时候还会直接卡死。于是我做了 DiffCode。它不",
-      "url": "https://www.v2ex.com/t/1257203",
       "source": "V2EX"
     },
     {
@@ -38,6 +45,13 @@
       "source": "V2EX"
     },
     {
+      "id": "v2hot-1257170",
+      "title": "有没有 Claude portal 验证一直在验证中的 v 友",
+      "summary": "我的 Claude 在前天弹出 portal 验证，当即用护照进行了验证，但是已经 48h 以上了还一直在验证中，提示正在检查。有没有 v 友知道啥情况吗？",
+      "url": "https://www.v2ex.com/t/1257170",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1257235",
       "title": "十年 Java 终于借助 AI 做了个东西出来 用 AI 给亲戚家小厂搓了个轻量进销存，基础版已开源",
       "summary": "最近家里亲戚的小厂想买个进销存，需求其实很简单，主要是**记一下入库出库，汇总看一下每个月收益**。试了下市面上的，要不就是太贵了功能太多，要不就是用起来感觉不习惯，想定制又负担不起。我正好最近一直想用 AI 做点东西出来，之前试了好几个方向，都感觉是**程序员自嗨**，没啥意思。借着这个机会，花了两天跟他们对接了一下需求，期望的就是**最简洁轻量，定位家庭小仓**，给以前靠手机记账、本子上记账的那些中年人小厂用，没有太复杂的东西，能让他们方便记一下就行。一开始本来只打算给他们本地部署一下，**Windows 安装启动就行**。结果越往后做，需求就一点点加上来了",
@@ -45,10 +59,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257201",
-      "title": "Olea：真正跑在手机上、能控制手机的 Agent 应用",
-      "summary": "这个项目最初只是出于好玩：我的 Pi 究竟能不能在手机上跑？结果它发展成为了一个通用的 Android Agent 脚手架，一键安装，Codex, Claude Code, Pi 都可以在上面运行。它受到了 DSH Go 与 Orca 的启发，前者带来实际的原生本地 agent 和 phone use 可能性的思路，后者提供 Pi 要怎么跑的方向。最后决定采用了 PRoot + Agent Orchestrator 的架构。最简单来说，它做的就是两件事：让 agent 跑在本地手机环境 让 agent 能控制手机 和那些只能跑在服务器上远程连接桌面端的「",
-      "url": "https://www.v2ex.com/t/1257201",
+      "id": "v2hot-1257254",
+      "title": "claude pro 终于还是弹 kyc 了",
+      "summary": "逃过了 A/一轮轮的大清洗 今天用着用着，下去拿个外卖，手机的热点断了 上来一看就弹出 portal kyc 了 通过 google play 稳定订阅了几个月了 简体中文用户+新加坡机房 vps+新加坡时区 经常让 claude 帮我管理节点 每个月的额度都用不到 50%也封了 前几天浅浅用了一点点 fable 现在不知道要不要 kyc，还是这个号就扔在这里不管了 有没有人用菲律宾 tin 税卡 kyc 过的",
+      "url": "https://www.v2ex.com/t/1257254",
       "source": "V2EX"
     },
     {
@@ -59,10 +73,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257207",
-      "title": "除了肉身之外的 Claude 全网最强防封方案升级",
-      "summary": "这是一个个人被封了 n 个号后，实践下来后会发现真香的 Claude 防封方案，目前多个新号 max 20x 额度用满，超过一个月都不被封的情况。这个方案香在哪呢。1. 真防封，把能暴露的被封的问题因素最大可能的减少 2. 性价比高，不用你去做各种底层防控方案，也不用你去买 VPS，且让你反向薅 claude 机器羊毛 3. 体验好，使用体验甚至超过 claude 原生 APP 方案 这套方案，简而言之就是：静态住宅 IP + 网页登录 + 远程调用。下面介绍咋上手，有手就行。# 准备工作 第一步是要有一个账号，注册并购买会员网上有很多介绍，这里不会介绍",
-      "url": "https://www.v2ex.com/t/1257207",
+      "id": "v2hot-1257239",
+      "title": "AI Infra 是不是目前 LLM 的工作中对数学要求较低，且 Sre 可以考虑转型的？",
+      "summary": "我是 k8s SRE，目前运维的服务全是通算的。之前也部署过常见的大模型在 k8s 上，早期折腾过 triton 和 mig 这种 gpu 虚拟化的东西，我觉得 ai 时代 传统的通算运维已经有些过时了，想学习一下 AI Infra 的东西，但是我手里没有卡，也没有实际需求",
+      "url": "https://www.v2ex.com/t/1257239",
       "source": "V2EX"
     },
     {
@@ -73,17 +87,24 @@
       "source": "V2EX"
     },
     {
+      "id": "v2hot-1257260",
+      "title": "CDN3900U/P Ai 模型最低至 4 折 阿里腾讯华为火山国内站 7 折 阿里国际/GCP 可至 65 折 AWS 新号 65 折/老号无需迁移 85 折 腾讯国际 55 折 最优方案最低价格",
+      "summary": "阿里云 7 折 腾讯云 7 折 华为云 7 折 阿里 CDN 3900U/P 腾讯 CDN 3900U/P 火山 CDN 3900U/P 谷歌云 GCP65 折 亚马逊云 AWS 新号 65 折/老号无需迁移 85 折 腾讯云国际 55 折 阿里云国际 65 折 华为云国际 65 折 AWS 全球节点 CDN 加速 1 折 Ai 模型低至 4 折 火山国际 7 折 TG 详聊：@Tiangua7",
+      "url": "https://www.v2ex.com/t/1257260",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1257257",
+      "title": "GPT Plus / Claude Pro / Grok 代充和成品号，新人卖家，说点实话",
+      "summary": "V 友们好，我是俊航，做 AI 会员代充刚两个月 说实话我也不太会写这种帖子，憋了好几天，干脆有啥说啥 先说清楚我能做什么 GPT Plus 代充 / 成品号 Claude Pro 代充 / 成品号 Grok 代充 我知道这行老卖家很多，我才做两个月，没什么资历，也没人给我背书 但也正因为是新人，我比谁都在乎口碑，一单出问题对我来说就是大事 我能做到的 回消息快，看到秒回，最迟 3 分钟，这行最烦的就是付了钱找不到人 订阅质保 30 天，中途掉了，掉几天补几天的钱，不扯皮 价格不敢说最低，按我觉得合理的利润定，不想卷 也说点丑话 网上跟陌生人交易，",
+      "url": "https://www.v2ex.com/t/1257257",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1257246",
       "title": "做了 Genjutsu AI：上传一段视频和一张照片，把人换进去，动作和原声不动",
       "summary": "分享一个网站：[Genjutsu AI]( 它做的事很窄。你上传一段已经拍好的视频，再给要换的每个人各贴一张照片。成片还是原来那条：镜头顺序、动作、机位、剪辑和声音都留着，变的是你贴了照片的人。没贴照片的人、背景、道具，都按原片留在画面里。不用写提示词。视频传上去之后会按场景切开，把里面的人列出来。一张照片只属于一个人，这个人后面每个镜头都用同一张。照片可以是你自己、朋友、宠物、产品，或者一个角色。自己手里的 mp4、mov、webm 可以直接传，最大 80MB。站上也有一批模板，点一下就能拿来换人，比如 Hotel L",
       "url": "https://www.v2ex.com/t/1257246",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1257239",
-      "title": "AI Infra 是不是目前 LLM 的工作中对数学要求较低，且 Sre 可以考虑转型的？",
-      "summary": "我是 k8s SRE，目前运维的服务全是通算的。之前也部署过常见的大模型在 k8s 上，早期折腾过 triton 和 mig 这种 gpu 虚拟化的东西，我觉得 ai 时代 传统的通算运维已经有些过时了，想学习一下 AI Infra 的东西，但是我手里没有卡，也没有实际需求",
-      "url": "https://www.v2ex.com/t/1257239",
       "source": "V2EX"
     },
     {
