@@ -2,17 +2,21 @@
  "counts": {
   "archived": 16,
   "deadline_extracted": 6,
-  "drop:duplicate": 186,
+  "drop:duplicate": 185,
   "drop:empty_summary": 30,
   "drop:negative_signal": 106,
-  "drop:no_clear_offer": 320,
+  "drop:no_clear_offer": 328,
   "drop:not_ai": 284,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 377,
-  "google_news_total": 377,
-  "kept_total": 181,
+  "google_news_resolved": 384,
+  "google_news_total": 384,
+  "kept_total": 180,
   "net:gnews_cache_hit": 377,
-  "raw_total": 1166
+  "net:gnews_resolved_net": 7,
+  "net:tco_expanded": 1,
+  "net:tco_failed": 3,
+  "new_this_run": 1,
+  "raw_total": 1172
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -23,12 +27,12 @@
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
    "Webflow 转 Claude Code 转换器免费开放，可一比一还原站点",
-   "做了个能打断的 AI 语音面试陪练，求拍砖",
    "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
    "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
    "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
    "grux：Grux AI，免费的开源 AI 代理",
-   "freefield：ComfyUI 上开源 Higgsfield"
+   "freefield：ComfyUI 上开源 Higgsfield",
+   "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案"
   ],
   "empty_summary": [
    "Khan Academy Philippines 称该国所有教师无论是否合作学校都可免费使用，约一分钟生成教案",
@@ -59,6 +63,10 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "帮小企业制定90天计划，让 ChatGPT、Claude 等 AI 助手推荐自己",
+   "@Emirates247 分享：总部位于迪拜的 AI 公司可以免费申请迪拜 AI 印章，这是一项认可可信 AI 企业的政",
+   "@KirkDBorne 分享：掌握 AI 的 10 门免费 Anthropic 课程 10 门掌握 AI 的免费 Ant",
+   "@hanifproduktif 分享：作者称该视频完全由 AI 生成和剪辑，所用 Tesseract 工具免费",
    "用户询问100%免费方案，Claude 推荐 OBS 加摄像头圆形遮罩并代做了遮罩",
    "@alex_prompter 分享：10 天内扫描发现 1200 多个严重问题，帮助维护者应对持续攻击",
    "@TarasTechCom 分享：故障持续约 30 小时、可用性 95.8%，达 50% 抵扣档",
@@ -66,13 +74,12 @@
    "@jasonlk 分享：推文提供 AI 代理更多信息链接，并可获取免费的 AI 销售代理指南",
    "上传租金名册、T-12 和租约，可得到真实 NOI、排序后的风险点和发给经纪人的问题，也适用于 ChatGPT",
    "@farbood 分享：该工具免费、开源、完全离线，无追踪和账户，提供本地 AI、地图与视频，支持 Windows 和 ",
-   "@alexxubyte 分享：11月15日太平洋时间12点在 Zoom 直播一小时，已有2500多人报名，主题是构建 A",
-   "@pkBritish 分享：2026年11月19日格林尼治时间12:00至13:30在线举行，英国校友免费参加，主题是有",
-   "@heyrimsha 分享：这些仓库可帮助编写、分轨、母带处理和混音，部分使用 Claude 与 AI，且全部免费",
-   "技巧来自工具官方指南，例如 Google Flow 需逐项修改并保留其他内容不变",
-   "该优惠包含最新 Gemini 模型和 YouTube Premium，需转发并评论「Google AI Pro」获取详情"
+   "@alexxubyte 分享：11月15日太平洋时间12点在 Zoom 直播一小时，已有2500多人报名，主题是构建 A"
   ],
   "not_ai": [
+   "他创办 NVIDIA 并押注 CUDA，公司一度濒临破产，最终豪赌成功",
+   "《崩坏：Nexus Anima》预注册现已开放",
+   "@rjrshr 分享：黄仁勋称员工为志愿者，称这是其逐步打造的工作文化",
    "作者在 Substack 免费发布 NBIS 第三季度财报完整回顾及更新后的2027年目标价",
    "Strategy 称比特币是数字资本并转为数字信用",
    "支持 Windows、Linux 和 Android，可看影视、动漫与直播电视，还支持离线下载",
@@ -81,10 +88,7 @@
    "可观看 X 直播 FREE GPU TODAY，参与讨论并获取实时更新",
    "@CommandCodeAI 分享：每月 10 美元套餐用量提升至 7 倍，支持 100 万 token 上下文，Pro",
    "面向加入 beta 的团队提供1000美元额度",
-   "@MengTo 分享：整段主视觉为2K 的30秒一镜到底，滚动时反向播放，附完整工作流与提示词",
-   "将 Prolong 针对中风开发的药物用于 ME/CFS 患者，探索增加供氧和血流的疗效",
-   "@robinebers 分享：发帖者称可接入自己的订阅，拥有强大云端与漂亮界面，不用其云服务则完全免费",
-   "Nebius 营收超预期 8%，其中含 3.25 亿美元非经常性收入"
+   "@MengTo 分享：整段主视觉为2K 的30秒一镜到底，滚动时反向播放，附完整工作流与提示词"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -101,16 +105,16 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-15T10:07:44+08:00",
+ "generated_at": "2026-11-15T14:54:09+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-15T10:07:44+08:00",
+  "checked_at": "2026-11-15T14:54:09+08:00",
   "counts": {
-   "ok": 165,
-   "recheck": 1
+   "gone": 1,
+   "ok": 165
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 0.5,
+ "seconds": 3.8,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -118,11 +122,11 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
-   "drop:not_ai": 8,
-   "drop:not_ai_strict": 5,
-   "kept": 11,
-   "raw": 27
+   "drop:negative_signal": 5,
+   "drop:not_ai": 13,
+   "drop:not_ai_strict": 4,
+   "kept": 16,
+   "raw": 38
   }
  }
 }
