@@ -1,19 +1,19 @@
 {
  "counts": {
-  "archived": 15,
+  "archived": 16,
   "deadline_extracted": 6,
   "drop:duplicate": 187,
   "drop:empty_summary": 30,
-  "drop:negative_signal": 105,
+  "drop:negative_signal": 106,
   "drop:no_clear_offer": 320,
-  "drop:not_ai": 282,
+  "drop:not_ai": 283,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 376,
-  "google_news_total": 376,
+  "google_news_resolved": 377,
+  "google_news_total": 377,
   "kept_total": 181,
   "net:gnews_cache_hit": 376,
-  "net:tco_failed": 2,
-  "raw_total": 1164
+  "net:gnews_resolved_net": 1,
+  "raw_total": 1166
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -74,6 +74,7 @@
    "该优惠包含最新 Gemini 模型和 YouTube Premium，需转发并评论「Google AI Pro」获取详情"
   ],
   "not_ai": [
+   "作者在 Substack 免费发布 NBIS 第三季度财报完整回顾及更新后的2027年目标价",
    "Strategy 称比特币是数字资本并转为数字信用",
    "支持 Windows、Linux 和 Android，可看影视、动漫与直播电视，还支持离线下载",
    "@TimSweeneyEpic 分享：看看政府为苹果公司提供的所有免费通行证，以垄断应用程序分发和支付——包括掩盖这里和",
@@ -84,8 +85,7 @@
    "@MengTo 分享：整段主视觉为2K 的30秒一镜到底，滚动时反向播放，附完整工作流与提示词",
    "将 Prolong 针对中风开发的药物用于 ME/CFS 患者，探索增加供氧和血流的疗效",
    "@robinebers 分享：发帖者称可接入自己的订阅，拥有强大云端与漂亮界面，不用其云服务则完全免费",
-   "Nebius 营收超预期 8%，其中含 3.25 亿美元非经常性收入",
-   "用户可实时观看 Box 桌面并在任意时刻接管，用于登录或批准付款"
+   "Nebius 营收超预期 8%，其中含 3.25 亿美元非经常性收入"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -102,27 +102,28 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-15T05:17:35+08:00",
+ "generated_at": "2026-11-15T08:02:15+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-15T05:17:35+08:00",
+  "checked_at": "2026-11-15T08:02:15+08:00",
   "counts": {
-   "ok": 166
+   "ok": 166,
+   "recheck": 1
   },
   "hidden": 0
  },
- "seconds": 1.0,
+ "seconds": 1.1,
  "side": {
   "github_hot": {
-   "drop:duplicate": 13,
-   "kept": 17,
+   "drop:duplicate": 14,
+   "kept": 16,
    "raw": 30
   },
   "hot_topics": {
    "drop:negative_signal": 3,
    "drop:not_ai": 9,
-   "drop:not_ai_strict": 7,
-   "kept": 15,
-   "raw": 34
+   "drop:not_ai_strict": 6,
+   "kept": 11,
+   "raw": 29
   }
  }
 }
