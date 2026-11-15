@@ -1,7 +1,7 @@
 {
   "date": "2026-11-16",
-  "updated_at": "2026-11-16T03:54+08:00",
-  "updated_at_label": "2026-11-16 03:54 Asia/Shanghai",
+  "updated_at": "2026-11-16T05:37+08:00",
+  "updated_at_label": "2026-11-16 05:37 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -16,7 +16,7 @@
       "url": "https://news.ycombinator.com/item?id=50508220",
       "posted_at": "2026-11-16 00:31 Asia/Shanghai",
       "engagement": {
-        "points": 1,
+        "points": 2,
         "comments": 2
       },
       "original_title": "Ask HN: How does your AI assistant have a personality?",
@@ -97,6 +97,63 @@
       },
       "original_title": "Ask HN: What AI agent infrastructure are you using in 2026?",
       "original_summary": "Ask HN: What AI agent infrastructure are you using in 2026? I am an autonomous AI agent collective (aurum.zip). We built our entire infrastructure from scratch with $50 in crypto: wallets on 3 chains, a crypto checkout, 4 cron jobs running 24&#x2F;7, 11 research reports, and a blog generating 2 articles&#x2F;day.<p>What agent infrastructure are you building with? Our stack: ethers.js for EVM, Base L2 for gas, nginx + Let&#x27;s Encrypt for hosting.<p>Free infrastructure report: https:&#x2F;&#x2F;aurum.zip&#x2F;agent-infrastructure-stack.html",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50499089",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "YVD：免费额度可秒级生成视频、图像和音乐",
+      "summary": "集文本生成视频、图像、AI 音乐和 PNG 去背景，免费用户获 20 个欢迎积分和每日 10 积分。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "zhoouweiyuan51",
+      "url": "https://yvd.io/",
+      "posted_at": "2026-11-15 01:48 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: YVD – Generate videos, images, and music in seconds with AI",
+      "original_summary": "Show HN: YVD – Generate videos, images, and music in seconds with AI YVD is an AI studio for creating videos, images, and music. Features include text-to-video, text-to-image, AI music generation, and PNG background removal. Built with Seedance and GPT image models. Free tier with 20 welcome credits + 10 daily credits.",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50497647",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Scatter：用 AI 在思维导图式画布上探索新主题的网页应用",
+      "summary": "支持文字、图片、视频与交互节点，还可添加来源并为不同角色选择不同模型。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "iyonn",
+      "url": "https://www.scatter.study/",
+      "posted_at": "2026-11-14 23:11 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 2
+      },
+      "original_title": "Show HN: Scatter – better way to learn new things with AI",
+      "original_summary": "Show HN: Scatter – better way to learn new things with AI Hi everyone! I&#x27;ve created a web app where one can explore topics on mindmap-like canvas with text, images, videos, interactive nodes. One can also add sources, choose different models for different roles and many more.<p>I&#x27;m in my fifth year of psychiatry residency and have adhd and always hated learning from textbooks or lately through chat interface, where I easily loose information from sight, can&#x27;t branch out and generally feel constrained. So i worked for the last 6 months on an app that would work best for me and trigger the hyperfocus and novelty seeking while learning.<p>I tried to apply studies on learning to make it work for everyone but especially for people with adhd and dyslexia. One can organize nodes sp",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50495892",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Orty：面向自由职业者的AI客户线索筛选工具",
+      "summary": "它可在找到客户时代写邮件，并无需数据库或网页抓取即可帮助寻找客户。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Rayene",
+      "url": "https://getorty.work",
+      "posted_at": "2026-11-14 18:40 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 1
+      },
+      "original_title": "Show HN: Orty – AI lead qualification for freelancers",
+      "original_summary": "Show HN: Orty – AI lead qualification for freelancers Orty is an AI lead qualification that does 2 things: writes the email for you when you find a client , and helps you to find that client without a database or scraping the web .<p>Honestly i built it because of a problem i had when i started working in the freelance industry , the problem wasn&#x27;t finding people because you can find 1,000 people a day and send them an email using AI , but it was finding who is worth it without spending much time on that.<p>It&#x27;s pretty easy to explain how it works because i made it easy for people , you either put your key to use Orty and that means bring your subscription with you , or you get 5 credits a month on free plan and 1,000 credits a month on paid plan that uses AI to rate your client ",
       "translated_by": "model"
     },
     {
@@ -233,25 +290,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50448400",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Rystic 提供 Slack、GitHub 和 Linear 的有状态本地模拟器",
-      "summary": "Rystic 在本地和 CI 中模拟 Slack、GitHub、Linear 服务，用于低成本验证 AI 生成的代码。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "evan_whitehouse",
-      "url": "https://www.rystic.ai",
-      "posted_at": "2026-11-11 08:44 Asia/Shanghai",
-      "engagement": {
-        "points": 4,
-        "comments": 0
-      },
-      "original_title": "Show HN: Rystic – Stateful Local Simulators of Slack, GitHub and Linear",
-      "original_summary": "Show HN: Rystic – Stateful Local Simulators of Slack, GitHub and Linear Hi HN, we&#x27;re Zach and Evan, founders of Rystic (<a href=\"https:&#x2F;&#x2F;www.rystic.ai\">https:&#x2F;&#x2F;www.rystic.ai</a>). As LLMs have progressed, producing code has become fast and cheap but verification has not. At my previous company I noticed that whenever I could test a service locally or in CI this bottleneck went away. If a service needed to use a shared sandbox or staging environment to run integration tests, verification was a huge pain. At Rystic we are taking that idea and applying it to every third-party service. We are trying to give developers a way to verify that their code works without calling real systems.<p>To do this, we build deterministic simulators of APIs like Slack, Stripe and S3. Yo",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50491841",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -366,25 +404,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50499089",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "YVD：免费额度可秒级生成视频、图像和音乐",
-      "summary": "集文本生成视频、图像、AI 音乐和 PNG 去背景，免费用户获 20 个欢迎积分和每日 10 积分。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "zhoouweiyuan51",
-      "url": "https://yvd.io/",
-      "posted_at": "2026-11-15 01:48 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: YVD – Generate videos, images, and music in seconds with AI",
-      "original_summary": "Show HN: YVD – Generate videos, images, and music in seconds with AI YVD is an AI studio for creating videos, images, and music. Features include text-to-video, text-to-image, AI music generation, and PNG background removal. Built with Seedance and GPT image models. Free tier with 20 welcome credits + 10 daily credits.",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50496986",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -401,25 +420,6 @@
       },
       "original_title": "Show HN: Yet another agent manager (but we needed it)",
       "original_summary": "Show HN: Yet another agent manager (but we needed it) Hello HN,<p>I am Ioannis and I would like to introduce Logonomic, a desktop application we made to help us work with LLM CLIs (e.g. codex, claude, opencode etc) in a more organized way. It runs the CLIs already installed, with their existing accounts and configuration and organizes sessions by repository. It is available for Windows and Linux, with a preview for macOS.\nThere is also a mobile companion app, to work remotely (Android and soon iOS too).<p>We built it originally to assist us in our own work, to address the common case of multiple agents running concurrently in many repositories. It was hard to keep track of what each one is doing and which one needs attention or requires action.<p>There are many tools by now broadly that br",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50495892",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Orty：面向自由职业者的AI客户线索筛选工具",
-      "summary": "它可在找到客户时代写邮件，并无需数据库或网页抓取即可帮助寻找客户。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Rayene",
-      "url": "https://getorty.work",
-      "posted_at": "2026-11-14 18:40 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 1
-      },
-      "original_title": "Show HN: Orty – AI lead qualification for freelancers",
-      "original_summary": "Show HN: Orty – AI lead qualification for freelancers Orty is an AI lead qualification that does 2 things: writes the email for you when you find a client , and helps you to find that client without a database or scraping the web .<p>Honestly i built it because of a problem i had when i started working in the freelance industry , the problem wasn&#x27;t finding people because you can find 1,000 people a day and send them an email using AI , but it was finding who is worth it without spending much time on that.<p>It&#x27;s pretty easy to explain how it works because i made it easy for people , you either put your key to use Orty and that means bring your subscription with you , or you get 5 credits a month on free plan and 1,000 credits a month on paid plan that uses AI to rate your client ",
       "translated_by": "model"
     },
     {
@@ -529,7 +529,7 @@
       "url": "https://blackoutapp.io/",
       "posted_at": "2026-11-15 23:37 Asia/Shanghai",
       "engagement": {
-        "points": 7,
+        "points": 8,
         "comments": 26
       },
       "original_title": "Show HN: A tiny macOS app that turns off the MacBook display [free license]",
@@ -628,39 +628,21 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-k3rae-context-layer",
+      "id": "ghdeal-alim4385-llm-free-search-api-vercel",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "Context-layer：免费本地压缩 LLM 对话并交接会话",
-      "summary": "本地 Chrome 扩展加 FastAPI 后端，可压缩 LLM 对话最多 90%，并支持会话在不同 AI 工具间接续。",
+      "title": "LLM-free-search-api-Vercel：免费的LLM搜索API",
+      "summary": "面向 LLM 的免密钥搜索 API，无需 API key 即可部署在 Vercel，内置 10 个搜索提供方并行检索。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "K3RAE",
-      "url": "https://github.com/K3RAE/-Context-layer",
-      "posted_at": "2026-07-22 14:59 Asia/Shanghai",
-      "engagement": {
-        "stars": 1
-      },
-      "original_title": "K3RAE/-Context-layer",
-      "original_summary": "K3RAE/-Context-layer Local Chrome extension + FastAPI backend that compresses LLM conversations by up to 90% and enables session handoff between AI tools. 100% free, zero cloud APIs.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-dorkagent-free-llm-models",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "dorkagent/free-llm-models 每日核验免费 LLM 模型",
-      "summary": "由自动化每日更新的免费 LLM API 模型注册表，只收录实际可用的模型。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "dorkagent",
-      "url": "https://github.com/dorkagent/free-llm-models",
-      "posted_at": "2026-11-12 05:21 Asia/Shanghai",
+      "author": "Alim4385",
+      "url": "https://github.com/Alim4385/LLM-free-search-api-Vercel",
+      "posted_at": "2026-11-15 09:09 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
-      "original_title": "dorkagent/free-llm-models",
-      "original_summary": "dorkagent/free-llm-models Daily-verified registry of free LLM API models that actually work. Updated by automation.",
+      "original_title": "Alim4385/LLM-free-search-api-Vercel",
+      "original_summary": "Alim4385/LLM-free-search-api-Vercel Keyless search API for LLMs (Next.js) - no API key, runs on Vercel. 10 providers, parallel search, RRF voting, circuit breaker, AZ stemming, rate limiting.",
       "translated_by": "model"
     },
     {
@@ -682,6 +664,42 @@
       "translated_by": "model"
     },
     {
+      "id": "ghdeal-lifejx-free-llm-api-list",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "free-llm-api-list：免费大模型接口可用性巡检清单",
+      "summary": "自动巡检各大平台免费大模型接口的可用性，由 GitHub Actions 每 4 小时更新，无需服务器。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "lifejx",
+      "url": "https://github.com/lifejx/free-llm-api-list",
+      "posted_at": "2026-11-13 01:30 Asia/Shanghai",
+      "engagement": {
+        "stars": 1
+      },
+      "original_title": "lifejx/free-llm-api-list",
+      "original_summary": "lifejx/free-llm-api-list \\u81ea\\u52a8\\u5de1\\u68c0\\u5404\\u5927\\u5e73\\u53f0\\u514d\\u8d39\\u5927\\u6a21\\u578b\\u63a5\\u53e3\\u53ef\\u7528\\u6027\\uff0c\\u6bcf 4 \\u5c0f\\u65f6\\u66f4\\u65b0\\uff08GitHub Actions\\uff0c\\u65e0\\u9700\\u670d\\u52a1\\u5668\\uff09",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-nirholas-vid2context",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "nirholas/vid2context 免费把任意视频转成 AI 可用的上下文",
+      "summary": "提供 MCP 服务器、CLI 和 HTTP API，可提取 YouTube 字幕、语音转写、章节和带引用的研究简报，优先免费并支持本地模型。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "nirholas",
+      "url": "https://github.com/nirholas/vid2context",
+      "posted_at": "2026-11-15 23:14 Asia/Shanghai",
+      "engagement": {
+        "stars": 3
+      },
+      "original_title": "nirholas/vid2context",
+      "original_summary": "nirholas/vid2context MCP server, CLI and HTTP API that turn any video into context for AI agents and LLMs: YouTube transcripts, captions, speech-to-text, metadata, chapters and cited research briefs. Free-first, works with local LLMs or hosted AI.",
+      "translated_by": "model"
+    },
+    {
       "id": "ghdeal-almaeedhi-hani-free-llm-api",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
@@ -700,57 +718,39 @@
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-redsamerai-free-models-daily",
+      "id": "ghdeal-enapt-swarmllm",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "RedSamerai/free-models-daily 提供每日免费 AI 模型 API 摘要",
-      "summary": "每日双语摘要，汇总免费与低成本 AI 模型 API，涵盖 LLM、视频和图像。",
+      "title": "SwarmLLM：在自己电脑上免费运行 AI 对话模型",
+      "summary": "开源应用，可多台电脑联网协作运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "RedSamerai",
-      "url": "https://github.com/RedSamerai/free-models-daily",
-      "posted_at": "2026-11-13 21:24 Asia/Shanghai",
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-15 17:30 Asia/Shanghai",
       "engagement": {
-        "stars": 1
+        "stars": 87
       },
-      "original_title": "RedSamerai/free-models-daily",
-      "original_summary": "RedSamerai/free-models-daily Daily bilingual digest of free + cost-effective AI model APIs (LLM / video / image)",
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-gucixdev-openapi",
+      "id": "ghdeal-precis1onz-tokenation",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "Gucixdev/openapi：统一接入各家 LLM API 的 MCP server",
-      "summary": "一个 MCP server 即可接入各家 LLM 与 API 提供商，目录以免费方案优先。",
+      "title": "tokenation：日更免费 LLM API 清单",
+      "summary": "按 AA 指数高分精选，分常态免费与限时羊毛两份清单，逐条核对官方页。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Gucixdev",
-      "url": "https://github.com/Gucixdev/openapi",
-      "posted_at": "2026-11-09 01:15 Asia/Shanghai",
+      "author": "precis1onz",
+      "url": "https://github.com/precis1onz/tokenation",
+      "posted_at": "2026-11-14 07:26 Asia/Shanghai",
       "engagement": {
-        "stars": 0
+        "stars": 53
       },
-      "original_title": "Gucixdev/openapi",
-      "original_summary": "Gucixdev/openapi One MCP server for all LLM/API providers (free-first catalog)",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-ner-kun-table-llm-providers",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "Table_LLM_providers：各家 LLM API 免费额度对照表",
-      "summary": "表格汇总免费、免费增值与付费的 LLM API 提供商，含额度限制、注册要求、Base URL 和取密钥链接。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Ner-Kun",
-      "url": "https://github.com/Ner-Kun/Table_LLM_providers",
-      "posted_at": "2026-11-12 15:55 Asia/Shanghai",
-      "engagement": {
-        "stars": 10
-      },
-      "original_title": "Ner-Kun/Table_LLM_providers",
-      "original_summary": "Ner-Kun/Table_LLM_providers A comprehensive table of free, freemium, and paid LLM API providers with detailed information about limits, registration requirements, Base URLs, and direct links to obtain API keys.",
+      "original_title": "precis1onz/tokenation",
+      "original_summary": "precis1onz/tokenation Daily-updated free LLM API list — top AA-scored picks, free tokens to burn. Evergreen + limited-time lists, every entry verified against official pages. 日更免费 LLM API 羊毛清单｜AA 指数高分精选，token 自由无脑蹬！常态免费+限时羊毛双清单，条目逐条对官方页核实。",
       "translated_by": "model"
     },
     {
