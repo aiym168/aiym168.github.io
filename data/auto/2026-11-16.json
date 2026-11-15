@@ -1,9 +1,28 @@
 {
   "date": "2026-11-16",
-  "updated_at": "2026-11-16T00:16+08:00",
-  "updated_at_label": "2026-11-16 00:16 Asia/Shanghai",
+  "updated_at": "2026-11-16T01:23+08:00",
+  "updated_at_label": "2026-11-16 01:23 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50508220",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Ask HN：AI助手如何拥有个性？",
+      "summary": "讨论现有AI助手语气机械、句式重复，并提到仓库中的「declauding」技能作为例子。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "tedmundy",
+      "url": "https://news.ycombinator.com/item?id=50508220",
+      "posted_at": "2026-11-16 00:31 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "original_title": "Ask HN: How does your AI assistant have a personality?",
+      "original_summary": "Ask HN: How does your AI assistant have a personality? *external, user-facing AI assistants*<p>Personality is being used very loosely here. The issue I&#x27;ve had with existing AI assistants is that they sound too robotic, and they repeat the same patterns in their sentences -- (&quot;you&#x27;re right — ...&quot;) the &quot;declauding&quot; skill in this repo&quot; has a good example of it (https:&#x2F;&#x2F;github.com&#x2F;oaustegard&#x2F;claude-skills&#x2F;tree&#x2F;main&#x2F;declauding).<p>How are you making your AI sound as non-robotic as possible?<p>edit: made request a bit more precise",
+      "translated_by": "model"
+    },
     {
       "id": "hn-50507971",
       "source": "Hacker News",
@@ -16,8 +35,8 @@
       "url": "https://pizza.hertzbeat.com/",
       "posted_at": "2026-11-16 00:04 Asia/Shanghai",
       "engagement": {
-        "points": 1,
-        "comments": 0
+        "points": 3,
+        "comments": 1
       },
       "original_title": "Show HN: Pizza – An event-driven AI agent, no while true",
       "original_summary": "Show HN: Pizza – An event-driven AI agent, no while true Hi HN, I made Pizza, an open-source, event-driven AI agent. No `while true`.<p>Each turn is a state machine. Conversations and tool calls go into an immutable SQLite log. The UI, model context, and session tree are built from that log.<p>The model gets one tool: a CLI. Reading files, editing code, and running commands all go through it.<p>You can keep a conversation going without manually starting new sessions. Pizza compacts context as needed, and you can branch from any earlier message.<p>Agents in separate workspaces talk through `tell`, each doing the work in its own project. An SSH host can be a workspace too: Pizza deploys itself there and runs remotely.<p>Desktop and terminal interfaces are included. Bring your own model.<p><a",
@@ -35,7 +54,7 @@
       "url": "https://github.com/Scronkfinkle/byob",
       "posted_at": "2026-11-15 22:52 Asia/Shanghai",
       "engagement": {
-        "points": 2,
+        "points": 3,
         "comments": 0
       },
       "original_title": "Show HN: A local-first AI agent for the desktop, no Electron, any LLM endpoint",
@@ -263,30 +282,11 @@
       "url": "https://github.com/FrigadeHQ/yogurt",
       "posted_at": "2026-11-11 23:33 Asia/Shanghai",
       "engagement": {
-        "points": 304,
+        "points": 305,
         "comments": 115
       },
       "original_title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
       "original_summary": "Show HN: Yogurt – Free, private, open-source alternative to Granola Hey HN, I’m Eric and I want to share an OSS project that I’ve been building in my free time. Yogurt is a free, MIT licensed desktop app that uses on-device AI models to transcribe, summarize, and chat with your meetings.<p>Here&#x27;s a quick demo video: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=BFfbXAwRq98\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=BFfbXAwRq98</a><p>Similar to Granola, Yogurt runs in the background and does not join your calls. But unlike Granola, Yogurt is open-source, free to use, and private. Your meeting transcripts, call recordings, and summaries never leave your computer.<p>As small OSS models have gotten faster and more powerful, Yogurt seemed like a pretty obvious",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50448400",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Rystic 提供 Slack、GitHub 和 Linear 的有状态本地模拟器",
-      "summary": "Rystic 在本地和 CI 中模拟 Slack、GitHub、Linear 服务，用于低成本验证 AI 生成的代码。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "evan_whitehouse",
-      "url": "https://www.rystic.ai",
-      "posted_at": "2026-11-11 08:44 Asia/Shanghai",
-      "engagement": {
-        "points": 4,
-        "comments": 0
-      },
-      "original_title": "Show HN: Rystic – Stateful Local Simulators of Slack, GitHub and Linear",
-      "original_summary": "Show HN: Rystic – Stateful Local Simulators of Slack, GitHub and Linear Hi HN, we&#x27;re Zach and Evan, founders of Rystic (<a href=\"https:&#x2F;&#x2F;www.rystic.ai\">https:&#x2F;&#x2F;www.rystic.ai</a>). As LLMs have progressed, producing code has become fast and cheap but verification has not. At my previous company I noticed that whenever I could test a service locally or in CI this bottleneck went away. If a service needed to use a shared sandbox or staging environment to run integration tests, verification was a huge pain. At Rystic we are taking that idea and applying it to every third-party service. We are trying to give developers a way to verify that their code works without calling real systems.<p>To do this, we build deterministic simulators of APIs like Slack, Stripe and S3. Yo",
       "translated_by": "model"
     },
     {
@@ -320,7 +320,7 @@
       "url": "https://github.com/TomerAberbach/profiler-md",
       "posted_at": "2026-11-16 00:04 Asia/Shanghai",
       "engagement": {
-        "points": 1,
+        "points": 2,
         "comments": 0
       },
       "original_title": "Show HN: profiler-md converts performance profiles to Markdown",
@@ -385,25 +385,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50501171",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Domino Rally 是免费免注册的多米诺骨牌模拟器",
-      "summary": "这款免费且无需注册的模拟器可先在2D编辑器中设计多米诺骨牌路线，再在3D播放器中观看运行效果。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "orgiggly-dave",
-      "url": "https://www.orgiggly.com/dominoes",
-      "posted_at": "2026-11-15 05:38 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Domino Rally – design in 2D, watch in 3D",
-      "original_summary": "Show HN: Domino Rally – design in 2D, watch in 3D This is a free to play, no sign up required domino rally simulator. You design them with the editor, and then run them in the 3D player. The from-behind &quot;Chase&quot; view is best.<p>My mum helped develop it - she submitted issue reports direct from the app  itself (make it possible to bend the domino tracks, make the playback controls disappear while mouse inactive, add like buttons to the showcase, let me change the backdrop, etc) and the Claude Code session running in the cloud watched, fixed them and on my approval, pushed them live.<p>I&#x27;ve been making a lot of apps in various sessions which share the same repo. One of them <a href=\"https:&#x2F;&#x2F;www.orgiggly.com&#x2F;david&#x2F;aurora\" rel=\"nofollow\">https:&#x2F;&#x2F;www.",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50496986",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -435,7 +416,7 @@
       "posted_at": "2026-11-14 07:26 Asia/Shanghai",
       "engagement": {
         "points": 44,
-        "comments": 28
+        "comments": 29
       },
       "original_title": "Tell HN: Google Search to start locking down search behind a login wall",
       "original_summary": "Tell HN: Google Search to start locking down search behind a login wall Usually, when I used Google Search on some ISP CGNAT IP addresses (not even a VPN), I usually get countless CAPTCHAs evertime I initiate a new session to Google Search on a new private browsing window (probably an artifact from residential proxy botnets).<p>Recently, in addition to that, they started to just lock the entire search results page behind a login prompt on some of those bad IP addresses (like YouTube does for some time with the &quot;Sign in to confirm you&#x27;re not a bot&quot; prompt). This potentially makes the service less accessible, especially for those using a shared&#x2F;public computers.<p>I did not even get this prompt on some VPN IPs, and even no CAPTCHAs at all, even with a free one like given ",
@@ -461,22 +442,60 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50470343",
+      "id": "hn-50469605",
       "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Apron Chat Protocol 是作者新开发的聊天协议",
-      "summary": "作者长期关注聊天协议，曾做 ssh-chat，现推出新的聊天协议。",
+      "category": "科技软件/App 限免",
+      "title": "Armin 是一个带先修关系图的现代 Anki 替代应用",
+      "summary": "作者长期使用 Anki，认可间隔重复理念但不喜欢这款应用，于是自己做了替代品。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "shazow",
-      "url": "https://apron.chat/",
-      "posted_at": "2026-11-13 00:52 Asia/Shanghai",
+      "author": "ansanabria",
+      "url": "https://armincards.app/",
+      "posted_at": "2026-11-13 00:03 Asia/Shanghai",
       "engagement": {
-        "points": 66,
-        "comments": 6
+        "points": 1,
+        "comments": 0
       },
-      "original_title": "Show HN: Apron Chat Protocol",
-      "original_summary": "Show HN: Apron Chat Protocol Hi HN friends - I&#x27;ve been obsessed with chat protocols for ages - one previous project is ssh-chat (<a href=\"https:&#x2F;&#x2F;ssh.chat&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;ssh.chat&#x2F;</a>)<p>I come bringing a new kind of chat protocol that I&#x27;ve been working on since I spent quite a lot of time exploring the 14 other competing standards we&#x27;ve come up with in the past few decades.<p>The protocol details are here: <a href=\"https:&#x2F;&#x2F;apron.chat\" rel=\"nofollow\">https:&#x2F;&#x2F;apron.chat</a><p>I&#x27;m hoping that Apron will better reflect our needs beyond 2026, which I expect will move more and more toward semi-private chats rather than global social networks.<p>Come say hi on the live public demo: <a href=\"https:&#x2F;&#x2F;web.apro",
+      "original_title": "Show HN: Armin – Modern Anki alternative with prerrequisite graphs",
+      "original_summary": "Show HN: Armin – Modern Anki alternative with prerrequisite graphs okay, so a bit of context. back when i was studying at college, i was trying to optimize my learning process as much as possible, and i ended up discovering Anki and spaced-repetition as a concept. i ended up using Anki for quite a while and it did help me. i loved the concept... but i didn&#x27;t like the app. it had me conflicted. on one hand, it allowed me to properly review the content from my classes (among other stuff), but on the other it had way too many quirks and complicated ways of handling things that i wasn&#x27;t a fan of (in particular, the UX leaves a lot to be desired, although it has marginally improved in recent years). i ended up churning from Anki and just abandoning the practice of spaced repetition al",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50458246",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Disband：带API的音轨分离工具，可拆到鼓组各部件",
+      "summary": "上传歌曲分离人声、乐器，甚至拆出底鼓军鼓，每日有免费额度。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "f1nniboy",
+      "url": "https://disband.io/",
+      "posted_at": "2026-11-12 04:29 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: Disband – a stem separator with an API, down to the drum kit",
+      "original_summary": "Show HN: Disband – a stem separator with an API, down to the drum kit A stem splitter I built. Upload a song and get vocals (lead and backing), instrumental, drums, bass, guitar, piano, or even the drums split into kick, snare, toms, hi-hat and the rest. You pay per minute of audio with credits (while also being cheaper than other competitors), and there&#x27;s a free daily allowance (with an account, I don&#x27;t want it to be abused), and downloads&#x2F;stems aren&#x27;t locked behind a paid tier. You can listen to the example on the landing page if you don&#x27;t want to sign up yet. There&#x27;s also a pretty easy-to-use API, if you want to integrate it with your own tools. You also don&#x27;t have to know anything at all about the underlying models either, because there&#x27;s no comp",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50450897",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "Obeya：用于指挥编码智能体的空间画布",
+      "summary": "面向不再逐行审阅代码、只做任务调度的开发者。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "sadilek",
+      "url": "https://github.com/sadilek/obeya",
+      "posted_at": "2026-11-11 16:14 Asia/Shanghai",
+      "engagement": {
+        "points": 4,
+        "comments": 0
+      },
+      "original_title": "Show HN: Obeya, a spatial canvas for directing coding agents",
+      "original_summary": "Show HN: Obeya, a spatial canvas for directing coding agents Yeah, I know, &quot;not another AI GUI <i>rolls eyes</i>&quot;. So let me say upfront: This is <i>not</i> for you if you want to regularly review the code agents produce. But if you, like me, stopped writing code at the beginning of the year and for the most part stopped reading it a few months ago, you are my target audience, and I think there&#x27;s a good chance you&#x27;ll benefit from this.<p>I love directing agents to build stuff. But oh, can you get lost in parallel coding sessions. Just walls of text. Cycling through terminal windows. It feels like pair programming with multiple people at the same time. Then: Start a dev server, navigate to the place of interest, click around to test a new feature. It feels like I&#x27;m ",
       "translated_by": "model"
     },
     {
@@ -491,11 +510,11 @@
       "url": "https://blackoutapp.io/",
       "posted_at": "2026-11-15 23:37 Asia/Shanghai",
       "engagement": {
-        "points": 2,
-        "comments": 0
+        "points": 6,
+        "comments": 22
       },
       "original_title": "Show HN: A tiny macOS app that turns off the MacBook display [free license]",
-      "original_summary": "Show HN: A tiny macOS app that turns off the MacBook display [free license] Hi, I made a tiny app that lets you turn off the MacBook screen when you work on external monitors.<p>It does NOT just dim the brightness to zero, the screen is actually turned off via the Apple hardware API, the according desktop is removed, so you have a clean &quot;one big monitor&quot; setup.<p>- Safe fallback if you turn off the external monitor(s), unplug the monitor cable(s), the app crashes or anything else happens. \n- Keyboard, touchpad and TouchID still work fine.\n- Automatic restart. 2 Megabyte size.\n- Totally niche, I know, but it helps me to concentrate.<p>The app is commercial ($9 once), but everybody who DMs me here gets a *FREE* lifetime license, and everybody who uses in the feedback form (to repor",
+      "original_summary": "Show HN: A tiny macOS app that turns off the MacBook display [free license] Hi, I made a tiny app that lets you turn off the MacBook screen when you work on external monitors.<p>It does NOT just dim the brightness to zero, the screen is actually turned off via the Apple hardware API, the according desktop is removed, so you have a clean &quot;one big monitor&quot; setup.<p>- Safe fallback if you turn off the external monitor(s), unplug the monitor cable(s), the app crashes or anything else happens. \n- Keyboard, touchpad and TouchID still work fine.\n- Automatic restart. 2 Megabyte size.\n- Totally niche, I know, but it helps me to concentrate.<p>The app is commercial ($9 once), but everybody who writes me at hi@blackoutapp.io gets a *FREE* lifetime license, and everybody who uses in the feed",
       "translated_by": "model"
     },
     {
@@ -518,79 +537,41 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50494578",
+      "id": "hn-50501171",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
-      "title": "Free Dictionary API 免费查 Wiktionary，无需密钥",
-      "summary": "基于 Wiktionary 的词典 API，无需申请 API key 即可使用。",
+      "title": "Domino Rally 是免费免注册的多米诺骨牌模拟器",
+      "summary": "这款免费且无需注册的模拟器可先在2D编辑器中设计多米诺骨牌路线，再在3D播放器中观看运行效果。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "suvankar_m",
-      "url": "https://api.suvankar.cc/docs/dictionary",
-      "posted_at": "2026-11-14 14:30 Asia/Shanghai",
-      "engagement": {
-        "points": 6,
-        "comments": 0
-      },
-      "original_title": "Show HN: Free Dictionary API – Wiktionary data, no API key required",
-      "original_summary": "Show HN: Free Dictionary API – Wiktionary data, no API key required ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50476872",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "共享在线 Etch A Sketch 画板：一条连续线，或调用免费 API",
-      "summary": "一块 4000×4000 共享画布，可实时看到他人画笔移动，如同真玩具只能画一条连续线，也能用免费 API 作画。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "ipgarden",
-      "url": "https://graciegould.com/etch-a-sketch-live",
-      "posted_at": "2026-11-13 09:20 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: A shared live Etch A Sketch – one continuous line, or draw via API",
-      "original_summary": "Show HN: A shared live Etch A Sketch – one continuous line, or draw via API I made a live Etch A Sketch that everyone draws on together. It&#x27;s one shared 4000×4000 canvas, and you see other people&#x27;s pens moving in real time. Like the real toy, you only get one continuous line and can only draw or erase.<p>If you want to draw something more intricate, there&#x27;s a free API you can post your stroke coordinates strokes to: <a href=\"https:&#x2F;&#x2F;graciegould.com&#x2F;api&#x2F;etch&#x2F;stroke\" rel=\"nofollow\">https:&#x2F;&#x2F;graciegould.com&#x2F;api&#x2F;etch&#x2F;stroke</a> (example under the API button on the page).<p>I&#x27;d love feedback on how the drawing feels and on the API. No profanity please.",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50474918",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "免费 5MB 的 Postman 替代品，支持 iOS、Mac 与 iCloud 同步",
-      "summary": "轻量 API 测试客户端，体积约 5MB，支持 iCloud 同步，并提供 MCP 服务器供 Claude 管理测试套件。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "anurodhp",
-      "url": "https://www.pokharel.net/2026/11/12/api-man-a-native-ios-mac-postman-like-client-without-electron/",
-      "posted_at": "2026-11-13 05:59 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Postman but a free 5MB iOS and Mac client with iCloud synch",
-      "original_summary": "Show HN: Postman but a free 5MB iOS and Mac client with iCloud synch I Got tired of giving up 500Mb or RAM to test APIs. I made my own the based on how I use the app. It close to parity with postman and also has an MCP server so claude and manage my test suites.",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50458246",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Disband：带API的音轨分离工具，可拆到鼓组各部件",
-      "summary": "上传歌曲分离人声、乐器，甚至拆出底鼓军鼓，每日有免费额度。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "f1nniboy",
-      "url": "https://disband.io/",
-      "posted_at": "2026-11-12 04:29 Asia/Shanghai",
+      "author": "orgiggly-dave",
+      "url": "https://www.orgiggly.com/dominoes",
+      "posted_at": "2026-11-15 05:38 Asia/Shanghai",
       "engagement": {
         "points": 2,
         "comments": 0
       },
-      "original_title": "Show HN: Disband – a stem separator with an API, down to the drum kit",
-      "original_summary": "Show HN: Disband – a stem separator with an API, down to the drum kit A stem splitter I built. Upload a song and get vocals (lead and backing), instrumental, drums, bass, guitar, piano, or even the drums split into kick, snare, toms, hi-hat and the rest. You pay per minute of audio with credits (while also being cheaper than other competitors), and there&#x27;s a free daily allowance (with an account, I don&#x27;t want it to be abused), and downloads&#x2F;stems aren&#x27;t locked behind a paid tier. You can listen to the example on the landing page if you don&#x27;t want to sign up yet. There&#x27;s also a pretty easy-to-use API, if you want to integrate it with your own tools. You also don&#x27;t have to know anything at all about the underlying models either, because there&#x27;s no comp",
+      "original_title": "Show HN: Domino Rally – design in 2D, watch in 3D",
+      "original_summary": "Show HN: Domino Rally – design in 2D, watch in 3D This is a free to play, no sign up required domino rally simulator. You design them with the editor, and then run them in the 3D player. The from-behind &quot;Chase&quot; view is best.<p>My mum helped develop it - she submitted issue reports direct from the app  itself (make it possible to bend the domino tracks, make the playback controls disappear while mouse inactive, add like buttons to the showcase, let me change the backdrop, etc) and the Claude Code session running in the cloud watched, fixed them and on my approval, pushed them live.<p>I&#x27;ve been making a lot of apps in various sessions which share the same repo. One of them <a href=\"https:&#x2F;&#x2F;www.orgiggly.com&#x2F;david&#x2F;aurora\" rel=\"nofollow\">https:&#x2F;&#x2F;www.",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50497513",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "SrcWranglr 是开源C/C++图形化代码探索与漏洞研究工具",
+      "summary": "这款基于Rust的开源工具用于C/C++源码探索和安全分析，v0.13提供图形化界面。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "jdefr89",
+      "url": "https://github.com/jdefrancesco/SrcWranglr",
+      "posted_at": "2026-11-14 22:55 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 0
+      },
+      "original_title": "Show HN: SrcWranglr v0.13 – A C/C++ Graphical Code Explorer for Vuln. Research",
+      "original_summary": "Show HN: SrcWranglr v0.13 – A C/C++ Graphical Code Explorer for Vuln. Research SrcWranglr my open-source, Rust-powered C&#x2F;C++ source-code exploration and security analysis toolkit. I had originally developed this in Python as a prototype for a couple years…  That’s until you Rustaceans got in my damn year…<p>If you ever used SourceTrail or Understand, this is my idea of how it should have been done. It helps visualize  complex codebases C&#x2F;C++ it combines interactive call graphs, cross-references, semantic code search, reachability analysis, and inter-procedural value tracing.<p>Security-focused features include vulnerability discovery, attack-surface analysis, automated fuzz harness generation, and integration with external static analyzers. My favorite feature is the ability to g",
       "translated_by": "model"
     },
     {
@@ -695,64 +676,82 @@
       "url": "https://www.v2ex.com/t/1257214",
       "posted_at": "2026-11-15 16:22 Asia/Shanghai",
       "engagement": {
-        "replies": 70
+        "replies": 71
       },
       "original_title": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结",
       "original_summary": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结\n先说下本人的 AI Coding 经验，chatgpt 横空出世时，一款名为免费的 Cursor 在 2023 年悄然上线，我当时也算是最先一批把 cursor 用于公司项目的程序员，所以 AI Coding 经验有 2 年半的时间了吧。\r\n\r\n当时惊叹 chatgpt 的能力，我意识到了 AI 真的会思考，AI 不再是算法和程序堆叠的产物。\r\n\r\n从 Cursor 到 Codex 到 Calude Code，再到 deepseek-harness。\r\n\r\n他们都在特定的环境完成了我的任务，从用 Cursor 时自己还会手动改下 AI 写代码遗留下的问题，到用 Codex 时感受到 AI 可以自己完成 UI 设计（前端开发），功能实现，自己用浏览器测试项目。\r\n\r\n后面又用了几个月的 Calude Code，cc 的代码能力的确把 codex 远远的甩在身后，理解需求的能力，设计品味的能力，把任务交给他，很放心，返工也少。\r\n\r\n在深度使用 cc 和 codex 的时候，dsh 只是我的备胎，所以有一段时间很少使用 dsh，事情的转折来自 codex 降智，claude code 弹 kyc，于是我深度使用了半个月的 dsh。\r\n\r\n在实际的项目开发中，dsh 完成了所有的功能！\r\n\r\n**从 UI 还原，架构设计，前端代码编写，后端代码编写，复杂原子任务，把代码提交到 github，登录 ECS 服务器部署，排查线上问题，查询服务器日志，修复代码推送，部署！**\r\n\r\n一气呵成，当一套组合拳被 dsh 打下来的时候，我才明白为什么人们称那个男人叫 **梁圣！**\r\n\r\n原来我认为只有 Claude code 和 codex 完成的任务，被 DSH 同样完成时，我猜明白，原来最好的模型就在身边",
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-just-me-media-freellmapi-roundtable",
+      "id": "ghdeal-huangbuqubunao-alt-ai-cost-radar",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "FreeLLMAPI-Roundtable：多模型汇入同一对话协作的免费工具",
-      "summary": "把本地模型、FreeLLMAPI 模型或自带 API key 的云模型放进同一聊天协作，角色可自定义，目前为测试版。",
+      "title": "ai-cost-radar 是含免费每日80+ LLM价格API的成本计算器",
+      "summary": "该项目提供双语 AI API 与云 GPU 成本计算器，并提供每日更新的免费 80+ 大模型价格 API。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Just-Me-Media",
-      "url": "https://github.com/Just-Me-Media/FreeLLMAPI-Roundtable",
-      "posted_at": "2026-11-10 20:51 Asia/Shanghai",
-      "engagement": {
-        "stars": 2
-      },
-      "original_title": "Just-Me-Media/FreeLLMAPI-Roundtable",
-      "original_summary": "Just-Me-Media/FreeLLMAPI-Roundtable no more side by side , no more flipping models or screens , FreeLLMAPI Roundtable  brings as many local models , FreeLLMAPI models or your cloud models vid api keys into one chat , where your models work together to handle any task you give them , this is beta and the Roles are customizable for each model ,  ",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-doronp-nogpu",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "doronp/nogpu 提供免费报告：CPU 模型能独立做多少 LLM 分类路由",
-      "summary": "免费报告评估 CPU 模型可单独完成多少 LLM 分类与路由决策，并附开源日志导出器和 API 快速入门。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "doronp",
-      "url": "https://github.com/doronp/nogpu",
-      "posted_at": "2026-11-15 20:00 Asia/Shanghai",
+      "author": "huangbuqubunao-alt",
+      "url": "https://github.com/huangbuqubunao-alt/ai-cost-radar",
+      "posted_at": "2026-11-12 19:41 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
-      "original_title": "doronp/nogpu",
-      "original_summary": "doronp/nogpu Free report: how many of your LLM's classification/routing decisions a CPU model can take alone. OSS log exporter + API quickstart.",
+      "original_title": "huangbuqubunao-alt/ai-cost-radar",
+      "original_summary": "huangbuqubunao-alt/ai-cost-radar Bilingual AI API & Cloud GPU Cost Calculator + Free Daily Live 80+ LLM Price API",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-sandbaseai-sandbase",
+      "id": "ghdeal-gauravmahala69-cmd-awesome-free-llm-apis",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "sandbase：一个 API key 免费建个人 agent，可调用 2000+ 模型",
-      "summary": "agents 与沙箱免费，兼容 OpenAI Agents API、E2B 和 OpenAI，支持 Python、TypeScript、Go。",
+      "title": "awesome-free-llm-apis 是免费LLM API资源清单",
+      "summary": "gauravmahala69-cmd/awesome-free-llm-apis",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "sandbaseai",
-      "url": "https://github.com/sandbaseai/sandbase",
-      "posted_at": "2026-11-12 16:09 Asia/Shanghai",
+      "author": "gauravmahala69-cmd",
+      "url": "https://github.com/gauravmahala69-cmd/awesome-free-llm-apis",
+      "posted_at": "2026-11-15 23:41 Asia/Shanghai",
       "engagement": {
-        "stars": 6
+        "stars": 0
       },
-      "original_title": "sandbaseai/sandbase",
-      "original_summary": "sandbaseai/sandbase One API key. Build your personal agent. Agents and sandboxes are free, and agents can call 2,000+ AI models and data APIs (LLM, image, video, TikTok, YouTube, SEO, finance). OpenAI Agents API, E2B and OpenAI compatible. Python, TypeScript, Go.",
+      "original_title": "gauravmahala69-cmd/awesome-free-llm-apis",
+      "original_summary": "gauravmahala69-cmd/awesome-free-llm-apis ",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-alim4385-llm-free-search-api-vercel",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "LLM-free-search-api-Vercel：免费的LLM搜索API",
+      "summary": "面向 LLM 的免密钥搜索 API，无需 API key 即可部署在 Vercel，内置 10 个搜索提供方并行检索。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Alim4385",
+      "url": "https://github.com/Alim4385/LLM-free-search-api-Vercel",
+      "posted_at": "2026-11-15 09:09 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Alim4385/LLM-free-search-api-Vercel",
+      "original_summary": "Alim4385/LLM-free-search-api-Vercel Keyless search API for LLMs (Next.js) - no API key, runs on Vercel. 10 providers, parallel search, RRF voting, circuit breaker, AZ stemming, rate limiting.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "llm4jobs-v2：免费求职雷达，每日邮件摘要",
+      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历与地点筛选，跑在 GitHub Actions 上免费。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
       "translated_by": "model"
     },
     {
