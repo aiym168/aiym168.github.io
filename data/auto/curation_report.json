@@ -2,20 +2,16 @@
  "counts": {
   "archived": 16,
   "deadline_extracted": 6,
-  "drop:duplicate": 185,
+  "drop:duplicate": 186,
   "drop:empty_summary": 30,
-  "drop:negative_signal": 104,
-  "drop:no_clear_offer": 329,
-  "drop:not_ai": 286,
+  "drop:negative_signal": 107,
+  "drop:no_clear_offer": 330,
+  "drop:not_ai": 283,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 386,
   "google_news_total": 386,
-  "kept_total": 182,
-  "net:gnews_cache_hit": 384,
-  "net:gnews_resolved_net": 2,
-  "net:tco_expanded": 4,
-  "net:tco_failed": 2,
-  "new_this_run": 1,
+  "kept_total": 180,
+  "net:gnews_cache_hit": 386,
   "raw_total": 1175
  },
  "curation_version": "2026-11-09.c3",
@@ -25,14 +21,14 @@
    "Orty：面向自由职业者的 AI 客户线索筛选工具",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
-   "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
    "Webflow 转 Claude Code 转换器免费开放，可一比一还原站点",
    "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
    "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
    "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
    "grux：Grux AI，免费的开源 AI 代理",
    "freefield：ComfyUI 上开源 Higgsfield",
-   "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案"
+   "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
+   "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中"
   ],
   "empty_summary": [
    "Khan Academy Philippines 称该国所有教师无论是否合作学校都可免费使用，约一分钟生成教案",
@@ -105,15 +101,16 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-15T17:07:06+08:00",
+ "generated_at": "2026-11-15T17:55:08+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-15T17:07:06+08:00",
+  "checked_at": "2026-11-15T17:55:08+08:00",
   "counts": {
-   "ok": 164
+   "ok": 166,
+   "recheck": 1
   },
   "hidden": 0
  },
- "seconds": 2.4,
+ "seconds": 0.7,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -121,11 +118,11 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
-   "drop:not_ai": 12,
-   "drop:not_ai_strict": 3,
-   "kept": 15,
-   "raw": 33
+   "drop:negative_signal": 4,
+   "drop:not_ai": 13,
+   "drop:not_ai_strict": 4,
+   "kept": 19,
+   "raw": 40
   }
  }
 }

@@ -3,8 +3,8 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 15,
-  "generated_at": "2026-11-15T17:07:06+08:00",
+  "count": 19,
+  "generated_at": "2026-11-15T17:55:08+08:00",
   "items": [
     {
       "id": "hnhot-50497589",
@@ -42,6 +42,13 @@
       "source": "V2EX"
     },
     {
+      "id": "v2hot-1257214",
+      "title": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结",
+      "summary": "先说下本人的 AI Coding 经验，chatgpt 横空出世时，一款名为免费的 Cursor 在 2023 年悄然上线，我当时也算是最先一批把 cursor 用于公司项目的程序员，所以 AI Coding 经验有 2 年半的时间了吧。当时惊叹 chatgpt 的能力，我意识到了 AI 真的会思考，AI 不再是算法和程序堆叠的产物。从 Cursor 到 Codex 到 Calude Code，再到 deepseek-harness。他们都在特定的环境完成了我的任务，从用 Cursor 时自己还会手动改下 AI 写代码遗留下的问题，到用 Codex 时感受到 AI 可以",
+      "url": "https://www.v2ex.com/t/1257214",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1257172",
       "title": "怎么你们被 claude 封又是申诉成功，又是苹果退款的？",
       "summary": "我是哪个都办不到。第一个号 google play 充完 5X 版本的，半天被封，申诉失败，google 也不退款。第二个号 苹果账号登录，pro 版本用了半个月左右被封，申诉没消息，苹果第一次申诉也不退款。第三个号 没充钱前一切正常，刚苹果礼品卡付完，就要 kyc，验证了，聊了一句话，又弹 portal，portal 护照验证完，秒封。",
@@ -63,10 +70,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257214",
-      "title": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结",
-      "summary": "先说下本人的 AI Coding 经验，chatgpt 横空出世时，一款名为免费的 Cursor 在 2023 年悄然上线，我当时也算是最先一批把 cursor 用于公司项目的程序员，所以 AI Coding 经验有 2 年半的时间了吧。当时惊叹 chatgpt 的能力，我意识到了 AI 真的会思考，AI 不再是算法和程序堆叠的产物。从 Cursor 到 Codex 到 Calude Code，再到 deepseek-harness。他们都在特定的环境完成了我的任务，从用 Cursor 时自己还会手动改下 AI 写代码遗留下的问题，到用 Codex 时感受到 AI 可以",
-      "url": "https://www.v2ex.com/t/1257214",
+      "id": "v2hot-1257201",
+      "title": "Olea：真正跑在手机上、能控制手机的 Agent 应用",
+      "summary": "这个项目最初只是出于好玩：我的 Pi 究竟能不能在手机上跑？结果它发展成为了一个通用的 Android Agent 脚手架，一键安装，Codex, Claude Code, Pi 都可以在上面运行。它受到了 DSH Go 与 Orca 的启发，前者带来实际的原生本地 agent 和 phone use 可能性的思路，后者提供 Pi 要怎么跑的方向。最后决定采用了 PRoot + Agent Orchestrator 的架构。最简单来说，它做的就是两件事：让 agent 跑在本地手机环境 让 agent 能控制手机 和那些只能跑在服务器上远程连接桌面端的「",
+      "url": "https://www.v2ex.com/t/1257201",
       "source": "V2EX"
     },
     {
@@ -74,13 +81,6 @@
       "title": "除了肉身之外的 Claude 全网最强防封方案升级",
       "summary": "这是一个个人被封了 n 个号后，实践下来后会发现真香的 Claude 防封方案，目前多个新号 max 20x 额度用满，超过一个月都不被封的情况。这个方案香在哪呢。1. 真防封，把能暴露的被封的问题因素最大可能的减少 2. 性价比高，不用你去做各种底层防控方案，也不用你去买 VPS，且让你反向薅 claude 机器羊毛 3. 体验好，使用体验甚至超过 claude 原生 APP 方案 这套方案，简而言之就是：静态住宅 IP + 网页登录 + 远程调用。下面介绍咋上手，有手就行。# 准备工作 第一步是要有一个账号，注册并购买会员网上有很多介绍，这里不会介绍",
       "url": "https://www.v2ex.com/t/1257207",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1257201",
-      "title": "Olea：真正跑在手机上、能控制手机的 Agent 应用",
-      "summary": "这个项目最初只是出于好玩：我的 Pi 究竟能不能在手机上跑？结果它发展成为了一个通用的 Android Agent 脚手架，一键安装，Codex, Claude Code, Pi 都可以在上面运行。它受到了 DSH Go 与 Orca 的启发，前者带来实际的原生本地 agent 和 phone use 可能性的思路，后者提供 Pi 要怎么跑的方向。最后决定采用了 PRoot + Agent Orchestrator 的架构。最简单来说，它做的就是两件事：让 agent 跑在本地手机环境 让 agent 能控制手机 和那些只能跑在服务器上远程连接桌面端的「",
-      "url": "https://www.v2ex.com/t/1257201",
       "source": "V2EX"
     },
     {
@@ -98,6 +98,13 @@
       "source": "V2EX"
     },
     {
+      "id": "xhot-xrss-541486145",
+      "title": "免费 AI WhatsApp 社区，20 万人已加入",
+      "summary": "该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入。",
+      "url": "https://x.com/VaibhavSisinty/status/2121868535341429127",
+      "source": "X"
+    },
+    {
       "id": "xhot-xrss-130668586",
       "title": "免费资源包括 AI agent 设计技能和 React UI 素材",
       "summary": "含免费 AI agent 设计技能、277个 React UI 资源、101个开源 Shadcn 组件及69个免费动画 React 组件。",
@@ -105,10 +112,31 @@
       "source": "X"
     },
     {
-      "id": "xhot-xrss-541486145",
-      "title": "免费 AI WhatsApp 社区，20 万人已加入",
-      "summary": "该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入。",
-      "url": "https://x.com/VaibhavSisinty/status/2121868535341429127",
+      "id": "xhot-xrss-8927169359",
+      "title": "Become the Answer 提供免费10分钟 AI 搜索体检",
+      "summary": "帮小企业制定90天计划，让 ChatGPT、Claude 等 AI 助手推荐自己。",
+      "url": "https://x.com/mcwilsonky/status/2121776698350059693",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-3344605937",
+      "title": "总部位于迪拜的 AI 公司可以申请免费的迪拜 AI 印章，这是一项认可可信 AI 企业的政府认证",
+      "summary": "总部位于迪拜的 AI 公司可以免费申请迪拜 AI 印章，这是一项认可可信 AI 企业的政府认证。了解谁有资格以及如何申请。了解如何操作",
+      "url": "https://x.com/Emirates247/status/2121845721355718873",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-1896433382",
+      "title": "10门免费 Anthropic 课程，助你掌握 AI",
+      "summary": "掌握 AI 的 10 门免费 Anthropic 课程 10 门掌握 AI 的免费 Anthropic 课程",
+      "url": "https://x.com/KirkDBorne/status/2121838550820036923",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-2909215716",
+      "title": "ChatGPT 加 Tesseract 可免费全流程制作并剪辑视频",
+      "summary": "作者称该视频完全由 AI 生成和剪辑，所用 Tesseract 工具免费。",
+      "url": "https://x.com/hanifproduktif/status/2121568157991420214",
       "source": "X"
     }
   ]
