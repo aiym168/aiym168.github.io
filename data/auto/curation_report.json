@@ -2,17 +2,21 @@
  "counts": {
   "archived": 16,
   "deadline_extracted": 6,
-  "drop:duplicate": 186,
+  "drop:duplicate": 183,
   "drop:empty_summary": 30,
   "drop:negative_signal": 107,
-  "drop:no_clear_offer": 330,
-  "drop:not_ai": 283,
+  "drop:no_clear_offer": 333,
+  "drop:not_ai": 285,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 386,
-  "google_news_total": 386,
-  "kept_total": 180,
+  "google_news_resolved": 390,
+  "google_news_total": 390,
+  "kept_total": 182,
   "net:gnews_cache_hit": 386,
-  "raw_total": 1175
+  "net:gnews_resolved_net": 4,
+  "net:tco_expanded": 1,
+  "net:tco_failed": 3,
+  "new_this_run": 2,
+  "raw_total": 1179
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -21,14 +25,14 @@
    "Orty：面向自由职业者的 AI 客户线索筛选工具",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
+   "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
    "Webflow 转 Claude Code 转换器免费开放，可一比一还原站点",
    "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
    "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
    "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
    "grux：Grux AI，免费的开源 AI 代理",
    "freefield：ComfyUI 上开源 Higgsfield",
-   "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案",
-   "pane：窗格跟踪器，您的所有 AI 计划都位于一个 Windows 托盘中"
+   "GemType：适用于 Chrome 和 Safari 的免费开源 Grammarly 替代方案"
   ],
   "empty_summary": [
    "Khan Academy Philippines 称该国所有教师无论是否合作学校都可免费使用，约一分钟生成教案",
@@ -59,6 +63,10 @@
    "纸质交易，真正的奖品，在 Moomoo SG x Qoder AI 交易代理挑战赛中打造您的 AI 交易代理"
   ],
   "no_clear_offer": [
+   "@VaibhavSisinty 分享：这些开源仓库可帮助 AI 智能体理解代码库并提升技能",
+   "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
+   "@randylewiskemp 分享：作者用 5 个提示测试两款工具，比较哪款更好",
+   "@dealztrendz 分享：现有用户仍保留 18 个月使用权，Jio 部分套餐改送 Canva Pro",
    "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入",
    "含免费 AI agent 设计技能、277个 React UI 资源、101个开源 Shadcn 组件及69个免费动画",
    "帮小企业制定90天计划，让 ChatGPT、Claude 等 AI 助手推荐自己",
@@ -66,11 +74,7 @@
    "@KirkDBorne 分享：掌握 AI 的 10 门免费 Anthropic 课程 10 门掌握 AI 的免费 Ant",
    "@hanifproduktif 分享：作者称该视频完全由 AI 生成和剪辑，所用 Tesseract 工具免费",
    "用户询问100%免费方案，Claude 推荐 OBS 加摄像头圆形遮罩并代做了遮罩",
-   "@alex_prompter 分享：10 天内扫描发现 1200 多个严重问题，帮助维护者应对持续攻击",
-   "@TarasTechCom 分享：故障持续约 30 小时、可用性 95.8%，达 50% 抵扣档",
-   "@DataChaz 分享：该记忆层支撑其 AI 代理，推文列出 7 个免费开源项目",
-   "@jasonlk 分享：推文提供 AI 代理更多信息链接，并可获取免费的 AI 销售代理指南",
-   "上传租金名册、T-12 和租约，可得到真实 NOI、排序后的风险点和发给经纪人的问题，也适用于 ChatGPT"
+   "@alex_prompter 分享：10 天内扫描发现 1200 多个严重问题，帮助维护者应对持续攻击"
   ],
   "not_ai": [
    "他创办 NVIDIA 并押注 CUDA，公司一度濒临破产，最终豪赌成功",
@@ -101,16 +105,16 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-15T17:55:08+08:00",
+ "generated_at": "2026-11-15T22:28:26+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-15T17:55:08+08:00",
+  "checked_at": "2026-11-15T22:28:26+08:00",
   "counts": {
-   "ok": 166,
-   "recheck": 1
+   "gone": 1,
+   "ok": 164
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 0.7,
+ "seconds": 2.6,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -119,10 +123,10 @@
   },
   "hot_topics": {
    "drop:negative_signal": 4,
-   "drop:not_ai": 13,
-   "drop:not_ai_strict": 4,
-   "kept": 19,
-   "raw": 40
+   "drop:not_ai": 10,
+   "drop:not_ai_strict": 2,
+   "kept": 18,
+   "raw": 34
   }
  }
 }
