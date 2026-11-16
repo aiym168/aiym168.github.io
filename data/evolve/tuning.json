@@ -11,8 +11,8 @@
    "why": ""
   },
   "wired-ai": {
-   "weight": 0.75,
-   "since": "2026-11-12",
+   "weight": 0.5,
+   "since": "2026-11-17",
    "why": "被过滤掉的内容太多"
   },
   "bair-berkeley-edu-blog-feed-xml": {
@@ -51,10 +51,28 @@
    "state": "paused"
   },
   "kubernetes-io-feed-xml": {
+   "weight": 0.5,
+   "every": 2,
+   "since": "2026-11-17",
+   "why": "总是重复，没有新东西"
+  },
+  "react-dev-rss-xml": {
    "weight": 0.75,
    "every": 2,
-   "since": "2026-11-16",
+   "since": "2026-11-17",
    "why": "总是重复，没有新东西"
+  },
+  "gn-aigc-tut": {
+   "weight": 0.75,
+   "every": 2,
+   "since": "2026-11-17",
+   "why": "总是重复，没有新东西"
+  },
+  "qbitai": {
+   "weight": 1.25,
+   "every": 1,
+   "since": "2026-11-17",
+   "why": ""
   }
  },
  "deals": {
@@ -69,6 +87,6 @@
    "why": ""
   }
  },
- "updated_at": "2026-11-16T00:19+08:00",
+ "updated_at": "2026-11-17T02:58+08:00",
  "note": "由 evolve.py 每天自动维护；采集脚本只读。删除此文件即恢复默认（全部来源、权重 1.0）。"
 }

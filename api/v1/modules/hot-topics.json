@@ -3,8 +3,8 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 12,
-  "generated_at": "2026-11-16T19:51:10+08:00",
+  "count": 15,
+  "generated_at": "2026-11-17T02:58:10+08:00",
   "items": [
     {
       "id": "hnhot-50513215",
@@ -21,73 +21,94 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257467",
-      "title": "[Sidrune AI] 大客户 CC Max 低至 0.865x，首字中位数 2–3 秒｜留 UID 送 3U",
-      "summary": "大客户最低 0.865x 无忧使用 Claude CCMAX，首字 2-3 秒，纯血支持 Hvoy/CCtest 等检测 再也不用担心被封号啦～ ## CC Max：1.0／1.2 倍率，符合返点条件低至 0.865x **Claude-Max-cc：1.0 倍率**，用于 Claude Code，带标准防封注入。**Claude-Max-外接：1.2 倍率**，用于其他客户端。符合条件的大客户／代理合作可开通**最高 13.5% 返点**；CC 1.0 组按最高返点折算，实际倍率最低 **0.865x**。适用分组、开通和结算方式请联系 QQ 群里的 Han",
-      "url": "https://www.v2ex.com/t/1257467",
+      "id": "v2hot-1257395",
+      "title": "AI 离谱越权操作一则，大家引以为戒",
+      "summary": "## 前情提要：我自己写了一个用于服务器监控运维的的项目，能查看服务器状态，日志解析，自动运维等功能 项目中存储了服务器的 ssh 密钥，运维功不让 ai 直接 ssh 到服务器，写了一个中间层 ai 想操作服务器给中间层申请，中转获取命令执行结果，中间层查看类命令全部放行，修改命令需要审核 ## ai 越权操作 然后因为之前有项目配置了负载均衡导致日志分析出问题了，所以在运维项目的 codex 工作窗口询问是什么原因，有什么差异，还给贴了出问题项目的 nginx 配置文件，然后 ai 跑了半天告诉我改好了，我想去服务器修改一下配置文件呢，一看和 ai 修改的一模一样，当场愣住了",
+      "url": "https://www.v2ex.com/t/1257395",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257508",
-      "title": "有了 AI 发现再没人折腾鼠须管了",
-      "summary": "下午灵机一动把卸载挺久的 RIME 装上了，AI 一通操作各种皮肤，各种效率提升输入联想啥的配置总共花了 1 毛钱，想怎么改就怎么改，再不像之前一样到处找资料配置方案，感慨下真是实打实带来很多效率变化。",
-      "url": "https://www.v2ex.com/t/1257508",
+      "id": "v2hot-1257520",
+      "title": "Codex 大家会开 Full access 么",
+      "summary": "一共就三个选项 Ask for approval 基本没啥用，鸡毛蒜头都要蹦弹窗。Approve for me 用过一阵子，整体还行，涉及一些工具调用还是要蹦弹窗确认。Full acces 最近开了一阵子，感觉没啥问题，但总感觉心里有点儿慌。有朋友遇到过啥 bug 么？",
+      "url": "https://www.v2ex.com/t/1257520",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257489",
-      "title": "[开源][Rust] PreferZ 0.6 — 参考图板 + 手绘 + 思维导图，一个桌面 app（带 CLI 和 MCP）",
-      "summary": "我是设计师，工作流里一直混用两个工具：PureRef/Beeref 放参考图，Excalidraw 画草图理思路。用久了不太满意：Beeref 是 Python 打包的，图一多内存吃不住，也缺随手涂鸦和透明背景；Excalidraw 手绘感是真的好，但它是 web app，本地用得靠 VSCode/Obsidian 插件绕，图多了也卡。所以我用 Rust + egui 做了 PreferZ，把两者合成一个桌面端跨平台 app：参考图、手绘草图、思维导图放同一张无限画布上，画框可以当幻灯片翻页展示。另外加了 CLI 和 MCP，AI agent 能直接读写画布——这是我跟",
-      "url": "https://www.v2ex.com/t/1257489",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1257501",
-      "title": "土区 Google AI Ultra 5x 价格低至美区的 3 折，还包含 20 TB 云存储、Youtube 会员等",
-      "summary": "在 x 上看到的，感觉很香啊，写了篇购买教程",
-      "url": "https://www.v2ex.com/t/1257501",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1257495",
-      "title": "现在 B 站关于 AI 的视频评论区已经没活人了",
-      "summary": "应该是 dsh 里面的一个哔哩哔哩插件导致的，现在评论区 AI 跟 AI 聊太诡异了，而且 AI 还不是很公式的，我也没用过这个插件，反正全是省 token 的插件反而更贵，这结论太扎心了 @xx 这种评论。甚至连吐槽评论区没活人的底下也全是 AI 的评论 太诡异了，好在现在只有关于 AI 的视频里面是这样，如果蔓延到其他区，我的天赛博世界真来了",
-      "url": "https://www.v2ex.com/t/1257495",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1257507",
-      "title": "问一下，有很多过了 KYC 的 Claude Code 成品号，一个大概能卖多少钱",
+      "id": "v2hot-1257541",
+      "title": "有可靠专业的 claude kyc 服务商推荐吗",
       "summary": "",
-      "url": "https://www.v2ex.com/t/1257507",
+      "url": "https://www.v2ex.com/t/1257541",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257502",
-      "title": "去展会前，让 AI 帮你筛一遍谁最值得聊",
-      "summary": "展会很多，AI 相关的展会巨多，展会里的人巨巨多。很多人去一个展会待一整天，走两万步，拿三十份资料，扫四十个码，加五十个微信。回来第二天，已经记不清是谁。一个月后，能想起来名字的不超过两个。，人流量统计出来了，没人会去统计到底产生了多少个有效的连接 一、展会的问题不在现场 表面上展会效率很高。几千个人，几百个展商，三天，同一个地方。但它做的是广播，每个展商对所有人讲同一套话，每个观众挨个走过去听。而参会的人要的其实是点对点的，大多数人只想找到三个人，一个能供货的，一个能买单的，一个能一起做点事的。广播和点对点之间，缺一层匹配。现在这层匹配只能靠每个人的两条腿去走，靠展位",
-      "url": "https://www.v2ex.com/t/1257502",
+      "id": "v2hot-1257526",
+      "title": "总结了一些 AI Agent 开发工程师岗位的面试题",
+      "summary": "总结了一些 AI Agent 开发工程师岗位的面试题，希望对大家有所帮助",
+      "url": "https://www.v2ex.com/t/1257526",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257498",
-      "title": "提供已过 KYC 的成品 Claude 账户",
-      "summary": "没有购买任何计划，给邮箱和账户密码。有意欢迎联系 ![](",
-      "url": "https://www.v2ex.com/t/1257498",
+      "id": "v2hot-1257547",
+      "title": "给 NAS 搭了个 AI 运维管家：Go 盯告警，OpenCode 干活，主路由负责互检",
+      "summary": "最近折腾了一套家里的 NAS 运维助手，暂且叫 HomeOps。机器是 GKN6000 NAS，加一台 J4125/OpenWrt 主路由，上面已经跑着 Gitea、Nextcloud、Vaultwarden、Home Assistant 等服务。起因很简单：出了安全事件，希望有人早点发现；软件该不该更新，希望有人先查清楚兼容和迁移；服务凌晨挂了，也不想只收到一句“异常/已恢复”，还得自己翻半天日志。最开始想在两台机器上各塞一个 Agent，让它们互相检查。后来拆成了两层：**Go 程序持续做固定检查，出现事件再叫 Agent 分析。** ## 现在的结构",
+      "url": "https://www.v2ex.com/t/1257547",
       "source": "V2EX"
     },
     {
-      "id": "xhot-xrss-4975370379",
-      "title": "Hy4 flash 模型免费两周，近乎无限使用",
-      "summary": "Hy4 最快最省成本的模型，提供 1M 上下文、多模态和 ZDR。",
-      "url": "https://x.com/opencode/status/2122231173720224224",
+      "id": "v2hot-1257527",
+      "title": "deepseek harness 装了 dsh-compute-use 后启动不了，重装也不行。",
+      "summary": "1. 怎么彻底卸载呢？2. harness 跟 dsh-compute-use 有版本配套问题吗？3. dsh-compute-use 到底该怎么安装呢？",
+      "url": "https://www.v2ex.com/t/1257527",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1257562",
+      "title": "codex 降智了咋办",
+      "summary": "如题，codex gpt6.1 high 用起来降智了咋办",
+      "url": "https://www.v2ex.com/t/1257562",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1257559",
+      "title": "在瑞典做 Mac mini 实体主机托管，家用 IP，有 Claude 企业账号，可以代付，开放少量意向名额",
+      "summary": "看了很多人在做 Mac mini 实体主机托管服务，我也想看看有没有人感兴趣用欧洲的 IP，以及大家更关注哪些问题，比如网络、远程访问、设备配置、稳定性或者托管成本。有兴趣的朋友可以在评论区留言或者私信我，我会单独发送项目介绍和初步方案。也欢迎有相关经验的朋友交流建议。",
+      "url": "https://www.v2ex.com/t/1257559",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1257553",
+      "title": "DEVIN 里面使用 CLAUDE 模型好像对话就直接被吞了",
+      "summary": "有没人遇到一样的. 没任何的反馈.",
+      "url": "https://www.v2ex.com/t/1257553",
+      "source": "V2EX"
+    },
+    {
+      "id": "xhot-xrss-8142616487",
+      "title": "免费新工具发布，供审核组织检测儿童性虐待材料（含 AI 生成图像）",
+      "summary": "新工具免费提供给经审核组织，用于检测含 AI 生成图像的儿童性虐待材料。",
+      "url": "https://x.com/OpenAINewsroom/status/2122375519853559954",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-7301940478",
-      "title": "Rambler 非直接免费，或消耗 Gemini 积分",
-      "summary": "Google 暂未直接收费，传闻使用 Gemini AI 积分，新 Pixel 可免费获6个月 Gemini Cloud AI Pro。",
-      "url": "https://x.com/geekyranjit/status/2122191021010514300",
+      "id": "xhot-xrss-9748446132",
+      "title": "IBM Z Day 2026开放免费注册，聚焦 AI 与企业网络安全",
+      "summary": "免费注册活动，探讨企业如何保护敏感数据、保障自主 AI 系统并应对新兴威胁。",
+      "url": "https://x.com/davidbombal/status/2122332856789667961",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-4507152511",
+      "title": "Scenario Academy 免费开放，为创意人士提供 AI 课程",
+      "summary": "含90多节课程17门课，覆盖图像、视频、3D、音频、工作流、代理和 API。",
+      "url": "https://x.com/emmanuel_2m/status/2122303441036878335",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-1292981433",
+      "title": "免费获取 Advanced ChatGPT 指南",
+      "summary": "推文提供免费 Advanced ChatGPT 指南获取链接。",
+      "url": "https://x.com/AndrewBolis/status/2122297046652887504",
       "source": "X"
     }
   ]

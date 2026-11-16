@@ -1,6 +1,59 @@
 {
- "updated_at": "2026-11-16T00:19+08:00",
+ "updated_at": "2026-11-17T02:58+08:00",
  "days": [
+  {
+   "date": "2026-11-17",
+   "lines": [
+    "今天我学会了：Hugging Face 热门模型 最近 7 天给了我 813 条新内容，最靠谱。",
+    "我调整了：量子位出货多，我会多看它几眼。",
+    "我调整了：Kubernetes 博客、React 博客 等 3 个来源总是重复，我放慢了去看它的频率。",
+    "我调整了：WIRED AI 不对口的内容偏多，我调低了它的分量。"
+   ],
+   "by": "rules",
+   "events": [
+    {
+     "op": "slower",
+     "name": "Kubernetes 博客",
+     "key": "kubernetes-io-feed-xml",
+     "why": "总是重复，没有新东西"
+    },
+    {
+     "op": "slower",
+     "name": "React 博客",
+     "key": "react-dev-rss-xml",
+     "why": "总是重复，没有新东西"
+    },
+    {
+     "op": "slower",
+     "name": "新闻聚合 · AIGC 教程",
+     "key": "gn-aigc-tut",
+     "why": "总是重复，没有新东西"
+    },
+    {
+     "op": "down",
+     "name": "WIRED AI",
+     "key": "wired-ai",
+     "why": "被过滤掉的内容太多"
+    },
+    {
+     "op": "up",
+     "name": "量子位",
+     "key": "qbitai",
+     "why": ""
+    },
+    {
+     "op": "reject",
+     "name": "landian.news",
+     "why": "试用不合格"
+    },
+    {
+     "op": "reject",
+     "name": "science.nasa.gov",
+     "why": "试用不合格"
+    }
+   ],
+   "at": "2026-11-17T02:58+08:00"
+  },
   {
    "date": "2026-11-16",
    "lines": [

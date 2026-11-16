@@ -1,52 +1,58 @@
 {
  "last_step": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "changes": [
-   {
-    "op": "pause",
-    "name": "Synced",
-    "key": "syncedreview-com-feed",
-    "why": "一周都没有新东西"
-   },
-   {
-    "op": "pause",
-    "name": "Lilian Weng",
-    "key": "lilianweng-github-io-index-xml",
-    "why": "一周都没有新东西"
-   },
-   {
-    "op": "pause",
-    "name": "The Gradient",
-    "key": "thegradient-pub-rss",
-    "why": "一周都没有新东西"
-   },
-   {
-    "op": "pause",
-    "name": "Chromium Blog",
-    "key": "blog-chromium-org-feeds-posts-default",
-    "why": "一周都没有新东西"
-   },
    {
     "op": "slower",
     "name": "Kubernetes 博客",
     "key": "kubernetes-io-feed-xml",
     "why": "总是重复，没有新东西"
+   },
+   {
+    "op": "slower",
+    "name": "React 博客",
+    "key": "react-dev-rss-xml",
+    "why": "总是重复，没有新东西"
+   },
+   {
+    "op": "slower",
+    "name": "新闻聚合 · AIGC 教程",
+    "key": "gn-aigc-tut",
+    "why": "总是重复，没有新东西"
+   },
+   {
+    "op": "down",
+    "name": "WIRED AI",
+    "key": "wired-ai",
+    "why": "被过滤掉的内容太多"
+   },
+   {
+    "op": "up",
+    "name": "量子位",
+    "key": "qbitai",
+    "why": ""
    }
   ],
-  "snapshot": "data/evolve/snapshots/2026-11-16.json",
+  "snapshot": "data/evolve/snapshots/2026-11-17.json",
   "baseline": {
-   "kept": 12040,
-   "runs": 52,
-   "dead": 2,
-   "checked": 650,
-   "build_ok": 51,
+   "kept": 10815,
+   "runs": 43,
+   "dead": 4,
+   "checked": 669,
+   "build_ok": 41,
    "build_bad": 0,
-   "kept_per_run": 231.54,
-   "dead_rate": 0.0031,
+   "kept_per_run": 251.51,
+   "dead_rate": 0.006,
    "bad_build_rate": 0.0
   }
  },
  "history": [
+  {
+   "date": "2026-11-17",
+   "verdict_prev": null,
+   "changes": 5,
+   "diary_by": "rules"
+  },
   {
    "date": "2026-11-16",
    "verdict_prev": null,
@@ -78,5 +84,5 @@
    "diary_by": "rules"
   }
  ],
- "last_evolve_date": "2026-11-16"
+ "last_evolve_date": "2026-11-17"
 }

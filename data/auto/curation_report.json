@@ -2,19 +2,20 @@
  "counts": {
   "archived": 19,
   "deadline_extracted": 6,
-  "drop:duplicate": 232,
-  "drop:empty_summary": 32,
-  "drop:negative_signal": 111,
-  "drop:no_clear_offer": 355,
-  "drop:not_ai": 325,
+  "drop:duplicate": 281,
+  "drop:empty_summary": 35,
+  "drop:negative_signal": 115,
+  "drop:no_clear_offer": 374,
+  "drop:not_ai": 362,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 417,
-  "google_news_total": 417,
+  "google_news_resolved": 430,
+  "google_news_total": 430,
   "kept_total": 191,
-  "net:gnews_cache_hit": 413,
-  "net:gnews_resolved_net": 4,
-  "new_this_run": 3,
-  "raw_total": 1305
+  "net:gnews_cache_hit": 417,
+  "net:gnews_resolved_net": 13,
+  "net:tco_expanded": 5,
+  "net:tco_failed": 5,
+  "raw_total": 1417
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -22,17 +23,20 @@
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
-   "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
+   "SwarmLLM：开源应用，可多台电脑联网协作运行单机跑不动的大模型",
+   "awesome-free-ai-coding：收录合法免费 LLM API 与编程代理",
+   "awesome-freellm-apis：收录 40+ 厂商的 134 个以上免费 LLM API",
+   "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
+   "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
    "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
    "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
-   "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录",
-   "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
-   "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
-   "grux：Grux AI，免费的开源 AI 代理",
-   "freefield：ComfyUI 上开源 Higgsfield"
+   "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录"
   ],
   "empty_summary": [
+   "官方称免费版 ChatGPT 现已具备电脑操作能力，并发布演示视频",
+   "@WorkBuddy_AI 分享：模型响应更快、单任务成本更低且内置视觉理解，限时免费试用，有每日免费额度",
+   "@OpenAINewsroom 分享：新工具免费提供给经审核组织，用于检测含 AI 生成图像的儿童性虐待材料",
    "Command Code 回顾上周更新，包含 GOAT 额度提升、Muse Ember 双倍用量",
    "据称 Gemini Pro 现可免费使用一年，原价 200 美元，无需付款即可激活",
    "Khan Academy Philippines 称该国所有教师无论是否合作学校都可免费使用，约一分钟生成教案",
@@ -41,12 +45,10 @@
    "DeepAI Code 新增 Muse Ember 免费使用，Claude Sonnet 5.5",
    "演示用 Claude 与 Composio 查找并验证20个营销线索，成本0.68美元，可凭免费额度试用",
    "该免费电子书涵盖 LLM 漏洞、幻觉评估、护栏与生产部署，帮助构建更安全可靠的系统",
-   "Gojiberry AI 的 ARR 突破 500 万美元，并发布免费课程",
-   "加入 AMD AI 开发者计划可获免费 API 访问和 Token Lab 赠送积分",
-   "Claude Duet 开始发送邀请，每位 Duet 用户有3个邀请名额",
-   "该模型支持100万 token 上下文和图像输入，输入每百万 token 8美元、输出40美元"
+   "Gojiberry AI 的 ARR 突破 500 万美元，并发布免费课程"
   ],
   "negative_signal": [
+   "用 Claude 在45分钟建细分领域免费 Chrome 扩展，以注册或邮箱设门槛，再推广列表",
    "@WuBlockchain 分享：关注1.4万亿美元估值、9000亿美元算力承诺，以及 NVIDIA 财报和美联储纪要",
    "@PeterDiamandis 分享：超10.5万名女性参与，假阳性未显著增加，放射科医生阅片量减少44%",
    "@alex_prompter 分享：每周分享一个 AI 实用技巧，订阅免费",
@@ -57,24 +59,24 @@
    "作者把自家站点在用的12个 SKILL.md 工作流全部开源，可用 npx skills add 安装",
    "@pillitterip 分享：该插件已获 28,355 星",
    "@MattiHaapoja 分享：以下是我如何免费学习 AI 电影制作的",
-   "@mcwilsonky 分享：客户正在询问 AI 该雇用谁",
-   "@EvanKirstel 分享：英格兰大学监管机构希望进行更多无 AI 的评估"
+   "@mcwilsonky 分享：客户正在询问 AI 该雇用谁"
   ],
   "no_clear_offer": [
+   "教程演示在自有机器上运行 Claude Code，读文件、改代码、执行命令全程不联网",
+   "Anthropic 参与的全球孵化项目，提供 AI 指导、大师课与人脉，并有全额和部分奖学金",
+   "@globaltimesnews 分享：马尼拉峰会取得中国-东盟自贸区和 AI 合作等进展，专家称 AI 是新的合作领域",
+   "连接 DIMO 后可用 Claude 免提语音询问车辆，Claude 仅见选定车辆且不能解锁或启动",
+   "@Androidheadline 分享：三星健康为老年用户提供免费 AI 指导，用于糖尿病预防",
+   "推文提供免费 Advanced ChatGPT 指南获取链接",
+   "@emmanuel_2m 分享：含90多节课程17门课，覆盖图像、视频、3D、音频、工作流、代理和 API",
+   "@davidbombal 分享：免费注册活动，探讨企业如何保护敏感数据、保障自主 AI 系统并应对新兴威胁",
    "Google 暂未直接收费，传闻使用 Gemini AI 积分，新 Pixel 可免费获6个月 Gemini Cloud",
    "Hy4 最快最省成本的模型，提供 1M 上下文、多模态和 ZDR",
    "仿 Borland Turbo Pascal 的 Turbo Vision 风格，支持平铺级联窗口、多工作区与布局记忆",
-   "围绕 Anthropic CEO 谈 AI 与入门岗位的视频，整理 Anthropic 提示工程教程",
-   "@RoundtableSpace 分享：可生成55至70秒竖屏短片，2D 角色置于彩色3D 世界，带墨线轮廓、镜头模糊和",
-   "@VaibhavSisinty 分享：这些开源仓库可帮助 AI 智能体理解代码库并提升技能",
-   "5个适合程序员和 Vibe 程序员的酷炫网站 - 9.6万星开源 AI 图表 - 150多个免费动画 React 组件 ",
-   "本周最值得下载的是 Nvidia 的免费 AI",
-   "Anthropic/Dario 在 Sam 的脑海中“白住”，但我如果两次在 GPT-4和推理模型上失去领先地位（也许很",
-   "‼ 苹果新款折叠屏 iPhone 现已运行微软 Windows 11系统，无需越狱",
-   "Cicada 是免费开源工具，可为通话和直播生成双语字幕与结构化会议记录，并支持按键说话",
-   "DomoAI 的 Inko AI Agent 先在对话中规划图像、参考片段与数字人镜头，再展示成本明细"
+   "围绕 Anthropic CEO 谈 AI 与入门岗位的视频，整理 Anthropic 提示工程教程"
   ],
   "not_ai": [
+   "直播中聊 GPU 市场，并在聊天区发放游戏激活码和本月 PC 抽奖",
    "Salesforce 销售团队为当月成交将试用期从30天改为14天，无证据对客户更好",
    "@ai4bharat 分享：支持22种印度语言的免费设备端手势滑动键盘迎来重大升级",
    "@unusual_whales 分享：美国国家学生信息交换中心初步数据显示，今年秋季计算机与信息科学本科入学人数下降逾1",
@@ -85,8 +87,7 @@
    "作者在 Substack 免费发布 NBIS 第三季度财报完整回顾及更新后的2027年目标价",
    "Strategy 称比特币是数字资本并转为数字信用",
    "支持 Windows、Linux 和 Android，可看影视、动漫与直播电视，还支持离线下载",
-   "@TimSweeneyEpic 分享：看看政府为苹果公司提供的所有免费通行证，以垄断应用程序分发和支付——包括掩盖这里和",
-   "@sainingxie 分享：在跳上“无编码器”炒作列车之前，请三思而后行"
+   "@TimSweeneyEpic 分享：看看政府为苹果公司提供的所有免费通行证，以垄断应用程序分发和支付——包括掩盖这里和"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -103,28 +104,29 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-16T19:51:10+08:00",
+ "generated_at": "2026-11-17T02:58:10+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-16T19:51:10+08:00",
+  "checked_at": "2026-11-17T02:57:57+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 169
+   "ok": 171,
+   "recheck": 1
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 2.6,
+ "seconds": 7.2,
  "side": {
   "github_hot": {
    "drop:duplicate": 17,
-   "kept": 13,
+   "drop:not_ai": 1,
+   "kept": 12,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 5,
-   "drop:not_ai": 13,
-   "drop:not_ai_strict": 8,
-   "kept": 12,
-   "raw": 38
+   "drop:negative_signal": 4,
+   "drop:not_ai": 10,
+   "drop:not_ai_strict": 11,
+   "kept": 15,
+   "raw": 40
   }
  }
 }
