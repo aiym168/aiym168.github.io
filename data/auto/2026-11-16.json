@@ -1,7 +1,7 @@
 {
   "date": "2026-11-16",
-  "updated_at": "2026-11-16T07:09+08:00",
-  "updated_at_label": "2026-11-16 07:09 Asia/Shanghai",
+  "updated_at": "2026-11-16T09:46+08:00",
+  "updated_at_label": "2026-11-16 09:46 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -35,7 +35,7 @@
       "url": "https://pizza.hertzbeat.com/",
       "posted_at": "2026-11-16 00:04 Asia/Shanghai",
       "engagement": {
-        "points": 3,
+        "points": 5,
         "comments": 1
       },
       "original_title": "Show HN: Pizza – An event-driven AI agent, no while true",
@@ -233,30 +233,11 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50448400",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Rystic 提供 Slack、GitHub 和 Linear 的有状态本地模拟器",
-      "summary": "Rystic 在本地和 CI 中模拟 Slack、GitHub、Linear 服务，用于低成本验证 AI 生成的代码。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "evan_whitehouse",
-      "url": "https://www.rystic.ai",
-      "posted_at": "2026-11-11 08:44 Asia/Shanghai",
-      "engagement": {
-        "points": 4,
-        "comments": 0
-      },
-      "original_title": "Show HN: Rystic – Stateful Local Simulators of Slack, GitHub and Linear",
-      "original_summary": "Show HN: Rystic – Stateful Local Simulators of Slack, GitHub and Linear Hi HN, we&#x27;re Zach and Evan, founders of Rystic (<a href=\"https:&#x2F;&#x2F;www.rystic.ai\">https:&#x2F;&#x2F;www.rystic.ai</a>). As LLMs have progressed, producing code has become fast and cheap but verification has not. At my previous company I noticed that whenever I could test a service locally or in CI this bottleneck went away. If a service needed to use a shared sandbox or staging environment to run integration tests, verification was a huge pain. At Rystic we are taking that idea and applying it to every third-party service. We are trying to give developers a way to verify that their code works without calling real systems.<p>To do this, we build deterministic simulators of APIs like Slack, Stripe and S3. Yo",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50491841",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
-      "title": "显示 HN：反馈/AMA MeditionBench；调解和冲突解决 LLM",
-      "summary": "显示 HN：反馈/AMA MeditionBench；用于调解和冲突解决的 LLM 我是人类辅助智能的创始人，我相信 AI 可以用来减少两极分化，改善人们沟通和达成协议的方式。<p>在 <a href=\"https://mediationbench.com/\" rel=\"nofollow\">https://mediationbench.com/</a>，有许多前沿 LLM 经过测试，但很难跟上。我一直在尝试获得更多免费的 openrouter 或 Huggingface 积分。\nAzure for OpenAI 和 Anthropic 都提供了代币积分。（谢谢！）<p>研究论文也在那里。<p>人们一直在努力利用 LLM 来撒谎和玩外交，这是对这项工作的极好的赞美。<p>在 v4 中，测试将变得更加困难，因为 Claude 几乎饱和了测试",
+      "title": "MeditionBench 开放多款前沿大模型调解能力测试",
+      "summary": "创始人称 AI 可减少极化、改善沟通并帮助达成一致，网站已测试多款前沿大模型。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
       "author": "hendler",
@@ -268,7 +249,26 @@
       },
       "original_title": "Show HN: Feedback/AMA MeditionBench; LLMs for mediation and conflict resolution",
       "original_summary": "Show HN: Feedback/AMA MeditionBench; LLMs for mediation and conflict resolution I am the founder of Human Assisted Intelligence and I believe AI can be used to reduce polarization and improve the way people communicate and reach agreement.<p>At <a href=\"https:&#x2F;&#x2F;mediationbench.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;mediationbench.com&#x2F;</a>, there are many frontier LLMs tested, but it is difficult to keep up. I&#x27;ve been trying to get more free openrouter or huggingface credits. \nAzure for OpenAI and Anthropic have both provided token credits. (Thank You!)<p>The research paper is there as well.<p>There have been efforts to use LLMs to lie and play diplomacy, which are excellent compliments to this work.<p>In v4, the test will get harder as Claude nearly saturated the te",
-      "translated_by": "free-translate"
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50512735",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "已有服务可将 Cliniko 发票自动迁移到 QuickBooks",
+      "summary": "作者推出一项小型服务，自动把 Cliniko 发票转入 QuickBooks，面向同时使用两者的小型诊所。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "dre85",
+      "url": "https://invoice-funnel.com",
+      "posted_at": "2026-11-16 08:58 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Small service for moving invoices from Cliniko to QuickBooks",
+      "original_summary": "Show HN: Small service for moving invoices from Cliniko to QuickBooks Hey Everyone, Andrej here, I wanted to showcase a small service that I built for automatically transferring invoices from Cliniko to QuickBooks. I don&#x27;t believe that such a service yet exists so if you or somebody you know uses both Cliniko and QuickBooks to manage their small medical practice, there&#x27;s a high chance there could be some benefit from this service.<p>It has a free tier as well as a sandbox which can be tested and played around with at sandbox.invoice-funnel.com. You would need to have both a Cliniko account to create invoices and a QuickBooks account to see them land in case you want to try it out.<p>Even if you don&#x27;t use Cliniko or have never heard of it, any general comments&#x2F;questions ",
+      "translated_by": "model"
     },
     {
       "id": "hn-50507976",
@@ -461,22 +461,22 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50470343",
+      "id": "hn-50475689",
       "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Apron Chat Protocol 是作者新开发的聊天协议",
-      "summary": "作者长期关注聊天协议，曾做 ssh-chat，现推出新的聊天协议。",
+      "category": "AI 开发工具与编程助手",
+      "title": "ActiveDNS：免费的 DNS 搜索服务",
+      "summary": "可搜索域名、委托和 IP 地址的 DNS 数据集搜索引擎，起因是想查 CIDR 网段。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "shazow",
-      "url": "https://apron.chat/",
-      "posted_at": "2026-11-13 00:52 Asia/Shanghai",
+      "author": "elnerd",
+      "url": "https://activedns.net/",
+      "posted_at": "2026-11-13 07:04 Asia/Shanghai",
       "engagement": {
-        "points": 66,
-        "comments": 6
+        "points": 3,
+        "comments": 0
       },
-      "original_title": "Show HN: Apron Chat Protocol",
-      "original_summary": "Show HN: Apron Chat Protocol Hi HN friends - I&#x27;ve been obsessed with chat protocols for ages - one previous project is ssh-chat (<a href=\"https:&#x2F;&#x2F;ssh.chat&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;ssh.chat&#x2F;</a>)<p>I come bringing a new kind of chat protocol that I&#x27;ve been working on since I spent quite a lot of time exploring the 14 other competing standards we&#x27;ve come up with in the past few decades.<p>The protocol details are here: <a href=\"https:&#x2F;&#x2F;apron.chat\" rel=\"nofollow\">https:&#x2F;&#x2F;apron.chat</a><p>I&#x27;m hoping that Apron will better reflect our needs beyond 2026, which I expect will move more and more toward semi-private chats rather than global social networks.<p>Come say hi on the live public demo: <a href=\"https:&#x2F;&#x2F;web.apro",
+      "original_title": "Show HN: ActiveDNS, a free DNS search service",
+      "original_summary": "Show HN: ActiveDNS, a free DNS search service Hi, ActiveDNS is a project I’ve published online and has running for a couple of months now. It is a search engine for a DNS dataset\nI am constantly building. The purpose of it is to provide an accurate searchable database of domains, delegations and ip addresses and my initial motivation to make it was the need to look up CIDR ranges and find all associated IP adresses.<p>From the dataset, I am publishing monthly extracts of all observed registrable domain and top N hostnames. I’m sure I will find more interesting use cases for it later.",
       "translated_by": "model"
     },
     {
@@ -529,8 +529,8 @@
       "url": "https://blackoutapp.io/",
       "posted_at": "2026-11-15 23:37 Asia/Shanghai",
       "engagement": {
-        "points": 8,
-        "comments": 26
+        "points": 9,
+        "comments": 27
       },
       "original_title": "Show HN: A tiny macOS app that turns off the MacBook display [free license]",
       "original_summary": "Show HN: A tiny macOS app that turns off the MacBook display [free license] Hi, I made a tiny app that lets you turn off the MacBook screen when you work on external monitors.<p>It does NOT just dim the brightness to zero, the screen is actually turned off via the Apple hardware API, the according desktop is removed, so you have a clean &quot;one big monitor&quot; setup.<p>- Safe fallback if you turn off the external monitor(s), unplug the monitor cable(s), the app crashes or anything else happens. \n- Keyboard, touchpad and TouchID still work fine.\n- Automatic restart. 2 Megabyte size.\n- Totally niche, I know, but it helps me to concentrate.<p>The app is commercial ($9 once), but everybody who writes me at hi@blackoutapp.io gets a *FREE* lifetime license, and everybody who uses in the feed",
@@ -556,58 +556,111 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50494578",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Free Dictionary API 免费查 Wiktionary，无需密钥",
-      "summary": "基于 Wiktionary 的词典 API，无需申请 API key 即可使用。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "suvankar_m",
-      "url": "https://api.suvankar.cc/docs/dictionary",
-      "posted_at": "2026-11-14 14:30 Asia/Shanghai",
-      "engagement": {
-        "points": 6,
-        "comments": 0
-      },
-      "original_title": "Show HN: Free Dictionary API – Wiktionary data, no API key required",
-      "original_summary": "Show HN: Free Dictionary API – Wiktionary data, no API key required ",
-      "translated_by": "model"
-    },
-    {
-      "id": "v2ex-1257233",
+      "id": "v2ex-1257305",
       "source": "V2EX",
-      "category": "其他科技",
-      "title": "[WeClipper] Windows 剪贴板助手更新到 v0.8.8：搜索、纯文本粘贴、Win+V",
-      "summary": "[WeClipper] Windows 剪贴板助手更新到 v0.8.8：搜索、纯文本粘贴、Win+V\n上次在 V 站发 WeClipper 还是 v0.4.5，来补个更新帖。\r\n\r\n之前评论里有人说，没有搜索就不会换，也有人问能不能用 Win+V 唤出。现在这两个都有了 hh\r\n\r\n还是个 Windows 剪贴板小工具，按快捷键唤出列表，选中后直接粘贴。免费，不用注册，剪贴板内容保存在本机。\r\n\r\n官网：[https://weclipper.xmagicer.com/](https://weclipper.xmagicer.com/)\r\n\r\n下载：[Windows 安装版](https://weclipper.xmagicer.com/#/download)（Windows 10 及以上）\r\n\r\n相比[上一帖](https://www.v2ex.com/t/1112466)，主要多了这些：\r\n\r\n- **搜索和键盘操作。** 面板打开后按 Ctrl+F 搜索，↑↓ 选中、Enter 粘贴；当前列表前 9 条可以用 Ctrl+1～9 直接粘贴。不用搜索的时候，输入框就收起来。\r\n- **纯文本粘贴。** 选中条目后按 Shift+Enter，或者从右键菜单里选。快捷键可以自己改。也修了从表格复制后，纯文本粘贴为空的问题。\r\n- **固定面板。** 固定后粘贴一次不会关掉，可以接着选下一条。常用条目也可以固定在列表前面。\r\n- **图文预览。** 同时带图片和文字的条目会显示“图片＋文字”，可以分别预览图片和原文。按住 Alt 临时预览，松开收起；按右方向键也能展开预览。\r\n- **Win+V 唤出。** 设置里可以开启替代系统剪贴板，也可以继续用自己的快捷键。唤出、搜索和纯文本粘贴的按键都可以在设置里改。\r\n\r\n界面也重新整理了一遍，分类和搜索放在同一行，固定、删除放进了右键",
+      "category": "大模型 API 免费额度",
+      "title": "GSC 数据只保留 16 个月，我做了个插件把它备份到自己的 Google Drive，顺便接了 MCP",
+      "summary": "GSC 数据只保留 16 个月，我做了个插件把它备份到自己的 Google Drive，顺便接了 MCP\n做这个的起因很简单：我想真正学一遍 SEO。与其看别人的文章，不如拿自己的站、自己的数据，把收录、排名这些事从头跑一遍。跑的过程中碰到几个痛点，就做成了一个插件，叫 GSC Vault。\r\n\r\n**它能做什么**\r\n\r\n- **备份**：Search Console 只保留 16 个月数据，插件把它存到你自己的 Google Drive，数据在你自己手里。\r\n- **索引管理**：批量看哪些页面没被收录、原因是什么，不用一条条点。\r\n- **数据看板**：多站点平铺看整体走势，点进单站看细节。\r\n\r\n3 个站点以内免费，超出是一次性买断。\r\n\r\n![截图 1：索引原因列表](https://gscvault.app/screenshot/01-indexing-tree.webp)\r\n> 索引状态和页面信息及 Query 词\r\n\r\n![截图 2：看板](https://gscvault.app/screenshot/02-site-performance.webp)\r\n> 同 GSC 的单站分析\r\n\r\n**AI Connect**\r\n\r\n把 Search Console 数据通过 MCP 接给 Claude、GPT、Gemini。比如直接问：\"哪些词排在 8 到 15 位，值得优先优化？\"它会从你的真实数据里找答案。上线不久，已经有十多个人在用。\r\n\r\n地址：https://gscvault.app/zh\r\n\r\n**三点踩坑经验**\r\n\r\n**1. 别让 AI 替你规划需求**\r\n\r\n多站点看板一开始是让 ChatGPT 规划的，方案很\"完整\"：把所有站的数据糅在一起，各种增减、对比、汇总。做出来我自己打开一看，根本看不出哪个站发生了什么变化，很鸡肋。\r\n\r\n后来改成现",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "xmagicer",
-      "url": "https://www.v2ex.com/t/1257233",
-      "posted_at": "2026-11-15 19:50 Asia/Shanghai",
+      "author": "bqn",
+      "url": "https://www.v2ex.com/t/1257305",
+      "posted_at": "2026-11-16 09:40 Asia/Shanghai",
       "engagement": {
         "replies": 0
       },
-      "original_title": "[WeClipper] Windows 剪贴板助手更新到 v0.8.8：搜索、纯文本粘贴、Win+V",
-      "original_summary": "[WeClipper] Windows 剪贴板助手更新到 v0.8.8：搜索、纯文本粘贴、Win+V\n上次在 V 站发 WeClipper 还是 v0.4.5，来补个更新帖。\r\n\r\n之前评论里有人说，没有搜索就不会换，也有人问能不能用 Win+V 唤出。现在这两个都有了 hh\r\n\r\n还是个 Windows 剪贴板小工具，按快捷键唤出列表，选中后直接粘贴。免费，不用注册，剪贴板内容保存在本机。\r\n\r\n官网：[https://weclipper.xmagicer.com/](https://weclipper.xmagicer.com/)\r\n\r\n下载：[Windows 安装版](https://weclipper.xmagicer.com/#/download)（Windows 10 及以上）\r\n\r\n相比[上一帖](https://www.v2ex.com/t/1112466)，主要多了这些：\r\n\r\n- **搜索和键盘操作。** 面板打开后按 Ctrl+F 搜索，↑↓ 选中、Enter 粘贴；当前列表前 9 条可以用 Ctrl+1～9 直接粘贴。不用搜索的时候，输入框就收起来。\r\n- **纯文本粘贴。** 选中条目后按 Shift+Enter，或者从右键菜单里选。快捷键可以自己改。也修了从表格复制后，纯文本粘贴为空的问题。\r\n- **固定面板。** 固定后粘贴一次不会关掉，可以接着选下一条。常用条目也可以固定在列表前面。\r\n- **图文预览。** 同时带图片和文字的条目会显示“图片＋文字”，可以分别预览图片和原文。按住 Alt 临时预览，松开收起；按右方向键也能展开预览。\r\n- **Win+V 唤出。** 设置里可以开启替代系统剪贴板，也可以继续用自己的快捷键。唤出、搜索和纯文本粘贴的按键都可以在设置里改。\r\n\r\n界面也重新整理了一遍，分类和搜索放在同一行，固定、删除放进了右键",
+      "original_title": "GSC 数据只保留 16 个月，我做了个插件把它备份到自己的 Google Drive，顺便接了 MCP",
+      "original_summary": "GSC 数据只保留 16 个月，我做了个插件把它备份到自己的 Google Drive，顺便接了 MCP\n做这个的起因很简单：我想真正学一遍 SEO。与其看别人的文章，不如拿自己的站、自己的数据，把收录、排名这些事从头跑一遍。跑的过程中碰到几个痛点，就做成了一个插件，叫 GSC Vault。\r\n\r\n**它能做什么**\r\n\r\n- **备份**：Search Console 只保留 16 个月数据，插件把它存到你自己的 Google Drive，数据在你自己手里。\r\n- **索引管理**：批量看哪些页面没被收录、原因是什么，不用一条条点。\r\n- **数据看板**：多站点平铺看整体走势，点进单站看细节。\r\n\r\n3 个站点以内免费，超出是一次性买断。\r\n\r\n![截图 1：索引原因列表](https://gscvault.app/screenshot/01-indexing-tree.webp)\r\n> 索引状态和页面信息及 Query 词\r\n\r\n![截图 2：看板](https://gscvault.app/screenshot/02-site-performance.webp)\r\n> 同 GSC 的单站分析\r\n\r\n**AI Connect**\r\n\r\n把 Search Console 数据通过 MCP 接给 Claude、GPT、Gemini。比如直接问：\"哪些词排在 8 到 15 位，值得优先优化？\"它会从你的真实数据里找答案。上线不久，已经有十多个人在用。\r\n\r\n地址：https://gscvault.app/zh\r\n\r\n**三点踩坑经验**\r\n\r\n**1. 别让 AI 替你规划需求**\r\n\r\n多站点看板一开始是让 ChatGPT 规划的，方案很\"完整\"：把所有站的数据糅在一起，各种增减、对比、汇总。做出来我自己打开一看，根本看不出哪个站发生了什么变化，很鸡肋。\r\n\r\n后来改成现",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1257232",
+      "id": "v2ex-1257298",
       "source": "V2EX",
-      "category": "云服务/GPU/开发者资源",
-      "title": "做了一个 iOS 离线音乐播放器 离音： Wi-Fi 拖歌、APE/FLAC/DSD、10 段均衡器更新啦，发帖送一波永久 pro 送码",
-      "summary": "做了一个 iOS 离线音乐播放器 离音： Wi-Fi 拖歌、APE/FLAC/DSD、10 段均衡器更新啦，发帖送一波永久 pro 送码\n一个纯本地音乐播放器（iPhone / iPad / Apple 芯片 Mac），无账号、无广告、不上传音频。1.7.3 共 19 处改动，补的是几件一直欠着的事：能播的格式少一块、桌面上没得用、从服务器拿歌得先存到「文件」。\r\n\r\n格式：MP3 / M4A / MP4 / AAC / FLAC / ALAC / WAV / AIFF·AIF / CAF / MP1·MP2 / OGG·OGA / Opus / DSF·DFF / APE；APE 与 FLAC 内嵌 CUE 也认，旁边放 .lrc 就是逐行歌词。另有 10 段参数均衡器与 ReplayGain。\r\n\r\n![](https://i.imgur.com/bkiQd0O.png)\r\n\r\n## 1.7.3 更新\r\n\r\n1. APE 现在能直接播（Pro）。不是导入时先转一道 WAV，是边读边解码：后台线程按块取 PCM 进环形缓冲，均衡器和播放器照常取数据，全程没有中间文件。为什么不做缓存转码——APE 无损，一首五分钟解成 WAV 就是 50–100MB，一张专辑几百兆，首次播放还得等转完；实测解码速度是实时的 20–100 倍，余量足够，没必要拿磁盘换时间。代价是只做立体声：多声道的 APE（DVD-A 抓的那种）直接拒绝播放，不静默下混。\r\n\r\n2. 整轨 + .cue 的专辑按曲目分开。APE 与 FLAC 内嵌的 CUE 也认，不用在文件旁边再放一份。\r\n\r\n3. Mac 上原生运行。不另做一套 Mac 界面，同一份工程跑在 Apple 芯片的 Mac 上，曲库、播放器、Wi-Fi 传歌、导入全是 iPad 那一套；长页面可以按住鼠标拖动滚动，和系统里其它应用一致。取舍",
+      "category": "大模型 API 免费额度",
+      "title": "4800 个网站之后，我把帽子云升级为国内 Vercel 替代：网站、API、PostgreSQL、Redis，一个平台全搞定！",
+      "summary": "4800 个网站之后，我把帽子云升级为国内 Vercel 替代：网站、API、PostgreSQL、Redis，一个平台全搞定！\n先说结论：帽子云现在已经不只是一个静态网站托管平台了。网站、Web 应用、PostgreSQL 和 Redis，都可以放到同一个项目里管理。\r\n\r\n最开始做帽子云，其实没想那么复杂。\r\n\r\n当时我只想解决一个问题：能不能把 GitHub、Gitee 等代码仓库里的静态网站直接部署上线？不用自己买服务器、配环境，也不用折腾 Nginx 和 HTTPS。\r\n\r\n于是，帽子云就这样开始了。\r\n\r\n2024 年 12 月，我把它发布到了 V2EX：[当时的帖子](https://v2ex.com/t/1096024)。\r\n\r\n没想到，这个小项目一直做到了现在。截至 2026 年 11 月 13 日，平台已经累计部署了 **4800 个静态网站**。\r\n\r\n但这个数字也让我越来越清楚地看到：静态网站只是起点，一个完整的项目，远不止一个网站。\r\n\r\n\r\n![](https://i.v2ex.co/WdRm8Nyb.png)\r\n\r\n![](https://i.v2ex.co/3jk6Vz11.png)\r\n\r\n\r\n比如你开发了一个 SaaS 项目：\r\n\r\n- 前端需要部署网站；\r\n- 后端需要运行 API 服务；\r\n- 业务数据需要 PostgreSQL；\r\n- 缓存需要 Redis；\r\n- 还要处理域名、HTTPS、日志和监控。\r\n\r\n\r\n![](https://i.v2ex.co/SRfSplH1.png)\r\n\r\n\r\n以前，这些东西可能需要在好几个平台之间来回切换。前端在一个地方，后端在另一个地方，数据库又是单独购买的。\r\n\r\n服务一多，管理和排查问题都变得麻烦。\r\n\r\n所以，这次我给帽子云做了一次比较大的升级：\r\n\r\n**现在，网站、Web 应用、Post",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "andyiac",
-      "url": "https://www.v2ex.com/t/1257232",
-      "posted_at": "2026-11-15 19:41 Asia/Shanghai",
+      "author": "joyoyao",
+      "url": "https://www.v2ex.com/t/1257298",
+      "posted_at": "2026-11-16 09:20 Asia/Shanghai",
       "engagement": {
-        "replies": 8
+        "replies": 0
       },
-      "original_title": "做了一个 iOS 离线音乐播放器 离音： Wi-Fi 拖歌、APE/FLAC/DSD、10 段均衡器更新啦，发帖送一波永久 pro 送码",
-      "original_summary": "做了一个 iOS 离线音乐播放器 离音： Wi-Fi 拖歌、APE/FLAC/DSD、10 段均衡器更新啦，发帖送一波永久 pro 送码\n一个纯本地音乐播放器（iPhone / iPad / Apple 芯片 Mac），无账号、无广告、不上传音频。1.7.3 共 19 处改动，补的是几件一直欠着的事：能播的格式少一块、桌面上没得用、从服务器拿歌得先存到「文件」。\r\n\r\n格式：MP3 / M4A / MP4 / AAC / FLAC / ALAC / WAV / AIFF·AIF / CAF / MP1·MP2 / OGG·OGA / Opus / DSF·DFF / APE；APE 与 FLAC 内嵌 CUE 也认，旁边放 .lrc 就是逐行歌词。另有 10 段参数均衡器与 ReplayGain。\r\n\r\n![](https://i.imgur.com/bkiQd0O.png)\r\n\r\n## 1.7.3 更新\r\n\r\n1. APE 现在能直接播（Pro）。不是导入时先转一道 WAV，是边读边解码：后台线程按块取 PCM 进环形缓冲，均衡器和播放器照常取数据，全程没有中间文件。为什么不做缓存转码——APE 无损，一首五分钟解成 WAV 就是 50–100MB，一张专辑几百兆，首次播放还得等转完；实测解码速度是实时的 20–100 倍，余量足够，没必要拿磁盘换时间。代价是只做立体声：多声道的 APE（DVD-A 抓的那种）直接拒绝播放，不静默下混。\r\n\r\n2. 整轨 + .cue 的专辑按曲目分开。APE 与 FLAC 内嵌的 CUE 也认，不用在文件旁边再放一份。\r\n\r\n3. Mac 上原生运行。不另做一套 Mac 界面，同一份工程跑在 Apple 芯片的 Mac 上，曲库、播放器、Wi-Fi 传歌、导入全是 iPad 那一套；长页面可以按住鼠标拖动滚动，和系统里其它应用一致。取舍",
+      "original_title": "4800 个网站之后，我把帽子云升级为国内 Vercel 替代：网站、API、PostgreSQL、Redis，一个平台全搞定！",
+      "original_summary": "4800 个网站之后，我把帽子云升级为国内 Vercel 替代：网站、API、PostgreSQL、Redis，一个平台全搞定！\n先说结论：帽子云现在已经不只是一个静态网站托管平台了。网站、Web 应用、PostgreSQL 和 Redis，都可以放到同一个项目里管理。\r\n\r\n最开始做帽子云，其实没想那么复杂。\r\n\r\n当时我只想解决一个问题：能不能把 GitHub、Gitee 等代码仓库里的静态网站直接部署上线？不用自己买服务器、配环境，也不用折腾 Nginx 和 HTTPS。\r\n\r\n于是，帽子云就这样开始了。\r\n\r\n2024 年 12 月，我把它发布到了 V2EX：[当时的帖子](https://v2ex.com/t/1096024)。\r\n\r\n没想到，这个小项目一直做到了现在。截至 2026 年 11 月 13 日，平台已经累计部署了 **4800 个静态网站**。\r\n\r\n但这个数字也让我越来越清楚地看到：静态网站只是起点，一个完整的项目，远不止一个网站。\r\n\r\n\r\n![](https://i.v2ex.co/WdRm8Nyb.png)\r\n\r\n![](https://i.v2ex.co/3jk6Vz11.png)\r\n\r\n\r\n比如你开发了一个 SaaS 项目：\r\n\r\n- 前端需要部署网站；\r\n- 后端需要运行 API 服务；\r\n- 业务数据需要 PostgreSQL；\r\n- 缓存需要 Redis；\r\n- 还要处理域名、HTTPS、日志和监控。\r\n\r\n\r\n![](https://i.v2ex.co/SRfSplH1.png)\r\n\r\n\r\n以前，这些东西可能需要在好几个平台之间来回切换。前端在一个地方，后端在另一个地方，数据库又是单独购买的。\r\n\r\n服务一多，管理和排查问题都变得麻烦。\r\n\r\n所以，这次我给帽子云做了一次比较大的升级：\r\n\r\n**现在，网站、Web 应用、Post",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1257295",
+      "source": "V2EX",
+      "category": "AI 产品会员/试用",
+      "title": "[机场推广] 自建机场推广",
+      "summary": "[机场推广] 自建机场推广\n注册免费随机试用 5～10 天\r\n---\r\n### 新一轮优惠\r\n\r\n* 普通节点：闲时用\r\n* 专线节点：晚高峰期用\r\n* 更有家宽节点\r\n\r\n ¥3 起/月。季付，半年付，年付 更有折上折。\r\n\r\nhttps://m.vxcloud.cfd/coupon.html",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "VXCloud",
+      "url": "https://www.v2ex.com/t/1257295",
+      "posted_at": "2026-11-16 09:14 Asia/Shanghai",
+      "engagement": {
+        "replies": 1
+      },
+      "original_title": "[机场推广] 自建机场推广",
+      "original_summary": "[机场推广] 自建机场推广\n注册免费随机试用 5～10 天\r\n---\r\n### 新一轮优惠\r\n\r\n* 普通节点：闲时用\r\n* 专线节点：晚高峰期用\r\n* 更有家宽节点\r\n\r\n ¥3 起/月。季付，半年付，年付 更有折上折。\r\n\r\nhttps://m.vxcloud.cfd/coupon.html",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1257287",
+      "source": "V2EX",
+      "category": "云服务/GPU/开发者资源",
+      "title": "[送码] 二狗子盘(egos) - 将电脑变成可移植的 NAS，需要手机备份，设备同步，文件分享的可以免费领取 vip",
+      "summary": "[送码] 二狗子盘(egos) - 将电脑变成可移植的 NAS，需要手机备份，设备同步，文件分享的可以免费领取 vip\n分享一下自己写的跨平台的文件存储备份分享的软件,我管它叫二狗子盘   [https://egosapp.com/zh](https://egosapp.com/zh)，支持内网和外网传输。支持 http 和 p2p 网络，根据不同的网络环境自动发现并切换,无需自己配置内网穿透。\r\n\r\n**解决了什么问题：**\r\n\r\n+ 零配置 self-host 文件服务器，不用安装其他额外的东西，手机备份，文件分享，文件同步一键完成，支持 webdav + s3\r\n+ 专属的个人文件网络，每个设备就是一个节点，节点之间文件共享。传输文件从复杂的两端发起变成一端主动选择。\r\n+ 不用配置复杂的内外网穿透就能分享文件，基于 webrtc 固定 peerId，分享的文件都集中放在个人主页。\r\n+ 数据保存本地，仅设备信息+用户信息和远程分享会同步到远程服务器\r\n+ 一个目录就是一个 workspace，workspace 可以移植到其他电脑上继续运行。一个移动硬盘，一个 sdcard，都能成为 workspace.\r\n\r\n\r\n\r\n\r\n\r\n### 手机相册备份：\r\n仅同一内网环境下开启，速度极快。亲测五分钟同步 12G 1500 左右视频和图片（不同机器和网络可能差异会比较大）\r\n\r\n### <img src=\"https://cdn.nlark.com/yuque/0/2026/webp/660603/1794549843705-23f487e4-56eb-4e7a-a2fb-a89e66094a02.webp\" width=\"640\" title=\"\" crop=\"0,0,1,1\" id=\"uf2b147fd\" class=\"ne-image\">  \r\n  \r\n### 浏览",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "shisang",
+      "url": "https://www.v2ex.com/t/1257287",
+      "posted_at": "2026-11-16 08:43 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "[送码] 二狗子盘(egos) - 将电脑变成可移植的 NAS，需要手机备份，设备同步，文件分享的可以免费领取 vip",
+      "original_summary": "[送码] 二狗子盘(egos) - 将电脑变成可移植的 NAS，需要手机备份，设备同步，文件分享的可以免费领取 vip\n分享一下自己写的跨平台的文件存储备份分享的软件,我管它叫二狗子盘   [https://egosapp.com/zh](https://egosapp.com/zh)，支持内网和外网传输。支持 http 和 p2p 网络，根据不同的网络环境自动发现并切换,无需自己配置内网穿透。\r\n\r\n**解决了什么问题：**\r\n\r\n+ 零配置 self-host 文件服务器，不用安装其他额外的东西，手机备份，文件分享，文件同步一键完成，支持 webdav + s3\r\n+ 专属的个人文件网络，每个设备就是一个节点，节点之间文件共享。传输文件从复杂的两端发起变成一端主动选择。\r\n+ 不用配置复杂的内外网穿透就能分享文件，基于 webrtc 固定 peerId，分享的文件都集中放在个人主页。\r\n+ 数据保存本地，仅设备信息+用户信息和远程分享会同步到远程服务器\r\n+ 一个目录就是一个 workspace，workspace 可以移植到其他电脑上继续运行。一个移动硬盘，一个 sdcard，都能成为 workspace.\r\n\r\n\r\n\r\n\r\n\r\n### 手机相册备份：\r\n仅同一内网环境下开启，速度极快。亲测五分钟同步 12G 1500 左右视频和图片（不同机器和网络可能差异会比较大）\r\n\r\n### <img src=\"https://cdn.nlark.com/yuque/0/2026/webp/660603/1794549843705-23f487e4-56eb-4e7a-a2fb-a89e66094a02.webp\" width=\"640\" title=\"\" crop=\"0,0,1,1\" id=\"uf2b147fd\" class=\"ne-image\">  \r\n  \r\n### 浏览",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1257283",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "Codex 自建站｜平价使用企业级线路",
+      "summary": "Codex 自建站｜平价使用企业级线路\n• 纯 Pro 池，多线路稳定供应，成功率长期 99.9+\r\n• Codex 全模型可用\r\n• 高 RPM / 高并发，适合长时间持续跑\r\n• 按量全场 0.2 ，充值立享 0.17 优惠，月度阶梯最低 0.15\r\n• 源头站，可接下游，注册送免费额度（ agent 延迟发放）\r\n\r\n地址：codex.zhuanyedaili.com⁠\r\n联系方式：QQ 群：1106944249 https://codex.zhuanyedaili.com/scripts/codex-qq-group.jpg",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "AI952995",
+      "url": "https://www.v2ex.com/t/1257283",
+      "posted_at": "2026-11-16 08:19 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "Codex 自建站｜平价使用企业级线路",
+      "original_summary": "Codex 自建站｜平价使用企业级线路\n• 纯 Pro 池，多线路稳定供应，成功率长期 99.9+\r\n• Codex 全模型可用\r\n• 高 RPM / 高并发，适合长时间持续跑\r\n• 按量全场 0.2 ，充值立享 0.17 优惠，月度阶梯最低 0.15\r\n• 源头站，可接下游，注册送免费额度（ agent 延迟发放）\r\n\r\n地址：codex.zhuanyedaili.com⁠\r\n联系方式：QQ 群：1106944249 https://codex.zhuanyedaili.com/scripts/codex-qq-group.jpg",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1257279",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "又被​赛博安全关照​了",
+      "summary": "又被​赛博安全关照​了\nV 友们大概多久见到一次 This content can't be shown - We take extra care with some cybersecurity requests？\r\n我之前一周能遇上一两次，都是同一个老安卓手机升级内核的项目。以前都可以通过发送“继续“或者换低档模型绕过去，今天实在是不行了，开新 session 也没用。\r\n只能换 opencode 的免费模型分析一下原因，刚发完提示词就触发压缩然后被撑爆了。只能到项目的父目录去问，结果发现撑爆是因为 codex 不停地将当前进度 prepend 到 AGENTS.md 里，搞出了个 MB 级的提示词，然后前面全是所谓敏感词（比如 UAF？？？），让 opencode 清理了一下，codex 开新 session 就能继续了。\r\n大家这种 false positive 一般都是怎么绕过的？",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "eagleoflqj",
+      "url": "https://www.v2ex.com/t/1257279",
+      "posted_at": "2026-11-16 07:51 Asia/Shanghai",
+      "engagement": {
+        "replies": 3
+      },
+      "original_title": "又被​赛博安全关照​了",
+      "original_summary": "又被​赛博安全关照​了\nV 友们大概多久见到一次 This content can't be shown - We take extra care with some cybersecurity requests？\r\n我之前一周能遇上一两次，都是同一个老安卓手机升级内核的项目。以前都可以通过发送“继续“或者换低档模型绕过去，今天实在是不行了，开新 session 也没用。\r\n只能换 opencode 的免费模型分析一下原因，刚发完提示词就触发压缩然后被撑爆了。只能到项目的父目录去问，结果发现撑爆是因为 codex 不停地将当前进度 prepend 到 AGENTS.md 里，搞出了个 MB 级的提示词，然后前面全是所谓敏感词（比如 UAF？？？），让 opencode 清理了一下，codex 开新 session 就能继续了。\r\n大家这种 false positive 一般都是怎么绕过的？",
       "translated_by": "free-translate"
     },
     {
@@ -622,64 +675,28 @@
       "url": "https://www.v2ex.com/t/1257214",
       "posted_at": "2026-11-15 16:22 Asia/Shanghai",
       "engagement": {
-        "replies": 75
+        "replies": 97
       },
       "original_title": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结",
       "original_summary": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结\n先说下本人的 AI Coding 经验，chatgpt 横空出世时，一款名为免费的 Cursor 在 2023 年悄然上线，我当时也算是最先一批把 cursor 用于公司项目的程序员，所以 AI Coding 经验有 2 年半的时间了吧。\r\n\r\n当时惊叹 chatgpt 的能力，我意识到了 AI 真的会思考，AI 不再是算法和程序堆叠的产物。\r\n\r\n从 Cursor 到 Codex 到 Calude Code，再到 deepseek-harness。\r\n\r\n他们都在特定的环境完成了我的任务，从用 Cursor 时自己还会手动改下 AI 写代码遗留下的问题，到用 Codex 时感受到 AI 可以自己完成 UI 设计（前端开发），功能实现，自己用浏览器测试项目。\r\n\r\n后面又用了几个月的 Calude Code，cc 的代码能力的确把 codex 远远的甩在身后，理解需求的能力，设计品味的能力，把任务交给他，很放心，返工也少。\r\n\r\n在深度使用 cc 和 codex 的时候，dsh 只是我的备胎，所以有一段时间很少使用 dsh，事情的转折来自 codex 降智，claude code 弹 kyc，于是我深度使用了半个月的 dsh。\r\n\r\n在实际的项目开发中，dsh 完成了所有的功能！\r\n\r\n**从 UI 还原，架构设计，前端代码编写，后端代码编写，复杂原子任务，把代码提交到 github，登录 ECS 服务器部署，排查线上问题，查询服务器日志，修复代码推送，部署！**\r\n\r\n一气呵成，当一套组合拳被 dsh 打下来的时候，我才明白为什么人们称那个男人叫 **梁圣！**\r\n\r\n原来我认为只有 Claude code 和 codex 完成的任务，被 DSH 同样完成时，我猜明白，原来最好的模型就在身边",
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-almaeedhi-hani-free-llm-api",
+      "id": "ghdeal-vvikasreddy-world-bank-docs-mcp",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "Almaeedhi-Hani/free-LLM-api是免费LLM API仓库",
-      "summary": "仓库包含自动化系统代码，涉及Webhook、外部API、Cron自动更新及Google和Bing归档触发。",
+      "title": "vvikasreddy/world-bank-docs-mcp 提供免费世界银行文档 MCP 服务",
+      "summary": "该 MCP 服务连接世界银行文档 API，并配有基于 Ollama 或 Groq 的免费大模型代理来回答有文档依据的问题。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Almaeedhi-Hani",
-      "url": "https://github.com/Almaeedhi-Hani/free-LLM-api",
-      "posted_at": "2026-11-13 00:06 Asia/Shanghai",
+      "author": "vvikasreddy",
+      "url": "https://github.com/vvikasreddy/world-bank-docs-mcp",
+      "posted_at": "2026-11-16 09:44 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
-      "original_title": "Almaeedhi-Hani/free-LLM-api",
-      "original_summary": "Almaeedhi-Hani/free-LLM-api الأكواد البرمجية للحل السحري (نظام الأتمتة الذاتية والتحديث اللحظي)  عزيزي المطور، قم ببرمجة النظام الداخلي للأتمتة عبر دمج كود الـ Webhook مع الـ API الخارجي لتشغيل التحديث الذاتي التلقائي (Cron Job):  كود إرسال إشارات الأرشفة الفورية (Google & Bing Webhook Trigger)",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-enapt-swarmllm",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "SwarmLLM：在自己电脑上免费运行 AI 对话模型",
-      "summary": "开源应用，可多台电脑联网协作运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "enapt",
-      "url": "https://github.com/enapt/SwarmLLM",
-      "posted_at": "2026-11-15 17:30 Asia/Shanghai",
-      "engagement": {
-        "stars": 87
-      },
-      "original_title": "enapt/SwarmLLM",
-      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-2troll-kansai-radar",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "kansai-radar：在GitHub Actions上免费运行的活动推送机器人",
-      "summary": "该项目每日自动采集公开活动信息，用OpenStreetMap进行地理编码并推送到Telegram，无需服务器、数据库或付费API。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "2troll",
-      "url": "https://github.com/2troll/kansai-radar",
-      "posted_at": "2026-11-12 20:41 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "2troll/kansai-radar",
-      "original_summary": "2troll/kansai-radar Autonomous daily event bot. Runs free on GitHub Actions, collects from keyless public sources, geocodes with OpenStreetMap, and pushes to Telegram. No servers, no database, no paid APIs, no LLM.",
+      "original_title": "vvikasreddy/world-bank-docs-mcp",
+      "original_summary": "vvikasreddy/world-bank-docs-mcp MCP server for the World Bank Documents API + a free-LLM agent (Ollama / Groq) that answers questions grounded in real World Bank publications",
       "translated_by": "model"
     },
     {
@@ -701,24 +718,6 @@
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-liutasil501-ai-api-prices",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "Liutasil501/ai-api-prices：免费 AI API 价格数据",
-      "summary": "涵盖 LLM、图像、视频、语音、搜索和嵌入的 AI API 价格数据，JSON 与 CSV，MIT 许可。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Liutasil501",
-      "url": "https://github.com/Liutasil501/ai-api-prices",
-      "posted_at": "2026-11-14 12:50 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "Liutasil501/ai-api-prices",
-      "original_summary": "Liutasil501/ai-api-prices Free, daily-updated AI API price dataset (LLM, image, video, speech, search, embeddings) from AISelect.online. JSON + CSV, MIT.",
-      "translated_by": "model"
-    },
-    {
       "id": "ghdeal-alim4385-llm-free-search-api-vercel",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
@@ -737,21 +736,21 @@
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-c00lpeace-free-llm-tracker",
+      "id": "ghdeal-enapt-swarmllm",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "free-llm-tracker：追踪免费 LLM API 提供方，定期自动更新",
-      "summary": "为 Hermes Agent 整理免费 LLM API 提供方的追踪基线，并定期自动更新。",
+      "title": "SwarmLLM：在自己电脑上免费运行 AI 对话模型",
+      "summary": "开源应用，可多台电脑联网协作运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "c00lpeace",
-      "url": "https://github.com/c00lpeace/free-llm-tracker",
-      "posted_at": "2026-11-12 18:14 Asia/Shanghai",
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-15 17:30 Asia/Shanghai",
       "engagement": {
-        "stars": 0
+        "stars": 87
       },
-      "original_title": "c00lpeace/free-llm-tracker",
-      "original_summary": "c00lpeace/free-llm-tracker Hermes Agent용 무료 LLM API 제공자 추적 기준선 (정기 자동 갱신)",
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
       "translated_by": "model"
     },
     {
