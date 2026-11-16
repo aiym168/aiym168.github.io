@@ -1,7 +1,7 @@
 {
   "date": "2026-11-16",
-  "updated_at": "2026-11-16T15:13+08:00",
-  "updated_at_label": "2026-11-16 15:13 Asia/Shanghai",
+  "updated_at": "2026-11-16T17:22+08:00",
+  "updated_at_label": "2026-11-16 17:22 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -54,7 +54,7 @@
       "url": "https://github.com/Scronkfinkle/byob",
       "posted_at": "2026-11-15 22:52 Asia/Shanghai",
       "engagement": {
-        "points": 3,
+        "points": 4,
         "comments": 0
       },
       "original_title": "Show HN: A local-first AI agent for the desktop, no Electron, any LLM endpoint",
@@ -320,7 +320,7 @@
       "url": "https://news.ycombinator.com/item?id=50514154",
       "posted_at": "2026-11-16 12:49 Asia/Shanghai",
       "engagement": {
-        "points": 1,
+        "points": 2,
         "comments": 3
       },
       "original_title": "Ask HN: How to visually edit vibe coded websites?",
@@ -568,7 +568,7 @@
       "posted_at": "2026-11-15 23:37 Asia/Shanghai",
       "engagement": {
         "points": 9,
-        "comments": 27
+        "comments": 28
       },
       "original_title": "Show HN: A tiny macOS app that turns off the MacBook display [free license]",
       "original_summary": "Show HN: A tiny macOS app that turns off the MacBook display [free license] Hi, I made a tiny app that lets you turn off the MacBook screen when you work on external monitors.<p>It does NOT just dim the brightness to zero, the screen is actually turned off via the Apple hardware API, the according desktop is removed, so you have a clean &quot;one big monitor&quot; setup.<p>- Safe fallback if you turn off the external monitor(s), unplug the monitor cable(s), the app crashes or anything else happens. \n- Keyboard, touchpad and TouchID still work fine.\n- Automatic restart. 2 Megabyte size.\n- Totally niche, I know, but it helps me to concentrate.<p>The app is commercial ($9 once), but everybody who writes me at hi@blackoutapp.io gets a *FREE* lifetime license, and everybody who uses in the feed",
@@ -594,76 +594,112 @@
       "translated_by": "model"
     },
     {
-      "id": "v2ex-1257422",
+      "id": "v2ex-1257475",
       "source": "V2EX",
-      "category": "其他科技",
-      "title": "周一福利🎁原生美国住宅 IP 免费领 195+国家可选",
-      "summary": "周一福利🎁原生美国住宅 IP 免费领 195+国家可选\n🚀ZooProxy｜全球高性能住宅 IP\r\n\r\n🌍1 亿+真实 IP，195+国家/城市级定位\r\n\r\n⚡<0.5s 延迟｜高并发｜7×24 支持\r\n\r\n💰动态住宅$0.38/GB｜静态 ISP $0.9/IP/周｜无限流量$0.38/端口/天\r\n\r\n适配爬虫、社媒矩阵、跨境、网站测试、AI 大流量\r\n\r\n|🎁支持免费测试，先测再决定|\r\n|---|\r\nYKNE-JCYZ-9TPQ\r\nLQXQ-AMLG-22CY\r\nLHG9-WT2M-NM42\r\nZ2VN-HQAR-Y45M\r\nCK8U-QJZF-U77P\r\nPXFM-ASDQ-B3R7\r\nEZRU-9XWX-UM4Y\r\nUCJY-FKLH-S6RL\r\nY7LV-NNUV-9X74\r\n3QJP-KNA5-L4BS\r\n\r\n复制兑换码👉个人中心👉CDK 栏兑换👉选择国家\r\n\r\n🔗 https://zooproxy.com/?kwd=zsy-v2ex",
+      "category": "大模型 API 免费额度",
+      "title": "自建纯血 Claude 官方号池，3 折直连 Claude Code ，不掺水的 Token 吃起来不烧心，回帖附上注册邮箱白嫖 2$",
+      "summary": "自建纯血 Claude 官方号池，3 折直连 Claude Code ，不掺水的 Token 吃起来不烧心，回帖附上注册邮箱白嫖 2$\n各位 V2EX 的朋友们好，不废话直接上干货。\r\n\r\n现在市面上做 Claude 中转的不少，但大家用 Claude Code 跑大项目时最恶心两件事：一是挂羊头卖狗肉（收官方渠道的钱，底层偷偷切 Kiro 甚至降智模型，写着写着代码开始胡言乱语）；二是 Cache 计费黑盒，明明没命中缓存却按高价扣费。\r\n\r\n我们自己搭了一套 [Aiincs 官网](https://aiincs.net/)，专做 Anthropic 官方 API 纯血反代，直接把底牌亮出来：\r\n\r\n100% 自建官方号池，拒绝掺假： 全部走我们自己维护的 Anthropic 官方账号池转发。不混 Kiro、不切逆向、不拿 Haiku 顶替 Sonnet/Opus。不信的佬友可以找我们验证，支持图片、视频各种形式。\r\n\r\n严格按官方价 3 折，Cache 透明计费： 输入、输出、Cache Read / Write 全部严格按官方原价 3 折算，按量扣费，0 月费、0 最低消费。Claude Code 跑一轮下来，省下的全是真金白银，后台每一笔的 Prompt Cache 命中数和扣费明细全透明可查。查看详细价格表\r\n原生适配 Claude Code / SDK： 不用折腾魔改客户端，直接改个环境变量就能丝滑起飞，支持高并发，不卡脖子\r\n\r\n另外有一点要强调，我们是官方的 token 价格基础上打三折，但是充值的话是实时汇率 rmb 兑换美金，折算下来，大概是大家口中说的 2.0 的倍率，但是我们的服务和质量肯定对的起这份价格，毕竟不掺水的 token 他用起来不烧心啊。\r\n\r\n\r\n直接在本帖下方回复你的注册邮箱，我看到就会手动给你充 $2 测试额度（按 3 折算相当于官",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "0livia",
-      "url": "https://www.v2ex.com/t/1257422",
-      "posted_at": "2026-11-16 15:12 Asia/Shanghai",
+      "author": "jms0610",
+      "url": "https://www.v2ex.com/t/1257475",
+      "posted_at": "2026-11-16 17:20 Asia/Shanghai",
       "engagement": {
         "replies": 0
       },
-      "original_title": "周一福利🎁原生美国住宅 IP 免费领 195+国家可选",
-      "original_summary": "周一福利🎁原生美国住宅 IP 免费领 195+国家可选\n🚀ZooProxy｜全球高性能住宅 IP\r\n\r\n🌍1 亿+真实 IP，195+国家/城市级定位\r\n\r\n⚡<0.5s 延迟｜高并发｜7×24 支持\r\n\r\n💰动态住宅$0.38/GB｜静态 ISP $0.9/IP/周｜无限流量$0.38/端口/天\r\n\r\n适配爬虫、社媒矩阵、跨境、网站测试、AI 大流量\r\n\r\n|🎁支持免费测试，先测再决定|\r\n|---|\r\nYKNE-JCYZ-9TPQ\r\nLQXQ-AMLG-22CY\r\nLHG9-WT2M-NM42\r\nZ2VN-HQAR-Y45M\r\nCK8U-QJZF-U77P\r\nPXFM-ASDQ-B3R7\r\nEZRU-9XWX-UM4Y\r\nUCJY-FKLH-S6RL\r\nY7LV-NNUV-9X74\r\n3QJP-KNA5-L4BS\r\n\r\n复制兑换码👉个人中心👉CDK 栏兑换👉选择国家\r\n\r\n🔗 https://zooproxy.com/?kwd=zsy-v2ex",
+      "original_title": "自建纯血 Claude 官方号池，3 折直连 Claude Code ，不掺水的 Token 吃起来不烧心，回帖附上注册邮箱白嫖 2$",
+      "original_summary": "自建纯血 Claude 官方号池，3 折直连 Claude Code ，不掺水的 Token 吃起来不烧心，回帖附上注册邮箱白嫖 2$\n各位 V2EX 的朋友们好，不废话直接上干货。\r\n\r\n现在市面上做 Claude 中转的不少，但大家用 Claude Code 跑大项目时最恶心两件事：一是挂羊头卖狗肉（收官方渠道的钱，底层偷偷切 Kiro 甚至降智模型，写着写着代码开始胡言乱语）；二是 Cache 计费黑盒，明明没命中缓存却按高价扣费。\r\n\r\n我们自己搭了一套 [Aiincs 官网](https://aiincs.net/)，专做 Anthropic 官方 API 纯血反代，直接把底牌亮出来：\r\n\r\n100% 自建官方号池，拒绝掺假： 全部走我们自己维护的 Anthropic 官方账号池转发。不混 Kiro、不切逆向、不拿 Haiku 顶替 Sonnet/Opus。不信的佬友可以找我们验证，支持图片、视频各种形式。\r\n\r\n严格按官方价 3 折，Cache 透明计费： 输入、输出、Cache Read / Write 全部严格按官方原价 3 折算，按量扣费，0 月费、0 最低消费。Claude Code 跑一轮下来，省下的全是真金白银，后台每一笔的 Prompt Cache 命中数和扣费明细全透明可查。查看详细价格表\r\n原生适配 Claude Code / SDK： 不用折腾魔改客户端，直接改个环境变量就能丝滑起飞，支持高并发，不卡脖子\r\n\r\n另外有一点要强调，我们是官方的 token 价格基础上打三折，但是充值的话是实时汇率 rmb 兑换美金，折算下来，大概是大家口中说的 2.0 的倍率，但是我们的服务和质量肯定对的起这份价格，毕竟不掺水的 token 他用起来不烧心啊。\r\n\r\n\r\n直接在本帖下方回复你的注册邮箱，我看到就会手动给你充 $2 测试额度（按 3 折算相当于官",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1257385",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "V2EX 的帖子真的发生了翻天覆地的变化",
-      "summary": "V2EX 的帖子真的发生了翻天覆地的变化\n今天突然心血来潮，翻了翻 V2EX 几年前的老帖子，感触挺深的。\r\n\r\n以前的 V2EX，很多帖子都是在讨论技术：\r\n\r\n- 这个功能是怎么实现的？\r\n- 有没有更好的技术方案？\r\n- 某个底层原理是怎样的？\r\n- 自己折腾了一个东西，分享一下实现过程。\r\n- 遇到了一个奇怪的问题，大家一起研究。\r\n\r\n评论区也经常能看到各种技术思路的碰撞，有时候光看评论就能学到不少东西。\r\n\r\n再看看现在，明显感觉画风变了。\r\n\r\n越来越多的帖子变成了：\r\n\r\n- 借助 AI，花了一晚上做了个网站。\r\n- 用 Cursor / Claude Code 做了个 App，欢迎体验。\r\n- 零基础用 AI 开发了一个产品。\r\n- 独立开发了一个工具，求大家提提意见。\r\n- 做了个 SaaS，聊聊怎么推广和变现。\r\n\r\n以前大家讨论的是**「这个东西怎么实现」**，现在更多讨论的是**「我做了个什么东西」**。\r\n\r\n感觉 AI 正在改变整个开发者社区的氛围。\r\n\r\n以前实现一个想法，可能需要花几周研究技术、搭建项目、解决各种问题。现在借助 AI，可能一两天就能做出一个能用的产品。\r\n\r\n技术门槛降低了，大家似乎也不再那么关注实现过程，而是更关注产品本身、用户需求和商业化。\r\n\r\n倒也不是说这种变化不好，反而觉得挺有意思的。\r\n\r\n**以前是技术驱动想法，现在好像变成了想法驱动技术。**\r\n\r\n只是偶尔翻到以前那些纯粹讨论技术的帖子，还是有点怀念。\r\n\r\n\r\n顺便也推广下我的产品（狗头）\r\n\r\nhttps://www.alechuan.com/ (大模型，可以找我申请免费额度)\r\n\r\nhttps://coolrequest.dev/ （IDEA 插件，开发调试使用）",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "coolrequest",
-      "url": "https://www.v2ex.com/t/1257385",
-      "posted_at": "2026-11-16 12:39 Asia/Shanghai",
-      "engagement": {
-        "replies": 10
-      },
-      "original_title": "V2EX 的帖子真的发生了翻天覆地的变化",
-      "original_summary": "V2EX 的帖子真的发生了翻天覆地的变化\n今天突然心血来潮，翻了翻 V2EX 几年前的老帖子，感触挺深的。\r\n\r\n以前的 V2EX，很多帖子都是在讨论技术：\r\n\r\n- 这个功能是怎么实现的？\r\n- 有没有更好的技术方案？\r\n- 某个底层原理是怎样的？\r\n- 自己折腾了一个东西，分享一下实现过程。\r\n- 遇到了一个奇怪的问题，大家一起研究。\r\n\r\n评论区也经常能看到各种技术思路的碰撞，有时候光看评论就能学到不少东西。\r\n\r\n再看看现在，明显感觉画风变了。\r\n\r\n越来越多的帖子变成了：\r\n\r\n- 借助 AI，花了一晚上做了个网站。\r\n- 用 Cursor / Claude Code 做了个 App，欢迎体验。\r\n- 零基础用 AI 开发了一个产品。\r\n- 独立开发了一个工具，求大家提提意见。\r\n- 做了个 SaaS，聊聊怎么推广和变现。\r\n\r\n以前大家讨论的是**「这个东西怎么实现」**，现在更多讨论的是**「我做了个什么东西」**。\r\n\r\n感觉 AI 正在改变整个开发者社区的氛围。\r\n\r\n以前实现一个想法，可能需要花几周研究技术、搭建项目、解决各种问题。现在借助 AI，可能一两天就能做出一个能用的产品。\r\n\r\n技术门槛降低了，大家似乎也不再那么关注实现过程，而是更关注产品本身、用户需求和商业化。\r\n\r\n倒也不是说这种变化不好，反而觉得挺有意思的。\r\n\r\n**以前是技术驱动想法，现在好像变成了想法驱动技术。**\r\n\r\n只是偶尔翻到以前那些纯粹讨论技术的帖子，还是有点怀念。\r\n\r\n\r\n顺便也推广下我的产品（狗头）\r\n\r\nhttps://www.alechuan.com/ (大模型，可以找我申请免费额度)\r\n\r\nhttps://coolrequest.dev/ （IDEA 插件，开发调试使用）",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1257384",
+      "id": "v2ex-1257451",
       "source": "V2EX",
       "category": "AI 产品会员/试用",
-      "title": "又做了一个 GIF 压缩工具",
-      "summary": "又做了一个 GIF 压缩工具\n之前经常遇到 GIF 太大、传不上 Discord / Slack / X 的情况。网上虽然有不少压缩工具，但很多需要先把文件上传到服务器，而且通常只能选择一个模糊的“压缩强度”，不太容易直接得到符合平台限制的文件。\r\n\r\n所以做了 GifSmaller，目前主要功能有：\r\n\r\n- 压缩过程完全在浏览器本地完成，GIF 不会上传到服务器\r\n- 可以直接指定目标大小，例如 256 KB、500 KB 或 10 MB\r\n- 内置 Discord 表情、Slack 表情、Discord 上传和 X / Twitter 等预设\r\n- 支持批量处理和打包下载\r\n- 支持裁剪 GIF\r\n- 支持把动态 WebP 转换成 GIF\r\n- 免费使用，不需要注册，也没有水印\r\n\r\n实现上主要使用 Astro、React、WebAssembly 和 gifsicle。压缩时会先尝试无损优化；如果还达不到目标大小，再逐步寻找尽可能轻的有损参数，最后才考虑缩小尺寸。所有预览、压缩和打包操作都在当前浏览器标签页里完成。\r\n\r\n目前已经适配了桌面端和手机端，也提供了中英文等多个语言版本。不过不同 GIF 的帧数、颜色和透明效果差别很大，压缩结果可能还有不少边界情况。\r\n\r\n欢迎大家试用，也听听 V 友的意见。\r\n\r\n地址： https://gifsmaller.com/zh",
+      "title": "🎁 全球家宽 IP 免费送，CC，养号，爬虫均适配，无限生成",
+      "summary": "🎁 全球家宽 IP 免费送，CC，养号，爬虫均适配，无限生成\nZooProxy 全球 IP 代理 — 批量供应 🚀以极具竞争力的价格获取高度稳定、真正原生住宅 IP 资源。\r\n\r\n🔥 极具竞争力的价格：\r\n\r\n◆ 动态住宅 IP：$0.35 / GB\r\n\r\n◆ 长期双 ISP 静态住宅 IP：$0.9/IP\r\n\r\n◆ 无限端口：低至 $0.38/端口/天，免费流量，无限 IP\r\n\r\n◆ 全新无限带宽：$23.3/天\r\n\r\n🎁 新用户专享：立即注册即可免费试用！\r\n\r\n再免费送几个 CDK,注册直接兑换使用\r\n\r\nhttps://zooproxy.com/?kwd=LQ-v2ex\r\n\r\n邀请码：veexfwaif  (50%优惠）\r\n\r\nFBJ2-HG95-V8CH\r\n\r\nLEYY-XAUQ-FH9V\r\n\r\nJT49-RLSS-PGNC\r\n\r\nUKWX-E3RQ-42XV\r\n\r\nZXWS-BPYA-U2AG\r\n\r\n需要测试或者咨询地区池，注册之后 联系客服，备注自己的业务。\r\n\r\n其他联系方式：@Zooproxy7  or qq：1151007098@qq.com\r\n\r\n官方频道会时不时掉落小惊喜哦：t.me/ZooproxySupport",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "ylual",
-      "url": "https://www.v2ex.com/t/1257384",
-      "posted_at": "2026-11-16 12:34 Asia/Shanghai",
+      "author": "Mayday9421",
+      "url": "https://www.v2ex.com/t/1257451",
+      "posted_at": "2026-11-16 16:23 Asia/Shanghai",
       "engagement": {
-        "replies": 2
+        "replies": 0
       },
-      "original_title": "又做了一个 GIF 压缩工具",
-      "original_summary": "又做了一个 GIF 压缩工具\n之前经常遇到 GIF 太大、传不上 Discord / Slack / X 的情况。网上虽然有不少压缩工具，但很多需要先把文件上传到服务器，而且通常只能选择一个模糊的“压缩强度”，不太容易直接得到符合平台限制的文件。\r\n\r\n所以做了 GifSmaller，目前主要功能有：\r\n\r\n- 压缩过程完全在浏览器本地完成，GIF 不会上传到服务器\r\n- 可以直接指定目标大小，例如 256 KB、500 KB 或 10 MB\r\n- 内置 Discord 表情、Slack 表情、Discord 上传和 X / Twitter 等预设\r\n- 支持批量处理和打包下载\r\n- 支持裁剪 GIF\r\n- 支持把动态 WebP 转换成 GIF\r\n- 免费使用，不需要注册，也没有水印\r\n\r\n实现上主要使用 Astro、React、WebAssembly 和 gifsicle。压缩时会先尝试无损优化；如果还达不到目标大小，再逐步寻找尽可能轻的有损参数，最后才考虑缩小尺寸。所有预览、压缩和打包操作都在当前浏览器标签页里完成。\r\n\r\n目前已经适配了桌面端和手机端，也提供了中英文等多个语言版本。不过不同 GIF 的帧数、颜色和透明效果差别很大，压缩结果可能还有不少边界情况。\r\n\r\n欢迎大家试用，也听听 V 友的意见。\r\n\r\n地址： https://gifsmaller.com/zh",
+      "original_title": "🎁 全球家宽 IP 免费送，CC，养号，爬虫均适配，无限生成",
+      "original_summary": "🎁 全球家宽 IP 免费送，CC，养号，爬虫均适配，无限生成\nZooProxy 全球 IP 代理 — 批量供应 🚀以极具竞争力的价格获取高度稳定、真正原生住宅 IP 资源。\r\n\r\n🔥 极具竞争力的价格：\r\n\r\n◆ 动态住宅 IP：$0.35 / GB\r\n\r\n◆ 长期双 ISP 静态住宅 IP：$0.9/IP\r\n\r\n◆ 无限端口：低至 $0.38/端口/天，免费流量，无限 IP\r\n\r\n◆ 全新无限带宽：$23.3/天\r\n\r\n🎁 新用户专享：立即注册即可免费试用！\r\n\r\n再免费送几个 CDK,注册直接兑换使用\r\n\r\nhttps://zooproxy.com/?kwd=LQ-v2ex\r\n\r\n邀请码：veexfwaif  (50%优惠）\r\n\r\nFBJ2-HG95-V8CH\r\n\r\nLEYY-XAUQ-FH9V\r\n\r\nJT49-RLSS-PGNC\r\n\r\nUKWX-E3RQ-42XV\r\n\r\nZXWS-BPYA-U2AG\r\n\r\n需要测试或者咨询地区池，注册之后 联系客服，备注自己的业务。\r\n\r\n其他联系方式：@Zooproxy7  or qq：1151007098@qq.com\r\n\r\n官方频道会时不时掉落小惊喜哦：t.me/ZooproxySupport",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1257214",
+      "id": "v2ex-1257442",
       "source": "V2EX",
       "category": "大模型 API 免费额度",
-      "title": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结",
-      "summary": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结\n先说下本人的 AI Coding 经验，chatgpt 横空出世时，一款名为免费的 Cursor 在 2023 年悄然上线，我当时也算是最先一批把 cursor 用于公司项目的程序员，所以 AI Coding 经验有 2 年半的时间了吧。\r\n\r\n当时惊叹 chatgpt 的能力，我意识到了 AI 真的会思考，AI 不再是算法和程序堆叠的产物。\r\n\r\n从 Cursor 到 Codex 到 Calude Code，再到 deepseek-harness。\r\n\r\n他们都在特定的环境完成了我的任务，从用 Cursor 时自己还会手动改下 AI 写代码遗留下的问题，到用 Codex 时感受到 AI 可以自己完成 UI 设计（前端开发），功能实现，自己用浏览器测试项目。\r\n\r\n后面又用了几个月的 Calude Code，cc 的代码能力的确把 codex 远远的甩在身后，理解需求的能力，设计品味的能力，把任务交给他，很放心，返工也少。\r\n\r\n在深度使用 cc 和 codex 的时候，dsh 只是我的备胎，所以有一段时间很少使用 dsh，事情的转折来自 codex 降智，claude code 弹 kyc，于是我深度使用了半个月的 dsh。\r\n\r\n在实际的项目开发中，dsh 完成了所有的功能！\r\n\r\n**从 UI 还原，架构设计，前端代码编写，后端代码编写，复杂原子任务，把代码提交到 github，登录 ECS 服务器部署，排查线上问题，查询服务器日志，修复代码推送，部署！**\r\n\r\n一气呵成，当一套组合拳被 dsh 打下来的时候，我才明白为什么人们称那个男人叫 **梁圣！**\r\n\r\n原来我认为只有 Claude code 和 codex 完成的任务，被 DSH 同样完成时，我猜明白，原来最好的模型就在身边",
+      "title": "给 DSH 蓝色大肥鱼接入云端免费生图算力",
+      "summary": "给 DSH 蓝色大肥鱼接入云端免费生图算力\n最近一直在折腾 DSH，很想给它配一个称手的文生图能力。但本地跑开源生图大模型对显卡要求实在太高了。我家这台老登只要开机，风扇转得像是打仗一样。本地部署看起来有点太为难他了\r\n\r\n于是我把目光投向了 Kaggle / Colab 的免费 GPU 算力。通过将开源生图模型云端部署在这些平台上，既摆脱了本地硬件瓶颈，又能享受更快、质量更高的出图体验。\r\n\r\n理论极限测算下来，Kaggle 单周的免费额度足够 SD 模型生成约 1.7 万张图片，可以说是真正的“量大管饱”，拿来抽卡、垫图、打草稿完全绰绰有余！\r\n\r\n目前项目已初步跑通，后续我还会计划接入更多实用模型。比如\r\n1.游戏/设计资产生成（ICON、贴图、原画素材等）\r\n2.可控图像编辑/修图模型（局部重绘、扩图、高清放大等）\r\n3.轻量视频生成模型\r\n~~4. NSFW 模型~~\r\n\r\n这是我的开源链接： https://github.com/nanxfu/dsh-our-imagen\r\n\r\n目前项目处于早期 preview 阶段，持续优化稳定性并扩宽模型能力。正在猛猛日更。欢迎各位家银萌 star、issue 提出建议。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "ttkit",
-      "url": "https://www.v2ex.com/t/1257214",
-      "posted_at": "2026-11-15 16:22 Asia/Shanghai",
+      "author": "nanxfu",
+      "url": "https://www.v2ex.com/t/1257442",
+      "posted_at": "2026-11-16 15:53 Asia/Shanghai",
       "engagement": {
-        "replies": 143
+        "replies": 1
       },
-      "original_title": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结",
-      "original_summary": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结\n先说下本人的 AI Coding 经验，chatgpt 横空出世时，一款名为免费的 Cursor 在 2023 年悄然上线，我当时也算是最先一批把 cursor 用于公司项目的程序员，所以 AI Coding 经验有 2 年半的时间了吧。\r\n\r\n当时惊叹 chatgpt 的能力，我意识到了 AI 真的会思考，AI 不再是算法和程序堆叠的产物。\r\n\r\n从 Cursor 到 Codex 到 Calude Code，再到 deepseek-harness。\r\n\r\n他们都在特定的环境完成了我的任务，从用 Cursor 时自己还会手动改下 AI 写代码遗留下的问题，到用 Codex 时感受到 AI 可以自己完成 UI 设计（前端开发），功能实现，自己用浏览器测试项目。\r\n\r\n后面又用了几个月的 Calude Code，cc 的代码能力的确把 codex 远远的甩在身后，理解需求的能力，设计品味的能力，把任务交给他，很放心，返工也少。\r\n\r\n在深度使用 cc 和 codex 的时候，dsh 只是我的备胎，所以有一段时间很少使用 dsh，事情的转折来自 codex 降智，claude code 弹 kyc，于是我深度使用了半个月的 dsh。\r\n\r\n在实际的项目开发中，dsh 完成了所有的功能！\r\n\r\n**从 UI 还原，架构设计，前端代码编写，后端代码编写，复杂原子任务，把代码提交到 github，登录 ECS 服务器部署，排查线上问题，查询服务器日志，修复代码推送，部署！**\r\n\r\n一气呵成，当一套组合拳被 dsh 打下来的时候，我才明白为什么人们称那个男人叫 **梁圣！**\r\n\r\n原来我认为只有 Claude code 和 codex 完成的任务，被 DSH 同样完成时，我猜明白，原来最好的模型就在身边",
+      "original_title": "给 DSH 蓝色大肥鱼接入云端免费生图算力",
+      "original_summary": "给 DSH 蓝色大肥鱼接入云端免费生图算力\n最近一直在折腾 DSH，很想给它配一个称手的文生图能力。但本地跑开源生图大模型对显卡要求实在太高了。我家这台老登只要开机，风扇转得像是打仗一样。本地部署看起来有点太为难他了\r\n\r\n于是我把目光投向了 Kaggle / Colab 的免费 GPU 算力。通过将开源生图模型云端部署在这些平台上，既摆脱了本地硬件瓶颈，又能享受更快、质量更高的出图体验。\r\n\r\n理论极限测算下来，Kaggle 单周的免费额度足够 SD 模型生成约 1.7 万张图片，可以说是真正的“量大管饱”，拿来抽卡、垫图、打草稿完全绰绰有余！\r\n\r\n目前项目已初步跑通，后续我还会计划接入更多实用模型。比如\r\n1.游戏/设计资产生成（ICON、贴图、原画素材等）\r\n2.可控图像编辑/修图模型（局部重绘、扩图、高清放大等）\r\n3.轻量视频生成模型\r\n~~4. NSFW 模型~~\r\n\r\n这是我的开源链接： https://github.com/nanxfu/dsh-our-imagen\r\n\r\n目前项目处于早期 preview 阶段，持续优化稳定性并扩宽模型能力。正在猛猛日更。欢迎各位家银萌 star、issue 提出建议。",
       "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1257436",
+      "source": "V2EX",
+      "category": "AI 产品会员/试用",
+      "title": "[免费福利] Novproxy 全球代理节点限量放送！附赠 20 个免费 CDK，先到先得！",
+      "summary": "[免费福利] Novproxy 全球代理节点限量放送！附赠 20 个免费 CDK，先到先得！\n```\r\n住宅 IP 走真实家庭宽带出口，风控标记率低，跑 AI 脚本、社媒矩阵、跨境采集才是它的主场。先拿试用跑通你的业务，确认延迟和成功率再考虑付费，别上来就掏钱。\r\n```\r\n\r\n## ✅ 产品优惠一览\r\n- **动态住宅代理｜$0.47/GB 起**：流量计费，流量永久有效，无清零无隐形扣费，适合调试、批量采集。\r\n\r\n- **长效静态 ISP 代理｜$3.2/月起**：包月独享，端口不限流量，低延迟高稳定，长期养号首选。\r\n\r\n- **短效静态住宅代理｜$0.02/条起**：单价低、在线周期可控，短时高频任务用完即换不浪费。\r\n\r\n- **无限流量套餐｜$0.3/天/端口起**：不用盯流量余量，适合长期跑业务，省运营成本。\r\n\r\n\r\n**适用场景：** 跨境电商、海外社媒矩阵运营、账号管理、数据采集、广告验证、AI 工具等业务。\r\n\r\n---\r\n\r\n## 🎁 领取方式\r\n1. 打开官网注册账号：https://novproxy.com/?kwd=zyq-v2\r\n\r\n2. 进控制台找到 CDK 兑换入口\r\n\r\n3. 粘贴兑换码领试用流量\r\n\r\n4. 邀请码可填：**Novproxy888**\r\n\r\n---\r\n\r\n## CDK 兑换码（每人限兑换1个CDK，领多系统会被清零）：\r\nKPAMRZAFCMN4WBTR\r\n\r\nJVDZNHT4IIFLAIM4\r\n\r\nC4D29LNSYCP6HARH\r\n\r\nP9SRM9CVTVVXHUKX\r\n\r\nMVNDS2QRE1KURX81\r\n\r\nGZ2WJEJQFW2RWHRY\r\n\r\n1PQUNJMSK5STMIQ2\r\n\r\nSAY15WXQT8F3CNRT\r\n\r\nA9LVZYGEFZKFO5TA\r\n\r\n2QPKTMKH5ALWQV4X\r\n\r\nA",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "laicoino",
+      "url": "https://www.v2ex.com/t/1257436",
+      "posted_at": "2026-11-16 15:42 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "[免费福利] Novproxy 全球代理节点限量放送！附赠 20 个免费 CDK，先到先得！",
+      "original_summary": "[免费福利] Novproxy 全球代理节点限量放送！附赠 20 个免费 CDK，先到先得！\n```\r\n住宅 IP 走真实家庭宽带出口，风控标记率低，跑 AI 脚本、社媒矩阵、跨境采集才是它的主场。先拿试用跑通你的业务，确认延迟和成功率再考虑付费，别上来就掏钱。\r\n```\r\n\r\n## ✅ 产品优惠一览\r\n- **动态住宅代理｜$0.47/GB 起**：流量计费，流量永久有效，无清零无隐形扣费，适合调试、批量采集。\r\n\r\n- **长效静态 ISP 代理｜$3.2/月起**：包月独享，端口不限流量，低延迟高稳定，长期养号首选。\r\n\r\n- **短效静态住宅代理｜$0.02/条起**：单价低、在线周期可控，短时高频任务用完即换不浪费。\r\n\r\n- **无限流量套餐｜$0.3/天/端口起**：不用盯流量余量，适合长期跑业务，省运营成本。\r\n\r\n\r\n**适用场景：** 跨境电商、海外社媒矩阵运营、账号管理、数据采集、广告验证、AI 工具等业务。\r\n\r\n---\r\n\r\n## 🎁 领取方式\r\n1. 打开官网注册账号：https://novproxy.com/?kwd=zyq-v2\r\n\r\n2. 进控制台找到 CDK 兑换入口\r\n\r\n3. 粘贴兑换码领试用流量\r\n\r\n4. 邀请码可填：**Novproxy888**\r\n\r\n---\r\n\r\n## CDK 兑换码（每人限兑换1个CDK，领多系统会被清零）：\r\nKPAMRZAFCMN4WBTR\r\n\r\nJVDZNHT4IIFLAIM4\r\n\r\nC4D29LNSYCP6HARH\r\n\r\nP9SRM9CVTVVXHUKX\r\n\r\nMVNDS2QRE1KURX81\r\n\r\nGZ2WJEJQFW2RWHRY\r\n\r\n1PQUNJMSK5STMIQ2\r\n\r\nSAY15WXQT8F3CNRT\r\n\r\nA9LVZYGEFZKFO5TA\r\n\r\n2QPKTMKH5ALWQV4X\r\n\r\nA",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1257435",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "[开源自荐] 会译 HuiYi：完全免费的 Windows 本地会议助手，支持实时语音，字幕翻译和会议纪要以及词库",
+      "summary": "[开源自荐] 会译 HuiYi：完全免费的 Windows 本地会议助手，支持实时语音，字幕翻译和会议纪要以及词库\n自荐一个我开发的开源项目 **会译 HuiYi**，一个**完全免费、在 Windows 本地运行的会议助手**，支持实时字幕、翻译、会议纪要和同声传译。\r\n\r\n软件功能全部开放，采用 Apache-2.0 许可证。语音识别和发言人区分在电脑上完成，会议记录保存在本地。**搭配本地 Ollama 模型，还可以在自己的电脑上生成纪要，无需支付云端模型 API 费用。**\r\n\r\n![会译会议记录与会议纪要](https://raw.githubusercontent.com/LingyiChen-AI/huiyi/main/docs/images/main-notes.png)\r\n\r\n### 同时记录电脑和麦克风的声音\r\n\r\n开线上会议时，对方的声音从电脑里出来，自己的声音从麦克风进去。会译可以同时记录这两路声音，把讨论整理成带发言人的逐字稿。\r\n\r\n打开软件，点击「开始会议」即可收听，适用于腾讯会议、飞书、钉钉、Zoom，以及浏览器里播放的课程和访谈。\r\n\r\n<img src=\"https://raw.githubusercontent.com/LingyiChen-AI/huiyi/main/docs/images/panel-ready.png\" width=\"320\" alt=\"点击开始会议后收听\">\r\n\r\n### 边听边看双语字幕\r\n\r\n支持识别中、英、日、韩和粤语，显示原文与译文。实时面板放在屏幕边上，方便开会或看外语视频时对照，也可以使用悬浮字幕。\r\n\r\n<img src=\"https://raw.githubusercontent.com/LingyiChen-AI/huiyi/main/docs/images/panel-lines.png\" w",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "chturing184",
+      "url": "https://www.v2ex.com/t/1257435",
+      "posted_at": "2026-11-16 15:40 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "[开源自荐] 会译 HuiYi：完全免费的 Windows 本地会议助手，支持实时语音，字幕翻译和会议纪要以及词库",
+      "original_summary": "[开源自荐] 会译 HuiYi：完全免费的 Windows 本地会议助手，支持实时语音，字幕翻译和会议纪要以及词库\n自荐一个我开发的开源项目 **会译 HuiYi**，一个**完全免费、在 Windows 本地运行的会议助手**，支持实时字幕、翻译、会议纪要和同声传译。\r\n\r\n软件功能全部开放，采用 Apache-2.0 许可证。语音识别和发言人区分在电脑上完成，会议记录保存在本地。**搭配本地 Ollama 模型，还可以在自己的电脑上生成纪要，无需支付云端模型 API 费用。**\r\n\r\n![会译会议记录与会议纪要](https://raw.githubusercontent.com/LingyiChen-AI/huiyi/main/docs/images/main-notes.png)\r\n\r\n### 同时记录电脑和麦克风的声音\r\n\r\n开线上会议时，对方的声音从电脑里出来，自己的声音从麦克风进去。会译可以同时记录这两路声音，把讨论整理成带发言人的逐字稿。\r\n\r\n打开软件，点击「开始会议」即可收听，适用于腾讯会议、飞书、钉钉、Zoom，以及浏览器里播放的课程和访谈。\r\n\r\n<img src=\"https://raw.githubusercontent.com/LingyiChen-AI/huiyi/main/docs/images/panel-ready.png\" width=\"320\" alt=\"点击开始会议后收听\">\r\n\r\n### 边听边看双语字幕\r\n\r\n支持识别中、英、日、韩和粤语，显示原文与译文。实时面板放在屏幕边上，方便开会或看外语视频时对照，也可以使用悬浮字幕。\r\n\r\n<img src=\"https://raw.githubusercontent.com/LingyiChen-AI/huiyi/main/docs/images/panel-lines.png\" w",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-almaeedhi-hani-free-llm-api",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Almaeedhi-Hani/free-LLM-api是免费LLM API仓库",
+      "summary": "仓库包含自动化系统代码，涉及Webhook、外部API、Cron自动更新及Google和Bing归档触发。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Almaeedhi-Hani",
+      "url": "https://github.com/Almaeedhi-Hani/free-LLM-api",
+      "posted_at": "2026-11-13 00:06 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Almaeedhi-Hani/free-LLM-api",
+      "original_summary": "Almaeedhi-Hani/free-LLM-api الأكواد البرمجية للحل السحري (نظام الأتمتة الذاتية والتحديث اللحظي)  عزيزي المطور، قم ببرمجة النظام الداخلي للأتمتة عبر دمج كود الـ Webhook مع الـ API الخارجي لتشغيل التحديث الذاتي التلقائي (Cron Job):  كود إرسال إشارات الأرشفة الفورية (Google & Bing Webhook Trigger)",
+      "translated_by": "model"
     },
     {
       "id": "ghdeal-ennersmai-sluice",
@@ -675,30 +711,12 @@
       "deadline": null,
       "author": "ennersmai",
       "url": "https://github.com/ennersmai/sluice",
-      "posted_at": "2026-11-16 15:06 Asia/Shanghai",
+      "posted_at": "2026-11-16 15:46 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
       "original_title": "ennersmai/sluice",
       "original_summary": "ennersmai/sluice Local Free LLM Router (API aggregator written in Rust)",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-peterpoeplawaai-setup-freellmapi-as-an-api-gateway",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "FreeLLMAPI 是在OCI永久免费实例自托管API网关的指南",
-      "summary": "分步指南：用 Docker Compose 在 OCI 永久免费实例自托管 FreeLLMAPI，含防火墙、SSH/VPN 与备份设置。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "PeterPoeplawaai",
-      "url": "https://github.com/PeterPoeplawaai/Setup-FreeLLMAPI-as-an-API-Gateway",
-      "posted_at": "2026-11-15 04:49 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "PeterPoeplawaai/Setup-FreeLLMAPI-as-an-API-Gateway",
-      "original_summary": "PeterPoeplawaai/Setup-FreeLLMAPI-as-an-API-Gateway Step-by-step guide to self-hosting FreeLLMAPI via Docker Compose on an Oracle Cloud Infrastructure (OCI) Always Free instance (10.0.0.10), including firewall hardening, SSH/VPN access, and backup routines.",
       "translated_by": "model"
     },
     {
@@ -720,39 +738,21 @@
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-mvalentsev-awesome-free-ai-coding",
+      "id": "ghdeal-super-x9-llm-freewatch",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "awesome-free-ai-coding 免费 LLM API 与代理清单",
-      "summary": "收录合法免费 LLM API 与编程代理，含免费额度、免卡试用和免费模型，每周两次探测验证。",
+      "title": "llm-freewatch：追踪哪些免费 LLM API 今天仍可用的工具",
+      "summary": "提供实时免费模型雷达、变更对比、回退链和面向编码代理的 MCP 服务器，零依赖 Python。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "mvalentsev",
-      "url": "https://github.com/mvalentsev/awesome-free-ai-coding",
-      "posted_at": "2026-11-16 10:03 Asia/Shanghai",
+      "author": "Super-X9",
+      "url": "https://github.com/Super-X9/llm-freewatch",
+      "posted_at": "2026-11-12 17:22 Asia/Shanghai",
       "engagement": {
-        "stars": 235
+        "stars": 0
       },
-      "original_title": "mvalentsev/awesome-free-ai-coding",
-      "original_summary": "mvalentsev/awesome-free-ai-coding 📡 Legal free LLM APIs & coding agents — self-updating, probe-verified twice a week. Free tiers, no-card trials, free models.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-sandbaseai-sandbase",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "sandbase：一个 API key 免费建个人 agent，可调用 2000+ 模型",
-      "summary": "agents 与沙箱免费，兼容 OpenAI Agents API、E2B 和 OpenAI，支持 Python、TypeScript、Go。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "sandbaseai",
-      "url": "https://github.com/sandbaseai/sandbase",
-      "posted_at": "2026-11-12 16:09 Asia/Shanghai",
-      "engagement": {
-        "stars": 6
-      },
-      "original_title": "sandbaseai/sandbase",
-      "original_summary": "sandbaseai/sandbase One API key. Build your personal agent. Agents and sandboxes are free, and agents can call 2,000+ AI models and data APIs (LLM, image, video, TikTok, YouTube, SEO, finance). OpenAI Agents API, E2B and OpenAI compatible. Python, TypeScript, Go.",
+      "original_title": "Super-X9/llm-freewatch",
+      "original_summary": "Super-X9/llm-freewatch Know which free LLM APIs still work today — live free-model radar, change diffs, fallback chains, and an MCP server for coding agents. Zero-dependency Python.",
       "translated_by": "model"
     },
     {

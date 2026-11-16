@@ -3,29 +3,15 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 14,
-  "generated_at": "2026-11-16T15:16:19+08:00",
+  "count": 17,
+  "generated_at": "2026-11-16T17:24:38+08:00",
   "items": [
-    {
-      "id": "hnhot-50463399",
-      "title": "Claude Code 和 Codex 通过 3 美元的 Arduino 对我 1994 年吉普车的 ECU 进行了逆向工程 [视频]",
-      "summary": "",
-      "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
-      "source": "Hacker News"
-    },
     {
       "id": "hnhot-50513215",
       "title": "Qwen4-Max",
       "summary": "",
       "url": "https://qwen.ai/blog?id=qwen4-max",
       "source": "Hacker News"
-    },
-    {
-      "id": "v2hot-1257214",
-      "title": "deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结",
-      "summary": "先说下本人的 AI Coding 经验，chatgpt 横空出世时，一款名为免费的 Cursor 在 2023 年悄然上线，我当时也算是最先一批把 cursor 用于公司项目的程序员，所以 AI Coding 经验有 2 年半的时间了吧。当时惊叹 chatgpt 的能力，我意识到了 AI 真的会思考，AI 不再是算法和程序堆叠的产物。从 Cursor 到 Codex 到 Calude Code，再到 deepseek-harness。他们都在特定的环境完成了我的任务，从用 Cursor 时自己还会手动改下 AI 写代码遗留下的问题，到用 Codex 时感受到 AI 可以",
-      "url": "https://www.v2ex.com/t/1257214",
-      "source": "V2EX"
     },
     {
       "id": "v2hot-1257274",
@@ -35,74 +21,109 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257395",
-      "title": "AI 离谱越权操作一则，大家引以为戒",
-      "summary": "## 前情提要：我自己写了一个用于服务器监控运维的的项目，能查看服务器状态，日志解析，自动运维等功能 项目中存储了服务器的 ssh 密钥，运维功不让 ai 直接 ssh 到服务器，写了一个中间层 ai 想操作服务器给中间层申请，中转获取命令执行结果，中间层查看类命令全部放行，修改命令需要审核 ## ai 越权操作 然后因为之前有项目配置了负载均衡导致日志分析出问题了，所以在运维项目的 codex 工作窗口询问是什么原因，有什么差异，还给贴了出问题项目的 nginx 配置文件，然后 ai 跑了半天告诉我改好了，我想去服务器修改一下配置文件呢，一看和 ai 修改的一模一样，当场愣住了",
-      "url": "https://www.v2ex.com/t/1257395",
+      "id": "v2hot-1257437",
+      "title": "公司每个月有 500 AI 补助，买哪个 AI 工具最划算",
+      "summary": "想买 deepseek 的官方 api 的，有没有更好的",
+      "url": "https://www.v2ex.com/t/1257437",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257378",
-      "title": "AI 太猛了，v2 一次推出 6 种评论模式",
-      "summary": "最近发现 v 站树形、楼中楼这些评论模式，实在太好用了！！！老铁们盼了 10 多年，瞎猜估计是站长干不动，一直没理会 这次可下猛料了，大概率是让 ai 往死里整，一次推出 6 种评论模式，十多年没整的活，站长现在年纪大了更干不动了，ai 开发是真猛啊 看到有个评论说，ai 让老人焕发第二春，看来是真的",
-      "url": "https://www.v2ex.com/t/1257378",
+      "id": "v2hot-1257448",
+      "title": "AI 数字人女友开源了，给你提供全方位的情绪陪伴",
+      "summary": "最近用 Flutter 做了一个 AI 数字人陪伴 App，叫「小遇」，现在把源码开源了。目前支持自定义角色形象、人设和音色，实时语音与数字人视频互动，以及通话中的文字输入和快捷动作。项目用 Flutter 开发，支持 iOS / Android。感兴趣可以来看看，喜欢的话点个 Star。遇到问题、想到新功能，欢迎提 Issue；也欢迎 Fork、提交 PR，一起把小遇完善下去。项目仍在开发中，代码采用 AGPL-3.0-only，具体许可与素材说明见仓库。希望喜欢的佬友点点 Star 支",
+      "url": "https://www.v2ex.com/t/1257448",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257408",
-      "title": "AIPPT",
-      "summary": "有什么 AI 做 PPT 的网站推荐，可编辑好一点的。话说他们可编辑是怎么实现的呢",
-      "url": "https://www.v2ex.com/t/1257408",
+      "id": "v2hot-1257457",
+      "title": "独立开发周记 196：疯狂依赖 AI，做着没人下载的 App",
+      "summary": "# 2026，1109～1115 没有反馈感真的是很难受。没有下载，没有好评，没有差评，App 就像石沉大海一样，上架就是生命周期的结束。# 本周工作 ## 大事化小（Google Play） 这周用 AI 给大事化小接入了 Google Play 的内购，填写了各种表单（感觉在 GP 提交新 App 比 App Store 要麻烦很多），提交了正式版，没想到第二天上午就过审上架了。![]( 最",
+      "url": "https://www.v2ex.com/t/1257457",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257388",
-      "title": "有 qwen4-max 的实测数据吗，已经知道很拉了，但是想知道有没有比 qwen3.8-max 强点",
-      "summary": "毕竟单价便宜点",
-      "url": "https://www.v2ex.com/t/1257388",
+      "id": "v2hot-1257467",
+      "title": "[Sidrune AI] 大客户 CC Max 低至 0.865x，首字中位数 2–3 秒｜留 UID 送 3U",
+      "summary": "大客户最低 0.865x 无忧使用 Claude CCMAX，首字 2-3 秒，纯血支持 Hvoy/CCtest 等检测 再也不用担心被封号啦～ ## CC Max：1.0／1.2 倍率，符合返点条件低至 0.865x **Claude-Max-cc：1.0 倍率**，用于 Claude Code，带标准防封注入。**Claude-Max-外接：1.2 倍率**，用于其他客户端。符合条件的大客户／代理合作可开通**最高 13.5% 返点**；CC 1.0 组按最高返点折算，实际倍率最低 **0.865x**。适用分组、开通和结算方式请联系 QQ 群里的 Han",
+      "url": "https://www.v2ex.com/t/1257467",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257397",
-      "title": "有没有一些 codex、cc、dsh 相关的最佳实践视频教程",
-      "summary": "经常听到朋友，包括 v 友说自己用这几个从开发到部署，一条龙弄完，或者互相监督一条龙上架。我自己也做过一些项目，但是感觉稍微复杂点的项目，还是比较累，要不停的确认需求和验收文档去对齐。过程中测试和部署也没那么丝滑。反正就是写代码确实牛逼，但是还挺费人的，包括架构层面、验收层面，部署层面。所以看到别人经常说一条龙丝滑搞定，所以蛮好奇的，就想找一些类似的最佳实践视频看看。看看是不是自己用的有问题。",
-      "url": "https://www.v2ex.com/t/1257397",
+      "id": "v2hot-1257438",
+      "title": "为什么苹果也不给 claude 退款？",
+      "summary": "一直以为苹果是个浓眉大眼的家伙，结果也和 google 一丘之貉。",
+      "url": "https://www.v2ex.com/t/1257438",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257418",
-      "title": "[Claude]用三年日签过了 KYC(Portal)",
-      "summary": "DMIT 落地，iOS 简中+东八区，看看能活多久",
-      "url": "https://www.v2ex.com/t/1257418",
+      "id": "v2hot-1257450",
+      "title": "[开源] Codex 命令监听",
+      "summary": "## Codex Command Trace 娱乐向，监听 sessions 目录获取数据, 不影响 Codex 执行，默认在主窗口滚动展示，可以开启每个命令单独一个窗口展示，具体看演示 ![codex-cmd-trace.gif]( 只打包了 Windows 版，go + fyne 开发的，感兴趣可以让 AI 支持其他平台 开源地址 [codex-cmd-trace@Github]( 从",
+      "url": "https://www.v2ex.com/t/1257450",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257410",
-      "title": "[内推] 南京 急招信息化工程师 / 系统开发 + AI 应用开发 / Go、Python",
-      "summary": "## 岗位职责：负责公司信息化系统的开发及 AI 应用的开发、优化与维护。参与需求分析、技术方案及数据库设计，独立推进功能开发与上线交付。负责内部系统及第三方平台的接口对接、数据同步及集成。参与系统架构优化、功能迭代、性能优化及线上问题排查。与前端及业务团队协作，保障系统稳定性与交付质量。## 要求 具备良好的业务理解、沟通协作能力，能够独立完成需求分析、方案设计与开发交付。具备 AI 应用、知识库或 Agent 相关开发经验，熟悉 AI 编程工具，能够辅助开发、代码审查与问题排查。熟练掌握 Golang、Python、",
-      "url": "https://www.v2ex.com/t/1257410",
-      "source": "V2EX"
+      "id": "xhot-xrss-2501419060",
+      "title": "Command Code 上周更新：Inkling 2 Small 免费模型上线",
+      "summary": "Command Code 回顾上周更新，包含 GOAT 额度提升、Muse Ember 双倍用量、Inkling 2 Small 免费模型等。",
+      "url": "https://x.com/CommandCodeAI/status/2122192652858773675",
+      "source": "X"
     },
     {
-      "id": "v2hot-1257402",
-      "title": "DeepSeek 把 App 里那些能力接到 API 了",
-      "summary": "看到 DeepSeek 11 月 13 日的 changelog，说把 App 里那些能力开放到现有 API 了。搜索四月就有人在站里聊过，十月也单独开过 Search 和 Fetch。这次主要是文件和读链接进了对话接口。官方写在 deepseek-flash 上打开对应参数就行，工具调用和上下文由服务端拼好，不用自己在客户端再跑一轮 tool call。OCR、ASR、TTS 也能单独调。定价页上 TTS 现在是限时五折，一万字符 $0.225。这篇把对话里怎么开工具、以及 OCR 和语音单独",
-      "url": "https://www.v2ex.com/t/1257402",
-      "source": "V2EX"
+      "id": "xhot-xrss-6384480803",
+      "title": "‼ 苹果新款折叠 iPhone 现已运行微软 Windows 11系统，无需越狱。这是由一位谷歌 AI 高管打造的，功劳归于他。",
+      "summary": "‼ 苹果新款折叠屏 iPhone 现已运行微软 Windows 11系统，无需越狱。这款手机由一位谷歌 AI 高管打造，他将 Windows 工程归功于 Gemini。将 iPhone Duo 折叠到一半，下半部分屏幕就会变成键盘和触控板。展开它 ‼ 苹果新款折叠式 iPhone 现已运行微软的 Windows 11系统，无需越狱。这款手机由一位谷歌 AI 高管打造，他将 Windows 工程归功于 Gemini。将 iPhone Duo 对折一半，然后……",
+      "url": "https://x.com/IntCyberDigest/status/2122122225058828693",
+      "source": "X"
     },
     {
-      "id": "v2hot-1257399",
-      "title": "做了一个 AI GIF Maker，分享给大家体验一下",
-      "summary": "最近在研究 GIF 制作，发现传统工具大多还是以视频转换、多图合成为主，于是尝试结合 AI 做了一个 GIF Maker。目前支持四种生成方式：**Text to GIF**：通过文字描述生成 GIF **Image to GIF**：让静态图片动起来 **Images to GIF**：多张图片合成 GIF **Video to GIF**：视频转换成 GIF 生成后还可以进行一些简单的编辑和调整。网站：目前刚上线 MVP 版本，分享给大家体验一下，欢迎交流建议。",
-      "url": "https://www.v2ex.com/t/1257399",
-      "source": "V2EX"
+      "id": "xhot-xrss-5788262724",
+      "title": "Anthropic/Dario 在 Sam 的脑海中“白住”，但我如果两次在 GPT-4和推理方面失去领先地位，我也会感到担忧。",
+      "summary": "Anthropic/Dario 在 Sam 的脑海中“白住”，但我如果两次在 GPT-4和推理模型上失去领先地位（也许很快在 looper 上也会失去领先地位），我也同样会感到担忧 Anthropic/Dario 在 Sam 的脑海中“白住”，但如果我在 GPT-4和推理模型上两次失去领先地位（也许很快在循环器上也失去领先地位），我也同样会感到担忧。",
+      "url": "https://x.com/scaling01/status/2122173382091317507",
+      "source": "X"
     },
     {
-      "id": "v2hot-1257398",
-      "title": "我开发了一个 Dsh 的 dsh-leader-agent 插件，一个 Agent 管 15 个 Feature 并行开发",
-      "summary": "## 1. 现有多 Agent 编排的问题 现在的多 Agent 编排项目，比如 Orca、Multica、herdr，几乎都有类似的问题：**复杂**。复杂的看板，复杂的配置。**大量操作仍然要人来做**。**为了在 Codex/Claude Code 之上做编排，做了大量 Hook、Hack**（当然，这也是他们的优势，能用订阅账号）。**喜欢按照人类的分工给 Agent 分角色，还把他们放在一个群聊里派工作（如 WorkBuddy、Accio）**。这也是惯性思维导致的错误做法。过去给人类分工，是因为每个人精力有限，只能精通部分专业；而以",
-      "url": "https://www.v2ex.com/t/1257398",
-      "source": "V2EX"
+      "id": "xhot-xrss-1254930193",
+      "title": "Claude Fable 5.2 在 DeepAI Code 中免费提供。使用免费账户，每天最多可获得250个 Theos。每24小时刷新一次。下载",
+      "summary": "Claude Fable 5.2 在 DeepAI Code 中免费提供。使用免费账户，每天最多可使用250个 Theos。每24小时刷新一次。下载",
+      "url": "https://x.com/DeepAI/status/2122070507273257195",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-4472441456",
+      "title": "本周最值得下载的是 Nvidia 的免费 AI。Nemotron 3.5 Bolt E4B 是一个4GB 的文件，几乎可以在任何笔记本电脑上运行。",
+      "summary": "本周最值得下载的是 Nvidia 的免费 AI。Nemotron 3.5 Bolt E4B 是一个 4GB 的文件，几乎可以在任何笔记本电脑上运行。它可以在关闭 Wi-Fi 的情况下撰写内容、回答问题和起草电子邮件，且没有任何内容会离开您的电脑。趁它还在，赶紧下载吧。本周最值得下载的软件是 Nvidia 的免费 AI。Nemotron 3.5 Bolt E4B 是一个 4GB 的文件，几乎可以在任何笔记本电脑上运行。它可以在关闭 Wi-Fi 的情况下撰写、回答问题和起草电子邮件，且没有任何内容会离开您的设备。",
+      "url": "https://x.com/alex_verem/status/2122012001157402743",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-1613451814",
+      "title": "5 个适合程序员和编程爱好者的酷炫网站 - 9.6 万星开源 AI 图表",
+      "summary": "5个适合程序员和 Vibe 程序员的酷炫网站 - 9.6万星开源 AI 图表 - 150多个免费动画 React 组件 - 50多个免费 Shadcn UI 组件 - 21个动画",
+      "url": "https://x.com/csaba_kissi/status/2122229433042170182",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-3462155219",
+      "title": "我实测 7 个免费 GitHub 开源仓库，用于提升 AI 智能体能力",
+      "summary": "这些开源仓库可帮助 AI 智能体理解代码库并提升技能。",
+      "url": "https://x.com/VaibhavSisinty/status/2121195328242352145/video/1",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-8820351308",
+      "title": "安得拉邦政府推出“Vidya Vahini”在线学习门户网站，为大学提供免费的 AI 和量子技术课程",
+      "summary": "安得拉邦政府推出“Vidya Vahini”在线学习门户网站，为安得拉邦各地的大学生提供免费的 AI 和量子技术课程。▫ 最初将开设两门课程，每门课程的学分为 4 学分，包含 40 个模块",
+      "url": "https://x.com/AndhraNexus/status/2122249792122507531",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-1192722084",
+      "title": "免费的开放式在线教科书：《贝叶斯、AI 和深度学习：数据科学的基础》，作者：Nick Polson 和 Vadim Sokol",
+      "summary": "一本免费的开放式在线教材：《贝叶斯、AI 和深度学习：数据科学基础》，作者：Nick Polson 和 Vadim Sokolov（2026 年）。本书通过统计学习，从概率和贝叶斯决策理论出发，提出了一条以不确定性为中心的统一路径 一本免费的开放式在线教科书：《贝叶斯、AI 和深度学习：数据科学基础》，作者：Nick Polson 和 Vadim Sokolov（2026 年）。本书从……出发，提出了一条以不确定性为中心的统一路径。",
+      "url": "https://x.com/burkov/status/2122157960541671736",
+      "source": "X"
     }
   ]
 }

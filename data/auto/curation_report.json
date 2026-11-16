@@ -2,19 +2,20 @@
  "counts": {
   "archived": 18,
   "deadline_extracted": 6,
-  "drop:duplicate": 232,
-  "drop:empty_summary": 31,
-  "drop:negative_signal": 110,
-  "drop:no_clear_offer": 357,
-  "drop:not_ai": 313,
+  "drop:duplicate": 231,
+  "drop:empty_summary": 32,
+  "drop:negative_signal": 114,
+  "drop:no_clear_offer": 364,
+  "drop:not_ai": 314,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 398,
-  "google_news_total": 398,
-  "kept_total": 184,
+  "google_news_resolved": 413,
+  "google_news_total": 413,
+  "kept_total": 187,
   "net:gnews_cache_hit": 398,
-  "net:tco_failed": 5,
-  "new_this_run": 2,
-  "raw_total": 1286
+  "net:gnews_resolved_net": 15,
+  "net:tco_expanded": 5,
+  "new_this_run": 5,
+  "raw_total": 1301
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -33,6 +34,7 @@
    "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室"
   ],
   "empty_summary": [
+   "Command Code 回顾上周更新，包含 GOAT 额度提升、Muse Ember 双倍用量",
    "据称 Gemini Pro 现可免费使用一年，原价 200 美元，无需付款即可激活",
    "Khan Academy Philippines 称该国所有教师无论是否合作学校都可免费使用，约一分钟生成教案",
    "该模型总参数 280B、每 token 激活 14B、上下文窗口 1M，目前在 OpenRouter 可免费使用",
@@ -43,10 +45,11 @@
    "Gojiberry AI 的 ARR 突破 500 万美元，并发布免费课程",
    "加入 AMD AI 开发者计划可获免费 API 访问和 Token Lab 赠送积分",
    "Claude Duet 开始发送邀请，每位 Duet 用户有3个邀请名额",
-   "该模型支持100万 token 上下文和图像输入，输入每百万 token 8美元、输出40美元",
-   "面向 UnrealEngine 与 UEFN 开发者的 Epic AI MegaJam 活动，免费提供专家团队协助"
+   "该模型支持100万 token 上下文和图像输入，输入每百万 token 8美元、输出40美元"
   ],
   "negative_signal": [
+   "@WuBlockchain 分享：关注1.4万亿美元估值、9000亿美元算力承诺，以及 NVIDIA 财报和美联储纪要",
+   "@PeterDiamandis 分享：超10.5万名女性参与，假阳性未显著增加，放射科医生阅片量减少44%",
    "@alex_prompter 分享：每周分享一个 AI 实用技巧，订阅免费",
    "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页",
    "@Scobleizer 分享：推文称奥斯汀机器人/AI 活动期间，马斯克每次乘车都获得免费广告，独特设计引发讨论",
@@ -56,25 +59,24 @@
    "@pillitterip 分享：该插件已获 28,355 星",
    "@MattiHaapoja 分享：以下是我如何免费学习 AI 电影制作的",
    "@mcwilsonky 分享：客户正在询问 AI 该雇用谁",
-   "@EvanKirstel 分享：英格兰大学监管机构希望进行更多无 AI 的评估",
-   "@mdancho84 分享：我将举办一场免费的研讨会，帮助您开始使用 Python 开展 AI+数据科学项目",
-   "Meta：为广告支付20倍的收益，免费获得 AI $META 股票 金融 股市 Meta：为广告支付20倍的利润"
+   "@EvanKirstel 分享：英格兰大学监管机构希望进行更多无 AI 的评估"
   ],
   "no_clear_offer": [
+   "仿 Borland Turbo Pascal 的 Turbo Vision 风格，支持平铺级联窗口、多工作区与布局记忆",
+   "围绕 Anthropic CEO 谈 AI 与入门岗位的视频，整理 Anthropic 提示工程教程",
+   "@RoundtableSpace 分享：可生成55至70秒竖屏短片，2D 角色置于彩色3D 世界，带墨线轮廓、镜头模糊和",
+   "@VaibhavSisinty 分享：这些开源仓库可帮助 AI 智能体理解代码库并提升技能",
+   "5个适合程序员和 Vibe 程序员的酷炫网站 - 9.6万星开源 AI 图表 - 150多个免费动画 React 组件 ",
+   "本周最值得下载的是 Nvidia 的免费 AI",
+   "Anthropic/Dario 在 Sam 的脑海中“白住”，但我如果两次在 GPT-4和推理模型上失去领先地位（也许很",
+   "‼ 苹果新款折叠屏 iPhone 现已运行微软 Windows 11系统，无需越狱",
    "Cicada 是免费开源工具，可为通话和直播生成双语字幕与结构化会议记录，并支持按键说话",
    "DomoAI 的 Inko AI Agent 先在对话中规划图像、参考片段与数字人镜头，再展示成本明细",
    "Reliance Jio 已取消预付费套餐用户的 Google AI Pro 免费订阅，现有用户权益保留，有效期 18 ",
-   "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入",
-   "@Tsinghua_Uni 分享：北京清华长庚医院团队综述 AI 从虚拟库、结构预测到从头设计，推动 SELEX 走出试",
-   "@VaibhavSisinty 分享：这些开源仓库可帮助 AI 智能体理解代码库并提升技能",
-   "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
-   "@randylewiskemp 分享：作者用 5 个提示测试两款工具，比较哪款更好",
-   "@dealztrendz 分享：现有用户仍保留 18 个月使用权，Jio 部分套餐改送 Canva Pro",
-   "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入",
-   "含免费 AI agent 设计技能、277个 React UI 资源、101个开源 Shadcn 组件及69个免费动画",
-   "帮小企业制定90天计划，让 ChatGPT、Claude 等 AI 助手推荐自己"
+   "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入"
   ],
   "not_ai": [
+   "@unusual_whales 分享：美国国家学生信息交换中心初步数据显示，今年秋季计算机与信息科学本科入学人数下降逾1",
    "Dreamina 推出 Seedance 2.5 Flash，等待时间更短、成本更低，适合批量生成与反复调优",
    "他创办 NVIDIA 并押注 CUDA，公司一度濒临破产，最终豪赌成功",
    "《崩坏：Nexus Anima》预注册现已开放",
@@ -85,8 +87,7 @@
    "@TimSweeneyEpic 分享：看看政府为苹果公司提供的所有免费通行证，以垄断应用程序分发和支付——包括掩盖这里和",
    "@sainingxie 分享：在跳上“无编码器”炒作列车之前，请三思而后行",
    "可观看 X 直播 FREE GPU TODAY，参与讨论并获取实时更新",
-   "@CommandCodeAI 分享：每月 10 美元套餐用量提升至 7 倍，支持 100 万 token 上下文，Pro",
-   "面向加入 beta 的团队提供1000美元额度"
+   "@CommandCodeAI 分享：每月 10 美元套餐用量提升至 7 倍，支持 100 万 token 上下文，Pro"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -103,26 +104,27 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-16T15:16:19+08:00",
+ "generated_at": "2026-11-16T17:24:38+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-16T15:16:18+08:00",
+  "checked_at": "2026-11-16T17:24:38+08:00",
   "counts": {
-   "ok": 168
+   "ok": 166,
+   "recheck": 1
   },
   "hidden": 0
  },
- "seconds": 1.4,
+ "seconds": 7.2,
  "side": {
   "github_hot": {
-   "drop:duplicate": 16,
-   "kept": 14,
+   "drop:duplicate": 17,
+   "kept": 13,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 12,
+   "drop:negative_signal": 3,
+   "drop:not_ai": 10,
    "drop:not_ai_strict": 10,
-   "kept": 14,
+   "kept": 17,
    "raw": 40
   }
  }
