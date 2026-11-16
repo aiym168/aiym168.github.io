@@ -2,36 +2,34 @@
  "counts": {
   "archived": 19,
   "deadline_extracted": 6,
-  "drop:duplicate": 281,
+  "drop:duplicate": 282,
   "drop:empty_summary": 35,
   "drop:negative_signal": 115,
   "drop:no_clear_offer": 374,
-  "drop:not_ai": 362,
+  "drop:not_ai": 360,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 430,
   "google_news_total": 430,
-  "kept_total": 191,
-  "net:gnews_cache_hit": 417,
-  "net:gnews_resolved_net": 13,
-  "net:tco_expanded": 5,
-  "net:tco_failed": 5,
-  "raw_total": 1417
+  "kept_total": 193,
+  "net:gnews_cache_hit": 430,
+  "new_this_run": 1,
+  "raw_total": 1418
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "LG Research 免费开放 K-Exaone 2.5 API",
-   "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "SwarmLLM：开源应用，可多台电脑联网协作运行单机跑不动的大模型",
+   "awesome-free-ai-apis：实时监控的已验证免费 AI API 目录",
    "awesome-free-ai-coding：收录合法免费 LLM API 与编程代理",
    "awesome-freellm-apis：收录 40+ 厂商的 134 个以上免费 LLM API",
+   "awesome-free-llm-api：免费大模型 API 导航 · 只收录能通过 API Key 和 endpoin",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
    "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
-   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
-   "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录"
+   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑"
   ],
   "empty_summary": [
    "官方称免费版 ChatGPT 现已具备电脑操作能力，并发布演示视频",
@@ -104,16 +102,17 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-17T02:58:10+08:00",
+ "generated_at": "2026-11-17T04:17:58+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-17T02:57:57+08:00",
+  "checked_at": "2026-11-17T04:17:52+08:00",
   "counts": {
+   "gone": 1,
    "ok": 171,
    "recheck": 1
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 7.2,
+ "seconds": 0.8,
  "side": {
   "github_hot": {
    "drop:duplicate": 17,
@@ -122,10 +121,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 10,
-   "drop:not_ai_strict": 11,
-   "kept": 15,
+   "drop:negative_signal": 5,
+   "drop:not_ai": 9,
+   "drop:not_ai_strict": 12,
+   "kept": 14,
    "raw": 40
   }
  }
