@@ -1,28 +1,25 @@
 {
  "counts": {
-  "archived": 18,
+  "archived": 19,
   "deadline_extracted": 6,
-  "drop:duplicate": 231,
+  "drop:duplicate": 232,
   "drop:empty_summary": 32,
-  "drop:negative_signal": 114,
-  "drop:no_clear_offer": 364,
-  "drop:not_ai": 314,
+  "drop:negative_signal": 111,
+  "drop:no_clear_offer": 355,
+  "drop:not_ai": 325,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 413,
-  "google_news_total": 413,
-  "kept_total": 187,
-  "net:gnews_cache_hit": 398,
-  "net:gnews_resolved_net": 15,
-  "net:tco_expanded": 5,
-  "new_this_run": 5,
-  "raw_total": 1301
+  "google_news_resolved": 417,
+  "google_news_total": 417,
+  "kept_total": 191,
+  "net:gnews_cache_hit": 413,
+  "net:gnews_resolved_net": 4,
+  "new_this_run": 3,
+  "raw_total": 1305
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "YVD：免费额度可秒级生成视频、图像和音乐",
-   "Orty：面向自由职业者的 AI 客户线索筛选工具",
    "LG Research 免费开放 K-Exaone 2.5 API",
    "Gemini Decision 1 在 Google AI Studio 上免费开放",
    "FN2 AI 免费开放一套技能，用 Claude Code 检索 1060 万条财报电话会议向量",
@@ -31,7 +28,9 @@
    "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
    "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录",
    "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
-   "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室"
+   "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
+   "grux：Grux AI，免费的开源 AI 代理",
+   "freefield：ComfyUI 上开源 Higgsfield"
   ],
   "empty_summary": [
    "Command Code 回顾上周更新，包含 GOAT 额度提升、Muse Ember 双倍用量",
@@ -62,6 +61,8 @@
    "@EvanKirstel 分享：英格兰大学监管机构希望进行更多无 AI 的评估"
   ],
   "no_clear_offer": [
+   "Google 暂未直接收费，传闻使用 Gemini AI 积分，新 Pixel 可免费获6个月 Gemini Cloud",
+   "Hy4 最快最省成本的模型，提供 1M 上下文、多模态和 ZDR",
    "仿 Borland Turbo Pascal 的 Turbo Vision 风格，支持平铺级联窗口、多工作区与布局记忆",
    "围绕 Anthropic CEO 谈 AI 与入门岗位的视频，整理 Anthropic 提示工程教程",
    "@RoundtableSpace 分享：可生成55至70秒竖屏短片，2D 角色置于彩色3D 世界，带墨线轮廓、镜头模糊和",
@@ -71,11 +72,11 @@
    "Anthropic/Dario 在 Sam 的脑海中“白住”，但我如果两次在 GPT-4和推理模型上失去领先地位（也许很",
    "‼ 苹果新款折叠屏 iPhone 现已运行微软 Windows 11系统，无需越狱",
    "Cicada 是免费开源工具，可为通话和直播生成双语字幕与结构化会议记录，并支持按键说话",
-   "DomoAI 的 Inko AI Agent 先在对话中规划图像、参考片段与数字人镜头，再展示成本明细",
-   "Reliance Jio 已取消预付费套餐用户的 Google AI Pro 免费订阅，现有用户权益保留，有效期 18 ",
-   "@VaibhavSisinty 分享：该社区每日分享工具与资讯，已有 20 多万人加入，可免费加入"
+   "DomoAI 的 Inko AI Agent 先在对话中规划图像、参考片段与数字人镜头，再展示成本明细"
   ],
   "not_ai": [
+   "Salesforce 销售团队为当月成交将试用期从30天改为14天，无证据对客户更好",
+   "@ai4bharat 分享：支持22种印度语言的免费设备端手势滑动键盘迎来重大升级",
    "@unusual_whales 分享：美国国家学生信息交换中心初步数据显示，今年秋季计算机与信息科学本科入学人数下降逾1",
    "Dreamina 推出 Seedance 2.5 Flash，等待时间更短、成本更低，适合批量生成与反复调优",
    "他创办 NVIDIA 并押注 CUDA，公司一度濒临破产，最终豪赌成功",
@@ -85,9 +86,7 @@
    "Strategy 称比特币是数字资本并转为数字信用",
    "支持 Windows、Linux 和 Android，可看影视、动漫与直播电视，还支持离线下载",
    "@TimSweeneyEpic 分享：看看政府为苹果公司提供的所有免费通行证，以垄断应用程序分发和支付——包括掩盖这里和",
-   "@sainingxie 分享：在跳上“无编码器”炒作列车之前，请三思而后行",
-   "可观看 X 直播 FREE GPU TODAY，参与讨论并获取实时更新",
-   "@CommandCodeAI 分享：每月 10 美元套餐用量提升至 7 倍，支持 100 万 token 上下文，Pro"
+   "@sainingxie 分享：在跳上“无编码器”炒作列车之前，请三思而后行"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -104,16 +103,16 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-16T17:24:38+08:00",
+ "generated_at": "2026-11-16T19:51:10+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-16T17:24:38+08:00",
+  "checked_at": "2026-11-16T19:51:10+08:00",
   "counts": {
-   "ok": 166,
-   "recheck": 1
+   "gone": 1,
+   "ok": 169
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 7.2,
+ "seconds": 2.6,
  "side": {
   "github_hot": {
    "drop:duplicate": 17,
@@ -121,11 +120,11 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
-   "drop:not_ai": 10,
-   "drop:not_ai_strict": 10,
-   "kept": 17,
-   "raw": 40
+   "drop:negative_signal": 5,
+   "drop:not_ai": 13,
+   "drop:not_ai_strict": 8,
+   "kept": 12,
+   "raw": 38
   }
  }
 }
