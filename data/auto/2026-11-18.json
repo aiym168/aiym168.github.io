@@ -1,9 +1,28 @@
 {
   "date": "2026-11-18",
-  "updated_at": "2026-11-18T05:39+08:00",
-  "updated_at_label": "2026-11-18 05:39 Asia/Shanghai",
+  "updated_at": "2026-11-18T06:38+08:00",
+  "updated_at_label": "2026-11-18 06:38 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50538663",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "Show HN：各种各样的象棋游戏",
+      "summary": "Show HN：各种各样的国际象棋游戏这是一个我开发的网页应用程序，旨在向我的孩子们介绍国际象棋，同时满足我个人对棋局分析的兴趣。我提供了指向这些游戏的链接（免费、无广告、无跟踪器、无联盟广告等），不过还有一个完整的学习版块，这也是我的主要关注点。我想在座的很多人已经了解了国际象棋的基础知识。<p>当然，我在该项目的各个部分都利用了 AI——事实上，分析部分使用了",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "llm_nerd",
+      "url": "https://chessreport.ca/games",
+      "posted_at": "2026-11-18 05:46 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 1
+      },
+      "original_title": "Show HN: A Variety of Chess Games",
+      "original_summary": "Show HN: A Variety of Chess Games This is a web app that I built to introduce chess to my children, along with scratching a personal game analysis itch. I link to the games (free, ad free, tracker free, affiliate free, etc), though there is a full learning section as well that was my primary focus. I imagine many here already know the basics of chess.<p>Of course I leveraged AI in all parts of this project -- and indeed the analysis section uses three separate neural networks to analyze play -- but never without full engagement and co-working between myself and the machine (I&#x27;ve been doing web apps for 30+ years), and all designs are my own. I contrived several of the games wholesale, though others are well trodden in the chess world.<p>I use chess as a meditative beat from other enga",
+      "translated_by": "free-translate"
+    },
     {
       "id": "hn-50537585",
       "source": "Hacker News",
@@ -35,8 +54,8 @@
       "url": "https://starsling.dev",
       "posted_at": "2026-11-18 03:01 Asia/Shanghai",
       "engagement": {
-        "points": 31,
-        "comments": 13
+        "points": 36,
+        "comments": 19
       },
       "original_title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
       "original_summary": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos We’re Yonas and Daniel and we’re building StarSling (<a href=\"https:&#x2F;&#x2F;starsling.dev\">https:&#x2F;&#x2F;starsling.dev</a>), fast GitHub Actions runners with AI agents that ship PRs to continuously improve your tests and workflows.<p>Every CI job gets its own ephemeral sandbox on the fastest Zen 5 machines and NVMe Disk with unlimited concurrency so a burst of agent PRs all run at once. We’re different from other runners because ours come with agents that cut down your CI bill over time. PRs are generated through our CI harness, which runs an agent loop that’s tuned to improve your CI speed and reduce cost.<p>Mastra now merges over 1,800 PRs a month and we got their slowest workflow from 29m 56s on GitHub-host",
@@ -73,7 +92,7 @@
       "url": "https://github.com/RunanywhereAI/trnrt",
       "posted_at": "2026-11-18 00:01 Asia/Shanghai",
       "engagement": {
-        "points": 34,
+        "points": 37,
         "comments": 5
       },
       "original_title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
@@ -252,23 +271,23 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50507341",
+      "id": "hn-50539204",
       "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "免费桌面本地优先 AI 代理，不用 Electron，支持任意 LLM 端点",
-      "summary": "作者用非 Web 代码构建的桌面 AI 代理原型，本地优先，不依赖 Electron，可连接任意 LLM 端点。",
+      "category": "AI 开发工具与编程助手",
+      "title": "Show HN：DecksMD – 以本地为先的 Markdown 闪卡应用和 Obsidian 插件",
+      "summary": "Show HN：DecksMD – 以本地为先的 Markdown 闪卡应用和 Obsidian 插件我基于 Markdown 语法开发了一款闪卡应用和 Obsidian 插件。您可以使用标题和段落、表格或突出显示的文本来创建闪卡和填空题，然后可以使用 FSRS 算法进行复习。所有内容都保存在本地，它在内部使用 SQLite 数据库来跟踪状态，并使 Markdown 文档保持整洁。<p>我于……开始了这个项目",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "scronkfinkle",
-      "url": "https://github.com/Scronkfinkle/byob",
-      "posted_at": "2026-11-15 22:52 Asia/Shanghai",
+      "author": "hotpatato",
+      "url": "https://decksmd.app/",
+      "posted_at": "2026-11-18 06:31 Asia/Shanghai",
       "engagement": {
-        "points": 4,
+        "points": 1,
         "comments": 0
       },
-      "original_title": "Show HN: A local-first AI agent for the desktop, no Electron, any LLM endpoint",
-      "original_summary": "Show HN: A local-first AI agent for the desktop, no Electron, any LLM endpoint Hey folks. Most all the apps I see for agent harnesses are typescript based, and involve either electron or some form of IPC to function as a desktop app.<p>In the age of LLM&#x27;s, I thought it would be cool to build out a prototype of what a modern desktop application would like for this, without using any web code, since I can have agents pretty aggressively work on the cross-platform compatibility on my behalf. After about a week, I ended up with a harness that feels pretty good!<p>Feel free to try it from the releases or you can install directly via:<p>```   \ncargo install byob   \n````",
-      "translated_by": "model"
+      "original_title": "Show HN: DecksMD – local first, Markdown flashcards app and plugin for Obsidian",
+      "original_summary": "Show HN: DecksMD – local first, Markdown flashcards app and plugin for Obsidian I built a flashcards app and plugin for obsidian, based on markdown syntax. You use headers and paragraphs, tables or highlighted text to create flashcards and cloze deletions, which you can then review using FSRS algorithm. Everything stays local, it uses a SQL lite db internally to keep track of state and keep the markdown document clean.<p>I started this project about a year ago when I was facing the problem that I needed flashcards to memorise thousands concepts and language vocabulary I kept forgetting and I hated every flashcards app out there so I decided to build something of my own and I started with markdown and obsidian. Fast forward one year later, I released the iOS and android apps too and a direc",
+      "translated_by": "free-translate"
     },
     {
       "id": "hn-50533967",
@@ -499,25 +518,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50531864",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Show HN：Matchday 把球队整个赛季放进一个自动更新日历",
-      "summary": "体育迷因厌倦在多个应用间反复查赛程，做了把球队整个赛季汇总到自动更新日历的工具。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "pfeher",
-      "url": "https://matchdayfeed.com/",
-      "posted_at": "2026-11-17 22:28 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Matchday – your team's whole season in one auto-updating calendar",
-      "original_summary": "Show HN: Matchday – your team's whole season in one auto-updating calendar Hi all!<p>I&#x27;m a sports lover, and I probably spend way too much time watching my teams. That meant spending a lot of time checking and rechecking when and who they played against, juggling between different apps to do it. As you can imagine, this was inconvenient and became time consuming.<p>I tried keeping the games in my own calendar for the season, typing them in myself. But the entries kept needing to change: broadcasters reschedule games, cup draws add new fixtures partway through the season, the Playoff in the American major leagues starts, etc. Every time that happened, I had to go back and fix it by hand. So I built Matchday. It streamlines all of that, keeping you up to date with all of your teams&#x27",
-      "translated_by": "model"
-    },
-    {
       "id": "v2ex-1257849",
       "source": "V2EX",
       "category": "其他科技",
@@ -680,39 +680,39 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "id": "ghdeal-cybird-d-free-llm-api-provider",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "llm4jobs-v2：免费求职雷达，每日邮件摘要",
-      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历与地点筛选，跑在 GitHub Actions 上免费。",
+      "title": "CYBIRD-D/FREE-LLM-API-Provider：免费LLM API列表",
+      "summary": "一份可通过API访问的免费LLM提供商资源列表，包含部分中国平台。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Arsh624",
-      "url": "https://github.com/Arsh624/llm4jobs-v2",
-      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "author": "CYBIRD-D",
+      "url": "https://github.com/CYBIRD-D/FREE-LLM-API-Provider",
+      "posted_at": "2026-11-16 22:02 Asia/Shanghai",
       "engagement": {
-        "stars": 0
+        "stars": 123
       },
-      "original_title": "Arsh624/llm4jobs-v2",
-      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "original_title": "CYBIRD-D/FREE-LLM-API-Provider",
+      "original_summary": "CYBIRD-D/FREE-LLM-API-Provider This is a list of free LLM provider resources accessible via API. Including some cn platform  免费llm api平台（包括cn平台）",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-singeryoa-metastar-ai-npc-sdk-threejs",
+      "id": "ghdeal-peppolone-conclave",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "Three.js 零 LLM 成本 AI NPC SDK，对站点运营者免费",
-      "summary": "singeryoa/metastar-ai-npc-sdk-threejs 通过一次 ES 模块导入给 Three.js 场景加入会说话的 AI NPC，支持语音文本聊天与唇形同步，无需 API key。",
+      "title": "peppolone/Conclave：macOS上多模型辩论并裁决的免费应用",
+      "summary": "Claude、Gemini、GPT-OSS 与 Qwen 分轮匿名互评修订，裁判给出结论与可靠性评分，配免费 API key 可用。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "singeryoa",
-      "url": "https://github.com/singeryoa/metastar-ai-npc-sdk-threejs",
-      "posted_at": "2026-11-17 14:06 Asia/Shanghai",
+      "author": "peppolone",
+      "url": "https://github.com/peppolone/Conclave",
+      "posted_at": "2026-11-14 21:14 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
-      "original_title": "singeryoa/metastar-ai-npc-sdk-threejs",
-      "original_summary": "singeryoa/metastar-ai-npc-sdk-threejs Zero LLM Cost AI NPC SDK for Three.js and WebXR. Add a talking AI NPC to a three.js scene with one ES module import. Voice and text chat, lip sync, no API keys needed. Free for site operators.",
+      "original_title": "peppolone/Conclave",
+      "original_summary": "peppolone/Conclave LLM council for macOS: Claude, Gemini, GPT-OSS and Qwen debate your question in rounds (anonymous cross-critique, revision) and a judge gives a verdict with a reliability rating. Keep chatting after the verdict, attach files, search the web first. Native SwiftUI app, free with free API keys or your Claude subscription.",
       "translated_by": "model"
     },
     {
@@ -734,21 +734,21 @@
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-alim4385-llm-free-search-api-vercel",
+      "id": "ghdeal-dorkagent-free-llm-models",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "LLM-free-search-api-Vercel：免费的LLM搜索API",
-      "summary": "面向 LLM 的免密钥搜索 API，无需 API key 即可部署在 Vercel，内置 10 个搜索提供方并行检索。",
+      "title": "dorkagent/free-llm-models 每日核验免费 LLM 模型",
+      "summary": "由自动化每日更新的免费 LLM API 模型注册表，只收录实际可用的模型。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Alim4385",
-      "url": "https://github.com/Alim4385/LLM-free-search-api-Vercel",
-      "posted_at": "2026-11-15 09:09 Asia/Shanghai",
+      "author": "dorkagent",
+      "url": "https://github.com/dorkagent/free-llm-models",
+      "posted_at": "2026-11-16 21:12 Asia/Shanghai",
       "engagement": {
-        "stars": 0
+        "stars": 1
       },
-      "original_title": "Alim4385/LLM-free-search-api-Vercel",
-      "original_summary": "Alim4385/LLM-free-search-api-Vercel Keyless search API for LLMs (Next.js) - no API key, runs on Vercel. 10 providers, parallel search, RRF voting, circuit breaker, AZ stemming, rate limiting.",
+      "original_title": "dorkagent/free-llm-models",
+      "original_summary": "dorkagent/free-llm-models Daily-verified registry of free LLM API models that actually work. Updated by automation.",
       "translated_by": "model"
     },
     {
