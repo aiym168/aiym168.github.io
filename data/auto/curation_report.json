@@ -3,18 +3,21 @@
   "archived": 19,
   "deadline_extracted": 6,
   "drop:duplicate": 283,
-  "drop:empty_summary": 35,
+  "drop:empty_summary": 36,
+  "drop:google_news_unresolved": 3,
   "drop:negative_signal": 112,
-  "drop:no_clear_offer": 378,
-  "drop:not_ai": 357,
+  "drop:no_clear_offer": 387,
+  "drop:not_ai": 359,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 430,
-  "google_news_total": 430,
+  "google_news_resolved": 442,
+  "google_news_total": 445,
   "kept_total": 194,
   "net:gnews_cache_hit": 430,
-  "net:tco_failed": 5,
-  "new_this_run": 2,
-  "raw_total": 1418
+  "net:gnews_failed_net": 3,
+  "net:gnews_resolved_net": 12,
+  "net:tco_expanded": 4,
+  "new_this_run": 1,
+  "raw_total": 1433
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -33,6 +36,7 @@
    "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话"
   ],
   "empty_summary": [
+   "Claude Fable 5.2已在 NEAR AI Cloud 上线，今天可在 playground 免费试用",
    "官方称免费版 ChatGPT 现已具备电脑操作能力，并发布演示视频",
    "@WorkBuddy_AI 分享：模型响应更快、单任务成本更低且内置视觉理解，限时免费试用，有每日免费额度",
    "@OpenAINewsroom 分享：新工具免费提供给经审核组织，用于检测含 AI 生成图像的儿童性虐待材料",
@@ -43,8 +47,12 @@
    "MIT 将于2027年1月在塞浦路斯大学和塞浦路斯理工大学为青少年举办免费 AI 训练营",
    "DeepAI Code 新增 Muse Ember 免费使用，Claude Sonnet 5.5",
    "演示用 Claude 与 Composio 查找并验证20个营销线索，成本0.68美元，可凭免费额度试用",
-   "该免费电子书涵盖 LLM 漏洞、幻觉评估、护栏与生产部署，帮助构建更安全可靠的系统",
-   "Gojiberry AI 的 ARR 突破 500 万美元，并发布免费课程"
+   "该免费电子书涵盖 LLM 漏洞、幻觉评估、护栏与生产部署，帮助构建更安全可靠的系统"
+  ],
+  "google_news_unresolved": [
+   "免费 Claude skill：搭建你的 AI 顾问团",
+   "周末在手机上装个开源AI：一个免费应用加2-4GB模型，可离线运行",
+   "Google将Gemini AI引入CarPlay，支持免手导航"
   ],
   "negative_signal": [
    "用 Claude 在45分钟建细分领域免费 Chrome 扩展，以注册或邮箱设门槛，再推广列表",
@@ -61,20 +69,21 @@
    "@mcwilsonky 分享：客户正在询问 AI 该雇用谁"
   ],
   "no_clear_offer": [
+   "旧版本堆在 ~/.local/share/claude 目录，清理后能腾出大量磁盘空间",
+   "@MicrosoftLearn 分享：利用 AI 创建个性化技能学习清单",
+   "iOS 27.3 beta 2 测试每日限额，涵盖 Siri AI、Image Playground 等",
+   "Papa John's 将 AI 用于质量检查，参与可赢取免费披萨",
+   "新闻：Gemini 4 Hydrogen 现已免费，并且现在可以将您需要学习的任何内容转化为学习指南、测验和抽认卡",
+   "Google Maps 将 Gemini AI 带到 CarPlay，提供更智能的免手导航",
+   "Elevate Your Hour of AI 免费30分钟模块，无需 AI 经验，可获 Hour of AI 教育者证",
+   "通过 Composio Instant 可使用 MemeLord，免费 AI meme 生成持续69天",
+   "Papa John's 将 AI 用于质量检查，参与可赢取免费披萨",
+   "耗时约一周并用大量 Fable 额度，Claude 训练出可放进3.2MB Game Boy 卡带的6M 参数模型",
    "教程演示在自有机器上运行 Claude Code，读文件、改代码、执行命令全程不联网",
-   "Anthropic 参与的全球孵化项目，提供 AI 指导、大师课与人脉，并有全额和部分奖学金",
-   "@globaltimesnews 分享：马尼拉峰会取得中国-东盟自贸区和 AI 合作等进展，专家称 AI 是新的合作领域",
-   "连接 DIMO 后可用 Claude 免提语音询问车辆，Claude 仅见选定车辆且不能解锁或启动",
-   "@Androidheadline 分享：三星健康为老年用户提供免费 AI 指导，用于糖尿病预防",
-   "推文提供免费 Advanced ChatGPT 指南获取链接",
-   "@emmanuel_2m 分享：含90多节课程17门课，覆盖图像、视频、3D、音频、工作流、代理和 API",
-   "@davidbombal 分享：免费注册活动，探讨企业如何保护敏感数据、保障自主 AI 系统并应对新兴威胁",
-   "Google 暂未直接收费，传闻使用 Gemini AI 积分，新 Pixel 可免费获6个月 Gemini Cloud",
-   "Hy4 最快最省成本的模型，提供 1M 上下文、多模态和 ZDR",
-   "仿 Borland Turbo Pascal 的 Turbo Vision 风格，支持平铺级联窗口、多工作区与布局记忆",
-   "围绕 Anthropic CEO 谈 AI 与入门岗位的视频，整理 Anthropic 提示工程教程"
+   "Anthropic 参与的全球孵化项目，提供 AI 指导、大师课与人脉，并有全额和部分奖学金"
   ],
   "not_ai": [
+   "@elonmusk 分享：正如我刚才所说……我们向达菲部长提供了免费的 FAA 用 Starlink，但他表示不需要",
    "直播中聊 GPU 市场，并在聊天区发放游戏激活码和本月 PC 抽奖",
    "Salesforce 销售团队为当月成交将试用期从30天改为14天，无证据对客户更好",
    "@ai4bharat 分享：支持22种印度语言的免费设备端手势滑动键盘迎来重大升级",
@@ -85,8 +94,7 @@
    "@rjrshr 分享：黄仁勋称员工为志愿者，称这是其逐步打造的工作文化",
    "作者在 Substack 免费发布 NBIS 第三季度财报完整回顾及更新后的2027年目标价",
    "Strategy 称比特币是数字资本并转为数字信用",
-   "支持 Windows、Linux 和 Android，可看影视、动漫与直播电视，还支持离线下载",
-   "@TimSweeneyEpic 分享：看看政府为苹果公司提供的所有免费通行证，以垄断应用程序分发和支付——包括掩盖这里和"
+   "支持 Windows、Linux 和 Android，可看影视、动漫与直播电视，还支持离线下载"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -103,16 +111,16 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-17T11:16:16+08:00",
+ "generated_at": "2026-11-17T11:42:27+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-17T11:16:16+08:00",
+  "checked_at": "2026-11-17T11:42:27+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 173
+   "ok": 174,
+   "recheck": 1
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 1.0,
+ "seconds": 7.5,
  "side": {
   "github_hot": {
    "drop:duplicate": 16,
@@ -121,10 +129,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 6,
-   "drop:not_ai": 9,
-   "drop:not_ai_strict": 8,
-   "kept": 17,
+   "drop:negative_signal": 7,
+   "drop:not_ai": 11,
+   "drop:not_ai_strict": 7,
+   "kept": 15,
    "raw": 40
   }
  }
