@@ -1,52 +1,58 @@
 {
  "last_step": {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "changes": [
    {
-    "op": "slower",
-    "name": "Kubernetes 博客",
-    "key": "kubernetes-io-feed-xml",
-    "why": "总是重复，没有新东西"
-   },
-   {
-    "op": "slower",
-    "name": "React 博客",
-    "key": "react-dev-rss-xml",
-    "why": "总是重复，没有新东西"
-   },
-   {
-    "op": "slower",
-    "name": "新闻聚合 · AIGC 教程",
-    "key": "gn-aigc-tut",
-    "why": "总是重复，没有新东西"
-   },
-   {
-    "op": "down",
-    "name": "WIRED AI",
-    "key": "wired-ai",
-    "why": "被过滤掉的内容太多"
-   },
-   {
-    "op": "up",
-    "name": "量子位",
-    "key": "qbitai",
+    "op": "retest",
+    "name": "伯克利 BAIR",
+    "key": "bair-berkeley-edu-blog-feed-xml",
     "why": ""
+   },
+   {
+    "op": "pause",
+    "name": "Nature",
+    "key": "nature-com-nature-rss",
+    "why": "复测还是打不开"
+   },
+   {
+    "op": "pause",
+    "name": "Civitai 热门模型",
+    "key": "civitai-models",
+    "why": "复测还是打不开"
+   },
+   {
+    "op": "pause",
+    "name": "新闻聚合 · AI绘画 教程",
+    "key": "gn-aipaint-tut",
+    "why": "最近总是打不开"
+   },
+   {
+    "op": "pause",
+    "name": "DEV 社区",
+    "key": "DEV.to",
+    "why": "复测还是没有内容"
    }
   ],
-  "snapshot": "data/evolve/snapshots/2026-11-17.json",
+  "snapshot": "data/evolve/snapshots/2026-11-18.json",
   "baseline": {
-   "kept": 10815,
-   "runs": 43,
+   "kept": 8209,
+   "runs": 30,
    "dead": 4,
-   "checked": 669,
-   "build_ok": 41,
+   "checked": 683,
+   "build_ok": 27,
    "build_bad": 0,
-   "kept_per_run": 251.51,
-   "dead_rate": 0.006,
+   "kept_per_run": 273.63,
+   "dead_rate": 0.0059,
    "bad_build_rate": 0.0
   }
  },
  "history": [
+  {
+   "date": "2026-11-18",
+   "verdict_prev": null,
+   "changes": 5,
+   "diary_by": "model"
+  },
   {
    "date": "2026-11-17",
    "verdict_prev": null,
@@ -84,5 +90,5 @@
    "diary_by": "rules"
   }
  ],
- "last_evolve_date": "2026-11-17"
+ "last_evolve_date": "2026-11-18"
 }

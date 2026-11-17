@@ -1,25 +1,29 @@
 {
  "counts": {
-  "archived": 21,
+  "archived": 22,
   "deadline_extracted": 6,
-  "drop:duplicate": 278,
-  "drop:empty_summary": 37,
-  "drop:negative_signal": 113,
-  "drop:no_clear_offer": 407,
-  "drop:not_ai": 361,
+  "drop:duplicate": 324,
+  "drop:empty_summary": 38,
+  "drop:negative_signal": 117,
+  "drop:no_clear_offer": 442,
+  "drop:not_ai": 387,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 462,
-  "google_news_total": 462,
-  "kept_total": 195,
+  "google_news_resolved": 478,
+  "google_news_total": 478,
+  "kept_total": 199,
   "net:gnews_cache_hit": 462,
-  "raw_total": 1450
+  "net:gnews_resolved_net": 16,
+  "net:tco_expanded": 6,
+  "net:tco_failed": 6,
+  "new_this_run": 4,
+  "raw_total": 1566
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
+   "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
    "SwarmLLM：开源应用，可多台电脑联网协作运行单机跑不动的大模型",
-   "awesome-free-llm-api：免费大模型 API 导航 · 只收录能通过 API Key 和 endpoin",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
@@ -31,6 +35,7 @@
    "grux：Grux AI，免费的开源 AI 代理"
   ],
   "empty_summary": [
+   "PentestPad 是面向安全团队的渗透测试报告平台，可减少整理原始笔记的时间，现提供免费试用",
    "该图像分类器以免费 API 提供给调查机构和支持服务等经审核组织",
    "Claude Fable 5.2已在 NEAR AI Cloud 上线，今天可在 playground 免费试用",
    "官方称免费版 ChatGPT 现已具备电脑操作能力，并发布演示视频",
@@ -41,10 +46,12 @@
    "Khan Academy Philippines 称该国所有教师无论是否合作学校都可免费使用，约一分钟生成教案",
    "该模型总参数 280B、每 token 激活 14B、上下文窗口 1M，目前在 OpenRouter 可免费使用",
    "MIT 将于2027年1月在塞浦路斯大学和塞浦路斯理工大学为青少年举办免费 AI 训练营",
-   "DeepAI Code 新增 Muse Ember 免费使用，Claude Sonnet 5.5",
-   "演示用 Claude 与 Composio 查找并验证20个营销线索，成本0.68美元，可凭免费额度试用"
+   "DeepAI Code 新增 Muse Ember 免费使用，Claude Sonnet 5.5"
   ],
   "negative_signal": [
+   "@aakashgupta 分享：富裕家庭曾花最高2.5万美元润色论文，穷学生用 ChatGPT 免费获得类似帮助后，大学",
+   "Anthropic 最强大模型由广告支持提供免费访问，可立即试用",
+   "两小时课程讲利用成熟 SEO 策略从 AI 搜索获取线索、佣金和收入，无回放",
    "用 Claude 在45分钟建细分领域免费 Chrome 扩展，以注册或邮箱设门槛，再推广列表",
    "@WuBlockchain 分享：关注1.4万亿美元估值、9000亿美元算力承诺，以及 NVIDIA 财报和美联储纪要",
    "@PeterDiamandis 分享：超10.5万名女性参与，假阳性未显著增加，放射科医生阅片量减少44%",
@@ -53,24 +60,21 @@
    "@Scobleizer 分享：推文称奥斯汀机器人/AI 活动期间，马斯克每次乘车都获得免费广告，独特设计引发讨论",
    "我将向 2 人赠送一整年的 Claude Max 免费入场",
    "@alex_prompter 分享：每周分享一个 AI 实用技巧，订阅免费",
-   "作者把自家站点在用的12个 SKILL.md 工作流全部开源，可用 npx skills add 安装",
-   "@pillitterip 分享：该插件已获 28,355 星",
-   "@MattiHaapoja 分享：以下是我如何免费学习 AI 电影制作的",
-   "@mcwilsonky 分享：客户正在询问 AI 该雇用谁"
+   "作者把自家站点在用的12个 SKILL.md 工作流全部开源，可用 npx skills add 安装"
   ],
   "no_clear_offer": [
-   "Alex Imas 与 Tyler Cowen 解释，技术创造的大量产品近乎免费，因此 GDP 难以体现 AI 收益",
-   "@VaibhavSisinty 分享：该扩展会转写视频、提取可核查说法并联网搜索，再由 Claude 给出判断",
-   "@opportunitiesfy 分享：免费12个月，每月2至4小时，含全球同届成员、导师和微型项目，截止2026年11",
-   "@malpani 分享：为教育投入更多金钱并不一定意味着您的孩子就能学到更多知识",
-   "@malpani 分享：一个从来不在无人监督的情况下学习的孩子，可能是在适应辅导，而不是在学习",
-   "@malpani 分享：更多的教学并不总意味着更多的学习",
-   "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
-   "@malpani 分享：上课时间越多，思考时间就越少",
-   "@malpani 分享：辅导班可能是一种昂贵的捷径，只会教您的孩子等待指示",
-   "@malpani 分享：您的孩子可能并不需要另一位老师",
-   "@malpani 分享：您孩子的晚间时间不必都用于辅导班",
-   "@malpani 分享：分数并不是您的孩子从学习中应该获得的唯一收获"
+   "Munters 的 Andréa Haag 称 AI 增长推高电力需求，液冷等节能方案对获得电网接入和释放容量很关键",
+   "Papa John's 将 AI 用于质量控制，参与可赢取免费披萨",
+   "@jmattmiller 分享：面向教师和课堂的50款 AI 工具清单已更新，可帮助快速备课和制作互动内容",
+   "清单含 GitHub、Gravatar、Medium、Substack 等平台，用于提升 Google 与 ChatGP",
+   "@arcee_ai 分享：该赞助商称与 AI 生态企业交流收获大，并提到现场有免费抹茶吧",
+   "像 PW 这样的辅导班并不能让孩子变得更聪明",
+   "课程针对 AI Agent 重复犯错问题，讲解如何让代理随每次运行提升",
+   "@IFTTT 分享：它会读取易被忽略的试用到期邮件，并在续费前一天创建含价格的日历提醒",
+   "Decodo 将演示如何把 Claude 与实时网页数据结合使用",
+   "Gemini 称 Tasks 适合长项目与周期安排，现面向数亿合格用户免费",
+   "HubSpot 表示可自带代理、使用现有 API，并按需用积分扩展",
+   "该提示要求 Claude 向开源 T3 Code 看齐，并称自家远程能力差距大"
   ],
   "not_ai": [
    "上传 logo 后可调整颜色、光照与动态，本地运行无需 API key，导出 2K/4K 无缝循环视频",
@@ -101,16 +105,16 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-17T21:52:58+08:00",
+ "generated_at": "2026-11-18T05:45:36+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-17T21:52:58+08:00",
+  "checked_at": "2026-11-18T05:45:06+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 173
+   "ok": 173,
+   "recheck": 1
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 1.1,
+ "seconds": 10.2,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -119,10 +123,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
+   "drop:negative_signal": 1,
    "drop:not_ai": 10,
-   "drop:not_ai_strict": 12,
-   "kept": 14,
+   "drop:not_ai_strict": 2,
+   "kept": 27,
    "raw": 40
   }
  }

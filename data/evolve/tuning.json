@@ -1,14 +1,14 @@
 {
  "news": {
   "nature-com-nature-rss": {
-   "state": "retest",
-   "since": "2026-11-15",
-   "why": ""
+   "state": "paused",
+   "since": "2026-11-18",
+   "why": "复测还是打不开"
   },
   "civitai-models": {
-   "state": "retest",
-   "since": "2026-11-15",
-   "why": ""
+   "state": "paused",
+   "since": "2026-11-18",
+   "why": "复测还是打不开"
   },
   "wired-ai": {
    "weight": 0.5,
@@ -18,9 +18,9 @@
   "bair-berkeley-edu-blog-feed-xml": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-15",
-   "why": "一周都没有新东西",
-   "state": "paused"
+   "since": "2026-11-18",
+   "why": "",
+   "state": "retest"
   },
   "syncedreview-com-feed": {
    "weight": 0.5,
@@ -73,13 +73,18 @@
    "every": 1,
    "since": "2026-11-17",
    "why": ""
+  },
+  "gn-aipaint-tut": {
+   "state": "paused",
+   "since": "2026-11-18",
+   "why": "最近总是打不开"
   }
  },
  "deals": {
   "DEV.to": {
-   "state": "retest",
-   "since": "2026-11-15",
-   "why": ""
+   "state": "paused",
+   "since": "2026-11-18",
+   "why": "复测还是没有内容"
   },
   "Lobsters": {
    "state": "retest",
@@ -87,6 +92,6 @@
    "why": ""
   }
  },
- "updated_at": "2026-11-17T02:58+08:00",
+ "updated_at": "2026-11-18T05:45+08:00",
  "note": "由 evolve.py 每天自动维护；采集脚本只读。删除此文件即恢复默认（全部来源、权重 1.0）。"
 }
