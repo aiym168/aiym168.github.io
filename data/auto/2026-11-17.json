@@ -1,9 +1,28 @@
 {
   "date": "2026-11-17",
-  "updated_at": "2026-11-17T21:02+08:00",
-  "updated_at_label": "2026-11-17 21:02 Asia/Shanghai",
+  "updated_at": "2026-11-17T21:49+08:00",
+  "updated_at_label": "2026-11-17 21:49 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50530840",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Solipsist：免费本地笔记与 Pi 智能体协作工具",
+      "summary": "作者探索让 AI 智能体像 Google Docs 一样协作，而非传统聊天界面。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "pulkitsh1234",
+      "url": "https://solipsist.sh/",
+      "posted_at": "2026-11-17 21:06 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: Solipsist – Local Only Notes + Pi agents",
+      "original_summary": "Show HN: Solipsist – Local Only Notes + Pi agents Hi HN, since some time I have been experimenting with a new way to work with AI agents, instead of chatting with them in the usual sense, I wanted to work with them collaboratively (like people usually do in google docs or confluence).\nI think the chat based interface we use for these coding agents doesn&#x27;t extend well to other use cases, like researching, thinking... or just having a general introspective session with AI.<p>I thought of having a simple markdown editor (like Notion), where you can just dump your thoughts (or documents) and then the AI agents can work off of them. I wanted to the app to be completely local so I don&#x27;t depend on any cloud providers and can eventually run entirely offline with self-hosted LLMs in the f",
+      "translated_by": "model"
+    },
     {
       "id": "hn-50529032",
       "source": "Hacker News",
@@ -21,25 +40,6 @@
       },
       "original_title": "Show HN: Call Nara. An AI voice companion built with older people in mind",
       "original_summary": "Show HN: Call Nara. An AI voice companion built with older people in mind Call Nara: someone to talk to, any time<p>Call Nara is a simple voice companion for older people, and for anyone who spends long days alone. You tap once and talk. There&#x27;s no typing.<p>Nara greets you by name, asks how you are, chats and listens. Just ask by voice, and she can play music, hymns and movies, read from the Bible, and look through photos that you or your family have added, reading out the captions and chatting about them. If you nominate a family member, friend or carer, she can let them know if you seem upset or distressed.<p>Call Nara was designed with older people in mind, and with the families and friends who love them. It&#x27;s built for everyone, so no one is left behind. Whatever your age, N",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50521936",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Solipsist：用 Markdown 与 Pi 代理协作的 AI 工具",
-      "summary": "尝试以文档协作方式而非聊天界面与 AI 代理协作。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "pulkitsh1234",
-      "url": "https://solipsist.sh/",
-      "posted_at": "2026-11-17 03:34 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Solipsist – Work with Pi agents using Markdown",
-      "original_summary": "Show HN: Solipsist – Work with Pi agents using Markdown Hi HN, since some time I have been experimenting with a new way to work with AI agents, instead of chatting with them in the usual sense, I wanted to work with them collaboratively (like people usually do in google docs or confluence).<p>I think the chat based interface we use for these coding agents doesn&#x27;t extend well to other use cases, like researching, thinking... or just having a general introspective session with AI.<p>I thought of having a simple markdown editor (like Notion), where you can just dump your thoughts (or documents) and then the AI agents can work off of them. I wanted to the app to be completely local so I don&#x27;t depend on any cloud providers and can eventually run entirely offline with self-hosted LLMs ",
       "translated_by": "model"
     },
     {
@@ -188,7 +188,7 @@
       "posted_at": "2026-11-14 21:17 Asia/Shanghai",
       "engagement": {
         "points": 84,
-        "comments": 52
+        "comments": 54
       },
       "original_title": "Show HN: Zigzag, a native Mac browser for people leaving Arc",
       "original_summary": "Show HN: Zigzag, a native Mac browser for people leaving Arc Hello HN! I am Zigao, a high school student from Shanghai. I am new to HN so hello to y’all!<p>I used Arc everyday, and I never had any issues with it. So when The Browser Company announced that they will shut down Arc on Dec 22 I was devastated. I don’t want to switch back to boring tabs along the top. Everything else i’ve tried is either a Chromium fork or an AI integrated browser that I don’t want. Therefore, I’ve been building my own browser for the last three weeks. Its name is Zigzag, a free and open source Mac browser that works just like Arc, written in Swift and based on WebKit. It is lightweight and fast.<p>Zigzag has:<p>- The stuff you missed from Arc (obviously, that’s the point)...<p>- Import from Arc (or any other b",
@@ -226,7 +226,7 @@
       "posted_at": "2026-11-17 15:21 Asia/Shanghai",
       "engagement": {
         "points": 2,
-        "comments": 2
+        "comments": 3
       },
       "original_title": "Show HN: Harness for building/cloning SaaS using open-weight models",
       "original_summary": "Show HN: Harness for building/cloning SaaS using open-weight models Built a codex like harness for non-tech builders to easily clone B2B SaaS using open-weight models.<p>We figured companies are still charging for building software. Software, we think is commoditized. Tokens are cheap, and intelligence is open. What&#x27;s the point of billing tokens.<p>We want to take the power back from big labs and democratize the power of SoTA LLMs for every builder out there. 1M output tokens shouldn&#x27;t cost 10s of dollars.<p>Lots of work to be done but we built a harness that can use open weight models from open router to build SaaS clones.<p>Give it a shot and lmk what you guys think. We are giving away a generous free tier of open weight model credits along with a lot of SaaS templates that you",
@@ -382,25 +382,6 @@
       },
       "original_title": "Anthropic, can you please make up your mind with your models?",
       "original_summary": "Anthropic, can you please make up your mind with your models? Anthropic, can you please make up your mind with the models?<p>I don&#x27;t know if this is related to the IPO, fable 5.2 is WAY more expensive to run, if you put it in xhigh you can use in an 1 or 2 hours the allocation of the whole week... so you gave &quot;free&quot; resets for fable... to make &quot;easy&quot; on people that the subscription is going to start lasting less and less...<p>So I went back to fable 5.1 and the dumbification has started to happen AGAIN... when I want the nerd that writes 10 pages of DENSE text non stop I go to opus, fable is more expensive because it has better presets, but now fable 5.1 is starting to go into the uber nerd in adderal area too PLUS starting to do dumb things... I&#x27;m in this pro",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50496986",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Logonomic 免费桌面应用可按仓库整理LLM CLI会话",
-      "summary": "它运行已安装的LLM CLI，沿用现有账号和配置，按仓库组织会话，支持Windows和Linux。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "imakris",
-      "url": "https://varinomics.com/logonomic/",
-      "posted_at": "2026-11-14 21:44 Asia/Shanghai",
-      "engagement": {
-        "points": 5,
-        "comments": 7
-      },
-      "original_title": "Show HN: Yet another agent manager (but we needed it)",
-      "original_summary": "Show HN: Yet another agent manager (but we needed it) Hello HN,<p>I am Ioannis and I would like to introduce Logonomic, a desktop application we made to help us work with LLM CLIs (e.g. codex, claude, opencode etc) in a more organized way. It runs the CLIs already installed, with their existing accounts and configuration and organizes sessions by repository. It is available for Windows and Linux, with a preview for macOS.\nThere is also a mobile companion app, to work remotely (Android and soon iOS too).<p>We built it originally to assist us in our own work, to address the common case of multiple agents running concurrently in many repositories. It was hard to keep track of what each one is doing and which one needs attention or requires action.<p>There are many tools by now broadly that br",
       "translated_by": "model"
     },
     {
@@ -625,6 +606,96 @@
       "translated_by": "free-translate"
     },
     {
+      "id": "ghdeal-pham-02-awesome-free-ai-apis",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Pham-02/awesome-free-ai-apis：免费 AI API 清单",
+      "summary": "收录面向开发者的免费 LLM、图像生成、语音、视频和嵌入等 API，附免费额度与文档。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Pham-02",
+      "url": "https://github.com/Pham-02/awesome-free-ai-apis",
+      "posted_at": "2026-11-17 21:41 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Pham-02/awesome-free-ai-apis",
+      "original_summary": "Pham-02/awesome-free-ai-apis A curated collection of free AI APIs for developers, featuring LLMs, image generation, text-to-speech, video, embeddings, and more. Includes free-tier details and official documentation.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-irishmehta-daily-job-board",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "daily-job-board：可免费调用的每日科技招聘信息板",
+      "summary": "该招聘板每日抓取并整理超过4万条美国科技岗位信息，涵盖初级、中级和管理岗位，并提供免费API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "IrishMehta",
+      "url": "https://github.com/IrishMehta/daily-job-board",
+      "posted_at": "2026-11-12 21:36 Asia/Shanghai",
+      "engagement": {
+        "stars": 1
+      },
+      "original_title": "IrishMehta/daily-job-board",
+      "original_summary": "IrishMehta/daily-job-board A ready-to-use job board that fetches listings from thousands of company web pages and enriches the metadata using lightweight LLMs. Scans over 40000 tech listings daily specific to USA. Also supports a free API. Jobs fetched across early career/new grad, mid-level, managerial roles",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-peppolone-conclave",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "peppolone/Conclave：macOS上多模型辩论并裁决的免费应用",
+      "summary": "Claude、Gemini、GPT-OSS 与 Qwen 分轮匿名互评修订，裁判给出结论与可靠性评分，配免费 API key 可用。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "peppolone",
+      "url": "https://github.com/peppolone/Conclave",
+      "posted_at": "2026-11-14 21:14 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "peppolone/Conclave",
+      "original_summary": "peppolone/Conclave LLM council for macOS: Claude, Gemini, GPT-OSS and Qwen debate your question in rounds (anonymous cross-critique, revision) and a judge gives a verdict with a reliability rating. Keep chatting after the verdict, attach files, search the web first. Native SwiftUI app, free with free API keys or your Claude subscription.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-mnfst-awesome-free-llm-apis",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "awesome-free-llm-apis：永久免费 LLM API 清单",
+      "summary": "汇总可长期免费使用的 LLM API 及对应密钥获取方式。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "mnfst",
+      "url": "https://github.com/mnfst/awesome-free-llm-apis",
+      "posted_at": "2026-11-17 21:48 Asia/Shanghai",
+      "engagement": {
+        "stars": 13507
+      },
+      "original_title": "mnfst/awesome-free-llm-apis",
+      "original_summary": "mnfst/awesome-free-llm-apis List of Permanent Free LLM API  (API Keys)",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-enapt-swarmllm",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "SwarmLLM：在自己电脑上免费运行 AI 对话模型",
+      "summary": "开源应用，可多台电脑联网协作运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-17 17:23 Asia/Shanghai",
+      "engagement": {
+        "stars": 88
+      },
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
+      "translated_by": "model"
+    },
+    {
       "id": "ghdeal-reqsgjh-free-coding-agent-models",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
@@ -676,78 +747,6 @@
       },
       "original_title": "KevalParikh22/conductor-ai",
       "original_summary": "KevalParikh22/conductor-ai 🎼 Claude plans and reviews; free and cheap models write the code. Multi-LLM orchestrator for Claude Code, Codex, Antigravity, OpenCode, Ollama and 45+ APIs, with quota-aware fallback and per-agent sandboxes.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-peppolone-conclave",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "peppolone/Conclave：macOS上多模型辩论并裁决的免费应用",
-      "summary": "Claude、Gemini、GPT-OSS 与 Qwen 分轮匿名互评修订，裁判给出结论与可靠性评分，配免费 API key 可用。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "peppolone",
-      "url": "https://github.com/peppolone/Conclave",
-      "posted_at": "2026-11-14 21:14 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "peppolone/Conclave",
-      "original_summary": "peppolone/Conclave LLM council for macOS: Claude, Gemini, GPT-OSS and Qwen debate your question in rounds (anonymous cross-critique, revision) and a judge gives a verdict with a reliability rating. Keep chatting after the verdict, attach files, search the web first. Native SwiftUI app, free with free API keys or your Claude subscription.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-arsh624-llm4jobs-v2",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "llm4jobs-v2：免费求职雷达，每日邮件摘要",
-      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历与地点筛选，跑在 GitHub Actions 上免费。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Arsh624",
-      "url": "https://github.com/Arsh624/llm4jobs-v2",
-      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "Arsh624/llm4jobs-v2",
-      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-open-free-llm-api-awesome-freellm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "awesome-freellm-apis：134+ 免费 LLM API 合集",
-      "summary": "收录 40+ 厂商的 134 个以上免费 LLM API，支持 Claude Code、Cursor、Codex 一键配置。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "open-free-llm-api",
-      "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
-      "posted_at": "2026-11-17 20:59 Asia/Shanghai",
-      "engagement": {
-        "stars": 5743
-      },
-      "original_title": "open-free-llm-api/awesome-freellm-apis",
-      "original_summary": "open-free-llm-api/awesome-freellm-apis 134+ free LLM APIs & AI API keys from 40+ providers. Google Gemini, NVIDIA NIM, Groq, OpenRouter & more. One-click setup for Claude Code, Cursor and Codex.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-mnfst-awesome-free-llm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "awesome-free-llm-apis：永久免费 LLM API 清单",
-      "summary": "汇总可长期免费使用的 LLM API 及对应密钥获取方式。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "mnfst",
-      "url": "https://github.com/mnfst/awesome-free-llm-apis",
-      "posted_at": "2026-11-17 21:01 Asia/Shanghai",
-      "engagement": {
-        "stars": 13503
-      },
-      "original_title": "mnfst/awesome-free-llm-apis",
-      "original_summary": "mnfst/awesome-free-llm-apis List of Permanent Free LLM API  (API Keys)",
       "translated_by": "model"
     },
     {
