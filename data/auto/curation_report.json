@@ -1,41 +1,41 @@
 {
  "counts": {
-  "archived": 19,
+  "archived": 21,
   "deadline_extracted": 6,
-  "drop:duplicate": 283,
-  "drop:empty_summary": 36,
-  "drop:google_news_unresolved": 3,
-  "drop:negative_signal": 112,
-  "drop:no_clear_offer": 387,
-  "drop:not_ai": 359,
+  "drop:duplicate": 278,
+  "drop:empty_summary": 37,
+  "drop:negative_signal": 113,
+  "drop:no_clear_offer": 408,
+  "drop:not_ai": 360,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 442,
-  "google_news_total": 445,
-  "kept_total": 194,
-  "net:gnews_cache_hit": 430,
-  "net:gnews_failed_net": 3,
-  "net:gnews_resolved_net": 12,
-  "net:tco_expanded": 4,
-  "new_this_run": 1,
-  "raw_total": 1433
+  "google_news_resolved": 462,
+  "google_news_total": 462,
+  "kept_total": 195,
+  "net:gnews_cache_hit": 442,
+  "net:gnews_resolved_net": 20,
+  "net:tco_expanded": 3,
+  "net:tco_failed": 6,
+  "new_this_run": 2,
+  "raw_total": 1450
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "LG Research 免费开放 K-Exaone 2.5 API",
-   "hermes-oci-free-tier-report：每日把 OCI Always Free 用量与成本提醒推送到 T",
-   "SwarmLLM：开源应用，可多台电脑联网协作运行单机跑不动的大模型",
-   "awesome-free-ai-apis：实时监控的已验证免费 AI API 目录",
-   "awesome-free-ai-coding：收录合法免费 LLM API 与编程代理",
    "awesome-freellm-apis：收录 40+ 厂商的 134 个以上免费 LLM API",
    "awesome-free-llm-api：免费大模型 API 导航 · 只收录能通过 API Key 和 endpoin",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
-   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话"
+   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
+   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
+   "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录",
+   "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
+   "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
+   "grux：Grux AI，免费的开源 AI 代理"
   ],
   "empty_summary": [
+   "该图像分类器以免费 API 提供给调查机构和支持服务等经审核组织",
    "Claude Fable 5.2已在 NEAR AI Cloud 上线，今天可在 playground 免费试用",
    "官方称免费版 ChatGPT 现已具备电脑操作能力，并发布演示视频",
    "@WorkBuddy_AI 分享：模型响应更快、单任务成本更低且内置视觉理解，限时免费试用，有每日免费额度",
@@ -46,13 +46,7 @@
    "该模型总参数 280B、每 token 激活 14B、上下文窗口 1M，目前在 OpenRouter 可免费使用",
    "MIT 将于2027年1月在塞浦路斯大学和塞浦路斯理工大学为青少年举办免费 AI 训练营",
    "DeepAI Code 新增 Muse Ember 免费使用，Claude Sonnet 5.5",
-   "演示用 Claude 与 Composio 查找并验证20个营销线索，成本0.68美元，可凭免费额度试用",
-   "该免费电子书涵盖 LLM 漏洞、幻觉评估、护栏与生产部署，帮助构建更安全可靠的系统"
-  ],
-  "google_news_unresolved": [
-   "免费 Claude skill：搭建你的 AI 顾问团",
-   "周末在手机上装个开源AI：一个免费应用加2-4GB模型，可离线运行",
-   "Google将Gemini AI引入CarPlay，支持免手导航"
+   "演示用 Claude 与 Composio 查找并验证20个营销线索，成本0.68美元，可凭免费额度试用"
   ],
   "negative_signal": [
    "用 Claude 在45分钟建细分领域免费 Chrome 扩展，以注册或邮箱设门槛，再推广列表",
@@ -69,20 +63,22 @@
    "@mcwilsonky 分享：客户正在询问 AI 该雇用谁"
   ],
   "no_clear_offer": [
-   "旧版本堆在 ~/.local/share/claude 目录，清理后能腾出大量磁盘空间",
-   "@MicrosoftLearn 分享：利用 AI 创建个性化技能学习清单",
-   "iOS 27.3 beta 2 测试每日限额，涵盖 Siri AI、Image Playground 等",
-   "Papa John's 将 AI 用于质量检查，参与可赢取免费披萨",
-   "新闻：Gemini 4 Hydrogen 现已免费，并且现在可以将您需要学习的任何内容转化为学习指南、测验和抽认卡",
-   "Google Maps 将 Gemini AI 带到 CarPlay，提供更智能的免手导航",
-   "Elevate Your Hour of AI 免费30分钟模块，无需 AI 经验，可获 Hour of AI 教育者证",
-   "通过 Composio Instant 可使用 MemeLord，免费 AI meme 生成持续69天",
-   "Papa John's 将 AI 用于质量检查，参与可赢取免费披萨",
-   "耗时约一周并用大量 Fable 额度，Claude 训练出可放进3.2MB Game Boy 卡带的6M 参数模型",
-   "教程演示在自有机器上运行 Claude Code，读文件、改代码、执行命令全程不联网",
-   "Anthropic 参与的全球孵化项目，提供 AI 指导、大师课与人脉，并有全额和部分奖学金"
+   "Alex Imas 与 Tyler Cowen 解释，技术创造的大量产品近乎免费，因此 GDP 难以体现 AI 收益",
+   "@VaibhavSisinty 分享：该扩展会转写视频、提取可核查说法并联网搜索，再由 Claude 给出判断",
+   "@opportunitiesfy 分享：免费12个月，每月2至4小时，含全球同届成员、导师和微型项目，截止2026年11",
+   "@malpani 分享：为教育投入更多金钱并不一定意味着您的孩子就能学到更多知识",
+   "@malpani 分享：一个从来不在无人监督的情况下学习的孩子，可能是在适应辅导，而不是在学习",
+   "@malpani 分享：更多的教学并不总意味着更多的学习",
+   "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
+   "@malpani 分享：上课时间越多，思考时间就越少",
+   "@malpani 分享：辅导班可能是一种昂贵的捷径，只会教您的孩子等待指示",
+   "@malpani 分享：您的孩子可能并不需要另一位老师",
+   "@malpani 分享：您孩子的晚间时间不必都用于辅导班",
+   "@malpani 分享：分数并不是您的孩子从学习中应该获得的唯一收获"
   ],
   "not_ai": [
+   "上传 logo 后可调整颜色、光照与动态，本地运行无需 API key，导出 2K/4K 无缝循环视频",
+   "加拿大正在通过 C-22法案经历其自身的聊天管控乱局：强烈建议加拿大同胞联系参议员",
    "@elonmusk 分享：正如我刚才所说……我们向达菲部长提供了免费的 FAA 用 Starlink，但他表示不需要",
    "直播中聊 GPU 市场，并在聊天区发放游戏激活码和本月 PC 抽奖",
    "Salesforce 销售团队为当月成交将试用期从30天改为14天，无证据对客户更好",
@@ -92,9 +88,7 @@
    "他创办 NVIDIA 并押注 CUDA，公司一度濒临破产，最终豪赌成功",
    "《崩坏：Nexus Anima》预注册现已开放",
    "@rjrshr 分享：黄仁勋称员工为志愿者，称这是其逐步打造的工作文化",
-   "作者在 Substack 免费发布 NBIS 第三季度财报完整回顾及更新后的2027年目标价",
-   "Strategy 称比特币是数字资本并转为数字信用",
-   "支持 Windows、Linux 和 Android，可看影视、动漫与直播电视，还支持离线下载"
+   "作者在 Substack 免费发布 NBIS 第三季度财报完整回顾及更新后的2027年目标价"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -111,28 +105,29 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-17T11:42:27+08:00",
+ "generated_at": "2026-11-17T21:07:51+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-17T11:42:27+08:00",
+  "checked_at": "2026-11-17T21:07:50+08:00",
   "counts": {
+   "gone": 1,
    "ok": 174,
    "recheck": 1
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 7.5,
+ "seconds": 10.4,
  "side": {
   "github_hot": {
-   "drop:duplicate": 16,
+   "drop:duplicate": 14,
    "drop:not_ai": 1,
-   "kept": 13,
+   "kept": 15,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 7,
-   "drop:not_ai": 11,
-   "drop:not_ai_strict": 7,
-   "kept": 15,
+   "drop:negative_signal": 3,
+   "drop:not_ai": 10,
+   "drop:not_ai_strict": 11,
+   "kept": 16,
    "raw": 40
   }
  }
