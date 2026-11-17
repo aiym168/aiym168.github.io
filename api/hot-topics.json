@@ -3,13 +3,27 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 14,
+  "count": 17,
   "items": [
+    {
+      "id": "hnhot-50524736",
+      "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+      "summary": "",
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "source": "Hacker News"
+    },
     {
       "id": "v2hot-1257395",
       "title": "AI 离谱越权操作一则，大家引以为戒",
       "summary": "## 前情提要：我自己写了一个用于服务器监控运维的的项目，能查看服务器状态，日志解析，自动运维等功能 项目中存储了服务器的 ssh 密钥，运维功不让 ai 直接 ssh 到服务器，写了一个中间层 ai 想操作服务器给中间层申请，中转获取命令执行结果，中间层查看类命令全部放行，修改命令需要审核 ## ai 越权操作 然后因为之前有项目配置了负载均衡导致日志分析出问题了，所以在运维项目的 codex 工作窗口询问是什么原因，有什么差异，还给贴了出问题项目的 nginx 配置文件，然后 ai 跑了半天告诉我改好了，我想去服务器修改一下配置文件呢，一看和 ai 修改的一模一样，当场愣住了",
       "url": "https://www.v2ex.com/t/1257395",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1257569",
+      "title": "[台灣站長不跑路] 不擔心封號，高穩定 Claude 中轉，評論送 5 刀（也有 Grok、GPT）",
+      "summary": "### 前字節開發的中轉 台灣站長 ### 適合用戶跟收費：穩定用 Claude, Grok。1 cny = 1 usd。### 領 5 刀試用：註冊，下方評論 email or uuid （個人頁面複製） 我每晚 12 點或下午 2 點手動充值。進 QQ 群：### 模型：滿血 Claude 1.5 倍率（穩定性高） Grok 0.15 倍率",
+      "url": "https://www.v2ex.com/t/1257569",
       "source": "V2EX"
     },
     {
@@ -20,88 +34,95 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257541",
-      "title": "有可靠专业的 claude kyc 服务商推荐吗",
+      "id": "v2hot-1257592",
+      "title": "有人说 AI 是技术平权，有人说 AI 是能力放大器，还有一些老登觉得 AI 把自己替代了",
+      "summary": "有人说 AI 是技术平权，有人说 AI 是能力放大器，还有一些老登觉得 AI 把自己替代了。那么，你觉得呢？",
+      "url": "https://www.v2ex.com/t/1257592",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1257589",
+      "title": "claude 用 apple 订阅的模式这条路也断了。",
+      "summary": "昨天晚上进行充值时在 apple 这边已经扣费了，但 claude 那边还是 free。然后弹出提示：We can't add this purchase to yourClaude account. To stop further charges,cancel the subscription in yourAppleaccount settings and request a refundfrom Apple 只能走 Apple 的退费了。去 x 上看了下也是一片哀嚎。好像就是这二天升级的措施。之前订 max 充错帐号，本来还想着等过期后再重新充一下，没想到就",
+      "url": "https://www.v2ex.com/t/1257589",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1257581",
+      "title": "感觉有了 AI 后，身边的同事出现了两极分化",
+      "summary": "感觉有了 AI 后，身边的同事出现了两极分化 一边是确实用得挺好，提效成果很大，合理利用 一边是用 AI 过渡设计，是让 AI 做就完了，然后一问三不知，流程又臭又长，走不下去 这只是我观察到我自己身边的，另一个点可能因为我这里是三线，没那么卷 不知道各位如何",
+      "url": "https://www.v2ex.com/t/1257581",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1257610",
+      "title": "claude 被封了，codex 写代码能力还有些欠缺，有没有其他在写代码这块的平替品",
       "summary": "",
-      "url": "https://www.v2ex.com/t/1257541",
+      "url": "https://www.v2ex.com/t/1257610",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257526",
-      "title": "总结了一些 AI Agent 开发工程师岗位的面试题",
-      "summary": "总结了一些 AI Agent 开发工程师岗位的面试题，希望对大家有所帮助",
-      "url": "https://www.v2ex.com/t/1257526",
+      "id": "v2hot-1257601",
+      "title": "claude 使用过程中跳 kyc，使用护照通过后秒封，ip 一直在美西 vps 稳定出口落地，且纯净度很高。",
+      "summary": "如题：11 月 13 给之前一直 free 档的 claude 通过 apple 美区礼品卡订阅了 pro，周末在家随便用了一下，然后周一到公司使用过程中，弹出 portal 门户验证后告知要 kyc，使用自己护照（以有乌克兰签证以及白俄罗斯签证）通过后秒封，人麻了，现在在申请 apple store 退款中，此贴想获取一下各位 v 佬都什么方式以及你们的 claude 还正常使用吗？",
+      "url": "https://www.v2ex.com/t/1257601",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257547",
-      "title": "给 NAS 搭了个 AI 运维管家：Go 盯告警，OpenCode 干活，主路由负责互检",
-      "summary": "最近折腾了一套家里的 NAS 运维助手，暂且叫 HomeOps。机器是 GKN6000 NAS，加一台 J4125/OpenWrt 主路由，上面已经跑着 Gitea、Nextcloud、Vaultwarden、Home Assistant 等服务。起因很简单：出了安全事件，希望有人早点发现；软件该不该更新，希望有人先查清楚兼容和迁移；服务凌晨挂了，也不想只收到一句“异常/已恢复”，还得自己翻半天日志。最开始想在两台机器上各塞一个 Agent，让它们互相检查。后来拆成了两层：**Go 程序持续做固定检查，出现事件再叫 Agent 分析。** ## 现在的结构",
-      "url": "https://www.v2ex.com/t/1257547",
+      "id": "v2hot-1257596",
+      "title": "分享 Claude 新号的充值方案",
+      "summary": "最近给一个注册半年号和两个新开 Claude 新号充值 Pro，使用虚拟卡进行充值，半年号充值直接到账，不弹 KYC。两个新开的号，一小时内开 Pro，两个都弹了 KYC，其中一个中国护照验证，通过秒封，好消息是全额退款，搭一个 Claude 号，其中一个同样是中国护照，直接通过不封号，可以直接开通 Pro，使用一切正常。经过本次测试，KYC 唯一不同的环境是手机：第一次：手机流量没有分流，IP 和网站的 IP 不一致。第二次：走全局模式，IP 地址和电脑端的保持一致。现在网上到处是分享防封理论的，大多看看就好，本质上只要做好分流，所有 Claude 流",
+      "url": "https://www.v2ex.com/t/1257596",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257527",
-      "title": "deepseek harness 装了 dsh-compute-use 后启动不了，重装也不行。",
-      "summary": "1. 怎么彻底卸载呢？2. harness 跟 dsh-compute-use 有版本配套问题吗？3. dsh-compute-use 到底该怎么安装呢？",
-      "url": "https://www.v2ex.com/t/1257527",
+      "id": "v2hot-1257591",
+      "title": "Claude 要求 KYC 了，大佬们有绝招吗？",
+      "summary": "",
+      "url": "https://www.v2ex.com/t/1257591",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257562",
-      "title": "codex 降智了咋办",
-      "summary": "如题，codex gpt6.1 high 用起来降智了咋办",
-      "url": "https://www.v2ex.com/t/1257562",
+      "id": "v2hot-1257616",
+      "title": "APP 如何申请安全评估和 AIGC 备案？",
+      "summary": "今天看到苹果多了这两个要求：1、上传安全评估 2、AI 生成或合成内容 我的 app 是个人身份上架的，我到处查了一下，越查越困惑。几个问题想请教一下：1、我的 app 是个人身份上架的，我还做了一个小程序版本，小程序则是个体户上架的。我应该以什么身份去申请这些资质？2、如何申请，问了一下 deepseek,居然跟我说要企业资质，我没有啊，难道我只能改 app 功能或者下架两条路了吗？3、我只是调用了 DeepSeek 的接口，tts 调用的是 mimo 的，是不是两家都需要去申请大模型合同什么的？还",
+      "url": "https://www.v2ex.com/t/1257616",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257559",
-      "title": "在瑞典做 Mac mini 实体主机托管，家用 IP，有 Claude 企业账号，可以代付，开放少量意向名额",
-      "summary": "看了很多人在做 Mac mini 实体主机托管服务，我也想看看有没有人感兴趣用欧洲的 IP，以及大家更关注哪些问题，比如网络、远程访问、设备配置、稳定性或者托管成本。有兴趣的朋友可以在评论区留言或者私信我，我会单独发送项目介绍和初步方案。也欢迎有相关经验的朋友交流建议。",
-      "url": "https://www.v2ex.com/t/1257559",
+      "id": "v2hot-1257622",
+      "title": "如何用 agent 运维",
+      "summary": "我的背景：用 vibe coding 的方式做了一个网站，部署在云上。我的问题：目前生产环境的升级、回滚都是 agent 实现的，都是基于提前演练沉淀出提示词，这无疑存在风险。所幸数据都有时间点备份，如果 agent 做出破坏性的操作，还可以根据数据库重新搭建一套。所以如何在享受 agent 高效的好处下，控制这个风险，或者说控制 agent 的权限？",
+      "url": "https://www.v2ex.com/t/1257622",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257553",
-      "title": "DEVIN 里面使用 CLAUDE 模型好像对话就直接被吞了",
-      "summary": "有没人遇到一样的. 没任何的反馈.",
-      "url": "https://www.v2ex.com/t/1257553",
+      "id": "v2hot-1257619",
+      "title": "还有人关注微信自动化吗，搞了个 wechat-use，给 AI Agent 操作真实的微信桌面",
+      "summary": "最早做微信自动化并不是因为 AI，只是有自己有引流自动加好友拉群的需求，每天盯着太麻烦了。一开始方案特别朴素，就是根据截图去识别点击，最基础的 RPA。后来还做了容器化，多个微信可以跑在家里的服务器上。特别稳定，这套方案我跑了有快两年了，一点问题都没有。只不过流程是死的，跟 AI 没什么关系。这段时间 Computer Use 发展得很快，最近看了下 cua 的方案，发现和我的项目有一些可以融合的点。于是就有了这个项目：它做的事情很简单：用 Docker 跑一个真",
+      "url": "https://www.v2ex.com/t/1257619",
       "source": "V2EX"
     },
     {
-      "id": "xhot-xrss-8142616487",
-      "title": "免费新工具发布，供审核组织检测儿童性虐待材料（含 AI 生成图像）",
-      "summary": "新工具免费提供给经审核组织，用于检测含 AI 生成图像的儿童性虐待材料。",
-      "url": "https://x.com/OpenAINewsroom/status/2122375519853559954",
-      "source": "X"
+      "id": "v2hot-1257585",
+      "title": "朋友们，我给我的 AI 简历项目加了一个面试官视角的功能，不知道有不有用",
+      "summary": "项目链接：体验地址：![image](",
+      "url": "https://www.v2ex.com/t/1257585",
+      "source": "V2EX"
     },
     {
-      "id": "xhot-xrss-9748446132",
-      "title": "IBM Z Day 2026开放免费注册，聚焦 AI 与企业网络安全",
-      "summary": "免费注册活动，探讨企业如何保护敏感数据、保障自主 AI 系统并应对新兴威胁。",
-      "url": "https://x.com/davidbombal/status/2122332856789667961",
-      "source": "X"
+      "id": "v2hot-1257611",
+      "title": "请教国区 App Store 上架合规：后端调用 DeepSeek API，如何解决「安全评估」和「AIGC 服务声明」?",
+      "summary": "大家好，现在公司开发了一款硬件配套 App，内置了一个 AI 智能助手，主要功能是根据用户的设备测量结果解答使用与指标相关的问题，后端目前直接调用的 DeepSeek 官方 API。使用起来主要有两种形式：一是直接将用户的测量结果作为 prompt 的一部分，助手返回解答；二是用户可以自由提问和设备使用、结果测量相关的问题。iOS 开发者账号是个人身份。在 App Store Connect 准备提交 1.0 审核时，后台要求补齐中国大陆分发的合规信息（见下图），目前卡在两个地方：1. **AI 生成或合成内容（AIGC 服务声明）**：选择使用第三方 LLM",
+      "url": "https://www.v2ex.com/t/1257611",
+      "source": "V2EX"
     },
     {
-      "id": "xhot-xrss-4507152511",
-      "title": "Scenario Academy 免费开放，为创意人士提供 AI 课程",
-      "summary": "含90多节课程17门课，覆盖图像、视频、3D、音频、工作流、代理和 API。",
-      "url": "https://x.com/emmanuel_2m/status/2122303441036878335",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-1292981433",
-      "title": "免费获取 Advanced ChatGPT 指南",
-      "summary": "推文提供免费 Advanced ChatGPT 指南获取链接。",
-      "url": "https://x.com/AndrewBolis/status/2122297046652887504",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-805794268",
-      "title": "Samsung Health 为老年人新增免费糖尿病预防 AI 指导",
-      "summary": "三星健康为老年用户提供免费 AI 指导，用于糖尿病预防。",
-      "url": "https://x.com/Androidheadline/status/2115015397573382329",
-      "source": "X"
+      "id": "v2hot-1257590",
+      "title": "ChatGPT Plus 充值，125",
+      "summary": "自己的小店开张啦 这几天陆续成交了 29 单，谢谢大家捧场。OpenAI 官方直充，长期稳定使用，全程质保包售后服务。GPT Plus 订阅充值：125 元/月 GPT pro5x 680 元/月 Pro 20X 1360.00/月 在自己的网站下单，订单进度可以查询；遇到问题可以直接找我，不用到处找客服。",
+      "url": "https://www.v2ex.com/t/1257590",
+      "source": "V2EX"
     }
   ]
 }

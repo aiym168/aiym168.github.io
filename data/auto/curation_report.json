@@ -2,17 +2,18 @@
  "counts": {
   "archived": 19,
   "deadline_extracted": 6,
-  "drop:duplicate": 282,
+  "drop:duplicate": 283,
   "drop:empty_summary": 35,
-  "drop:negative_signal": 115,
-  "drop:no_clear_offer": 374,
-  "drop:not_ai": 360,
+  "drop:negative_signal": 112,
+  "drop:no_clear_offer": 378,
+  "drop:not_ai": 357,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 430,
   "google_news_total": 430,
-  "kept_total": 193,
+  "kept_total": 194,
   "net:gnews_cache_hit": 430,
-  "new_this_run": 1,
+  "net:tco_failed": 5,
+  "new_this_run": 2,
   "raw_total": 1418
  },
  "curation_version": "2026-11-09.c3",
@@ -20,6 +21,7 @@
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "LG Research 免费开放 K-Exaone 2.5 API",
+   "hermes-oci-free-tier-report：每日把 OCI Always Free 用量与成本提醒推送到 T",
    "SwarmLLM：开源应用，可多台电脑联网协作运行单机跑不动的大模型",
    "awesome-free-ai-apis：实时监控的已验证免费 AI API 目录",
    "awesome-free-ai-coding：收录合法免费 LLM API 与编程代理",
@@ -28,8 +30,7 @@
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
-   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
-   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑"
+   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话"
   ],
   "empty_summary": [
    "官方称免费版 ChatGPT 现已具备电脑操作能力，并发布演示视频",
@@ -102,29 +103,28 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-17T04:17:58+08:00",
+ "generated_at": "2026-11-17T11:16:16+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-17T04:17:52+08:00",
+  "checked_at": "2026-11-17T11:16:16+08:00",
   "counts": {
    "gone": 1,
-   "ok": 171,
-   "recheck": 1
+   "ok": 173
   },
   "hidden": 1
  },
- "seconds": 0.8,
+ "seconds": 1.0,
  "side": {
   "github_hot": {
-   "drop:duplicate": 17,
+   "drop:duplicate": 16,
    "drop:not_ai": 1,
-   "kept": 12,
+   "kept": 13,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 5,
+   "drop:negative_signal": 6,
    "drop:not_ai": 9,
-   "drop:not_ai_strict": 12,
-   "kept": 14,
+   "drop:not_ai_strict": 8,
+   "kept": 17,
    "raw": 40
   }
  }
