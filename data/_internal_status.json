@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-18T05:45:50+08:00",
-  "generated_at_label": "2026-11-18 05:45 Asia/Shanghai",
+  "generated_at": "2026-11-18T05:56:25+08:00",
+  "generated_at_label": "2026-11-18 05:56 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
     "A": {
@@ -37,7 +37,7 @@
       "runs_total": 102,
       "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
       "next_run_label": "2026-11-18 06:07 Asia/Shanghai",
-      "age_min": 0
+      "age_min": 10
     },
     "B": {
       "engine": "B",
@@ -76,7 +76,7 @@
       "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
       "next_run_label": "2026-11-18 06:25 Asia/Shanghai",
       "last_seen_at": "2026-11-15T11:25:05+08:00",
-      "age_min": 3980
+      "age_min": 3991
     },
     "C": {
       "engine": "C",
@@ -111,13 +111,13 @@
       },
       "runs_total": 1,
       "schedule": "第二台服务器已不参与本站更新：运行独立的直播站，并在每天 08:30 / 20:30 生成羊毛电台",
-      "next_run_label": "2026-11-18 05:55 Asia/Shanghai",
+      "next_run_label": "2026-11-18 06:55 Asia/Shanghai",
       "last_seen_at": "2026-11-10T13:10:18+08:00",
-      "age_min": 11075
+      "age_min": 11086
     },
     "watchdog": {
       "schedule": "每 30 分钟（第 23 / 53 分钟）",
-      "next_run_label": "2026-11-18 05:53 Asia/Shanghai"
+      "next_run_label": "2026-11-18 06:23 Asia/Shanghai"
     }
   },
   "counts": {
@@ -334,23 +334,23 @@
     "primary_route": "google-news-rss",
     "kept": 16
   },
-  "heartbeat_label": "2026-11-17 02:58:21 Asia/Shanghai",
+  "heartbeat_label": "2026-11-18 05:45:50 Asia/Shanghai",
   "server": {
     "box_id": "已隐藏",
-    "checked_at_label": "2026-11-17 21:38 Asia/Shanghai",
+    "checked_at_label": "2026-11-18 05:55 Asia/Shanghai",
     "state_before": "BOX_STATE_HIBERNATED",
     "wake_reasons": [
       "服务器状态为「休眠」",
-      "引擎 B 已 3493 分钟无心跳（阈值 120）"
+      "引擎 B 已 3990 分钟无心跳（阈值 120）"
     ],
     "actions": [],
     "ok": false,
     "error": "9 this box's machine time is paid from credits and the box wallet is empty; top up or upgrade at https://box.simular.ai/billing",
-    "engine_b_age_min": 3493
+    "engine_b_age_min": 3990
   },
   "server2": {
     "box_id": "已隐藏",
-    "checked_at_label": "2026-11-17 21:39 Asia/Shanghai",
+    "checked_at_label": "2026-11-18 05:56 Asia/Shanghai",
     "state_before": "BOX_STATE_HIBERNATED",
     "wake_reasons": [
       "服务器状态为「休眠」",
