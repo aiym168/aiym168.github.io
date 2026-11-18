@@ -5,7 +5,7 @@
 <link>https://aiym168.github.io/</link>
 <description>免费AI资源每小时更新：大模型免费API、免费Token、免费GPU、AI工具免费额度和AI羊毛，逐条标注是否绑卡、实名、国内能否直连。</description>
 <language>zh-CN</language>
-<lastBuildDate>2026-11-18 06:41 Asia/Shanghai</lastBuildDate>
+<lastBuildDate>2026-11-18 11:41 Asia/Shanghai</lastBuildDate>
   <item>
     <title>Simular Box：免费领一台给 AI 用的云端电脑（Linux 云桌面 / 云服务器）</title>
     <link>https://aiym168.github.io/item/simular-box-ai-linux-863e21653f.html</link>
@@ -33,27 +33,6 @@
     <guid isPermaLink="false">hn-50537272</guid>
     <description>作者称早期免费额度慷慨时还很有兴致，如今不断纠错、反复要求简洁让使用体验变差。</description>
     <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>来看看这个开源 9B 模型的审美吧</title>
-    <link>https://aiym168.github.io/item/mianfei-gpu-yunfuwu-13f2b49e4d.html</link>
-    <guid isPermaLink="false">v2ex-1257844</guid>
-    <description>今天商汤开源了 SenseNova Loop 9B 正式版，能看图、写代码、分析数据并配合工具完成复杂任务，同时更容易部署在自己设备上，9B 的权重就能白嫖 27B 的推理能力 官方做了一个很有意思的实验：保持 9B 权重不变，把训练和推理的循环次数从 1 次加到 3~4 次…</description>
-    <category>免费 GPU / 云服务</category>
-  </item>
-  <item>
-    <title>薅 google 羊毛：Google AI Ultra 订阅，Carbon 免费试用</title>
-    <link>https://aiym168.github.io/item/google-google-ai-ultra-carbon-ed585a7f84.html</link>
-    <guid isPermaLink="false">v2ex-1257841</guid>
-    <description>免费方案 1）20 倍 1 个月；。免费方案 2) 5 倍 1 年 记得取消订阅。</description>
-    <category>AI 产品会员/试用</category>
-  </item>
-  <item>
-    <title>ConvoExport：把一条 ChatGPT / Claude 对话导出成 Markdown、DOCX 或打印版</title>
-    <link>https://aiym168.github.io/item/convoexport-chatgpt-claude-markdown-fe56225dc9.html</link>
-    <guid isPermaLink="false">v2ex-1257836</guid>
-    <description>我做了个 Edge 浏览器扩展 ConvoExport，解决一个很具体的问题：ChatGPT / Claude 的对话想存下来离线看、归档、喂给别的工具，官方只给分享链接，没有导出成文件。</description>
-    <category>AI 产品会员/试用</category>
   </item>
   <item>
     <title>想请教一下，除了豆包和即梦，还有哪些平台能用 Seedream 5.5？</title>
@@ -131,13 +110,6 @@
     <guid isPermaLink="false">hn-50495892</guid>
     <description>它可在找到客户时代写邮件，并无需数据库或网页抓取即可帮助寻找客户。</description>
     <category>其他科技资源</category>
-  </item>
-  <item>
-    <title>Webflow 转 Claude Code 转换器免费开放，可一比一还原站点</title>
-    <link>https://aiym168.github.io/item/webflow-claude-code-8c165dc1a1.html</link>
-    <guid isPermaLink="false">hn-50490283</guid>
-    <description>作者称一比一转换需重建 CDN 与 CMS，现已免费发布，让企业拥有自己的代码。</description>
-    <category>AI 开发工具与编程助手</category>
   </item>
   <item>
     <title>上传房间照片即可用 AI 生成2个免费设计方案</title>
@@ -425,6 +397,34 @@
     <guid isPermaLink="false">omniroute</guid>
     <description>开源本地网关 OmniRoute：把大量 AI 服务商与免费方案收到一个端点，Claude Code / Cursor / Codex / Copilot / Cline 等可改指到它；限流可自动切路，并带 token 压缩宣传。免费额度来自各家，需自己注册；本地跑、配置与 Key 在本机。注意合规，勿用于绕过付费条款。</description>
     <category>AI 开发工具与编程助手</category>
+  </item>
+  <item>
+    <title>Devin Desktop（原 Windsurf）：免费计划可用</title>
+    <link>https://aiym168.github.io/item/devin-desktop-windsurf-fa42abc9c7.html</link>
+    <guid isPermaLink="false">devin-desktop</guid>
+    <description>Devin Desktop（原 Windsurf）免费计划：含轻量 Agent 配额、有限模型额度、无限内联编辑与 Tab 补全，日常写代码够用；重活与高级模型仍需加钱。</description>
+    <category>AI 开发工具与编程助手</category>
+  </item>
+  <item>
+    <title>Kaggle：每周约 30 小时双 T4 免费 GPU</title>
+    <link>https://aiym168.github.io/item/kaggle-30-t4-gpu-2b49ad8a1a.html</link>
+    <guid isPermaLink="false">kaggle-gpu</guid>
+    <description>Kaggle 免费档常见每周约 30 小时 GPU T4 x2（约 2×16GB / 合计约 32GB 显存）+ 约 20 小时 TPU，单次最长约 12 小时；免绑卡但需手机验证。可配合 Ollama 跑约 30B 级模型，再经 cloudflared 隧道接到 Cursor 等作 Base URL。官方严禁多号刷额度与常驻挖矿；穿透链接勿外发，用完关掉 Notebook。</description>
+    <category>免费 GPU / 云服务</category>
+  </item>
+  <item>
+    <title>Linkjoy：跨平台书签/离线高亮终身内购限免</title>
+    <link>https://aiym168.github.io/item/linkjoy-6e91c0e737.html</link>
+    <guid isPermaLink="false">linkjoy</guid>
+    <description>原价约 ¥128 的终身内购限免，去广告阅读、划线批注、iCloud 多端同步。</description>
+    <category>科技软件 / App 限免</category>
+  </item>
+  <item>
+    <title>Stillwell 叠光相机：RAW 相机终身限免</title>
+    <link>https://aiym168.github.io/item/stillwell-raw-b8a17d0e1f.html</link>
+    <guid isPermaLink="false">stillwell-raw</guid>
+    <description>原价约 ¥88 终身内购限免；原生 Bayer RAW、星轨与多重曝光等。</description>
+    <category>科技软件 / App 限免</category>
   </item>
 </channel>
 </rss>

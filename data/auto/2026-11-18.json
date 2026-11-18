@@ -1,9 +1,47 @@
 {
   "date": "2026-11-18",
-  "updated_at": "2026-11-18T06:38+08:00",
-  "updated_at_label": "2026-11-18 06:38 Asia/Shanghai",
+  "updated_at": "2026-11-18T11:35+08:00",
+  "updated_at_label": "2026-11-18 11:35 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50541419",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Show HN：Director's Lookbook 命名风格提示词库",
+      "summary": "为图像、视频和音乐提示词提供命名风格，方便描述想要的审美。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "RiverRoadLabs",
+      "url": "https://directorslookbook.app/",
+      "posted_at": "2026-11-18 11:16 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Director's Lookbook, named looks for image, video and music prompts",
+      "original_summary": "Show HN: Director's Lookbook, named looks for image, video and music prompts River Road Labs is a small artisanal studio based out of Central NJ. We built this tool to scratch our own itch. As AI video and image capabilities get more sophisticated we found that we struggled at times to find the words to describe the aesthetic style we were shooting (no pun) for. Other times it is good to just have a massive resource of styles and imagery to flip through at random and to let serendipity do the rest. Director&#x27;s Lookbook lets you type a feeling and get dealt a set of style cards with prompt text to use. No more copying or saving prompts, use the tool. The feeling reader is a small hosted model with a free daily allowance. The MCP server is read only, no auth, no key, it works in Claude a",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50539993",
+      "source": "Hacker News",
+      "category": "AI 产品会员/试用",
+      "title": "Show HN：mdkit 存储与分享 AI 技能 Markdown 文件",
+      "summary": "菜单栏应用，把 .md 技能文件存到云端，可邮件分享并保留版本记录。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "tannerjames711",
+      "url": "https://www.mdkit.ai",
+      "posted_at": "2026-11-18 07:57 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Dropbox for AI Skill Files",
+      "original_summary": "Show HN: Dropbox for AI Skill Files I built mdkit, a menu bar app for storing and sharing skill markdown files.<p>Just drop your .md files into mdkit to store them in the cloud, then drag them out whenever you need them.<p>Share files by email with viewer or editor permissions. Every save is versioned.<p>Why I built it: \nI wanted a simple, AI-platform-independent way to share and manage AI skills across teams, with features like editing permissions and version history.<p>mdkit is in beta and free to try on Windows and Mac.<p>Genuinely just trying to find out if this is useful for anyone. Would love feedback!",
+      "translated_by": "model"
+    },
     {
       "id": "hn-50538663",
       "source": "Hacker News",
@@ -17,7 +55,7 @@
       "posted_at": "2026-11-18 05:46 Asia/Shanghai",
       "engagement": {
         "points": 2,
-        "comments": 1
+        "comments": 2
       },
       "original_title": "Show HN: A Variety of Chess Games",
       "original_summary": "Show HN: A Variety of Chess Games This is a web app that I built to introduce chess to my children, along with scratching a personal game analysis itch. I link to the games (free, ad free, tracker free, affiliate free, etc), though there is a full learning section as well that was my primary focus. I imagine many here already know the basics of chess.<p>Of course I leveraged AI in all parts of this project -- and indeed the analysis section uses three separate neural networks to analyze play -- but never without full engagement and co-working between myself and the machine (I&#x27;ve been doing web apps for 30+ years), and all designs are my own. I contrived several of the games wholesale, though others are well trodden in the chess world.<p>I use chess as a meditative beat from other enga",
@@ -54,8 +92,8 @@
       "url": "https://starsling.dev",
       "posted_at": "2026-11-18 03:01 Asia/Shanghai",
       "engagement": {
-        "points": 36,
-        "comments": 19
+        "points": 60,
+        "comments": 34
       },
       "original_title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
       "original_summary": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos We’re Yonas and Daniel and we’re building StarSling (<a href=\"https:&#x2F;&#x2F;starsling.dev\">https:&#x2F;&#x2F;starsling.dev</a>), fast GitHub Actions runners with AI agents that ship PRs to continuously improve your tests and workflows.<p>Every CI job gets its own ephemeral sandbox on the fastest Zen 5 machines and NVMe Disk with unlimited concurrency so a burst of agent PRs all run at once. We’re different from other runners because ours come with agents that cut down your CI bill over time. PRs are generated through our CI harness, which runs an agent loop that’s tuned to improve your CI speed and reduce cost.<p>Mastra now merges over 1,800 PRs a month and we got their slowest workflow from 29m 56s on GitHub-host",
@@ -92,8 +130,8 @@
       "url": "https://github.com/RunanywhereAI/trnrt",
       "posted_at": "2026-11-18 00:01 Asia/Shanghai",
       "engagement": {
-        "points": 37,
-        "comments": 5
+        "points": 46,
+        "comments": 7
       },
       "original_title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
       "original_summary": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium Hi HN, Sanchit here from RunAnywhere (YC W26). We just open-sourced TrnRT: Trainium RunTime, our inference engine for AWS Trainium. We started 3 weeks back, and currently we’re able to serve and run GLM 5.3 flash (FP8) on AWS trn2.48xlarge, and will bring more models support soon. It’s open to contributions :)<p>What it does today:<p>- Serves 2 instances of GLM-5.3 flash on a single box, 8 trn2 with a cache aware router.<p>- Can process 3.57M TPM (tokens per minute) on SemiAnalysis&#x27;s AgentX benchmarks.<p>- Runs decode as one NKI kernel per layer half, or for the 11 sparse-attention layers fuses both blocks into a single kernel, for faster performance.<p>We started working on Trn2 because we wanted to explore it and ",
@@ -233,61 +271,23 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50516667",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "免费中国AI模型的黑客攻击能力正在提升",
-      "summary": "免费的中国 AI 模型在黑客攻击方面变得越来越厉害，令人担忧",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "daretograsp",
-      "url": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/",
-      "posted_at": "2026-11-16 20:04 Asia/Shanghai",
-      "engagement": {
-        "points": 3,
-        "comments": 0
-      },
-      "original_title": "Free Chinese AI Models Are Getting Scary Good at Hacking",
-      "original_summary": "Free Chinese AI Models Are Getting Scary Good at Hacking ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50508220",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Ask HN：AI助手如何拥有个性？",
-      "summary": "讨论现有AI助手语气机械、句式重复，并提到仓库中的「declauding」技能作为例子。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "tedmundy",
-      "url": "https://news.ycombinator.com/item?id=50508220",
-      "posted_at": "2026-11-16 00:31 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 2
-      },
-      "original_title": "Ask HN: How does your AI assistant have a personality?",
-      "original_summary": "Ask HN: How does your AI assistant have a personality? *external, user-facing AI assistants*<p>Personality is being used very loosely here. The issue I&#x27;ve had with existing AI assistants is that they sound too robotic, and they repeat the same patterns in their sentences -- (&quot;you&#x27;re right — ...&quot;) the &quot;declauding&quot; skill in this repo&quot; has a good example of it (https:&#x2F;&#x2F;github.com&#x2F;oaustegard&#x2F;claude-skills&#x2F;tree&#x2F;main&#x2F;declauding).<p>How are you making your AI sound as non-robotic as possible?<p>edit: made request a bit more precise",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50539204",
       "source": "Hacker News",
       "category": "AI 开发工具与编程助手",
-      "title": "Show HN：DecksMD – 以本地为先的 Markdown 闪卡应用和 Obsidian 插件",
-      "summary": "Show HN：DecksMD – 以本地为先的 Markdown 闪卡应用和 Obsidian 插件我基于 Markdown 语法开发了一款闪卡应用和 Obsidian 插件。您可以使用标题和段落、表格或突出显示的文本来创建闪卡和填空题，然后可以使用 FSRS 算法进行复习。所有内容都保存在本地，它在内部使用 SQLite 数据库来跟踪状态，并使 Markdown 文档保持整洁。<p>我于……开始了这个项目",
+      "title": "Show HN：DecksMD 本地优先的 Markdown 闪卡工具",
+      "summary": "基于 Markdown 语法的闪卡应用与 Obsidian 插件，数据保存在本地。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
       "author": "hotpatato",
       "url": "https://decksmd.app/",
       "posted_at": "2026-11-18 06:31 Asia/Shanghai",
       "engagement": {
-        "points": 1,
+        "points": 2,
         "comments": 0
       },
       "original_title": "Show HN: DecksMD – local first, Markdown flashcards app and plugin for Obsidian",
       "original_summary": "Show HN: DecksMD – local first, Markdown flashcards app and plugin for Obsidian I built a flashcards app and plugin for obsidian, based on markdown syntax. You use headers and paragraphs, tables or highlighted text to create flashcards and cloze deletions, which you can then review using FSRS algorithm. Everything stays local, it uses a SQL lite db internally to keep track of state and keep the markdown document clean.<p>I started this project about a year ago when I was facing the problem that I needed flashcards to memorise thousands concepts and language vocabulary I kept forgetting and I hated every flashcards app out there so I decided to build something of my own and I started with markdown and obsidian. Fast forward one year later, I released the iOS and android apps too and a direc",
-      "translated_by": "free-translate"
+      "translated_by": "model"
     },
     {
       "id": "hn-50533967",
@@ -377,8 +377,8 @@
       "url": "https://news.ycombinator.com/item?id=50537272",
       "posted_at": "2026-11-18 04:00 Asia/Shanghai",
       "engagement": {
-        "points": 4,
-        "comments": 3
+        "points": 7,
+        "comments": 5
       },
       "original_title": "Ask HN: Anyone else blurting?",
       "original_summary": "Ask HN: Anyone else blurting? Like most, I was stoked on LLMs when they became available.  Particularly on the earlier free tiers where the slightly questionable answers were offset by generous tokens.<p>Now, I&#x27;m finding that having to use this tech is becoming much less fun.  The constant corrections, the constant prompting for greater brevity, the grating certainty and sycophancy.<p>Others probably are forgiving considering the net benefit.  But for me it honestly now feels like a chore, which is reflected in how my frustration is now appearing in how I communicate to it now.<p>Instead of articulating and making my prompts precise, I&#x27;m just straight-out blurting.  Typos, missed words, poor semantic structure - I guess I maybe at some point reasoned that &quot;it will get the pi",
@@ -461,22 +461,22 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50526860",
+      "id": "hn-50540777",
       "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Toolbelt：在浏览器里免费运行的开发者工具集",
-      "summary": "Show HN：Toolbelt – 在浏览器中运行的免费开发者实用工具",
+      "category": "大模型 API 免费额度",
+      "title": "Spillway：macOS 原生 HTTP API 压测工具",
+      "summary": "作者用多年 JMeter 后自制的 macOS 原生 HTTP API 压测应用，强调原生体验、可视化界面和更现代的功能。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "gprakasha234",
-      "url": "https://gettoolbelt.dev/",
-      "posted_at": "2026-11-17 11:02 Asia/Shanghai",
+      "author": "edwardaux",
+      "url": "https://spillwayapp.com/",
+      "posted_at": "2026-11-18 09:38 Asia/Shanghai",
       "engagement": {
-        "points": 6,
-        "comments": 1
+        "points": 1,
+        "comments": 0
       },
-      "original_title": "Show HN: Toolbelt – Free developer utilities that run in the browser",
-      "original_summary": "Show HN: Toolbelt – Free developer utilities that run in the browser ",
+      "original_title": "Show HN: Spillway – HTTP API load testing on macOS",
+      "original_summary": "Show HN: Spillway – HTTP API load testing on macOS I&#x27;ve used JMeter for years — it&#x27;s free and has a truly amazing amount of functionality - but it doesn&#x27;t really feel like a Mac app. There&#x27;s also a bunch of other more modern features that I wish it had.<p>Spillway is scratch-my-own-itch app... a culmination of things I&#x27;ve wished for over the years: native macOS app, visual test plans, easy-to-use variable substitution, built-in support for modern OAuth patterns, ability to compare previous runs graphically, and no wild per-user&#x2F;request pricing.<p>Genuinely pleased with how well it has turned out. Happy to field any questions or feature requests",
       "translated_by": "model"
     },
     {
@@ -491,7 +491,7 @@
       "url": "https://studio.sinapsdata.com.br",
       "posted_at": "2026-11-18 03:19 Asia/Shanghai",
       "engagement": {
-        "points": 3,
+        "points": 4,
         "comments": 0
       },
       "original_title": "Show HN: Free AI Agent Lab – Create two agents and make them debate",
@@ -499,148 +499,39 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50532246",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Show HN：开源编程工具 Malini，融合 Cursor 与 Conductor",
-      "summary": "作者想做一款不为卖身而生的智能编程工具，于是开发了开源 macOS 项目 Malini。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "szymeo",
-      "url": "https://github.com/bestboyhq/malini",
-      "posted_at": "2026-11-17 22:57 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: If Conductor and Cursor Had a Baby (Open Source, macOS)",
-      "original_summary": "Show HN: If Conductor and Cursor Had a Baby (Open Source, macOS) When Cursor got acquired a small question appeared in my head. Then after Conductor&#x27;s acquisition by Meta it quickly became more itchy.<p>And then after a few months of asking myself &quot;what if agentic coding tool wasn&#x27;t built for exit?&quot; I came up with Malini.<p>Those both were the best coding platforms (on the UI&#x2F;UX front especially) I&#x27;ve ever used, so Malini aims to join what was best in both of them. Hope you might find it useful. Feel free to contribute or fork.\n  * Cross-platform (Mac, Linux, Windows) is shortly down the road\n  * AGPLv3 License<p>Features:\n  * agentic merge-queue (thru gh cli)\n  * variants picker (agent will show you many options for something you wanna build)\n  * before&#x2F;",
-      "translated_by": "model"
-    },
-    {
-      "id": "v2ex-1257849",
+      "id": "v2ex-1257907",
       "source": "V2EX",
       "category": "其他科技",
-      "title": "SessionSnap：跨浏览器会话管理器，Edge / Firefox 版，本地优先",
-      "summary": "SessionSnap：跨浏览器会话管理器，Edge / Firefox 版，本地优先\n为什么做这个：Session Buddy 有 100 万用户、3.3 分（约 25,100 条评价），2026-04-28 之后没有再更新；官网只提 Chrome 商店，没有官方 Firefox / Edge 版。OneTab 约 200 万用户，同样只有 Chrome 版。想在 Edge / Firefox 上用会话管理器的人，只能等。\r\nSessionSnap v0.1.0 做了什么：自动保存窗口 / 标签会话快照，关闭标签日志，搜索恢复，支持导入 Session Buddy / OneTab 的导出文件；免费档快照保留 14 天；本地存储，零网络请求；权限只有 tabs / storage / alarms。\r\n验证：测试 166 项全过；真实浏览器加载实测 19/19；提交前修掉 2 个 service worker 缺陷（background import 路径写错、onMessage 异步回调未调用）。\r\n状态：已提交 Edge Add-ons，正在审核（2026-11-16 提交），暂时还不能安装。Pro 版（365 天快照 + 每日备份导出）尚未开售，计划价 ¥19.90 一次性。\r\n隐私页：https://alapha888.github.io/session-snap-privacy/\r\n同系列已上架产品：FocusBlock（本地优先网站拦截器）https://microsoftedge.microsoft.com/addons/detail/focusblock/kdpeddhiegpfadpjiaieoaeiloebgdhp",
+      "title": "[macOS] 轻量本地服务管理器 Foyer，前 30 用户免费兑换码",
+      "summary": "[macOS] 轻量本地服务管理器 Foyer，前 30 用户免费兑换码\n每天开机后都要开几个终端窗口敲 `npm run dev`、`uv run` 和内网穿透命令，实在有点折腾，于是用 **[mygo](https://github.com/egoist/mygo)** 写了一个专门运行在 macOS 上的轻量本地服务管理器 **Foyer**，跟大家交流一下，同时为 V 友准备了 **30 个完整版免费领取名额（100% 折扣码）**。\r\n\r\n先致敬一下灵感来源：最初也是受站长 @Livid 之前分享的作品 **CodeLauncher**（[https://v2ex.com/t/825937](https://v2ex.com/t/825937)）启发，才萌生了按自己日常习惯重新打磨一个本地服务管理器的想法。\r\n\r\n官网：[https://foyer.pinweb.io](https://foyer.pinweb.io/)\r\n\r\n### 主要功能\r\n\r\n- **集中收拢与一键启停**：保存项目目录和启动命令（名称留空自动按文件夹命名），支持一键全部启动 / 停止、按状态筛选及 `⌘ K` 快速搜索。\r\n- **独立实时日志**：支持关键词搜索（`⌘ F`）、「仅看错误」过滤、取消跟随回看历史，点击任意日志行即可复制。\r\n- **端口冲突处理 & 异常重启**：端口被占用时直接显示占用进程与 PID，确认后一键释放并启动；可按单个服务开启「仅异常退出时重启」。\r\n- **菜单栏常驻**：关闭主窗口后服务继续后台运行，支持隐藏 Dock 图标与登录时启动应用。\r\n\r\n### 版本说明\r\n\r\n- **免费版（Foyer free）**：无需注册账号即可使用，可管理 **3 个** 本地服务，实时日志、端口检测、异常自动重启、配置备份、菜单栏模式等功能全部完整保留。\r\n-",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "bluesky1001",
-      "url": "https://www.v2ex.com/t/1257849",
-      "posted_at": "2026-11-18 00:44 Asia/Shanghai",
+      "author": "atan",
+      "url": "https://www.v2ex.com/t/1257907",
+      "posted_at": "2026-11-18 10:17 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 11
       },
-      "original_title": "SessionSnap：跨浏览器会话管理器，Edge / Firefox 版，本地优先",
-      "original_summary": "SessionSnap：跨浏览器会话管理器，Edge / Firefox 版，本地优先\n为什么做这个：Session Buddy 有 100 万用户、3.3 分（约 25,100 条评价），2026-04-28 之后没有再更新；官网只提 Chrome 商店，没有官方 Firefox / Edge 版。OneTab 约 200 万用户，同样只有 Chrome 版。想在 Edge / Firefox 上用会话管理器的人，只能等。\r\nSessionSnap v0.1.0 做了什么：自动保存窗口 / 标签会话快照，关闭标签日志，搜索恢复，支持导入 Session Buddy / OneTab 的导出文件；免费档快照保留 14 天；本地存储，零网络请求；权限只有 tabs / storage / alarms。\r\n验证：测试 166 项全过；真实浏览器加载实测 19/19；提交前修掉 2 个 service worker 缺陷（background import 路径写错、onMessage 异步回调未调用）。\r\n状态：已提交 Edge Add-ons，正在审核（2026-11-16 提交），暂时还不能安装。Pro 版（365 天快照 + 每日备份导出）尚未开售，计划价 ¥19.90 一次性。\r\n隐私页：https://alapha888.github.io/session-snap-privacy/\r\n同系列已上架产品：FocusBlock（本地优先网站拦截器）https://microsoftedge.microsoft.com/addons/detail/focusblock/kdpeddhiegpfadpjiaieoaeiloebgdhp",
+      "original_title": "[macOS] 轻量本地服务管理器 Foyer，前 30 用户免费兑换码",
+      "original_summary": "[macOS] 轻量本地服务管理器 Foyer，前 30 用户免费兑换码\n每天开机后都要开几个终端窗口敲 `npm run dev`、`uv run` 和内网穿透命令，实在有点折腾，于是用 **[mygo](https://github.com/egoist/mygo)** 写了一个专门运行在 macOS 上的轻量本地服务管理器 **Foyer**，跟大家交流一下，同时为 V 友准备了 **30 个完整版免费领取名额（100% 折扣码）**。\r\n\r\n先致敬一下灵感来源：最初也是受站长 @Livid 之前分享的作品 **CodeLauncher**（[https://v2ex.com/t/825937](https://v2ex.com/t/825937)）启发，才萌生了按自己日常习惯重新打磨一个本地服务管理器的想法。\r\n\r\n官网：[https://foyer.pinweb.io](https://foyer.pinweb.io/)\r\n\r\n### 主要功能\r\n\r\n- **集中收拢与一键启停**：保存项目目录和启动命令（名称留空自动按文件夹命名），支持一键全部启动 / 停止、按状态筛选及 `⌘ K` 快速搜索。\r\n- **独立实时日志**：支持关键词搜索（`⌘ F`）、「仅看错误」过滤、取消跟随回看历史，点击任意日志行即可复制。\r\n- **端口冲突处理 & 异常重启**：端口被占用时直接显示占用进程与 PID，确认后一键释放并启动；可按单个服务开启「仅异常退出时重启」。\r\n- **菜单栏常驻**：关闭主窗口后服务继续后台运行，支持隐藏 Dock 图标与登录时启动应用。\r\n\r\n### 版本说明\r\n\r\n- **免费版（Foyer free）**：无需注册账号即可使用，可管理 **3 个** 本地服务，实时日志、端口检测、异常自动重启、配置备份、菜单栏模式等功能全部完整保留。\r\n-",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1257848",
+      "id": "v2ex-1257902",
       "source": "V2EX",
       "category": "大模型 API 免费额度",
-      "title": "Claude 养号神器 Blakcat VPN",
-      "summary": "Claude 养号神器 Blakcat VPN\n## 还老是担心 Claude 账号被封？\r\n\r\n**个人独享住宅 IP**，全球节点可选。\r\n\r\n另有**高速节点**和**免费节点**可供使用。\r\n\r\n---\r\n\r\n**Blakcat，只做高品质 VPN。**\r\n\r\n现在注册，可享受本站会员独家福利：\r\n[https://blakcat.app/signup?code=V2EXPR](https://blakcat.app/signup?code=V2EXPR)\r\n\r\n回帖后联系客服告知用户名，可申请试用 Premium 会员。\r\n\r\n![Blakcat](https://i.v2ex.co/H8PNPFKy.png)",
+      "title": "(100$的 pro 订阅)每月赠送的 API 额度都是怎么用的呢,有没有变现的可能,存在啥风险不",
+      "summary": "(100$的 pro 订阅)每月赠送的 API 额度都是怎么用的呢,有没有变现的可能,存在啥风险不",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "blakcat",
-      "url": "https://www.v2ex.com/t/1257848",
-      "posted_at": "2026-11-18 00:36 Asia/Shanghai",
+      "author": "DeepBlues",
+      "url": "https://www.v2ex.com/t/1257902",
+      "posted_at": "2026-11-18 10:10 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 10
       },
-      "original_title": "Claude 养号神器 Blakcat VPN",
-      "original_summary": "Claude 养号神器 Blakcat VPN\n## 还老是担心 Claude 账号被封？\r\n\r\n**个人独享住宅 IP**，全球节点可选。\r\n\r\n另有**高速节点**和**免费节点**可供使用。\r\n\r\n---\r\n\r\n**Blakcat，只做高品质 VPN。**\r\n\r\n现在注册，可享受本站会员独家福利：\r\n[https://blakcat.app/signup?code=V2EXPR](https://blakcat.app/signup?code=V2EXPR)\r\n\r\n回帖后联系客服告知用户名，可申请试用 Premium 会员。\r\n\r\n![Blakcat](https://i.v2ex.co/H8PNPFKy.png)",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1257844",
-      "source": "V2EX",
-      "category": "云服务/GPU/开发者资源",
-      "title": "来看看这个开源 9B 模型的审美吧",
-      "summary": "来看看这个开源 9B 模型的审美吧\n今天商汤开源了 SenseNova Loop 9B 正式版，能看图、写代码、分析数据并配合工具完成复杂任务，同时更容易部署在自己设备上，9B 的权重就能白嫖 27B 的推理能力\r\n\r\n官方做了一个很有意思的实验：保持 9B 权重不变，把训练和推理的循环次数从 1 次加到 3~4 次，LiveCodeBench V6 和办公数据分析任务的分数还能继续涨 6.4% ~ 16.9%\r\n\r\n虽然为了兼顾推理速度默认设了 2 次循环，但后续如果搞出按任务难度自动分配循环次数的 Dynamic Loop，端侧和小显卡跑强推理就更有戏了\r\n\r\n因为是国产模型，所以除了英伟达的卡之外，国产的 GPU 也能适配：如寒武纪、摩尔、海光、沐曦、天数等\r\n\r\n链接：\r\n\r\n- GitHub: https://github.com/OpenSenseNova/SenseNova-Loop\r\n- HuggingFace: https://huggingface.co/sensenova/SenseNova-Loop-9B\r\n\r\n# 先看几个效果：\r\n1. 漂亮网页的制作：《海岸线以外》摄影杂志式的网页\r\n![](https://i.imgur.com/F82P5bF.gif)\r\n\r\n\r\n2. 《字形接力 TYPE RELAY》动态字体交互网站：\r\n![](https://i.imgur.com/KOqRVJf.gif)\r\n\r\n3. 《失真频率 DISTORTION FM》音乐节动态海报网页\r\n![](https://i.imgur.com/nRfokeW.gif)\r\n\r\n4. 3D 网页：《仙家集市》（Three.js）\r\n\r\n![](https://i.imgur.com/nYtbk7F.gif)\r\n\r\n# 为啥这个模型叫 loop 呢？\r\n普通模型可以理解为：一",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Daniel6606",
-      "url": "https://www.v2ex.com/t/1257844",
-      "posted_at": "2026-11-18 00:09 Asia/Shanghai",
-      "engagement": {
-        "replies": 1
-      },
-      "original_title": "来看看这个开源 9B 模型的审美吧",
-      "original_summary": "来看看这个开源 9B 模型的审美吧\n今天商汤开源了 SenseNova Loop 9B 正式版，能看图、写代码、分析数据并配合工具完成复杂任务，同时更容易部署在自己设备上，9B 的权重就能白嫖 27B 的推理能力\r\n\r\n官方做了一个很有意思的实验：保持 9B 权重不变，把训练和推理的循环次数从 1 次加到 3~4 次，LiveCodeBench V6 和办公数据分析任务的分数还能继续涨 6.4% ~ 16.9%\r\n\r\n虽然为了兼顾推理速度默认设了 2 次循环，但后续如果搞出按任务难度自动分配循环次数的 Dynamic Loop，端侧和小显卡跑强推理就更有戏了\r\n\r\n因为是国产模型，所以除了英伟达的卡之外，国产的 GPU 也能适配：如寒武纪、摩尔、海光、沐曦、天数等\r\n\r\n链接：\r\n\r\n- GitHub: https://github.com/OpenSenseNova/SenseNova-Loop\r\n- HuggingFace: https://huggingface.co/sensenova/SenseNova-Loop-9B\r\n\r\n# 先看几个效果：\r\n1. 漂亮网页的制作：《海岸线以外》摄影杂志式的网页\r\n![](https://i.imgur.com/F82P5bF.gif)\r\n\r\n\r\n2. 《字形接力 TYPE RELAY》动态字体交互网站：\r\n![](https://i.imgur.com/KOqRVJf.gif)\r\n\r\n3. 《失真频率 DISTORTION FM》音乐节动态海报网页\r\n![](https://i.imgur.com/nRfokeW.gif)\r\n\r\n4. 3D 网页：《仙家集市》（Three.js）\r\n\r\n![](https://i.imgur.com/nYtbk7F.gif)\r\n\r\n# 为啥这个模型叫 loop 呢？\r\n普通模型可以理解为：一",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1257843",
-      "source": "V2EX",
-      "category": "科技软件/App 限免",
-      "title": "风景好的时候，总想多一个可用机位，分享我做的延时摄影 App",
-      "summary": "风景好的时候，总想多一个可用机位，分享我做的延时摄影 App\n大家好，分享一下我做的 iPhone 摄影 App，叫 **LightSeeker，中文名是追光相机**。\r\n\r\n## 多一个机位，多留一段风景\r\n\r\n碰到好风景，总觉得机位不够用。相机在拍照片或者录像的时候，旁边的 iPhone 也可以架起来，多留一段日落、云海或者城市光影的延时。\r\n\r\n先放一段 15 秒的晚霞延时：\r\n\r\nhttps://www.youtube.com/watch?v=y8-kOYgmNdA\r\n\r\nLightSeeker 主要做的就是这件事：**用照片序列拍摄延时，保留每一帧原片，再完成调色和视频导出。**\r\n\r\n### 如果 iPhone 是你的主力拍摄设备\r\n\r\n拍摄间隔、快门、ISO、白平衡这些可以自己控制，支持的设备也可以用 Apple ProRAW 拍摄。\r\n\r\n拍完可以给整段序列统一调色，用 LUT 调整风格，再导出成片。从拍摄到编辑、导出，都可以在手机上完成。\r\n\r\n### 如果你平时也带着相机\r\n\r\n可以把 iPhone 当一个随身的补充机位。相机拍照片或者视频，手机在旁边记录延时，两边各留一份不同的画面。\r\n\r\n每一帧原片都会保留，需要时可以导出完整素材，继续后期。\r\n\r\n## 界面和后期功能\r\n\r\n四张界面图，点击可以查看大图：\r\n\r\n| 延时拍摄 | 拍摄参数 | 智能增稳 | 分层调色 |\r\n| :---: | :---: | :---: | :---: |\r\n| [![延时拍摄](https://i.ibb.co/1fxbDRTG/01.png)](https://ibb.co/27B5Dcd3) | [![拍摄参数](https://i.ibb.co/CK9VhBnL/02.png)](https://ibb.co/F4Y8g6Bp) | [![智能增稳](htt",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "skywatcher",
-      "url": "https://www.v2ex.com/t/1257843",
-      "posted_at": "2026-11-18 00:08 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "风景好的时候，总想多一个可用机位，分享我做的延时摄影 App",
-      "original_summary": "风景好的时候，总想多一个可用机位，分享我做的延时摄影 App\n大家好，分享一下我做的 iPhone 摄影 App，叫 **LightSeeker，中文名是追光相机**。\r\n\r\n## 多一个机位，多留一段风景\r\n\r\n碰到好风景，总觉得机位不够用。相机在拍照片或者录像的时候，旁边的 iPhone 也可以架起来，多留一段日落、云海或者城市光影的延时。\r\n\r\n先放一段 15 秒的晚霞延时：\r\n\r\nhttps://www.youtube.com/watch?v=y8-kOYgmNdA\r\n\r\nLightSeeker 主要做的就是这件事：**用照片序列拍摄延时，保留每一帧原片，再完成调色和视频导出。**\r\n\r\n### 如果 iPhone 是你的主力拍摄设备\r\n\r\n拍摄间隔、快门、ISO、白平衡这些可以自己控制，支持的设备也可以用 Apple ProRAW 拍摄。\r\n\r\n拍完可以给整段序列统一调色，用 LUT 调整风格，再导出成片。从拍摄到编辑、导出，都可以在手机上完成。\r\n\r\n### 如果你平时也带着相机\r\n\r\n可以把 iPhone 当一个随身的补充机位。相机拍照片或者视频，手机在旁边记录延时，两边各留一份不同的画面。\r\n\r\n每一帧原片都会保留，需要时可以导出完整素材，继续后期。\r\n\r\n## 界面和后期功能\r\n\r\n四张界面图，点击可以查看大图：\r\n\r\n| 延时拍摄 | 拍摄参数 | 智能增稳 | 分层调色 |\r\n| :---: | :---: | :---: | :---: |\r\n| [![延时拍摄](https://i.ibb.co/1fxbDRTG/01.png)](https://ibb.co/27B5Dcd3) | [![拍摄参数](https://i.ibb.co/CK9VhBnL/02.png)](https://ibb.co/F4Y8g6Bp) | [![智能增稳](htt",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1257841",
-      "source": "V2EX",
-      "category": "AI 产品会员/试用",
-      "title": "[薅 google 羊毛] Google AI Ultra 订阅，Carbon 免费试用",
-      "summary": "[薅 google 羊毛] Google AI Ultra 订阅，Carbon 免费试用\n开源地址：https://github.com/gylive/google-ultra\r\n操作步骤：https://gylive.github.io/google-ultra/web/\r\n\r\nX 上直接搜快捷地址。\r\n\r\n免费方案 1）20 倍 1 个月；\r\n免费方案 2) 5 倍  1 年\r\n\r\n记得取消订阅。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "BirlGoy",
-      "url": "https://www.v2ex.com/t/1257841",
-      "posted_at": "2026-11-18 00:01 Asia/Shanghai",
-      "engagement": {
-        "replies": 1
-      },
-      "original_title": "[薅 google 羊毛] Google AI Ultra 订阅，Carbon 免费试用",
-      "original_summary": "[薅 google 羊毛] Google AI Ultra 订阅，Carbon 免费试用\n开源地址：https://github.com/gylive/google-ultra\r\n操作步骤：https://gylive.github.io/google-ultra/web/\r\n\r\nX 上直接搜快捷地址。\r\n\r\n免费方案 1）20 倍 1 个月；\r\n免费方案 2) 5 倍  1 年\r\n\r\n记得取消订阅。",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1257839",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "[开源] 分享一个我做的跳广告插件，利用 AI 跳过 B 站视频内的广告",
-      "summary": "[开源] 分享一个我做的跳广告插件，利用 AI 跳过 B 站视频内的广告\n先放项目链接：https://github.com/ZeroTang05/VideoAdGuard\r\n\r\n我去年写了一个用 AI 跳广告的插件，也一直在更新，算是我的第一个宣传出去的项目了，我记得当时还上了阮一峰的科技周刊呢😃（在 363 期 https://www.ruanyifeng.com/blog/2025/08/weekly-issue-363.html ）\r\n\r\n现在想在我们 V2EX 社区宣传一下，基本的功能都完善了，能自动跳过，还有云端记录缓存（云端共享，用的大善人 cloudflare 的 kv 数据库）\r\n检测准确度可以说基本不漏检，叫作召回率比较高。误报还是有的，但是一般不影响，误报的明显不合理就不会自动跳过。\r\n边界功能也有，因为插件是基于字幕的嘛，有些视频没字幕我也加入了语音转文字的接口，同时白名单也加上了。\r\n至于费用方面，用免费/低价模型完全可以胜任这个任务（应该有这种赛博鸡蛋来着），再加上现在大家都开的 token plan，我自用的是 minimax 的，额度不用也是浪费了。\r\n\r\n技术探索方面我还给这个插件加上了 system one 模型（Jev），感觉这种模型更适合这个任务还更便宜，就是目前好像还没什么人用，有感兴趣的可以用 system one 模型然后来评论区反馈反馈\r\n\r\nONE MORE THING\r\n其实这次我目的不只是宣传，我还想调查一个需求，就是有没有觉得现在出现了很多 AI 文案的视频，特别是在科普区。这种视频听多了我现在一听到都生理性恶心，听起来完全无法聚焦的那种。如果让大模型去做一次 AI 率判断，各位觉得怎么样，等累计的数据多了，就可以在视频外面就标注出来，不用点进去看这种低营养的视频了。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "lerbeng",
-      "url": "https://www.v2ex.com/t/1257839",
-      "posted_at": "2026-11-17 23:56 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "[开源] 分享一个我做的跳广告插件，利用 AI 跳过 B 站视频内的广告",
-      "original_summary": "[开源] 分享一个我做的跳广告插件，利用 AI 跳过 B 站视频内的广告\n先放项目链接：https://github.com/ZeroTang05/VideoAdGuard\r\n\r\n我去年写了一个用 AI 跳广告的插件，也一直在更新，算是我的第一个宣传出去的项目了，我记得当时还上了阮一峰的科技周刊呢😃（在 363 期 https://www.ruanyifeng.com/blog/2025/08/weekly-issue-363.html ）\r\n\r\n现在想在我们 V2EX 社区宣传一下，基本的功能都完善了，能自动跳过，还有云端记录缓存（云端共享，用的大善人 cloudflare 的 kv 数据库）\r\n检测准确度可以说基本不漏检，叫作召回率比较高。误报还是有的，但是一般不影响，误报的明显不合理就不会自动跳过。\r\n边界功能也有，因为插件是基于字幕的嘛，有些视频没字幕我也加入了语音转文字的接口，同时白名单也加上了。\r\n至于费用方面，用免费/低价模型完全可以胜任这个任务（应该有这种赛博鸡蛋来着），再加上现在大家都开的 token plan，我自用的是 minimax 的，额度不用也是浪费了。\r\n\r\n技术探索方面我还给这个插件加上了 system one 模型（Jev），感觉这种模型更适合这个任务还更便宜，就是目前好像还没什么人用，有感兴趣的可以用 system one 模型然后来评论区反馈反馈\r\n\r\nONE MORE THING\r\n其实这次我目的不只是宣传，我还想调查一个需求，就是有没有觉得现在出现了很多 AI 文案的视频，特别是在科普区。这种视频听多了我现在一听到都生理性恶心，听起来完全无法聚焦的那种。如果让大模型去做一次 AI 率判断，各位觉得怎么样，等累计的数据多了，就可以在视频外面就标注出来，不用点进去看这种低营养的视频了。",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1257836",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "ConvoExport：把一条 ChatGPT / Claude 对话导出成 Markdown、DOCX 或打印版",
-      "summary": "ConvoExport：把一条 ChatGPT / Claude 对话导出成 Markdown、DOCX 或打印版\n我做了个 Edge 浏览器扩展 ConvoExport，解决一个很具体的问题：ChatGPT / Claude 的对话想存下来离线看、归档、喂给别的工具，官方只给分享链接，没有导出成文件。\r\n\r\n功能：\r\n- 在对话页点一下，把当前整条对话导出成 Markdown、DOCX 或打印版（浏览器打印）\r\n- 保留发言角色顺序（user / assistant 交替），长对话也完整导出\r\n- 免费版每天 3 次；Pro 一次性 ¥19.90，尚未开售\r\n\r\n我用真实分享对话测过导出链路：\r\n- 一条 14 回合的对话导出 6,264 字节，另一条 5 回合的导出 30,636 字节，助手长回复完整\r\n- 发现一个坑：页面刚加载完立刻读会把所有回合都标成 user，要等约 30 秒水合完成后再读才准\r\n- Claude 适配器目前只有本地夹具测试作证，真站还没测到（出口 IP 被 Cloudflare 拦），如实说明\r\n\r\n隐私：完全本地，不上传对话、不建账号、不统计。隐私政策：\r\nhttps://alapha888.github.io/convo-export-privacy/\r\n\r\n状态：已提交 Microsoft Edge Add-ons，正在审核中，暂不可安装；通过后我会在本帖更新商店链接。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "bluesky1001",
-      "url": "https://www.v2ex.com/t/1257836",
-      "posted_at": "2026-11-17 23:50 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "ConvoExport：把一条 ChatGPT / Claude 对话导出成 Markdown、DOCX 或打印版",
-      "original_summary": "ConvoExport：把一条 ChatGPT / Claude 对话导出成 Markdown、DOCX 或打印版\n我做了个 Edge 浏览器扩展 ConvoExport，解决一个很具体的问题：ChatGPT / Claude 的对话想存下来离线看、归档、喂给别的工具，官方只给分享链接，没有导出成文件。\r\n\r\n功能：\r\n- 在对话页点一下，把当前整条对话导出成 Markdown、DOCX 或打印版（浏览器打印）\r\n- 保留发言角色顺序（user / assistant 交替），长对话也完整导出\r\n- 免费版每天 3 次；Pro 一次性 ¥19.90，尚未开售\r\n\r\n我用真实分享对话测过导出链路：\r\n- 一条 14 回合的对话导出 6,264 字节，另一条 5 回合的导出 30,636 字节，助手长回复完整\r\n- 发现一个坑：页面刚加载完立刻读会把所有回合都标成 user，要等约 30 秒水合完成后再读才准\r\n- Claude 适配器目前只有本地夹具测试作证，真站还没测到（出口 IP 被 Cloudflare 拦），如实说明\r\n\r\n隐私：完全本地，不上传对话、不建账号、不统计。隐私政策：\r\nhttps://alapha888.github.io/convo-export-privacy/\r\n\r\n状态：已提交 Microsoft Edge Add-ons，正在审核中，暂不可安装；通过后我会在本帖更新商店链接。",
+      "original_title": "(100$的 pro 订阅)每月赠送的 API 额度都是怎么用的呢,有没有变现的可能,存在啥风险不",
+      "original_summary": "(100$的 pro 订阅)每月赠送的 API 额度都是怎么用的呢,有没有变现的可能,存在啥风险不",
       "translated_by": "free-translate"
     },
     {
@@ -655,100 +546,208 @@
       "url": "https://www.v2ex.com/t/1257824",
       "posted_at": "2026-11-17 22:55 Asia/Shanghai",
       "engagement": {
-        "replies": 26
+        "replies": 54
       },
       "original_title": "Gemini Ultra 免费一个月？有 V 友领到了吗，想核对下条件",
       "original_summary": "Gemini Ultra 免费一个月？有 V 友领到了吗，想核对下条件\n刷到一个帖子，说 Gemini Ultra 可以免费用一个月，链接放评论区了\r\n\r\n原帖提到了先绑卡，但这张截图没截到实际领取入口，也没说明地区、新老用户这些限制，目前还不能确认具体条件。\r\n\r\n有 V 友领到过吗？想核对几个信息：\r\n- 哪个地区的账号，之前有没有订阅过？\r\n- 页面显示的是 Ultra 哪个档位？\r\n- 免费期结束后，续费金额是多少？\r\n有官方活动入口的也欢迎补充，大家可以对照自己的页面看看。\r\n\r\n顺便说明一下，我自己做 AI 会员代充。看到这种优惠也想弄清楚，能自己领到的朋友可以省一笔，订阅方面的问题也欢迎交流。",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1257819",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "[Rust Root] 第一章：不写一行 Rust 语法，带你把所有权和借用重新推演一遍",
-      "summary": "[Rust Root] 第一章：不写一行 Rust 语法，带你把所有权和借用重新推演一遍\n很多有 Java、Go、Python 或 C++ 经验的朋友学 Rust，都卡在同一个地方：\r\n\r\n翻开教程，迎面就是著名的「所有权三条规则」——每个值有一个所有者；同一时刻只能有一个所有者；所有者离开作用域时值被释放。\r\n\r\n字面意思三分钟就看懂了。可一旦合上文档自己拆函数、传参数，编译器立刻满屏飘红。为了先让程序跑通，只好顺着提示四处补 `.clone()`，越写越别扭。\r\n\r\n问题不在于规则没记熟，而在于**我们直接拿到了总结好的「条文结论」，却跳过了这些规则被逼出来的「案发现场」**。\r\n\r\n开源指南 **Rust Root（rustroot.cn）** 第一章《从自动释放到所有权》现已精修上线。这一章的前五节做了一个尝试：**不写一行真实的 Rust 语法，也不预先搬出「所有权」「借用」这些条文**，而是请你坐到语言设计者的位置上，只解决一个看似矛盾的目标——\r\n\r\n> **如果既不让人手写每一次 `free`，又不允许后台跑垃圾回收（GC），程序到底怎么安全地自动回收内存？**\r\n\r\n顺着栈帧与堆块的物理事实往下推，你会发现没有一条规则是凭空捏造的教条，全是上一步留下的安全缺口倒逼出来的结果：\r\n\r\n- 为什么一行再普通不过的 `t = s`，会击穿最简回收模型？当语言把它重塑为「移动（Move）」时，**物理内存里真的把数据搬走了吗？**\r\n- 只是传给函数读一眼数据，为什么不能直接照搬 C 语言现成的指针，非要重新设计受限的「引用」？\r\n- 引用在运行时只是一个孤零零的 8 字节地址，程序还没跑起来，编译器凭什么提前断定它会悬垂？\r\n- 剥开「所有权、移动、借用、生命周期」这一串专有名词的外壳，**整套机制在底层其实只替程序员干了哪一件极朴素的事？**\r\n\r\n把这几步因",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "sh25867",
-      "url": "https://www.v2ex.com/t/1257819",
-      "posted_at": "2026-11-17 21:57 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "[Rust Root] 第一章：不写一行 Rust 语法，带你把所有权和借用重新推演一遍",
-      "original_summary": "[Rust Root] 第一章：不写一行 Rust 语法，带你把所有权和借用重新推演一遍\n很多有 Java、Go、Python 或 C++ 经验的朋友学 Rust，都卡在同一个地方：\r\n\r\n翻开教程，迎面就是著名的「所有权三条规则」——每个值有一个所有者；同一时刻只能有一个所有者；所有者离开作用域时值被释放。\r\n\r\n字面意思三分钟就看懂了。可一旦合上文档自己拆函数、传参数，编译器立刻满屏飘红。为了先让程序跑通，只好顺着提示四处补 `.clone()`，越写越别扭。\r\n\r\n问题不在于规则没记熟，而在于**我们直接拿到了总结好的「条文结论」，却跳过了这些规则被逼出来的「案发现场」**。\r\n\r\n开源指南 **Rust Root（rustroot.cn）** 第一章《从自动释放到所有权》现已精修上线。这一章的前五节做了一个尝试：**不写一行真实的 Rust 语法，也不预先搬出「所有权」「借用」这些条文**，而是请你坐到语言设计者的位置上，只解决一个看似矛盾的目标——\r\n\r\n> **如果既不让人手写每一次 `free`，又不允许后台跑垃圾回收（GC），程序到底怎么安全地自动回收内存？**\r\n\r\n顺着栈帧与堆块的物理事实往下推，你会发现没有一条规则是凭空捏造的教条，全是上一步留下的安全缺口倒逼出来的结果：\r\n\r\n- 为什么一行再普通不过的 `t = s`，会击穿最简回收模型？当语言把它重塑为「移动（Move）」时，**物理内存里真的把数据搬走了吗？**\r\n- 只是传给函数读一眼数据，为什么不能直接照搬 C 语言现成的指针，非要重新设计受限的「引用」？\r\n- 引用在运行时只是一个孤零零的 8 字节地址，程序还没跑起来，编译器凭什么提前断定它会悬垂？\r\n- 剥开「所有权、移动、借用、生命周期」这一串专有名词的外壳，**整套机制在底层其实只替程序员干了哪一件极朴素的事？**\r\n\r\n把这几步因",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-cybird-d-free-llm-api-provider",
+      "id": "ghdeal-arsh624-llm4jobs-v2",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "CYBIRD-D/FREE-LLM-API-Provider：免费LLM API列表",
-      "summary": "一份可通过API访问的免费LLM提供商资源列表，包含部分中国平台。",
+      "title": "Arsh624/llm4jobs-v2：免费运行的岗位雷达",
+      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历和地点筛选后每日邮件推送，可在 GitHub Actions 上免费运行。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "CYBIRD-D",
-      "url": "https://github.com/CYBIRD-D/FREE-LLM-API-Provider",
-      "posted_at": "2026-11-16 22:02 Asia/Shanghai",
-      "engagement": {
-        "stars": 123
-      },
-      "original_title": "CYBIRD-D/FREE-LLM-API-Provider",
-      "original_summary": "CYBIRD-D/FREE-LLM-API-Provider This is a list of free LLM provider resources accessible via API. Including some cn platform  免费llm api平台（包括cn平台）",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-peppolone-conclave",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "peppolone/Conclave：macOS上多模型辩论并裁决的免费应用",
-      "summary": "Claude、Gemini、GPT-OSS 与 Qwen 分轮匿名互评修订，裁判给出结论与可靠性评分，配免费 API key 可用。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "peppolone",
-      "url": "https://github.com/peppolone/Conclave",
-      "posted_at": "2026-11-14 21:14 Asia/Shanghai",
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
-      "original_title": "peppolone/Conclave",
-      "original_summary": "peppolone/Conclave LLM council for macOS: Claude, Gemini, GPT-OSS and Qwen debate your question in rounds (anonymous cross-critique, revision) and a judge gives a verdict with a reliability rating. Keep chatting after the verdict, attach files, search the web first. Native SwiftUI app, free with free API keys or your Claude subscription.",
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-enapt-swarmllm",
+      "id": "ghdeal-nejib1-free-llm",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "SwarmLLM：在自己电脑上免费运行 AI 对话模型",
-      "summary": "开源应用，可多台电脑联网协作运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
+      "title": "Free-LLM：34 个以上免费 LLM 与 AI API 的目录",
+      "summary": "收录永久免费额度、试用额度与免信用卡选项，覆盖 GPT-4o、Gemini、Claude 等，每日同步。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "enapt",
-      "url": "https://github.com/enapt/SwarmLLM",
-      "posted_at": "2026-11-17 17:23 Asia/Shanghai",
+      "author": "nejib1",
+      "url": "https://github.com/nejib1/Free-LLM",
+      "posted_at": "2026-11-18 10:25 Asia/Shanghai",
       "engagement": {
-        "stars": 88
+        "stars": 1054
       },
-      "original_title": "enapt/SwarmLLM",
-      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
+      "original_title": "nejib1/Free-LLM",
+      "original_summary": "nejib1/Free-LLM Directory of 34+ free LLM & AI APIs — permanent free tiers, trial credits, and no-card options. GPT-4o, Gemini, Claude, Llama, DeepSeek, Mistral & more. Synced daily from the live directory at free-llm.com.",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-dorkagent-free-llm-models",
+      "id": "ghdeal-ennersmai-sluice",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "dorkagent/free-llm-models 每日核验免费 LLM 模型",
-      "summary": "由自动化每日更新的免费 LLM API 模型注册表，只收录实际可用的模型。",
+      "title": "ennersmai/sluice：Rust 写的本地免费 LLM 路由",
+      "summary": "开源的本地 LLM 路由与 API 聚合器，用 Rust 编写，可免费使用。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "dorkagent",
-      "url": "https://github.com/dorkagent/free-llm-models",
-      "posted_at": "2026-11-16 21:12 Asia/Shanghai",
+      "author": "ennersmai",
+      "url": "https://github.com/ennersmai/sluice",
+      "posted_at": "2026-11-16 15:46 Asia/Shanghai",
       "engagement": {
-        "stars": 1
+        "stars": 0
       },
-      "original_title": "dorkagent/free-llm-models",
-      "original_summary": "dorkagent/free-llm-models Daily-verified registry of free LLM API models that actually work. Updated by automation.",
+      "original_title": "ennersmai/sluice",
+      "original_summary": "ennersmai/sluice Local Free LLM Router (API aggregator written in Rust)",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-fadhill-taariq-job-application-bot",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "job-application-bot：本地免费生成定制简历与求职信",
+      "summary": "用 Ollama 本地模型按粘贴的职位描述生成定制简历和求职信，支持 PDF 导出与投递跟踪，无需 API Key。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "fadhill-taariq",
+      "url": "https://github.com/fadhill-taariq/job-application-bot",
+      "posted_at": "2026-11-18 10:08 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "fadhill-taariq/job-application-bot",
+      "original_summary": "fadhill-taariq/job-application-bot A local, API-key-free job application assistant. Uses Ollama LLMs to generate tailored CVs and cover letters from pasted job descriptions, with PDF export and a job tracker.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-huangbuqubunao-alt-ai-cost-radar",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "ai-cost-radar 是含免费每日80+ LLM价格API的成本计算器",
+      "summary": "该项目提供双语 AI API 与云 GPU 成本计算器，并提供每日更新的免费 80+ 大模型价格 API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "huangbuqubunao-alt",
+      "url": "https://github.com/huangbuqubunao-alt/ai-cost-radar",
+      "posted_at": "2026-11-12 19:41 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "huangbuqubunao-alt/ai-cost-radar",
+      "original_summary": "huangbuqubunao-alt/ai-cost-radar Bilingual AI API & Cloud GPU Cost Calculator + Free Daily Live 80+ LLM Price API",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-mattbusel-llm-json",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Mattbusel/llm-json：零依赖单头文件 C++17 JSON 库",
+      "summary": "面向 LLM 代码的单头文件 JSON 解析与构建库，可构造请求体、解析响应，区分整数浮点并支持带偏移的无异常解析。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Mattbusel",
+      "url": "https://github.com/Mattbusel/llm-json",
+      "posted_at": "2026-09-26 01:18 Asia/Shanghai",
+      "engagement": {
+        "stars": 2
+      },
+      "original_title": "Mattbusel/llm-json",
+      "original_summary": "Mattbusel/llm-json Zero-dependency single-header C++17 JSON parser and builder for LLM code: build API request bodies, parse responses, int/float distinction, insertion-ordered objects, and exception-free try_parse with error offsets.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-alim4385-llm-free-search-api-vercel",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "LLM-free-search-api-Vercel：免费的LLM搜索API",
+      "summary": "面向 LLM 的免密钥搜索 API，无需 API key 即可部署在 Vercel，内置 10 个搜索提供方并行检索。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Alim4385",
+      "url": "https://github.com/Alim4385/LLM-free-search-api-Vercel",
+      "posted_at": "2026-11-15 09:09 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Alim4385/LLM-free-search-api-Vercel",
+      "original_summary": "Alim4385/LLM-free-search-api-Vercel Keyless search API for LLMs (Next.js) - no API key, runs on Vercel. 10 providers, parallel search, RRF voting, circuit breaker, AZ stemming, rate limiting.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-shaharia-lab-ferrox",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "shaharia-lab/ferrox：Rust 写的免费开源 LLM API 网关",
+      "summary": "无状态、无锁、可水平扩展，统一暴露 OpenAI 兼容接口，前置 Anthropic、OpenAI、Gemini、Bedrock 等服务。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "shaharia-lab",
+      "url": "https://github.com/shaharia-lab/ferrox",
+      "posted_at": "2026-11-12 13:59 Asia/Shanghai",
+      "engagement": {
+        "stars": 7
+      },
+      "original_title": "shaharia-lab/ferrox",
+      "original_summary": "shaharia-lab/ferrox Ferrox - High-performance, stateless LLM API gateway written in Rust. Sits in front of LLM provider APIs (Anthropic, OpenAI, Google Gemini, AWS Bedrock) and exposes a single OpenAI-compatible HTTP API surface. Inspired by nginx/envoy proxy design — stateless, lock-free, horizontally scalable.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-mvalentsev-awesome-free-ai-coding",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "awesome-free-ai-coding 免费 LLM API 与代理清单",
+      "summary": "收录合法免费 LLM API 与编程代理，含免费额度、免卡试用和免费模型，每周两次探测验证。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "mvalentsev",
+      "url": "https://github.com/mvalentsev/awesome-free-ai-coding",
+      "posted_at": "2026-11-18 09:57 Asia/Shanghai",
+      "engagement": {
+        "stars": 242
+      },
+      "original_title": "mvalentsev/awesome-free-ai-coding",
+      "original_summary": "mvalentsev/awesome-free-ai-coding 📡 Legal free LLM APIs & coding agents — self-updating, probe-verified twice a week. Free tiers, no-card trials, free models.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-amardeeplakshkar-awesome-free-llm-apis",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "awesome-free-llm-apis：永久免费 LLM API 清单",
+      "summary": "amardeeplakshkar 整理的永久免费 LLM API 列表，标注速率限制、OpenAI SDK 兼容性、可用 SDK 与免费模型，无需信用卡。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "amardeeplakshkar",
+      "url": "https://github.com/amardeeplakshkar/awesome-free-llm-apis",
+      "posted_at": "2026-11-17 23:02 Asia/Shanghai",
+      "engagement": {
+        "stars": 220
+      },
+      "original_title": "amardeeplakshkar/awesome-free-llm-apis",
+      "original_summary": "amardeeplakshkar/awesome-free-llm-apis A curated list of permanently free LLM APIs — with rate limits, OpenAI SDK compatibility, available SDKs, speed tiers, and free model lists. No trial credits. No time-limited promos. No credit card required.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-mnfst-awesome-free-llm-apis",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "awesome-free-llm-apis：永久免费 LLM API 清单",
+      "summary": "mnfst 收集的可长期免费使用的 LLM API 及 API Key 清单仓库。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "mnfst",
+      "url": "https://github.com/mnfst/awesome-free-llm-apis",
+      "posted_at": "2026-11-18 11:27 Asia/Shanghai",
+      "engagement": {
+        "stars": 13558
+      },
+      "original_title": "mnfst/awesome-free-llm-apis",
+      "original_summary": "mnfst/awesome-free-llm-apis List of Permanent Free LLM API  (API Keys)",
       "translated_by": "model"
     },
     {

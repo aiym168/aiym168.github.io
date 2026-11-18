@@ -3,23 +3,25 @@
   "archived": 22,
   "deadline_extracted": 6,
   "drop:duplicate": 324,
-  "drop:empty_summary": 38,
+  "drop:empty_summary": 41,
   "drop:negative_signal": 118,
-  "drop:no_clear_offer": 441,
-  "drop:not_ai": 386,
+  "drop:no_clear_offer": 446,
+  "drop:not_ai": 391,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 478,
-  "google_news_total": 478,
+  "google_news_resolved": 491,
+  "google_news_total": 491,
   "kept_total": 200,
   "net:gnews_cache_hit": 478,
-  "raw_total": 1566
+  "net:gnews_resolved_net": 13,
+  "net:tco_expanded": 2,
+  "new_this_run": 1,
+  "raw_total": 1579
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
-   "SwarmLLM：开源应用，可多台电脑联网协作运行单机跑不动的大模型",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
@@ -28,9 +30,13 @@
    "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录",
    "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
    "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
-   "grux：Grux AI，免费的开源 AI 代理"
+   "grux：Grux AI，免费的开源 AI 代理",
+   "freefield：ComfyUI 上开源 Higgsfield"
   ],
   "empty_summary": [
+   "Google 宣布 Gemini 的 Tasks 功能在美国、日本、韩国、加拿大、澳大利亚和印度免费提供",
+   "James Gerrish 认为 Nvidia 的 AI 增长远未结束，ausbiz 可免费观看",
+   "Bond 称可把想法说出来每月赚 20 美元以上，并在 iPhone 上免费使用",
    "PentestPad 是面向安全团队的渗透测试报告平台，可减少整理原始笔记的时间，现提供免费试用",
    "该图像分类器以免费 API 提供给调查机构和支持服务等经审核组织",
    "Claude Fable 5.2已在 NEAR AI Cloud 上线，今天可在 playground 免费试用",
@@ -39,12 +45,10 @@
    "@OpenAINewsroom 分享：新工具免费提供给经审核组织，用于检测含 AI 生成图像的儿童性虐待材料",
    "Command Code 回顾上周更新，包含 GOAT 额度提升、Muse Ember 双倍用量",
    "据称 Gemini Pro 现可免费使用一年，原价 200 美元，无需付款即可激活",
-   "Khan Academy Philippines 称该国所有教师无论是否合作学校都可免费使用，约一分钟生成教案",
-   "该模型总参数 280B、每 token 激活 14B、上下文窗口 1M，目前在 OpenRouter 可免费使用",
-   "MIT 将于2027年1月在塞浦路斯大学和塞浦路斯理工大学为青少年举办免费 AI 训练营",
-   "DeepAI Code 新增 Muse Ember 免费使用，Claude Sonnet 5.5"
+   "Khan Academy Philippines 称该国所有教师无论是否合作学校都可免费使用，约一分钟生成教案"
   ],
   "negative_signal": [
+   "产品通行证新增 OpenRouter、LangChain、Sentry、TextExpander、Ploy，35 款工具",
    "@aakashgupta 分享：富裕家庭曾花最高2.5万美元润色论文，穷学生用 ChatGPT 免费获得类似帮助后，大学",
    "Anthropic 最强大模型由广告支持提供免费访问，可立即试用",
    "两小时课程讲利用成熟 SEO 策略从 AI 搜索获取线索、佣金和收入，无回放",
@@ -55,24 +59,24 @@
    "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页",
    "@Scobleizer 分享：推文称奥斯汀机器人/AI 活动期间，马斯克每次乘车都获得免费广告，独特设计引发讨论",
    "我将向 2 人赠送一整年的 Claude Max 免费入场",
-   "@alex_prompter 分享：每周分享一个 AI 实用技巧，订阅免费",
-   "作者把自家站点在用的12个 SKILL.md 工作流全部开源，可用 npx skills add 安装"
+   "@alex_prompter 分享：每周分享一个 AI 实用技巧，订阅免费"
   ],
   "no_clear_offer": [
+   "Nikesh Arora 表示过去寻找可行攻击路径靠反复试错，如今 AI 可模拟漏洞并发现入侵方式，使攻击多名客户变得更",
+   "面向产品经理，该 Claude Code 智能体可在 30 分钟内补上试用用户流失后的跟进环节",
+   "@Newsday 分享：数十名儿童与家长参加免费训练活动，了解该篮球训练学院对 AI 的使用",
+   "@AIatAMD 分享：活动需注册，可动手构建智能体和本地模型，或参加 ROCm 认证的 AMD GPU 架构、编程与优",
+   "面向产品经理，用 Claude Code 代理在 30 分钟内解决试用用户流失后的跟进问题",
+   "@realpython 分享：“AI 写的，测试通过了，就发布吧",
+   "@BardhylBytyqi 分享：推文列出 AI 设计工具、落地页与免费模板等 5 项资源及链接",
+   "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
    "Munters 的 Andréa Haag 称 AI 增长推高电力需求，液冷等节能方案对获得电网接入和释放容量很关键",
    "Papa John's 将 AI 用于质量控制，参与可赢取免费披萨",
    "@jmattmiller 分享：面向教师和课堂的50款 AI 工具清单已更新，可帮助快速备课和制作互动内容",
-   "清单含 GitHub、Gravatar、Medium、Substack 等平台，用于提升 Google 与 ChatGP",
-   "@arcee_ai 分享：该赞助商称与 AI 生态企业交流收获大，并提到现场有免费抹茶吧",
-   "像 PW 这样的辅导班并不能让孩子变得更聪明",
-   "课程针对 AI Agent 重复犯错问题，讲解如何让代理随每次运行提升",
-   "@IFTTT 分享：它会读取易被忽略的试用到期邮件，并在续费前一天创建含价格的日历提醒",
-   "Decodo 将演示如何把 Claude 与实时网页数据结合使用",
-   "Gemini 称 Tasks 适合长项目与周期安排，现面向数亿合格用户免费",
-   "HubSpot 表示可自带代理、使用现有 API，并按需用积分扩展",
-   "该提示要求 Claude 向开源 T3 Code 看齐，并称自家远程能力差距大"
+   "清单含 GitHub、Gravatar、Medium、Substack 等平台，用于提升 Google 与 ChatGP"
   ],
   "not_ai": [
+   "活动至 12 月 2 日，Pro 与 Premium 五折、充值送额度，用码 SWARMSFLA 得 15 美元免费额度",
    "上传 logo 后可调整颜色、光照与动态，本地运行无需 API key，导出 2K/4K 无缝循环视频",
    "加拿大正在通过 C-22法案经历其自身的聊天管控乱局：强烈建议加拿大同胞联系参议员",
    "@elonmusk 分享：正如我刚才所说……我们向达菲部长提供了免费的 FAA 用 Starlink，但他表示不需要",
@@ -83,8 +87,7 @@
    "Dreamina 推出 Seedance 2.5 Flash，等待时间更短、成本更低，适合批量生成与反复调优",
    "他创办 NVIDIA 并押注 CUDA，公司一度濒临破产，最终豪赌成功",
    "《崩坏：Nexus Anima》预注册现已开放",
-   "@rjrshr 分享：黄仁勋称员工为志愿者，称这是其逐步打造的工作文化",
-   "作者在 Substack 免费发布 NBIS 第三季度财报完整回顾及更新后的2027年目标价"
+   "@rjrshr 分享：黄仁勋称员工为志愿者，称这是其逐步打造的工作文化"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -101,17 +104,16 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-18T06:41:54+08:00",
+ "generated_at": "2026-11-18T11:41:25+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-18T06:41:54+08:00",
+  "checked_at": "2026-11-18T11:41:24+08:00",
   "counts": {
    "gone": 1,
-   "ok": 176,
-   "recheck": 1
+   "ok": 177
   },
   "hidden": 1
  },
- "seconds": 1.1,
+ "seconds": 10.5,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -121,9 +123,9 @@
   },
   "hot_topics": {
    "drop:negative_signal": 1,
-   "drop:not_ai": 11,
-   "drop:not_ai_strict": 2,
-   "kept": 26,
+   "drop:not_ai": 8,
+   "drop:not_ai_strict": 6,
+   "kept": 25,
    "raw": 40
   }
  }
