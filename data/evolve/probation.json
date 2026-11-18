@@ -1,146 +1,6 @@
 {
  "candidates": [
   {
-   "key": "huyenchip",
-   "name": "Chip Huyen",
-   "home": "https://huyenchip.com/",
-   "feed": "https://huyenchip.com/feed.xml",
-   "channel": "ai",
-   "lang": "en",
-   "origin": "seed",
-   "added": "2026-11-14",
-   "trials": [
-    {
-     "date": "2026-11-14",
-     "ok": true,
-     "rows": 10,
-     "recent": 0,
-     "blocked": 0,
-     "on_topic": 7,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-15",
-     "ok": true,
-     "rows": 10,
-     "recent": 0,
-     "blocked": 0,
-     "on_topic": 7,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-16",
-     "ok": true,
-     "rows": 10,
-     "recent": 0,
-     "blocked": 0,
-     "on_topic": 7,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-17",
-     "ok": true,
-     "rows": 10,
-     "recent": 0,
-     "blocked": 0,
-     "on_topic": 7,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-18",
-     "ok": true,
-     "rows": 10,
-     "recent": 0,
-     "blocked": 0,
-     "on_topic": 7,
-     "offtopic": 0,
-     "zh": false
-    }
-   ],
-   "score": {
-    "trials": 5,
-    "ok": 5,
-    "blocked": 0,
-    "on_topic": 0.7,
-    "recent": 0.0,
-    "block_rate": 0.0
-   }
-  },
-  {
-   "key": "eugeneyan",
-   "name": "Eugene Yan",
-   "home": "https://eugeneyan.com/",
-   "feed": "https://eugeneyan.com/rss/",
-   "channel": "ai",
-   "lang": "en",
-   "origin": "seed",
-   "added": "2026-11-14",
-   "trials": [
-    {
-     "date": "2026-11-14",
-     "ok": true,
-     "rows": 30,
-     "recent": 0,
-     "blocked": 1,
-     "on_topic": 17,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-15",
-     "ok": true,
-     "rows": 30,
-     "recent": 0,
-     "blocked": 1,
-     "on_topic": 18,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-16",
-     "ok": true,
-     "rows": 30,
-     "recent": 0,
-     "blocked": 1,
-     "on_topic": 18,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-17",
-     "ok": true,
-     "rows": 30,
-     "recent": 0,
-     "blocked": 1,
-     "on_topic": 18,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-18",
-     "ok": true,
-     "rows": 30,
-     "recent": 0,
-     "blocked": 1,
-     "on_topic": 18,
-     "offtopic": 0,
-     "zh": false
-    }
-   ],
-   "score": {
-    "trials": 5,
-    "ok": 5,
-    "blocked": 5,
-    "on_topic": 0.59,
-    "recent": 0.0,
-    "block_rate": 0.03
-   }
-  },
-  {
    "key": "cand-landian-news",
    "name": "landian.news",
    "home": "https://landian.news/",
@@ -159,15 +19,25 @@
      "on_topic": 9,
      "offtopic": 0,
      "zh": true
+    },
+    {
+     "date": "2026-11-19",
+     "ok": true,
+     "rows": 20,
+     "recent": 20,
+     "blocked": 1,
+     "on_topic": 9,
+     "offtopic": 0,
+     "zh": true
     }
    ],
    "score": {
-    "trials": 1,
-    "ok": 1,
-    "blocked": 0,
+    "trials": 2,
+    "ok": 2,
+    "blocked": 1,
     "on_topic": 0.45,
     "recent": 20.0,
-    "block_rate": 0.0
+    "block_rate": 0.03
    }
   },
   {
@@ -189,14 +59,84 @@
      "on_topic": 1,
      "offtopic": 0,
      "zh": false
+    },
+    {
+     "date": "2026-11-19",
+     "ok": true,
+     "rows": 10,
+     "recent": 10,
+     "blocked": 0,
+     "on_topic": 0,
+     "offtopic": 0,
+     "zh": false
+    }
+   ],
+   "score": {
+    "trials": 2,
+    "ok": 2,
+    "blocked": 0,
+    "on_topic": 0.05,
+    "recent": 10.0,
+    "block_rate": 0.0
+   }
+  },
+  {
+   "key": "cand-arstechnica-com",
+   "name": "arstechnica.com",
+   "home": "https://arstechnica.com/",
+   "feed": "https://arstechnica.com/feed",
+   "channel": "internet",
+   "lang": "en",
+   "origin": "mined",
+   "added": "2026-11-19",
+   "trials": [
+    {
+     "date": "2026-11-19",
+     "ok": true,
+     "rows": 20,
+     "recent": 20,
+     "blocked": 2,
+     "on_topic": 5,
+     "offtopic": 0,
+     "zh": false
+    }
+   ],
+   "score": {
+    "trials": 1,
+    "ok": 1,
+    "blocked": 2,
+    "on_topic": 0.25,
+    "recent": 20.0,
+    "block_rate": 0.1
+   }
+  },
+  {
+   "key": "raschka",
+   "name": "Ahead of AI",
+   "home": "https://magazine.sebastianraschka.com/",
+   "feed": "https://magazine.sebastianraschka.com/feed",
+   "channel": "ai",
+   "lang": "en",
+   "origin": "seed",
+   "added": "2026-11-19",
+   "trials": [
+    {
+     "date": "2026-11-19",
+     "ok": true,
+     "rows": 20,
+     "recent": 1,
+     "blocked": 0,
+     "on_topic": 18,
+     "offtopic": 0,
+     "zh": false
     }
    ],
    "score": {
     "trials": 1,
     "ok": 1,
     "blocked": 0,
-    "on_topic": 0.1,
-    "recent": 10.0,
+    "on_topic": 0.9,
+    "recent": 1.0,
     "block_rate": 0.0
    }
   }
@@ -205,7 +145,9 @@
   "cand-landian-news",
   "cand-science-nasa-gov",
   "cand-arstechnica-com",
-  "interconnects"
+  "interconnects",
+  "huyenchip",
+  "eugeneyan"
  ],
  "rejected_domains": []
 }

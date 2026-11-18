@@ -1,27 +1,28 @@
 {
  "counts": {
-  "archived": 22,
+  "archived": 23,
   "deadline_extracted": 6,
-  "drop:duplicate": 325,
+  "drop:duplicate": 370,
   "drop:empty_summary": 43,
-  "drop:negative_signal": 121,
-  "drop:no_clear_offer": 450,
-  "drop:not_ai": 397,
+  "drop:negative_signal": 122,
+  "drop:no_clear_offer": 473,
+  "drop:not_ai": 425,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 505,
   "google_news_total": 505,
-  "kept_total": 198,
-  "net:gnews_cache_hit": 502,
-  "net:gnews_resolved_net": 3,
-  "net:tco_expanded": 3,
-  "raw_total": 1593
+  "kept_total": 201,
+  "net:gnews_cache_hit": 505,
+  "net:tco_failed": 6,
+  "new_this_run": 3,
+  "raw_total": 1693
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
-   "free-ai-models：按质量排名并附实时状态，另提供一个 OpenAI 兼容端点",
+   "讨论：还有人对大模型回答的啰嗦与谄媚感到疲惫吗",
+   "hive-mind：如何设计协同工作的 AI 体",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
@@ -29,8 +30,7 @@
    "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
    "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录",
    "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
-   "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
-   "grux：Grux AI，免费的开源 AI 代理"
+   "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室"
   ],
   "empty_summary": [
    "@StephNass 分享：该工具可免费试用，试用链接已在原帖中给出",
@@ -103,29 +103,30 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-18T20:57:15+08:00",
+ "generated_at": "2026-11-19T01:38:49+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-18T20:57:14+08:00",
+  "checked_at": "2026-11-19T01:38:31+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 176
+   "ok": 173,
+   "recheck": 1,
+   "unsure": 2
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 3.0,
+ "seconds": 1.6,
  "side": {
   "github_hot": {
-   "drop:duplicate": 16,
+   "drop:duplicate": 15,
    "drop:not_ai": 1,
-   "kept": 13,
+   "kept": 14,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 11,
-   "drop:not_ai_strict": 9,
-   "kept": 16,
-   "raw": 40
+   "drop:negative_signal": 3,
+   "drop:not_ai": 10,
+   "drop:not_ai_strict": 8,
+   "kept": 17,
+   "raw": 38
   }
  }
 }
