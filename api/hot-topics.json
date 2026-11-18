@@ -3,20 +3,13 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 25,
+  "count": 24,
   "items": [
     {
       "id": "hnhot-50535230",
       "title": "GPT‑6.2 Astra 和 Sol",
       "summary": "",
       "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50529612",
-      "title": "Claude Code 团队对验证的看法",
-      "summary": "",
-      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
       "source": "Hacker News"
     },
     {
@@ -27,11 +20,11 @@
       "source": "Hacker News"
     },
     {
-      "id": "hnhot-50535740",
-      "title": "并非所有事情都需要 LLM",
-      "summary": "",
-      "url": "https://newsletter.posthog.com/p/decision-models",
-      "source": "Hacker News"
+      "id": "v2hot-1257817",
+      "title": "如何合法合规的使用海外模型？",
+      "summary": "打算 12 月回国旅游+过年，远程工作 2-3 个月。Claude 和 OpenAI 最近都更新了使用政策不允许在中国大陆地区调用模型，甚至 Amazon Bedrock 上的 Claude 现在也是管辖范围没法用了。Claude 就不想了，有没有什么比较正规的方式可以用其他比如 GPT 模型？我现在查下来 Azure 和 GitHub Copilot 好像可以，有没有类似经验的朋友？",
+      "url": "https://www.v2ex.com/t/1257817",
+      "source": "V2EX"
     },
     {
       "id": "v2hot-1257824",
@@ -41,94 +34,101 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257817",
-      "title": "如何合法合规的使用海外模型？",
-      "summary": "打算 12 月回国旅游+过年，远程工作 2-3 个月。Claude 和 OpenAI 最近都更新了使用政策不允许在中国大陆地区调用模型，甚至 Amazon Bedrock 上的 Claude 现在也是管辖范围没法用了。Claude 就不想了，有没有什么比较正规的方式可以用其他比如 GPT 模型？我现在查下来 Azure 和 GitHub Copilot 好像可以，有没有类似经验的朋友？",
-      "url": "https://www.v2ex.com/t/1257817",
+      "id": "v2hot-1257984",
+      "title": "有个问题，现在还在职的程序员，你们工作中，手搓代码、和用 agent 直接生成代码，各占多少比例？",
+      "summary": "",
+      "url": "https://www.v2ex.com/t/1257984",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257898",
-      "title": "跟风追《持械入宋》，看到的 AI 短剧读音问题的疑惑",
-      "summary": "趁着热度追了最近很火的 AI 短剧《持械入宋》。能明显感觉到，对比最初的 AI 短剧，画面，人物的建模，表情，场景的精细度进步还是很大的。但有个地方实在很别扭：AI 配音有很多读错的，比如主簿，一直读成 zhǔ bào，实际上应该是 zhǔ bù的吧，每次听到都瞬间出戏。很好奇，这种反复稳定读错某一些字词，到底是技术上的短板？还是制作流程的问题？还是故意的？用来区分 AI 和真人？有没有懂行的朋友说一说。",
-      "url": "https://www.v2ex.com/t/1257898",
+      "id": "v2hot-1258000",
+      "title": "codex 知道不耐用，没想到这么不耐用",
+      "summary": "5 天 21 小时后重置 剩余 18% pro 也就够用一天半，感觉我目前的使用强度还没有 claude 5x 时高 ![](",
+      "url": "https://www.v2ex.com/t/1258000",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257928",
-      "title": "claude 账户被暂停，需要请求审核",
-      "summary": "claude 突然掉线 再登陆弹出：您的账户已暂停 由于出现异常活动，我们已于 2026 年 11 月 18 日 11:55 暂停您的账户。您的对话和数据都是安全的。如果您认为此次冻结有误，可以申请账户审核。审核界面：请求审核 请详细说明您在 11 月 18 日 使用账户的情况，以帮助我们全面了解实际情形。您将账户用于什么用途？：友友们 我该怎么办",
-      "url": "https://www.v2ex.com/t/1257928",
+      "id": "v2hot-1258014",
+      "title": "别折腾 Claude 了各位",
+      "summary": "我知道你会想到这几点：设备指纹、IP（家宽）、MAC 地址、Kyc 身份、支付方式、github 仓库标记，还去各种网站上测试自己 ip 纯净度...... 但亲测，claude 还会看：你开发的项目是不是涉及到中国相关的，这点就很致命，哪几个国内开发者能不涉及到国内的项目，专心一意搞海外项目呢？",
+      "url": "https://www.v2ex.com/t/1258014",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257911",
-      "title": "大家现在还用 feishu bot 做 agent team 吗？",
-      "summary": "最近想玩玩 agent team 但是想可以直接跟 agent 对话，在 macmini 因为订阅了 gemini 的会员，（众所周知 gemini 中转封号概率极高） 所以，想着用 agy + cc-connect + feishu bot 做一个 agent team 但是 team 间的沟通方式、每个 agent 的会话缓存的处理，都需要自己设定，要不然 token 消耗就会爆表。目前不考虑的：1. workbuddy 的专家团，我想可以直接和专家对话，专家有记忆，所以 pass 2. claude、codex 目前会话间都可以直接对话，clau",
-      "url": "https://www.v2ex.com/t/1257911",
+      "id": "v2hot-1258007",
+      "title": "闲鱼 搜什么可以搜到 Gemini 年费会员充值",
+      "summary": "",
+      "url": "https://www.v2ex.com/t/1258007",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257916",
-      "title": "都是 AI 的错",
-      "summary": "一切都源于有 AI 之后，工作模式变了。开着几个对话框，十分钟到几个小时验收下，不同任务切来切去，以前那种持续几个小时到心流不存在了。太无聊了，想着自己快 40 了，就来总结下吧。总结问题需要什么，当然要日志啊，虽然大头的 QQ 和微信聊天记录没有，但是各种邮件，QQ 空间，微博，Google 全家桶的数据是有的，我就让 AI 帮我爬下来，整理好我的时间线，越详细越好。第一天还好，第二天整理到和她的事情，十几年前的回忆开始攻击我了。一切都发生在学校社团里。在和她熟识之前，我和四叶，猪猪侠是好朋友，但是我和猪猪侠都渐渐喜欢上了四叶，四叶先是和我走得越来近，暧昧了一段时间后",
-      "url": "https://www.v2ex.com/t/1257916",
+      "id": "v2hot-1258004",
+      "title": "让 claude 帮我搓了一个 3dskill 的集合站！",
+      "summary": "最近做了个站叫 SkillBay.dev。起因是我看到一些 3D Skill 做出来的效果很惊艳，就想试试能不能把这些能力复现出来，再把实现流程和模板整理成可以复用的 Skill 包。现在站上能直接试玩一些 Demo，比如能漂移的卡丁车、能点开看航班状态的机场地勤模拟，还有一个可以开船绕灯塔的小岛。看中哪个，可以下载对应的 Skill 包，按自己用的 Agent 的方式装进去，再拿自己的需求跑一遍。卡丁车的包可以免费下。我自己觉得最实用的是省掉从零试错的那部分 token。比如做一个可交互场景，有了现成模板和流程，就可以少让模型来回重搭场景、改镜头、补交互。具体能省多少，还是得",
+      "url": "https://www.v2ex.com/t/1258004",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257920",
-      "title": "TaroBird：自己写了个 IM，出门也能拿手机指挥电脑上的 Codex、Claude Code 等 Agent",
-      "summary": "用 Codex、Claude Code 的应该都碰到过：任务开着，人一走开，它卡在那等你点个确认，一等就是一下午。被这个烦了很久，就自己做了 TaroBird。现在电脑上的 Agent 照样跑，我在地铁上、饭桌上掏出手机就能看进度、回它的问题、点批准，做完的文件直接发到手机上。它没有自己再造一个 agent，背后跑的就是官方 CLI，Codex、Claude Code、Kimi Code、DeepSeek Harness、Antigravity 都能接。终端里登录的账号、装好的 skills 和 MCP 直接就能用，不用另外买额度。终端里聊到一半的会话，/resume 一下就能",
-      "url": "https://www.v2ex.com/t/1257920",
+      "id": "v2hot-1257989",
+      "title": "为什么 ClaudeCode 运行在我的 Windows Terminal 中滚动的时候会很卡",
+      "summary": "RT 滚动就有顿挫感，一点都不丝滑，在 CMD 中没问题",
+      "url": "https://www.v2ex.com/t/1257989",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257913",
-      "title": "每次新建一个对话，你会让 AI 总结一下这个项目吗",
-      "summary": "还是直接就让 AI 改",
-      "url": "https://www.v2ex.com/t/1257913",
+      "id": "v2hot-1258019",
+      "title": "求购 CLAUDE 号，支付方式为美区的号",
+      "summary": "号和苹果帐号一起交付，谢谢",
+      "url": "https://www.v2ex.com/t/1258019",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257901",
-      "title": "《为什么 AI 反而让我们越来越忙？关于 AI 的 3 个悖论》的讨论",
-      "summary": "看了篇文章《为什么 AI 反而让我们越来越忙？关于 AI 的 3 个悖论》，很有趣。AI 越来越便宜，生产效率越来越高，但人们并没有因此减少工作，反而开始提出更多要求，生产更多内容，完成更多任务。其中的悖论其实可以用一个经典的经济学概念来理解：需求价格弹性。引出了更多问题：为什么有些领域，成本下降以后，需求会大幅增加；而有些领域，即使价格下降很多，需求也没有明显变化？为什么有些技术进步能够创造一个巨大的新市场，而有些技术进步只是让原有的东西变得便宜？要理解这",
-      "url": "https://www.v2ex.com/t/1257901",
+      "id": "v2hot-1258006",
+      "title": "求购近期 Claude 解封号",
+      "summary": "求购近期 Claude 解封号，有的联系我",
+      "url": "https://www.v2ex.com/t/1258006",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257936",
-      "title": "Google AI Studio 为什么会这样了？",
-      "summary": "![]( 问题是昨天出现的，Google AI Studio 在网页上随便问一个问题都要思考五六分钟，随后报 internal error。Gemini、ChatGPT 正常。有没有人知道是为什么？",
-      "url": "https://www.v2ex.com/t/1257936",
+      "id": "v2hot-1257997",
+      "title": "MAICode2 模型，有使用？咋样呢",
+      "summary": "微软推出 MAICode2 模型",
+      "url": "https://www.v2ex.com/t/1257997",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257932",
-      "title": "Claude 是重置过了吗？",
-      "summary": "我周六时候订阅的昨天晚上看是只有 30%了 刚才打开电脑看变成 100%了",
-      "url": "https://www.v2ex.com/t/1257932",
+      "id": "v2hot-1257996",
+      "title": "免费送 195+热门地区 静态住宅 $0.9｜ 纯净原生 IP｜ 动态轮换 $0.38｜AI 采集 / 社媒运营可用",
+      "summary": "ZooProxy 免费送落地家宽住宅 IP 流量 CDK，1 亿 IP 池，新用户五折优惠，$0.38/GB,$0.9/IP！！注册，进入控制台找到 cdk 兑换即可 邀请码：veexfwaif (五折优惠） 注册即刻兑换：|SYSH-NRRY-YFHC|9LGC-PQ2Q-2B6M| |---|---| |MC6J-RUYD-GWKY|DP9Z-59DW-GFM4| |WSHX-ZHTS-EXQE|KNAC-LAU4-YF7M| 需要测试或者咨询地区池，注册之后 联系客服，",
+      "url": "https://www.v2ex.com/t/1257996",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257931",
-      "title": "AI 开发的困扰+1",
-      "summary": "今天有空闲，整理了一下自己的电脑，发现自己电脑 2T 空间都快见底了 分析后发现，大部分空间是被 AI 工具，平时 Vibe 过程中残留下来的“尾巴” 1、有几十 GB 的 docker 不同版本的镜像还有里面未清理的扩展数据卷 2、有项目测试保留的编译历史版本 3、有项目的运行日志 4、还有上百 GB 测试过程中的一些开源模型 5、还有 100 多 GB，AI 工具奇怪的残留 这些日常没太注意的一些开发残留，就占用了几百个 GB 的硬盘空间，然后就是各种测试网上分享的开源的 Vibe app 作品，这",
-      "url": "https://www.v2ex.com/t/1257931",
+      "id": "v2hot-1257992",
+      "title": "Claude Code 的登陆信息显示为 Unknown",
+      "summary": "当我使用网页端访问 Claude 登陆的时候，点击 Account 之后，发现 Where you’re logged in 里面的 Device 和 Location 都能正常显示 VPN 对应的信息，且目前 Claude 网页端可以正常使用 Pro 的所有功能。但是，如果 Claude Code 登陆并 Authorize 的时候，Location 就会显示为 Unknown，感觉这是个潜在的风险，不敢继续使用害怕被封。请问大家使用的时候遇到过这种情况吗？",
+      "url": "https://www.v2ex.com/t/1257992",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257929",
-      "title": "AI 时代, 缺的真的是创意了. V 站这还搞了一个新功能开放倒计时",
-      "summary": "![img](",
-      "url": "https://www.v2ex.com/t/1257929",
+      "id": "v2hot-1257981",
+      "title": "[开源] mitmAny：让 AI 通过 MCP 分析真实抓包流量，支持 Windows / macOS",
+      "summary": "大家好，我开源了 mitmAny，一个把 HTTP/HTTPS 抓包连接到 AI 的桌面工具。它内置 MCP 服务：操作网站或 App 并捕获请求后，可以让 Codex 等 MCP 客户端读取真实请求与响应，分析接口、登录和分页流程。例如：“帮我解释这组请求的分页逻辑，引用请求编号，并标出不确定的推断。” 支持 Windows、macOS 和 Android USB 抓包，也有 JSON 查看、HAR 导入导出、cURL 导出。软件界面提供中英文。**MIT 开源，所有软件功能免费，没有付费版、订阅或功能解锁。** 可选捐赠支持维护；外部 AI 客户端或模型服务的费用另计",
+      "url": "https://www.v2ex.com/t/1257981",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1257903",
-      "title": "我做了个 AI 测试用例生成工具",
-      "summary": "最近在折腾 AI Agent，顺手做了一个「智能测试用例工程师」，已经上架 WorkBuddy 啦！做过软件测试的朋友应该都有体会：拿到一份 PRD，光是理解需求、拆解测试点、设计测试场景，就要花不少时间。所以我就在想，能不能让 AI 帮忙完成这些重复性的工作？于是做了这个小工具 需求理解：根据 PRD 或功能描述，梳理核心业务逻辑 测试点拆解：帮助分析需要验证的",
-      "url": "https://www.v2ex.com/t/1257903",
+      "id": "v2hot-1257980",
+      "title": "[Microsoft] AI Agent 研发实习生 - 北京",
+      "summary": "Microsoft Search Infra team，我们负责微软内部使用的大规模 AI 在线推理平台。我们正在在线系统的运维中使用 AI Agent。它调取日志、监控、部署与配置等多源数据完成问题诊断。积累了数百个真实生产问题，有完整的排查轨迹、评审结果和标注，这为 Agent 的评估与自我进化研究提供了真实的场景和数据。我们重点关注以下前沿方向：**Agent 自我进化**：模型权重不变，让 Agent 从自身经验中自动优化外围系统（Harness），包括提示、技能、工具与记忆，代表工作如 Google Harness²、Meta-Harness、Agentic Ha",
+      "url": "https://www.v2ex.com/t/1257980",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1257977",
+      "title": "Dito：本地模型优先的语音输入，语音指令，会议记录工具",
+      "summary": "纯 Vibe 项目，没有一行手写代码，主打一个不参与 ## 介绍视频 ## 个人觉得比较牛逼的功能 1. HUD 动画很帅气！也支持跟随鼠标 2. 支持为每个 App 设定不同润色风格 3. 随便换模型，用云端的情况下完全可以媲美主流闭源工具 4. 支持多模型 PK，自己录音用真实体验来提升使用效果 ## GitHub **目前 Apple 开发者证书还在申请中，暂时只能通过源码自行编译使用，预计过两天会直接提供可下载的 DMG 安装包。**",
+      "url": "https://www.v2ex.com/t/1257977",
       "source": "V2EX"
     },
     {
@@ -171,13 +171,6 @@
       "title": "Claude Code 代理 30 分钟解决用户跟进问题",
       "summary": "面向产品经理，用 Claude Code 代理在 30 分钟内解决试用用户流失后的跟进问题。",
       "url": "https://x.com/aakashgupta/status/2122833673271873920",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-5523402294",
-      "title": "AMD AI DevDay 巴黎站将于 12 月 12 日举办",
-      "summary": "活动需注册，可动手构建智能体和本地模型，或参加 ROCm 认证的 AMD GPU 架构、编程与优化课程。",
-      "url": "https://x.com/AIatAMD/status/2122860635805413802",
       "source": "X"
     }
   ]

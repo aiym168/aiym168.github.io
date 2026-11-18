@@ -5,16 +5,15 @@
   "drop:duplicate": 324,
   "drop:empty_summary": 41,
   "drop:negative_signal": 118,
-  "drop:no_clear_offer": 446,
-  "drop:not_ai": 391,
+  "drop:no_clear_offer": 450,
+  "drop:not_ai": 388,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 491,
   "google_news_total": 491,
-  "kept_total": 200,
-  "net:gnews_cache_hit": 478,
-  "net:gnews_resolved_net": 13,
-  "net:tco_expanded": 2,
-  "new_this_run": 1,
+  "kept_total": 199,
+  "net:gnews_cache_hit": 491,
+  "net:tco_failed": 6,
+  "new_this_run": 2,
   "raw_total": 1579
  },
  "curation_version": "2026-11-09.c3",
@@ -22,6 +21,7 @@
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
+   "SwarmLLM：开源应用，可多台电脑联网协作运行单机跑不动的大模型",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
@@ -30,8 +30,7 @@
    "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录",
    "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
    "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室",
-   "grux：Grux AI，免费的开源 AI 代理",
-   "freefield：ComfyUI 上开源 Higgsfield"
+   "grux：Grux AI，免费的开源 AI 代理"
   ],
   "empty_summary": [
    "Google 宣布 Gemini 的 Tasks 功能在美国、日本、韩国、加拿大、澳大利亚和印度免费提供",
@@ -104,16 +103,16 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-18T11:41:25+08:00",
+ "generated_at": "2026-11-18T15:59:29+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-18T11:41:24+08:00",
+  "checked_at": "2026-11-18T15:59:29+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 177
+   "ok": 177,
+   "recheck": 1
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 10.5,
+ "seconds": 1.5,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -122,10 +121,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 1,
+   "drop:negative_signal": 2,
    "drop:not_ai": 8,
    "drop:not_ai_strict": 6,
-   "kept": 25,
+   "kept": 24,
    "raw": 40
   }
  }
