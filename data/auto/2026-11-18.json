@@ -1,7 +1,7 @@
 {
   "date": "2026-11-18",
-  "updated_at": "2026-11-18T20:23+08:00",
-  "updated_at_label": "2026-11-18 20:23 Asia/Shanghai",
+  "updated_at": "2026-11-18T20:53+08:00",
+  "updated_at_label": "2026-11-18 20:53 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -35,8 +35,8 @@
       "url": "https://news.ycombinator.com/item?id=50536468",
       "posted_at": "2026-11-18 03:01 Asia/Shanghai",
       "engagement": {
-        "points": 82,
-        "comments": 39
+        "points": 84,
+        "comments": 40
       },
       "original_title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
       "original_summary": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos We’re Yonas and Daniel and we’re building StarSling (<a href=\"https:&#x2F;&#x2F;starsling.dev\">https:&#x2F;&#x2F;starsling.dev</a>), fast GitHub Actions runners with AI agents that ship PRs to continuously improve your tests and workflows.<p>Every CI job gets its own ephemeral sandbox on the fastest Zen 5 machines and NVMe Disk with unlimited concurrency so a burst of agent PRs all run at once. We’re different from other runners because ours come with agents that cut down your CI bill over time. PRs are generated through our CI harness, which runs an agent loop that’s tuned to improve your CI speed and reduce cost.<p>Mastra now merges over 1,800 PRs a month and we got their slowest workflow from 29m 56s on GitHub-host",
@@ -112,7 +112,7 @@
       "posted_at": "2026-11-14 21:17 Asia/Shanghai",
       "engagement": {
         "points": 116,
-        "comments": 71
+        "comments": 74
       },
       "original_title": "Show HN: Zigzag, a native Mac browser for people leaving Arc",
       "original_summary": "Show HN: Zigzag, a native Mac browser for people leaving Arc Hello HN! I am Zigao, a high school student from Shanghai. I am new to HN so hello to y’all!<p>I used Arc everyday, and I never had any issues with it. So when The Browser Company announced that they will shut down Arc on Dec 22 I was devastated. I don’t want to switch back to boring tabs along the top. Everything else i’ve tried is either a Chromium fork or an AI integrated browser that I don’t want. Therefore, I’ve been building my own browser for the last three weeks. Its name is Zigzag, a free and open source Mac browser that works just like Arc, written in Swift and based on WebKit. It is lightweight and fast.<p>Zigzag has:<p>- The stuff you missed from Arc (obviously, that’s the point)...<p>- Import from Arc (or any other b",
@@ -206,11 +206,30 @@
       "url": "https://news.ycombinator.com/item?id=50537272",
       "posted_at": "2026-11-18 04:00 Asia/Shanghai",
       "engagement": {
-        "points": 7,
+        "points": 8,
         "comments": 9
       },
       "original_title": "Ask HN: Anyone else blurting?",
       "original_summary": "Ask HN: Anyone else blurting? Like most, I was stoked on LLMs when they became available.  Particularly on the earlier free tiers where the slightly questionable answers were offset by generous tokens.<p>Now, I&#x27;m finding that having to use this tech is becoming much less fun.  The constant corrections, the constant prompting for greater brevity, the grating certainty and sycophancy.<p>Others probably are forgiving considering the net benefit.  But for me it honestly now feels like a chore, which is reflected in how my frustration is now appearing in how I communicate to it now.<p>Instead of articulating and making my prompts precise, I&#x27;m just straight-out blurting.  Typos, missed words, poor semantic structure - I guess I maybe at some point reasoned that &quot;it will get the pi",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50517840",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "Emittr把已root安卓手机变成物理USB键盘设备",
+      "summary": "利用Linux内核USB gadget子系统，让已root安卓手机模拟物理键盘，应对禁用USB存储的锁定系统。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "mr-anjaneyam",
+      "url": "https://github.com/mr-anjaneyam/Emittr",
+      "posted_at": "2026-11-16 22:18 Asia/Shanghai",
+      "engagement": {
+        "points": 4,
+        "comments": 6
+      },
+      "original_title": "Show HN: Nobody blocks a keyboard – Rooted Android as a physical USB Deck",
+      "original_summary": "Show HN: Nobody blocks a keyboard – Rooted Android as a physical USB Deck Hey HN, \nI built Emittr because, i frequently deal with air-gapped or locked-down systems where USB storage is disabled and third party software cannot be installed. \nNobody blocks a physical keyboard, so i used the Linux Kernel&#x27;s USB gadget subsystem (ConfigFS at &#x2F;dev&#x2F;hidg0) to turn a rooted android phone to a real USB HID Keyboard and mouse. \n1. No installation on target device. It talks to motherboard USB controller, so it works in every locked down OS as well, BIOS, GRUB, etc. \n2. Out of band bridge : we don&#x27;t store passwords or authenticators on rooted phone. Emittr exposes a web UI on LAN, so we can send keystrokes from our main phones. \n3. Types long scripts (chatgpt debuggings), SSH keys o",
       "translated_by": "model"
     },
     {
@@ -385,6 +404,24 @@
       "translated_by": "model"
     },
     {
+      "id": "v2ex-1258100",
+      "source": "V2EX",
+      "category": "科技软件/App 限免",
+      "title": "做了一个 ES、NQ、黄金期货回放与回测工具：Charts Replay",
+      "summary": "做了一个 ES、NQ、黄金期货回放与回测工具：Charts Replay\n我平常主要做日内期货交易，很多人应该和我一样遇到过几个很具体的 K 线技术练习问题：\r\n\r\n1. **TradingView 的 Bar Replay 不能保存回放记录。** 最大问题是关掉页面，上周练的 50 笔单子、撤掉的限价单、当时的胜率和回撤曲线全都没有了，没法跨周对比复盘。\r\n2. **主流专业回测平台对只做期货的人太贵、也太重。** 像 FX Replay 要上到 $35/月的 Pro 才给 CME 期货数据；TradeZella $35/月起，核心卖点是 500+ 券商的实盘自动同步和 AI 日志；NinjaTrader Market Replay 只能在 Windows 上按日期手动下载 Replay 数据包；Tradovate Market Replay 单独开通要 $49/月，而且回放图表不是连续合约，每次换日期还得自己翻对应月份的合约代码。\r\n\r\n\r\n所以我自己写了 **Charts Replay**（[https://chartsreplay.app](https://chartsreplay.app)）。\r\n\r\n---\r\n\r\n## 里面都有哪些标的和数据\r\n\r\n所有期货数据均为**未做向后价差调整的真实成交价**，包含完整电子交易时段（盘前盘后、亚盘、欧盘都在）：\r\n\r\n- **ES（E-mini 标普 500）**：2016-01-03 至 2026-11-01，381 万根 1 分钟 K 线（78 个月度合约按成交量切换拼接，0.25 点最小跳动校验）\r\n- **NQ（E-mini 纳斯达克 100）**：2016-01-03 至 2026-11-01，379 万根 1 分钟 K 线（44 个季度合约按成交量切换拼接，0.25 点最小跳动校验）\r\n- **GC（COMEX",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "RookieRicardo",
+      "url": "https://www.v2ex.com/t/1258100",
+      "posted_at": "2026-11-18 20:40 Asia/Shanghai",
+      "engagement": {
+        "replies": 1
+      },
+      "original_title": "做了一个 ES、NQ、黄金期货回放与回测工具：Charts Replay",
+      "original_summary": "做了一个 ES、NQ、黄金期货回放与回测工具：Charts Replay\n我平常主要做日内期货交易，很多人应该和我一样遇到过几个很具体的 K 线技术练习问题：\r\n\r\n1. **TradingView 的 Bar Replay 不能保存回放记录。** 最大问题是关掉页面，上周练的 50 笔单子、撤掉的限价单、当时的胜率和回撤曲线全都没有了，没法跨周对比复盘。\r\n2. **主流专业回测平台对只做期货的人太贵、也太重。** 像 FX Replay 要上到 $35/月的 Pro 才给 CME 期货数据；TradeZella $35/月起，核心卖点是 500+ 券商的实盘自动同步和 AI 日志；NinjaTrader Market Replay 只能在 Windows 上按日期手动下载 Replay 数据包；Tradovate Market Replay 单独开通要 $49/月，而且回放图表不是连续合约，每次换日期还得自己翻对应月份的合约代码。\r\n\r\n\r\n所以我自己写了 **Charts Replay**（[https://chartsreplay.app](https://chartsreplay.app)）。\r\n\r\n---\r\n\r\n## 里面都有哪些标的和数据\r\n\r\n所有期货数据均为**未做向后价差调整的真实成交价**，包含完整电子交易时段（盘前盘后、亚盘、欧盘都在）：\r\n\r\n- **ES（E-mini 标普 500）**：2016-01-03 至 2026-11-01，381 万根 1 分钟 K 线（78 个月度合约按成交量切换拼接，0.25 点最小跳动校验）\r\n- **NQ（E-mini 纳斯达克 100）**：2016-01-03 至 2026-11-01，379 万根 1 分钟 K 线（44 个季度合约按成交量切换拼接，0.25 点最小跳动校验）\r\n- **GC（COMEX",
+      "translated_by": "free-translate"
+    },
+    {
       "id": "v2ex-1258095",
       "source": "V2EX",
       "category": "其他科技",
@@ -493,6 +530,78 @@
       "translated_by": "free-translate"
     },
     {
+      "id": "ghdeal-reqsgjh-free-coding-agent-models",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "free-coding-agent-models：学生免费 LLM 与编程模型清单",
+      "summary": "每日快照免费 LLM API 与编程代理模型，面向学生，并对比服务商实际提供的额度与「无限」宣传。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "reqsgjh",
+      "url": "https://github.com/reqsgjh/free-coding-agent-models",
+      "posted_at": "2026-11-12 21:23 Asia/Shanghai",
+      "engagement": {
+        "stars": 2
+      },
+      "original_title": "reqsgjh/free-coding-agent-models",
+      "original_summary": "reqsgjh/free-coding-agent-models Daily snapshot of free LLM APIs and coding-agent models for students. Tracks what providers actually offer vs unlimited claims.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-clawlabsai-free-ai-models",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "free-ai-models：免费 AI 模型榜单与统一端点",
+      "summary": "每日更新免费 AI 模型列表，按质量排序并显示实时状态，另提供一个自动路由到最佳模型的 OpenAI 兼容端点。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ClawLabsAI",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "posted_at": "2026-11-18 19:36 Asia/Shanghai",
+      "engagement": {
+        "stars": 277
+      },
+      "original_title": "ClawLabsAI/free-ai-models",
+      "original_summary": "ClawLabsAI/free-ai-models Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-almaeedhi-hani-free-llm-api",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Almaeedhi-Hani/free-LLM-api：免费大模型 API 与自动化脚本",
+      "summary": "仓库提供免费 LLM API 相关代码，并说明如何用 Webhook 结合外部 API 和 Cron 任务实现自动更新与向 Google、Bing 发送收录信号。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Almaeedhi-Hani",
+      "url": "https://github.com/Almaeedhi-Hani/free-LLM-api",
+      "posted_at": "2026-11-13 00:06 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Almaeedhi-Hani/free-LLM-api",
+      "original_summary": "Almaeedhi-Hani/free-LLM-api الأكواد البرمجية للحل السحري (نظام الأتمتة الذاتية والتحديث اللحظي)  عزيزي المطور، قم ببرمجة النظام الداخلي للأتمتة عبر دمج كود الـ Webhook مع الـ API الخارجي لتشغيل التحديث الذاتي التلقائي (Cron Job):  كود إرسال إشارات الأرشفة الفورية (Google & Bing Webhook Trigger)",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Arsh624/llm4jobs-v2：免费运行的岗位雷达",
+      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历和地点筛选后每日邮件推送，可在 GitHub Actions 上免费运行。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "translated_by": "model"
+    },
+    {
       "id": "ghdeal-mnfst-awesome-free-llm-apis",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
@@ -502,7 +611,7 @@
       "deadline": null,
       "author": "mnfst",
       "url": "https://github.com/mnfst/awesome-free-llm-apis",
-      "posted_at": "2026-11-18 20:23 Asia/Shanghai",
+      "posted_at": "2026-11-18 20:40 Asia/Shanghai",
       "engagement": {
         "stars": 13596
       },
@@ -556,9 +665,9 @@
       "deadline": null,
       "author": "open-free-llm-api",
       "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
-      "posted_at": "2026-11-18 19:51 Asia/Shanghai",
+      "posted_at": "2026-11-18 20:31 Asia/Shanghai",
       "engagement": {
-        "stars": 5775
+        "stars": 5776
       },
       "original_title": "open-free-llm-api/awesome-freellm-apis",
       "original_summary": "open-free-llm-api/awesome-freellm-apis 134+ free LLM APIs & AI API keys from 40+ providers. Google Gemini, NVIDIA NIM, Groq, OpenRouter & more. One-click setup for Claude Code, Cursor and Codex.",
@@ -580,60 +689,6 @@
       },
       "original_title": "crytry007yc-glitch/awesome-free-LLM-APIs",
       "original_summary": "crytry007yc-glitch/awesome-free-LLM-APIs ",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-almaeedhi-hani-free-llm-api",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "Almaeedhi-Hani/free-LLM-api：免费大模型 API 与自动化脚本",
-      "summary": "仓库提供免费 LLM API 相关代码，并说明如何用 Webhook 结合外部 API 和 Cron 任务实现自动更新与向 Google、Bing 发送收录信号。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Almaeedhi-Hani",
-      "url": "https://github.com/Almaeedhi-Hani/free-LLM-api",
-      "posted_at": "2026-11-13 00:06 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "Almaeedhi-Hani/free-LLM-api",
-      "original_summary": "Almaeedhi-Hani/free-LLM-api الأكواد البرمجية للحل السحري (نظام الأتمتة الذاتية والتحديث اللحظي)  عزيزي المطور، قم ببرمجة النظام الداخلي للأتمتة عبر دمج كود الـ Webhook مع الـ API الخارجي لتشغيل التحديث الذاتي التلقائي (Cron Job):  كود إرسال إشارات الأرشفة الفورية (Google & Bing Webhook Trigger)",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-enapt-swarmllm",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "enapt/SwarmLLM：本机跑大模型、可跨机协作的免费开源应用",
-      "summary": "免费开源应用，可在自己电脑运行 AI 聊天模型，也能让多台机器联网合跑单机放不下的模型，提供兼容 OpenAI 和 Anthropic 的 API。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "enapt",
-      "url": "https://github.com/enapt/SwarmLLM",
-      "posted_at": "2026-11-18 13:18 Asia/Shanghai",
-      "engagement": {
-        "stars": 89
-      },
-      "original_title": "enapt/SwarmLLM",
-      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-arsh624-llm4jobs-v2",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "Arsh624/llm4jobs-v2：免费运行的岗位雷达",
-      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历和地点筛选后每日邮件推送，可在 GitHub Actions 上免费运行。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Arsh624",
-      "url": "https://github.com/Arsh624/llm4jobs-v2",
-      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "Arsh624/llm4jobs-v2",
-      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
       "translated_by": "model"
     },
     {
@@ -664,9 +719,9 @@
       "deadline": null,
       "author": "mvalentsev",
       "url": "https://github.com/mvalentsev/awesome-free-ai-coding",
-      "posted_at": "2026-11-18 13:49 Asia/Shanghai",
+      "posted_at": "2026-11-18 20:27 Asia/Shanghai",
       "engagement": {
-        "stars": 243
+        "stars": 244
       },
       "original_title": "mvalentsev/awesome-free-ai-coding",
       "original_summary": "mvalentsev/awesome-free-ai-coding 📡 Legal free LLM APIs & coding agents — self-updating, probe-verified twice a week. Free tiers, no-card trials, free models.",
@@ -688,60 +743,6 @@
       },
       "original_title": "amardeeplakshkar/awesome-free-llm-apis",
       "original_summary": "amardeeplakshkar/awesome-free-llm-apis A curated list of permanently free LLM APIs — with rate limits, OpenAI SDK compatibility, available SDKs, speed tiers, and free model lists. No trial credits. No time-limited promos. No credit card required.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-pham-02-awesome-free-ai-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "Pham-02/awesome-free-ai-apis：免费 AI API 清单",
-      "summary": "收录面向开发者的免费 LLM、图像生成、语音、视频和嵌入等 API，附免费额度与文档。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Pham-02",
-      "url": "https://github.com/Pham-02/awesome-free-ai-apis",
-      "posted_at": "2026-11-17 21:41 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "Pham-02/awesome-free-ai-apis",
-      "original_summary": "Pham-02/awesome-free-ai-apis A curated collection of free AI APIs for developers, featuring LLMs, image generation, text-to-speech, video, embeddings, and more. Includes free-tier details and official documentation.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-priestkos-awesome-free-llm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "priestkos/awesome-free-llm-apis：免费 LLM API 清单",
-      "summary": "汇总各类免费 LLM API，提供可折叠服务商卡片、一键复制 base URL，每周刷新。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "priestkos",
-      "url": "https://github.com/priestkos/awesome-free-llm-apis",
-      "posted_at": "2026-11-12 19:06 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "priestkos/awesome-free-llm-apis",
-      "original_summary": "priestkos/awesome-free-llm-apis Directory of every free LLM API: collapsible provider cards, one-click base-URL copy, weekly refresh. Content mirrored verbatim from mnfst/awesome-free-llm-apis (CC0-1.0).",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-rahulsharma-qe-playwright-qa-agent",
-      "source": "GitHub",
-      "category": "科技软件/App 限免",
-      "title": "rahulsharma-qe/playwright-qa-agent：AI 起草测试的 Playwright 框架",
-      "summary": "面向 QA 团队的 Playwright 加 TypeScript 测试框架，由 AI 起草测试用例，需人工审核通过后才合并。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "rahulsharma-qe",
-      "url": "https://github.com/rahulsharma-qe/playwright-qa-agent",
-      "posted_at": "2026-11-17 16:09 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "rahulsharma-qe/playwright-qa-agent",
-      "original_summary": "rahulsharma-qe/playwright-qa-agent A Playwright + TypeScript test framework for QA teams, with AI-drafted tests that a person reviews and approves before they are merged.",
       "translated_by": "model"
     },
     {

@@ -4,25 +4,24 @@
   "deadline_extracted": 6,
   "drop:duplicate": 325,
   "drop:empty_summary": 43,
-  "drop:negative_signal": 120,
-  "drop:no_clear_offer": 446,
-  "drop:not_ai": 398,
+  "drop:negative_signal": 121,
+  "drop:no_clear_offer": 450,
+  "drop:not_ai": 397,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 502,
-  "google_news_total": 502,
-  "kept_total": 199,
-  "net:gnews_cache_hit": 491,
-  "net:gnews_resolved_net": 11,
-  "net:tco_expanded": 1,
-  "new_this_run": 2,
-  "raw_total": 1590
+  "google_news_resolved": 505,
+  "google_news_total": 505,
+  "kept_total": 198,
+  "net:gnews_cache_hit": 502,
+  "net:gnews_resolved_net": 3,
+  "net:tco_expanded": 3,
+  "raw_total": 1593
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
-   "SwarmLLM：开源应用，可多台电脑联网协作运行单机跑不动的大模型",
+   "free-ai-models：按质量排名并附实时状态，另提供一个 OpenAI 兼容端点",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
@@ -48,6 +47,7 @@
    "Command Code 回顾上周更新，包含 GOAT 额度提升、Muse Ember 双倍用量"
   ],
   "negative_signal": [
+   "@malpani 分享：这些学生不应该无能为力地抱怨医学院的恶劣条件，而应该使用我们的免费 AI",
    "@iuditg 分享：印度领先的 AI 实验室估值14亿美元，获得了政府的资助和 GPU，用于在印度构建主权模型",
    "产品通行证新增 OpenRouter、LangChain、Sentry、TextExpander、Ploy，35 款工具",
    "@aakashgupta 分享：富裕家庭曾花最高2.5万美元润色论文，穷学生用 ChatGPT 免费获得类似帮助后，大学",
@@ -58,10 +58,11 @@
    "@PeterDiamandis 分享：超10.5万名女性参与，假阳性未显著增加，放射科医生阅片量减少44%",
    "@alex_prompter 分享：每周分享一个 AI 实用技巧，订阅免费",
    "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页",
-   "@Scobleizer 分享：推文称奥斯汀机器人/AI 活动期间，马斯克每次乘车都获得免费广告，独特设计引发讨论",
-   "我将向 2 人赠送一整年的 Claude Max 免费入场"
+   "@Scobleizer 分享：推文称奥斯汀机器人/AI 活动期间，马斯克每次乘车都获得免费广告，独特设计引发讨论"
   ],
   "no_clear_offer": [
+   "12月20日16:00 GMT 举行，由多位教授讲解 AI 如何区分正常胎儿脑变异与真正异常",
+   "@Fetch_ai 分享：打开指定网站，选定主题与嘉宾后生成文字稿，再等待配音集数上线即可收听",
    "@malpani 分享：该服务为教师搭建定制 AI 家教，使其腾出时间做指导与激励等 AI 无法替代的工作",
    "@mjovanovictech 分享：模型返回自由文本，同一输入可能给出不同结果，也不清楚谁有权批准退款",
    "法学生使用 o1-preview 后，多数任务质量最高提升28%，耗时减少12%至28%",
@@ -71,9 +72,7 @@
    "免费活动 台湾的 AI 时刻：芯片、计算和全球南方台湾在全球 AI 经济中占据着关键节点",
    "Nikesh Arora 表示过去寻找可行攻击路径靠反复试错，如今 AI 可模拟漏洞并发现入侵方式，使攻击多名客户变得更",
    "面向产品经理，该 Claude Code 智能体可在 30 分钟内补上试用用户流失后的跟进环节",
-   "@Newsday 分享：数十名儿童与家长参加免费训练活动，了解该篮球训练学院对 AI 的使用",
-   "@AIatAMD 分享：活动需注册，可动手构建智能体和本地模型，或参加 ROCm 认证的 AMD GPU 架构、编程与优",
-   "面向产品经理，用 Claude Code 代理在 30 分钟内解决试用用户流失后的跟进问题"
+   "@Newsday 分享：数十名儿童与家长参加免费训练活动，了解该篮球训练学院对 AI 的使用"
   ],
   "not_ai": [
    "北卡州立大学基于 Unitree G1 开发农业人形机器人 Howl，用于在无笼养鸡场寻找并拾取地面鸡蛋",
@@ -104,29 +103,28 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-18T20:27:34+08:00",
+ "generated_at": "2026-11-18T20:57:15+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-18T20:27:33+08:00",
+  "checked_at": "2026-11-18T20:57:14+08:00",
   "counts": {
    "gone": 1,
-   "ok": 176,
-   "recheck": 1
+   "ok": 176
   },
   "hidden": 1
  },
- "seconds": 6.2,
+ "seconds": 3.0,
  "side": {
   "github_hot": {
-   "drop:duplicate": 15,
+   "drop:duplicate": 16,
    "drop:not_ai": 1,
-   "kept": 14,
+   "kept": 13,
    "raw": 30
   },
   "hot_topics": {
    "drop:negative_signal": 4,
    "drop:not_ai": 11,
-   "drop:not_ai_strict": 8,
-   "kept": 17,
+   "drop:not_ai_strict": 9,
+   "kept": 16,
    "raw": 40
   }
  }
