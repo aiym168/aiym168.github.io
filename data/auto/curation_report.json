@@ -1,20 +1,21 @@
 {
  "counts": {
-  "archived": 23,
+  "archived": 22,
   "deadline_extracted": 6,
-  "drop:duplicate": 370,
+  "drop:duplicate": 372,
   "drop:empty_summary": 43,
-  "drop:negative_signal": 122,
-  "drop:no_clear_offer": 473,
-  "drop:not_ai": 425,
+  "drop:negative_signal": 123,
+  "drop:no_clear_offer": 488,
+  "drop:not_ai": 423,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 505,
-  "google_news_total": 505,
-  "kept_total": 201,
+  "google_news_resolved": 524,
+  "google_news_total": 524,
+  "kept_total": 204,
   "net:gnews_cache_hit": 505,
-  "net:tco_failed": 6,
-  "new_this_run": 3,
-  "raw_total": 1693
+  "net:gnews_resolved_net": 19,
+  "net:tco_expanded": 7,
+  "new_this_run": 5,
+  "raw_total": 1712
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -22,6 +23,7 @@
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
    "讨论：还有人对大模型回答的啰嗦与谄媚感到疲惫吗",
+   "awesome-free-ai-coding：收录合法的免费 LLM API 和编程智能体",
    "hive-mind：如何设计协同工作的 AI 体",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
@@ -29,8 +31,7 @@
    "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
    "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
    "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录",
-   "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
-   "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室"
+   "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器"
   ],
   "empty_summary": [
    "@StephNass 分享：该工具可免费试用，试用链接已在原帖中给出",
@@ -47,6 +48,7 @@
    "Command Code 回顾上周更新，包含 GOAT 额度提升、Muse Ember 双倍用量"
   ],
   "negative_signal": [
+   "@HealthcareSeema 分享：临床开发需跨研究、申报、数据和团队协调复杂运营，这些智能体提供 AI 辅助的监控",
    "@malpani 分享：这些学生不应该无能为力地抱怨医学院的恶劣条件，而应该使用我们的免费 AI",
    "@iuditg 分享：印度领先的 AI 实验室估值14亿美元，获得了政府的资助和 GPU，用于在印度构建主权模型",
    "产品通行证新增 OpenRouter、LangChain、Sentry、TextExpander、Ploy，35 款工具",
@@ -57,22 +59,21 @@
    "@WuBlockchain 分享：关注1.4万亿美元估值、9000亿美元算力承诺，以及 NVIDIA 财报和美联储纪要",
    "@PeterDiamandis 分享：超10.5万名女性参与，假阳性未显著增加，放射科医生阅片量减少44%",
    "@alex_prompter 分享：每周分享一个 AI 实用技巧，订阅免费",
-   "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页",
-   "@Scobleizer 分享：推文称奥斯汀机器人/AI 活动期间，马斯克每次乘车都获得免费广告，独特设计引发讨论"
+   "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页"
   ],
   "no_clear_offer": [
-   "12月20日16:00 GMT 举行，由多位教授讲解 AI 如何区分正常胎儿脑变异与真正异常",
-   "@Fetch_ai 分享：打开指定网站，选定主题与嘉宾后生成文字稿，再等待配音集数上线即可收听",
-   "@malpani 分享：该服务为教师搭建定制 AI 家教，使其腾出时间做指导与激励等 AI 无法替代的工作",
-   "@mjovanovictech 分享：模型返回自由文本，同一输入可能给出不同结果，也不清楚谁有权批准退款",
-   "法学生使用 o1-preview 后，多数任务质量最高提升28%，耗时减少12%至28%",
-   "@scholarsregion 分享：面向非洲国家本科生、硕士与博士生，申请截止日期为2026年12月31日",
-   "它开源免费，兼容75家以上 LLM 提供商，可读取、编辑并运行代码",
-   "@jasonlk 分享：推文提供 AI 代理介绍链接，并称可免费获取 AI 销售代理指南",
-   "免费活动 台湾的 AI 时刻：芯片、计算和全球南方台湾在全球 AI 经济中占据着关键节点",
-   "Nikesh Arora 表示过去寻找可行攻击路径靠反复试错，如今 AI 可模拟漏洞并发现入侵方式，使攻击多名客户变得更",
-   "面向产品经理，该 Claude Code 智能体可在 30 分钟内补上试用用户流失后的跟进环节",
-   "@Newsday 分享：数十名儿童与家长参加免费训练活动，了解该篮球训练学院对 AI 的使用"
+   "这个免费开源插件可接入 ChatGPT、Claude、Bot、Muse 或 Devin，用于自动处理日常购物",
+   "Google 将为数百万 Gemini 用户提供免费的个人 AI 代理",
+   "使用 Wiz Atlas、Gemini 4 Carbon 和 ChatGPT 5.6 Sol 发现 HTTP/2",
+   "博文介绍如何借 FinOps 方法优化 CPU 工作负载、提升成本可预测性，并释放预算用于 GPU",
+   "@alex_verem 分享：闲置笔记本可变成家中的私有 AI，跑免费开源模型，8GB 内存足够，断网也能运行",
+   "@nebiusai 分享：五家获奖初创分别对应物理 AI 技术栈的一层，各获得 15 万美元 Nebius AI Clo",
+   "@Scenario_gg 分享：提供 17 门课程、90 节课，覆盖图像、视频、3D 与音频，以及工作流、智能体和 AP",
+   "面向企业治理 AI agent 的需求",
+   "@wallstengine 分享：可录制线下会议、生成转录与 AI 摘要，并跨设备同步笔记",
+   "@wallstengine 分享：可录制线下会议、生成转录与 AI 摘要，并跨设备同步笔记",
+   "Dr，Arturo 与 Gina Mauro 讨论 AI 驱动的试验匹配，以及为何仅靠匹配并不够",
+   "@gulf_news 分享：谢赫哈姆丹批准该计划，预计节省 1.51 亿迪拉姆"
   ],
   "not_ai": [
    "北卡州立大学基于 Unitree G1 开发农业人形机器人 Howl，用于在无笼养鸡场寻找并拾取地面鸡蛋",
@@ -103,30 +104,31 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-19T01:38:49+08:00",
+ "generated_at": "2026-11-19T04:50:41+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-19T01:38:31+08:00",
+  "checked_at": "2026-11-19T04:50:32+08:00",
   "counts": {
-   "ok": 173,
+   "gone": 1,
+   "ok": 174,
    "recheck": 1,
-   "unsure": 2
+   "unsure": 3
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 1.6,
+ "seconds": 11.0,
  "side": {
   "github_hot": {
-   "drop:duplicate": 15,
+   "drop:duplicate": 16,
    "drop:not_ai": 1,
-   "kept": 14,
+   "kept": 13,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
+   "drop:negative_signal": 2,
    "drop:not_ai": 10,
    "drop:not_ai_strict": 8,
-   "kept": 17,
-   "raw": 38
+   "kept": 20,
+   "raw": 40
   }
  }
 }

@@ -3,42 +3,21 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 17,
-  "generated_at": "2026-11-19T01:38:49+08:00",
+  "count": 20,
+  "generated_at": "2026-11-19T04:50:41+08:00",
   "items": [
     {
-      "id": "hnhot-50541790",
-      "title": "为什么 Gemini 4 Carbon 需要这么长时间？",
-      "summary": "",
-      "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50548021",
-      "title": "Microsoft AI: Seven new world-class models at scalable price-performance",
-      "summary": "",
-      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50507918",
-      "title": "When AI Knows More Than It Can Offer",
-      "summary": "",
-      "url": "https://medium.com/@smoking2man/when-ai-knows-more-than-it-can-offer-how-training-turns-an-intelligent-assistant-into-a-generator-7e700f05163e",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50548485",
-      "title": "\"Anthropic Is Not a Safe AI Company\" – Coalition Challenges Anthropic Safety",
-      "summary": "",
-      "url": "https://www.businesswire.com/news/home/20261118974464/en/Anthropic-is-Not-a-Safe-AI-Company---Broad-Coalition-of-Scientists-Legal-Scholars-and-Tech-Leaders-Challenge-Anthropics-Safety-Branding-Ahead-of-IPO",
-      "source": "Hacker News"
-    },
-    {
       "id": "hnhot-50547777",
-      "title": "AI Agents Ask Better Questions Than KPMG Accountants in Landmark Audit Trial",
+      "title": "在审计测试中，AI Agent 提出的问题比毕马威会计师提出的问题更好",
       "summary": "",
       "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "hnhot-50549493",
+      "title": "利用 OpenAI 模型推进芯片设计",
+      "summary": "",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
       "source": "Hacker News"
     },
     {
@@ -56,13 +35,6 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258088",
-      "title": "一个 AI 实现的网页滑雪游戏《雪迹》，整个游戏只有 1.7MB",
-      "summary": "发现一个 Fable 5.2 实现的挺特别的独立小游戏，叫《雪迹》（Cold Smoke），是一款主打放松体验的 3D 滑雪游戏，开发者是 Huisky（@huiskylabs） 游戏地址：比较有意思的是，整个游戏只有约 1.7MB，而且没有用到图片、音频、模型或者贴图素材。雪山、树林、天空、极光，甚至背景音乐和风声，都是通过代码实时生成的。游戏本身也很简单，就是在雪山上不断往下滑，可以转向、跳跃、加速，还会经历从白天到黑夜的光照变化。没有排行榜，也没有需要解锁的装备，纯粹就是享受滑雪的过程。",
-      "url": "https://www.v2ex.com/t/1258088",
-      "source": "V2EX"
-    },
-    {
       "id": "v2hot-1258115",
       "title": "作为 shell 的 deepseek harness",
       "summary": "纯好奇，多少人像我一样把 deepseek harness 当作是操作系统的一个 shell 来用的？同样是文字输入和文字输出，dsh shell 相当于提供了以自然语言方式输入输出的能力，界面和可扩展性也都挺不错的，也支持服务器 headless 部署透过 web 来访问，某种意义上，也相当于一个高级的面板/webshell 了我觉得。",
@@ -70,10 +42,31 @@
       "source": "V2EX"
     },
     {
+      "id": "v2hot-1258138",
+      "title": "我用了同一段提示词，让两个模型拆解火锅和猫咖",
+      "summary": "最近在挑生图模型，想听听大家实际用下来的感受。两段提示词，各交给 GPT Image 2.5 和 Nano Banana 2.1 生成一张，没挑图。火锅拆解图上四个中文标签两边都写对了；猫咪咖啡馆差别最大：只有 Nano Banana 画成了等距视角。GPT Image 2.5：四层叠得很紧，标签是加粗红字，铜锅有锤纹。Nano Banana 2.1：每层拆得更散，虾滑画成了丸子和一把勺子，字更细。``` 四川火锅的爆炸拆解图：白色背景上，一只红汤铜锅位于画面下方，上方悬浮分层展开，从上到下依次是牛油锅底块、毛肚、鸭肠、虾滑，每一层旁边有一条细",
+      "url": "https://www.v2ex.com/t/1258138",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1258107",
       "title": "chatgpt 到期变免费账户后再充值，账户之前的重置和额度会丢吗？",
       "summary": "",
       "url": "https://www.v2ex.com/t/1258107",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258140",
+      "title": "最低 9G 显存起步！老 3060 和 16G Mac 都能跑的 9B 前端代码模型（HF 总榜第 7）放出量化版了",
+      "summary": "手头还留着老 3060 12G 的友这回真可以拿出来折腾了 昨天商汤开源的 SenseNova Loop 9B 刚刚补齐了官方量化权重（AWQ 4bit 和 GGUF），直接把本地部署门槛压到了 9~10 GiB 显存起步。这意味着不仅老 3060 12G 能稳吃 64K 长上下文，连 16G 统一内存的 M 系列 Mac 关掉后台都能塞下跑起来 看了一下 Hugging Face 的 Trending 榜单，目前已经冲到了总榜第 7 的位置 ![]( 原版之前在前端代码生成（比如摄影杂志网页、动态海报",
+      "url": "https://www.v2ex.com/t/1258140",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258139",
+      "title": "我是这样开通和入金 U 卡，用于订阅 ChatGPT 和 Google AI 的，Claude 我不知道我没开通过",
+      "summary": "昨天看到我的账号可以试用 ChatGPT Plus，但是要绑定支付方式，我试了招商的 VISA 也被拒绝了，刚好看到就开通了这个卡 不用 KYC，充值 $0.02 让卡里有余额就可以绑定了，支持 USDT 和 USDC 充值，拿来试用最合适了 我的流程是：充值 $0.02 到钱包 -> 开卡填写卡内余额（最低写 $0.01 即可）-> 得到卡号、有效期等信息即可使用 如果没有 USDT 和 USDC 支付方式，可以开通",
+      "url": "https://www.v2ex.com/t/1258139",
       "source": "V2EX"
     },
     {
@@ -119,10 +112,38 @@
       "source": "V2EX"
     },
     {
-      "id": "xhot-xrss-7664749540",
-      "title": "免费报名 AI 产前超声网络研讨会，含证书与回放",
-      "summary": "12月20日16:00 GMT 举行，由多位教授讲解 AI 如何区分正常胎儿脑变异与真正异常。",
-      "url": "https://x.com/ProfAsmaKhalil/status/2123031487733711136",
+      "id": "xhot-xrss-2105500392",
+      "title": "Mistral Vibe 登陆桌面端，欧洲开发者可免费试用 Pro",
+      "summary": "支持本地或远程运行 agent，MacOS 与 Windows 可用，优惠码 LECHONK。",
+      "url": "https://x.com/MistralAI/status/2123073168659141119",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-6853843201",
+      "title": "Gemini 4 Hydrogen 或不再向免费和 Plus 用户开放",
+      "summary": "该模型此前覆盖免费、Plus 及所有 Pro 计划（含试用），现仅限付费 Pro、Ultra 和 Enterprise。",
+      "url": "https://x.com/thtbee_/status/2122922007973318810",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-7832963451",
+      "title": "迪拜批准 93 个 AI agent，节省 81.2 万工时",
+      "summary": "谢赫哈姆丹批准该计划，预计节省 1.51 亿迪拉姆。",
+      "url": "https://x.com/gulf_news/status/2123095242735767724",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-9215977713",
+      "title": "迪拜政府免费 AI 课程，颁发免费证书 | 全球开放，学习 AI（AI）和提示工程",
+      "summary": "迪拜政府免费 AI 课程，颁发免费证书 | 全球开放通过迪拜未来基金会的“百万提示工程师”计划，免费学习 AI（AI）和提示工程。链接：课程详情",
+      "url": "https://x.com/scholar_corner/status/2123055035793965410",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-7193086044",
+      "title": "有人在 GitHub 上建立了一所免费的 AI 大学。不是教程，不是理论。完整的真实世界 AI 系统。循序渐进。每周",
+      "summary": "有人在 GitHub 上建立了一所免费的 AI 大学。不是教程，不是理论。完整的真实世界 AI 系统。循序渐进。第1周 Docker、FastAPI、数据库第2周 自动化数据管道第3周 构建您自己的搜索引擎（BM25）第4周 混合搜索",
+      "url": "https://x.com/mdancho84/status/2123090628254761460",
       "source": "X"
     }
   ]
