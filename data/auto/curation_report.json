@@ -2,20 +2,19 @@
  "counts": {
   "archived": 22,
   "deadline_extracted": 6,
-  "drop:duplicate": 372,
+  "drop:duplicate": 370,
   "drop:empty_summary": 43,
   "drop:negative_signal": 123,
-  "drop:no_clear_offer": 488,
-  "drop:not_ai": 423,
+  "drop:no_clear_offer": 489,
+  "drop:not_ai": 425,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 524,
-  "google_news_total": 524,
-  "kept_total": 204,
-  "net:gnews_cache_hit": 505,
-  "net:gnews_resolved_net": 19,
-  "net:tco_expanded": 7,
-  "new_this_run": 5,
-  "raw_total": 1712
+  "google_news_resolved": 526,
+  "google_news_total": 526,
+  "kept_total": 205,
+  "net:gnews_cache_hit": 524,
+  "net:gnews_resolved_net": 2,
+  "net:tco_expanded": 1,
+  "raw_total": 1714
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -23,7 +22,6 @@
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
    "讨论：还有人对大模型回答的啰嗦与谄媚感到疲惫吗",
-   "awesome-free-ai-coding：收录合法的免费 LLM API 和编程智能体",
    "hive-mind：如何设计协同工作的 AI 体",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
@@ -31,7 +29,8 @@
    "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
    "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
    "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录",
-   "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器"
+   "muse-api：Meta Muse API 示例 (muse.ai) 和托管 MCP 服务器",
+   "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室"
   ],
   "empty_summary": [
    "@StephNass 分享：该工具可免费试用，试用链接已在原帖中给出",
@@ -62,6 +61,7 @@
    "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页"
   ],
   "no_clear_offer": [
+   "@p0 搜索成为 AI Gateway 原生功能，也是 eve 智能体的默认网页搜索，该免费优惠持续至 2027 年 1",
    "这个免费开源插件可接入 ChatGPT、Claude、Bot、Muse 或 Devin，用于自动处理日常购物",
    "Google 将为数百万 Gemini 用户提供免费的个人 AI 代理",
    "使用 Wiz Atlas、Gemini 4 Carbon 和 ChatGPT 5.6 Sol 发现 HTTP/2",
@@ -72,10 +72,10 @@
    "面向企业治理 AI agent 的需求",
    "@wallstengine 分享：可录制线下会议、生成转录与 AI 摘要，并跨设备同步笔记",
    "@wallstengine 分享：可录制线下会议、生成转录与 AI 摘要，并跨设备同步笔记",
-   "Dr，Arturo 与 Gina Mauro 讨论 AI 驱动的试验匹配，以及为何仅靠匹配并不够",
-   "@gulf_news 分享：谢赫哈姆丹批准该计划，预计节省 1.51 亿迪拉姆"
+   "Dr，Arturo 与 Gina Mauro 讨论 AI 驱动的试验匹配，以及为何仅靠匹配并不够"
   ],
   "not_ai": [
+   "@ThematicTrader 分享：他表示几乎不再持有 2026 年 1 月时的任何仓位，当时几乎无法想象 12 至 ",
    "北卡州立大学基于 Unitree G1 开发农业人形机器人 Howl，用于在无笼养鸡场寻找并拾取地面鸡蛋",
    "活动至 12 月 2 日，Pro 与 Premium 五折、充值送额度，用码 SWARMSFLA 得 15 美元免费额度",
    "上传 logo 后可调整颜色、光照与动态，本地运行无需 API key，导出 2K/4K 无缝循环视频",
@@ -86,8 +86,7 @@
    "@ai4bharat 分享：支持22种印度语言的免费设备端手势滑动键盘迎来重大升级",
    "@unusual_whales 分享：美国国家学生信息交换中心初步数据显示，今年秋季计算机与信息科学本科入学人数下降逾1",
    "Dreamina 推出 Seedance 2.5 Flash，等待时间更短、成本更低，适合批量生成与反复调优",
-   "他创办 NVIDIA 并押注 CUDA，公司一度濒临破产，最终豪赌成功",
-   "《崩坏：Nexus Anima》预注册现已开放"
+   "他创办 NVIDIA 并押注 CUDA，公司一度濒临破产，最终豪赌成功"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -104,31 +103,30 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-19T04:50:41+08:00",
+ "generated_at": "2026-11-19T05:20:44+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-19T04:50:32+08:00",
+  "checked_at": "2026-11-19T05:20:44+08:00",
   "counts": {
    "gone": 1,
-   "ok": 174,
-   "recheck": 1,
-   "unsure": 3
+   "ok": 179,
+   "unsure": 2
   },
   "hidden": 1
  },
- "seconds": 11.0,
+ "seconds": 1.9,
  "side": {
   "github_hot": {
-   "drop:duplicate": 16,
+   "drop:duplicate": 15,
    "drop:not_ai": 1,
-   "kept": 13,
+   "kept": 14,
    "raw": 30
   },
   "hot_topics": {
    "drop:negative_signal": 2,
-   "drop:not_ai": 10,
-   "drop:not_ai_strict": 8,
-   "kept": 20,
-   "raw": 40
+   "drop:not_ai": 12,
+   "drop:not_ai_strict": 7,
+   "kept": 17,
+   "raw": 38
   }
  }
 }

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-19",
-  "updated_at": "2026-11-19T04:45+08:00",
-  "updated_at_label": "2026-11-19 04:45 Asia/Shanghai",
+  "updated_at": "2026-11-19T05:17+08:00",
+  "updated_at_label": "2026-11-19 05:17 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -16,8 +16,8 @@
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
       "posted_at": "2026-11-19 04:20 Asia/Shanghai",
       "engagement": {
-        "points": 2,
-        "comments": 1
+        "points": 12,
+        "comments": 4
       },
       "original_title": "Google Gemini's \"Tasks\" Personal Assistant Is Now Free",
       "original_summary": "Google Gemini's \"Tasks\" Personal Assistant Is Now Free ",
@@ -73,7 +73,7 @@
       "url": "https://news.ycombinator.com/item?id=50548343",
       "posted_at": "2026-11-19 00:31 Asia/Shanghai",
       "engagement": {
-        "points": 3,
+        "points": 4,
         "comments": 8
       },
       "original_title": "Ask HN: How do you reach the flow with vibe coding?",
@@ -377,8 +377,8 @@
       "url": "https://github.com/mr-anjaneyam/Emittr",
       "posted_at": "2026-11-16 22:18 Asia/Shanghai",
       "engagement": {
-        "points": 29,
-        "comments": 32
+        "points": 39,
+        "comments": 37
       },
       "original_title": "Show HN: Nobody blocks a keyboard – Rooted Android as a physical USB Deck",
       "original_summary": "Show HN: Nobody blocks a keyboard – Rooted Android as a physical USB Deck Hey HN, \nI built Emittr because, i frequently deal with air-gapped or locked-down systems where USB storage is disabled and third party software cannot be installed. \nNobody blocks a physical keyboard, so i used the Linux Kernel&#x27;s USB gadget subsystem (ConfigFS at &#x2F;dev&#x2F;hidg0) to turn a rooted android phone to a real USB HID Keyboard and mouse. \n1. No installation on target device. It talks to motherboard USB controller, so it works in every locked down OS as well, BIOS, GRUB, etc. \n2. Out of band bridge : we don&#x27;t store passwords or authenticators on rooted phone. Emittr exposes a web UI on LAN, so we can send keystrokes from our main phones. \n3. Types long scripts (chatgpt debuggings), SSH keys o",
@@ -644,39 +644,39 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-precis1onz-tokenation",
+      "id": "ghdeal-sebytzr16-on-device-llm",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "precis1onz/tokenation：日更免费 LLM API 清单",
-      "summary": "汇集 AA 指数高分免费 LLM API，含常态免费与限时羊毛，条目逐条对官方页核实。",
+      "title": "sebytzr16/on-device-llm 是本地离线 AI，免账号免云",
+      "summary": "在 Android 和 Windows 本地运行 GGUF 模型，支持图像视频生成、语音、并行代理和 OpenAI 兼容 API。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "precis1onz",
-      "url": "https://github.com/precis1onz/tokenation",
-      "posted_at": "2026-11-18 20:15 Asia/Shanghai",
+      "author": "sebytzr16",
+      "url": "https://github.com/sebytzr16/on-device-llm",
+      "posted_at": "2026-11-19 03:31 Asia/Shanghai",
       "engagement": {
-        "stars": 54
+        "stars": 25
       },
-      "original_title": "precis1onz/tokenation",
-      "original_summary": "precis1onz/tokenation Daily-updated free LLM API list — top AA-scored picks, free tokens to burn. Evergreen + limited-time lists, every entry verified against official pages. 日更免费 LLM API 羊毛清单｜AA 指数高分精选，token 自由无脑蹬！常态免费+限时羊毛双清单，条目逐条对官方页核实。",
+      "original_title": "sebytzr16/on-device-llm",
+      "original_summary": "sebytzr16/on-device-llm Private, offline AI for Android and Windows: run local LLMs (Gemma 4, Qwen, Ternary Bonsai, any GGUF) with llama.cpp on CUDA or Vulkan, create images and videos on your own GPU, talk hands-free with on-device voice, run parallel agents, cite web research, pair phone and PC, serve an OpenAI-compatible API. No account, no cloud.",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "id": "ghdeal-ennersmai-sluice",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "Arsh624/llm4jobs-v2：免费运行的岗位雷达",
-      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历和地点筛选后每日邮件推送，可在 GitHub Actions 上免费运行。",
+      "title": "ennersmai/sluice：Rust 写的本地免费 LLM 路由",
+      "summary": "开源的本地 LLM 路由与 API 聚合器，用 Rust 编写，可免费使用。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Arsh624",
-      "url": "https://github.com/Arsh624/llm4jobs-v2",
-      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "author": "ennersmai",
+      "url": "https://github.com/ennersmai/sluice",
+      "posted_at": "2026-11-16 15:46 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
-      "original_title": "Arsh624/llm4jobs-v2",
-      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "original_title": "ennersmai/sluice",
+      "original_summary": "ennersmai/sluice Local Free LLM Router (API aggregator written in Rust)",
       "translated_by": "model"
     },
     {
@@ -698,57 +698,57 @@
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-enapt-swarmllm",
+      "id": "ghdeal-precis1onz-tokenation",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "enapt/SwarmLLM：本机跑大模型、可跨机协作的免费开源应用",
-      "summary": "免费开源应用，可在自己电脑运行 AI 聊天模型，也能让多台机器联网合跑单机放不下的模型，提供兼容 OpenAI 和 Anthropic 的 API。",
+      "title": "precis1onz/tokenation：日更免费 LLM API 清单",
+      "summary": "汇集 AA 指数高分免费 LLM API，含常态免费与限时羊毛，条目逐条对官方页核实。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "enapt",
-      "url": "https://github.com/enapt/SwarmLLM",
-      "posted_at": "2026-11-18 13:18 Asia/Shanghai",
+      "author": "precis1onz",
+      "url": "https://github.com/precis1onz/tokenation",
+      "posted_at": "2026-11-18 20:15 Asia/Shanghai",
       "engagement": {
-        "stars": 89
+        "stars": 54
       },
-      "original_title": "enapt/SwarmLLM",
-      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
+      "original_title": "precis1onz/tokenation",
+      "original_summary": "precis1onz/tokenation Daily-updated free LLM API list — top AA-scored picks, free tokens to burn. Evergreen + limited-time lists, every entry verified against official pages. 日更免费 LLM API 羊毛清单｜AA 指数高分精选，token 自由无脑蹬！常态免费+限时羊毛双清单，条目逐条对官方页核实。",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-mvalentsev-awesome-free-ai-coding",
+      "id": "ghdeal-almaeedhi-hani-free-llm-api",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "mvalentsev/awesome-free-ai-coding：免费 LLM API 与编程智能体清单",
-      "summary": "收录合法的免费 LLM API 和编程智能体，每周两次探测校验并自动更新，含免费额度、免绑卡试用和免费模型。",
+      "title": "Almaeedhi-Hani/free-LLM-api：免费大模型 API 与自动化脚本",
+      "summary": "仓库提供免费 LLM API 相关代码，并说明如何用 Webhook 结合外部 API 和 Cron 任务实现自动更新与向 Google、Bing 发送收录信号。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "mvalentsev",
-      "url": "https://github.com/mvalentsev/awesome-free-ai-coding",
-      "posted_at": "2026-11-19 01:34 Asia/Shanghai",
+      "author": "Almaeedhi-Hani",
+      "url": "https://github.com/Almaeedhi-Hani/free-LLM-api",
+      "posted_at": "2026-11-13 00:06 Asia/Shanghai",
       "engagement": {
-        "stars": 246
+        "stars": 0
       },
-      "original_title": "mvalentsev/awesome-free-ai-coding",
-      "original_summary": "mvalentsev/awesome-free-ai-coding 📡 Legal free LLM APIs & coding agents — self-updating, probe-verified twice a week. Free tiers, no-card trials, free models.",
+      "original_title": "Almaeedhi-Hani/free-LLM-api",
+      "original_summary": "Almaeedhi-Hani/free-LLM-api الأكواد البرمجية للحل السحري (نظام الأتمتة الذاتية والتحديث اللحظي)  عزيزي المطور، قم ببرمجة النظام الداخلي للأتمتة عبر دمج كود الـ Webhook مع الـ API الخارجي لتشغيل التحديث الذاتي التلقائي (Cron Job):  كود إرسال إشارات الأرشفة الفورية (Google & Bing Webhook Trigger)",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-katblackcoder-hoshi2star",
+      "id": "ghdeal-arsh624-llm4jobs-v2",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "KATBlackCoder/Hoshi2Star：免费离线日式游戏翻译",
-      "summary": "面向 RPG Maker MV/MZ 日式游戏的 CAT 编辑器与 LLM 编排工具，离线免费且无需 API key。",
+      "title": "Arsh624/llm4jobs-v2：免费运行的岗位雷达",
+      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历和地点筛选后每日邮件推送，可在 GitHub Actions 上免费运行。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "KATBlackCoder",
-      "url": "https://github.com/KATBlackCoder/Hoshi2Star",
-      "posted_at": "2026-10-30 15:51 Asia/Shanghai",
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
       "engagement": {
-        "stars": 2
+        "stars": 0
       },
-      "original_title": "KATBlackCoder/Hoshi2Star",
-      "original_summary": "KATBlackCoder/Hoshi2Star 星 → ★ CAT editor + LLM orchestrator for fan translation of Japanese RPG Maker MV/MZ games. Offline, free, no API key needed.",
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
       "translated_by": "model"
     },
     {
