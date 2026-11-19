@@ -2,19 +2,20 @@
  "counts": {
   "archived": 22,
   "deadline_extracted": 6,
-  "drop:duplicate": 370,
-  "drop:empty_summary": 43,
-  "drop:negative_signal": 123,
+  "drop:duplicate": 371,
+  "drop:empty_summary": 45,
+  "drop:negative_signal": 124,
   "drop:no_clear_offer": 489,
-  "drop:not_ai": 425,
+  "drop:not_ai": 428,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 526,
-  "google_news_total": 526,
-  "kept_total": 205,
-  "net:gnews_cache_hit": 524,
-  "net:gnews_resolved_net": 2,
+  "google_news_resolved": 531,
+  "google_news_total": 531,
+  "kept_total": 203,
+  "net:gnews_cache_hit": 526,
+  "net:gnews_resolved_net": 5,
   "net:tco_expanded": 1,
-  "raw_total": 1714
+  "net:tco_failed": 6,
+  "raw_total": 1719
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -33,6 +34,8 @@
    "iv-studio：您自己的 PC 上的免费开源 AI 电影工作室"
   ],
   "empty_summary": [
+   "按手机、8GB 与 16GB 笔记本、32GB MacBook、游戏 PC 分别推荐可本地运行的免费模型",
+   "Higgsfield MCP 2.0 把创作工具接入 Claude，支持多智能体创作流程，免费 3 天不限量生成",
    "@StephNass 分享：该工具可免费试用，试用链接已在原帖中给出",
    "@HendrixLiu29208 分享：该模型为 OpenAI 今日发布，在 RespanAI 上无需信用卡和额度，仅用",
    "Google 宣布 Gemini 的 Tasks 功能在美国、日本、韩国、加拿大、澳大利亚和印度免费提供",
@@ -42,11 +45,10 @@
    "该图像分类器以免费 API 提供给调查机构和支持服务等经审核组织",
    "Claude Fable 5.2已在 NEAR AI Cloud 上线，今天可在 playground 免费试用",
    "官方称免费版 ChatGPT 现已具备电脑操作能力，并发布演示视频",
-   "@WorkBuddy_AI 分享：模型响应更快、单任务成本更低且内置视觉理解，限时免费试用，有每日免费额度",
-   "@OpenAINewsroom 分享：新工具免费提供给经审核组织，用于检测含 AI 生成图像的儿童性虐待材料",
-   "Command Code 回顾上周更新，包含 GOAT 额度提升、Muse Ember 双倍用量"
+   "@WorkBuddy_AI 分享：模型响应更快、单任务成本更低且内置视觉理解，限时免费试用，有每日免费额度"
   ],
   "negative_signal": [
+   "Google 把自定义域名免费并入 AI Studio，并提供用 Kotlin 与 Jetpack Compose",
    "@HealthcareSeema 分享：临床开发需跨研究、申报、数据和团队协调复杂运营，这些智能体提供 AI 辅助的监控",
    "@malpani 分享：这些学生不应该无能为力地抱怨医学院的恶劣条件，而应该使用我们的免费 AI",
    "@iuditg 分享：印度领先的 AI 实验室估值14亿美元，获得了政府的资助和 GPU，用于在印度构建主权模型",
@@ -57,10 +59,11 @@
    "用 Claude 在45分钟建细分领域免费 Chrome 扩展，以注册或邮箱设门槛，再推广列表",
    "@WuBlockchain 分享：关注1.4万亿美元估值、9000亿美元算力承诺，以及 NVIDIA 财报和美联储纪要",
    "@PeterDiamandis 分享：超10.5万名女性参与，假阳性未显著增加，放射科医生阅片量减少44%",
-   "@alex_prompter 分享：每周分享一个 AI 实用技巧，订阅免费",
-   "@jasonlk 分享：推文称把路演从25页删到12页比新增幻灯片更有助融资，SaaStr AI 可免费指出该删的13页"
+   "@alex_prompter 分享：每周分享一个 AI 实用技巧，订阅免费"
   ],
   "no_clear_offer": [
+   "RedCloud 将与 Stripe 旗下 Privy 合作，在其 AI 贸易基础设施上试点稳定币结算",
+   "用户在 Claude 和 ChatGPT 里说出蛋白质目标等需求，即可直接下单 sweetgreen 餐食",
    "@p0 搜索成为 AI Gateway 原生功能，也是 eve 智能体的默认网页搜索，该免费优惠持续至 2027 年 1",
    "这个免费开源插件可接入 ChatGPT、Claude、Bot、Muse 或 Devin，用于自动处理日常购物",
    "Google 将为数百万 Gemini 用户提供免费的个人 AI 代理",
@@ -70,9 +73,7 @@
    "@nebiusai 分享：五家获奖初创分别对应物理 AI 技术栈的一层，各获得 15 万美元 Nebius AI Clo",
    "@Scenario_gg 分享：提供 17 门课程、90 节课，覆盖图像、视频、3D 与音频，以及工作流、智能体和 AP",
    "面向企业治理 AI agent 的需求",
-   "@wallstengine 分享：可录制线下会议、生成转录与 AI 摘要，并跨设备同步笔记",
-   "@wallstengine 分享：可录制线下会议、生成转录与 AI 摘要，并跨设备同步笔记",
-   "Dr，Arturo 与 Gina Mauro 讨论 AI 驱动的试验匹配，以及为何仅靠匹配并不够"
+   "@wallstengine 分享：可录制线下会议、生成转录与 AI 摘要，并跨设备同步笔记"
   ],
   "not_ai": [
    "@ThematicTrader 分享：他表示几乎不再持有 2026 年 1 月时的任何仓位，当时几乎无法想象 12 至 ",
@@ -103,30 +104,30 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-19T05:20:44+08:00",
+ "generated_at": "2026-11-19T08:47:10+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-19T05:20:44+08:00",
+  "checked_at": "2026-11-19T08:47:10+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 179,
+   "ok": 180,
+   "recheck": 1,
    "unsure": 2
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 1.9,
+ "seconds": 3.6,
  "side": {
   "github_hot": {
-   "drop:duplicate": 15,
+   "drop:duplicate": 16,
    "drop:not_ai": 1,
-   "kept": 14,
+   "kept": 13,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 2,
-   "drop:not_ai": 12,
-   "drop:not_ai_strict": 7,
-   "kept": 17,
-   "raw": 38
+   "drop:negative_signal": 3,
+   "drop:not_ai": 10,
+   "drop:not_ai_strict": 4,
+   "kept": 23,
+   "raw": 40
   }
  }
 }
