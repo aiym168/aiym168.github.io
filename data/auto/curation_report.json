@@ -2,20 +2,20 @@
  "counts": {
   "archived": 22,
   "deadline_extracted": 6,
-  "drop:duplicate": 371,
+  "drop:duplicate": 370,
   "drop:empty_summary": 45,
-  "drop:negative_signal": 124,
-  "drop:no_clear_offer": 489,
-  "drop:not_ai": 428,
+  "drop:negative_signal": 125,
+  "drop:no_clear_offer": 494,
+  "drop:not_ai": 427,
   "drop:too_old_pre2025": 59,
-  "google_news_resolved": 531,
-  "google_news_total": 531,
-  "kept_total": 203,
-  "net:gnews_cache_hit": 526,
-  "net:gnews_resolved_net": 5,
-  "net:tco_expanded": 1,
-  "net:tco_failed": 6,
-  "raw_total": 1719
+  "google_news_resolved": 538,
+  "google_news_total": 538,
+  "kept_total": 206,
+  "net:gnews_cache_hit": 531,
+  "net:gnews_resolved_net": 7,
+  "net:tco_expanded": 2,
+  "new_this_run": 2,
+  "raw_total": 1726
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -48,6 +48,7 @@
    "@WorkBuddy_AI 分享：模型响应更快、单任务成本更低且内置视觉理解，限时免费试用，有每日免费额度"
   ],
   "negative_signal": [
+   "@petergyang 分享：早鸟黑五优惠，订阅其付费通讯即送一个月 Claude Max，兑换码数量非常有限",
    "Google 把自定义域名免费并入 AI Studio，并提供用 Kotlin 与 Jetpack Compose",
    "@HealthcareSeema 分享：临床开发需跨研究、申报、数据和团队协调复杂运营，这些智能体提供 AI 辅助的监控",
    "@malpani 分享：这些学生不应该无能为力地抱怨医学院的恶劣条件，而应该使用我们的免费 AI",
@@ -58,24 +59,24 @@
    "两小时课程讲利用成熟 SEO 策略从 AI 搜索获取线索、佣金和收入，无回放",
    "用 Claude 在45分钟建细分领域免费 Chrome 扩展，以注册或邮箱设门槛，再推广列表",
    "@WuBlockchain 分享：关注1.4万亿美元估值、9000亿美元算力承诺，以及 NVIDIA 财报和美联储纪要",
-   "@PeterDiamandis 分享：超10.5万名女性参与，假阳性未显著增加，放射科医生阅片量减少44%",
-   "@alex_prompter 分享：每周分享一个 AI 实用技巧，订阅免费"
+   "@PeterDiamandis 分享：超10.5万名女性参与，假阳性未显著增加，放射科医生阅片量减少44%"
   ],
   "no_clear_offer": [
+   "他指出更多互动意味着更多 token 消耗，免费 AI 产品仍需有人承担成本",
+   "11月30日前使用代码3BOOKS，可享首月五折、5000点 AI 视频额度及私密 Slack 社群",
+   "PyTorch 是免费的",
+   "班加罗尔的 HappyGreenz 以专利 AI Green Tower 技术，帮助妇女和儿童在家种植新鲜蔬菜",
+   ".@GavinNewsom 刚刚在华盛顿特区的一次 AI 圆桌会议结束后与记者进行了交谈",
    "RedCloud 将与 Stripe 旗下 Privy 合作，在其 AI 贸易基础设施上试点稳定币结算",
    "用户在 Claude 和 ChatGPT 里说出蛋白质目标等需求，即可直接下单 sweetgreen 餐食",
    "@p0 搜索成为 AI Gateway 原生功能，也是 eve 智能体的默认网页搜索，该免费优惠持续至 2027 年 1",
    "这个免费开源插件可接入 ChatGPT、Claude、Bot、Muse 或 Devin，用于自动处理日常购物",
    "Google 将为数百万 Gemini 用户提供免费的个人 AI 代理",
    "使用 Wiz Atlas、Gemini 4 Carbon 和 ChatGPT 5.6 Sol 发现 HTTP/2",
-   "博文介绍如何借 FinOps 方法优化 CPU 工作负载、提升成本可预测性，并释放预算用于 GPU",
-   "@alex_verem 分享：闲置笔记本可变成家中的私有 AI，跑免费开源模型，8GB 内存足够，断网也能运行",
-   "@nebiusai 分享：五家获奖初创分别对应物理 AI 技术栈的一层，各获得 15 万美元 Nebius AI Clo",
-   "@Scenario_gg 分享：提供 17 门课程、90 节课，覆盖图像、视频、3D 与音频，以及工作流、智能体和 AP",
-   "面向企业治理 AI agent 的需求",
-   "@wallstengine 分享：可录制线下会议、生成转录与 AI 摘要，并跨设备同步笔记"
+   "博文介绍如何借 FinOps 方法优化 CPU 工作负载、提升成本可预测性，并释放预算用于 GPU"
   ],
   "not_ai": [
+   "@MythThrazz 分享：它监测读者停留，从常读段落生成后续草稿，无需 API 密钥、含图片，运行在自有 WP-Cr",
    "@ThematicTrader 分享：他表示几乎不再持有 2026 年 1 月时的任何仓位，当时几乎无法想象 12 至 ",
    "北卡州立大学基于 Unitree G1 开发农业人形机器人 Howl，用于在无笼养鸡场寻找并拾取地面鸡蛋",
    "活动至 12 月 2 日，Pro 与 Premium 五折、充值送额度，用码 SWARMSFLA 得 15 美元免费额度",
@@ -86,8 +87,7 @@
    "Salesforce 销售团队为当月成交将试用期从30天改为14天，无证据对客户更好",
    "@ai4bharat 分享：支持22种印度语言的免费设备端手势滑动键盘迎来重大升级",
    "@unusual_whales 分享：美国国家学生信息交换中心初步数据显示，今年秋季计算机与信息科学本科入学人数下降逾1",
-   "Dreamina 推出 Seedance 2.5 Flash，等待时间更短、成本更低，适合批量生成与反复调优",
-   "他创办 NVIDIA 并押注 CUDA，公司一度濒临破产，最终豪赌成功"
+   "Dreamina 推出 Seedance 2.5 Flash，等待时间更短、成本更低，适合批量生成与反复调优"
   ],
   "too_old_pre2025": [
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
@@ -104,29 +104,28 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-19T08:47:10+08:00",
+ "generated_at": "2026-11-19T11:13:17+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-19T08:47:10+08:00",
+  "checked_at": "2026-11-19T11:13:17+08:00",
   "counts": {
+   "gone": 1,
    "ok": 180,
-   "recheck": 1,
-   "unsure": 2
+   "recheck": 1
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 3.6,
+ "seconds": 6.1,
  "side": {
   "github_hot": {
-   "drop:duplicate": 16,
+   "drop:duplicate": 15,
    "drop:not_ai": 1,
-   "kept": 13,
+   "kept": 14,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
-   "drop:not_ai": 10,
-   "drop:not_ai_strict": 4,
-   "kept": 23,
+   "drop:not_ai": 13,
+   "drop:not_ai_strict": 3,
+   "kept": 24,
    "raw": 40
   }
  }
