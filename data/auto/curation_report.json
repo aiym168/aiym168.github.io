@@ -2,17 +2,16 @@
  "counts": {
   "archived": 22,
   "deadline_extracted": 6,
-  "drop:duplicate": 416,
+  "drop:duplicate": 415,
   "drop:empty_summary": 47,
   "drop:negative_signal": 128,
   "drop:no_clear_offer": 520,
-  "drop:not_ai": 458,
+  "drop:not_ai": 460,
   "drop:too_old_pre2025": 59,
   "google_news_resolved": 552,
   "google_news_total": 552,
-  "kept_total": 212,
+  "kept_total": 211,
   "net:gnews_cache_hit": 552,
-  "new_this_run": 1,
   "raw_total": 1840
  },
  "curation_version": "2026-11-09.c3",
@@ -23,13 +22,13 @@
    "Google Gemini 的 Tasks 个人助理现已免费",
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
    "ClearOffice Hub：用自然语言构建企业应用",
-   "free-llm-api-benchmarks：覆盖免费层和 100 万以上上下文的 AI/LLM API 基准",
-   "awesome-free-ai-coding：收录合法的免费 LLM API 和编程智能体",
    "Beatreel：根据一个提示制作讲解短视频",
    "hive-mind：如何设计协同工作的 AI 体",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
-   "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣"
+   "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
+   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
+   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑"
   ],
   "empty_summary": [
    "Github 免费试用 IOS chatbox ai chatboxai AIchatbot aichat LLMs",
@@ -102,16 +101,18 @@
    "新闻稿：Stability AI 宣布为开源 AI 提供 1.01 亿美元资金 @EMostaque https://"
   ]
  },
- "generated_at": "2026-11-20T04:27:44+08:00",
+ "generated_at": "2026-11-20T05:04:43+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-20T04:26:58+08:00",
+  "checked_at": "2026-11-20T05:04:42+08:00",
   "counts": {
-   "ok": 189,
-   "recheck": 1
+   "gone": 1,
+   "ok": 187,
+   "recheck": 1,
+   "unsure": 2
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 1.2,
+ "seconds": 0.6,
  "side": {
   "github_hot": {
    "drop:duplicate": 15,
@@ -120,10 +121,11 @@
    "raw": 30
   },
   "hot_topics": {
+   "drop:duplicate": 1,
    "drop:negative_signal": 5,
    "drop:not_ai": 13,
    "drop:not_ai_strict": 3,
-   "kept": 19,
+   "kept": 18,
    "raw": 40
   }
  }
