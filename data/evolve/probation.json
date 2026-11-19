@@ -29,15 +29,25 @@
      "on_topic": 9,
      "offtopic": 0,
      "zh": true
+    },
+    {
+     "date": "2026-11-20",
+     "ok": true,
+     "rows": 20,
+     "recent": 20,
+     "blocked": 0,
+     "on_topic": 7,
+     "offtopic": 1,
+     "zh": true
     }
    ],
    "score": {
-    "trials": 2,
-    "ok": 2,
+    "trials": 3,
+    "ok": 3,
     "blocked": 1,
-    "on_topic": 0.45,
+    "on_topic": 0.42,
     "recent": 20.0,
-    "block_rate": 0.03
+    "block_rate": 0.02
    }
   },
   {
@@ -69,13 +79,23 @@
      "on_topic": 0,
      "offtopic": 0,
      "zh": false
+    },
+    {
+     "date": "2026-11-20",
+     "ok": true,
+     "rows": 10,
+     "recent": 10,
+     "blocked": 0,
+     "on_topic": 1,
+     "offtopic": 0,
+     "zh": false
     }
    ],
    "score": {
-    "trials": 2,
-    "ok": 2,
+    "trials": 3,
+    "ok": 3,
     "blocked": 0,
-    "on_topic": 0.05,
+    "on_topic": 0.07,
     "recent": 10.0,
     "block_rate": 0.0
    }
@@ -99,15 +119,25 @@
      "on_topic": 5,
      "offtopic": 0,
      "zh": false
+    },
+    {
+     "date": "2026-11-20",
+     "ok": true,
+     "rows": 20,
+     "recent": 20,
+     "blocked": 4,
+     "on_topic": 2,
+     "offtopic": 0,
+     "zh": false
     }
    ],
    "score": {
-    "trials": 1,
-    "ok": 1,
-    "blocked": 2,
-    "on_topic": 0.25,
+    "trials": 2,
+    "ok": 2,
+    "blocked": 6,
+    "on_topic": 0.17,
     "recent": 20.0,
-    "block_rate": 0.1
+    "block_rate": 0.15
    }
   },
   {
@@ -129,14 +159,84 @@
      "on_topic": 18,
      "offtopic": 0,
      "zh": false
+    },
+    {
+     "date": "2026-11-20",
+     "ok": true,
+     "rows": 20,
+     "recent": 1,
+     "blocked": 0,
+     "on_topic": 18,
+     "offtopic": 0,
+     "zh": false
+    }
+   ],
+   "score": {
+    "trials": 2,
+    "ok": 2,
+    "blocked": 0,
+    "on_topic": 0.9,
+    "recent": 1.0,
+    "block_rate": 0.0
+   }
+  },
+  {
+   "key": "oneusefulthing",
+   "name": "One Useful Thing",
+   "home": "https://www.oneusefulthing.org/",
+   "feed": "https://www.oneusefulthing.org/feed",
+   "channel": "ai",
+   "lang": "en",
+   "origin": "seed",
+   "added": "2026-11-20",
+   "trials": [
+    {
+     "date": "2026-11-20",
+     "ok": true,
+     "rows": 20,
+     "recent": 0,
+     "blocked": 0,
+     "on_topic": 13,
+     "offtopic": 0,
+     "zh": false
     }
    ],
    "score": {
     "trials": 1,
     "ok": 1,
     "blocked": 0,
-    "on_topic": 0.9,
-    "recent": 1.0,
+    "on_topic": 0.65,
+    "recent": 0.0,
+    "block_rate": 0.0
+   }
+  },
+  {
+   "key": "langchain-blog",
+   "name": "LangChain Blog",
+   "home": "https://blog.langchain.com/",
+   "feed": "https://blog.langchain.com/rss/",
+   "channel": "dev",
+   "lang": "en",
+   "origin": "seed",
+   "added": "2026-11-20",
+   "trials": [
+    {
+     "date": "2026-11-20",
+     "ok": false,
+     "rows": 0,
+     "recent": 0,
+     "blocked": 0,
+     "on_topic": 0,
+     "offtopic": 0,
+     "zh": null
+    }
+   ],
+   "score": {
+    "trials": 1,
+    "ok": 0,
+    "blocked": 0,
+    "on_topic": 0.0,
+    "recent": 0.0,
     "block_rate": 0.0
    }
   }
