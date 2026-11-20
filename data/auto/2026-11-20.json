@@ -1,199 +1,9 @@
 {
   "date": "2026-11-20",
-  "updated_at": "2026-11-20T16:45+08:00",
-  "updated_at_label": "2026-11-20 16:45 Asia/Shanghai",
+  "updated_at": "2026-11-20T19:14+08:00",
+  "updated_at_label": "2026-11-20 19:14 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
-    {
-      "id": "hn-50568763",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Zeus：面向 AI 语音代理的 Claude Code 式平台",
-      "summary": "ThunderPhone 团队推出，主打无需大量手动调参就能让 AI 电话通话真正可用。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "kolchinski",
-      "url": "https://thunderphone.com/blog/introducing-zeus",
-      "posted_at": "2026-11-20 08:51 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Zeus – Claude Code for AI voice agents",
-      "original_summary": "Show HN: Zeus – Claude Code for AI voice agents Hi everyone, Alex here - I’m one of the founders of ThunderPhone. We’re excited to announce the launch of Zeus, a platform that makes AI phone calls actually work without extensive hand-tuning!<p>You can see a head-to-head I made of the last version of ThunderPhone vs this one here: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=YlkIc3L29lo\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=YlkIc3L29lo</a><p>A (somewhat long) summary:<p>When we started building business phone agents in 2024, we kept running into technical problems that ruined calls, caused by the limits of existing architectures. The two biggest issues were that phone agents misheard callers, and disobeyed scripts or responded in weird ways.<p>Both stemme",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50567622",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Bocalito：可自己定制的备餐计划工具",
-      "summary": "作者厌倦在书本和网站找无法适配自己的食谱，于是做了这款备餐规划工具。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "eskombro",
-      "url": "https://bocalito.com",
-      "posted_at": "2026-11-20 06:47 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Bocalito – A Meal Prep Planner",
-      "original_summary": "Show HN: Bocalito – A Meal Prep Planner I started to meal prep a few months ago, and loved it because it saves me time and frees my mind. Also I spend way less ordering food when I don&#x27;t know what to eat, which is often. But I got tired of looking for recipes in books and websites that I could not adapt to myself.<p>I tried using ChatGPT and Claude with nice prompts to make my meal plans, and the first results were promising, but when I went to the kitchen to make them, I realized that they were anything but consistent: missing ingredients, absurd quantities, missing steps, inconsistent shopping lists... inconsistencies everywhere. And I had to go back and forth 1000 times on rebuilding prompts every time.<p>I am a developer, so I decided to build a tool on my own, for myself, trying ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50566566",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Billet：仅 6MB 的智能体任务管理系统",
-      "summary": "提供 billet-skills 技能集，可在任意支持 skills 的 agent 中用来管理项目任务与目标。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "skytrias",
-      "url": "https://mktwsk.xyz/billet/",
-      "posted_at": "2026-11-20 05:23 Asia/Shanghai",
-      "engagement": {
-        "points": 3,
-        "comments": 0
-      },
-      "original_title": "Show HN: Billet – 6MB (Agentic) Task Management System",
-      "original_summary": "Show HN: Billet – 6MB (Agentic) Task Management System Ever since AI has come, I&#x27;ve got worse at managing project tasks &#x2F; goals. When you develop so fast now, things start lacking behind. For that reason I looked into creating a good set of skills I can use in any agent that support skills.<p>The result is billet-skills which you can find at <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Skytrias&#x2F;billet-skills\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Skytrias&#x2F;billet-skills</a><p>Tasks are Markdown files with JSON frontmatter that live in docs&#x2F;tasks&#x2F;:<p><pre><code>    ---\n    { &quot;id&quot;: 7, &quot;title&quot;: &quot;Add dark mode&quot;, &quot;status&quot;: &quot;ready&quot;, ... }\n    ---\n    ## Outcome\n    The app follows the system&#x27;s light or d",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50564890",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "开源工具 tecr 帮 AI agent 减少返工，免费开放",
-      "summary": "一个免费开源工具，供 AI agent 使用，以减少与 AI 协作时反复返工的问题。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "alexhr",
-      "url": "https://news.ycombinator.com/item?id=50564890",
-      "posted_at": "2026-11-20 03:20 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "The End of Continuous Rework",
-      "original_summary": "The End of Continuous Rework I built a free and open source tool your AI agents can use to reduce the rework we often have to do with AI:<p>https:&#x2F;&#x2F;decapodlabs.github.io&#x2F;tecr",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50564471",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Relic：只根据你保存的内容回答问题的 AI",
-      "summary": "Relic 解决保存的网页、PDF、视频等资源分散难找的问题，让 AI 只基于你保存的内容作答。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Cenga387",
-      "url": "https://relic-app.com",
-      "posted_at": "2026-11-20 02:53 Asia/Shanghai",
-      "engagement": {
-        "points": 4,
-        "comments": 2
-      },
-      "original_title": "Show HN: Relic – An AI that only answers from what you've saved",
-      "original_summary": "Show HN: Relic – An AI that only answers from what you've saved Hi HN, I’m Imran, one of 3 founders building Relic AI<p>We started building Relic because we constantly experienced the problem of saving a lot of resources online such as websites, PDFs, Youtube videos and podcasts, but when we actually needed any of them, we couldn’t find them because they were burried in various places.<p>We were saving stuff in open tabs, bookmarks, watch later lists and folders. But retrieving them when it mattered was a real problem for us. We spent a lot of time digging through our saves and redoing research that was already done just to find that one thing that we needed.<p>So we decided to build a tool that helps you easily save resources, organizes them automatically and helps you find what you need ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50564417",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Lintsure：免费本地代码检查，内置 OWASP 与欧盟 AI 法案规则",
-      "summary": "开源免费代码检查工具，在本地运行，规则来自 OWASP 和欧盟 AI 法案等公开资料。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "DrMax",
-      "url": "https://github.com/lintsure/lintsure",
-      "posted_at": "2026-11-20 02:50 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Lintsure – Free local code check with rules from OWASP, EU AI Act",
-      "original_summary": "Show HN: Lintsure – Free local code check with rules from OWASP, EU AI Act Hi all,<p>Built this because it seemed cool, let me know what you think, anyone that can help me improve it, please reach out here in the comments or via the email placed on the website. It is open-source, its created with help of claude code ofcourse, mapped the rules with what was available publicly to read. I am in the Quality Assurance and Compliance world for 10 years now and found this as interesting side job to build. I am constantly updating it and giving it more strict approach on how it reviewes code, but also trying to remove false flagging and overload of issues that are not really issues, tested it on 190+ repos that were public on github, it gave good results, but still much more to build. The vision i",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50561824",
-      "source": "Hacker News",
-      "category": "AI 产品会员/试用",
-      "title": "Dayfile.app：为脚本和智能体提供只追加式日志记录",
-      "summary": "类似 git log 的脚本与智能体日志服务，按顺序记录、只可追加，目前处于测试阶段并采用 AGPL 许可。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "gilad",
-      "url": "https://github.com/dayfile/dayfile",
-      "posted_at": "2026-11-20 00:00 Asia/Shanghai",
-      "engagement": {
-        "points": 4,
-        "comments": 2
-      },
-      "original_title": "Show HN: Dayfile.app – Append-only log for your scripts and agents",
-      "original_summary": "Show HN: Dayfile.app – Append-only log for your scripts and agents Hi HN, I&#x27;m Gilad.<p>dayfile.app is a &quot;git log for scripts and agents&quot;, with ordered history, append-only logging as foundational characteristics. The service is currently in beta, AGPL-licensed.<p>As I was looking at various ways to record and retrieve a day&#x27;s to-dos, automation and operational outputs (update successes and failures), the idea of  a running event log. dayfile.app&#x27;s primary use case is DevOps tracking and event logging. Building this, I&#x27;ve emphasized simplifying posting - one HTTP request with a title and optional tags (used for filtering when reading the log), AI access via MCP server (an assistant can read, post or close to-dos) and self-hosting as a first-class citizen (`pip ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50561261",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Google 将 Gemini Spark AI 智能体更名为 Tasks",
-      "summary": "谷歌将其 Gemini Spark AI 代理更名为 Tasks",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "adamfeldman",
-      "url": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
-      "posted_at": "2026-11-19 23:21 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 1
-      },
-      "original_title": "Google rebrands its Gemini Spark AI agent as Tasks",
-      "original_summary": "Google rebrands its Gemini Spark AI agent as Tasks ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50559749",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Foolscap：只读你的书稿、绝不代写的写作应用",
-      "summary": "一款旨在增强而非替代人类创造力的写作应用，只阅读你的书稿，不会替你写作。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "atugard",
-      "url": "https://foolscap.works/",
-      "posted_at": "2026-11-19 21:21 Asia/Shanghai",
-      "engagement": {
-        "points": 106,
-        "comments": 85
-      },
-      "original_title": "Show HN: Foolscap – a writing app that reads your book and never writes for you",
-      "original_summary": "Show HN: Foolscap – a writing app that reads your book and never writes for you People are scared of their ability to write and think atrophying, so I wondered: what if I built something that enhanced human creativity instead of destroying it by doing the thinking and writing for people? Foolscap is the result, or at least the first version of that idea that&#x27;s fleshed out enough to share here.<p>It reads as you write and picks out the structure: characters, ideas, threads, what&#x27;s left hanging. You can respond to what it picks out, so there&#x27;s a dialectic between the system and you as the writer. There&#x27;s also an agent on the side, plugged into the same system, so you can ask about your book and fire off actions through conversation. It never writes into your work.<p>The s",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50556343",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Git 钩子：让 AI 模型在提交记录中自报身份",
-      "summary": "作者同时使用多个模型写代码后无法分辨提交出自哪个模型，于是制定了一套让模型自我标识的格式规范。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "orsenthil",
-      "url": "https://github.com/orsenthil/git-hook-model-identification",
-      "posted_at": "2026-11-19 13:18 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Git Hook for Model Identifation",
-      "original_summary": "Show HN: Git Hook for Model Identifation I have started using multiple models (Claude, Codex, Grok via cursor-agent, Z.ai, Deepseek, Hy4 via OpenCode, agy) etc, and I realized that I not able to identify which commit was made by which model.   After looking around and not finding anything, I create a  format specification that will let Model self-identify itself. The goal is a higher ranked model can verify the output of other models and suggest changes. It is similar how to a Senior Engineer will review the output of Junior Engineers. As Humans, we know which model is behaving well, and which we can trust more.<p>My AI based commits have a identification like this.<p>Add retry backoff to fetch<p>Model: claude-sonnet-5-5 harness=claude-code effort=high conf=medium<p>Model: opencode&#x2F;hy",
-      "translated_by": "model"
-    },
     {
       "id": "hn-50556148",
       "source": "Hacker News",
@@ -214,60 +24,60 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50555507",
+      "id": "hn-50550896",
       "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Itsfree.ai 汇总可免费使用的各类模型",
-      "summary": "Itsfree.ai – 您可以免费使用所有模型",
+      "category": "大模型 API 免费额度",
+      "title": "Intrusive.ai：开源 AI 攻击模拟平台",
+      "summary": "开源 AI 攻击模拟平台，可按 OWASP Agentic 应用 Top 10 等标准在非生产环境测试智能体。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "peter_d_sherman",
-      "url": "https://itsfree.ai/models/",
-      "posted_at": "2026-11-19 10:58 Asia/Shanghai",
+      "author": "tomhavoc",
+      "url": "https://intrusive.ai/",
+      "posted_at": "2026-11-19 03:29 Asia/Shanghai",
       "engagement": {
-        "points": 1,
-        "comments": 1
-      },
-      "original_title": "Itsfree.ai – Every model you can use for free",
-      "original_summary": "Itsfree.ai – Every model you can use for free ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50553654",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Show HN：Archiver，用 WebAssembly 构建的免费解压与压缩工具",
-      "summary": "作者把用 Rust 写的归档库打包成浏览器应用，压缩解压全在本地完成，不上传任何数据。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "nzbman",
-      "url": "https://archiver.scryer.media/",
-      "posted_at": "2026-11-19 07:07 Asia/Shanghai",
-      "engagement": {
-        "points": 4,
+        "points": 3,
         "comments": 0
       },
-      "original_title": "Show HN: Archiver – free extract/compaction tool built with WebAssembly",
-      "original_summary": "Show HN: Archiver – free extract/compaction tool built with WebAssembly I maintain a handful of archive libraries written in Rust and I had the crazy idea to throw them all together in a browser app, doing intense computational work, fully local in the browser. I&#x27;ve wanted to learn more about WebAssembly and this was a great opportunity to really see what it can do.<p>Nothing is uploaded, there&#x27;s no server behind it. Everything processes local and it even works offline and on mobile. I made a 7z on my phone in airplane mode today.<p>There&#x27;s a couple other tools like this out there, but they have sign-ups, ads, limitations. Archiver is a free tool for anyone and the only limits are what your disk can hold.<p>For 7z specifically, it also picks the best compression filters for ",
+      "original_title": "Show HN: Intrusive.ai – open-source AI attack simulation",
+      "original_summary": "Show HN: Intrusive.ai – open-source AI attack simulation I created the INTRUSIVE.AI platform to give agent builders the ability to evaluate their agents against OWASP&#x27;s Top 10 for Agentic Applications (and more generally, just to allow for comprehensive testing in a non-production environment).<p>Through my own experience with evaluating agents, I found indirect prompt injection testing to be especially difficult due to the architectural nature of it. To overcome that challenge, I created Interceptor Sandbox - a sandbox that runs agents in a simulated environment where all of the services an agent might rely on (HTTP, MCP, Postgres&#x2F;pgvector to name a few) can be &quot;intercepted&quot; via an injection API to inject malicious payloads.<p>Interceptor Sandbox:\n<a href=\"https:&#x2F;",
       "translated_by": "model"
     },
     {
-      "id": "hn-50553380",
+      "id": "hn-50535157",
       "source": "Hacker News",
-      "category": "其他科技",
-      "title": "AI-Free FOSS Alternatives：不含 AI 的开源替代软件清单",
-      "summary": "无 AI 的 FOSS 替代方案",
+      "category": "大模型 API 免费额度",
+      "title": "Faros Desktop：本地查看 AI 编码工具使用轨迹的 Mac 应用",
+      "summary": "把本地 AI 编码工具的使用情况汇总可视化，并给出让订阅花费更耐用的建议。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "bemtevi",
-      "url": "https://codeberg.org/ethical-foss/ai-free-foss-alternatives",
-      "posted_at": "2026-11-19 06:41 Asia/Shanghai",
+      "author": "sachinag",
+      "url": "https://news.ycombinator.com/item?id=50535157",
+      "posted_at": "2026-11-18 01:42 Asia/Shanghai",
       "engagement": {
-        "points": 5,
+        "points": 4,
+        "comments": 2
+      },
+      "original_title": "Show HN: Faros Desktop, a local app to see your AI traces and extend your usage",
+      "original_summary": "Show HN: Faros Desktop, a local app to see your AI traces and extend your usage Hi HN, I’m Sachin, and I’ve spent the last couple of months working on Faros Desktop, a Mac app that visualizes how you use your local AI coding tools into one place and then makes recommendations to make your subscription spend go further.<p>As agents have replaced hands-on-keyboard work, the team and I wanted to better understand what’s in our session traces. Faros Desktop hydrates with on-device session history in Codex, Claude Code, Github Copilot, and Cursor to let users deep dive into a beautiful visualization of AI session traces. Then based on consolidating that information, the app shows patterns in usage as well as recommendations for ways to save spend through simple changes that we call Power Ups.<p",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50517255",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "Prettywhale.ai推出VS Code扩展，可从数据样本生成数据管道",
+      "summary": "输入CSV或JSON样本，它会分析字段并建议保留项，自动生成繁琐的摄取代码。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "kbiessy",
+      "url": "https://marketplace.visualstudio.com/items?itemName=prettywhale-ai.prettywhale",
+      "posted_at": "2026-11-16 21:11 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
         "comments": 3
       },
-      "original_title": "AI-Free FOSS Alternatives",
-      "original_summary": "AI-Free FOSS Alternatives ",
+      "original_title": "Show HN: Prettywhale.ai – Generate data pipelines from data samples",
+      "original_summary": "Show HN: Prettywhale.ai – Generate data pipelines from data samples Hi HN,<p>I’m Kevin, I run product at PrettyWhale.ai, a small team based in France.<p>We&#x27;ve spent the last few months building a VS Code extension that writes the tedious part of ingestion code from a data sample.<p>How it works: You give it a CSV or JSON sample. It profiles the fields, you pick the ones to keep, then it suggests transformations you can accept, edit or drop. At the end you get a complete Python project in your workspace that includes all the necessary quality controls:\n- Pipeline &amp; transformation code\n- Unit tests\n- Config files\n- Documentation<p>A design choice we care about: the generation of pipeline is driven by a deterministic workflow rather than an endless chat window (no prompting required)",
       "translated_by": "model"
     },
     {
@@ -309,22 +119,22 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50569194",
+      "id": "hn-50568763",
       "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Circled：规划每周安排并与朋友约见面的共享日历",
-      "summary": "面向想安排日程并与朋友约计划的人，提供共享日历，免去反复询问空闲时间。",
+      "category": "大模型 API 免费额度",
+      "title": "Zeus：面向 AI 语音代理的 Claude Code 式平台",
+      "summary": "ThunderPhone 团队推出，主打无需大量手动调参就能让 AI 电话通话真正可用。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "adam1890",
-      "url": "https://getcircledapp.com/",
-      "posted_at": "2026-11-20 09:57 Asia/Shanghai",
+      "author": "kolchinski",
+      "url": "https://thunderphone.com/blog/introducing-zeus",
+      "posted_at": "2026-11-20 08:51 Asia/Shanghai",
       "engagement": {
-        "points": 1,
-        "comments": 2
+        "points": 2,
+        "comments": 0
       },
-      "original_title": "Show HN: Circled – a calendar for planning my week and making plans with friends",
-      "original_summary": "Show HN: Circled – a calendar for planning my week and making plans with friends Hey HN! I built an app for people who like to keep their days organised, while also being able to make plans with friends without always asking &quot;when are you free&quot; and then the plan never leaving the group chat, so I built Circled: a shared calendar for you and your mates. Just want to put it here in case someone might find my app useful! :)<p>Features:\n- Block out non-negotiables: Gym, work and other fixed commitments go in, and this allows for everything else to get planned around them.\n- Daily Notifications: Every morning, a daily brief &#x2F;summary of my plans and to-dos pop up on my phone.\n- See overlapping free time: Overlay your calendar with family &#x2F; friends&#x27; calendars and the gaps",
+      "original_title": "Show HN: Zeus – Claude Code for AI voice agents",
+      "original_summary": "Show HN: Zeus – Claude Code for AI voice agents Hi everyone, Alex here - I’m one of the founders of ThunderPhone. We’re excited to announce the launch of Zeus, a platform that makes AI phone calls actually work without extensive hand-tuning!<p>You can see a head-to-head I made of the last version of ThunderPhone vs this one here: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=YlkIc3L29lo\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=YlkIc3L29lo</a><p>A (somewhat long) summary:<p>When we started building business phone agents in 2024, we kept running into technical problems that ruined calls, caused by the limits of existing architectures. The two biggest issues were that phone agents misheard callers, and disobeyed scripts or responded in weird ways.<p>Both stemme",
       "translated_by": "model"
     },
     {
@@ -344,6 +154,25 @@
       },
       "original_title": "Show HN: Auto PR Labeling with Jev",
       "original_summary": "Show HN: Auto PR Labeling with Jev Hi HN,<p>I built a service to automatically label PRs on GitHub.\nIt reads the PR title, body, and diff and classifies types of the PR, such as &quot;document only&quot;, &quot;breaking change&quot;, and &quot;needs GPU test&quot;.\nIt internally calls Jev for labeling.\nYou can define custom labels and criteria as well as use preset ones.<p>It was useful for me to reduce CI costs. Especially, it helped us with skipping expensive GPU tests.<p>Please feel free to try it out. You don&#x27;t need to sign up to test it with preset labels.\nJust enter a PR URL and see how it works.",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50564417",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Lintsure：免费本地代码检查，内置 OWASP 与欧盟 AI 法案规则",
+      "summary": "开源免费代码检查工具，在本地运行，规则来自 OWASP 和欧盟 AI 法案等公开资料。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "DrMax",
+      "url": "https://github.com/lintsure/lintsure",
+      "posted_at": "2026-11-20 02:50 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Lintsure – Free local code check with rules from OWASP, EU AI Act",
+      "original_summary": "Show HN: Lintsure – Free local code check with rules from OWASP, EU AI Act Hi all,<p>Built this because it seemed cool, let me know what you think, anyone that can help me improve it, please reach out here in the comments or via the email placed on the website. It is open-source, its created with help of claude code ofcourse, mapped the rules with what was available publicly to read. I am in the Quality Assurance and Compliance world for 10 years now and found this as interesting side job to build. I am constantly updating it and giving it more strict approach on how it reviewes code, but also trying to remove false flagging and overload of issues that are not really issues, tested it on 190+ repos that were public on github, it gave good results, but still much more to build. The vision i",
       "translated_by": "model"
     },
     {
@@ -377,144 +206,87 @@
       "url": "https://github.com/onlook-dev/onlook/",
       "posted_at": "2026-11-20 00:34 Asia/Shanghai",
       "engagement": {
-        "points": 116,
-        "comments": 81
+        "points": 119,
+        "comments": 83
       },
       "original_title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
       "original_summary": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers Hey HN, I&#x27;m Daniel, founder of Onlook (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;onlook-dev&#x2F;onlook\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;onlook-dev&#x2F;onlook</a> and onlook.com).<p>Onlook is a desktop app that puts a canvas on top of your real codebase, letting you design directly in code with the agent you already use. Over 25,000 designers and developers have supported the project, 100+ have contributed, and it&#x27;s been the #1 trending repo in the world twice. We just rebuilt the entire product as an agentic design tool, and open-sourced it to the community.<p>Here’s a demo video: (<a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;BogcYWf4siM\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;BogcYWf",
       "translated_by": "model"
     },
     {
-      "id": "hn-50561887",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Cashcraft：免费精确记账，无需分类",
-      "summary": "免费预算应用，不做模糊平均，也无需给每笔消费分类，专注重复支出和余额。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "automattf",
-      "url": "https://cashcraft.app/",
-      "posted_at": "2026-11-20 00:04 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 1
-      },
-      "original_title": "Show HN: Cashcraft – free precise budgeting without categories",
-      "original_summary": "Show HN: Cashcraft – free precise budgeting without categories Hi HN! I&#x27;m Matthew, a software engineer tired of paid budgeting apps doing fuzzy averages and making me categorize every card swipe.<p>Example: which category is Rent on the 1st? Which category is my $114 &quot;Valuemart&quot; purchase last week? \nIt doesn&#x27;t matter IMO. What matters is that Rent repeats every 1st, I have $218 left for spending until Friday, and I can contribute $500 to my Roth IRA next paycheck and have $2,000 left in that account.<p>Bills just cost what they cost, and I need to see exactly when they will come out and how much money that leaves me on that day.<p>For spending, I just move a hunk of cash to a separate &quot;safe to spend&quot; account every Friday and try not to blow through it. This me",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50559545",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Globus：把每日国际新闻标注在地球仪发生地上的 iOS 应用",
-      "summary": "一款 iOS 应用，每天发布一期约 20 至 30 条新闻，按事件发生地点标注在地球仪上。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "hpeikemo",
-      "url": "https://globus.earth/",
-      "posted_at": "2026-11-19 21:01 Asia/Shanghai",
-      "engagement": {
-        "points": 7,
-        "comments": 1
-      },
-      "original_title": "Show HN: Globus – Daily world news, placed on the globe where it happened (iOS)",
-      "original_summary": "Show HN: Globus – Daily world news, placed on the globe where it happened (iOS) I created Globus, to stay informed about the world.<p>The app was born out of frustration with how ignorant I was getting about the world outside of the media bubble. It was true when I lived in Norway, and the ignorance got to a whole other level after moving to the US.<p>Globus publishes one edition per day, 20 to 30 stories, laid out on a globe. It lets us see places that rarely make it into the news cycle, simply because there&#x27;s only so much room for the navelgazing stories that usually saturate our media diet.<p>Spin the globe freely to browse, tap a story for a short summary, and dive into background information and original reporting if you are curious. Done. No doomscrolling.<p>The app is ad-free, ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50557171",
-      "source": "Hacker News",
-      "category": "云服务/GPU/开发者资源",
-      "title": "自托管相册 DCIM：上传照片后可嵌入个人网站",
-      "summary": "部署在自己的 Cloudflare 账号可获 10GB 免费存储，上传后把嵌入代码贴进 HTML 或 Markdown 即可。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "aspizu",
-      "url": "https://github.com/aspizu/dcim",
-      "posted_at": "2026-11-19 15:45 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 3
-      },
-      "original_title": "Show HN: Self-hosted photos app for the Indie Web",
-      "original_summary": "Show HN: Self-hosted photos app for the Indie Web I built DCIM for people who have a personal website and want an easy way to put photos on it. You upload photos from your browser and paste the embed into HTML or Markdown. You can also send someone a link to the album.<p>You host DCIM in your own Cloudflare account, which gives you 10GB of free storage. Using another S3-compatible bucket is also possible. I know I use the term &quot;self-hosted&quot; loosely here, but the main benefit of such small software is that you can modify it to your liking (customizable software!) and quickly deploy it on Cloudflare for free.",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50555010",
+      "id": "hn-50547235",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
-      "title": "Solid 2.0 配 Lily 设计系统组件，招募 alpha 测试者",
-      "summary": "Lily Design System 已补齐 Solid 2.0 组件，作者邀请开发者试用新教程并提供反馈。",
+      "title": "Terminess：按官方规则运行 Claude Code 与 Codex CLI 的终端工具",
+      "summary": "开发者自建终端 harness，用自己的订阅合规地同时运行官方 Claude Code 和 Codex。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "jph",
-      "url": "https://news.ycombinator.com/item?id=50555010",
-      "posted_at": "2026-11-19 09:39 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Solid 2.0 + Lily Design System = seeking alpha testers",
-      "original_summary": "Show HN: Solid 2.0 + Lily Design System = seeking alpha testers Solid 2.0 is now ready after five years, and a huge congratulations to Ryan Carniato and the entire Solid team.<p>I maintain Lily Design System which provides UI&#x2F;UX components for Svelte, React, Vue, and more. I have just now completed Solid 2.0 components, and I&#x27;m seeking alpha testers to try the new tutorial and coach me on what needs fixing and improving.<p><a href=\"http:&#x2F;&#x2F;lilydesignsystem.com&#x2F;tutorials&#x2F;solid\" rel=\"nofollow\">http:&#x2F;&#x2F;lilydesignsystem.com&#x2F;tutorials&#x2F;solid</a><p>This Solid 2.0 port is based on the React components with Claude Opus doing the translation, so I expect there will be AI errors along the way. Lily is free open source and I&#x27;m working on it for publ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50552827",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Show HN：Toggles，一款基于数据分析的免费网页游戏",
-      "summary": "玩家每天根据公开数据设定开关和旋钮，作者为乐趣开发，并用 Claude Code 辅助完成。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "mattw2121",
-      "url": "https://toggles.codewalkers.net",
-      "posted_at": "2026-11-19 06:01 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 2
-      },
-      "original_title": "Show HN: Toggles, a game based on analyzing data",
-      "original_summary": "Show HN: Toggles, a game based on analyzing data Hey, I&#x27;m Matt. This is a free game I built in the spirit of the old internet. Just built for fun and no other reason. I built a version 2-3 years ago by hand. This time I built it assisted by Claude Code.<p>Every day you set a toggle. On&#x2F;off, dials, etc. Every single one of them follows some piece of public data.<p>The board locks at 23:00 UTC and is scored. You then find out what was right or wrong. On some toggles there&#x27;s also an indicator if you are hot or cold. The goal is to get them all right :).<p>Hints are given along at checkpoints along the way.<p>I have an open beta beginning November 30th. Would love to get feedback on the concept, what works, what doesn&#x27;t, etc so that season 1 goes off without too many hitche",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50550896",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Intrusive.ai：开源 AI 攻击模拟平台",
-      "summary": "开源 AI 攻击模拟平台，可按 OWASP Agentic 应用 Top 10 等标准在非生产环境测试智能体。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "tomhavoc",
-      "url": "https://intrusive.ai/",
-      "posted_at": "2026-11-19 03:29 Asia/Shanghai",
+      "author": "nsokin",
+      "url": "https://github.com/Terminess/terminess",
+      "posted_at": "2026-11-18 23:09 Asia/Shanghai",
       "engagement": {
         "points": 3,
         "comments": 0
       },
-      "original_title": "Show HN: Intrusive.ai – open-source AI attack simulation",
-      "original_summary": "Show HN: Intrusive.ai – open-source AI attack simulation I created the INTRUSIVE.AI platform to give agent builders the ability to evaluate their agents against OWASP&#x27;s Top 10 for Agentic Applications (and more generally, just to allow for comprehensive testing in a non-production environment).<p>Through my own experience with evaluating agents, I found indirect prompt injection testing to be especially difficult due to the architectural nature of it. To overcome that challenge, I created Interceptor Sandbox - a sandbox that runs agents in a simulated environment where all of the services an agent might rely on (HTTP, MCP, Postgres&#x2F;pgvector to name a few) can be &quot;intercepted&quot; via an injection API to inject malicious payloads.<p>Interceptor Sandbox:\n<a href=\"https:&#x2F;",
+      "original_title": "Show HN: Terminess, a harness that runs the official Claude Code and Codex CLIs",
+      "original_summary": "Show HN: Terminess, a harness that runs the official Claude Code and Codex CLIs TLDR: I built a terminal (harness) for Claude Code and Codex that works the official way, on your own subs. Anthropic stopped Claude subs working in 3P harnesses in Feb, 9 months of suffering later, I decided to build one that plays by their rules, a terminal (harness) that runs Claude Code and Codex (and others), together. (I am not claiming that this is a Deepseek harness killer lol, but it works really well for me)<p>I use a number of agents in tandem, on my laptop and my server. Checking them from my phone took 4+ apps and I was losing hours away from my laptop, and copying context between them ate the rest. Terminess puts it all in one place.<p>It complies with all their terms. Terminess runs the real clau",
       "translated_by": "model"
     },
     {
-      "id": "hn-50547444",
+      "id": "hn-50539204",
       "source": "Hacker News",
       "category": "AI 开发工具与编程助手",
-      "title": "免费开源的 FLAC、MP3、DST 解码器，速度约为 FFmpeg 两倍",
-      "summary": "三个 MIT 许可的 C++17 音频解码器，无依赖，桌面与 Apple M4 上均快于 FFmpeg。",
+      "title": "Show HN：DecksMD 本地优先的 Markdown 闪卡工具",
+      "summary": "基于 Markdown 语法的闪卡应用与 Obsidian 插件，数据保存在本地。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "georgk",
-      "url": "https://orpheic.com/decoders/",
-      "posted_at": "2026-11-18 23:26 Asia/Shanghai",
+      "author": "hotpatato",
+      "url": "https://decksmd.app/",
+      "posted_at": "2026-11-18 06:31 Asia/Shanghai",
       "engagement": {
         "points": 2,
         "comments": 0
       },
-      "original_title": "Show HN: FLAC, MP3 and DST decoders, about 2x faster than FFmpeg's (MIT)",
-      "original_summary": "Show HN: FLAC, MP3 and DST decoders, about 2x faster than FFmpeg's (MIT) I&#x27;ve published three audio decoders under the MIT licence: FLAC, MP3, and DST (the lossless compression inside SACDs). C++17, no dependencies.<p>How many times faster they run than FFmpeg&#x27;s own decoders:<p><pre><code>  Desktop (i9-14900K): FLAC x2.37 faster   MP3 x2.25 faster   DST x2.01 faster\n  Apple M4:            FLAC x3.45 faster   MP3 x2.76 faster   DST x2.06 faster\n  Raspberry Pi 5:      FLAC x1.58 faster   MP3 x2.27 faster   DST x2.89 faster\n</code></pre>\nFLAC and DST output is identical to FFmpeg&#x27;s<p>The code is here: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;orpheic&#x2F;orpheic-decoders\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;orpheic&#x2F;orpheic-decoders</a><p>tools&#x2F;bench.sh ",
+      "original_title": "Show HN: DecksMD – local first, Markdown flashcards app and plugin for Obsidian",
+      "original_summary": "Show HN: DecksMD – local first, Markdown flashcards app and plugin for Obsidian I built a flashcards app and plugin for obsidian, based on markdown syntax. You use headers and paragraphs, tables or highlighted text to create flashcards and cloze deletions, which you can then review using FSRS algorithm. Everything stays local, it uses a SQL lite db internally to keep track of state and keep the markdown document clean.<p>I started this project about a year ago when I was facing the problem that I needed flashcards to memorise thousands concepts and language vocabulary I kept forgetting and I hated every flashcards app out there so I decided to build something of my own and I started with markdown and obsidian. Fast forward one year later, I released the iOS and android apps too and a direc",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50537272",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "讨论：还有人对大模型回答的啰嗦与谄媚感到疲惫吗",
+      "summary": "作者称早期免费额度慷慨时还很有兴致，如今不断纠错、反复要求简洁让使用体验变差。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "l33tbro",
+      "url": "https://news.ycombinator.com/item?id=50537272",
+      "posted_at": "2026-11-18 04:00 Asia/Shanghai",
+      "engagement": {
+        "points": 8,
+        "comments": 10
+      },
+      "original_title": "Ask HN: Anyone else blurting?",
+      "original_summary": "Ask HN: Anyone else blurting? Like most, I was stoked on LLMs when they became available.  Particularly on the earlier free tiers where the slightly questionable answers were offset by generous tokens.<p>Now, I&#x27;m finding that having to use this tech is becoming much less fun.  The constant corrections, the constant prompting for greater brevity, the grating certainty and sycophancy.<p>Others probably are forgiving considering the net benefit.  But for me it honestly now feels like a chore, which is reflected in how my frustration is now appearing in how I communicate to it now.<p>Instead of articulating and making my prompts precise, I&#x27;m just straight-out blurting.  Typos, missed words, poor semantic structure - I guess I maybe at some point reasoned that &quot;it will get the pi",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50517840",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "Emittr把已root安卓手机变成物理USB键盘设备",
+      "summary": "利用Linux内核USB gadget子系统，让已root安卓手机模拟物理键盘，应对禁用USB存储的锁定系统。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "mr-anjaneyam",
+      "url": "https://github.com/mr-anjaneyam/Emittr",
+      "posted_at": "2026-11-16 22:18 Asia/Shanghai",
+      "engagement": {
+        "points": 57,
+        "comments": 63
+      },
+      "original_title": "Show HN: Nobody blocks a keyboard – Rooted Android as a physical USB Deck",
+      "original_summary": "Show HN: Nobody blocks a keyboard – Rooted Android as a physical USB Deck Hey HN, \nI built Emittr because, i frequently deal with air-gapped or locked-down systems where USB storage is disabled and third party software cannot be installed. \nNobody blocks a physical keyboard, so i used the Linux Kernel&#x27;s USB gadget subsystem (ConfigFS at &#x2F;dev&#x2F;hidg0) to turn a rooted android phone to a real USB HID Keyboard and mouse. \n1. No installation on target device. It talks to motherboard USB controller, so it works in every locked down OS as well, BIOS, GRUB, etc. \n2. Out of band bridge : we don&#x27;t store passwords or authenticators on rooted phone. Emittr exposes a web UI on LAN, so we can send keystrokes from our main phones. \n3. Types long scripts (chatgpt debuggings), SSH keys o",
       "translated_by": "model"
     },
     {
@@ -556,23 +328,154 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "hn-50562508",
+      "id": "hn-50540777",
       "source": "Hacker News",
-      "category": "云服务/GPU/开发者资源",
-      "title": "AgentMall：让 AI 代理在 9 家生鲜商家自动结账",
-      "summary": "团队为 9 家头部生鲜商家做可靠结账自动化，处理反爬、登录、验证码和结账页变动。",
+      "category": "大模型 API 免费额度",
+      "title": "Spillway：macOS 原生 HTTP API 压测工具",
+      "summary": "作者用多年 JMeter 后自制的 macOS 原生 HTTP API 压测应用，强调原生体验、可视化界面和更现代的功能。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "desilva78_",
-      "url": "https://getagentmall.com",
-      "posted_at": "2026-11-20 00:46 Asia/Shanghai",
+      "author": "edwardaux",
+      "url": "https://spillwayapp.com/",
+      "posted_at": "2026-11-18 09:38 Asia/Shanghai",
       "engagement": {
-        "points": 18,
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Spillway – HTTP API load testing on macOS",
+      "original_summary": "Show HN: Spillway – HTTP API load testing on macOS I&#x27;ve used JMeter for years — it&#x27;s free and has a truly amazing amount of functionality - but it doesn&#x27;t really feel like a Mac app. There&#x27;s also a bunch of other more modern features that I wish it had.<p>Spillway is scratch-my-own-itch app... a culmination of things I&#x27;ve wished for over the years: native macOS app, visual test plans, easy-to-use variable substitution, built-in support for modern OAuth patterns, ability to compare previous runs graphically, and no wild per-user&#x2F;request pricing.<p>Genuinely pleased with how well it has turned out. Happy to field any questions or feature requests",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50532515",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Show HN：Quebec API 提供语音词级时间戳，75% 在 20ms 内",
+      "summary": "Yarn 为视频剪辑推出的 Quebec API，可从语音生成精确词级时间戳，75% 在 20ms 内。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "jasperstory",
+      "url": "https://quebec.yarn.so",
+      "posted_at": "2026-11-17 23:16 Asia/Shanghai",
+      "engagement": {
+        "points": 39,
         "comments": 5
       },
-      "original_title": "Show HN: AgentMall – Let your AI agent buy groceries",
-      "original_summary": "Show HN: AgentMall – Let your AI agent buy groceries Hey HN, we’re Nel and Kosi.<p>We noticed personal agents like Instinct, Muse were terrible at buying stuff. Most of the time the checkout would fail.<p>So we built reliable automations for agents to checkout at 9 leading grocery merchants.<p>We grapple with anti bot, logins, OTP codes, and changing checkout structures.<p>Loved revisiting this stuff given our backgrounds sneaker-botting and building computer use models. Honestly full circle haha.<p>It currently works on these sites with ~70% checkout success rate:<p>- Walmart\n- Albertsons\n- Ocado\n- Wegmans\n- FreshDirect\n- Best Buy\n- Instacart<p>Our goal is to hill climb to 90%+ across each.<p>Test keys are free and run the real flow without placing an order.<p>New accounts get 10 free com",
+      "original_title": "Show HN: An API for word timestamps from speech, 75% within 20ms",
+      "original_summary": "Show HN: An API for word timestamps from speech, 75% within 20ms Hey HN, we&#x27;re Yarn (W24) and we make a video editing app for startups, and we built Quebec (<a href=\"https:&#x2F;&#x2F;quebec.yarn.so\">https:&#x2F;&#x2F;quebec.yarn.so</a>), an API that gives you accurate word timestamps from speech. We needed it because cutting a word even 50ms off from its true timing can ruin talking head footage (examples in the write up).<p>Accurate word timestamps usually come from a forced aligner, which takes the speech audio and a transcript and works out exactly when each word starts and ends. We weren&#x27;t satisfied with the accuracy of Montreal Forced Aligner (MFA) or new models like ElevenLabs Cue (<a href=\"https:&#x2F;&#x2F;elevenlabs.io&#x2F;blog&#x2F;cue-aligner\" rel=\"nofollow\">https:&#",
       "translated_by": "model"
+    },
+    {
+      "id": "hn-50522121",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "miform：免费自托管的 Go 联系表单工具",
+      "summary": "基于 PocketBase 的 MIT 许可自托管联系表单，可替代付费 SaaS。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Lord_Zero",
+      "url": "https://github.com/VictorioBerra/miform",
+      "posted_at": "2026-11-17 03:46 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 1
+      },
+      "original_title": "Show HN: Self-Hosted Contact Forms for Your Web App in Go",
+      "original_summary": "Show HN: Self-Hosted Contact Forms for Your Web App in Go I have been moving off of large complex CMS platforms and I realized most of my sites could be static sites with a contact form. There are paid SaaS options out there, but miform is free self-hosted MIT!<p>It is built on PocketBase <a href=\"https:&#x2F;&#x2F;pocketbase.io&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;pocketbase.io&#x2F;</a>, so you get sqlite db, backups, email, API, logging and ability to extend it in any way you can imagine via hooks.<p>I have considered combining it into one project with mistatic, so you get the static website hosting component, and the forms handling in one binary&#x2F;container",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50517001",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "Hosts Tray内置HTTPS代理并可切换hosts文件条目",
+      "summary": "通过Windows托盘或macOS菜单栏，按组切换hosts文件条目，并启停内置HTTPS代理。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "maxmart",
+      "url": "https://github.com/maxmart/hoststray",
+      "posted_at": "2026-11-16 20:42 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 0
+      },
+      "original_title": "Show HN: Hosts Tray – hosts file switcher with built-in HTTPS proxy",
+      "original_summary": "Show HN: Hosts Tray – hosts file switcher with built-in HTTPS proxy Hi, I&#x27;m Max. I&#x27;ve used many hosts file switchers over the years to do local development with real hostnames&#x2F;domains, combined with HTTPS reverse-proxies.<p>I made HostsTray to combine both into one tool.<p>Through a tray icon (Windows) or menu bar (macOS) you can toggle groups of hosts file entries, and toggle the HTTPS proxy.<p>The HTTPS proxy first installs a local CA cert into your keychain&#x2F;certificate store, and then uses it to create certificates for each domain that passes through the proxy.<p>You can configure the proxy to route different paths to different ports locally. Websockets are also supported.<p>A common problem when editing hosts file is to make Chrome&#x2F;other browser actually update",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50512735",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "已有服务可将 Cliniko 发票自动迁移到 QuickBooks",
+      "summary": "作者推出一项小型服务，自动把 Cliniko 发票转入 QuickBooks，面向同时使用两者的小型诊所。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "dre85",
+      "url": "https://invoice-funnel.com",
+      "posted_at": "2026-11-16 08:58 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: Small service for moving invoices from Cliniko to QuickBooks",
+      "original_summary": "Show HN: Small service for moving invoices from Cliniko to QuickBooks Hey Everyone, Andrej here, I wanted to showcase a small service that I built for automatically transferring invoices from Cliniko to QuickBooks. I don&#x27;t believe that such a service yet exists so if you or somebody you know uses both Cliniko and QuickBooks to manage their small medical practice, there&#x27;s a high chance there could be some benefit from this service.<p>It has a free tier as well as a sandbox which can be tested and played around with at sandbox.invoice-funnel.com. You would need to have both a Cliniko account to create invoices and a QuickBooks account to see them land in case you want to try it out.<p>Even if you don&#x27;t use Cliniko or have never heard of it, any general comments&#x2F;questions ",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50507722",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "一款免费授权的 macOS 小应用可关闭 MacBook 屏幕",
+      "summary": "面向外接显示器场景，通过 Apple 硬件 API 真正关闭 MacBook 屏幕并移除对应桌面，而非只把亮度调为零。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "sliqqq",
+      "url": "https://blackoutapp.io/",
+      "posted_at": "2026-11-15 23:37 Asia/Shanghai",
+      "engagement": {
+        "points": 10,
+        "comments": 32
+      },
+      "original_title": "Show HN: A tiny macOS app that turns off the MacBook display [free license]",
+      "original_summary": "Show HN: A tiny macOS app that turns off the MacBook display [free license] Hi, I made a tiny app that lets you turn off the MacBook screen when you work on external monitors.<p>It does NOT just dim the brightness to zero, the screen is actually turned off via the Apple hardware API, the according desktop is removed, so you have a clean &quot;one big monitor&quot; setup.<p>- Safe fallback if you turn off the external monitor(s), unplug the monitor cable(s), the app crashes or anything else happens. \n- Keyboard, touchpad and TouchID still work fine.\n- Automatic restart. 2 Megabyte size.\n- Totally niche, I know, but it helps me to concentrate.<p>The app is commercial ($9 once), but everybody who writes me at hi@blackoutapp.io gets a *FREE* lifetime license, and everybody who uses in the feed",
+      "translated_by": "model"
+    },
+    {
+      "id": "v2ex-1258626",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "我用 ai 半小时做了一个日语视频生成工具，新用户签到可以免费送积分，有没有日本的朋友。评论区留言送积分。",
+      "summary": "我用 ai 半小时做了一个日语视频生成工具，新用户签到可以免费送积分，有没有日本的朋友。评论区留言送积分。\nai web 出海开发一年了，做了很多英语网站，这次尝试点新鲜的，做了一个日语小语种网站，通过各种模型生成视频，欢迎体验：https://elarvo.ai",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "zhanzhanwd",
+      "url": "https://www.v2ex.com/t/1258626",
+      "posted_at": "2026-11-20 18:17 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "我用 ai 半小时做了一个日语视频生成工具，新用户签到可以免费送积分，有没有日本的朋友。评论区留言送积分。",
+      "original_summary": "我用 ai 半小时做了一个日语视频生成工具，新用户签到可以免费送积分，有没有日本的朋友。评论区留言送积分。\nai web 出海开发一年了，做了很多英语网站，这次尝试点新鲜的，做了一个日语小语种网站，通过各种模型生成视频，欢迎体验：https://elarvo.ai",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1258609",
+      "source": "V2EX",
+      "category": "云服务/GPU/开发者资源",
+      "title": "UU 远程也要收费了？我自己做了一个远程控制软件 Airhand ，延迟和效果可能比肩 UU，欢迎 Star ⭐",
+      "summary": "UU 远程也要收费了？我自己做了一个远程控制软件 Airhand ，延迟和效果可能比肩 UU，欢迎 Star ⭐\n# airhand 0.3.1 发布：更低延迟，丢包时也更稳\r\n\r\n   我是 [airhand](https://github.com/sqlpxc/airhand) 的开发者，欢迎 Star ⭐\r\n\r\n   0.3.1 已经发布。之前大家问的一些问题，我已经在[这个帖子](https://www.v2ex.com/t/1257076)里回复过了。这次主要介绍新版本。\r\n   \r\n   目前项目还在早期开发阶段，欢迎大家测试反馈\r\n\r\n   ## 效果对比\r\n\r\n   话不多说，先上图：\r\n\r\n   ![对比图 1](https://i.imgur.com/tAkImHJ.png)\r\n\r\n   ![对比图 2](https://i.imgur.com/JUdRzwq.png)\r\n\r\n   - **左边**：网易云游戏\r\n   - **右边**：airhand\r\n\r\n   网易云游戏按时长收费，线路和优化应该代表了他们团队的较高水平，所以我拿它来做参考。\r\n\r\n   测试条件：\r\n\r\n   - airhand 中转用的是一台国内 **80 元/年** 的轻量云服务器\r\n   - 编码格式是 **HEVC**，这次还没用上「长期参考帧」\r\n\r\n   如果你的显卡支持长期参考帧（支持范围见下文），延迟还能再降一些。\r\n   \r\n   另外，我这边的画面看起来好像还更清楚一点？\r\n\r\n   💡 这台服务器目前免费开放给大家测试，但不保证稳定，也不保证一直维护。建议自己部署，到 [GitHub](https://github.com/sqlpxc/airhand) 下载就行。\r\n\r\n   ## 新版本改了什么\r\n\r\n   ### 1. 丢一帧，不再卡住后面的帧",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "sqlpxc",
+      "url": "https://www.v2ex.com/t/1258609",
+      "posted_at": "2026-11-20 17:04 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "UU 远程也要收费了？我自己做了一个远程控制软件 Airhand ，延迟和效果可能比肩 UU，欢迎 Star ⭐",
+      "original_summary": "UU 远程也要收费了？我自己做了一个远程控制软件 Airhand ，延迟和效果可能比肩 UU，欢迎 Star ⭐\n# airhand 0.3.1 发布：更低延迟，丢包时也更稳\r\n\r\n   我是 [airhand](https://github.com/sqlpxc/airhand) 的开发者，欢迎 Star ⭐\r\n\r\n   0.3.1 已经发布。之前大家问的一些问题，我已经在[这个帖子](https://www.v2ex.com/t/1257076)里回复过了。这次主要介绍新版本。\r\n   \r\n   目前项目还在早期开发阶段，欢迎大家测试反馈\r\n\r\n   ## 效果对比\r\n\r\n   话不多说，先上图：\r\n\r\n   ![对比图 1](https://i.imgur.com/tAkImHJ.png)\r\n\r\n   ![对比图 2](https://i.imgur.com/JUdRzwq.png)\r\n\r\n   - **左边**：网易云游戏\r\n   - **右边**：airhand\r\n\r\n   网易云游戏按时长收费，线路和优化应该代表了他们团队的较高水平，所以我拿它来做参考。\r\n\r\n   测试条件：\r\n\r\n   - airhand 中转用的是一台国内 **80 元/年** 的轻量云服务器\r\n   - 编码格式是 **HEVC**，这次还没用上「长期参考帧」\r\n\r\n   如果你的显卡支持长期参考帧（支持范围见下文），延迟还能再降一些。\r\n   \r\n   另外，我这边的画面看起来好像还更清楚一点？\r\n\r\n   💡 这台服务器目前免费开放给大家测试，但不保证稳定，也不保证一直维护。建议自己部署，到 [GitHub](https://github.com/sqlpxc/airhand) 下载就行。\r\n\r\n   ## 新版本改了什么\r\n\r\n   ### 1. 丢一帧，不再卡住后面的帧",
+      "translated_by": "free-translate"
     },
     {
       "id": "v2ex-1258596",
@@ -586,7 +489,7 @@
       "url": "https://www.v2ex.com/t/1258596",
       "posted_at": "2026-11-20 16:26 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 5
       },
       "original_title": "个人首次搞了个 IOS APP，如果想上架美区，一般比较好的方式或者注意的地方是哪些哇",
       "original_summary": "个人首次搞了个 IOS APP，如果想上架美区，一般比较好的方式或者注意的地方是哪些哇\n第一次开发 iOS App，本来自己玩，现在想着要不要上架下。搜到的首次上架的方案如下，发出来请教下，看看有没有要调整的地方哇\r\n\r\n### 基本背景\r\n- **产品形态**：宠物分享（UGC 发帖/评论）+ 1v1 宠物状态 AI 咨询 + 评论区 `@AI` 提问。\r\n- **技术部署**：基本上都用的各家免费的...  就域名和 vps 花了钱，反正自己平时也用\r\n- **目标地区**：美/加/英/澳/新。\r\n\r\n### 目前拟定的方案\r\n1. **账号与身份**：国区 Apple Account，用身份证实名开 688/年个人开发者账号（不拿日常美区号，避免地区与证件不一致触发风控），后台只勾选外区上架。大豆包不建议我用美区的 Apple Account\r\n2. **税务与收款**：\r\n   - 签付费协议，填 W-8BEN 援引中美税收协定把美区预扣税降到 10%，同步申请小企业计划（15% 抽成）。\r\n   - 收款准备用 HK 的自己的卡，也在考虑是否用美国亲戚的银行卡？大豆包也不建议后者。\r\n\r\n### 想问下\r\n1. **国区个人开发者账号只发美区**,这是好的方式么？\r\n2. 还有没有啥地方不合适，或者有啥更优的实践么？\r\n\r\n感谢",
@@ -604,7 +507,7 @@
       "url": "https://www.v2ex.com/t/1258593",
       "posted_at": "2026-11-20 16:11 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 1
       },
       "original_title": "现在免费聊天额度好少呀",
       "original_summary": "现在免费聊天额度好少呀\n以前还没遇见过 deepseek 网页端提示额度用完，Gemini 也是。现在大约 4-5 次对话就提示了。额度感觉跟 free 的 claude 差不多。",
@@ -622,136 +525,226 @@
       "url": "https://www.v2ex.com/t/1258592",
       "posted_at": "2026-11-20 16:10 Asia/Shanghai",
       "engagement": {
-        "replies": 2
+        "replies": 11
       },
       "original_title": "逆向了 macOS 屏幕共享的高性能模式，做了个免费的 iPhone / iPad 连 Mac 远程桌面",
       "original_summary": "逆向了 macOS 屏幕共享的高性能模式，做了个免费的 iPhone / iPad 连 Mac 远程桌面\n做了个 iPhone / iPad 连 Mac 的远程桌面，叫 Ferry。国区 App Store 搜得到，免费，没广告没内购，也不用注册。\r\n\r\nApp Store：https://apps.apple.com/app/id6833728061\r\nTestFlight：https://testflight.apple.com/join/UtcTPJ5E\r\n\r\n起因是 UU 远程说 12 月起免费版限 1080p 30 帧，虚拟屏也要会员。我天天拿 iPad 连家里的 Mac，干脆自己写了一个。\r\n\r\n### 高性能模式\r\n\r\nmacOS 14 起，屏幕共享多了个“高性能”模式：画面是 Mac 硬件编码的视频流，还带声音。但 iOS 上能用它的客户端很少，大部分还是传统 VNC，按块传像素变化，静态界面没问题，一拖窗口、一放视频就卡，全分辨率大面积变化要 35–40 Mbps。\r\n\r\n我把这套协议逆向了一遍，在 Ferry 里自己实现：\r\n\r\n- 用 Mac 账户登录后，整条连接 AES 加密\r\n- 画面是 HEVC，走 UDP，手机上硬解；声音是 AAC-ELD，一起传过来\r\n- 每帧切成 4 条发，丢包只坏一条，不用等整帧重传\r\n- Mac 为这次连接新建一块虚拟显示器，尺寸按手机 / 平板的屏幕定，转屏、分屏直接改尺寸，不用重连\r\n\r\niPhone Air 实测，拖窗口时的帧率：\r\n\r\n| 线路 | 方式 | 帧率 |\r\n|---|---|---|\r\n| 同一局域网 | 高性能 | 约 57 帧，5–8 Mbps |\r\n| 异地 Tailscale 直连 | 高性能 | 约 48 帧 |\r\n| 异地 Tailscale 直连 | 传统 VNC | 约 23 帧",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1258583",
-      "source": "V2EX",
-      "category": "AI 产品会员/试用",
-      "title": "9HTTP 代理 IP 优惠：注册即可试用，动态住宅和静态 ISP 七折",
-      "summary": "9HTTP 代理 IP 优惠：注册即可试用，动态住宅和静态 ISP 七折\n**9HTTP**，主要面向跨境电商、开发者和数据团队，提供全球代理 IP 服务。\r\n\r\n目前覆盖 **195+ 国家和地区，拥有 9000 万+真实住宅 IP**，支持 HTTP 和 SOCKS5 协议，提供三种代理产品：\r\n\r\n- **动态住宅代理**：支持 IP 自动轮换和粘性会话，按流量计费，适合公开数据采集、SEO 分析和市场调研。\r\n- **长效静态 ISP**：提供相对固定的 ISP IP，适合需要长期保持网络身份连续性的业务。\r\n- **无限住宅代理**：支持带宽和端口配置，适合持续、高流量的网络任务。\r\n\r\n**适用场景：**\r\n- 跨境电商商品价格与库存监控\r\n- 多地区公开数据采集\r\n- SEO 搜索结果分析\r\n- 全球市场调研与网络测试\r\n\r\n🎁 **当前优惠**\r\n- 动态住宅代理：7 折\r\n- 长效静态 ISP：7 折\r\n- 注册可免费试用 500MB 流量\r\n\r\n官网：https://www.9http.com/?ref=v2ex\r\n\r\ntg：@gz_9http",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "9HTTP",
-      "url": "https://www.v2ex.com/t/1258583",
-      "posted_at": "2026-11-20 15:55 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "9HTTP 代理 IP 优惠：注册即可试用，动态住宅和静态 ISP 七折",
-      "original_summary": "9HTTP 代理 IP 优惠：注册即可试用，动态住宅和静态 ISP 七折\n**9HTTP**，主要面向跨境电商、开发者和数据团队，提供全球代理 IP 服务。\r\n\r\n目前覆盖 **195+ 国家和地区，拥有 9000 万+真实住宅 IP**，支持 HTTP 和 SOCKS5 协议，提供三种代理产品：\r\n\r\n- **动态住宅代理**：支持 IP 自动轮换和粘性会话，按流量计费，适合公开数据采集、SEO 分析和市场调研。\r\n- **长效静态 ISP**：提供相对固定的 ISP IP，适合需要长期保持网络身份连续性的业务。\r\n- **无限住宅代理**：支持带宽和端口配置，适合持续、高流量的网络任务。\r\n\r\n**适用场景：**\r\n- 跨境电商商品价格与库存监控\r\n- 多地区公开数据采集\r\n- SEO 搜索结果分析\r\n- 全球市场调研与网络测试\r\n\r\n🎁 **当前优惠**\r\n- 动态住宅代理：7 折\r\n- 长效静态 ISP：7 折\r\n- 注册可免费试用 500MB 流量\r\n\r\n官网：https://www.9http.com/?ref=v2ex\r\n\r\ntg：@gz_9http",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258576",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "做了个 mac 风格的 alt tab 免费",
-      "summary": "做了个 mac 风格的 alt tab 免费\n我是窗口开巨多的人，windows 的缩略图根本看不清，图标做迷你的一小个，想找到对应窗口得仔细看\r\nswitcheroo 不错，但已经常年不更新了，速度也慢\r\n所以一直想找一个 mac 风格的切换软件，以前还在这里发过贴问\r\n\r\n现在有 AI 了分分钟自己撸一个\r\n于是有了 https://macalttab.pages.dev/\r\n免费，供效率软件同好品鉴",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "debusycat",
-      "url": "https://www.v2ex.com/t/1258576",
-      "posted_at": "2026-11-20 15:44 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "做了个 mac 风格的 alt tab 免费",
-      "original_summary": "做了个 mac 风格的 alt tab 免费\n我是窗口开巨多的人，windows 的缩略图根本看不清，图标做迷你的一小个，想找到对应窗口得仔细看\r\nswitcheroo 不错，但已经常年不更新了，速度也慢\r\n所以一直想找一个 mac 风格的切换软件，以前还在这里发过贴问\r\n\r\n现在有 AI 了分分钟自己撸一个\r\n于是有了 https://macalttab.pages.dev/\r\n免费，供效率软件同好品鉴",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258575",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "分享 构建速度可视化工具 - What The Fork",
-      "summary": "分享 构建速度可视化工具 - What The Fork\nhttps://danielchasehooper.com/wtf/ \r\n\r\n该工具针对 C++, Rust, CMake 等静态编译项目 在构建阶段进行可视化展示 每个环节编译速度 和 涉及到到的读写文件; \r\n\r\n\r\n\r\n我个人主要使用 C++ CMake ,在头文件 模块和依赖库编译上提供了帮助, 该软件今日正式发布, 有需求的 v 友可以体验下. \r\n\r\n免费用户是显示 10%流程的详细信息 (v0.14 及之后)\r\n早期用户 https://danielchasehooper.github.io/what-the-fork/ 曾有封闭测试不知道关闭了没 \r\n\r\n之前 AI 未兴盛时我就入手参与测试, 现在大家基本都 VibeCode C++项目了, 该安利 仅限手工编写 C++的用户哈, 有刚性需求你再付费, 当前才正式发布,后续如果有更多的功能再考虑入手",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "SuzhaharCan",
-      "url": "https://www.v2ex.com/t/1258575",
-      "posted_at": "2026-11-20 15:44 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "分享 构建速度可视化工具 - What The Fork",
-      "original_summary": "分享 构建速度可视化工具 - What The Fork\nhttps://danielchasehooper.com/wtf/ \r\n\r\n该工具针对 C++, Rust, CMake 等静态编译项目 在构建阶段进行可视化展示 每个环节编译速度 和 涉及到到的读写文件; \r\n\r\n\r\n\r\n我个人主要使用 C++ CMake ,在头文件 模块和依赖库编译上提供了帮助, 该软件今日正式发布, 有需求的 v 友可以体验下. \r\n\r\n免费用户是显示 10%流程的详细信息 (v0.14 及之后)\r\n早期用户 https://danielchasehooper.github.io/what-the-fork/ 曾有封闭测试不知道关闭了没 \r\n\r\n之前 AI 未兴盛时我就入手参与测试, 现在大家基本都 VibeCode C++项目了, 该安利 仅限手工编写 C++的用户哈, 有刚性需求你再付费, 当前才正式发布,后续如果有更多的功能再考虑入手",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258572",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "从 WorkBuddy 爆火聊聊 Agent 的发展趋势",
-      "summary": "从 WorkBuddy 爆火聊聊 Agent 的发展趋势\n\"2026 年 11 月 18 日，腾讯发布 2026 年第三季度财报，首次披露旗下 AI 办公 Agent 产品 WorkBuddy 日活跃用户突破 1000 万，日均 Token 调用量超 100 万亿，是目前国内大语言模型 Token 消耗量最高的 AI 应用.\"\r\n1 WorkBuddy 爆火到底是因为免费鸡蛋的策略生效了，还是其本身的定位“超级智能体应用”做的足够好？\r\n2 对比 Qoder,WorkBuddy 内置了足够多的功能：技能，agent,连接器，专家团... 这种大而全的产品策略会是未来吗？agent 最终是会越来越专一还是越来越全能？",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "boringwheat",
-      "url": "https://www.v2ex.com/t/1258572",
-      "posted_at": "2026-11-20 15:41 Asia/Shanghai",
-      "engagement": {
-        "replies": 1
-      },
-      "original_title": "从 WorkBuddy 爆火聊聊 Agent 的发展趋势",
-      "original_summary": "从 WorkBuddy 爆火聊聊 Agent 的发展趋势\n\"2026 年 11 月 18 日，腾讯发布 2026 年第三季度财报，首次披露旗下 AI 办公 Agent 产品 WorkBuddy 日活跃用户突破 1000 万，日均 Token 调用量超 100 万亿，是目前国内大语言模型 Token 消耗量最高的 AI 应用.\"\r\n1 WorkBuddy 爆火到底是因为免费鸡蛋的策略生效了，还是其本身的定位“超级智能体应用”做的足够好？\r\n2 对比 Qoder,WorkBuddy 内置了足够多的功能：技能，agent,连接器，专家团... 这种大而全的产品策略会是未来吗？agent 最终是会越来越专一还是越来越全能？",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258563",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "家里有孩子中高考阶段的，这个错题本软件挺不错",
-      "summary": "家里有孩子中高考阶段的，这个错题本软件挺不错\n我也是孩子要用，让我帮她配置 AI Key 才注意到这个软件，确实挺实用，而且几个同学共享题库，或者分别整理试卷一起汇总，效率非常高，另外这个软件自己可以当笔记用，我现在已经把印象的所有笔记全转过来了，上万条记录。\r\n\r\n## 特点：\r\n\r\n* 可以配置多个 AI 模型的 Key，为不同功能设置不同的 AI，比如理科题目用 Gemini Carbon，Deepseek Pro，文科用 Gemini Hydrogen\r\n* 学科比较全，有上百个教练，我分析是针对每一类型题目的特定提示词，做得还是挺用心的，可以针对自己小孩容易混淆的概念做有针对性的自定义教练\r\n* 分步辅导比较有特色，看作者介绍是基于波利亚的数学解题指导理论，我在这里一般用最强的模型，一道题解好，整个过程都可以保留下来，还能随时复习和继续讨论\r\n* 可以把难题挑出来安排复习计划批量刷，刷题类似闪卡，还能导入 anki 的闪卡，自带了不少词库\r\n* 多道题目的汇总分析和知识星图\r\n* 有免费浏览器插件，可以把主要 AI 平台 web 对话以题目形式导入，我用这个把小孩平时零碎查询的很多题目汇总进来，包括手机里豆包/deepseek app 中的对话也可以直接导入\r\n* 纯端侧，什么权限都不要，数据我看过是纯 json 文件，导入导出换软件很方便\r\n\r\n## 总结一下：刷题复习/分步辅导使用率最高\r\n\r\n## 价格\r\n\r\n感觉基本不要钱，可以免费用一个月，再用一个优惠的季度套餐，相当于 8 块钱用四个月，复习期间全部覆盖。我是直接给作者提了个建议，给我了一个免费兑换码。小孩班上同学发邮件也送了兑换码。软件叫可徕睿，只有 ios 版，apple 商店一搜就有了。\r\n\r\n发这个希望大家能分享题库，我现在是把试卷交给 muse 处理，然后能直接导入整份试卷，比拍照导入要省 t",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "kav2",
-      "url": "https://www.v2ex.com/t/1258563",
-      "posted_at": "2026-11-20 15:17 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "家里有孩子中高考阶段的，这个错题本软件挺不错",
-      "original_summary": "家里有孩子中高考阶段的，这个错题本软件挺不错\n我也是孩子要用，让我帮她配置 AI Key 才注意到这个软件，确实挺实用，而且几个同学共享题库，或者分别整理试卷一起汇总，效率非常高，另外这个软件自己可以当笔记用，我现在已经把印象的所有笔记全转过来了，上万条记录。\r\n\r\n## 特点：\r\n\r\n* 可以配置多个 AI 模型的 Key，为不同功能设置不同的 AI，比如理科题目用 Gemini Carbon，Deepseek Pro，文科用 Gemini Hydrogen\r\n* 学科比较全，有上百个教练，我分析是针对每一类型题目的特定提示词，做得还是挺用心的，可以针对自己小孩容易混淆的概念做有针对性的自定义教练\r\n* 分步辅导比较有特色，看作者介绍是基于波利亚的数学解题指导理论，我在这里一般用最强的模型，一道题解好，整个过程都可以保留下来，还能随时复习和继续讨论\r\n* 可以把难题挑出来安排复习计划批量刷，刷题类似闪卡，还能导入 anki 的闪卡，自带了不少词库\r\n* 多道题目的汇总分析和知识星图\r\n* 有免费浏览器插件，可以把主要 AI 平台 web 对话以题目形式导入，我用这个把小孩平时零碎查询的很多题目汇总进来，包括手机里豆包/deepseek app 中的对话也可以直接导入\r\n* 纯端侧，什么权限都不要，数据我看过是纯 json 文件，导入导出换软件很方便\r\n\r\n## 总结一下：刷题复习/分步辅导使用率最高\r\n\r\n## 价格\r\n\r\n感觉基本不要钱，可以免费用一个月，再用一个优惠的季度套餐，相当于 8 块钱用四个月，复习期间全部覆盖。我是直接给作者提了个建议，给我了一个免费兑换码。小孩班上同学发邮件也送了兑换码。软件叫可徕睿，只有 ios 版，apple 商店一搜就有了。\r\n\r\n发这个希望大家能分享题库，我现在是把试卷交给 muse 处理，然后能直接导入整份试卷，比拍照导入要省 t",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258554",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "@Muse.ai 可以创建邮箱，快来抢注前缀",
-      "summary": "@Muse.ai 可以创建邮箱，快来抢注前缀\nMuse 聊天框发送：创建 muse 邮箱\r\n\r\n一个 Muse 只能有一个 @muse.ai 邮箱，\r\n注册成功后无法修改，最少 3 位字符，不支持纯数字。\r\n\r\n现在很多前缀都还在\r\n感觉去抢注\r\n\r\n（目前灰测中，存在部分免费用户未开放到的情况）",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "AZ887",
-      "url": "https://www.v2ex.com/t/1258554",
-      "posted_at": "2026-11-20 14:56 Asia/Shanghai",
-      "engagement": {
-        "replies": 4
-      },
-      "original_title": "@Muse.ai 可以创建邮箱，快来抢注前缀",
-      "original_summary": "@Muse.ai 可以创建邮箱，快来抢注前缀\nMuse 聊天框发送：创建 muse 邮箱\r\n\r\n一个 Muse 只能有一个 @muse.ai 邮箱，\r\n注册成功后无法修改，最少 3 位字符，不支持纯数字。\r\n\r\n现在很多前缀都还在\r\n感觉去抢注\r\n\r\n（目前灰测中，存在部分免费用户未开放到的情况）",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-xinrui-z-free-llm",
+      "id": "ghdeal-kevalparikh22-conductor-ai",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "xinrui-z/free-llm 汇总免费 LLM API 与资源",
-      "summary": "面向开发者收集免费 GPT、Claude 与开源 LLM 端点、工具和指南。",
+      "title": "KevalParikh22/指挥-ai",
+      "summary": "KevalParikh22/conductor-ai 🎼 Claude 计划和评论；免费和廉价的模型编写代码。适用于 Claude Code、Codex、Antigravity、OpenCode、Ollama 和 45+ API 的多 LLM 编排器，具有配额感知回退和每个代理沙箱。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "xinrui-z",
-      "url": "https://github.com/xinrui-z/free-llm",
-      "posted_at": "2026-10-20 00:37 Asia/Shanghai",
+      "author": "KevalParikh22",
+      "url": "https://github.com/KevalParikh22/conductor-ai",
+      "posted_at": "2026-11-20 18:19 Asia/Shanghai",
       "engagement": {
-        "stars": 26
+        "stars": 3
       },
-      "original_title": "xinrui-z/free-llm",
-      "original_summary": "xinrui-z/free-llm 🔥 Free LLM APIs & Resources List — collect free GPT / Claude / open-source LLM endpoints, tools and guides for developers.",
+      "original_title": "KevalParikh22/conductor-ai",
+      "original_summary": "KevalParikh22/conductor-ai 🎼 Claude plans and reviews; free and cheap models write the code. Multi-LLM orchestrator for Claude Code, Codex, Antigravity, OpenCode, Ollama and 45+ APIs, with quota-aware fallback and per-agent sandboxes.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Arsh624/llm4jobs-v2：免费运行的岗位雷达",
+      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历和地点筛选后每日邮件推送，可在 GitHub Actions 上免费运行。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-enapt-swarmllm",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "enapt/SwarmLLM：本机跑大模型、可跨机协作的免费开源应用",
+      "summary": "免费开源应用，可在自己电脑运行 AI 聊天模型，也能让多台机器联网合跑单机放不下的模型，提供兼容 OpenAI 和 Anthropic 的 API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-19 05:31 Asia/Shanghai",
+      "engagement": {
+        "stars": 90
+      },
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-raven-clown-transponder",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "乌鸦小丑/应答器",
+      "summary": "raven-clown/transponder LLM 网关：Anthropic、OpenAI、Gemini 和 Ollama 之前的一个 API，具有后备、预算和成本跟踪功能。免费，无付费等级。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "raven-clown",
+      "url": "https://github.com/raven-clown/transponder",
+      "posted_at": "2026-11-20 17:37 Asia/Shanghai",
+      "engagement": {
+        "stars": 4
+      },
+      "original_title": "raven-clown/transponder",
+      "original_summary": "raven-clown/transponder LLM gateway: one API in front of Anthropic, OpenAI, Gemini and Ollama, with fallback, budgets and cost tracking. Free, no paid tier.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-owaid0723666-free-llm-radar",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "free-llm-radar 每日测试免费 LLM API 可用性与速度",
+      "summary": "每日用短问题测试各免费 LLM API 是否响应及速度，表格由 GitHub Actions 每日更新。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Owaid0723666",
+      "url": "https://github.com/Owaid0723666/free-llm-radar",
+      "posted_at": "2026-11-12 18:49 Asia/Shanghai",
+      "engagement": {
+        "stars": 1
+      },
+      "original_title": "Owaid0723666/free-llm-radar",
+      "original_summary": "Owaid0723666/free-llm-radar Every free LLM API model, asked one short question a day: which ones answer and how fast. Tables update daily by GitHub Actions.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-mvalentsev-awesome-free-ai-coding",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "mvalentsev/awesome-free-ai-coding：免费 LLM API 与编程智能体清单",
+      "summary": "收录合法的免费 LLM API 和编程智能体，每周两次探测校验并自动更新，含免费额度、免绑卡试用和免费模型。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "mvalentsev",
+      "url": "https://github.com/mvalentsev/awesome-free-ai-coding",
+      "posted_at": "2026-11-20 12:56 Asia/Shanghai",
+      "engagement": {
+        "stars": 250
+      },
+      "original_title": "mvalentsev/awesome-free-ai-coding",
+      "original_summary": "mvalentsev/awesome-free-ai-coding 📡 Legal free LLM APIs & coding agents — self-updating, probe-verified twice a week. Free tiers, no-card trials, free models.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-dhaulagani-awesome-free-ai-apis",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "道拉加尼/awesome-free-ai-apis",
+      "summary": "dhaulagani/awesome-free-ai-apis ⚡ 经过验证的免费 AI API、LLM 推理端点（DeepSeek R1、Llama 3.3、Gemini）、嵌入和音频模型的实时监控目录（每日更新）。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "dhaulagani",
+      "url": "https://github.com/dhaulagani/awesome-free-ai-apis",
+      "posted_at": "2026-11-16 20:04 Asia/Shanghai",
+      "engagement": {
+        "stars": 3
+      },
+      "original_title": "dhaulagani/awesome-free-ai-apis",
+      "original_summary": "dhaulagani/awesome-free-ai-apis ⚡ Live-monitored directory of verified free AI APIs, LLM inference endpoints (DeepSeek R1, Llama 3.3, Gemini), embeddings, and audio models (Updated Daily).",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-graphene-lab-odootool",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "石墨烯实验室/OdooTool",
+      "summary": "Odoo 社区的 Graphene-Lab/OdooTool AI 代理自动化（免费 ERP）：单脚本安装程序，用于设置 Odoo + PostgreSQL + AgentBridge，然后让 LLM 通过 JSON-2 API 读取和写入 Odoo 数据。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Graphene-Lab",
+      "url": "https://github.com/Graphene-Lab/OdooTool",
+      "posted_at": "2026-11-18 14:26 Asia/Shanghai",
+      "engagement": {
+        "stars": 3
+      },
+      "original_title": "Graphene-Lab/OdooTool",
+      "original_summary": "Graphene-Lab/OdooTool AI agent automation for Odoo Community (the free ERP): one-script installer that sets up Odoo + PostgreSQL + AgentBridge, then lets an LLM read and write Odoo data through the JSON-2 API.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-mnfst-awesome-free-llm-apis",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "awesome-free-llm-apis：永久免费 LLM API 清单",
+      "summary": "mnfst 收集的可长期免费使用的 LLM API 及 API Key 清单仓库。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "mnfst",
+      "url": "https://github.com/mnfst/awesome-free-llm-apis",
+      "posted_at": "2026-11-20 19:13 Asia/Shanghai",
+      "engagement": {
+        "stars": 13776
+      },
+      "original_title": "mnfst/awesome-free-llm-apis",
+      "original_summary": "mnfst/awesome-free-llm-apis List of Permanent Free LLM API  (API Keys)",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-adam80khoury-hub-awesome-freellm-aps",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "adam80khoury-hub/awesome-freellm-aps",
+      "summary": "adam80khoury-hub/awesome-freellm-aps 用于法律研究、起草和分析的免费 LLM API 和工具的精选列表。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "adam80khoury-hub",
+      "url": "https://github.com/adam80khoury-hub/awesome-freellm-aps",
+      "posted_at": "2026-11-19 21:48 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "adam80khoury-hub/awesome-freellm-aps",
+      "original_summary": "adam80khoury-hub/awesome-freellm-aps A curated list of free LLM APIs and tools for legal research, drafting, and analysis.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-open-free-llm-api-awesome-freellm-apis",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "awesome-freellm-apis：收录 134+ 免费大模型 API 的清单",
+      "summary": "汇总 40 多家提供商的 134 个以上免费 LLM API 与密钥，含 Gemini、Groq、OpenRouter，可一键配置 Claude Code 等工具。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "open-free-llm-api",
+      "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
+      "posted_at": "2026-11-20 19:13 Asia/Shanghai",
+      "engagement": {
+        "stars": 5837
+      },
+      "original_title": "open-free-llm-api/awesome-freellm-apis",
+      "original_summary": "open-free-llm-api/awesome-freellm-apis 134+ free LLM APIs & AI API keys from 40+ providers. Google Gemini, NVIDIA NIM, Groq, OpenRouter & more. One-click setup for Claude Code, Cursor and Codex.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-crytry007yc-glitch-awesome-free-llm-apis",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "crytry007yc-glitch/awesome-free-LLM-APIs：免费大模型 API 清单",
+      "summary": "rytry007yc-glitch/awesome-free-LLM-API",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "crytry007yc-glitch",
+      "url": "https://github.com/crytry007yc-glitch/awesome-free-LLM-APIs",
+      "posted_at": "2026-11-17 17:40 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "crytry007yc-glitch/awesome-free-LLM-APIs",
+      "original_summary": "crytry007yc-glitch/awesome-free-LLM-APIs ",
       "translated_by": "model"
     },
     {
