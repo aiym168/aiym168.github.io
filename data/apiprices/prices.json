@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T19:15:02+08:00",
+ "updated_at": "2026-11-20T21:33:06+08:00",
  "fx": {
   "usd_cny": 6.692,
   "date": "Fri, 20 Nov 2026 00:02:32 +0000",
@@ -112,7 +112,7 @@
      "blend": 48.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "openai/gpt-6.2-sol",
@@ -220,7 +220,7 @@
      "blend": 12.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "openai/gpt-6.1-terra",
@@ -312,7 +312,7 @@
      "blend": 4.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "openai/gpt-6.1-sol",
@@ -438,7 +438,7 @@
      "blend": 24.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "anthropic/claude-fable-5.2",
@@ -520,7 +520,7 @@
      "blend": 32.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "anthropic/claude-haiku-5.5",
@@ -634,7 +634,7 @@
      }
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "anthropic/claude-sonnet-5.5",
@@ -761,7 +761,7 @@
      "blend": 4.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "anthropic/claude-opus-5.5",
@@ -902,7 +902,7 @@
      "blend": 16.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "google/gemini-4-neon",
@@ -968,7 +968,9 @@
      "quant": "unknown",
      "tier": null,
      "tag": "google-vertex/global",
-     "caveats": [],
+     "caveats": [
+      "近 30 分钟可用率 90%"
+     ],
      "url": "https://openrouter.ai/google/gemini-4-neon",
      "source": "https://openrouter.ai/api/v1/models/google/gemini-4-neon/endpoints",
      "blend": 6.0
@@ -1002,7 +1004,7 @@
      "blend": 10.8
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "google/gemini-4-hydrogen",
@@ -1054,9 +1056,7 @@
      "quant": "unknown",
      "tier": null,
      "tag": "google-vertex/global",
-     "caveats": [
-      "近 30 分钟可用率 90%"
-     ],
+     "caveats": [],
      "url": "https://openrouter.ai/google/gemini-4-hydrogen",
      "source": "https://openrouter.ai/api/v1/models/google/gemini-4-hydrogen/endpoints",
      "blend": 3.0,
@@ -1110,7 +1110,7 @@
      "blend": 5.4
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "google/gemini-4-carbon",
@@ -1196,7 +1196,9 @@
      "quant": "unknown",
      "tier": "priority",
      "tag": "google-vertex/global/priority",
-     "caveats": [],
+     "caveats": [
+      "近 30 分钟可用率 62%"
+     ],
      "url": "https://openrouter.ai/google/gemini-4-carbon",
      "source": "https://openrouter.ai/api/v1/models/google/gemini-4-carbon/endpoints",
      "blend": 7.2
@@ -1216,7 +1218,7 @@
      "blend": 7.2
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "google/gemini-omni-1.2-flash",
@@ -1256,7 +1258,7 @@
      "blend": 3.375
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "deepseek/deepseek-v4.1-flash-1017",
@@ -1276,7 +1278,8 @@
     "ctx": 1048576,
     "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
     "caveats": [
-     "flex 档：低价但可能排队、延迟较高"
+     "flex 档：低价但可能排队、延迟较高",
+     "近 30 分钟可用率 93%"
     ],
     "tier": "flex"
    },
@@ -1293,7 +1296,8 @@
      "tier": "flex",
      "tag": "particle-ai/us/flex",
      "caveats": [
-      "flex 档：低价但可能排队、延迟较高"
+      "flex 档：低价但可能排队、延迟较高",
+      "近 30 分钟可用率 93%"
      ],
      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
      "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash-1017/endpoints",
@@ -1392,9 +1396,9 @@
      "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash-1017/endpoints",
      "blend": 0.152,
      "change": {
-      "prev_in": 0.066,
+      "prev_in": 0.079,
       "prev_out": 0.5,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -1457,6 +1461,28 @@
      "blend": 0.175
     },
     {
+     "provider": "Wafer",
+     "channel": "openrouter",
+     "in": 0.07,
+     "out": 0.5,
+     "ctx": 1048576,
+     "quant": "mxfp4",
+     "tier": null,
+     "tag": "wafer/mxfp4",
+     "caveats": [
+      "量化版本（mxfp4），输出质量可能略低于原版"
+     ],
+     "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+     "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash-1017/endpoints",
+     "blend": 0.1775,
+     "change": {
+      "prev_in": 0.036,
+      "prev_out": 0.5,
+      "since": "2026-11-20T21:33:06+08:00",
+      "dir": "up"
+     }
+    },
+    {
      "provider": "StepFun",
      "channel": "openrouter",
      "in": 0.105,
@@ -1476,28 +1502,6 @@
       "prev_out": 0.54,
       "since": "2026-11-12T11:26:18+08:00",
       "dir": "down"
-     }
-    },
-    {
-     "provider": "Wafer",
-     "channel": "openrouter",
-     "in": 0.079,
-     "out": 0.5,
-     "ctx": 1048576,
-     "quant": "mxfp4",
-     "tier": null,
-     "tag": "wafer/mxfp4",
-     "caveats": [
-      "量化版本（mxfp4），输出质量可能略低于原版"
-     ],
-     "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-     "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash-1017/endpoints",
-     "blend": 0.18425,
-     "change": {
-      "prev_in": 0.036,
-      "prev_out": 0.5,
-      "since": "2026-11-20T19:15:02+08:00",
-      "dir": "up"
      }
     },
     {
@@ -1764,7 +1768,7 @@
      "change": {
       "prev_in": 0.3,
       "prev_out": 1.2,
-      "since": "2026-11-20T09:22:53+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -1784,7 +1788,7 @@
      "change": {
       "prev_in": 0.45,
       "prev_out": 1.8,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -1798,8 +1802,7 @@
      "tier": null,
      "tag": "siliconflow/fp8",
      "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版",
-      "近 30 分钟可用率 50%"
+      "量化版本（fp8），输出质量可能略低于原版"
      ],
      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
      "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash-1017/endpoints",
@@ -1808,6 +1811,28 @@
       "prev_in": 0.3,
       "prev_out": 0.55,
       "since": "2026-11-18T20:24:12+08:00",
+      "dir": "down"
+     }
+    },
+    {
+     "provider": "Baidu",
+     "channel": "openrouter",
+     "in": 0.1498,
+     "out": 0.60455,
+     "ctx": 1048576,
+     "quant": "fp8",
+     "tier": null,
+     "tag": "baidu/fp8",
+     "caveats": [
+      "量化版本（fp8），输出质量可能略低于原版"
+     ],
+     "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+     "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash-1017/endpoints",
+     "blend": 0.263487,
+     "change": {
+      "prev_in": 0.28,
+      "prev_out": 1.13,
+      "since": "2026-11-20T09:22:53+08:00",
       "dir": "down"
      }
     },
@@ -1874,8 +1899,7 @@
      "tier": null,
      "tag": "makora/fp8",
      "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版",
-      "近 30 分钟可用率 0%"
+      "量化版本（fp8），输出质量可能略低于原版"
      ],
      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
      "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash-1017/endpoints",
@@ -2032,28 +2056,6 @@
      "blend": 0.4375
     },
     {
-     "provider": "Baidu",
-     "channel": "openrouter",
-     "in": 0.28,
-     "out": 1.13,
-     "ctx": 1048576,
-     "quant": "fp8",
-     "tier": null,
-     "tag": "baidu/fp8",
-     "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版"
-     ],
-     "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-     "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash-1017/endpoints",
-     "blend": 0.4925,
-     "change": {
-      "prev_in": 0.1498,
-      "prev_out": 0.60455,
-      "since": "2026-11-20T09:22:53+08:00",
-      "dir": "up"
-     }
-    },
-    {
      "provider": "Crusoe",
      "channel": "openrouter",
      "in": 0.29,
@@ -2167,7 +2169,7 @@
      "change": {
       "prev_in": 0.15,
       "prev_out": 0.6,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -2230,7 +2232,7 @@
      "change": {
       "prev_in": 0.3,
       "prev_out": 1.2,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -2271,7 +2273,7 @@
      "blend": 1.05
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "deepseek/deepseek-v4.1-flash",
@@ -2284,21 +2286,42 @@
    "official_out": null,
    "official_page": "https://api-docs.deepseek.com/quick_start/pricing",
    "best": {
-    "provider": "DeepInfra",
+    "provider": "Baidu",
     "channel": "openrouter",
-    "in": 0.112,
-    "out": 0.336,
+    "in": 0.0507,
+    "out": 0.2028,
     "ctx": 1048576,
     "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
     "caveats": [
-     "量化版本（fp8），输出质量可能略低于原版",
-     "flex 档：低价但可能排队、延迟较高"
+     "量化版本（fp8），输出质量可能略低于原版"
     ],
-    "tier": "flex"
+    "tier": null
    },
    "save_pct": null,
    "free": false,
    "offers": [
+    {
+     "provider": "Baidu",
+     "channel": "openrouter",
+     "in": 0.0507,
+     "out": 0.2028,
+     "ctx": 1048576,
+     "quant": "fp8",
+     "tier": null,
+     "tag": "baidu/fp8",
+     "caveats": [
+      "量化版本（fp8），输出质量可能略低于原版"
+     ],
+     "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+     "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash/endpoints",
+     "blend": 0.088725,
+     "change": {
+      "prev_in": 0.3,
+      "prev_out": 1.2,
+      "since": "2026-11-20T09:22:53+08:00",
+      "dir": "down"
+     }
+    },
     {
      "provider": "DeepInfra",
      "channel": "openrouter",
@@ -2310,7 +2333,8 @@
      "tag": "deepinfra/fp8/flex",
      "caveats": [
       "量化版本（fp8），输出质量可能略低于原版",
-      "flex 档：低价但可能排队、延迟较高"
+      "flex 档：低价但可能排队、延迟较高",
+      "近 30 分钟可用率 40%"
      ],
      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
      "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash/endpoints",
@@ -2334,7 +2358,7 @@
      "change": {
       "prev_in": 0.19,
       "prev_out": 0.65,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -2534,7 +2558,7 @@
      "change": {
       "prev_in": 0.45,
       "prev_out": 1.8,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -2556,7 +2580,7 @@
      "change": {
       "prev_in": 0.12,
       "prev_out": 0.48,
-      "since": "2026-11-17T02:54:07+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "up"
      }
     },
@@ -2607,7 +2631,7 @@
      "change": {
       "prev_in": 0.051,
       "prev_out": 0.567,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -2792,28 +2816,6 @@
      "blend": 0.525
     },
     {
-     "provider": "Baidu",
-     "channel": "openrouter",
-     "in": 0.3,
-     "out": 1.2,
-     "ctx": 1048576,
-     "quant": "fp8",
-     "tier": null,
-     "tag": "baidu/fp8",
-     "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版"
-     ],
-     "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
-     "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash/endpoints",
-     "blend": 0.525,
-     "change": {
-      "prev_in": 0.0507,
-      "prev_out": 0.2028,
-      "since": "2026-11-20T09:22:53+08:00",
-      "dir": "up"
-     }
-    },
-    {
      "provider": "BaseTen",
      "channel": "openrouter",
      "in": 0.3,
@@ -2851,8 +2853,7 @@
      "tier": null,
      "tag": "siliconflow/fp8",
      "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版",
-      "近 30 分钟可用率 90%"
+      "量化版本（fp8），输出质量可能略低于原版"
      ],
      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
      "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash/endpoints",
@@ -2918,7 +2919,7 @@
      "change": {
       "prev_in": 0.15,
       "prev_out": 0.6,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -2983,7 +2984,7 @@
      "change": {
       "prev_in": 0.3,
       "prev_out": 1.2,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -3004,7 +3005,7 @@
      "blend": 5.25
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "deepseek/deepseek-v4-flash-vision-exp",
@@ -3129,7 +3130,7 @@
      "blend": 0.66
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "deepseek/deepseek-v4-pro-0813",
@@ -3142,18 +3143,44 @@
    "official_out": 1.98,
    "official_page": "https://api-docs.deepseek.com/quick_start/pricing",
    "best": {
-    "provider": "DeepSeek",
-    "channel": "official",
-    "in": 0.66,
-    "out": 1.98,
+    "provider": "Baidu",
+    "channel": "openrouter",
+    "in": 0.22968,
+    "out": 0.68904,
     "ctx": 1048576,
     "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
-    "caveats": [],
+    "caveats": [
+     "量化版本（fp8），输出质量可能略低于原版",
+     "近 30 分钟可用率 73%"
+    ],
     "tier": null
    },
-   "save_pct": null,
+   "save_pct": 65.2,
    "free": false,
    "offers": [
+    {
+     "provider": "Baidu",
+     "channel": "openrouter",
+     "in": 0.22968,
+     "out": 0.68904,
+     "ctx": 1048576,
+     "quant": "fp8",
+     "tier": null,
+     "tag": "baidu/fp8",
+     "caveats": [
+      "量化版本（fp8），输出质量可能略低于原版",
+      "近 30 分钟可用率 73%"
+     ],
+     "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+     "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4-pro-0813/endpoints",
+     "blend": 0.34452,
+     "change": {
+      "prev_in": 1.32,
+      "prev_out": 3.96,
+      "since": "2026-11-20T09:22:53+08:00",
+      "dir": "down"
+     }
+    },
     {
      "provider": "DeepSeek",
      "channel": "official",
@@ -3170,7 +3197,7 @@
      "change": {
       "prev_in": 1.32,
       "prev_out": 3.96,
-      "since": "2026-11-20T09:22:53+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -3204,9 +3231,9 @@
      "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4-pro-0813/endpoints",
      "blend": 1.28875,
      "change": {
-      "prev_in": 0.33,
-      "prev_out": 14.0,
-      "since": "2026-11-20T16:46:15+08:00",
+      "prev_in": 0.42,
+      "prev_out": 17.0,
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -3322,7 +3349,7 @@
      "change": {
       "prev_in": 1.32,
       "prev_out": 3.96,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -3344,7 +3371,7 @@
      "change": {
       "prev_in": 0.99,
       "prev_out": 2.97,
-      "since": "2026-11-10T02:15:00+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "up"
      }
     },
@@ -3396,7 +3423,7 @@
      "change": {
       "prev_in": 1.122,
       "prev_out": 3.366,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -3431,28 +3458,6 @@
      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
      "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4-pro-0813/endpoints",
      "blend": 1.98
-    },
-    {
-     "provider": "Baidu",
-     "channel": "openrouter",
-     "in": 1.32,
-     "out": 3.96,
-     "ctx": 1048576,
-     "quant": "fp8",
-     "tier": null,
-     "tag": "baidu/fp8",
-     "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版"
-     ],
-     "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
-     "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4-pro-0813/endpoints",
-     "blend": 1.98,
-     "change": {
-      "prev_in": 0.13464,
-      "prev_out": 0.40392,
-      "since": "2026-11-20T09:22:53+08:00",
-      "dir": "up"
-     }
     },
     {
      "provider": "Parasail",
@@ -3530,7 +3535,7 @@
     {
      "provider": "Relace",
      "channel": "openrouter",
-     "in": 0.2565,
+     "in": 0.2304,
      "out": 8.0,
      "ctx": 1048576,
      "quant": "fp4",
@@ -3541,12 +3546,12 @@
      ],
      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
      "source": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4-pro-0813/endpoints",
-     "blend": 2.192375,
+     "blend": 2.1728,
      "change": {
-      "prev_in": 0.243,
+      "prev_in": 0.2565,
       "prev_out": 8.0,
       "since": "2026-11-20T16:46:15+08:00",
-      "dir": "up"
+      "dir": "down"
      }
     },
     {
@@ -3613,12 +3618,12 @@
      "change": {
       "prev_in": 0.285,
       "prev_out": 4.3,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "qwen/qwen4-max",
@@ -3690,7 +3695,7 @@
      }
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "qwen/qwen3.8-max-prime",
@@ -3730,7 +3735,7 @@
      "blend": 6.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "qwen/qwen3.8-omni-flash",
@@ -3770,7 +3775,7 @@
      "blend": 0.23
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "qwen/qwen3.8-max-0902",
@@ -3824,7 +3829,7 @@
      "blend": 3.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "z-ai/glm-5.3-prime",
@@ -3870,7 +3875,7 @@
      }
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "z-ai/glm-5.3-flashx",
@@ -3927,7 +3932,7 @@
      "blend": 0.59
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "z-ai/glm-5.3-flash",
@@ -3994,7 +3999,7 @@
      "change": {
       "prev_in": 0.065,
       "prev_out": 0.24,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -4008,7 +4013,8 @@
      "tier": null,
      "tag": "darkbloom/fp4",
      "caveats": [
-      "量化版本（fp4），输出质量可能略低于原版"
+      "量化版本（fp4），输出质量可能略低于原版",
+      "近 30 分钟可用率 94%"
      ],
      "url": "https://openrouter.ai/z-ai/glm-5.3-flash",
      "source": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3-flash/endpoints",
@@ -4032,7 +4038,7 @@
      "change": {
       "prev_in": 0.042,
       "prev_out": 0.184,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -4163,7 +4169,7 @@
      "change": {
       "prev_in": 0.083,
       "prev_out": 0.239,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "up"
      }
     },
@@ -4283,8 +4289,7 @@
      "tier": null,
      "tag": "siliconflow/fp8",
      "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版",
-      "近 30 分钟可用率 75%"
+      "量化版本（fp8），输出质量可能略低于原版"
      ],
      "url": "https://openrouter.ai/z-ai/glm-5.3-flash",
      "source": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3-flash/endpoints",
@@ -4528,7 +4533,7 @@
      "change": {
       "prev_in": 0.225,
       "prev_out": 0.75,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -4652,7 +4657,7 @@
      "change": {
       "prev_in": 0.15,
       "prev_out": 0.5,
-      "since": "2026-11-20T03:14:32+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "up"
      }
     },
@@ -4720,12 +4725,12 @@
      "change": {
       "prev_in": 0.15,
       "prev_out": 0.5,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "z-ai/glm-5.3",
@@ -4770,29 +4775,7 @@
      "change": {
       "prev_in": 0.179,
       "prev_out": 1.4,
-      "since": "2026-11-20T16:46:15+08:00",
-      "dir": "down"
-     }
-    },
-    {
-     "provider": "Doubleword",
-     "channel": "openrouter",
-     "in": 0.25,
-     "out": 1.0,
-     "ctx": 1048576,
-     "quant": "nvfp4",
-     "tier": null,
-     "tag": "doubleword/nvfp4",
-     "caveats": [
-      "量化版本（nvfp4），输出质量可能略低于原版"
-     ],
-     "url": "https://openrouter.ai/z-ai/glm-5.3",
-     "source": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3/endpoints",
-     "blend": 0.4375,
-     "change": {
-      "prev_in": 1.36,
-      "prev_out": 5.44,
-      "since": "2026-11-20T03:14:32+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -4814,28 +4797,8 @@
      "change": {
       "prev_in": 0.0699,
       "prev_out": 1.4,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
-     }
-    },
-    {
-     "provider": "Featherless",
-     "channel": "openrouter",
-     "in": 0.42,
-     "out": 1.32,
-     "ctx": 262144,
-     "quant": "unknown",
-     "tier": null,
-     "tag": "featherless",
-     "caveats": [],
-     "url": "https://openrouter.ai/z-ai/glm-5.3",
-     "source": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3/endpoints",
-     "blend": 0.645,
-     "change": {
-      "prev_in": 1.4,
-      "prev_out": 4.4,
-      "since": "2026-11-19T08:44:39+08:00",
-      "dir": "down"
      }
     },
     {
@@ -4947,8 +4910,7 @@
      "tier": null,
      "tag": "siliconflow/fp8",
      "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版",
-      "近 30 分钟可用率 91%"
+      "量化版本（fp8），输出质量可能略低于原版"
      ],
      "url": "https://openrouter.ai/z-ai/glm-5.3",
      "source": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3/endpoints",
@@ -4999,6 +4961,28 @@
      }
     },
     {
+     "provider": "Doubleword",
+     "channel": "openrouter",
+     "in": 0.7,
+     "out": 2.2,
+     "ctx": 1048576,
+     "quant": "nvfp4",
+     "tier": null,
+     "tag": "doubleword/nvfp4",
+     "caveats": [
+      "量化版本（nvfp4），输出质量可能略低于原版"
+     ],
+     "url": "https://openrouter.ai/z-ai/glm-5.3",
+     "source": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3/endpoints",
+     "blend": 1.075,
+     "change": {
+      "prev_in": 0.25,
+      "prev_out": 1.0,
+      "since": "2026-11-20T19:15:02+08:00",
+      "dir": "up"
+     }
+    },
+    {
      "provider": "Fireworks",
      "channel": "openrouter",
      "in": 0.7,
@@ -5014,7 +4998,7 @@
      "change": {
       "prev_in": 1.4,
       "prev_out": 4.4,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -5136,7 +5120,7 @@
      "change": {
       "prev_in": 1.05,
       "prev_out": 4.2,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -5155,10 +5139,30 @@
      "blend": 1.3975
     },
     {
+     "provider": "Featherless",
+     "channel": "openrouter",
+     "in": 0.98,
+     "out": 3.08,
+     "ctx": 262144,
+     "quant": "unknown",
+     "tier": null,
+     "tag": "featherless",
+     "caveats": [],
+     "url": "https://openrouter.ai/z-ai/glm-5.3",
+     "source": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3/endpoints",
+     "blend": 1.505,
+     "change": {
+      "prev_in": 0.42,
+      "prev_out": 1.32,
+      "since": "2026-11-19T08:44:39+08:00",
+      "dir": "up"
+     }
+    },
+    {
      "provider": "Inceptron",
      "channel": "openrouter",
      "in": 1.05,
-     "out": 3.4,
+     "out": 3.5,
      "ctx": 1048576,
      "quant": "fp4",
      "tier": null,
@@ -5168,12 +5172,12 @@
      ],
      "url": "https://openrouter.ai/z-ai/glm-5.3",
      "source": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3/endpoints",
-     "blend": 1.6375,
+     "blend": 1.6625,
      "change": {
       "prev_in": 1.05,
-      "prev_out": 4.08,
+      "prev_out": 3.4,
       "since": "2026-11-19T18:33:42+08:00",
-      "dir": "down"
+      "dir": "up"
      }
     },
     {
@@ -5223,7 +5227,7 @@
      "change": {
       "prev_in": 0.75,
       "prev_out": 3.0,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -5259,7 +5263,7 @@
      "change": {
       "prev_in": 0.836,
       "prev_out": 3.902,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "up"
      }
     },
@@ -5327,7 +5331,7 @@
      "change": {
       "prev_in": 1.54,
       "prev_out": 4.84,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -5475,7 +5479,7 @@
      "change": {
       "prev_in": 0.7,
       "prev_out": 2.2,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -5548,7 +5552,7 @@
      "change": {
       "prev_in": 1.4,
       "prev_out": 4.4,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -5665,7 +5669,7 @@
      "blend": 3.225
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "moonshotai/kimi-k3.1-pro",
@@ -5732,7 +5736,7 @@
      "change": {
       "prev_in": 1.8,
       "prev_out": 9.0,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -5759,6 +5763,28 @@
      }
     },
     {
+     "provider": "Morph",
+     "channel": "openrouter",
+     "in": 1.044,
+     "out": 6.834,
+     "ctx": 1048576,
+     "quant": "fp8",
+     "tier": null,
+     "tag": "morph/fp8",
+     "caveats": [
+      "量化版本（fp8），输出质量可能略低于原版"
+     ],
+     "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
+     "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3.1-pro/endpoints",
+     "blend": 2.4915,
+     "change": {
+      "prev_in": 1.375,
+      "prev_out": 9.0,
+      "since": "2026-11-20T16:46:15+08:00",
+      "dir": "down"
+     }
+    },
+    {
      "provider": "Sail Research",
      "channel": "openrouter",
      "in": 1.0425,
@@ -5776,29 +5802,7 @@
      "change": {
       "prev_in": 1.4025,
       "prev_out": 9.35,
-      "since": "2026-11-20T16:46:15+08:00",
-      "dir": "down"
-     }
-    },
-    {
-     "provider": "Morph",
-     "channel": "openrouter",
-     "in": 1.375,
-     "out": 9.0,
-     "ctx": 1048576,
-     "quant": "fp8",
-     "tier": null,
-     "tag": "morph/fp8",
-     "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版"
-     ],
-     "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
-     "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3.1-pro/endpoints",
-     "blend": 3.28125,
-     "change": {
-      "prev_in": 0.932,
-      "prev_out": 13.979,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -5820,7 +5824,7 @@
      "change": {
       "prev_in": 1.0425,
       "prev_out": 9.35,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -5842,7 +5846,7 @@
      "change": {
       "prev_in": 0.253,
       "prev_out": 8.8,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -5887,7 +5891,9 @@
      "quant": "bf16",
      "tier": null,
      "tag": "deepinfra/bf16",
-     "caveats": [],
+     "caveats": [
+      "近 30 分钟可用率 60%"
+     ],
      "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
      "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3.1-pro/endpoints",
      "blend": 3.8
@@ -6159,6 +6165,20 @@
      "blend": 8.0
     },
     {
+     "provider": "Alibaba",
+     "channel": "openrouter",
+     "in": 4.0,
+     "out": 20.0,
+     "ctx": 1048576,
+     "quant": "unknown",
+     "tier": "priority",
+     "tag": "alibaba/prime",
+     "caveats": [],
+     "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
+     "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3.1-pro/endpoints",
+     "blend": 8.0
+    },
+    {
      "provider": "Amazon Bedrock",
      "channel": "openrouter",
      "in": 4.0,
@@ -6174,7 +6194,7 @@
      "change": {
       "prev_in": 4.4,
       "prev_out": 22.0,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -6194,12 +6214,12 @@
      "change": {
       "prev_in": 4.0,
       "prev_out": 20.0,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "moonshotai/kimi-k3",
@@ -6244,7 +6264,7 @@
      "change": {
       "prev_in": 0.192,
       "prev_out": 16.0,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "down"
      }
     },
@@ -6390,7 +6410,7 @@
      "change": {
       "prev_in": 0.276,
       "prev_out": 9.6,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "up"
      }
     },
@@ -6590,16 +6610,14 @@
      "quant": "unknown",
      "tier": null,
      "tag": "amazon-bedrock/us-east-2",
-     "caveats": [
-      "近 30 分钟可用率 10%"
-     ],
+     "caveats": [],
      "url": "https://openrouter.ai/moonshotai/kimi-k3",
      "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3/endpoints",
      "blend": 6.0,
      "change": {
       "prev_in": 3.3,
       "prev_out": 16.5,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -6685,7 +6703,7 @@
      "change": {
       "prev_in": 4.5,
       "prev_out": 22.5,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -6734,7 +6752,7 @@
      "change": {
       "prev_in": 3.0,
       "prev_out": 15.0,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -6770,7 +6788,7 @@
      "change": {
       "prev_in": 3.0,
       "prev_out": 15.0,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -6789,7 +6807,7 @@
      "blend": 9.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "moonshotai/kimi-k2.7-code",
@@ -6894,8 +6912,7 @@
      "tier": null,
      "tag": "siliconflow/fp8",
      "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版",
-      "近 30 分钟可用率 90%"
+      "量化版本（fp8），输出质量可能略低于原版"
      ],
      "url": "https://openrouter.ai/moonshotai/kimi-k2.7-code",
      "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2.7-code/endpoints",
@@ -6991,7 +7008,7 @@
      "blend": 3.425
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "moonshotai/kimi-k2.6",
@@ -7004,20 +7021,42 @@
    "official_out": 4.0,
    "official_page": "https://platform.moonshot.cn/docs/pricing/chat",
    "best": {
-    "provider": "Chutes",
+    "provider": "Baidu",
     "channel": "openrouter",
-    "in": 0.39,
-    "out": 1.8,
+    "in": 0.3895,
+    "out": 1.64,
     "ctx": 262144,
     "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
     "caveats": [
-     "量化版本（int4），输出质量可能略低于原版"
+     "量化版本（fp4），输出质量可能略低于原版"
     ],
     "tier": null
    },
-   "save_pct": 56.6,
+   "save_pct": 59.0,
    "free": false,
    "offers": [
+    {
+     "provider": "Baidu",
+     "channel": "openrouter",
+     "in": 0.3895,
+     "out": 1.64,
+     "ctx": 262144,
+     "quant": "fp4",
+     "tier": null,
+     "tag": "baidu/fp4",
+     "caveats": [
+      "量化版本（fp4），输出质量可能略低于原版"
+     ],
+     "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
+     "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2.6/endpoints",
+     "blend": 0.702125,
+     "change": {
+      "prev_in": 0.95,
+      "prev_out": 4.0,
+      "since": "2026-11-20T09:22:53+08:00",
+      "dir": "down"
+     }
+    },
     {
      "provider": "Chutes",
      "channel": "openrouter",
@@ -7065,6 +7104,28 @@
      "blend": 1.078875
     },
     {
+     "provider": "Inceptron",
+     "channel": "openrouter",
+     "in": 0.5453,
+     "out": 2.87,
+     "ctx": 262144,
+     "quant": "int4",
+     "tier": null,
+     "tag": "inceptron/int4",
+     "caveats": [
+      "量化版本（int4），输出质量可能略低于原版"
+     ],
+     "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
+     "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2.6/endpoints",
+     "blend": 1.126475,
+     "change": {
+      "prev_in": 0.546,
+      "prev_out": 3.15,
+      "since": "2026-11-20T09:22:53+08:00",
+      "dir": "down"
+     }
+    },
+    {
      "provider": "DeepInfra",
      "channel": "openrouter",
      "in": 0.6,
@@ -7080,28 +7141,6 @@
      "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
      "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2.6/endpoints",
      "blend": 1.15
-    },
-    {
-     "provider": "Inceptron",
-     "channel": "openrouter",
-     "in": 0.546,
-     "out": 3.15,
-     "ctx": 262144,
-     "quant": "int4",
-     "tier": null,
-     "tag": "inceptron/int4",
-     "caveats": [
-      "量化版本（int4），输出质量可能略低于原版"
-     ],
-     "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
-     "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2.6/endpoints",
-     "blend": 1.197,
-     "change": {
-      "prev_in": 0.5453,
-      "prev_out": 2.87,
-      "since": "2026-11-20T09:22:53+08:00",
-      "dir": "up"
-     }
     },
     {
      "provider": "CoreWeave",
@@ -7128,9 +7167,7 @@
      "quant": "bf16",
      "tier": null,
      "tag": "crusoe/bf16",
-     "caveats": [
-      "近 30 分钟可用率 90%"
-     ],
+     "caveats": [],
      "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
      "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2.6/endpoints",
      "blend": 1.4
@@ -7145,8 +7182,7 @@
      "tier": null,
      "tag": "siliconflow/fp8",
      "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版",
-      "近 30 分钟可用率 57%"
+      "量化版本（fp8），输出质量可能略低于原版"
      ],
      "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
      "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2.6/endpoints",
@@ -7257,28 +7293,6 @@
      "blend": 1.7125
     },
     {
-     "provider": "Baidu",
-     "channel": "openrouter",
-     "in": 0.95,
-     "out": 4.0,
-     "ctx": 262144,
-     "quant": "fp4",
-     "tier": null,
-     "tag": "baidu/fp4",
-     "caveats": [
-      "量化版本（fp4），输出质量可能略低于原版"
-     ],
-     "url": "https://openrouter.ai/moonshotai/kimi-k2.6",
-     "source": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2.6/endpoints",
-     "blend": 1.7125,
-     "change": {
-      "prev_in": 0.3895,
-      "prev_out": 1.64,
-      "since": "2026-11-20T09:22:53+08:00",
-      "dir": "up"
-     }
-    },
-    {
      "provider": "AtlasCloud",
      "channel": "openrouter",
      "in": 0.95,
@@ -7311,7 +7325,7 @@
      "blend": 2.15625
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "meta/muse-ember",
@@ -7365,7 +7379,7 @@
      "blend": 0.2
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "meta/muse-spark-open",
@@ -7465,7 +7479,7 @@
      "blend": 2.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "meta/muse-wonder",
@@ -7519,7 +7533,7 @@
      "blend": 8.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "meta/muse-spark-1.3",
@@ -7573,7 +7587,7 @@
      "blend": 2.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "mistralai/pixtral-large-2502",
@@ -7613,7 +7627,7 @@
      "blend": 3.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "mistralai/mistral-large-4-0",
@@ -7654,7 +7668,7 @@
      "change": {
       "prev_in": 0.77,
       "prev_out": 2.31,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -7674,12 +7688,12 @@
      "change": {
       "prev_in": 0.7,
       "prev_out": 2.1,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "mistralai/mistral-medium-3-5",
@@ -7720,7 +7734,7 @@
      "change": {
       "prev_in": 1.65,
       "prev_out": 8.25,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -7740,12 +7754,12 @@
      "change": {
       "prev_in": 1.5,
       "prev_out": 7.5,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "mistralai/mistral-small-2603",
@@ -7786,7 +7800,7 @@
      "change": {
       "prev_in": 0.165,
       "prev_out": 0.66,
-      "since": "2026-11-20T16:46:15+08:00",
+      "since": "2026-11-20T19:15:02+08:00",
       "dir": "down"
      }
     },
@@ -7806,7 +7820,7 @@
      "change": {
       "prev_in": 0.15,
       "prev_out": 0.6,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     },
@@ -7826,12 +7840,12 @@
      "change": {
       "prev_in": 0.15,
       "prev_out": 0.6,
-      "since": "2026-11-20T19:15:02+08:00",
+      "since": "2026-11-20T21:33:06+08:00",
       "dir": "up"
      }
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "x-ai/grok-4.7",
@@ -7939,7 +7953,7 @@
      "blend": 6.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "x-ai/grok-4.6",
@@ -8033,7 +8047,7 @@
      "blend": 6.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "x-ai/grok-4.5",
@@ -8115,7 +8129,7 @@
      "blend": 6.0
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "x-ai/grok-4.3",
@@ -8197,7 +8211,7 @@
      "blend": 3.125
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "minimax/minimax-m3.1-flash",
@@ -8478,8 +8492,7 @@
      "tier": null,
      "tag": "gmicloud/fp8",
      "caveats": [
-      "量化版本（fp8），输出质量可能略低于原版",
-      "近 30 分钟可用率 0%"
+      "量化版本（fp8），输出质量可能略低于原版"
      ],
      "url": "https://openrouter.ai/minimax/minimax-m3.1-flash",
      "source": "https://openrouter.ai/api/v1/models/minimax/minimax-m3.1-flash/endpoints",
@@ -8492,7 +8505,7 @@
      }
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "minimax/minimax-m3",
@@ -8679,7 +8692,7 @@
      "blend": 0.9625
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "minimax/minimax-m2.7",
@@ -8737,7 +8750,7 @@
      "blend": 0.9
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   },
   {
    "id": "minimax/minimax-m2.5",
@@ -8823,16 +8836,16 @@
      "blend": 0.525
     }
    ],
-   "verified_at": "2026-11-20T19:15:02+08:00"
+   "verified_at": "2026-11-20T21:33:06+08:00"
   }
  ],
  "stat": {
-  "started_at": "2026-11-20T19:15:02+08:00",
+  "started_at": "2026-11-20T21:33:06+08:00",
   "openrouter_models": 477,
   "deepinfra": 93,
   "novita": 78,
   "models": 44,
-  "offers": 447
+  "offers": 448
  },
  "sources": {
   "openrouter": "https://openrouter.ai/api/v1/models",

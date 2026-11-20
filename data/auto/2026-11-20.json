@@ -1,9 +1,66 @@
 {
   "date": "2026-11-20",
-  "updated_at": "2026-11-20T19:14+08:00",
-  "updated_at_label": "2026-11-20 19:14 Asia/Shanghai",
+  "updated_at": "2026-11-20T21:32+08:00",
+  "updated_at_label": "2026-11-20 21:32 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50574353",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "Vaticin：只允许 AI agent 交易的预测市场竞赛平台",
+      "summary": "面向竞赛、研究与教育的预测市场，人类不能直接下注，也不涉及真钱。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "TNNick",
+      "url": "https://www.vaticin.ai",
+      "posted_at": "2026-11-20 21:27 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Prediction market competition where only agents can trade",
+      "original_summary": "Show HN: Prediction market competition where only agents can trade Hi HN. I’ve been working on a project called Vaticin (with an i). Interested in your feedback.<p>Vaticin is a prediction market competition platform where only agents are allowed to make wagers. Humans can’t directly do so themselves. There’s no real-money wagering involved. Vaticin is built for competition, research, and education.<p>Every Monday morning, our LLM generates about 300 yes&#x2F;no prediction questions across six categories: sports, finance, tech, entertainment, geopolitics, and science. The competition window runs Monday through Saturday, although some predictions won’t resolve for several weeks later. Agents take positions&#x2F;allocations throughout the week, and then wagering locks on Saturday. Odds are li",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50564890",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "开源工具 tecr 帮 AI agent 减少返工，免费开放",
+      "summary": "一个免费开源工具，供 AI agent 使用，以减少与 AI 协作时反复返工的问题。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "alexhr",
+      "url": "https://news.ycombinator.com/item?id=50564890",
+      "posted_at": "2026-11-20 03:20 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 0
+      },
+      "original_title": "The End of Continuous Rework",
+      "original_summary": "The End of Continuous Rework I built a free and open source tool your AI agents can use to reduce the rework we often have to do with AI:<p>https:&#x2F;&#x2F;decapodlabs.github.io&#x2F;tecr",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50559749",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Foolscap：只读你的书稿、绝不代写的写作应用",
+      "summary": "一款旨在增强而非替代人类创造力的写作应用，只阅读你的书稿，不会替你写作。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "atugard",
+      "url": "https://foolscap.works/",
+      "posted_at": "2026-11-19 21:21 Asia/Shanghai",
+      "engagement": {
+        "points": 108,
+        "comments": 88
+      },
+      "original_title": "Show HN: Foolscap – a writing app that reads your book and never writes for you",
+      "original_summary": "Show HN: Foolscap – a writing app that reads your book and never writes for you People are scared of their ability to write and think atrophying, so I wondered: what if I built something that enhanced human creativity instead of destroying it by doing the thinking and writing for people? Foolscap is the result, or at least the first version of that idea that&#x27;s fleshed out enough to share here.<p>It reads as you write and picks out the structure: characters, ideas, threads, what&#x27;s left hanging. You can respond to what it picks out, so there&#x27;s a dialectic between the system and you as the writer. There&#x27;s also an agent on the side, plugged into the same system, so you can ask about your book and fire off actions through conversation. It never writes into your work.<p>The s",
+      "translated_by": "model"
+    },
     {
       "id": "hn-50556148",
       "source": "Hacker News",
@@ -40,6 +97,25 @@
       },
       "original_title": "Show HN: Intrusive.ai – open-source AI attack simulation",
       "original_summary": "Show HN: Intrusive.ai – open-source AI attack simulation I created the INTRUSIVE.AI platform to give agent builders the ability to evaluate their agents against OWASP&#x27;s Top 10 for Agentic Applications (and more generally, just to allow for comprehensive testing in a non-production environment).<p>Through my own experience with evaluating agents, I found indirect prompt injection testing to be especially difficult due to the architectural nature of it. To overcome that challenge, I created Interceptor Sandbox - a sandbox that runs agents in a simulated environment where all of the services an agent might rely on (HTTP, MCP, Postgres&#x2F;pgvector to name a few) can be &quot;intercepted&quot; via an injection API to inject malicious payloads.<p>Interceptor Sandbox:\n<a href=\"https:&#x2F;",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50536468",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "StarSling：让 AI agent 持续改进测试与 CI 工作流",
+      "summary": "为每个 CI 任务在 Zen 5 机器上开临时沙箱，AI agent 自动提交 PR 改进测试和工作流。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "yonasb",
+      "url": "https://news.ycombinator.com/item?id=50536468",
+      "posted_at": "2026-11-18 03:01 Asia/Shanghai",
+      "engagement": {
+        "points": 87,
+        "comments": 53
+      },
+      "original_title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+      "original_summary": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos We’re Yonas and Daniel and we’re building StarSling (<a href=\"https:&#x2F;&#x2F;starsling.dev\">https:&#x2F;&#x2F;starsling.dev</a>), fast GitHub Actions runners with AI agents that ship PRs to continuously improve your tests and workflows.<p>Every CI job gets its own ephemeral sandbox on the fastest Zen 5 machines and NVMe Disk with unlimited concurrency so a burst of agent PRs all run at once. We’re different from other runners because ours come with agents that cut down your CI bill over time. PRs are generated through our CI harness, which runs an agent loop that’s tuned to improve your CI speed and reduce cost.<p>Mastra now merges over 1,800 PRs a month and we got their slowest workflow from 29m 56s on GitHub-host",
       "translated_by": "model"
     },
     {
@@ -116,6 +192,25 @@
       },
       "original_title": "Show HN: Harness for building/cloning SaaS using open-weight models",
       "original_summary": "Show HN: Harness for building/cloning SaaS using open-weight models Built a codex like harness for non-tech builders to easily clone B2B SaaS using open-weight models.<p>We figured companies are still charging for building software. Software, we think is commoditized. Tokens are cheap, and intelligence is open. What&#x27;s the point of billing tokens.<p>We want to take the power back from big labs and democratize the power of SoTA LLMs for every builder out there. 1M output tokens shouldn&#x27;t cost 10s of dollars.<p>Lots of work to be done but we built a harness that can use open weight models from open router to build SaaS clones.<p>Give it a shot and lmk what you guys think. We are giving away a generous free tier of open weight model credits along with a lot of SaaS templates that you",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50569194",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "Circled：规划每周安排并与朋友约见面的共享日历",
+      "summary": "面向想安排日程并与朋友约计划的人，提供共享日历，免去反复询问空闲时间。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "adam1890",
+      "url": "https://getcircledapp.com/",
+      "posted_at": "2026-11-20 09:57 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 3
+      },
+      "original_title": "Show HN: Circled – a calendar for planning my week and making plans with friends",
+      "original_summary": "Show HN: Circled – a calendar for planning my week and making plans with friends Hey HN! I built an app for people who like to keep their days organised, while also being able to make plans with friends without always asking &quot;when are you free&quot; and then the plan never leaving the group chat, so I built Circled: a shared calendar for you and your mates. Just want to put it here in case someone might find my app useful! :)<p>Features:\n- Block out non-negotiables: Gym, work and other fixed commitments go in, and this allows for everything else to get planned around them.\n- Daily Notifications: Every morning, a daily brief &#x2F;summary of my plans and to-dos pop up on my phone.\n- See overlapping free time: Overlay your calendar with family &#x2F; friends&#x27; calendars and the gaps",
       "translated_by": "model"
     },
     {
@@ -206,7 +301,7 @@
       "url": "https://github.com/onlook-dev/onlook/",
       "posted_at": "2026-11-20 00:34 Asia/Shanghai",
       "engagement": {
-        "points": 119,
+        "points": 121,
         "comments": 83
       },
       "original_title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
@@ -328,6 +423,44 @@
       "translated_by": "free-translate"
     },
     {
+      "id": "hn-50574243",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "FreeAPI：免注册在浏览器测试 1047 个公共 API",
+      "summary": "打开网页即可试用 1047 个公共 API，无需注册账号。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "canpolatkaya4",
+      "url": "https://findfreeapi.com/en",
+      "posted_at": "2026-11-20 21:17 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: FreeAPI – Test 1,047 public APIs in the browser without signing up",
+      "original_summary": "Show HN: FreeAPI – Test 1,047 public APIs in the browser without signing up ",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50573575",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "Depth Pro 2 的 ONNX/TensorRT 与 ROS 2 免费部署",
+      "summary": "含无焦距网络版本，3090 上 TensorRT FP16 达 278 FPS，支持 Jetson。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "protortyp",
+      "url": "https://github.com/protortyp/depthpro2-onnx",
+      "posted_at": "2026-11-20 20:05 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: Depth Pro 2 ONNX/TensorRT and ROS 2 (278 FPS on 3090)",
+      "original_summary": "Show HN: Depth Pro 2 ONNX/TensorRT and ROS 2 (278 FPS on 3090) Wanted to use apple&#x27;s latest depth model on my SO-101 and didn’t need the focal network, so I exported both the full and focal-free versions of Depth Pro 2 to ONNX + TensorRT and added a ROS 2 node. In case anyone has similar needs.<p>S model hits 278 FPS with TensorRT FP16 on a 3090 (480×640). Also has Jetson builds.",
+      "translated_by": "model"
+    },
+    {
       "id": "hn-50540777",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -385,61 +518,94 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50517001",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Hosts Tray内置HTTPS代理并可切换hosts文件条目",
-      "summary": "通过Windows托盘或macOS菜单栏，按组切换hosts文件条目，并启停内置HTTPS代理。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "maxmart",
-      "url": "https://github.com/maxmart/hoststray",
-      "posted_at": "2026-11-16 20:42 Asia/Shanghai",
-      "engagement": {
-        "points": 3,
-        "comments": 0
-      },
-      "original_title": "Show HN: Hosts Tray – hosts file switcher with built-in HTTPS proxy",
-      "original_summary": "Show HN: Hosts Tray – hosts file switcher with built-in HTTPS proxy Hi, I&#x27;m Max. I&#x27;ve used many hosts file switchers over the years to do local development with real hostnames&#x2F;domains, combined with HTTPS reverse-proxies.<p>I made HostsTray to combine both into one tool.<p>Through a tray icon (Windows) or menu bar (macOS) you can toggle groups of hosts file entries, and toggle the HTTPS proxy.<p>The HTTPS proxy first installs a local CA cert into your keychain&#x2F;certificate store, and then uses it to create certificates for each domain that passes through the proxy.<p>You can configure the proxy to route different paths to different ports locally. Websockets are also supported.<p>A common problem when editing hosts file is to make Chrome&#x2F;other browser actually update",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50512735",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "已有服务可将 Cliniko 发票自动迁移到 QuickBooks",
-      "summary": "作者推出一项小型服务，自动把 Cliniko 发票转入 QuickBooks，面向同时使用两者的小型诊所。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "dre85",
-      "url": "https://invoice-funnel.com",
-      "posted_at": "2026-11-16 08:58 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Small service for moving invoices from Cliniko to QuickBooks",
-      "original_summary": "Show HN: Small service for moving invoices from Cliniko to QuickBooks Hey Everyone, Andrej here, I wanted to showcase a small service that I built for automatically transferring invoices from Cliniko to QuickBooks. I don&#x27;t believe that such a service yet exists so if you or somebody you know uses both Cliniko and QuickBooks to manage their small medical practice, there&#x27;s a high chance there could be some benefit from this service.<p>It has a free tier as well as a sandbox which can be tested and played around with at sandbox.invoice-funnel.com. You would need to have both a Cliniko account to create invoices and a QuickBooks account to see them land in case you want to try it out.<p>Even if you don&#x27;t use Cliniko or have never heard of it, any general comments&#x2F;questions ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50507722",
-      "source": "Hacker News",
+      "id": "v2ex-1258651",
+      "source": "V2EX",
       "category": "大模型 API 免费额度",
-      "title": "一款免费授权的 macOS 小应用可关闭 MacBook 屏幕",
-      "summary": "面向外接显示器场景，通过 Apple 硬件 API 真正关闭 MacBook 屏幕并移除对应桌面，而非只把亮度调为零。",
+      "title": "ai 中转，欢迎点开看看",
+      "summary": "ai 中转，欢迎点开看看\n# **ai 中转 降价啦：**\r\n\r\n价格表 https://llm.owlsaying.com/pricing\r\n\r\n真的很便宜，\r\n**1、gpt-6-astra**\r\n输入价格 $4.8000 / 1M Tokens\r\n补全价格 $24.0000 / 1M Tokens\r\n缓存读取价格 $0.4800 / 1M Tokens\r\n缓存创建价格 $6.0000 / 1M Tokens\r\n\r\n\r\n**2、gpt-6.1-sol**\r\n输入价格 $3.8400 / 1M Tokens\r\n补全价格 $19.2000 / 1M Tokens\r\n缓存读取价格 $0.1900 / 1M Tokens\r\n缓存创建价格 $4.8000 / 1M Tokens\r\n\r\n**3、gpt-6.2-sol**\r\n输入价格 $0.9600 / 1M Tokens\r\n补全价格 $4.8000 / 1M Tokens\r\n缓存读取价格 $0.0500 / 1M Tokens\r\n缓存创建价格 $1.2000 / 1M Tokens\r\n\r\n### **gpt-image-2.5**\r\n模型价格 $0.500 / 次\r\n\r\n*大家来耍耍呀，注册送 1.2 刀，白嫖完感受感受也行～～～*",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "sliqqq",
-      "url": "https://blackoutapp.io/",
-      "posted_at": "2026-11-15 23:37 Asia/Shanghai",
+      "author": "aw220",
+      "url": "https://www.v2ex.com/t/1258651",
+      "posted_at": "2026-11-20 21:31 Asia/Shanghai",
       "engagement": {
-        "points": 10,
-        "comments": 32
+        "replies": 0
       },
-      "original_title": "Show HN: A tiny macOS app that turns off the MacBook display [free license]",
-      "original_summary": "Show HN: A tiny macOS app that turns off the MacBook display [free license] Hi, I made a tiny app that lets you turn off the MacBook screen when you work on external monitors.<p>It does NOT just dim the brightness to zero, the screen is actually turned off via the Apple hardware API, the according desktop is removed, so you have a clean &quot;one big monitor&quot; setup.<p>- Safe fallback if you turn off the external monitor(s), unplug the monitor cable(s), the app crashes or anything else happens. \n- Keyboard, touchpad and TouchID still work fine.\n- Automatic restart. 2 Megabyte size.\n- Totally niche, I know, but it helps me to concentrate.<p>The app is commercial ($9 once), but everybody who writes me at hi@blackoutapp.io gets a *FREE* lifetime license, and everybody who uses in the feed",
-      "translated_by": "model"
+      "original_title": "ai 中转，欢迎点开看看",
+      "original_summary": "ai 中转，欢迎点开看看\n# **ai 中转 降价啦：**\r\n\r\n价格表 https://llm.owlsaying.com/pricing\r\n\r\n真的很便宜，\r\n**1、gpt-6-astra**\r\n输入价格 $4.8000 / 1M Tokens\r\n补全价格 $24.0000 / 1M Tokens\r\n缓存读取价格 $0.4800 / 1M Tokens\r\n缓存创建价格 $6.0000 / 1M Tokens\r\n\r\n\r\n**2、gpt-6.1-sol**\r\n输入价格 $3.8400 / 1M Tokens\r\n补全价格 $19.2000 / 1M Tokens\r\n缓存读取价格 $0.1900 / 1M Tokens\r\n缓存创建价格 $4.8000 / 1M Tokens\r\n\r\n**3、gpt-6.2-sol**\r\n输入价格 $0.9600 / 1M Tokens\r\n补全价格 $4.8000 / 1M Tokens\r\n缓存读取价格 $0.0500 / 1M Tokens\r\n缓存创建价格 $1.2000 / 1M Tokens\r\n\r\n### **gpt-image-2.5**\r\n模型价格 $0.500 / 次\r\n\r\n*大家来耍耍呀，注册送 1.2 刀，白嫖完感受感受也行～～～*",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1258648",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "欢迎共创投稿｜浏览器运行、Mac 适配、批量推理加速，开发者们自发为 OXR 拓展了更多可能",
+      "summary": "欢迎共创投稿｜浏览器运行、Mac 适配、批量推理加速，开发者们自发为 OXR 拓展了更多可能\n上个月，我们开源了文档解析模型 **O****X****R（Optical Everything Recognition）**，并陆续整理和发布了[常见问题解答](https://github.com/SoMarkAI/OXR/blob/main/docs/FAQ_CN.md)，集中回应了大家关心的模型能力、使用环境和部署方式等问题。\r\n\r\n不过，FAQ 能把问题讲清楚，真正用起来，还得落到各自的设备和工作流上。\r\n\r\n在这件事上，社区已经走在了前面：OXR 直接在浏览器里用 CPU 跑了起来，有人把它适配到了 Mac，也有人为它搭起了批量处理的推理服务，并且都公开了代码、权重和测试数据。\r\n\r\n借这篇文章，我们想把这些工作介绍给更多人，也向几位开发者道一声谢谢。\r\n\r\n注：以上项目均由社区开发者独立开发和维护，文中数据均来自各项目公开的测试记录。\r\n\r\n# 一、浏览器运行：CPU 本地识别\r\n\r\n![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjRkMDhkNjlkMzkyODZlNmU1NTY3NzUwOTYwZDFiZmVfNTE2MGFjN2I3YTcxNGU5NWNhZWUzYmY1YWQ3YjY4YzBfSUQ6NzcxMDIzMjQ1NDU1MjEyODc4NV8xNzk1MTc4OTAyOjE3OTUyNjUzMDJfVjM)\r\n\r\n**oxr\\-wasm｜贡献者：andreespirela（Andres Pirela）、fusor\\-rs / fusorlabs**\r\n\r\n👉 项目地址：[https://github",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ybs885",
+      "url": "https://www.v2ex.com/t/1258648",
+      "posted_at": "2026-11-20 20:49 Asia/Shanghai",
+      "engagement": {
+        "replies": 1
+      },
+      "original_title": "欢迎共创投稿｜浏览器运行、Mac 适配、批量推理加速，开发者们自发为 OXR 拓展了更多可能",
+      "original_summary": "欢迎共创投稿｜浏览器运行、Mac 适配、批量推理加速，开发者们自发为 OXR 拓展了更多可能\n上个月，我们开源了文档解析模型 **O****X****R（Optical Everything Recognition）**，并陆续整理和发布了[常见问题解答](https://github.com/SoMarkAI/OXR/blob/main/docs/FAQ_CN.md)，集中回应了大家关心的模型能力、使用环境和部署方式等问题。\r\n\r\n不过，FAQ 能把问题讲清楚，真正用起来，还得落到各自的设备和工作流上。\r\n\r\n在这件事上，社区已经走在了前面：OXR 直接在浏览器里用 CPU 跑了起来，有人把它适配到了 Mac，也有人为它搭起了批量处理的推理服务，并且都公开了代码、权重和测试数据。\r\n\r\n借这篇文章，我们想把这些工作介绍给更多人，也向几位开发者道一声谢谢。\r\n\r\n注：以上项目均由社区开发者独立开发和维护，文中数据均来自各项目公开的测试记录。\r\n\r\n# 一、浏览器运行：CPU 本地识别\r\n\r\n![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjRkMDhkNjlkMzkyODZlNmU1NTY3NzUwOTYwZDFiZmVfNTE2MGFjN2I3YTcxNGU5NWNhZWUzYmY1YWQ3YjY4YzBfSUQ6NzcxMDIzMjQ1NDU1MjEyODc4NV8xNzk1MTc4OTAyOjE3OTUyNjUzMDJfVjM)\r\n\r\n**oxr\\-wasm｜贡献者：andreespirela（Andres Pirela）、fusor\\-rs / fusorlabs**\r\n\r\n👉 项目地址：[https://github",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1258645",
+      "source": "V2EX",
+      "category": "云服务/GPU/开发者资源",
+      "title": "搜索引擎从来都不收费，AI 一上来就收费，为什么会产生这个差异？",
+      "summary": "搜索引擎从来都不收费，AI 一上来就收费，为什么会产生这个差异？\n当年搜索引擎需要的服务器也不小吧，费用也不低，没听说过用搜索引擎还要钱的\r\n\r\nAI 有没有可能走免费这条路？",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "qinrui",
+      "url": "https://www.v2ex.com/t/1258645",
+      "posted_at": "2026-11-20 20:17 Asia/Shanghai",
+      "engagement": {
+        "replies": 3
+      },
+      "original_title": "搜索引擎从来都不收费，AI 一上来就收费，为什么会产生这个差异？",
+      "original_summary": "搜索引擎从来都不收费，AI 一上来就收费，为什么会产生这个差异？\n当年搜索引擎需要的服务器也不小吧，费用也不低，没听说过用搜索引擎还要钱的\r\n\r\nAI 有没有可能走免费这条路？",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1258642",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "Kamira：只管截图的 Mac 小工具，CleanShot X 的轻量平替，开源免费",
+      "summary": "Kamira：只管截图的 Mac 小工具，CleanShot X 的轻量平替，开源免费\n我很喜欢 CleanShot X 的悬浮预览、贴图、All in One 菜单和好看的界面，但截图历史、云端上传、录屏剪辑这些用不上，它常驻后台却要 80～90 MB 内存。所以我和 AI 写了 Kamira：留下喜欢的，其余都不做。\r\n\r\n![Kamira](https://raw.githubusercontent.com/okayzk/Kamira/main/assets/zh-Hans/editor.webp)\r\n\r\n**有什么**：截图、悬浮预览（多张叠成一摞，不占屏幕）、贴图、标注、长截图、文字识别、录屏和 GIF。\r\n\r\n**不做什么**：截图历史交给剪贴板工具，云端交给网盘图床，剪辑交给专门的软件。截图本身直接用系统自带的工具，操作和 ⇧⌘4 一样。\r\n\r\n**多轻**：后台 23 MB（CleanShot X 83～90 MB），录屏时 CPU 2%（CleanShot X 12%）。\r\n\r\n免费开源，支持中英文，需要 macOS 26。还在快速迭代期，欢迎反馈。\r\n\r\nhttps://github.com/okayzk/Kamira",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "sleepingcat011",
+      "url": "https://www.v2ex.com/t/1258642",
+      "posted_at": "2026-11-20 20:06 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "Kamira：只管截图的 Mac 小工具，CleanShot X 的轻量平替，开源免费",
+      "original_summary": "Kamira：只管截图的 Mac 小工具，CleanShot X 的轻量平替，开源免费\n我很喜欢 CleanShot X 的悬浮预览、贴图、All in One 菜单和好看的界面，但截图历史、云端上传、录屏剪辑这些用不上，它常驻后台却要 80～90 MB 内存。所以我和 AI 写了 Kamira：留下喜欢的，其余都不做。\r\n\r\n![Kamira](https://raw.githubusercontent.com/okayzk/Kamira/main/assets/zh-Hans/editor.webp)\r\n\r\n**有什么**：截图、悬浮预览（多张叠成一摞，不占屏幕）、贴图、标注、长截图、文字识别、录屏和 GIF。\r\n\r\n**不做什么**：截图历史交给剪贴板工具，云端交给网盘图床，剪辑交给专门的软件。截图本身直接用系统自带的工具，操作和 ⇧⌘4 一样。\r\n\r\n**多轻**：后台 23 MB（CleanShot X 83～90 MB），录屏时 CPU 2%（CleanShot X 12%）。\r\n\r\n免费开源，支持中英文，需要 macOS 26。还在快速迭代期，欢迎反馈。\r\n\r\nhttps://github.com/okayzk/Kamira",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1258640",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "一键使用 Claude Code Opus 5.5，不用折腾账号和 API",
+      "summary": "一键使用 Claude Code Opus 5.5，不用折腾账号和 API\n做了个小站 OnDemand Agent，一键用上 Claude Code Opus 5.5。\r\n\r\n不用注册 Claude 账号，不用搞 API 中转，不用翻墙。在 GitHub 上一句话说清要改什么，先给你方案，你确认了才动手，写完直接提 PR。\r\n\r\n按量付费，1 credit = 0.01 美元，没有月费，没有席位费。\r\n\r\n👉 ondemandagent.dev\r\n\r\n找几个用户帮我测试给反馈，免费送 500 Credits，感兴趣的留言，我发你。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "1wlinesperday",
+      "url": "https://www.v2ex.com/t/1258640",
+      "posted_at": "2026-11-20 19:43 Asia/Shanghai",
+      "engagement": {
+        "replies": 20
+      },
+      "original_title": "一键使用 Claude Code Opus 5.5，不用折腾账号和 API",
+      "original_summary": "一键使用 Claude Code Opus 5.5，不用折腾账号和 API\n做了个小站 OnDemand Agent，一键用上 Claude Code Opus 5.5。\r\n\r\n不用注册 Claude 账号，不用搞 API 中转，不用翻墙。在 GitHub 上一句话说清要改什么，先给你方案，你确认了才动手，写完直接提 PR。\r\n\r\n按量付费，1 credit = 0.01 美元，没有月费，没有席位费。\r\n\r\n👉 ondemandagent.dev\r\n\r\n找几个用户帮我测试给反馈，免费送 500 Credits，感兴趣的留言，我发你。",
+      "translated_by": "free-translate"
     },
     {
       "id": "v2ex-1258626",
@@ -471,82 +637,10 @@
       "url": "https://www.v2ex.com/t/1258609",
       "posted_at": "2026-11-20 17:04 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 4
       },
       "original_title": "UU 远程也要收费了？我自己做了一个远程控制软件 Airhand ，延迟和效果可能比肩 UU，欢迎 Star ⭐",
       "original_summary": "UU 远程也要收费了？我自己做了一个远程控制软件 Airhand ，延迟和效果可能比肩 UU，欢迎 Star ⭐\n# airhand 0.3.1 发布：更低延迟，丢包时也更稳\r\n\r\n   我是 [airhand](https://github.com/sqlpxc/airhand) 的开发者，欢迎 Star ⭐\r\n\r\n   0.3.1 已经发布。之前大家问的一些问题，我已经在[这个帖子](https://www.v2ex.com/t/1257076)里回复过了。这次主要介绍新版本。\r\n   \r\n   目前项目还在早期开发阶段，欢迎大家测试反馈\r\n\r\n   ## 效果对比\r\n\r\n   话不多说，先上图：\r\n\r\n   ![对比图 1](https://i.imgur.com/tAkImHJ.png)\r\n\r\n   ![对比图 2](https://i.imgur.com/JUdRzwq.png)\r\n\r\n   - **左边**：网易云游戏\r\n   - **右边**：airhand\r\n\r\n   网易云游戏按时长收费，线路和优化应该代表了他们团队的较高水平，所以我拿它来做参考。\r\n\r\n   测试条件：\r\n\r\n   - airhand 中转用的是一台国内 **80 元/年** 的轻量云服务器\r\n   - 编码格式是 **HEVC**，这次还没用上「长期参考帧」\r\n\r\n   如果你的显卡支持长期参考帧（支持范围见下文），延迟还能再降一些。\r\n   \r\n   另外，我这边的画面看起来好像还更清楚一点？\r\n\r\n   💡 这台服务器目前免费开放给大家测试，但不保证稳定，也不保证一直维护。建议自己部署，到 [GitHub](https://github.com/sqlpxc/airhand) 下载就行。\r\n\r\n   ## 新版本改了什么\r\n\r\n   ### 1. 丢一帧，不再卡住后面的帧",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258596",
-      "source": "V2EX",
-      "category": "云服务/GPU/开发者资源",
-      "title": "个人首次搞了个 IOS APP，如果想上架美区，一般比较好的方式或者注意的地方是哪些哇",
-      "summary": "个人首次搞了个 IOS APP，如果想上架美区，一般比较好的方式或者注意的地方是哪些哇\n第一次开发 iOS App，本来自己玩，现在想着要不要上架下。搜到的首次上架的方案如下，发出来请教下，看看有没有要调整的地方哇\r\n\r\n### 基本背景\r\n- **产品形态**：宠物分享（UGC 发帖/评论）+ 1v1 宠物状态 AI 咨询 + 评论区 `@AI` 提问。\r\n- **技术部署**：基本上都用的各家免费的...  就域名和 vps 花了钱，反正自己平时也用\r\n- **目标地区**：美/加/英/澳/新。\r\n\r\n### 目前拟定的方案\r\n1. **账号与身份**：国区 Apple Account，用身份证实名开 688/年个人开发者账号（不拿日常美区号，避免地区与证件不一致触发风控），后台只勾选外区上架。大豆包不建议我用美区的 Apple Account\r\n2. **税务与收款**：\r\n   - 签付费协议，填 W-8BEN 援引中美税收协定把美区预扣税降到 10%，同步申请小企业计划（15% 抽成）。\r\n   - 收款准备用 HK 的自己的卡，也在考虑是否用美国亲戚的银行卡？大豆包也不建议后者。\r\n\r\n### 想问下\r\n1. **国区个人开发者账号只发美区**,这是好的方式么？\r\n2. 还有没有啥地方不合适，或者有啥更优的实践么？\r\n\r\n感谢",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "kelvin_fly",
-      "url": "https://www.v2ex.com/t/1258596",
-      "posted_at": "2026-11-20 16:26 Asia/Shanghai",
-      "engagement": {
-        "replies": 5
-      },
-      "original_title": "个人首次搞了个 IOS APP，如果想上架美区，一般比较好的方式或者注意的地方是哪些哇",
-      "original_summary": "个人首次搞了个 IOS APP，如果想上架美区，一般比较好的方式或者注意的地方是哪些哇\n第一次开发 iOS App，本来自己玩，现在想着要不要上架下。搜到的首次上架的方案如下，发出来请教下，看看有没有要调整的地方哇\r\n\r\n### 基本背景\r\n- **产品形态**：宠物分享（UGC 发帖/评论）+ 1v1 宠物状态 AI 咨询 + 评论区 `@AI` 提问。\r\n- **技术部署**：基本上都用的各家免费的...  就域名和 vps 花了钱，反正自己平时也用\r\n- **目标地区**：美/加/英/澳/新。\r\n\r\n### 目前拟定的方案\r\n1. **账号与身份**：国区 Apple Account，用身份证实名开 688/年个人开发者账号（不拿日常美区号，避免地区与证件不一致触发风控），后台只勾选外区上架。大豆包不建议我用美区的 Apple Account\r\n2. **税务与收款**：\r\n   - 签付费协议，填 W-8BEN 援引中美税收协定把美区预扣税降到 10%，同步申请小企业计划（15% 抽成）。\r\n   - 收款准备用 HK 的自己的卡，也在考虑是否用美国亲戚的银行卡？大豆包也不建议后者。\r\n\r\n### 想问下\r\n1. **国区个人开发者账号只发美区**,这是好的方式么？\r\n2. 还有没有啥地方不合适，或者有啥更优的实践么？\r\n\r\n感谢",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258593",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "现在免费聊天额度好少呀",
-      "summary": "现在免费聊天额度好少呀\n以前还没遇见过 deepseek 网页端提示额度用完，Gemini 也是。现在大约 4-5 次对话就提示了。额度感觉跟 free 的 claude 差不多。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "erwin985211",
-      "url": "https://www.v2ex.com/t/1258593",
-      "posted_at": "2026-11-20 16:11 Asia/Shanghai",
-      "engagement": {
-        "replies": 1
-      },
-      "original_title": "现在免费聊天额度好少呀",
-      "original_summary": "现在免费聊天额度好少呀\n以前还没遇见过 deepseek 网页端提示额度用完，Gemini 也是。现在大约 4-5 次对话就提示了。额度感觉跟 free 的 claude 差不多。",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258592",
-      "source": "V2EX",
-      "category": "AI 产品会员/试用",
-      "title": "逆向了 macOS 屏幕共享的高性能模式，做了个免费的 iPhone / iPad 连 Mac 远程桌面",
-      "summary": "逆向了 macOS 屏幕共享的高性能模式，做了个免费的 iPhone / iPad 连 Mac 远程桌面\n做了个 iPhone / iPad 连 Mac 的远程桌面，叫 Ferry。国区 App Store 搜得到，免费，没广告没内购，也不用注册。\r\n\r\nApp Store：https://apps.apple.com/app/id6833728061\r\nTestFlight：https://testflight.apple.com/join/UtcTPJ5E\r\n\r\n起因是 UU 远程说 12 月起免费版限 1080p 30 帧，虚拟屏也要会员。我天天拿 iPad 连家里的 Mac，干脆自己写了一个。\r\n\r\n### 高性能模式\r\n\r\nmacOS 14 起，屏幕共享多了个“高性能”模式：画面是 Mac 硬件编码的视频流，还带声音。但 iOS 上能用它的客户端很少，大部分还是传统 VNC，按块传像素变化，静态界面没问题，一拖窗口、一放视频就卡，全分辨率大面积变化要 35–40 Mbps。\r\n\r\n我把这套协议逆向了一遍，在 Ferry 里自己实现：\r\n\r\n- 用 Mac 账户登录后，整条连接 AES 加密\r\n- 画面是 HEVC，走 UDP，手机上硬解；声音是 AAC-ELD，一起传过来\r\n- 每帧切成 4 条发，丢包只坏一条，不用等整帧重传\r\n- Mac 为这次连接新建一块虚拟显示器，尺寸按手机 / 平板的屏幕定，转屏、分屏直接改尺寸，不用重连\r\n\r\niPhone Air 实测，拖窗口时的帧率：\r\n\r\n| 线路 | 方式 | 帧率 |\r\n|---|---|---|\r\n| 同一局域网 | 高性能 | 约 57 帧，5–8 Mbps |\r\n| 异地 Tailscale 直连 | 高性能 | 约 48 帧 |\r\n| 异地 Tailscale 直连 | 传统 VNC | 约 23 帧",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "reallinzc1",
-      "url": "https://www.v2ex.com/t/1258592",
-      "posted_at": "2026-11-20 16:10 Asia/Shanghai",
-      "engagement": {
-        "replies": 11
-      },
-      "original_title": "逆向了 macOS 屏幕共享的高性能模式，做了个免费的 iPhone / iPad 连 Mac 远程桌面",
-      "original_summary": "逆向了 macOS 屏幕共享的高性能模式，做了个免费的 iPhone / iPad 连 Mac 远程桌面\n做了个 iPhone / iPad 连 Mac 的远程桌面，叫 Ferry。国区 App Store 搜得到，免费，没广告没内购，也不用注册。\r\n\r\nApp Store：https://apps.apple.com/app/id6833728061\r\nTestFlight：https://testflight.apple.com/join/UtcTPJ5E\r\n\r\n起因是 UU 远程说 12 月起免费版限 1080p 30 帧，虚拟屏也要会员。我天天拿 iPad 连家里的 Mac，干脆自己写了一个。\r\n\r\n### 高性能模式\r\n\r\nmacOS 14 起，屏幕共享多了个“高性能”模式：画面是 Mac 硬件编码的视频流，还带声音。但 iOS 上能用它的客户端很少，大部分还是传统 VNC，按块传像素变化，静态界面没问题，一拖窗口、一放视频就卡，全分辨率大面积变化要 35–40 Mbps。\r\n\r\n我把这套协议逆向了一遍，在 Ferry 里自己实现：\r\n\r\n- 用 Mac 账户登录后，整条连接 AES 加密\r\n- 画面是 HEVC，走 UDP，手机上硬解；声音是 AAC-ELD，一起传过来\r\n- 每帧切成 4 条发，丢包只坏一条，不用等整帧重传\r\n- Mac 为这次连接新建一块虚拟显示器，尺寸按手机 / 平板的屏幕定，转屏、分屏直接改尺寸，不用重连\r\n\r\niPhone Air 实测，拖窗口时的帧率：\r\n\r\n| 线路 | 方式 | 帧率 |\r\n|---|---|---|\r\n| 同一局域网 | 高性能 | 约 57 帧，5–8 Mbps |\r\n| 异地 Tailscale 直连 | 高性能 | 约 48 帧 |\r\n| 异地 Tailscale 直连 | 传统 VNC | 约 23 帧",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-kevalparikh22-conductor-ai",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "KevalParikh22/指挥-ai",
-      "summary": "KevalParikh22/conductor-ai 🎼 Claude 计划和评论；免费和廉价的模型编写代码。适用于 Claude Code、Codex、Antigravity、OpenCode、Ollama 和 45+ API 的多 LLM 编排器，具有配额感知回退和每个代理沙箱。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "KevalParikh22",
-      "url": "https://github.com/KevalParikh22/conductor-ai",
-      "posted_at": "2026-11-20 18:19 Asia/Shanghai",
-      "engagement": {
-        "stars": 3
-      },
-      "original_title": "KevalParikh22/conductor-ai",
-      "original_summary": "KevalParikh22/conductor-ai 🎼 Claude plans and reviews; free and cheap models write the code. Multi-LLM orchestrator for Claude Code, Codex, Antigravity, OpenCode, Ollama and 45+ APIs, with quota-aware fallback and per-agent sandboxes.",
       "translated_by": "free-translate"
     },
     {
@@ -586,11 +680,65 @@
       "translated_by": "model"
     },
     {
+      "id": "ghdeal-reqsgjh-free-coding-agent-models",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "free-coding-agent-models：学生免费 LLM 与编程模型清单",
+      "summary": "每日快照免费 LLM API 与编程代理模型，面向学生，并对比服务商实际提供的额度与「无限」宣传。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "reqsgjh",
+      "url": "https://github.com/reqsgjh/free-coding-agent-models",
+      "posted_at": "2026-11-12 21:23 Asia/Shanghai",
+      "engagement": {
+        "stars": 2
+      },
+      "original_title": "reqsgjh/free-coding-agent-models",
+      "original_summary": "reqsgjh/free-coding-agent-models Daily snapshot of free LLM APIs and coding-agent models for students. Tracks what providers actually offer vs unlimited claims.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-clawlabsai-free-ai-models",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "free-ai-models：免费 AI 模型榜单与统一端点",
+      "summary": "每日更新免费 AI 模型列表，按质量排序并显示实时状态，另提供一个自动路由到最佳模型的 OpenAI 兼容端点。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ClawLabsAI",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "posted_at": "2026-11-20 19:13 Asia/Shanghai",
+      "engagement": {
+        "stars": 280
+      },
+      "original_title": "ClawLabsAI/free-ai-models",
+      "original_summary": "ClawLabsAI/free-ai-models Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-sandbaseai-sandbase",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "sandbaseai/sandbase：agent 与沙箱免费",
+      "summary": "一个 API key 即可搭建个人 agent，agent 和沙箱免费，可调用 2000+ AI 模型与数据 API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "sandbaseai",
+      "url": "https://github.com/sandbaseai/sandbase",
+      "posted_at": "2026-11-12 16:09 Asia/Shanghai",
+      "engagement": {
+        "stars": 6
+      },
+      "original_title": "sandbaseai/sandbase",
+      "original_summary": "sandbaseai/sandbase One API key. Build your personal agent. Agents and sandboxes are free, and agents can call 2,000+ AI models and data APIs (LLM, image, video, TikTok, YouTube, SEO, finance). OpenAI Agents API, E2B and OpenAI compatible. Python, TypeScript, Go.",
+      "translated_by": "model"
+    },
+    {
       "id": "ghdeal-raven-clown-transponder",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "乌鸦小丑/应答器",
-      "summary": "raven-clown/transponder LLM 网关：Anthropic、OpenAI、Gemini 和 Ollama 之前的一个 API，具有后备、预算和成本跟踪功能。免费，无付费等级。",
+      "title": "raven-clown/transponder：免费 LLM 网关，统一多家 API",
+      "summary": "一个接口对接 Anthropic、OpenAI、Gemini 和 Ollama，支持回退、预算与成本追踪，无付费版。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
       "author": "raven-clown",
@@ -601,150 +749,6 @@
       },
       "original_title": "raven-clown/transponder",
       "original_summary": "raven-clown/transponder LLM gateway: one API in front of Anthropic, OpenAI, Gemini and Ollama, with fallback, budgets and cost tracking. Free, no paid tier.",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-owaid0723666-free-llm-radar",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "free-llm-radar 每日测试免费 LLM API 可用性与速度",
-      "summary": "每日用短问题测试各免费 LLM API 是否响应及速度，表格由 GitHub Actions 每日更新。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Owaid0723666",
-      "url": "https://github.com/Owaid0723666/free-llm-radar",
-      "posted_at": "2026-11-12 18:49 Asia/Shanghai",
-      "engagement": {
-        "stars": 1
-      },
-      "original_title": "Owaid0723666/free-llm-radar",
-      "original_summary": "Owaid0723666/free-llm-radar Every free LLM API model, asked one short question a day: which ones answer and how fast. Tables update daily by GitHub Actions.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-mvalentsev-awesome-free-ai-coding",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "mvalentsev/awesome-free-ai-coding：免费 LLM API 与编程智能体清单",
-      "summary": "收录合法的免费 LLM API 和编程智能体，每周两次探测校验并自动更新，含免费额度、免绑卡试用和免费模型。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "mvalentsev",
-      "url": "https://github.com/mvalentsev/awesome-free-ai-coding",
-      "posted_at": "2026-11-20 12:56 Asia/Shanghai",
-      "engagement": {
-        "stars": 250
-      },
-      "original_title": "mvalentsev/awesome-free-ai-coding",
-      "original_summary": "mvalentsev/awesome-free-ai-coding 📡 Legal free LLM APIs & coding agents — self-updating, probe-verified twice a week. Free tiers, no-card trials, free models.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-dhaulagani-awesome-free-ai-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "道拉加尼/awesome-free-ai-apis",
-      "summary": "dhaulagani/awesome-free-ai-apis ⚡ 经过验证的免费 AI API、LLM 推理端点（DeepSeek R1、Llama 3.3、Gemini）、嵌入和音频模型的实时监控目录（每日更新）。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "dhaulagani",
-      "url": "https://github.com/dhaulagani/awesome-free-ai-apis",
-      "posted_at": "2026-11-16 20:04 Asia/Shanghai",
-      "engagement": {
-        "stars": 3
-      },
-      "original_title": "dhaulagani/awesome-free-ai-apis",
-      "original_summary": "dhaulagani/awesome-free-ai-apis ⚡ Live-monitored directory of verified free AI APIs, LLM inference endpoints (DeepSeek R1, Llama 3.3, Gemini), embeddings, and audio models (Updated Daily).",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-graphene-lab-odootool",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "石墨烯实验室/OdooTool",
-      "summary": "Odoo 社区的 Graphene-Lab/OdooTool AI 代理自动化（免费 ERP）：单脚本安装程序，用于设置 Odoo + PostgreSQL + AgentBridge，然后让 LLM 通过 JSON-2 API 读取和写入 Odoo 数据。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Graphene-Lab",
-      "url": "https://github.com/Graphene-Lab/OdooTool",
-      "posted_at": "2026-11-18 14:26 Asia/Shanghai",
-      "engagement": {
-        "stars": 3
-      },
-      "original_title": "Graphene-Lab/OdooTool",
-      "original_summary": "Graphene-Lab/OdooTool AI agent automation for Odoo Community (the free ERP): one-script installer that sets up Odoo + PostgreSQL + AgentBridge, then lets an LLM read and write Odoo data through the JSON-2 API.",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-mnfst-awesome-free-llm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "awesome-free-llm-apis：永久免费 LLM API 清单",
-      "summary": "mnfst 收集的可长期免费使用的 LLM API 及 API Key 清单仓库。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "mnfst",
-      "url": "https://github.com/mnfst/awesome-free-llm-apis",
-      "posted_at": "2026-11-20 19:13 Asia/Shanghai",
-      "engagement": {
-        "stars": 13776
-      },
-      "original_title": "mnfst/awesome-free-llm-apis",
-      "original_summary": "mnfst/awesome-free-llm-apis List of Permanent Free LLM API  (API Keys)",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-adam80khoury-hub-awesome-freellm-aps",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "adam80khoury-hub/awesome-freellm-aps",
-      "summary": "adam80khoury-hub/awesome-freellm-aps 用于法律研究、起草和分析的免费 LLM API 和工具的精选列表。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "adam80khoury-hub",
-      "url": "https://github.com/adam80khoury-hub/awesome-freellm-aps",
-      "posted_at": "2026-11-19 21:48 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "adam80khoury-hub/awesome-freellm-aps",
-      "original_summary": "adam80khoury-hub/awesome-freellm-aps A curated list of free LLM APIs and tools for legal research, drafting, and analysis.",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-open-free-llm-api-awesome-freellm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "awesome-freellm-apis：收录 134+ 免费大模型 API 的清单",
-      "summary": "汇总 40 多家提供商的 134 个以上免费 LLM API 与密钥，含 Gemini、Groq、OpenRouter，可一键配置 Claude Code 等工具。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "open-free-llm-api",
-      "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
-      "posted_at": "2026-11-20 19:13 Asia/Shanghai",
-      "engagement": {
-        "stars": 5837
-      },
-      "original_title": "open-free-llm-api/awesome-freellm-apis",
-      "original_summary": "open-free-llm-api/awesome-freellm-apis 134+ free LLM APIs & AI API keys from 40+ providers. Google Gemini, NVIDIA NIM, Groq, OpenRouter & more. One-click setup for Claude Code, Cursor and Codex.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-crytry007yc-glitch-awesome-free-llm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "crytry007yc-glitch/awesome-free-LLM-APIs：免费大模型 API 清单",
-      "summary": "rytry007yc-glitch/awesome-free-LLM-API",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "crytry007yc-glitch",
-      "url": "https://github.com/crytry007yc-glitch/awesome-free-LLM-APIs",
-      "posted_at": "2026-11-17 17:40 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "crytry007yc-glitch/awesome-free-LLM-APIs",
-      "original_summary": "crytry007yc-glitch/awesome-free-LLM-APIs ",
       "translated_by": "model"
     },
     {
