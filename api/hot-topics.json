@@ -3,7 +3,7 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 17,
+  "count": 19,
   "items": [
     {
       "id": "hnhot-50563148",
@@ -27,6 +27,34 @@
       "source": "Hacker News"
     },
     {
+      "id": "hnhot-50568130",
+      "title": "Gemini 4 Neon 成为模型工程指数新的第一名",
+      "summary": "",
+      "url": "https://git-aarvin.github.io/mei/",
+      "source": "Hacker News"
+    },
+    {
+      "id": "v2hot-1258290",
+      "title": "没有人会不爱上 Gemini 4 Neon",
+      "summary": "没想到仅过去两三个月，我就从 Grok 吹变成了 Opus 5.5 吹，再到现在的 Gemini 吹。没有人会不爱上 Neon，作为目前速度与质量兼顾，最能听懂人话、说人话、创意性最高、最紧跟时事、道德底线最低的大模型，在干活之余还能享受心理按摩，体验极佳。之前 Argon 好用但幻觉率太高，Carbon 聪明但太慢，现在 Neon 真是又快又好。除此之外日常还能使用 Gemini 的学习辅导、Deep Research 做其它领域的学习研究，已经成了我离不开的日常，柏拉图式询问完全改变学习的方式。20T 的 Google Drive 存放各种学习资料",
+      "url": "https://www.v2ex.com/t/1258290",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258400",
+      "title": "GPT Plus 不给 chat 模型的极高和 pro 对日常使用影响大吗",
+      "summary": "上个月开了 pro 档 可以爽用 GPT chat 的极高和 pro 模型 这个月没什么 codex 需求就回到了 plus plus 没有极高和 pro 对日常使用的影响大吗？主要我日常还是蛮依赖 GPT 的",
+      "url": "https://www.v2ex.com/t/1258400",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258440",
+      "title": "Claude 真的吹过头了吗？实测下来很多场景还不如 GPT",
+      "summary": "最近在项目里折腾了一圈，感觉网传 Claude 强到没边的说法有点滤镜了，不少场景下甚至觉得还不如 GPT。说说几个直观感受：模型与稳定性：项目里用 6 astra、6.1 sol 大多数时候还行，但切到 opus5.5/fable 5.2 反而偶尔冒出些 bug 得回头修；新出的 6.2 sol 体验也挺让人失望的，功能做到一半就歇菜了。GPT 不上 200 元的套餐就不耐用。前端与审美：之前看不少人说 Claude 写前端强，拿它重构了一版官网，结果出来的黑+棕绿色调并没有多惊艳，审美上甚至不如之前用 5.6 再靠 6 astra 慢慢磨出来的版本。GPT 那边则是",
+      "url": "https://www.v2ex.com/t/1258440",
+      "source": "V2EX"
+    },
+    {
       "id": "v2hot-1258414",
       "title": "野草云 HK VPS 谨慎访问 AI",
       "summary": "开始挺好奇的，为什么 HK IP 可以用海外 3 大 AI；让 AI 连接 SSH 分析下：是机房默认 DNS：解析到 85.189.70.104（解锁中转落地 IP）；## 结果：导致我 2 个 Google 号触发风控",
@@ -41,17 +69,31 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258389",
-      "title": "本地部署的大模型 Edge0",
-      "summary": "Device-native foundation models: 145B on a laptop, 35B on a phone. Latent MoE, SSD-streamed weights, a router that predicts loads a step ahead. Mac, iPhone, Android, Windows. 感觉这个，加上一些订阅的模型 可以省很多成本啊",
-      "url": "https://www.v2ex.com/t/1258389",
+      "id": "v2hot-1258443",
+      "title": "昨天找朋友注册了两个免 K Claude 账号，隔离环境操作，相当稳定。",
+      "summary": "昨天找朋友注册了两个免 K Claude 账号，隔离环境操作，相当稳定。**有需要的可以联系 V（base64）**：MjI3Mjc3OTI= ![a.png]( ![2.png](",
+      "url": "https://www.v2ex.com/t/1258443",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258400",
-      "title": "GPT Plus 不给 chat 模型的极高和 pro 对日常使用影响大吗",
-      "summary": "上个月开了 pro 档 可以爽用 GPT chat 的极高和 pro 模型 这个月没什么 codex 需求就回到了 plus plus 没有极高和 pro 对日常使用的影响大吗？主要我日常还是蛮依赖 GPT 的",
-      "url": "https://www.v2ex.com/t/1258400",
+      "id": "v2hot-1258439",
+      "title": "内测版-运行在手机上的 agent",
+      "summary": "![]( 插件和卡片合二为一了，一个插件可以自定义界面，工具，调用其他能力 上个帖子 tf 内测链接",
+      "url": "https://www.v2ex.com/t/1258439",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258438",
+      "title": "在 Claude 封号，GPT 降智的情况下，大家主力模型和 harness 用的什么",
+      "summary": "Claude 是直来直去，检测不对就封号 GPT 是检测到你是中国或者不支持地区直接降智，路由到低级模型，你还不知道，有点恶心了。这种还不如封号",
+      "url": "https://www.v2ex.com/t/1258438",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258436",
+      "title": "上海的 AI 初创遍地，真实情况如何",
+      "summary": "你们相信公司的业务吗 内部氛围如何 个人成长性怎么样",
+      "url": "https://www.v2ex.com/t/1258436",
       "source": "V2EX"
     },
     {
@@ -66,13 +108,6 @@
       "title": "高强度使用 Claude 8 个月的一些感受",
       "summary": "# 高强度使用 Claude Code 8 个月的一些感受 今年二三月份，公司开始推广使用 Claude Code，费用全部报销。刚开始大家其实对 AI 编程没那么有信心，因为我们的行业比较窄，多少有些怀疑。但真正用了一两周后，我发现这东西确实不简单。从 Claude 4.6/4.7 开始，能力已经相当强了，后面模型不断升级，加上 Auto 模式，体验更是上了一个台阶。这 8 个月下来，我最大的感受是：有些原本需要人花几个月完成的项目，现在交给 Claude Code，可能两三天就能搞定。有时候我甚至会直接把一个大任务交给它，让它自己分析、规划、编码、测试",
       "url": "https://www.v2ex.com/t/1258398",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1258382",
-      "title": "MiniMax 开源 H3 Image！一个模型同时生图和改图，最多吃 16 张参考图，还能接 H3 直接出视频",
-      "summary": "MiniMax 11 月 11 日发布了图片模型 H3 Image，权重直接开源，Hugging Face 和 GitHub 都能下载。这次最有意思的是一个模型同时管生图和改图：改图时最多可以传 16 张参考图，在提示词里用 Image 1、Image 2 指代，早期测试的人拿它做同一角色的多姿势、多表情设定图。另一项也挺实用。4K 最高大约 1600 万像素，21:9 能出到 6272 × 2688。它是在 H3 视频模型的基础上做的，生成的图可以直接当首帧，接 H3 Max 做成视频，出图到视频算是一条链路打通了。不过本地跑就别想了：模型 33.1B 参数，权重 69",
-      "url": "https://www.v2ex.com/t/1258382",
       "source": "V2EX"
     },
     {
@@ -101,27 +136,6 @@
       "title": "Lightcone 研究奖学金提供免费 Claude 或 Codex 积分",
       "summary": "由 UC Berkeley 和 CNRS 推出，含巴黎展示机会，用于 AI 智能体研究。",
       "url": "https://x.com/suraj_sharma14/status/2120811343817109686",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-3446801122",
-      "title": "免费资源包括 AI agent 设计技能和 React UI 素材",
-      "summary": "含免费 AI agent 设计技能、277个 React UI 资源、101个开源 Shadcn 组件及69个免费动画 React 组件。",
-      "url": "https://x.com/csaba_kissi/status/2121869824175526242/video/1",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-3677673154",
-      "title": "免费 AI Life Summit 直播教你搭建日常 AI 助手",
-      "summary": "今天美东时间下午1点在 Zoom 举行，免费参加。",
-      "url": "https://x.com/alicialyttle/status/2123053605858971787",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-9288603792",
-      "title": "AI 编程者免费资源合集：设计技能、安全审计等",
-      "summary": "含免费 AI 编程设计技能、开源并行编码智能体与免费安全审计。",
-      "url": "https://x.com/csaba_kissi/status/2120774532277670061/video/1",
       "source": "X"
     }
   ]
