@@ -1,52 +1,58 @@
 {
  "last_step": {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "changes": [
    {
-    "op": "restore",
-    "name": "Synced",
-    "key": "syncedreview-com-feed",
+    "op": "retest",
+    "name": "Nature",
+    "key": "nature-com-nature-rss",
     "why": ""
    },
    {
-    "op": "restore",
-    "name": "Lilian Weng",
-    "key": "lilianweng-github-io-index-xml",
+    "op": "retest",
+    "name": "Civitai 热门模型",
+    "key": "civitai-models",
     "why": ""
    },
    {
-    "op": "restore",
-    "name": "The Gradient",
-    "key": "thegradient-pub-rss",
+    "op": "retest",
+    "name": "新闻聚合 · AI绘画 教程",
+    "key": "gn-aipaint-tut",
     "why": ""
    },
    {
-    "op": "restore",
-    "name": "Chromium Blog",
-    "key": "blog-chromium-org-feeds-posts-default",
+    "op": "retest",
+    "name": "DEV 社区",
+    "key": "DEV.to",
     "why": ""
    },
    {
-    "op": "pause",
-    "name": "Lobsters",
-    "key": "Lobsters",
-    "why": "复测还是没有内容"
+    "op": "slower",
+    "name": "伯克利 BAIR",
+    "key": "bair-berkeley-edu-blog-feed-xml",
+    "why": "总是重复，没有新东西"
    }
   ],
-  "snapshot": "data/evolve/snapshots/2026-11-20.json",
+  "snapshot": "data/evolve/snapshots/2026-11-21.json",
   "baseline": {
-   "kept": 6155,
-   "runs": 21,
-   "dead": 5,
-   "checked": 726,
-   "build_ok": 17,
+   "kept": 7030,
+   "runs": 24,
+   "dead": 6,
+   "checked": 750,
+   "build_ok": 20,
    "build_bad": 0,
-   "kept_per_run": 293.1,
-   "dead_rate": 0.0069,
+   "kept_per_run": 292.92,
+   "dead_rate": 0.008,
    "bad_build_rate": 0.0
   }
  },
  "history": [
+  {
+   "date": "2026-11-21",
+   "verdict_prev": null,
+   "changes": 5,
+   "diary_by": "model"
+  },
   {
    "date": "2026-11-20",
    "verdict_prev": null,
@@ -102,5 +108,5 @@
    "diary_by": "rules"
   }
  ],
- "last_evolve_date": "2026-11-20"
+ "last_evolve_date": "2026-11-21"
 }

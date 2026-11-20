@@ -2,36 +2,42 @@
  "counts": {
   "archived": 22,
   "deadline_extracted": 6,
-  "drop:duplicate": 415,
-  "drop:empty_summary": 57,
-  "drop:negative_signal": 132,
-  "drop:no_clear_offer": 557,
-  "drop:not_ai": 462,
+  "drop:duplicate": 463,
+  "drop:empty_summary": 60,
+  "drop:negative_signal": 135,
+  "drop:no_clear_offer": 585,
+  "drop:not_ai": 493,
   "drop:too_old_pre2025": 60,
-  "google_news_resolved": 609,
-  "google_news_total": 609,
-  "kept_total": 214,
+  "google_news_resolved": 623,
+  "google_news_total": 623,
+  "kept_total": 215,
   "net:gnews_cache_hit": 609,
-  "new_this_run": 2,
-  "raw_total": 1897
+  "net:gnews_resolved_net": 14,
+  "net:tco_expanded": 4,
+  "net:tco_failed": 6,
+  "new_this_run": 1,
+  "raw_total": 2011
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
+   "开源工具 tecr 帮 AI agent 减少返工，免费开放",
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
    "讨论：还有人对大模型回答的啰嗦与谄媚感到疲惫吗",
    "ClearOffice Hub：用自然语言构建企业应用",
+   "ai 中转，欢迎点开看看",
+   "一键使用 Claude Code Opus 5.5，不用折腾账号和 API",
    "Beatreel：根据一个提示制作讲解短视频",
    "hive-mind：如何设计协同工作的 AI 体",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
-   "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
-   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
-   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
-   "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录"
+   "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣"
   ],
   "empty_summary": [
+   "在设置里的 Models 添加自有密钥或连接订阅，经其推理在 Tembo 内费用为 0，另有免费试用与付费方案",
+   "@hosun_chung 分享：该帖称 AI 免费试用的每个注册都消耗真实算力，成本远高于 SaaS",
+   "该模型在 Artificial Analysis 人声音乐榜排名第一，并可免费试用",
    "Amazon Devices Builder Tools 提供从 SDK 配置到提交的流程",
    "@vivbajaj 分享：推文称其团队用不同方式实现 AI，并提供免费试用链接",
    "@JeremyNguyenPhD 分享：约翰霍普金斯大学推出免费网络研讨会，主题为用 AI 工具提升学术研究生产力，附注",
@@ -40,12 +46,10 @@
    "Meta 计划以 300 美元出售 Muse Charm AI 设备，并赠送最长一年 Verizon 5G 服务来吸引买",
    "支持 Mac、Windows 和 Linux，每日免费使用 Claude、GPT",
    "@TraycerAI 分享：活动提供免费 AI 额度，本周末发放5万美元 Gemini 额度，每人100美元",
-   "无需信用卡，额度可用于 DeepSeek V4.1 Flash 和 GLM-5.3 Flash",
-   "活动在 Kick 和 Twitch 直播，宣称当天送出免费 GPU，甚至可能送 PC",
-   "Github 免费试用 IOS chatbox ai chatboxai AIchatbot aichat LLMs",
-   "@scholarsregion 分享：面向所有国家开放，福利含 15 万美元额度与资金，截止日期未说明"
+   "无需信用卡，额度可用于 DeepSeek V4.1 Flash 和 GLM-5.3 Flash"
   ],
   "negative_signal": [
+   "@Reuters 分享：报道称印度因不依赖 AI 的吸引力获得创纪录外资流入，能否持续取决于盈利",
    "@nealmohan 分享：该福利允许家庭内最多5人共享无广告的 YouTube 与 YouTube Music",
    "SEO 从业者们，重磅消息来啦",
    "Access Intelligence 覆盖患者援助与事前授权，Learn 含超5万道题",
@@ -56,24 +60,24 @@
    "@HealthcareSeema 分享：临床开发需跨研究、申报、数据和团队协调复杂运营，这些智能体提供 AI 辅助的监控",
    "@malpani 分享：这些学生不应该无能为力地抱怨医学院的恶劣条件，而应该使用我们的免费 AI",
    "@iuditg 分享：印度领先的 AI 实验室估值14亿美元，获得了政府的资助和 GPU，用于在印度构建主权模型",
-   "产品通行证新增 OpenRouter、LangChain、Sentry、TextExpander、Ploy，35 款工具",
-   "@aakashgupta 分享：富裕家庭曾花最高2.5万美元润色论文，穷学生用 ChatGPT 免费获得类似帮助后，大学"
+   "产品通行证新增 OpenRouter、LangChain、Sentry、TextExpander、Ploy，35 款工具"
   ],
   "no_clear_offer": [
+   "课程分段讲解，从搭建首个 Harness agent 到 Harness 与 Loop 工程、Graph 工程及完整流程",
+   "它通过从 SSD 流式加载模型权重实现，原文介绍了其工作原理与速度表现",
+   "Meta 希望这款硬件能扩展其硬件业务，并为其 AI 助手带来更多用户",
+   "该功能面向所有 Google AI 订阅用户，并在美日韩澳加英德法免费",
+   "资源含 15 份 PowerPoint 和学生项目手册，用于 14 周 AI 辅助语言教学课程",
+   "Canva 为免费与 Pro 用户新增 AI 控制设置",
+   "@jasonlk 分享：提供 AI 销售代理免费指南，并附 AI 代理相关介绍链接",
+   "@MSI__UK 分享：该活动可免费评估 AI 工作流，覆盖开发、内容制作和业务运营等场景",
+   "@joelcomm 分享：该帖称免费 AI 适合好奇尝鲜，重要工作时愿付费选择更少出错的模型",
    "@StockSavvyShay 分享：分析称苹果凭借对设备和用户个人上下文的掌控，在自研 AI 代理上具备明显优势",
    "agenterm 让 Claude Code、Codex 和 Gemini 各用独立 git worktree 并行运行",
-   "一条推文主张，每位参加 JEE 考试的学生都应获得个人 AI 辅导工具",
-   "@PabloTec_ 分享：限时 24 小时内可不计积分反复生成与修改，便于快速试错并完成作品",
-   "@FreightWaves 分享：调查涵盖物流负责人对 AI 采用情况、可见性局限以及阻碍企业推进的因素，白皮书可免费获",
-   "@Techmeme 分享：在用户对平台强推 AI 功能感到不满后，Canva 允许用户关闭 Magic Expand 等",
-   "EC-Council 发布 ADG 2.0 免费 AI 治理框架，180 多项控制项映射 90 多个全球法规与标准",
-   "@jasonlk 分享：提供 AI 销售代理免费指南，并附 AI 代理相关介绍链接",
-   "阅读全文：EC-理事会发布 ADG 2.0 并向全球各国政府提供免费的 AI 治理人行横道",
-   "OpenCode Zen 平台出现名为 Tidepool Alpha Free 的新隐身模型，身份尚未揭晓",
-   "Meta 计划将口袋大小的 Muse Charm AI 设备定价 300 美元",
-   "第 4 步：在 Higgsfield GPU Harness 上进行渲染"
+   "一条推文主张，每位参加 JEE 考试的学生都应获得个人 AI 辅导工具"
   ],
   "not_ai": [
+   "@vivago_ai 分享：11 月 20 日至 30 日加入创作者计划可获 5000 奖励积分",
    "使用 8 块 RTX PRO 6000、两机并行，本次渲染消耗 1099.50 积分",
    "通过 PS5 的 Remote Play 串流到 PC，并叠加显卡超分与帧生成",
    "@omarabudayyeh 分享：用无针设备在家自助采血，检测来自细胞和器官的信号蛋白，帮助更年轻长寿",
@@ -84,8 +88,7 @@
    "上传 logo 后可调整颜色、光照与动态，本地运行无需 API key，导出 2K/4K 无缝循环视频",
    "加拿大正在通过 C-22法案经历其自身的聊天管控乱局：强烈建议加拿大同胞联系参议员",
    "@elonmusk 分享：正如我刚才所说……我们向达菲部长提供了免费的 FAA 用 Starlink，但他表示不需要",
-   "直播中聊 GPU 市场，并在聊天区发放游戏激活码和本月 PC 抽奖",
-   "Salesforce 销售团队为当月成交将试用期从30天改为14天，无证据对客户更好"
+   "直播中聊 GPU 市场，并在聊天区发放游戏激活码和本月 PC 抽奖"
   ],
   "too_old_pre2025": [
    "OpenAI 向科研人员免费开放前沿模型，首批1万人",
@@ -102,29 +105,28 @@
    "今天，我们很高兴推出 Stable Audio，这是我们首款用于音乐和声音生成的 AI 产品！"
   ]
  },
- "generated_at": "2026-11-20T21:35:27+08:00",
+ "generated_at": "2026-11-21T01:30:30+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-20T21:35:27+08:00",
+  "checked_at": "2026-11-21T01:29:59+08:00",
   "counts": {
    "gone": 1,
-   "ok": 191,
-   "recheck": 1
+   "ok": 191
   },
   "hidden": 1
  },
- "seconds": 0.9,
+ "seconds": 9.0,
  "side": {
   "github_hot": {
-   "drop:duplicate": 15,
+   "drop:duplicate": 14,
    "drop:not_ai": 1,
-   "kept": 14,
+   "kept": 15,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 1,
-   "drop:not_ai": 11,
-   "drop:not_ai_strict": 12,
-   "kept": 16,
+   "drop:negative_signal": 4,
+   "drop:not_ai": 15,
+   "drop:not_ai_strict": 11,
+   "kept": 10,
    "raw": 40
   }
  }
