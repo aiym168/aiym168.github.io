@@ -2,20 +2,21 @@
  "counts": {
   "archived": 22,
   "deadline_extracted": 6,
-  "drop:duplicate": 461,
-  "drop:empty_summary": 61,
+  "drop:duplicate": 458,
+  "drop:empty_summary": 62,
   "drop:negative_signal": 138,
-  "drop:no_clear_offer": 593,
-  "drop:not_ai": 493,
+  "drop:no_clear_offer": 595,
+  "drop:not_ai": 495,
   "drop:too_old_pre2025": 60,
-  "google_news_resolved": 638,
-  "google_news_total": 638,
-  "kept_total": 219,
-  "net:gnews_cache_hit": 632,
-  "net:gnews_resolved_net": 6,
-  "net:tco_expanded": 2,
-  "new_this_run": 3,
-  "raw_total": 2025
+  "google_news_resolved": 642,
+  "google_news_total": 642,
+  "kept_total": 222,
+  "net:gnews_cache_hit": 638,
+  "net:gnews_resolved_net": 4,
+  "net:tco_expanded": 1,
+  "net:tco_failed": 6,
+  "new_this_run": 5,
+  "raw_total": 2030
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -23,8 +24,8 @@
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "开源工具 tecr 帮 AI agent 减少返工，免费开放",
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
-   "讨论：还有人对大模型回答的啰嗦与谄媚感到疲惫吗",
    "ClearOffice Hub：用自然语言构建企业应用",
+   "一键使用 Claude Code Opus 5.5，不用折腾账号和 API",
    "Beatreel：根据一个提示制作讲解短视频",
    "hive-mind：如何设计协同工作的 AI 体",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
@@ -34,6 +35,7 @@
    "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑"
   ],
   "empty_summary": [
+   "据称 Gemini Pro 现可免费使用一年，原价 200 美元，无需付款即可激活",
    "如何租用 GPU：> 打开 Higgsfield GPU Harness 并按启动计算机 > 选择云计算机",
    "在设置里的 Models 添加自有密钥或连接订阅，经其推理在 Tembo 内费用为 0，另有免费试用与付费方案",
    "@hosun_chung 分享：该帖称 AI 免费试用的每个注册都消耗真实算力，成本远高于 SaaS",
@@ -44,8 +46,7 @@
    "Claude for startups 向创业公司提供免费使用额度，有人却将其转卖获利",
    "@liam_fallen 分享：作者称每月免费赠送 AI 代理，并附上获取链接",
    "Meta 计划以 300 美元出售 Muse Charm AI 设备，并赠送最长一年 Verizon 5G 服务来吸引买",
-   "支持 Mac、Windows 和 Linux，每日免费使用 Claude、GPT",
-   "@TraycerAI 分享：活动提供免费 AI 额度，本周末发放5万美元 Gemini 额度，每人100美元"
+   "支持 Mac、Windows 和 Linux，每日免费使用 Claude、GPT"
   ],
   "negative_signal": [
    "@bluwhaleai 分享：AI 代理交易锦标赛第6期推出社区赠送活动，最高奖励1万 solana",
@@ -62,6 +63,9 @@
    "@HealthcareSeema 分享：临床开发需跨研究、申报、数据和团队协调复杂运营，这些智能体提供 AI 辅助的监控"
   ],
   "no_clear_offer": [
+   "@VaibhavSisinty 分享：该免费社区已有 20 多万人加入，可每天获取 AI 工具和信息",
+   "@_satyam_ai 分享：作者从零构建引擎，赛车游戏完全在 Chrome 的 WebGPU 上运行",
+   "@toly 分享：作者认为人类无需耗时撰写上千页形式证明，交给机器可解放思维",
    "Meta 的独立 AI 小工具不会便宜，但它可能会提供免费数据计划",
    "@levelsio 分享：这是一个巨大的成功，因此，我还添加了一个举报端点，供您自行举报 AI 回复机器人 Chrome",
    "隆重推出 DevinDash 从今天起，您可以使用 DoorDash MCP 和 Devin Bot 订餐",
@@ -70,10 +74,7 @@
    "这个以《GTA VI》为灵感的 AI 网红故事太疯狂了 你真的可以免费创建自己的 AI 模特",
    "Verily 前高管打造 AI 平台，从蛋白质组学数据中获取更多信息@tesorai_bio",
    "Dan Ives 刚刚表示：“我们仍然认为，采取多元化的 AI 市场策略是到2027年持有 AI",
-   "课程分段讲解，从搭建首个 Harness agent 到 Harness 与 Loop 工程、Graph 工程及完整流程",
-   "它通过从 SSD 流式加载模型权重实现，原文介绍了其工作原理与速度表现",
-   "Meta 希望这款硬件能扩展其硬件业务，并为其 AI 助手带来更多用户",
-   "该功能面向所有 Google AI 订阅用户，并在美日韩澳加英德法免费"
+   "课程分段讲解，从搭建首个 Harness agent 到 Harness 与 Loop 工程、Graph 工程及完整流程"
   ],
   "not_ai": [
    "@vivago_ai 分享：11 月 20 日至 30 日加入创作者计划可获 5000 奖励积分",
@@ -104,16 +105,17 @@
    "今天，我们很高兴推出 Stable Audio，这是我们首款用于音乐和声音生成的 AI 产品！"
   ]
  },
- "generated_at": "2026-11-21T11:30:07+08:00",
+ "generated_at": "2026-11-21T17:37:56+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-21T11:30:06+08:00",
+  "checked_at": "2026-11-21T17:37:56+08:00",
   "counts": {
-   "ok": 193,
+   "gone": 1,
+   "ok": 196,
    "recheck": 1
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 4.0,
+ "seconds": 3.3,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -122,10 +124,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 13,
+   "drop:negative_signal": 2,
+   "drop:not_ai": 11,
    "drop:not_ai_strict": 10,
-   "kept": 13,
+   "kept": 17,
    "raw": 40
   }
  }
