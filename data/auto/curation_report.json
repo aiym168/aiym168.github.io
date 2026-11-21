@@ -2,18 +2,20 @@
  "counts": {
   "archived": 22,
   "deadline_extracted": 6,
-  "drop:duplicate": 462,
-  "drop:empty_summary": 60,
+  "drop:duplicate": 461,
+  "drop:empty_summary": 61,
   "drop:negative_signal": 138,
-  "drop:no_clear_offer": 591,
+  "drop:no_clear_offer": 593,
   "drop:not_ai": 493,
   "drop:too_old_pre2025": 60,
-  "google_news_resolved": 632,
-  "google_news_total": 632,
-  "kept_total": 216,
+  "google_news_resolved": 638,
+  "google_news_total": 638,
+  "kept_total": 219,
   "net:gnews_cache_hit": 632,
-  "net:tco_failed": 6,
-  "raw_total": 2020
+  "net:gnews_resolved_net": 6,
+  "net:tco_expanded": 2,
+  "new_this_run": 3,
+  "raw_total": 2025
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -23,15 +25,16 @@
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
    "讨论：还有人对大模型回答的啰嗦与谄媚感到疲惫吗",
    "ClearOffice Hub：用自然语言构建企业应用",
-   "ai 中转，欢迎点开看看",
    "Beatreel：根据一个提示制作讲解短视频",
    "hive-mind：如何设计协同工作的 AI 体",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
-   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话"
+   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
+   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑"
   ],
   "empty_summary": [
+   "如何租用 GPU：> 打开 Higgsfield GPU Harness 并按启动计算机 > 选择云计算机",
    "在设置里的 Models 添加自有密钥或连接订阅，经其推理在 Tembo 内费用为 0，另有免费试用与付费方案",
    "@hosun_chung 分享：该帖称 AI 免费试用的每个注册都消耗真实算力，成本远高于 SaaS",
    "该模型在 Artificial Analysis 人声音乐榜排名第一，并可免费试用",
@@ -42,8 +45,7 @@
    "@liam_fallen 分享：作者称每月免费赠送 AI 代理，并附上获取链接",
    "Meta 计划以 300 美元出售 Muse Charm AI 设备，并赠送最长一年 Verizon 5G 服务来吸引买",
    "支持 Mac、Windows 和 Linux，每日免费使用 Claude、GPT",
-   "@TraycerAI 分享：活动提供免费 AI 额度，本周末发放5万美元 Gemini 额度，每人100美元",
-   "无需信用卡，额度可用于 DeepSeek V4.1 Flash 和 GLM-5.3 Flash"
+   "@TraycerAI 分享：活动提供免费 AI 额度，本周末发放5万美元 Gemini 额度，每人100美元"
   ],
   "negative_signal": [
    "@bluwhaleai 分享：AI 代理交易锦标赛第6期推出社区赠送活动，最高奖励1万 solana",
@@ -60,6 +62,9 @@
    "@HealthcareSeema 分享：临床开发需跨研究、申报、数据和团队协调复杂运营，这些智能体提供 AI 辅助的监控"
   ],
   "no_clear_offer": [
+   "Meta 的独立 AI 小工具不会便宜，但它可能会提供免费数据计划",
+   "@levelsio 分享：这是一个巨大的成功，因此，我还添加了一个举报端点，供您自行举报 AI 回复机器人 Chrome",
+   "隆重推出 DevinDash 从今天起，您可以使用 DoorDash MCP 和 Devin Bot 订餐",
    "OpenLIT 是开源 AI 代理框架工程，同一任务成本可降低79%",
    "LLM 中的无训练权重烘焙 Amin Golnari、Saeid Sanei [cs.LG cs.AI]",
    "这个以《GTA VI》为灵感的 AI 网红故事太疯狂了 你真的可以免费创建自己的 AI 模特",
@@ -68,10 +73,7 @@
    "课程分段讲解，从搭建首个 Harness agent 到 Harness 与 Loop 工程、Graph 工程及完整流程",
    "它通过从 SSD 流式加载模型权重实现，原文介绍了其工作原理与速度表现",
    "Meta 希望这款硬件能扩展其硬件业务，并为其 AI 助手带来更多用户",
-   "该功能面向所有 Google AI 订阅用户，并在美日韩澳加英德法免费",
-   "资源含 15 份 PowerPoint 和学生项目手册，用于 14 周 AI 辅助语言教学课程",
-   "Canva 为免费与 Pro 用户新增 AI 控制设置",
-   "@jasonlk 分享：提供 AI 销售代理免费指南，并附 AI 代理相关介绍链接"
+   "该功能面向所有 Google AI 订阅用户，并在美日韩澳加英德法免费"
   ],
   "not_ai": [
    "@vivago_ai 分享：11 月 20 日至 30 日加入创作者计划可获 5000 奖励积分",
@@ -102,17 +104,16 @@
    "今天，我们很高兴推出 Stable Audio，这是我们首款用于音乐和声音生成的 AI 产品！"
   ]
  },
- "generated_at": "2026-11-21T09:21:44+08:00",
+ "generated_at": "2026-11-21T11:30:07+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-21T09:21:44+08:00",
+  "checked_at": "2026-11-21T11:30:06+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 191,
-   "unsure": 2
+   "ok": 193,
+   "recheck": 1
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 1.7,
+ "seconds": 4.0,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -122,9 +123,9 @@
   },
   "hot_topics": {
    "drop:negative_signal": 4,
-   "drop:not_ai": 15,
+   "drop:not_ai": 13,
    "drop:not_ai_strict": 10,
-   "kept": 11,
+   "kept": 13,
    "raw": 40
   }
  }
