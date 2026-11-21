@@ -3,20 +3,13 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 19,
+  "count": 17,
   "items": [
     {
       "id": "hnhot-50577265",
       "title": "语言模型可以重写自身的权重",
       "summary": "",
       "url": "https://arxiv.org/abs/2611.21885",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50574383",
-      "title": "由于 AI 抛售抑制了 Anthropic 的第二天，纳斯达克指数抹去了 2026 年的全部涨幅",
-      "summary": "",
-      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
       "source": "Hacker News"
     },
     {
@@ -27,17 +20,24 @@
       "source": "Hacker News"
     },
     {
-      "id": "v2hot-1258698",
-      "title": "「黑五 7 折 + 送 10 个终身版」Enconvo：自带 Computer Use 和 Browser Use 的 AI 助手，Mac / Windows / Linux / iPhone / Android 全平台原生应用",
-      "summary": "各位 V 友好，我是 Enconvo 的开发者 Kane。别以为这又是一个 AI 聊天套壳。Enconvo 是一个 personal agent：把你的电脑、手机、浏览器、文件和常用的 App 全连起来，把工作和生活安排得井井有条。黑五终身版 7 折，帖子里再送 10 个终身版，规则在文末。* 官网下载：* Windows / Linux 下载",
-      "url": "https://www.v2ex.com/t/1258698",
-      "source": "V2EX"
+      "id": "hnhot-50546587",
+      "title": "LLM 可以从十六进制转储中逐字节读取和写入可执行文件",
+      "summary": "",
+      "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
+      "source": "Hacker News"
     },
     {
       "id": "v2hot-1258753",
       "title": "Claude 被连封两个账号，不想折腾了，接下来用啥？",
       "summary": "1. 最近听说 Gemini carbon 挺好? 不知道 Google 会不会封号，主要怕影响 Gmail 账号 2. Codex 听说现在挺拉，不太想试了 3. 国产模型写代码最好的是哪个？",
       "url": "https://www.v2ex.com/t/1258753",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258698",
+      "title": "「黑五 7 折 + 送 10 个终身版」Enconvo：自带 Computer Use 和 Browser Use 的 AI 助手，Mac / Windows / Linux / iPhone / Android 全平台原生应用",
+      "summary": "各位 V 友好，我是 Enconvo 的开发者 Kane。别以为这又是一个 AI 聊天套壳。Enconvo 是一个 personal agent：把你的电脑、手机、浏览器、文件和常用的 App 全连起来，把工作和生活安排得井井有条。黑五终身版 7 折，帖子里再送 10 个终身版，规则在文末。* 官网下载：* Windows / Linux 下载",
+      "url": "https://www.v2ex.com/t/1258698",
       "source": "V2EX"
     },
     {
@@ -62,13 +62,6 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258784",
-      "title": "现在哪个模型的中文写作能力最强",
-      "summary": "上个月用 Opus5.5 写了部玄幻小说，让各大 AI 评分都是 8 点左右，第一轮没改完，A/弹身份验证了。刚刚 Deepseek 充了几十块钱，准备让 ds 写，读了原文后，ds 说他自己只能写到 7.8 分，在文笔语感、细节之“准”、人物腔调、情感方面全面落后当前文稿，而且“原著的毛病，我会少犯；原著的长处，我也写不出来。”，搞得我不想让 ds 接手了。现在哪个模型的中文写作能力最强呢? 最近几天刷到说 Gemini 4 起来了? 能冲了吗? Gemini 的中文写作比 Opus5.5 强还是弱啊",
-      "url": "https://www.v2ex.com/t/1258784",
-      "source": "V2EX"
-    },
-    {
       "id": "v2hot-1258823",
       "title": "Enter Guard：AI 聊天框里 Enter 换行、Ctrl/Cmd+Enter 发送，不再误触发送",
       "summary": "先说说痛点：用 DeepSeek 的时候，回车直接发送，打到一半就发出去了，还没法改；ChatGPT、Claude 这些虽然有的能改设置，但不是每个都有，每次换站点都要翻设置很烦。于是做了这个 Chrome 扩展 Enter Guard，核心就一件事：Enter = 换行 Ctrl/Cmd+Enter = 发送 几个要点：中文 / 日文 / 韩文输入法候选确认完全不受影响（IME 安全） 两种模式可全局 / 按站点切换：「Enter = Newline」（默认）和「Enter = Off」 默认覆盖 DeepSeek、ChatGPT、Cl",
@@ -76,10 +69,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258777",
-      "title": "[视频] 以前甲方经常说“我不管，下周一大屏要上线”，今天，终于通过 [AI] 复仇了",
-      "summary": "纯属娱乐一共 50 秒，一天撸豆包 15 秒而已。",
-      "url": "https://www.v2ex.com/t/1258777",
+      "id": "v2hot-1258834",
+      "title": "Gemini 从美区学生 Pro 入正黑五半价了，顺道聊聊当前 Gemini 优惠情况和我个人 AI 使用心得分享",
+      "summary": "白嫖谷歌学生 Pro 挺久，说人话是最大的特色，前两个月因为 ChatGPT 狂砍 plus 额度那时就停掉了，现在这时间点再看，停掉 ChatGPT 是对的，新模型拉了额度也烧得非常快。以前的流程是：ChatGPT 做开发写脚本写逻辑，Antigravity 挂自动化用 3.8 Flash 定时跑流程执行。停掉 ChatGPT 后：DeepSeek Flash 在 ChatGPT 的开发上迭代，Antigravity 保持不变。说来也赶巧，恰逢：1. Google One 要再次核验学生身份了，又恰逢社区里很多人都倒在了这次核验上。2. 又恰逢谷歌开启了黑",
+      "url": "https://www.v2ex.com/t/1258834",
       "source": "V2EX"
     },
     {
@@ -104,20 +97,6 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258781",
-      "title": "周末折腾了个 AI 视频生成小站，发现套壳 SaaS 真正麻烦的不是开发",
-      "summary": "最近一直在折腾 AI 出海小产品，之前做过一些工具站，这次想试试 AI 视频生成方向。最开始的想法挺简单：现在图生视频模型越来越成熟了，能不能围绕某个具体的使用场景，做一个足够简单的小工具？于是选了一个比较有意思的方向：**上传几张人物照片，生成一段类似桌面音乐会的 AI 演出视频。** 不需要用户自己写复杂的 Prompt，也不用研究各种模型参数，尽量把操作流程简化。做下来有几个感受：**1. AI 降低了开发门槛，但没有降低做产品的门槛** 现在借助 AI 编程工具，搭个前端、接个模型 API、完成基本的生成流程，其实不算太难。真正需要考",
-      "url": "https://www.v2ex.com/t/1258781",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1258779",
-      "title": "美国洛杉矶精品 VPS 上新！三网顶级直连, 限时 75 折 纯 IPv4 纯净 IP AI 首选",
-      "summary": "[云途] 美国洛杉矶精品 VPS 上新！三网顶级直连+20G 防御 云途网络全新上线美国洛杉矶精品线路，主打顶级回国路由，建站、流媒体、AI 首选。核心线路优势：三网顶级直连：电信 CN2 + 联通 9929 + 移动 CMIN2 豪华组合。极致稳定：实测全网节点零丢包，低延迟，晚高峰依然丝滑。自带防御：默认赠送 20G DDoS 防御，无惧攻击，建站更安心。完美解锁：纯 IPv4 纯净 IP，流畅访问 ChatGPT、Claude 及主流流媒体。限时七五折优惠码：YTUS75 (限时特惠，入门款折后仅需 ¥33.75/月！) 下单地址：h",
-      "url": "https://www.v2ex.com/t/1258779",
-      "source": "V2EX"
-    },
-    {
       "id": "v2hot-1258821",
       "title": "TK 软路由&管理软件系统适用各种流媒体包括 claude",
       "summary": "TK 软路由管理系统软件 win 版本支持管理多台路由器不用进后台管理可以一键创建多 wifi 并调节 wifi 设置，还有一键把 wifi 分流走不同节点可以走链式代理，支持物理网卡 mac 地址随机真实可查几十万个地址每个生成都是真实路由器，还有检测路由器远程路由器，不用打开软路由网页进行管理永久授权，tg 群聊 网站介绍 ![软件界面](",
@@ -137,6 +116,13 @@
       "summary": "阿里云 7 折 腾讯云 7 折 华为云 7 折 阿里 CDN 3900U/P 腾讯 CDN 3900U/P 火山 CDN 3900U/P 谷歌云 GCP65 折 亚马逊云 AWS 新号 65 折/老号无需迁移 85 折 腾讯云国际 55 折 阿里云国际 65 折 华为云国际 65 折 AWS 全球节点 CDN 加速 1 折 Ai 模型低至 4 折 火山国际 7 折 TG 详聊：@Tiangua7",
       "url": "https://www.v2ex.com/t/1258817",
       "source": "V2EX"
+    },
+    {
+      "id": "xhot-xrss-2335951587",
+      "title": "Rounds：把 Claude Code 会话成果放上无限画布，本地免费",
+      "summary": "Rounds 把 Claude Code 会话产出汇总到一块无限画布，可反馈、审阅、查历史，在 Mac 本地运行，免费私密。",
+      "url": "https://x.com/krispuckett/status/2123811826895036437",
+      "source": "X"
     }
   ]
 }
