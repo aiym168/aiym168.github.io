@@ -2,21 +2,20 @@
  "counts": {
   "archived": 22,
   "deadline_extracted": 6,
-  "drop:duplicate": 458,
+  "drop:duplicate": 457,
   "drop:empty_summary": 62,
-  "drop:negative_signal": 138,
-  "drop:no_clear_offer": 595,
-  "drop:not_ai": 495,
+  "drop:negative_signal": 140,
+  "drop:no_clear_offer": 597,
+  "drop:not_ai": 496,
   "drop:too_old_pre2025": 60,
-  "google_news_resolved": 642,
-  "google_news_total": 642,
-  "kept_total": 222,
-  "net:gnews_cache_hit": 638,
-  "net:gnews_resolved_net": 4,
-  "net:tco_expanded": 1,
-  "net:tco_failed": 6,
-  "new_this_run": 5,
-  "raw_total": 2030
+  "google_news_resolved": 648,
+  "google_news_total": 648,
+  "kept_total": 224,
+  "net:gnews_cache_hit": 642,
+  "net:gnews_resolved_net": 6,
+  "net:tco_expanded": 2,
+  "new_this_run": 1,
+  "raw_total": 2036
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -25,14 +24,14 @@
    "开源工具 tecr 帮 AI agent 减少返工，免费开放",
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
    "ClearOffice Hub：用自然语言构建企业应用",
-   "一键使用 Claude Code Opus 5.5，不用折腾账号和 API",
    "Beatreel：根据一个提示制作讲解短视频",
    "hive-mind：如何设计协同工作的 AI 体",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
    "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
-   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑"
+   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑",
+   "awesome-free-llm-apis-ir：波斯语优先、机器可读的免费 LLM API 目录"
   ],
   "empty_summary": [
    "据称 Gemini Pro 现可免费使用一年，原价 200 美元，无需付款即可激活",
@@ -63,6 +62,9 @@
    "@HealthcareSeema 分享：临床开发需跨研究、申报、数据和团队协调复杂运营，这些智能体提供 AI 辅助的监控"
   ],
   "no_clear_offer": [
+   "Build AI 开设了一家真实世界训练数据商店",
+   "@claudeai 分享：和以前一样，您在《神鬼寓言 5》上最多可以使用每周使用限制的一半",
+   "Agora Skills 教授编码代理如何使用 Agora 工具和入门应用程序",
    "@VaibhavSisinty 分享：该免费社区已有 20 多万人加入，可每天获取 AI 工具和信息",
    "@_satyam_ai 分享：作者从零构建引擎，赛车游戏完全在 Chrome 的 WebGPU 上运行",
    "@toly 分享：作者认为人类无需耗时撰写上千页形式证明，交给机器可解放思维",
@@ -71,12 +73,11 @@
    "隆重推出 DevinDash 从今天起，您可以使用 DoorDash MCP 和 Devin Bot 订餐",
    "OpenLIT 是开源 AI 代理框架工程，同一任务成本可降低79%",
    "LLM 中的无训练权重烘焙 Amin Golnari、Saeid Sanei [cs.LG cs.AI]",
-   "这个以《GTA VI》为灵感的 AI 网红故事太疯狂了 你真的可以免费创建自己的 AI 模特",
-   "Verily 前高管打造 AI 平台，从蛋白质组学数据中获取更多信息@tesorai_bio",
-   "Dan Ives 刚刚表示：“我们仍然认为，采取多元化的 AI 市场策略是到2027年持有 AI",
-   "课程分段讲解，从搭建首个 Harness agent 到 Harness 与 Loop 工程、Graph 工程及完整流程"
+   "这个以《GTA VI》为灵感的 AI 网红故事太疯狂了 你真的可以免费创建自己的 AI 模特"
   ],
   "not_ai": [
+   "@xdadevelopers 分享：我用免费的开源工具替换了任务管理器的 GPU 选项卡，终于找到了我的 VRAM 的去",
+   "@openclaw 分享：”好吧，这不是当我们接近第一次提交 OpenClaw 一周年时，Joe 反思了将该工具带到今天",
    "@vivago_ai 分享：11 月 20 日至 30 日加入创作者计划可获 5000 奖励积分",
    "使用 8 块 RTX PRO 6000、两机并行，本次渲染消耗 1099.50 积分",
    "通过 PS5 的 Remote Play 串流到 PC，并叠加显卡超分与帧生成",
@@ -86,9 +87,7 @@
    "北卡州立大学基于 Unitree G1 开发农业人形机器人 Howl，用于在无笼养鸡场寻找并拾取地面鸡蛋",
    "活动至 12 月 2 日，Pro 与 Premium 五折、充值送额度，用码 SWARMSFLA 得 15 美元免费额度",
    "上传 logo 后可调整颜色、光照与动态，本地运行无需 API key，导出 2K/4K 无缝循环视频",
-   "加拿大正在通过 C-22法案经历其自身的聊天管控乱局：强烈建议加拿大同胞联系参议员",
-   "@elonmusk 分享：正如我刚才所说……我们向达菲部长提供了免费的 FAA 用 Starlink，但他表示不需要",
-   "直播中聊 GPU 市场，并在聊天区发放游戏激活码和本月 PC 抽奖"
+   "加拿大正在通过 C-22法案经历其自身的聊天管控乱局：强烈建议加拿大同胞联系参议员"
   ],
   "too_old_pre2025": [
    "OpenAI 向科研人员免费开放前沿模型，首批1万人",
@@ -105,17 +104,16 @@
    "今天，我们很高兴推出 Stable Audio，这是我们首款用于音乐和声音生成的 AI 产品！"
   ]
  },
- "generated_at": "2026-11-21T17:37:56+08:00",
+ "generated_at": "2026-11-21T20:54:00+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-21T17:37:56+08:00",
+  "checked_at": "2026-11-21T20:54:00+08:00",
   "counts": {
    "gone": 1,
-   "ok": 196,
-   "recheck": 1
+   "ok": 199
   },
   "hidden": 1
  },
- "seconds": 3.3,
+ "seconds": 3.8,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -124,10 +122,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 2,
-   "drop:not_ai": 11,
-   "drop:not_ai_strict": 10,
-   "kept": 17,
+   "drop:negative_signal": 3,
+   "drop:not_ai": 17,
+   "drop:not_ai_strict": 5,
+   "kept": 15,
    "raw": 40
   }
  }

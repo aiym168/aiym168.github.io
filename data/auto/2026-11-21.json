@@ -1,9 +1,28 @@
 {
   "date": "2026-11-21",
-  "updated_at": "2026-11-21T17:35+08:00",
-  "updated_at_label": "2026-11-21 17:35 Asia/Shanghai",
+  "updated_at": "2026-11-21T20:51+08:00",
+  "updated_at_label": "2026-11-21 20:51 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50587783",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "Show HN：停止使用 AI 生成的简历来申请工作",
+      "summary": "显示 HN：停止使用 AI 生成的简历申请工作 当 LLM 向您提供简历或 pdf 时，它会带有其制作方式的标记，包括来源。您在页面上看不到它们，但申请人跟踪系统可以读取它们。<p>因此，招聘人员会标记此类个人资料并完全拒绝它们。我已经在 40 多个 AI 模型（OpenAI、Anthropic、Google、Meta 等）中对此进行了测试，以生成一份简历，并且每个文件都带有一个标记。<p>为了解决这个问题。我构建了一个免费工具来显示您的文件内容并为您提供经过清理的版本：<p>- 删除您的简历并获取经过清理的副本\n- 免费，无需帐户。<p>它不会做什么：它不会重写您的简历或使听起来 AI 的措辞更加人性化。它只处理文件中隐藏的内容。<p>这是一个简单的工具，但我",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "grandimam",
+      "url": "https://unmark.grandimam.com/",
+      "posted_at": "2026-11-21 18:21 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 1
+      },
+      "original_title": "Show HN: Stop applying to jobs using AI-generated resume",
+      "original_summary": "Show HN: Stop applying to jobs using AI-generated resume When LLMs hands you a resume or pdf it carry markers of how it was made, including the source. You can&#x27;t see them on the page but applicant tracking systems can read it.<p>So recruiters are flagging such profiles and rejecting them entirely. I had tested this across 40+ AI models (OpenAI, Anthropic, Google, Meta, etc) to produce a resume and every single file carried a marker.<p>To solve this problem. I had built a free tool to show what your file says and gives you a cleaned version:<p>- Drop your resume and get a cleaned copy\n- Free, no account.<p>What it doesn&#x27;t do: it won&#x27;t rewrite your resume or make AI-sounding wording more human. It only deals with what&#x27;s hidden in the file.<p>It&#x27;s a simple tool, but i",
+      "translated_by": "free-translate"
+    },
     {
       "id": "hn-50586323",
       "source": "Hacker News",
@@ -112,7 +131,7 @@
       "posted_at": "2026-11-20 03:20 Asia/Shanghai",
       "engagement": {
         "points": 3,
-        "comments": 0
+        "comments": 1
       },
       "original_title": "The End of Continuous Rework",
       "original_summary": "The End of Continuous Rework I built a free and open source tool your AI agents can use to reduce the rework we often have to do with AI:<p>https:&#x2F;&#x2F;decapodlabs.github.io&#x2F;tecr",
@@ -149,7 +168,7 @@
       "url": "https://foolscap.works/",
       "posted_at": "2026-11-19 21:21 Asia/Shanghai",
       "engagement": {
-        "points": 121,
+        "points": 122,
         "comments": 93
       },
       "original_title": "Show HN: Foolscap – a writing app that reads your book and never writes for you",
@@ -249,25 +268,6 @@
       },
       "original_title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
       "original_summary": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos We’re Yonas and Daniel and we’re building StarSling (<a href=\"https:&#x2F;&#x2F;starsling.dev\">https:&#x2F;&#x2F;starsling.dev</a>), fast GitHub Actions runners with AI agents that ship PRs to continuously improve your tests and workflows.<p>Every CI job gets its own ephemeral sandbox on the fastest Zen 5 machines and NVMe Disk with unlimited concurrency so a burst of agent PRs all run at once. We’re different from other runners because ours come with agents that cut down your CI bill over time. PRs are generated through our CI harness, which runs an agent loop that’s tuned to improve your CI speed and reduce cost.<p>Mastra now merges over 1,800 PRs a month and we got their slowest workflow from 29m 56s on GitHub-host",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50535157",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Faros Desktop：本地查看 AI 编码工具使用轨迹的 Mac 应用",
-      "summary": "把本地 AI 编码工具的使用情况汇总可视化，并给出让订阅花费更耐用的建议。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "sachinag",
-      "url": "https://news.ycombinator.com/item?id=50535157",
-      "posted_at": "2026-11-18 01:42 Asia/Shanghai",
-      "engagement": {
-        "points": 4,
-        "comments": 2
-      },
-      "original_title": "Show HN: Faros Desktop, a local app to see your AI traces and extend your usage",
-      "original_summary": "Show HN: Faros Desktop, a local app to see your AI traces and extend your usage Hi HN, I’m Sachin, and I’ve spent the last couple of months working on Faros Desktop, a Mac app that visualizes how you use your local AI coding tools into one place and then makes recommendations to make your subscription spend go further.<p>As agents have replaced hands-on-keyboard work, the team and I wanted to better understand what’s in our session traces. Faros Desktop hydrates with on-device session history in Codex, Claude Code, Github Copilot, and Cursor to let users deep dive into a beautiful visualization of AI session traces. Then based on consolidating that information, the app shows patterns in usage as well as recommendations for ways to save spend through simple changes that we call Power Ups.<p",
       "translated_by": "model"
     },
     {
@@ -575,6 +575,25 @@
       "translated_by": "free-translate"
     },
     {
+      "id": "hn-50588038",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Show HN：SwiphtNum 3.0 – 使用 SEM、SQL 和脚本编写的本机 Mac 统计数据",
+      "summary": "显示 HN：SwiphtNum 3.0 – 使用 SEM、SQL 和脚本进行本机 Mac 统计 Hi HN，我构建了 SwiphtNum，这是一个用 Swift 为 Mac 编写的统计工作区，其中包含数字\nC 和 Accelerate 中的内核。内部没有 R 或 Python 运行时；一切都在本地运行，\n并且数据集永远不会离开机器。<p>3.0 的变化：<p>- SCL IDE。SCL 是 SwiphtNum 的类似 SPSS 的命令语言（169 个命令）。脚本、SQL 和\n 结果现在共享一个窗口：任何 SQL 语句都是 SCL 命令，查询结果在一个窗口中打开\n 结果选项卡，编辑器（一个小型 C 文本引擎）具有自动完成、折叠、悬停帮助和\n 命令面板。SQLite、MySQL 和 PostgreSQL 通过 SSL 或 SSH 连接。\n- 多元方差分析：Pillai、Wilks、Hotelling 和 Roy、单元均值、降压 F 和\n 判别函数。\n- 十个接口",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "shrun",
+      "url": "https://swiphtgroup.com/swiphtnum/",
+      "posted_at": "2026-11-21 19:10 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: SwiphtNum 3.0 – native Mac statistics with SEM, SQL and scripting",
+      "original_summary": "Show HN: SwiphtNum 3.0 – native Mac statistics with SEM, SQL and scripting Hi HN, I build SwiphtNum, a statistics workspace written for the Mac in Swift, with the numeric\nkernels in C and Accelerate. There is no R or Python runtime inside; everything runs locally,\nand datasets never leave the machine.<p>What 3.0 changes:<p>- The SCL IDE. SCL is SwiphtNum&#x27;s SPSS-like command language (169 commands). Scripts, SQL and\n  results now share one window: any SQL statement is an SCL command, query results open in a\n  Results tab, and the editor (a small C text engine) has autocomplete, folding, hover help and\n  a command palette. SQLite, MySQL and PostgreSQL connect over SSL or SSH.\n- MANOVA: Pillai, Wilks, Hotelling and Roy, cell means, stepdown F and\n  discriminant functions.\n- Ten interface",
+      "translated_by": "free-translate"
+    },
+    {
       "id": "hn-50586349",
       "source": "Hacker News",
       "category": "其他科技",
@@ -606,7 +625,7 @@
       "posted_at": "2026-11-21 11:19 Asia/Shanghai",
       "engagement": {
         "points": 3,
-        "comments": 1
+        "comments": 2
       },
       "original_title": "Show HN: MuGlobe – Explore the world's music by place on a globe",
       "original_summary": "Show HN: MuGlobe – Explore the world's music by place on a globe Hi HN. I’m Ed. I built MuGlobe solo. It’s a global music discovery platform. Click on any spot on the globe and stream music from there. It’s not playlists stuck to a globe. It’s a huge ethnomusicology database that paints &gt; 1500 musical genres onto the world then maps the overlapping influences into a virtual radio station that then generates a dynamic list from 100,000 cataloged tracks on Youtube. It’s free and has no ads. I want it to be used to cure the music algorithm blues. Do you think its a fit or that use case or better in education?  I find a lot of the music in Latin America and Africa can be left on all day.",
@@ -624,8 +643,8 @@
       "url": "https://github.com/diggerhq/opencomputer",
       "posted_at": "2026-11-21 04:19 Asia/Shanghai",
       "engagement": {
-        "points": 105,
-        "comments": 31
+        "points": 107,
+        "comments": 32
       },
       "original_title": "Show HN: OpenComputer – an open source alternative to Devin",
       "original_summary": "Show HN: OpenComputer – an open source alternative to Devin Hi HN!<p>Utpal here, I&#x27;m one of the founders of OpenComputer.<p>OpenComputer is an open source cloud coding agent for teams that can run in your own cloud account (AWS, GCP, Azure).<p>We run the agent harness and the sandbox on the same durable VM (architecture in the docs [1]). First commit lands in 24s; the alternatives we benchmarked took 53-72s (benchmarks below [2]).<p>Two other choices:<p>- One VM per team, scalable horizontally. Sessions are isolated in git worktrees.\n- Session files are backed up to a repo after every turn, so any session can resume on another VM.<p>We noticed that past ~640 session-hours a month, one always-on 4 vCPU VM is cheaper than per-session E2B sandboxes, for example. So at scale, this setup w",
@@ -689,23 +708,22 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50573575",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Depth Pro 2 的 ONNX/TensorRT 与 ROS 2 免费部署",
-      "summary": "含无焦距网络版本，3090 上 TensorRT FP16 达 278 FPS，支持 Jetson。",
+      "id": "v2ex-1258781",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "周末折腾了个 AI 视频生成小站，发现套壳 SaaS 真正麻烦的不是开发",
+      "summary": "周末折腾了个 AI 视频生成小站，发现套壳 SaaS 真正麻烦的不是开发\n最近一直在折腾 AI 出海小产品，之前做过一些工具站，这次想试试 AI 视频生成方向。\r\n\r\n最开始的想法挺简单：现在图生视频模型越来越成熟了，能不能围绕某个具体的使用场景，做一个足够简单的小工具？\r\n\r\n于是选了一个比较有意思的方向：**上传几张人物照片，生成一段类似桌面音乐会的 AI 演出视频。**\r\n\r\n不需要用户自己写复杂的 Prompt，也不用研究各种模型参数，尽量把操作流程简化。\r\n\r\n做下来有几个感受：\r\n\r\n**1. AI 降低了开发门槛，但没有降低做产品的门槛**\r\n\r\n现在借助 AI 编程工具，搭个前端、接个模型 API、完成基本的生成流程，其实不算太难。\r\n\r\n真正需要考虑的是：用户为什么要用你的产品，而不是直接去模型平台官网？\r\n\r\n目前我的想法是，不做大而全的 AI 视频平台，而是围绕一个具体的场景，把体验做到足够简单。\r\n\r\n**2. 视频生成 SaaS 的成本比想象中更难控制**\r\n\r\n和文本生成不一样，视频模型每次调用都有比较明显的成本。\r\n\r\n而且还需要考虑：\r\n\r\n- 生成失败、超时怎么处理？\r\n- 用户重复点击怎么办？\r\n- 任务成功但前端没有拿到结果怎么办？\r\n- 预扣积分、失败返还怎么设计？\r\n- 视频文件保存多久比较合理？\r\n\r\n这些问题单独看都不复杂，但组合起来还挺容易踩坑的。\r\n\r\n**3. 技术实现只是一部分，流量才是真正的难题**\r\n\r\n之前做工具站时，主要依赖 Google SEO。\r\n\r\n这次发现 AI 视频工具竞争更激烈，很多关键词已经被大站占据。\r\n\r\n所以也在思考，是继续通过 SEO 获取自然流量，还是应该先通过 TikTok、YouTube Shorts 这类平台验证需求。\r\n\r\n**4. 小而垂直的 AI 工具，还有没有机会？**",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "protortyp",
-      "url": "https://github.com/protortyp/depthpro2-onnx",
-      "posted_at": "2026-11-20 20:05 Asia/Shanghai",
+      "author": "zdp072",
+      "url": "https://www.v2ex.com/t/1258781",
+      "posted_at": "2026-11-21 18:43 Asia/Shanghai",
       "engagement": {
-        "points": 2,
-        "comments": 0
+        "replies": 0
       },
-      "original_title": "Show HN: Depth Pro 2 ONNX/TensorRT and ROS 2 (278 FPS on 3090)",
-      "original_summary": "Show HN: Depth Pro 2 ONNX/TensorRT and ROS 2 (278 FPS on 3090) Wanted to use apple&#x27;s latest depth model on my SO-101 and didn’t need the focal network, so I exported both the full and focal-free versions of Depth Pro 2 to ONNX + TensorRT and added a ROS 2 node. In case anyone has similar needs.<p>S model hits 278 FPS with TensorRT FP16 on a 3090 (480×640). Also has Jetson builds.",
-      "translated_by": "model"
+      "original_title": "周末折腾了个 AI 视频生成小站，发现套壳 SaaS 真正麻烦的不是开发",
+      "original_summary": "周末折腾了个 AI 视频生成小站，发现套壳 SaaS 真正麻烦的不是开发\n最近一直在折腾 AI 出海小产品，之前做过一些工具站，这次想试试 AI 视频生成方向。\r\n\r\n最开始的想法挺简单：现在图生视频模型越来越成熟了，能不能围绕某个具体的使用场景，做一个足够简单的小工具？\r\n\r\n于是选了一个比较有意思的方向：**上传几张人物照片，生成一段类似桌面音乐会的 AI 演出视频。**\r\n\r\n不需要用户自己写复杂的 Prompt，也不用研究各种模型参数，尽量把操作流程简化。\r\n\r\n做下来有几个感受：\r\n\r\n**1. AI 降低了开发门槛，但没有降低做产品的门槛**\r\n\r\n现在借助 AI 编程工具，搭个前端、接个模型 API、完成基本的生成流程，其实不算太难。\r\n\r\n真正需要考虑的是：用户为什么要用你的产品，而不是直接去模型平台官网？\r\n\r\n目前我的想法是，不做大而全的 AI 视频平台，而是围绕一个具体的场景，把体验做到足够简单。\r\n\r\n**2. 视频生成 SaaS 的成本比想象中更难控制**\r\n\r\n和文本生成不一样，视频模型每次调用都有比较明显的成本。\r\n\r\n而且还需要考虑：\r\n\r\n- 生成失败、超时怎么处理？\r\n- 用户重复点击怎么办？\r\n- 任务成功但前端没有拿到结果怎么办？\r\n- 预扣积分、失败返还怎么设计？\r\n- 视频文件保存多久比较合理？\r\n\r\n这些问题单独看都不复杂，但组合起来还挺容易踩坑的。\r\n\r\n**3. 技术实现只是一部分，流量才是真正的难题**\r\n\r\n之前做工具站时，主要依赖 Google SEO。\r\n\r\n这次发现 AI 视频工具竞争更激烈，很多关键词已经被大站占据。\r\n\r\n所以也在思考，是继续通过 SEO 获取自然流量，还是应该先通过 TikTok、YouTube Shorts 这类平台验证需求。\r\n\r\n**4. 小而垂直的 AI 工具，还有没有机会？**",
+      "translated_by": "free-translate"
     },
     {
       "id": "v2ex-1258757",
@@ -726,39 +744,21 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1258731",
+      "id": "v2ex-1258698",
       "source": "V2EX",
-      "category": "科技软件/App 限免",
-      "title": "🎉 File-Organizer (文件归档/批量重命名) 上架 App Store | 黑五回馈 V 友",
-      "summary": "🎉 File-Organizer (文件归档/批量重命名) 上架 App Store | 黑五回馈 V 友\n国庆那阵要整理一批文件，分类、归档都不太趁手，批量改名也麻烦，就趁假期自己做了一个 `App`。11 月中终于在 `App Store` 上架了。\r\n\r\n临近黑色星期五，想给 `V` 友回馈一下，放一批限量免费兑换码，先到先得。\r\n\r\n主要特点：\r\n\r\n- 按类型、日期等规则整理文件，先预览再执行\r\n- 自动归档：App 开着时，所选文件夹里的新文件会自动整理\r\n- 新建文件夹、查看文件详情\r\n- 也支持批量重命名：前缀/后缀、替换、序列号等，可撤销\r\n- 完全在本机处理\r\n\r\n[File Organizer @ App Store](https://apps.apple.com/cn/app/file-organizer/id6821253362?mt=12)\r\n\r\n兑换码数量有限：\r\n```text\r\n6JFPY4P9JN6A\r\nFXKNA4KENJ79\r\nR34M4734JMFL\r\nLXYT744P39PP\r\nEK4JPHWA6N7N\r\n93TKM4WMWX94\r\nTLLXLW737FPP\r\n9JKANRL7KWPM\r\nTNPFKWHWNTEX\r\nRRRLPJALWKAT\r\nN6A664R3A7WK\r\n9TEYXYHEWTXT\r\n9XXHNKENXTPR\r\nHRYRAWTHN3PY\r\nA94KFMA7J9XX\r\nTLXX6J9EYFM4\r\n4PHTEP9WJEM9\r\nHEM37A3XLYKA\r\n3TLRLYXE6R3K\r\nXP66YH4KEX9T\r\nJA933YLE4KTM\r\nWWYRJ6HRK3EN\r\nN4J4KLXHKX49\r\nFXMFWK7YEKWW\r\nXLWNAKN9MM9L\r\n4E7WWYMFR3AK\r\nW4YNJYFXXYRY\r\nP446H6M67Y",
+      "category": "云服务/GPU/开发者资源",
+      "title": "「黑五 7 折 + 送 10 个终身版」Enconvo：自带 Computer Use 和 Browser Use 的 AI 助手，Mac / Windows / Linux / iPhone / Android 全平台原生应用",
+      "summary": "「黑五 7 折 + 送 10 个终身版」Enconvo：自带 Computer Use 和 Browser Use 的 AI 助手，Mac / Windows / Linux / iPhone / Android 全平台原生应用\n各位 V 友好，我是 Enconvo 的开发者 Kane。\r\n\r\n别以为这又是一个 AI 聊天套壳。Enconvo 是一个 personal agent：把你的电脑、手机、浏览器、文件和常用的 App 全连起来，把工作和生活安排得井井有条。\r\n\r\n黑五终身版 7 折，帖子里再送 10 个终身版，规则在文末。\r\n\r\n* 官网下载：https://enconvo.com/?utm_source=v2ex&utm_medium=forum&utm_campaign=black-friday-2026\r\n* Windows / Linux 下载：https://www.enconvo.com/download?utm_source=v2ex&utm_medium=forum&utm_campaign=black-friday-2026\r\n* 付费模式：**免费版直接能用**（有用量上限）；终身版一次买断，30 天内可退款\r\n\r\n![](https://www.enconvo.com/og/enconvo-speak-select-ask-v3.jpg)\r\n\r\n---\r\n\r\n### 一、Computer Use 和 Browser Use\r\n\r\n这是我们花力气最多的地方，我敢说是目前全世界最好用的 Computer Use 和 Browser Use：\r\n\r\n* **Computer Use**：它能看懂你屏幕上的界面，像人一样点按钮、填表、在不同 App 之间搬数据。比如跟它说\"把下载文件夹按类型整理一下\"，它会自己一步步做完。\r\n* **Browser",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "sakishum",
-      "url": "https://www.v2ex.com/t/1258731",
-      "posted_at": "2026-11-21 13:03 Asia/Shanghai",
+      "author": "ysnows",
+      "url": "https://www.v2ex.com/t/1258698",
+      "posted_at": "2026-11-21 10:15 Asia/Shanghai",
       "engagement": {
-        "replies": 13
+        "replies": 29
       },
-      "original_title": "🎉 File-Organizer (文件归档/批量重命名) 上架 App Store | 黑五回馈 V 友",
-      "original_summary": "🎉 File-Organizer (文件归档/批量重命名) 上架 App Store | 黑五回馈 V 友\n国庆那阵要整理一批文件，分类、归档都不太趁手，批量改名也麻烦，就趁假期自己做了一个 `App`。11 月中终于在 `App Store` 上架了。\r\n\r\n临近黑色星期五，想给 `V` 友回馈一下，放一批限量免费兑换码，先到先得。\r\n\r\n主要特点：\r\n\r\n- 按类型、日期等规则整理文件，先预览再执行\r\n- 自动归档：App 开着时，所选文件夹里的新文件会自动整理\r\n- 新建文件夹、查看文件详情\r\n- 也支持批量重命名：前缀/后缀、替换、序列号等，可撤销\r\n- 完全在本机处理\r\n\r\n[File Organizer @ App Store](https://apps.apple.com/cn/app/file-organizer/id6821253362?mt=12)\r\n\r\n兑换码数量有限：\r\n```text\r\n6JFPY4P9JN6A\r\nFXKNA4KENJ79\r\nR34M4734JMFL\r\nLXYT744P39PP\r\nEK4JPHWA6N7N\r\n93TKM4WMWX94\r\nTLLXLW737FPP\r\n9JKANRL7KWPM\r\nTNPFKWHWNTEX\r\nRRRLPJALWKAT\r\nN6A664R3A7WK\r\n9TEYXYHEWTXT\r\n9XXHNKENXTPR\r\nHRYRAWTHN3PY\r\nA94KFMA7J9XX\r\nTLXX6J9EYFM4\r\n4PHTEP9WJEM9\r\nHEM37A3XLYKA\r\n3TLRLYXE6R3K\r\nXP66YH4KEX9T\r\nJA933YLE4KTM\r\nWWYRJ6HRK3EN\r\nN4J4KLXHKX49\r\nFXMFWK7YEKWW\r\nXLWNAKN9MM9L\r\n4E7WWYMFR3AK\r\nW4YNJYFXXYRY\r\nP446H6M67Y",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258640",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "一键使用 Claude Code Opus 5.5，不用折腾账号和 API",
-      "summary": "一键使用 Claude Code Opus 5.5，不用折腾账号和 API\n做了个小站 OnDemand Agent，一键用上 Claude Code Opus 5.5。\r\n\r\n不用注册 Claude 账号，不用搞 API 中转，不用翻墙。在 GitHub 上一句话说清要改什么，先给你方案，你确认了才动手，写完直接提 PR。\r\n\r\n按量付费，1 credit = 0.01 美元，没有月费，没有席位费。\r\n\r\n👉 ondemandagent.dev\r\n\r\n找几个用户帮我测试给反馈，免费送 500 Credits，感兴趣的留言，我发你。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "1wlinesperday",
-      "url": "https://www.v2ex.com/t/1258640",
-      "posted_at": "2026-11-20 19:43 Asia/Shanghai",
-      "engagement": {
-        "replies": 23
-      },
-      "original_title": "一键使用 Claude Code Opus 5.5，不用折腾账号和 API",
-      "original_summary": "一键使用 Claude Code Opus 5.5，不用折腾账号和 API\n做了个小站 OnDemand Agent，一键用上 Claude Code Opus 5.5。\r\n\r\n不用注册 Claude 账号，不用搞 API 中转，不用翻墙。在 GitHub 上一句话说清要改什么，先给你方案，你确认了才动手，写完直接提 PR。\r\n\r\n按量付费，1 credit = 0.01 美元，没有月费，没有席位费。\r\n\r\n👉 ondemandagent.dev\r\n\r\n找几个用户帮我测试给反馈，免费送 500 Credits，感兴趣的留言，我发你。",
+      "original_title": "「黑五 7 折 + 送 10 个终身版」Enconvo：自带 Computer Use 和 Browser Use 的 AI 助手，Mac / Windows / Linux / iPhone / Android 全平台原生应用",
+      "original_summary": "「黑五 7 折 + 送 10 个终身版」Enconvo：自带 Computer Use 和 Browser Use 的 AI 助手，Mac / Windows / Linux / iPhone / Android 全平台原生应用\n各位 V 友好，我是 Enconvo 的开发者 Kane。\r\n\r\n别以为这又是一个 AI 聊天套壳。Enconvo 是一个 personal agent：把你的电脑、手机、浏览器、文件和常用的 App 全连起来，把工作和生活安排得井井有条。\r\n\r\n黑五终身版 7 折，帖子里再送 10 个终身版，规则在文末。\r\n\r\n* 官网下载：https://enconvo.com/?utm_source=v2ex&utm_medium=forum&utm_campaign=black-friday-2026\r\n* Windows / Linux 下载：https://www.enconvo.com/download?utm_source=v2ex&utm_medium=forum&utm_campaign=black-friday-2026\r\n* 付费模式：**免费版直接能用**（有用量上限）；终身版一次买断，30 天内可退款\r\n\r\n![](https://www.enconvo.com/og/enconvo-speak-select-ask-v3.jpg)\r\n\r\n---\r\n\r\n### 一、Computer Use 和 Browser Use\r\n\r\n这是我们花力气最多的地方，我敢说是目前全世界最好用的 Computer Use 和 Browser Use：\r\n\r\n* **Computer Use**：它能看懂你屏幕上的界面，像人一样点按钮、填表、在不同 App 之间搬数据。比如跟它说\"把下载文件夹按类型整理一下\"，它会自己一步步做完。\r\n* **Browser",
       "translated_by": "free-translate"
     },
     {
