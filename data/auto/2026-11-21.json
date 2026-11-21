@@ -1,9 +1,28 @@
 {
   "date": "2026-11-21",
-  "updated_at": "2026-11-21T05:59+08:00",
-  "updated_at_label": "2026-11-21 05:59 Asia/Shanghai",
+  "updated_at": "2026-11-21T09:18+08:00",
+  "updated_at_label": "2026-11-21 09:18 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50583881",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Show HN：SaturnSQL Context，告诉 AI 工具数据库的含义",
+      "summary": "Show HN：SaturnSQL Context，告诉 AI 工具数据库的含义。我发现，当 AI 从不同地方查询数据时，对上下文的需求日益增加，因此我开发了一种提供上下文的方法。<p>您只需描述表、撰写自由格式的 Markdown 注释并设置定义（例如，用于计算活跃用户的 SQL，以便公司所有人都以相同的方式进行计算）。它支持 Apache Ossie，并且上下文可以存在于您的代码库中。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "infr88",
+      "url": "https://saturnsql.com/context-layer",
+      "posted_at": "2026-11-21 07:31 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 1
+      },
+      "original_title": "Show HN: SaturnSQL Context, telling AI tools what the database means",
+      "original_summary": "Show HN: SaturnSQL Context, telling AI tools what the database means I&#x27;ve seen a rising demand for context when AI queries data from different places, so I built a way to provide it.<p>You basically describe the tables, write free-form markdown notes and set definitions (e.g. the SQL for how to calculate an active user, so everyone in the company calculates it the same way). It support Apache Ossie and the context can live in your codebase or my service or both.",
+      "translated_by": "free-translate"
+    },
     {
       "id": "hn-50574353",
       "source": "Hacker News",
@@ -206,7 +225,7 @@
       "url": "https://news.ycombinator.com/item?id=50536468",
       "posted_at": "2026-11-18 03:01 Asia/Shanghai",
       "engagement": {
-        "points": 87,
+        "points": 89,
         "comments": 53
       },
       "original_title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
@@ -252,25 +271,6 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "hn-50517255",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Prettywhale.ai推出VS Code扩展，可从数据样本生成数据管道",
-      "summary": "输入CSV或JSON样本，它会分析字段并建议保留项，自动生成繁琐的摄取代码。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "kbiessy",
-      "url": "https://marketplace.visualstudio.com/items?itemName=prettywhale-ai.prettywhale",
-      "posted_at": "2026-11-16 21:11 Asia/Shanghai",
-      "engagement": {
-        "points": 3,
-        "comments": 3
-      },
-      "original_title": "Show HN: Prettywhale.ai – Generate data pipelines from data samples",
-      "original_summary": "Show HN: Prettywhale.ai – Generate data pipelines from data samples Hi HN,<p>I’m Kevin, I run product at PrettyWhale.ai, a small team based in France.<p>We&#x27;ve spent the last few months building a VS Code extension that writes the tedious part of ingestion code from a data sample.<p>How it works: You give it a CSV or JSON sample. It profiles the fields, you pick the ones to keep, then it suggests transformations you can accept, edit or drop. At the end you get a complete Python project in your workspace that includes all the necessary quality controls:\n- Pipeline &amp; transformation code\n- Unit tests\n- Config files\n- Documentation<p>A design choice we care about: the generation of pipeline is driven by a deterministic workflow rather than an endless chat window (no prompting required)",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50533967",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -307,6 +307,25 @@
       "original_title": "Show HN: Harness for building/cloning SaaS using open-weight models",
       "original_summary": "Show HN: Harness for building/cloning SaaS using open-weight models Built a codex like harness for non-tech builders to easily clone B2B SaaS using open-weight models.<p>We figured companies are still charging for building software. Software, we think is commoditized. Tokens are cheap, and intelligence is open. What&#x27;s the point of billing tokens.<p>We want to take the power back from big labs and democratize the power of SoTA LLMs for every builder out there. 1M output tokens shouldn&#x27;t cost 10s of dollars.<p>Lots of work to be done but we built a harness that can use open weight models from open router to build SaaS clones.<p>Give it a shot and lmk what you guys think. We are giving away a generous free tier of open weight model credits along with a lot of SaaS templates that you",
       "translated_by": "model"
+    },
+    {
+      "id": "hn-50584716",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "Show HN：Craoli——用一句话描述一份工作，它就能找到真实的招聘信息",
+      "summary": "Show HN：Craoli – 用一句话描述一个职位，它就能找到真实的招聘信息。大家好，我在自己找工作之后开发了一款工具。您可以用一句话描述您想要的工作，例如“苏黎世的后端职位，Python，非银行”，然后它会在网络和公司的招聘页面上搜索该职位。没有偏见，没有精选列表，没有推广；只有纯粹而强大的搜索。<p>我想找到真正的招聘信息。相同的职位可能会在不同地方出现。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "thanouil1411",
+      "url": "https://craoli.com",
+      "posted_at": "2026-11-21 09:08 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Craoli – describe a job in one sentence, it finds real postings",
+      "original_summary": "Show HN: Craoli – describe a job in one sentence, it finds real postings Hey HN, I have build a tool after my own job searching. You describe the job you want in a sentence, like &quot;backend roles in Zurich, Python, no banks&quot;, and it searches the web and companies&#x27; own career pages for it. There is no bias, no curated lists, no promotion; only a pure and powerful search.<p>I wanted to get the real postings. The same jobs can show up to many boards and recruiter sites, often after it&#x27;s closed. Don&#x27;t you want to know this? Craoli tries to find the employer&#x27;s own postings, shows one card for all the copies that exist out there, and keeps checking whether the job is still open.<p>Another issue I had was that one company while I submitted my job application, changed t",
+      "translated_by": "free-translate"
     },
     {
       "id": "hn-50576552",
@@ -434,8 +453,8 @@
       "url": "https://github.com/onlook-dev/onlook/",
       "posted_at": "2026-11-20 00:34 Asia/Shanghai",
       "engagement": {
-        "points": 122,
-        "comments": 84
+        "points": 124,
+        "comments": 85
       },
       "original_title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
       "original_summary": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers Hey HN, I&#x27;m Daniel, founder of Onlook (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;onlook-dev&#x2F;onlook\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;onlook-dev&#x2F;onlook</a> and onlook.com).<p>Onlook is a desktop app that puts a canvas on top of your real codebase, letting you design directly in code with the agent you already use. Over 25,000 designers and developers have supported the project, 100+ have contributed, and it&#x27;s been the #1 trending repo in the world twice. We just rebuilt the entire product as an agentic design tool, and open-sourced it to the community.<p>Here’s a demo video: (<a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;BogcYWf4siM\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;BogcYWf",
@@ -567,8 +586,8 @@
       "url": "https://github.com/diggerhq/opencomputer",
       "posted_at": "2026-11-21 04:19 Asia/Shanghai",
       "engagement": {
-        "points": 25,
-        "comments": 10
+        "points": 59,
+        "comments": 18
       },
       "original_title": "Show HN: OpenComputer – an open source alternative to Devin",
       "original_summary": "Show HN: OpenComputer – an open source alternative to Devin Hi HN!<p>Utpal here, I&#x27;m one of the founders of OpenComputer.<p>OpenComputer is an open source cloud coding agent for teams that can run in your own cloud account (AWS, GCP, Azure).<p>We run the agent harness and the sandbox on the same durable VM (architecture in the docs [1]). First commit lands in 24s; the alternatives we benchmarked took 53-72s (benchmarks below [2]).<p>Two other choices:<p>- One VM per team, scalable horizontally. Sessions are isolated in git worktrees.\n- Session files are backed up to a repo after every turn, so any session can resume on another VM.<p>We noticed that past ~640 session-hours a month, one always-on 4 vCPU VM is cheaper than per-session E2B sandboxes, for example. So at scale, this setup w",
@@ -651,25 +670,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50562508",
-      "source": "Hacker News",
-      "category": "云服务/GPU/开发者资源",
-      "title": "AgentMall：让 AI 代理在 9 家生鲜商家自动结账",
-      "summary": "团队为 9 家头部生鲜商家做可靠结账自动化，处理反爬、登录、验证码和结账页变动。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "desilva78_",
-      "url": "https://getagentmall.com",
-      "posted_at": "2026-11-20 00:46 Asia/Shanghai",
-      "engagement": {
-        "points": 20,
-        "comments": 9
-      },
-      "original_title": "Show HN: AgentMall – Let your AI agent buy groceries",
-      "original_summary": "Show HN: AgentMall – Let your AI agent buy groceries Hey HN, we’re Nel and Kosi.<p>We noticed personal agents like Instinct, Muse were terrible at buying stuff. Most of the time the checkout would fail.<p>So we built reliable automations for agents to checkout at 9 leading grocery merchants.<p>We grapple with anti bot, logins, OTP codes, and changing checkout structures.<p>Loved revisiting this stuff given our backgrounds sneaker-botting and building computer use models. Honestly full circle haha.<p>It currently works on these sites with ~70% checkout success rate:<p>- Walmart\n- Albertsons\n- Ocado\n- Wegmans\n- FreshDirect\n- Best Buy\n- Instacart<p>Our goal is to hill climb to 90%+ across each.<p>Test keys are free and run the real flow without placing an order.<p>New accounts get 10 free com",
-      "translated_by": "model"
-    },
-    {
       "id": "v2ex-1258684",
       "source": "V2EX",
       "category": "AI 产品会员/试用",
@@ -681,7 +681,7 @@
       "url": "https://www.v2ex.com/t/1258684",
       "posted_at": "2026-11-21 04:11 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 1
       },
       "original_title": "用 AI 做了个图片格式转换工具 HEICase，支持 iPhone 和 Mac，本地处理照片",
       "original_summary": "用 AI 做了个图片格式转换工具 HEICase，支持 iPhone 和 Mac，本地处理照片\n平时用 iPhone 拍的照片是 HEIC 格式，发到电脑上或者上传到一些网站时，偶尔会遇到不兼容的情况。如果照片比较多，一张张选择和转换也挺麻烦。\r\n\r\n做这个工具时，我给 Mac 端加了一个自己经常用的功能：可以直接把整个文件夹拖进来，App 会识别里面的图片，再进行批量转换。整理一批照片时不用逐张添加。\r\n\r\n目前主要支持：\r\n\r\n- HEIC、JPG、PNG 等图片格式转换\r\n- Mac 端拖入文件夹，识别其中的图片并批量处理\r\n- 转换时调整图片尺寸、裁剪等\r\n- 图片在设备本地转换，没有服务器不需要上传照片\r\n\r\n收费方式也说一下：单张转换免费；批量转换和部分高级功能需要一次性购买解锁，没有订阅。\r\n\r\nApp Store 下载：\r\nhttps://apps.apple.com/app/apple-store/id6758073761?pt=128377813&ct=v2ex_post_20261121&mt=8\r\n\r\n工具还在持续完善中，欢迎大家试用。如果遇到转换失败、格式兼容问题，或者对 Mac 端文件夹处理有什么建议，都可以在帖子里告诉我。谢谢！",
