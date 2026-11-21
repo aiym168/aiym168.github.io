@@ -2,16 +2,17 @@
  "counts": {
   "archived": 23,
   "deadline_extracted": 6,
-  "drop:duplicate": 502,
+  "drop:duplicate": 504,
   "drop:empty_summary": 64,
-  "drop:negative_signal": 143,
+  "drop:negative_signal": 144,
   "drop:no_clear_offer": 624,
-  "drop:not_ai": 527,
+  "drop:not_ai": 522,
   "drop:too_old_pre2025": 60,
   "google_news_resolved": 658,
   "google_news_total": 658,
-  "kept_total": 226,
+  "kept_total": 228,
   "net:gnews_cache_hit": 658,
+  "new_this_run": 1,
   "raw_total": 2146
  },
  "curation_version": "2026-11-09.c3",
@@ -23,12 +24,12 @@
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
    "ClearOffice Hub：用自然语言构建企业应用",
    "Formbook：开放测试的赛马数据 MCP 服务器",
+   "「黑五 7 折 + 送 10 个终身版」Enconvo：自带 Computer Use 和 Browser Use 的 ",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
    "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
    "Beatreel：根据一个提示制作讲解短视频",
-   "hive-mind：如何设计协同工作的 AI 体",
-   "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理"
+   "hive-mind：如何设计协同工作的 AI 体"
   ],
   "empty_summary": [
    "课程涵盖 LLM 架构与安全、提示注入与数据提取、OWASP 等，可预约免费演示",
@@ -101,14 +102,15 @@
    "今天，我们很高兴推出 Stable Audio，这是我们首款用于音乐和声音生成的 AI 产品！"
   ]
  },
- "generated_at": "2026-11-22T04:42:32+08:00",
+ "generated_at": "2026-11-22T07:04:36+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-22T04:42:32+08:00",
+  "checked_at": "2026-11-22T07:04:36+08:00",
   "counts": {
+   "gone": 1,
    "ok": 202,
    "recheck": 1
   },
-  "hidden": 0
+  "hidden": 1
  },
  "seconds": 1.3,
  "side": {
@@ -120,9 +122,9 @@
   },
   "hot_topics": {
    "drop:negative_signal": 4,
-   "drop:not_ai": 12,
-   "drop:not_ai_strict": 6,
-   "kept": 18,
+   "drop:not_ai": 10,
+   "drop:not_ai_strict": 7,
+   "kept": 19,
    "raw": 40
   }
  }
