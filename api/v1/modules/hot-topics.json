@@ -3,8 +3,8 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 16,
-  "generated_at": "2026-11-21T21:00:53+08:00",
+  "count": 19,
+  "generated_at": "2026-11-22T01:20:56+08:00",
   "items": [
     {
       "id": "hnhot-50577265",
@@ -21,11 +21,11 @@
       "source": "Hacker News"
     },
     {
-      "id": "v2hot-1258753",
-      "title": "Claude 被连封两个账号，不想折腾了，接下来用啥？",
-      "summary": "1. 最近听说 Gemini carbon 挺好? 不知道 Google 会不会封号，主要怕影响 Gmail 账号 2. Codex 听说现在挺拉，不太想试了 3. 国产模型写代码最好的是哪个？",
-      "url": "https://www.v2ex.com/t/1258753",
-      "source": "V2EX"
+      "id": "hnhot-50586292",
+      "title": "ClawDOS – DOS 的 AI 编码代理",
+      "summary": "",
+      "url": "http://ricapar.net/ClawDOS/",
+      "source": "Hacker News"
     },
     {
       "id": "v2hot-1258698",
@@ -35,10 +35,31 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258755",
-      "title": "[请教]各位尊敬的 ChatGPT plus 会员现在用什么模型？",
-      "summary": "claude 的一年订阅号前几天被 kyc 了，不在想折腾 claude 了，但是同样 20$价格的 claude 额度比 plus 高太多了。现在 plus 耐用+不太傻的模型用哪个呢？试过 6 luna 极高，有点傻又太慢了.....",
-      "url": "https://www.v2ex.com/t/1258755",
+      "id": "v2hot-1258753",
+      "title": "Claude 被连封两个账号，不想折腾了，接下来用啥？",
+      "summary": "1. 最近听说 Gemini carbon 挺好? 不知道 Google 会不会封号，主要怕影响 Gmail 账号 2. Codex 听说现在挺拉，不太想试了 3. 国产模型写代码最好的是哪个？",
+      "url": "https://www.v2ex.com/t/1258753",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258745",
+      "title": "入了 Gemini Pro 之后，已经严肃取消 GPT plus",
+      "summary": "Neon 干活确实挺漂亮的，也没 GPT 那么多废话 但是缺点也有：1. 额度消耗很快，一个对话，几轮任务下来 week 消耗 92% 2. Antigravity 不好用，不过官方表示即将支持接入其他 agent，未来应该不是问题 当前尚存订阅 GLM max(年费，到期看情况续不续）、opencode go（GLM 用完消耗它）、Gemini Pro（代替 GPT 做管理、规划、设计）、GPT（12-01 到期不续）",
+      "url": "https://www.v2ex.com/t/1258745",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258799",
+      "title": "Gemini 4 neon high，实测高强度使用量消耗，Cli 模式 [时间: 2026.11.21]",
+      "summary": "太耐用了！！！！！我订阅的 Ultra 版本，高强度使用（场景: 跟 agent 约束性计算相关），下面是使用量截图。![爽!]( 然后我问了一下 AI，按照目前使用情况每天 8 小时，同时开启三个 gemini 4 neon high 窗口，用一个月没问题，因为每周都会重置。完全 opus 5.5 平替。我这里不引战，我只说我自己的感受，差距不大，有的时候会有一样的错觉。现在彻底抛弃 GPT，Claude 就更不用说了，号早就被封了。也别问我为啥不考虑其他模型，我不比较，你们用就行。",
+      "url": "https://www.v2ex.com/t/1258799",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258801",
+      "title": "被 kyc 搞服帖了，给 Claude 搭了个小工具，网络一不对劲自动杀死所有线程。",
+      "summary": "为了这破东西，弄了专门的 ip，然后还要专门伺候。现在锁屏就是自动关 clash，自动关 claude。除非必要，都不碰它。然后将 cc 作为（claude）启动命令，检查 ip 环境一致，否则警告不启动。总之，虽然迟早都会阵亡的，还是安慰下心理吧。目前有的也在适应用 agy 替代，感觉最近的 agy 还蛮好的，对我的情况能替代很多场景，也不是非 Clau",
+      "url": "https://www.v2ex.com/t/1258801",
       "source": "V2EX"
     },
     {
@@ -49,17 +70,38 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258767",
-      "title": "chatgpt app 里面突然就不能用本地模式了。。。",
-      "summary": "突然就多了一句话出来：Work in the cloud isn’t available for this project ![XZnMQPYYXAHtuHHNI01m35wQPlwzxCGl.webp]( 然后模型选择也变成 5.6Instant 了。。。然后就不能用本地沙盒了。。。不知道各位大佬们遇到过类似的问题吗。。。",
-      "url": "https://www.v2ex.com/t/1258767",
+      "id": "v2hot-1258823",
+      "title": "Enter Guard：AI 聊天框里 Enter 换行、Ctrl/Cmd+Enter 发送，不再误触发送",
+      "summary": "先说说痛点：用 DeepSeek 的时候，回车直接发送，打到一半就发出去了，还没法改；ChatGPT、Claude 这些虽然有的能改设置，但不是每个都有，每次换站点都要翻设置很烦。于是做了这个 Chrome 扩展 Enter Guard，核心就一件事：Enter = 换行 Ctrl/Cmd+Enter = 发送 几个要点：中文 / 日文 / 韩文输入法候选确认完全不受影响（IME 安全） 两种模式可全局 / 按站点切换：「Enter = Newline」（默认）和「Enter = Off」 默认覆盖 DeepSeek、ChatGPT、Cl",
+      "url": "https://www.v2ex.com/t/1258823",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258799",
-      "title": "Gemini 4 neon high，实测高强度使用量消耗，Cli 模式 [时间: 2026.11.21]",
-      "summary": "太耐用了！！！！！我订阅的 Ultra 版本，高强度使用（场景: 跟 agent 约束性计算相关），下面是使用量截图。![爽!]( 然后我问了一下 AI，按照目前使用情况每天 8 小时，同时开启三个 gemini 4 neon high 窗口，用一个月没问题，因为每周都会重置。完全 opus 5.5 平替。我这里不引战，我只说我自己的感受，差距不大，有的时候会有一样的错觉。现在彻底抛弃 GPT，Claude 就更不用说了，号早就被封了。也别问我为啥不考虑其他模型，我不比较，你们用就行。",
-      "url": "https://www.v2ex.com/t/1258799",
+      "id": "v2hot-1258777",
+      "title": "[视频] 以前甲方经常说“我不管，下周一大屏要上线”，今天，终于通过 [AI] 复仇了",
+      "summary": "纯属娱乐一共 50 秒，一天撸豆包 15 秒而已。",
+      "url": "https://www.v2ex.com/t/1258777",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258820",
+      "title": "模型「偏科」恰恰揭示了 skill 不可能被完全取代",
+      "summary": "第一个背景是在近期关于几个大厂模型的讨论之中，关于 GPT 和 Claude 的特性以及谁更好的争吵很激烈。很多开发者讨厌 GPT 的防御性编程（具体而言它会做各种测试和 guardrail），但反而一些做科研和维护工作的人更喜欢它，而 Claude 更多人喜欢它的用户意图识别与许愿式编程的能力。第二个背景是最近看到一个说法，就是 skill 迟早会被模型的能力取代，因为 skill 描述的都是可复用的东西。我觉得第一点恰好就是第二点的一个反例，因为不管模型的能力和它吃进去的训练有多强，它总是不可避免会带有一些偏好和行事取向的。而 skill 提供的就是中层的可预测性。",
+      "url": "https://www.v2ex.com/t/1258820",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258818",
+      "title": "同时开着三个 AI Agent，它们轮流等我点「同意」，于是我做了个统一通知的手表 App",
+      "summary": "现在我写代码，经常是 Claude Code 在跑重构，Codex 在补测试，另一个 Agent 在查文档。几个终端、几个窗口同时开着。问题是界面一多，人对它们的状态就没感觉了。谁跑完了、谁出错了、谁卡在权限确认上等我点「同意」，它们都不会喊我。我只能在窗口之间来回切，挨个去看。经常是切回某个窗口才发现，它早就停在那儿等我了。那一刻我想明白了：Agent 越多，我自己反而成了瓶颈。所以我做了 xalfred，一个 AI Agent 的统一通知平台。不管哪个 Agent，只要能调 MCP，需要我的时候都推到同一个地方：我的 iPhone 和 Apple Watch。",
+      "url": "https://www.v2ex.com/t/1258818",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258812",
+      "title": "问下大家 gemini 如何订阅",
+      "summary": "当前通过购买苹果礼品卡订阅的 gpt，决定转 Gemini 了 一直没有找到可用的订阅入口",
+      "url": "https://www.v2ex.com/t/1258812",
       "source": "V2EX"
     },
     {
@@ -77,46 +119,25 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258777",
-      "title": "[视频] 以前甲方经常说“我不管，下周一大屏要上线”，今天，终于通过 [AI] 复仇了",
-      "summary": "纯属娱乐一共 50 秒，一天撸豆包 15 秒而已。",
-      "url": "https://www.v2ex.com/t/1258777",
+      "id": "v2hot-1258821",
+      "title": "TK 软路由&管理软件系统适用各种流媒体包括 claude",
+      "summary": "TK 软路由管理系统软件 win 版本支持管理多台路由器不用进后台管理可以一键创建多 wifi 并调节 wifi 设置，还有一键把 wifi 分流走不同节点可以走链式代理，支持物理网卡 mac 地址随机真实可查几十万个地址每个生成都是真实路由器，还有检测路由器远程路由器，不用打开软路由网页进行管理永久授权，tg 群聊 网站介绍 ![软件界面](",
+      "url": "https://www.v2ex.com/t/1258821",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258763",
-      "title": "远程办公（不限工作地点） 前端工程师（Android+Flutter）20-40k 高级后端开发工程师（Java /Go 双栈）20-40k AI 研发工程师 面议 + 奖金",
-      "summary": "前端工程师（Android+Flutter） 薪资范围 20-40k 岗位职责：一、技术交付与架构 负责核心模块/复杂业务的设计与开发，对模块代码质量、性能、稳定性负责 主导架构设计与技术选型（MVVM/MVI、Jetpack Compose、组件化、插件化、模块化），推动架构演进 设计并维护公共基础库、SDK，对外提供稳定接入能力 二、性能与质量 App 启动速度、内存、卡顿（FPS/ANR）、电量、包体积优化 崩溃率、稳定性、兼容性治理（Crash、ANR、OOM、机型/系统适配） 主导 Code Rev",
-      "url": "https://www.v2ex.com/t/1258763",
+      "id": "v2hot-1258819",
+      "title": "开源了一个纯本地桌面工具 Mingle：没有服务器，把你的 AI Agent 请进微信、飞书、Slack 等聊天软件",
+      "summary": "最近做了一个 MIT 开源的本地桌面工具 **Mingle**，可以把你电脑上的 AI Agent（Claude Code、Codex、Kimi Code、OpenCode、Cursor 等 14 种 harness）以机器人身份请进你平时已经在用的聊天软件里。### 为什么再造一个：核心是不想有服务器 现在支持接自家 coding agent 的工具已经不少，但我自己用下来最介意的一点是**云端中转**——只要有第三方服务器兜底，聊天记录和工作上下文就得过别人的机房，既存在服务端被黑客攻击拖库的风险，也没法彻底排除厂商拿数据干别的。所以 Mingle 从一开始就做成**",
+      "url": "https://www.v2ex.com/t/1258819",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258762",
-      "title": "[1121] GPT 代充 PLUS ¥116、Pro100 ¥645、Pro200 ¥1045 [PLUS 成品号 80] 另外也出 GPT 协议",
-      "summary": "> **正规卡充** ｜ **一卡一充** ｜ **支持同卡续费**｜ **质保订阅不质保封号，可开票** | 订阅等级 | 埃及区 | 菲律宾区 | 智利区 | :--- | :---: | :---: |:---: | | **ChatGPT Plus** | - | **¥116** | | **ChatGPT Pro 100** | **¥650** |**¥660** |**¥645** | **ChatGPT Pro 200** | - | **¥1045** | | **ChatGPT Pro 500** | **¥3200**|",
-      "url": "https://www.v2ex.com/t/1258762",
+      "id": "v2hot-1258817",
+      "title": "CDN3900U/P Ai 模型最低至 4 折 阿里腾讯华为火山国内站 7 折 阿里国际/GCP 可至 65 折 AWS 新号 65 折/老号无需迁移 85 折 腾讯国际 55 折 支持 U 结算",
+      "summary": "阿里云 7 折 腾讯云 7 折 华为云 7 折 阿里 CDN 3900U/P 腾讯 CDN 3900U/P 火山 CDN 3900U/P 谷歌云 GCP65 折 亚马逊云 AWS 新号 65 折/老号无需迁移 85 折 腾讯云国际 55 折 阿里云国际 65 折 华为云国际 65 折 AWS 全球节点 CDN 加速 1 折 Ai 模型低至 4 折 火山国际 7 折 TG 详聊：@Tiangua7",
+      "url": "https://www.v2ex.com/t/1258817",
       "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1258759",
-      "title": "Inkling 2 Mini 说能在笔记本上跑，模型卡推荐 32GB",
-      "summary": "刷到 Thinking Machines Lab 11 月 20 日发了开源权重模型 Inkling 2 Mini。[官方发布]( 官方博客写能在笔记本上跑，权重大约 20GB。他们演示是在飞行途中用离线的 MacBook Pro 跑的，那台是 48GB 内存。[模型卡列的配置]( 32GB 及以上内存的 Apple silicon，其它 GPU 推荐 32GB 及以上显存。",
-      "url": "https://www.v2ex.com/t/1258759",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1258757",
-      "title": "OnDemand Agent 更新：Claude 已稳定交付几十个 PR，继续找人测试",
-      "summary": "昨天发了个帖子介绍 OnDemand Agent（一键用 Claude Code Opus 5.5，不用折腾账号和 API），谢谢大家的反馈和测试：这几天跑下来，Claude 已经稳定交付了几十个 PR，流程还是先给方案、你确认了才动手、写完直接提 PR。继续找更多人来测试、给反馈，免费送 500 Credits，感兴趣的留言，我发你。ondemandagent.dev",
-      "url": "https://www.v2ex.com/t/1258757",
-      "source": "V2EX"
-    },
-    {
-      "id": "xhot-xrss-528072579",
-      "title": "刚刚：Build AI 开设了一家真实世界训练数据商店。从实际工作中收集的超过 400 万小时。560+ 个垂直领域。28,000",
-      "summary": "刚刚：Build AI 开设了一家真实世界训练数据商店。从实际工作中收集的超过 400 万小时。560+ 个垂直领域。28,000 多个任务。团队可以获得预先定价，代理商可以在几分钟内提取免费样品。对于机器人和物理 AI 来说，数据是稀缺的输入。兰",
-      "url": "https://x.com/guilleflorvs/status/2124097251840557093",
-      "source": "X"
     }
   ]
 }

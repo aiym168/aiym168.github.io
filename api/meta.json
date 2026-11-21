@@ -3,31 +3,31 @@
   "canonical": "https://aiym168.github.io/",
   "version": "3.0.0",
   "curation_version": "2026-11-09.c3",
-  "updated_at_label": "2026-11-21 21:00 Asia/Shanghai",
-  "generated_at_label": "2026-11-21 21:00 Asia/Shanghai",
-  "generated_at": "2026-11-21T21:00:53+08:00",
-  "next_update_label": "21:07 北京时间（约）",
-  "date": "2026-11-21",
+  "updated_at_label": "2026-11-22 01:20 Asia/Shanghai",
+  "generated_at_label": "2026-11-22 01:20 Asia/Shanghai",
+  "generated_at": "2026-11-22T01:20:56+08:00",
+  "next_update_label": "02:07 北京时间（约）",
+  "date": "2026-11-22",
   "counts": {
     "deals": 203,
     "free_resources": 203,
     "github_hot": 15,
-    "hot": 16,
-    "today_new": 11,
-    "archived": 22,
+    "hot": 19,
+    "today_new": 2,
+    "archived": 24,
     "modules": {
-      "damoxing-mianfei-api": 54,
-      "ai-huiyuan-shiyong": 10,
-      "ai-kaifa-gongju": 89,
-      "mianfei-gpu-yunfuwu": 12,
+      "damoxing-mianfei-api": 53,
+      "ai-huiyuan-shiyong": 11,
+      "ai-kaifa-gongju": 88,
+      "mianfei-gpu-yunfuwu": 13,
       "keji-app-xianmian": 7,
       "ai-kecheng-huodong": 18,
       "qita-keji": 13,
       "github-hot": 15,
-      "hot-topics": 16
+      "hot-topics": 19
     },
     "api_pages": 5,
-    "next_update_label": "21:07 北京时间（约）"
+    "next_update_label": "02:07 北京时间（约）"
   },
   "definitions": {
     "free_resources": "免费资源 = 去重后仍在有效期内的资源条目（含置顶与编辑整理条目；不含 GitHub 新热门与最近热议；已过期、或发布超过 30 天且没有未来截止日期的自动收录条目会移入归档）。",
@@ -37,19 +37,21 @@
     "verified_at": "verified_at 仅在编辑对照官网核实后填写，否则为 null（页面显示“未核实”）。"
   },
   "curation": {
-    "archived": 22,
+    "archived": 23,
     "deadline_extracted": 6,
-    "drop:duplicate": 457,
+    "drop:duplicate": 502,
     "drop:empty_summary": 62,
-    "drop:negative_signal": 140,
-    "drop:no_clear_offer": 597,
-    "drop:not_ai": 496,
+    "drop:negative_signal": 143,
+    "drop:no_clear_offer": 616,
+    "drop:not_ai": 527,
     "drop:too_old_pre2025": 60,
     "google_news_resolved": 648,
     "google_news_total": 648,
-    "kept_total": 224,
+    "kept_total": 226,
     "net:gnews_cache_hit": 648,
-    "raw_total": 2036
+    "net:tco_failed": 6,
+    "new_this_run": 2,
+    "raw_total": 2136
   },
   "cli": {
     "download_inspect_run": [
