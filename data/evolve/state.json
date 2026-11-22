@@ -1,52 +1,58 @@
 {
  "last_step": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "changes": [
    {
+    "op": "restore",
+    "name": "新闻聚合 · AI绘画 教程",
+    "key": "gn-aipaint-tut",
+    "why": ""
+   },
+   {
+    "op": "retest",
+    "name": "Lobsters",
+    "key": "Lobsters",
+    "why": ""
+   },
+   {
     "op": "pause",
-    "name": "伯克利 BAIR",
-    "key": "bair-berkeley-edu-blog-feed-xml",
+    "name": "Synced",
+    "key": "syncedreview-com-feed",
     "why": "一周都没有新东西"
    },
    {
-    "op": "slower",
-    "name": "Synced",
-    "key": "syncedreview-com-feed",
-    "why": "总是重复，没有新东西"
-   },
-   {
-    "op": "slower",
+    "op": "pause",
     "name": "Lilian Weng",
     "key": "lilianweng-github-io-index-xml",
-    "why": "总是重复，没有新东西"
+    "why": "一周都没有新东西"
    },
    {
-    "op": "slower",
+    "op": "pause",
     "name": "The Gradient",
     "key": "thegradient-pub-rss",
-    "why": "总是重复，没有新东西"
-   },
-   {
-    "op": "slower",
-    "name": "Chromium Blog",
-    "key": "blog-chromium-org-feeds-posts-default",
-    "why": "总是重复，没有新东西"
+    "why": "一周都没有新东西"
    }
   ],
-  "snapshot": "data/evolve/snapshots/2026-11-22.json",
+  "snapshot": "data/evolve/snapshots/2026-11-23.json",
   "baseline": {
-   "kept": 7509,
-   "runs": 26,
-   "dead": 8,
-   "checked": 786,
-   "build_ok": 22,
+   "kept": 8117,
+   "runs": 28,
+   "dead": 9,
+   "checked": 800,
+   "build_ok": 24,
    "build_bad": 0,
-   "kept_per_run": 288.81,
-   "dead_rate": 0.0102,
+   "kept_per_run": 289.89,
+   "dead_rate": 0.0112,
    "bad_build_rate": 0.0
   }
  },
  "history": [
+  {
+   "date": "2026-11-23",
+   "verdict_prev": null,
+   "changes": 5,
+   "diary_by": "rules"
+  },
   {
    "date": "2026-11-22",
    "verdict_prev": null,
@@ -114,5 +120,5 @@
    "diary_by": "rules"
   }
  ],
- "last_evolve_date": "2026-11-22"
+ "last_evolve_date": "2026-11-23"
 }

@@ -1,6 +1,63 @@
 {
- "updated_at": "2026-11-22T01:20+08:00",
+ "updated_at": "2026-11-23T02:29+08:00",
  "days": [
+  {
+   "date": "2026-11-23",
+   "lines": [
+    "今天我学会了：Hugging Face 热门模型 最近 7 天给了我 540 条新内容，最靠谱。",
+    "我淘汰了：Synced、Lilian Weng 等 3 个来源最近不太行，先歇几天，之后我再去试。",
+    "新闻聚合 · AI绘画 教程重新能用了，我把它请了回来。"
+   ],
+   "by": "rules",
+   "events": [
+    {
+     "op": "restore",
+     "name": "新闻聚合 · AI绘画 教程",
+     "key": "gn-aipaint-tut",
+     "why": ""
+    },
+    {
+     "op": "retest",
+     "name": "Lobsters",
+     "key": "Lobsters",
+     "why": ""
+    },
+    {
+     "op": "pause",
+     "name": "Synced",
+     "key": "syncedreview-com-feed",
+     "why": "一周都没有新东西"
+    },
+    {
+     "op": "pause",
+     "name": "Lilian Weng",
+     "key": "lilianweng-github-io-index-xml",
+     "why": "一周都没有新东西"
+    },
+    {
+     "op": "pause",
+     "name": "The Gradient",
+     "key": "thegradient-pub-rss",
+     "why": "一周都没有新东西"
+    },
+    {
+     "op": "reject",
+     "name": "landian.news",
+     "why": "试用不合格"
+    },
+    {
+     "op": "reject",
+     "name": "science.nasa.gov",
+     "why": "试用不合格"
+    },
+    {
+     "op": "reject",
+     "name": "arstechnica.com",
+     "why": "内容不合规"
+    }
+   ],
+   "at": "2026-11-23T02:29+08:00"
+  },
   {
    "date": "2026-11-22",
    "lines": [

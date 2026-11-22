@@ -3,20 +3,13 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 21,
+  "count": 16,
   "items": [
     {
-      "id": "hnhot-50546587",
-      "title": "LLM 可以从十六进制转储中逐字节读取和写入可执行文件",
+      "id": "hnhot-50599762",
+      "title": "Show HN：我制作了一个游戏，你是 LLM 的子代理人",
       "summary": "",
-      "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50593481",
-      "title": "Pandex——基于 MCP 的 AI Agent 欧洲官方法律",
-      "summary": "",
-      "url": "https://www.pandex.io",
+      "url": "https://github.com/gulivan/worker755",
       "source": "Hacker News"
     },
     {
@@ -69,10 +62,17 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258922",
-      "title": "你们为什么都用 claude 不用别的啊?",
-      "summary": "我都不敢问,显得我很弱..... 其实我搞桌面开发,codebuddy qoder opencode 搭配 ds glm 甚至 mimo,就完全够用了 好奇大哥们都在搞什么高深的开发..",
-      "url": "https://www.v2ex.com/t/1258922",
+      "id": "v2hot-1258933",
+      "title": "Mac Studio M5U 本地原厂精度部署 Deepseek V4.1 flash 1017 性能测试",
+      "summary": "# DeepSeek-V4.1-Flash Lossless 单台 M5 Ultra 512G 上下文阶梯测试（512 到 1M） 2026-11-22 实测。表格格式照 r/LocalLLM 帖子里的 \"1× Mac Studio (M5 Ultra, 512 GB)\"，在它 256K 的基础上补了 512K 和 1M 两行。[原始模型 DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless](",
+      "url": "https://www.v2ex.com/t/1258933",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258974",
+      "title": "deepseek 和哪家终端 CLI 工具搭配效果最好",
+      "summary": "公司提供的是 DS flash，个人比较喜欢用终端，想了解下现在哪个终端 cli 和 DS flash 搭配效果比较好，尝试了 dsh tui 和 omp，omp 用的比较多，加了 skill 和约束还是不太行，个人用的是 gpt，所以不太清楚情况",
+      "url": "https://www.v2ex.com/t/1258974",
       "source": "V2EX"
     },
     {
@@ -83,31 +83,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258944",
-      "title": "grok 这东西太烂了啊",
-      "summary": "说了一个东西，直接开始给我改代码了，让他回退他改的，结果把我本地未提交的也给回退 head 状态了",
-      "url": "https://www.v2ex.com/t/1258944",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1258933",
-      "title": "Mac Studio M5U 本地原厂精度部署 Deepseek V4.1 flash 1017 性能测试",
-      "summary": "# DeepSeek-V4.1-Flash Lossless 单台 M5 Ultra 512G 上下文阶梯测试（512 到 1M） 2026-11-22 实测。表格格式照 r/LocalLLM 帖子里的 \"1× Mac Studio (M5 Ultra, 512 GB)\"，在它 256K 的基础上补了 512K 和 1M 两行。[原始模型 DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless](",
-      "url": "https://www.v2ex.com/t/1258933",
-      "source": "V2EX"
-    },
-    {
       "id": "v2hot-1258958",
       "title": "Claude 门户 Portal KYC + 订阅 KYC 代过",
       "summary": "如标题所示 Claude 业务如下：1. portal 门户 KYC 298 2. 订阅 KYC 美区（188），其他区（168） 联系方式（Base64 编码）：UVHvvJozMjEzNTk1OTQ=",
       "url": "https://www.v2ex.com/t/1258958",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1258957",
-      "title": "这个 AI 算力狂飙的时代让很多人开始修仙了",
-      "summary": "面对着掌握了以前不可想象的自己无法完全驾驭的能力，有些人开始了修仙，有些人走火入魔，有些人潜心静修。算力狂飙的下一个时代是什么时代？又会在多久来到？",
-      "url": "https://www.v2ex.com/t/1258957",
       "source": "V2EX"
     },
     {
@@ -118,39 +97,25 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258926",
-      "title": "[分享创造] 无需显卡，和自己训练的五子棋 AI 实战对局（附演示视频）",
-      "summary": "前情回顾：接上回：上上回：上上上回：上上上上回：最近实在忙废了，原生 Ollama 架构的支持还在爆肝研发中。另外，博主的本职工作可能快保不住了 这次算是顶着（微弱的）泄密风险把预览版先放出来，本意是想继续“骑驴找骂”……虽然这头“驴”眼看也快保不住了 发布说明：h",
-      "url": "https://www.v2ex.com/t/1258926",
+      "id": "v2hot-1258944",
+      "title": "grok 这东西太烂了啊",
+      "summary": "说了一个东西，直接开始给我改代码了，让他回退他改的，结果把我本地未提交的也给回退 head 状态了",
+      "url": "https://www.v2ex.com/t/1258944",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258920",
-      "title": "AI 进化的程度要让我笑死了",
-      "summary": "做任务：AI，我有个任务，你帮我做一下 AI 哼哧哼哧，十几分钟就干完了 要验收：AI，这个你新做的页面，你控制我的电脑，帮我检查一下 AI 哼哧哼哧，十几分钟检查完了 好了，任务就可以提交了",
-      "url": "https://www.v2ex.com/t/1258920",
+      "id": "v2hot-1258969",
+      "title": "做了个免费的 GTA 6 风格 AI 滤镜：上传一张自拍，出加载页风格的人像",
+      "summary": "GTA 6 发售这几天，推特和小红书上全是那种“GTA 加载页风格”的自拍——大家基本都是拿着同一套提示词去 ChatGPT/Gemini 里一张张跑，每次还要自己描述构图和配色。我就把这事做成了一个一键网站：上传一张自拍，6 种风格可选，出图就是 GTA 加载页那种平涂色块 + 硬光影的味道 每天免费生成一次，不用注册 觉得图不错可以用 credits 把它变成 8 秒的竖屏视频（自己动起来的那种） 技术上就是图像生成模型 + 一套调过的风格提示词，难点在于让出图稳定——GTA 风格稍微偏一点就变成普通赛博朋克，调了挺",
+      "url": "https://www.v2ex.com/t/1258969",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258915",
-      "title": "2026 年三家模型总结，fable 先发制人，neon 年末赶上",
-      "summary": "Neon 出来已经有几天了，三个常用的 AI 评测站都更新了模型评分：livebench 总体：neon(87.4)>fable5.2(84.9)=astra6.2(84.9)>opus5.5(83.4)>carbon(83.3)，coding 部分：astra6.2(91.9)>carbon(91)>neon(89.7)>opus5.5(87.1)>fable5.2(79.2) benchllm 总体：fable5.2(93.3)>neon(91.3)>astra6.2(90.8)>carbon(88.3)>opus5.5(82.8)，coding 部分：neon(93)>",
-      "url": "https://www.v2ex.com/t/1258915",
+      "id": "v2hot-1258957",
+      "title": "这个 AI 算力狂飙的时代让很多人开始修仙了",
+      "summary": "面对着掌握了以前不可想象的自己无法完全驾驭的能力，有些人开始了修仙，有些人走火入魔，有些人潜心静修。算力狂飙的下一个时代是什么时代？又会在多久来到？",
+      "url": "https://www.v2ex.com/t/1258957",
       "source": "V2EX"
-    },
-    {
-      "id": "xhot-xrss-8093390976",
-      "title": "HelpSpot 公布 AI 积分定价，称比 Notion 四档更简单",
-      "summary": "作者为 HelpSpot 新版设计 AI 积分定价，认为只有一档并不复杂，还吐槽 Notion 四档积分仍不好用。",
-      "url": "https://x.com/IanLandsman/status/2124516244128968828",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-5197448144",
-      "title": "学习 AI 不需要学位。您今天可以学习以下 9 门免费 AI 课程（带有链接）：[ 将此添加为书签",
-      "summary": "学习 AI 不需要学位。以下是您今天可以学习的 9 个免费 AI 课程（带有链接）：[ 将此主题添加为书签以供稍后使用] 学习 AI 不需要学位。您今天可以学习以下 9 门免费 AI 课程（带有链接）：[ 将此主题加入书签以供稍后使用]",
-      "url": "https://x.com/AndrewBolis/status/2124476750273114210",
-      "source": "X"
     }
   ]
 }

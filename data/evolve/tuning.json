@@ -25,23 +25,23 @@
   "syncedreview-com-feed": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-22",
-   "why": "总是重复，没有新东西",
-   "state": "active"
+   "since": "2026-11-23",
+   "why": "一周都没有新东西",
+   "state": "paused"
   },
   "lilianweng-github-io-index-xml": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-22",
-   "why": "总是重复，没有新东西",
-   "state": "active"
+   "since": "2026-11-23",
+   "why": "一周都没有新东西",
+   "state": "paused"
   },
   "thegradient-pub-rss": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-22",
-   "why": "总是重复，没有新东西",
-   "state": "active"
+   "since": "2026-11-23",
+   "why": "一周都没有新东西",
+   "state": "paused"
   },
   "blog-chromium-org-feeds-posts-default": {
    "weight": 0.5,
@@ -75,9 +75,11 @@
    "why": ""
   },
   "gn-aipaint-tut": {
-   "state": "retest",
-   "since": "2026-11-21",
-   "why": ""
+   "state": "active",
+   "since": "2026-11-23",
+   "why": "",
+   "weight": 0.75,
+   "every": 1
   }
  },
  "deals": {
@@ -87,11 +89,11 @@
    "why": ""
   },
   "Lobsters": {
-   "state": "paused",
-   "since": "2026-11-20",
-   "why": "复测还是没有内容"
+   "state": "retest",
+   "since": "2026-11-23",
+   "why": ""
   }
  },
- "updated_at": "2026-11-22T01:20+08:00",
+ "updated_at": "2026-11-23T02:29+08:00",
  "note": "由 evolve.py 每天自动维护；采集脚本只读。删除此文件即恢复默认（全部来源、权重 1.0）。"
 }
