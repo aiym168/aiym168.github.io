@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-22T06:59:21+08:00",
+ "updated_at": "2026-11-22T10:38:29+08:00",
  "counts": {
-  "active": 179,
-  "expiring": 9,
-  "upcoming": 4,
-  "expired": 41,
+  "active": 180,
+  "expired": 42,
+  "upcoming": 3,
+  "expiring": 8,
   "archived": 2
  },
  "dedupe_merged": 0,
@@ -50,14 +50,14 @@
    ],
    "verify_status": "verified",
    "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
+   "verified_at": "2026-11-22T10:38:29+08:00",
    "published_at": null,
    "fp": "googlecloud新用户300美元免费额度20多项免费层",
    "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
+   "checked_at": "2026-11-22T10:38:29+08:00",
    "_verify_sig": "[\"$300 in free credit\", \"free usage limit\"]",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 75.79
@@ -104,14 +104,14 @@
    ],
    "verify_status": "verified",
    "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
+   "verified_at": "2026-11-22T10:38:29+08:00",
    "published_at": null,
    "fp": "oraclecloud免费套餐300美元试用额度永久免费服务",
    "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
+   "checked_at": "2026-11-22T10:38:29+08:00",
    "_verify_sig": "[\"US$300\", \"Always Free\"]",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 75.79
@@ -159,14 +159,14 @@
    ],
    "verify_status": "verified",
    "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
+   "verified_at": "2026-11-22T10:38:29+08:00",
    "published_at": null,
    "fp": "mox组队开户用推荐码组队最高hkd9200迎新赏",
    "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
+   "checked_at": "2026-11-22T10:38:29+08:00",
    "_verify_sig": "[\"HKD9,200\", \"2026\\u5e7412\\u670820\\u65e5\"]",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 63.3
@@ -210,14 +210,14 @@
    ],
    "verify_status": "verified",
    "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
+   "verified_at": "2026-11-22T10:38:29+08:00",
    "published_at": null,
    "fp": "github学生开发者包azure100美元额度免费域名",
    "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
+   "checked_at": "2026-11-22T10:38:29+08:00",
    "_verify_sig": "[\"$100 in Azure credit\", \".me TLD\"]",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 63.26
@@ -319,17 +319,377 @@
    ],
    "verify_status": "verified",
    "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
+   "verified_at": "2026-11-22T10:38:29+08:00",
    "published_at": null,
    "fp": "googleaipro学生版免费1年",
    "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
+   "checked_at": "2026-11-22T10:38:29+08:00",
    "_verify_sig": "[\"Free student plan for 1 year\", \"December 31, 2026\", \"$19.99/month\"]",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 60.87
+  },
+  {
+   "id": "ed-claude-free-plan",
+   "title": "Claude 免费版：网页、App 与桌面端均可用",
+   "category": "ai",
+   "offer": "Anthropic 官方 Claude 免费版 0 美元，可在网页、iOS、Android 与桌面端聊天，支持语音模式与联网搜索；用量按 5 小时和每周限额计算。",
+   "value": {
+    "amount": null,
+    "currency": "USD",
+    "kind": "free_tier",
+    "label": "长期免费层（用量有限）"
+   },
+   "conditions": [
+    "需要注册 Claude 账号",
+    "使用 Claude 需所在国家/地区在官方支持范围内"
+   ],
+   "region": "官方支持的国家和地区",
+   "regions": [],
+   "start_at": null,
+   "end_at": null,
+   "deadline_note": "长期有效，无截止时间",
+   "steps": [
+    "打开官方定价页，点击 Try Claude",
+    "注册并登录账号",
+    "在网页或 App 中直接使用"
+   ],
+   "official_url": "https://claude.com/pricing",
+   "source_url": "https://claude.com/pricing",
+   "source_name": "Anthropic 官方",
+   "source_kind": "curated",
+   "adapter": "curated",
+   "type_tags": [
+    "free"
+   ],
+   "risks": [
+    "免费版高峰期可能受限",
+    "部分国家和地区不在官方服务范围内"
+   ],
+   "verify_status": "verified",
+   "verify_note": "已对照官方页面核实关键条款",
+   "verified_at": "2026-11-22T10:38:29+08:00",
+   "published_at": null,
+   "fp": "claude免费版网页app与桌面端均可用",
+   "lang_note": "",
+   "checked_at": "2026-11-22T10:38:29+08:00",
+   "_verify_sig": "[\"Free for everyone\", \"Voice mode\"]",
+   "first_seen": "2026-11-10T01:41:46+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
+   "state": "active",
+   "archived_reason": "",
+   "score": 58.0
+  },
+  {
+   "id": "ed-cloudflare-workers-free",
+   "title": "Cloudflare Workers 免费版：每天 10 万次请求",
+   "category": "cloud",
+   "offer": "Cloudflare Workers 免费档每天 10 万次请求、每次 10 毫秒 CPU 时间，可部署无服务器函数，官网写明无需信用卡。",
+   "value": {
+    "amount": null,
+    "currency": "USD",
+    "kind": "free_tier",
+    "label": "长期免费层（每天 10 万次请求）"
+   },
+   "conditions": [
+    "需要 Cloudflare 账号",
+    "官网写明无需信用卡"
+   ],
+   "region": "全球",
+   "regions": [],
+   "start_at": null,
+   "end_at": null,
+   "deadline_note": "长期有效，无截止时间",
+   "steps": [
+    "注册 Cloudflare 免费账号",
+    "进入 Workers 创建应用",
+    "用 Wrangler 或网页编辑器部署"
+   ],
+   "official_url": "https://www.cloudflare.com/products/workers/",
+   "source_url": "https://www.cloudflare.com/products/workers/",
+   "source_name": "Cloudflare 官方",
+   "source_kind": "curated",
+   "adapter": "curated",
+   "type_tags": [
+    "free"
+   ],
+   "risks": [
+    "超出免费额度的请求会报错，不会自动扣费（以官网为准）"
+   ],
+   "verify_status": "verified",
+   "verify_note": "已对照官方页面核实关键条款",
+   "verified_at": "2026-11-22T10:38:29+08:00",
+   "published_at": null,
+   "fp": "cloudflareworkers免费版每天10万次请求",
+   "lang_note": "",
+   "checked_at": "2026-11-22T10:38:29+08:00",
+   "_verify_sig": "[\"100k / day\", \"no credit card required\"]",
+   "first_seen": "2026-11-10T01:41:46+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
+   "state": "active",
+   "archived_reason": "",
+   "score": 58.0
+  },
+  {
+   "id": "ed-figma-education",
+   "title": "Figma 教育版：学生和老师免费用",
+   "category": "software",
+   "offer": "Figma 面向教育用户免费提供设计、原型和协作工具。",
+   "value": {
+    "amount": null,
+    "currency": "USD",
+    "kind": "free_tier",
+    "label": "教育免费（需教育身份）"
+   },
+   "conditions": [
+    "需验证学生或教师身份"
+   ],
+   "region": "全球（需教育身份）",
+   "regions": [],
+   "start_at": null,
+   "end_at": null,
+   "deadline_note": "教育身份有效期内",
+   "steps": [
+    "打开官方教育页",
+    "注册并提交教育身份验证",
+    "通过后使用教育版"
+   ],
+   "official_url": "https://www.figma.com/education/",
+   "source_url": "https://www.figma.com/education/",
+   "source_name": "Figma 官方",
+   "source_kind": "curated",
+   "adapter": "curated",
+   "type_tags": [
+    "free"
+   ],
+   "risks": [
+    "教育版不能用于商业项目（以官方条款为准）"
+   ],
+   "verify_status": "verified",
+   "verify_note": "已对照官方页面核实关键条款",
+   "verified_at": "2026-11-22T10:38:29+08:00",
+   "published_at": null,
+   "fp": "figma教育版学生和老师免费用",
+   "lang_note": "",
+   "checked_at": "2026-11-22T10:38:29+08:00",
+   "_verify_sig": "[\"free for education\"]",
+   "first_seen": "2026-11-10T01:41:46+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
+   "state": "active",
+   "archived_reason": "",
+   "score": 58.0
+  },
+  {
+   "id": "ed-github-copilot-free",
+   "title": "GitHub Copilot Free：每月 2,000 次代码补全，免绑卡",
+   "category": "ai",
+   "offer": "GitHub Copilot 免费版每月 2,000 次代码补全，可用 Haiku 4.5、GPT-5 mini 等入门模型，支持 Copilot CLI 与有限的聊天/Agent 用量。",
+   "value": {
+    "amount": null,
+    "currency": "USD",
+    "kind": "free_tier",
+    "label": "长期免费层（每月额度有限）"
+   },
+   "conditions": [
+    "需要 GitHub 账号",
+    "官网写明无需信用卡"
+   ],
+   "region": "全球（GitHub 可用地区）",
+   "regions": [],
+   "start_at": null,
+   "end_at": null,
+   "deadline_note": "长期有效，无截止时间",
+   "steps": [
+    "登录 GitHub",
+    "打开官方方案页点击 Get started",
+    "在 VS Code 等编辑器里登录 GitHub 账号使用"
+   ],
+   "official_url": "https://github.com/features/copilot/plans",
+   "source_url": "https://github.com/features/copilot/plans",
+   "source_name": "GitHub 官方",
+   "source_kind": "curated",
+   "adapter": "curated",
+   "type_tags": [
+    "free"
+   ],
+   "risks": [
+    "免费额度每月重置，用完需等下月或升级付费方案"
+   ],
+   "verify_status": "verified",
+   "verify_note": "已对照官方页面核实关键条款",
+   "verified_at": "2026-11-22T10:38:29+08:00",
+   "published_at": null,
+   "fp": "githubcopilotfree每月2000次代码补全免绑卡",
+   "lang_note": "",
+   "checked_at": "2026-11-22T10:38:29+08:00",
+   "_verify_sig": "[\"2,000 completions per month\", \"No credit card required\"]",
+   "first_seen": "2026-11-10T01:41:46+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
+   "state": "active",
+   "archived_reason": "",
+   "score": 58.0
+  },
+  {
+   "id": "ed-render-hobby",
+   "title": "Render Hobby：静态网站永久免费部署",
+   "category": "cloud",
+   "offer": "Render Hobby 方案 0 美元/月（计算资源另计），静态网站可永久免费部署，最多 25 个服务、含 5 GB 带宽。",
+   "value": {
+    "amount": null,
+    "currency": "USD",
+    "kind": "free_tier",
+    "label": "长期免费层（静态网站）"
+   },
+   "conditions": [
+    "需要 Render 账号",
+    "计算资源按用量另计"
+   ],
+   "region": "全球",
+   "regions": [],
+   "start_at": null,
+   "end_at": null,
+   "deadline_note": "长期有效",
+   "steps": [
+    "注册 Render",
+    "连接代码仓库",
+    "选择 Static Site 部署"
+   ],
+   "official_url": "https://render.com/pricing",
+   "source_url": "https://render.com/pricing",
+   "source_name": "Render 官方",
+   "source_kind": "curated",
+   "adapter": "curated",
+   "type_tags": [
+    "free"
+   ],
+   "risks": [
+    "0 美元方案的计算资源（compute）另外计费，只有静态网站免费"
+   ],
+   "verify_status": "verified",
+   "verify_note": "已对照官方页面核实关键条款",
+   "verified_at": "2026-11-22T10:38:29+08:00",
+   "published_at": null,
+   "fp": "renderhobby静态网站永久免费部署",
+   "lang_note": "",
+   "checked_at": "2026-11-22T10:38:29+08:00",
+   "_verify_sig": "[\"Deploy websites for free, forever\", \"5 GB of bandwidth included\"]",
+   "first_seen": "2026-11-10T01:41:46+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
+   "state": "active",
+   "archived_reason": "",
+   "score": 58.0
+  },
+  {
+   "id": "ed-sofi-checking-dd-bonus",
+   "title": "SoFi 支票账户：直接存款奖励最高 400 美元",
+   "category": "bank",
+   "offer": "SoFi 新老会员首次设置直接存款（Direct Deposit），首笔到账后 25 天内合格直接存款合计 1,000–4,999.99 美元奖励 50 美元，5,000 美元及以上奖励 400 美元。",
+   "value": {
+    "amount": 400,
+    "currency": "USD",
+    "kind": "per_user",
+    "label": "最高 400 美元（直接存款满 5,000 美元）",
+    "usd": 400.0
+   },
+   "conditions": [
+    "从未在 SoFi 设置过直接存款的会员",
+    "首笔合格直接存款需在 2027 年 12 月 31 日前到账",
+    "25 天内合格直接存款合计满 5,000 美元才能拿 400 美元",
+    "每人限一次"
+   ],
+   "region": "美国",
+   "regions": [
+    "美国"
+   ],
+   "start_at": null,
+   "end_at": "2027-12-31T23:59:00-05:00",
+   "deadline_note": "官网写明首笔直接存款需在 12/31/27 前到账",
+   "steps": [
+    "开立 SoFi 支票/储蓄账户",
+    "把工资等直接存款转入 SoFi",
+    "满足金额要求后 7 个工作日内发放奖金"
+   ],
+   "official_url": "https://www.sofi.com/banking/",
+   "source_url": "https://www.sofi.com/banking/",
+   "source_name": "SoFi 官方",
+   "source_kind": "curated",
+   "adapter": "curated",
+   "type_tags": [
+    "deposit"
+   ],
+   "risks": [
+    "需要真实的直接存款（如工资），普通转账可能不算",
+    "SoFi 是美国银行，非美国居民一般无法开户（以官网条款为准）"
+   ],
+   "verify_status": "verified",
+   "verify_note": "已对照官方页面核实关键条款",
+   "verified_at": "2026-11-22T10:38:29+08:00",
+   "published_at": null,
+   "fp": "sofi支票账户直接存款奖励最高400美元",
+   "lang_note": "",
+   "checked_at": "2026-11-22T10:38:29+08:00",
+   "_verify_sig": "[\"$5,000.00 or more $400\", \"12/31/27\"]",
+   "first_seen": "2026-11-10T01:41:46+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
+   "state": "active",
+   "archived_reason": "",
+   "score": 57.86
+  },
+  {
+   "id": "bn-51ee8ac34c9f",
+   "title": "ANT & NVDA合约嘉年华：交易精选TradFi合约，分享最高200,000 USDC奖励！",
+   "category": "crypto",
+   "offer": "币安推出ANT &amp; NVDA合约嘉年华，提供 高达200,000 USDC 的丰厚奖池。",
+   "value": {
+    "amount": 200000.0,
+    "currency": "USDC",
+    "usd": 200000.0,
+    "kind": "per_user_max",
+    "label": "个人最高 200,000 USDC"
+   },
+   "conditions": [
+    "公告提示：活动可能不适用于你所在的地区",
+    "需完成实名 / 身份认证（KYC）"
+   ],
+   "region": "未注明（待核实）",
+   "regions": [],
+   "start_at": "2026-11-17T18:00:00+08:00",
+   "end_at": "2026-12-01T07:59:00+08:00",
+   "deadline_note": "活动期间： 2026年11月17日18:00至2026年12月01日07:59（东八区时间） 立即参与 活动一：完成您的第一笔精选TradFi合约交易，解锁25,000 USDC奖励 参与资格： 所有符合资格的普通用户及VIP 1-6 用户",
+   "steps": [
+    "打开币安官方公告阅读完整条款",
+    "在活动页点击报名/参与",
+    "完成公告列出的任务，奖励按公告时间发放"
+   ],
+   "official_url": "https://www.binance.com/zh-CN/support/announcement/detail/51ee8ac34c9f4603b514965aa291b668",
+   "source_url": "https://www.binance.com/zh-CN/support/announcement/detail/51ee8ac34c9f4603b514965aa291b668",
+   "source_name": "币安官方公告",
+   "source_kind": "official_api",
+   "adapter": "binance",
+   "type_tags": [
+    "volume",
+    "deposit"
+   ],
+   "risks": [
+    "币安近期官方公告：「恢复进展更新：更多网络已重新开放提现（2026年11月14日）」，参与前留意资金与提现状态",
+    "加密资产价格波动大，奖励可能是代币券或锁仓资产",
+    "交易所服务在部分国家/地区（含中国大陆）受限，参与前确认当地法规",
+    "谨防冒充官方的钓鱼链接，只从官方页面进入"
+   ],
+   "verify_status": "official",
+   "verify_note": "程序从币安官方公告正文自动提取，以公告原文为准",
+   "verified_at": "2026-11-17T21:03:23+08:00",
+   "published_at": "2026-11-17T17:00:06+08:00",
+   "fp": "antnvda合约嘉年华交易精选tradfi合约分享最高200000usdc奖励",
+   "lang_note": "",
+   "_body_ok": true,
+   "first_seen": "2026-11-17T21:03:06+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
+   "state": "active",
+   "archived_reason": "",
+   "score": 55.6
   },
   {
    "id": "bn-dad3f7336cd3",
@@ -387,369 +747,9 @@
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
    "last_seen": "2026-11-17T21:49:34+08:00",
-   "state": "expiring",
-   "archived_reason": "",
-   "score": 58.6
-  },
-  {
-   "id": "ed-claude-free-plan",
-   "title": "Claude 免费版：网页、App 与桌面端均可用",
-   "category": "ai",
-   "offer": "Anthropic 官方 Claude 免费版 0 美元，可在网页、iOS、Android 与桌面端聊天，支持语音模式与联网搜索；用量按 5 小时和每周限额计算。",
-   "value": {
-    "amount": null,
-    "currency": "USD",
-    "kind": "free_tier",
-    "label": "长期免费层（用量有限）"
-   },
-   "conditions": [
-    "需要注册 Claude 账号",
-    "使用 Claude 需所在国家/地区在官方支持范围内"
-   ],
-   "region": "官方支持的国家和地区",
-   "regions": [],
-   "start_at": null,
-   "end_at": null,
-   "deadline_note": "长期有效，无截止时间",
-   "steps": [
-    "打开官方定价页，点击 Try Claude",
-    "注册并登录账号",
-    "在网页或 App 中直接使用"
-   ],
-   "official_url": "https://claude.com/pricing",
-   "source_url": "https://claude.com/pricing",
-   "source_name": "Anthropic 官方",
-   "source_kind": "curated",
-   "adapter": "curated",
-   "type_tags": [
-    "free"
-   ],
-   "risks": [
-    "免费版高峰期可能受限",
-    "部分国家和地区不在官方服务范围内"
-   ],
-   "verify_status": "verified",
-   "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
-   "published_at": null,
-   "fp": "claude免费版网页app与桌面端均可用",
-   "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
-   "_verify_sig": "[\"Free for everyone\", \"Voice mode\"]",
-   "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
-   "state": "active",
-   "archived_reason": "",
-   "score": 58.0
-  },
-  {
-   "id": "ed-cloudflare-workers-free",
-   "title": "Cloudflare Workers 免费版：每天 10 万次请求",
-   "category": "cloud",
-   "offer": "Cloudflare Workers 免费档每天 10 万次请求、每次 10 毫秒 CPU 时间，可部署无服务器函数，官网写明无需信用卡。",
-   "value": {
-    "amount": null,
-    "currency": "USD",
-    "kind": "free_tier",
-    "label": "长期免费层（每天 10 万次请求）"
-   },
-   "conditions": [
-    "需要 Cloudflare 账号",
-    "官网写明无需信用卡"
-   ],
-   "region": "全球",
-   "regions": [],
-   "start_at": null,
-   "end_at": null,
-   "deadline_note": "长期有效，无截止时间",
-   "steps": [
-    "注册 Cloudflare 免费账号",
-    "进入 Workers 创建应用",
-    "用 Wrangler 或网页编辑器部署"
-   ],
-   "official_url": "https://www.cloudflare.com/products/workers/",
-   "source_url": "https://www.cloudflare.com/products/workers/",
-   "source_name": "Cloudflare 官方",
-   "source_kind": "curated",
-   "adapter": "curated",
-   "type_tags": [
-    "free"
-   ],
-   "risks": [
-    "超出免费额度的请求会报错，不会自动扣费（以官网为准）"
-   ],
-   "verify_status": "verified",
-   "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
-   "published_at": null,
-   "fp": "cloudflareworkers免费版每天10万次请求",
-   "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
-   "_verify_sig": "[\"100k / day\", \"no credit card required\"]",
-   "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
-   "state": "active",
-   "archived_reason": "",
-   "score": 58.0
-  },
-  {
-   "id": "ed-figma-education",
-   "title": "Figma 教育版：学生和老师免费用",
-   "category": "software",
-   "offer": "Figma 面向教育用户免费提供设计、原型和协作工具。",
-   "value": {
-    "amount": null,
-    "currency": "USD",
-    "kind": "free_tier",
-    "label": "教育免费（需教育身份）"
-   },
-   "conditions": [
-    "需验证学生或教师身份"
-   ],
-   "region": "全球（需教育身份）",
-   "regions": [],
-   "start_at": null,
-   "end_at": null,
-   "deadline_note": "教育身份有效期内",
-   "steps": [
-    "打开官方教育页",
-    "注册并提交教育身份验证",
-    "通过后使用教育版"
-   ],
-   "official_url": "https://www.figma.com/education/",
-   "source_url": "https://www.figma.com/education/",
-   "source_name": "Figma 官方",
-   "source_kind": "curated",
-   "adapter": "curated",
-   "type_tags": [
-    "free"
-   ],
-   "risks": [
-    "教育版不能用于商业项目（以官方条款为准）"
-   ],
-   "verify_status": "verified",
-   "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
-   "published_at": null,
-   "fp": "figma教育版学生和老师免费用",
-   "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
-   "_verify_sig": "[\"free for education\"]",
-   "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
-   "state": "active",
-   "archived_reason": "",
-   "score": 58.0
-  },
-  {
-   "id": "ed-github-copilot-free",
-   "title": "GitHub Copilot Free：每月 2,000 次代码补全，免绑卡",
-   "category": "ai",
-   "offer": "GitHub Copilot 免费版每月 2,000 次代码补全，可用 Haiku 4.5、GPT-5 mini 等入门模型，支持 Copilot CLI 与有限的聊天/Agent 用量。",
-   "value": {
-    "amount": null,
-    "currency": "USD",
-    "kind": "free_tier",
-    "label": "长期免费层（每月额度有限）"
-   },
-   "conditions": [
-    "需要 GitHub 账号",
-    "官网写明无需信用卡"
-   ],
-   "region": "全球（GitHub 可用地区）",
-   "regions": [],
-   "start_at": null,
-   "end_at": null,
-   "deadline_note": "长期有效，无截止时间",
-   "steps": [
-    "登录 GitHub",
-    "打开官方方案页点击 Get started",
-    "在 VS Code 等编辑器里登录 GitHub 账号使用"
-   ],
-   "official_url": "https://github.com/features/copilot/plans",
-   "source_url": "https://github.com/features/copilot/plans",
-   "source_name": "GitHub 官方",
-   "source_kind": "curated",
-   "adapter": "curated",
-   "type_tags": [
-    "free"
-   ],
-   "risks": [
-    "免费额度每月重置，用完需等下月或升级付费方案"
-   ],
-   "verify_status": "verified",
-   "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
-   "published_at": null,
-   "fp": "githubcopilotfree每月2000次代码补全免绑卡",
-   "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
-   "_verify_sig": "[\"2,000 completions per month\", \"No credit card required\"]",
-   "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
-   "state": "active",
-   "archived_reason": "",
-   "score": 58.0
-  },
-  {
-   "id": "ed-render-hobby",
-   "title": "Render Hobby：静态网站永久免费部署",
-   "category": "cloud",
-   "offer": "Render Hobby 方案 0 美元/月（计算资源另计），静态网站可永久免费部署，最多 25 个服务、含 5 GB 带宽。",
-   "value": {
-    "amount": null,
-    "currency": "USD",
-    "kind": "free_tier",
-    "label": "长期免费层（静态网站）"
-   },
-   "conditions": [
-    "需要 Render 账号",
-    "计算资源按用量另计"
-   ],
-   "region": "全球",
-   "regions": [],
-   "start_at": null,
-   "end_at": null,
-   "deadline_note": "长期有效",
-   "steps": [
-    "注册 Render",
-    "连接代码仓库",
-    "选择 Static Site 部署"
-   ],
-   "official_url": "https://render.com/pricing",
-   "source_url": "https://render.com/pricing",
-   "source_name": "Render 官方",
-   "source_kind": "curated",
-   "adapter": "curated",
-   "type_tags": [
-    "free"
-   ],
-   "risks": [
-    "0 美元方案的计算资源（compute）另外计费，只有静态网站免费"
-   ],
-   "verify_status": "verified",
-   "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
-   "published_at": null,
-   "fp": "renderhobby静态网站永久免费部署",
-   "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
-   "_verify_sig": "[\"Deploy websites for free, forever\", \"5 GB of bandwidth included\"]",
-   "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
-   "state": "active",
-   "archived_reason": "",
-   "score": 58.0
-  },
-  {
-   "id": "ed-sofi-checking-dd-bonus",
-   "title": "SoFi 支票账户：直接存款奖励最高 400 美元",
-   "category": "bank",
-   "offer": "SoFi 新老会员首次设置直接存款（Direct Deposit），首笔到账后 25 天内合格直接存款合计 1,000–4,999.99 美元奖励 50 美元，5,000 美元及以上奖励 400 美元。",
-   "value": {
-    "amount": 400,
-    "currency": "USD",
-    "kind": "per_user",
-    "label": "最高 400 美元（直接存款满 5,000 美元）",
-    "usd": 400.0
-   },
-   "conditions": [
-    "从未在 SoFi 设置过直接存款的会员",
-    "首笔合格直接存款需在 2027 年 12 月 31 日前到账",
-    "25 天内合格直接存款合计满 5,000 美元才能拿 400 美元",
-    "每人限一次"
-   ],
-   "region": "美国",
-   "regions": [
-    "美国"
-   ],
-   "start_at": null,
-   "end_at": "2027-12-31T23:59:00-05:00",
-   "deadline_note": "官网写明首笔直接存款需在 12/31/27 前到账",
-   "steps": [
-    "开立 SoFi 支票/储蓄账户",
-    "把工资等直接存款转入 SoFi",
-    "满足金额要求后 7 个工作日内发放奖金"
-   ],
-   "official_url": "https://www.sofi.com/banking/",
-   "source_url": "https://www.sofi.com/banking/",
-   "source_name": "SoFi 官方",
-   "source_kind": "curated",
-   "adapter": "curated",
-   "type_tags": [
-    "deposit"
-   ],
-   "risks": [
-    "需要真实的直接存款（如工资），普通转账可能不算",
-    "SoFi 是美国银行，非美国居民一般无法开户（以官网条款为准）"
-   ],
-   "verify_status": "verified",
-   "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
-   "published_at": null,
-   "fp": "sofi支票账户直接存款奖励最高400美元",
-   "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
-   "_verify_sig": "[\"$5,000.00 or more $400\", \"12/31/27\"]",
-   "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
-   "state": "active",
-   "archived_reason": "",
-   "score": 57.86
-  },
-  {
-   "id": "bn-51ee8ac34c9f",
-   "title": "ANT & NVDA合约嘉年华：交易精选TradFi合约，分享最高200,000 USDC奖励！",
-   "category": "crypto",
-   "offer": "币安推出ANT &amp; NVDA合约嘉年华，提供 高达200,000 USDC 的丰厚奖池。",
-   "value": {
-    "amount": 200000.0,
-    "currency": "USDC",
-    "usd": 200000.0,
-    "kind": "per_user_max",
-    "label": "个人最高 200,000 USDC"
-   },
-   "conditions": [
-    "公告提示：活动可能不适用于你所在的地区",
-    "需完成实名 / 身份认证（KYC）"
-   ],
-   "region": "未注明（待核实）",
-   "regions": [],
-   "start_at": "2026-11-17T18:00:00+08:00",
-   "end_at": "2026-12-01T07:59:00+08:00",
-   "deadline_note": "活动期间： 2026年11月17日18:00至2026年12月01日07:59（东八区时间） 立即参与 活动一：完成您的第一笔精选TradFi合约交易，解锁25,000 USDC奖励 参与资格： 所有符合资格的普通用户及VIP 1-6 用户",
-   "steps": [
-    "打开币安官方公告阅读完整条款",
-    "在活动页点击报名/参与",
-    "完成公告列出的任务，奖励按公告时间发放"
-   ],
-   "official_url": "https://www.binance.com/zh-CN/support/announcement/detail/51ee8ac34c9f4603b514965aa291b668",
-   "source_url": "https://www.binance.com/zh-CN/support/announcement/detail/51ee8ac34c9f4603b514965aa291b668",
-   "source_name": "币安官方公告",
-   "source_kind": "official_api",
-   "adapter": "binance",
-   "type_tags": [
-    "volume",
-    "deposit"
-   ],
-   "risks": [
-    "币安近期官方公告：「恢复进展更新：更多网络已重新开放提现（2026年11月14日）」，参与前留意资金与提现状态",
-    "加密资产价格波动大，奖励可能是代币券或锁仓资产",
-    "交易所服务在部分国家/地区（含中国大陆）受限，参与前确认当地法规",
-    "谨防冒充官方的钓鱼链接，只从官方页面进入"
-   ],
-   "verify_status": "official",
-   "verify_note": "程序从币安官方公告正文自动提取，以公告原文为准",
-   "verified_at": "2026-11-17T21:03:23+08:00",
-   "published_at": "2026-11-17T17:00:06+08:00",
-   "fp": "antnvda合约嘉年华交易精选tradfi合约分享最高200000usdc奖励",
-   "lang_note": "",
-   "_body_ok": true,
-   "first_seen": "2026-11-17T21:03:06+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
-   "state": "active",
-   "archived_reason": "",
-   "score": 55.6
+   "state": "expired",
+   "archived_reason": "已过截止时间，自动归档",
+   "score": 53.6
   },
   {
    "id": "bn-a8ed3a09053e",
@@ -853,14 +853,14 @@
    ],
    "verify_status": "verified",
    "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
+   "verified_at": "2026-11-22T10:38:29+08:00",
    "published_at": null,
    "fp": "mox6周年新客户开户送电子刮刮卡最高hkd6000现金",
    "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
+   "checked_at": "2026-11-22T10:38:29+08:00",
    "_verify_sig": "[\"\\u8fce\\u65b0\\u522e\\u522e\\u8cde\", \"12\\u670820\\u65e5\"]",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 51.17
@@ -967,7 +967,7 @@
    "lang_note": "ChartControl AI x KuCoin Special Trading Competition Is Live!",
    "_body_ok": true,
    "first_seen": "2026-11-17T11:09:28+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 44.36
@@ -1017,14 +1017,14 @@
    ],
    "verify_status": "verified",
    "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
+   "verified_at": "2026-11-22T10:38:29+08:00",
    "published_at": null,
    "fp": "elebank大象银行推荐好友开户被推荐人最高hkd1136迎新奖赏",
    "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
+   "checked_at": "2026-11-22T10:38:29+08:00",
    "_verify_sig": "[\"HKD 1,136\", \"2026 \\u5e74 11 \\u6708 30 \\u65e5\"]",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 44.02
@@ -1073,7 +1073,7 @@
    "fp": "webull经纪2转账匹配36个月持有",
    "lang_note": "WeBull Brokerage 2% Transfer Match (36 Month Hold)",
    "first_seen": "2026-11-21T03:54:18+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 41.6
@@ -1120,14 +1120,14 @@
    ],
    "verify_status": "verified",
    "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
+   "verified_at": "2026-11-22T10:38:29+08:00",
    "published_at": null,
    "fp": "wise多币种卡每月250美元以内atm取现免手续费美国",
    "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
+   "checked_at": "2026-11-22T10:38:29+08:00",
    "_verify_sig": "[\"ATM withdrawals up to a total of 250 USD per calendar month will not have an ATM withdrawal fee\"]",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 40.59
@@ -1172,13 +1172,13 @@
    ],
    "verify_status": "official",
    "verify_note": "Epic 官方接口实时数据",
-   "verified_at": "2026-11-22T06:59:21+08:00",
+   "verified_at": "2026-11-22T10:38:46+08:00",
    "published_at": null,
    "fp": "epic喜加一markofthedeep限时免费领取",
    "lang_note": "",
    "upcoming": false,
    "first_seen": "2026-11-13T00:55:02+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expiring",
    "archived_reason": "",
    "score": 38.39
@@ -1229,7 +1229,7 @@
    "lang_note": "Copy Trade for Chances to Win iPhone and BTC",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 36.14
@@ -1425,13 +1425,13 @@
    ],
    "verify_status": "official",
    "verify_note": "Epic 官方接口实时数据；尚未开始",
-   "verified_at": "2026-11-22T06:59:21+08:00",
+   "verified_at": "2026-11-22T10:38:46+08:00",
    "published_at": null,
    "fp": "epic喜加一breadandfred限时免费领取即将开始",
    "lang_note": "",
    "upcoming": true,
    "first_seen": "2026-11-20T03:13:53+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "upcoming",
    "archived_reason": "",
    "score": 32.34
@@ -1474,14 +1474,14 @@
    ],
    "verify_status": "verified",
    "verify_note": "已对照官方页面核实关键条款",
-   "verified_at": "2026-11-22T01:17:15+08:00",
+   "verified_at": "2026-11-22T10:38:29+08:00",
    "published_at": null,
    "fp": "azure免费账户30天免费试用12个月热门服务免费",
    "lang_note": "",
-   "checked_at": "2026-11-22T01:17:15+08:00",
+   "checked_at": "2026-11-22T10:38:29+08:00",
    "_verify_sig": "[\"Free monthly amounts of 20+ popular services for 12 months\", \"65+ always-free services\"]",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 32.0
@@ -1527,10 +1527,10 @@
    "published_at": null,
    "fp": "suno免费版每天50积分生成歌曲",
    "lang_note": "",
-   "checked_at": "2026-11-22T06:59:21+08:00",
+   "checked_at": "2026-11-22T10:38:29+08:00",
    "_verify_sig": "[\"50 credits per day\", \"Free forever\"]",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 30.0
@@ -1577,10 +1577,10 @@
    "published_at": null,
    "fp": "vercelhobby个人项目免费部署",
    "lang_note": "",
-   "checked_at": "2026-11-22T06:59:21+08:00",
+   "checked_at": "2026-11-22T10:38:29+08:00",
    "_verify_sig": "[\"Hobby\", \"The perfect starting place for your web app or personal project\"]",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 30.0
@@ -1676,7 +1676,7 @@
    "fp": "apple黑色星期五活动购物最高可获300美元礼品卡",
    "lang_note": "Apple Black Friday Event: Up To $300 Giftcard With Purchase",
    "first_seen": "2026-11-21T03:54:18+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 26.64
@@ -1776,7 +1776,7 @@
    "lang_note": "KuMining Black Friday: Mine More, Get More!",
    "_body_ok": true,
    "first_seen": "2026-11-16T19:48:39+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 24.62
@@ -1826,7 +1826,7 @@
    "lang_note": "KuMining Halloween · Keep the Mine Lit — 50,000+ USDT in Rewards",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 24.14
@@ -1888,7 +1888,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-17T11:09:28+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 20.96
@@ -1933,13 +1933,13 @@
    ],
    "verify_status": "official",
    "verify_note": "Epic 官方接口实时数据；尚未开始",
-   "verified_at": "2026-11-22T06:59:21+08:00",
+   "verified_at": "2026-11-22T10:38:46+08:00",
    "published_at": null,
    "fp": "epic喜加一火之石放置点击英雄rpg限时免费领取即将开始",
    "lang_note": "",
    "upcoming": true,
    "first_seen": "2026-11-19T01:33:45+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "upcoming",
    "archived_reason": "",
    "score": 18.0
@@ -2094,7 +2094,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-17T21:03:06+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 16.67
@@ -2447,7 +2447,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-20T19:14:58+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expiring",
    "archived_reason": "",
    "score": 11.0
@@ -2499,7 +2499,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-18T20:24:03+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expiring",
    "archived_reason": "",
    "score": 11.0
@@ -2703,7 +2703,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-18T11:36:00+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 9.0,
@@ -2760,7 +2760,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-17T11:09:28+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 9.0
@@ -2812,8 +2812,8 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-20T16:45:25+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
-   "state": "upcoming",
+   "last_seen": "2026-11-22T10:38:29+08:00",
+   "state": "active",
    "archived_reason": "",
    "score": 9.0
   },
@@ -2863,7 +2863,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-18T05:40:13+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 9.0
@@ -2968,7 +2968,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-12T18:14:52+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 9.0
@@ -3023,7 +3023,7 @@
    "lang_note": "infiniFi (INFI) Listing Campaign — 46,000 INFI Giveaway",
    "_body_ok": true,
    "first_seen": "2026-11-17T21:49:34+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expiring",
    "archived_reason": "",
    "score": 9.0
@@ -3132,7 +3132,7 @@
    "lang_note": "KuCoin PROOF: Tis the Season — Win Your Share of 550,000 USDT",
    "_body_ok": true,
    "first_seen": "2026-11-16T15:13:41+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 8.0
@@ -3187,7 +3187,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-20T03:13:53+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 7.0
@@ -3242,7 +3242,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-18T20:24:03+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 7.0
@@ -3346,7 +3346,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-12T20:27:38+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 6.0
@@ -3503,7 +3503,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-13T19:26:29+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 6.0
@@ -4021,7 +4021,7 @@
    "lang_note": "Spin to Win from a $300,000 Prize Pool on 161 TradFi Perpetual Pairs!",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "archived",
    "archived_reason": "发布超过 30 天且未找到截止时间，自动归档（不代表活动已结束）",
    "score": 6.0
@@ -4069,7 +4069,7 @@
    "fp": "因人而异paypal餐食派送可享15返现最高15",
    "lang_note": "[YMMV] PayPal: Earn 15% Back On Food Delivery (Up To $15)",
    "first_seen": "2026-11-21T03:54:18+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 4.0
@@ -4124,7 +4124,7 @@
    "lang_note": "Ultra (UOS) Trade and Learn Campaign — 7,638,586 UOS Prize Pool Up For Grabs",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 4.0
@@ -4234,7 +4234,7 @@
    "lang_note": "VAYLA (VAYLA) Listing Campaign, 1,920,000 VAYLA to Giveaway",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 4.0
@@ -4289,7 +4289,7 @@
    "lang_note": "Concrete (CT) Listing Campaign — 220,000 CT Giveaway",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 4.0
@@ -4344,7 +4344,7 @@
    "lang_note": "Pheasant Network (PNT) Listing Campaign — 734,000 PNT Giveaway",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 4.0
@@ -4399,7 +4399,7 @@
    "lang_note": "Kor Protocol (KOR) Listing Campaign — 1,800,000 KOR Giveaway",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 4.0
@@ -4454,7 +4454,7 @@
    "lang_note": "Matrix (MTX) Listing Campaign — 70,000 MTX Giveaway",
    "_body_ok": true,
    "first_seen": "2026-11-11T17:01:50+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 4.0
@@ -4509,7 +4509,7 @@
    "lang_note": "NaoX Protocol (NAORIS) Listing Campaign — 1,583,000 NAORIS Giveaway",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 4.0
@@ -4564,7 +4564,7 @@
    "lang_note": "Incentiv (CENT) Listing Campaign — 17,241,380 CENT to Giveaway",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 4.0
@@ -4674,7 +4674,7 @@
    "lang_note": "Ritual (RITUAL) Listing Campaign — 2,300,000 RITUAL Giveaway",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 4.0
@@ -4782,7 +4782,7 @@
    "lang_note": "KuCoin PROOF Futures Showdown: Win Your Share of 560,000 USDT!",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 4.0
@@ -4834,7 +4834,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-18T20:24:03+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 3.0
@@ -4888,7 +4888,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-18T15:55:03+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": 3.0
@@ -4990,7 +4990,7 @@
    "lang_note": "KuMining October Trading Challenge: Compete for 9,000+ USDT in Rewards!",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 3.0
@@ -5042,7 +5042,7 @@
    "lang_note": "Introducing KuCoin Futures Arena: Earn Ongoing Futures Points & Boost Your Multiplier Up to 1.10x",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "archived",
    "archived_reason": "发布超过 30 天且未找到截止时间，自动归档（不代表活动已结束）",
    "score": 3.0
@@ -5268,7 +5268,7 @@
    "lang_note": "NeoSoul (DNA) Listing Campaign — 440,000 DNA Giveaway",
    "_body_ok": true,
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": 1.0
@@ -5433,7 +5433,7 @@
    "lang_note": "",
    "_body_ok": true,
    "first_seen": "2026-11-12T16:09:19+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "expired",
    "archived_reason": "已过截止时间，自动归档",
    "score": -1.0
@@ -6047,7 +6047,7 @@
    "fp": "花旗优惠在百思买消费满200立减10限2次",
    "lang_note": "Citi Offers: $10 Off $200 At Best Buy (Limit 2)",
    "first_seen": "2026-11-21T03:54:18+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -8.0
@@ -6847,7 +6847,7 @@
    "fp": "希尔顿分时度假优惠仅需199美元即可获得3晚住宿125k积分",
    "lang_note": "Hilton Timeshare Offer – Get 3 Nights + 125k Points For $199",
    "first_seen": "2026-11-22T04:40:03+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -8.0
@@ -7362,7 +7362,7 @@
    "fp": "仅限加州heritagecommunitycreditunion500支票奖金",
    "lang_note": "[CA Only] Heritage Community Credit Union $500 Checking Bonus",
    "first_seen": "2026-11-22T01:17:15+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -8.0
@@ -8646,7 +8646,7 @@
    "fp": "tmobile推出信用卡提供2返现免外币交易费51255折扣",
    "lang_note": "T-Mobile Launches Credit Card With 2% Cashback, No FTF, 5% + $125, $5 Discount",
    "first_seen": "2026-11-21T05:59:48+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -8.0
@@ -8982,7 +8982,7 @@
    "fp": "doordash优惠码使用优惠码30wegmanswegmans下单立减30",
    "lang_note": "DoorDash Promo Codes: 30% Off Wegman’s With Promo Code 30WEGMANS",
    "first_seen": "2026-11-21T05:59:48+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -8.0
@@ -9406,7 +9406,7 @@
    "fp": "新优惠inkind50奖励100得150",
    "lang_note": "[New Offer] inKind: 50% Bonus ($150 for $100)",
    "first_seen": "2026-11-21T03:54:18+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -8.0
@@ -9452,7 +9452,7 @@
    "fp": "7117now应用促销代码朋友满50美元立减25美元",
    "lang_note": "7-Eleven 7NOW App Promo Codes: $25 off $50+, FRIENDS",
    "first_seen": "2026-11-22T06:59:21+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -8.0
@@ -9692,7 +9692,7 @@
    "fp": "节俭40推荐奖金",
    "lang_note": "BeFrugal: $40 Referral Bonus",
    "first_seen": "2026-11-22T01:17:15+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -10.0
@@ -10033,7 +10033,7 @@
    "fp": "dedirock高内存vps终于来了天哪8gb内存每年仅需2499",
    "lang_note": "The DediRock High-RAM VPS is Here at Last! OMG! 8GB RAM for $24.99/YEAR!",
    "first_seen": "2026-11-18T20:24:03+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -12.0
@@ -10081,7 +10081,7 @@
    "fp": "距离黑色星期五还有两周直到下一个黑色星期五您才会看到价格",
    "lang_note": "Two Weeks to Black Friday: Prices You Won’t See Until Next Black Friday!",
    "first_seen": "2026-11-14T03:02:32+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -12.0
@@ -10129,7 +10129,7 @@
    "fp": "fastmoose黑色星期五早鸟优惠共享主机年费1599美元帐户数量不受限制带宽不限流量",
    "lang_note": "Black Friday Early Bird Sale from Fast Moose! $15.99/YEAR for Shared Hosting with Unlimited Accounts, Unmetered Bandwidth!",
    "first_seen": "2026-11-20T21:33:01+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -12.0
@@ -10177,7 +10177,7 @@
    "fp": "如果您错过了10月份的godlikehost优惠它又回来了第一年2gbkvmvps每月183美元",
    "lang_note": "If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!",
    "first_seen": "2026-11-11T21:25:55+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -12.0
@@ -10225,7 +10225,7 @@
    "fp": "黑色星期五预热活动赢取100美元奖金仅需2299美元年即可获得2gbryzeni9vps",
    "lang_note": "Pre-Black-Friday Warm-Up: Win a $100 Prize and Grab a 2GB Ryzen/i9 VPS for Only $22.99/YEAR!",
    "first_seen": "2026-11-20T03:13:53+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -12.0
@@ -10273,7 +10273,7 @@
    "fp": "genixnode全球14个地点的惊人低奖品4gbvps每月239美元",
    "lang_note": "GenixNode: Amazing Low Prizes in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS!",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -12.0
@@ -10321,7 +10321,7 @@
    "fp": "felware的限时节日促销活动现已开始一切享受五折优惠",
    "lang_note": "Felware’s Limited Time Holiday Sale Starts NOW! 50% Off Everything!",
    "first_seen": "2026-11-10T21:24:13+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -12.0
@@ -10559,7 +10559,7 @@
    "fp": "capitalone优惠在cvs消费可享18返现在walgreens消费可享10返现",
    "lang_note": "Capital One Offers: 18% Back at CVS & 10% Back at Walgreens",
    "first_seen": "2026-11-17T04:13:52+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -14.0
@@ -11119,7 +11119,7 @@
    "fp": "fnbo与阿提哈德推出两款新信用卡",
    "lang_note": "FNBO & Etihad Launches Two New Credit Cards",
    "first_seen": "2026-11-21T05:59:48+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -14.0
@@ -11686,7 +11686,7 @@
    "fp": "kainode的新加坡超值优惠4gbvps和1tb带宽起价为599美元月",
    "lang_note": "Great Singapore Deals from Kainode! Starting at $5.99/Month for a 4GB VPS with 1TB Bandwidth!",
    "first_seen": "2026-11-10T01:41:46+08:00",
-   "last_seen": "2026-11-22T06:59:21+08:00",
+   "last_seen": "2026-11-22T10:38:29+08:00",
    "state": "active",
    "archived_reason": "",
    "score": -14.0
