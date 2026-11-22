@@ -2,24 +2,26 @@
  "counts": {
   "archived": 23,
   "deadline_extracted": 6,
-  "drop:duplicate": 502,
+  "drop:duplicate": 499,
   "drop:empty_summary": 67,
-  "drop:negative_signal": 143,
-  "drop:no_clear_offer": 634,
-  "drop:not_ai": 537,
+  "drop:negative_signal": 144,
+  "drop:no_clear_offer": 642,
+  "drop:not_ai": 535,
   "drop:too_old_pre2025": 61,
-  "google_news_resolved": 680,
-  "google_news_total": 680,
-  "kept_total": 224,
-  "net:gnews_cache_hit": 672,
-  "net:gnews_resolved_net": 8,
-  "net:tco_expanded": 6,
-  "raw_total": 2168
+  "google_news_resolved": 686,
+  "google_news_total": 686,
+  "kept_total": 226,
+  "net:gnews_cache_hit": 680,
+  "net:gnews_resolved_net": 6,
+  "net:tco_expanded": 1,
+  "new_this_run": 1,
+  "raw_total": 2174
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
+   "开源工具 tecr 帮 AI agent 减少返工，免费开放",
    "ClearOffice Hub：用自然语言构建企业应用",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
@@ -29,8 +31,7 @@
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
-   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
-   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑"
+   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话"
   ],
   "empty_summary": [
    "@shanehegde 分享：该工具提供免费试用和90免费积分，可将编辑时间缩短至几分钟，并有实用的 recipes 功",
@@ -61,18 +62,18 @@
    "Google 把自定义域名免费并入 AI Studio，并提供用 Kotlin 与 Jetpack Compose"
   ],
   "no_clear_offer": [
+   "与 @ZackKorman 合著，重点不在 AI 做了什么，而在 OpenAI 本该怎么做",
+   "@PovilasKorop 分享：表示虽然信息量令人应接不暇，但对各类 AI 实验依然好奇，愿意用空闲时间去做",
+   "@bendee983 分享：你会得到冗长的思想链，这些思想似乎效率低下、缓慢且昂贵",
+   "@Akr4mKhan 分享：在屏幕底部用类似下载进度条的方式显示请求还需多久完成",
+   "作者为 HelpSpot 新版设计 AI 积分定价，认为只有一档并不复杂，还吐槽 Notion 四档积分仍不好用",
    "Yogurt 是 Granola、Otter、Fireflies 的开源替代品，上线12天获2.9k GitHub st",
    "加入 HKFP：确保 HKFP 的独立性，支持获奖报道，并帮助保护新闻业免受 AI 和亿万富翁支持者的影响",
    "@BardhylBytyqi 分享：推文列出 AI 设计工具、落地页与免费模板等 5 项资源及链接",
    "课程包括 Claude Code 101、Claude Code in Action、Subagents",
    "@csaba_kissi 分享：合集列出免费组件、AI 前端设计技能、开源动画 React 组件和 UI 微交互等链接",
    "指南由 Claude 工程师制作，免费，含西班牙语和英语字幕",
-   "@malpani 分享：一个在课堂上不好意思提问的学生可以用十种不同的方式向 AI 导师询问同一问题",
-   "@AiBreakfast 分享：可从文字描述、语音备忘或曲库已有音轨起步，无需 API key，使用现有账号即可",
-   "@Itsfoss 分享：2026 年 12 月 9 日线上举行，内容涵盖从风险检查到上线准备的实务流程",
-   "@jasonlk 分享：提供 AI 销售代理免费指南，并附 AI 代理相关介绍链接",
-   "主模型 Qwen 2.5 7B，备用 Gemma 3 4B，重任务交给 [模型名称已隐藏]-OSS 20B",
-   "@Sam_Badawi 分享：他认为自由现金流回升将提前约一年半到两年，市场原本预期 2029 年，软件是 AI 的下一"
+   "@malpani 分享：一个在课堂上不好意思提问的学生可以用十种不同的方式向 AI 导师询问同一问题"
   ],
   "not_ai": [
    "Joseph W，Hogan 撰文指出，试验设计不仅关乎干预是否有效，也关乎其如何起效",
@@ -103,28 +104,30 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-22T20:52:42+08:00",
+ "generated_at": "2026-11-22T23:32:59+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-22T20:52:41+08:00",
+  "checked_at": "2026-11-22T23:32:58+08:00",
   "counts": {
-   "ok": 202,
-   "recheck": 1
+   "gone": 1,
+   "ok": 198,
+   "recheck": 1,
+   "unsure": 2
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 6.6,
+ "seconds": 3.7,
  "side": {
   "github_hot": {
-   "drop:duplicate": 14,
+   "drop:duplicate": 13,
    "drop:not_ai": 1,
-   "kept": 15,
+   "kept": 16,
    "raw": 30
   },
   "hot_topics": {
    "drop:negative_signal": 3,
-   "drop:not_ai": 9,
-   "drop:not_ai_strict": 8,
-   "kept": 20,
+   "drop:not_ai": 10,
+   "drop:not_ai_strict": 6,
+   "kept": 21,
    "raw": 40
   }
  }
