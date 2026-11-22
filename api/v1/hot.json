@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T19:03:44+08:00",
-  "count": 23,
+  "generated_at": "2026-11-22T20:52:42+08:00",
+  "count": 20,
   "items": [
     {
       "id": "hnhot-50546587",
@@ -31,13 +31,6 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258799",
-      "title": "Gemini 4 neon high，实测高强度使用量消耗，Cli 模式 [时间: 2026.11.21]",
-      "summary": "太耐用了！！！！！我订阅的 Ultra 版本，高强度使用（场景: 跟 agent 约束性计算相关），下面是使用量截图。![爽!]( 然后我问了一下 AI，按照目前使用情况每天 8 小时，同时开启三个 gemini 4 neon high 窗口，用一个月没问题，因为每周都会重置。完全 opus 5.5 平替。我这里不引战，我只说我自己的感受，差距不大，有的时候会有一样的错觉。现在彻底抛弃 GPT，Claude 就更不用说了，号早就被封了。也别问我为啥不考虑其他模型，我不比较，你们用就行。",
-      "url": "https://www.v2ex.com/t/1258799",
-      "source": "V2EX"
-    },
-    {
       "id": "v2hot-1258877",
       "title": "重度使用 neon 后，我宣布中国人可以不用考虑开 claude 订阅了",
       "summary": "测试场景是一个 AI 大乱斗堆了几十万行代码的大屎山，包含了市面上所有能用的订阅，都是 ultra 拉满额度管够，我的评价如下：1. astra medium fast 如果你手上有急事比如排查非常严重的线上问题，开它是永远最快能救急的，永远比其它所有模型快得多 2. astra xhigh 只适合用于一个问题反复出错修不好的情况下，和其它模型讨论出来方案到底有什么问题，以及做非常严谨不能出错的重构和数据迁移方案的审核，编写普通代码跟 sol 比额度用的太快，效果也没有显著更好 3. sol xhigh 主力后端模型，适合在其它模型的安排下写需求，模块不能分的太大，必须有一个调度角色一",
@@ -45,10 +38,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258880",
-      "title": "我做了 Kooyu：一个本地优先的 AI 助手，统一调度你手里所有的编程 CLI",
-      "summary": "大家好，我是 Kooyu 的作者。我平时写代码要同时用好几个编程 agent：Claude Code、Codex、Gemini CLI、OpenCode……用久了发现痛点不在某个工具不好用，而在于它们各管各的：会话不互通、额度不互通，一个撞上 429 限流，我就得手动把上下文搬到另一个工具里重来。所以我做了 Kooyu，想解决的就是这一层：它是一个本地优先的个人 AI 助手，把 10 多个编程引擎（Claude Code、Codex、DeepSeek、Gemini CLI、OpenCode、Cursor、ZCode、Kimi Code、Grok Build、pi）统",
-      "url": "https://www.v2ex.com/t/1258880",
+      "id": "v2hot-1258938",
+      "title": "Google 黑五 1 年 100 刀，GPT 的土区 499plus 还续吗？",
+      "summary": "各位看呢",
+      "url": "https://www.v2ex.com/t/1258938",
       "source": "V2EX"
     },
     {
@@ -66,10 +59,24 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258882",
-      "title": "分享 Gemini、Antigravity 不在支持区域走过的坑，关键是购买的区域，还有隐私区域。",
-      "summary": "之前付了 Google One，结果 Antigravity 还是普通套餐，折腾了老半天。最有用的是这个官方的帖子：以下几点是我走过的坑：隐私信息页要确保你的账号在可支持区域，不支持的话，用一段时间不同 ip，申请换区。确保年龄审核过，符合要求。确保 Google Pay 里的区域是支持国家，添加付款方式增加地址来选择区域。这里还有个坑就是如果在香",
-      "url": "https://www.v2ex.com/t/1258882",
+      "id": "v2hot-1258930",
+      "title": "[黑五] Google AI Pro 土耳其区 75 美刀一年",
+      "summary": "Google AI Pro 土耳其区价格很香，美区 99 美刀还是贵了 而且 Antigravity 还包含 opus 5.5 模型，不重度使用够了 已把 Claude 退订",
+      "url": "https://www.v2ex.com/t/1258930",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258933",
+      "title": "Mac Studio M5U 本地原厂精度部署 Deepseek V4.1 flash 1017 性能测试",
+      "summary": "# DeepSeek-V4.1-Flash Lossless 单台 M5 Ultra 512G 上下文阶梯测试（512 到 1M） 2026-11-22 实测。表格格式照 r/LocalLLM 帖子里的 \"1× Mac Studio (M5 Ultra, 512 GB)\"，在它 256K 的基础上补了 512K 和 1M 两行。[原始模型 DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless](",
+      "url": "https://www.v2ex.com/t/1258933",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1258926",
+      "title": "[分享创造] 无需显卡，和自己训练的五子棋 AI 实战对局（附演示视频）",
+      "summary": "前情回顾：接上回：上上回：上上上回：上上上上回：最近实在忙废了，原生 Ollama 架构的支持还在爆肝研发中。另外，博主的本职工作可能快保不住了 这次算是顶着（微弱的）泄密风险把预览版先放出来，本意是想继续“骑驴找骂”……虽然这头“驴”眼看也快保不住了 发布说明：h",
+      "url": "https://www.v2ex.com/t/1258926",
       "source": "V2EX"
     },
     {
@@ -108,59 +115,31 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258878",
-      "title": "[开源] 微子中枢 v0.6.1：一键部署 + 远程控制，新增本地 Ollama 和 OpenCode",
-      "summary": "大家好，微子中枢 v0.6.1 来了！这是我做的开源一键部署和远程控制面板，这一版加上了本地 Ollama 和 OpenCode，家里电脑跑的模型，出门在外用 Claude Code、Codex、OpenCode 也能直接调用。![微子中枢：笔记本上的面板，手机上的客户端，旁边坐着小狼]( 项目地址",
-      "url": "https://www.v2ex.com/t/1258878",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1258876",
-      "title": "myco：可能是全网唯一能安全使用 Claude 的客户端，开放免费内测啦！",
-      "summary": "抱歉有点标题党！给大家介绍一下 myco。起因就是 A/不是人，封号频繁。逼得只能做出这个产品，但越做越深入，想来可以分享给大家，免费开源，MIT 协议，不赚钱，花了好多好多 claude token 做的。正式介绍一下 myco 啦。myco 的含义是菌的意思，寓意是像各种菌落一样将森林树木连一起。表示能把 agent 们连接到一起，让他们互相发现。虽然有点标题党，但这可能是全网唯一能真的相对较大程度安全使用 claude 的客户端。因为他采用的方式跟所有别的客户端都不太一样。他控制的是原生 cla",
-      "url": "https://www.v2ex.com/t/1258876",
-      "source": "V2EX"
-    },
-    {
-      "id": "xhot-xrss-756024723",
-      "title": "开发者免费发布 Claude 技能，一段仓库视频生成可运行消防场景",
-      "summary": "作者只给了一段仓库视频和「fire」一个词，Claude 便调用仓库应用完成建模，他称准备卸载 Blender。",
-      "url": "https://x.com/elvar_official/status/2123880585567576258",
+      "id": "xhot-xrss-265865347",
+      "title": "Anthropic 免费发布37分钟 AI agents 构建指南",
+      "summary": "指南由 Claude 工程师制作，免费，含西班牙语和英语字幕。",
+      "url": "https://x.com/viktorcarterr/status/2123805938515644629",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-6808257067",
-      "title": "Dan Ives 称 AI 资本支出将在 2027 年见顶",
-      "summary": "他认为自由现金流回升将提前约一年半到两年，市场原本预期 2029 年，软件是 AI 的下一阶段。",
-      "url": "https://x.com/Sam_Badawi/status/2124232683400417781",
+      "id": "xhot-xrss-7460227985",
+      "title": "开发者免费资源合集：500多个组件与 AI 前端设计技能",
+      "summary": "合集列出免费组件、AI 前端设计技能、开源动画 React 组件和 UI 微交互等链接。",
+      "url": "https://x.com/csaba_kissi/status/2124403937684103265",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-5600697589",
-      "title": "全免费离线 JARVIS 方案：用 Ollama 跑本地模型",
-      "summary": "主模型 Qwen 2.5 7B，备用 Gemma 3 4B，重任务交给 [模型名称已隐藏]-OSS 20B，语音用 Kokoro，记忆靠一个笔记文件。",
-      "url": "https://x.com/JulianGoldieSEO/status/2124329493146050565",
+      "id": "xhot-xrss-386970865",
+      "title": "Anthropic 有29门免费 Claude 课程，含 Claude Code 与 MCP",
+      "summary": "课程包括 Claude Code 101、Claude Code in Action、Subagents、MCP 和 AI Fluency。",
+      "url": "https://x.com/deanwperkins/status/2124115326820389323",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-3736041916",
-      "title": "想帮助您的孩子破解 JEE 吗？尝试我们免费的基于 AI 的学习伴侣",
-      "summary": "想帮助您的孩子破解 JEE 吗？尝试我们免费的基于 AI 的学习伴侣：想帮助您的孩子破解 JEE 吗？请访问 尝试我们基于 AI 的免费学习伴侣",
-      "url": "https://x.com/malpani/status/2124350815687033159",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-6594538484",
-      "title": "免费领取 AI 销售代理指南",
-      "summary": "提供 AI 销售代理免费指南，并附 AI 代理相关介绍链接。",
-      "url": "https://x.com/jasonlk/status/2124284404222566665",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-9166466858",
-      "title": "免费 Drupal AI 线上研讨会：机构网站的 AI 治理",
-      "summary": "2026 年 12 月 9 日线上举行，内容涵盖从风险检查到上线准备的实务流程。",
-      "url": "https://x.com/Itsfoss/status/2123430862129713287",
+      "id": "xhot-xrss-8336429914",
+      "title": "AI 设计资源清单含免费模板与建站工具",
+      "summary": "推文列出 AI 设计工具、落地页与免费模板等 5 项资源及链接。",
+      "url": "https://x.com/BardhylBytyqi/status/2124194951307149515",
       "source": "X"
     }
   ]

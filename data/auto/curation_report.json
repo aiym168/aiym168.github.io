@@ -2,19 +2,19 @@
  "counts": {
   "archived": 23,
   "deadline_extracted": 6,
-  "drop:duplicate": 503,
+  "drop:duplicate": 502,
   "drop:empty_summary": 67,
-  "drop:negative_signal": 142,
-  "drop:no_clear_offer": 624,
+  "drop:negative_signal": 143,
+  "drop:no_clear_offer": 634,
   "drop:not_ai": 537,
   "drop:too_old_pre2025": 61,
-  "google_news_resolved": 672,
-  "google_news_total": 672,
-  "kept_total": 226,
+  "google_news_resolved": 680,
+  "google_news_total": 680,
+  "kept_total": 224,
   "net:gnews_cache_hit": 672,
-  "net:tco_failed": 6,
-  "new_this_run": 2,
-  "raw_total": 2160
+  "net:gnews_resolved_net": 8,
+  "net:tco_expanded": 6,
+  "raw_total": 2168
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -47,6 +47,7 @@
    "@vivbajaj 分享：推文称其团队用不同方式实现 AI，并提供免费试用链接"
   ],
   "negative_signal": [
+   "@JulianGoldieSEO 分享：推文以错过比特币为噱头，宣传 Polar Rank 2026 并提供免费 AI ",
    "@bluwhaleai 分享：AI 代理交易锦标赛第6期推出社区赠送活动，最高奖励1万 solana",
    "Anthropic 股价正在暴跌，AI 股票5个月内跌超50%，可订阅免费新闻通讯",
    "@PovilasKorop 分享：最后，不仅在梗图生成或软件工厂方面取得了突破，而且在治愈癌症方面也取得了突破",
@@ -57,24 +58,24 @@
    "@codyschneider 分享：为德州一家墨西哥卷饼连锁店做 UGC 风格广告，全程在一个终端内完成",
    "升级后的索引与排序在 PWS-Health、LitQA3、TrialQA、MedBrowseC 四项医疗基准上准确率领先",
    "@petergyang 分享：早鸟黑五优惠，订阅其付费通讯即送一个月 Claude Max，兑换码数量非常有限",
-   "Google 把自定义域名免费并入 AI Studio，并提供用 Kotlin 与 Jetpack Compose",
-   "@HealthcareSeema 分享：临床开发需跨研究、申报、数据和团队协调复杂运营，这些智能体提供 AI 辅助的监控"
+   "Google 把自定义域名免费并入 AI Studio，并提供用 Kotlin 与 Jetpack Compose"
   ],
   "no_clear_offer": [
+   "Yogurt 是 Granola、Otter、Fireflies 的开源替代品，上线12天获2.9k GitHub st",
+   "加入 HKFP：确保 HKFP 的独立性，支持获奖报道，并帮助保护新闻业免受 AI 和亿万富翁支持者的影响",
+   "@BardhylBytyqi 分享：推文列出 AI 设计工具、落地页与免费模板等 5 项资源及链接",
+   "课程包括 Claude Code 101、Claude Code in Action、Subagents",
+   "@csaba_kissi 分享：合集列出免费组件、AI 前端设计技能、开源动画 React 组件和 UI 微交互等链接",
+   "指南由 Claude 工程师制作，免费，含西班牙语和英语字幕",
    "@malpani 分享：一个在课堂上不好意思提问的学生可以用十种不同的方式向 AI 导师询问同一问题",
    "@AiBreakfast 分享：可从文字描述、语音备忘或曲库已有音轨起步，无需 API key，使用现有账号即可",
    "@Itsfoss 分享：2026 年 12 月 9 日线上举行，内容涵盖从风险检查到上线准备的实务流程",
    "@jasonlk 分享：提供 AI 销售代理免费指南，并附 AI 代理相关介绍链接",
    "主模型 Qwen 2.5 7B，备用 Gemma 3 4B，重任务交给 [模型名称已隐藏]-OSS 20B",
-   "@Sam_Badawi 分享：他认为自由现金流回升将提前约一年半到两年，市场原本预期 2029 年，软件是 AI 的下一",
-   "作者只给了一段仓库视频和「fire」一个词，Claude 便调用仓库应用完成建模，他称准备卸载 Blender",
-   "@dmuthuk 分享：这些公司往年现金流充裕，自大举投资 AI 后，自由现金流明显收紧",
-   "12月20日16:00 GMT 举行，由多位教授讲解 AI 如何区分正常胎儿脑变异与真正异常",
-   "@TheEconomist 分享：黎曼猜想自 1859 年提出至今未被证明，该数学家称已用 Claude 完成证明，注册",
-   "@socialwithaayan 分享：原帖给出免费工作流，并称其 AI 动画效果优于迪士尼的做法",
-   "文件后缀谁都能改，Magika 通过分析文件实际内容来预测它究竟是什么类型"
+   "@Sam_Badawi 分享：他认为自由现金流回升将提前约一年半到两年，市场原本预期 2029 年，软件是 AI 的下一"
   ],
   "not_ai": [
+   "Joseph W，Hogan 撰文指出，试验设计不仅关乎干预是否有效，也关乎其如何起效",
    "YouTube - 免费，但 证书 MDN - 免费，但 证书 W3Schools - 免费，但 证书 前 12 个免费",
    "每个 CUDA 基准测试都归功于 GPU",
    "该 DLC 在 Steam 差评如潮，部分原因是主机版比 PC 版多收 10 美元，且内容缺乏实质更新",
@@ -85,8 +86,7 @@
    "通过 PS5 的 Remote Play 串流到 PC，并叠加显卡超分与帧生成",
    "@omarabudayyeh 分享：用无针设备在家自助采血，检测来自细胞和器官的信号蛋白，帮助更年轻长寿",
    "@MythThrazz 分享：它监测读者停留，从常读段落生成后续草稿，无需 API 密钥、含图片，运行在自有 WP-Cr",
-   "@ThematicTrader 分享：他表示几乎不再持有 2026 年 1 月时的任何仓位，当时几乎无法想象 12 至 ",
-   "北卡州立大学基于 Unitree G1 开发农业人形机器人 Howl，用于在无笼养鸡场寻找并拾取地面鸡蛋"
+   "@ThematicTrader 分享：他表示几乎不再持有 2026 年 1 月时的任何仓位，当时几乎无法想象 12 至 "
   ],
   "too_old_pre2025": [
    "DistroKid推出免费AI图像生成器，可用于专辑封面等",
@@ -103,16 +103,16 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-22T19:03:44+08:00",
+ "generated_at": "2026-11-22T20:52:42+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-22T19:03:43+08:00",
+  "checked_at": "2026-11-22T20:52:41+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 200
+   "ok": 202,
+   "recheck": 1
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 1.8,
+ "seconds": 6.6,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -122,9 +122,9 @@
   },
   "hot_topics": {
    "drop:negative_signal": 3,
-   "drop:not_ai": 8,
-   "drop:not_ai_strict": 6,
-   "kept": 23,
+   "drop:not_ai": 9,
+   "drop:not_ai_strict": 8,
+   "kept": 20,
    "raw": 40
   }
  }
