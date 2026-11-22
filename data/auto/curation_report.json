@@ -2,17 +2,19 @@
  "counts": {
   "archived": 23,
   "deadline_extracted": 6,
-  "drop:duplicate": 502,
-  "drop:empty_summary": 64,
+  "drop:duplicate": 503,
+  "drop:empty_summary": 67,
   "drop:negative_signal": 143,
-  "drop:no_clear_offer": 624,
-  "drop:not_ai": 526,
-  "drop:too_old_pre2025": 60,
-  "google_news_resolved": 658,
-  "google_news_total": 658,
-  "kept_total": 227,
+  "drop:no_clear_offer": 631,
+  "drop:not_ai": 531,
+  "drop:too_old_pre2025": 61,
+  "google_news_resolved": 672,
+  "google_news_total": 672,
+  "kept_total": 224,
   "net:gnews_cache_hit": 658,
-  "raw_total": 2146
+  "net:gnews_resolved_net": 14,
+  "net:tco_expanded": 1,
+  "raw_total": 2160
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -22,15 +24,18 @@
    "Google Gemini 的 Tasks 个人助理现已免费",
    "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
    "ClearOffice Hub：用自然语言构建企业应用",
-   "Formbook：开放测试的赛马数据 MCP 服务器",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
    "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
    "Beatreel：根据一个提示制作讲解短视频",
    "hive-mind：如何设计协同工作的 AI 体",
-   "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理"
+   "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
+   "godspeed：适用于您课程的免费开源 AI 辅导工具"
   ],
   "empty_summary": [
+   "@shanehegde 分享：该工具提供免费试用和90免费积分，可将编辑时间缩短至几分钟，并有实用的 recipes 功",
+   "@shanehegde 分享：该工具提供免费试用和90免费积分，可将编辑时间缩短至几分钟，并有实用的 recipes 功",
+   "@malpani 分享：请访问 尝试我们基于 AI 的免费学习伴侣",
    "课程涵盖 LLM 架构与安全、提示注入与数据提取、OWASP 等，可预约免费演示",
    "@wavespeed_ai 分享：含 490 多个姿势，每个 3 个角度，提供 3D 与线稿版本，无水印、可商用，完全免",
    "据称 Gemini Pro 现可免费使用一年，原价 200 美元，无需付款即可激活",
@@ -39,10 +44,7 @@
    "@hosun_chung 分享：该帖称 AI 免费试用的每个注册都消耗真实算力，成本远高于 SaaS",
    "该模型在 Artificial Analysis 人声音乐榜排名第一，并可免费试用",
    "Amazon Devices Builder Tools 提供从 SDK 配置到提交的流程",
-   "@vivbajaj 分享：推文称其团队用不同方式实现 AI，并提供免费试用链接",
-   "@JeremyNguyenPhD 分享：约翰霍普金斯大学推出免费网络研讨会，主题为用 AI 工具提升学术研究生产力，附注",
-   "Claude for startups 向创业公司提供免费使用额度，有人却将其转卖获利",
-   "@liam_fallen 分享：作者称每月免费赠送 AI 代理，并附上获取链接"
+   "@vivbajaj 分享：推文称其团队用不同方式实现 AI，并提供免费试用链接"
   ],
   "negative_signal": [
    "@bluwhaleai 分享：AI 代理交易锦标赛第6期推出社区赠送活动，最高奖励1万 solana",
@@ -59,20 +61,23 @@
    "@HealthcareSeema 分享：临床开发需跨研究、申报、数据和团队协调复杂运营，这些智能体提供 AI 辅助的监控"
   ],
   "no_clear_offer": [
+   "@malpani 分享：一个在课堂上不好意思提问的学生可以用十种不同的方式向 AI 导师询问同一问题",
+   "@AiBreakfast 分享：可从文字描述、语音备忘或曲库已有音轨起步，无需 API key，使用现有账号即可",
+   "@Itsfoss 分享：2026 年 12 月 9 日线上举行，内容涵盖从风险检查到上线准备的实务流程",
+   "@jasonlk 分享：提供 AI 销售代理免费指南，并附 AI 代理相关介绍链接",
+   "主模型 Qwen 2.5 7B，备用 Gemma 3 4B，重任务交给 [模型名称已隐藏]-OSS 20B",
+   "@Sam_Badawi 分享：他认为自由现金流回升将提前约一年半到两年，市场原本预期 2029 年，软件是 AI 的下一",
+   "作者只给了一段仓库视频和「fire」一个词，Claude 便调用仓库应用完成建模，他称准备卸载 Blender",
    "@dmuthuk 分享：这些公司往年现金流充裕，自大举投资 AI 后，自由现金流明显收紧",
    "12月20日16:00 GMT 举行，由多位教授讲解 AI 如何区分正常胎儿脑变异与真正异常",
    "@TheEconomist 分享：黎曼猜想自 1859 年提出至今未被证明，该数学家称已用 Claude 完成证明，注册",
    "@socialwithaayan 分享：原帖给出免费工作流，并称其 AI 动画效果优于迪士尼的做法",
-   "文件后缀谁都能改，Magika 通过分析文件实际内容来预测它究竟是什么类型",
-   "@AdamHoltererer 分享：原帖提醒，通过免费渠道获得的 Google AI Pro 与真正的 Google ",
-   "@ClashRoyale 分享：官方公告称，该作弊工具开发者「完全自愿」加入 Clash Royale 团队，帮忙抓作弊",
-   "Rounds 把 Claude Code 会话产出汇总到一块无限画布，可反馈、审阅、查历史，在 Mac 本地运行，免费私",
-   "Build AI 开设了一家真实世界训练数据商店",
-   "@claudeai 分享：和以前一样，您在《神鬼寓言 5》上最多可以使用每周使用限制的一半",
-   "Agora Skills 教授编码代理如何使用 Agora 工具和入门应用程序",
-   "@VaibhavSisinty 分享：该免费社区已有 20 多万人加入，可每天获取 AI 工具和信息"
+   "文件后缀谁都能改，Magika 通过分析文件实际内容来预测它究竟是什么类型"
   ],
   "not_ai": [
+   "YouTube - 免费，但 证书 MDN - 免费，但 证书 W3Schools - 免费，但 证书 前 12 个免费",
+   "每个 CUDA 基准测试都归功于 GPU",
+   "该 DLC 在 Steam 差评如潮，部分原因是主机版比 PC 版多收 10 美元，且内容缺乏实质更新",
    "@xdadevelopers 分享：我用免费的开源工具替换了任务管理器的 GPU 选项卡，终于找到了我的 VRAM 的去",
    "@openclaw 分享：”好吧，这不是当我们接近第一次提交 OpenClaw 一周年时，Joe 反思了将该工具带到今天",
    "@vivago_ai 分享：11 月 20 日至 30 日加入创作者计划可获 5000 奖励积分",
@@ -81,12 +86,10 @@
    "@omarabudayyeh 分享：用无针设备在家自助采血，检测来自细胞和器官的信号蛋白，帮助更年轻长寿",
    "@MythThrazz 分享：它监测读者停留，从常读段落生成后续草稿，无需 API 密钥、含图片，运行在自有 WP-Cr",
    "@ThematicTrader 分享：他表示几乎不再持有 2026 年 1 月时的任何仓位，当时几乎无法想象 12 至 ",
-   "北卡州立大学基于 Unitree G1 开发农业人形机器人 Howl，用于在无笼养鸡场寻找并拾取地面鸡蛋",
-   "活动至 12 月 2 日，Pro 与 Premium 五折、充值送额度，用码 SWARMSFLA 得 15 美元免费额度",
-   "上传 logo 后可调整颜色、光照与动态，本地运行无需 API key，导出 2K/4K 无缝循环视频",
-   "加拿大正在通过 C-22法案经历其自身的聊天管控乱局：强烈建议加拿大同胞联系参议员"
+   "北卡州立大学基于 Unitree G1 开发农业人形机器人 Howl，用于在无笼养鸡场寻找并拾取地面鸡蛋"
   ],
   "too_old_pre2025": [
+   "DistroKid推出免费AI图像生成器，可用于专辑封面等",
    "OpenAI 向科研人员免费开放前沿模型，首批1万人",
    "由 @StabilityAI 的新动画技术提供支持 → 我们 @revelxyz 的朋友推出了一项免费消费者服务",
    "我们努力优化模型以在单个 GPU 上运行，让尽可能多的人可以使用它",
@@ -97,20 +100,20 @@
    "生成艺术遇见 3D - 使用我们新的 Blender 插件 #stablediffusion 生成纹理、视频等，对吧",
    "公告",
    "Stability AI 推出 Stable Diffusion XL 1.0，现已在 Amazon Bedrock 上",
-   "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型",
-   "今天，我们很高兴推出 Stable Audio，这是我们首款用于音乐和声音生成的 AI 产品！"
+   "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-22T11:00:19+08:00",
+ "generated_at": "2026-11-22T15:13:22+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-22T11:00:19+08:00",
+  "checked_at": "2026-11-22T15:13:22+08:00",
   "counts": {
+   "gone": 1,
    "ok": 203,
    "recheck": 1
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 1.4,
+ "seconds": 9.2,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -119,10 +122,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 5,
+   "drop:negative_signal": 2,
+   "drop:not_ai": 10,
    "drop:not_ai_strict": 9,
-   "kept": 22,
+   "kept": 19,
    "raw": 40
   }
  }

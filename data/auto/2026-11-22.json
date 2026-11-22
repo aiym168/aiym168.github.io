@@ -1,7 +1,7 @@
 {
   "date": "2026-11-22",
-  "updated_at": "2026-11-22T10:56+08:00",
-  "updated_at_label": "2026-11-22 10:56 Asia/Shanghai",
+  "updated_at": "2026-11-22T15:10+08:00",
+  "updated_at_label": "2026-11-22 15:10 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -187,7 +187,7 @@
       "url": "https://foolscap.works/",
       "posted_at": "2026-11-19 21:21 Asia/Shanghai",
       "engagement": {
-        "points": 126,
+        "points": 129,
         "comments": 94
       },
       "original_title": "Show HN: Foolscap – a writing app that reads your book and never writes for you",
@@ -328,6 +328,25 @@
       "translated_by": "model"
     },
     {
+      "id": "hn-50595885",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Hikari.ImGui：纯 C# 重实现 Dear ImGui，无原生依赖",
+      "summary": "Hikari.ImGui 是 Dear ImGui v1.93.0-docking 的纯 C# 独立重实现，零原生依赖，已发布 NuGet 包。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "charm137",
+      "url": "https://github.com/LeastActionTech/Hikari.ImGui",
+      "posted_at": "2026-11-22 11:17 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 1
+      },
+      "original_title": "Show HN: Hikari.ImGui, a pure C# re-implementation of Dear ImGui",
+      "original_summary": "Show HN: Hikari.ImGui, a pure C# re-implementation of Dear ImGui A pure, standalone C# re-implementation of the much-beloved and widely used immediate-mode GUI for 3D applications, Dear ImGui, targeting version v1.93.0-docking with zero native dependencies. Please feel free to use for your projects. Also available as a nuget package.",
+      "translated_by": "model"
+    },
+    {
       "id": "hn-50593862",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -339,7 +358,7 @@
       "url": "https://github.com/android2linux/android2linux",
       "posted_at": "2026-11-22 05:34 Asia/Shanghai",
       "engagement": {
-        "points": 4,
+        "points": 5,
         "comments": 2
       },
       "original_title": "Show HN: It's now easy to install Linux on an Android Phone – Android2linux",
@@ -358,7 +377,7 @@
       "url": "https://craoli.com",
       "posted_at": "2026-11-22 01:49 Asia/Shanghai",
       "engagement": {
-        "points": 1,
+        "points": 2,
         "comments": 0
       },
       "original_title": "Show HN: Craoli – find jobs without bias and manipulation from the platforms",
@@ -480,25 +499,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50563867",
-      "source": "Hacker News",
-      "category": "AI 产品会员/试用",
-      "title": "Forbear：用 C 写 React 风格原生 UI，计算器仅 3.6MB",
-      "summary": "即时模式 GUI 库，提供 React 式开发体验，示例计算器体积 3.6MB、内存占用约 10MB。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Gabrielmfern",
-      "url": "https://github.com/gabrielmfern/forbear",
-      "posted_at": "2026-11-20 02:19 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Forbear - React-style native UI in C; a calculator in 3.6MB, 10MB RAM",
-      "original_summary": "Show HN: Forbear - React-style native UI in C; a calculator in 3.6MB, 10MB RAM Hello! Looking to share forbear, a immediate mode GUI library that looks like the web, has a React-like DX and is as fast as possible.<p>I&#x27;ve already built a real program (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;gabrielmfern&#x2F;calculator\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;gabrielmfern&#x2F;calculator</a>) to stress it, and the binary is only 3.6MB, the first frame shows up in ~300ms, it uses 10.5MB of working set memory, and it&#x27;s all 1,155 lines of code.<p>It can be used with Jai (Jonathan Blow&#x27;s private beta programming language), and also from C or any C-compatible language.<p>On Linux and macOS:<p><pre><code>  curl -fsSL https:&#x2F;&#x2F;forbear.dev&#x2F;quick-start.sh | s",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50546704",
       "source": "Hacker News",
       "category": "AI 产品会员/试用",
@@ -605,7 +605,7 @@
       "url": "https://github.com/diggerhq/opencomputer",
       "posted_at": "2026-11-21 04:19 Asia/Shanghai",
       "engagement": {
-        "points": 118,
+        "points": 119,
         "comments": 36
       },
       "original_title": "Show HN: OpenComputer – an open source alternative to Devin",
@@ -613,23 +613,76 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50576110",
-      "source": "Hacker News",
+      "id": "v2ex-1258876",
+      "source": "V2EX",
       "category": "大模型 API 免费额度",
-      "title": "Formbook：开放测试的赛马数据 MCP 服务器",
-      "summary": "提供模型赔率与统计的赛马分析 MCP 服务，完整应用尚未上线，现开放 MCP 供测试。",
+      "title": "myco：可能是全网唯一能安全使用 Claude 的客户端，开放免费内测啦！",
+      "summary": "myco：可能是全网唯一能安全使用 Claude 的客户端，开放免费内测啦！\n抱歉有点标题党！给大家介绍一下 myco。\r\n\r\n起因就是 A/不是人，封号频繁。逼得只能做出这个产品，但越做越深入，想来可以分享给大家，免费开源，MIT 协议，不赚钱，花了好多好多 claude token 做的。\r\n\r\nhttps://github.com/chenhg5/myco\r\n\r\n正式介绍一下 myco 啦。myco 的含义是菌的意思，寓意是像各种菌落一样将森林树木连一起。表示能把 agent 们连接到一起，让他们互相发现。虽然有点标题党，但这可能是全网唯一能真的相对较大程度安全使用 claude 的客户端。因为他采用的方式跟所有别的客户端都不太一样。\r\n\r\n他控制的是原生 claude.ai 的 agent，而不是通过 oauth 或者反代。用的就是你通常用的订阅额度。\r\n\r\n关于 myco 怎么控制 claude.ai 的 agent 干活，这儿有张图：\r\n\r\n![1795182160236.png](https://picui.ogmua.cn/s1/2026/11/20/6b004e54e2639.webp)\r\n\r\n没什么黑魔法或者黑科技，本质上就是监听 claude.ai 的 agent 的消息，并让他可以通过 cli 来触发执行任务，并调用到本机的电脑。\r\n\r\n这样带来的好处：\r\n\r\n1. agent 跑在 A/自己的机器上，使用了他的免费的机器资源，用来渲染视频也没问题\r\n2. 不需要你再很麻烦去管理自己的 IP 和地区，也不用你花钱去弄什么虚拟机什么 macmini 或者什么 baga 项目\r\n3. 云端 agent，你关了电脑他也能跑，手机随时拿起来派活\r\n4. 消息记录存在你的服务器或者本机电脑上，随时让别的 agent 接着做\r\n\r\n而且，说实话，myco 的体验",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "beginnings",
-      "url": "https://mcp.formbook.io",
-      "posted_at": "2026-11-20 23:28 Asia/Shanghai",
+      "author": "plane",
+      "url": "https://www.v2ex.com/t/1258876",
+      "posted_at": "2026-11-22 12:54 Asia/Shanghai",
       "engagement": {
-        "points": 1,
-        "comments": 0
+        "replies": 0
       },
-      "original_title": "Show HN: Formbook – MCP server for horse racing data",
-      "original_summary": "Show HN: Formbook – MCP server for horse racing data formbook is a horse racing analytics app im building with model odds and stats, im a few weeks away from going live with the full app but im hosting the mcp open right now for testing so you can plug your agent into all the data<p><pre><code>  claude mcp add --transport http --scope user formbook https:&#x2F;&#x2F;mcp.formbook.io&#x2F;mcp\n</code></pre>\nthe data is about 30 years worth, full coeverage uk&#x2F;ire, most of hong kong and dubai, major races from most major racing regions with sectionals and stride date from last few years<p>the mcp gives you access to upcoming racecards and the model&#x27;s prices&#x2F;confidence, live bookmaker odds and delayed exchange odds<p>its currently running on my recently nerfed oracle free tier ser",
-      "translated_by": "model"
+      "original_title": "myco：可能是全网唯一能安全使用 Claude 的客户端，开放免费内测啦！",
+      "original_summary": "myco：可能是全网唯一能安全使用 Claude 的客户端，开放免费内测啦！\n抱歉有点标题党！给大家介绍一下 myco。\r\n\r\n起因就是 A/不是人，封号频繁。逼得只能做出这个产品，但越做越深入，想来可以分享给大家，免费开源，MIT 协议，不赚钱，花了好多好多 claude token 做的。\r\n\r\nhttps://github.com/chenhg5/myco\r\n\r\n正式介绍一下 myco 啦。myco 的含义是菌的意思，寓意是像各种菌落一样将森林树木连一起。表示能把 agent 们连接到一起，让他们互相发现。虽然有点标题党，但这可能是全网唯一能真的相对较大程度安全使用 claude 的客户端。因为他采用的方式跟所有别的客户端都不太一样。\r\n\r\n他控制的是原生 claude.ai 的 agent，而不是通过 oauth 或者反代。用的就是你通常用的订阅额度。\r\n\r\n关于 myco 怎么控制 claude.ai 的 agent 干活，这儿有张图：\r\n\r\n![1795182160236.png](https://picui.ogmua.cn/s1/2026/11/20/6b004e54e2639.webp)\r\n\r\n没什么黑魔法或者黑科技，本质上就是监听 claude.ai 的 agent 的消息，并让他可以通过 cli 来触发执行任务，并调用到本机的电脑。\r\n\r\n这样带来的好处：\r\n\r\n1. agent 跑在 A/自己的机器上，使用了他的免费的机器资源，用来渲染视频也没问题\r\n2. 不需要你再很麻烦去管理自己的 IP 和地区，也不用你花钱去弄什么虚拟机什么 macmini 或者什么 baga 项目\r\n3. 云端 agent，你关了电脑他也能跑，手机随时拿起来派活\r\n4. 消息记录存在你的服务器或者本机电脑上，随时让别的 agent 接着做\r\n\r\n而且，说实话，myco 的体验",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1258874",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "年初做的终端排障小工具推倒重做成了 aist：零配置融进 Shell、多机 SSH、带环境记忆，再来求各位老哥拍砖",
+      "summary": "年初做的终端排障小工具推倒重做成了 aist：零配置融进 Shell、多机 SSH、带环境记忆，再来求各位老哥拍砖\n今年 1 月份的时候在站里发过一帖（ /t/1188837 ），当时花几天赶出来一个叫 `aiassist` 的命令行排障工具，还很粗糙。后来自己在日常管机器的过程中真刀真枪用下来，越用越发现第一版毛病太多：每次换台机器装完还得手动配一堆 YAML 和模型 Key 、连多台服务器很割裂、每次开新窗口都得把机器环境重讲一遍，真让大模型跑命令心里也没底。\r\n\r\n这大半年陆陆续续把它推倒重做了一遍，名字也正式改成了更短好敲的 **aist**，刚整理出 `v0.6.0` 重新开源出来，厚着脸皮再来请各位运维和开发老哥拍拍砖、dis 一下：\r\n\r\nGitHub：https://github.com/llaoj/aist\r\n\r\n![demo](https://docs.aistrun.cc/demo-zh.gif)\r\n\r\n对比第一版，这次主要把下面四块老老实实重做了：\r\n\r\n1. **客户端彻底做成了零配置，完全融进平时的 Shell**  \r\n上次评论区有老哥反馈配置麻烦，这次客户端就是一个 10MB 左右的纯 Go 静态单文件，没有任何外部依赖，终端不用写配置文件，也不在本地留任何上游 API Key 。装好登录一次，就能像系统自带命令一样顺手用：直接敲 `aist` 进多轮排障，敲 `aist \"查下哪个进程把磁盘吃满了\"` 问完即走，或者直接接在管道后面 `journalctl -n 200 | aist \"看看报错原因\"`（管道模式是纯只读的，不会执行任何改动操作）。\r\n\r\n2. **直接支持多台 SSH 机器一起查**  \r\n不用往远端服务器上装任何 Agent ，直接复用本机系统自带的 `ssh` 和 `~/.ssh/config` 里的主机别名（全程不碰",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "hmmmbiubiubiu",
+      "url": "https://www.v2ex.com/t/1258874",
+      "posted_at": "2026-11-22 12:33 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "年初做的终端排障小工具推倒重做成了 aist：零配置融进 Shell、多机 SSH、带环境记忆，再来求各位老哥拍砖",
+      "original_summary": "年初做的终端排障小工具推倒重做成了 aist：零配置融进 Shell、多机 SSH、带环境记忆，再来求各位老哥拍砖\n今年 1 月份的时候在站里发过一帖（ /t/1188837 ），当时花几天赶出来一个叫 `aiassist` 的命令行排障工具，还很粗糙。后来自己在日常管机器的过程中真刀真枪用下来，越用越发现第一版毛病太多：每次换台机器装完还得手动配一堆 YAML 和模型 Key 、连多台服务器很割裂、每次开新窗口都得把机器环境重讲一遍，真让大模型跑命令心里也没底。\r\n\r\n这大半年陆陆续续把它推倒重做了一遍，名字也正式改成了更短好敲的 **aist**，刚整理出 `v0.6.0` 重新开源出来，厚着脸皮再来请各位运维和开发老哥拍拍砖、dis 一下：\r\n\r\nGitHub：https://github.com/llaoj/aist\r\n\r\n![demo](https://docs.aistrun.cc/demo-zh.gif)\r\n\r\n对比第一版，这次主要把下面四块老老实实重做了：\r\n\r\n1. **客户端彻底做成了零配置，完全融进平时的 Shell**  \r\n上次评论区有老哥反馈配置麻烦，这次客户端就是一个 10MB 左右的纯 Go 静态单文件，没有任何外部依赖，终端不用写配置文件，也不在本地留任何上游 API Key 。装好登录一次，就能像系统自带命令一样顺手用：直接敲 `aist` 进多轮排障，敲 `aist \"查下哪个进程把磁盘吃满了\"` 问完即走，或者直接接在管道后面 `journalctl -n 200 | aist \"看看报错原因\"`（管道模式是纯只读的，不会执行任何改动操作）。\r\n\r\n2. **直接支持多台 SSH 机器一起查**  \r\n不用往远端服务器上装任何 Agent ，直接复用本机系统自带的 `ssh` 和 `~/.ssh/config` 里的主机别名（全程不碰",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1258872",
+      "source": "V2EX",
+      "category": "AI 产品会员/试用",
+      "title": "[机场推荐] 注册免费试用，有专线有家宽",
+      "summary": "[机场推荐] 注册免费试用，有专线有家宽\n¥3 起/月。有专线，有家宽。性价比超高的机场\r\n\r\nhttps://m.vxcloud.cfd/coupon.html",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "diandian666",
+      "url": "https://www.v2ex.com/t/1258872",
+      "posted_at": "2026-11-22 12:26 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "[机场推荐] 注册免费试用，有专线有家宽",
+      "original_summary": "[机场推荐] 注册免费试用，有专线有家宽\n¥3 起/月。有专线，有家宽。性价比超高的机场\r\n\r\nhttps://m.vxcloud.cfd/coupon.html",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1258870",
+      "source": "V2EX",
+      "category": "科技软件/App 限免",
+      "title": "[送码] 感恩节送 88 个 Readori（iOS 阅读 App）年度 Pro",
+      "summary": "[送码] 感恩节送 88 个 Readori（iOS 阅读 App）年度 Pro\n![Readori 感恩节 88 份年度 Pro](https://raw.githubusercontent.com/readori/Case-word/main/Readori/thanksgiving2-qr.png)\r\n\r\n大家好，我是 Readori 的开发者。Readori 是一款 iOS 阅读 App，完美适配阅读 3.0 书源、支持本地书（EPUB / TXT 等）、离线朗读（11 个官方语音包、900+ 本地音色、中英混读）、RSS 订阅等。\r\n\r\n感恩节想谢谢一直在用的朋友，也希望更多人来试试，所以拿出 88 个**年度 Pro**（App Store 一次性优惠码，在 App Store 里兑换）免费抽。\r\n\r\n**时间（北京时间）**\r\n- 报名：11/21 00:00 – 11/25 23:59\r\n- 开奖：11/26 07:00\r\n\r\n**参加方式（二选一）**\r\n1. 官网：用手机相机扫海报上的二维码直达活动页（或打开 Readori 官网，首页弹窗进入），填邮箱 + App 绑定码（设置 → 读友中心 → 修仙等级 → 生成绑定码）。不需要梯子。报名后会给你「抽奖券号 + 领奖密钥」，开奖后用它在活动页查自己的结果和兑换码。\r\n2. Telegram：在 App 里绑定 Telegram 后，私聊 Readori 机器人发送 `/thanks`。中奖后机器人会私信发码。\r\n\r\n**邀请加成**\r\n活动期间通过你的邀请卡（设置 → 读友中心 → 朗读体验卡）安装、并且自己也报名了本次活动（或订阅了 Pro）的好友，每人 +1 权重。权重 = 1 + 有效邀请数，上限 21。\r\n\r\n**防作弊**\r\n- 每个报名都要绑定一台 App 安装（绑定码由设备会话签发，10",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "1024ba",
+      "url": "https://www.v2ex.com/t/1258870",
+      "posted_at": "2026-11-22 12:17 Asia/Shanghai",
+      "engagement": {
+        "replies": 2
+      },
+      "original_title": "[送码] 感恩节送 88 个 Readori（iOS 阅读 App）年度 Pro",
+      "original_summary": "[送码] 感恩节送 88 个 Readori（iOS 阅读 App）年度 Pro\n![Readori 感恩节 88 份年度 Pro](https://raw.githubusercontent.com/readori/Case-word/main/Readori/thanksgiving2-qr.png)\r\n\r\n大家好，我是 Readori 的开发者。Readori 是一款 iOS 阅读 App，完美适配阅读 3.0 书源、支持本地书（EPUB / TXT 等）、离线朗读（11 个官方语音包、900+ 本地音色、中英混读）、RSS 订阅等。\r\n\r\n感恩节想谢谢一直在用的朋友，也希望更多人来试试，所以拿出 88 个**年度 Pro**（App Store 一次性优惠码，在 App Store 里兑换）免费抽。\r\n\r\n**时间（北京时间）**\r\n- 报名：11/21 00:00 – 11/25 23:59\r\n- 开奖：11/26 07:00\r\n\r\n**参加方式（二选一）**\r\n1. 官网：用手机相机扫海报上的二维码直达活动页（或打开 Readori 官网，首页弹窗进入），填邮箱 + App 绑定码（设置 → 读友中心 → 修仙等级 → 生成绑定码）。不需要梯子。报名后会给你「抽奖券号 + 领奖密钥」，开奖后用它在活动页查自己的结果和兑换码。\r\n2. Telegram：在 App 里绑定 Telegram 后，私聊 Readori 机器人发送 `/thanks`。中奖后机器人会私信发码。\r\n\r\n**邀请加成**\r\n活动期间通过你的邀请卡（设置 → 读友中心 → 朗读体验卡）安装、并且自己也报名了本次活动（或订阅了 Pro）的好友，每人 +1 权重。权重 = 1 + 有效邀请数，上限 21。\r\n\r\n**防作弊**\r\n- 每个报名都要绑定一台 App 安装（绑定码由设备会话签发，10",
+      "translated_by": "free-translate"
     },
     {
       "id": "v2ex-1258855",
@@ -643,119 +696,65 @@
       "url": "https://www.v2ex.com/t/1258855",
       "posted_at": "2026-11-22 10:31 Asia/Shanghai",
       "engagement": {
-        "replies": 1
+        "replies": 20
       },
       "original_title": "Apple Watch：戴了 8 年，我的使用测评",
       "original_summary": "Apple Watch：戴了 8 年，我的使用测评\n从 2018 年购买第一块 Apple Watch，至今 3186 天了。这期间，除了洗澡或者充电，无论是运动、睡觉，无时无刻我都戴着它，那么，佩戴智能手表这 8 年，它对我有什么改变，是否值得呢？我觉得是十分值得，也非常推荐你尝试智能手表\r\n\r\n\r\n![Pasted image 20261118194900.png](https://blog.scond.me/img/article-studio/2026-11-22-02-Apple-Watch-%E6%88%B4%E4%BA%868%E5%B9%B4-%E6%88%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B5%8B%E8%AF%84/02-Pasted-image-20261118194900.png)\r\n\r\n\r\n## 1. 运动习惯的养成\r\n\r\n每天，Apple Watch 都会提醒你完成运动圆环，从 Apple Watch 购买至今，我的每天目标是：活动 350 千卡、锻炼 30 分钟，站立 12 小时。刚才看了一眼，我已经累计合上所有圆环 2144 次（当天三个圆环全部合上）\r\n\r\n\r\n![9B00062A-0E87-43F5-A3D9-96CAF23914E3_1_105_c.jpeg](https://blog.scond.me/img/article-studio/2026-11-22-02-Apple-Watch-%E6%88%B4%E4%BA%868%E5%B9%B4-%E6%88%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B5%8B%E8%AF%84/03-9B00062A-0E87-43F5-A3D9-96CAF23914E3-1-105-c.jpg)\r\n\r\n\r\n最开始，只是为了完成任务，获得勋章",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1258837",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "[免费自荐] Linkit：本地优先的 AI 书签管理器，自动摘要 + 语义搜索 #32",
-      "summary": "[免费自荐] Linkit：本地优先的 AI 书签管理器，自动摘要 + 语义搜索 #32\n分享一个桌面端的书签管理应用 Linkit，完全免费，MIT 协议。\r\n\r\n**要解决的痛点**\r\n\r\n浏览器书签就是个 URL 列表。存了两千条毫无压力，找回其中一条才是问题。我自己的收藏库 2000+ 条，真正再看的大概 5 条。\r\n\r\n商业书签服务普遍按月订阅，不付费就把搜索、标签、设备数都锁住。你的阅读习惯托管在别人商业云上，还得担心服务倒闭和隐私泄露。\r\n\r\n**Linkit 做了什么**\r\n\r\n- **AI 自动摘要与要点提炼**：每条收藏保存时抓取正文，生成摘要并拆成几条要点。读摘要就行，不用点开十几个标签页\r\n- **全库语义搜索**：按含义检索，不是按关键词。\"怎么把大文件传输变快\"能搜到标题里写\"传输优化\"的那条\r\n- **知识关联图谱**：整个库可视化成网络，看得出哪些主题之间有联系、哪些区域是空白\r\n- **主题空间 + AI 策展**：用一句话下达目标（\"收集现代前端工具\"），AI 从你已有的收藏里组出合集，再推荐更多。建议在你确认前都可编辑\r\n- **链接健康检查**：后台扫描 404 和内容变更，死链不会烂在收藏里\r\n- **近似重复合并**：同一条文章从不同 URL 存了三次能自动发现\r\n- **Spotlight 闪念呼出**：Cmd/Ctrl + K 随时搜索或粘贴入库\r\n- **一键导入**：Chrome、Edge、Firefox、Safari 导出的 bookmarks.html，以及第三方 CSV/JSON\r\n- **界面缩放跟随系统**：8 档界面大小，缩放与系统显示比例联动，缩放区间做了安全钳制\r\n- **存储模式切换**：本地与云端之间切换会先弹确认对话框，把两侧数据摘要摆清楚再动手\r\n- **导入导出带回滚**：导入出问题时自动从快照恢",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "manbudezhu",
-      "url": "https://www.v2ex.com/t/1258837",
-      "posted_at": "2026-11-22 06:25 Asia/Shanghai",
-      "engagement": {
-        "replies": 1
-      },
-      "original_title": "[免费自荐] Linkit：本地优先的 AI 书签管理器，自动摘要 + 语义搜索 #32",
-      "original_summary": "[免费自荐] Linkit：本地优先的 AI 书签管理器，自动摘要 + 语义搜索 #32\n分享一个桌面端的书签管理应用 Linkit，完全免费，MIT 协议。\r\n\r\n**要解决的痛点**\r\n\r\n浏览器书签就是个 URL 列表。存了两千条毫无压力，找回其中一条才是问题。我自己的收藏库 2000+ 条，真正再看的大概 5 条。\r\n\r\n商业书签服务普遍按月订阅，不付费就把搜索、标签、设备数都锁住。你的阅读习惯托管在别人商业云上，还得担心服务倒闭和隐私泄露。\r\n\r\n**Linkit 做了什么**\r\n\r\n- **AI 自动摘要与要点提炼**：每条收藏保存时抓取正文，生成摘要并拆成几条要点。读摘要就行，不用点开十几个标签页\r\n- **全库语义搜索**：按含义检索，不是按关键词。\"怎么把大文件传输变快\"能搜到标题里写\"传输优化\"的那条\r\n- **知识关联图谱**：整个库可视化成网络，看得出哪些主题之间有联系、哪些区域是空白\r\n- **主题空间 + AI 策展**：用一句话下达目标（\"收集现代前端工具\"），AI 从你已有的收藏里组出合集，再推荐更多。建议在你确认前都可编辑\r\n- **链接健康检查**：后台扫描 404 和内容变更，死链不会烂在收藏里\r\n- **近似重复合并**：同一条文章从不同 URL 存了三次能自动发现\r\n- **Spotlight 闪念呼出**：Cmd/Ctrl + K 随时搜索或粘贴入库\r\n- **一键导入**：Chrome、Edge、Firefox、Safari 导出的 bookmarks.html，以及第三方 CSV/JSON\r\n- **界面缩放跟随系统**：8 档界面大小，缩放与系统显示比例联动，缩放区间做了安全钳制\r\n- **存储模式切换**：本地与云端之间切换会先弹确认对话框，把两侧数据摘要摆清楚再动手\r\n- **导入导出带回滚**：导入出问题时自动从快照恢",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258836",
-      "source": "V2EX",
+      "id": "ghdeal-4tunekvng-fortune-llm",
+      "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "四款自研 Edge 插件的最新版，全部在真实 Firefox 上跑通了",
-      "summary": "四款自研 Edge 插件的最新版，全部在真实 Firefox 上跑通了\n过去一周在给四款自研浏览器插件做 Firefox 适配，今晚最后一块拼上了。记录一下真实数据，不吹：\r\n\r\n验证环境：真实 Firefox 160.0.1（非模拟），selenium 驱动，扩展包是真实构建产物（探针只加了 marker 脚本，产品文件逐字节一致）。\r\n\r\n四条线当前最新版的 Firefox 实测结果：\r\n- ConvoExport v1.0.3（ChatGPT / Claude 对话导出）：握手 ACE_PING 首试即回，分享页标题与正文读数正常，读取路径与已验证版逐字节一致。Edge 已上架 v1.0.3。\r\n- YT Transcript Export v0.1.6（YouTube 字幕导出）：真实 YouTube watch 页，24 条字幕、2,066 字符，与 Chrome 基线逐字一致；字幕轨道 6 条（en / en 自动生成 / de-DE / ja / pt-BR / es-419）。Edge 在架 v0.1.0，v0.1.3 在审，v0.1.6 等裁决后提交。\r\n- SessionSnap v0.1.4（跨浏览器会话快照）：折叠标签组恢复 15/15 通过，组名 / 颜色 / 折叠态 / 固定标签全部回位。Edge v0.1.0 在审，v0.1.4 等裁决后提交。\r\n- FocusBlock v0.1.3（本地专注拦截）：规则数 2，关键词导航正确重定向到拦截页，干净页正常加载。Edge 在架 v0.1.0，v0.1.1 在审，v0.1.3 等裁决后提交。\r\n\r\n过程中修掉的两个真缺陷（都是“能装上、不报错、但不工作”的静默型）：\r\n- SessionSnap v0.1.3：Firefox 后台不是 service worker，importScripts 直接抛",
+      "title": "4tunekvng/fortune-llm 优先免费模型的 API 网关",
+      "summary": "兼容 Anthropic API 的网关，优先尝试免费模型提供商，最后才付费。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "bluesky1001",
-      "url": "https://www.v2ex.com/t/1258836",
-      "posted_at": "2026-11-22 04:46 Asia/Shanghai",
+      "author": "4tunekvng",
+      "url": "https://github.com/4tunekvng/fortune-llm",
+      "posted_at": "2026-11-19 17:09 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "stars": 1
       },
-      "original_title": "四款自研 Edge 插件的最新版，全部在真实 Firefox 上跑通了",
-      "original_summary": "四款自研 Edge 插件的最新版，全部在真实 Firefox 上跑通了\n过去一周在给四款自研浏览器插件做 Firefox 适配，今晚最后一块拼上了。记录一下真实数据，不吹：\r\n\r\n验证环境：真实 Firefox 160.0.1（非模拟），selenium 驱动，扩展包是真实构建产物（探针只加了 marker 脚本，产品文件逐字节一致）。\r\n\r\n四条线当前最新版的 Firefox 实测结果：\r\n- ConvoExport v1.0.3（ChatGPT / Claude 对话导出）：握手 ACE_PING 首试即回，分享页标题与正文读数正常，读取路径与已验证版逐字节一致。Edge 已上架 v1.0.3。\r\n- YT Transcript Export v0.1.6（YouTube 字幕导出）：真实 YouTube watch 页，24 条字幕、2,066 字符，与 Chrome 基线逐字一致；字幕轨道 6 条（en / en 自动生成 / de-DE / ja / pt-BR / es-419）。Edge 在架 v0.1.0，v0.1.3 在审，v0.1.6 等裁决后提交。\r\n- SessionSnap v0.1.4（跨浏览器会话快照）：折叠标签组恢复 15/15 通过，组名 / 颜色 / 折叠态 / 固定标签全部回位。Edge v0.1.0 在审，v0.1.4 等裁决后提交。\r\n- FocusBlock v0.1.3（本地专注拦截）：规则数 2，关键词导航正确重定向到拦截页，干净页正常加载。Edge 在架 v0.1.0，v0.1.1 在审，v0.1.3 等裁决后提交。\r\n\r\n过程中修掉的两个真缺陷（都是“能装上、不报错、但不工作”的静默型）：\r\n- SessionSnap v0.1.3：Firefox 后台不是 service worker，importScripts 直接抛",
-      "translated_by": "free-translate"
+      "original_title": "4tunekvng/fortune-llm",
+      "original_summary": "4tunekvng/fortune-llm One gateway that speaks the Anthropic API and tries free model providers first, paying only as a last resort.",
+      "translated_by": "model"
     },
     {
-      "id": "v2ex-1258834",
-      "source": "V2EX",
+      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "Gemini 从美区学生 Pro 入正黑五半价了，顺道聊聊当前 Gemini 优惠情况和我个人 AI 使用心得分享",
-      "summary": "Gemini 从美区学生 Pro 入正黑五半价了，顺道聊聊当前 Gemini 优惠情况和我个人 AI 使用心得分享\n白嫖谷歌学生 Pro 挺久，说人话是最大的特色，前两个月因为 ChatGPT 狂砍 plus 额度那时就停掉了，现在这时间点再看，停掉 ChatGPT 是对的，新模型拉了额度也烧得非常快。\r\n\r\n以前的流程是：ChatGPT 做开发写脚本写逻辑，Antigravity 挂自动化用 3.8 Flash 定时跑流程执行。\r\n\r\n停掉 ChatGPT 后：DeepSeek Flash 在 ChatGPT 的开发上迭代，Antigravity 保持不变。\r\n\r\n说来也赶巧，恰逢：\r\n\r\n1. Google One 要再次核验学生身份了，又恰逢社区里很多人都倒在了这次核验上。\r\n2. 又恰逢谷歌开启了黑五的半价 Pro 年付活动。\r\n3. 更恰逢 Gemini 4 Neon 在我试过写作后，比之前 3.8Flash 还要符合我的验收要求。\r\n\r\n索性就从学生 Pro 转正到美区黑五优惠了。我写了篇博文配了点图，想转的各位可以参考看看：https://imsxx.com/posts/google-one-black-friday-pro/\r\n\r\n另外，当前这个时间节点订阅 Gemini 的方案有两个主流的，我也说说为什么我没选：\r\n\r\n1. **转到日区**，以 **学生身份** 做 **付费订阅**，每月折合 30RMB，便宜很多。美区这边也有这个优惠，当然它是收 8.x 美元，比日区贵近一倍。我之所以没选，是因为学生身份这东西：\r\n   1. 不稳定，说不定随时会掉，掉了后要重新验。虽然在 8 月份的时候也掉过并且点击“验证”就直接通过了，但它终归不稳定，并且我上面也说了，这个月又陆续通知要验，并且不少人的验证都没过。不少做 SheerID 验证的站点和 T 群都维护",
+      "title": "Arsh624/llm4jobs-v2：免费运行的岗位雷达",
+      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历和地点筛选后每日邮件推送，可在 GitHub Actions 上免费运行。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Msxx",
-      "url": "https://www.v2ex.com/t/1258834",
-      "posted_at": "2026-11-22 03:31 Asia/Shanghai",
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
       "engagement": {
-        "replies": 9
+        "stars": 0
       },
-      "original_title": "Gemini 从美区学生 Pro 入正黑五半价了，顺道聊聊当前 Gemini 优惠情况和我个人 AI 使用心得分享",
-      "original_summary": "Gemini 从美区学生 Pro 入正黑五半价了，顺道聊聊当前 Gemini 优惠情况和我个人 AI 使用心得分享\n白嫖谷歌学生 Pro 挺久，说人话是最大的特色，前两个月因为 ChatGPT 狂砍 plus 额度那时就停掉了，现在这时间点再看，停掉 ChatGPT 是对的，新模型拉了额度也烧得非常快。\r\n\r\n以前的流程是：ChatGPT 做开发写脚本写逻辑，Antigravity 挂自动化用 3.8 Flash 定时跑流程执行。\r\n\r\n停掉 ChatGPT 后：DeepSeek Flash 在 ChatGPT 的开发上迭代，Antigravity 保持不变。\r\n\r\n说来也赶巧，恰逢：\r\n\r\n1. Google One 要再次核验学生身份了，又恰逢社区里很多人都倒在了这次核验上。\r\n2. 又恰逢谷歌开启了黑五的半价 Pro 年付活动。\r\n3. 更恰逢 Gemini 4 Neon 在我试过写作后，比之前 3.8Flash 还要符合我的验收要求。\r\n\r\n索性就从学生 Pro 转正到美区黑五优惠了。我写了篇博文配了点图，想转的各位可以参考看看：https://imsxx.com/posts/google-one-black-friday-pro/\r\n\r\n另外，当前这个时间节点订阅 Gemini 的方案有两个主流的，我也说说为什么我没选：\r\n\r\n1. **转到日区**，以 **学生身份** 做 **付费订阅**，每月折合 30RMB，便宜很多。美区这边也有这个优惠，当然它是收 8.x 美元，比日区贵近一倍。我之所以没选，是因为学生身份这东西：\r\n   1. 不稳定，说不定随时会掉，掉了后要重新验。虽然在 8 月份的时候也掉过并且点击“验证”就直接通过了，但它终归不稳定，并且我上面也说了，这个月又陆续通知要验，并且不少人的验证都没过。不少做 SheerID 验证的站点和 T 群都维护",
-      "translated_by": "free-translate"
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "translated_by": "model"
     },
     {
-      "id": "v2ex-1258829",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "网页划线高亮插件 Highlighter：Edge 上 200+ 安装，周活还在涨",
-      "summary": "网页划线高亮插件 Highlighter：Edge 上 200+ 安装，周活还在涨\n做了个本地优先的网页划线高亮插件 Highlighter，Edge 上已上架（v0.4.1）。\r\n\r\n做法：选中文字即可高亮，引文锚定——刷新、重访都不会丢；备注、搜索、导出都免费；支持导入 Weava 的 CSV。数据只存浏览器本地，不用账号。\r\n\r\n进展（实数，无修饰）：\r\n- 累计安装 206 次（10 月 139、11 月 67）\r\n- 周活 49 → 68 → 70 → 77，四周在涨；日均安装约 4.2 次，无单日 spike\r\n- 评分 / 评论目前都是 0\r\n\r\nPro 是自定义颜色等，$4.49/月，Gumroad 购买后自动发激活钥匙，在侧边栏粘贴激活即可。\r\n\r\n商店：https://microsoftedge.microsoft.com/addons/detail/highlighter/ooocjgnapglfljdgojdoacjdedpaplhe\r\nPro：https://alapha888.gumroad.com/l/gnopod",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "bluesky1001",
-      "url": "https://www.v2ex.com/t/1258829",
-      "posted_at": "2026-11-22 01:47 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "网页划线高亮插件 Highlighter：Edge 上 200+ 安装，周活还在涨",
-      "original_summary": "网页划线高亮插件 Highlighter：Edge 上 200+ 安装，周活还在涨\n做了个本地优先的网页划线高亮插件 Highlighter，Edge 上已上架（v0.4.1）。\r\n\r\n做法：选中文字即可高亮，引文锚定——刷新、重访都不会丢；备注、搜索、导出都免费；支持导入 Weava 的 CSV。数据只存浏览器本地，不用账号。\r\n\r\n进展（实数，无修饰）：\r\n- 累计安装 206 次（10 月 139、11 月 67）\r\n- 周活 49 → 68 → 70 → 77，四周在涨；日均安装约 4.2 次，无单日 spike\r\n- 评分 / 评论目前都是 0\r\n\r\nPro 是自定义颜色等，$4.49/月，Gumroad 购买后自动发激活钥匙，在侧边栏粘贴激活即可。\r\n\r\n商店：https://microsoftedge.microsoft.com/addons/detail/highlighter/ooocjgnapglfljdgojdoacjdedpaplhe\r\nPro：https://alapha888.gumroad.com/l/gnopod",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258823",
-      "source": "V2EX",
+      "id": "ghdeal-enapt-swarmllm",
+      "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "Enter Guard：AI 聊天框里 Enter 换行、Ctrl/Cmd+Enter 发送，不再误触发送",
-      "summary": "Enter Guard：AI 聊天框里 Enter 换行、Ctrl/Cmd+Enter 发送，不再误触发送\n先说说痛点：用 DeepSeek 的时候，回车直接发送，打到一半就发出去了，还没法改；ChatGPT、Claude 这些虽然有的能改设置，但不是每个都有，每次换站点都要翻设置很烦。\r\n\r\n于是做了这个 Chrome 扩展 Enter Guard，核心就一件事：\r\n\r\n- Enter = 换行\r\n- Ctrl/Cmd+Enter = 发送\r\n\r\n几个要点：\r\n\r\n- 中文 / 日文 / 韩文输入法候选确认完全不受影响（IME 安全）\r\n- 两种模式可全局 / 按站点切换：「Enter = Newline」（默认）和「Enter = Off」\r\n- 默认覆盖 DeepSeek、ChatGPT、Claude、Gemini、Kimi、Qwen 等主流 AI 站点，其他站点可以在弹窗里手动挑要保护的输入框\r\n\r\n隐私方面：\r\n\r\n- 无统计、无追踪、无广告、不收集任何数据，设置只存在本地\r\n- 只有两个权限：storage（保存设置）和 activeTab（点图标时列出当前页输入框）\r\n\r\n免费版核心功能都能用；Pro 一次性买断 $9.99（非订阅），解锁每站无限手动规则、自定义发送快捷键（Shift/Alt+Enter）等。\r\n\r\nChrome 商店：https://chromewebstore.google.com/detail/bodjcaifciehkjhikophicjkjhalnmdk\r\n官网：https://enterguard.dev\r\n\r\n欢迎试用、提意见 🙏",
+      "title": "enapt/SwarmLLM：本机跑大模型、可跨机协作的免费开源应用",
+      "summary": "免费开源应用，可在自己电脑运行 AI 聊天模型，也能让多台机器联网合跑单机放不下的模型，提供兼容 OpenAI 和 Anthropic 的 API。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "liuliangsir",
-      "url": "https://www.v2ex.com/t/1258823",
-      "posted_at": "2026-11-21 23:45 Asia/Shanghai",
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-22 13:46 Asia/Shanghai",
       "engagement": {
-        "replies": 3
+        "stars": 91
       },
-      "original_title": "Enter Guard：AI 聊天框里 Enter 换行、Ctrl/Cmd+Enter 发送，不再误触发送",
-      "original_summary": "Enter Guard：AI 聊天框里 Enter 换行、Ctrl/Cmd+Enter 发送，不再误触发送\n先说说痛点：用 DeepSeek 的时候，回车直接发送，打到一半就发出去了，还没法改；ChatGPT、Claude 这些虽然有的能改设置，但不是每个都有，每次换站点都要翻设置很烦。\r\n\r\n于是做了这个 Chrome 扩展 Enter Guard，核心就一件事：\r\n\r\n- Enter = 换行\r\n- Ctrl/Cmd+Enter = 发送\r\n\r\n几个要点：\r\n\r\n- 中文 / 日文 / 韩文输入法候选确认完全不受影响（IME 安全）\r\n- 两种模式可全局 / 按站点切换：「Enter = Newline」（默认）和「Enter = Off」\r\n- 默认覆盖 DeepSeek、ChatGPT、Claude、Gemini、Kimi、Qwen 等主流 AI 站点，其他站点可以在弹窗里手动挑要保护的输入框\r\n\r\n隐私方面：\r\n\r\n- 无统计、无追踪、无广告、不收集任何数据，设置只存在本地\r\n- 只有两个权限：storage（保存设置）和 activeTab（点图标时列出当前页输入框）\r\n\r\n免费版核心功能都能用；Pro 一次性买断 $9.99（非订阅），解锁每站无限手动规则、自定义发送快捷键（Shift/Alt+Enter）等。\r\n\r\nChrome 商店：https://chromewebstore.google.com/detail/bodjcaifciehkjhikophicjkjhalnmdk\r\n官网：https://enterguard.dev\r\n\r\n欢迎试用、提意见 🙏",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258818",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "同时开着三个 AI Agent，它们轮流等我点「同意」，于是我做了个统一通知的手表 App",
-      "summary": "同时开着三个 AI Agent，它们轮流等我点「同意」，于是我做了个统一通知的手表 App\n现在我写代码，经常是 Claude Code 在跑重构，Codex 在补测试，另一个 Agent 在查文档。几个终端、几个窗口同时开着。\r\n\r\n问题是界面一多，人对它们的状态就没感觉了。谁跑完了、谁出错了、谁卡在权限确认上等我点「同意」，它们都不会喊我。我只能在窗口之间来回切，挨个去看。经常是切回某个窗口才发现，它早就停在那儿等我了。\r\n\r\n那一刻我想明白了：Agent 越多，我自己反而成了瓶颈。\r\n\r\n所以我做了 xalfred，一个 AI Agent 的统一通知平台。不管哪个 Agent，只要能调 MCP，需要我的时候都推到同一个地方：我的 iPhone 和 Apple Watch。\r\n\r\n- 审批：手表一震，看清是哪个 Agent 要做什么，抬手点「同意」\r\n- 提问：在手机上直接回一句\r\n- 选择：几个方案在手表上选一个\r\n- 通知：谁跑完了、谁出错了，都在一个列表里\r\n\r\n现在不用守着屏幕，也不用挨个窗口去巡检。几个 Agent 并行跑，我只盯手表就行。\r\n\r\n目前可以免费试用，想请 V2EX 的朋友们帮忙试试：\r\n\r\nApp Store：[apps.apple.com/app/xalfred](https://apps.apple.com/app/xalfred/id6832190813)\r\n配置教程（视频，一分钟内能接上）：[youtube.com/shorts](https://youtube.com/shorts/DDG3gxM3Y9E)\r\n\r\n试完了，不管是好用、难用、缺什么功能、哪一步配置卡住了，都欢迎直接在帖子里回复。每条我都会看，也都会回。觉得哪里设计得蠢，尽管直说。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "xiangdong1987",
-      "url": "https://www.v2ex.com/t/1258818",
-      "posted_at": "2026-11-21 23:14 Asia/Shanghai",
-      "engagement": {
-        "replies": 1
-      },
-      "original_title": "同时开着三个 AI Agent，它们轮流等我点「同意」，于是我做了个统一通知的手表 App",
-      "original_summary": "同时开着三个 AI Agent，它们轮流等我点「同意」，于是我做了个统一通知的手表 App\n现在我写代码，经常是 Claude Code 在跑重构，Codex 在补测试，另一个 Agent 在查文档。几个终端、几个窗口同时开着。\r\n\r\n问题是界面一多，人对它们的状态就没感觉了。谁跑完了、谁出错了、谁卡在权限确认上等我点「同意」，它们都不会喊我。我只能在窗口之间来回切，挨个去看。经常是切回某个窗口才发现，它早就停在那儿等我了。\r\n\r\n那一刻我想明白了：Agent 越多，我自己反而成了瓶颈。\r\n\r\n所以我做了 xalfred，一个 AI Agent 的统一通知平台。不管哪个 Agent，只要能调 MCP，需要我的时候都推到同一个地方：我的 iPhone 和 Apple Watch。\r\n\r\n- 审批：手表一震，看清是哪个 Agent 要做什么，抬手点「同意」\r\n- 提问：在手机上直接回一句\r\n- 选择：几个方案在手表上选一个\r\n- 通知：谁跑完了、谁出错了，都在一个列表里\r\n\r\n现在不用守着屏幕，也不用挨个窗口去巡检。几个 Agent 并行跑，我只盯手表就行。\r\n\r\n目前可以免费试用，想请 V2EX 的朋友们帮忙试试：\r\n\r\nApp Store：[apps.apple.com/app/xalfred](https://apps.apple.com/app/xalfred/id6832190813)\r\n配置教程（视频，一分钟内能接上）：[youtube.com/shorts](https://youtube.com/shorts/DDG3gxM3Y9E)\r\n\r\n试完了，不管是好用、难用、缺什么功能、哪一步配置卡住了，都欢迎直接在帖子里回复。每条我都会看，也都会回。觉得哪里设计得蠢，尽管直说。",
-      "translated_by": "free-translate"
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
+      "translated_by": "model"
     },
     {
       "id": "disc-itsdecodingai-building-a-coding-agent-from-scratch-course",

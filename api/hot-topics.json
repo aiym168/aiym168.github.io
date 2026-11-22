@@ -3,7 +3,7 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 22,
+  "count": 19,
   "items": [
     {
       "id": "hnhot-50546587",
@@ -20,17 +20,10 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258745",
-      "title": "入了 Gemini Pro 之后，已经严肃取消 GPT plus",
-      "summary": "Neon 干活确实挺漂亮的，也没 GPT 那么多废话 但是缺点也有：1. 额度消耗很快，一个对话，几轮任务下来 week 消耗 92% 2. Antigravity 不好用，不过官方表示即将支持接入其他 agent，未来应该不是问题 当前尚存订阅 GLM max(年费，到期看情况续不续）、opencode go（GLM 用完消耗它）、Gemini Pro（代替 GPT 做管理、规划、设计）、GPT（12-01 到期不续）",
-      "url": "https://www.v2ex.com/t/1258745",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1258707",
-      "title": "观 AI 解决黎曼猜想有感",
-      "summary": "宇宙不过是量子信息在边界上的编码的投影。如果物理世界的本质是量子信息，那么智能的本质是否实际上就意味着对信息的处理？AI 未必需要复制人类的思维方式 随着算力和能源的突破，靠力大飞砖不断取代人类智力 或许只是时间问题 与其模拟人脑，不如直接用能量操纵信息。",
-      "url": "https://www.v2ex.com/t/1258707",
+      "id": "v2hot-1258863",
+      "title": "分享一下我订阅 gemini 黑五优惠的流程",
+      "summary": "先刷个 2 刀一个月的订阅，不行 5 刀三个月的也行，反正也只会先付一个月 我是之前就买了 5 刀的优惠，然后在电脑上点击切换订阅还是要 199 所以改成去手机 gemini app 上切换到包年，这个时候就会生效订阅续费半价 99 刀的 pro 的黑五活动 付款之后订阅自动切换到一年，然后谷故歌歌会退款之前订阅的 5 刀（按剩下的时间，我退了 3.3 刀） 最后再去 google play 把自动订阅取消就行了 懒得弄转区，99 刀一年的正规付费 gemini pro 感觉应该是最便宜的了",
+      "url": "https://www.v2ex.com/t/1258863",
       "source": "V2EX"
     },
     {
@@ -41,122 +34,108 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258834",
-      "title": "Gemini 从美区学生 Pro 入正黑五半价了，顺道聊聊当前 Gemini 优惠情况和我个人 AI 使用心得分享",
-      "summary": "白嫖谷歌学生 Pro 挺久，说人话是最大的特色，前两个月因为 ChatGPT 狂砍 plus 额度那时就停掉了，现在这时间点再看，停掉 ChatGPT 是对的，新模型拉了额度也烧得非常快。以前的流程是：ChatGPT 做开发写脚本写逻辑，Antigravity 挂自动化用 3.8 Flash 定时跑流程执行。停掉 ChatGPT 后：DeepSeek Flash 在 ChatGPT 的开发上迭代，Antigravity 保持不变。说来也赶巧，恰逢：1. Google One 要再次核验学生身份了，又恰逢社区里很多人都倒在了这次核验上。2. 又恰逢谷歌开启了黑",
-      "url": "https://www.v2ex.com/t/1258834",
+      "id": "v2hot-1258877",
+      "title": "重度使用 neon 后，我宣布中国人可以不用考虑开 claude 订阅了",
+      "summary": "测试场景是一个 AI 大乱斗堆了几十万行代码的大屎山，包含了市面上所有能用的订阅，都是 ultra 拉满额度管够，我的评价如下：1. astra medium fast 如果你手上有急事比如排查非常严重的线上问题，开它是永远最快能救急的，永远比其它所有模型快得多 2. astra xhigh 只适合用于一个问题反复出错修不好的情况下，和其它模型讨论出来方案到底有什么问题，以及做非常严谨不能出错的重构和数据迁移方案的审核，编写普通代码跟 sol 比额度用的太快，效果也没有显著更好 3. sol xhigh 主力后端模型，适合在其它模型的安排下写需求，模块不能分的太大，必须有一个调度角色一",
+      "url": "https://www.v2ex.com/t/1258877",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258838",
-      "title": "如何解决 gemini、gpt 与豆包、微信的 mac 客户端 app 不能同时使用代理的问题？",
-      "summary": "用 tun 模式时，gemini 和 gpt 的 mac 客户端就可用，但微信、豆包访问不了；如果只用系统代理，微信、豆包的 mac 客户端可用，但是 gemini 和 gpt 的就挂了，恳请大大们指点迷津",
-      "url": "https://www.v2ex.com/t/1258838",
+      "id": "v2hot-1258880",
+      "title": "我做了 Kooyu：一个本地优先的 AI 助手，统一调度你手里所有的编程 CLI",
+      "summary": "大家好，我是 Kooyu 的作者。我平时写代码要同时用好几个编程 agent：Claude Code、Codex、Gemini CLI、OpenCode……用久了发现痛点不在某个工具不好用，而在于它们各管各的：会话不互通、额度不互通，一个撞上 429 限流，我就得手动把上下文搬到另一个工具里重来。所以我做了 Kooyu，想解决的就是这一层：它是一个本地优先的个人 AI 助手，把 10 多个编程引擎（Claude Code、Codex、DeepSeek、Gemini CLI、OpenCode、Cursor、ZCode、Kimi Code、Grok Build、pi）统",
+      "url": "https://www.v2ex.com/t/1258880",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258823",
-      "title": "Enter Guard：AI 聊天框里 Enter 换行、Ctrl/Cmd+Enter 发送，不再误触发送",
-      "summary": "先说说痛点：用 DeepSeek 的时候，回车直接发送，打到一半就发出去了，还没法改；ChatGPT、Claude 这些虽然有的能改设置，但不是每个都有，每次换站点都要翻设置很烦。于是做了这个 Chrome 扩展 Enter Guard，核心就一件事：Enter = 换行 Ctrl/Cmd+Enter = 发送 几个要点：中文 / 日文 / 韩文输入法候选确认完全不受影响（IME 安全） 两种模式可全局 / 按站点切换：「Enter = Newline」（默认）和「Enter = Off」 默认覆盖 DeepSeek、ChatGPT、Cl",
-      "url": "https://www.v2ex.com/t/1258823",
+      "id": "v2hot-1258871",
+      "title": "要取消 claude 订阅吗",
+      "summary": "请教大神，目前有 gpt plus 20 刀，claude pro 20 刀，刚刚搞了个 100 刀的 google gemini，发现 fable 5.2 在 claude 里不能用了 - 要另外买，业余编程非重度使用，gpt 全家尤其高中小朋友在用做学习，是否应该取消 claude？",
+      "url": "https://www.v2ex.com/t/1258871",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258812",
-      "title": "问下大家 gemini 如何订阅",
-      "summary": "当前通过购买苹果礼品卡订阅的 gpt，决定转 Gemini 了 一直没有找到可用的订阅入口",
-      "url": "https://www.v2ex.com/t/1258812",
+      "id": "v2hot-1258873",
+      "title": "没有外币卡，怎么订阅 gemini？",
+      "summary": "我手头没有外币卡，之前 gpt 是礼品卡苹果商店订阅，gemini 可以同样用礼品卡再订吗？有人实操过吗？另外现在 gemini pro 最便宜的是怎么买？我看美区苹果订阅是 19.99 刀 但是美区 google play 前三月只要 4.99 刀",
+      "url": "https://www.v2ex.com/t/1258873",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258820",
-      "title": "模型「偏科」恰恰揭示了 skill 不可能被完全取代",
-      "summary": "第一个背景是在近期关于几个大厂模型的讨论之中，关于 GPT 和 Claude 的特性以及谁更好的争吵很激烈。很多开发者讨厌 GPT 的防御性编程（具体而言它会做各种测试和 guardrail），但反而一些做科研和维护工作的人更喜欢它，而 Claude 更多人喜欢它的用户意图识别与许愿式编程的能力。第二个背景是最近看到一个说法，就是 skill 迟早会被模型的能力取代，因为 skill 描述的都是可复用的东西。我觉得第一点恰好就是第二点的一个反例，因为不管模型的能力和它吃进去的训练有多强，它总是不可避免会带有一些偏好和行事取向的。而 skill 提供的就是中层的可预测性。",
-      "url": "https://www.v2ex.com/t/1258820",
+      "id": "v2hot-1258866",
+      "title": "彻底不让 Codex 碰业务代码了，留着打杂清静不少",
+      "summary": "临下班改完最后一个 bug，看着 Gemini 调 codex exec 在后台吭哧吭哧跑测试，突然觉得吃灰的订阅总算没白留。以前让 Codex 写代码真是折寿，两行能搞定的事非套三层校验再包个 wrapper，每次看 diff 都火大。现在代码只归 Gemini 4 管，脏活累活全甩出去跑，瞬间舒坦多了。",
+      "url": "https://www.v2ex.com/t/1258866",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258819",
-      "title": "开源了一个纯本地桌面工具 Mingle：没有服务器，把你的 AI Agent 请进微信、飞书、Slack 等聊天软件",
-      "summary": "最近做了一个 MIT 开源的本地桌面工具 **Mingle**，可以把你电脑上的 AI Agent（Claude Code、Codex、Kimi Code、OpenCode、Cursor 等 14 种 harness）以机器人身份请进你平时已经在用的聊天软件里。### 为什么再造一个：核心是不想有服务器 现在支持接自家 coding agent 的工具已经不少，但我自己用下来最介意的一点是**云端中转**——只要有第三方服务器兜底，聊天记录和工作上下文就得过别人的机房，既存在服务端被黑客攻击拖库的风险，也没法彻底排除厂商拿数据干别的。所以 Mingle 从一开始就做成**",
-      "url": "https://www.v2ex.com/t/1258819",
+      "id": "v2hot-1258882",
+      "title": "分享 Gemini、Antigravity 不在支持区域走过的坑，关键是购买的区域，还有隐私区域。",
+      "summary": "之前付了 Google One，结果 Antigravity 还是普通套餐，折腾了老半天。最有用的是这个官方的帖子：以下几点是我走过的坑：隐私信息页要确保你的账号在可支持区域，不支持的话，用一段时间不同 ip，申请换区。确保年龄审核过，符合要求。确保 Google Pay 里的区域是支持国家，添加付款方式增加地址来选择区域。这里还有个坑就是如果在香",
+      "url": "https://www.v2ex.com/t/1258882",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258837",
-      "title": "[免费自荐] Linkit：本地优先的 AI 书签管理器，自动摘要 + 语义搜索 32",
-      "summary": "分享一个桌面端的书签管理应用 Linkit，完全免费，MIT 协议。**要解决的痛点** 浏览器书签就是个 URL 列表。存了两千条毫无压力，找回其中一条才是问题。我自己的收藏库 2000+ 条，真正再看的大概 5 条。商业书签服务普遍按月订阅，不付费就把搜索、标签、设备数都锁住。你的阅读习惯托管在别人商业云上，还得担心服务倒闭和隐私泄露。**Linkit 做了什么** **AI 自动摘要与要点提炼**：每条收藏保存时抓取正文，生成摘要并拆成几条要点。读摘要就行，不用点开十几个标签页 **全库语义搜索**：按含义检索，不是按关键词。\"怎么把大文件传",
-      "url": "https://www.v2ex.com/t/1258837",
+      "id": "v2hot-1258878",
+      "title": "[开源] 微子中枢 v0.6.1：一键部署 + 远程控制，新增本地 Ollama 和 OpenCode",
+      "summary": "大家好，微子中枢 v0.6.1 来了！这是我做的开源一键部署和远程控制面板，这一版加上了本地 Ollama 和 OpenCode，家里电脑跑的模型，出门在外用 Claude Code、Codex、OpenCode 也能直接调用。![微子中枢：笔记本上的面板，手机上的客户端，旁边坐着小狼]( 项目地址",
+      "url": "https://www.v2ex.com/t/1258878",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258818",
-      "title": "同时开着三个 AI Agent，它们轮流等我点「同意」，于是我做了个统一通知的手表 App",
-      "summary": "现在我写代码，经常是 Claude Code 在跑重构，Codex 在补测试，另一个 Agent 在查文档。几个终端、几个窗口同时开着。问题是界面一多，人对它们的状态就没感觉了。谁跑完了、谁出错了、谁卡在权限确认上等我点「同意」，它们都不会喊我。我只能在窗口之间来回切，挨个去看。经常是切回某个窗口才发现，它早就停在那儿等我了。那一刻我想明白了：Agent 越多，我自己反而成了瓶颈。所以我做了 xalfred，一个 AI Agent 的统一通知平台。不管哪个 Agent，只要能调 MCP，需要我的时候都推到同一个地方：我的 iPhone 和 Apple Watch。",
-      "url": "https://www.v2ex.com/t/1258818",
+      "id": "v2hot-1258876",
+      "title": "myco：可能是全网唯一能安全使用 Claude 的客户端，开放免费内测啦！",
+      "summary": "抱歉有点标题党！给大家介绍一下 myco。起因就是 A/不是人，封号频繁。逼得只能做出这个产品，但越做越深入，想来可以分享给大家，免费开源，MIT 协议，不赚钱，花了好多好多 claude token 做的。正式介绍一下 myco 啦。myco 的含义是菌的意思，寓意是像各种菌落一样将森林树木连一起。表示能把 agent 们连接到一起，让他们互相发现。虽然有点标题党，但这可能是全网唯一能真的相对较大程度安全使用 claude 的客户端。因为他采用的方式跟所有别的客户端都不太一样。他控制的是原生 cla",
+      "url": "https://www.v2ex.com/t/1258876",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258839",
-      "title": "ChatGPT 成品号及代充",
-      "summary": "### Plus 131 元 ### 10x 菲区 770，智利 735，美区 iOS 750 ### 20x 1260 ### 50x 3400 智利区 ### 代充及成品号价格一样 ### 质保订阅 ### 提供：账号\\密码邮箱密码\\2fa v：itlife888 ![",
-      "url": "https://www.v2ex.com/t/1258839",
+      "id": "v2hot-1258862",
+      "title": "用 Claude 做的第一个微信小游戏刚过审上线，请大家体验一下感觉如何",
+      "summary": "TS + Canvas 2D 写的国风休闲小游戏。微信搜「糖葫芦摊」就能找到，也可以直接扫码：画面预览：欢迎提意见。",
+      "url": "https://www.v2ex.com/t/1258862",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1258821",
-      "title": "TK 软路由&管理软件系统适用各种流媒体包括 claude",
-      "summary": "TK 软路由管理系统软件 win 版本支持管理多台路由器不用进后台管理可以一键创建多 wifi 并调节 wifi 设置，还有一键把 wifi 分流走不同节点可以走链式代理，支持物理网卡 mac 地址随机真实可查几十万个地址每个生成都是真实路由器，还有检测路由器远程路由器，不用打开软路由网页进行管理永久授权，tg 群聊 网站介绍 ![软件界面](",
-      "url": "https://www.v2ex.com/t/1258821",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1258817",
-      "title": "CDN3900U/P Ai 模型最低至 4 折 阿里腾讯华为火山国内站 7 折 阿里国际/GCP 可至 65 折 AWS 新号 65 折/老号无需迁移 85 折 腾讯国际 55 折 支持 U 结算",
-      "summary": "阿里云 7 折 腾讯云 7 折 华为云 7 折 阿里 CDN 3900U/P 腾讯 CDN 3900U/P 火山 CDN 3900U/P 谷歌云 GCP65 折 亚马逊云 AWS 新号 65 折/老号无需迁移 85 折 腾讯云国际 55 折 阿里云国际 65 折 华为云国际 65 折 AWS 全球节点 CDN 加速 1 折 Ai 模型低至 4 折 火山国际 7 折 TG 详聊：@Tiangua7",
-      "url": "https://www.v2ex.com/t/1258817",
-      "source": "V2EX"
-    },
-    {
-      "id": "xhot-xrss-2335951587",
-      "title": "Rounds：把 Claude Code 会话成果放上无限画布，本地免费",
-      "summary": "Rounds 把 Claude Code 会话产出汇总到一块无限画布，可反馈、审阅、查历史，在 Mac 本地运行，免费私密。",
-      "url": "https://x.com/krispuckett/status/2123811826895036437",
+      "id": "xhot-xrss-756024723",
+      "title": "开发者免费发布 Claude 技能，一段仓库视频生成可运行消防场景",
+      "summary": "作者只给了一段仓库视频和「fire」一个词，Claude 便调用仓库应用完成建模，他称准备卸载 Blender。",
+      "url": "https://x.com/elvar_official/status/2123880585567576258",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-9003607656",
-      "title": "Clash Royale 称已抓到 AI 作弊工具作者，并邀其加入团队",
-      "summary": "官方公告称，该作弊工具开发者「完全自愿」加入 Clash Royale 团队，帮忙抓作弊。",
-      "url": "https://x.com/ClashRoyale/status/2124217731385881050",
+      "id": "xhot-xrss-6808257067",
+      "title": "Dan Ives 称 AI 资本支出将在 2027 年见顶",
+      "summary": "他认为自由现金流回升将提前约一年半到两年，市场原本预期 2029 年，软件是 AI 的下一阶段。",
+      "url": "https://x.com/Sam_Badawi/status/2124232683400417781",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-5377640274",
-      "title": "提醒：免费领到的 Google AI Pro 并不是真正的 Google AI Pro",
-      "summary": "原帖提醒，通过免费渠道获得的 Google AI Pro 与真正的 Google AI Pro 并不相同。",
-      "url": "https://x.com/AdamHoltererer/status/2124168152020025397",
+      "id": "xhot-xrss-5600697589",
+      "title": "全免费离线 JARVIS 方案：用 Ollama 跑本地模型",
+      "summary": "主模型 Qwen 2.5 7B，备用 Gemma 3 4B，重任务交给 [模型名称已隐藏]-OSS 20B，语音用 Kokoro，记忆靠一个笔记文件。",
+      "url": "https://x.com/JulianGoldieSEO/status/2124329493146050565",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-7231481895",
-      "title": "WaveSpeed 上线 AI Pose Gallery，490 多个姿势免费商用",
-      "summary": "含 490 多个姿势，每个 3 个角度，提供 3D 与线稿版本，无水印、可商用，完全免费。",
-      "url": "https://x.com/wavespeed_ai/status/2124159368447057983",
+      "id": "xhot-xrss-3736041916",
+      "title": "想帮助您的孩子破解 JEE 吗？尝试我们免费的基于 AI 的学习伴侣",
+      "summary": "想帮助您的孩子破解 JEE 吗？尝试我们免费的基于 AI 的学习伴侣：想帮助您的孩子破解 JEE 吗？请访问 尝试我们基于 AI 的免费学习伴侣",
+      "url": "https://x.com/malpani/status/2124350815687033159",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-3797096461",
-      "title": "Google 免费 AI 工具 Magika 按文件内容判断真实类型",
-      "summary": "文件后缀谁都能改，Magika 通过分析文件实际内容来预测它究竟是什么类型。",
-      "url": "https://x.com/chatgptricks/status/2124178278386938041",
+      "id": "xhot-xrss-6594538484",
+      "title": "免费领取 AI 销售代理指南",
+      "summary": "提供 AI 销售代理免费指南，并附 AI 代理相关介绍链接。",
+      "url": "https://x.com/jasonlk/status/2124284404222566665",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-325879728",
-      "title": "AI 渗透测试培训项目开放免费试听",
-      "summary": "课程涵盖 LLM 架构与安全、提示注入与数据提取、OWASP 等，可预约免费演示。",
-      "url": "https://x.com/hackinarticles/status/2124146141407412548",
+      "id": "xhot-xrss-9166466858",
+      "title": "免费 Drupal AI 线上研讨会：机构网站的 AI 治理",
+      "summary": "2026 年 12 月 9 日线上举行，内容涵盖从风险检查到上线准备的实务流程。",
+      "url": "https://x.com/Itsfoss/status/2123430862129713287",
       "source": "X"
     }
   ]
