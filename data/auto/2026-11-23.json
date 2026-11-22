@@ -1,9 +1,28 @@
 {
   "date": "2026-11-23",
-  "updated_at": "2026-11-23T02:24+08:00",
-  "updated_at_label": "2026-11-23 02:24 Asia/Shanghai",
+  "updated_at": "2026-11-23T04:50+08:00",
+  "updated_at_label": "2026-11-23 04:50 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50603477",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "免费语音助手 FLEY AI，可语音操控电脑和手机",
+      "summary": "FLEY AI 是免费语音助手，能开关应用、建文件、写代码、控制打印机及开关机，提供网站下载和 Windows、Linux 的 GitHub 源码。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Drfoxi",
+      "url": "https://news.ycombinator.com/item?id=50603477",
+      "posted_at": "2026-11-23 04:17 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Free FLEY AI-Voice AI Assistant",
+      "original_summary": "Free FLEY AI-Voice AI Assistant It talks with you and controls your computer and phone: opens sites and apps, creates files, presentations and code, works with the printer, shuts down and boots the PC. One phrase and it is done.<p>Site Download<p>https:&#x2F;&#x2F;fleyai.base44.app&#x2F;<p>Github(Windows)<p>https:&#x2F;&#x2F;github.com&#x2F;AnonimusShamshiAlex&#x2F;FLEYAI<p>Github(Linux)<p>https:&#x2F;&#x2F;github.com&#x2F;AnonimusShamshiAlex&#x2F;FLEYAILinux<p>Github(Android)<p>https:&#x2F;&#x2F;github.com&#x2F;AnonimusShamshiAlex&#x2F;FLEYAI-ANDROID<p>FLEY Glasses 1.0 is a smart glasses project featuring an integrated AI assistant powered by an ESP32-S3 microcontroller (in the style of E.D.I.T.H.). The device recognizes voice commands, analyzes real-time video from its camera, assesses s",
+      "translated_by": "model"
+    },
     {
       "id": "hn-50600516",
       "source": "Hacker News",
@@ -480,6 +499,44 @@
       "translated_by": "model"
     },
     {
+      "id": "hn-50603421",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "Taskless 发布：把 AGENTS.md 和 PR 评论变成可运行检查",
+      "summary": "开发者 Jakob 推出 Taskless，解决 AGENTS.md 常被忽略的问题，将其和 PR 评论转化为可运行的代码检查。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "codedrift_",
+      "url": "https://www.taskless.io/",
+      "posted_at": "2026-11-23 04:11 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 0
+      },
+      "original_title": "Show HN: Taskless, turn AGENTS.md and PR comments into runnable checks",
+      "original_summary": "Show HN: Taskless, turn AGENTS.md and PR comments into runnable checks Hey HN, I&#x27;m Jakob, the solo dev and founder behind Taskless.<p>I got tired of my AGENTS.md files being ignored or forgotten a half dozen turns into conversations. I also remembered reading someone here on HN saying we weren&#x27;t using nearly enough syntax trees in our code checks. This is the result.<p>Taskless gives you powerful syntax tree tools with human verifiable fixtures. The CLI is MIT licensed, so running the CLI, onboarding, rule writing, and running the underlying ast-grep &amp; Vale checks are all local. You can give it a try with:<p>npx @taskless&#x2F;cli<p>and then asking your agent to &quot;onboard with Taskless&quot;.<p>Under the hood, the CLI works with your agent to read your PR review comments,",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50602561",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "Type-C 发布：为 C 语言带来变体、泛型和模式匹配",
+      "summary": "Type-C 为 C 语言加入变体、Option、泛型和模式匹配，避免为解析和错误处理改用 Swift、Rust 等语言。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "stass",
+      "url": "https://github.com/stass/type-c",
+      "posted_at": "2026-11-23 02:40 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Type-C – variants, options, generics and pattern matching for C",
+      "original_summary": "Show HN: Type-C – variants, options, generics and pattern matching for C I love C, but often using it for parsing, tree walking or complex error handling leads to spaghetti code.<p>Of course there is Swift, Ocaml or Rust for situations like that, but then you are either forced to convert the entire codebase, or add a runtime library or go through the pain of bridging C to the new language.  Sometimes there are no compilers for the target architecture too when you are working on embedded stuff.<p>This is where Type-C comes in.  It works as a preprocessor like TypeScript and calls the original C driver behind the scenes.  Your code stays normal C for the most part, so you can predict how the code will be laid out. TypeC is a full superset of C11, so any C11 code compiles as is.<p>Want to use",
+      "translated_by": "model"
+    },
+    {
       "id": "hn-50601881",
       "source": "Hacker News",
       "category": "AI 开发工具与编程助手",
@@ -491,8 +548,8 @@
       "url": "https://github.com/pkukielka/gitfold",
       "posted_at": "2026-11-23 01:38 Asia/Shanghai",
       "engagement": {
-        "points": 1,
-        "comments": 0
+        "points": 2,
+        "comments": 1
       },
       "original_title": "Show HN: Gitfold – every Git branch as a folder, ready in a second",
       "original_summary": "Show HN: Gitfold – every Git branch as a folder, ready in a second Hi HN!<p>I want to show you a project which I&#x27;m using myself to save time on worktrees creation and management.\nMy case is a bit specific because I&#x27;m normally working on a really big monorepo, where creation of a worktree takes around a minute and 20+GB of disk space.\nPreviously I was using a pool of worktrees which were managed by my own sessions manager. It worked, but was a bit clunky and sometimes I was running out of the worktrees anyway.<p>As a fun side-project I decided to create a VFS for serving git branches directly from the git object store, with only one real checkout needed.\nI started with read only version to speed-up the reviews (I often checkout the PRs code to get LLM support) and that is very eas",
@@ -529,7 +586,7 @@
       "url": "https://github.com/diggerhq/opencomputer",
       "posted_at": "2026-11-21 04:19 Asia/Shanghai",
       "engagement": {
-        "points": 122,
+        "points": 124,
         "comments": 36
       },
       "original_title": "Show HN: OpenComputer – an open source alternative to Devin",
@@ -683,24 +740,6 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1258927",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "SinX Cloud 高 IP 质量机场，购买独属您自己的 ISP IP 节点",
-      "summary": "SinX Cloud 高 IP 质量机场，购买独属您自己的 ISP IP 节点\nV 友们好，\r\n最近 Gemini 真是站起来，按着元素周期表酷酷发模型，我第一时间给家人注册了 3 个 google 账号，现在全家都用上了美国大豆包，哦不对，现在美国大豆包是 GPT 哈哈哈 🤣\r\n\r\n好，废话不多说这次来介绍 **SinX Cloud 新业务，独属自己的 ISP IP 节点**\r\n\r\n---\r\n\r\n## 😣 您日常在外网冲浪是否有遇到这样的问题\r\n\r\n**1.** 想要注册一到多个 google 账号，但发现买的机场节点太烂，甚至**大机场的节点还 IP 送中**，连 Gemini 都用不了，更不要提 Antigravity 的了，那个 IP 检测，环境检测不比 Claude 差，弹出二维码短信验证，国内+86 手机是几乎发不出去短信的，发出去了那不是暴露给运营商你在翻墙，而且试的次数多了 Google 还会 ban 你设备 ID，这时候你难道还要去买个 Esim/海外 Iphone/Android 手机？如果你是国行手机的话还得折腾 esim 写卡，最后折腾下来，发现这个事还挺麻烦的哦。\r\n\r\n**2.** 用 Claude 经常担心 IP 不干净，不想多人拼车，想要去自建节点翻墙吧，结果发现云厂商都涨价，要不然就是热门厂商瓦工，DMIT 经典 1c1g 机器又贵还经常抢不到，只是自己用还性能溢出，维护节点，买域名，3xui 搭建面板。。。当你搞定这一切后发现**只有一个国家 IP**，想要换个国家要不得买机器，要不得买 IP，，个人用户可以买几个啊，经济实惠吗，同时还有 **GFW 不停扫端口封锁**封你 IP，这段时间 TCP based 协议 vless reality, anytls 被封的有目共睹，最后算下账单一看，大概率是比机场还贵而且折腾闹心。\r\n\r\n---",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "byteharbork2",
-      "url": "https://www.v2ex.com/t/1258927",
-      "posted_at": "2026-11-22 19:16 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "SinX Cloud 高 IP 质量机场，购买独属您自己的 ISP IP 节点",
-      "original_summary": "SinX Cloud 高 IP 质量机场，购买独属您自己的 ISP IP 节点\nV 友们好，\r\n最近 Gemini 真是站起来，按着元素周期表酷酷发模型，我第一时间给家人注册了 3 个 google 账号，现在全家都用上了美国大豆包，哦不对，现在美国大豆包是 GPT 哈哈哈 🤣\r\n\r\n好，废话不多说这次来介绍 **SinX Cloud 新业务，独属自己的 ISP IP 节点**\r\n\r\n---\r\n\r\n## 😣 您日常在外网冲浪是否有遇到这样的问题\r\n\r\n**1.** 想要注册一到多个 google 账号，但发现买的机场节点太烂，甚至**大机场的节点还 IP 送中**，连 Gemini 都用不了，更不要提 Antigravity 的了，那个 IP 检测，环境检测不比 Claude 差，弹出二维码短信验证，国内+86 手机是几乎发不出去短信的，发出去了那不是暴露给运营商你在翻墙，而且试的次数多了 Google 还会 ban 你设备 ID，这时候你难道还要去买个 Esim/海外 Iphone/Android 手机？如果你是国行手机的话还得折腾 esim 写卡，最后折腾下来，发现这个事还挺麻烦的哦。\r\n\r\n**2.** 用 Claude 经常担心 IP 不干净，不想多人拼车，想要去自建节点翻墙吧，结果发现云厂商都涨价，要不然就是热门厂商瓦工，DMIT 经典 1c1g 机器又贵还经常抢不到，只是自己用还性能溢出，维护节点，买域名，3xui 搭建面板。。。当你搞定这一切后发现**只有一个国家 IP**，想要换个国家要不得买机器，要不得买 IP，，个人用户可以买几个啊，经济实惠吗，同时还有 **GFW 不停扫端口封锁**封你 IP，这段时间 TCP based 协议 vless reality, anytls 被封的有目共睹，最后算下账单一看，大概率是比机场还贵而且折腾闹心。\r\n\r\n---",
-      "translated_by": "free-translate"
-    },
-    {
       "id": "v2ex-1258855",
       "source": "V2EX",
       "category": "科技软件/App 限免",
@@ -717,42 +756,6 @@
       "original_title": "Apple Watch：戴了 8 年，我的使用测评",
       "original_summary": "Apple Watch：戴了 8 年，我的使用测评\n从 2018 年购买第一块 Apple Watch，至今 3186 天了。这期间，除了洗澡或者充电，无论是运动、睡觉，无时无刻我都戴着它，那么，佩戴智能手表这 8 年，它对我有什么改变，是否值得呢？我觉得是十分值得，也非常推荐你尝试智能手表\r\n\r\n\r\n![Pasted image 20261118194900.png](https://blog.scond.me/img/article-studio/2026-11-22-02-Apple-Watch-%E6%88%B4%E4%BA%868%E5%B9%B4-%E6%88%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B5%8B%E8%AF%84/02-Pasted-image-20261118194900.png)\r\n\r\n\r\n## 1. 运动习惯的养成\r\n\r\n每天，Apple Watch 都会提醒你完成运动圆环，从 Apple Watch 购买至今，我的每天目标是：活动 350 千卡、锻炼 30 分钟，站立 12 小时。刚才看了一眼，我已经累计合上所有圆环 2144 次（当天三个圆环全部合上）\r\n\r\n\r\n![9B00062A-0E87-43F5-A3D9-96CAF23914E3_1_105_c.jpeg](https://blog.scond.me/img/article-studio/2026-11-22-02-Apple-Watch-%E6%88%B4%E4%BA%868%E5%B9%B4-%E6%88%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B5%8B%E8%AF%84/03-9B00062A-0E87-43F5-A3D9-96CAF23914E3-1-105-c.jpg)\r\n\r\n\r\n最开始，只是为了完成任务，获得勋章",
       "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-gerardomrubalcava02-geodataops-ml-api",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "免费开源项目 geodataops-ml-api：墨西哥市政指标分析与 LLM 助手服务",
-      "summary": "基于 FastAPI 的服务，包含无泄漏的 scikit-learn 增长模型和工具调用 LLM 助手。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "gerardomrubalcava02",
-      "url": "https://github.com/gerardomrubalcava02/geodataops-ml-api",
-      "posted_at": "2026-11-23 02:16 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "gerardomrubalcava02/geodataops-ml-api",
-      "original_summary": "gerardomrubalcava02/geodataops-ml-api GeoDataOps ML API: FastAPI service for Mexican municipal indicators, a leak-free scikit-learn growth model (synthetic training panel) and a tool-calling LLM assistant.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-open-free-llm-api-awesome-freellm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "awesome-freellm-apis：收录 134+ 免费大模型 API 的清单",
-      "summary": "汇总 40 多家提供商的 134 个以上免费 LLM API 与密钥，含 Gemini、Groq、OpenRouter，可一键配置 Claude Code 等工具。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "open-free-llm-api",
-      "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
-      "posted_at": "2026-11-23 01:43 Asia/Shanghai",
-      "engagement": {
-        "stars": 5935
-      },
-      "original_title": "open-free-llm-api/awesome-freellm-apis",
-      "original_summary": "open-free-llm-api/awesome-freellm-apis 134+ free LLM APIs & AI API keys from 40+ providers. Google Gemini, NVIDIA NIM, Groq, OpenRouter & more. One-click setup for Claude Code, Cursor and Codex.",
-      "translated_by": "model"
     },
     {
       "id": "disc-itsdecodingai-building-a-coding-agent-from-scratch-course",
