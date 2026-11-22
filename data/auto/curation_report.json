@@ -4,25 +4,22 @@
   "deadline_extracted": 6,
   "drop:duplicate": 503,
   "drop:empty_summary": 67,
-  "drop:negative_signal": 143,
-  "drop:no_clear_offer": 631,
-  "drop:not_ai": 531,
+  "drop:negative_signal": 142,
+  "drop:no_clear_offer": 624,
+  "drop:not_ai": 537,
   "drop:too_old_pre2025": 61,
   "google_news_resolved": 672,
   "google_news_total": 672,
-  "kept_total": 224,
-  "net:gnews_cache_hit": 658,
-  "net:gnews_resolved_net": 14,
-  "net:tco_expanded": 1,
+  "kept_total": 226,
+  "net:gnews_cache_hit": 672,
+  "net:tco_failed": 6,
+  "new_this_run": 2,
   "raw_total": 2160
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "开源工具 tecr 帮 AI agent 减少返工，免费开放",
-   "Google Gemini 的 Tasks 个人助理现已免费",
-   "Harness：用开放权重模型搭建和克隆 B2B SaaS 的工具",
    "ClearOffice Hub：用自然语言构建企业应用",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
@@ -30,7 +27,10 @@
    "Beatreel：根据一个提示制作讲解短视频",
    "hive-mind：如何设计协同工作的 AI 体",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
-   "godspeed：适用于您课程的免费开源 AI 辅导工具"
+   "godspeed：适用于您课程的免费开源 AI 辅导工具",
+   "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
+   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
+   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑"
   ],
   "empty_summary": [
    "@shanehegde 分享：该工具提供免费试用和90免费积分，可将编辑时间缩短至几分钟，并有实用的 recipes 功",
@@ -103,17 +103,16 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-22T15:13:22+08:00",
+ "generated_at": "2026-11-22T19:03:44+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-22T15:13:22+08:00",
+  "checked_at": "2026-11-22T19:03:43+08:00",
   "counts": {
    "gone": 1,
-   "ok": 203,
-   "recheck": 1
+   "ok": 200
   },
   "hidden": 1
  },
- "seconds": 9.2,
+ "seconds": 1.8,
  "side": {
   "github_hot": {
    "drop:duplicate": 14,
@@ -122,10 +121,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 2,
-   "drop:not_ai": 10,
-   "drop:not_ai_strict": 9,
-   "kept": 19,
+   "drop:negative_signal": 3,
+   "drop:not_ai": 8,
+   "drop:not_ai_strict": 6,
+   "kept": 23,
    "raw": 40
   }
  }
