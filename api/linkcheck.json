@@ -1,12 +1,20 @@
 {
- "checked_at": "2026-11-23T11:07:41+08:00",
- "total": 207,
+ "checked_at": "2026-11-23T16:56:03+08:00",
+ "total": 209,
  "counts": {
-  "ok": 206,
-  "recheck": 1
+  "ok": 207,
+  "recheck": 1,
+  "gone": 1
  },
- "hidden": [],
+ "hidden": [
+  {
+   "id": "disc-edgerunners-2-capri-ai-desktop",
+   "title": "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
+   "url": "https://github.com/edgerunners-2/capri-ai-desktop",
+   "code": 404
+  }
+ ],
  "unreliable_run": false,
  "rules": "ok=能打开；recheck=上次没打开，下次再查；gone=连续两次 404/410/域名不存在，自动下架；unsure=对方限制访问或超时，不下架",
- "built_at": "2026-11-23T11:07:42+08:00"
+ "built_at": "2026-11-23T16:56:03+08:00"
 }
