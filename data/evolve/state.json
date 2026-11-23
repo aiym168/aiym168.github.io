@@ -1,52 +1,58 @@
 {
  "last_step": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "changes": [
    {
-    "op": "restore",
-    "name": "新闻聚合 · AI绘画 教程",
-    "key": "gn-aipaint-tut",
+    "op": "pause",
+    "name": "Nature",
+    "key": "nature-com-nature-rss",
+    "why": "复测还是打不开"
+   },
+   {
+    "op": "pause",
+    "name": "Chromium Blog",
+    "key": "blog-chromium-org-feeds-posts-default",
+    "why": "一周都没有新东西"
+   },
+   {
+    "op": "slower",
+    "name": "React 博客",
+    "key": "react-dev-rss-xml",
+    "why": "总是重复，没有新东西"
+   },
+   {
+    "op": "slower",
+    "name": "ComfyUI-Manager 发布",
+    "key": "comfyui-manager",
+    "why": "总是重复，没有新东西"
+   },
+   {
+    "op": "up",
+    "name": "TechCrunch AI",
+    "key": "techcrunch-ai",
     "why": ""
-   },
-   {
-    "op": "retest",
-    "name": "Lobsters",
-    "key": "Lobsters",
-    "why": ""
-   },
-   {
-    "op": "pause",
-    "name": "Synced",
-    "key": "syncedreview-com-feed",
-    "why": "一周都没有新东西"
-   },
-   {
-    "op": "pause",
-    "name": "Lilian Weng",
-    "key": "lilianweng-github-io-index-xml",
-    "why": "一周都没有新东西"
-   },
-   {
-    "op": "pause",
-    "name": "The Gradient",
-    "key": "thegradient-pub-rss",
-    "why": "一周都没有新东西"
    }
   ],
-  "snapshot": "data/evolve/snapshots/2026-11-23.json",
+  "snapshot": "data/evolve/snapshots/2026-11-24.json",
   "baseline": {
-   "kept": 8117,
-   "runs": 28,
-   "dead": 9,
-   "checked": 800,
-   "build_ok": 24,
+   "kept": 7519,
+   "runs": 26,
+   "dead": 8,
+   "checked": 826,
+   "build_ok": 22,
    "build_bad": 0,
-   "kept_per_run": 289.89,
-   "dead_rate": 0.0112,
+   "kept_per_run": 289.19,
+   "dead_rate": 0.0097,
    "bad_build_rate": 0.0
   }
  },
  "history": [
+  {
+   "date": "2026-11-24",
+   "verdict_prev": null,
+   "changes": 5,
+   "diary_by": "model"
+  },
   {
    "date": "2026-11-23",
    "verdict_prev": null,
@@ -120,5 +126,5 @@
    "diary_by": "rules"
   }
  ],
- "last_evolve_date": "2026-11-23"
+ "last_evolve_date": "2026-11-24"
 }
