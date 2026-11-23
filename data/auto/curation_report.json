@@ -2,26 +2,29 @@
  "counts": {
   "archived": 24,
   "deadline_extracted": 7,
-  "drop:duplicate": 539,
+  "drop:duplicate": 538,
   "drop:empty_summary": 70,
-  "drop:negative_signal": 149,
-  "drop:no_clear_offer": 678,
-  "drop:not_ai": 573,
+  "drop:google_news_unresolved": 1,
+  "drop:negative_signal": 156,
+  "drop:no_clear_offer": 692,
+  "drop:not_ai": 575,
   "drop:too_old_pre2025": 61,
-  "google_news_resolved": 711,
-  "google_news_total": 711,
-  "kept_total": 234,
+  "google_news_resolved": 735,
+  "google_news_total": 736,
+  "kept_total": 236,
   "net:gnews_cache_hit": 711,
+  "net:gnews_failed_net": 1,
+  "net:gnews_resolved_net": 24,
+  "net:tco_expanded": 10,
   "net:tco_failed": 7,
   "new_this_run": 3,
-  "raw_total": 2304
+  "raw_total": 2329
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "开源工具 tecr 帮 AI agent 减少返工，免费开放",
-   "ClearOffice Hub：用自然语言构建企业应用",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
    "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
@@ -30,9 +33,11 @@
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
    "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
-   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话"
+   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话",
+   "PromptReel：免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑"
   ],
   "empty_summary": [
+   "两名 Anthropic 高级 AI 工程师称用「Graph Engineering」让 Karpathy",
    "@divaagurlxw 分享：> 无需注册 > 无需信用卡 > 每天 10K 请求 > 未过滤的响应 > OpenAI",
    "他的循环：问 AI 自己缺什么、找免费讲座、语音复盘，再用真实场景测试",
    "@shanehegde 分享：该工具提供免费试用和90免费积分，可将编辑时间缩短至几分钟，并有实用的 recipes 功",
@@ -43,38 +48,41 @@
    "据称 Gemini Pro 现可免费使用一年，原价 200 美元，无需付款即可激活",
    "如何租用 GPU：> 打开 Higgsfield GPU Harness 并按启动计算机 > 选择云计算机",
    "在设置里的 Models 添加自有密钥或连接订阅，经其推理在 Tembo 内费用为 0，另有免费试用与付费方案",
-   "@hosun_chung 分享：该帖称 AI 免费试用的每个注册都消耗真实算力，成本远高于 SaaS",
-   "该模型在 Artificial Analysis 人声音乐榜排名第一，并可免费试用"
+   "@hosun_chung 分享：该帖称 AI 免费试用的每个注册都消耗真实算力，成本远高于 SaaS"
+  ],
+  "google_news_unresolved": [
+   "英国邀请近70万女性参加全球最大AI乳腺癌筛查试验"
   ],
   "negative_signal": [
+   "@vanguardngrnews 分享：英国启动世界上最大的 AI 辅助乳腺癌筛查试验",
+   "@PhilippineStar 分享：报道称该试验规模庞大，旨在验证 AI 辅助乳腺筛查的实际效果",
+   "ECP Asset Management 的 Annabelle Miller 认为",
+   "@JulianGoldieSEO 分享：直播演示从零搭建负责行政、获客和内容的三套 AI 系统，可免费观看并复制到自己的",
+   "这项由 NIHR 资助、耗资1000万英镑的研究，是全球最大规模使用 AI 辅助工具的乳腺癌筛查试验",
+   "@BAI_AGI 分享：感恩节赠品 为您最喜欢的功能投票感恩节快乐",
+   "@wendyburn 分享：AI 用于乳腺癌筛查的试验",
    "@wearfigs 首席执行官 Trina Spear 分享了她从社区听到的乐观信号，以及为什么这可以节省患者护理时间",
    "您可以将 Claude Code 和免费的黑曜石金库变成第二个大脑，每次您将文件放入 将文件",
    "@JulianGoldieSEO 分享：推文以错过比特币为噱头，宣传 Polar Rank 2026 并提供免费 AI ",
    "@JulianGoldieSEO 分享：推文以错过比特币为噱头，宣传 Polar Rank 2026 并提供免费 AI ",
-   "@bluwhaleai 分享：AI 代理交易锦标赛第6期推出社区赠送活动，最高奖励1万 solana",
-   "Anthropic 股价正在暴跌，AI 股票5个月内跌超50%，可订阅免费新闻通讯",
-   "@PovilasKorop 分享：最后，不仅在梗图生成或软件工厂方面取得了突破，而且在治愈癌症方面也取得了突破",
-   "@Reuters 分享：报道称印度因不依赖 AI 的吸引力获得创纪录外资流入，能否持续取决于盈利",
-   "@nealmohan 分享：该福利允许家庭内最多5人共享无广告的 YouTube 与 YouTube Music",
-   "SEO 从业者们，重磅消息来啦",
-   "Access Intelligence 覆盖患者援助与事前授权，Learn 含超5万道题",
-   "@codyschneider 分享：为德州一家墨西哥卷饼连锁店做 UGC 风格广告，全程在一个终端内完成"
+   "@bluwhaleai 分享：AI 代理交易锦标赛第6期推出社区赠送活动，最高奖励1万 solana"
   ],
   "no_clear_offer": [
-   "@malpani 分享：印度学生不需要再听课来告诉他们要更加努力",
-   "AI Pose Gallery 提供 490 多个姿势，可免费浏览，用于寻找创作角度",
-   "@Sameek_Kundu 分享：用文字描述即可实时生成节点图，含 164 个节点，支持本地 AI 或 Claude、G",
-   "作者本想借 LLM 理解书中难点，目前还不需要",
-   "别再烧 Claude 的积分了",
-   "Meta 希望这款硬件能扩展其硬件业务，并为其 AI 助手带来更多用户",
-   "@atomHQ 分享：焦点小组需要数周时间并花费数千美元",
-   "新闻：Inkling 2 Mini 是免费的，可以在没有互联网的情况下在笔记本电脑上运行",
-   "@jasonlk 分享：标志墙没有吸引力，投资者想知道其中有多少徽标向您支付费用、金额以及它们是否正在扩张",
-   "现实世界的生产力：为了加强模型在工业和专业工作流程中的协作能力，我们开发了 Work360",
-   "与 @AMD 合作，我们的模型在不到五个月的时间里就发现旗舰 GPU IP 的 PPA 提高了 14%——建立在 AMD",
-   "@TheEconomist 分享：AI 已经不仅仅是一个经济工具"
+   "@nicholascalez 分享：该应用年收入突破20万美元，全部来自 Instagram 试播短视频和 TikTok",
+   "这项由 NIHR 资助的全球首创研究，或改变数千名女性的乳腺癌诊断方式",
+   "@mdancho84 分享：12月2日举办，教参与者搭建并交付企业真正需要的 AI 与数据科学项目",
+   "@PublishersWkly 分享：含12月1日与8日两场直播、回放、在线课堂，以及两场免费 AI Bootcamp",
+   "捐款用于维持 HKFP 独立运营，支持不受 AI 与亿万富翁影响的新闻业",
+   "@malpani 分享：印度的每个学生都应该有一位 AI 导师，他知道他们理解什么、他们遇到什么困难以及他们如何学得最好",
+   "NHS 发起全球最大规模试验，验证 AI 能否更早发现乳腺癌",
+   "用两年 EUR/USD 数据测试，ML Momentum Oscillator 收益 +61.5%，163 笔交易",
+   "免费 AI Pose Gallery 收录 490 多个姿势，可为 AI 角色挑选合适的姿势",
+   "@SkyNews 分享：检查 AI 是否可以帮助早期发现乳腺癌的重大试验",
+   "英国为 EDITH 试验投入 1000 万英镑，检验 AI 能否更早发现更多癌症并节省医护时间",
+   "作者整理了 10 个免费 Claude skills，用来改善 Claude 生成设计的质量"
   ],
   "not_ai": [
+   "免费座位：这里有免费座位",
    "@github 分享：它不一定是非此即彼，在最新的 GitHub 播客上，我们与 2026 年商业开源状况研究背后的研究",
    "制造：从草图到现实世界的工业生产",
    "对标年费 168 美元的 Granola，无需机器人入会，音频不离开本机",
@@ -85,8 +93,7 @@
    "该 DLC 在 Steam 差评如潮，部分原因是主机版比 PC 版多收 10 美元，且内容缺乏实质更新",
    "@xdadevelopers 分享：我用免费的开源工具替换了任务管理器的 GPU 选项卡，终于找到了我的 VRAM 的去",
    "@openclaw 分享：”好吧，这不是当我们接近第一次提交 OpenClaw 一周年时，Joe 反思了将该工具带到今天",
-   "@vivago_ai 分享：11 月 20 日至 30 日加入创作者计划可获 5000 奖励积分",
-   "使用 8 块 RTX PRO 6000、两机并行，本次渲染消耗 1099.50 积分"
+   "@vivago_ai 分享：11 月 20 日至 30 日加入创作者计划可获 5000 奖励积分"
   ],
   "too_old_pre2025": [
    "DistroKid推出免费AI图像生成器，可用于专辑封面等",
@@ -103,30 +110,29 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-23T16:56:03+08:00",
+ "generated_at": "2026-11-23T23:26:23+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-23T16:56:03+08:00",
+  "checked_at": "2026-11-23T23:26:23+08:00",
   "counts": {
    "gone": 1,
-   "ok": 207,
-   "recheck": 1
+   "ok": 209
   },
   "hidden": 1
  },
- "seconds": 1.7,
+ "seconds": 18.6,
  "side": {
   "github_hot": {
-   "drop:duplicate": 11,
-   "drop:not_ai": 2,
-   "kept": 17,
+   "drop:duplicate": 10,
+   "drop:not_ai": 1,
+   "kept": 19,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 8,
-   "drop:not_ai_strict": 8,
-   "kept": 15,
-   "raw": 35
+   "drop:negative_signal": 7,
+   "drop:not_ai": 11,
+   "drop:not_ai_strict": 5,
+   "kept": 17,
+   "raw": 40
   }
  }
 }
