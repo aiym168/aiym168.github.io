@@ -1,9 +1,66 @@
 {
   "date": "2026-11-23",
-  "updated_at": "2026-11-23T04:50+08:00",
-  "updated_at_label": "2026-11-23 04:50 Asia/Shanghai",
+  "updated_at": "2026-11-23T08:09+08:00",
+  "updated_at_label": "2026-11-23 08:09 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50604195",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "显示 HN：Gall – 24GB M2 上的 Inkling 2 Mini，在消息之间释放 RAM",
+      "summary": "Show HN：Gall – Inkling 2 Mini 在 24GB M2 上，在消息之间释放 RAM Thinking Machines Lab 给出了 32GB 作为 Mac 上 Inkling 2 Mini 的最低 RAM 要求，但有了 Q3 Quant，我觉得在我的 24GB M2 MacBook Air 上一定有可能找到合理的地方。<p>即使打了补丁，Llama.cpp 也没有削减它，所以我花了这周的 Fable 津贴（撒了一点 Astra）在此自定义推理引擎上，并借此机会添加了一些优化和人体工程学，以便在内存受限的笔记本电脑上运行：<p>- 一次严格加载一个模型，请求排队；\n- 每次响应（或可配置的延迟）后，KV 缓存都会被保存并卸载模型，因此 RAM 在调用之间保持在 50MB，但重新加载速度很快；\n- 菜单栏应用程序在预填充时显示状态和图标变化&#x2",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ltrg",
+      "url": "https://github.com/ltrgoddard/gall",
+      "posted_at": "2026-11-23 05:40 Asia/Shanghai",
+      "engagement": {
+        "points": 5,
+        "comments": 1
+      },
+      "original_title": "Show HN: Gall – Inkling 2 Mini on 24GB M2, frees RAM between messages",
+      "original_summary": "Show HN: Gall – Inkling 2 Mini on 24GB M2, frees RAM between messages Thinking Machines Lab gives 32GB as the minimum RAM requirement for Inkling 2 Mini on Mac, but with the Q3 quant I felt it must be possible to get somewhere reasonable on my 24GB M2 MacBook Air.<p>Llama.cpp wasn&#x27;t cutting it even with patches, so I spent this week&#x27;s Fable allowance (with a sprinkling of Astra) on this custom inference engine, and took the opportunity to add some optimisations and ergonomics for running on a memory-constrained laptop:<p>- strictly one model loaded at a time, requests queued;\n- KV cache gets saved and model unloaded after every response (or configurable delay), so RAM stays at 50MB between calls, but reload is fast;\n- menu bar app shows status and icon changes when prefilling&#x2",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50604007",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Show HN：我写了两次 FlightTrack",
+      "summary": "Show HN：我编写了两次 FlightTrack FlightTrack 是我在 App Store 早期使用的 iPhone 航班追踪器（4 年里最畅销的旅行应用程序），我只是从头开始重写它。<p>我第一次编写 FlightTrack 是在 2008 年，作为一个业余项目。它做得非常好，我辞掉了日常工作，围绕它创办了一家公司，该公司在 2010 年被 Expedia 收购；Expedia 于 2017 年停用了该应用程序。那时我已经精疲力尽，并将精力集中在古典歌唱上，结果证明这意味着住在机场。但我错过了这个应用程序。<p>今年夏天，我开始从头开始重建它，其设计灵感来自于 Paul Mijksenaar 在阿姆斯特丹史基浦机场的精美标牌，并与 Claude 合作用 Go 编写了一个服务器，并用 Swift 编写了一个 iOS 应用程序。2008 年，v1.0 花了我 6 周的晚上/周末；不",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "bkazez",
+      "url": "https://apps.apple.com/us/app/flighttrack-flight-tracker/id6788552553",
+      "posted_at": "2026-11-23 05:19 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: I wrote FlightTrack twice",
+      "original_summary": "Show HN: I wrote FlightTrack twice FlightTrack was my iPhone flight tracker from the early App Store days (bestselling travel app for 4 years), and I just rewrote it from scratch.<p>I first wrote FlightTrack as a side project in 2008. It did really well and I quit my day job and started a company around it that was bought by Expedia in 2010; Expedia retired the app in 2017. By then I had burned out and focused my energy on classical singing, which turns out to mean living in airports. But I missed the app.<p>This summer I started rebuilding it from scratch, with a design inspired by Paul Mijksenaar&#x27;s fantastic signage at Amsterdam&#x27;s Schiphol airport, and working with Claude to write a server in Go and an iOS app in Swift. In 2008 v1.0 took me 6 weeks of evenings&#x2F;weekends; no",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50604005",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "可提高视频帧率的免费 AI 应用程序",
+      "summary": "可提高视频帧率的免费 AI 应用程序",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "illidan1000",
+      "url": "https://flowframes.app/",
+      "posted_at": "2026-11-23 05:19 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Free AI app that improves framerate of videos",
+      "original_summary": "Free AI app that improves framerate of videos",
+      "translated_by": "free-translate"
+    },
     {
       "id": "hn-50603477",
       "source": "Hacker News",
@@ -252,23 +309,42 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50539204",
+      "id": "hn-50605527",
       "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Show HN：DecksMD 本地优先的 Markdown 闪卡工具",
-      "summary": "基于 Markdown 语法的闪卡应用与 Obsidian 插件，数据保存在本地。",
+      "category": "科技软件/App 限免",
+      "title": "Show HN：我用音乐和白噪声构建了一个简单的环境声音应用程序",
+      "summary": "Show HN：我用音乐和白噪声构建了一个简单的环境声音应用程序 Hello HN<p>我制作了 PureSound，这是一款 iOS 应用程序，您可以在其中以任何频率（双耳节拍/视唱练耳音调）和慢速合成音乐混合雨、海浪、火等的现场录音，应用程序会自动将音乐调整到正确的音调。<p>如果您不想混合声音，可以选择预制的音景来睡眠、平静或集中注意力。<p>该应用程序可以免费使用无广告，无需帐户，可离线工作 - 付费订阅即可完全访问库中的所有声音。<p>感谢您对新声音/功能的任何反馈和建议。<p><a href=\"https://apps.apple.com/us/app/puresound-sleep-calm-focus/id6758267180\">https://ap",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "hotpatato",
-      "url": "https://decksmd.app/",
-      "posted_at": "2026-11-18 06:31 Asia/Shanghai",
+      "author": "jrrc_dev",
+      "url": "https://puresound.app",
+      "posted_at": "2026-11-23 08:02 Asia/Shanghai",
       "engagement": {
-        "points": 3,
+        "points": 1,
         "comments": 0
       },
-      "original_title": "Show HN: DecksMD – local first, Markdown flashcards app and plugin for Obsidian",
-      "original_summary": "Show HN: DecksMD – local first, Markdown flashcards app and plugin for Obsidian I built a flashcards app and plugin for obsidian, based on markdown syntax. You use headers and paragraphs, tables or highlighted text to create flashcards and cloze deletions, which you can then review using FSRS algorithm. Everything stays local, it uses a SQL lite db internally to keep track of state and keep the markdown document clean.<p>I started this project about a year ago when I was facing the problem that I needed flashcards to memorise thousands concepts and language vocabulary I kept forgetting and I hated every flashcards app out there so I decided to build something of my own and I started with markdown and obsidian. Fast forward one year later, I released the iOS and android apps too and a direc",
-      "translated_by": "model"
+      "original_title": "Show HN: I built a simple ambient sounds app with music and white noise",
+      "original_summary": "Show HN: I built a simple ambient sounds app with music and white noise Hello HN<p>I made PureSound, an iOS app where you can mix field recordings of rain, waves, fire etc. with any frequency (binaural beat&#x2F;solfeggio tone) and slow synth music which the app automatically tunes the music to the correct pitch.<p>If you don&#x27;t want to mix sounds there&#x27;s pre made soundscapes to choose from for sleep, calm or focus.<p>The app is free to use with no ads, no account required and works offline- there is a paid subscription for full access to all sounds in the library.<p>I appreciate any feedback and suggestions you may have for new sounds&#x2F;features.<p><a href=\"https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;puresound-sleep-calm-focus&#x2F;id6758267180\">https:&#x2F;&#x2F;ap",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50605439",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "Show HN：Lexis World – 一款适合还不需要知道任何单词的孩子的文字游戏",
+      "summary": "Show HN：Lexis World – 一款专为还不需要知道任何单词的孩子设计的文字游戏 Hi HN，<p>2018 年，我发布了一款名为 Lexi’s World 的儿童应用程序。我花了四年的时间来制作它，我对此感到非常自豪。<p>莱克西是一个小女孩，独自生活在一个小星球上。孩子们用键盘输入动物和植物的名字，然后这些动物和植物就会和她一起来到这个星球上。键盘只能让你输入游戏中存在的真实单词，因此它是为刚刚开始对字母和单词感兴趣的孩子设计的。<p>你可以输入 DOG，然后会出现一只 DOG，输入 BONE，它就会有东西吃。\n输入 POND、OTTER、REEDS、DRAGONFLY、FROG、FLY、LILY 并添加另一个 OTTER，你就得到了一个漂亮的小池塘场景\n输入 GORILLA 三遍，你就可以和家人一起出去玩\n有很多东西有待发现。<p>它得到了",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "piwakawaka",
+      "url": "https://lexisworld.org",
+      "posted_at": "2026-11-23 07:52 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Lexis World – a word game for kids who don't need to know any words yet",
+      "original_summary": "Show HN: Lexis World – a word game for kids who don't need to know any words yet Hi HN,<p>In 2018 I released a kids’ app called Lexi’s World. It took me four years to make, and I was very proud of it.<p>Lexi is a little girl who lives alone on a tiny planet. Kids use a keyboard to type the names of animals and plants, which then join her on the planet. The keyboard only lets you type real words that exist in the game, so it’s made for kids who are just starting to get interested in letters and words.<p>You can type in DOG and a DOG appears, type in BONE and it has something to eat.\nType POND, OTTER, REEDS, DRAGONFLY, FROG, FLY, LILY and add another OTTER and you have a nice little pond scene\nType GORILLA three times and you get a family to hang out with\nThere is a lot to discover.<p>It got",
+      "translated_by": "free-translate"
     },
     {
       "id": "hn-50599027",
@@ -423,63 +499,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50564417",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Lintsure：免费本地代码检查，内置 OWASP 与欧盟 AI 法案规则",
-      "summary": "开源免费代码检查工具，在本地运行，规则来自 OWASP 和欧盟 AI 法案等公开资料。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "DrMax",
-      "url": "https://github.com/lintsure/lintsure",
-      "posted_at": "2026-11-20 02:50 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Lintsure – Free local code check with rules from OWASP, EU AI Act",
-      "original_summary": "Show HN: Lintsure – Free local code check with rules from OWASP, EU AI Act Hi all,<p>Built this because it seemed cool, let me know what you think, anyone that can help me improve it, please reach out here in the comments or via the email placed on the website. It is open-source, its created with help of claude code ofcourse, mapped the rules with what was available publicly to read. I am in the Quality Assurance and Compliance world for 10 years now and found this as interesting side job to build. I am constantly updating it and giving it more strict approach on how it reviewes code, but also trying to remove false flagging and overload of issues that are not really issues, tested it on 190+ repos that were public on github, it gave good results, but still much more to build. The vision i",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50563867",
-      "source": "Hacker News",
-      "category": "AI 产品会员/试用",
-      "title": "Forbear：用 C 写 React 风格原生 UI，计算器仅 3.6MB",
-      "summary": "即时模式 GUI 库，提供 React 式开发体验，示例计算器体积 3.6MB、内存占用约 10MB。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Gabrielmfern",
-      "url": "https://github.com/gabrielmfern/forbear",
-      "posted_at": "2026-11-20 02:19 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Forbear - React-style native UI in C; a calculator in 3.6MB, 10MB RAM",
-      "original_summary": "Show HN: Forbear - React-style native UI in C; a calculator in 3.6MB, 10MB RAM Hello! Looking to share forbear, a immediate mode GUI library that looks like the web, has a React-like DX and is as fast as possible.<p>I&#x27;ve already built a real program (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;gabrielmfern&#x2F;calculator\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;gabrielmfern&#x2F;calculator</a>) to stress it, and the binary is only 3.6MB, the first frame shows up in ~300ms, it uses 10.5MB of working set memory, and it&#x27;s all 1,155 lines of code.<p>It can be used with Jai (Jonathan Blow&#x27;s private beta programming language), and also from C or any C-compatible language.<p>On Linux and macOS:<p><pre><code>  curl -fsSL https:&#x2F;&#x2F;forbear.dev&#x2F;quick-start.sh | s",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50562320",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Onlook（YC W25）发布：面向设计师的开源开发者工具",
-      "summary": "一款桌面应用，在真实代码库上叠加画布，让设计师直接在代码中进行设计。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "D_R_Farrell",
-      "url": "https://github.com/onlook-dev/onlook/",
-      "posted_at": "2026-11-20 00:34 Asia/Shanghai",
-      "engagement": {
-        "points": 125,
-        "comments": 85
-      },
-      "original_title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
-      "original_summary": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers Hey HN, I&#x27;m Daniel, founder of Onlook (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;onlook-dev&#x2F;onlook\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;onlook-dev&#x2F;onlook</a> and onlook.com).<p>Onlook is a desktop app that puts a canvas on top of your real codebase, letting you design directly in code with the agent you already use. Over 25,000 designers and developers have supported the project, 100+ have contributed, and it&#x27;s been the #1 trending repo in the world twice. We just rebuilt the entire product as an agentic design tool, and open-sourced it to the community.<p>Here’s a demo video: (<a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;BogcYWf4siM\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;BogcYWf",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50546704",
       "source": "Hacker News",
       "category": "AI 产品会员/试用",
@@ -499,6 +518,25 @@
       "translated_by": "model"
     },
     {
+      "id": "hn-50603754",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Show HN：股票新闻 API – 免费头条新闻，包含 10,000 只美国股票的情绪",
+      "summary": "Show HN：股票新闻 API – 免费头条新闻，包含 10,000 只美国股票的情绪",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "chartwidgets",
+      "url": "https://www.quotelinks.com/api/stock-news/",
+      "posted_at": "2026-11-23 04:52 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Stock News API – free headlines with sentiment for 10k US stocks",
+      "original_summary": "Show HN: Stock News API – free headlines with sentiment for 10k US stocks",
+      "translated_by": "free-translate"
+    },
+    {
       "id": "hn-50603421",
       "source": "Hacker News",
       "category": "其他科技",
@@ -510,8 +548,8 @@
       "url": "https://www.taskless.io/",
       "posted_at": "2026-11-23 04:11 Asia/Shanghai",
       "engagement": {
-        "points": 3,
-        "comments": 0
+        "points": 4,
+        "comments": 2
       },
       "original_title": "Show HN: Taskless, turn AGENTS.md and PR comments into runnable checks",
       "original_summary": "Show HN: Taskless, turn AGENTS.md and PR comments into runnable checks Hey HN, I&#x27;m Jakob, the solo dev and founder behind Taskless.<p>I got tired of my AGENTS.md files being ignored or forgotten a half dozen turns into conversations. I also remembered reading someone here on HN saying we weren&#x27;t using nearly enough syntax trees in our code checks. This is the result.<p>Taskless gives you powerful syntax tree tools with human verifiable fixtures. The CLI is MIT licensed, so running the CLI, onboarding, rule writing, and running the underlying ast-grep &amp; Vale checks are all local. You can give it a try with:<p>npx @taskless&#x2F;cli<p>and then asking your agent to &quot;onboard with Taskless&quot;.<p>Under the hood, the CLI works with your agent to read your PR review comments,",
@@ -529,7 +567,7 @@
       "url": "https://github.com/stass/type-c",
       "posted_at": "2026-11-23 02:40 Asia/Shanghai",
       "engagement": {
-        "points": 1,
+        "points": 2,
         "comments": 0
       },
       "original_title": "Show HN: Type-C – variants, options, generics and pattern matching for C",
@@ -575,63 +613,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50581403",
-      "source": "Hacker News",
-      "category": "云服务/GPU/开发者资源",
-      "title": "OpenComputer：可跑在自有云的开源编码代理",
-      "summary": "开源云端编码 agent，可运行在自己的 AWS、GCP、Azure 账号，首个 commit 24 秒内落地。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "iacguy",
-      "url": "https://github.com/diggerhq/opencomputer",
-      "posted_at": "2026-11-21 04:19 Asia/Shanghai",
-      "engagement": {
-        "points": 124,
-        "comments": 36
-      },
-      "original_title": "Show HN: OpenComputer – an open source alternative to Devin",
-      "original_summary": "Show HN: OpenComputer – an open source alternative to Devin Hi HN!<p>Utpal here, I&#x27;m one of the founders of OpenComputer.<p>OpenComputer is an open source cloud coding agent for teams that can run in your own cloud account (AWS, GCP, Azure).<p>We run the agent harness and the sandbox on the same durable VM (architecture in the docs [1]). First commit lands in 24s; the alternatives we benchmarked took 53-72s (benchmarks below [2]).<p>Two other choices:<p>- One VM per team, scalable horizontally. Sessions are isolated in git worktrees.\n- Session files are backed up to a repo after every turn, so any session can resume on another VM.<p>We noticed that past ~640 session-hours a month, one always-on 4 vCPU VM is cheaper than per-session E2B sandboxes, for example. So at scale, this setup w",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50574243",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "FreeAPI：免注册在浏览器测试 1047 个公共 API",
-      "summary": "打开网页即可试用 1047 个公共 API，无需注册账号。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "canpolatkaya4",
-      "url": "https://findfreeapi.com/en",
-      "posted_at": "2026-11-20 21:17 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: FreeAPI – Test 1,047 public APIs in the browser without signing up",
-      "original_summary": "Show HN: FreeAPI – Test 1,047 public APIs in the browser without signing up ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50562508",
-      "source": "Hacker News",
-      "category": "云服务/GPU/开发者资源",
-      "title": "AgentMall：让 AI 代理在 9 家生鲜商家自动结账",
-      "summary": "团队为 9 家头部生鲜商家做可靠结账自动化，处理反爬、登录、验证码和结账页变动。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "desilva78_",
-      "url": "https://getagentmall.com",
-      "posted_at": "2026-11-20 00:46 Asia/Shanghai",
-      "engagement": {
-        "points": 21,
-        "comments": 11
-      },
-      "original_title": "Show HN: AgentMall – Let your AI agent buy groceries",
-      "original_summary": "Show HN: AgentMall – Let your AI agent buy groceries Hey HN, we’re Nel and Kosi.<p>We noticed personal agents like Instinct, Muse were terrible at buying stuff. Most of the time the checkout would fail.<p>So we built reliable automations for agents to checkout at 9 leading grocery merchants.<p>We grapple with anti bot, logins, OTP codes, and changing checkout structures.<p>Loved revisiting this stuff given our backgrounds sneaker-botting and building computer use models. Honestly full circle haha.<p>It currently works on these sites with ~70% checkout success rate:<p>- Walmart\n- Albertsons\n- Ocado\n- Wegmans\n- FreshDirect\n- Best Buy\n- Instacart<p>Our goal is to hill climb to 90%+ across each.<p>Test keys are free and run the real flow without placing an order.<p>New accounts get 10 free com",
-      "translated_by": "model"
-    },
-    {
       "id": "v2ex-1258976",
       "source": "V2EX",
       "category": "AI 产品会员/试用",
@@ -643,7 +624,7 @@
       "url": "https://www.v2ex.com/t/1258976",
       "posted_at": "2026-11-23 01:28 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 1
       },
       "original_title": "[开源] 想让闲置的 Windows 电脑重新上桌，我做了 Pierdesk",
       "original_summary": "[开源] 想让闲置的 Windows 电脑重新上桌，我做了 Pierdesk\n大家好，我是 Pierdesk 的作者。\r\n\r\n家里有几台 Windows 电脑，我想让它们都在桌上派上用场。比如台式机写代码，一台笔记本开文档、看日志，另一台跑测试。看到有用的东西，鼠标移过去就能操作。要把一整个项目文件夹交给跑测试的机器，按平时习惯的 Ctrl+C、Ctrl+V 就行。\r\n\r\n于是我做了 Pierdesk。多台 Windows 电脑连到同一个局域网，运行 Pierdesk 并完成配对后，就能共享剪贴板，在电脑之间复制多个文件或整个文件夹。文件直接走局域网。配合跨屏键鼠，一套鼠标和键盘就可以在桌上的几台电脑之间来回用。\r\n\r\n商业远程桌面软件通常把另一台电脑的画面传到当前设备，适合异地办公或远程协助。Pierdesk 面向的是多台电脑并排使用的场景。每台电脑各自用自己的屏幕、跑自己的程序，你可以在它们之间切换操作、粘贴文字和传文件。\r\n\r\nPierdesk 用 Rust 写，免费开源（GPL-3.0）。目前是 Beta，支持 Windows 10 / 11 x64。一个约 14 MB 的 EXE，免安装，平时待在系统托盘。\r\n\r\n- [官网](https://pierdesk.pages.dev/)\r\n- [GitHub 源码](https://github.com/micky-meecky/Pierdesk)\r\n- [下载 pierdesk.exe](https://github.com/micky-meecky/Pierdesk/releases)\r\n\r\n这是我自己为爱发电做的项目。如果它帮你把闲置电脑重新用起来了，欢迎点个 Star，也欢迎在官网自愿打赏，请我喝杯咖啡。\r\n\r\n如果你桌上也摆了几台电脑，好奇你是怎么给它们分工的。愿意试用的话，也欢迎说说你接了几台、屏幕怎么摆",
@@ -661,7 +642,7 @@
       "url": "https://www.v2ex.com/t/1258975",
       "posted_at": "2026-11-23 01:26 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 1
       },
       "original_title": "做了一个服装参考图库：1000+ 套写实穿搭，还能把照片转成线稿来临摹",
       "original_summary": "做了一个服装参考图库：1000+ 套写实穿搭，还能把照片转成线稿来临摹\n## 这是什么\r\n\r\n一个服装参考图库 + 照片转线稿的小工具，给画服装、练人体、做手工和涂色本的人用。\r\n\r\n在线地址：https://drawingclothes.com\r\n\r\n## 能用来做什么\r\n\r\n- 找服装参考：1000 多套真人穿搭，可以按品类挑（春秋季、连衣裙、泳装……），也能按面料挑（denim、knit、pleated、satin……），专门用来观察衣服的结构、垂坠和褶皱\r\n- 照片转线稿：随便上传一张照片，就能在线稿和照片之间来回看，方便对照着临摹轮廓和褶皱 —— https://drawingclothes.com/tools/photo-to-line-art\r\n- 拿来做练习和涂色素材：把喜欢的穿搭变成干净的线条，直接照着画或打印出来上色\r\n\r\n## 适合谁\r\n\r\n- 学画衣服、练褶皱的人：找不到真人穿着的结构参考，可以来这挑\r\n- 做手工、涂色本、给小孩找画画素材的人\r\n- 单纯喜欢看各种穿搭的人，图库免费看，不用注册\r\n\r\n一点个人的出发点：自己练画时总找不到结构清楚的服装参考，就干脆整理了一个站，顺手把转线稿也做了。用得上的朋友可以试试，想要什么品类、什么功能，在这帖里告诉我。",
@@ -733,7 +714,7 @@
       "url": "https://www.v2ex.com/t/1258941",
       "posted_at": "2026-11-22 20:46 Asia/Shanghai",
       "engagement": {
-        "replies": 1
+        "replies": 2
       },
       "original_title": "MD Publisher：写一篇 Markdown，一次排好微信 / 知乎 / 掘金三家版式",
       "original_summary": "MD Publisher：写一篇 Markdown，一次排好微信 / 知乎 / 掘金三家版式\n写技术文章用 Markdown 的人都遇到过最后一步的麻烦：文章写完了，代码块、表格、公式都有，粘贴到公众号编辑器里格式就垮了——代码丢了背景色、表格塌成纯文本、图片要一张张重新传。手工修的时间有时比最后校对还长。\r\n\r\n知乎和掘金对 Markdown 友好一些，但每家渲染还是略有差别，维护三份手调过的副本是另一笔税。\r\n\r\n我做 MD Publisher 就是为了把这一步省掉：只留一个 Markdown 源文件，它在浏览器里按三家各自的粘贴格式各渲染一份。\r\n\r\n- 微信 Tab：带样式的 HTML 预览，复制后粘贴进公众号编辑器。\r\n- 知乎 Tab：干净 Markdown 预览，一键复制（统一换行、清行尾空白）。\r\n- 掘金 Tab：同上，另加代码块语言别名规范化（js→javascript、py→python、sh→bash 等 16 组，未知语言原样保留）。\r\n\r\n它是基于开源项目 doocs/md 做的浏览器插件，纯前端排版加复制，不调用公众号 API，没有账号体系。图床默认 GitHub，需要自己配 Token。\r\n\r\n现状（实话实说，量很小）：\r\n\r\n- Edge 商店免费版 v2.1.3，2026-10-05 上架；网页版不用安装也能用。\r\n- 周活跃用户 6 → 8 → 7 → 9（10 月 25 日到 11 月 15 日四周）；评分 / 评论 0 / 0。\r\n- Pro 版（三平台一键打包导出：微信 HTML + 知乎 / 掘金 Markdown → zip）还在准备，暂时没有购买链接。\r\n\r\n它不会替你写文章，粘贴后还是建议检查一下代码块和表格——各家编辑器会变。但重复排版这一步，确实不用再花一晚上。\r\n\r\nEdge 商店：https://microsoft",
@@ -751,11 +732,29 @@
       "url": "https://www.v2ex.com/t/1258855",
       "posted_at": "2026-11-22 10:31 Asia/Shanghai",
       "engagement": {
-        "replies": 30
+        "replies": 31
       },
       "original_title": "Apple Watch：戴了 8 年，我的使用测评",
       "original_summary": "Apple Watch：戴了 8 年，我的使用测评\n从 2018 年购买第一块 Apple Watch，至今 3186 天了。这期间，除了洗澡或者充电，无论是运动、睡觉，无时无刻我都戴着它，那么，佩戴智能手表这 8 年，它对我有什么改变，是否值得呢？我觉得是十分值得，也非常推荐你尝试智能手表\r\n\r\n\r\n![Pasted image 20261118194900.png](https://blog.scond.me/img/article-studio/2026-11-22-02-Apple-Watch-%E6%88%B4%E4%BA%868%E5%B9%B4-%E6%88%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B5%8B%E8%AF%84/02-Pasted-image-20261118194900.png)\r\n\r\n\r\n## 1. 运动习惯的养成\r\n\r\n每天，Apple Watch 都会提醒你完成运动圆环，从 Apple Watch 购买至今，我的每天目标是：活动 350 千卡、锻炼 30 分钟，站立 12 小时。刚才看了一眼，我已经累计合上所有圆环 2144 次（当天三个圆环全部合上）\r\n\r\n\r\n![9B00062A-0E87-43F5-A3D9-96CAF23914E3_1_105_c.jpeg](https://blog.scond.me/img/article-studio/2026-11-22-02-Apple-Watch-%E6%88%B4%E4%BA%868%E5%B9%B4-%E6%88%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B5%8B%E8%AF%84/03-9B00062A-0E87-43F5-A3D9-96CAF23914E3-1-105-c.jpg)\r\n\r\n\r\n最开始，只是为了完成任务，获得勋章",
       "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-enapt-swarmllm",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "enapt/SwarmLLM：本机跑大模型、可跨机协作的免费开源应用",
+      "summary": "免费开源应用，可在自己电脑运行 AI 聊天模型，也能让多台机器联网合跑单机放不下的模型，提供兼容 OpenAI 和 Anthropic 的 API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-22 13:46 Asia/Shanghai",
+      "engagement": {
+        "stars": 91
+      },
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
+      "translated_by": "model"
     },
     {
       "id": "disc-itsdecodingai-building-a-coding-agent-from-scratch-course",
