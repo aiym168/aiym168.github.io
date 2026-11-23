@@ -1,15 +1,34 @@
 {
   "date": "2026-11-23",
-  "updated_at": "2026-11-23T08:09+08:00",
-  "updated_at_label": "2026-11-23 08:09 Asia/Shanghai",
+  "updated_at": "2026-11-23T09:52+08:00",
+  "updated_at_label": "2026-11-23 09:52 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50606386",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Show HN：国际象棋生物黑客实验，咖啡能提升棋力吗",
+      "summary": "作者在自建生物黑客平台 PRP 新增国际象棋实验室，用研究数据测试咖啡对棋手表现的影响。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "srdjanb",
+      "url": "https://plantsresearch.pro/chess-lab",
+      "posted_at": "2026-11-23 09:38 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: Biohacking in Chess – can coffee make you a better player?",
+      "original_summary": "Show HN: Biohacking in Chess – can coffee make you a better player? In short:<p>For the past few years, I&#x27;ve been building a biohacking platform called Plants Research Pro (PRP), designed to help people discover research on bioactive materials and put that research to practical use. Recently, I added a new feature to PRP which is turning out to be my favorite so far: The Chess Lab. This is essentially a set of tools and protocols for biohacking in chess, some of which you can try right now via the link -- I recommend a Single-Session Experiment, which is a 6-test protocol that lets you explore how some intervention, like coffee, might improve your cognitive function in the context of chess.<p>-<p>In detail:<p>The idea for Chess Lab started about four years ago when I came across resea",
+      "translated_by": "model"
+    },
     {
       "id": "hn-50604195",
       "source": "Hacker News",
       "category": "科技软件/App 限免",
-      "title": "显示 HN：Gall – 24GB M2 上的 Inkling 2 Mini，在消息之间释放 RAM",
-      "summary": "Show HN：Gall – Inkling 2 Mini 在 24GB M2 上，在消息之间释放 RAM Thinking Machines Lab 给出了 32GB 作为 Mac 上 Inkling 2 Mini 的最低 RAM 要求，但有了 Q3 Quant，我觉得在我的 24GB M2 MacBook Air 上一定有可能找到合理的地方。<p>即使打了补丁，Llama.cpp 也没有削减它，所以我花了这周的 Fable 津贴（撒了一点 Astra）在此自定义推理引擎上，并借此机会添加了一些优化和人体工程学，以便在内存受限的笔记本电脑上运行：<p>- 一次严格加载一个模型，请求排队；\n- 每次响应（或可配置的延迟）后，KV 缓存都会被保存并卸载模型，因此 RAM 在调用之间保持在 50MB，但重新加载速度很快；\n- 菜单栏应用程序在预填充时显示状态和图标变化&#x2",
+      "title": "Show HN：Gall 在 24GB M2 上运行 Inkling 2 Mini，消息间释放内存",
+      "summary": "作者用 Q3 量化在 24GB M2 MacBook Air 上运行 Inkling 2 Mini，并在消息之间释放 RAM。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
       "author": "ltrg",
@@ -17,18 +36,18 @@
       "posted_at": "2026-11-23 05:40 Asia/Shanghai",
       "engagement": {
         "points": 5,
-        "comments": 1
+        "comments": 2
       },
       "original_title": "Show HN: Gall – Inkling 2 Mini on 24GB M2, frees RAM between messages",
       "original_summary": "Show HN: Gall – Inkling 2 Mini on 24GB M2, frees RAM between messages Thinking Machines Lab gives 32GB as the minimum RAM requirement for Inkling 2 Mini on Mac, but with the Q3 quant I felt it must be possible to get somewhere reasonable on my 24GB M2 MacBook Air.<p>Llama.cpp wasn&#x27;t cutting it even with patches, so I spent this week&#x27;s Fable allowance (with a sprinkling of Astra) on this custom inference engine, and took the opportunity to add some optimisations and ergonomics for running on a memory-constrained laptop:<p>- strictly one model loaded at a time, requests queued;\n- KV cache gets saved and model unloaded after every response (or configurable delay), so RAM stays at 50MB between calls, but reload is fast;\n- menu bar app shows status and icon changes when prefilling&#x2",
-      "translated_by": "free-translate"
+      "translated_by": "model"
     },
     {
       "id": "hn-50604007",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
-      "title": "Show HN：我写了两次 FlightTrack",
-      "summary": "Show HN：我编写了两次 FlightTrack FlightTrack 是我在 App Store 早期使用的 iPhone 航班追踪器（4 年里最畅销的旅行应用程序），我只是从头开始重写它。<p>我第一次编写 FlightTrack 是在 2008 年，作为一个业余项目。它做得非常好，我辞掉了日常工作，围绕它创办了一家公司，该公司在 2010 年被 Expedia 收购；Expedia 于 2017 年停用了该应用程序。那时我已经精疲力尽，并将精力集中在古典歌唱上，结果证明这意味着住在机场。但我错过了这个应用程序。<p>今年夏天，我开始从头开始重建它，其设计灵感来自于 Paul Mijksenaar 在阿姆斯特丹史基浦机场的精美标牌，并与 Claude 合作用 Go 编写了一个服务器，并用 Swift 编写了一个 iOS 应用程序。2008 年，v1.0 花了我 6 周的晚上/周末；不",
+      "title": "Show HN：我重写了 FlightTrack 航班追踪应用",
+      "summary": "作者把 2008 年的 iPhone 航班追踪应用 FlightTrack 从零重写，原应用曾被 Expedia 收购后停用。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
       "author": "bkazez",
@@ -40,13 +59,13 @@
       },
       "original_title": "Show HN: I wrote FlightTrack twice",
       "original_summary": "Show HN: I wrote FlightTrack twice FlightTrack was my iPhone flight tracker from the early App Store days (bestselling travel app for 4 years), and I just rewrote it from scratch.<p>I first wrote FlightTrack as a side project in 2008. It did really well and I quit my day job and started a company around it that was bought by Expedia in 2010; Expedia retired the app in 2017. By then I had burned out and focused my energy on classical singing, which turns out to mean living in airports. But I missed the app.<p>This summer I started rebuilding it from scratch, with a design inspired by Paul Mijksenaar&#x27;s fantastic signage at Amsterdam&#x27;s Schiphol airport, and working with Claude to write a server in Go and an iOS app in Swift. In 2008 v1.0 took me 6 weeks of evenings&#x2F;weekends; no",
-      "translated_by": "free-translate"
+      "translated_by": "model"
     },
     {
       "id": "hn-50604005",
       "source": "Hacker News",
       "category": "AI 开发工具与编程助手",
-      "title": "可提高视频帧率的免费 AI 应用程序",
+      "title": "免费 AI 应用可提升视频帧率",
       "summary": "可提高视频帧率的免费 AI 应用程序",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
@@ -58,8 +77,8 @@
         "comments": 0
       },
       "original_title": "Free AI app that improves framerate of videos",
-      "original_summary": "Free AI app that improves framerate of videos",
-      "translated_by": "free-translate"
+      "original_summary": "Free AI app that improves framerate of videos ",
+      "translated_by": "model"
     },
     {
       "id": "hn-50603477",
@@ -135,6 +154,25 @@
       },
       "original_title": "Show HN: A free website check that starts from what your buyers search",
       "original_summary": "Show HN: A free website check that starts from what your buyers search I made Admiral. It is a tool to check that Google and Meta ads are working properly. This is its free website check: you don&#x27;t need an account and no changes will happen on your site. It will ask for a website URL and it will tell you 6 things about it. Each of the 6 is one sentence. If it is &quot;Good&quot; then no change is needed. If it is &quot;Worth fixing&quot; then it says what is wrong.<p>1. Where you are in search. Admiral will read your pages and tell you, for the searches someone might type in Google to find you, whether you are in the first page on Google. If Admiral cannot work out which words someone might type, it will say that instead of guessing.<p>2. Whether AI assistants can read your home page.",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50597676",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "Lean 应感到羞耻",
+      "summary": "文章讨论机器证明技术依赖数学家和工程师数十年努力，以及形式验证器在 AI 循环中的作用。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "LTaoist",
+      "url": "https://news.ycombinator.com/item?id=50597676",
+      "posted_at": "2026-11-22 17:08 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "original_title": "Lean Should Be Ashamed",
+      "original_summary": "Lean Should Be Ashamed The development of machine proof technology is indebted to the joint efforts of mathematicians and engineers over decades. Owing to the scalability of machine computation, it has become difficult for humans to fully verify the output of artificial intelligence. Formal verifiers taking part in the loop of artificial intelligence have gained recognition from mathematicians and others, and are currently a key node with the greatest promise for governing AI through AI. Several mathematicians have criticized some large companies for using AI in mathematical research without standards, in violation of the values of academic research.<p>17.3 million lines of Lean code were disclosed by a mathematics researcher at an AI company. This includes about 170,000 modules. The proof",
       "translated_by": "model"
     },
     {
@@ -226,7 +264,7 @@
       "posted_at": "2026-11-19 21:21 Asia/Shanghai",
       "engagement": {
         "points": 129,
-        "comments": 95
+        "comments": 96
       },
       "original_title": "Show HN: Foolscap – a writing app that reads your book and never writes for you",
       "original_summary": "Show HN: Foolscap – a writing app that reads your book and never writes for you People are scared of their ability to write and think atrophying, so I wondered: what if I built something that enhanced human creativity instead of destroying it by doing the thinking and writing for people? Foolscap is the result, or at least the first version of that idea that&#x27;s fleshed out enough to share here.<p>It reads as you write and picks out the structure: characters, ideas, threads, what&#x27;s left hanging. You can respond to what it picks out, so there&#x27;s a dialectic between the system and you as the writer. There&#x27;s also an agent on the side, plugged into the same system, so you can ask about your book and fire off actions through conversation. It never writes into your work.<p>The s",
@@ -252,44 +290,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50550896",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Intrusive.ai：开源 AI 攻击模拟平台",
-      "summary": "开源 AI 攻击模拟平台，可按 OWASP Agentic 应用 Top 10 等标准在非生产环境测试智能体。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "tomhavoc",
-      "url": "https://intrusive.ai/",
-      "posted_at": "2026-11-19 03:29 Asia/Shanghai",
-      "engagement": {
-        "points": 3,
-        "comments": 0
-      },
-      "original_title": "Show HN: Intrusive.ai – open-source AI attack simulation",
-      "original_summary": "Show HN: Intrusive.ai – open-source AI attack simulation I created the INTRUSIVE.AI platform to give agent builders the ability to evaluate their agents against OWASP&#x27;s Top 10 for Agentic Applications (and more generally, just to allow for comprehensive testing in a non-production environment).<p>Through my own experience with evaluating agents, I found indirect prompt injection testing to be especially difficult due to the architectural nature of it. To overcome that challenge, I created Interceptor Sandbox - a sandbox that runs agents in a simulated environment where all of the services an agent might rely on (HTTP, MCP, Postgres&#x2F;pgvector to name a few) can be &quot;intercepted&quot; via an injection API to inject malicious payloads.<p>Interceptor Sandbox:\n<a href=\"https:&#x2F;",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50546530",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Reflektor：把 AI 生成的 PR 整理成人类可审阅的报告",
-      "summary": "自托管工具将拉取请求转为易读报告，让人只细看关键改动、略读其余部分。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "anurbasic",
-      "url": "https://github.com/bashovski/reflektor",
-      "posted_at": "2026-11-18 22:10 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 2
-      },
-      "original_title": "Show HN: Reflektor – Turn AI PRs into something a human can review",
-      "original_summary": "Show HN: Reflektor – Turn AI PRs into something a human can review Hi folks,<p>AI has changed how we write code in the past year. Now humans are the bottleneck for releases, and the real fix is to change how we review pull requests.<p>So I decided to build Reflektor: a tool you run yourself that turns a PR into an easy-to-read report. You review the changes that matter and skim the rest, and you can share the report with your team via our free-to-use platform.<p>Check out the platform and the repo :<p>Free and open source.\nGitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;bashovski&#x2F;reflektor\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;bashovski&#x2F;reflektor</a>",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50589229",
       "source": "Hacker News",
       "category": "科技软件/App 限免",
@@ -312,8 +312,8 @@
       "id": "hn-50605527",
       "source": "Hacker News",
       "category": "科技软件/App 限免",
-      "title": "Show HN：我用音乐和白噪声构建了一个简单的环境声音应用程序",
-      "summary": "Show HN：我用音乐和白噪声构建了一个简单的环境声音应用程序 Hello HN<p>我制作了 PureSound，这是一款 iOS 应用程序，您可以在其中以任何频率（双耳节拍/视唱练耳音调）和慢速合成音乐混合雨、海浪、火等的现场录音，应用程序会自动将音乐调整到正确的音调。<p>如果您不想混合声音，可以选择预制的音景来睡眠、平静或集中注意力。<p>该应用程序可以免费使用无广告，无需帐户，可离线工作 - 付费订阅即可完全访问库中的所有声音。<p>感谢您对新声音/功能的任何反馈和建议。<p><a href=\"https://apps.apple.com/us/app/puresound-sleep-calm-focus/id6758267180\">https://ap",
+      "title": "Show HN：我做了可混合音乐和白噪音的环境音应用",
+      "summary": "PureSound 是一款 iOS 应用，可混合雨声、海浪、火焰等现场录音、双耳节拍和慢速合成音乐。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
       "author": "jrrc_dev",
@@ -325,26 +325,26 @@
       },
       "original_title": "Show HN: I built a simple ambient sounds app with music and white noise",
       "original_summary": "Show HN: I built a simple ambient sounds app with music and white noise Hello HN<p>I made PureSound, an iOS app where you can mix field recordings of rain, waves, fire etc. with any frequency (binaural beat&#x2F;solfeggio tone) and slow synth music which the app automatically tunes the music to the correct pitch.<p>If you don&#x27;t want to mix sounds there&#x27;s pre made soundscapes to choose from for sleep, calm or focus.<p>The app is free to use with no ads, no account required and works offline- there is a paid subscription for full access to all sounds in the library.<p>I appreciate any feedback and suggestions you may have for new sounds&#x2F;features.<p><a href=\"https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;puresound-sleep-calm-focus&#x2F;id6758267180\">https:&#x2F;&#x2F;ap",
-      "translated_by": "free-translate"
+      "translated_by": "model"
     },
     {
       "id": "hn-50605439",
       "source": "Hacker News",
       "category": "科技软件/App 限免",
-      "title": "Show HN：Lexis World – 一款适合还不需要知道任何单词的孩子的文字游戏",
-      "summary": "Show HN：Lexis World – 一款专为还不需要知道任何单词的孩子设计的文字游戏 Hi HN，<p>2018 年，我发布了一款名为 Lexi’s World 的儿童应用程序。我花了四年的时间来制作它，我对此感到非常自豪。<p>莱克西是一个小女孩，独自生活在一个小星球上。孩子们用键盘输入动物和植物的名字，然后这些动物和植物就会和她一起来到这个星球上。键盘只能让你输入游戏中存在的真实单词，因此它是为刚刚开始对字母和单词感兴趣的孩子设计的。<p>你可以输入 DOG，然后会出现一只 DOG，输入 BONE，它就会有东西吃。\n输入 POND、OTTER、REEDS、DRAGONFLY、FROG、FLY、LILY 并添加另一个 OTTER，你就得到了一个漂亮的小池塘场景\n输入 GORILLA 三遍，你就可以和家人一起出去玩\n有很多东西有待发现。<p>它得到了",
+      "title": "Lexis World：不识字也能玩的儿童单词游戏",
+      "summary": "孩子用键盘输入动物和植物名称，它们就会来到小女孩 Lexi 的小星球上，键盘只允许输入真实单词。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
       "author": "piwakawaka",
       "url": "https://lexisworld.org",
       "posted_at": "2026-11-23 07:52 Asia/Shanghai",
       "engagement": {
-        "points": 1,
+        "points": 2,
         "comments": 0
       },
       "original_title": "Show HN: Lexis World – a word game for kids who don't need to know any words yet",
       "original_summary": "Show HN: Lexis World – a word game for kids who don't need to know any words yet Hi HN,<p>In 2018 I released a kids’ app called Lexi’s World. It took me four years to make, and I was very proud of it.<p>Lexi is a little girl who lives alone on a tiny planet. Kids use a keyboard to type the names of animals and plants, which then join her on the planet. The keyboard only lets you type real words that exist in the game, so it’s made for kids who are just starting to get interested in letters and words.<p>You can type in DOG and a DOG appears, type in BONE and it has something to eat.\nType POND, OTTER, REEDS, DRAGONFLY, FROG, FLY, LILY and add another OTTER and you have a nice little pond scene\nType GORILLA three times and you get a family to hang out with\nThere is a lot to discover.<p>It got",
-      "translated_by": "free-translate"
+      "translated_by": "model"
     },
     {
       "id": "hn-50599027",
@@ -461,44 +461,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50568763",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Zeus：面向 AI 语音代理的 Claude Code 式平台",
-      "summary": "ThunderPhone 团队推出，主打无需大量手动调参就能让 AI 电话通话真正可用。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "kolchinski",
-      "url": "https://thunderphone.com/blog/introducing-zeus",
-      "posted_at": "2026-11-20 08:51 Asia/Shanghai",
-      "engagement": {
-        "points": 3,
-        "comments": 1
-      },
-      "original_title": "Show HN: Zeus – Claude Code for AI voice agents",
-      "original_summary": "Show HN: Zeus – Claude Code for AI voice agents Hi everyone, Alex here - I’m one of the founders of ThunderPhone. We’re excited to announce the launch of Zeus, a platform that makes AI phone calls actually work without extensive hand-tuning!<p>You can see a head-to-head I made of the last version of ThunderPhone vs this one here: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=YlkIc3L29lo\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=YlkIc3L29lo</a><p>A (somewhat long) summary:<p>When we started building business phone agents in 2024, we kept running into technical problems that ruined calls, caused by the limits of existing architectures. The two biggest issues were that phone agents misheard callers, and disobeyed scripts or responded in weird ways.<p>Both stemme",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50567922",
-      "source": "Hacker News",
-      "category": "云服务/GPU/开发者资源",
-      "title": "Jev：自动为 GitHub PR 打标签的服务",
-      "summary": "读取 PR 标题、正文和 diff 判断类型并打标签，支持自定义标签与判定标准。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "mtanaka",
-      "url": "https://checks.dorbit.ai/",
-      "posted_at": "2026-11-20 07:14 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Auto PR Labeling with Jev",
-      "original_summary": "Show HN: Auto PR Labeling with Jev Hi HN,<p>I built a service to automatically label PRs on GitHub.\nIt reads the PR title, body, and diff and classifies types of the PR, such as &quot;document only&quot;, &quot;breaking change&quot;, and &quot;needs GPU test&quot;.\nIt internally calls Jev for labeling.\nYou can define custom labels and criteria as well as use preset ones.<p>It was useful for me to reduce CI costs. Especially, it helped us with skipping expensive GPU tests.<p>Please feel free to try it out. You don&#x27;t need to sign up to test it with preset labels.\nJust enter a PR URL and see how it works.",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50546704",
       "source": "Hacker News",
       "category": "AI 产品会员/试用",
@@ -521,7 +483,7 @@
       "id": "hn-50603754",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
-      "title": "Show HN：股票新闻 API – 免费头条新闻，包含 10,000 只美国股票的情绪",
+      "title": "Stock News API：覆盖1万家美股的免费新闻标题与情绪数据",
       "summary": "Show HN：股票新闻 API – 免费头条新闻，包含 10,000 只美国股票的情绪",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
@@ -533,8 +495,8 @@
         "comments": 0
       },
       "original_title": "Show HN: Stock News API – free headlines with sentiment for 10k US stocks",
-      "original_summary": "Show HN: Stock News API – free headlines with sentiment for 10k US stocks",
-      "translated_by": "free-translate"
+      "original_summary": "Show HN: Stock News API – free headlines with sentiment for 10k US stocks ",
+      "translated_by": "model"
     },
     {
       "id": "hn-50603421",
@@ -548,7 +510,7 @@
       "url": "https://www.taskless.io/",
       "posted_at": "2026-11-23 04:11 Asia/Shanghai",
       "engagement": {
-        "points": 4,
+        "points": 5,
         "comments": 2
       },
       "original_title": "Show HN: Taskless, turn AGENTS.md and PR comments into runnable checks",
@@ -624,7 +586,7 @@
       "url": "https://www.v2ex.com/t/1258976",
       "posted_at": "2026-11-23 01:28 Asia/Shanghai",
       "engagement": {
-        "replies": 1
+        "replies": 4
       },
       "original_title": "[开源] 想让闲置的 Windows 电脑重新上桌，我做了 Pierdesk",
       "original_summary": "[开源] 想让闲置的 Windows 电脑重新上桌，我做了 Pierdesk\n大家好，我是 Pierdesk 的作者。\r\n\r\n家里有几台 Windows 电脑，我想让它们都在桌上派上用场。比如台式机写代码，一台笔记本开文档、看日志，另一台跑测试。看到有用的东西，鼠标移过去就能操作。要把一整个项目文件夹交给跑测试的机器，按平时习惯的 Ctrl+C、Ctrl+V 就行。\r\n\r\n于是我做了 Pierdesk。多台 Windows 电脑连到同一个局域网，运行 Pierdesk 并完成配对后，就能共享剪贴板，在电脑之间复制多个文件或整个文件夹。文件直接走局域网。配合跨屏键鼠，一套鼠标和键盘就可以在桌上的几台电脑之间来回用。\r\n\r\n商业远程桌面软件通常把另一台电脑的画面传到当前设备，适合异地办公或远程协助。Pierdesk 面向的是多台电脑并排使用的场景。每台电脑各自用自己的屏幕、跑自己的程序，你可以在它们之间切换操作、粘贴文字和传文件。\r\n\r\nPierdesk 用 Rust 写，免费开源（GPL-3.0）。目前是 Beta，支持 Windows 10 / 11 x64。一个约 14 MB 的 EXE，免安装，平时待在系统托盘。\r\n\r\n- [官网](https://pierdesk.pages.dev/)\r\n- [GitHub 源码](https://github.com/micky-meecky/Pierdesk)\r\n- [下载 pierdesk.exe](https://github.com/micky-meecky/Pierdesk/releases)\r\n\r\n这是我自己为爱发电做的项目。如果它帮你把闲置电脑重新用起来了，欢迎点个 Star，也欢迎在官网自愿打赏，请我喝杯咖啡。\r\n\r\n如果你桌上也摆了几台电脑，好奇你是怎么给它们分工的。愿意试用的话，也欢迎说说你接了几台、屏幕怎么摆",
@@ -667,60 +629,6 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1258960",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "PuoAI 绘图中转站点上线，GPT-Image2.6 画图仅 0.02",
-      "summary": "PuoAI 绘图中转站点上线，GPT-Image2.6 画图仅 0.02\n站点地址：https://puoai.com/\r\n\r\n✅ 主打绘图，线路稳定，出图不崩\r\n\r\n✅ 支持 GPT-Image2.6 + Nano-Banana\r\n\r\n✅ GPT-Image2.6 仅 0.02 / 张\r\n\r\n✅ 注册直接送 100 张免费额度\r\n\r\n✅ OpenAI 兼容接口，对接各类绘图客户端\r\n\r\n✅ 低延迟，支持流式出图\r\n\r\n专注 AI 绘图中转，长期稳定维护，适合个人创作、接单出图、批量生成素材。\r\n\r\n欢迎各位体验",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "KuiLei",
-      "url": "https://www.v2ex.com/t/1258960",
-      "posted_at": "2026-11-22 22:44 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "PuoAI 绘图中转站点上线，GPT-Image2.6 画图仅 0.02",
-      "original_summary": "PuoAI 绘图中转站点上线，GPT-Image2.6 画图仅 0.02\n站点地址：https://puoai.com/\r\n\r\n✅ 主打绘图，线路稳定，出图不崩\r\n\r\n✅ 支持 GPT-Image2.6 + Nano-Banana\r\n\r\n✅ GPT-Image2.6 仅 0.02 / 张\r\n\r\n✅ 注册直接送 100 张免费额度\r\n\r\n✅ OpenAI 兼容接口，对接各类绘图客户端\r\n\r\n✅ 低延迟，支持流式出图\r\n\r\n专注 AI 绘图中转，长期稳定维护，适合个人创作、接单出图、批量生成素材。\r\n\r\n欢迎各位体验",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258953",
-      "source": "V2EX",
-      "category": "科技软件/App 限免",
-      "title": "做了款支持 macOS / Windows / Linux (Wayland/niri) / Android 的局域网跨屏键鼠软件「大象漫步 1.0」",
-      "summary": "做了款支持 macOS / Windows / Linux (Wayland/niri) / Android 的局域网跨屏键鼠软件「大象漫步 1.0」\n平时桌上同时摆着 Linux（niri/Wayland）、Mac、Windows 和 Android 平板手机，每天换手上百次。\r\n\r\n以前用 LAN Mouse、Barrier / Deskflow 撑了很久，它们都是很棒的开源工具，但有四个每天都撞上的痛点：\r\n1. 换个 Wi-Fi 或 DHCP 变了 IP，就得重新配地址和端口；\r\n2. 只能设上下左右，大显示器挨着小平板时比例错位，平板一转屏布局就乱；\r\n3. 电脑和 Android 平板之间不能直接跨屏复制粘贴图片，每次还得靠微信/飞书给自己发消息；\r\n4. Android 端想做到真正的边缘穿屏 + 完整键盘 + 多指手势，要么需要 Root，要么要折腾 Shizuku。\r\n\r\n于是从 10 月开始自己从零写了一套，最近刚把 **大象漫步（Elephant Walk）1.0** 放出来：\r\n\r\n- 官网：https://ew.4ier.icu/zh/\r\n- 公开文档 / 安全架构 / Issue 仓库：https://github.com/4ier-icu/elephant-walk\r\n\r\n### 主要特性\r\n- **四端原生覆盖**：\r\n  - **macOS**：Apple Silicon（M1+），macOS 13+（支持 DMG 直接下载，也刚建好了 Homebrew Tap：`brew tap 4ier-icu/tap && brew install --cask elephant-walk`）\r\n  - **Windows**：Windows 10/11（绿色便携免安装 exe，支持 x64 & ARM64）\r\n  - **Linux**：64 位",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "4ier",
-      "url": "https://www.v2ex.com/t/1258953",
-      "posted_at": "2026-11-22 22:07 Asia/Shanghai",
-      "engagement": {
-        "replies": 1
-      },
-      "original_title": "做了款支持 macOS / Windows / Linux (Wayland/niri) / Android 的局域网跨屏键鼠软件「大象漫步 1.0」",
-      "original_summary": "做了款支持 macOS / Windows / Linux (Wayland/niri) / Android 的局域网跨屏键鼠软件「大象漫步 1.0」\n平时桌上同时摆着 Linux（niri/Wayland）、Mac、Windows 和 Android 平板手机，每天换手上百次。\r\n\r\n以前用 LAN Mouse、Barrier / Deskflow 撑了很久，它们都是很棒的开源工具，但有四个每天都撞上的痛点：\r\n1. 换个 Wi-Fi 或 DHCP 变了 IP，就得重新配地址和端口；\r\n2. 只能设上下左右，大显示器挨着小平板时比例错位，平板一转屏布局就乱；\r\n3. 电脑和 Android 平板之间不能直接跨屏复制粘贴图片，每次还得靠微信/飞书给自己发消息；\r\n4. Android 端想做到真正的边缘穿屏 + 完整键盘 + 多指手势，要么需要 Root，要么要折腾 Shizuku。\r\n\r\n于是从 10 月开始自己从零写了一套，最近刚把 **大象漫步（Elephant Walk）1.0** 放出来：\r\n\r\n- 官网：https://ew.4ier.icu/zh/\r\n- 公开文档 / 安全架构 / Issue 仓库：https://github.com/4ier-icu/elephant-walk\r\n\r\n### 主要特性\r\n- **四端原生覆盖**：\r\n  - **macOS**：Apple Silicon（M1+），macOS 13+（支持 DMG 直接下载，也刚建好了 Homebrew Tap：`brew tap 4ier-icu/tap && brew install --cask elephant-walk`）\r\n  - **Windows**：Windows 10/11（绿色便携免安装 exe，支持 x64 & ARM64）\r\n  - **Linux**：64 位",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1258941",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "MD Publisher：写一篇 Markdown，一次排好微信 / 知乎 / 掘金三家版式",
-      "summary": "MD Publisher：写一篇 Markdown，一次排好微信 / 知乎 / 掘金三家版式\n写技术文章用 Markdown 的人都遇到过最后一步的麻烦：文章写完了，代码块、表格、公式都有，粘贴到公众号编辑器里格式就垮了——代码丢了背景色、表格塌成纯文本、图片要一张张重新传。手工修的时间有时比最后校对还长。\r\n\r\n知乎和掘金对 Markdown 友好一些，但每家渲染还是略有差别，维护三份手调过的副本是另一笔税。\r\n\r\n我做 MD Publisher 就是为了把这一步省掉：只留一个 Markdown 源文件，它在浏览器里按三家各自的粘贴格式各渲染一份。\r\n\r\n- 微信 Tab：带样式的 HTML 预览，复制后粘贴进公众号编辑器。\r\n- 知乎 Tab：干净 Markdown 预览，一键复制（统一换行、清行尾空白）。\r\n- 掘金 Tab：同上，另加代码块语言别名规范化（js→javascript、py→python、sh→bash 等 16 组，未知语言原样保留）。\r\n\r\n它是基于开源项目 doocs/md 做的浏览器插件，纯前端排版加复制，不调用公众号 API，没有账号体系。图床默认 GitHub，需要自己配 Token。\r\n\r\n现状（实话实说，量很小）：\r\n\r\n- Edge 商店免费版 v2.1.3，2026-10-05 上架；网页版不用安装也能用。\r\n- 周活跃用户 6 → 8 → 7 → 9（10 月 25 日到 11 月 15 日四周）；评分 / 评论 0 / 0。\r\n- Pro 版（三平台一键打包导出：微信 HTML + 知乎 / 掘金 Markdown → zip）还在准备，暂时没有购买链接。\r\n\r\n它不会替你写文章，粘贴后还是建议检查一下代码块和表格——各家编辑器会变。但重复排版这一步，确实不用再花一晚上。\r\n\r\nEdge 商店：https://microsoft",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "bluesky1001",
-      "url": "https://www.v2ex.com/t/1258941",
-      "posted_at": "2026-11-22 20:46 Asia/Shanghai",
-      "engagement": {
-        "replies": 2
-      },
-      "original_title": "MD Publisher：写一篇 Markdown，一次排好微信 / 知乎 / 掘金三家版式",
-      "original_summary": "MD Publisher：写一篇 Markdown，一次排好微信 / 知乎 / 掘金三家版式\n写技术文章用 Markdown 的人都遇到过最后一步的麻烦：文章写完了，代码块、表格、公式都有，粘贴到公众号编辑器里格式就垮了——代码丢了背景色、表格塌成纯文本、图片要一张张重新传。手工修的时间有时比最后校对还长。\r\n\r\n知乎和掘金对 Markdown 友好一些，但每家渲染还是略有差别，维护三份手调过的副本是另一笔税。\r\n\r\n我做 MD Publisher 就是为了把这一步省掉：只留一个 Markdown 源文件，它在浏览器里按三家各自的粘贴格式各渲染一份。\r\n\r\n- 微信 Tab：带样式的 HTML 预览，复制后粘贴进公众号编辑器。\r\n- 知乎 Tab：干净 Markdown 预览，一键复制（统一换行、清行尾空白）。\r\n- 掘金 Tab：同上，另加代码块语言别名规范化（js→javascript、py→python、sh→bash 等 16 组，未知语言原样保留）。\r\n\r\n它是基于开源项目 doocs/md 做的浏览器插件，纯前端排版加复制，不调用公众号 API，没有账号体系。图床默认 GitHub，需要自己配 Token。\r\n\r\n现状（实话实说，量很小）：\r\n\r\n- Edge 商店免费版 v2.1.3，2026-10-05 上架；网页版不用安装也能用。\r\n- 周活跃用户 6 → 8 → 7 → 9（10 月 25 日到 11 月 15 日四周）；评分 / 评论 0 / 0。\r\n- Pro 版（三平台一键打包导出：微信 HTML + 知乎 / 掘金 Markdown → zip）还在准备，暂时没有购买链接。\r\n\r\n它不会替你写文章，粘贴后还是建议检查一下代码块和表格——各家编辑器会变。但重复排版这一步，确实不用再花一晚上。\r\n\r\nEdge 商店：https://microsoft",
-      "translated_by": "free-translate"
-    },
-    {
       "id": "v2ex-1258855",
       "source": "V2EX",
       "category": "科技软件/App 限免",
@@ -732,11 +640,101 @@
       "url": "https://www.v2ex.com/t/1258855",
       "posted_at": "2026-11-22 10:31 Asia/Shanghai",
       "engagement": {
-        "replies": 31
+        "replies": 35
       },
       "original_title": "Apple Watch：戴了 8 年，我的使用测评",
       "original_summary": "Apple Watch：戴了 8 年，我的使用测评\n从 2018 年购买第一块 Apple Watch，至今 3186 天了。这期间，除了洗澡或者充电，无论是运动、睡觉，无时无刻我都戴着它，那么，佩戴智能手表这 8 年，它对我有什么改变，是否值得呢？我觉得是十分值得，也非常推荐你尝试智能手表\r\n\r\n\r\n![Pasted image 20261118194900.png](https://blog.scond.me/img/article-studio/2026-11-22-02-Apple-Watch-%E6%88%B4%E4%BA%868%E5%B9%B4-%E6%88%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B5%8B%E8%AF%84/02-Pasted-image-20261118194900.png)\r\n\r\n\r\n## 1. 运动习惯的养成\r\n\r\n每天，Apple Watch 都会提醒你完成运动圆环，从 Apple Watch 购买至今，我的每天目标是：活动 350 千卡、锻炼 30 分钟，站立 12 小时。刚才看了一眼，我已经累计合上所有圆环 2144 次（当天三个圆环全部合上）\r\n\r\n\r\n![9B00062A-0E87-43F5-A3D9-96CAF23914E3_1_105_c.jpeg](https://blog.scond.me/img/article-studio/2026-11-22-02-Apple-Watch-%E6%88%B4%E4%BA%868%E5%B9%B4-%E6%88%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B5%8B%E8%AF%84/03-9B00062A-0E87-43F5-A3D9-96CAF23914E3-1-105-c.jpg)\r\n\r\n\r\n最开始，只是为了完成任务，获得勋章",
       "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-nejib1-free-llm",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "nejib1/Free-LLM：79个免费LLM API与460+免费模型清单",
+      "summary": "汇总79家免费 LLM API 供应商和460多个免费模型的额度与免信用卡选项，并提供统一兼容端点和自动故障切换。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "nejib1",
+      "url": "https://github.com/nejib1/Free-LLM",
+      "posted_at": "2026-11-23 09:50 Asia/Shanghai",
+      "engagement": {
+        "stars": 1087
+      },
+      "original_title": "nejib1/Free-LLM",
+      "original_summary": "nejib1/Free-LLM 79 free LLM API providers & 460+ free models (limits, no-card options) + Free-LLM Router: all of them behind one OpenAI/Anthropic-compatible endpoint with instant failover. Run Claude Code, Codex, Cursor, Aider on free models. Gemini, Groq, Mistral, DeepSeek, Qwen & more. Synced daily.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-devbox-zero-ops-tokencost-zero",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "tokencost-zero：浏览器本地免费的LLM成本计算器",
+      "summary": "完全在浏览器本地运行的免费 LLM token 计数器与多模型 API 成本计算器，支持缓存命中建模。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "devbox-zero-ops",
+      "url": "https://github.com/devbox-zero-ops/tokencost-zero",
+      "posted_at": "2026-11-23 09:13 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "devbox-zero-ops/tokencost-zero",
+      "original_summary": "devbox-zero-ops/tokencost-zero Free 100% browser-local LLM token counter & multi-model API cost calculator (OpenAI, Claude, Gemini, DeepSeek, Qwen) with cache hit modeling.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Arsh624/llm4jobs-v2：免费运行的岗位雷达",
+      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历和地点筛选后每日邮件推送，可在 GitHub Actions 上免费运行。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-almaeedhi-hani-free-llm-api",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Almaeedhi-Hani/free-LLM-api：免费大模型 API 与自动化脚本",
+      "summary": "仓库提供免费 LLM API 相关代码，并说明如何用 Webhook 结合外部 API 和 Cron 任务实现自动更新与向 Google、Bing 发送收录信号。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Almaeedhi-Hani",
+      "url": "https://github.com/Almaeedhi-Hani/free-LLM-api",
+      "posted_at": "2026-11-13 00:06 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Almaeedhi-Hani/free-LLM-api",
+      "original_summary": "Almaeedhi-Hani/free-LLM-api الأكواد البرمجية للحل السحري (نظام الأتمتة الذاتية والتحديث اللحظي)  عزيزي المطور، قم ببرمجة النظام الداخلي للأتمتة عبر دمج كود الـ Webhook مع الـ API الخارجي لتشغيل التحديث الذاتي التلقائي (Cron Job):  كود إرسال إشارات الأرشفة الفورية (Google & Bing Webhook Trigger)",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-lucascinigalia-llm-service-core",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "LucasCinigalia/llm-service-core：免费开源的 LLM 服务 FastAPI 样板",
+      "summary": "采用六边形架构，提供供应商无关端口、结构化日志、类型化配置、契约测试和可脚本化假供应商，支持无成本测试。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "LucasCinigalia",
+      "url": "https://github.com/LucasCinigalia/llm-service-core",
+      "posted_at": "2026-11-21 13:02 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "LucasCinigalia/llm-service-core",
+      "original_summary": "LucasCinigalia/llm-service-core Production-ready FastAPI boilerplate for LLM services. Hexagonal architecture with a provider-agnostic port (Anthropic, OpenAI and OpenAI-compatible APIs), domain error translation, structured logging with request IDs, typed config, contract tests and a scriptable fake provider for cost-free testing.",
+      "translated_by": "model"
     },
     {
       "id": "ghdeal-enapt-swarmllm",

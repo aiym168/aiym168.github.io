@@ -4,19 +4,18 @@
   "deadline_extracted": 7,
   "drop:duplicate": 542,
   "drop:empty_summary": 69,
-  "drop:negative_signal": 150,
+  "drop:negative_signal": 149,
   "drop:no_clear_offer": 673,
-  "drop:not_ai": 575,
+  "drop:not_ai": 578,
   "drop:too_old_pre2025": 61,
-  "google_news_resolved": 707,
-  "google_news_total": 707,
+  "google_news_resolved": 709,
+  "google_news_total": 709,
   "kept_total": 231,
-  "net:gnews_cache_hit": 699,
-  "net:gnews_resolved_net": 8,
-  "net:tco_expanded": 7,
-  "net:tco_failed": 1,
-  "new_this_run": 3,
-  "raw_total": 2301
+  "net:gnews_cache_hit": 707,
+  "net:gnews_resolved_net": 2,
+  "net:tco_expanded": 1,
+  "net:tco_failed": 6,
+  "raw_total": 2303
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -63,6 +62,8 @@
    "@codyschneider 分享：为德州一家墨西哥卷饼连锁店做 UGC 风格广告，全程在一个终端内完成"
   ],
   "no_clear_offer": [
+   "@Sameek_Kundu 分享：用文字描述即可实时生成节点图，含 164 个节点，支持本地 AI 或 Claude、G",
+   "作者本想借 LLM 理解书中难点，目前还不需要",
    "别再烧 Claude 的积分了",
    "Meta 希望这款硬件能扩展其硬件业务，并为其 AI 助手带来更多用户",
    "@atomHQ 分享：焦点小组需要数周时间并花费数千美元",
@@ -72,9 +73,7 @@
    "与 @AMD 合作，我们的模型在不到五个月的时间里就发现旗舰 GPU IP 的 PPA 提高了 14%——建立在 AMD",
    "@TheEconomist 分享：AI 已经不仅仅是一个经济工具",
    "@BrockmesarichAI 分享：上传新闻或报告，数千个 AI 人物作出反应，再生成预测报告",
-   "@cincinosos 分享：审核 AI 看不到制作过程，本周抓出创作者认为没问题的排版错误",
-   "含官方 MCP 注册表、参考服务器、MCP Inspector、Playwright MCP 等",
-   "他说最好的工程师感叹从未如此用力思考：构建变便宜了，对齐并不便宜"
+   "@cincinosos 分享：审核 AI 看不到制作过程，本周抓出创作者认为没问题的排版错误"
   ],
   "not_ai": [
    "@github 分享：它不一定是非此即彼，在最新的 GitHub 播客上，我们与 2026 年商业开源状况研究背后的研究",
@@ -105,18 +104,16 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-23T08:12:30+08:00",
+ "generated_at": "2026-11-23T09:56:24+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-23T08:12:29+08:00",
+  "checked_at": "2026-11-23T09:56:24+08:00",
   "counts": {
    "gone": 1,
-   "ok": 202,
-   "recheck": 1,
-   "unsure": 2
+   "ok": 206
   },
   "hidden": 1
  },
- "seconds": 6.7,
+ "seconds": 3.2,
  "side": {
   "github_hot": {
    "drop:duplicate": 11,
@@ -125,11 +122,11 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 11,
-   "drop:not_ai_strict": 4,
-   "kept": 21,
-   "raw": 40
+   "drop:negative_signal": 3,
+   "drop:not_ai": 7,
+   "drop:not_ai_strict": 3,
+   "kept": 23,
+   "raw": 36
   }
  }
 }
