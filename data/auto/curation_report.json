@@ -2,20 +2,19 @@
  "counts": {
   "archived": 24,
   "deadline_extracted": 7,
-  "drop:duplicate": 542,
+  "drop:duplicate": 541,
   "drop:empty_summary": 69,
-  "drop:negative_signal": 149,
-  "drop:no_clear_offer": 673,
-  "drop:not_ai": 578,
+  "drop:negative_signal": 151,
+  "drop:no_clear_offer": 675,
+  "drop:not_ai": 576,
   "drop:too_old_pre2025": 61,
-  "google_news_resolved": 709,
-  "google_news_total": 709,
-  "kept_total": 231,
-  "net:gnews_cache_hit": 707,
+  "google_news_resolved": 711,
+  "google_news_total": 711,
+  "kept_total": 232,
+  "net:gnews_cache_hit": 709,
   "net:gnews_resolved_net": 2,
-  "net:tco_expanded": 1,
-  "net:tco_failed": 6,
-  "raw_total": 2303
+  "new_this_run": 1,
+  "raw_total": 2305
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -62,6 +61,8 @@
    "@codyschneider 分享：为德州一家墨西哥卷饼连锁店做 UGC 风格广告，全程在一个终端内完成"
   ],
   "no_clear_offer": [
+   "@malpani 分享：印度学生不需要再听课来告诉他们要更加努力",
+   "AI Pose Gallery 提供 490 多个姿势，可免费浏览，用于寻找创作角度",
    "@Sameek_Kundu 分享：用文字描述即可实时生成节点图，含 164 个节点，支持本地 AI 或 Claude、G",
    "作者本想借 LLM 理解书中难点，目前还不需要",
    "别再烧 Claude 的积分了",
@@ -71,9 +72,7 @@
    "@jasonlk 分享：标志墙没有吸引力，投资者想知道其中有多少徽标向您支付费用、金额以及它们是否正在扩张",
    "现实世界的生产力：为了加强模型在工业和专业工作流程中的协作能力，我们开发了 Work360",
    "与 @AMD 合作，我们的模型在不到五个月的时间里就发现旗舰 GPU IP 的 PPA 提高了 14%——建立在 AMD",
-   "@TheEconomist 分享：AI 已经不仅仅是一个经济工具",
-   "@BrockmesarichAI 分享：上传新闻或报告，数千个 AI 人物作出反应，再生成预测报告",
-   "@cincinosos 分享：审核 AI 看不到制作过程，本周抓出创作者认为没问题的排版错误"
+   "@TheEconomist 分享：AI 已经不仅仅是一个经济工具"
   ],
   "not_ai": [
    "@github 分享：它不一定是非此即彼，在最新的 GitHub 播客上，我们与 2026 年商业开源状况研究背后的研究",
@@ -104,16 +103,16 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-23T09:56:24+08:00",
+ "generated_at": "2026-11-23T11:07:42+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-23T09:56:24+08:00",
+  "checked_at": "2026-11-23T11:07:41+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 206
+   "ok": 206,
+   "recheck": 1
   },
-  "hidden": 1
+  "hidden": 0
  },
- "seconds": 3.2,
+ "seconds": 2.2,
  "side": {
   "github_hot": {
    "drop:duplicate": 11,
@@ -122,11 +121,11 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
-   "drop:not_ai": 7,
-   "drop:not_ai_strict": 3,
-   "kept": 23,
-   "raw": 36
+   "drop:negative_signal": 4,
+   "drop:not_ai": 4,
+   "drop:not_ai_strict": 2,
+   "kept": 19,
+   "raw": 29
   }
  }
 }
