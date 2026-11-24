@@ -1,52 +1,58 @@
 {
  "last_step": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "changes": [
    {
-    "op": "pause",
-    "name": "Nature",
-    "key": "nature-com-nature-rss",
-    "why": "复测还是打不开"
+    "op": "restore",
+    "name": "Civitai 热门模型",
+    "key": "civitai-models",
+    "why": ""
+   },
+   {
+    "op": "retest",
+    "name": "伯克利 BAIR",
+    "key": "bair-berkeley-edu-blog-feed-xml",
+    "why": ""
    },
    {
     "op": "pause",
-    "name": "Chromium Blog",
-    "key": "blog-chromium-org-feeds-posts-default",
-    "why": "一周都没有新东西"
+    "name": "DEV 社区",
+    "key": "DEV.to",
+    "why": "复测还是没有内容"
    },
    {
-    "op": "slower",
+    "op": "pause",
     "name": "React 博客",
     "key": "react-dev-rss-xml",
-    "why": "总是重复，没有新东西"
+    "why": "一周都没有新东西"
    },
    {
     "op": "slower",
     "name": "ComfyUI-Manager 发布",
     "key": "comfyui-manager",
     "why": "总是重复，没有新东西"
-   },
-   {
-    "op": "up",
-    "name": "TechCrunch AI",
-    "key": "techcrunch-ai",
-    "why": ""
    }
   ],
-  "snapshot": "data/evolve/snapshots/2026-11-24.json",
+  "snapshot": "data/evolve/snapshots/2026-11-25.json",
   "baseline": {
-   "kept": 7519,
-   "runs": 26,
-   "dead": 8,
-   "checked": 826,
-   "build_ok": 22,
+   "kept": 6660,
+   "runs": 22,
+   "dead": 13,
+   "checked": 843,
+   "build_ok": 18,
    "build_bad": 0,
-   "kept_per_run": 289.19,
-   "dead_rate": 0.0097,
+   "kept_per_run": 302.73,
+   "dead_rate": 0.0154,
    "bad_build_rate": 0.0
   }
  },
  "history": [
+  {
+   "date": "2026-11-25",
+   "verdict_prev": null,
+   "changes": 5,
+   "diary_by": "rules"
+  },
   {
    "date": "2026-11-24",
    "verdict_prev": null,
@@ -126,5 +132,5 @@
    "diary_by": "rules"
   }
  ],
- "last_evolve_date": "2026-11-24"
+ "last_evolve_date": "2026-11-25"
 }
