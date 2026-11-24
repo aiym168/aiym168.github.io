@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T11:07:19+08:00",
-  "count": 13,
+  "generated_at": "2026-11-24T13:22:45+08:00",
+  "count": 18,
   "items": [
     {
       "id": "hnhot-50615308",
@@ -24,18 +24,18 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1259360",
-      "title": "Gemini 现在还限地区呢？",
-      "summary": "登录了梯子，换了好多节点仍然提示不在服务区 Eligibility check failed: Your current account is not eligible for Antigravity, because it is not currently available in your location. 大家怎么过这个的。网页版，可以正常访问操作。就是 CLI 的一直提示这个。开 TUN 也没用呢。",
-      "url": "https://www.v2ex.com/t/1259360",
-      "source": "V2EX"
+      "id": "hnhot-50619630",
+      "title": "Shirudo：OpenAI 和思科的开源运行时，用于保护未打补丁的 Linux",
+      "summary": "",
+      "url": "https://openai.com/index/introducing-shirudo/",
+      "source": "Hacker News"
     },
     {
-      "id": "v2hot-1259357",
-      "title": "就这效果 你告诉我这是国产开源模型？？",
-      "summary": "商汤开源了 SenseNova U1.6，这才三个月，提升能这么多，商汤内部换血了还是咋。。和之前的版本 U1.5 比的改进：自修正：信息图场景下，出图后模型会对照提示词检查文字模糊、错字、英文拼写和编号，并在同一次生成里改掉。官方数据是 UltraTextBench 上比一次出图平均相对提升 7% 美学：按人像、艺术、信息图分别做了美学奖励模型，还单独加了文字和版面的美学模型，避免为了字对把艺术字做得太朴素。官方用户评测里综合美感比 U1.5 高 10% 后训练的多专家、多奖励 RL 规模扩大，最后用 MOPD 合成一个模型 ## 链接 Git",
-      "url": "https://www.v2ex.com/t/1259357",
-      "source": "V2EX"
+      "id": "hnhot-50620328",
+      "title": "潜在内省：大语言模型（LLM）能够检测先验概念注入",
+      "summary": "",
+      "url": "https://arxiv.org/abs/2602.20031",
+      "source": "Hacker News"
     },
     {
       "id": "v2hot-1259372",
@@ -45,17 +45,80 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1259363",
-      "title": "产能恢复，手头有一个成品 Claude Ultra",
-      "summary": "刚出来，有意联系",
-      "url": "https://www.v2ex.com/t/1259363",
+      "id": "v2hot-1259417",
+      "title": "Claude Code 最佳控制面",
+      "summary": "我们在短时间内获得了 5k 用户，它比目前任何第三方 UI 都更加流畅丝滑，每一个 token 输出都做了精致的 UI 适配，体积仅 20MB 左右 官网 开源地址",
+      "url": "https://www.v2ex.com/t/1259417",
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1259340",
-      "title": "求靠谱 Google Gemini Ultra 代充渠道",
-      "summary": "最好能开发票的，谢谢。",
-      "url": "https://www.v2ex.com/t/1259340",
+      "id": "v2hot-1259411",
+      "title": "有多少人通过 AI 赚到工作以外额外的钱了？",
+      "summary": "大家每天都在讨论 AI 这样用那样用，很好奇各位大佬，有多少人用 AI 赚到自己工作以外其他的钱了，还是只是用来给老板来降本增效的呀。",
+      "url": "https://www.v2ex.com/t/1259411",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259418",
+      "title": "提醒一下订阅了 Google AI Pro 的朋友，每月还有 $10 GCP 赠金可以领",
+      "summary": "订阅了 Google AI Pro（Google One）的话，主号每个月还送 $10 的 Google Cloud 赠金，不领就浪费了。领取入口：几点说明：1. 仅限订阅主账号领取，家庭组成员没有。2. 关联 GCP 结算账号并勾选「始终使用此结算账号」，以后每月自动发放，每笔有效期 12 个月，未用完可累积。3. 实测可以直接用来调 Vertex AI 的 Gemini API（包括 Gemini 4 系列），走服务账号 JSON 凭证不用额外充钱；如果直接用 AI Studi",
+      "url": "https://www.v2ex.com/t/1259418",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259412",
+      "title": "写代码离不开 Claude 的看过来｜Claude Code 灵活订阅，最低 0.07 倍率",
+      "summary": "天天用 Claude 写代码、改 Bug、处理文档的朋友，这几个痛点应该都遇到过 网络不稳，三天两头断 用到一半撞上 5 小时限制，思路全断 官方 API 按量计费，跑几个 Agent 账单就吓人 现在我这边提供 Claude Code 中转订阅，这几个问题一次解决：国内直连：电信、联通、移动三网都做了优化，不用翻墙 没有 5 小时限制：额度内随时用，额度每周重置 支持 Opus：复杂任务、多开 Agent 也能顶住 低至 0.07 倍率：花 ¥1，用 ¥14 的官方 API 额度 四档套餐，按每天用量选：入门版｜0.25 倍",
+      "url": "https://www.v2ex.com/t/1259412",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259405",
+      "title": "ChatGPT 直冲 59RMB 起，欢迎 V 友咨询",
+      "summary": "ChatGPT GO/ Plus / Pro 订阅服务 支持网站自助下单 直充个人账号 无需 ID 充值不成功 即刻退款 订单出现异常 客服及时跟进处理 网站提供 18 小时在线客服 网站地址 欢迎有需要的宝子了解 不需要服务的 V 友可以忽略",
+      "url": "https://www.v2ex.com/t/1259405",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259404",
+      "title": "[开源自荐] Peek：纯 Swift 原生 macOS 菜单栏工具，硬件监控 / 磁盘与 AI Agent 空间分析 / 应用卸载",
+      "summary": "最近用 100% 原生 Swift 6 + SwiftUI 写了个 macOS 菜单栏小工具 **Peek**，开源出来分享给大家。设计上比较克制：**不依赖外部 CLI、无后台常驻特权进程、无需管理员权限**。面板收起后停止高频采样，后台 CPU 占用接近 0。支持 Apple Silicon & Intel（macOS 14+），内置深浅双主题和中英即时切换。GitHub：下载（DMG）：官网：https://",
+      "url": "https://www.v2ex.com/t/1259404",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259401",
+      "title": "¥500 出剩余 20 天订阅的 GPT Pro 500 成品号",
+      "summary": "如题，基本都是 16 号订阅的，订阅还有 20 多天。Gmail 订阅，成品号交付，质保首登 绿泡联系方式：YzY0MDIwMjY=",
+      "url": "https://www.v2ex.com/t/1259401",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259396",
+      "title": "朝鲜推出的 AI「智慧之泉」有人用过吗?",
+      "summary": "敏感程度比葵伊吹、藤森里穗、小野六花还高吗？",
+      "url": "https://www.v2ex.com/t/1259396",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259395",
+      "title": "如何给自己的 agent 加上高质量私域数据？",
+      "summary": "最近了解到这个需求，自己开发了一个网页后台接入 api，可以实现让自己的 agent 接入高质量的数据，比如小红书，reddit，抖音，aws，1688 等~ 欢迎各位 v 友体验下并且给些反馈！地址如下：注册就送免费额度，使用方便，官网也有写真实案例供大家参考~ 感兴趣的朋友也可以交流。",
+      "url": "https://www.v2ex.com/t/1259395",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259392",
+      "title": "Codex 自建池｜平价使用企业级线路",
+      "summary": "• 纯 Pro 池，多线路稳定供应，成功率长期 99.9+ • Codex 全模型可用，高 RPM / 高并发，适合长时间持续跑 • 超高缓存，整体 95%上下，最高纪录 99% • 按量全场 0.2，充值立享 0.17 优惠，月度阶梯最低 0.15 • 充值倍率 1:5，线路倍率 1，模型价格与官方同价 • 包月共享官方重置。综合最低 0.13，超值平替 plus • 源头站，可接下游 地址：codex.zhuanyedaili.com⁠ 联系方式：QQ 群：1106944249",
+      "url": "https://www.v2ex.com/t/1259392",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259388",
+      "title": "Dstatus 一款为 Agent 与人类一起用的运维向的探针系统",
+      "summary": "## DStatus 到底是啥、和普通探针有啥区别？DStatus 包含了丰富的探针功能，但核心出发点，是围绕「Agent 与人类一起用」这个场景去适配和设计的 AI 运维探针（手动能在面板做的，AI 大部分都能做）。手里面有十几台甚至几百台机器，以前用探针的流程是：买完服务器手动配置、填写机器相关信息，然后再连上去跑一堆脚本或装环境。现在有了 AI 大模型的助力，你可以直接让网页内置的 Agent，或者你用习惯的 Codex、Claude 等支持远程 MCP 的 AI 工具，来走完添加服务器、排查问题、管理维护整套流程。![DStatus 面板首页总览](https://",
+      "url": "https://www.v2ex.com/t/1259388",
       "source": "V2EX"
     },
     {
@@ -63,34 +126,6 @@
       "title": "Claude 把连接器和技能合并为插件，免费计划可用",
       "summary": "Claude 的连接器与技能整合为插件，已在 Free、Pro、Max、Ultra 计划上线，Team 和 Enterprise 即将推出。",
       "url": "https://x.com/claudeai/status/2124970294523945328",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-7697240691",
-      "title": "All Access 年费388美元，含8000美元 AI 额度",
-      "summary": "All Access 年度订阅现价388美元，附赠来自 OpenAI、AnthropicAI、NotionHQ、Google 等超8000美元 AI 额度。",
-      "url": "https://x.com/every/status/2124872865648419256",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-8499547014",
-      "title": "OpenAI 推出 OpenWorks，资助小企业获得免费 AI 帮助",
-      "summary": "OpenAI 推出 OpenWorks 为小型企业提供免费 AI 帮助",
-      "url": "https://x.com/i/trending/2124929872434700593",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-7802753340",
-      "title": "免费 AI 社区开放，含50+工具和200+提示词",
-      "summary": "该免费 AI 社区已有95000多人加入，提供50多款免费 AI 工具、200多条 ChatGPT 提示词和免费课程。",
-      "url": "https://x.com/JulianGoldieSEO/status/2124986352488091802",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-2255238625",
-      "title": "Circles AI 开放免费试用，可提问经营问题",
-      "summary": "我问 Circles AI：“最赚钱的经销商做了哪些其他人不做的事情？”答案让我很惊讶。免费亲自尝试",
-      "url": "https://x.com/GuyDealership/status/2124999605695979940",
       "source": "X"
     }
   ]

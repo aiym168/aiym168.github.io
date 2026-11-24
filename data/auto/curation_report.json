@@ -1,21 +1,19 @@
 {
  "counts": {
-  "archived": 25,
+  "archived": 26,
   "deadline_extracted": 7,
   "drop:duplicate": 578,
   "drop:empty_summary": 77,
-  "drop:negative_signal": 165,
-  "drop:no_clear_offer": 727,
-  "drop:not_ai": 620,
+  "drop:negative_signal": 166,
+  "drop:no_clear_offer": 728,
+  "drop:not_ai": 615,
   "drop:too_old_pre2025": 61,
   "google_news_resolved": 775,
   "google_news_total": 775,
-  "kept_total": 240,
-  "net:gnews_cache_hit": 760,
-  "net:gnews_resolved_net": 15,
-  "net:tco_expanded": 5,
-  "net:tco_failed": 8,
-  "raw_total": 2468
+  "kept_total": 242,
+  "net:gnews_cache_hit": 775,
+  "new_this_run": 3,
+  "raw_total": 2467
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -104,18 +102,17 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-24T11:07:19+08:00",
+ "generated_at": "2026-11-24T13:22:45+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-24T11:07:19+08:00",
+  "checked_at": "2026-11-24T13:22:45+08:00",
   "counts": {
    "gone": 1,
-   "ok": 212,
-   "recheck": 1,
-   "unsure": 1
+   "ok": 213,
+   "recheck": 1
   },
   "hidden": 1
  },
- "seconds": 11.1,
+ "seconds": 1.6,
  "side": {
   "github_hot": {
    "drop:duplicate": 9,
@@ -124,10 +121,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
-   "drop:not_ai": 13,
-   "drop:not_ai_strict": 11,
-   "kept": 13,
+   "drop:negative_signal": 4,
+   "drop:not_ai": 11,
+   "drop:not_ai_strict": 7,
+   "kept": 18,
    "raw": 40
   }
  }

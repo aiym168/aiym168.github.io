@@ -1,7 +1,7 @@
 {
   "date": "2026-11-24",
-  "updated_at": "2026-11-24T11:03+08:00",
-  "updated_at_label": "2026-11-24 11:03 Asia/Shanghai",
+  "updated_at": "2026-11-24T13:19+08:00",
+  "updated_at_label": "2026-11-24 13:19 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -131,7 +131,7 @@
       "posted_at": "2026-11-23 22:53 Asia/Shanghai",
       "engagement": {
         "points": 3,
-        "comments": 2
+        "comments": 3
       },
       "original_title": "Show HN: SecureVibe – Find and trace vulnerabilities for vibe coded apps",
       "original_summary": "Show HN: SecureVibe – Find and trace vulnerabilities for vibe coded apps Hello HN, just wanted to share my project that I&#x27;ve been working on the past months, where I noticed the issue that now we ship faster than setting up the requirements for the project. So I thought of building secureVibe to find vulnerabilities in your codebase.\nNow I have a MVP where it doesn&#x27;t just scan the code and show random analysis I used Tree-sitter and AST to understand code context to validate vulnerabilities found as it builds a graph of application routes, handlers and database calls so it helps to determine whether findings are confirmed or likely.<p>Briefly the features: 1- shows all vulnerabilities in your code with code snippets<p>2-fixing with ai option (optional with your own api key for no",
@@ -149,8 +149,8 @@
       "url": "https://hermitcrm.io/",
       "posted_at": "2026-11-23 18:09 Asia/Shanghai",
       "engagement": {
-        "points": 42,
-        "comments": 3
+        "points": 44,
+        "comments": 4
       },
       "original_title": "Show HN: Hermit CRM – Free open-source CRM for solopreneurs",
       "original_summary": "Show HN: Hermit CRM – Free open-source CRM for solopreneurs I was about to keep track of my clients and prospecting in Google Sheets for my solopreneur business, when I remembered that&#x27;s exactly what I advise my clients not to do.<p>Created Hermit CRM, an open source CRM for 1 person. Hermit helps to keep track of deals and prospecting. The platform is built for AI by storing the data in Markdown files in git, stored locally and can be accessed with a web app, CLI or MCP. No telemetry on the app. Building in public, even the website stats  are public as well.<p>It’s macOS first. Linux is less tested, and Windows isn’t supported.<p>Features I&#x27;m proud of: \n- import somebody from LinkedIn into to the CRM with 1 click\n- adding a LinkedIn convo to the CRM with 1 click.\nBoth work witho",
@@ -320,8 +320,8 @@
       "url": "https://firevoice.fabwaseem.com",
       "posted_at": "2026-11-24 10:58 Asia/Shanghai",
       "engagement": {
-        "points": 1,
-        "comments": 0
+        "points": 8,
+        "comments": 2
       },
       "original_title": "Show HN: FireVoice, free open-source voice studio on your own GPU",
       "original_summary": "Show HN: FireVoice, free open-source voice studio on your own GPU ",
@@ -339,8 +339,8 @@
       "url": "https://whistlestop.guide/features/texas-revolution",
       "posted_at": "2026-11-24 10:55 Asia/Shanghai",
       "engagement": {
-        "points": 2,
-        "comments": 0
+        "points": 3,
+        "comments": 2
       },
       "original_title": "Show HN: A narrated map tour of the events leading up to the Texas Revolution",
       "original_summary": "Show HN: A narrated map tour of the events leading up to the Texas Revolution I put together a narrated map of the Texas Revolution. You can listen to a 20-minute audio guided version or just scroll through the events:<p>I thought the chronological and location based timeline made it easier to follow and learn as well. I was inspired by Mapbox’s “storytelling” template on GitHub and built my own version with MapLibre fork of Mapbox GL (with free satellite imagery and terrain tiles from USGS) and lots of help from Claude. There are lots of parameters that were built in, like the rotation and transition speed. Essentially themed it and added source links to the cards.<p>The information was sourced from Handbook of Texas by THC. The voice is AI generated using Elevenlabs v4. That github proje",
@@ -575,6 +575,150 @@
       "translated_by": "model"
     },
     {
+      "id": "v2ex-1259415",
+      "source": "V2EX",
+      "category": "科技软件/App 限免",
+      "title": "Vibe 了个「越冷门的答案分越高」的医疗问答游戏，每天 10 题 30 秒",
+      "summary": "Vibe 了个「越冷门的答案分越高」的医疗问答游戏，每天 10 题 30 秒\n各位 V 友，\r\n\r\n先说是啥：[Medical Krillion](https://medicalkrillion.app/)，一个每天 10 题的英文医疗知识问答游戏，每题 30 秒，答案越冷门分越高。比如问「说一个监护仪上能看到的心律」，答 Tachycardia 这种人人都会写的答案几乎不得分，答 Torsades de pointes 才是这一题的赢家。反过来还有个 Crowd 模式规则整个倒过来，谁的答案最大众谁赢。免费、不用注册、手机上直接玩。\r\n\r\n▍起因\r\n啃医学英语的时候发现，难的不是不认识词，是「认识三个词，但不记得哪个在日常里真有人用」。而且市面上做题软件都是一次性题库、答对就翻页，玩两天就腻了。后来想到：如果每题不比正确答案、比「谁答得更偏」，同一道题就能反复玩，还能看出自己的词库到底有多浅。\r\n\r\n▍三个我觉得有意思的地方\r\n\r\n1. 同一道题，答案不同分就天差地别。Rare 模式按「有多少人给了同样的答案」反向打分，题库覆盖解剖、生理、药理、临床缩写和冷门专科术语。所以它不是知识竞赛，是「知道两个正确答案的时候，你敢不敢写更偏的那个」。\r\n2. 每天一套题，全球同一份。今天进去是第 N 号 dive，所有人同一套 10 题、同样 30 秒计时、同一个榜。不用等匹配，也不会有「你玩的题和我玩的不是一套」的尴尬。\r\n3. 第三种 Unlimited 模式是练手用的，没有每日重置，可以一直刷。三种规则（Rare / Crowd / Unlimited）共用同一个题库，随时切。\r\n\r\n玩法页、技巧页都有。想看它和 Wordle 那类字母格游戏差在哪，站里「Medical Krillion vs medical wordle」那页写得最清楚。另外按人群分了三扇门：medical",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "stigo",
+      "url": "https://www.v2ex.com/t/1259415",
+      "posted_at": "2026-11-24 13:07 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "Vibe 了个「越冷门的答案分越高」的医疗问答游戏，每天 10 题 30 秒",
+      "original_summary": "Vibe 了个「越冷门的答案分越高」的医疗问答游戏，每天 10 题 30 秒\n各位 V 友，\r\n\r\n先说是啥：[Medical Krillion](https://medicalkrillion.app/)，一个每天 10 题的英文医疗知识问答游戏，每题 30 秒，答案越冷门分越高。比如问「说一个监护仪上能看到的心律」，答 Tachycardia 这种人人都会写的答案几乎不得分，答 Torsades de pointes 才是这一题的赢家。反过来还有个 Crowd 模式规则整个倒过来，谁的答案最大众谁赢。免费、不用注册、手机上直接玩。\r\n\r\n▍起因\r\n啃医学英语的时候发现，难的不是不认识词，是「认识三个词，但不记得哪个在日常里真有人用」。而且市面上做题软件都是一次性题库、答对就翻页，玩两天就腻了。后来想到：如果每题不比正确答案、比「谁答得更偏」，同一道题就能反复玩，还能看出自己的词库到底有多浅。\r\n\r\n▍三个我觉得有意思的地方\r\n\r\n1. 同一道题，答案不同分就天差地别。Rare 模式按「有多少人给了同样的答案」反向打分，题库覆盖解剖、生理、药理、临床缩写和冷门专科术语。所以它不是知识竞赛，是「知道两个正确答案的时候，你敢不敢写更偏的那个」。\r\n2. 每天一套题，全球同一份。今天进去是第 N 号 dive，所有人同一套 10 题、同样 30 秒计时、同一个榜。不用等匹配，也不会有「你玩的题和我玩的不是一套」的尴尬。\r\n3. 第三种 Unlimited 模式是练手用的，没有每日重置，可以一直刷。三种规则（Rare / Crowd / Unlimited）共用同一个题库，随时切。\r\n\r\n玩法页、技巧页都有。想看它和 Wordle 那类字母格游戏差在哪，站里「Medical Krillion vs medical wordle」那页写得最清楚。另外按人群分了三扇门：medical",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1259412",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "写代码离不开 Claude 的看过来｜Claude Code 灵活订阅，最低 0.07 倍率 🔥",
+      "summary": "写代码离不开 Claude 的看过来｜Claude Code 灵活订阅，最低 0.07 倍率 🔥\n天天用 Claude 写代码、改 Bug、处理文档的朋友，这几个痛点应该都遇到过 👇 ❌ 网络不稳，三天两头断 ❌ 用到一半撞上 5 小时限制，思路全断 ❌ 官方 API 按量计费，跑几个 Agent 账单就吓人\r\n\r\n现在我这边提供 Claude Code 中转订阅，这几个问题一次解决：\r\n\r\n✅ 国内直连：电信、联通、移动三网都做了优化，不用翻墙 ✅ 没有 5 小时限制：额度内随时用，额度每周重置 ✅ 支持 Opus：复杂任务、多开 Agent 也能顶住 ✅ 低至 0.07 倍率：花 ¥1，用 ¥14 的官方 API 额度\r\n\r\n📦 四档套餐，按每天用量选：\r\n\r\n🔸 入门版｜0.25 倍 ¥319/月（周付 ¥79.75），每天可用约 $6.8 适合轻度尝鲜，比如改 Bug、写脚本\r\n\r\n🔹 进阶版｜0.16 倍（办公主力推荐 💼） ¥619/月（周付 ¥154.75），每天可用约 $20.4 适合处理文档、做轻量开发\r\n\r\n🔸 专业版｜0.10 倍（编程主力推荐 💻） ¥919/月（周付 ¥229.75），每天可用约 $47.5 适合每天高强度写代码\r\n\r\n🔹 旗舰版｜0.07 倍 ¥1,219/月（周付 ¥304.75），每天可用约 $88.2 适合极限用量，多开 Agent 或重度用 Opus\r\n\r\n💡 不知道选哪档？ 先拿入门版周付 ¥79.75 试一周，满意再包月。\r\n\r\n🚀 三步开通： 1️⃣ 按每天用量选好档位 2️⃣ 选周付或月付 3️⃣ 私信我，付款后马上开通\r\n\r\n📩 有问题欢迎私信，选档也可以帮你参谋～\r\n\r\n注：这是第三方中转服务，不是 Anthropic 官方产品。按天的价格按 1 个月 = 4 周计算。\r\n\r\n![微信图片_2026112412",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "VxShao",
+      "url": "https://www.v2ex.com/t/1259412",
+      "posted_at": "2026-11-24 12:52 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "写代码离不开 Claude 的看过来｜Claude Code 灵活订阅，最低 0.07 倍率 🔥",
+      "original_summary": "写代码离不开 Claude 的看过来｜Claude Code 灵活订阅，最低 0.07 倍率 🔥\n天天用 Claude 写代码、改 Bug、处理文档的朋友，这几个痛点应该都遇到过 👇 ❌ 网络不稳，三天两头断 ❌ 用到一半撞上 5 小时限制，思路全断 ❌ 官方 API 按量计费，跑几个 Agent 账单就吓人\r\n\r\n现在我这边提供 Claude Code 中转订阅，这几个问题一次解决：\r\n\r\n✅ 国内直连：电信、联通、移动三网都做了优化，不用翻墙 ✅ 没有 5 小时限制：额度内随时用，额度每周重置 ✅ 支持 Opus：复杂任务、多开 Agent 也能顶住 ✅ 低至 0.07 倍率：花 ¥1，用 ¥14 的官方 API 额度\r\n\r\n📦 四档套餐，按每天用量选：\r\n\r\n🔸 入门版｜0.25 倍 ¥319/月（周付 ¥79.75），每天可用约 $6.8 适合轻度尝鲜，比如改 Bug、写脚本\r\n\r\n🔹 进阶版｜0.16 倍（办公主力推荐 💼） ¥619/月（周付 ¥154.75），每天可用约 $20.4 适合处理文档、做轻量开发\r\n\r\n🔸 专业版｜0.10 倍（编程主力推荐 💻） ¥919/月（周付 ¥229.75），每天可用约 $47.5 适合每天高强度写代码\r\n\r\n🔹 旗舰版｜0.07 倍 ¥1,219/月（周付 ¥304.75），每天可用约 $88.2 适合极限用量，多开 Agent 或重度用 Opus\r\n\r\n💡 不知道选哪档？ 先拿入门版周付 ¥79.75 试一周，满意再包月。\r\n\r\n🚀 三步开通： 1️⃣ 按每天用量选好档位 2️⃣ 选周付或月付 3️⃣ 私信我，付款后马上开通\r\n\r\n📩 有问题欢迎私信，选档也可以帮你参谋～\r\n\r\n注：这是第三方中转服务，不是 Anthropic 官方产品。按天的价格按 1 个月 = 4 周计算。\r\n\r\n![微信图片_2026112412",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1259406",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "[LinkAGI] 放一个 n8n 会议待办模板，每条任务都能对回会议原话",
+      "summary": "[LinkAGI] 放一个 n8n 会议待办模板，每条任务都能对回会议原话\n各位 V 友好，我是 LinkAGI 的站长。做了个 n8n 模板，给开完会还要发待办清单的人用。\r\n\r\n比如笔记里写了两句：“小周周五发初稿。”“新 logo 今天没定，下次再聊。”我想要的结果只有第一条：小周，周五，发初稿，旁边留着原话。“下次再聊”就不用派给谁了。\r\n\r\n模板和示例：https://16871233.github.io/linkagi-api-starter/n8n-meeting-notes.html\r\n\r\n下载 JSON，导入 n8n，填自己的 API Key 就能试。默认用 LinkAGI 的 DeepSeek；有别家的兼容接口，也可以换地址和模型。模板本身免费，运行时按所选服务计费。\r\n\r\n用 Codex 写代码的朋友，站里另有 Sale 组，倍率是 0.08。想试用的新用户进 QQ 群 342205412，在这篇帖子下留个言，客服核对后发 5 元 API 额度。\r\n\r\n官网：https://api.linktoagi.com\r\n\r\n![LinkAGI QQ 交流群二维码](https://16871233.github.io/linkagi-api-starter/assets/qq-group-compact-20261031.png)",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "zykoo",
+      "url": "https://www.v2ex.com/t/1259406",
+      "posted_at": "2026-11-24 12:09 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "[LinkAGI] 放一个 n8n 会议待办模板，每条任务都能对回会议原话",
+      "original_summary": "[LinkAGI] 放一个 n8n 会议待办模板，每条任务都能对回会议原话\n各位 V 友好，我是 LinkAGI 的站长。做了个 n8n 模板，给开完会还要发待办清单的人用。\r\n\r\n比如笔记里写了两句：“小周周五发初稿。”“新 logo 今天没定，下次再聊。”我想要的结果只有第一条：小周，周五，发初稿，旁边留着原话。“下次再聊”就不用派给谁了。\r\n\r\n模板和示例：https://16871233.github.io/linkagi-api-starter/n8n-meeting-notes.html\r\n\r\n下载 JSON，导入 n8n，填自己的 API Key 就能试。默认用 LinkAGI 的 DeepSeek；有别家的兼容接口，也可以换地址和模型。模板本身免费，运行时按所选服务计费。\r\n\r\n用 Codex 写代码的朋友，站里另有 Sale 组，倍率是 0.08。想试用的新用户进 QQ 群 342205412，在这篇帖子下留个言，客服核对后发 5 元 API 额度。\r\n\r\n官网：https://api.linktoagi.com\r\n\r\n![LinkAGI QQ 交流群二维码](https://16871233.github.io/linkagi-api-starter/assets/qq-group-compact-20261031.png)",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1259400",
+      "source": "V2EX",
+      "category": "科技软件/App 限免",
+      "title": "用 SwiftUI 写了个高颜值 macOS 原生录屏工具 LetsRec：纯本地免登录，1080p 免费无水印（送 10 个 Pro 码）",
+      "summary": "用 SwiftUI 写了个高颜值 macOS 原生录屏工具 LetsRec：纯本地免登录，1080p 免费无水印（送 10 个 Pro 码）\n最近用 SwiftUI 写了一个 macOS 原生录屏和轻量剪辑工具 **LetsRec**，来分享一下，顺便抽送 **10 个 Pro 永久码**。\r\n\r\n**官网下载**：https://letsrec.mrong.me  \r\n（macOS 15+，Apple Silicon / Intel 通用包，已公证签名）\r\n\r\n![SCR-20261124-kbzd.jpeg · 707](https://img.cdn1.vip/i/6b0509a3c1681_1795492259.webp)\r\n\r\n### 对比同类工具的优势\r\n\r\n- **不搞订阅焦虑**：对比 Screen Studio 等订阅制或高价买断软件，LetsRec **免费版不限时长和次数，720p / 1080p 无水印导出，内置纯色/渐变/图片背景全免费**；Pro 仅 **$4.95 ~~$9.90~~ 一次性买断**（解锁 4K 无水印、自定义双色渐变/图片背景、后台与批量队列导出，离线可用、支持换机）。\r\n- **纯 SwiftUI 原生 + 认真磨了 UI**：非 Electron，轻量启动快。原生 macOS 毛玻璃质感、深浅色与配套 Dock 图标，编辑器把大面积空间留给预览，时间线上的自动推近做成了直观的「小山」曲线，预览和导出共用同一套渲染器，所见即所得。\r\n- **100% 本地、不用登录**：对比 Loom / Cap 等偏云端分享的工具，录制、剪辑、字幕（Apple 本地语音识别 / 本地 Whisper 模型）全在本机完成，录内部系统或代码更放心；崩溃中断也能恢复已写入片段。\r\n- **支持导入竞品工程，不被锁死**：可直接导入 Screen",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "murongxdb",
+      "url": "https://www.v2ex.com/t/1259400",
+      "posted_at": "2026-11-24 11:54 Asia/Shanghai",
+      "engagement": {
+        "replies": 10
+      },
+      "original_title": "用 SwiftUI 写了个高颜值 macOS 原生录屏工具 LetsRec：纯本地免登录，1080p 免费无水印（送 10 个 Pro 码）",
+      "original_summary": "用 SwiftUI 写了个高颜值 macOS 原生录屏工具 LetsRec：纯本地免登录，1080p 免费无水印（送 10 个 Pro 码）\n最近用 SwiftUI 写了一个 macOS 原生录屏和轻量剪辑工具 **LetsRec**，来分享一下，顺便抽送 **10 个 Pro 永久码**。\r\n\r\n**官网下载**：https://letsrec.mrong.me  \r\n（macOS 15+，Apple Silicon / Intel 通用包，已公证签名）\r\n\r\n![SCR-20261124-kbzd.jpeg · 707](https://img.cdn1.vip/i/6b0509a3c1681_1795492259.webp)\r\n\r\n### 对比同类工具的优势\r\n\r\n- **不搞订阅焦虑**：对比 Screen Studio 等订阅制或高价买断软件，LetsRec **免费版不限时长和次数，720p / 1080p 无水印导出，内置纯色/渐变/图片背景全免费**；Pro 仅 **$4.95 ~~$9.90~~ 一次性买断**（解锁 4K 无水印、自定义双色渐变/图片背景、后台与批量队列导出，离线可用、支持换机）。\r\n- **纯 SwiftUI 原生 + 认真磨了 UI**：非 Electron，轻量启动快。原生 macOS 毛玻璃质感、深浅色与配套 Dock 图标，编辑器把大面积空间留给预览，时间线上的自动推近做成了直观的「小山」曲线，预览和导出共用同一套渲染器，所见即所得。\r\n- **100% 本地、不用登录**：对比 Loom / Cap 等偏云端分享的工具，录制、剪辑、字幕（Apple 本地语音识别 / 本地 Whisper 模型）全在本机完成，录内部系统或代码更放心；崩溃中断也能恢复已写入片段。\r\n- **支持导入竞品工程，不被锁死**：可直接导入 Screen",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1259395",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "如何给自己的 agent 加上高质量私域数据？",
+      "summary": "如何给自己的 agent 加上高质量私域数据？\n最近了解到这个需求，自己开发了一个网页后台接入 api，可以实现让自己的 agent 接入高质量的数据，比如小红书，reddit，抖音，aws，1688 等~\r\n\r\n欢迎各位 v 友体验下并且给些反馈！\r\n地址如下：\r\nhttps://haitu.mumong.cn/\r\n\r\n注册就送免费额度，使用方便，官网也有写真实案例供大家参考~ 感兴趣的朋友也可以交流。\r\n\r\n https://i.imgur.com/4wnIPri.png",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Clannad0708",
+      "url": "https://www.v2ex.com/t/1259395",
+      "posted_at": "2026-11-24 11:37 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "如何给自己的 agent 加上高质量私域数据？",
+      "original_summary": "如何给自己的 agent 加上高质量私域数据？\n最近了解到这个需求，自己开发了一个网页后台接入 api，可以实现让自己的 agent 接入高质量的数据，比如小红书，reddit，抖音，aws，1688 等~\r\n\r\n欢迎各位 v 友体验下并且给些反馈！\r\n地址如下：\r\nhttps://haitu.mumong.cn/\r\n\r\n注册就送免费额度，使用方便，官网也有写真实案例供大家参考~ 感兴趣的朋友也可以交流。\r\n\r\n https://i.imgur.com/4wnIPri.png",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1259388",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "Dstatus 一款为 Agent 与人类一起用的运维向的探针系统",
+      "summary": "Dstatus 一款为 Agent 与人类一起用的运维向的探针系统\n## DStatus 到底是啥、和普通探针有啥区别？\r\nDStatus 包含了丰富的探针功能，但核心出发点，是围绕「Agent 与人类一起用」这个场景去适配和设计的 AI 运维探针（手动能在面板做的，AI 大部分都能做）。\r\n手里面有十几台甚至几百台机器，以前用探针的流程是：\r\n买完服务器手动配置、填写机器相关信息，然后再连上去跑一堆脚本或装环境。\r\n现在有了 AI 大模型的助力，你可以直接让网页内置的 Agent，或者你用习惯的 Codex、Claude 等支持远程 MCP 的 AI 工具，来走完添加服务器、排查问题、管理维护整套流程。\r\n![DStatus 面板首页总览](https://dstatus.sh/img/home-1200.webp)\r\n\r\n独立开发，注册 v2y 已经十几年了，该项目高速迭代 2 年多了，首次在 v2 分享，独立开发实属不易，有免费版，和付费版。前辈请轻拍，或者直接略过此贴。\r\n#### 安全相关\r\n\r\n1. 新接入节点默认关闭脚本执行，面板只能远程关、不能自己开，真要用自己在本机开。\r\n2. 支持 2FA、Passkey、TG 私聊确认、邮箱验证码；看 SSH 密码、下载备份、改安全设置都需要二次验证。\r\n3. 网页面板和 MCP 都走内置隐私通道收密码和 Key（用中转模型的福音，密码不过对话，AI 只拿临时变量），执行命令默认要确认，外部 MCP 权限可按客户端单控（「删除节点」默认关），操作全留痕审计。\r\n4. 再牛的系统也防不住未知漏洞（Nginx、Linux 都会出洞），主控后端能藏就藏。我们做了**托管展示页**，主控只单向往外推公开数据，对外分享一键前后端分离；自己搭也支持前后台域名分离。\r\n5. 后台有一键**全部收回**：怀疑泄露一点就能同时踢掉其他登",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "dingzi",
+      "url": "https://www.v2ex.com/t/1259388",
+      "posted_at": "2026-11-24 11:25 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "Dstatus 一款为 Agent 与人类一起用的运维向的探针系统",
+      "original_summary": "Dstatus 一款为 Agent 与人类一起用的运维向的探针系统\n## DStatus 到底是啥、和普通探针有啥区别？\r\nDStatus 包含了丰富的探针功能，但核心出发点，是围绕「Agent 与人类一起用」这个场景去适配和设计的 AI 运维探针（手动能在面板做的，AI 大部分都能做）。\r\n手里面有十几台甚至几百台机器，以前用探针的流程是：\r\n买完服务器手动配置、填写机器相关信息，然后再连上去跑一堆脚本或装环境。\r\n现在有了 AI 大模型的助力，你可以直接让网页内置的 Agent，或者你用习惯的 Codex、Claude 等支持远程 MCP 的 AI 工具，来走完添加服务器、排查问题、管理维护整套流程。\r\n![DStatus 面板首页总览](https://dstatus.sh/img/home-1200.webp)\r\n\r\n独立开发，注册 v2y 已经十几年了，该项目高速迭代 2 年多了，首次在 v2 分享，独立开发实属不易，有免费版，和付费版。前辈请轻拍，或者直接略过此贴。\r\n#### 安全相关\r\n\r\n1. 新接入节点默认关闭脚本执行，面板只能远程关、不能自己开，真要用自己在本机开。\r\n2. 支持 2FA、Passkey、TG 私聊确认、邮箱验证码；看 SSH 密码、下载备份、改安全设置都需要二次验证。\r\n3. 网页面板和 MCP 都走内置隐私通道收密码和 Key（用中转模型的福音，密码不过对话，AI 只拿临时变量），执行命令默认要确认，外部 MCP 权限可按客户端单控（「删除节点」默认关），操作全留痕审计。\r\n4. 再牛的系统也防不住未知漏洞（Nginx、Linux 都会出洞），主控后端能藏就藏。我们做了**托管展示页**，主控只单向往外推公开数据，对外分享一键前后端分离；自己搭也支持前后台域名分离。\r\n5. 后台有一键**全部收回**：怀疑泄露一点就能同时踢掉其他登",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1259383",
+      "source": "V2EX",
+      "category": "科技软件/App 限免",
+      "title": "超适合用来磨耳朵的免费在线电台，全平台上线了",
+      "summary": "超适合用来磨耳朵的免费在线电台，全平台上线了\nWeb：https://free-online-radio.com/\r\n\r\niOS：https://apps.apple.com/app/for-internet-radio-stations/id6827645657\r\n\r\nAndroid：https://play.google.com/store/apps/details?id=com.kalman03.fm\r\n\r\n支持 CarPlay，支持 iOS 快捷指令自动唤起",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "shangrila",
+      "url": "https://www.v2ex.com/t/1259383",
+      "posted_at": "2026-11-24 11:08 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "超适合用来磨耳朵的免费在线电台，全平台上线了",
+      "original_summary": "超适合用来磨耳朵的免费在线电台，全平台上线了\nWeb：https://free-online-radio.com/\r\n\r\niOS：https://apps.apple.com/app/for-internet-radio-stations/id6827645657\r\n\r\nAndroid：https://play.google.com/store/apps/details?id=com.kalman03.fm\r\n\r\n支持 CarPlay，支持 iOS 快捷指令自动唤起",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1259382",
+      "source": "V2EX",
+      "category": "AI 开发工具与编程助手",
+      "title": "做了个新标签页扩展 Tabdial：扩展代码开源，Infinity 的备份能直接导入（笔记、待办一起搬）",
+      "summary": "做了个新标签页扩展 Tabdial：扩展代码开源，Infinity 的备份能直接导入（笔记、待办一起搬）\n去年 Infinity 那份安全报告出来后，V 站上问得最多的是两件事：有没有能直接导入 Infinity 备份的替代品，最好代码是公开的。我做的 Tabdial 这两点都能做到，发上来请大家试试、挑挑毛病。\r\n\r\n![](https://nexuscortex.dev/tabdial/zh-cn/guide/home.jpg)\r\n\r\n从 Infinity 搬：∞ → 我的 → 备份与恢复 → 导出备份数据，拿到的文件在 Tabdial 设置里点“导入文件”。每一页变成一个分组，文件夹、图标、笔记、待办都会过来；它预装的那些返利跳转链接，导入时会尽量还原成原网址。导入是合并进来的，已经有的网站不会重复。步骤在这：https://nexuscortex.dev/tabdial/zh-cn/switch/infinity/\r\n\r\n浏览器导出的书签文件，以及 Speed Dial 2、FVD 等老插件的导出也能导入。\r\n\r\n搬过来之后：网站按分组放，可以建文件夹，拖动排序，也能切成看板布局，每个文件夹摊开成一张卡片。另外有笔记和待办（待办能设提醒），还有个书签和历史记录的侧栏，里面的网页能直接拖成网站。背景、图标大小、间距、字体都能调。\r\n\r\n几点说明：\r\n\r\n- 不用注册，数据默认就在浏览器里\r\n- 每天自动存一份副本，留 90 份，导入或改乱了能退回去\r\n- 没广告、没统计，不会改你的链接\r\n- 扩展代码在 GitHub（GPL-3.0），每个商店版本都有对应的 tag：https://github.com/nexuscortex-dev/tabdial 。服务端（同步、团队那块）没开源\r\n- 不需要“读取所有网站数据”的权限，浏览记录、书签这些是用到才申请\r\n- 跨浏览",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "RaminZhong",
+      "url": "https://www.v2ex.com/t/1259382",
+      "posted_at": "2026-11-24 11:05 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "做了个新标签页扩展 Tabdial：扩展代码开源，Infinity 的备份能直接导入（笔记、待办一起搬）",
+      "original_summary": "做了个新标签页扩展 Tabdial：扩展代码开源，Infinity 的备份能直接导入（笔记、待办一起搬）\n去年 Infinity 那份安全报告出来后，V 站上问得最多的是两件事：有没有能直接导入 Infinity 备份的替代品，最好代码是公开的。我做的 Tabdial 这两点都能做到，发上来请大家试试、挑挑毛病。\r\n\r\n![](https://nexuscortex.dev/tabdial/zh-cn/guide/home.jpg)\r\n\r\n从 Infinity 搬：∞ → 我的 → 备份与恢复 → 导出备份数据，拿到的文件在 Tabdial 设置里点“导入文件”。每一页变成一个分组，文件夹、图标、笔记、待办都会过来；它预装的那些返利跳转链接，导入时会尽量还原成原网址。导入是合并进来的，已经有的网站不会重复。步骤在这：https://nexuscortex.dev/tabdial/zh-cn/switch/infinity/\r\n\r\n浏览器导出的书签文件，以及 Speed Dial 2、FVD 等老插件的导出也能导入。\r\n\r\n搬过来之后：网站按分组放，可以建文件夹，拖动排序，也能切成看板布局，每个文件夹摊开成一张卡片。另外有笔记和待办（待办能设提醒），还有个书签和历史记录的侧栏，里面的网页能直接拖成网站。背景、图标大小、间距、字体都能调。\r\n\r\n几点说明：\r\n\r\n- 不用注册，数据默认就在浏览器里\r\n- 每天自动存一份副本，留 90 份，导入或改乱了能退回去\r\n- 没广告、没统计，不会改你的链接\r\n- 扩展代码在 GitHub（GPL-3.0），每个商店版本都有对应的 tag：https://github.com/nexuscortex-dev/tabdial 。服务端（同步、团队那块）没开源\r\n- 不需要“读取所有网站数据”的权限，浏览记录、书签这些是用到才申请\r\n- 跨浏览",
+      "translated_by": "free-translate"
+    },
+    {
       "id": "v2ex-1259376",
       "source": "V2EX",
       "category": "科技软件/App 限免",
@@ -586,172 +730,28 @@
       "url": "https://www.v2ex.com/t/1259376",
       "posted_at": "2026-11-24 11:00 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 2
       },
       "original_title": "每次上架出海 App 做多语言截图都很痛苦，自己撸了个真免费、免登录的 App Store / 应用商店上架截图制作工具",
       "original_summary": "每次上架出海 App 做多语言截图都很痛苦，自己撸了个真免费、免登录的 App Store / 应用商店上架截图制作工具\n各位 V 友大家好，\r\n\r\n平时自己写完 App 准备上架 App Store 或 Google Play 时，最烦的环节往往不是写代码，而是**做应用商店上架截图**。\r\n\r\n以前试过几种方案都很折腾：\r\n1. 自己用 Figma / PS 拼：不仅调排版费劲，每次苹果更新屏幕尺寸规范（比如必传的 6.3 寸、6.9 寸）都要重调；如果 App 要出海，改个中英日韩多语言版本，重复劳动真的能做到怀疑人生。\r\n2. 用市面上的在线截图工具：做的时候挺爽，点导出时要么弹窗要求注册登录，要么直接收费订阅，免费版还带个巨大的水印。\r\n\r\n干脆趁着业余时间，自己撸了一个**真正免费、打开即用**的在线工具——[**应用截图工坊（AppShotMaker）**](https://appshotmaker.com/)，分享给有同样痛点的独立开发者们。\r\n\r\n**在线体验**：[点击进入免费应用商店截图制作工具](https://appshotmaker.com/)\r\n\r\n### 目前已经实现的核心功能：\r\n* **真免费、免登录、无水印**：打开网页直接做，做完直接高清导出，没有任何套路。\r\n* **多语言文案快速切换**：专门针对出海 App 做的优化，一套排版配好后，可以快速切换并生成不同语言版本的上架截图，省去大量重复改图的时间。\r\n* **多种配色预设 & 3D 倾斜/透视模板**：内置了主流机型带壳边框和 3D 透视效果，选好配色和模板，上传截图就能直接出质感不错的宣传图，支持画布内直接改字和撤销。\r\n* **精准适配最新上架尺寸 & 多尺寸 ZIP 导出**：内置 App Store（含 6.3 寸、6.9 寸、iPad 13 寸等）和 Google P",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1259339",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "把市面上 24 个 GEO 工具挨个过了一遍，做了个对比站 thegeotools.com",
-      "summary": "把市面上 24 个 GEO 工具挨个过了一遍，做了个对比站 thegeotools.com\n最近做海外站想买个 GEO 工具，看看自己品牌在 ChatGPT、Perplexity、Google AI Overviews 里到底有没有被提到。结果自己挑了一圈，发现太乱了。\r\n\r\n很多产品写着 29 刀一个月，点进去才发现只给十几个 prompt，还只让建一个项目，稍微多测几个词就得直接升到 189 刀。网上搜出来的老攻略也不准，好多写着 199 刀自助起价的，去官网一看早下架改联系销售了，像 [Hall AI](https://thegeotools.com/tools/hall-ai) 这种独立版甚至都已经停售，变成别家套件里的附加功能了。还有就是数据怎么来的各家不一样，有的确实用浏览器去抓真实网页，有的直接调 API 模拟，甚至同一家对不同模型做法都不同（比如网页抓 ChatGPT，Claude 走 API 还要按 3 倍扣积分），官网宣传页一般也不会把这些写出来。\r\n\r\n搜测评基本全是带返佣的推广文，没什么参考价值。我就花了几天把常见的 24 个工具自己挨个过了一遍：对着官网核了一轮最新价格和采集方式，又把 G2、TrustRadius、Reddit、X 上能找到的评价翻出来筛了筛（把明显是邀请给好评的和官号自卖自夸的过滤掉），最后直接搭了个站把结果放上去，方便自己后面查，也分享给有需要的朋友：\r\n\r\n[The GEO Tools](https://thegeotools.com)（ https://thegeotools.com ）\r\n\r\n![首页榜单](https://thegeotools.com/showcase/home.png)\r\n\r\n首页默认直接按调研出来的总分排，没搞付费置顶。每个工具拆了 5 个维度来打分：数据准确度/采集方式（25%）、建议能不能落地",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Enivel",
-      "url": "https://www.v2ex.com/t/1259339",
-      "posted_at": "2026-11-24 10:09 Asia/Shanghai",
-      "engagement": {
-        "replies": 1
-      },
-      "original_title": "把市面上 24 个 GEO 工具挨个过了一遍，做了个对比站 thegeotools.com",
-      "original_summary": "把市面上 24 个 GEO 工具挨个过了一遍，做了个对比站 thegeotools.com\n最近做海外站想买个 GEO 工具，看看自己品牌在 ChatGPT、Perplexity、Google AI Overviews 里到底有没有被提到。结果自己挑了一圈，发现太乱了。\r\n\r\n很多产品写着 29 刀一个月，点进去才发现只给十几个 prompt，还只让建一个项目，稍微多测几个词就得直接升到 189 刀。网上搜出来的老攻略也不准，好多写着 199 刀自助起价的，去官网一看早下架改联系销售了，像 [Hall AI](https://thegeotools.com/tools/hall-ai) 这种独立版甚至都已经停售，变成别家套件里的附加功能了。还有就是数据怎么来的各家不一样，有的确实用浏览器去抓真实网页，有的直接调 API 模拟，甚至同一家对不同模型做法都不同（比如网页抓 ChatGPT，Claude 走 API 还要按 3 倍扣积分），官网宣传页一般也不会把这些写出来。\r\n\r\n搜测评基本全是带返佣的推广文，没什么参考价值。我就花了几天把常见的 24 个工具自己挨个过了一遍：对着官网核了一轮最新价格和采集方式，又把 G2、TrustRadius、Reddit、X 上能找到的评价翻出来筛了筛（把明显是邀请给好评的和官号自卖自夸的过滤掉），最后直接搭了个站把结果放上去，方便自己后面查，也分享给有需要的朋友：\r\n\r\n[The GEO Tools](https://thegeotools.com)（ https://thegeotools.com ）\r\n\r\n![首页榜单](https://thegeotools.com/showcase/home.png)\r\n\r\n首页默认直接按调研出来的总分排，没搞付费置顶。每个工具拆了 5 个维度来打分：数据准确度/采集方式（25%）、建议能不能落地",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1259331",
-      "source": "V2EX",
-      "category": "AI 产品会员/试用",
-      "title": "做了个会锁屏的 Mac 休息提醒：到点了，键盘鼠标真的会被锁住",
-      "summary": "做了个会锁屏的 Mac 休息提醒：到点了，键盘鼠标真的会被锁住\n写代码经常一坐就是三四个小时，腰和颈椎都在抗议。\r\n\r\n休息提醒软件试了一圈，问题都一样：提醒弹出来，我点“稍后”，然后就没有然后了。\r\n\r\n所以干脆自己做了一个狠一点的：Breather。\r\n\r\n连续用 Mac 45 分钟，它会铺满屏幕，锁住键盘和鼠标 15 分钟。你唯一能做的，就是站起来。\r\n\r\n当然不是一刀切：\r\n\r\n- 休息前 1 分钟提前提示，正在打的那句话会等你打完\r\n- 开会（摄像头、麦克风在用）、全屏看视频时自动顺延\r\n- 真有急事：按住 ⌃⌥⌘E 10 秒，再输入一句自己设定的话，就能提前结束，每周次数有限\r\n- 可以设置晚上几点“熄灯”，到点就不让用电脑了，治熬夜\r\n\r\n还有一点私心：休息画面里的天空是真实的。太阳、月亮、星星都按你所在地此刻的真实位置，窗外下雨，画面里也下雨，小人还会撑伞去散步。\r\n\r\n不收集数据，没有账号。免费试用 14 天，之后 12.99 美元买断。\r\n\r\n官网：https://breather.seeland.tech/zh/\r\n\r\n欢迎拍砖，尤其是“这功能太烦了”这种 😂",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "ikook",
-      "url": "https://www.v2ex.com/t/1259331",
-      "posted_at": "2026-11-24 09:46 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "做了个会锁屏的 Mac 休息提醒：到点了，键盘鼠标真的会被锁住",
-      "original_summary": "做了个会锁屏的 Mac 休息提醒：到点了，键盘鼠标真的会被锁住\n写代码经常一坐就是三四个小时，腰和颈椎都在抗议。\r\n\r\n休息提醒软件试了一圈，问题都一样：提醒弹出来，我点“稍后”，然后就没有然后了。\r\n\r\n所以干脆自己做了一个狠一点的：Breather。\r\n\r\n连续用 Mac 45 分钟，它会铺满屏幕，锁住键盘和鼠标 15 分钟。你唯一能做的，就是站起来。\r\n\r\n当然不是一刀切：\r\n\r\n- 休息前 1 分钟提前提示，正在打的那句话会等你打完\r\n- 开会（摄像头、麦克风在用）、全屏看视频时自动顺延\r\n- 真有急事：按住 ⌃⌥⌘E 10 秒，再输入一句自己设定的话，就能提前结束，每周次数有限\r\n- 可以设置晚上几点“熄灯”，到点就不让用电脑了，治熬夜\r\n\r\n还有一点私心：休息画面里的天空是真实的。太阳、月亮、星星都按你所在地此刻的真实位置，窗外下雨，画面里也下雨，小人还会撑伞去散步。\r\n\r\n不收集数据，没有账号。免费试用 14 天，之后 12.99 美元买断。\r\n\r\n官网：https://breather.seeland.tech/zh/\r\n\r\n欢迎拍砖，尤其是“这功能太烦了”这种 😂",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "id": "ghdeal-diipanshuuuu-kool-playground",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "Arsh624/llm4jobs-v2：免费运行的岗位雷达",
-      "summary": "从 49 家公司招聘 API 抓取应届岗位，按资历和地点筛选后每日邮件推送，可在 GitHub Actions 上免费运行。",
+      "title": "Kool-PlayGround：免费开源的 BYOK 大模型试验场",
+      "summary": "极简无干扰的 BYOK LLM 试验场，支持 Groq、OpenAI、Anthropic、OpenRouter 及兼容 API。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Arsh624",
-      "url": "https://github.com/Arsh624/llm4jobs-v2",
-      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "author": "diipanshuuuu",
+      "url": "https://github.com/diipanshuuuu/Kool-PlayGround",
+      "posted_at": "2026-11-20 05:01 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
-      "original_title": "Arsh624/llm4jobs-v2",
-      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-nejib1-free-llm",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "nejib1/Free-LLM：79个免费LLM API与460+免费模型清单",
-      "summary": "汇总79家免费 LLM API 供应商和460多个免费模型的额度与免信用卡选项，并提供统一兼容端点和自动故障切换。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "nejib1",
-      "url": "https://github.com/nejib1/Free-LLM",
-      "posted_at": "2026-11-24 10:31 Asia/Shanghai",
-      "engagement": {
-        "stars": 1103
-      },
-      "original_title": "nejib1/Free-LLM",
-      "original_summary": "nejib1/Free-LLM 79 free LLM API providers & 460+ free models (limits, no-card options) + Free-LLM Router: all of them behind one OpenAI/Anthropic-compatible endpoint with instant failover. Run Claude Code, Codex, Cursor, Aider on free models. Gemini, Groq, Mistral, DeepSeek, Qwen & more. Synced daily.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-uhmwpe888-beep-free-llm-api-data",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "free-llm-api-data：109 个模型定价与 12 个永久免费 API",
-      "summary": "提供 109 个模型的 LLM API 定价和免费额度数据，含 12 个永久免费 API，为 llmcosthub.wiki 提供数据。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "uhmwpe888-beep",
-      "url": "https://github.com/uhmwpe888-beep/free-llm-api-data",
-      "posted_at": "2026-11-06 20:02 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "uhmwpe888-beep/free-llm-api-data",
-      "original_summary": "uhmwpe888-beep/free-llm-api-data LLM API pricing + free tier data — 109 models, 12 permanent free APIs. Powers llmcosthub.wiki",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-xinrui-z-free-llm",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "xinrui-z/free-llm 汇总免费 LLM API 与资源",
-      "summary": "面向开发者收集免费 GPT、Claude 与开源 LLM 端点、工具和指南。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "xinrui-z",
-      "url": "https://github.com/xinrui-z/free-llm",
-      "posted_at": "2026-11-24 10:57 Asia/Shanghai",
-      "engagement": {
-        "stars": 27
-      },
-      "original_title": "xinrui-z/free-llm",
-      "original_summary": "xinrui-z/free-llm 🔥 Free LLM APIs & Resources List — collect free GPT / Claude / open-source LLM endpoints, tools and guides for developers.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-andrewavery7-promptspend",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "promptspend：标注来源的 LLM 价格表，附免费免密钥 API",
-      "summary": "每项价格都标注来源和确认日期，每天重新核对，并提供网页计算器、手机应用、MCP 服务器、VS Code 扩展和免费免密钥 API。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "AndrewAvery7",
-      "url": "https://github.com/AndrewAvery7/promptspend",
-      "posted_at": "2026-11-12 03:18 Asia/Shanghai",
-      "engagement": {
-        "stars": 1
-      },
-      "original_title": "AndrewAvery7/promptspend",
-      "original_summary": "AndrewAvery7/promptspend LLM pricing that shows its work: every price carries its source and the date it was last confirmed, re-checked against the vendors every morning. A web calculator, iPhone and Android apps, an MCP server, a VS Code extension and a free keyless API.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-dorkagent-free-llm-models",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "free-llm-models：每日自动验证可用的免费 LLM API 模型清单",
-      "summary": "该仓库由自动化程序每天更新，收录实测确实可用的免费 LLM API 模型。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "dorkagent",
-      "url": "https://github.com/dorkagent/free-llm-models",
-      "posted_at": "2026-11-16 21:12 Asia/Shanghai",
-      "engagement": {
-        "stars": 1
-      },
-      "original_title": "dorkagent/free-llm-models",
-      "original_summary": "dorkagent/free-llm-models Daily-verified registry of free LLM API models that actually work. Updated by automation.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-yangmaoswitch-catalog",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "YangmaoSwitch/catalog：各平台大模型免费额度结构化目录",
-      "summary": "汇总各平台大模型免费 API 额度的结构化数据，平台可通过 PR 提交收录。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "YangmaoSwitch",
-      "url": "https://github.com/YangmaoSwitch/catalog",
-      "posted_at": "2026-11-19 16:58 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "YangmaoSwitch/catalog",
-      "original_summary": "YangmaoSwitch/catalog 羊毛switch 额度目录：各平台大模型免费额度的结构化数据，平台可提 PR 入驻 / Free LLM API quota catalog",
+      "original_title": "diipanshuuuu/Kool-PlayGround",
+      "original_summary": "diipanshuuuu/Kool-PlayGround Kool PlayGround — A minimal, distraction-free BYOK LLM playground for Groq, OpenAI, Anthropic, OpenRouter, and custom OpenAI-compatible APIs",
       "translated_by": "model"
     },
     {
@@ -1872,25 +1872,6 @@
       "deadline": null,
       "original_title": "skvdhshuk-blip/hao-code",
       "original_summary": "Framework-free PHP Agent SDK for Anthropic, OpenAI Responses, and Chat Completions-compatible APIs—with tools, skills, streaming, multi-agent teams, sandboxing, and structured output.",
-      "translated_by": "free-translate",
-      "discovered_at": "2026-11-11 12:02 Asia/Shanghai"
-    },
-    {
-      "id": "disc-velo4705-awesome-free-byok-models",
-      "source": "GitHub 自动发现",
-      "author": "velo4705",
-      "url": "https://github.com/velo4705/awesome-free-byok-models",
-      "posted_at": "2026-11-11 09:09 Asia/Shanghai",
-      "engagement": {
-        "stars": 83
-      },
-      "category": "大模型 API 免费额度",
-      "title": "GitHub 开源：velo4705/awesome-free-byok-models",
-      "summary": "精选的 AI 模型及其 API 提供商列表，您永远不需要信用卡。",
-      "how": "打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。",
-      "deadline": null,
-      "original_title": "velo4705/awesome-free-byok-models",
-      "original_summary": "A curated list of AI Models with their API Providers that you never ever require a Credit Card for.",
       "translated_by": "free-translate",
       "discovered_at": "2026-11-11 12:02 Asia/Shanghai"
     }
