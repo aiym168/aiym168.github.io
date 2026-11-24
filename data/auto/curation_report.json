@@ -2,28 +2,25 @@
  "counts": {
   "archived": 25,
   "deadline_extracted": 7,
-  "drop:duplicate": 580,
-  "drop:empty_summary": 76,
-  "drop:google_news_unresolved": 1,
-  "drop:negative_signal": 163,
-  "drop:no_clear_offer": 719,
-  "drop:not_ai": 615,
+  "drop:duplicate": 578,
+  "drop:empty_summary": 77,
+  "drop:negative_signal": 165,
+  "drop:no_clear_offer": 727,
+  "drop:not_ai": 620,
   "drop:too_old_pre2025": 61,
-  "google_news_resolved": 760,
-  "google_news_total": 761,
-  "kept_total": 239,
-  "net:gnews_cache_hit": 736,
-  "net:gnews_resolved_net": 25,
-  "net:tco_expanded": 4,
-  "new_this_run": 3,
-  "raw_total": 2454
+  "google_news_resolved": 775,
+  "google_news_total": 775,
+  "kept_total": 240,
+  "net:gnews_cache_hit": 760,
+  "net:gnews_resolved_net": 15,
+  "net:tco_expanded": 5,
+  "net:tco_failed": 8,
+  "raw_total": 2468
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "AbcTab 1.5.0 发布：双击修饰键唤起应用切换器 + 多字母/拼音过滤，唯一匹配 0ms 秒切",
-   "做了个基于 YouTube 资源练英语口语的小工具，Chrome 插件 + iOS，求拍砖",
    "BrighTO_Router：开源 Rust LLM 网关",
    "agnes-video-generator：免费 AI 视频生成器，开源且自托管",
    "awesome-cyber-security-heaven：Awesome Cyber​​ Security Heave",
@@ -32,9 +29,12 @@
    "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
    "Beatreel：根据一个提示制作讲解短视频",
    "hive-mind：如何设计协同工作的 AI 体",
-   "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理"
+   "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
+   "godspeed：适用于您课程的免费开源 AI 辅导工具",
+   "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣"
   ],
   "empty_summary": [
+   "Nebius 提供25美元 Spot GPU 免费额度，无需绑定信用卡，相当于 H100运行一天，可用于微调开源模型",
    "用户可免费获得 B300 一下午或 H100 最多一天的使用时长，无需信用卡",
    "额度可用于 Spot GPU，无需信用卡，B300 与 H100 均在免费试用范围内",
    "开发者可免费试用 B300 与 H100 显卡，用于模型实验和微调，无需信用卡",
@@ -45,13 +45,11 @@
    "@divaagurlxw 分享：> 无需注册 > 无需信用卡 > 每天 10K 请求 > 未过滤的响应 > OpenAI",
    "他的循环：问 AI 自己缺什么、找免费讲座、语音复盘，再用真实场景测试",
    "@shanehegde 分享：该工具提供免费试用和90免费积分，可将编辑时间缩短至几分钟，并有实用的 recipes 功",
-   "@shanehegde 分享：该工具提供免费试用和90免费积分，可将编辑时间缩短至几分钟，并有实用的 recipes 功",
-   "@malpani 分享：请访问 尝试我们基于 AI 的免费学习伴侣"
-  ],
-  "google_news_unresolved": [
-   "英国邀请近70万女性参加全球最大AI乳腺癌筛查试验"
+   "@shanehegde 分享：该工具提供免费试用和90免费积分，可将编辑时间缩短至几分钟，并有实用的 recipes 功"
   ],
   "negative_signal": [
+   "@trtworld 分享：英国启动为期三年、约70万女性参与的乳腺癌 AI 筛查试验，项目耗资1300万美元",
+   "@JulianGoldieSEO 分享：该免费 AI 社区已有95000多人加入，提供50多款免费 AI 工具、200多",
    "@pmnewsnigeria 分享：英国启动世界上最大的 AI 辅助乳腺筛查试验 英国推出世界上最大的 AI 辅助乳房筛",
    "@turkiyetodaycom 分享：英国政府资助 1000 万英镑进行 AI 辅助乳腺癌筛查试验，由剑桥大学沃里克大",
    "SEO 重大新闻，有一个免费的 Claude Code 连接器，可以对任何网站的 Google 流量 + AI 流量进行",
@@ -61,25 +59,25 @@
    "ECP Asset Management 的 Annabelle Miller 认为",
    "@JulianGoldieSEO 分享：直播演示从零搭建负责行政、获客和内容的三套 AI 系统，可免费观看并复制到自己的",
    "这项由 NIHR 资助、耗资1000万英镑的研究，是全球最大规模使用 AI 辅助工具的乳腺癌筛查试验",
-   "@BAI_AGI 分享：感恩节赠品 为您最喜欢的功能投票感恩节快乐",
-   "@wendyburn 分享：AI 用于乳腺癌筛查的试验",
-   "@wearfigs 首席执行官 Trina Spear 分享了她从社区听到的乐观信号，以及为什么这可以节省患者护理时间"
+   "@BAI_AGI 分享：感恩节赠品 为您最喜欢的功能投票感恩节快乐"
   ],
   "no_clear_offer": [
+   "文中附 Rippling 170 亿美元外呼打法、免费 AI GTM 工具包和 YC 落地页公式三个链接",
+   "可直接生成带完整 PBR 贴图的物理准确 3D 模型，含基础色、粗糙度、金属度、透明度，能处理头发、布料、玻璃等",
+   "LATO.2可将单张图片转为低多边形风格网格，支持200至5000顶点，免费开源，需8GB 显存",
+   "@GuyDealership 分享：”答案让我很惊讶，免费亲自尝试",
+   "Nebius Builder Program 为开发者提供25美元 AI Cloud 额度",
+   "Nebius 免费 Builder Program 新增25美元 AI Cloud credits",
+   "OpenAI 推出 OpenWorks 为小型企业提供免费 AI 帮助",
+   "All Access 年度订阅现价388美元，附赠来自 OpenAI、AnthropicAI、NotionHQ",
+   "Claude 的连接器与技能整合为插件，已在 Free、Pro、Max、Ultra 计划上线",
    "@ai_for_success 分享：该模型来源未知，可用于 3D 与交互式项目构建测试",
    "@claudeskills101 分享：该重置有效期至12月10日下午2点（太平洋时间），适用于 Pro、Max、Ult",
-   "@YouGov 分享：调查显示 36% 认为人类癌症专家更强，15% 选专业 AI 程序，29% 认为两者相当",
-   "通过审核后可按小时在 Spot 租用 B300、B200 或 H100，无需整机包月",
-   "注册 Nebius 免费 Builder Program，通过审核后可获 25 美元 GPU 时长",
-   "@near_ai 分享：该模型支持文本与图像输入，输入每百万 token 收费 8 美元、输出 40 美元",
-   "@rohanpaul_ai 分享：每个 AI 工程师都应该知道他们的工作负载如何在最新的 GPU 上运行",
-   "@TheRundownAI 分享：OpenAI 在20个美国城市为小企业配对本地 AI 助手，每月最高付8000美元",
-   "Nebius 免费 Builder Program 新增25美元 AI Cloud credits",
-   "Firecrawl 自托管网页抓取器可免费在本机运行，数据不出本地，速度比旧版快37倍",
-   "@nicholascalez 分享：该应用年收入突破20万美元，全部来自 Instagram 试播短视频和 TikTok",
-   "这项由 NIHR 资助的全球首创研究，或改变数千名女性的乳腺癌诊断方式"
+   "@YouGov 分享：调查显示 36% 认为人类癌症专家更强，15% 选专业 AI 程序，29% 认为两者相当"
   ],
   "not_ai": [
+   "@viktoroddy 分享：把童装店做成可拖拽旋转的木马界面，点选单品、切换颜色、加入购物车，作者免费提供提示词",
+   "Databricks CRO 称，让所有用户免费后消费大幅上升，每位用户成本约1000美元",
    "@svpino 分享：成员可获可运行蓝图、免费课程、技术答疑时段，以及 Nebius 及合作伙伴的额度与优惠",
    "@testingcatalog 分享：用户还可设置自己愿意支付的每 GPU 小时价格上限",
    "Vibe Pro 面向欧洲开发者推出免费试用，此前名额不到一小时用尽，现已取消容量限制",
@@ -89,9 +87,7 @@
    "对标年费 168 美元的 Granola，无需机器人入会，音频不离开本机",
    "@AntLingAGI 分享：总参数 124B、激活 5.5B，融合医学图像理解、报告生成、医学推理与多模态检索和工具调",
    "Joseph W，Hogan 撰文指出，试验设计不仅关乎干预是否有效，也关乎其如何起效",
-   "YouTube - 免费，但 证书 MDN - 免费，但 证书 W3Schools - 免费，但 证书 前 12 个免费",
-   "每个 CUDA 基准测试都归功于 GPU",
-   "该 DLC 在 Steam 差评如潮，部分原因是主机版比 PC 版多收 10 美元，且内容缺乏实质更新"
+   "YouTube - 免费，但 证书 MDN - 免费，但 证书 W3Schools - 免费，但 证书 前 12 个免费"
   ],
   "too_old_pre2025": [
    "DistroKid推出免费AI图像生成器，可用于专辑封面等",
@@ -108,16 +104,18 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-24T05:15:09+08:00",
+ "generated_at": "2026-11-24T11:07:19+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-24T05:14:54+08:00",
+  "checked_at": "2026-11-24T11:07:19+08:00",
   "counts": {
-   "ok": 211,
-   "recheck": 1
+   "gone": 1,
+   "ok": 212,
+   "recheck": 1,
+   "unsure": 1
   },
-  "hidden": 0
+  "hidden": 1
  },
- "seconds": 13.6,
+ "seconds": 11.1,
  "side": {
   "github_hot": {
    "drop:duplicate": 9,
@@ -126,9 +124,9 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 16,
-   "drop:not_ai_strict": 7,
+   "drop:negative_signal": 3,
+   "drop:not_ai": 13,
+   "drop:not_ai_strict": 11,
    "kept": 13,
    "raw": 40
   }
