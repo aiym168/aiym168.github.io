@@ -1,9 +1,47 @@
 {
   "date": "2026-11-25",
-  "updated_at": "2026-11-25T10:12+08:00",
-  "updated_at_label": "2026-11-25 10:12 Asia/Shanghai",
+  "updated_at": "2026-11-25T19:41+08:00",
+  "updated_at_label": "2026-11-25 19:41 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50639615",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Lightscale AI：让 LLM 编写业务软件的语言",
+      "summary": "瑞士小团队为 LLM 生成业务软件重新设计底层技术栈，作者有编程语言研究背景。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "luc-lightscale-",
+      "url": "https://lightscale.ai/",
+      "posted_at": "2026-11-25 15:36 Asia/Shanghai",
+      "engagement": {
+        "points": 5,
+        "comments": 1
+      },
+      "original_title": "Show HN: Lightscale AI – A language for LLMs to write business software",
+      "original_summary": "Show HN: Lightscale AI – A language for LLMs to write business software I am Luc, one of the co-founders of Lightscale AI. I have background in programming languages (ETH Zurich) and we are small team in Zug, Switzerland. As more and more code is now written by LLMs and few people have time to review the generated code, we came up with the idea to revise the actual stack below the LLMs: The programming language with its compiler and runtime system, all designed from scratch for AI authorship, not for humans.<p>We have three goals:\n1. Security and stability by language design: Some classes of errors are removed by abstraction as the AI never writes that code, but the compiler and runtime implement it fully. Others are reduced by  rigid compiler checks and very strict language rules (no fun ",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50638216",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Provost：免费压缩归档工具，可打开 137 种格式",
+      "summary": "单文件免安装，能创建 119 种格式，自定义格式体积小于 ZPAQ、xz 与 Zstandard。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "uws",
+      "url": "https://provost.unlimitedweb.space/",
+      "posted_at": "2026-11-25 11:46 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 0
+      },
+      "original_title": "Show HN: Archiver that opens every format",
+      "original_summary": "Show HN: Archiver that opens every format 137 file types; a single file with nothing to install.\nIntroducing Provost, the free compression and archival tool that can create 119 formats, and open 137 total.  It&#x27;s new custom format packs smaller than ZPAQ, xz, and Zstandard in tests.\nJPEG, PNG, PDF, DOCX&#x2F;XLSX, and gzip are unpacked and repacked for ~25% smaller files; ability to encrypt to people&#x27;s keys or a password; can open archives straight from HTTPS, S3, WebDAV, and SFTP; can search inside archives, including the text of Office files and PDFs; and much more.<p>Q&amp;A\n---\nIs it open source?\n It is not.<p>Will my .provost files open in five years?\n I&#x27;ve committed to future releases reading every 0.1.0 archive, and to old compression methods staying readable.<p>Are bu",
+      "translated_by": "model"
+    },
     {
       "id": "hn-50634426",
       "source": "Hacker News",
@@ -16,8 +54,8 @@
       "url": "https://news.ycombinator.com/item?id=50634426",
       "posted_at": "2026-11-25 04:44 Asia/Shanghai",
       "engagement": {
-        "points": 70,
-        "comments": 51
+        "points": 89,
+        "comments": 75
       },
       "original_title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
       "original_summary": "Launch HN: Versine (YC F26) – MCP to send and receive money Hey HN, we’re Harshith, Param, and Vishnu and we&#x27;re building Versine (<a href=\"https:&#x2F;&#x2F;versine.com\">https:&#x2F;&#x2F;versine.com</a>). Versine lets you send and request money just by talking or texting with your AI (think Venmo with an MCP). We’re software engineers who have worked on distributed systems at Stripe, Databricks, and Amazon.<p>Versine is an MCP that sits in front of a wallet with a balance. With it, your agent can do things like:<p>- Send money to someone with your approval (via passkey in our app)<p>- Send and request money to&#x2F;from up to 100 people at once<p>- Send money to people without a Versine account (they cash out to their bank in 2 mins)<p>- Pay people without your explicit approval to t",
@@ -92,7 +130,7 @@
       "url": "https://github.com/xiangechen/chili3d",
       "posted_at": "2026-11-24 22:49 Asia/Shanghai",
       "engagement": {
-        "points": 2,
+        "points": 3,
         "comments": 0
       },
       "original_title": "Show HN: Chili3D – Open-source browser CAD with parametric/push-pull modeling",
@@ -236,8 +274,8 @@
       "id": "hn-50614568",
       "source": "Hacker News",
       "category": "AI 开发工具与编程助手",
-      "title": "Show HN：11 个 Three.js 城镇，可练习 9 种语言、现场语音和开放聊天",
-      "summary": "显示 HN：11 个 Three.js 城镇，练习 9 种语言、现场语音和开放聊天 作为一个不擅长学习语言的人，我发现当你真正有人与某人交谈时，很难获得足够的练习来自信地说话。我想找个地方练习日常对话，所以我制作了 Maido。<p>它是浏览器中的免费游戏，可以在桌面或移动设备上运行，无需安装任何内容，无需登录或帐户。您甚至可以使用 QR 码，通过加密盲中继在设备之间同步进度。<p>每种语言都有一个 3D 城镇，您可以在其中四处走动，用麦克风（或通过打字）与人交谈，并处理一些普通事务，例如订餐、买花、购买杂货以及与邻居交谈。每个地方都有多个区",
+      "title": "Maido：浏览器里免费练 9 种语言的 11 个 Three.js 小镇",
+      "summary": "免费网页游戏，桌面和手机可用，可练日常口语、实时语音和公开聊天。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
       "author": "starfallg",
@@ -249,44 +287,6 @@
       },
       "original_title": "Show HN: 11 Three.js towns to practise 9 languages, live voice and open chat",
       "original_summary": "Show HN: 11 Three.js towns to practise 9 languages, live voice and open chat As somebody that is not a natural learning languages, I found it really hard to get enough practise to feel confident speaking when you actually have someone to talk to someone. I wanted somewhere to practise everyday conversation out lout, so I made Maido.<p>It&#x27;s a free game in your browser and works on desktop or mobile with nothing to install and no login or account needed. You can even sync progress between your devices via an encrypted blind relay by using a QR code.<p>Each language has a 3D town where you walk around, talk to people with your mic (or by typing) and run ordinary errands like ordering food, buying flowers, getting groceries, and talking with neighbours. Each place has a number of district",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50614327",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "CadYam 是用 Rust 构建的免费创意套件，支持 AI 协作",
-      "summary": "CadYam 是桌面设计应用，让用户与 AI 智能体在同一项目中协作完成 CAD 绘图、视频、室内设计计划和数据分析等。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "nadis",
-      "url": "https://codeyam.com/apps/cadyam",
-      "posted_at": "2026-11-24 00:17 Asia/Shanghai",
-      "engagement": {
-        "points": 5,
-        "comments": 8
-      },
-      "original_title": "Show HN: A free creative suite, built in Rust, for AI collaboration",
-      "original_summary": "Show HN: A free creative suite, built in Rust, for AI collaboration Hi HN, I&#x27;m Nadia, one of the makers of CadYam. My cofounder Jared is here to answer questions as well.<p>CadYam is a desktop design app built for a person and an AI agent to work on the same project: a CAD drawing, a video, an interior design plan, a data analysis, etc. You can sketch something by asking it to your agent and drop a pin on a specific place to ask for changes.<p>We built this after a lot of frustration trying to learn traditional CAD tools, which have a steep learning curve and take a lot of time and effort before you can build anything complex. With CadYam, the agent can do the work for you with your guidance or teach you how to use the app if you&#x27;d like to do some manual work yourself, so you als",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50612762",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "SecureVibe 可查找并追踪 vibe coding 应用的漏洞",
-      "summary": "作者开发了一个 MVP，可在代码库中查找漏洞，原文称不只是扫描代码。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Abdo2026",
-      "url": "https://securevibe-dev.vercel.app/",
-      "posted_at": "2026-11-23 22:53 Asia/Shanghai",
-      "engagement": {
-        "points": 3,
-        "comments": 4
-      },
-      "original_title": "Show HN: SecureVibe – Find and trace vulnerabilities for vibe coded apps",
-      "original_summary": "Show HN: SecureVibe – Find and trace vulnerabilities for vibe coded apps Hello HN, just wanted to share my project that I&#x27;ve been working on the past months, where I noticed the issue that now we ship faster than setting up the requirements for the project. So I thought of building secureVibe to find vulnerabilities in your codebase.\nNow I have a MVP where it doesn&#x27;t just scan the code and show random analysis I used Tree-sitter and AST to understand code context to validate vulnerabilities found as it builds a graph of application routes, handlers and database calls so it helps to determine whether findings are confirmed or likely.<p>Briefly the features: 1- shows all vulnerabilities in your code with code snippets<p>2-fixing with ai option (optional with your own api key for no",
       "translated_by": "model"
     },
     {
@@ -328,6 +328,25 @@
       "translated_by": "model"
     },
     {
+      "id": "hn-50640680",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "SlayArcade：免费浏览器街机，含每日谜题且可离线玩",
+      "summary": "Show HN：SlayArcade——免费浏览器街机游戏，每日益智游戏，可离线游玩",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "slayarcade",
+      "url": "https://slayarcade.com",
+      "posted_at": "2026-11-25 18:21 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: SlayArcade – free browser arcade, daily puzzle, works offline",
+      "original_summary": "Show HN: SlayArcade – free browser arcade, daily puzzle, works offline ",
+      "translated_by": "model"
+    },
+    {
       "id": "hn-50635126",
       "source": "Hacker News",
       "category": "其他科技",
@@ -358,8 +377,8 @@
       "url": "https://news.ycombinator.com/item?id=50633601",
       "posted_at": "2026-11-25 03:51 Asia/Shanghai",
       "engagement": {
-        "points": 17,
-        "comments": 12
+        "points": 27,
+        "comments": 15
       },
       "original_title": "Ask HN: Am I the only one whose AI hype is cooling down a lot?",
       "original_summary": "Ask HN: Am I the only one whose AI hype is cooling down a lot? I am in the industry for 15+ years, studied CS, and actually, never really &quot;liked&quot; programming. It was a means to an end. I have written about programming (and published books), so don&#x27;t get me wrong: I like the craft and I miss the sense of accomplishment after hours and days of struggling and fixing a problem with 2 lines of code.<p>What I see in my personal spending and habits: I get free tokens from my company, and I spent between 3k-5k a month at the start of the year. Models got cheaper, but also: The usefullness ran its course a little bit for me.<p>I still don&#x27;t write code by hand, but when doing research, finding solutions, even some decisions (using Opus 5.5 and Astra 6.2 for example) are more and ",
@@ -442,44 +461,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50609708",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Hermit CRM 是面向单人创业者的免费开源 CRM",
-      "summary": "Hermit CRM 是供单人使用的开源 CRM，可跟踪交易和潜在客户，并以适合 AI 的方式存储数据。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "gijsbos",
-      "url": "https://hermitcrm.io/",
-      "posted_at": "2026-11-23 18:09 Asia/Shanghai",
-      "engagement": {
-        "points": 48,
-        "comments": 9
-      },
-      "original_title": "Show HN: Hermit CRM – Free open-source CRM for solopreneurs",
-      "original_summary": "Show HN: Hermit CRM – Free open-source CRM for solopreneurs I was about to keep track of my clients and prospecting in Google Sheets for my solopreneur business, when I remembered that&#x27;s exactly what I advise my clients not to do.<p>Created Hermit CRM, an open source CRM for 1 person. Hermit helps to keep track of deals and prospecting. The platform is built for AI by storing the data in Markdown files in git, stored locally and can be accessed with a web app, CLI or MCP. No telemetry on the app. Building in public, even the website stats  are public as well.<p>It’s macOS first. Linux is less tested, and Windows isn’t supported.<p>Features I&#x27;m proud of: \n- import somebody from LinkedIn into to the CRM with 1 click\n- adding a LinkedIn convo to the CRM with 1 click.\nBoth work witho",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50600194",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "无AI电话亭用于保障真人面试",
-      "summary": "无 AI 的电话亭，可保证人工采访",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "hackyhacky",
-      "url": "https://www.tryairlock.ai/",
-      "posted_at": "2026-11-22 22:46 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "AI-free phonebooth for guaranteed human interviews",
-      "original_summary": "AI-free phonebooth for guaranteed human interviews ",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50633297",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -556,148 +537,183 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50627008",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "开源免费时间追踪工具，用 Git 仓库替代 SaaS",
-      "summary": "无后端，时间记录存于私有 GitHub 仓库，无席位限制，可追踪任意 URL 并离线使用。",
+      "id": "v2ex-1259794",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "许愿式剪视频：跟 agent 说了一句话，它给我交了条 4K 宣传片",
+      "summary": "许愿式剪视频：跟 agent 说了一句话，它给我交了条 4K 宣传片\n昨天想给自己的项目做个宣传片，懒得开剪映，直接跟 Claude Code 许愿：\"给我整个 70 秒的视频\"。\r\n\r\n然后它真整出来了 👇\r\n\r\n![](https://imgur.com/QiaXYZs)\r\n\r\n![](https://imgur.com/gBQccyI)\r\n\r\n分镜它写，录屏它录（真产品真操作，不是 PPT 动画），配音它配，BGM 都是它自己搓的。我干的活：看一遍，指着某个镜头说\"这儿太拖了\"，它改。\r\n\r\n能这么玩，是因为我给 agent 做了个东西叫 Ryugi。\r\n\r\n起因很简单：让 agent 出个设计，它甩给我三段 Markdown 描述三种布局，剩下全靠脑补。现在它直接把方案画出来，我在页面上点、圈、评论，反馈自动回到 agent 那边。设计稿、文档、白板、PPT、视频分镜都能这么搞。\r\n\r\n免费，本地跑，Claude Code / Codex / Cursor 这些都能用：\r\n\r\nnpx ryugi-artifacts install\r\n\r\nGitHub：https://github.com/Innei/ryugi\r\n\r\n评论区说说你想让 agent 画个啥，我挑几个现场做了贴回来 🫡",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "snikolaev",
-      "url": "https://github.com/clockoli/clockoli",
-      "posted_at": "2026-11-24 20:06 Asia/Shanghai",
+      "author": "tukon479",
+      "url": "https://www.v2ex.com/t/1259794",
+      "posted_at": "2026-11-25 19:12 Asia/Shanghai",
       "engagement": {
-        "points": 7,
-        "comments": 0
+        "replies": 1
       },
-      "original_title": "Show HN: We replaced our time tracking SaaS with a Git repository",
-      "original_summary": "Show HN: We replaced our time tracking SaaS with a Git repository TL;DR:<p>- Free and open source, no seat limits.<p><pre><code>  - Some of its features require plans that cost a team of 10 around $1,000&#x2F;year on Clockify or $2,000&#x2F;year on Toggl Track.\n</code></pre>\n- No backend. Your time entries live in your private GitHub repo.<p>- Track any URL.<p>- Works offline, syncs in the background and keeps changes in Git history.<p>- Team reports, CSV exports, historical hourly rates, multiple currencies and PDF invoices, all in the browser.<p>Hi HN. I&#x27;m Sergey, one of the developers behind Manticore Search.<p>We&#x27;d been using Clockify for years until they decided to limit their free plan to five users recently. We started looking around. Being an open-source company, we weren",
-      "translated_by": "model"
+      "original_title": "许愿式剪视频：跟 agent 说了一句话，它给我交了条 4K 宣传片",
+      "original_summary": "许愿式剪视频：跟 agent 说了一句话，它给我交了条 4K 宣传片\n昨天想给自己的项目做个宣传片，懒得开剪映，直接跟 Claude Code 许愿：\"给我整个 70 秒的视频\"。\r\n\r\n然后它真整出来了 👇\r\n\r\n![](https://imgur.com/QiaXYZs)\r\n\r\n![](https://imgur.com/gBQccyI)\r\n\r\n分镜它写，录屏它录（真产品真操作，不是 PPT 动画），配音它配，BGM 都是它自己搓的。我干的活：看一遍，指着某个镜头说\"这儿太拖了\"，它改。\r\n\r\n能这么玩，是因为我给 agent 做了个东西叫 Ryugi。\r\n\r\n起因很简单：让 agent 出个设计，它甩给我三段 Markdown 描述三种布局，剩下全靠脑补。现在它直接把方案画出来，我在页面上点、圈、评论，反馈自动回到 agent 那边。设计稿、文档、白板、PPT、视频分镜都能这么搞。\r\n\r\n免费，本地跑，Claude Code / Codex / Cursor 这些都能用：\r\n\r\nnpx ryugi-artifacts install\r\n\r\nGitHub：https://github.com/Innei/ryugi\r\n\r\n评论区说说你想让 agent 画个啥，我挑几个现场做了贴回来 🫡",
+      "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1259621",
+      "id": "v2ex-1259790",
       "source": "V2EX",
       "category": "AI 产品会员/试用",
-      "title": "收到一个 codex plus 的免费试用，但是不能付款",
-      "summary": "收到一个 codex plus 的免费试用，但是不能付款\n愁哇，招行 visa、paypal、google pay 都不能提交订单，我只能在手机 app 上用谷歌 play 付款，但是 app 上没有优惠\r\n https://i.imgur.com/wnYGmQw.png",
+      "title": "[30 天免费试用，可薅] 比 CrossOver 便宜的 MAC 玩 Windows 游戏的新方法 Portico",
+      "summary": "[30 天免费试用，可薅] 比 CrossOver 便宜的 MAC 玩 Windows 游戏的新方法 Portico\n平时主力机是 MBP，Steam 库里有不少只有 Windows 版的独立游戏、模拟经营和怀旧中文单机（像《仙剑系列》《了不起的修仙模拟器》《大富翁 4》这类）。\r\n\r\n之前一直用 Whisky，停更之后新版 Steam 经常黑屏抽风；CrossOver 体验不错，但对我这种不玩重度 3A、偶尔摸鱼刷两把轻度单机的人来说偏重也贵了点。\r\n\r\n前两天翻到一个叫 Portico 的原生 macOS 工具，实际折腾了一下，有几个点还挺戳主力机用户的：\r\n\r\n1. 做了 macOS 系统级沙盒隔离（sandbox-exec）：普通 Wine 默认会把整个 Mac 挂成 Z 盘，还会把桌面和文稿目录软链进去，在工作机上跑闭源老游戏总觉得别扭。这个启动前会切断 Z\r\n    盘和个人目录软链，也不用装 Homebrew 或给 sudo，不想玩了点一下能卸干净。\r\n2. 有 Apple 官方公证：下载拖进应用程序就能直接开，不用再去隐私与安全性里手动点仍要打开。\r\n3. 中文老游戏和 DX11 比较省心：内置了繁简中文字体映射，之前在 Wine 里必出方块字的几个老启动器打开直接正常了；也自带 DXVK-macOS 一键开关和常见运行库（VC++、DirectX、Mono）诊断修复。\r\n\r\n客观说下局限和槽点，避免大家白下载：\r\n- 跑不了重度 DX12 3A 大作（想玩黑神话、2077）\r\n- 不是完全免费开源软件，提供 30 天免费试用，过期后需要买订阅或买断（好在可以先把库里的游戏全测一遍再决定）。\r\n\r\n官网地址：https://portico.bixialab.com\r\n\r\n顺便问下大家，你们现在在 Mac 上玩轻量 Steam Windows 单机都在用什么方",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "qf19910623",
-      "url": "https://www.v2ex.com/t/1259621",
-      "posted_at": "2026-11-25 09:45 Asia/Shanghai",
+      "author": "anyabi",
+      "url": "https://www.v2ex.com/t/1259790",
+      "posted_at": "2026-11-25 18:41 Asia/Shanghai",
       "engagement": {
         "replies": 3
       },
-      "original_title": "收到一个 codex plus 的免费试用，但是不能付款",
-      "original_summary": "收到一个 codex plus 的免费试用，但是不能付款\n愁哇，招行 visa、paypal、google pay 都不能提交订单，我只能在手机 app 上用谷歌 play 付款，但是 app 上没有优惠\r\n https://i.imgur.com/wnYGmQw.png",
+      "original_title": "[30 天免费试用，可薅] 比 CrossOver 便宜的 MAC 玩 Windows 游戏的新方法 Portico",
+      "original_summary": "[30 天免费试用，可薅] 比 CrossOver 便宜的 MAC 玩 Windows 游戏的新方法 Portico\n平时主力机是 MBP，Steam 库里有不少只有 Windows 版的独立游戏、模拟经营和怀旧中文单机（像《仙剑系列》《了不起的修仙模拟器》《大富翁 4》这类）。\r\n\r\n之前一直用 Whisky，停更之后新版 Steam 经常黑屏抽风；CrossOver 体验不错，但对我这种不玩重度 3A、偶尔摸鱼刷两把轻度单机的人来说偏重也贵了点。\r\n\r\n前两天翻到一个叫 Portico 的原生 macOS 工具，实际折腾了一下，有几个点还挺戳主力机用户的：\r\n\r\n1. 做了 macOS 系统级沙盒隔离（sandbox-exec）：普通 Wine 默认会把整个 Mac 挂成 Z 盘，还会把桌面和文稿目录软链进去，在工作机上跑闭源老游戏总觉得别扭。这个启动前会切断 Z\r\n    盘和个人目录软链，也不用装 Homebrew 或给 sudo，不想玩了点一下能卸干净。\r\n2. 有 Apple 官方公证：下载拖进应用程序就能直接开，不用再去隐私与安全性里手动点仍要打开。\r\n3. 中文老游戏和 DX11 比较省心：内置了繁简中文字体映射，之前在 Wine 里必出方块字的几个老启动器打开直接正常了；也自带 DXVK-macOS 一键开关和常见运行库（VC++、DirectX、Mono）诊断修复。\r\n\r\n客观说下局限和槽点，避免大家白下载：\r\n- 跑不了重度 DX12 3A 大作（想玩黑神话、2077）\r\n- 不是完全免费开源软件，提供 30 天免费试用，过期后需要买订阅或买断（好在可以先把库里的游戏全测一遍再决定）。\r\n\r\n官网地址：https://portico.bixialab.com\r\n\r\n顺便问下大家，你们现在在 Mac 上玩轻量 Steam Windows 单机都在用什么方",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1259589",
+      "id": "v2ex-1259787",
       "source": "V2EX",
       "category": "大模型 API 免费额度",
-      "title": "V2CC：北美家宽独享实体 Mac mini，预装 Claude Code，首单减 ¥200",
-      "summary": "V2CC：北美家宽独享实体 Mac mini，预装 Claude Code，首单减 ¥200\n各位好，我们是一个小团队，今天正式上线 V2CC（https://v2cc.app）。\r\n\r\n做的事很简单：把一台放在北美家庭宽带里的实体 Mac mini 整机租给你一个人用。原生 macOS，管理员权限，预装 Claude Code 和开发环境，远程连上就能干活。\r\n\r\n适合谁\r\n• 出海做产品、需要一台北美本地网络下的 Mac 做开发和测试的人\r\n• 重度用 Claude Code，想让长任务和 Agent 在一台常开机器上跑的人\r\n\r\n和常见方案的区别\r\n• 一人一机，实体整机，不是共享账号池，也不是多人共用一台\r\n• 机器在住宅宽带里，不在机房\r\n\r\n套餐（每 30 天，16GB / 256GB）\r\n• M6 + Claude Ultra：¥2,999\r\n• M6 + Claude Max：¥2,199\r\n• M4 + Claude Ultra：¥2,799\r\n• M4 + Claude Max：¥1,999（M4 仅限现货）\r\n• 也可以自定义搭配，单独报价\r\n\r\n规则（丑话说在前面）\r\n• 无押金，每 30 天预付；机器交付并验收通过后才开始计租\r\n• 一般 72 小时内交付，具体看排队\r\n• 机器端停机 24 小时内响应，同一 30 天累计超过 48 小时，按完整天数退款\r\n• Claude 的额度和账号规则以 Anthropic 官方为准，我们提高不了额度，也不能保证账号不受限；受限时免费协助申诉，开通前 7 天内申诉失败可免费更换一次机器和账号\r\n• 禁止转租共享、API 反代、导出登录凭证、挖矿\r\n• 中途退租不退款，到期前请自行备份到 Git 或云盘\r\n\r\n上线优惠\r\n• 新客首单立减 ¥200，预约时备注「V2EX」\r\n• 老客户推荐朋友成交，下次续费再减",
+      "title": "薅云端免费生图算力羊毛实现算力自由，桌面端 AI 创作工作台",
+      "summary": "薅云端免费生图算力羊毛实现算力自由，桌面端 AI 创作工作台\n最近做了一个开源项目：AIGC Studio，终于可以拿出来见人了。\r\n\r\n这是一个桌面端 AI 创作工作台，我比较想做的一件事，就是让 AI 生图不再受算力来源的限制。\r\n\r\n本地有显卡，可以直接跑；想省钱，可以接 Kaggle / Colab 的免费 GPU；需要大显存，可以按秒租卡；不想折腾，也可以直接调用商业 API。\r\n\r\n算力随便选，模型随便切，不用为了换一种运行方式重新折腾一套环境。\r\n\r\n除了图片和视频生成，还集成了局部重绘、高清放大、像素对齐、序列帧切片、SVG 转换、背景移除和 PBR 材质拆解等工具。\r\n\r\n生成完接着处理，尽量不用在几个软件之间来回切换。\r\n\r\n项目完全开源免费，欢迎 Star、Fork，也欢迎提 Issue。\r\n\r\nGitHub：https://github.com/nanxfu/aigc-studio",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Jasontopia",
-      "url": "https://www.v2ex.com/t/1259589",
-      "posted_at": "2026-11-25 04:23 Asia/Shanghai",
+      "author": "nanxfu",
+      "url": "https://www.v2ex.com/t/1259787",
+      "posted_at": "2026-11-25 18:24 Asia/Shanghai",
+      "engagement": {
+        "replies": 1
+      },
+      "original_title": "薅云端免费生图算力羊毛实现算力自由，桌面端 AI 创作工作台",
+      "original_summary": "薅云端免费生图算力羊毛实现算力自由，桌面端 AI 创作工作台\n最近做了一个开源项目：AIGC Studio，终于可以拿出来见人了。\r\n\r\n这是一个桌面端 AI 创作工作台，我比较想做的一件事，就是让 AI 生图不再受算力来源的限制。\r\n\r\n本地有显卡，可以直接跑；想省钱，可以接 Kaggle / Colab 的免费 GPU；需要大显存，可以按秒租卡；不想折腾，也可以直接调用商业 API。\r\n\r\n算力随便选，模型随便切，不用为了换一种运行方式重新折腾一套环境。\r\n\r\n除了图片和视频生成，还集成了局部重绘、高清放大、像素对齐、序列帧切片、SVG 转换、背景移除和 PBR 材质拆解等工具。\r\n\r\n生成完接着处理，尽量不用在几个软件之间来回切换。\r\n\r\n项目完全开源免费，欢迎 Star、Fork，也欢迎提 Issue。\r\n\r\nGitHub：https://github.com/nanxfu/aigc-studio",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1259765",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "宝塔新用户首次安装，可免费领取一年期商用 SSL 证书",
+      "summary": "宝塔新用户首次安装，可免费领取一年期商用 SSL 证书\n宝塔近期推出了一项面向新用户的福利活动。\r\n\r\n新注册用户首次安装并登录宝塔 Linux 面板正式版 13.2.0，可免费领取一张一年期指定 DV 单域名商用 SSL 证书。\r\n\r\n本次活动共提供 4000 张证书，每个账号限领一张，领完即止。\r\n\r\n领取截止时间为 2026 年 11 月 30 日 23:59，领取后可在 2026 年 12 月 30 日 23:59 前完成域名验证及证书签发。\r\n\r\n领取入口位于面板的「SSL → 证书管理 → 商用 SSL」页面，支持 DNS（CNAME）及 HTTP/HTTPS 文件验证。\r\n\r\n如果近期有建站计划，或有意体验宝塔面板，可以了解一下本次活动。\r\n\r\n面板下载：\r\nhttps://www.bt.cn/new/download.html?bt_ly=obbs\r\n\r\n完整活动说明及领取教程：\r\nhttps://docs.bt.cn/notices/bt-panel-13-2-0-free-ssl/",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "btpanel",
+      "url": "https://www.v2ex.com/t/1259765",
+      "posted_at": "2026-11-25 16:53 Asia/Shanghai",
       "engagement": {
         "replies": 0
       },
-      "original_title": "V2CC：北美家宽独享实体 Mac mini，预装 Claude Code，首单减 ¥200",
-      "original_summary": "V2CC：北美家宽独享实体 Mac mini，预装 Claude Code，首单减 ¥200\n各位好，我们是一个小团队，今天正式上线 V2CC（https://v2cc.app）。\r\n\r\n做的事很简单：把一台放在北美家庭宽带里的实体 Mac mini 整机租给你一个人用。原生 macOS，管理员权限，预装 Claude Code 和开发环境，远程连上就能干活。\r\n\r\n适合谁\r\n• 出海做产品、需要一台北美本地网络下的 Mac 做开发和测试的人\r\n• 重度用 Claude Code，想让长任务和 Agent 在一台常开机器上跑的人\r\n\r\n和常见方案的区别\r\n• 一人一机，实体整机，不是共享账号池，也不是多人共用一台\r\n• 机器在住宅宽带里，不在机房\r\n\r\n套餐（每 30 天，16GB / 256GB）\r\n• M6 + Claude Ultra：¥2,999\r\n• M6 + Claude Max：¥2,199\r\n• M4 + Claude Ultra：¥2,799\r\n• M4 + Claude Max：¥1,999（M4 仅限现货）\r\n• 也可以自定义搭配，单独报价\r\n\r\n规则（丑话说在前面）\r\n• 无押金，每 30 天预付；机器交付并验收通过后才开始计租\r\n• 一般 72 小时内交付，具体看排队\r\n• 机器端停机 24 小时内响应，同一 30 天累计超过 48 小时，按完整天数退款\r\n• Claude 的额度和账号规则以 Anthropic 官方为准，我们提高不了额度，也不能保证账号不受限；受限时免费协助申诉，开通前 7 天内申诉失败可免费更换一次机器和账号\r\n• 禁止转租共享、API 反代、导出登录凭证、挖矿\r\n• 中途退租不退款，到期前请自行备份到 Git 或云盘\r\n\r\n上线优惠\r\n• 新客首单立减 ¥200，预约时备注「V2EX」\r\n• 老客户推荐朋友成交，下次续费再减",
+      "original_title": "宝塔新用户首次安装，可免费领取一年期商用 SSL 证书",
+      "original_summary": "宝塔新用户首次安装，可免费领取一年期商用 SSL 证书\n宝塔近期推出了一项面向新用户的福利活动。\r\n\r\n新注册用户首次安装并登录宝塔 Linux 面板正式版 13.2.0，可免费领取一张一年期指定 DV 单域名商用 SSL 证书。\r\n\r\n本次活动共提供 4000 张证书，每个账号限领一张，领完即止。\r\n\r\n领取截止时间为 2026 年 11 月 30 日 23:59，领取后可在 2026 年 12 月 30 日 23:59 前完成域名验证及证书签发。\r\n\r\n领取入口位于面板的「SSL → 证书管理 → 商用 SSL」页面，支持 DNS（CNAME）及 HTTP/HTTPS 文件验证。\r\n\r\n如果近期有建站计划，或有意体验宝塔面板，可以了解一下本次活动。\r\n\r\n面板下载：\r\nhttps://www.bt.cn/new/download.html?bt_ly=obbs\r\n\r\n完整活动说明及领取教程：\r\nhttps://docs.bt.cn/notices/bt-panel-13-2-0-free-ssl/",
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-pacocartones-free-llm-api-hub",
-      "source": "GitHub",
+      "id": "v2ex-1259751",
+      "source": "V2EX",
       "category": "大模型 API 免费额度",
-      "title": "pacocartones/free-llm-api-hub：持续核验的免费 LLM API 数据集",
-      "summary": "收录免费额度与试用额度的 LLM API，每条标注日期并溯源官方文档，机器可读且无死链。",
+      "title": "给科研宝宝的工具： EasyReader 升级到 1.3.4",
+      "summary": "给科研宝宝的工具： EasyReader 升级到 1.3.4\n我们的团队做了一个论文阅读软件 EasyReader：\r\n这款工具的亮点：\r\n1 ，全文翻译，不是普通机翻，是 llm 大模型 AI 翻译，对学术语言风格进行了调校。可以选择你的学科，这样翻译更准确！\r\n2 ，排版还原，公式图表不乱码；基本上（ 90%）常见的论文的排版都是完美还原。\r\n3 ，大模型辅助阅读：一键生成思维导图、论文导读、提取 LaTeX 公式等\r\n4 ，跨库搜文献 + 语义匹配查询（目前语义匹配只支持在 arxiv 内的论文库查询）\r\n\r\n新增功能：\r\n根据论文内容，智能获取相关论文\r\n优化标签显示，增加自定义标签的功能\r\n\r\n\r\n网址： https://www.easyreader.com.cn/\r\n\r\n目前我们正在不断完善软件，还有些 bug 。欢迎提供对于软件的使用建议。\r\n\r\n另外，从 1.1.9 开始，已经支持 macos 系统\r\n\r\n分享资源：\r\n1 ，注册后会有一个免费的使用额度。\r\n2 ，在软件中有一个免费资源，关注公众号以后可以再获得一个资源包",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "pacocartones",
-      "url": "https://github.com/pacocartones/free-llm-api-hub",
-      "posted_at": "2026-11-25 09:28 Asia/Shanghai",
+      "author": "crazyvbmxm",
+      "url": "https://www.v2ex.com/t/1259751",
+      "posted_at": "2026-11-25 16:07 Asia/Shanghai",
       "engagement": {
-        "stars": 129
+        "replies": 1
       },
-      "original_title": "pacocartones/free-llm-api-hub",
-      "original_summary": "pacocartones/free-llm-api-hub A continuously-verified dataset of free-tier & trial-credit LLM APIs for developers. Every entry dated, sourced to the provider's own docs, and machine-readable. No hype, no dead links.",
+      "original_title": "给科研宝宝的工具： EasyReader 升级到 1.3.4",
+      "original_summary": "给科研宝宝的工具： EasyReader 升级到 1.3.4\n我们的团队做了一个论文阅读软件 EasyReader：\r\n这款工具的亮点：\r\n1 ，全文翻译，不是普通机翻，是 llm 大模型 AI 翻译，对学术语言风格进行了调校。可以选择你的学科，这样翻译更准确！\r\n2 ，排版还原，公式图表不乱码；基本上（ 90%）常见的论文的排版都是完美还原。\r\n3 ，大模型辅助阅读：一键生成思维导图、论文导读、提取 LaTeX 公式等\r\n4 ，跨库搜文献 + 语义匹配查询（目前语义匹配只支持在 arxiv 内的论文库查询）\r\n\r\n新增功能：\r\n根据论文内容，智能获取相关论文\r\n优化标签显示，增加自定义标签的功能\r\n\r\n\r\n网址： https://www.easyreader.com.cn/\r\n\r\n目前我们正在不断完善软件，还有些 bug 。欢迎提供对于软件的使用建议。\r\n\r\n另外，从 1.1.9 开始，已经支持 macos 系统\r\n\r\n分享资源：\r\n1 ，注册后会有一个免费的使用额度。\r\n2 ，在软件中有一个免费资源，关注公众号以后可以再获得一个资源包",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1259642",
+      "source": "V2EX",
+      "category": "AI 产品会员/试用",
+      "title": "Mac 原生监控软件 Ebb 更新了磁盘清理和一波优化，再抽 10 个激活码",
+      "summary": "Mac 原生监控软件 Ebb 更新了磁盘清理和一波优化，再抽 10 个激活码\n前阵子在站里发过自己做的原生 Mac 系统监控软件 **Ebb**（原帖：https://v2ex.com/t/1256714 ），收到很多 V 友的反馈，非常感谢。\r\n\r\n这两周顺着大家的建议更新到了 **v0.11.0**，新增了**磁盘清理**功能，顺便做了一波性能优化，再来抽 **10 个永久激活码**回馈一下。\r\n\r\n官网：https://ebbapp.top （macOS 13+，Apple 芯片 / Intel 通用，14 天免费试用，买断 $5）\r\n\r\n### 主要更新\r\n\r\n- **原生磁盘清理**（入口在「磁盘」页，参考了 Mole 的公开设计）：\r\n  - 支持扫描应用/浏览器/AI 工具/Xcode/模拟器缓存、旧日志、应用残留、外接盘、Time Machine 本地快照，以及 Next.js / Vite / Cargo / Flutter / SwiftPM / Python 等开发产物。\r\n  - **防误删**：默认移入废纸篓、只勾低风险项；自动保护含 Git 跟踪文件/嵌套仓库/部署密钥的目录并跳过正在使用的文件；Docker、OrbStack、Xcode 归档、Ollama / LM Studio 模型等大头放在「手动管理」里只看占用不乱删。\r\n- **更低资源占用**：优化了总览刷新和列表滚动的 CPU 占用，窗口关闭/遮挡和 Dock 隐藏时自动停绘；「实时动画」「菜单栏动画」和「逐应用网络流量」都支持独立关闭。\r\n- **更多硬件与小功能**：新增内置 NVMe SSD 寿命健康度、风扇实时转速、充电器功率与蓝牙外设电量、菜单栏 8 个动态跑者（小猫/小狗等）、登录时静默启动。\r\n- **体验打磨**：高负载/内存压力/过热提醒会自动保存前 60 秒供回放",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "murongxdb",
+      "url": "https://www.v2ex.com/t/1259642",
+      "posted_at": "2026-11-25 10:27 Asia/Shanghai",
+      "engagement": {
+        "replies": 57
+      },
+      "original_title": "Mac 原生监控软件 Ebb 更新了磁盘清理和一波优化，再抽 10 个激活码",
+      "original_summary": "Mac 原生监控软件 Ebb 更新了磁盘清理和一波优化，再抽 10 个激活码\n前阵子在站里发过自己做的原生 Mac 系统监控软件 **Ebb**（原帖：https://v2ex.com/t/1256714 ），收到很多 V 友的反馈，非常感谢。\r\n\r\n这两周顺着大家的建议更新到了 **v0.11.0**，新增了**磁盘清理**功能，顺便做了一波性能优化，再来抽 **10 个永久激活码**回馈一下。\r\n\r\n官网：https://ebbapp.top （macOS 13+，Apple 芯片 / Intel 通用，14 天免费试用，买断 $5）\r\n\r\n### 主要更新\r\n\r\n- **原生磁盘清理**（入口在「磁盘」页，参考了 Mole 的公开设计）：\r\n  - 支持扫描应用/浏览器/AI 工具/Xcode/模拟器缓存、旧日志、应用残留、外接盘、Time Machine 本地快照，以及 Next.js / Vite / Cargo / Flutter / SwiftPM / Python 等开发产物。\r\n  - **防误删**：默认移入废纸篓、只勾低风险项；自动保护含 Git 跟踪文件/嵌套仓库/部署密钥的目录并跳过正在使用的文件；Docker、OrbStack、Xcode 归档、Ollama / LM Studio 模型等大头放在「手动管理」里只看占用不乱删。\r\n- **更低资源占用**：优化了总览刷新和列表滚动的 CPU 占用，窗口关闭/遮挡和 Dock 隐藏时自动停绘；「实时动画」「菜单栏动画」和「逐应用网络流量」都支持独立关闭。\r\n- **更多硬件与小功能**：新增内置 NVMe SSD 寿命健康度、风扇实时转速、充电器功率与蓝牙外设电量、菜单栏 8 个动态跑者（小猫/小狗等）、登录时静默启动。\r\n- **体验打磨**：高负载/内存压力/过热提醒会自动保存前 60 秒供回放",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-ximilar-com-cardloader",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Ximilar-com/cardloader：免费扫描识别评级收藏卡的桌面应用",
+      "summary": "调用 Ximilar API 和本地 LLM，可连接富士通理光扫描仪或直接分析本地文件夹。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Ximilar-com",
+      "url": "https://github.com/Ximilar-com/cardloader",
+      "posted_at": "2026-11-22 11:21 Asia/Shanghai",
+      "engagement": {
+        "stars": 7
+      },
+      "original_title": "Ximilar-com/cardloader",
+      "original_summary": "Ximilar-com/cardloader Free desktop app to scan, identify and grade trading and sports cards with the Ximilar API and local LLMs. It can connect to fujitsu ricoh scanners or analyse local folders.",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "id": "ghdeal-enapt-swarmllm",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "llm4jobs-v2：在 GitHub Actions 上免费运行的岗位雷达",
-      "summary": "从 49 家公司招聘接口抓取应届岗位，按资历和地点筛选，每天邮件推送摘要。",
+      "title": "enapt/SwarmLLM：在自己电脑上免费跑 AI 模型的开源应用",
+      "summary": "多台电脑可经互联网联手运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Arsh624",
-      "url": "https://github.com/Arsh624/llm4jobs-v2",
-      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-23 21:53 Asia/Shanghai",
       "engagement": {
-        "stars": 0
+        "stars": 93
       },
-      "original_title": "Arsh624/llm4jobs-v2",
-      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-4tunekvng-fortune-llm",
+      "id": "ghdeal-owaid0723666-free-llm-radar",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "4tunekvng/fortune-llm 优先免费模型的 API 网关",
-      "summary": "兼容 Anthropic API 的网关，优先尝试免费模型提供商，最后才付费。",
+      "title": "free-llm-radar：每日实测免费 LLM API 可用性与速度",
+      "summary": "每天向各免费 LLM API 提一道短问题，记录是否应答与响应速度，表格由 GitHub Actions 每日更新。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "4tunekvng",
-      "url": "https://github.com/4tunekvng/fortune-llm",
-      "posted_at": "2026-11-19 17:09 Asia/Shanghai",
+      "author": "Owaid0723666",
+      "url": "https://github.com/Owaid0723666/free-llm-radar",
+      "posted_at": "2026-11-12 18:49 Asia/Shanghai",
       "engagement": {
         "stars": 1
       },
-      "original_title": "4tunekvng/fortune-llm",
-      "original_summary": "4tunekvng/fortune-llm One gateway that speaks the Anthropic API and tries free model providers first, paying only as a last resort.",
+      "original_title": "Owaid0723666/free-llm-radar",
+      "original_summary": "Owaid0723666/free-llm-radar Every free LLM API model, asked one short question a day: which ones answer and how fast. Tables update daily by GitHub Actions.",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-jd-chiles-freebench-v3",
+      "id": "ghdeal-dhaulagani-awesome-free-ai-apis",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "jd-chiles/freebench-v3：15 家 LLM 免费额度榜单",
-      "summary": "开源榜单 freebench-v3 追踪 15 家厂商在线的免费额度 LLM API 与 agentic 编程基准成绩。",
+      "title": "awesome-free-ai-apis：每日更新的免费 AI API 清单",
+      "summary": "收录经核实可用的免费 LLM 推理端点、向量模型和音频模型，并实时监控状态。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "jd-chiles",
-      "url": "https://github.com/jd-chiles/freebench-v3",
-      "posted_at": "2026-11-25 00:27 Asia/Shanghai",
+      "author": "dhaulagani",
+      "url": "https://github.com/dhaulagani/awesome-free-ai-apis",
+      "posted_at": "2026-11-16 20:04 Asia/Shanghai",
       "engagement": {
-        "stars": 0
+        "stars": 3
       },
-      "original_title": "jd-chiles/freebench-v3",
-      "original_summary": "jd-chiles/freebench-v3 Open-source leaderboard tracking live free-tier LLM APIs & agentic coding benchmarks across 15 providers.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-almaeedhi-hani-free-llm-api",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "Almaeedhi-Hani/free-LLM-api：自动化 API 代码",
-      "summary": "含 Webhook 与外部 API 集成的自动化代码，可用 Cron Job 实现自助更新。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Almaeedhi-Hani",
-      "url": "https://github.com/Almaeedhi-Hani/free-LLM-api",
-      "posted_at": "2026-11-13 00:06 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "Almaeedhi-Hani/free-LLM-api",
-      "original_summary": "Almaeedhi-Hani/free-LLM-api الأكواد البرمجية للحل السحري (نظام الأتمتة الذاتية والتحديث اللحظي)  عزيزي المطور، قم ببرمجة النظام الداخلي للأتمتة عبر دمج كود الـ Webhook مع الـ API الخارجي لتشغيل التحديث الذاتي التلقائي (Cron Job):  كود إرسال إشارات الأرشفة الفورية (Google & Bing Webhook Trigger)",
+      "original_title": "dhaulagani/awesome-free-ai-apis",
+      "original_summary": "dhaulagani/awesome-free-ai-apis ⚡ Live-monitored directory of verified free AI APIs, LLM inference endpoints (DeepSeek R1, Llama 3.3, Gemini), embeddings, and audio models (Updated Daily).",
       "translated_by": "model"
     },
     {
@@ -719,39 +735,21 @@
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-oneforallhub-free-llm-apis-live",
+      "id": "ghdeal-arsh624-llm4jobs-v2",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "free-llm-apis-live：自动更新的免费 LLM API 目录",
-      "summary": "收录免费 LLM API 与 AI 模型，自动检测可用状态，并给出上下文窗口与 JSON/CSV 数据源。",
+      "title": "llm4jobs-v2：在 GitHub Actions 上免费运行的岗位雷达",
+      "summary": "从 49 家公司招聘接口抓取应届岗位，按资历和地点筛选，每天邮件推送摘要。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "OneForAllHub",
-      "url": "https://github.com/OneForAllHub/free-llm-apis-live",
-      "posted_at": "2026-11-23 14:33 Asia/Shanghai",
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
-      "original_title": "OneForAllHub/free-llm-apis-live",
-      "original_summary": "OneForAllHub/free-llm-apis-live Live auto-updated directory of free LLM APIs & AI models with automated status checks, context windows, and JSON/CSV feeds.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-sandbaseai-sandbase",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "sandbaseai/sandbase：agent 与沙箱免费",
-      "summary": "一个 API key 即可搭建个人 agent，agent 和沙箱免费，可调用 2000+ AI 模型与数据 API。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "sandbaseai",
-      "url": "https://github.com/sandbaseai/sandbase",
-      "posted_at": "2026-11-12 16:09 Asia/Shanghai",
-      "engagement": {
-        "stars": 6
-      },
-      "original_title": "sandbaseai/sandbase",
-      "original_summary": "sandbaseai/sandbase One API key. Build your personal agent. Agents and sandboxes are free, and agents can call 2,000+ AI models and data APIs (LLM, image, video, TikTok, YouTube, SEO, finance). OpenAI Agents API, E2B and OpenAI compatible. Python, TypeScript, Go.",
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
       "translated_by": "model"
     },
     {
