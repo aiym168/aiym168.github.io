@@ -1,7 +1,7 @@
 {
   "date": "2026-11-26",
-  "updated_at": "2026-11-26T04:45+08:00",
-  "updated_at_label": "2026-11-26 04:45 Asia/Shanghai",
+  "updated_at": "2026-11-26T06:00+08:00",
+  "updated_at_label": "2026-11-26 06:00 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -112,7 +112,7 @@
       "posted_at": "2026-11-25 20:57 Asia/Shanghai",
       "engagement": {
         "points": 8,
-        "comments": 4
+        "comments": 5
       },
       "original_title": "Show HN: Free tool to collect invoices and spot forgotten subscriptions",
       "original_summary": "Show HN: Free tool to collect invoices and spot forgotten subscriptions At my previous company, I spent hours every month going through our bank statements and looking for the invoice behind each charge.<p>There are many invoice collectors, with varying accuracy, but AI makes this much better now. I also noticed that while checking the statements, I was subconsciously reviewing the tools we pay for.<p>So I built a free tool that works exactly how I wanted it to. It combines invoice collection with spotting forgotten subscriptions and duplicates, alerts for price rises and renewals, and some nifty actions, like drafting an email to ask for a discount. Many times it works, you just need to ask.<p>It&#x27;s fully free, but limited to reading 100 invoices a month, since I cover the AI costs an",
@@ -377,7 +377,7 @@
       "url": "https://news.ycombinator.com/item?id=50635126",
       "posted_at": "2026-11-25 05:40 Asia/Shanghai",
       "engagement": {
-        "points": 1,
+        "points": 2,
         "comments": 0
       },
       "original_title": "I got $487 MRR in 3 days with zero ads. the exact distribution process I used",
@@ -397,7 +397,7 @@
       "posted_at": "2026-11-25 03:51 Asia/Shanghai",
       "engagement": {
         "points": 33,
-        "comments": 20
+        "comments": 21
       },
       "original_title": "Ask HN: Am I the only one whose AI hype is cooling down a lot?",
       "original_summary": "Ask HN: Am I the only one whose AI hype is cooling down a lot? I am in the industry for 15+ years, studied CS, and actually, never really &quot;liked&quot; programming. It was a means to an end. I have written about programming (and published books), so don&#x27;t get me wrong: I like the craft and I miss the sense of accomplishment after hours and days of struggling and fixing a problem with 2 lines of code.<p>What I see in my personal spending and habits: I get free tokens from my company, and I spent between 3k-5k a month at the start of the year. Models got cheaper, but also: The usefullness ran its course a little bit for me.<p>I still don&#x27;t write code by hand, but when doing research, finding solutions, even some decisions (using Opus 5.5 and Astra 6.2 for example) are more and ",
@@ -579,12 +579,66 @@
       "deadline": null,
       "author": "pacocartones",
       "url": "https://github.com/pacocartones/free-llm-api-hub",
-      "posted_at": "2026-11-26 04:43 Asia/Shanghai",
+      "posted_at": "2026-11-26 04:45 Asia/Shanghai",
       "engagement": {
         "stars": 130
       },
       "original_title": "pacocartones/free-llm-api-hub",
       "original_summary": "pacocartones/free-llm-api-hub A continuously-verified dataset of free-tier & trial-credit LLM APIs for developers. Every entry dated, sourced to the provider's own docs, and machine-readable. No hype, no dead links.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "llm4jobs-v2：在 GitHub Actions 上免费运行的岗位雷达",
+      "summary": "从 49 家公司招聘接口抓取应届岗位，按资历和地点筛选，每天邮件推送摘要。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-ons96-free-llm-index",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "免费 LLM API 提供方索引，靠 GitHub Actions 定时抓取",
+      "summary": "汇总各家免费 LLM API 提供商，用定时抓取、后端去重和配额感知排序，仅依赖 GitHub Actions。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ons96",
+      "url": "https://github.com/ons96/free-llm-index",
+      "posted_at": "2026-11-26 05:04 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "ons96/free-llm-index",
+      "original_summary": "ons96/free-llm-index Free LLM API provider index: scheduled scraping, backend dedupe, quota-aware ranking (GitHub Actions only)",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-almaeedhi-hani-free-llm-api",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Almaeedhi-Hani/free-LLM-api：自动化 API 代码",
+      "summary": "含 Webhook 与外部 API 集成的自动化代码，可用 Cron Job 实现自助更新。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Almaeedhi-Hani",
+      "url": "https://github.com/Almaeedhi-Hani/free-LLM-api",
+      "posted_at": "2026-11-13 00:06 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Almaeedhi-Hani/free-LLM-api",
+      "original_summary": "Almaeedhi-Hani/free-LLM-api الأكواد البرمجية للحل السحري (نظام الأتمتة الذاتية والتحديث اللحظي)  عزيزي المطور، قم ببرمجة النظام الداخلي للأتمتة عبر دمج كود الـ Webhook مع الـ API الخارجي لتشغيل التحديث الذاتي التلقائي (Cron Job):  كود إرسال إشارات الأرشفة الفورية (Google & Bing Webhook Trigger)",
       "translated_by": "model"
     },
     {
@@ -624,39 +678,21 @@
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-almaeedhi-hani-free-llm-api",
+      "id": "ghdeal-glacode-suggestio",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "Almaeedhi-Hani/free-LLM-api：自动化 API 代码",
-      "summary": "含 Webhook 与外部 API 集成的自动化代码，可用 Cron Job 实现自助更新。",
+      "title": "Suggestio：用免费 LLM 的自主编码代理，试用免注册免密钥",
+      "summary": "开源自主编码代理，可接免费 LLM 提供商，无需注册或 API key 即可试用。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Almaeedhi-Hani",
-      "url": "https://github.com/Almaeedhi-Hani/free-LLM-api",
-      "posted_at": "2026-11-13 00:06 Asia/Shanghai",
+      "author": "glacode",
+      "url": "https://github.com/glacode/Suggestio",
+      "posted_at": "2026-11-12 04:27 Asia/Shanghai",
       "engagement": {
-        "stars": 0
+        "stars": 9
       },
-      "original_title": "Almaeedhi-Hani/free-LLM-api",
-      "original_summary": "Almaeedhi-Hani/free-LLM-api الأكواد البرمجية للحل السحري (نظام الأتمتة الذاتية والتحديث اللحظي)  عزيزي المطور، قم ببرمجة النظام الداخلي للأتمتة عبر دمج كود الـ Webhook مع الـ API الخارجي لتشغيل التحديث الذاتي التلقائي (Cron Job):  كود إرسال إشارات الأرشفة الفورية (Google & Bing Webhook Trigger)",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-arsh624-llm4jobs-v2",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "llm4jobs-v2：在 GitHub Actions 上免费运行的岗位雷达",
-      "summary": "从 49 家公司招聘接口抓取应届岗位，按资历和地点筛选，每天邮件推送摘要。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Arsh624",
-      "url": "https://github.com/Arsh624/llm4jobs-v2",
-      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "Arsh624/llm4jobs-v2",
-      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "original_title": "glacode/Suggestio",
+      "original_summary": "glacode/Suggestio Autonomous coding agent using free LLM Providers. No sign-up, no API key needed to try it",
       "translated_by": "model"
     },
     {
@@ -675,42 +711,6 @@
       },
       "original_title": "robhunterclaude/free-llm-api-index",
       "original_summary": "robhunterclaude/free-llm-api-index Free tiers for AI and LLM APIs — every row dated, sourced to the vendor's own page, and showing the terms it replaced. Generated from the catalogue at https://agentdeals.dev.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-maosansanbc-oss-sysv-site",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "maosansanbc-oss/sysv-site：LLM 免费额度与价格目录",
-      "summary": "SysV Radar 项目自动汇总各家 LLM API 定价、免费额度目录和开源基础设施信息，站点为 sysv.cn。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "maosansanbc-oss",
-      "url": "https://github.com/maosansanbc-oss/sysv-site",
-      "posted_at": "2026-11-24 23:38 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "maosansanbc-oss/sysv-site",
-      "original_summary": "maosansanbc-oss/sysv-site SysV Radar — Automated LLM API Pricing, Free-Tier Directory & Open-Source Infra (sysv.cn)",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-redsamerai-free-models-daily",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "free-models-daily：每日免费低价 AI 模型 API 双语汇总",
-      "summary": "每天汇总免费与高性价比的 AI 模型 API，覆盖 LLM、视频和图像，提供中英双语内容。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "RedSamerai",
-      "url": "https://github.com/RedSamerai/free-models-daily",
-      "posted_at": "2026-11-13 21:24 Asia/Shanghai",
-      "engagement": {
-        "stars": 1
-      },
-      "original_title": "RedSamerai/free-models-daily",
-      "original_summary": "RedSamerai/free-models-daily Daily bilingual digest of free + cost-effective AI model APIs (LLM / video / image)",
       "translated_by": "model"
     },
     {
@@ -741,7 +741,7 @@
       "deadline": null,
       "author": "mnfst",
       "url": "https://github.com/mnfst/awesome-free-llm-apis",
-      "posted_at": "2026-11-26 04:40 Asia/Shanghai",
+      "posted_at": "2026-11-26 05:35 Asia/Shanghai",
       "engagement": {
         "stars": 14191
       },
