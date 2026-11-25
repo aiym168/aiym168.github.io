@@ -5,13 +5,14 @@
   "drop:duplicate": 621,
   "drop:empty_summary": 79,
   "drop:negative_signal": 170,
-  "drop:no_clear_offer": 763,
-  "drop:not_ai": 654,
+  "drop:no_clear_offer": 761,
+  "drop:not_ai": 656,
   "drop:too_old_pre2025": 61,
   "google_news_resolved": 797,
   "google_news_total": 797,
   "kept_total": 242,
   "net:gnews_cache_hit": 797,
+  "net:tco_failed": 8,
   "new_this_run": 1,
   "raw_total": 2590
  },
@@ -19,7 +20,6 @@
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "维索 API：多模型统一接入，支持 OpenAI / Anthropic 接口，送 V 友测试额度",
    "agnes-video-generator：免费 AI 视频生成器，开源且自托管",
    "awesome-cyber-security-heaven：Awesome Cyber​​ Security Heave",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
@@ -29,7 +29,8 @@
    "hive-mind：如何设计协同工作的 AI 体",
    "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
    "godspeed：适用于您课程的免费开源 AI 辅导工具",
-   "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣"
+   "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
+   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话"
   ],
   "empty_summary": [
    "该模型在 DeepAI Code 中免费使用，不消耗 Theos 额度，支持 Mac、Windows 和 Linux 下",
@@ -102,30 +103,29 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-25T01:30:46+08:00",
+ "generated_at": "2026-11-25T09:09:36+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-25T01:30:32+08:00",
+  "checked_at": "2026-11-25T09:09:23+08:00",
   "counts": {
    "gone": 1,
-   "ok": 211,
-   "recheck": 1,
-   "unsure": 2
+   "ok": 213,
+   "recheck": 1
   },
   "hidden": 1
  },
  "seconds": 1.4,
  "side": {
   "github_hot": {
-   "drop:duplicate": 9,
-   "drop:not_ai": 1,
-   "kept": 20,
+   "drop:duplicate": 1,
+   "drop:not_ai": 2,
+   "kept": 27,
    "raw": 30
   },
   "hot_topics": {
    "drop:negative_signal": 2,
-   "drop:not_ai": 6,
-   "drop:not_ai_strict": 9,
-   "kept": 23,
+   "drop:not_ai": 4,
+   "drop:not_ai_strict": 7,
+   "kept": 27,
    "raw": 40
   }
  }
