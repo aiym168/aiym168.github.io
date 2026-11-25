@@ -1,13 +1,13 @@
 {
-  "updated_at_label": "2026-11-26 06:00 Asia/Shanghai",
+  "updated_at_label": "2026-11-26 06:22 Asia/Shanghai",
   "items": [
     {
       "id": "hnhot-50637686",
       "source": "Hacker News",
       "title": "模型即使处于沙盒环境中，也可以通过推理服务器进行通信",
       "summary": "模型即使处于沙盒环境中，也可以通过推理服务器进行通信",
-      "heat": "点数 428 · 评论 186",
-      "points": 428,
+      "heat": "点数 436 · 评论 187",
+      "points": 436,
       "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
       "original_title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
       "original_summary": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
@@ -18,8 +18,8 @@
       "source": "Hacker News",
       "title": "将 Rockbox 移植到未公开的 9 美元 AliExpress 'YP3' MP3 播放器（具有 LLM）",
       "summary": "将 Rockbox 移植到未公开的 9 美元 AliExpress 'YP3' MP3 播放器（具有 LLM）",
-      "heat": "点数 176 · 评论 74",
-      "points": 176,
+      "heat": "点数 186 · 评论 75",
+      "points": 186,
       "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
       "original_title": "Porting Rockbox to an undocumented $9 AliExpress 'YP3' MP3 player with LLMs",
       "original_summary": "Porting Rockbox to an undocumented $9 AliExpress 'YP3' MP3 player with LLMs",
@@ -30,8 +30,8 @@
       "source": "Hacker News",
       "title": "GPT-6.2 Astra 是第一个打破 Google 代码高尔夫记录的模型",
       "summary": "GPT-6.2 Astra 是第一个打破 Google 代码高尔夫记录的模型",
-      "heat": "点数 75 · 评论 13",
-      "points": 75,
+      "heat": "点数 110 · 评论 22",
+      "points": 110,
       "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
       "original_title": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
       "original_summary": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
@@ -54,8 +54,8 @@
       "source": "Hacker News",
       "title": "英国的幽灵车站",
       "summary": "英国的幽灵车站",
-      "heat": "点数 64 · 评论 14",
-      "points": 64,
+      "heat": "点数 69 · 评论 16",
+      "points": 69,
       "url": "https://spectator.com/article/britains-ghost-stations-are-fascinating/",
       "original_title": "Britain's ghost stations",
       "original_summary": "Britain's ghost stations",
@@ -72,6 +72,18 @@
       "original_title": "Gemini AI Pro 黑五优惠怎么获得？",
       "original_summary": "目前美区账号看到的 AI Pro 还是 $199.99/年，没有看到黑五优惠。\r\n\r\n问了下 AI，据说是老用户 20 号开始，新用户要等到 27 号，但不是很相信 AI 给出的信息。\r\n\r\n请问有 V 友已经成功订阅黑五优惠的 AI Pro 了吗？具体是什么价格？新老用户确实有活动时间上的差异吗？",
       "translated_by": "native-zh"
+    },
+    {
+      "id": "hnhot-50611593",
+      "source": "Hacker News",
+      "title": "Show HN：一种使用可证伪假设优化代码的代理技能",
+      "summary": "Show HN：一种使用可证伪假设优化代码的代理技能",
+      "heat": "点数 48 · 评论 7",
+      "points": 48,
+      "url": "https://chszlab.github.io/AgenticAlgorithmEngineering/",
+      "original_title": "Show HN: An agent skill that optimizes code with falsifiable hypotheses",
+      "original_summary": "Show HN: An agent skill that optimizes code with falsifiable hypotheses",
+      "translated_by": "free-translate"
     },
     {
       "id": "v2hot-1259833",
@@ -146,6 +158,18 @@
       "translated_by": "native-zh"
     },
     {
+      "id": "v2hot-1259830",
+      "source": "V2EX",
+      "title": "cc_task: 用 C 语言写 async/await 协程，还有闭包",
+      "summary": "https://github.com/ivan7wl/cc_task\r\n\r\ncc_task 是一个 C 语言协程库,用 async/await 的方式写协程，还可以用闭包。\r\n\r\n协程是无栈的，跨恢复点的变量保存在闭包中，非常的轻量，大部分场景下一条 64B CPU cache line 就能放得下。同时也支持有栈协程。\r\n\r\n```c\r\n#include \"cc_task.h\"\r\n#include <stdio.h>\r\n\r\nint main(void)\r\n{\r\n    int c = 10; // task_b captures c and uses it as task state\r\n  ",
+      "heat": "回复 5",
+      "points": 5,
+      "url": "https://www.v2ex.com/t/1259830",
+      "original_title": "cc_task: 用 C 语言写 async/await 协程，还有闭包",
+      "original_summary": "https://github.com/ivan7wl/cc_task\r\n\r\ncc_task 是一个 C 语言协程库,用 async/await 的方式写协程，还可以用闭包。\r\n\r\n协程是无栈的，跨恢复点的变量保存在闭包中，非常的轻量，大部分场景下一条 64B CPU cache line 就能放得下。同时也支持有栈协程。\r\n\r\n```c\r\n#include \"cc_task.h\"\r\n#include <stdio.h>\r\n\r\nint main(void)\r\n{\r\n    int c = 10; // task_b captures c and uses it as task state\r\n  ",
+      "translated_by": "native-zh"
+    },
+    {
       "id": "v2hot-1259818",
       "source": "V2EX",
       "title": "我做了个苹果备忘录平替，像飞书文档一样编辑，用 iCloud 同步",
@@ -167,18 +191,6 @@
       "url": "https://www.v2ex.com/t/1259832",
       "original_title": "[开源自荐] Sshairy：可与安卓端互联、高颜值、低占用的 SSH 客户端",
       "original_summary": "最近开源了一个 SSH 客户端软件，仔细包装了一下，目前已经更新到 0.3.1 了\r\n这是一个由 AI 驱动的轻量级 SSH 客户端，支持 windows/linux/mac 跨端使用，终端、SFTP、隧道和服务器监控都在一个窗口内使用起来很方便。同时它拥有 0.62 秒极速启动速度、空闲内存占用仅 100 M 左右，无 Chromium/WebView 依赖，各项性能指标在目前主流现代化界面 SSH 客户端均排第一；同时该软件内置 AI 助手 Airy，设计目标是在保证信息安全的前提下将 AI 真正融入 SSH 工作流程~\r\n\r\n#### 官网：https://sshairy.marchen",
-      "translated_by": "native-zh"
-    },
-    {
-      "id": "v2hot-1259830",
-      "source": "V2EX",
-      "title": "cc_task: 用 C 语言写 async/await 协程，还有闭包",
-      "summary": "https://github.com/ivan7wl/cc_task\r\n\r\ncc_task 是一个 C 语言协程库,用 async/await 的方式写协程，还可以用闭包。\r\n\r\n协程是无栈的，跨恢复点的变量保存在闭包中，非常的轻量，大部分场景下一条 64B CPU cache line 就能放得下。同时也支持有栈协程。\r\n\r\n```c\r\n#include \"cc_task.h\"\r\n#include <stdio.h>\r\n\r\nint main(void)\r\n{\r\n    int c = 10; // task_b captures c and uses it as task state\r\n  ",
-      "heat": "回复 4",
-      "points": 4,
-      "url": "https://www.v2ex.com/t/1259830",
-      "original_title": "cc_task: 用 C 语言写 async/await 协程，还有闭包",
-      "original_summary": "https://github.com/ivan7wl/cc_task\r\n\r\ncc_task 是一个 C 语言协程库,用 async/await 的方式写协程，还可以用闭包。\r\n\r\n协程是无栈的，跨恢复点的变量保存在闭包中，非常的轻量，大部分场景下一条 64B CPU cache line 就能放得下。同时也支持有栈协程。\r\n\r\n```c\r\n#include \"cc_task.h\"\r\n#include <stdio.h>\r\n\r\nint main(void)\r\n{\r\n    int c = 10; // task_b captures c and uses it as task state\r\n  ",
       "translated_by": "native-zh"
     },
     {
@@ -467,18 +479,6 @@
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1iMW1rdDU3RmtZZG9NWU0wSTNmdDhfdVlRSU5JZVU5VkJGSWxCLTlDTTJvSVU2YTJZWTM2czZPLXFHdlprcktNTi1FZUt6SF9oTzBQd2VpSkRXeDhfY01MZkRB?oc=5",
       "original_title": "免费AI Video Studio在GitHub获2000+次克隆，Creator Kit上线",
       "original_summary": "免费AI Video Studio已被克隆2000多次，Creator Kit提供逐步视频编辑课程和51个效果。",
-      "translated_by": "native-zh"
-    },
-    {
-      "id": "xhot-xrss-8259085403",
-      "source": "X",
-      "title": "开发者免费资源合集：500多个组件与 AI 前端设计技能",
-      "summary": "合集列出免费组件、AI 前端设计技能、开源动画 React 组件和 UI 微交互等链接。",
-      "heat": "赞 0 · 收藏 0",
-      "points": 0,
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBibTBmM3pUV0swM1M2OEdsT3VNYlhjbVpiSFhNWUxaWXoyb00zX1luTER1Q0VLSlZtWF9DSDA5MTAwQVRtRko2V3lCdjNkWU01N2cyM1RESzRHdFZpRi1JcktRWHNIcDQ1M1RWXw?oc=5",
-      "original_title": "开发者免费资源合集：500多个组件与 AI 前端设计技能",
-      "original_summary": "合集列出免费组件、AI 前端设计技能、开源动画 React 组件和 UI 微交互等链接。",
       "translated_by": "native-zh"
     }
   ],
