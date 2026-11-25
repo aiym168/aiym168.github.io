@@ -3,18 +3,19 @@
   "archived": 28,
   "deadline_extracted": 7,
   "drop:duplicate": 620,
-  "drop:empty_summary": 79,
-  "drop:negative_signal": 170,
-  "drop:no_clear_offer": 759,
-  "drop:not_ai": 655,
+  "drop:empty_summary": 80,
+  "drop:negative_signal": 173,
+  "drop:no_clear_offer": 776,
+  "drop:not_ai": 658,
   "drop:too_old_pre2025": 61,
-  "google_news_resolved": 797,
-  "google_news_total": 797,
-  "kept_total": 246,
+  "google_news_resolved": 822,
+  "google_news_total": 822,
+  "kept_total": 247,
   "net:gnews_cache_hit": 797,
-  "net:tco_failed": 8,
-  "new_this_run": 2,
-  "raw_total": 2590
+  "net:gnews_resolved_net": 25,
+  "net:tco_expanded": 5,
+  "new_this_run": 1,
+  "raw_total": 2615
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -33,6 +34,7 @@
    "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话"
   ],
   "empty_summary": [
+   "作者因 iMovie 难用、Resolve 太复杂、Premiere 太重而自建，完全免费开源",
    "该模型在 DeepAI Code 中免费使用，不消耗 Theos 额度，支持 Mac、Windows 和 Linux 下",
    "上周新增多个模型，含 Flint 免费模型、Qwen4 Max、Gemini 4 Neon 与 GPT-6.2 等",
    "Nebius 提供25美元 Spot GPU 免费额度，无需绑定信用卡，相当于 H100运行一天，可用于微调开源模型",
@@ -43,10 +45,12 @@
    "@EyeingAI 分享：无需信用卡即可开始，额度可按现货价格租用 GPU 做微调、评测或实验",
    "Nebius 免费 Builder Program 新增25美元 AI Cloud credits，无需信用卡",
    "两名 Anthropic 高级 AI 工程师称用「Graph Engineering」让 Karpathy",
-   "@divaagurlxw 分享：> 无需注册 > 无需信用卡 > 每天 10K 请求 > 未过滤的响应 > OpenAI",
-   "他的循环：问 AI 自己缺什么、找免费讲座、语音复盘，再用真实场景测试"
+   "@divaagurlxw 分享：> 无需注册 > 无需信用卡 > 每天 10K 请求 > 未过滤的响应 > OpenAI"
   ],
   "negative_signal": [
+   "@ZDNET 分享：OpenAI 为小企业提供免费 AI 支持，协助它们的专家每月最多可获 8000 美元",
+   "@JulianGoldieSEO 分享：输入网址即可运行 3 分钟免费审计，查看 ChatGPT、Gemini 和 Cl",
+   "@_ddjohnson 分享：招聘方向涉及模型行为、角色训练与对齐，对相关话题感兴趣可直接联系",
    "@uniofleicester 分享：欢迎参加伦敦大学的免费研讨会，探讨 AI 在临床学习、手术、康复、评估和患者安全方",
    "可让 Grok Bot 直接执行 SEO 工作，并提供免费的 AI 可见度审计",
    "@trtworld 分享：英国启动为期三年、约70万女性参与的乳腺癌 AI 筛查试验，项目耗资1300万美元",
@@ -55,26 +59,26 @@
    "@turkiyetodaycom 分享：英国政府资助 1000 万英镑进行 AI 辅助乳腺癌筛查试验，由剑桥大学沃里克大",
    "SEO 重大新闻，有一个免费的 Claude Code 连接器，可以对任何网站的 Google 流量 + AI 流量进行",
    "@JulianGoldieSEO 分享：推文列出10个提示词，宣称可用 AI 从零构建被动收入，且完全免费",
-   "@vanguardngrnews 分享：英国启动世界上最大的 AI 辅助乳腺癌筛查试验",
-   "@PhilippineStar 分享：报道称该试验规模庞大，旨在验证 AI 辅助乳腺筛查的实际效果",
-   "ECP Asset Management 的 Annabelle Miller 认为",
-   "@JulianGoldieSEO 分享：直播演示从零搭建负责行政、获客和内容的三套 AI 系统，可免费观看并复制到自己的"
+   "@vanguardngrnews 分享：英国启动世界上最大的 AI 辅助乳腺癌筛查试验"
   ],
   "no_clear_offer": [
-   "@SciTechgovuk 分享：英国的每位成年人现在都可以参加免费的 AI 培训 我们正在与多家领先的科技公司合作",
-   "@eagmark_agrihub 分享：输入作物与生长阶段即可获得 AI 施肥建议，用量对但时期错就等于浪费",
-   "@seeedstudio 分享：80% 的劳动者身处一线，但采用 AI 的速度只有办公室员工的一半，缺的是面向一线的 A",
-   "@mdancho84 分享：12月2日举办，教参与者搭建并交付企业真正需要的 AI 与数据科学项目",
-   "@malpani 分享：该 AI 辅导工具可帮助有动力的学生在 JEE 中取得高分",
-   "@malpani 分享：请访问 AI 学习伴侣",
-   "FPGA 的架构可按任务重构以降低延迟，不同于 GPU，但需逐层映射大模型，耗时数月，Config AI 为此开发了编译",
-   "@hackernoon 分享：文章从单位成本、用户体验、配额、失败退款与幂等计费等角度对比 AI 定价模式",
-   "@csaba_kissi 分享：清单含 200+ 组件与 1200+ 灵感、免费 AI 设计提示手册、全栈托管和 130",
-   "@ThatEricAlper 分享：符合条件的独立作者可免费制作最多 5 本有声书，新增西班牙语声音，覆盖 180 个市",
+   "@CyberScoopNews 分享：作者借助两个免费 AI 模型发现并报告了一个 WordPress 插件中的真实漏洞",
+   "Zoom 表示上季度十大 CX 交易均出现付费 AI，Foundever 等企业正通过 UC 和联络中心整合替换旧系统",
+   "Skill 就是会自动触发的 / 命令，不必反复说明身份或重建配置，作者将整套库免费分享",
+   "@saheedniyi_02 分享：一条回复称当初关注该账号就是为了免费 AI 模型，如今对方却改了内容方向",
+   "Max 5x 每月 100 美元、Max 20x 每月 200 美元，Team 最高 500 美元共享额度",
    "@VaibhavSisinty 分享：该免费社区已有 20 多万人加入，可每天获取 AI 工具和信息",
-   "@notdvb 分享：该 AI 代理可构思视频、生成缩略图与标题，并自动找出并重制表现不佳的内容"
+   "Zoom 称其上季度十笔最大 CX 交易全部包含付费 AI，Foundever",
+   "由 NVIDIA RTX Spark 驱动，面向开发、内容生产与业务运营等本地 AI 场景，可免费评估并领取白皮书",
+   "@alibaba_cloud 分享：一份订阅即可使用多个模型并共享 Credits，无需切换账号、API 密钥或在各平台",
+   "@kr39__ 分享：作者认为这笔配置既有合理理由，也有值得指出的真实缺陷，并提醒人们区分 DAM 与 DIM",
+   "GitHub、Supabase、Clerk、Resend、Vercel、Cloudflare、Upstash、Pinec",
+   "@AnthropicAI 分享：形式化验证可证明代码不含特定缺陷，但以往只适用于小型代码库，或需要投入大量专家时间"
   ],
   "not_ai": [
+   "@JulianGoldieSEO 分享：该免费审计工具无需注册，用户可直接查看结果",
+   "一些个人动态：我将于2027年秋季加入普林斯顿大学计算机科学系，担任副教授",
+   "@OfficialLoganK 分享：官方回复称，银行账户充值需要处理时间，使用标准支付方式信用卡则可立即充值",
    "这款应用免费提供，用于辅助 JEE 备考",
    "@emmanuel_2m 分享：覆盖视频、3D、游戏、动效、艺术和课程，首个内容引擎可把热门视频的格式套用到自己的创意上",
    "@viktoroddy 分享：把童装店做成可拖拽旋转的木马界面，点选单品、切换颜色、加入购物车，作者免费提供提示词",
@@ -83,10 +87,7 @@
    "@testingcatalog 分享：用户还可设置自己愿意支付的每 GPU 小时价格上限",
    "Vibe Pro 面向欧洲开发者推出免费试用，此前名额不到一小时用尽，现已取消容量限制",
    "免费座位：这里有免费座位",
-   "@github 分享：它不一定是非此即彼，在最新的 GitHub 播客上，我们与 2026 年商业开源状况研究背后的研究",
-   "制造：从草图到现实世界的工业生产",
-   "对标年费 168 美元的 Granola，无需机器人入会，音频不离开本机",
-   "@AntLingAGI 分享：总参数 124B、激活 5.5B，融合医学图像理解、报告生成、医学推理与多模态检索和工具调"
+   "@github 分享：它不一定是非此即彼，在最新的 GitHub 播客上，我们与 2026 年商业开源状况研究背后的研究"
   ],
   "too_old_pre2025": [
    "DistroKid推出免费AI图像生成器，可用于专辑封面等",
@@ -103,18 +104,17 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-25T19:45:57+08:00",
+ "generated_at": "2026-11-25T20:32:16+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-25T19:45:57+08:00",
+  "checked_at": "2026-11-25T20:32:16+08:00",
   "counts": {
-   "gone": 1,
+   "gone": 2,
    "ok": 215,
-   "recheck": 2,
-   "unsure": 1
+   "recheck": 1
   },
-  "hidden": 1
+  "hidden": 2
  },
- "seconds": 2.1,
+ "seconds": 12.4,
  "side": {
   "github_hot": {
    "drop:duplicate": 1,
@@ -125,8 +125,8 @@
   "hot_topics": {
    "drop:negative_signal": 3,
    "drop:not_ai": 14,
-   "drop:not_ai_strict": 3,
-   "kept": 20,
+   "drop:not_ai_strict": 2,
+   "kept": 21,
    "raw": 40
   }
  }

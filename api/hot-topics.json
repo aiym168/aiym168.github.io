@@ -3,7 +3,7 @@
   "title": "最近热议",
   "description": "社区里的 AI 与科技热议",
   "href": "m/hot-topics.html",
-  "count": 20,
+  "count": 21,
   "items": [
     {
       "id": "hnhot-50634658",
@@ -34,6 +34,13 @@
       "source": "Hacker News"
     },
     {
+      "id": "hnhot-50637871",
+      "title": "按大语言模型评估的重要性排序的数学领域最热门的未决问题",
+      "summary": "",
+      "url": "https://www.proofatlas.ai/open-problems/",
+      "source": "Hacker News"
+    },
+    {
       "id": "v2hot-1259601",
       "title": "Gemini AI Pro 黑五优惠怎么获得？",
       "summary": "目前美区账号看到的 AI Pro 还是 $199.99/年，没有看到黑五优惠。问了下 AI，据说是老用户 20 号开始，新用户要等到 27 号，但不是很相信 AI 给出的信息。请问有 V 友已经成功订阅黑五优惠的 AI Pro 了吗？具体是什么价格？新老用户确实有活动时间上的差异吗？",
@@ -55,17 +62,17 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1259752",
-      "title": "聊一聊我的 Agent 管理哲学：用本地 IM 替代硬编排，让协作自然涌现",
-      "summary": "## 1. Intro 在迭代了将近三个多月的 agent orchestrator 产品之后，这次借着这篇文章聊聊我对本地 agent 编排产品的一些理解，以及我自己在 agent 管理上的偏好和哲学。（p.s. 本篇文章没有硬广，单纯聊聊我的理解） 大概在 2025 - 2026 年初的时候，agent 编排还主要是借助传统的工作流系统进行任务的拆解和业务流程的定义，代表产品有字节的 coze 和开源的 dify，这一类产品的设计初衷本质上是想要解决 agent 在长时任务和复杂流程上的局限，当时 agent 的 context 上下文限制以及长时任务的指令 follow 都导",
-      "url": "https://www.v2ex.com/t/1259752",
-      "source": "V2EX"
-    },
-    {
       "id": "v2hot-1259788",
       "title": "买了 Gemini AI Pro 黑五优惠发现不够用怎么办？",
       "summary": "Claude 弹 kyc 了，Codex 10x 已取消续订但还没到期，又买了 Gemini AI Pro 黑五优惠发现 neon 完全不够用，额度掉太快了，GPT-6.2 Sol Ultra 要耐用的多",
       "url": "https://www.v2ex.com/t/1259788",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259794",
+      "title": "许愿式剪视频：跟 agent 说了一句话，它给我交了条 4K 宣传片",
+      "summary": "昨天想给自己的项目做个宣传片，懒得开剪映，直接跟 Claude Code 许愿：\"给我整个 70 秒的视频\"。然后它真整出来了 ![]( ![]( 分镜它写，录屏它录（真产品真操作，不是 PPT 动画），配音它配，BGM 都是它自己搓的。我干的活：看一遍，指着某个镜头说\"这儿太拖了\"，它改。能这么玩，是因为我给 agent 做了个东西叫 Ryugi。起因很简单：让 agent 出个设计，它甩给我三段 Markdown 描述三种布局，剩下全靠脑补。",
+      "url": "https://www.v2ex.com/t/1259794",
       "source": "V2EX"
     },
     {
@@ -83,24 +90,38 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1259759",
-      "title": "请教关于 claude code 智能体问题",
-      "summary": "最近在给业务系统开发多智能协同处理任务，突然想到，有没有人尝试把 claude code 智能体打包进业务系统，这样就可以不用专门开发多智能体系统了。当然了 claude code 定位是个人编程助手和业务有冲突是有可能的。",
-      "url": "https://www.v2ex.com/t/1259759",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1259794",
-      "title": "许愿式剪视频：跟 agent 说了一句话，它给我交了条 4K 宣传片",
-      "summary": "昨天想给自己的项目做个宣传片，懒得开剪映，直接跟 Claude Code 许愿：\"给我整个 70 秒的视频\"。然后它真整出来了 ![]( ![]( 分镜它写，录屏它录（真产品真操作，不是 PPT 动画），配音它配，BGM 都是它自己搓的。我干的活：看一遍，指着某个镜头说\"这儿太拖了\"，它改。能这么玩，是因为我给 agent 做了个东西叫 Ryugi。起因很简单：让 agent 出个设计，它甩给我三段 Markdown 描述三种布局，剩下全靠脑补。",
-      "url": "https://www.v2ex.com/t/1259794",
-      "source": "V2EX"
-    },
-    {
       "id": "v2hot-1259787",
       "title": "薅云端免费生图算力羊毛实现算力自由，桌面端 AI 创作工作台",
       "summary": "最近做了一个开源项目：AIGC Studio，终于可以拿出来见人了。这是一个桌面端 AI 创作工作台，我比较想做的一件事，就是让 AI 生图不再受算力来源的限制。本地有显卡，可以直接跑；想省钱，可以接 Kaggle / Colab 的免费 GPU；需要大显存，可以按秒租卡；不想折腾，也可以直接调用商业 API。算力随便选，模型随便切，不用为了换一种运行方式重新折腾一套环境。除了图片和视频生成，还集成了局部重绘、高清放大、像素对齐、序列帧切片、SVG 转换、背景移除和 PBR 材质拆解等工具。生成完接着处理，尽量不用在几个软件之间来回切换。项目完全",
       "url": "https://www.v2ex.com/t/1259787",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259812",
+      "title": "本地 AI 破甲版本/无限制本地 ai 做安全实验和硬件改系统等 有大佬经验的分享一下吧",
+      "summary": "1，目前类似破 steam 限制一樣，有直接執行的都會觸法，所以只給教程，要自己試？但不够我的需求 不能自动化 ai 自主进行一直尝试研究。。。卡住了 大佬经验。",
+      "url": "https://www.v2ex.com/t/1259812",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259810",
+      "title": "已经是 Gemini pro 年度订阅会员了如何参加今年的黑五优惠呢？",
+      "summary": "我之前的年度订阅也是 99.99 美金一年，但是还没有到期，如何参加今年黑五活动呢？",
+      "url": "https://www.v2ex.com/t/1259810",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259803",
+      "title": "自己开 Claude 老封号 配环境麻烦？我们提供了一套本地部署 + 订阅代开方案",
+      "summary": "自己开 Claude 官方订阅，很多人会碰到这些问题：网络或环境不稳定，容易被封 封了号不知道怎么处理，也没有退款保障 遇到 KYC 不知道该怎么操作 我们提供 Claude 官方订阅代开 + 本地部署服务（支持 Pro / Max / Ultra），帮你把这些常见问题解决掉。主要能解决：支持 Windows/Linux/MacOS 我们远程帮您配置环境，开箱即用不用自己折腾各种配置 包封号方案下，非违规封禁可以按剩余天数退款 遇到 KYC 可以先找我们，避免自己操作出错 整体使用更稳定，减少因为网络或环境导致的问题 价格和",
+      "url": "https://www.v2ex.com/t/1259803",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1259799",
+      "title": "在家里先搭一遍公司的整套 AI 架构当灰度环境，有人这么干吗？",
+      "summary": "最近在做一件事，想听听大家的意见 公司要建一套面向 AI 的完整架构，我先在家里搭一遍，当作灰度环境。在家里跑通、跑稳的东西，才会推到公司 ## 家里搭了什么 硬件不多：一台 NAS、一台显卡机，再加几台 Mac。按三层来搭：* 基础设施：代码仓库、CI 调度、镜像仓库、容器部署、监控和链路追踪。所有服务都跑在 Docker 里，部署只走一个入口 * AI 中台：模型网关、Agent 编排、调用记录和评测，统一的身份、权限和 Key 管理 * 业务交付：需求进来由 Agent 拆卡，开发、评审、测试几个 Agent 协作提合并请求，再走自动检查 合并队列",
+      "url": "https://www.v2ex.com/t/1259799",
       "source": "V2EX"
     },
     {
@@ -118,31 +139,17 @@
       "source": "V2EX"
     },
     {
-      "id": "xhot-xrss-3446434356",
-      "title": "Command Code 上周更新，Flint 免费模型上线",
-      "summary": "上周新增多个模型，含 Flint 免费模型、Qwen4 Max、Gemini 4 Neon 与 GPT-6.2 等。",
-      "url": "https://x.com/CommandCodeAI/status/2125059378130866506",
+      "id": "xhot-xrss-3110060247",
+      "title": "Editroom：完全免费开源的视频编辑器，支持手动或 AI 剪辑",
+      "summary": "作者因 iMovie 难用、Resolve 太复杂、Premiere 太重而自建，完全免费开源。",
+      "url": "https://x.com/robbietilton/status/2125248682710954080",
       "source": "X"
     },
     {
-      "id": "xhot-xrss-3352100691",
-      "title": "前沿模型现在可以提出技术性社会科学研究设计，其得分比世界领先的社会科学家更高。",
-      "summary": "如今，前沿模型能够提出技术性社会科学研究设计，其得分比世界顶级政治经济学家的得分还要高——这是我们新的自由系统评估 SnyderBench 得出的结论，在该评估中，我们让博士专家对 r - X 进行盲评。前沿模型现在可以提出技术性社会科学研究设计，专家们对这些设计的评分高于世界顶级政治经济学家的评分——这是我们新的 Free Sy 评估得出的结论。",
-      "url": "https://x.com/ahall_research/status/2124889867968741878",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-1440278385",
-      "title": "Google AI Ultra 附赠每月 100 美元云额度",
-      "summary": "Google AI Ultra 订阅含每月 100 美元 Google Cloud 额度，可直接用于 API 推理。",
-      "url": "https://x.com/wesbos/status/2125000978516549943",
-      "source": "X"
-    },
-    {
-      "id": "xhot-xrss-9496514908",
-      "title": "OpenWorks 在美 20 个社区试点，小企业免费用 AI",
-      "summary": "试点覆盖美国 20 个社区，小企业选定一个实际问题，由本地 AI 伙伴免费帮其搭建。",
-      "url": "https://x.com/reach_vb/status/2124959785347080447",
+      "id": "xhot-xrss-4326275522",
+      "title": "有人称宁花 10 万美元 AI 额度和 5000 美元 PC，也不买游戏主机",
+      "summary": "这条观点认为，与其直接买游戏主机，不如把钱花在 AI 使用额度和游戏 PC 上。",
+      "url": "https://x.com/jeremyjudkins_/status/2125347396070867024",
       "source": "X"
     }
   ]
