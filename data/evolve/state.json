@@ -1,52 +1,58 @@
 {
  "last_step": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "changes": [
    {
     "op": "restore",
-    "name": "Civitai 热门模型",
-    "key": "civitai-models",
-    "why": ""
-   },
-   {
-    "op": "retest",
     "name": "伯克利 BAIR",
     "key": "bair-berkeley-edu-blog-feed-xml",
     "why": ""
    },
    {
+    "op": "retest",
+    "name": "Synced",
+    "key": "syncedreview-com-feed",
+    "why": ""
+   },
+   {
+    "op": "retest",
+    "name": "Lilian Weng",
+    "key": "lilianweng-github-io-index-xml",
+    "why": ""
+   },
+   {
+    "op": "retest",
+    "name": "The Gradient",
+    "key": "thegradient-pub-rss",
+    "why": ""
+   },
+   {
     "op": "pause",
-    "name": "DEV 社区",
-    "key": "DEV.to",
+    "name": "Lobsters",
+    "key": "Lobsters",
     "why": "复测还是没有内容"
-   },
-   {
-    "op": "pause",
-    "name": "React 博客",
-    "key": "react-dev-rss-xml",
-    "why": "一周都没有新东西"
-   },
-   {
-    "op": "slower",
-    "name": "ComfyUI-Manager 发布",
-    "key": "comfyui-manager",
-    "why": "总是重复，没有新东西"
    }
   ],
-  "snapshot": "data/evolve/snapshots/2026-11-25.json",
+  "snapshot": "data/evolve/snapshots/2026-11-26.json",
   "baseline": {
-   "kept": 6660,
-   "runs": 22,
-   "dead": 13,
-   "checked": 843,
-   "build_ok": 18,
+   "kept": 5384,
+   "runs": 17,
+   "dead": 10,
+   "checked": 862,
+   "build_ok": 13,
    "build_bad": 0,
-   "kept_per_run": 302.73,
-   "dead_rate": 0.0154,
+   "kept_per_run": 316.71,
+   "dead_rate": 0.0116,
    "bad_build_rate": 0.0
   }
  },
  "history": [
+  {
+   "date": "2026-11-26",
+   "verdict_prev": null,
+   "changes": 5,
+   "diary_by": "rules"
+  },
   {
    "date": "2026-11-25",
    "verdict_prev": null,
@@ -132,5 +138,5 @@
    "diary_by": "rules"
   }
  ],
- "last_evolve_date": "2026-11-25"
+ "last_evolve_date": "2026-11-26"
 }

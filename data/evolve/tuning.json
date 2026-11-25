@@ -18,32 +18,32 @@
    "why": "被过滤掉的内容太多"
   },
   "bair-berkeley-edu-blog-feed-xml": {
-   "weight": 0.5,
-   "every": 2,
-   "since": "2026-11-25",
+   "weight": 0.75,
+   "every": 1,
+   "since": "2026-11-26",
    "why": "",
-   "state": "retest"
+   "state": "active"
   },
   "syncedreview-com-feed": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-23",
-   "why": "一周都没有新东西",
-   "state": "paused"
+   "since": "2026-11-26",
+   "why": "",
+   "state": "retest"
   },
   "lilianweng-github-io-index-xml": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-23",
-   "why": "一周都没有新东西",
-   "state": "paused"
+   "since": "2026-11-26",
+   "why": "",
+   "state": "retest"
   },
   "thegradient-pub-rss": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-23",
-   "why": "一周都没有新东西",
-   "state": "paused"
+   "since": "2026-11-26",
+   "why": "",
+   "state": "retest"
   },
   "blog-chromium-org-feeds-posts-default": {
    "weight": 0.5,
@@ -104,11 +104,11 @@
    "why": "复测还是没有内容"
   },
   "Lobsters": {
-   "state": "retest",
-   "since": "2026-11-23",
-   "why": ""
+   "state": "paused",
+   "since": "2026-11-26",
+   "why": "复测还是没有内容"
   }
  },
- "updated_at": "2026-11-25T01:30+08:00",
+ "updated_at": "2026-11-26T04:52+08:00",
  "note": "由 evolve.py 每天自动维护；采集脚本只读。删除此文件即恢复默认（全部来源、权重 1.0）。"
 }

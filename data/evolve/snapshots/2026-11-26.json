@@ -1,0 +1,114 @@
+{
+ "news": {
+  "nature-com-nature-rss": {
+   "state": "paused",
+   "since": "2026-11-24",
+   "why": "复测还是打不开"
+  },
+  "civitai-models": {
+   "state": "active",
+   "since": "2026-11-25",
+   "why": "",
+   "weight": 0.75,
+   "every": 1
+  },
+  "wired-ai": {
+   "weight": 0.5,
+   "since": "2026-11-17",
+   "why": "被过滤掉的内容太多"
+  },
+  "bair-berkeley-edu-blog-feed-xml": {
+   "weight": 0.5,
+   "every": 2,
+   "since": "2026-11-25",
+   "why": "",
+   "state": "retest"
+  },
+  "syncedreview-com-feed": {
+   "weight": 0.5,
+   "every": 2,
+   "since": "2026-11-23",
+   "why": "一周都没有新东西",
+   "state": "paused"
+  },
+  "lilianweng-github-io-index-xml": {
+   "weight": 0.5,
+   "every": 2,
+   "since": "2026-11-23",
+   "why": "一周都没有新东西",
+   "state": "paused"
+  },
+  "thegradient-pub-rss": {
+   "weight": 0.5,
+   "every": 2,
+   "since": "2026-11-23",
+   "why": "一周都没有新东西",
+   "state": "paused"
+  },
+  "blog-chromium-org-feeds-posts-default": {
+   "weight": 0.5,
+   "every": 2,
+   "since": "2026-11-24",
+   "why": "一周都没有新东西",
+   "state": "paused"
+  },
+  "kubernetes-io-feed-xml": {
+   "weight": 0.5,
+   "every": 2,
+   "since": "2026-11-17",
+   "why": "总是重复，没有新东西"
+  },
+  "react-dev-rss-xml": {
+   "weight": 0.5,
+   "every": 2,
+   "since": "2026-11-25",
+   "why": "一周都没有新东西",
+   "state": "paused"
+  },
+  "gn-aigc-tut": {
+   "weight": 0.75,
+   "every": 2,
+   "since": "2026-11-17",
+   "why": "总是重复，没有新东西"
+  },
+  "qbitai": {
+   "weight": 1.25,
+   "every": 1,
+   "since": "2026-11-17",
+   "why": ""
+  },
+  "gn-aipaint-tut": {
+   "state": "active",
+   "since": "2026-11-23",
+   "why": "",
+   "weight": 0.75,
+   "every": 1
+  },
+  "comfyui-manager": {
+   "weight": 0.5,
+   "every": 2,
+   "since": "2026-11-25",
+   "why": "总是重复，没有新东西"
+  },
+  "techcrunch-ai": {
+   "weight": 1.25,
+   "every": 1,
+   "since": "2026-11-24",
+   "why": ""
+  }
+ },
+ "deals": {
+  "DEV.to": {
+   "state": "paused",
+   "since": "2026-11-25",
+   "why": "复测还是没有内容"
+  },
+  "Lobsters": {
+   "state": "retest",
+   "since": "2026-11-23",
+   "why": ""
+  }
+ },
+ "updated_at": "2026-11-25T01:30+08:00",
+ "note": "由 evolve.py 每天自动维护；采集脚本只读。删除此文件即恢复默认（全部来源、权重 1.0）。"
+}

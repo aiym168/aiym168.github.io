@@ -1,39 +1,42 @@
 {
  "counts": {
-  "archived": 28,
+  "archived": 29,
   "deadline_extracted": 7,
-  "drop:duplicate": 620,
-  "drop:empty_summary": 80,
-  "drop:negative_signal": 173,
-  "drop:no_clear_offer": 776,
-  "drop:not_ai": 658,
+  "drop:duplicate": 664,
+  "drop:empty_summary": 82,
+  "drop:negative_signal": 178,
+  "drop:no_clear_offer": 814,
+  "drop:not_ai": 691,
   "drop:too_old_pre2025": 61,
-  "google_news_resolved": 822,
-  "google_news_total": 822,
-  "kept_total": 247,
-  "net:gnews_cache_hit": 797,
+  "google_news_resolved": 847,
+  "google_news_total": 847,
+  "kept_total": 250,
+  "net:gnews_cache_hit": 822,
   "net:gnews_resolved_net": 25,
-  "net:tco_expanded": 5,
+  "net:tco_expanded": 11,
+  "net:tco_failed": 9,
   "new_this_run": 1,
-  "raw_total": 2615
+  "raw_total": 2740
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
+   "这款开源 Mac 通话与会议录音工具支持本地模型或免费云服务",
+   "Mac 原生监控软件 Ebb 更新了磁盘清理和一波优化，再抽 10 个激活码",
+   "SwarmLLM：多台电脑可经互联网联手运行单机跑不动的大模型",
+   "convenient_window_free：适用于热角、边缘隐藏、鼠标手势和布局的 Windows 11 窗口工具",
+   "free-llm-router：一个 API 密钥，15+ 个免费提供商",
    "agnes-video-generator：免费 AI 视频生成器，开源且自托管",
    "awesome-cyber-security-heaven：Awesome Cyber​​ Security Heave",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
    "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
-   "Beatreel：根据一个提示制作讲解短视频",
-   "hive-mind：如何设计协同工作的 AI 体",
-   "Free-Gemini-pro-API：免费、无限制的 Google Gemini Pro API 代理",
-   "godspeed：适用于您课程的免费开源 AI 辅导工具",
-   "capri-ai-desktop：Capri，适用于 Windows 的免费开源 AI 桌面宠物、游戏叠加层和语音伴侣",
-   "sophon-realtime：开放式全双工语音模型，能够听懂您的语气并以同样的语气说话"
+   "Beatreel：根据一个提示制作讲解短视频"
   ],
   "empty_summary": [
+   "该模型在 DeepAI Code 中免费使用，不消耗 Theos 额度，支持 Mac、Windows 和 Linux 下",
+   "ChatGPT 研究人员免费计划也于周一重新开放申请，接受速度较快",
    "作者因 iMovie 难用、Resolve 太复杂、Premiere 太重而自建，完全免费开源",
    "该模型在 DeepAI Code 中免费使用，不消耗 Theos 额度，支持 Mac、Windows 和 Linux 下",
    "上周新增多个模型，含 Flint 免费模型、Qwen4 Max、Gemini 4 Neon 与 GPT-6.2 等",
@@ -43,11 +46,12 @@
    "开发者可免费试用 B300 与 H100 显卡，用于模型实验和微调，无需信用卡",
    "Builder Program 新增 25 美元云额度用于 Spot GPU，无需合约和信用卡",
    "@EyeingAI 分享：无需信用卡即可开始，额度可按现货价格租用 GPU 做微调、评测或实验",
-   "Nebius 免费 Builder Program 新增25美元 AI Cloud credits，无需信用卡",
-   "两名 Anthropic 高级 AI 工程师称用「Graph Engineering」让 Karpathy",
-   "@divaagurlxw 分享：> 无需注册 > 无需信用卡 > 每天 10K 请求 > 未过滤的响应 > OpenAI"
+   "Nebius 免费 Builder Program 新增25美元 AI Cloud credits，无需信用卡"
   ],
   "negative_signal": [
+   "@Reuters 分享：报道称黄仁勋的二次登场几乎无法缓解 AI 积分问题",
+   "@JulianGoldieSEO 分享：选择一类本地企业，收取设置费和月费，每月持续获得收入",
+   "@JulianGoldieSEO 分享：提示词要求 AI 按构建时间、价格点和自动销售难易度排序",
    "@ZDNET 分享：OpenAI 为小企业提供免费 AI 支持，协助它们的专家每月最多可获 8000 美元",
    "@JulianGoldieSEO 分享：输入网址即可运行 3 分钟免费审计，查看 ChatGPT、Gemini 和 Cl",
    "@_ddjohnson 分享：招聘方向涉及模型行为、角色训练与对齐，对相关话题感兴趣可直接联系",
@@ -56,24 +60,21 @@
    "@trtworld 分享：英国启动为期三年、约70万女性参与的乳腺癌 AI 筛查试验，项目耗资1300万美元",
    "@JulianGoldieSEO 分享：该免费 AI 社区已有95000多人加入，提供50多款免费 AI 工具、200多",
    "@pmnewsnigeria 分享：英国启动世界上最大的 AI 辅助乳腺筛查试验 英国推出世界上最大的 AI 辅助乳房筛",
-   "@turkiyetodaycom 分享：英国政府资助 1000 万英镑进行 AI 辅助乳腺癌筛查试验，由剑桥大学沃里克大",
-   "SEO 重大新闻，有一个免费的 Claude Code 连接器，可以对任何网站的 Google 流量 + AI 流量进行",
-   "@JulianGoldieSEO 分享：推文列出10个提示词，宣称可用 AI 从零构建被动收入，且完全免费",
-   "@vanguardngrnews 分享：英国启动世界上最大的 AI 辅助乳腺癌筛查试验"
+   "@turkiyetodaycom 分享：英国政府资助 1000 万英镑进行 AI 辅助乳腺癌筛查试验，由剑桥大学沃里克大"
   ],
   "no_clear_offer": [
-   "@CyberScoopNews 分享：作者借助两个免费 AI 模型发现并报告了一个 WordPress 插件中的真实漏洞",
-   "Zoom 表示上季度十大 CX 交易均出现付费 AI，Foundever 等企业正通过 UC 和联络中心整合替换旧系统",
-   "Skill 就是会自动触发的 / 命令，不必反复说明身份或重建配置，作者将整套库免费分享",
-   "@saheedniyi_02 分享：一条回复称当初关注该账号就是为了免费 AI 模型，如今对方却改了内容方向",
-   "Max 5x 每月 100 美元、Max 20x 每月 200 美元，Team 最高 500 美元共享额度",
+   "涵盖 PaddleOCR、LangChain 等20个开源文本挖掘仓库，按功能分类，累计200万 GitHub 星标",
+   "一款免费的 AI 路演 PPT 工具，用户可通过链接直接试用",
+   "同意@DarioAmodei：“AI 需要由合法、民主的程序来管理，而向 AI 系统“投降人类自由意志”是一个可怕的想法",
+   "Dario Amodei 拒绝向 AI 放弃自由意志的想法，并指责竞争对手 AI 高管的“基于共鸣”的定位",
+   "Edgent 基于 ASRKit，支持 Swift、Kotlin 和 Flutter，模型下载后无需账号或 API ke",
+   "@jasonlk 分享：提供 AI 销售代理免费指南，并附 AI 代理相关介绍链接",
+   "套件含 Oracle Cloud、Neo4j Aura、Anchor Browser 等积分和会员，总价值超 850 美",
+   "这是一位潜在的 JEE 顶尖选手，她选择不去参加商业辅导课程，而是在她的 @apnipathshalain pod 中使",
+   "Anthropic CEO 对 Axios 关于 AI 与自由意志的报道提出异议",
    "@VaibhavSisinty 分享：该免费社区已有 20 多万人加入，可每天获取 AI 工具和信息",
-   "Zoom 称其上季度十笔最大 CX 交易全部包含付费 AI，Foundever",
-   "由 NVIDIA RTX Spark 驱动，面向开发、内容生产与业务运营等本地 AI 场景，可免费评估并领取白皮书",
-   "@alibaba_cloud 分享：一份订阅即可使用多个模型并共享 Credits，无需切换账号、API 密钥或在各平台",
-   "@kr39__ 分享：作者认为这笔配置既有合理理由，也有值得指出的真实缺陷，并提醒人们区分 DAM 与 DIM",
-   "GitHub、Supabase、Clerk、Resend、Vercel、Cloudflare、Upstash、Pinec",
-   "@AnthropicAI 分享：形式化验证可证明代码不含特定缺陷，但以往只适用于小型代码库，或需要投入大量专家时间"
+   "@csaba_kissi 分享：清单包含免费 AI 设计代理技能、开源可视化编码代理与协作设计画布等资源",
+   "@malpani 分享：该免费 AI 辅导工具利用备考 JEE 学生的反馈共同改进应用"
   ],
   "not_ai": [
    "@JulianGoldieSEO 分享：该免费审计工具无需注册，用户可直接查看结果",
@@ -104,29 +105,28 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-25T20:32:16+08:00",
+ "generated_at": "2026-11-26T04:52:37+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-25T20:32:16+08:00",
+  "checked_at": "2026-11-26T04:51:47+08:00",
   "counts": {
-   "gone": 2,
-   "ok": 215,
+   "gone": 1,
+   "ok": 216,
    "recheck": 1
   },
-  "hidden": 2
+  "hidden": 1
  },
- "seconds": 12.4,
+ "seconds": 13.7,
  "side": {
   "github_hot": {
-   "drop:duplicate": 1,
    "drop:not_ai": 2,
-   "kept": 27,
+   "kept": 28,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 3,
-   "drop:not_ai": 14,
-   "drop:not_ai_strict": 2,
-   "kept": 21,
+   "drop:negative_signal": 1,
+   "drop:not_ai": 8,
+   "drop:not_ai_strict": 12,
+   "kept": 19,
    "raw": 40
   }
  }
