@@ -1,52 +1,58 @@
 {
  "last_step": {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "changes": [
    {
     "op": "restore",
-    "name": "伯克利 BAIR",
-    "key": "bair-berkeley-edu-blog-feed-xml",
-    "why": ""
-   },
-   {
-    "op": "retest",
     "name": "Synced",
     "key": "syncedreview-com-feed",
     "why": ""
    },
    {
-    "op": "retest",
+    "op": "restore",
     "name": "Lilian Weng",
     "key": "lilianweng-github-io-index-xml",
     "why": ""
    },
    {
-    "op": "retest",
+    "op": "restore",
     "name": "The Gradient",
     "key": "thegradient-pub-rss",
     "why": ""
    },
    {
-    "op": "pause",
-    "name": "Lobsters",
-    "key": "Lobsters",
-    "why": "复测还是没有内容"
+    "op": "retest",
+    "name": "Chromium Blog",
+    "key": "blog-chromium-org-feeds-posts-default",
+    "why": ""
+   },
+   {
+    "op": "retest",
+    "name": "Nature",
+    "key": "nature-com-nature-rss",
+    "why": ""
    }
   ],
-  "snapshot": "data/evolve/snapshots/2026-11-26.json",
+  "snapshot": "data/evolve/snapshots/2026-11-27.json",
   "baseline": {
-   "kept": 5384,
-   "runs": 17,
-   "dead": 10,
-   "checked": 862,
-   "build_ok": 13,
+   "kept": 5852,
+   "runs": 19,
+   "dead": 12,
+   "checked": 879,
+   "build_ok": 15,
    "build_bad": 0,
-   "kept_per_run": 316.71,
-   "dead_rate": 0.0116,
+   "kept_per_run": 308.0,
+   "dead_rate": 0.0137,
    "bad_build_rate": 0.0
   }
  },
  "history": [
+  {
+   "date": "2026-11-27",
+   "verdict_prev": null,
+   "changes": 5,
+   "diary_by": "rules"
+  },
   {
    "date": "2026-11-26",
    "verdict_prev": null,
@@ -138,5 +144,5 @@
    "diary_by": "rules"
   }
  ],
- "last_evolve_date": "2026-11-26"
+ "last_evolve_date": "2026-11-27"
 }

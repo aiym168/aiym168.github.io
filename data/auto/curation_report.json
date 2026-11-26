@@ -2,17 +2,20 @@
  "counts": {
   "archived": 29,
   "deadline_extracted": 7,
-  "drop:duplicate": 662,
-  "drop:empty_summary": 88,
-  "drop:negative_signal": 181,
-  "drop:no_clear_offer": 846,
-  "drop:not_ai": 695,
+  "drop:duplicate": 703,
+  "drop:empty_summary": 89,
+  "drop:negative_signal": 187,
+  "drop:no_clear_offer": 872,
+  "drop:not_ai": 734,
   "drop:too_old_pre2025": 62,
-  "google_news_resolved": 893,
-  "google_news_total": 893,
-  "kept_total": 252,
+  "google_news_resolved": 907,
+  "google_news_total": 907,
+  "kept_total": 253,
   "net:gnews_cache_hit": 893,
-  "raw_total": 2786
+  "net:gnews_resolved_net": 14,
+  "net:tco_expanded": 1,
+  "net:tco_failed": 10,
+  "raw_total": 2900
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -20,17 +23,18 @@
    "@scholar_corner 分享：迪拜政府免费 AI 课程，颁发免费证书 全球开放通过迪拜未来基金会的“百万提示工程",
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "这款开源 Mac 通话与会议录音工具支持本地模型或免费云服务",
+   "Gemini 白嫖的 Pro 也能用 Carbon 了",
+   "kllm：在免费的 Kaggle GPU 上运行开放权重 LLM（Qwen、GGUF、abliterated）",
    "convenient_window_free：适用于热角、边缘隐藏、鼠标手势和布局的 Windows 11 窗口工具",
    "free-llm-router：一个 API 密钥，15+ 个免费提供商",
    "agnes-video-generator：免费 AI 视频生成器，开源且自托管",
    "awesome-cyber-security-heaven：Awesome Cyber​​ Security Heave",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
-   "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
-   "Beatreel：根据一个提示制作讲解短视频",
-   "hive-mind：如何设计协同工作的 AI 体"
+   "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本"
   ],
   "empty_summary": [
+   "按 iPhone、iPad 和不同内存的 Mac 推荐 Gemma、Qwen 等本地免费模型",
    "@ghumare64 分享：有开发者用这套免费课程配合编码智能体，一周内上线了三个项目，帖中附7条提示词",
    "@ViduAI_official 分享：面向跨境电商等场景的 AI 助手开启早期访问，提供免费 credits 和独家抢",
    "@higgsfield 分享：480B 参数、约28B 激活的近 SOTA 视频模型，支持1080p 最长30秒，生成每",
@@ -41,10 +45,10 @@
    "ChatGPT 研究人员免费计划也于周一重新开放申请，接受速度较快",
    "作者因 iMovie 难用、Resolve 太复杂、Premiere 太重而自建，完全免费开源",
    "该模型在 DeepAI Code 中免费使用，不消耗 Theos 额度，支持 Mac、Windows 和 Linux 下",
-   "上周新增多个模型，含 Flint 免费模型、Qwen4 Max、Gemini 4 Neon 与 GPT-6.2 等",
-   "Nebius 提供25美元 Spot GPU 免费额度，无需绑定信用卡，相当于 H100运行一天，可用于微调开源模型"
+   "上周新增多个模型，含 Flint 免费模型、Qwen4 Max、Gemini 4 Neon 与 GPT-6.2 等"
   ],
   "negative_signal": [
+   "@liam_fallen 分享：作者提醒订阅其通讯，每月可免费获得一个 AI agent，并附上订阅链接",
    "@JulianGoldieSEO 分享：谷歌的 AI 电影制作工具每天刷新 50 积分，但积分在午夜过期",
    "KidneyCAN Clinical Trial Navigator 免费 AI 工具帮助患者探索肾癌临床试验选项并做好",
    "@Reuters 分享：报道称黄仁勋的二次登场几乎无法缓解 AI 积分问题",
@@ -55,22 +59,21 @@
    "@_ddjohnson 分享：招聘方向涉及模型行为、角色训练与对齐，对相关话题感兴趣可直接联系",
    "@uniofleicester 分享：欢迎参加伦敦大学的免费研讨会，探讨 AI 在临床学习、手术、康复、评估和患者安全方",
    "可让 Grok Bot 直接执行 SEO 工作，并提供免费的 AI 可见度审计",
-   "@trtworld 分享：英国启动为期三年、约70万女性参与的乳腺癌 AI 筛查试验，项目耗资1300万美元",
-   "@JulianGoldieSEO 分享：该免费 AI 社区已有95000多人加入，提供50多款免费 AI 工具、200多"
+   "@trtworld 分享：英国启动为期三年、约70万女性参与的乳腺癌 AI 筛查试验，项目耗资1300万美元"
   ],
   "no_clear_offer": [
-   "@TheRundownAI 分享：汇总包括 AI 感恩节备餐指南、五美分如今能构建什么、用 Gemini Tasks 查",
-   "@Prathkum 分享：好吧，这个需要一些解释，达里奥·阿莫迪 (Dario Amodei) 刚刚对一篇文章发表了长篇",
-   "@MTSlive 分享：千余名贡献者三天内提交逾1.1万次 commit，并预计推出可玩版本",
-   "@RoundtableSpace 分享：智能体可生成图像、配音、音乐和视频并存入项目，还能读取 PDF、录音与图片",
-   "@malpani 分享：该免费 AI 辅导工具称每日有3.5万名学生使用，用于备战 JEE 考试",
-   "@Reuters 分享：文章认为黄仁勋的最新亮相未能缓解 AI 相关信贷面临的压力",
-   "Dario Amodei 称不应将人类自由意志交给 AI 系统，并称该说法荒谬",
-   "官方表示，许多准备 JEE 考试的学生正在使用其免费 AI 辅导工具",
-   "通过 AMD Token Factory 可调用 DeepSeek、Gemma、Qwen、GLM、MiMo 等7个模型",
-   "作者称原帖冗长难读，于是让 Gemini 4 Neon 重写为保留全部要点的简洁版本",
-   "@RoKhanna 分享：自由意志是一种不能放弃的选择能力",
-   "该账号戏称 Nvidia AI 芯片助力15岁选手 Vaibhav Sooryavanshi 在亚洲杯新星赛打出204分"
+   "推文给出三步操作：打开模型、接入免费的 Polar Rank MCP，再粘贴指定提示词",
+   "@malpani 分享：作者建议把卡了一周的那个疑问交给这个免费 AI 家教，再看看答案值多少",
+   "免费 AI Video Studio 已被克隆2000多次，Creator Kit 提供逐步视频编辑课程和51个效果",
+   "@svpino 分享：这是全球最大的 AI 活动之一，开发者现可免费观看全部场次",
+   "@svpino 分享：这是全球最大的 AI 活动之一，开发者现可免费观看全部场次",
+   "@seetauniversity 分享：为 S6离校生提供免费 AI 培训",
+   "@VaibhavSisinty 分享：这些免费技能可让随手生成的项目摆脱千篇一律的默认样式",
+   "Pro、Max、Ultra 与 Team 用户可在设置中领取 11 月 10 日起的重置额度",
+   "@ManningBooks 分享：这个假期，通过曼宁的免费 AI 应用现实检查来测试一下",
+   "@joelcomm 分享：这个免费助手带老兵走完索赔流程，让人不必花钱请人帮忙，另有一个面向退役过渡期人群",
+   "@alex_prompter 分享：它把大模型拆分到显卡与内存上运行，无需订阅，也没有 API 账单",
+   "@TimSweeneyEpic 分享：该评论认为，这场抵制运动的失败是 AI 时代美国自由市场对荒诞攻击的一次免疫反应"
   ],
   "not_ai": [
    "@FinanceYF5 分享：它没有销售团队，医生提出临床问题可在数秒内得到答案，每条结论都引用医学期刊",
@@ -101,17 +104,17 @@
    "Stability AI 推出 Stable Diffusion XL 1.0，现已在 Amazon Bedrock 上"
   ]
  },
- "generated_at": "2026-11-26T22:57:10+08:00",
+ "generated_at": "2026-11-27T06:08:44+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-26T22:57:10+08:00",
+  "checked_at": "2026-11-27T06:08:33+08:00",
   "counts": {
-   "gone": 2,
+   "gone": 1,
    "ok": 220,
    "recheck": 1
   },
-  "hidden": 2
+  "hidden": 1
  },
- "seconds": 0.9,
+ "seconds": 10.9,
  "side": {
   "github_hot": {
    "drop:not_ai": 1,
@@ -119,9 +122,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:not_ai": 17,
-   "drop:not_ai_strict": 8,
-   "kept": 15,
+   "drop:negative_signal": 3,
+   "drop:not_ai": 14,
+   "drop:not_ai_strict": 5,
+   "kept": 18,
    "raw": 40
   }
  }

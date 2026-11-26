@@ -1,9 +1,9 @@
 {
  "news": {
   "nature-com-nature-rss": {
-   "state": "paused",
-   "since": "2026-11-24",
-   "why": "复测还是打不开"
+   "state": "retest",
+   "since": "2026-11-27",
+   "why": ""
   },
   "civitai-models": {
    "state": "active",
@@ -25,32 +25,32 @@
    "state": "active"
   },
   "syncedreview-com-feed": {
-   "weight": 0.5,
-   "every": 2,
-   "since": "2026-11-26",
+   "weight": 0.75,
+   "every": 1,
+   "since": "2026-11-27",
    "why": "",
-   "state": "retest"
+   "state": "active"
   },
   "lilianweng-github-io-index-xml": {
-   "weight": 0.5,
-   "every": 2,
-   "since": "2026-11-26",
+   "weight": 0.75,
+   "every": 1,
+   "since": "2026-11-27",
    "why": "",
-   "state": "retest"
+   "state": "active"
   },
   "thegradient-pub-rss": {
-   "weight": 0.5,
-   "every": 2,
-   "since": "2026-11-26",
+   "weight": 0.75,
+   "every": 1,
+   "since": "2026-11-27",
    "why": "",
-   "state": "retest"
+   "state": "active"
   },
   "blog-chromium-org-feeds-posts-default": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-24",
-   "why": "一周都没有新东西",
-   "state": "paused"
+   "since": "2026-11-27",
+   "why": "",
+   "state": "retest"
   },
   "kubernetes-io-feed-xml": {
    "weight": 0.5,
@@ -109,6 +109,6 @@
    "why": "复测还是没有内容"
   }
  },
- "updated_at": "2026-11-26T04:52+08:00",
+ "updated_at": "2026-11-27T06:08+08:00",
  "note": "由 evolve.py 每天自动维护；采集脚本只读。删除此文件即恢复默认（全部来源、权重 1.0）。"
 }
