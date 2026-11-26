@@ -1,7 +1,7 @@
 {
   "date": "2026-11-26",
-  "updated_at": "2026-11-26T11:15+08:00",
-  "updated_at_label": "2026-11-26 11:15 Asia/Shanghai",
+  "updated_at": "2026-11-26T12:23+08:00",
+  "updated_at_label": "2026-11-26 12:23 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -206,7 +206,7 @@
       "url": "https://news.ycombinator.com/item?id=50634426",
       "posted_at": "2026-11-25 04:44 Asia/Shanghai",
       "engagement": {
-        "points": 103,
+        "points": 104,
         "comments": 103
       },
       "original_title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
@@ -442,6 +442,24 @@
       "translated_by": "model"
     },
     {
+      "id": "v2ex-1259954",
+      "source": "V2EX",
+      "category": "云服务/GPU/开发者资源",
+      "title": "从一句话到一个可编辑的 Minecraft 建筑，我做了 IntoBlocks",
+      "summary": "从一句话到一个可编辑的 Minecraft 建筑，我做了 IntoBlocks\n# 从一句话到一个可编辑的 Minecraft 建筑，我做了 IntoBlocks\r\n\r\n在 Minecraft 里盖一张地图，最耗时间的部分通常是房子、城堡、村庄，以及一整片能连起来的场景。\r\n\r\n我最近在做 **IntoBlocks**。它可以把文字说明、参考图和平面图变成 Minecraft 建筑，最后导出成可编辑的 `.schem` 文件。生成出来的内容可以继续拿回 WorldEdit、Litematica、Axiom，或者直接在 Minecraft 里修改。\r\n\r\n![Canal Trading Quarter](https://intoblocks.app/images/schematic-library/canal-trading-quarter/02-southwest.webp?dpl=dpl_9Mt84o1f2FxJcCwtLDiuCWW4tPrF)\r\n\r\n上面这个 Canal Trading Quarter，就是在 112 × 52 × 112 的范围内，用多条河道、七栋不同高度的店铺、三种桥和带内部功能的建筑组合出来的。生成后可以继续改房间、材质、路径和地形连接。\r\n\r\n这个项目主要做了两种生成方式：\r\n\r\n## Build Mode / Agent Mode\r\n\r\n适合房子、庭院、城堡、村庄、服务器出生点这类有明确结构的建筑。\r\n\r\n- 输入建筑用途、尺寸、房间、入口、材质和需要避开的方块\r\n- 最多上传 6 张参考图，也可以用平面图约束房间和动线\r\n- 生成后可以在浏览器里旋转查看\r\n- 不满意可以直接追问修改，例如“入口再宽一点”“保留现有轮廓，把屋顶换成深色木”\r\n- 每次修改会保留版本，方便前后对比\r\n- 输出 Sponge `.schem`，兼容的结果可以在浏",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "pengxu980315",
+      "url": "https://www.v2ex.com/t/1259954",
+      "posted_at": "2026-11-26 11:20 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "从一句话到一个可编辑的 Minecraft 建筑，我做了 IntoBlocks",
+      "original_summary": "从一句话到一个可编辑的 Minecraft 建筑，我做了 IntoBlocks\n# 从一句话到一个可编辑的 Minecraft 建筑，我做了 IntoBlocks\r\n\r\n在 Minecraft 里盖一张地图，最耗时间的部分通常是房子、城堡、村庄，以及一整片能连起来的场景。\r\n\r\n我最近在做 **IntoBlocks**。它可以把文字说明、参考图和平面图变成 Minecraft 建筑，最后导出成可编辑的 `.schem` 文件。生成出来的内容可以继续拿回 WorldEdit、Litematica、Axiom，或者直接在 Minecraft 里修改。\r\n\r\n![Canal Trading Quarter](https://intoblocks.app/images/schematic-library/canal-trading-quarter/02-southwest.webp?dpl=dpl_9Mt84o1f2FxJcCwtLDiuCWW4tPrF)\r\n\r\n上面这个 Canal Trading Quarter，就是在 112 × 52 × 112 的范围内，用多条河道、七栋不同高度的店铺、三种桥和带内部功能的建筑组合出来的。生成后可以继续改房间、材质、路径和地形连接。\r\n\r\n这个项目主要做了两种生成方式：\r\n\r\n## Build Mode / Agent Mode\r\n\r\n适合房子、庭院、城堡、村庄、服务器出生点这类有明确结构的建筑。\r\n\r\n- 输入建筑用途、尺寸、房间、入口、材质和需要避开的方块\r\n- 最多上传 6 张参考图，也可以用平面图约束房间和动线\r\n- 生成后可以在浏览器里旋转查看\r\n- 不满意可以直接追问修改，例如“入口再宽一点”“保留现有轮廓，把屋顶换成深色木”\r\n- 每次修改会保留版本，方便前后对比\r\n- 输出 Sponge `.schem`，兼容的结果可以在浏",
+      "translated_by": "free-translate"
+    },
+    {
       "id": "v2ex-1259929",
       "source": "V2EX",
       "category": "云服务/GPU/开发者资源",
@@ -460,40 +478,40 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-nejib1-free-llm",
+      "id": "ghdeal-jinwovo-recall",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "nejib1/Free-LLM：免费 LLM API 与模型合集",
-      "summary": "汇集 78 个免费 LLM API 提供方、450+ 免费模型，并提供兼容 OpenAI/Anthropic 的聚合端点与自动故障切换。",
+      "title": "金沃沃/召回",
+      "summary": "jinwovo/recall 自托管混合搜索 + RAG QA (KO/EN) — BM25 + 矢量 + RRF + Elasticsearch 上的重新排名、带有 DLQ 回放的 Kafka 摄取、CI 门控检索评估、通过 Ollama 的免费本地 LLM。无需 API 密钥。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "nejib1",
-      "url": "https://github.com/nejib1/Free-LLM",
-      "posted_at": "2026-11-26 09:18 Asia/Shanghai",
+      "author": "jinwovo",
+      "url": "https://github.com/jinwovo/recall",
+      "posted_at": "2026-11-02 21:53 Asia/Shanghai",
       "engagement": {
-        "stars": 1120
+        "stars": 4
       },
-      "original_title": "nejib1/Free-LLM",
-      "original_summary": "nejib1/Free-LLM 78 free LLM API providers & 450+ free models (limits, no-card options) + Free-LLM Router: all of them behind one OpenAI/Anthropic-compatible endpoint with instant failover. Run Claude Code, Codex, Cursor, Aider on free models. Gemini, Groq, Mistral, DeepSeek, Qwen & more. Synced daily.",
-      "translated_by": "model"
+      "original_title": "jinwovo/recall",
+      "original_summary": "jinwovo/recall Self-hosted hybrid search + RAG QA (KO/EN) — BM25 + vectors + RRF + rerank on Elasticsearch, Kafka ingestion with DLQ replay, CI-gated retrieval evals, free local LLM via Ollama. No API key needed.",
+      "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-enapt-swarmllm",
+      "id": "ghdeal-royalskynet-orchestrator",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "enapt/SwarmLLM：在自己电脑上免费跑 AI 模型的开源应用",
-      "summary": "多台电脑可经互联网联手运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
+      "title": "皇家天网/orchestrator",
+      "summary": "royalskynet/orchestrator Dispatch work orders to any LLM you have (free pools, subscriptions, OmniRoute providers, APIs), ranked by measured pass rate; done = acceptance script passes. 多 LLM 工單調度器。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "enapt",
-      "url": "https://github.com/enapt/SwarmLLM",
-      "posted_at": "2026-11-23 21:53 Asia/Shanghai",
+      "author": "royalskynet",
+      "url": "https://github.com/royalskynet/orchestrator",
+      "posted_at": "2026-11-09 16:01 Asia/Shanghai",
       "engagement": {
-        "stars": 93
+        "stars": 0
       },
-      "original_title": "enapt/SwarmLLM",
-      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
-      "translated_by": "model"
+      "original_title": "royalskynet/orchestrator",
+      "original_summary": "royalskynet/orchestrator Dispatch work orders to any LLM you have (free pools, subscriptions, OmniRoute providers, APIs), ranked by measured pass rate; done = acceptance script passes. 多 LLM 工單調度器。",
+      "translated_by": "free-translate"
     },
     {
       "id": "ghdeal-arsh624-llm4jobs-v2",
@@ -514,6 +532,78 @@
       "translated_by": "model"
     },
     {
+      "id": "ghdeal-maosansanbc-oss-sysv-site",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "maosansanbc-oss/sysv-site：LLM 免费额度与价格目录",
+      "summary": "SysV Radar 项目自动汇总各家 LLM API 定价、免费额度目录和开源基础设施信息，站点为 sysv.cn。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "maosansanbc-oss",
+      "url": "https://github.com/maosansanbc-oss/sysv-site",
+      "posted_at": "2026-11-24 23:38 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "maosansanbc-oss/sysv-site",
+      "original_summary": "maosansanbc-oss/sysv-site SysV Radar — Automated LLM API Pricing, Free-Tier Directory & Open-Source Infra (sysv.cn)",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-nejib1-free-llm",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "nejib1/Free-LLM：免费 LLM API 与模型合集",
+      "summary": "汇集 78 个免费 LLM API 提供方、450+ 免费模型，并提供兼容 OpenAI/Anthropic 的聚合端点与自动故障切换。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "nejib1",
+      "url": "https://github.com/nejib1/Free-LLM",
+      "posted_at": "2026-11-26 09:18 Asia/Shanghai",
+      "engagement": {
+        "stars": 1120
+      },
+      "original_title": "nejib1/Free-LLM",
+      "original_summary": "nejib1/Free-LLM 78 free LLM API providers & 450+ free models (limits, no-card options) + Free-LLM Router: all of them behind one OpenAI/Anthropic-compatible endpoint with instant failover. Run Claude Code, Codex, Cursor, Aider on free models. Gemini, Groq, Mistral, DeepSeek, Qwen & more. Synced daily.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-shivaprasad7894530722-wq-free-llm-api-tokens",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "shivaprasad7894530722-wq/free-llm-api-tokens",
+      "summary": "shivaprasad7894530722-wq/free-llm-api-tokens 每日更新的提供免费 LLM API Token 的网站列表（OpenAI 兼容性、基本 URL、Token/天）",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "shivaprasad7894530722-wq",
+      "url": "https://github.com/shivaprasad7894530722-wq/free-llm-api-tokens",
+      "posted_at": "2026-11-12 21:50 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "shivaprasad7894530722-wq/free-llm-api-tokens",
+      "original_summary": "shivaprasad7894530722-wq/free-llm-api-tokens Daily-updated list of sites giving free LLM API tokens (OpenAI compatibility, base URLs, tokens/day)",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-enapt-swarmllm",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "enapt/SwarmLLM：在自己电脑上免费跑 AI 模型的开源应用",
+      "summary": "多台电脑可经互联网联手运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-23 21:53 Asia/Shanghai",
+      "engagement": {
+        "stars": 93
+      },
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
+      "translated_by": "model"
+    },
+    {
       "id": "ghdeal-kings84716-a11y-free-llm-api-zh",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
@@ -529,60 +619,6 @@
       },
       "original_title": "kings84716-a11y/free-llm-api-zh",
       "original_summary": "kings84716-a11y/free-llm-api-zh 每日实测全网免费大模型API",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-pacocartones-free-llm-api-hub",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "pacocartones/free-llm-api-hub：持续核验的免费 LLM API 数据集",
-      "summary": "收录免费额度与试用额度的 LLM API，每条标注日期并溯源官方文档，机器可读且无死链。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "pacocartones",
-      "url": "https://github.com/pacocartones/free-llm-api-hub",
-      "posted_at": "2026-11-26 08:15 Asia/Shanghai",
-      "engagement": {
-        "stars": 130
-      },
-      "original_title": "pacocartones/free-llm-api-hub",
-      "original_summary": "pacocartones/free-llm-api-hub A continuously-verified dataset of free-tier & trial-credit LLM APIs for developers. Every entry dated, sourced to the provider's own docs, and machine-readable. No hype, no dead links.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-yangmaoswitch-catalog",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "YangmaoSwitch/catalog：各平台大模型免费额度结构化目录",
-      "summary": "汇总各平台大模型免费 API 额度的结构化数据，平台可通过 PR 提交收录。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "YangmaoSwitch",
-      "url": "https://github.com/YangmaoSwitch/catalog",
-      "posted_at": "2026-11-19 16:58 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "YangmaoSwitch/catalog",
-      "original_summary": "YangmaoSwitch/catalog 羊毛switch 额度目录：各平台大模型免费额度的结构化数据，平台可提 PR 入驻 / Free LLM API quota catalog",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-oneforallhub-free-llm-apis-live",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "free-llm-apis-live：自动更新的免费 LLM API 目录",
-      "summary": "收录免费 LLM API 与 AI 模型，自动检测可用状态，并给出上下文窗口与 JSON/CSV 数据源。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "OneForAllHub",
-      "url": "https://github.com/OneForAllHub/free-llm-apis-live",
-      "posted_at": "2026-11-23 14:33 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "OneForAllHub/free-llm-apis-live",
-      "original_summary": "OneForAllHub/free-llm-apis-live Live auto-updated directory of free LLM APIs & AI models with automated status checks, context windows, and JSON/CSV feeds.",
       "translated_by": "model"
     },
     {
@@ -631,9 +667,9 @@
       "deadline": null,
       "author": "mnfst",
       "url": "https://github.com/mnfst/awesome-free-llm-apis",
-      "posted_at": "2026-11-26 11:13 Asia/Shanghai",
+      "posted_at": "2026-11-26 11:48 Asia/Shanghai",
       "engagement": {
-        "stars": 14204
+        "stars": 14211
       },
       "original_title": "mnfst/awesome-free-llm-apis",
       "original_summary": "mnfst/awesome-free-llm-apis List of Permanent Free LLM API  (API Keys)",
@@ -649,9 +685,9 @@
       "deadline": null,
       "author": "open-free-llm-api",
       "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
-      "posted_at": "2026-11-26 11:03 Asia/Shanghai",
+      "posted_at": "2026-11-26 12:06 Asia/Shanghai",
       "engagement": {
-        "stars": 6092
+        "stars": 6094
       },
       "original_title": "open-free-llm-api/awesome-freellm-apis",
       "original_summary": "open-free-llm-api/awesome-freellm-apis 134+ free LLM APIs & AI API keys from 40+ providers. Google Gemini, NVIDIA NIM, Groq, OpenRouter & more. One-click setup for Claude Code, Cursor and Codex.",
@@ -709,42 +745,6 @@
       },
       "original_title": "BeyenAI/awesome-free-llm-api-2026",
       "original_summary": "BeyenAI/awesome-free-llm-api-2026 ",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-priestkos-awesome-free-llm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "awesome-free-llm-apis：卡片式免费 LLM API 目录",
-      "summary": "以可折叠卡片列出各家免费 LLM API，支持一键复制 base URL，每周刷新，内容镜像自 mnfst 仓库。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "priestkos",
-      "url": "https://github.com/priestkos/awesome-free-llm-apis",
-      "posted_at": "2026-11-12 19:06 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "priestkos/awesome-free-llm-apis",
-      "original_summary": "priestkos/awesome-free-llm-apis Directory of every free LLM API: collapsible provider cards, one-click base-URL copy, weekly refresh. Content mirrored verbatim from mnfst/awesome-free-llm-apis (CC0-1.0).",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-furyteamtop-fury-antidetect-browser",
-      "source": "GitHub",
-      "category": "AI 开发工具与编程助手",
-      "title": "fury-antidetect-browser：免费开源反检测浏览器",
-      "summary": "基于 Chromium 157 的开源反检测浏览器，用 C++ 伪造指纹，支持多身份代理、内置 MCP 服务器，无按席位收费。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "furyteamtop",
-      "url": "https://github.com/furyteamtop/fury-antidetect-browser",
-      "posted_at": "2026-11-26 05:33 Asia/Shanghai",
-      "engagement": {
-        "stars": 197
-      },
-      "original_title": "furyteamtop/fury-antidetect-browser",
-      "original_summary": "furyteamtop/fury-antidetect-browser Free, open-source anti-detect browser. A Chromium 157 fork that spoofs the fingerprint in C++ rather than with injected JavaScript, with per-profile personas and proxies, a built-in MCP server for AI assistants, and a self-hostable team server with per-project access. No seats, no per-profile pricing, no telemetry.",
       "translated_by": "model"
     },
     {
