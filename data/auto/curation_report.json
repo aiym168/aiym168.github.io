@@ -2,18 +2,20 @@
  "counts": {
   "archived": 29,
   "deadline_extracted": 7,
-  "drop:duplicate": 664,
-  "drop:empty_summary": 84,
-  "drop:negative_signal": 179,
-  "drop:no_clear_offer": 825,
-  "drop:not_ai": 692,
+  "drop:duplicate": 665,
+  "drop:empty_summary": 85,
+  "drop:negative_signal": 182,
+  "drop:no_clear_offer": 829,
+  "drop:not_ai": 693,
   "drop:too_old_pre2025": 61,
-  "google_news_resolved": 862,
-  "google_news_total": 862,
+  "google_news_resolved": 872,
+  "google_news_total": 872,
   "kept_total": 250,
   "net:gnews_cache_hit": 862,
-  "new_this_run": 1,
-  "raw_total": 2755
+  "net:gnews_resolved_net": 10,
+  "net:tco_expanded": 1,
+  "net:tco_failed": 9,
+  "raw_total": 2765
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -21,7 +23,6 @@
    "@scholar_corner 分享：迪拜政府免费 AI 课程，颁发免费证书 全球开放通过迪拜未来基金会的“百万提示工程",
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "这款开源 Mac 通话与会议录音工具支持本地模型或免费云服务",
-   "Mac 原生监控软件 Ebb 更新了磁盘清理和一波优化，再抽 10 个激活码",
    "SwarmLLM：多台电脑可经互联网联手运行单机跑不动的大模型",
    "convenient_window_free：适用于热角、边缘隐藏、鼠标手势和布局的 Windows 11 窗口工具",
    "free-llm-router：一个 API 密钥，15+ 个免费提供商",
@@ -29,9 +30,11 @@
    "awesome-cyber-security-heaven：Awesome Cyber​​ Security Heave",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
-   "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本"
+   "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
+   "Beatreel：根据一个提示制作讲解短视频"
   ],
   "empty_summary": [
+   "ChatGPT 研究人员免费计划也于周一重新开放申请，接受速度较快",
    "@aakashgupta 分享：该免费模型有90亿参数，可在单张 GPU 上运行，用自家欺诈数据训练数周后效果显著领先",
    "David Leon 在 ausbiz 免费视频中质疑 AI 热潮的经济性，并提供 OBII 七天免费试用",
    "该模型在 DeepAI Code 中免费使用，不消耗 Theos 额度，支持 Mac、Windows 和 Linux 下",
@@ -42,10 +45,10 @@
    "Nebius 提供25美元 Spot GPU 免费额度，无需绑定信用卡，相当于 H100运行一天，可用于微调开源模型",
    "用户可免费获得 B300 一下午或 H100 最多一天的使用时长，无需信用卡",
    "额度可用于 Spot GPU，无需信用卡，B300 与 H100 均在免费试用范围内",
-   "开发者可免费试用 B300 与 H100 显卡，用于模型实验和微调，无需信用卡",
-   "Builder Program 新增 25 美元云额度用于 Spot GPU，无需合约和信用卡"
+   "开发者可免费试用 B300 与 H100 显卡，用于模型实验和微调，无需信用卡"
   ],
   "negative_signal": [
+   "@JulianGoldieSEO 分享：谷歌的 AI 电影制作工具每天刷新 50 积分，但积分在午夜过期",
    "KidneyCAN Clinical Trial Navigator 免费 AI 工具帮助患者探索肾癌临床试验选项并做好",
    "@Reuters 分享：报道称黄仁勋的二次登场几乎无法缓解 AI 积分问题",
    "@JulianGoldieSEO 分享：选择一类本地企业，收取设置费和月费，每月持续获得收入",
@@ -56,24 +59,24 @@
    "@uniofleicester 分享：欢迎参加伦敦大学的免费研讨会，探讨 AI 在临床学习、手术、康复、评估和患者安全方",
    "可让 Grok Bot 直接执行 SEO 工作，并提供免费的 AI 可见度审计",
    "@trtworld 分享：英国启动为期三年、约70万女性参与的乳腺癌 AI 筛查试验，项目耗资1300万美元",
-   "@JulianGoldieSEO 分享：该免费 AI 社区已有95000多人加入，提供50多款免费 AI 工具、200多",
-   "@pmnewsnigeria 分享：英国启动世界上最大的 AI 辅助乳腺筛查试验 英国推出世界上最大的 AI 辅助乳房筛"
+   "@JulianGoldieSEO 分享：该免费 AI 社区已有95000多人加入，提供50多款免费 AI 工具、200多"
   ],
   "no_clear_offer": [
+   "原帖提供链接，可免费检查 ChatGPT 是否会推荐你的站点",
+   "作者正在做 Flo，为想在营销流程中用 AI 的人提供结构化指导与按需教练",
+   "30 天内学习 30 个免费 AI 工具：关注我@AndrewBolis 了解更多信息",
+   "使用代码 BFCM50，可让 AI 代理发送报告、分诊工单并起草回复，发出前由你确认",
+   "吉诺和我终于在 Shed & Shine 上谈论了 AI，尽管他希望我们永远不会这样做",
+   "基于 uisdk，零配置一条命令安装，兼容 shadcn/ui，免费组件以 MIT 许可开放，后续将有 30 多个组件与",
+   "作者每天在 Antigravity 里用它为 Neon 加背景音乐、做角色配音",
    "Caitlyn Rice 将在2026 COG 中小生物制药峰会专场探讨下一代技术对研究构建的影响",
    "30 天内学习 30 个免费 AI 工具：关注我 @AndrewBolis 了解更多信息",
    "@exceldictionary 分享：指南展示复制文件夹路径后，用一个提示词把每个文件中的12%改成15%，结果保存到",
    "英国为 EDITH 试验投入 1000 万英镑，检验 AI 能否更早发现更多癌症并节省医护时间",
-   "该基准测试无反向传播 LLM 训练达到3.5验证损失的速度，Eureka Machine 将纪录从14秒以上降至9.85",
-   "Scenario Academy 免费 AI 学校面向创作者，提供17门课程90节课",
-   "HighLevel 提供免费 AI 构建工具，创始人计划首三个月五折，截止11月29日",
-   "Google 警告称黑客利用免手 AI 代理在26秒内入侵11个组织",
-   "@seetauniversity 分享：为 S6离校生提供免费 AI 培训",
-   "@csaba_kissi 分享：合集列出免费组件、AI 前端设计技能、开源动画 React 组件和 UI 微交互等链接",
-   "免费 AI Video Studio 已被克隆2000多次，Creator Kit 提供逐步视频编辑课程和51个效果",
-   "涵盖 PaddleOCR、LangChain 等20个开源文本挖掘仓库，按功能分类，累计200万 GitHub 星标"
+   "该基准测试无反向传播 LLM 训练达到3.5验证损失的速度，Eureka Machine 将纪录从14秒以上降至9.85"
   ],
   "not_ai": [
+   "@FinanceYF5 分享：它没有销售团队，医生提出临床问题可在数秒内得到答案，每条结论都引用医学期刊",
    "@JulianGoldieSEO 分享：该免费审计工具无需注册，用户可直接查看结果",
    "一些个人动态：我将于2027年秋季加入普林斯顿大学计算机科学系，担任副教授",
    "@OfficialLoganK 分享：官方回复称，银行账户充值需要处理时间，使用标准支付方式信用卡则可立即充值",
@@ -84,8 +87,7 @@
    "@svpino 分享：成员可获可运行蓝图、免费课程、技术答疑时段，以及 Nebius 及合作伙伴的额度与优惠",
    "@testingcatalog 分享：用户还可设置自己愿意支付的每 GPU 小时价格上限",
    "Vibe Pro 面向欧洲开发者推出免费试用，此前名额不到一小时用尽，现已取消容量限制",
-   "免费座位：这里有免费座位",
-   "@github 分享：它不一定是非此即彼，在最新的 GitHub 播客上，我们与 2026 年商业开源状况研究背后的研究"
+   "免费座位：这里有免费座位"
   ],
   "too_old_pre2025": [
    "DistroKid推出免费AI图像生成器，可用于专辑封面等",
@@ -102,29 +104,29 @@
    "我们很高兴地宣布推出 Stable Audio Open，这是一个针对生成短音频样本、声音效果而优化的开源模型"
   ]
  },
- "generated_at": "2026-11-26T06:27:39+08:00",
+ "generated_at": "2026-11-26T11:19:31+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-26T06:27:39+08:00",
+  "checked_at": "2026-11-26T11:19:31+08:00",
   "counts": {
-   "gone": 2,
-   "ok": 215,
-   "recheck": 1,
-   "unsure": 2
+   "gone": 1,
+   "ok": 218,
+   "recheck": 1
   },
-  "hidden": 2
+  "hidden": 1
  },
- "seconds": 2.0,
+ "seconds": 6.1,
  "side": {
   "github_hot": {
-   "drop:not_ai": 2,
+   "drop:duplicate": 1,
+   "drop:not_ai": 1,
    "kept": 28,
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 1,
-   "drop:not_ai": 8,
-   "drop:not_ai_strict": 12,
-   "kept": 19,
+   "drop:negative_signal": 2,
+   "drop:not_ai": 11,
+   "drop:not_ai_strict": 7,
+   "kept": 20,
    "raw": 40
   }
  }
