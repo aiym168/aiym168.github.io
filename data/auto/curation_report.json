@@ -3,23 +3,27 @@
   "archived": 31,
   "deadline_extracted": 7,
   "drop:duplicate": 741,
-  "drop:empty_summary": 96,
-  "drop:negative_signal": 200,
-  "drop:no_clear_offer": 905,
+  "drop:empty_summary": 97,
+  "drop:negative_signal": 199,
+  "drop:no_clear_offer": 909,
   "drop:not_ai": 770,
   "drop:too_old_pre2025": 62,
-  "google_news_resolved": 940,
-  "google_news_total": 940,
-  "kept_total": 259,
+  "google_news_resolved": 946,
+  "google_news_total": 946,
+  "kept_total": 261,
   "net:gnews_cache_hit": 940,
-  "new_this_run": 1,
-  "raw_total": 3033
+  "net:gnews_resolved_net": 6,
+  "net:tco_expanded": 3,
+  "net:tco_failed": 11,
+  "new_this_run": 2,
+  "raw_total": 3039
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "@scholar_corner 分享：迪拜政府免费 AI 课程，颁发免费证书 全球开放通过迪拜未来基金会的“百万提示工程",
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
+   "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化",
    "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化",
    "kllm：在免费的 Kaggle GPU 上运行开放权重 LLM（Qwen、GGUF、abliterated）",
    "convenient_window_free：适用于热角、边缘隐藏、鼠标手势和布局的 Windows 11 窗口工具",
@@ -28,10 +32,10 @@
    "awesome-cyber-security-heaven：Awesome Cyber​​ Security Heave",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
-   "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
-   "Beatreel：根据一个提示制作讲解短视频"
+   "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本"
   ],
   "empty_summary": [
+   "用户称 Claude Duet 处理十几封邮件和文档就花 100 美元，免费试用额度用完后难继续",
    "VivaGo 在 11 月 26 日至 30 日限时免费开放模型访问",
    "VivaGo 黑色星期五优惠期间模型限时免费，活动截至 11 月 30 日",
    "@RyanKnuppel 分享：可用它跨店整理黑五购物清单并监控价格，注册即得8美元免费额度",
@@ -42,8 +46,7 @@
    "按 iPhone、iPad 和不同内存的 Mac 推荐 Gemma、Qwen 等本地免费模型",
    "@ghumare64 分享：有开发者用这套免费课程配合编码智能体，一周内上线了三个项目，帖中附7条提示词",
    "@ViduAI_official 分享：面向跨境电商等场景的 AI 助手开启早期访问，提供免费 credits 和独家抢",
-   "@higgsfield 分享：480B 参数、约28B 激活的近 SOTA 视频模型，支持1080p 最长30秒，生成每",
-   "ChatGPT 研究人员免费计划也于周一重新开放申请，接受速度较快"
+   "@higgsfield 分享：480B 参数、约28B 激活的近 SOTA 视频模型，支持1080p 最长30秒，生成每"
   ],
   "negative_signal": [
    "@mitchellh 分享：该推文指出细彩色边框、渐变、发光效果、过多字号和不一致间距是赠品 LLM 设计的特征",
@@ -60,6 +63,9 @@
    "@JulianGoldieSEO 分享：输入网址即可运行 3 分钟免费审计，查看 ChatGPT、Gemini 和 Cl"
   ],
   "no_clear_offer": [
+   "@VaibhavSisinty 分享：该免费社区已有 20 多万人加入，可每天获取 AI 工具和信息",
+   "@MengTo 分享：借助视差与鱼眼镜头技巧实现无尽 three.js 摩托骑行，相关技能已开源",
+   "一名开发者把 Claude 变成月入 10 万美元的工具，并免费公开完整策略",
    "@SpencrGreenberg 分享：作者让 AI 助手在夜间自主安排任务，只对 token 用量和风险行为设限，随后",
    "@DataChaz 分享：18岁创始人与父亲共同打造，AI 联合创始人用27个以上代理找客户、追踪竞品并提升搜索曝光",
    "观点：AI 承诺的经济增长加速并非天上掉馅饼",
@@ -68,12 +74,11 @@
    "@databricks 分享：通过三个短视频讲解 AI 智能体工作原理、Databricks 上支撑智能体的工具以及构建",
    "@opportunitiesfy 分享：面向农业科技初创企业和创新者，提供免费 AI 工具、专家辅导和试点场地，截止20",
    "@bneiluj 分享：发言者称没见过因无事可做而更幸福的人，认为没有工作压力、只剩瑜伽冥想和空闲时间并不现实",
-   "@suraj_sharma14 分享：全球开放，40人全额奖学金，2027年2月1日至6月25日线上进行，每周12–16",
-   "@PalantirTech 分享：我们非常自豪地与波兰站在一起，支持波兰在捍卫一个自由、安全和主权的欧洲方面无可争议的领",
-   "Audio8 TTS 是开源文本转语音模型，能用短音频样本克隆音色，并在本地生成自然语音",
-   "作者投入两万美元 API 额度，让不同 AI 模型对战社交推理游戏《血染钟楼》，观察其表现"
+   "@suraj_sharma14 分享：全球开放，40人全额奖学金，2027年2月1日至6月25日线上进行，每周12–16"
   ],
   "not_ai": [
+   "@shafu0x 分享：作者认为面试无法判断能力，只需确认合得来、有行动力、懂行，一周试用更有效",
+   "Higgsfield 黑五最大优惠，Secret Plan 年付每月 258 美元得 2 万积分/月，另含 3 天免费试",
    "参与 Vidu 黑色星期五抽奖，有机会赢取免费会员试用和 RTX 5090 等奖品",
    "该主板支持无线缆 GPU 供电、免工具 M.2散热片和 LED 调试屏，强调功能性",
    "免费 Seedance 2.5 代已延长至 12 月 1 日",
@@ -83,9 +88,7 @@
    "@FinanceYF5 分享：它没有销售团队，医生提出临床问题可在数秒内得到答案，每条结论都引用医学期刊",
    "@JulianGoldieSEO 分享：该免费审计工具无需注册，用户可直接查看结果",
    "一些个人动态：我将于2027年秋季加入普林斯顿大学计算机科学系，担任副教授",
-   "@OfficialLoganK 分享：官方回复称，银行账户充值需要处理时间，使用标准支付方式信用卡则可立即充值",
-   "这款应用免费提供，用于辅助 JEE 备考",
-   "@emmanuel_2m 分享：覆盖视频、3D、游戏、动效、艺术和课程，首个内容引擎可把热门视频的格式套用到自己的创意上"
+   "@OfficialLoganK 分享：官方回复称，银行账户充值需要处理时间，使用标准支付方式信用卡则可立即充值"
   ],
   "too_old_pre2025": [
    "谷歌NotebookLM上线免费「音频概览」：文本变双人播客",
@@ -102,17 +105,17 @@
    "Stability AI 推出 Stable Diffusion XL 1.0，现已在 Amazon Bedrock 上"
   ]
  },
- "generated_at": "2026-11-28T03:45:41+08:00",
+ "generated_at": "2026-11-28T06:51:36+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-28T03:45:41+08:00",
+  "checked_at": "2026-11-28T06:51:35+08:00",
   "counts": {
-   "gone": 2,
-   "ok": 225,
-   "recheck": 1
+   "gone": 1,
+   "ok": 224,
+   "recheck": 2
   },
-  "hidden": 2
+  "hidden": 1
  },
- "seconds": 1.7,
+ "seconds": 5.5,
  "side": {
   "github_hot": {
    "drop:duplicate": 3,
@@ -121,10 +124,11 @@
    "raw": 30
   },
   "hot_topics": {
+   "drop:duplicate": 1,
    "drop:negative_signal": 2,
-   "drop:not_ai": 7,
-   "drop:not_ai_strict": 7,
-   "kept": 24,
+   "drop:not_ai": 8,
+   "drop:not_ai_strict": 6,
+   "kept": 23,
    "raw": 40
   }
  }
