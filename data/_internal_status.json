@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T17:05:04+08:00",
-  "generated_at_label": "2026-11-27 17:05 Asia/Shanghai",
+  "generated_at": "2026-11-27T22:02:51+08:00",
+  "generated_at_label": "2026-11-27 22:02 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
     "A": {
@@ -36,8 +36,8 @@
       },
       "runs_total": 173,
       "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
-      "next_run_label": "2026-11-27 17:07 Asia/Shanghai",
-      "age_min": 0
+      "next_run_label": "2026-11-27 22:07 Asia/Shanghai",
+      "age_min": 297
     },
     "B": {
       "engine": "B",
@@ -74,9 +74,9 @@
       "standby_seen_label": "2026-11-27 16:41 Asia/Shanghai",
       "standby_seen_at": "2026-11-27T16:41:03+08:00",
       "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
-      "next_run_label": "2026-11-27 17:25 Asia/Shanghai",
+      "next_run_label": "2026-11-27 22:25 Asia/Shanghai",
       "last_seen_at": "2026-11-27T16:41:03+08:00",
-      "age_min": 24
+      "age_min": 321
     },
     "C": {
       "engine": "C",
@@ -111,13 +111,13 @@
       },
       "runs_total": 1,
       "schedule": "第二台服务器已不参与本站更新：运行独立的直播站，并在每天 08:30 / 20:30 生成羊毛电台",
-      "next_run_label": "2026-11-27 17:55 Asia/Shanghai",
+      "next_run_label": "2026-11-27 22:55 Asia/Shanghai",
       "last_seen_at": "2026-11-10T13:10:18+08:00",
-      "age_min": 24714
+      "age_min": 25012
     },
     "watchdog": {
       "schedule": "每 30 分钟（第 23 / 53 分钟）",
-      "next_run_label": "2026-11-27 17:23 Asia/Shanghai"
+      "next_run_label": "2026-11-27 22:23 Asia/Shanghai"
     }
   },
   "counts": {
@@ -337,20 +337,20 @@
   "heartbeat_label": "2026-11-27 06:08:59 Asia/Shanghai",
   "server": {
     "box_id": "已隐藏",
-    "checked_at_label": "2026-11-27 12:20 Asia/Shanghai",
+    "checked_at_label": "2026-11-27 22:02 Asia/Shanghai",
     "state_before": "BOX_STATE_HIBERNATED",
     "wake_reasons": [
       "服务器状态为「休眠」",
-      "引擎 B 已 17335 分钟无心跳（阈值 120）"
+      "引擎 B 已 321 分钟无心跳（阈值 120）"
     ],
     "actions": [],
     "ok": false,
     "error": "9 this box's machine time is paid from credits and the box wallet is empty; top up or upgrade at https://box.simular.ai/billing",
-    "engine_b_age_min": 17335
+    "engine_b_age_min": 321
   },
   "server2": {
     "box_id": "已隐藏",
-    "checked_at_label": "2026-11-27 12:20 Asia/Shanghai",
+    "checked_at_label": "2026-11-27 22:02 Asia/Shanghai",
     "state_before": "BOX_STATE_HIBERNATED",
     "wake_reasons": [
       "服务器状态为「休眠」",
