@@ -1,9 +1,47 @@
 {
   "date": "2026-11-27",
-  "updated_at": "2026-11-27T17:01+08:00",
-  "updated_at_label": "2026-11-27 17:01 Asia/Shanghai",
+  "updated_at": "2026-11-27T22:03+08:00",
+  "updated_at_label": "2026-11-27 22:03 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50666037",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Bloque：面向无 IT 团队的托管 MCP 网关",
+      "summary": "Bloque 是托管式 MCP 网关，作者称现有同类产品要么过于笨重、要么难以上手，热门产品月费起价 500 美元。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "k4200",
+      "url": "https://bloque.run",
+      "posted_at": "2026-11-27 20:16 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Bloque – Hosted MCP gateway for teams without an IT department",
+      "original_summary": "Show HN: Bloque – Hosted MCP gateway for teams without an IT department Bloque is a hosted MCP gateway for teams without an IT department. There are many MCP gateway products out there, but they are either overkill or too difficult to use. The pricing of a popular product starts at $500&#x2F;mo, another one requires you to have your own infrastructure, and so on.<p>As the owner of a small company, I encourage my team members to use AI and MCP servers in their daily work, but don&#x27;t want to waste time helping them set them up. I also need to manage and monitor how they use them.<p>With Bloque, I set up MCP servers once, issue API keys for my team members, and let them connect Claude, ChatGPT, or any tool of their choice to Bloque&#x27;s single endpoint. That part is easy. Then, I can ma",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50664795",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "Europe Instead：查找所用工具的欧洲替代品",
+      "summary": "这是一个欧洲本土软件目录，作者 Rafael 把自己为初创公司反复寻找欧洲替代工具的研究整理成了网站。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "RafaelRoman",
+      "url": "https://europeinstead.com",
+      "posted_at": "2026-11-27 17:33 Asia/Shanghai",
+      "engagement": {
+        "points": 5,
+        "comments": 1
+      },
+      "original_title": "Show HN: Europe Instead – find the European version of the tools you use",
+      "original_summary": "Show HN: Europe Instead – find the European version of the tools you use Hi HN, I&#x27;m Rafael. Europe Instead is a directory of European-made software: <a href=\"https:&#x2F;&#x2F;europeinstead.com\" rel=\"nofollow\">https:&#x2F;&#x2F;europeinstead.com</a><p>I built it because every time we needed a new tool at my startup, Upgrid, I ended up doing the same research again: who actually owns this company, where is the data hosted, who are the subprocessors. After doing that enough times I got tired of it and started writing it down properly. The existing &quot;EU alternatives&quot; lists didn&#x27;t help much, because most check one thing, the legal seat. A company registered in Berlin can be owned by a US parent, run on AWS us-east-1, and send your data to a dozen US subprocessors. That is a ",
+      "translated_by": "model"
+    },
     {
       "id": "hn-50664246",
       "source": "Hacker News",
@@ -252,44 +290,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50634426",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Versine 推出 MCP 收发资金服务",
-      "summary": "用户可通过与 AI 对话或发消息来转账和收款，类似带 MCP 的 Venmo。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "harshithl1777",
-      "url": "https://news.ycombinator.com/item?id=50634426",
-      "posted_at": "2026-11-25 04:44 Asia/Shanghai",
-      "engagement": {
-        "points": 106,
-        "comments": 109
-      },
-      "original_title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
-      "original_summary": "Launch HN: Versine (YC F26) – MCP to send and receive money Hey HN, we’re Harshith, Param, and Vishnu and we&#x27;re building Versine (<a href=\"https:&#x2F;&#x2F;versine.com\">https:&#x2F;&#x2F;versine.com</a>). Versine lets you send and request money just by talking or texting with your AI (think Venmo with an MCP). We’re software engineers who have worked on distributed systems at Stripe, Databricks, and Amazon.<p>Versine is an MCP that sits in front of a wallet with a balance. With it, your agent can do things like:<p>- Send money to someone with your approval (via passkey in our app)<p>- Send and request money to&#x2F;from up to 100 people at once<p>- Send money to people without a Versine account (they cash out to their bank in 2 mins)<p>- Pay people without your explicit approval to t",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50634230",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "这款开源 Mac 通话与会议录音工具支持本地模型或免费云服务",
-      "summary": "可接入 Mac 音频流录制电话和 Zoom 等在线会议，无需机器人入会，并用本地模型或免费云服务转写。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "digisensus",
-      "url": "https://github.com/Digisensus/digisensus-recorder",
-      "posted_at": "2026-11-25 04:27 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Call / meeting recorder for Mac. open source local models or free cloud",
-      "original_summary": "Show HN: Call / meeting recorder for Mac. open source local models or free cloud Hi!<p>check out my opensource call &#x2F; meeting recorder for Mac. It is opensource and you can use your local models, big labs API or my free tier.\nWhat it does? It taps into your Macs audio stream and records tlephone calls, online meetings zoom, viber etc. You dont need bot sitting in the meeting. It will transcribe,  separate speakers and name them if their name was in conversation, write summary, suggest meeting appointments, extract agreements and action points and many more!<p>This is not AI - human writing to you guys:)\nDontload at Github <a href=\"https:&#x2F;&#x2F;github.com&#x2F;Digisensus&#x2F;digisensus-recorder\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;Digisensus&#x2F;digisensus-recorder<",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50639615",
       "source": "Hacker News",
       "category": "AI 开发工具与编程助手",
@@ -328,6 +328,25 @@
       "translated_by": "model"
     },
     {
+      "id": "hn-50666409",
+      "source": "Hacker News",
+      "category": "科技软件/App 限免",
+      "title": "LbDMF 分布式跨平台框架发布 1.3.6 版",
+      "summary": "作者公开 1.3.6 大版本更新，macOS Arm 版已由 Apple 签名，Windows 版因资金不足尚未签名。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "lollisoft",
+      "url": "https://sourceforge.net/projects/lbdmf/files/lbdmf/lbDMF-1.3.6/",
+      "posted_at": "2026-11-27 20:57 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: LbDMF – Distributed Multiplatform Framework – 1.3.6",
+      "original_summary": "Show HN: LbDMF – Distributed Multiplatform Framework – 1.3.6 I am happy to publish a major release 1.3.6.<p>Today I have made the decision to finally release the latest changes to the public.\nThe Mac OS X for Arm dmg zip file contains an Apple signed version. The Windows\nversions are all not yet signed due to lack of money. So please feel free to read\nthe project description and make a donation I finally have placed to allow me regular\nsigning with Certum OSS code signing certificates.<p>If these are finally got signed, I replace the corresponding files and rename them with\na -signed ending in name.<p>What has changed:<p>Updated and fixed:<p>* XSLT export and import settings in the properties pane were broken within the 32Bit and 64Bit\n  built using current code settings and wxWidgets 3.2.",
+      "translated_by": "model"
+    },
+    {
       "id": "hn-50660990",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -339,7 +358,7 @@
       "url": "https://github.com/Tensward/tensward/tree/main/examples/glm-5.3-flash-24gb",
       "posted_at": "2026-11-27 07:24 Asia/Shanghai",
       "engagement": {
-        "points": 3,
+        "points": 4,
         "comments": 0
       },
       "original_title": "Run GLM 5.3 Flash on a 24 GB GPU at up to 17.5 tokens/s",
@@ -404,22 +423,22 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50635126",
+      "id": "hn-50665796",
       "source": "Hacker News",
-      "category": "其他科技",
-      "title": "作者零广告三天做到 487 美元 MRR，分享分发过程",
-      "summary": "作者面向会计师推出产品，无受众和广告预算，通过 Reddit、X 和 LinkedIn 发布，三天获得 487 美元 MRR。",
+      "category": "大模型 API 免费额度",
+      "title": "开源 Code Mode，为 Rust Agent 省约 60% token",
+      "summary": "作者参考 Claude Code 的实验性 code mode，在自己的 Rust Agent 中实现并开源，独立测试显示可省 60~70% token。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "liftpill",
-      "url": "https://news.ycombinator.com/item?id=50635126",
-      "posted_at": "2026-11-25 05:40 Asia/Shanghai",
+      "author": "legend-of-alan",
+      "url": "https://github.com/legend-of-alan/ghostmode",
+      "posted_at": "2026-11-27 19:51 Asia/Shanghai",
       "engagement": {
         "points": 2,
-        "comments": 0
+        "comments": 2
       },
-      "original_title": "I got $487 MRR in 3 days with zero ads. the exact distribution process I used",
-      "original_summary": "I got $487 MRR in 3 days with zero ads. the exact distribution process I used A few weeks ago I launched a product for accountant, to get easier the info of clients. No audience, no ad budget. no knowledge about accountant or similar arguments.<p>Here’s what actually i did to get this numbers (487 are low, but guys in 3 days is crazy i think):<p>1. Where I posted<p>sub-reddit, x, and linkedin.\nin first case, i try to give people real advice, and you know, try to get interest them in the thing. i don&#x27;t want start the conversation: &quot;i have problem x&quot; and i reply &quot;use my product&quot;<p>it&#x27;s not like this that the things works. So i created first of all interest, and in reality everything comes naturally. for X and Linkedin (Linkedin my fav) bascially i tryed to build",
+      "original_title": "Show HN: Open-Sourced Code Mode to Cut ~60% of My Rust Agent's Token Burn",
+      "original_summary": "Show HN: Open-Sourced Code Mode to Cut ~60% of My Rust Agent's Token Burn For those who are tracking, Anthropic released an announcement last week about their experimental code mode for Claude Code, claiming some bonkers token savings when it comes to tool calls (95% on some workloads(1)). I haven&#x27;t benchmarked it myself, but independent studies come in somewhere closer to 60~70% savings (2), but I digress. TLDR; I built an open-source version for the community.<p>Context: I&#x27;m writing an AI RPG engine called Spookery, and I immediately wanted to try this technique for myself when I heard of it. Agent deployment is currently dominated by token costs, especially during tool calling (single prompt generating tens or hundreds of tool calls). Unfortunately, it looks like the only ones",
       "translated_by": "model"
     },
     {
@@ -442,186 +461,255 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50656277",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Dimmer Switch：可调节任意窗口亮度与色温的应用",
-      "summary": "作者在户外和夜间用屏幕时常觉得亮度或色温不合适，于是做了这款可对任意窗口或区域调整显示效果的应用。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "jakemanger",
-      "url": "https://dimmerswitch.app",
-      "posted_at": "2026-11-26 23:26 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: I made an app that changes how any window looks",
-      "original_summary": "Show HN: I made an app that changes how any window looks Hey HN!<p>I made Dimmer Switch.<p>I work outside, and kept squinting at dark videos on a screen that could show them brighter. At night it&#x27;s the reverse: a white page is too bright even on the lowest brightness, and I want it warmer.<p>And sometimes I just want what I&#x27;m looking at to look cool.<p>Pick any window, or any area of your screen, and change how it looks:<p>- Dim it below the lowest macOS brightness<p>- Warm it up for reading at night<p>- Boost contrast so dark videos and apps are readable in the sun<p>- Make it look like an e-reader page<p>Or restyle it completely: a CRT TV, a comic, a 1-bit computer, a hand-drawn sketch, a woodblock print or a painting.<p>You can even drag in any image, like an old Japanese scro",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50655719",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "HN讨论：下一个成真的科幻设想是什么",
-      "summary": "作者在焦虑悲观氛围中提醒人们，见证历史时刻和知识加速进步仍令人惊叹。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "rixed",
-      "url": "https://news.ycombinator.com/item?id=50655719",
-      "posted_at": "2026-11-26 22:33 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 5
-      },
-      "original_title": "Ask HN: What's the next big sci-fi thing to become real?",
-      "original_summary": "Ask HN: What's the next big sci-fi thing to become real? In these troubled times it&#x27;s easy to descent into anxiety and pessimism.<p>But let&#x27;s remind ourselves how amazing it is to be alive to witness those historical moments, good and bad.<p>After the recent acceleration of progress of knowledge all around, it&#x27;s amazing to enumerate all the things that I, as a kid, though would always remain in the realm of science-fiction, but actually became real: the ubiquity of personal computers to begin with, pervasive worldwide communication network basically for free, conversational AI capable of mathematical prowess, but also the discovery of too many exoplanets to name them all, the launch of hundredth of satellite every week like space is a few bus stops away...<p>So, what else do",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50653751",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Open Deal Kit：收购企业的免费流程助手",
-      "summary": "一套免费智能体，覆盖收购一家企业的各个步骤。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "devaland",
-      "url": "https://github.com/devaland-ai/open-deal-kit",
-      "posted_at": "2026-11-26 18:26 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Open Deal Kit – free agents for the steps of buying a business",
-      "original_summary": "Show HN: Open Deal Kit – free agents for the steps of buying a business ",
-      "translated_by": "model"
-    },
-    {
-      "id": "v2ex-1260376",
+      "id": "v2ex-1260450",
       "source": "V2EX",
       "category": "大模型 API 免费额度",
-      "title": "如何评价 DeepSeek 网页和 App 端开始展示消耗额度？",
-      "summary": "如何评价 DeepSeek 网页和 App 端开始展示消耗额度？\n前段时间，deepseek 因为算力紧张问题，开始对用户进行免费限制，包括压缩单次输入字数、限制闲置长对话续聊，并频繁提示“使用额度已达上限”。\r\n\r\n另外，包括 openai 和 Anthropic 都或多或少的减少用户套餐的 token 使用量，或者对模型进行降智。\r\n\r\n这是什么原因？",
+      "title": "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化",
+      "summary": "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化\n各位 V 友，晚上好。\r\n\r\n最近看社区里不少兄弟在愁 AI 账号的事儿，要么是买了几天的号突然挂了，要么是卡在什么 Persona 验证上死活过不去，搞得挺心累的。\r\n\r\n我这手里刚好有一批稳定的渠道，主要是搞 Claude 和 ChatGPT Plus 的批量批发。不是那种零售拼车的，咱们主要找有“大数量需求”的买家。\r\n\r\n说点硬核的，我们这批货有两个核心优势：\r\n\r\n通过身份验证：正如内行人士所知，许多高权重账号都会卡在这个步骤上。请提供一个直接链接，以便我们完成验证\r\n\r\n带 API 自动化：不是让你一个个手动去登网页，我们自带了 API，你拿去做自动分发、跑自动化任务或者接自己的业务后台，直接调就行。\r\n\r\n说实话，发在这里也就是想精准捞点有量的老板。如果你是自己跑项目、做自动化或者工作室搞事情的，成本绝对比你到处去收散号划算得多。\r\n\r\n详细的价格阶梯和接入方式，大家可以自己去看：subai.zip/wholesale\r\n\r\n（PS：如果是小批量的 V 友，也可以在评论区留个言或者私信，我可以免费给你发几个测试额度先跑跑，看看稳定性再决定。大家交个朋友，顺便交流下现在 API 自动化的玩法也行。）\r\n\r\n如果你有很多客户，我们可以给你免费测试。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "ttkit",
-      "url": "https://www.v2ex.com/t/1260376",
-      "posted_at": "2026-11-27 16:47 Asia/Shanghai",
+      "author": "jinglaef",
+      "url": "https://www.v2ex.com/t/1260450",
+      "posted_at": "2026-11-27 21:52 Asia/Shanghai",
       "engagement": {
         "replies": 0
       },
-      "original_title": "如何评价 DeepSeek 网页和 App 端开始展示消耗额度？",
-      "original_summary": "如何评价 DeepSeek 网页和 App 端开始展示消耗额度？\n前段时间，deepseek 因为算力紧张问题，开始对用户进行免费限制，包括压缩单次输入字数、限制闲置长对话续聊，并频繁提示“使用额度已达上限”。\r\n\r\n另外，包括 openai 和 Anthropic 都或多或少的减少用户套餐的 token 使用量，或者对模型进行降智。\r\n\r\n这是什么原因？",
+      "original_title": "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化",
+      "original_summary": "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化\n各位 V 友，晚上好。\r\n\r\n最近看社区里不少兄弟在愁 AI 账号的事儿，要么是买了几天的号突然挂了，要么是卡在什么 Persona 验证上死活过不去，搞得挺心累的。\r\n\r\n我这手里刚好有一批稳定的渠道，主要是搞 Claude 和 ChatGPT Plus 的批量批发。不是那种零售拼车的，咱们主要找有“大数量需求”的买家。\r\n\r\n说点硬核的，我们这批货有两个核心优势：\r\n\r\n通过身份验证：正如内行人士所知，许多高权重账号都会卡在这个步骤上。请提供一个直接链接，以便我们完成验证\r\n\r\n带 API 自动化：不是让你一个个手动去登网页，我们自带了 API，你拿去做自动分发、跑自动化任务或者接自己的业务后台，直接调就行。\r\n\r\n说实话，发在这里也就是想精准捞点有量的老板。如果你是自己跑项目、做自动化或者工作室搞事情的，成本绝对比你到处去收散号划算得多。\r\n\r\n详细的价格阶梯和接入方式，大家可以自己去看：subai.zip/wholesale\r\n\r\n（PS：如果是小批量的 V 友，也可以在评论区留个言或者私信，我可以免费给你发几个测试额度先跑跑，看看稳定性再决定。大家交个朋友，顺便交流下现在 API 自动化的玩法也行。）\r\n\r\n如果你有很多客户，我们可以给你免费测试。",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1260370",
+      "id": "v2ex-1260441",
+      "source": "V2EX",
+      "category": "科技软件/App 限免",
+      "title": "iPhone 通过 chomecast 投屏到安卓电视，最划算的 app 是什么？",
+      "summary": "iPhone 通过 chomecast 投屏到安卓电视，最划算的 app 是什么？\niOS 内置只有 AirPlay，需要安装 app 才能增加 chromecast，但是看了几个 app 都要内购。\r\n\r\n问问大家使用经验，免费的或者买断制 app 都行，谢谢",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "shenzhenhk",
+      "url": "https://www.v2ex.com/t/1260441",
+      "posted_at": "2026-11-27 21:02 Asia/Shanghai",
+      "engagement": {
+        "replies": 2
+      },
+      "original_title": "iPhone 通过 chomecast 投屏到安卓电视，最划算的 app 是什么？",
+      "original_summary": "iPhone 通过 chomecast 投屏到安卓电视，最划算的 app 是什么？\niOS 内置只有 AirPlay，需要安装 app 才能增加 chromecast，但是看了几个 app 都要内购。\r\n\r\n问问大家使用经验，免费的或者买断制 app 都行，谢谢",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1260440",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "开源 Agent Audit：给 AI Coding Agent 装一层本地安全护栏（Shell AST 拦截 + 低误报敏感内容检测）",
+      "summary": "开源 Agent Audit：给 AI Coding Agent 装一层本地安全护栏（Shell AST 拦截 + 低误报敏感内容检测）\n现在日常工作流越来越重度依赖 Claude Code、OpenCode、Pi 和各种 MCP / Skill，用久了发现有几类风险离自己很近，不是危言耸听：\r\n- **Obsidian 笔记里的敏感密钥被带出去**：很多人习惯在 Obsidian 里记服务器地址、API Key、SSH/数据库配置。让 Agent 帮你搜笔记、整理资料时，一个 `grep` / `read` 就可能把整篇含真实凭据的笔记喂进模型上下文。\r\n- **用 Himalaya 查邮件时泄露个人隐私**：给 Agent 接了 `himalaya`\r\n读邮箱、总结账单或日程，结果邮件里的身份证号、银行卡/账单明细、体检医疗信息、甚至登录验证码，全随着工具输出裸奔进对话里。\r\n- **高危 Shell / 文件误操作**：Agent 排障或写脚本时一时兴起，来一句破坏性 `rm -rf`、`curl ... | sh`、修改 `.git/hooks` / `~/.ssh/authorized_keys`，或者把 `.env` / 私钥往外发。\r\n\t\t\t\t\t\t\t\t\t\t  \r\n之前自己踩过坑也一直提心吊胆，于是把自用的风控审计工具整理开源了：**Agent Audit**。 之前自己主要工作方向就是风控，对这块也比较感兴趣，希望交流下大家的真实想法。\r\n- **GitHub（Apache-2.0）**：https://github.com/smileboywtu/agent-audit\r\n- **在线防误报 Playground & 免费 API Key**：https://www.zhisoft.top/agent-audit\r\n\r\n---",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "chochox",
+      "url": "https://www.v2ex.com/t/1260440",
+      "posted_at": "2026-11-27 20:32 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "开源 Agent Audit：给 AI Coding Agent 装一层本地安全护栏（Shell AST 拦截 + 低误报敏感内容检测）",
+      "original_summary": "开源 Agent Audit：给 AI Coding Agent 装一层本地安全护栏（Shell AST 拦截 + 低误报敏感内容检测）\n现在日常工作流越来越重度依赖 Claude Code、OpenCode、Pi 和各种 MCP / Skill，用久了发现有几类风险离自己很近，不是危言耸听：\r\n- **Obsidian 笔记里的敏感密钥被带出去**：很多人习惯在 Obsidian 里记服务器地址、API Key、SSH/数据库配置。让 Agent 帮你搜笔记、整理资料时，一个 `grep` / `read` 就可能把整篇含真实凭据的笔记喂进模型上下文。\r\n- **用 Himalaya 查邮件时泄露个人隐私**：给 Agent 接了 `himalaya`\r\n读邮箱、总结账单或日程，结果邮件里的身份证号、银行卡/账单明细、体检医疗信息、甚至登录验证码，全随着工具输出裸奔进对话里。\r\n- **高危 Shell / 文件误操作**：Agent 排障或写脚本时一时兴起，来一句破坏性 `rm -rf`、`curl ... | sh`、修改 `.git/hooks` / `~/.ssh/authorized_keys`，或者把 `.env` / 私钥往外发。\r\n\t\t\t\t\t\t\t\t\t\t  \r\n之前自己踩过坑也一直提心吊胆，于是把自用的风控审计工具整理开源了：**Agent Audit**。 之前自己主要工作方向就是风控，对这块也比较感兴趣，希望交流下大家的真实想法。\r\n- **GitHub（Apache-2.0）**：https://github.com/smileboywtu/agent-audit\r\n- **在线防误报 Playground & 免费 API Key**：https://www.zhisoft.top/agent-audit\r\n\r\n---",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1260435",
+      "source": "V2EX",
+      "category": "科技软件/App 限免",
+      "title": "紫毫又更了，双拼加了自然码，语音可以直接在键盘里说",
+      "summary": "紫毫又更了，双拼加了自然码，语音可以直接在键盘里说\n之前在站里发过紫毫 (https://www.v2ex.com/t/1249450) 。一开始做它，是因为电脑上用惯了鼠须管和雾凇拼音，想把自己的词库和短语带到 iPhone 上。正式版现在到了 2.6.0，这次想聊几个打字时真能碰到的改动。\r\n\r\n先说语音。有时候就想回一句「我今天下午三点到」，按住空格说完，松手就上屏。说到「百分之五十」也可以直接写成 50%。2.6.0 里，在线语音和 iOS 26 的 Apple 端侧识别在支持的设备上可以直接在键盘内录音。语音是 Pro 功能。\r\n\r\n紫毫语音输入界面，长按空格听写\r\n\r\n打字这边，双拼除了小鹤，现在也能选自然码。平时用万象 Pro 自然码形码的话，打完两键双拼，可以接着打辅码找单字。九宫格竖屏加了侧栏，上面可以放自己常用的标点，在数字键上滑也能直接输数字。全拼也可以在一句里夹英文，比如「我家的 Wi-Fi 密码」，中间不用切英文键盘。\r\n\r\n还有个一直在磨的地方是误触。比如手快把「这个效果很好」里的 xiao guo 打成了 xiao fu o，键盘会结合落点试着把整句找回来。像 zihao 这种本来就能打出「自豪」的，还是让「自豪」排在前面。打字、纠错和词频学习都在设备上做。\r\n\r\n两张候选截图，分别展示正常拼音和整句误触纠错\r\n\r\nTestFlight 的 2.7.0 还在试大千注音（用的是小麥注音词库）、英文滑行输入，以及在「边写边译」里直接说中文。比如要回一条英文消息，可以在当前输入框里口述，让键盘出译文。\r\n\r\n基础打字、纠错和导入 Rime 方案都免费，无广告。语音、边写边译和 AI 脚本在一次买断的 Pro 里。基础键盘可以直接用内置词库，想让键盘读到自己导入的方案，需要在 iOS 里开「允许完全访问」。\r\n\r\n![](https://img.ope",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "blycoris",
+      "url": "https://www.v2ex.com/t/1260435",
+      "posted_at": "2026-11-27 20:11 Asia/Shanghai",
+      "engagement": {
+        "replies": 1
+      },
+      "original_title": "紫毫又更了，双拼加了自然码，语音可以直接在键盘里说",
+      "original_summary": "紫毫又更了，双拼加了自然码，语音可以直接在键盘里说\n之前在站里发过紫毫 (https://www.v2ex.com/t/1249450) 。一开始做它，是因为电脑上用惯了鼠须管和雾凇拼音，想把自己的词库和短语带到 iPhone 上。正式版现在到了 2.6.0，这次想聊几个打字时真能碰到的改动。\r\n\r\n先说语音。有时候就想回一句「我今天下午三点到」，按住空格说完，松手就上屏。说到「百分之五十」也可以直接写成 50%。2.6.0 里，在线语音和 iOS 26 的 Apple 端侧识别在支持的设备上可以直接在键盘内录音。语音是 Pro 功能。\r\n\r\n紫毫语音输入界面，长按空格听写\r\n\r\n打字这边，双拼除了小鹤，现在也能选自然码。平时用万象 Pro 自然码形码的话，打完两键双拼，可以接着打辅码找单字。九宫格竖屏加了侧栏，上面可以放自己常用的标点，在数字键上滑也能直接输数字。全拼也可以在一句里夹英文，比如「我家的 Wi-Fi 密码」，中间不用切英文键盘。\r\n\r\n还有个一直在磨的地方是误触。比如手快把「这个效果很好」里的 xiao guo 打成了 xiao fu o，键盘会结合落点试着把整句找回来。像 zihao 这种本来就能打出「自豪」的，还是让「自豪」排在前面。打字、纠错和词频学习都在设备上做。\r\n\r\n两张候选截图，分别展示正常拼音和整句误触纠错\r\n\r\nTestFlight 的 2.7.0 还在试大千注音（用的是小麥注音词库）、英文滑行输入，以及在「边写边译」里直接说中文。比如要回一条英文消息，可以在当前输入框里口述，让键盘出译文。\r\n\r\n基础打字、纠错和导入 Rime 方案都免费，无广告。语音、边写边译和 AI 脚本在一次买断的 Pro 里。基础键盘可以直接用内置词库，想让键盘读到自己导入的方案，需要在 iOS 里开「允许完全访问」。\r\n\r\n![](https://img.ope",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1260426",
       "source": "V2EX",
       "category": "其他科技",
-      "title": "Phrasence，划词翻译与 AI 文本助手。留下注册邮箱送积分。",
-      "summary": "Phrasence，划词翻译与 AI 文本助手。留下注册邮箱送积分。\nPhrasence 是一款桌面小工具，选中文字后，可以在旁边的工具条里翻译，也能请 AI 解释、总结或润色。\r\n\r\n看外语网页、读文档时，遇到看不懂的词句，选中文字，就能在旁边的工具条里选择翻译、解释或总结。\r\n\r\n也可以让 AI 解释长句、总结段落，或润色邮件和草稿。这样能少复制几次，也少切几次窗口。\r\n\r\n常用的提示词可以自己写好，保存后下次直接用。\r\n\r\n下载好本地模型，就能免费离线翻译，无需订阅，数据不上传服务端，都在你的本地，隐私性极好。\r\n\r\n软件自带的在线翻译和 AI 功能需要联网、登录和积分。\r\n\r\n[试试 Phrasence](https://phrasence.com/)\r\n\r\n留下注册邮箱，免费送积分。\r\n留下注册邮箱，免费送积分。\r\n留下注册邮箱，免费送积分。",
+      "title": "不要再把简历文件直接发送给 HR 了，使用 ViviResume 进行在线简历制作",
+      "summary": "不要再把简历文件直接发送给 HR 了，使用 ViviResume 进行在线简历制作\n不要再把简历文件直接发送给 HR 了，使用 **[ViviResume](https://viviresume.com/)** 直接发送简历链接；不合适的话，还能把简历撤回。\r\n\r\nViviResume 是一款在浏览器中制作简历的工具。\r\n\r\n使用模板一边填写个人资料，一边的页面会实时显示排版效果。\r\n\r\n数据会自动保存在当前浏览器，不上传云端，隐私数据一直在本地。\r\n\r\n可以在线分享简历，发送简历的时候，直接发送链接就可以了。获得链接的人可以在网页上查看。\r\n\r\n修改简历后，再次保存到云端即可更新分享页的内容。可以随时关闭分享、更换链接。\r\n\r\n**官网 [viviresume.com](https://viviresume.com/)**\r\n\r\n完全免费、无需登录。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
       "author": "rangerheart",
-      "url": "https://www.v2ex.com/t/1260370",
-      "posted_at": "2026-11-27 16:37 Asia/Shanghai",
+      "url": "https://www.v2ex.com/t/1260426",
+      "posted_at": "2026-11-27 19:15 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 1
       },
-      "original_title": "Phrasence，划词翻译与 AI 文本助手。留下注册邮箱送积分。",
-      "original_summary": "Phrasence，划词翻译与 AI 文本助手。留下注册邮箱送积分。\nPhrasence 是一款桌面小工具，选中文字后，可以在旁边的工具条里翻译，也能请 AI 解释、总结或润色。\r\n\r\n看外语网页、读文档时，遇到看不懂的词句，选中文字，就能在旁边的工具条里选择翻译、解释或总结。\r\n\r\n也可以让 AI 解释长句、总结段落，或润色邮件和草稿。这样能少复制几次，也少切几次窗口。\r\n\r\n常用的提示词可以自己写好，保存后下次直接用。\r\n\r\n下载好本地模型，就能免费离线翻译，无需订阅，数据不上传服务端，都在你的本地，隐私性极好。\r\n\r\n软件自带的在线翻译和 AI 功能需要联网、登录和积分。\r\n\r\n[试试 Phrasence](https://phrasence.com/)\r\n\r\n留下注册邮箱，免费送积分。\r\n留下注册邮箱，免费送积分。\r\n留下注册邮箱，免费送积分。",
+      "original_title": "不要再把简历文件直接发送给 HR 了，使用 ViviResume 进行在线简历制作",
+      "original_summary": "不要再把简历文件直接发送给 HR 了，使用 ViviResume 进行在线简历制作\n不要再把简历文件直接发送给 HR 了，使用 **[ViviResume](https://viviresume.com/)** 直接发送简历链接；不合适的话，还能把简历撤回。\r\n\r\nViviResume 是一款在浏览器中制作简历的工具。\r\n\r\n使用模板一边填写个人资料，一边的页面会实时显示排版效果。\r\n\r\n数据会自动保存在当前浏览器，不上传云端，隐私数据一直在本地。\r\n\r\n可以在线分享简历，发送简历的时候，直接发送链接就可以了。获得链接的人可以在网页上查看。\r\n\r\n修改简历后，再次保存到云端即可更新分享页的内容。可以随时关闭分享、更换链接。\r\n\r\n**官网 [viviresume.com](https://viviresume.com/)**\r\n\r\n完全免费、无需登录。",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1260365",
+      "id": "v2ex-1260423",
       "source": "V2EX",
-      "category": "云服务/GPU/开发者资源",
-      "title": "自研的 iOS 视频逐帧 / A-B 循环工具「逐帧 FrameSnap」黑五 5 折（¥68→¥38 永久买断）",
-      "summary": "自研的 iOS 视频逐帧 / A-B 循环工具「逐帧 FrameSnap」黑五 5 折（¥68→¥38 永久买断）\n给「逐帧（FrameSnap）」排了黑五到网一的 5 折限时优惠，11 月 27 日到 12 月 1 日永久买断从 ¥68 降到 ¥38（美区 $9.99 降到 $4.99），12 月 2 日自动恢复原价。App 内直接购买就行，不用填兑换码，也没有自动续费订阅。\r\n\r\n这几天刚过审了 v3.6.4，把 A-B 循环直接提到播放器右上角一级入口了，外接 iPad 键盘也能直接用 L / [ / ] 控制循环区间和 0.05x–2.0x 变速。练舞扒拍、看网球高尔夫挥拍，或者想从 iPhone 4K HDR 视频里导出不发灰的原画单帧，平时用 iPhone/iPad 本地处理就够了，搭配 Apple Pencil 画线标注和 zMode 标注连播定格也都在离线本地跑。\r\n\r\n如果只是临时在电脑上抽几张帧或者提取视频首尾帧，不用装 App 也可以直接用官网的纯浏览器本地免费小工具（视频不上传服务器）：\r\n* 官网与免费本地网页工具：<https://getframesnap.com/zh/?utm_source=v2ex&utm_medium=community&utm_campaign=bf_2026>\r\n* App Store（iPhone / iPad 通用）：<https://apps.apple.com/cn/app/id1673477603?pt=126093029&ct=bf26_v2ex&mt=8>",
+      "category": "大模型 API 免费额度",
+      "title": "DualDock 完全免费开源的 mac 端支持多屏独立配置、文件夹收纳图标的 dock 工具",
+      "summary": "DualDock 完全免费开源的 mac 端支持多屏独立配置、文件夹收纳图标的 dock 工具\n实在受不了 Mac 原生 dock 了，前前后后花了不少时间不少 token 做了个 app，自己用了一段时间，体验不错，分享给大家。\r\n\r\n主要解决 2 个痛点：\r\n1. 外接显示器时，mac 原生 dock 无法在多个屏幕同时显示，只能自动跟随。\r\n2. 原生 dock 无法收纳 app\r\n\r\nDualDock 在解决这两个痛点的同时，尽可能保持和原生 dock 类似的体验，包括动画、预览、大小设置等等；并且尽量增加设置自定义的自由度。\r\n\r\n最后，纯个人喜好，加入了 widget，可以翻页显示 widget，显示系统状态、天气、日历、音乐控件等等，也支持 coding plan 余量查询。（我目前主力 codex 和 gemini，claude 和 cursor 支持但没有套餐来测试）\r\n\r\n欢迎大家试用反馈。\r\n\r\n不要钱，不发码，不订阅，完全开源。喜欢的给点个 star 就行。\r\n\r\n地址：https://github.com/autumncry/DualDock\r\n\r\n\r\nhttps://i.imgur.com/AzMiuld.png",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Vinceeeee",
-      "url": "https://www.v2ex.com/t/1260365",
-      "posted_at": "2026-11-27 16:25 Asia/Shanghai",
+      "author": "autumncry",
+      "url": "https://www.v2ex.com/t/1260423",
+      "posted_at": "2026-11-27 19:05 Asia/Shanghai",
       "engagement": {
         "replies": 0
       },
-      "original_title": "自研的 iOS 视频逐帧 / A-B 循环工具「逐帧 FrameSnap」黑五 5 折（¥68→¥38 永久买断）",
-      "original_summary": "自研的 iOS 视频逐帧 / A-B 循环工具「逐帧 FrameSnap」黑五 5 折（¥68→¥38 永久买断）\n给「逐帧（FrameSnap）」排了黑五到网一的 5 折限时优惠，11 月 27 日到 12 月 1 日永久买断从 ¥68 降到 ¥38（美区 $9.99 降到 $4.99），12 月 2 日自动恢复原价。App 内直接购买就行，不用填兑换码，也没有自动续费订阅。\r\n\r\n这几天刚过审了 v3.6.4，把 A-B 循环直接提到播放器右上角一级入口了，外接 iPad 键盘也能直接用 L / [ / ] 控制循环区间和 0.05x–2.0x 变速。练舞扒拍、看网球高尔夫挥拍，或者想从 iPhone 4K HDR 视频里导出不发灰的原画单帧，平时用 iPhone/iPad 本地处理就够了，搭配 Apple Pencil 画线标注和 zMode 标注连播定格也都在离线本地跑。\r\n\r\n如果只是临时在电脑上抽几张帧或者提取视频首尾帧，不用装 App 也可以直接用官网的纯浏览器本地免费小工具（视频不上传服务器）：\r\n* 官网与免费本地网页工具：<https://getframesnap.com/zh/?utm_source=v2ex&utm_medium=community&utm_campaign=bf_2026>\r\n* App Store（iPhone / iPad 通用）：<https://apps.apple.com/cn/app/id1673477603?pt=126093029&ct=bf26_v2ex&mt=8>",
+      "original_title": "DualDock 完全免费开源的 mac 端支持多屏独立配置、文件夹收纳图标的 dock 工具",
+      "original_summary": "DualDock 完全免费开源的 mac 端支持多屏独立配置、文件夹收纳图标的 dock 工具\n实在受不了 Mac 原生 dock 了，前前后后花了不少时间不少 token 做了个 app，自己用了一段时间，体验不错，分享给大家。\r\n\r\n主要解决 2 个痛点：\r\n1. 外接显示器时，mac 原生 dock 无法在多个屏幕同时显示，只能自动跟随。\r\n2. 原生 dock 无法收纳 app\r\n\r\nDualDock 在解决这两个痛点的同时，尽可能保持和原生 dock 类似的体验，包括动画、预览、大小设置等等；并且尽量增加设置自定义的自由度。\r\n\r\n最后，纯个人喜好，加入了 widget，可以翻页显示 widget，显示系统状态、天气、日历、音乐控件等等，也支持 coding plan 余量查询。（我目前主力 codex 和 gemini，claude 和 cursor 支持但没有套餐来测试）\r\n\r\n欢迎大家试用反馈。\r\n\r\n不要钱，不发码，不订阅，完全开源。喜欢的给点个 star 就行。\r\n\r\n地址：https://github.com/autumncry/DualDock\r\n\r\n\r\nhttps://i.imgur.com/AzMiuld.png",
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1260336",
+      "id": "v2ex-1260416",
       "source": "V2EX",
-      "category": "云服务/GPU/开发者资源",
-      "title": "[开源] 受不了资源管理器转圈，用 Rust + GPUI 写了个文件管理器 Arke",
-      "summary": "[开源] 受不了资源管理器转圈，用 Rust + GPUI 写了个文件管理器 Arke\n![Arke 主界面](https://raw.githubusercontent.com/Koimsurai/Arke/main/.github/assets/preview.png)\r\n\r\n先说说为什么会写这个。\r\n\r\n我一直很喜欢 Files 的设计，好看，用起来也顺手，但它真的太卡了。资源管理器倒是还行，可一碰到网络共享就原形毕露：家里 NAS 一休眠，整个窗口直接未响应，等个二三十秒才回来。\r\n\r\n有天又被卡住，盯着转圈的图标想：都 2026 年了，打开一个文件夹为什么还会把整个界面拖死？就这样开了个坑，本来只是想写个自己能用的。\r\n\r\n结果写着写着就停不下来了：\r\n\r\n打开几万个文件的文件夹，不转圈\r\n网络共享掉线，窗口照样能用\r\n删个大文件夹进回收站，不用再等四十秒\r\n\r\n所有读目录、排序、缩略图、搜索、复制删除，都不在界面线程上跑。不管文件夹多大、网络盘多慢，你都能继续滚动、切标签。\r\n\r\n全盘搜索：直接读 NTFS 主文件表，几百万个文件十秒左右建完索引，边打字边出结果\r\n竖排标签：可以固定、存成工作区，也能分成两个窗格对照\r\n空格快速预览：图片、PDF、Office、代码、压缩包\r\n快速回收站：两万个文件进回收站约 0.25 秒（资源管理器要四十秒左右），一样可以还原\r\n\r\n![全盘搜索对比](https://raw.githubusercontent.com/Koimsurai/Arke/main/.github/assets/search-compare.gif)\r\n\r\nRust 写的，界面用 GPU 绘制，单个 exe 免安装，支持 x64 和 ARM64。\r\n\r\n开源之后发生的事情是我完全没想到的。两周破了一千星，被阮一峰的周刊收录，还有一位视障用户开 iss",
+      "category": "科技软件/App 限免",
+      "title": "LeafEcho -- 最好用的电子书阅读器",
+      "summary": "LeafEcho -- 最好用的电子书阅读器\nLeafEcho 是一款适用于 Windows 和 macOS 的桌面电子书阅读器，用于阅读和整理电脑里的电子书与漫画。\r\n\r\n阅读、朗读和书库整理免费。\r\n\r\n软件页面简洁优雅、功能强大、体验丝滑。\r\n\r\nLeafEcho 支持 EPUB、PDF、TXT 等电子书格式和 CBZ 等漫画格式。\r\n\r\n导入的书籍可以按书架整理，也可以按书名搜索。\r\n\r\n阅读时可高亮文字、添加笔记。\r\n\r\n书籍和阅读进度保存在电脑上，再次打开时可以接着上次的位置读。\r\n\r\n有可读取文字的电子书支持朗读。\r\n\r\n朗读时可同时查看书页，也可以调整语速。\r\n\r\n全书翻译用于辅助阅读外语电子书。\r\n\r\n**去体验试试 [LeafEcho](https://leafecho.app/)**\r\n\r\n免注册、免费使用",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "Koimsurai",
-      "url": "https://www.v2ex.com/t/1260336",
-      "posted_at": "2026-11-27 15:19 Asia/Shanghai",
+      "author": "rangerheart",
+      "url": "https://www.v2ex.com/t/1260416",
+      "posted_at": "2026-11-27 18:41 Asia/Shanghai",
       "engagement": {
-        "replies": 0
+        "replies": 8
       },
-      "original_title": "[开源] 受不了资源管理器转圈，用 Rust + GPUI 写了个文件管理器 Arke",
-      "original_summary": "[开源] 受不了资源管理器转圈，用 Rust + GPUI 写了个文件管理器 Arke\n![Arke 主界面](https://raw.githubusercontent.com/Koimsurai/Arke/main/.github/assets/preview.png)\r\n\r\n先说说为什么会写这个。\r\n\r\n我一直很喜欢 Files 的设计，好看，用起来也顺手，但它真的太卡了。资源管理器倒是还行，可一碰到网络共享就原形毕露：家里 NAS 一休眠，整个窗口直接未响应，等个二三十秒才回来。\r\n\r\n有天又被卡住，盯着转圈的图标想：都 2026 年了，打开一个文件夹为什么还会把整个界面拖死？就这样开了个坑，本来只是想写个自己能用的。\r\n\r\n结果写着写着就停不下来了：\r\n\r\n打开几万个文件的文件夹，不转圈\r\n网络共享掉线，窗口照样能用\r\n删个大文件夹进回收站，不用再等四十秒\r\n\r\n所有读目录、排序、缩略图、搜索、复制删除，都不在界面线程上跑。不管文件夹多大、网络盘多慢，你都能继续滚动、切标签。\r\n\r\n全盘搜索：直接读 NTFS 主文件表，几百万个文件十秒左右建完索引，边打字边出结果\r\n竖排标签：可以固定、存成工作区，也能分成两个窗格对照\r\n空格快速预览：图片、PDF、Office、代码、压缩包\r\n快速回收站：两万个文件进回收站约 0.25 秒（资源管理器要四十秒左右），一样可以还原\r\n\r\n![全盘搜索对比](https://raw.githubusercontent.com/Koimsurai/Arke/main/.github/assets/search-compare.gif)\r\n\r\nRust 写的，界面用 GPU 绘制，单个 exe 免安装，支持 x64 和 ARM64。\r\n\r\n开源之后发生的事情是我完全没想到的。两周破了一千星，被阮一峰的周刊收录，还有一位视障用户开 iss",
+      "original_title": "LeafEcho -- 最好用的电子书阅读器",
+      "original_summary": "LeafEcho -- 最好用的电子书阅读器\nLeafEcho 是一款适用于 Windows 和 macOS 的桌面电子书阅读器，用于阅读和整理电脑里的电子书与漫画。\r\n\r\n阅读、朗读和书库整理免费。\r\n\r\n软件页面简洁优雅、功能强大、体验丝滑。\r\n\r\nLeafEcho 支持 EPUB、PDF、TXT 等电子书格式和 CBZ 等漫画格式。\r\n\r\n导入的书籍可以按书架整理，也可以按书名搜索。\r\n\r\n阅读时可高亮文字、添加笔记。\r\n\r\n书籍和阅读进度保存在电脑上，再次打开时可以接着上次的位置读。\r\n\r\n有可读取文字的电子书支持朗读。\r\n\r\n朗读时可同时查看书页，也可以调整语速。\r\n\r\n全书翻译用于辅助阅读外语电子书。\r\n\r\n**去体验试试 [LeafEcho](https://leafecho.app/)**\r\n\r\n免注册、免费使用",
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-mvalentsev-awesome-free-ai-coding",
+      "id": "v2ex-1260415",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "[周末福利] 免费白嫖领 5 刀！满血中转站，稳定号池不降智，一个 Key 接入多种模型，欢迎老板们前来试吃！",
+      "summary": "[周末福利] 免费白嫖领 5 刀！满血中转站，稳定号池不降智，一个 Key 接入多种模型，欢迎老板们前来试吃！\n周末有空，不如来领点 API 额度，跑一跑自己一直想试的模型和工具。\r\n\r\nMidalo 中转站新人福利：注册即有机会领取 5 刀试用额度。不急着充值，先拿真实任务测试，看看模型效果和接入体验是否适合自己。\r\n\r\n# 不废话，先上福利\r\n\r\nMidalo 站点注册地址：https://agent.midalo.ai/ 一定要用这个地址注册，不然看不到注册 ID，防止后面领不到鸡蛋）\r\n\r\n- 注册后在 QQ 群留下你的站内用户 ID 或用户名，群管理会手动发送 5 刀到钱包余额，发完会在楼内回复告知。\r\n\r\n- Midalo API 官方 QQ 群：1030748124 （进群备注好进群信息）\r\n\r\n- Midalo 官方客服 QQ：3809674723 （添加备注来意）\r\n\r\n- 微信联系方式：wjn168178 （添加备注来意）\r\n\r\n![image](https://imagetourl.im/api/storage/file?key=anon%2F-%2F8204227090092-8563aac5-325d-46e4-806b-d978cb82b921-f1b68125abf8e1063bf12e4f70066224.jpg)\r\n---\r\nMidalo 支持 GPT、Claude、Gemini、DeepSeek、Grok、GLM、Kimi 等模型系列，一个 Key 即可接入多种模型，并兼容 OpenAI、Anthropic、Gemini 等协议。\r\n\r\n可以用来：\r\n\r\n- 配置 Claude Code、Cursor、Cherry Studio 等工具；\r\n\r\n- 给个人 AI 项目、Agent 或自动化脚本接入模型；\r\n\r\n- 对比不同模型的输出效果和",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "wxy3464",
+      "url": "https://www.v2ex.com/t/1260415",
+      "posted_at": "2026-11-27 18:14 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "[周末福利] 免费白嫖领 5 刀！满血中转站，稳定号池不降智，一个 Key 接入多种模型，欢迎老板们前来试吃！",
+      "original_summary": "[周末福利] 免费白嫖领 5 刀！满血中转站，稳定号池不降智，一个 Key 接入多种模型，欢迎老板们前来试吃！\n周末有空，不如来领点 API 额度，跑一跑自己一直想试的模型和工具。\r\n\r\nMidalo 中转站新人福利：注册即有机会领取 5 刀试用额度。不急着充值，先拿真实任务测试，看看模型效果和接入体验是否适合自己。\r\n\r\n# 不废话，先上福利\r\n\r\nMidalo 站点注册地址：https://agent.midalo.ai/ 一定要用这个地址注册，不然看不到注册 ID，防止后面领不到鸡蛋）\r\n\r\n- 注册后在 QQ 群留下你的站内用户 ID 或用户名，群管理会手动发送 5 刀到钱包余额，发完会在楼内回复告知。\r\n\r\n- Midalo API 官方 QQ 群：1030748124 （进群备注好进群信息）\r\n\r\n- Midalo 官方客服 QQ：3809674723 （添加备注来意）\r\n\r\n- 微信联系方式：wjn168178 （添加备注来意）\r\n\r\n![image](https://imagetourl.im/api/storage/file?key=anon%2F-%2F8204227090092-8563aac5-325d-46e4-806b-d978cb82b921-f1b68125abf8e1063bf12e4f70066224.jpg)\r\n---\r\nMidalo 支持 GPT、Claude、Gemini、DeepSeek、Grok、GLM、Kimi 等模型系列，一个 Key 即可接入多种模型，并兼容 OpenAI、Anthropic、Gemini 等协议。\r\n\r\n可以用来：\r\n\r\n- 配置 Claude Code、Cursor、Cherry Studio 等工具；\r\n\r\n- 给个人 AI 项目、Agent 或自动化脚本接入模型；\r\n\r\n- 对比不同模型的输出效果和",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1260410",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "🔥黑五专属：免费送福利！适配 AI 采集静态住宅代理｜新用户首单半价福利",
+      "summary": "🔥黑五专属：免费送福利！适配 AI 采集静态住宅代理｜新用户首单半价福利\n🎁Zooproxy 新增美国 AI 优化渠道 IP ，$1.25/IP,AI 可适配，联系官网客服 @ZooproxyTiger 还可获得优惠券\r\n\r\n✅再免费送动态住宅 ip 流量，注册，进入控制台找到 cdk 兑换即可\r\n\r\n邀请码：veexfwaif  （首单半价）\r\n\r\n注册即刻兑换：\r\n\r\nhttps://zooproxy.com/?kwd=LQ-v2ex\r\n\r\nCZM9-JT8S-WGPA\r\n\r\n833T-5NGE-J3WU\r\n\r\nRBKL-HLBB-3SML\r\n\r\nH2GU-9QLA-3QDR\r\n\r\nHXH5-KJHF-ACKE\r\n\r\n没领取到的也可以联系 @Zooproxy7 or qq：1151007098@qq.com\r\n\r\n官方频道会时不时掉落小惊喜哦：t.me/ZooproxySupport",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Mayday9421",
+      "url": "https://www.v2ex.com/t/1260410",
+      "posted_at": "2026-11-27 17:57 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "🔥黑五专属：免费送福利！适配 AI 采集静态住宅代理｜新用户首单半价福利",
+      "original_summary": "🔥黑五专属：免费送福利！适配 AI 采集静态住宅代理｜新用户首单半价福利\n🎁Zooproxy 新增美国 AI 优化渠道 IP ，$1.25/IP,AI 可适配，联系官网客服 @ZooproxyTiger 还可获得优惠券\r\n\r\n✅再免费送动态住宅 ip 流量，注册，进入控制台找到 cdk 兑换即可\r\n\r\n邀请码：veexfwaif  （首单半价）\r\n\r\n注册即刻兑换：\r\n\r\nhttps://zooproxy.com/?kwd=LQ-v2ex\r\n\r\nCZM9-JT8S-WGPA\r\n\r\n833T-5NGE-J3WU\r\n\r\nRBKL-HLBB-3SML\r\n\r\nH2GU-9QLA-3QDR\r\n\r\nHXH5-KJHF-ACKE\r\n\r\n没领取到的也可以联系 @Zooproxy7 or qq：1151007098@qq.com\r\n\r\n官方频道会时不时掉落小惊喜哦：t.me/ZooproxySupport",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1260407",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "把一堆静态小工具收束成了一个课堂大屏站「知秋（Semfol）」，不确定这方向行不行，求拍砖，求点评",
+      "summary": "把一堆静态小工具收束成了一个课堂大屏站「知秋（Semfol）」，不确定这方向行不行，求拍砖，求点评\n最开始只是想把以前零散写的静态小游戏、小工具汇总成一个在线站卖，做着做着发现这类单页太同质化、根本没什么付费点，想着不能浪费这个域名就干脆做了一轮收束重构，改成了现在这个面向教室投影仪的课堂大屏工具「知秋（Semfol）」。\r\n\r\n首页在 https://semfol.com/zh ，公开页免登录就能试。登录后 1 个班免费用大屏，学生手机进班和扫码投票放进了 Pro。\r\n\r\n这个站全凭自己的主观想法胡乱去做的～\r\n\r\n说实话现在自己也没底这个方向行不行。里面真正想继续做的其实就白板和几个班级管理相关的功能，剩下不少是之前收束时顺手留下的，如果大家觉得鸡肋，后面打算继续砍。\r\n\r\n发出来想听听大家的真实看法：\r\n1. 这个「课堂投影大屏 + 班级管理」的切入点值不值得继续做？\r\n2. 进页面试一圈，哪些功能多余可以直接删？\r\n3. 哪些流程让你觉得不友好非常劝退？\r\n4. 哪些功能鸡肋多余？",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "sheepz",
+      "url": "https://www.v2ex.com/t/1260407",
+      "posted_at": "2026-11-27 17:53 Asia/Shanghai",
+      "engagement": {
+        "replies": 4
+      },
+      "original_title": "把一堆静态小工具收束成了一个课堂大屏站「知秋（Semfol）」，不确定这方向行不行，求拍砖，求点评",
+      "original_summary": "把一堆静态小工具收束成了一个课堂大屏站「知秋（Semfol）」，不确定这方向行不行，求拍砖，求点评\n最开始只是想把以前零散写的静态小游戏、小工具汇总成一个在线站卖，做着做着发现这类单页太同质化、根本没什么付费点，想着不能浪费这个域名就干脆做了一轮收束重构，改成了现在这个面向教室投影仪的课堂大屏工具「知秋（Semfol）」。\r\n\r\n首页在 https://semfol.com/zh ，公开页免登录就能试。登录后 1 个班免费用大屏，学生手机进班和扫码投票放进了 Pro。\r\n\r\n这个站全凭自己的主观想法胡乱去做的～\r\n\r\n说实话现在自己也没底这个方向行不行。里面真正想继续做的其实就白板和几个班级管理相关的功能，剩下不少是之前收束时顺手留下的，如果大家觉得鸡肋，后面打算继续砍。\r\n\r\n发出来想听听大家的真实看法：\r\n1. 这个「课堂投影大屏 + 班级管理」的切入点值不值得继续做？\r\n2. 进页面试一圈，哪些功能多余可以直接删？\r\n3. 哪些流程让你觉得不友好非常劝退？\r\n4. 哪些功能鸡肋多余？",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1260406",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "[接单｜业余远程] Chrome / Edge 浏览器插件定制开发",
+      "summary": "[接单｜业余远程] Chrome / Edge 浏览器插件定制开发\n个人业余接单，主业开发，仅晚上、周末排期交付，只做浏览器插件相关。\r\n\r\n✅ 可做类型\r\n\r\n- 阅读增强、网页内容处理、自定义排版（有成品插件可参考，见下方我的 Github 页）\r\n- 批量导出、PDF 生成、页面数据提取、自动化小脚本\r\n- CSP、ServiceWorker、Manifest V3 适配调试、插件 BUG 修复改造\r\n\r\n✅ 合作规则\r\n\r\n1. 需求文字描述清楚，先评估报价，**30% 定金开工**，中期 50%，验收尾款 20%\r\n2. 范围外新增需求单独报价，不免费无限迭代\r\n3. 只接合规需求，不做爬虫抓取隐私、破解、违规脚本\r\n4. 交付源码 + 简单使用说明，交付后短期 bug 修复\r\n\r\n✅ 作品集\r\nGitHub：https://github.com/clytiee/\r\n代表项目：\r\n- Element Print：提取网页正文，套用预置模板双栏展示，支持中英文对照\r\n- 时见：提取网页指定文本，古文竖排、PDF 导出\r\n- 划词 AI 释义：划词调用 AI 进行自定义释义，支持十几种版式的 PDF/HTML 导出\r\n\r\n📮 联系：V2EX 私信，发送需求说明 + 预期预算，我评估后回复。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "celavi",
+      "url": "https://www.v2ex.com/t/1260406",
+      "posted_at": "2026-11-27 17:53 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "[接单｜业余远程] Chrome / Edge 浏览器插件定制开发",
+      "original_summary": "[接单｜业余远程] Chrome / Edge 浏览器插件定制开发\n个人业余接单，主业开发，仅晚上、周末排期交付，只做浏览器插件相关。\r\n\r\n✅ 可做类型\r\n\r\n- 阅读增强、网页内容处理、自定义排版（有成品插件可参考，见下方我的 Github 页）\r\n- 批量导出、PDF 生成、页面数据提取、自动化小脚本\r\n- CSP、ServiceWorker、Manifest V3 适配调试、插件 BUG 修复改造\r\n\r\n✅ 合作规则\r\n\r\n1. 需求文字描述清楚，先评估报价，**30% 定金开工**，中期 50%，验收尾款 20%\r\n2. 范围外新增需求单独报价，不免费无限迭代\r\n3. 只接合规需求，不做爬虫抓取隐私、破解、违规脚本\r\n4. 交付源码 + 简单使用说明，交付后短期 bug 修复\r\n\r\n✅ 作品集\r\nGitHub：https://github.com/clytiee/\r\n代表项目：\r\n- Element Print：提取网页正文，套用预置模板双栏展示，支持中英文对照\r\n- 时见：提取网页指定文本，古文竖排、PDF 导出\r\n- 划词 AI 释义：划词调用 AI 进行自定义释义，支持十几种版式的 PDF/HTML 导出\r\n\r\n📮 联系：V2EX 私信，发送需求说明 + 预期预算，我评估后回复。",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-matthewjamescadiz-sudo-free-llm-api",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "awesome-free-ai-coding：免费 LLM API 与编程代理清单",
-      "summary": "收录合法免费的 LLM API 与编程代理，每周两次自动探测校验并更新。",
+      "title": "matthewjamescadiz-sudo/Free-llm-api：免费 LLM API 资源仓库",
+      "summary": "matthewjamescadiz-sudo/Free-llm-api",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "mvalentsev",
-      "url": "https://github.com/mvalentsev/awesome-free-ai-coding",
-      "posted_at": "2026-11-27 11:58 Asia/Shanghai",
+      "author": "matthewjamescadiz-sudo",
+      "url": "https://github.com/matthewjamescadiz-sudo/Free-llm-api",
+      "posted_at": "2026-11-27 21:55 Asia/Shanghai",
       "engagement": {
-        "stars": 279
+        "stars": 0
       },
-      "original_title": "mvalentsev/awesome-free-ai-coding",
-      "original_summary": "mvalentsev/awesome-free-ai-coding 📡 Legal free LLM APIs & coding agents — self-updating, probe-verified twice a week. Free tiers, no-card trials, free models.",
+      "original_title": "matthewjamescadiz-sudo/Free-llm-api",
+      "original_summary": "matthewjamescadiz-sudo/Free-llm-api ",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-pacocartones-free-llm-api-hub",
+      "id": "ghdeal-reqsgjh-free-coding-agent-models",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "pacocartones/free-llm-api-hub：持续核验的免费 LLM API 数据集",
-      "summary": "收录免费额度与试用额度的 LLM API，每条标注日期并溯源官方文档，机器可读且无死链。",
+      "title": "reqsgjh/free-coding-agent-models：每日免费编码模型清单",
+      "summary": "面向学生每日更新免费LLM API与编码Agent模型，对比厂商宣传与实际供给。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "pacocartones",
-      "url": "https://github.com/pacocartones/free-llm-api-hub",
-      "posted_at": "2026-11-27 16:50 Asia/Shanghai",
+      "author": "reqsgjh",
+      "url": "https://github.com/reqsgjh/free-coding-agent-models",
+      "posted_at": "2026-11-12 21:23 Asia/Shanghai",
       "engagement": {
-        "stars": 132
+        "stars": 2
       },
-      "original_title": "pacocartones/free-llm-api-hub",
-      "original_summary": "pacocartones/free-llm-api-hub A continuously-verified dataset of free-tier & trial-credit LLM APIs for developers. Every entry dated, sourced to the provider's own docs, and machine-readable. No hype, no dead links.",
+      "original_title": "reqsgjh/free-coding-agent-models",
+      "original_summary": "reqsgjh/free-coding-agent-models Daily snapshot of free LLM APIs and coding-agent models for students. Tracks what providers actually offer vs unlimited claims.",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-sudhirdevops1-t4-gpu-llm-api",
+      "id": "ghdeal-clawlabsai-free-ai-models",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "SudhirDevOps1/t4-gpu-llm-api：把 Colab 免费 T4 GPU 变成 LLM API 服务",
-      "summary": "把 Google Colab 的免费 T4 GPU 变成个人 LLM API 服务器，兼容 OpenAI 接口，附 UI、CORS 与安全隧道。",
+      "title": "ClawLabsAI/free-ai-models：每日更新的免费模型榜单",
+      "summary": "免费LLM API按质量排名并标注实时状态，另提供自动路由到最优模型的兼容端点。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "SudhirDevOps1",
-      "url": "https://github.com/SudhirDevOps1/t4-gpu-llm-api",
-      "posted_at": "2026-11-23 17:28 Asia/Shanghai",
+      "author": "ClawLabsAI",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "posted_at": "2026-11-27 03:22 Asia/Shanghai",
       "engagement": {
-        "stars": 1
+        "stars": 294
       },
-      "original_title": "SudhirDevOps1/t4-gpu-llm-api",
-      "original_summary": "SudhirDevOps1/t4-gpu-llm-api  Turn Google Colab's Free T4 GPU into your personal, OpenAI-compatible LLM API server. Includes a premium UI, CORS setup, and secure tunneling for coding IDEs.",
+      "original_title": "ClawLabsAI/free-ai-models",
+      "original_summary": "ClawLabsAI/free-ai-models Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one.",
       "translated_by": "model"
     },
     {
@@ -643,111 +731,21 @@
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-sandbaseai-sandbase",
+      "id": "ghdeal-irishmehta-daily-job-board",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "sandbaseai/sandbase：一个 API key 免费搭个人 agent，可调 2000+ 模型",
-      "summary": "Agent 与沙箱免费，用一个 API key 即可调用 2000+ AI 模型和数据 API，兼容 OpenAI Agents API 与 E2B。",
+      "title": "IrishMehta/daily-job-board：每日抓取4万条美国技术岗，提供免费API",
+      "summary": "从数千家公司网页抓取职位并用轻量LLM补全信息，覆盖初级到管理岗，附免费API。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "sandbaseai",
-      "url": "https://github.com/sandbaseai/sandbase",
-      "posted_at": "2026-11-12 16:09 Asia/Shanghai",
-      "engagement": {
-        "stars": 6
-      },
-      "original_title": "sandbaseai/sandbase",
-      "original_summary": "sandbaseai/sandbase One API key. Build your personal agent. Agents and sandboxes are free, and agents can call 2,000+ AI models and data APIs (LLM, image, video, TikTok, YouTube, SEO, finance). OpenAI Agents API, E2B and OpenAI compatible. Python, TypeScript, Go.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-baimocn-atomcode-open-api",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "baimocn/atomcode-open-api：把 AtomCode 免费模型额度转成 API 代理",
-      "summary": "反向代理项目，将 AtomCode CodingPlan 的免费模型额度暴露为 OpenAI 兼容的 LLM API。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "baimocn",
-      "url": "https://github.com/baimocn/atomcode-open-api",
-      "posted_at": "2026-10-09 18:17 Asia/Shanghai",
-      "engagement": {
-        "stars": 4
-      },
-      "original_title": "baimocn/atomcode-open-api",
-      "original_summary": "baimocn/atomcode-open-api AtomCode CodingPlan 免费模型额度 → OpenAI API 反向代理 | Free LLM API proxy",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-mnfst-awesome-free-llm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "mnfst/awesome-free-llm-apis：永久免费 LLM API",
-      "summary": "列出永久免费的 LLM API 与 API Key。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "mnfst",
-      "url": "https://github.com/mnfst/awesome-free-llm-apis",
-      "posted_at": "2026-11-27 16:48 Asia/Shanghai",
-      "engagement": {
-        "stars": 14306
-      },
-      "original_title": "mnfst/awesome-free-llm-apis",
-      "original_summary": "mnfst/awesome-free-llm-apis List of Permanent Free LLM API  (API Keys)",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-ner-kun-table-llm-providers",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "Ner-Kun/Table_LLM_providers：免费与付费 LLM API 提供商对比表",
-      "summary": "汇总各家免费、限免与付费 LLM API 的额度限制、注册要求、Base URL 及获取密钥的链接。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Ner-Kun",
-      "url": "https://github.com/Ner-Kun/Table_LLM_providers",
-      "posted_at": "2026-11-26 20:12 Asia/Shanghai",
-      "engagement": {
-        "stars": 11
-      },
-      "original_title": "Ner-Kun/Table_LLM_providers",
-      "original_summary": "Ner-Kun/Table_LLM_providers A comprehensive table of free, freemium, and paid LLM API providers with detailed information about limits, registration requirements, Base URLs, and direct links to obtain API keys.",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-zzhhub6-awesome-verified-free-ai",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "zzhhub6/awesome-verified-free-ai：免费AI资源",
-      "summary": "核实过的 301 个免费 AI 目录，含免卡 LLM API、编程 IDE、学生开发者包与创业积分，附过期列表及 JSON/CSV 数据。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "zzhhub6",
-      "url": "https://github.com/zzhhub6/awesome-verified-free-ai",
-      "posted_at": "2026-11-27 08:53 Asia/Shanghai",
+      "author": "IrishMehta",
+      "url": "https://github.com/IrishMehta/daily-job-board",
+      "posted_at": "2026-11-12 21:36 Asia/Shanghai",
       "engagement": {
         "stars": 1
       },
-      "original_title": "zzhhub6/awesome-verified-free-ai",
-      "original_summary": "zzhhub6/awesome-verified-free-ai Strictly verified catalog of 301 free AI plans, no-card LLM APIs, coding IDEs, student developer packs & startup credits (with expired graveyard + open JSON/CSV dataset)",
-      "translated_by": "model"
-    },
-    {
-      "id": "ghdeal-open-free-llm-api-awesome-freellm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "awesome-freellm-apis：134+ 免费 LLM API 合集",
-      "summary": "汇总 40 多家提供方的 134+ 免费 LLM API 密钥，可一键配置 Claude Code、Cursor 和 Codex。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "open-free-llm-api",
-      "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
-      "posted_at": "2026-11-27 15:58 Asia/Shanghai",
-      "engagement": {
-        "stars": 6153
-      },
-      "original_title": "open-free-llm-api/awesome-freellm-apis",
-      "original_summary": "open-free-llm-api/awesome-freellm-apis 134+ free LLM APIs & AI API keys from 40+ providers. Google Gemini, NVIDIA NIM, Groq, OpenRouter & more. One-click setup for Claude Code, Cursor and Codex.",
+      "original_title": "IrishMehta/daily-job-board",
+      "original_summary": "IrishMehta/daily-job-board A ready-to-use job board that fetches listings from thousands of company web pages and enriches the metadata using lightweight LLMs. Scans over 40000 tech listings daily specific to USA. Also supports a free API. Jobs fetched across early career/new grad, mid-level, managerial roles",
       "translated_by": "model"
     },
     {
