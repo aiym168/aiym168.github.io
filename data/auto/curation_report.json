@@ -2,27 +2,26 @@
  "counts": {
   "archived": 31,
   "deadline_extracted": 7,
-  "drop:duplicate": 702,
-  "drop:empty_summary": 94,
-  "drop:negative_signal": 193,
-  "drop:no_clear_offer": 888,
-  "drop:not_ai": 733,
+  "drop:duplicate": 743,
+  "drop:empty_summary": 96,
+  "drop:negative_signal": 200,
+  "drop:no_clear_offer": 905,
+  "drop:not_ai": 767,
   "drop:too_old_pre2025": 62,
-  "google_news_resolved": 936,
-  "google_news_total": 936,
-  "kept_total": 257,
-  "net:gnews_cache_hit": 918,
-  "net:gnews_resolved_net": 18,
-  "net:tco_expanded": 2,
-  "net:tco_failed": 11,
-  "new_this_run": 2,
-  "raw_total": 2929
+  "google_news_resolved": 940,
+  "google_news_total": 940,
+  "kept_total": 260,
+  "net:gnews_cache_hit": 936,
+  "net:gnews_resolved_net": 4,
+  "new_this_run": 1,
+  "raw_total": 3033
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "@scholar_corner 分享：迪拜政府免费 AI 课程，颁发免费证书 全球开放通过迪拜未来基金会的“百万提示工程",
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
+   "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化",
    "kllm：在免费的 Kaggle GPU 上运行开放权重 LLM（Qwen、GGUF、abliterated）",
    "convenient_window_free：适用于热角、边缘隐藏、鼠标手势和布局的 Windows 11 窗口工具",
    "free-llm-router：一个 API 密钥，15+ 个免费提供商",
@@ -31,10 +30,11 @@
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
    "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
-   "Beatreel：根据一个提示制作讲解短视频",
-   "hive-mind：如何设计协同工作的 AI 体"
+   "Beatreel：根据一个提示制作讲解短视频"
   ],
   "empty_summary": [
+   "VivaGo 在 11 月 26 日至 30 日限时免费开放模型访问",
+   "VivaGo 黑色星期五优惠期间模型限时免费，活动截至 11 月 30 日",
    "@RyanKnuppel 分享：可用它跨店整理黑五购物清单并监控价格，注册即得8美元免费额度",
    "在 MacBook 上运行 Claude Code 配合 Inkling 2 mini 即可免费获得智能能力",
    "@JeremyNguyenPhD 分享：面向自然科学、工程及相关交叉学科的研究人员免费提供，帖中另附其他免费学术 AI ",
@@ -44,11 +44,10 @@
    "@ghumare64 分享：有开发者用这套免费课程配合编码智能体，一周内上线了三个项目，帖中附7条提示词",
    "@ViduAI_official 分享：面向跨境电商等场景的 AI 助手开启早期访问，提供免费 credits 和独家抢",
    "@higgsfield 分享：480B 参数、约28B 激活的近 SOTA 视频模型，支持1080p 最长30秒，生成每",
-   "ChatGPT 研究人员免费计划也于周一重新开放申请，接受速度较快",
-   "@aakashgupta 分享：该免费模型有90亿参数，可在单张 GPU 上运行，用自家欺诈数据训练数周后效果显著领先",
-   "David Leon 在 ausbiz 免费视频中质疑 AI 热潮的经济性，并提供 OBII 七天免费试用"
+   "ChatGPT 研究人员免费计划也于周一重新开放申请，接受速度较快"
   ],
   "negative_signal": [
+   "@mitchellh 分享：该推文指出细彩色边框、渐变、发光效果、过多字号和不一致间距是赠品 LLM 设计的特征",
    "AI 渡船人 Alex 感谢您关注《环球银行与金融评论》",
    "@JulianGoldieSEO 分享：清单涵盖面向品牌的 AI 视频，如 AI 虚拟人出镜广告、产品前后对比视频和开箱",
    "希格斯菲尔德黑色星期五现已上线：最高 75% 折扣",
@@ -59,8 +58,7 @@
    "@JulianGoldieSEO 分享：选择一类本地企业，收取设置费和月费，每月持续获得收入",
    "@JulianGoldieSEO 分享：提示词要求 AI 按构建时间、价格点和自动销售难易度排序",
    "@ZDNET 分享：OpenAI 为小企业提供免费 AI 支持，协助它们的专家每月最多可获 8000 美元",
-   "@JulianGoldieSEO 分享：输入网址即可运行 3 分钟免费审计，查看 ChatGPT、Gemini 和 Cl",
-   "@_ddjohnson 分享：招聘方向涉及模型行为、角色训练与对齐，对相关话题感兴趣可直接联系"
+   "@JulianGoldieSEO 分享：输入网址即可运行 3 分钟免费审计，查看 ChatGPT、Gemini 和 Cl"
   ],
   "no_clear_offer": [
    "@SpencrGreenberg 分享：作者让 AI 助手在夜间自主安排任务，只对 token 用量和风险行为设限，随后",
@@ -77,6 +75,7 @@
    "作者投入两万美元 API 额度，让不同 AI 模型对战社交推理游戏《血染钟楼》，观察其表现"
   ],
   "not_ai": [
+   "参与 Vidu 黑色星期五抽奖，有机会赢取免费会员试用和 RTX 5090 等奖品",
    "该主板支持无线缆 GPU 供电、免工具 M.2散热片和 LED 调试屏，强调功能性",
    "免费 Seedance 2.5 代已延长至 12 月 1 日",
    "ScarlettPort v0.5.0 已推出 全照明、真发、照亮房间 更快地启动世界（3 分钟 vs 4+） 每帧 G",
@@ -87,8 +86,7 @@
    "一些个人动态：我将于2027年秋季加入普林斯顿大学计算机科学系，担任副教授",
    "@OfficialLoganK 分享：官方回复称，银行账户充值需要处理时间，使用标准支付方式信用卡则可立即充值",
    "这款应用免费提供，用于辅助 JEE 备考",
-   "@emmanuel_2m 分享：覆盖视频、3D、游戏、动效、艺术和课程，首个内容引擎可把热门视频的格式套用到自己的创意上",
-   "@viktoroddy 分享：把童装店做成可拖拽旋转的木马界面，点选单品、切换颜色、加入购物车，作者免费提供提示词"
+   "@emmanuel_2m 分享：覆盖视频、3D、游戏、动效、艺术和课程，首个内容引擎可把热门视频的格式套用到自己的创意上"
   ],
   "too_old_pre2025": [
    "谷歌NotebookLM上线免费「音频概览」：文本变双人播客",
@@ -105,17 +103,17 @@
    "Stability AI 推出 Stable Diffusion XL 1.0，现已在 Amazon Bedrock 上"
   ]
  },
- "generated_at": "2026-11-27T22:08:07+08:00",
+ "generated_at": "2026-11-28T02:09:21+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-27T22:08:07+08:00",
+  "checked_at": "2026-11-28T02:09:07+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 223,
+   "gone": 2,
+   "ok": 222,
    "recheck": 2
   },
-  "hidden": 1
+  "hidden": 2
  },
- "seconds": 10.4,
+ "seconds": 4.1,
  "side": {
   "github_hot": {
    "drop:duplicate": 3,
@@ -124,10 +122,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 15,
-   "drop:not_ai_strict": 5,
-   "kept": 16,
+   "drop:negative_signal": 2,
+   "drop:not_ai": 7,
+   "drop:not_ai_strict": 7,
+   "kept": 24,
    "raw": 40
   }
  }

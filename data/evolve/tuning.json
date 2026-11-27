@@ -18,17 +18,17 @@
    "why": "被过滤掉的内容太多"
   },
   "bair-berkeley-edu-blog-feed-xml": {
-   "weight": 0.75,
-   "every": 1,
-   "since": "2026-11-26",
-   "why": "",
+   "weight": 0.5,
+   "every": 2,
+   "since": "2026-11-28",
+   "why": "总是重复，没有新东西",
    "state": "active"
   },
   "syncedreview-com-feed": {
-   "weight": 0.75,
-   "every": 1,
-   "since": "2026-11-27",
-   "why": "",
+   "weight": 0.5,
+   "every": 2,
+   "since": "2026-11-28",
+   "why": "总是重复，没有新东西",
    "state": "active"
   },
   "lilianweng-github-io-index-xml": {
@@ -46,11 +46,11 @@
    "state": "active"
   },
   "blog-chromium-org-feeds-posts-default": {
-   "weight": 0.5,
-   "every": 2,
-   "since": "2026-11-27",
+   "weight": 0.75,
+   "every": 1,
+   "since": "2026-11-28",
    "why": "",
-   "state": "retest"
+   "state": "active"
   },
   "kubernetes-io-feed-xml": {
    "weight": 0.5,
@@ -61,9 +61,9 @@
   "react-dev-rss-xml": {
    "weight": 0.5,
    "every": 2,
-   "since": "2026-11-25",
-   "why": "一周都没有新东西",
-   "state": "paused"
+   "since": "2026-11-28",
+   "why": "",
+   "state": "retest"
   },
   "gn-aigc-tut": {
    "weight": 0.75,
@@ -99,9 +99,9 @@
  },
  "deals": {
   "DEV.to": {
-   "state": "paused",
-   "since": "2026-11-25",
-   "why": "复测还是没有内容"
+   "state": "retest",
+   "since": "2026-11-28",
+   "why": ""
   },
   "Lobsters": {
    "state": "paused",
@@ -109,6 +109,6 @@
    "why": "复测还是没有内容"
   }
  },
- "updated_at": "2026-11-27T06:08+08:00",
+ "updated_at": "2026-11-28T02:09+08:00",
  "note": "由 evolve.py 每天自动维护；采集脚本只读。删除此文件即恢复默认（全部来源、权重 1.0）。"
 }
