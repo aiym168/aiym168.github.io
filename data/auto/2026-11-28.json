@@ -1,9 +1,47 @@
 {
   "date": "2026-11-28",
-  "updated_at": "2026-11-28T02:03+08:00",
-  "updated_at_label": "2026-11-28 02:03 Asia/Shanghai",
+  "updated_at": "2026-11-28T03:40+08:00",
+  "updated_at_label": "2026-11-28 03:40 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
+    {
+      "id": "hn-50670468",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Orcah Studio：本地运行的视频 AI 记忆系统",
+      "summary": "用开源权重模型对视频转写、区分说话人、分析画面并生成多模态向量，数据留在本地。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "iliashad",
+      "url": "https://news.ycombinator.com/item?id=50670468",
+      "posted_at": "2026-11-28 03:02 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 1
+      },
+      "original_title": "Show HN: A local-first AI memory for your video footage",
+      "original_summary": "Show HN: A local-first AI memory for your video footage I&#x27;m Ilias, the creator behind Orcah Studio (a local-first knowledge system that will transcribe, perform speaker diarization, analyse frames, and create multi-modal embeddings) using open-weight models<p>Demo video: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;9uUZrayDEgs\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;9uUZrayDEgs</a><p>I built a Docker-first solution, fully open source here: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;IliasHad&#x2F;orcah-studio\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;IliasHad&#x2F;orcah-studio</a><p>Plus, a desktop app that will be plug-and-play with a richer video indexing pipeline. With integrations with DaVinci Resolve, Final Cut Pro, and Adobe Premiere Pro, and MCP tools (over 45 tools)",
+      "translated_by": "model"
+    },
+    {
+      "id": "hn-50669993",
+      "source": "Hacker News",
+      "category": "其他科技",
+      "title": "Flowmaps：为智能体维护代码逻辑地图",
+      "summary": "位于团队与代码库之间，持续构建并维护代码逻辑地图，帮助智能体理解代码实际行为。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "micahke",
+      "url": "https://flowmaps.ai/",
+      "posted_at": "2026-11-28 02:20 Asia/Shanghai",
+      "engagement": {
+        "points": 2,
+        "comments": 0
+      },
+      "original_title": "Show HN: Flowmaps – the logic layer for agents and developers",
+      "original_summary": "Show HN: Flowmaps – the logic layer for agents and developers Hi everyone,<p>I&#x27;ve spent the last few months building a tool called Flowmaps. It&#x27;s the logic layer for agents and developers. It sits between your team and your codebase and constantly builds and maintains a logical map of what the code does.<p>Agents are already writing a large volume of code. The bottleneck has become the process of understanding what it does. Agents don&#x27;t make the same mistakes that programmers do; instead the errors are usually related to logic that the agent doesn&#x27;t have full context on.<p>Flowmaps helps you understand the what the code does without having to read it line-by-line. For developers, this means reviewing and understanding agent PRs without losing touch with the code. Agents",
+      "translated_by": "model"
+    },
     {
       "id": "hn-50668024",
       "source": "Hacker News",
@@ -252,44 +290,6 @@
       "translated_by": "model"
     },
     {
-      "id": "hn-50656245",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "AI 撰写小说销售一个月：996 次免费下载，5 笔销售",
-      "summary": "AI 小说一个月销售：996 次免费下载，5 次销售",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "jaylexier",
-      "url": "https://jayhumelexier.substack.com/p/one-month-of-selling-an-ai-written",
-      "posted_at": "2026-11-26 23:22 Asia/Shanghai",
-      "engagement": {
-        "points": 3,
-        "comments": 1
-      },
-      "original_title": "One month of selling an AI-written novel: 996 free downloads, 5 sales",
-      "original_summary": "One month of selling an AI-written novel: 996 free downloads, 5 sales ",
-      "translated_by": "model"
-    },
-    {
-      "id": "hn-50646533",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "HeyCube：为常驻 AI 代理打造的个性化信息流",
-      "summary": "创始人称自建常驻代理时 token 与搜索 API 成本上涨很快，ChatGPT 等定时任务也消耗大量额度。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "fengli_wu",
-      "url": "https://inxpanse.com/heycube",
-      "posted_at": "2026-11-26 03:47 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: HeyCube – The personalized feed for your always-on AI agents",
-      "original_summary": "Show HN: HeyCube – The personalized feed for your always-on AI agents Hi HN, I&#x27;m Fengli, founder of Inxpanse. HeyCube is our first product: the personalized feed for your always-on AI agents.<p>While building my own always-on agents, I kept watching the token and search API costs add up really fast. Then I noticed the scheduled tasks in ChatGPT&#x2F;Grok Bot&#x2F;etc. also use up a lot of your plan&#x27;s allowance, often on checks that find nothing new. That&#x27;s why many people still don&#x27;t leave their agents truly always on.<p>This reminded me of the eras we humans have been through too: first search engines, then feeds. So I thought, why not build agents a feed of their own? That&#x27;s why we built HeyCube. It reads sources around the clock and sends what fits you to the ri",
-      "translated_by": "model"
-    },
-    {
       "id": "hn-50639615",
       "source": "Hacker News",
       "category": "AI 开发工具与编程助手",
@@ -529,7 +529,7 @@
       "url": "https://www.v2ex.com/t/1260477",
       "posted_at": "2026-11-28 01:19 Asia/Shanghai",
       "engagement": {
-        "replies": 1
+        "replies": 2
       },
       "original_title": "智友社回馈 V 站新老客户，抽送第 15 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）",
       "original_summary": "智友社回馈 V 站新老客户，抽送第 15 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）\n各位 V 友好，感谢大家一直以来对我们智友社的支持和关注。\r\n\r\n我们智友社的初衷是帮大家寻找市面上稳定的主流 AI 特价渠道，鉴于目前国外主流 AI 的正价订购价格昂贵，我们发现市面上有不少的价格实惠的特殊渠道 AI 产品，可惜质量参差不齐，为了节省大家的时间跟金钱，我们花了不少精力对各个渠道商的特价 AI 进行了购买评测，再从中选取稳定的渠道上架出售，我们也欢迎各位佬友跟我们推荐稳定的特殊渠道 AI ，我们会自费购买进行稳定性测试，测试通过后也能让更多的人能受益！\r\n\r\n由于目前国外 AI 并不能上架国内主流购物平台，所以我们只能把店铺开在了一个小众平台—链动小铺，您有问题可以随时联系我们 QQ 客服，我们会协助您一起解决。\r\n\r\n**我们的小铺地址： https://wzyp.cn/shop/ai2you 。我们的产品目前只要分成下面两种。**\r\n\r\n**一：稳定特殊渠道特价商品：目前这几款我们测试下来都是很稳定，价格会随每天行情变化，请以平台价格为准。**\r\n\r\n**GPT 系列：**\r\n\r\n[GPTPlus 东南亚区成品号（稳定度 98%，谷歌邮箱不含邮箱密码，质保 24 小时）](https://pay.ldxp.cn/item/5wdrjz)  52.88\r\n[GPTPlus 新日区成品号（稳定度 99%，谷歌邮箱不含邮箱密码，质保 24 小时）](https://wzyp.cn/item/z6vcon)  56.88\r\n[GPTPlus 日区成品号（稳定度 100%，微软邮箱带邮箱密码，质保 24 小时）](https://wzyp.cn/item/x74yu9)  60.88\r\n\r\n[GPTPlus 东南亚区成品号（稳定度",
@@ -644,39 +644,75 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-cabanj-free-llm-roster",
+      "id": "ghdeal-arsh624-llm4jobs-v2",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "cabanj/free-llm-roster：每日更新的免费 LLM API 清单",
-      "summary": "每日更新当前可免费使用的 LLM API 清单，涵盖 OpenRouter、Nous Portal、OpenCode Zen。",
+      "title": "llm4jobs-v2：在 GitHub Actions 上免费运行的岗位雷达",
+      "summary": "从 49 家公司招聘接口抓取应届岗位，按资历和地点筛选，每天邮件推送摘要。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "cabanj",
-      "url": "https://github.com/cabanj/free-llm-roster",
-      "posted_at": "2026-11-12 02:00 Asia/Shanghai",
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
       "engagement": {
-        "stars": 1
+        "stars": 0
       },
-      "original_title": "cabanj/free-llm-roster",
-      "original_summary": "cabanj/free-llm-roster Daily-updated roster of LLM APIs that are free to use right now (OpenRouter, Nous Portal, OpenCode Zen). Live data at llmroster.dev",
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-aipmandy-freetoken",
+      "id": "ghdeal-robhunterclaude-free-llm-api-index",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "AIPMAndy/FreeToken：免费 AI API 额度汇总",
-      "summary": "整理 Gemini、OpenRouter、Groq、DeepSeek、硅基流动等平台的免费 Token 申请入口与限额，并定期复核。",
+      "title": "free-llm-api-index：免费 AI 与 LLM API 层级",
+      "summary": "收录 AI 与 LLM API 免费层级，每行标注日期、供应商页面来源及被替换条款，数据来自 agentdeals.dev 目录。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "AIPMAndy",
-      "url": "https://github.com/AIPMAndy/FreeToken",
-      "posted_at": "2026-11-27 13:32 Asia/Shanghai",
+      "author": "robhunterclaude",
+      "url": "https://github.com/robhunterclaude/free-llm-api-index",
+      "posted_at": "2026-11-12 01:24 Asia/Shanghai",
       "engagement": {
-        "stars": 198
+        "stars": 0
       },
-      "original_title": "AIPMAndy/FreeToken",
-      "original_summary": "AIPMAndy/FreeToken 免费 AI API 额度大全（定期复核）：Gemini、OpenRouter、Groq、DeepSeek、硅基流动等免费 Token 申请入口与限额｜Free LLM API keys & credits 2026 ｜ 微信 AIPMAndy · 官网 https://metaver.vip/",
+      "original_title": "robhunterclaude/free-llm-api-index",
+      "original_summary": "robhunterclaude/free-llm-api-index Free tiers for AI and LLM APIs — every row dated, sourced to the vendor's own page, and showing the terms it replaced. Generated from the catalogue at https://agentdeals.dev.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-clanker25-awesome-free-llm-apis",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "clanker25/awesome-free-llm-apis：免费 LLM API 清单",
+      "summary": "clanker25/awesome-free-llm-apis",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "clanker25",
+      "url": "https://github.com/clanker25/awesome-free-llm-apis",
+      "posted_at": "2026-11-28 03:00 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "clanker25/awesome-free-llm-apis",
+      "original_summary": "clanker25/awesome-free-llm-apis ",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-oneforallhub-free-llm-apis-live",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "free-llm-apis-live：自动更新的免费 LLM API 目录",
+      "summary": "收录免费 LLM API 与 AI 模型，自动检测可用状态，并给出上下文窗口与 JSON/CSV 数据源。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "OneForAllHub",
+      "url": "https://github.com/OneForAllHub/free-llm-apis-live",
+      "posted_at": "2026-11-23 14:33 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "OneForAllHub/free-llm-apis-live",
+      "original_summary": "OneForAllHub/free-llm-apis-live Live auto-updated directory of free LLM APIs & AI models with automated status checks, context windows, and JSON/CSV feeds.",
       "translated_by": "model"
     },
     {
@@ -698,58 +734,98 @@
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-lifejx-free-llm-api-list",
+      "id": "ghdeal-pacocartones-free-llm-api-hub",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "lifejx/free-llm-api-list：自动巡检各平台免费大模型接口",
-      "summary": "用 GitHub Actions 每 4 小时检查各平台免费大模型接口是否可用，无需服务器。",
+      "title": "pacocartones/free-llm-api-hub：免费 LLM API 数据集",
+      "summary": "持续验证的免费额度与试用额度 LLM API 数据集，每条标注日期并链接厂商官方文档。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "lifejx",
-      "url": "https://github.com/lifejx/free-llm-api-list",
-      "posted_at": "2026-11-13 01:30 Asia/Shanghai",
+      "author": "pacocartones",
+      "url": "https://github.com/pacocartones/free-llm-api-hub",
+      "posted_at": "2026-11-28 02:07 Asia/Shanghai",
       "engagement": {
-        "stars": 1
+        "stars": 133
       },
-      "original_title": "lifejx/free-llm-api-list",
-      "original_summary": "lifejx/free-llm-api-list \\u81ea\\u52a8\\u5de1\\u68c0\\u5404\\u5927\\u5e73\\u53f0\\u514d\\u8d39\\u5927\\u6a21\\u578b\\u63a5\\u53e3\\u53ef\\u7528\\u6027\\uff0c\\u6bcf 4 \\u5c0f\\u65f6\\u66f4\\u65b0\\uff08GitHub Actions\\uff0c\\u65e0\\u9700\\u670d\\u52a1\\u5668\\uff09",
+      "original_title": "pacocartones/free-llm-api-hub",
+      "original_summary": "pacocartones/free-llm-api-hub A continuously-verified dataset of free-tier & trial-credit LLM APIs for developers. Every entry dated, sourced to the provider's own docs, and machine-readable. No hype, no dead links.",
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-infraone-inc-llm-free-tier-observed",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "llm-free-tier-observed：LLM 免费额度实测记录",
-      "summary": "记录 InfraOne 生产调用中观察到的 LLM 免费额度类型、错误种类与重置时间，每日更新，CC BY 4.0 授权。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "infraone-Inc",
-      "url": "https://github.com/infraone-Inc/llm-free-tier-observed",
-      "posted_at": "2026-11-12 00:06 Asia/Shanghai",
+      "id": "disc-everyinfra-seo-skills",
+      "source": "GitHub 自动发现",
+      "author": "everyinfra",
+      "url": "https://github.com/everyinfra/seo-skills",
+      "posted_at": "2026-11-27 20:18 Asia/Shanghai",
       "engagement": {
-        "stars": 0
+        "stars": 697
       },
-      "original_title": "infraone-Inc/llm-free-tier-observed",
-      "original_summary": "infraone-Inc/llm-free-tier-observed LLM API free tiers, observed: limit types, error kinds and reset times from InfraOne's own production calls (daily, CC BY 4.0)",
-      "translated_by": "model"
+      "category": "大模型 API 免费额度",
+      "title": "GitHub 开源：everyinfra/seo-skills",
+      "summary": "适用于 Claude Code、Codex 和 10 个代理主机的免费全球 SEO/GEO 技能——18 个市场门户、56 个 stdlib 脚本、672 个黄金测试、自我更新情报循环、监控守护进程、CI 门禁。多语言 GEO、pSEO、CWV、处罚恢复。",
+      "how": "打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。",
+      "deadline": null,
+      "original_title": "everyinfra/seo-skills",
+      "original_summary": "Free global SEO/GEO skill for Claude Code, Codex & 10 agent hosts — 18 market portals, 56 stdlib scripts, 672 golden tests, self-update intel loop, monitoring daemon, CI gates. Multilingual GEO, pSEO, CWV, penalty recovery.",
+      "translated_by": "free-translate",
+      "discovered_at": "2026-11-28 03:39 Asia/Shanghai"
     },
     {
-      "id": "ghdeal-arsh624-llm4jobs-v2",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "llm4jobs-v2：在 GitHub Actions 上免费运行的岗位雷达",
-      "summary": "从 49 家公司招聘接口抓取应届岗位，按资历和地点筛选，每天邮件推送摘要。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Arsh624",
-      "url": "https://github.com/Arsh624/llm4jobs-v2",
-      "posted_at": "2026-11-13 00:31 Asia/Shanghai",
+      "id": "disc-ash793318-windows-hardware-monitor",
+      "source": "GitHub 自动发现",
+      "author": "Ash793318",
+      "url": "https://github.com/Ash793318/windows-hardware-monitor",
+      "posted_at": "2026-11-27 23:11 Asia/Shanghai",
       "engagement": {
-        "stars": 0
+        "stars": 164
       },
-      "original_title": "Arsh624/llm4jobs-v2",
-      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
-      "translated_by": "model"
+      "category": "云服务/GPU/开发者资源",
+      "title": "GitHub 开源：Ash793318/windows-hardware-monitor",
+      "summary": "免费的开源 Windows 硬件监控应用程序，用于监控 CPU、GPU、RAM、SSD 温度、风扇转速和系统性能。",
+      "how": "打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。",
+      "deadline": null,
+      "original_title": "Ash793318/windows-hardware-monitor",
+      "original_summary": "Free open-source Windows hardware monitoring app for CPU, GPU, RAM, SSD temperatures, fan speeds and system performance.",
+      "translated_by": "free-translate",
+      "discovered_at": "2026-11-28 03:39 Asia/Shanghai"
+    },
+    {
+      "id": "disc-red2076-arch-waifu2x-image-upscaler-windows",
+      "source": "GitHub 自动发现",
+      "author": "Red2076-arch",
+      "url": "https://github.com/Red2076-arch/waifu2x-image-upscaler-windows",
+      "posted_at": "2026-11-27 23:19 Asia/Shanghai",
+      "engagement": {
+        "stars": 163
+      },
+      "category": "云服务/GPU/开发者资源",
+      "title": "GitHub 开源：Red2076-arch/waifu2x-image-upscaler-windows",
+      "summary": "免费的 AI 图片放大器和照片降噪器，适用于 Windows，由 Vulkan GPU 加速和 ncnn 神经网络提供支持。",
+      "how": "打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。",
+      "deadline": null,
+      "original_title": "Red2076-arch/waifu2x-image-upscaler-windows",
+      "original_summary": "Free AI image upscaler and photo denoiser for Windows powered by Vulkan GPU acceleration and ncnn neural networks.",
+      "translated_by": "free-translate",
+      "discovered_at": "2026-11-28 03:39 Asia/Shanghai"
+    },
+    {
+      "id": "disc-chongyangzhang92-hub-sol-next",
+      "source": "GitHub 自动发现",
+      "author": "chongyangzhang92-hub",
+      "url": "https://github.com/chongyangzhang92-hub/Sol-Next",
+      "posted_at": "2026-11-28 00:07 Asia/Shanghai",
+      "engagement": {
+        "stars": 53
+      },
+      "category": "大模型 API 免费额度",
+      "title": "GitHub 开源：chongyangzhang92-hub/Sol-Next",
+      "summary": "Sol Next 9.0.4 — 适用于 Android 和鸿蒙系统的免费开源 AI“助手”：在 1:1 背景屏幕中操作应用、4.5 秒屏幕翻译、AI 防诈骗电话和游戏 · 免费内置 DeepSeek · Wi-Fi 关闭时仍可使用 · 20 种语言",
+      "how": "打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。",
+      "deadline": null,
+      "original_title": "chongyangzhang92-hub/Sol-Next",
+      "original_summary": "Sol Next 9.0.4 — Free Open-Source AI 'Hands' on Android & HarmonyOS: Operates Apps in a 1:1 Background Screen, 4.5s Screen Translate, AI Anti-Scam Calls & Gaming · Free Built-In DeepSeek · Wi-Fi-Off Persistent · 20 Languages",
+      "translated_by": "free-translate",
+      "discovered_at": "2026-11-28 03:39 Asia/Shanghai"
     },
     {
       "id": "disc-qianyiai-kurocat",
@@ -1812,82 +1888,6 @@
       "deadline": null,
       "original_title": "zDEBRYrp/DeepSeek-Api-Free",
       "original_summary": "Бесплатный DeepSeek API работает от браузерного DeepSeek. ",
-      "translated_by": "free-translate",
-      "discovered_at": "2026-11-12 08:27 Asia/Shanghai"
-    },
-    {
-      "id": "disc-vincentping-claudefs",
-      "source": "GitHub 自动发现",
-      "author": "vincentping",
-      "url": "https://github.com/vincentping/claudeFS",
-      "posted_at": "2026-11-06 04:24 Asia/Shanghai",
-      "engagement": {
-        "stars": 19
-      },
-      "category": "大模型 API 免费额度",
-      "title": "GitHub 开源：vincentping/claudeFS",
-      "summary": "将本地文件夹连接到 claude.ai — 浏览器扩展 (Chrome/Edge)，无桌面应用程序，无 API 密钥，适用于免费计划",
-      "how": "打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。",
-      "deadline": null,
-      "original_title": "vincentping/claudeFS",
-      "original_summary": "Connect a local folder to claude.ai — a browser extension (Chrome/Edge), no desktop app, no API key, works on free plan",
-      "translated_by": "free-translate",
-      "discovered_at": "2026-11-12 08:27 Asia/Shanghai"
-    },
-    {
-      "id": "disc-februality-cowboy-mcp",
-      "source": "GitHub 自动发现",
-      "author": "februality",
-      "url": "https://github.com/februality/cowboy-mcp",
-      "posted_at": "2026-11-09 12:59 Asia/Shanghai",
-      "engagement": {
-        "stars": 19
-      },
-      "category": "大模型 API 免费额度",
-      "title": "GitHub 开源：februality/cowboy-mcp",
-      "summary": "具有撤消功能的免费 WordPress MCP 服务器 — 203 种工具以及 WordPress Abilities API 桥接器，适用于 Claude、ChatGPT、Gemini、Perplexity、Grok、Cursor、VS Code 和 Claude Code。自托管 MCP 端点，具有一键浏览器登录功能，无中继，无专业级。从 WordPress.org 安装。",
-      "how": "打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。",
-      "deadline": null,
-      "original_title": "februality/cowboy-mcp",
-      "original_summary": "Free WordPress MCP server with undo — 203 tools plus a WordPress Abilities API bridge, for Claude, ChatGPT, Gemini, Perplexity, Grok, Cursor, VS Code & Claude Code. Self-hosted Model Context Protocol endpoint with one-click browser sign-in, no relay, no Pro tier. Install from WordPress.org.",
-      "translated_by": "free-translate",
-      "discovered_at": "2026-11-12 08:27 Asia/Shanghai"
-    },
-    {
-      "id": "disc-zz1358m-awesome-gradient-free-llmopt",
-      "source": "GitHub 自动发现",
-      "author": "zz1358m",
-      "url": "https://github.com/zz1358m/Awesome-Gradient-Free-LLMOpt",
-      "posted_at": "2026-11-09 22:13 Asia/Shanghai",
-      "engagement": {
-        "stars": 19
-      },
-      "category": "大模型 API 免费额度",
-      "title": "GitHub 开源：zz1358m/Awesome-Gradient-Free-LLMOpt",
-      "summary": "大型语言模型的进化策略和零阶优化的精选集合。",
-      "how": "打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。",
-      "deadline": null,
-      "original_title": "zz1358m/Awesome-Gradient-Free-LLMOpt",
-      "original_summary": "A curated collection of evolution strategies and zeroth-order optimization for large language models.",
-      "translated_by": "free-translate",
-      "discovered_at": "2026-11-12 08:27 Asia/Shanghai"
-    },
-    {
-      "id": "disc-dushaobindoudou-dsh-freeroute",
-      "source": "GitHub 自动发现",
-      "author": "dushaobindoudou",
-      "url": "https://github.com/dushaobindoudou/dsh-freeroute",
-      "posted_at": "2026-10-22 10:08 Asia/Shanghai",
-      "engagement": {
-        "stars": 18
-      },
-      "category": "大模型 API 免费额度",
-      "title": "GitHub 开源：dushaobindoudou/dsh-freeroute",
-      "summary": "dsh 免费令牌路由",
-      "how": "打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。",
-      "deadline": null,
-      "original_title": "dushaobindoudou/dsh-freeroute",
-      "original_summary": "dsh free token route",
       "translated_by": "free-translate",
       "discovered_at": "2026-11-12 08:27 Asia/Shanghai"
     }
