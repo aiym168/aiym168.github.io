@@ -1,18 +1,20 @@
 {
  "counts": {
-  "archived": 30,
+  "archived": 32,
   "deadline_extracted": 7,
-  "drop:duplicate": 703,
+  "drop:duplicate": 704,
   "drop:empty_summary": 89,
-  "drop:negative_signal": 188,
-  "drop:no_clear_offer": 875,
-  "drop:not_ai": 736,
+  "drop:negative_signal": 189,
+  "drop:no_clear_offer": 878,
+  "drop:not_ai": 730,
   "drop:too_old_pre2025": 62,
-  "google_news_resolved": 915,
-  "google_news_total": 915,
-  "kept_total": 255,
+  "google_news_resolved": 918,
+  "google_news_total": 918,
+  "kept_total": 259,
   "net:gnews_cache_hit": 915,
-  "raw_total": 2908
+  "net:gnews_resolved_net": 3,
+  "new_this_run": 4,
+  "raw_total": 2911
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
@@ -20,6 +22,7 @@
    "@scholar_corner 分享：迪拜政府免费 AI 课程，颁发免费证书 全球开放通过迪拜未来基金会的“百万提示工程",
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
    "这款开源 Mac 通话与会议录音工具支持本地模型或免费云服务",
+   "awesome-verified-free-ai：核实过的 301 个免费 AI 目录",
    "kllm：在免费的 Kaggle GPU 上运行开放权重 LLM（Qwen、GGUF、abliterated）",
    "convenient_window_free：适用于热角、边缘隐藏、鼠标手势和布局的 Windows 11 窗口工具",
    "free-llm-router：一个 API 密钥，15+ 个免费提供商",
@@ -27,8 +30,7 @@
    "awesome-cyber-security-heaven：Awesome Cyber​​ Security Heave",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
-   "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
-   "Beatreel：根据一个提示制作讲解短视频"
+   "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本"
   ],
   "empty_summary": [
    "按 iPhone、iPad 和不同内存的 Mac 推荐 Gemma、Qwen 等本地免费模型",
@@ -59,6 +61,9 @@
    "可让 Grok Bot 直接执行 SEO 工作，并提供免费的 AI 可见度审计"
   ],
   "no_clear_offer": [
+   "Audio8 TTS 是开源文本转语音模型，能用短音频样本克隆音色，并在本地生成自然语音",
+   "作者投入两万美元 API 额度，让不同 AI 模型对战社交推理游戏《血染钟楼》，观察其表现",
+   "面向博士生、博士后和 PI 等各阶段研究者，按研究项目提供可与合作者共享的额度",
    "Ginuwine 发布了一款免费的 AI 视频游戏，目的是从虚构的索尼音乐总部“赢回”他的主人：Ginuwine",
    "打造属于您自己的 AMD AI DevDay 的三种方式：向 AI 行业领导者学习、选择实践研讨会或获得 ROCm 认证",
    "推文给出三步操作：打开模型、接入免费的 Polar Rank MCP，再粘贴指定提示词",
@@ -67,10 +72,7 @@
    "@svpino 分享：这是全球最大的 AI 活动之一，开发者现可免费观看全部场次",
    "@svpino 分享：这是全球最大的 AI 活动之一，开发者现可免费观看全部场次",
    "@seetauniversity 分享：为 S6离校生提供免费 AI 培训",
-   "@VaibhavSisinty 分享：这些免费技能可让随手生成的项目摆脱千篇一律的默认样式",
-   "Pro、Max、Ultra 与 Team 用户可在设置中领取 11 月 10 日起的重置额度",
-   "@ManningBooks 分享：这个假期，通过曼宁的免费 AI 应用现实检查来测试一下",
-   "@joelcomm 分享：这个免费助手带老兵走完索赔流程，让人不必花钱请人帮忙，另有一个面向退役过渡期人群"
+   "@VaibhavSisinty 分享：这些免费技能可让随手生成的项目摆脱千篇一律的默认样式"
   ],
   "not_ai": [
    "免费 Seedance 2.5 代已延长至 12 月 1 日",
@@ -101,17 +103,17 @@
    "Stability AI 推出 Stable Diffusion XL 1.0，现已在 Amazon Bedrock 上"
   ]
  },
- "generated_at": "2026-11-27T15:57:53+08:00",
+ "generated_at": "2026-11-27T17:04:59+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-27T15:57:53+08:00",
+  "checked_at": "2026-11-27T17:04:58+08:00",
   "counts": {
-   "gone": 1,
-   "ok": 225,
-   "recheck": 2
+   "gone": 2,
+   "ok": 222,
+   "recheck": 1
   },
-  "hidden": 1
+  "hidden": 2
  },
- "seconds": 1.8,
+ "seconds": 2.5,
  "side": {
   "github_hot": {
    "drop:duplicate": 3,
@@ -120,10 +122,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 2,
-   "drop:not_ai": 12,
-   "drop:not_ai_strict": 14,
-   "kept": 12,
+   "drop:negative_signal": 3,
+   "drop:not_ai": 17,
+   "drop:not_ai_strict": 4,
+   "kept": 16,
    "raw": 40
   }
  }
