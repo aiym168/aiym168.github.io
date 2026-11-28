@@ -2,20 +2,16 @@
  "counts": {
   "archived": 31,
   "deadline_extracted": 7,
-  "drop:duplicate": 741,
+  "drop:duplicate": 742,
   "drop:empty_summary": 97,
-  "drop:negative_signal": 199,
+  "drop:negative_signal": 198,
   "drop:no_clear_offer": 909,
-  "drop:not_ai": 770,
+  "drop:not_ai": 771,
   "drop:too_old_pre2025": 62,
   "google_news_resolved": 946,
   "google_news_total": 946,
-  "kept_total": 261,
-  "net:gnews_cache_hit": 940,
-  "net:gnews_resolved_net": 6,
-  "net:tco_expanded": 3,
-  "net:tco_failed": 11,
-  "new_this_run": 2,
+  "kept_total": 260,
+  "net:gnews_cache_hit": 946,
   "raw_total": 3039
  },
  "curation_version": "2026-11-09.c3",
@@ -105,31 +101,32 @@
    "Stability AI 推出 Stable Diffusion XL 1.0，现已在 Amazon Bedrock 上"
   ]
  },
- "generated_at": "2026-11-28T06:51:36+08:00",
+ "generated_at": "2026-11-28T09:22:56+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-28T06:51:35+08:00",
+  "checked_at": "2026-11-28T09:22:56+08:00",
   "counts": {
-   "gone": 1,
+   "gone": 2,
    "ok": 224,
-   "recheck": 2
+   "recheck": 2,
+   "unsure": 2
   },
-  "hidden": 1
+  "hidden": 2
  },
- "seconds": 5.5,
+ "seconds": 1.9,
  "side": {
   "github_hot": {
-   "drop:duplicate": 3,
+   "drop:duplicate": 4,
    "drop:not_ai": 1,
-   "kept": 26,
+   "kept": 25,
    "raw": 30
   },
   "hot_topics": {
    "drop:duplicate": 1,
    "drop:negative_signal": 2,
-   "drop:not_ai": 8,
-   "drop:not_ai_strict": 6,
-   "kept": 23,
-   "raw": 40
+   "drop:not_ai": 3,
+   "drop:not_ai_strict": 5,
+   "kept": 26,
+   "raw": 37
   }
  }
 }

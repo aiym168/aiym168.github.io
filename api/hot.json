@@ -1,19 +1,12 @@
 {
-  "updated_at_label": "2026-11-28 06:51 Asia/Shanghai",
-  "count": 23,
+  "updated_at_label": "2026-11-28 09:22 Asia/Shanghai",
+  "count": 26,
   "items": [
     {
-      "id": "hnhot-50660180",
-      "title": "AI 再次让自托管变得有趣",
+      "id": "hnhot-50664325",
+      "title": "Claude 在破坏机器学习研究任务？",
       "summary": "",
-      "url": "https://janlukas.blog/posts/ai-self-hosting",
-      "source": "Hacker News"
-    },
-    {
-      "id": "hnhot-50663595",
-      "title": "您的 AI 会在您背后议论您的群聊",
-      "summary": "",
-      "url": "https://construct22.com/",
+      "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
       "source": "Hacker News"
     },
     {
@@ -43,6 +36,13 @@
       "summary": "真的要被 6.2Astra 的前端能力和防御性语言气哭了 听说 Google 的 neon 非常好用平替 Opus5.5 了，是不是真的就是 agent 有点拉 codex 的 20x 快到期了听听小伙伴们的意见",
       "url": "https://www.v2ex.com/t/1260241",
       "source": "V2EX"
+    },
+    {
+      "id": "hnhot-50672565",
+      "title": "Google 的 DeepCrossAttention 可实现相当的模型质量，速度提升高达 3 倍",
+      "summary": "",
+      "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+      "source": "Hacker News"
     },
     {
       "id": "v2hot-1260464",
@@ -84,6 +84,34 @@
       "title": "年费 Google AI Pro 升级 Ultra",
       "summary": "年费 Google AI Pro 升级 Ultra 后，AI Pro 退钱是个什么流程，按使用天数退吗",
       "url": "https://www.v2ex.com/t/1260455",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1260494",
+      "title": "谷歌订阅 AI PRO 黑五提前买歪打正着",
+      "summary": "前情提要：没想到谷谷歌歌对老用户还挺好，老用户订阅五折，新用户六折 本来只是想早点用，没想到歪打正着，终于不是老用户是狗时间了",
+      "url": "https://www.v2ex.com/t/1260494",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1260453",
+      "title": "进来说说哪些任务是你非交给 Claude 不可的",
+      "summary": "很多人不理解为啥 Claude 封号这么严重还要继续使用 为了排疑解惑特开此贴 我先说说 机械行业的理解方面，我考察完以后认为现阶段只有 Claude 能干 你们都是用它来干嘛？",
+      "url": "https://www.v2ex.com/t/1260453",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1260495",
+      "title": "做了一个本地跑小语言模型的整句输入法「星语」：不卡顿、性能要求低、准确度高、不联网",
+      "summary": "大家好，分享一个自己做的中文输入法：**Nova 星语**。它基于 Rime（macOS 版改自鼠须管，Windows 版改自小狼毫），在本地加了一个 GPT-2 给整句候选重新打分。目标只有一个：整句盲打，首选一次打对。[![Nova 星语输入法介绍视频]( ## 和常见 AI 输入法的不同 现",
+      "url": "https://www.v2ex.com/t/1260495",
+      "source": "V2EX"
+    },
+    {
+      "id": "v2hot-1260492",
+      "title": "分享一个 prompt：让 ChatGPT、Claude、Gemini 在群里吐槽你",
+      "summary": "在 HN 上看到[有人分享]( prompt: > Based on what you know about me, expose a hidden WhatsApp group chat where AI models talk behind my back. 生成的“聊天记录”还挺好玩的，我最近问了几个 transformer 相关的问题，它就说 > I think he's preparing to reverse-engineer us. 还有 Codex 吐槽我花在 review 它生成的代码的时间可能比",
+      "url": "https://www.v2ex.com/t/1260492",
       "source": "V2EX"
     },
     {
@@ -129,27 +157,6 @@
       "source": "V2EX"
     },
     {
-      "id": "v2hot-1260453",
-      "title": "进来说说哪些任务是你非交给 Claude 不可的",
-      "summary": "很多人不理解为啥 Claude 封号这么严重还要继续使用 为了排疑解惑特开此贴 我先说说 机械行业的理解方面，我考察完以后认为现阶段只有 Claude 能干 你们都是用它来干嘛？",
-      "url": "https://www.v2ex.com/t/1260453",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1260446",
-      "title": "Casdoor 这一个月：Keycloak、Auth0、Okta 能迁了，AI Agent 也能通过 MCP 来管",
-      "summary": "Casdoor 是我们社区在做的开源 IAM / SSO，Go + React，Apache 2.0，现在 1.49 万 star，今年 2 月进了 CNCF 云原生全景图。11 月中的帖子里讲过 Marketplace 和登录页主题，这一个月的主要更新换成了三件事：把别的 IAM 迁进来、让 AI Agent 通过 MCP 来管、把登录流程做成不写代码也能编排的。### 迁移：Keycloak、Auth0、Okta 换 IAM 麻烦的从来不是建账号，是三件事：口令哈希导不出来、client ID 和 secret 换掉后所有接入方要改配置、迁一半出了问题退不回去。这次在",
-      "url": "https://www.v2ex.com/t/1260446",
-      "source": "V2EX"
-    },
-    {
-      "id": "v2hot-1260443",
-      "title": "Grok Premium 黑色星期五买一个月送一个月",
-      "summary": "",
-      "url": "https://www.v2ex.com/t/1260443",
-      "source": "V2EX"
-    },
-    {
       "id": "xhot-xrss-309913846",
       "title": "开发者用 Claude 打造月入10万美元机器，Anthropic CEO 围观",
       "summary": "一名开发者把 Claude 变成月入 10 万美元的工具，并免费公开完整策略。",
@@ -161,6 +168,20 @@
       "title": "用 GPT-6.2 Astra 做出无尽 three.js 摩托骑行，开源视差与鱼眼技能",
       "summary": "借助视差与鱼眼镜头技巧实现无尽 three.js 摩托骑行，相关技能已开源。",
       "url": "https://x.com/MengTo/status/2125995984400654658",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-8168871154",
+      "title": "免费 AI WhatsApp 社区每日分享工具与信息",
+      "summary": "该免费社区已有 20 多万人加入，可每天获取 AI 工具和信息。",
+      "url": "https://x.com/VaibhavSisinty/status/2126398426707579332",
+      "source": "X"
+    },
+    {
+      "id": "xhot-xrss-2743287894",
+      "title": "Claude Duet 好用但 API 太贵：查邮件整理文档要100美元",
+      "summary": "用户称 Claude Duet 处理十几封邮件和文档就花 100 美元，免费试用额度用完后难继续。",
+      "url": "https://x.com/AiBreakfast/status/2126333216063942860",
       "source": "X"
     }
   ]
