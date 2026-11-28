@@ -1,7 +1,7 @@
 {
   "date": "2026-11-28",
-  "updated_at": "2026-11-28T10:56+08:00",
-  "updated_at_label": "2026-11-28 10:56 Asia/Shanghai",
+  "updated_at": "2026-11-28T18:05+08:00",
+  "updated_at_label": "2026-11-28 18:05 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -16,7 +16,7 @@
       "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-ceo-pushes-back-axios-184139218.html",
       "posted_at": "2026-11-28 07:07 Asia/Shanghai",
       "engagement": {
-        "points": 5,
+        "points": 6,
         "comments": 0
       },
       "original_title": "Anthropic CEO pushes back on Axios reporting on AI and free will",
@@ -73,7 +73,7 @@
       "url": "https://www.bobebot.com/body",
       "posted_at": "2026-11-27 23:29 Asia/Shanghai",
       "engagement": {
-        "points": 3,
+        "points": 4,
         "comments": 0
       },
       "original_title": "Show HN: Open-source ESP32 desk body for a local AI assistant",
@@ -328,6 +328,25 @@
       "translated_by": "model"
     },
     {
+      "id": "hn-50674717",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "黎曼猜想证明被改写为可读的数学论文",
+      "summary": "作者把 Levent Alpoge 的形式化证明写成人类可读论文，接续 Weil 曲线证明并推广到 Spec ℤ。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "dtrejopizzo",
+      "url": "https://news.ycombinator.com/item?id=50674717",
+      "posted_at": "2026-11-28 12:34 Asia/Shanghai",
+      "engagement": {
+        "points": 10,
+        "comments": 1
+      },
+      "original_title": "The Riemann Hypothesis proof written out as readable papers",
+      "original_summary": "The Riemann Hypothesis proof written out as readable papers Levent Alpoge&#x27;s formal proof gives a route to GRH for Dirichlet L-functions, and with it the Riemann hypothesis. I wrote that proof out as mathematics papers a person can read, and placed it as the last row of a series that follows Weil&#x27;s proof for curves, carried over to Spec ℤ.<p>The chain is: three theorems on integral modular forms on unitary groups ⇒ a main inequality ⇒ a one-sided bound ⇒ a Landau-type criterion ⇒ GRH ⇒ RH.<p>--Guide, 10 pages, no proofs: https:&#x2F;&#x2F;github.com&#x2F;dtrejopizzo&#x2F;riemann&#x2F;blob&#x2F;main&#x2F;04-papers&#x2F;57-riemann-hypothesis-along-the-rows-of-weils-proof&#x2F;riemann-hypothesis-rows-weil-proof-guide.pdf\n--Map of the logical path, with a link to the paper that proves",
+      "translated_by": "model"
+    },
+    {
       "id": "hn-50670977",
       "source": "Hacker News",
       "category": "其他科技",
@@ -537,21 +556,93 @@
       "translated_by": "model"
     },
     {
-      "id": "v2ex-1260513",
+      "id": "v2ex-1260587",
       "source": "V2EX",
       "category": "其他科技",
-      "title": "有了 AI 之后，开发越来越容易，推广却越来越难？",
-      "summary": "有了 AI 之后，开发越来越容易，推广却越来越难？\n最近用 AI 辅助开发了几个项目，感觉开发效率确实提高了不少，但产品上线后，怎么找到用户依然是个难题。\r\n\r\n尤其是微信小程序，个人开发者似乎没有太多低成本的推广渠道。\r\n\r\n于是最近又折腾了一个微信小程序版的 Product Hunt：https://minihunt.top\r\n\r\n目前收录了 2000 多个小程序，支持开发者免费提交自己的作品，算是对产品推广方向的一次尝试。\r\n\r\n想和大家讨论一下，当 AI 逐渐降低软件开发门槛之后，获取用户会不会成为独立开发者最大的挑战？\r\n\r\n大家平时除了写代码，有没有研究过产品推广和获客？",
+      "title": "用纯原生 HTML/CSS/JS 做了一个免费无广告的「猫咪数独」逻辑解谜网页游戏（310 关唯一解 + 15 只手绘猫）",
+      "summary": "用纯原生 HTML/CSS/JS 做了一个免费无广告的「猫咪数独」逻辑解谜网页游戏（310 关唯一解 + 15 只手绘猫）\n平时很喜欢 LinkedIn Queens / Star Battle 那种不用算数字、纯靠行列和色块空间排除的逻辑谜题，但每天只有一关玩不过瘾，于是用零框架原生 HTML/CSS/JS 做了个猫咪主题网页小游戏，刚补完简体中文版，欢迎大家摸鱼试玩并拍砖：\r\n\r\n在线试玩（中文）：https://catsudoku.org/zh/\r\n英文原版：https://catsudoku.org/\r\n玩法图解（含普通第 1 关零猜谜第一步推导）：https://catsudoku.org/zh/how-to-play/\r\n\r\n### 核心规则（10 秒上手）\r\n不是填 1–9 的传统数字数独，而是猫咪放置逻辑棋盘：\r\n1. 每行、每列、每个彩色拼布区域各放恰好 1 只小猫；\r\n2. 任意两只小猫不能相邻（包括斜对角 8 邻域）。\r\n\r\n### 几个自己打磨得比较在意的小细节\r\n- **310 道原创唯一解关卡**：用固定种子生成器和求解器校验了所有棋盘的色块连通性与唯一解，不靠蒙。包含普通 6×6（50 关）、困难 8×8（144 关）、大师 9×9（116 关，无起始猫）。\r\n- **零框架、无广告、免登录**：没有横幅也没有弹窗广告，首屏直出可玩，浏览器 `localStorage` 自动保存最近 24 盘进度与通关记录。\r\n- **顺手的排除交互**：桌面端在「放猫」模式下直接**右键**就能标/消 `×` 排除草稿；手机端切到「× 排除」支持按住拖动连标。\r\n- **15 只原创手绘 SVG 小猫图鉴**：通关会陆续收养不同品种的小猫（奶牛、黑猫、三花、狸花、缅因、无毛猫、招财猫等），点击棋盘上方趴着的小猫摸头会撒娇叫一声。\r\n\r\n欢迎大家试试普通第 1",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "weisein",
-      "url": "https://www.v2ex.com/t/1260513",
-      "posted_at": "2026-11-28 10:16 Asia/Shanghai",
+      "author": "hongcsd",
+      "url": "https://www.v2ex.com/t/1260587",
+      "posted_at": "2026-11-28 17:15 Asia/Shanghai",
       "engagement": {
-        "replies": 7
+        "replies": 0
       },
-      "original_title": "有了 AI 之后，开发越来越容易，推广却越来越难？",
-      "original_summary": "有了 AI 之后，开发越来越容易，推广却越来越难？\n最近用 AI 辅助开发了几个项目，感觉开发效率确实提高了不少，但产品上线后，怎么找到用户依然是个难题。\r\n\r\n尤其是微信小程序，个人开发者似乎没有太多低成本的推广渠道。\r\n\r\n于是最近又折腾了一个微信小程序版的 Product Hunt：https://minihunt.top\r\n\r\n目前收录了 2000 多个小程序，支持开发者免费提交自己的作品，算是对产品推广方向的一次尝试。\r\n\r\n想和大家讨论一下，当 AI 逐渐降低软件开发门槛之后，获取用户会不会成为独立开发者最大的挑战？\r\n\r\n大家平时除了写代码，有没有研究过产品推广和获客？",
+      "original_title": "用纯原生 HTML/CSS/JS 做了一个免费无广告的「猫咪数独」逻辑解谜网页游戏（310 关唯一解 + 15 只手绘猫）",
+      "original_summary": "用纯原生 HTML/CSS/JS 做了一个免费无广告的「猫咪数独」逻辑解谜网页游戏（310 关唯一解 + 15 只手绘猫）\n平时很喜欢 LinkedIn Queens / Star Battle 那种不用算数字、纯靠行列和色块空间排除的逻辑谜题，但每天只有一关玩不过瘾，于是用零框架原生 HTML/CSS/JS 做了个猫咪主题网页小游戏，刚补完简体中文版，欢迎大家摸鱼试玩并拍砖：\r\n\r\n在线试玩（中文）：https://catsudoku.org/zh/\r\n英文原版：https://catsudoku.org/\r\n玩法图解（含普通第 1 关零猜谜第一步推导）：https://catsudoku.org/zh/how-to-play/\r\n\r\n### 核心规则（10 秒上手）\r\n不是填 1–9 的传统数字数独，而是猫咪放置逻辑棋盘：\r\n1. 每行、每列、每个彩色拼布区域各放恰好 1 只小猫；\r\n2. 任意两只小猫不能相邻（包括斜对角 8 邻域）。\r\n\r\n### 几个自己打磨得比较在意的小细节\r\n- **310 道原创唯一解关卡**：用固定种子生成器和求解器校验了所有棋盘的色块连通性与唯一解，不靠蒙。包含普通 6×6（50 关）、困难 8×8（144 关）、大师 9×9（116 关，无起始猫）。\r\n- **零框架、无广告、免登录**：没有横幅也没有弹窗广告，首屏直出可玩，浏览器 `localStorage` 自动保存最近 24 盘进度与通关记录。\r\n- **顺手的排除交互**：桌面端在「放猫」模式下直接**右键**就能标/消 `×` 排除草稿；手机端切到「× 排除」支持按住拖动连标。\r\n- **15 只原创手绘 SVG 小猫图鉴**：通关会陆续收养不同品种的小猫（奶牛、黑猫、三花、狸花、缅因、无毛猫、招财猫等），点击棋盘上方趴着的小猫摸头会撒娇叫一声。\r\n\r\n欢迎大家试试普通第 1",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1260570",
+      "source": "V2EX",
+      "category": "云服务/GPU/开发者资源",
+      "title": "robots.txt 早写了，爬虫还是把我免费的 Worker 刷到 8840 次超限",
+      "summary": "robots.txt 早写了，爬虫还是把我免费的 Worker 刷到 8840 次超限\n10 月 12 号收到 Cloudflare 的邮件：过去 24 小时，Workers 有一千多次达到免费套餐的 CPU 时间上限。进后台一看，实际是 8840 次，用户那边直接 error 1102，页面打不开。\r\n\r\n第一反应是升级付费套餐。手放到按钮上又停了一下，因为我先看了眼请求量：24 小时大概两万次，比平时高出一大截。这个量不对劲，我就想先弄清楚是谁在刷。\r\n\r\nWorkers 的指标能按脚本和状态拆开，能看到 exceededResources 那一栏。再拉请求明细，按来源的 ASN 和「已验证爬虫」分组，答案很清楚：九成来自一家云厂商的地址段，请求头伪装成 Chrome；外加一个 AI 公司的爬虫。它们刷的全是筛选、排序页，参数组合是无穷的。\r\n\r\n按理说这几个页面不该被爬。robots.txt 里早就写了不许带查询串的 URL 进来，它们不看。边缘缓存也帮不上忙，每个组合都是第一次见，一次都命中不了，只能完整地服务端渲染一遍，一个请求 20 到 70 毫秒 CPU。\r\n\r\n免费版的上限是 10 毫秒。\r\n\r\n修法没多复杂：在 Worker 入口、渲染之前，先看请求的 ASN 和已验证爬虫类别，命中就直接回 403，不到 1 毫秒。那家云厂商的 GET 全拦；AI 爬虫只拦带查询串的，普通页面还让它爬；POST 放行，别把支付回调这类 webhook 拦掉。\r\n\r\n上线以后，超限当场归零。\r\n\r\n回头看，值得说的就两点。robots.txt 是给守规矩的爬虫看的，对不守规矩的等于没有。还有，站里只要有筛选、排序、分页这种带查询串的链接，又是全服务端渲染，上线时就得有这一层，别等邮件来了才想。我这次要是直接点了升级，等于花着钱让人继续刷。\r\n\r\n想问下也在用 Workers",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ken989",
+      "url": "https://www.v2ex.com/t/1260570",
+      "posted_at": "2026-11-28 15:27 Asia/Shanghai",
+      "engagement": {
+        "replies": 4
+      },
+      "original_title": "robots.txt 早写了，爬虫还是把我免费的 Worker 刷到 8840 次超限",
+      "original_summary": "robots.txt 早写了，爬虫还是把我免费的 Worker 刷到 8840 次超限\n10 月 12 号收到 Cloudflare 的邮件：过去 24 小时，Workers 有一千多次达到免费套餐的 CPU 时间上限。进后台一看，实际是 8840 次，用户那边直接 error 1102，页面打不开。\r\n\r\n第一反应是升级付费套餐。手放到按钮上又停了一下，因为我先看了眼请求量：24 小时大概两万次，比平时高出一大截。这个量不对劲，我就想先弄清楚是谁在刷。\r\n\r\nWorkers 的指标能按脚本和状态拆开，能看到 exceededResources 那一栏。再拉请求明细，按来源的 ASN 和「已验证爬虫」分组，答案很清楚：九成来自一家云厂商的地址段，请求头伪装成 Chrome；外加一个 AI 公司的爬虫。它们刷的全是筛选、排序页，参数组合是无穷的。\r\n\r\n按理说这几个页面不该被爬。robots.txt 里早就写了不许带查询串的 URL 进来，它们不看。边缘缓存也帮不上忙，每个组合都是第一次见，一次都命中不了，只能完整地服务端渲染一遍，一个请求 20 到 70 毫秒 CPU。\r\n\r\n免费版的上限是 10 毫秒。\r\n\r\n修法没多复杂：在 Worker 入口、渲染之前，先看请求的 ASN 和已验证爬虫类别，命中就直接回 403，不到 1 毫秒。那家云厂商的 GET 全拦；AI 爬虫只拦带查询串的，普通页面还让它爬；POST 放行，别把支付回调这类 webhook 拦掉。\r\n\r\n上线以后，超限当场归零。\r\n\r\n回头看，值得说的就两点。robots.txt 是给守规矩的爬虫看的，对不守规矩的等于没有。还有，站里只要有筛选、排序、分页这种带查询串的链接，又是全服务端渲染，上线时就得有这一层，别等邮件来了才想。我这次要是直接点了升级，等于花着钱让人继续刷。\r\n\r\n想问下也在用 Workers",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1260569",
+      "source": "V2EX",
+      "category": "AI 产品会员/试用",
+      "title": "分享一个磁盘清理工具-黑五限时免费！",
+      "summary": "分享一个磁盘清理工具-黑五限时免费！\n分享一个磁盘清理工具解决了一些 Mole,Radix 使用下来的痛点。让软件、Agent 产生的垃圾无处遁形，让有价值的文件一直被记得。\r\n\r\n不想删聊天记录，又想清理企业微信的空间是真对症(我最初就是为了这个目的写的)\r\n\r\n不过目前已经演变为查找、预览、选择、清理、收集的通用工具欢迎大家试用\r\n\r\n标题调皮，永久开源免费\r\n\r\nfindo -q rule:wework\r\n\r\nhttps://github.com/ygcaicn/findo",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ygcaicn",
+      "url": "https://www.v2ex.com/t/1260569",
+      "posted_at": "2026-11-28 15:19 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "分享一个磁盘清理工具-黑五限时免费！",
+      "original_summary": "分享一个磁盘清理工具-黑五限时免费！\n分享一个磁盘清理工具解决了一些 Mole,Radix 使用下来的痛点。让软件、Agent 产生的垃圾无处遁形，让有价值的文件一直被记得。\r\n\r\n不想删聊天记录，又想清理企业微信的空间是真对症(我最初就是为了这个目的写的)\r\n\r\n不过目前已经演变为查找、预览、选择、清理、收集的通用工具欢迎大家试用\r\n\r\n标题调皮，永久开源免费\r\n\r\nfindo -q rule:wework\r\n\r\nhttps://github.com/ygcaicn/findo",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1260564",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "做了个 AI 网吧的服务，免费使用 Claude Pro 账号",
+      "summary": "做了个 AI 网吧的服务，免费使用 Claude Pro 账号\n招募几个内测用户免费使用 Claude Pro，需要的报名，网址：https://host.bitailab.com/",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "abelhli",
+      "url": "https://www.v2ex.com/t/1260564",
+      "posted_at": "2026-11-28 14:42 Asia/Shanghai",
+      "engagement": {
+        "replies": 5
+      },
+      "original_title": "做了个 AI 网吧的服务，免费使用 Claude Pro 账号",
+      "original_summary": "做了个 AI 网吧的服务，免费使用 Claude Pro 账号\n招募几个内测用户免费使用 Claude Pro，需要的报名，网址：https://host.bitailab.com/",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1260555",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "黑五福利｜注册送 500M 动态流量，另放 4 个 1G CDK，先到先得",
+      "summary": "黑五福利｜注册送 500M 动态流量，另放 4 个 1G CDK，先到先得\n各位 V 友，黑五期间我们 Proxy001 这边上了一波活动。做数据采集、跨境电商、SEO 监控、广告验证或者社媒矩阵的朋友，可以先白嫖测试，跑通自己的业务再考虑付费。\r\n\r\n## 先说福利，一共两件事\r\n\r\n**1. 注册即送 500M 动态流量**\r\n新用户注册后自动到账，住宅动态 IP 可直接跑测试，不用先充值。\r\n\r\n**2. 额外放出 4 个 1G 流量 CDK 兑换码，先到先得，兑完即止：**\r\n\r\n- CDK 1：[TLI0OUHH28OL4GYLGUDDI1KHV7EDGFDX]\r\n- CDK 2：[2VWCRJOIVW14W0UIPPN48M535IUJ53KA]\r\n- CDK 3：[EJ2C4VPMA6PL80JPGW231YBA8TF67OAR]\r\n- CDK 4：[ZISCUN0A40Z2I6S91MMNVAJT7GK2G43N]\r\n\r\n兑换方式：登录后进入控制台的 CDK/兑换码入口输入即可。\r\n\r\n**没抢到 CDK 的朋友也不用着急**，可以通过 Telegram 联系我们，有任何问题都可以协助处理：\r\nhttps://t.me/ipproxy588\r\n\r\n## 产品简单介绍（官方参数，供参考）\r\n\r\n- **IP 池规模**：100M+ 住宅 / 数据中心 / 移动 IP，覆盖 200+ 国家和地区，支持国家、州、城市级定向\r\n- **动态住宅代理**：自动轮换 + 粘性会话（最长 180 分钟），全协议支持、无限并发\r\n- **静态住宅代理**：真实 ISP 家庭 IP，独享不共享，$2.9/IP/月起，不限流量\r\n- **静态数据中心代理**：$1.9/IP/月起，适合稳定长连接场景\r\n- **无限住宅套餐**：$35/天，不限流量，支持视频平台类高带宽场景",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "wansan109",
+      "url": "https://www.v2ex.com/t/1260555",
+      "posted_at": "2026-11-28 14:10 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "黑五福利｜注册送 500M 动态流量，另放 4 个 1G CDK，先到先得",
+      "original_summary": "黑五福利｜注册送 500M 动态流量，另放 4 个 1G CDK，先到先得\n各位 V 友，黑五期间我们 Proxy001 这边上了一波活动。做数据采集、跨境电商、SEO 监控、广告验证或者社媒矩阵的朋友，可以先白嫖测试，跑通自己的业务再考虑付费。\r\n\r\n## 先说福利，一共两件事\r\n\r\n**1. 注册即送 500M 动态流量**\r\n新用户注册后自动到账，住宅动态 IP 可直接跑测试，不用先充值。\r\n\r\n**2. 额外放出 4 个 1G 流量 CDK 兑换码，先到先得，兑完即止：**\r\n\r\n- CDK 1：[TLI0OUHH28OL4GYLGUDDI1KHV7EDGFDX]\r\n- CDK 2：[2VWCRJOIVW14W0UIPPN48M535IUJ53KA]\r\n- CDK 3：[EJ2C4VPMA6PL80JPGW231YBA8TF67OAR]\r\n- CDK 4：[ZISCUN0A40Z2I6S91MMNVAJT7GK2G43N]\r\n\r\n兑换方式：登录后进入控制台的 CDK/兑换码入口输入即可。\r\n\r\n**没抢到 CDK 的朋友也不用着急**，可以通过 Telegram 联系我们，有任何问题都可以协助处理：\r\nhttps://t.me/ipproxy588\r\n\r\n## 产品简单介绍（官方参数，供参考）\r\n\r\n- **IP 池规模**：100M+ 住宅 / 数据中心 / 移动 IP，覆盖 200+ 国家和地区，支持国家、州、城市级定向\r\n- **动态住宅代理**：自动轮换 + 粘性会话（最长 180 分钟），全协议支持、无限并发\r\n- **静态住宅代理**：真实 ISP 家庭 IP，独享不共享，$2.9/IP/月起，不限流量\r\n- **静态数据中心代理**：$1.9/IP/月起，适合稳定长连接场景\r\n- **无限住宅套餐**：$35/天，不限流量，支持视频平台类高带宽场景",
       "translated_by": "free-translate"
     },
     {
@@ -566,155 +657,11 @@
       "url": "https://www.v2ex.com/t/1260512",
       "posted_at": "2026-11-28 10:13 Asia/Shanghai",
       "engagement": {
-        "replies": 6
+        "replies": 21
       },
       "original_title": "译哥 Poly：Mac 本机把视频换成另一种语言，并用原片音色配音（v 站用户送 10 个买断码）",
       "original_summary": "译哥 Poly：Mac 本机把视频换成另一种语言，并用原片音色配音（v 站用户送 10 个买断码）\n我平时做视频，经常要把一条视频换成另一种语言：要么把中文视频发到海外，要么把生肉英文教程转成中文看。只翻字幕准确率堪忧，云端 AI 配音按分钟收费、声音还是那几个熟悉的「傲娇大姐孤独小帅」，自己手搓「扒词 → 翻译 → TTS → 对轨 → 压字幕」一条 5 分钟的片子能耗掉一下午。\r\n\r\n所以我用原生 Swift 写了个 macOS 应用：**译哥 Poly**。视频拖进去点开始，不到 1 分钟出成片：换了语言、保留原片音色，双语字幕一并压好（目前中 ↔ 英）。\r\n\r\n效果（47 秒中文口播 → 英文配音成片），官网首页能直接看视频：https://poly.uulili.com\r\n\r\n![左边原片，右边译哥配好的英文版](https://poly.uulili.com/media/hero-poster.jpg)\r\n\r\n### 适合场景和人群\r\n* 单人口播：适合你把中文视频一键做成海外版发布（反过来也行）\r\n* 软件录屏教程：让油管的高质量英文博主，开口说中文\r\n* 课程讲座翻译：产品教程可以用这种方式翻译成其他语言\r\n* 快速做双语字幕：为视频快速制作自己指定样式的双语字幕\r\n\r\n### 核心功能和技术栈\r\n\r\n![主界面：拖进去，点开始](https://poly.uulili.com/img/main.jpg)\r\n识别和配音全部在 Apple Silicon 本机跑，视频不上传。\r\n\r\n- **识别**：SenseVoice（sherpa-onnx）+ Silero VAD；英文、日文用系统语音识别。\r\n- **翻译**：整句翻译，不按碎词断句。Apple Translation（免费、本机）/ Google / DeepSeek / 智谱等多种渠道，Key 安全",
       "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1260510",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "折腾了一个以“兴趣街区”为概念的轻量中文社区：芒果街 (stmango)",
-      "summary": "折腾了一个以“兴趣街区”为概念的轻量中文社区：芒果街 (stmango)\n大家好，前几天刚把一个 10 多年搁置的站点，重新进行了打磨，目前社区项目已正式上线，叫芒果街（stmango），想趁着周末发出来请大家体验并拍砖。\r\n• 访问地址： https://www.stmango.com\r\n• 关于页面： https://www.stmango.com/about\r\n\r\n为什么要做这个网站？\r\n\r\n现在很多内容平台越来越像算法驱动的信息流，人和人之间很难有“街坊邻居”式的自然连接。我希望做一个回归传统 BBS 温度、但结合现代交互体验的中文社区，理念是“让每一条街道，都有自己的话题”。\r\n\r\n目前实现的核心功能：\r\n\r\n1. 双层内容结构（话题 + 广场）： 设了 9 个一级频道。除了日常的「话题」灌水、出游、学习记录外，在「广场」聚合了创业心得、IT 技术、问答互助、求职招聘、文化人文、娱乐休闲 6 个核心子频道。\r\n2. 生活与本地化信息： 除了线上讨论，还加入了闲置信息（纯信息展示，不抽成不介入交易）、吃喝玩乐（私藏店铺分享）和活动公告（成员自发组局）。\r\n3. 内置全站搜索与 AI 问答： 全站做了基于中文分词的 6 组内容聚合检索；开启 AI 问答开关后，AI 会直接综合站内帖子、店铺和活动数据生成带参考来源的回答。\r\n4. 轻量积分与等级激励： 游客默认免登录浏览全站内容。免费注册即送 50 积分，发帖、回复、点赞都能赚积分，积分用来解锁发私信、发起投票、情侣关系等社交互动，按累计获赞划分了 11 级头衔。\r\n\r\n现状与求反馈：\r\n\r\n网站是 2026 年 11 月 21 日刚上线的，目前处于纯冷启动阶段，站里内容还比较少。大家如果对界面交互、分词搜索效果或者社区功能有什么建议，欢迎直接在帖子里回复，或者去站内「留言板」提需求，我都会逐条看并持续迭代。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "daheige",
-      "url": "https://www.v2ex.com/t/1260510",
-      "posted_at": "2026-11-28 10:01 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "折腾了一个以“兴趣街区”为概念的轻量中文社区：芒果街 (stmango)",
-      "original_summary": "折腾了一个以“兴趣街区”为概念的轻量中文社区：芒果街 (stmango)\n大家好，前几天刚把一个 10 多年搁置的站点，重新进行了打磨，目前社区项目已正式上线，叫芒果街（stmango），想趁着周末发出来请大家体验并拍砖。\r\n• 访问地址： https://www.stmango.com\r\n• 关于页面： https://www.stmango.com/about\r\n\r\n为什么要做这个网站？\r\n\r\n现在很多内容平台越来越像算法驱动的信息流，人和人之间很难有“街坊邻居”式的自然连接。我希望做一个回归传统 BBS 温度、但结合现代交互体验的中文社区，理念是“让每一条街道，都有自己的话题”。\r\n\r\n目前实现的核心功能：\r\n\r\n1. 双层内容结构（话题 + 广场）： 设了 9 个一级频道。除了日常的「话题」灌水、出游、学习记录外，在「广场」聚合了创业心得、IT 技术、问答互助、求职招聘、文化人文、娱乐休闲 6 个核心子频道。\r\n2. 生活与本地化信息： 除了线上讨论，还加入了闲置信息（纯信息展示，不抽成不介入交易）、吃喝玩乐（私藏店铺分享）和活动公告（成员自发组局）。\r\n3. 内置全站搜索与 AI 问答： 全站做了基于中文分词的 6 组内容聚合检索；开启 AI 问答开关后，AI 会直接综合站内帖子、店铺和活动数据生成带参考来源的回答。\r\n4. 轻量积分与等级激励： 游客默认免登录浏览全站内容。免费注册即送 50 积分，发帖、回复、点赞都能赚积分，积分用来解锁发私信、发起投票、情侣关系等社交互动，按累计获赞划分了 11 级头衔。\r\n\r\n现状与求反馈：\r\n\r\n网站是 2026 年 11 月 21 日刚上线的，目前处于纯冷启动阶段，站里内容还比较少。大家如果对界面交互、分词搜索效果或者社区功能有什么建议，欢迎直接在帖子里回复，或者去站内「留言板」提需求，我都会逐条看并持续迭代。",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1260505",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "随阅·NoriReader 1.1.0 更新 增加 AI 功能 webdav",
-      "summary": "随阅·NoriReader 1.1.0 更新 增加 AI 功能 webdav\n前阵子在站里发了小说阅读器 NoriReader 的初版（ https://v2ex.com/t/1254782 ），感谢各位 V 友的反馈，甚至还有两位大佬直接付费支持了，感动之余也更有动力爆肝了。\r\n最近连着更了几个版本，核心变化如下：  \r\n- 界面体验：整体 UI 重新优化，阅读更沉浸。\r\n- 基础刚需：新增 WebDAV 同步（免费版可绑 1 个账号）和 本地字体导入（免费版可导 2 个字体）。\r\n- AI 提问：支持针对小说正文向 AI 提问（剧情梳理、设定查询等）。免费每天 5 次，支持自带 API Key 及自定义反代/中转。\r\n- AI 听书：支持接入 MiniMax 等接口，可实现声音克隆（用自己或喜欢的人的声音听书）。\r\n- 书源支持：已兼容大部分主流聚合源及部分自建合集源。（注：因部分源站自身不稳定或限制大陆 IP，偶尔会出现部分源不可用的情况）。    \r\n\r\n\r\n另外同步个小消息：目前内购正在半价优惠中（截止到 12 月 10 日），一次买断即可解锁所有完整体验，有需要的朋友趁现在入手最划算。\r\n简单做了个官网，感兴趣的朋友可以直接去看看：  \r\nhttps://norireader.pages.dev\r\n欢迎继续提意见，后续还会持续打磨！",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "chiaoyuja",
-      "url": "https://www.v2ex.com/t/1260505",
-      "posted_at": "2026-11-28 09:50 Asia/Shanghai",
-      "engagement": {
-        "replies": 4
-      },
-      "original_title": "随阅·NoriReader 1.1.0 更新 增加 AI 功能 webdav",
-      "original_summary": "随阅·NoriReader 1.1.0 更新 增加 AI 功能 webdav\n前阵子在站里发了小说阅读器 NoriReader 的初版（ https://v2ex.com/t/1254782 ），感谢各位 V 友的反馈，甚至还有两位大佬直接付费支持了，感动之余也更有动力爆肝了。\r\n最近连着更了几个版本，核心变化如下：  \r\n- 界面体验：整体 UI 重新优化，阅读更沉浸。\r\n- 基础刚需：新增 WebDAV 同步（免费版可绑 1 个账号）和 本地字体导入（免费版可导 2 个字体）。\r\n- AI 提问：支持针对小说正文向 AI 提问（剧情梳理、设定查询等）。免费每天 5 次，支持自带 API Key 及自定义反代/中转。\r\n- AI 听书：支持接入 MiniMax 等接口，可实现声音克隆（用自己或喜欢的人的声音听书）。\r\n- 书源支持：已兼容大部分主流聚合源及部分自建合集源。（注：因部分源站自身不稳定或限制大陆 IP，偶尔会出现部分源不可用的情况）。    \r\n\r\n\r\n另外同步个小消息：目前内购正在半价优惠中（截止到 12 月 10 日），一次买断即可解锁所有完整体验，有需要的朋友趁现在入手最划算。\r\n简单做了个官网，感兴趣的朋友可以直接去看看：  \r\nhttps://norireader.pages.dev\r\n欢迎继续提意见，后续还会持续打磨！",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1260500",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "微信小程序也需要一个 Product Hunt 吗？",
-      "summary": "微信小程序也需要一个 Product Hunt 吗？\n微信里其实有不少好用的小程序，但除了朋友推荐和主动搜索，似乎没有太好的发现渠道。对于独立开发者来说，推广渠道也比较有限。\r\n\r\n受 Product Hunt 启发，最近折腾了一个网站 MiniHunt（https://minihunt.top），目前收录了 2000 多个小程序，也支持开发者免费提交自己的作品。\r\n\r\n还在早期阶段，很多地方不够完善。\r\n\r\n比较好奇，大家平时会主动去发现新的小程序吗？如果你是小程序开发者，会愿意在这样的平台分享自己的作品吗？\r\n\r\n欢迎交流，也欢迎吐槽。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "weisein",
-      "url": "https://www.v2ex.com/t/1260500",
-      "posted_at": "2026-11-28 09:33 Asia/Shanghai",
-      "engagement": {
-        "replies": 2
-      },
-      "original_title": "微信小程序也需要一个 Product Hunt 吗？",
-      "original_summary": "微信小程序也需要一个 Product Hunt 吗？\n微信里其实有不少好用的小程序，但除了朋友推荐和主动搜索，似乎没有太好的发现渠道。对于独立开发者来说，推广渠道也比较有限。\r\n\r\n受 Product Hunt 启发，最近折腾了一个网站 MiniHunt（https://minihunt.top），目前收录了 2000 多个小程序，也支持开发者免费提交自己的作品。\r\n\r\n还在早期阶段，很多地方不够完善。\r\n\r\n比较好奇，大家平时会主动去发现新的小程序吗？如果你是小程序开发者，会愿意在这样的平台分享自己的作品吗？\r\n\r\n欢迎交流，也欢迎吐槽。",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1260489",
-      "source": "V2EX",
-      "category": "科技软件/App 限免",
-      "title": "Pulsar 1.1：给 Mac 系统监控加上了时间回看，顺便汇报下最新的黑五优惠",
-      "summary": "Pulsar 1.1：给 Mac 系统监控加上了时间回看，顺便汇报下最新的黑五优惠\n**太长不看版：**\r\n\r\nPulsar 是一个极其小巧的原生 Mac 应用，在进程状态监控管理，应用请求流向监控做了很多细节的优化。\r\n\r\n\r\n话不多说，黑色星期五五折进行中：Pro $7（常规价 $14，同时激活 2 台 Mac），支持者 $14.50（常规价 $29，同时激活 5 台 Mac）。\r\n\r\n均为一次购买，包含后续全部更新与大版本，无需续费，14 天内可全额退款。折扣在结账时自动应用，不需要优惠码，北京时间 12 月 7 日 16:00 截止。\r\n\r\n| ![8 秒看懂 Pulsar：回到 Mac 卡顿的那一刻](https://img.purelind.com/shares/forum/2026-11-28/pulsar-replay-zh-3af2515b.gif) | ![Pulsar 黑五优惠：Pro $7，支持者 $14.50](https://img.purelind.com/shares/forum/2026-11-28/pulsar-black-friday-zh-7ff1381f.png) |\r\n|:---:|:---:|\r\n\r\n官网与下载：[pulsarmac.app](https://pulsarmac.app/?utm_source=v2ex&utm_medium=community&utm_campaign=black_friday_2026)（支持 Apple 芯片的 Mac，需 macOS 14 或更高版本）\r\n\r\n\r\n\r\n**感兴趣继续版：**\r\n\r\n原本只是自己和几个朋友自用的一个小工具，后来想着是否可以尝试下完整的设计交付一个可用的产品开放出来。于是就有了现在的 Pulsar。\r\n\r\n这次 Pulsar 1.1 支持了 「回看」功能，可以按",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "purelind",
-      "url": "https://www.v2ex.com/t/1260489",
-      "posted_at": "2026-11-28 07:45 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "Pulsar 1.1：给 Mac 系统监控加上了时间回看，顺便汇报下最新的黑五优惠",
-      "original_summary": "Pulsar 1.1：给 Mac 系统监控加上了时间回看，顺便汇报下最新的黑五优惠\n**太长不看版：**\r\n\r\nPulsar 是一个极其小巧的原生 Mac 应用，在进程状态监控管理，应用请求流向监控做了很多细节的优化。\r\n\r\n\r\n话不多说，黑色星期五五折进行中：Pro $7（常规价 $14，同时激活 2 台 Mac），支持者 $14.50（常规价 $29，同时激活 5 台 Mac）。\r\n\r\n均为一次购买，包含后续全部更新与大版本，无需续费，14 天内可全额退款。折扣在结账时自动应用，不需要优惠码，北京时间 12 月 7 日 16:00 截止。\r\n\r\n| ![8 秒看懂 Pulsar：回到 Mac 卡顿的那一刻](https://img.purelind.com/shares/forum/2026-11-28/pulsar-replay-zh-3af2515b.gif) | ![Pulsar 黑五优惠：Pro $7，支持者 $14.50](https://img.purelind.com/shares/forum/2026-11-28/pulsar-black-friday-zh-7ff1381f.png) |\r\n|:---:|:---:|\r\n\r\n官网与下载：[pulsarmac.app](https://pulsarmac.app/?utm_source=v2ex&utm_medium=community&utm_campaign=black_friday_2026)（支持 Apple 芯片的 Mac，需 macOS 14 或更高版本）\r\n\r\n\r\n\r\n**感兴趣继续版：**\r\n\r\n原本只是自己和几个朋友自用的一个小工具，后来想着是否可以尝试下完整的设计交付一个可用的产品开放出来。于是就有了现在的 Pulsar。\r\n\r\n这次 Pulsar 1.1 支持了 「回看」功能，可以按",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1260484",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化",
-      "summary": "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化\n各位 V 友，晚上好。\r\n\r\n最近社区里不少兄弟在愁 AI 账号的事：买来的号用不了几天就挂了，或者卡在 Persona 验证那一步，怎么都过不去，折腾得挺心累。\r\n\r\n我这边有一批稳定的渠道，主要做 Claude 和 ChatGPT Plus 的批量供应。不是零售拼车那种，主要找有持续大量需求的买家。\r\n\r\n说点硬核的，我们这批货有两个核心优势：\r\n\r\n身份验证：很多权重不错的号，最后都卡在 Persona 这一步。你只需要把验证入口的链接发过来，验证由我们来完成，不需要你提供账号密码。\r\n\r\nAPI 自动化：不用一个个手动登网页。我们自带 API，你可以直接拿去做自动分发、批量开通，或者接自己的业务后台。\r\n\r\n发在这里就是想精准找有量的老板。如果你自己在跑项目、做自动化，或者工作室在批量出货，成本肯定比到处收散号划算得多，稳定性也不是一个级别。\r\n\r\n详细的价格阶梯和接入方式，可以自己去看：subai.zip/wholesale\r\n\r\nPS：小批量的 V 友也可以在评论区留言或者私信，我先免费发几个测试额度，跑一跑看稳定性再决定。大家交个朋友，顺便交流下现在 API 自动化的玩法。\r\n\r\n客户量大的可以直接说，测试额度给足。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "jinglaef",
-      "url": "https://www.v2ex.com/t/1260484",
-      "posted_at": "2026-11-28 05:20 Asia/Shanghai",
-      "engagement": {
-        "replies": 0
-      },
-      "original_title": "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化",
-      "original_summary": "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化\n各位 V 友，晚上好。\r\n\r\n最近社区里不少兄弟在愁 AI 账号的事：买来的号用不了几天就挂了，或者卡在 Persona 验证那一步，怎么都过不去，折腾得挺心累。\r\n\r\n我这边有一批稳定的渠道，主要做 Claude 和 ChatGPT Plus 的批量供应。不是零售拼车那种，主要找有持续大量需求的买家。\r\n\r\n说点硬核的，我们这批货有两个核心优势：\r\n\r\n身份验证：很多权重不错的号，最后都卡在 Persona 这一步。你只需要把验证入口的链接发过来，验证由我们来完成，不需要你提供账号密码。\r\n\r\nAPI 自动化：不用一个个手动登网页。我们自带 API，你可以直接拿去做自动分发、批量开通，或者接自己的业务后台。\r\n\r\n发在这里就是想精准找有量的老板。如果你自己在跑项目、做自动化，或者工作室在批量出货，成本肯定比到处收散号划算得多，稳定性也不是一个级别。\r\n\r\n详细的价格阶梯和接入方式，可以自己去看：subai.zip/wholesale\r\n\r\nPS：小批量的 V 友也可以在评论区留言或者私信，我先免费发几个测试额度，跑一跑看稳定性再决定。大家交个朋友，顺便交流下现在 API 自动化的玩法。\r\n\r\n客户量大的可以直接说，测试额度给足。",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1260477",
-      "source": "V2EX",
-      "category": "其他科技",
-      "title": "智友社回馈 V 站新老客户，抽送第 15 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）",
-      "summary": "智友社回馈 V 站新老客户，抽送第 15 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）\n各位 V 友好，感谢大家一直以来对我们智友社的支持和关注。\r\n\r\n我们智友社的初衷是帮大家寻找市面上稳定的主流 AI 特价渠道，鉴于目前国外主流 AI 的正价订购价格昂贵，我们发现市面上有不少的价格实惠的特殊渠道 AI 产品，可惜质量参差不齐，为了节省大家的时间跟金钱，我们花了不少精力对各个渠道商的特价 AI 进行了购买评测，再从中选取稳定的渠道上架出售，我们也欢迎各位佬友跟我们推荐稳定的特殊渠道 AI ，我们会自费购买进行稳定性测试，测试通过后也能让更多的人能受益！\r\n\r\n由于目前国外 AI 并不能上架国内主流购物平台，所以我们只能把店铺开在了一个小众平台—链动小铺，您有问题可以随时联系我们 QQ 客服，我们会协助您一起解决。\r\n\r\n**我们的小铺地址： https://wzyp.cn/shop/ai2you 。我们的产品目前只要分成下面两种。**\r\n\r\n**一：稳定特殊渠道特价商品：目前这几款我们测试下来都是很稳定，价格会随每天行情变化，请以平台价格为准。**\r\n\r\n**GPT 系列：**\r\n\r\n[GPTPlus 东南亚区成品号（稳定度 98%，谷歌邮箱不含邮箱密码，质保 24 小时）](https://pay.ldxp.cn/item/5wdrjz)  52.88\r\n[GPTPlus 新日区成品号（稳定度 99%，谷歌邮箱不含邮箱密码，质保 24 小时）](https://wzyp.cn/item/z6vcon)  56.88\r\n[GPTPlus 日区成品号（稳定度 100%，微软邮箱带邮箱密码，质保 24 小时）](https://wzyp.cn/item/x74yu9)  60.88\r\n\r\n[GPTPlus 东南亚区成品号（稳定度",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Ai2You",
-      "url": "https://www.v2ex.com/t/1260477",
-      "posted_at": "2026-11-28 01:19 Asia/Shanghai",
-      "engagement": {
-        "replies": 4
-      },
-      "original_title": "智友社回馈 V 站新老客户，抽送第 15 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）",
-      "original_summary": "智友社回馈 V 站新老客户，抽送第 15 波 5 个 智友社的 GPTPLUS 稳定特殊渠道日区独享月卡成品号 3（稳定度 98%）\n各位 V 友好，感谢大家一直以来对我们智友社的支持和关注。\r\n\r\n我们智友社的初衷是帮大家寻找市面上稳定的主流 AI 特价渠道，鉴于目前国外主流 AI 的正价订购价格昂贵，我们发现市面上有不少的价格实惠的特殊渠道 AI 产品，可惜质量参差不齐，为了节省大家的时间跟金钱，我们花了不少精力对各个渠道商的特价 AI 进行了购买评测，再从中选取稳定的渠道上架出售，我们也欢迎各位佬友跟我们推荐稳定的特殊渠道 AI ，我们会自费购买进行稳定性测试，测试通过后也能让更多的人能受益！\r\n\r\n由于目前国外 AI 并不能上架国内主流购物平台，所以我们只能把店铺开在了一个小众平台—链动小铺，您有问题可以随时联系我们 QQ 客服，我们会协助您一起解决。\r\n\r\n**我们的小铺地址： https://wzyp.cn/shop/ai2you 。我们的产品目前只要分成下面两种。**\r\n\r\n**一：稳定特殊渠道特价商品：目前这几款我们测试下来都是很稳定，价格会随每天行情变化，请以平台价格为准。**\r\n\r\n**GPT 系列：**\r\n\r\n[GPTPlus 东南亚区成品号（稳定度 98%，谷歌邮箱不含邮箱密码，质保 24 小时）](https://pay.ldxp.cn/item/5wdrjz)  52.88\r\n[GPTPlus 新日区成品号（稳定度 99%，谷歌邮箱不含邮箱密码，质保 24 小时）](https://wzyp.cn/item/z6vcon)  56.88\r\n[GPTPlus 日区成品号（稳定度 100%，微软邮箱带邮箱密码，质保 24 小时）](https://wzyp.cn/item/x74yu9)  60.88\r\n\r\n[GPTPlus 东南亚区成品号（稳定度",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "v2ex-1260318",
-      "source": "V2EX",
-      "category": "AI 开发工具与编程助手",
-      "title": "做了一个食品条码查询小程序，却发现产品推广比开发更难",
-      "summary": "做了一个食品条码查询小程序，却发现产品推广比开发更难\n最近做了个微信小程序，叫「咖态食品条码通」。\r\n\r\n买食品的时候扫一下条形码，就能查商品信息、配料表和营养成分，还可以让 AI 帮忙解释那些看不懂的成分。\r\n\r\n\r\n本来以为最难的是开发，结果发现最麻烦的是找数据，最难的是找用户。\r\n\r\n小程序上线后试了知乎、短视频、微信群，折腾了一圈，推广效果也不怎么样。\r\n\r\n现在 AI 编程这么方便，做个小程序确实不算太难，但做完之后怎么让别人知道，好像没什么特别好的办法。\r\n\r\n于是最近又做了个网站，叫 MiniHunt（minihunt.top），想做一个专门发现微信小程序的地方，有点类似 Product Hunt。\r\n\r\n自己有小程序的朋友可以免费发布，也可以看看其他独立开发者都在做什么。\r\n\r\n不知道这个方向有没有价值，先做起来试试。\r\n\r\n有没有同样在做小程序的朋友？想交流一下大家都是怎么找第一批用户的。\r\n\r\n对了，食品扫码工具在微信里搜「咖态食品条码通」就能找到，有空可以帮忙试试。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "weisein",
-      "url": "https://www.v2ex.com/t/1260318",
-      "posted_at": "2026-11-27 14:23 Asia/Shanghai",
-      "engagement": {
-        "replies": 38
-      },
-      "original_title": "做了一个食品条码查询小程序，却发现产品推广比开发更难",
-      "original_summary": "做了一个食品条码查询小程序，却发现产品推广比开发更难\n最近做了个微信小程序，叫「咖态食品条码通」。\r\n\r\n买食品的时候扫一下条形码，就能查商品信息、配料表和营养成分，还可以让 AI 帮忙解释那些看不懂的成分。\r\n\r\n\r\n本来以为最难的是开发，结果发现最麻烦的是找数据，最难的是找用户。\r\n\r\n小程序上线后试了知乎、短视频、微信群，折腾了一圈，推广效果也不怎么样。\r\n\r\n现在 AI 编程这么方便，做个小程序确实不算太难，但做完之后怎么让别人知道，好像没什么特别好的办法。\r\n\r\n于是最近又做了个网站，叫 MiniHunt（minihunt.top），想做一个专门发现微信小程序的地方，有点类似 Product Hunt。\r\n\r\n自己有小程序的朋友可以免费发布，也可以看看其他独立开发者都在做什么。\r\n\r\n不知道这个方向有没有价值，先做起来试试。\r\n\r\n有没有同样在做小程序的朋友？想交流一下大家都是怎么找第一批用户的。\r\n\r\n对了，食品扫码工具在微信里搜「咖态食品条码通」就能找到，有空可以帮忙试试。",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-enapt-swarmllm",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "enapt/SwarmLLM：在自己电脑上免费跑 AI 模型的开源应用",
-      "summary": "多台电脑可经互联网联手运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "enapt",
-      "url": "https://github.com/enapt/SwarmLLM",
-      "posted_at": "2026-11-23 21:53 Asia/Shanghai",
-      "engagement": {
-        "stars": 93
-      },
-      "original_title": "enapt/SwarmLLM",
-      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
-      "translated_by": "model"
     },
     {
       "id": "ghdeal-arsh624-llm4jobs-v2",
@@ -735,21 +682,75 @@
       "translated_by": "model"
     },
     {
-      "id": "ghdeal-aipmandy-freetoken",
+      "id": "ghdeal-mrlupien-ai-free-llm-apis",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
-      "title": "AIPMAndy/FreeToken：免费 AI API 额度汇总",
-      "summary": "整理 Gemini、OpenRouter、Groq、DeepSeek、硅基流动等平台的免费 Token 申请入口与限额，并定期复核。",
+      "title": "mrlupien-ai/free-llm-apis：每日核验的免费 LLM API 目录",
+      "summary": "收录无需信用卡的免费 LLM API、实时可用状态、本地开源权重模型与 AI 编程工具配置。",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "deadline": null,
-      "author": "AIPMAndy",
-      "url": "https://github.com/AIPMAndy/FreeToken",
-      "posted_at": "2026-11-27 13:32 Asia/Shanghai",
+      "author": "mrlupien-ai",
+      "url": "https://github.com/mrlupien-ai/free-llm-apis",
+      "posted_at": "2026-11-28 13:04 Asia/Shanghai",
       "engagement": {
-        "stars": 198
+        "stars": 0
       },
-      "original_title": "AIPMAndy/FreeToken",
-      "original_summary": "AIPMAndy/FreeToken 免费 AI API 额度大全（定期复核）：Gemini、OpenRouter、Groq、DeepSeek、硅基流动等免费 Token 申请入口与限额｜Free LLM API keys & credits 2026 ｜ 微信 AIPMAndy · 官网 https://metaver.vip/",
+      "original_title": "mrlupien-ai/free-llm-apis",
+      "original_summary": "mrlupien-ai/free-llm-apis Daily-verified directory of free LLM APIs (no credit card), live uptime status, local open-weight models, and AI coding tool configs — synced automatically from llms.free",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-clytjpgemini-llms-txt-auditor",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "clytjpgemini/llms-txt-auditor：免费 llms.txt 审计器",
+      "summary": "免费即时检查站点 llms.txt 与 AI 可读性，可自动生成文件、SVG 徽章，并提供 x402 批量 API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "clytjpgemini",
+      "url": "https://github.com/clytjpgemini/llms-txt-auditor",
+      "posted_at": "2026-11-28 17:37 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "clytjpgemini/llms-txt-auditor",
+      "original_summary": "clytjpgemini/llms-txt-auditor Free instant llms.txt & AI-Readiness (GEO) auditor, auto-generator, live SVG badges & x402 bulk API on Cloudflare Workers",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-enapt-swarmllm",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "enapt/SwarmLLM：在自己电脑上免费跑 AI 模型的开源应用",
+      "summary": "多台电脑可经互联网联手运行单机跑不动的大模型，无需账号，兼容 OpenAI 与 Anthropic API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-23 21:53 Asia/Shanghai",
+      "engagement": {
+        "stars": 93
+      },
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
+      "translated_by": "model"
+    },
+    {
+      "id": "ghdeal-llm-9-to-5-nightshift-x402-worker",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "llm-9-to-5/nightshift-x402-worker：免费套餐上的按次付费 API",
+      "summary": "在 Cloudflare Workers 免费套餐上为 AI agent 提供 x402 按调用付费接口，由 AI agent 自行构建运维。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "llm-9-to-5",
+      "url": "https://github.com/llm-9-to-5/nightshift-x402-worker",
+      "posted_at": "2026-11-21 17:36 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "llm-9-to-5/nightshift-x402-worker",
+      "original_summary": "llm-9-to-5/nightshift-x402-worker x402 pay-per-call APIs for AI agents on Cloudflare Workers free plan. Built and run by an AI agent (Claude).",
       "translated_by": "model"
     },
     {

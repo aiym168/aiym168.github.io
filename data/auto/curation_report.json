@@ -1,17 +1,19 @@
 {
  "counts": {
-  "archived": 31,
+  "archived": 32,
   "deadline_extracted": 7,
-  "drop:duplicate": 741,
+  "drop:duplicate": 740,
   "drop:empty_summary": 97,
-  "drop:negative_signal": 200,
-  "drop:no_clear_offer": 912,
-  "drop:not_ai": 768,
+  "drop:negative_signal": 198,
+  "drop:no_clear_offer": 909,
+  "drop:not_ai": 771,
   "drop:too_old_pre2025": 62,
   "google_news_resolved": 946,
   "google_news_total": 946,
-  "kept_total": 259,
+  "kept_total": 262,
   "net:gnews_cache_hit": 946,
+  "net:tco_failed": 11,
+  "new_this_run": 4,
   "raw_total": 3039
  },
  "curation_version": "2026-11-09.c3",
@@ -19,7 +21,6 @@
   "duplicate": [
    "@scholar_corner 分享：迪拜政府免费 AI 课程，颁发免费证书 全球开放通过迪拜未来基金会的“百万提示工程",
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "Claude / ChatGPT Plus 批量货源：可过 Persona，带 API 自动化",
    "kllm：在免费的 Kaggle GPU 上运行开放权重 LLM（Qwen、GGUF、abliterated）",
    "convenient_window_free：适用于热角、边缘隐藏、鼠标手势和布局的 Windows 11 窗口工具",
    "free-llm-router：一个 API 密钥，15+ 个免费提供商",
@@ -28,7 +29,8 @@
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
    "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
-   "Beatreel：根据一个提示制作讲解短视频"
+   "Beatreel：根据一个提示制作讲解短视频",
+   "hive-mind：如何设计协同工作的 AI 体"
   ],
   "empty_summary": [
    "用户称 Claude Duet 处理十几封邮件和文档就花 100 美元，免费试用额度用完后难继续",
@@ -101,18 +103,17 @@
    "Stability AI 推出 Stable Diffusion XL 1.0，现已在 Amazon Bedrock 上"
   ]
  },
- "generated_at": "2026-11-28T11:00:59+08:00",
+ "generated_at": "2026-11-28T18:08:17+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-28T11:00:59+08:00",
+  "checked_at": "2026-11-28T18:08:17+08:00",
   "counts": {
-   "gone": 2,
-   "ok": 223,
-   "recheck": 1,
-   "unsure": 2
+   "gone": 1,
+   "ok": 224,
+   "recheck": 2
   },
-  "hidden": 2
+  "hidden": 1
  },
- "seconds": 1.9,
+ "seconds": 3.3,
  "side": {
   "github_hot": {
    "drop:duplicate": 4,
@@ -121,11 +122,10 @@
    "raw": 30
   },
   "hot_topics": {
-   "drop:negative_signal": 4,
-   "drop:not_ai": 5,
-   "drop:not_ai_strict": 3,
-   "kept": 25,
-   "raw": 37
+   "drop:not_ai": 9,
+   "drop:not_ai_strict": 8,
+   "kept": 23,
+   "raw": 40
   }
  }
 }
