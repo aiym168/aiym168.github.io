@@ -1,146 +1,6 @@
 {
  "candidates": [
   {
-   "key": "cand-science-nasa-gov",
-   "name": "science.nasa.gov",
-   "home": "https://science.nasa.gov/",
-   "feed": "https://science.nasa.gov/feed/",
-   "channel": "space",
-   "lang": "en",
-   "origin": "mined",
-   "added": "2026-11-24",
-   "trials": [
-    {
-     "date": "2026-11-24",
-     "ok": true,
-     "rows": 10,
-     "recent": 10,
-     "blocked": 0,
-     "on_topic": 0,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-25",
-     "ok": true,
-     "rows": 10,
-     "recent": 10,
-     "blocked": 0,
-     "on_topic": 1,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-26",
-     "ok": true,
-     "rows": 10,
-     "recent": 10,
-     "blocked": 1,
-     "on_topic": 0,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-27",
-     "ok": true,
-     "rows": 10,
-     "recent": 10,
-     "blocked": 1,
-     "on_topic": 0,
-     "offtopic": 0,
-     "zh": false
-    },
-    {
-     "date": "2026-11-28",
-     "ok": true,
-     "rows": 10,
-     "recent": 10,
-     "blocked": 0,
-     "on_topic": 1,
-     "offtopic": 0,
-     "zh": false
-    }
-   ],
-   "score": {
-    "trials": 5,
-    "ok": 5,
-    "blocked": 2,
-    "on_topic": 0.04,
-    "recent": 10.0,
-    "block_rate": 0.04
-   }
-  },
-  {
-   "key": "cand-landian-news",
-   "name": "landian.news",
-   "home": "https://landian.news/",
-   "feed": "https://www.landian.news/feed",
-   "channel": "software",
-   "lang": "zh",
-   "origin": "mined",
-   "added": "2026-11-24",
-   "trials": [
-    {
-     "date": "2026-11-24",
-     "ok": true,
-     "rows": 20,
-     "recent": 20,
-     "blocked": 1,
-     "on_topic": 9,
-     "offtopic": 0,
-     "zh": true
-    },
-    {
-     "date": "2026-11-25",
-     "ok": true,
-     "rows": 20,
-     "recent": 20,
-     "blocked": 4,
-     "on_topic": 9,
-     "offtopic": 0,
-     "zh": true
-    },
-    {
-     "date": "2026-11-26",
-     "ok": true,
-     "rows": 20,
-     "recent": 20,
-     "blocked": 2,
-     "on_topic": 9,
-     "offtopic": 0,
-     "zh": true
-    },
-    {
-     "date": "2026-11-27",
-     "ok": true,
-     "rows": 20,
-     "recent": 20,
-     "blocked": 1,
-     "on_topic": 6,
-     "offtopic": 0,
-     "zh": true
-    },
-    {
-     "date": "2026-11-28",
-     "ok": true,
-     "rows": 20,
-     "recent": 20,
-     "blocked": 2,
-     "on_topic": 6,
-     "offtopic": 0,
-     "zh": true
-    }
-   ],
-   "score": {
-    "trials": 5,
-    "ok": 5,
-    "blocked": 10,
-    "on_topic": 0.39,
-    "recent": 20.0,
-    "block_rate": 0.1
-   }
-  },
-  {
    "key": "vllm-blog",
    "name": "vLLM Blog",
    "home": "https://blog.vllm.ai/",
@@ -189,10 +49,20 @@
      "on_topic": 0,
      "offtopic": 0,
      "error": "HTTPError"
+    },
+    {
+     "date": "2026-11-29",
+     "ok": false,
+     "rows": 0,
+     "recent": 0,
+     "blocked": 0,
+     "on_topic": 0,
+     "offtopic": 0,
+     "error": "HTTPError"
     }
    ],
    "score": {
-    "trials": 4,
+    "trials": 5,
     "ok": 0,
     "blocked": 0,
     "on_topic": 0.0,
@@ -249,14 +119,24 @@
      "on_topic": 5,
      "offtopic": 0,
      "zh": false
+    },
+    {
+     "date": "2026-11-29",
+     "ok": true,
+     "rows": 10,
+     "recent": 3,
+     "blocked": 1,
+     "on_topic": 5,
+     "offtopic": 0,
+     "zh": false
     }
    ],
    "score": {
-    "trials": 4,
-    "ok": 4,
-    "blocked": 4,
-    "on_topic": 0.42,
-    "recent": 2.0,
+    "trials": 5,
+    "ok": 5,
+    "blocked": 5,
+    "on_topic": 0.44,
+    "recent": 2.2,
     "block_rate": 0.1
    }
   },
@@ -299,14 +179,24 @@
      "on_topic": 14,
      "offtopic": 0,
      "zh": false
+    },
+    {
+     "date": "2026-11-29",
+     "ok": true,
+     "rows": 30,
+     "recent": 2,
+     "blocked": 0,
+     "on_topic": 14,
+     "offtopic": 0,
+     "zh": false
     }
    ],
    "score": {
-    "trials": 3,
-    "ok": 3,
+    "trials": 4,
+    "ok": 4,
     "blocked": 0,
     "on_topic": 0.47,
-    "recent": 3.3,
+    "recent": 3.0,
     "block_rate": 0.0
    }
   },
@@ -349,14 +239,24 @@
      "on_topic": 18,
      "offtopic": 0,
      "zh": false
+    },
+    {
+     "date": "2026-11-29",
+     "ok": true,
+     "rows": 20,
+     "recent": 2,
+     "blocked": 1,
+     "on_topic": 18,
+     "offtopic": 0,
+     "zh": false
     }
    ],
    "score": {
-    "trials": 3,
-    "ok": 3,
-    "blocked": 3,
+    "trials": 4,
+    "ok": 4,
+    "blocked": 4,
     "on_topic": 0.9,
-    "recent": 2.3,
+    "recent": 2.2,
     "block_rate": 0.05
    }
   }
@@ -373,7 +273,9 @@
   "cand-arstechnica-com",
   "raschka",
   "oneusefulthing",
-  "langchain-blog"
+  "langchain-blog",
+  "cand-science-nasa-gov",
+  "cand-landian-news"
  ],
  "rejected_domains": [
   "arstechnica.com"

@@ -2,24 +2,29 @@
  "counts": {
   "archived": 32,
   "deadline_extracted": 7,
-  "drop:duplicate": 744,
-  "drop:empty_summary": 100,
-  "drop:negative_signal": 198,
-  "drop:no_clear_offer": 913,
-  "drop:not_ai": 771,
+  "drop:duplicate": 783,
+  "drop:empty_summary": 102,
+  "drop:negative_signal": 203,
+  "drop:no_clear_offer": 939,
+  "drop:not_ai": 804,
   "drop:too_old_pre2025": 62,
-  "google_news_resolved": 955,
-  "google_news_total": 955,
-  "kept_total": 260,
+  "google_news_resolved": 962,
+  "google_news_total": 962,
+  "kept_total": 262,
   "net:gnews_cache_hit": 955,
-  "raw_total": 3048
+  "net:gnews_resolved_net": 7,
+  "net:tco_expanded": 1,
+  "net:tco_failed": 11,
+  "new_this_run": 1,
+  "raw_total": 3155
  },
  "curation_version": "2026-11-09.c3",
  "drop_examples": {
   "duplicate": [
    "@scholar_corner 分享：迪拜政府免费 AI 课程，颁发免费证书 全球开放通过迪拜未来基金会的“百万提示工程",
    "由 AI 生成的七款 Adobe 应用程序的副本可在网上免费获取",
-   "free-ai-models：免费 LLM API 按质量排名并标注实时状态",
+   "免费开源 DevOps 工程师课程，采用开放治理",
+   "Sol-Next：Sol Next 9.0.4",
    "kllm：在免费的 Kaggle GPU 上运行开放权重 LLM（Qwen、GGUF、abliterated）",
    "convenient_window_free：适用于热角、边缘隐藏、鼠标手势和布局的 Windows 11 窗口工具",
    "free-llm-router：一个 API 密钥，15+ 个免费提供商",
@@ -27,10 +32,10 @@
    "awesome-cyber-security-heaven：Awesome Cyber​​ Security Heave",
    "scumble：用于 AI 修复的免费开源桌面编辑器",
    "ai-usage-menubar：Mac 菜单栏中的每个 AI 编码限制",
-   "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本",
-   "Beatreel：根据一个提示制作讲解短视频"
+   "freetoken-rdna3：AMD Radeon RX 7900 XTX / XT（RDNA3、ROCm）上的快速本"
   ],
   "empty_summary": [
+   "@mdancho84 分享：课程聚焦模型落地为生产 AI 系统这一技能缺口，免费开放",
    "@zachmoskow 分享：关注并私信即可领取，需使用有效的公司邮箱",
    "5 个免费的 LLM 课程可作为一条途径：Karpathy 的从零到英雄、FSDL Bootcamp",
    "用户称 Claude Duet 处理十几封邮件和文档就花 100 美元，免费试用额度用完后难继续",
@@ -41,8 +46,7 @@
    "@JeremyNguyenPhD 分享：面向自然科学、工程及相关交叉学科的研究人员免费提供，帖中另附其他免费学术 AI ",
    "@jasonlk 分享：帖子提供 AI 智能体详情链接，并可免费领取 AI 销售智能体指南",
    "@Xiaomi 分享：购买该系列可免费试用3个月，享更多 Google AI 访问权限和5TB 云存储",
-   "按 iPhone、iPad 和不同内存的 Mac 推荐 Gemma、Qwen 等本地免费模型",
-   "@ghumare64 分享：有开发者用这套免费课程配合编码智能体，一周内上线了三个项目，帖中附7条提示词"
+   "按 iPhone、iPad 和不同内存的 Mac 推荐 Gemma、Qwen 等本地免费模型"
   ],
   "negative_signal": [
    "@mitchellh 分享：该推文指出细彩色边框、渐变、发光效果、过多字号和不一致间距是赠品 LLM 设计的特征",
@@ -59,18 +63,18 @@
    "@JulianGoldieSEO 分享：输入网址即可运行 3 分钟免费审计，查看 ChatGPT、Gemini 和 Cl"
   ],
   "no_clear_offer": [
+   "展示该集群的通用性：在已高度优化的无反向传播 LLM 训练上再提升 30%",
+   "含 GroqCloud、OpenRouter、Cloudflare Workers AI、Mistral 与 Gemin",
+   "@BiologyAIDaily 分享：该研究基准测试 AI 结构预测器是否把翻译后修饰原子放在晶体学所确定的位置",
+   "@opportunitiesfy 分享：面向农业科技初创企业和创新者，提供免费 AI 工具、专家辅导和试点场地，截止20",
+   "@svpino 分享：迈克尔取下了他的免费深度学习书籍",
+   "@akarixbt 分享：称这批仓库覆盖提示词、构建、集群与公司运营，可把 Grok Bot 变成完整的开发公司大脑",
    "@hasantoxr 分享：输入角色描述并选预览图，一次运行完成建模与骨骼绑定",
    "@csaba_kissi 分享：含开源编程智能体面板、25个免费编程智能体技能与开源 AI 代码审计工具",
    "@VaibhavSisinty 分享：该免费社区已有 20 多万人加入，可每天获取 AI 工具和信息",
    "汇总 Claude for Dummies、Claude 101、提示词技巧与省钱用法等免费指南",
    "不是教程也非理论，按周教学 Docker、FastAPI、数据管道与搜索引擎等实战内容",
-   "一位作者出于对灾难性风险的担忧，撤下了自己编写的免费 AI 教材",
-   "像 GitHub 一样保存每个视频版本及其提示词、文件和评论，免费开源",
-   "@VaibhavSisinty 分享：该免费社区已有 20 多万人加入，可每天获取 AI 工具和信息",
-   "@MengTo 分享：借助视差与鱼眼镜头技巧实现无尽 three.js 摩托骑行，相关技能已开源",
-   "一名开发者把 Claude 变成月入 10 万美元的工具，并免费公开完整策略",
-   "@SpencrGreenberg 分享：作者让 AI 助手在夜间自主安排任务，只对 token 用量和风险行为设限，随后",
-   "@DataChaz 分享：18岁创始人与父亲共同打造，AI 联合创始人用27个以上代理找客户、追踪竞品并提升搜索曝光"
+   "一位作者出于对灾难性风险的担忧，撤下了自己编写的免费 AI 教材"
   ],
   "not_ai": [
    "@shafu0x 分享：作者认为面试无法判断能力，只需确认合得来、有行动力、懂行，一周试用更有效",
@@ -101,17 +105,17 @@
    "Stability AI 推出 Stable Diffusion XL 1.0，现已在 Amazon Bedrock 上"
   ]
  },
- "generated_at": "2026-11-28T21:34:36+08:00",
+ "generated_at": "2026-11-29T02:13:46+08:00",
  "linkcheck": {
-  "checked_at": "2026-11-28T21:34:36+08:00",
+  "checked_at": "2026-11-29T02:13:33+08:00",
   "counts": {
-   "gone": 2,
+   "gone": 1,
    "ok": 223,
-   "recheck": 1
+   "recheck": 3
   },
-  "hidden": 2
+  "hidden": 1
  },
- "seconds": 1.8,
+ "seconds": 5.9,
  "side": {
   "github_hot": {
    "drop:duplicate": 4,
@@ -120,9 +124,9 @@
   },
   "hot_topics": {
    "drop:negative_signal": 2,
-   "drop:not_ai": 14,
-   "drop:not_ai_strict": 7,
-   "kept": 17,
+   "drop:not_ai": 9,
+   "drop:not_ai_strict": 10,
+   "kept": 19,
    "raw": 40
   }
  }

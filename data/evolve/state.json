@@ -1,52 +1,58 @@
 {
  "last_step": {
-  "date": "2026-11-28",
+  "date": "2026-11-29",
   "changes": [
    {
     "op": "restore",
-    "name": "Chromium Blog",
-    "key": "blog-chromium-org-feeds-posts-default",
-    "why": ""
-   },
-   {
-    "op": "retest",
     "name": "React 博客",
     "key": "react-dev-rss-xml",
     "why": ""
    },
    {
     "op": "retest",
-    "name": "DEV 社区",
-    "key": "DEV.to",
+    "name": "Lobsters",
+    "key": "Lobsters",
     "why": ""
    },
    {
-    "op": "slower",
+    "op": "pause",
     "name": "伯克利 BAIR",
     "key": "bair-berkeley-edu-blog-feed-xml",
-    "why": "总是重复，没有新东西"
+    "why": "一周都没有新东西"
+   },
+   {
+    "op": "pause",
+    "name": "Synced",
+    "key": "syncedreview-com-feed",
+    "why": "一周都没有新东西"
    },
    {
     "op": "slower",
-    "name": "Synced",
-    "key": "syncedreview-com-feed",
+    "name": "Lilian Weng",
+    "key": "lilianweng-github-io-index-xml",
     "why": "总是重复，没有新东西"
    }
   ],
-  "snapshot": "data/evolve/snapshots/2026-11-28.json",
+  "snapshot": "data/evolve/snapshots/2026-11-29.json",
   "baseline": {
-   "kept": 6474,
-   "runs": 22,
+   "kept": 6970,
+   "runs": 25,
    "dead": 13,
-   "checked": 893,
-   "build_ok": 18,
+   "checked": 902,
+   "build_ok": 21,
    "build_bad": 0,
-   "kept_per_run": 294.27,
-   "dead_rate": 0.0146,
+   "kept_per_run": 278.8,
+   "dead_rate": 0.0144,
    "bad_build_rate": 0.0
   }
  },
  "history": [
+  {
+   "date": "2026-11-29",
+   "verdict_prev": null,
+   "changes": 5,
+   "diary_by": "model"
+  },
   {
    "date": "2026-11-28",
    "verdict_prev": null,
@@ -150,5 +156,5 @@
    "diary_by": "rules"
   }
  ],
- "last_evolve_date": "2026-11-28"
+ "last_evolve_date": "2026-11-29"
 }
